@@ -30,7 +30,9 @@ python3 -W error::ResourceWarning -m unittest -v test_database.py
 
 Credentials belong in `~/.config/usa-atlas/credentials.env` with mode `600`. Never
 copy that file into this repository. See [SERVER-RUNBOOK.md](SERVER-RUNBOOK.md) for
-the server bootstrap, monitoring, restart, and result-retrieval flow.
+the server bootstrap, monitoring, restart, and result-retrieval flow. The planned
+expansion from state/county through city, tract, and block group is recorded in
+[GEOGRAPHY-DEPTH-ROADMAP.md](GEOGRAPHY-DEPTH-ROADMAP.md).
 
 ## Data boundary
 
