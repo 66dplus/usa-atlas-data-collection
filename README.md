@@ -1,5 +1,21 @@
 # USA Atlas data collection
 
+## Repository boundary
+
+This is the data side of a two-repository system. The separate UI currently lives at
+`usa-atlas-design-lab/` in the local workspace and will have its own Git origin. This
+repository owns source acquisition, normalization, provenance, stable field/geography
+semantics, PostgreSQL schema and admission. It does not own map rendering or product
+interaction.
+
+The integration boundary is the admitted `usa_atlas` PostgreSQL schema plus the
+versioned field and geography contract. UI access is read-only. Collector code and
+provider credentials are never dependencies of the UI runtime. Changes to field IDs,
+`geo_type`, geography identifiers, normalized record shape or database objects must
+declare compatibility/migration requirements and be verified by the UI adapter against
+the exact data revision. Pure collector changes may ship independently when this
+published contract remains unchanged.
+
 This repository contains the reproducible collectors, source contracts, tests,
 database loader, and the verified partial Census cache for the USA Atlas data
 pipeline. It is intentionally separate from the UI prototype.
