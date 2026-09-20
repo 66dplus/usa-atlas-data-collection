@@ -1,0 +1,122 @@
+{
+  "version": "2026-09-19-v1",
+  "profiles": {
+    "census_acs": {
+      "docs_url": "https://www.census.gov/data/developers/guidance/api-user-guide/query-components.html",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "50 variables per query; unkeyed traffic has a 500-query-per-IP daily limit",
+      "local_limiter": "sequential; at most 1 request/second",
+      "max_variables_or_series": 50,
+      "max_pages": 2,
+      "max_response_bytes": 20971520,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["429", "redirect_official_host", "credential_reflection", "schema_error"],
+      "sanitization_mode": "query_credentials_removed_and_json_recursive"
+    },
+    "bls_laus": {
+      "docs_url": "https://www.bls.gov/developers/api_faqs.htm",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "registered: 500 queries/day, 50 series/query, 20 years/query, 50 requests/10 seconds",
+      "local_limiter": "sequential; one 50-series pack at a time",
+      "max_variables_or_series": 50,
+      "max_pages": 1,
+      "max_response_bytes": 10485760,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["429", "quota_message", "credential_reflection", "schema_error"],
+      "sanitization_mode": "registration_key_post_body_only_and_json_recursive"
+    },
+    "fbi_cde": {
+      "docs_url": "https://cde.ucr.cjis.gov/LATEST/webapp/#/pages/docApi",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "no numeric public quota found in checked official material",
+      "local_limiter": "sequential; at most 1 request/second",
+      "max_variables_or_series": 1,
+      "max_pages": 3,
+      "max_response_bytes": 20971520,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["429", "retry_after", "redirect_official_host", "schema_error"],
+      "sanitization_mode": "canonical_url_and_json_recursive"
+    },
+    "cdc_places": {
+      "docs_url": "https://dev.socrata.com/docs/app-tokens.html",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "app-token traffic has its own pool and is not normally throttled unless abusive",
+      "local_limiter": "sequential token traffic; stable pagination",
+      "max_variables_or_series": 3,
+      "max_pages": 2,
+      "max_response_bytes": 26214400,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["429", "redirect_official_host", "credential_reflection", "schema_error"],
+      "sanitization_mode": "app_token_header_only_and_json_recursive"
+    },
+    "bea_rpp": {
+      "docs_url": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "one public release archive; no API fan-out required",
+      "local_limiter": "one immutable download per release",
+      "max_variables_or_series": 1,
+      "max_pages": 1,
+      "max_response_bytes": 52428800,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["redirect_official_host", "archive_error", "schema_error"],
+      "sanitization_mode": "canonical_url_and_binary_hash"
+    },
+    "irs_soi": {
+      "docs_url": "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-2022-zip-code-data-soi",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "published release file; no API quota applies",
+      "local_limiter": "one immutable download per release",
+      "max_variables_or_series": 6,
+      "max_pages": 1,
+      "max_response_bytes": 262144000,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["redirect_official_host", "schema_error"],
+      "sanitization_mode": "canonical_url_and_csv_validation"
+    },
+    "usda_fea": {
+      "docs_url": "https://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "one 2025 public CSV ZIP release (published size about 6.2 MB)",
+      "local_limiter": "one immutable download per release",
+      "max_variables_or_series": 5,
+      "max_pages": 1,
+      "max_response_bytes": 104857600,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["redirect_official_host", "archive_error", "schema_error"],
+      "sanitization_mode": "canonical_url_and_binary_hash"
+    },
+    "eia": {
+      "docs_url": "https://www.eia.gov/opendata/documentation.php",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "maximum 5000 JSON rows/response; excessive per-second/hour requests temporarily suspend the key",
+      "local_limiter": "sequential; at most 1 request/5 seconds",
+      "max_variables_or_series": 1,
+      "max_pages": 1,
+      "max_response_bytes": 10485760,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["429", "temporary_suspension", "credential_reflection", "schema_error"],
+      "sanitization_mode": "query_credentials_removed_and_json_recursive"
+    },
+    "epa_airdata": {
+      "docs_url": "https://aqs.epa.gov/aqsweb/documents/data_api.html",
+      "docs_checked_at": "2026-09-19",
+      "documented_limits": "sequential; no more than 10 requests/minute; about 5 seconds between calls; up to 5 parameter codes; target under 1000000 rows",
+      "local_limiter": "strictly sequential; minimum 5 seconds between API calls; bulk release preferred",
+      "max_variables_or_series": 5,
+      "max_pages": 2,
+      "max_response_bytes": 52428800,
+      "max_attempts": 2,
+      "retryable_statuses": [500, 502, 503, 504],
+      "stop_conditions": ["429", "retry_after", "credential_reflection", "schema_error"],
+      "sanitization_mode": "query_credentials_removed_and_json_recursive_or_binary_hash"
+    }
+  }
+}

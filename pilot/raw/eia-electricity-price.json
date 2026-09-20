@@ -1,0 +1,41 @@
+{
+  "response": {
+    "total": "1",
+    "dateFormat": "YYYY",
+    "frequency": "annual",
+    "data": [
+      {
+        "period": "2023",
+        "stateid": "CA",
+        "stateDescription": "California",
+        "sectorid": "RES",
+        "sectorName": "residential",
+        "price": "29.51",
+        "price-units": "cents per kilowatt-hour"
+      }
+    ],
+    "description": "Electricity sales to ultimate customer by state and sector (number of customers, average price, revenue, and megawatthours of sales).  \n    Sources: Forms EIA-826, EIA-861, EIA-861M"
+  },
+  "request": {
+    "command": "/v2/electricity/retail-sales/data/",
+    "params": {
+      "frequency": "annual",
+      "data": [
+        "price"
+      ],
+      "facets": {
+        "stateid": [
+          "CA"
+        ],
+        "sectorid": [
+          "RES"
+        ]
+      },
+      "start": "2023",
+      "end": "2023",
+      "length": "5"
+    }
+  },
+  "apiVersion": "2.1.14",
+  "ExcelAddInVersion": "2.1.0"
+}

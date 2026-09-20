@@ -1,0 +1,4002 @@
+{
+  "status": "partial",
+  "pid": 48311,
+  "started_at": "2026-09-19T14:13:53.171212+00:00",
+  "plan_sha256": "8b9ac1e9c6696eb43d97830332712376500b467e91287f9b968e35424822c781",
+  "contract_sha256": "e321baf79add3320961fab36f1e3c62630f46ad2c886e3e77b2a8099bb73603e",
+  "config_sha256": "7f949db21a832f397035b327eb9e3742e14a58e1aed3bafa94b2ec9538887c01",
+  "collector_sha256": "1a8a60c9b30afe63e7b756855a43f86c2a3d95a7eba0b06d08bfa57f2a87d72c",
+  "sources": {
+    "bea_rpp": {
+      "status": "pass",
+      "started_at": "2026-09-19T14:13:53.174884+00:00",
+      "finished_at": "2026-09-19T14:13:53.193000+00:00",
+      "normalized_rows": 884,
+      "normalization_retrieved_at": "2026-09-19T14:13:53.174884+00:00",
+      "artifacts": [
+        {
+          "path": "raw/calibration/bea_rpp/cal-SARPP.zip",
+          "sha256": "38713c6224c4c26ae020ffecd4549b82dca84f43d34f93dfdb43f4070cf011da",
+          "bytes": 39230
+        }
+      ],
+      "normalized_artifact": {
+        "path": "normalized/bea_rpp.jsonl",
+        "rows": 884,
+        "duplicate_keys": 0,
+        "sha256": "2189d237d1dcdcad638876717122959db75b49eb7d94f5d3c2d0198776211ed6",
+        "bytes": 282190
+      },
+      "free_bytes_before": 11139964928,
+      "request_count": 0,
+      "response_bytes": 0,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 0,
+      "duration_seconds": 0.018
+    },
+    "irs_soi": {
+      "status": "pass",
+      "started_at": "2026-09-19T14:13:53.193933+00:00",
+      "finished_at": "2026-09-19T14:14:13.552882+00:00",
+      "normalized_rows": 827595,
+      "normalization_retrieved_at": "2026-09-19T14:13:53.193933+00:00",
+      "artifacts": [
+        {
+          "path": "raw/calibration/irs_soi/cal-22zpallagi.csv",
+          "sha256": "1402895408f6648e3ea8c8490afec5d1a797368550c957f64a6aa4093de4b2a6",
+          "bytes": 216173999
+        }
+      ],
+      "normalized_artifact": {
+        "path": "normalized/irs_soi.jsonl",
+        "rows": 827595,
+        "duplicate_keys": 0,
+        "sha256": "2884bee1a5784b9f21e83282ba54d59c3df65fd18d7fa5450cc7f084617834d9",
+        "bytes": 296460877
+      },
+      "free_bytes_before": 11436625920,
+      "request_count": 0,
+      "response_bytes": 0,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 0,
+      "duration_seconds": 20.359
+    },
+    "usda_fea": {
+      "status": "pass",
+      "started_at": "2026-09-19T14:14:13.554355+00:00",
+      "finished_at": "2026-09-19T14:14:16.064636+00:00",
+      "normalized_rows": 13388,
+      "normalization_retrieved_at": "2026-09-19T14:14:13.554355+00:00",
+      "artifacts": [
+        {
+          "path": "raw/calibration/usda_fea/cal-fea-2025.zip",
+          "sha256": "99750f549a3dd84222934dae77767724968a86b36f2cf15b3985bb6f0e863b8d",
+          "bytes": 6501079
+        }
+      ],
+      "normalized_artifact": {
+        "path": "normalized/usda_fea.jsonl",
+        "rows": 13388,
+        "duplicate_keys": 0,
+        "sha256": "05b451f676fea4828eb42b7cd2b62d229254cbec6675916584c4528ef01759d0",
+        "bytes": 5189771
+      },
+      "free_bytes_before": 11069894656,
+      "request_count": 0,
+      "response_bytes": 0,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 0,
+      "duration_seconds": 2.51
+    },
+    "cdc_places": {
+      "status": "pass",
+      "started_at": "2026-09-19T14:14:16.065908+00:00",
+      "finished_at": "2026-09-19T14:14:16.899084+00:00",
+      "normalized_rows": 8871,
+      "normalization_retrieved_at": "2026-09-19T14:14:16.065908+00:00",
+      "artifacts": [
+        {
+          "path": "raw/full/cdc_places/places-counties.json",
+          "sha256": "0652dcf8c579748b9f49deae497e0f80b149aef7c8a0c90132bbcba2646bf94a",
+          "bytes": 1815768,
+          "cache_hit": true
+        }
+      ],
+      "normalized_artifact": {
+        "path": "normalized/cdc_places.jsonl",
+        "rows": 8871,
+        "duplicate_keys": 0,
+        "sha256": "9a31addaf87b1e73031fffbdb92e70f246fc7d23a0a0aa7079738ad0b21031a5",
+        "bytes": 5667549
+      },
+      "free_bytes_before": 11021676544,
+      "request_count": 0,
+      "response_bytes": 0,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 1,
+      "duration_seconds": 0.833
+    },
+    "eia": {
+      "status": "pass",
+      "started_at": "2026-09-19T14:14:16.900205+00:00",
+      "finished_at": "2026-09-19T14:14:16.919593+00:00",
+      "normalized_rows": 310,
+      "normalization_retrieved_at": "2026-09-19T14:14:16.900205+00:00",
+      "artifacts": [
+        {
+          "path": "raw/full/eia/electricity-2024-0.json",
+          "sha256": "538fe27a2258d679239543e741e78bc8575b079028d8d59c3c8f644677eccd61",
+          "bytes": 61184,
+          "cache_hit": true
+        }
+      ],
+      "normalized_artifact": {
+        "path": "normalized/eia.jsonl",
+        "rows": 310,
+        "duplicate_keys": 0,
+        "sha256": "8a33ec49918aababa9fdf8ee7e00e5a18de1055cf46ddcf57c783e306f1a1dfa",
+        "bytes": 138781
+      },
+      "free_bytes_before": 11016142848,
+      "request_count": 0,
+      "response_bytes": 0,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 1,
+      "duration_seconds": 0.019
+    },
+    "epa_airdata": {
+      "status": "pass",
+      "started_at": "2026-09-19T14:14:16.920523+00:00",
+      "finished_at": "2026-09-19T14:14:18.545169+00:00",
+      "normalized_rows": 19583,
+      "normalization_retrieved_at": "2026-09-19T14:14:16.920523+00:00",
+      "artifacts": [
+        {
+          "path": "raw/full/epa_airdata/annual-conc-by-monitor-2025.zip",
+          "sha256": "7af948b3dcaf2d214e7d8fdcfb8ab7b4b6dd9865a43ead6f1e21955bcc326cb8",
+          "bytes": 3785819,
+          "cache_hit": true
+        }
+      ],
+      "normalized_artifact": {
+        "path": "normalized/epa_airdata.jsonl",
+        "rows": 19583,
+        "duplicate_keys": 0,
+        "sha256": "a75c3627ef2e95b8d7da777f50ab5a5038471f27ca33fc32072327c27cbd4d0d",
+        "bytes": 13528098
+      },
+      "free_bytes_before": 11029532672,
+      "request_count": 0,
+      "response_bytes": 0,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 1,
+      "duration_seconds": 1.625
+    },
+    "bls_laus": {
+      "status": "pass",
+      "started_at": "2026-09-19T14:14:18.546526+00:00",
+      "finished_at": "2026-09-19T14:14:22.496601+00:00",
+      "normalized_rows": 157104,
+      "normalization_retrieved_at": "2026-09-19T14:14:18.546526+00:00",
+      "artifacts": [
+        {
+          "path": "raw/full/bls_laus/2024-pack-000.json",
+          "sha256": "e867090b5a6da8e1113cbf56d96a19bd639377bd7e9ed92e4dfc393d0e5c1bbf",
+          "bytes": 54324,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-001.json",
+          "sha256": "0cb4ec1626f013b4123f8450e32e350ac093873171c32d210f1c7a00575d3226",
+          "bytes": 54400,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-002.json",
+          "sha256": "6afe3d9f024dcb0185b37131cc297eefac8c15ee02d650e6ed079f50da187225",
+          "bytes": 54262,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-003.json",
+          "sha256": "441f3d708cae085808e85ddfb9728878eb645622511769bc2652e5c55ce27b20",
+          "bytes": 54345,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-004.json",
+          "sha256": "7a58da1e9a852616ae457da4ac81dac192ab683af2bfa660d32cd574080b017c",
+          "bytes": 53469,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-005.json",
+          "sha256": "0db6e391086621444ef777290afdf11db29ac999976d4c9d105561d98ddc5a23",
+          "bytes": 53301,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-006.json",
+          "sha256": "9c706794b2486fb52da216c6b2975c90ddc28ed670747e21a940c34065584a43",
+          "bytes": 53349,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-007.json",
+          "sha256": "ee466cab2836736c8dd3cdebf353694f0d40924ca5318d75653a7d4d171dd91e",
+          "bytes": 53487,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-008.json",
+          "sha256": "9350b78b427459e2618be550a2757265f583374d965b84148bb767fd9ddc5245",
+          "bytes": 53429,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-009.json",
+          "sha256": "0fe268bf8ed2cd68bf4fd34cd21aa94decbd30387daec8d228dfb024a0177e2d",
+          "bytes": 53303,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-010.json",
+          "sha256": "167df85261f892d624e3dc10cfafa52d716b4145b031877eaaffac6b0f07ba3d",
+          "bytes": 53149,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-011.json",
+          "sha256": "44ff1359de60d90160d9a5712e09b76eb6ec0fcace703dd025c1c6cfcc336e2b",
+          "bytes": 53109,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-012.json",
+          "sha256": "ee8b45c9ba1ce107d1306f339bee71b64a0ba08fbfb374498632db19b15c8db4",
+          "bytes": 53590,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-013.json",
+          "sha256": "64e8744f86a3e0a6c5afc3c063d12dd98b25e4e92cd544c686916ada5bfccab7",
+          "bytes": 53371,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-014.json",
+          "sha256": "0d22228149ffb98d8a45274a0bfadaffefbc29fc6a9bd518b14c5cb090f9611a",
+          "bytes": 53251,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-015.json",
+          "sha256": "e412548a9a18a08993b5caefbcb20e7c381dc1e06b1f01ccfc47097ebde3db56",
+          "bytes": 53302,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-016.json",
+          "sha256": "e33f3ca461785ee33309393bac5f1c755a01aaee1c93a396934e21fc57684df4",
+          "bytes": 53199,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-017.json",
+          "sha256": "43edf27af916da84ad43661d3cc996c58a4ba239f7c6ac5815ac3b645acff4b4",
+          "bytes": 53238,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-018.json",
+          "sha256": "b10cb87348dcc861119c15b2dcea4a9b453b05202c142fe09cf7b6cf5a606c64",
+          "bytes": 53312,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-019.json",
+          "sha256": "32a35c408cc9edf192132541315a77da62375281bd19aab7b653704a18ee2975",
+          "bytes": 53520,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-020.json",
+          "sha256": "03e9b83c37ae2cfbf9bf8526352e6fe41e410d87b9e10e97976a90d0c4431941",
+          "bytes": 53635,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-021.json",
+          "sha256": "d67d470268cc4755ed1b0da8e577b4e166263de5d9506f2a0449241410a35f23",
+          "bytes": 53792,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-022.json",
+          "sha256": "313d3dff8b3407185982549131f75b4e3cb507d0ce739f10bacc51a147847f0e",
+          "bytes": 53855,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-023.json",
+          "sha256": "3358af8cab1b7c782c4687a1510eb7b53129c2d86e9366c30d63d46cf72a5bd4",
+          "bytes": 53771,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-024.json",
+          "sha256": "fdcbacf6645ad030fe8adb23a3eac520c55662918df33196fe476efe33856f6d",
+          "bytes": 53135,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-025.json",
+          "sha256": "948e424da790805f3bb3f2fb832a864473f50df79bd4a690e05f20bd0bb9e12b",
+          "bytes": 53463,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-026.json",
+          "sha256": "c215568180f71ef5fd7e33767e6e73325f0d42d94a7403f744ddc78d705ac0f4",
+          "bytes": 53251,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-027.json",
+          "sha256": "e5ff8fc688049ab4f371b98aab7b21af7e5dafd9eb502a46c21e4173e393eaf2",
+          "bytes": 53242,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-028.json",
+          "sha256": "d0520054f4cd4d7caa0c2e2b56f2f772e93588dfd57419c2a309cdececcd9a86",
+          "bytes": 53274,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-029.json",
+          "sha256": "9b2593aaf5493ee16d3c712386a852cf7189646a4e3b2ef71011fde93fc76010",
+          "bytes": 53859,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-030.json",
+          "sha256": "7ac19001b765160fcbf1768239e8bbd98d62ec1693e3a23f47994e1a64ea3c2a",
+          "bytes": 53619,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-031.json",
+          "sha256": "644705f0df4777123796f195d80d1b09c134ea4e93ca0093a7b4fb6792fde96f",
+          "bytes": 53415,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-032.json",
+          "sha256": "0c08037a497d76e8d5d50c55f2b5d6ac30eaec8a0b973a69bae3324d53c8fd24",
+          "bytes": 53500,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-033.json",
+          "sha256": "7260d56d3c4c235d5999909b5b2b2fbcf6bbb38b621c84303a5728112074c7bb",
+          "bytes": 53812,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-034.json",
+          "sha256": "b0c0fc14a3c491e2d8e130ba4962259b8d4d64e60b46c46afb72da48b3330429",
+          "bytes": 53658,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-035.json",
+          "sha256": "bf6ac3fce168b79d37009bdd0db2da20297b0c0ae080b74f1d8eb7d5b4714231",
+          "bytes": 53316,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-036.json",
+          "sha256": "75c2bf18e0958aaa5ac987fdb16fcf7bd5eeb36d320e0a93357413ab8b557763",
+          "bytes": 53280,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-037.json",
+          "sha256": "82ad9dbb0ca42966556389826e2f0137a216fa9c150e8de96453e7e39a8c54eb",
+          "bytes": 53463,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-038.json",
+          "sha256": "3cd34eed8a156551862d29fa516b5164a8d6be4058b511dadc8cdbf0b8cfceea",
+          "bytes": 53352,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-039.json",
+          "sha256": "312c198717c568b13e3e669587c5bfa32971a59767f705fcd842b613f38f938e",
+          "bytes": 53396,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-040.json",
+          "sha256": "6662812fa1e6ecd8c23e33488ae016ae6b6652dd4f61aa875592961594ff14c1",
+          "bytes": 53477,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-041.json",
+          "sha256": "cf99dc6d456389cfea3877e0ce7c5090b59a6de27f80683b0cedb8637cb52de9",
+          "bytes": 53351,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-042.json",
+          "sha256": "c291b8d432e92f3e428e5f51a36f609e66375bc9741dda6b361a871601846656",
+          "bytes": 53259,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-043.json",
+          "sha256": "78c29519e291189e0ca687a299745f255379c535d4eddca25ba2ac94bc01bdd3",
+          "bytes": 53328,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-044.json",
+          "sha256": "b5fbcc7823ede070256b10d3a1b36c629163e88e0cfd2a26403d48b5a999cd07",
+          "bytes": 53242,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-045.json",
+          "sha256": "627ef08e51e7a64d733d7d2190f2ebb70aa2831ef04aa9096f2c5cee57d0ef77",
+          "bytes": 53186,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-046.json",
+          "sha256": "56274be8fe424e488828cfdf5883893aa1d20d27cc67e333596290ff79c02536",
+          "bytes": 53292,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-047.json",
+          "sha256": "43fbed1f281f8ae0f246906412b35fe47046c8931b50e2841206994cd200fb44",
+          "bytes": 53227,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-048.json",
+          "sha256": "4d9a79ab5fc1febb924eaa2c98e8ad01bf1ad8a7bf7f3b732b6812944005049d",
+          "bytes": 49594,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-049.json",
+          "sha256": "2abe24c69d70720481d85aa0c97be47071c1e1f4c29b3bf7262625d06ce9e718",
+          "bytes": 53233,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-050.json",
+          "sha256": "74c721db4678f3637e01a49b0187d56e3c8712eefd55c0a7d0b1b83be6563798",
+          "bytes": 53238,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-051.json",
+          "sha256": "ee020cc062896555b9e47e99380da92f6694a3bb4112f2a790aecf8ca5159b06",
+          "bytes": 53305,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-052.json",
+          "sha256": "0fa04b026c295263e38f5b36ea6ec9f9ee45f8d67e6c0617069c72e3d84dfd20",
+          "bytes": 53244,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-053.json",
+          "sha256": "a968db1f4b95115aa4c27fc78d848e1395b5bffabebbf3636f12e00e830ea26f",
+          "bytes": 53447,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-054.json",
+          "sha256": "d78822ee3efabebc4f872612c45b694bb20a10113e786127b0676519ab387bca",
+          "bytes": 53261,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-055.json",
+          "sha256": "a47f09fb31ffceb2a0b7972e5c65e1c5a7441938f12771752ae07d827df12a23",
+          "bytes": 53521,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-056.json",
+          "sha256": "18c43a6054265adb4f0e42e0be26309093ba1c77a0995d3291543b9c34612532",
+          "bytes": 53464,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-057.json",
+          "sha256": "8e4bc6c6b9f65c6d86d7e6870cbc33eb161a19d69b3829acf2549990ce1f8302",
+          "bytes": 53280,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-058.json",
+          "sha256": "0ecb51db03b33e6d087bc46221997b294e112395acc64bbd80c65566f7de729a",
+          "bytes": 53321,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-059.json",
+          "sha256": "3a0f67e00973bae0b90ad261ac00340ab38a617afecbe384039245da1367d1fe",
+          "bytes": 53448,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-060.json",
+          "sha256": "fa6b823d97b9761acca10808a789a351a4e73cf8b2441fe844892ea9bb655194",
+          "bytes": 53413,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-061.json",
+          "sha256": "4139ca7ff787eeeec1e9ff2c95b47cbffe109f0e9a847d9d8ba4e2e7362c6aaa",
+          "bytes": 53450,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-062.json",
+          "sha256": "f2856fc4b17b0badeebb3cc97be3fde107a26b58bed10bf39f31835f9f2aa9ae",
+          "bytes": 53496,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-063.json",
+          "sha256": "144aed90efd89618df115fb63047b697aea7b0494dd5c3562384df39d5e829b6",
+          "bytes": 53582,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-064.json",
+          "sha256": "72ec29e237173a1b1138dcdc404689bcf1f2ac55721d5911de822f4d81bbd94d",
+          "bytes": 53322,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-065.json",
+          "sha256": "8b2358dee42ed8adca22d92bb2cdf055672897fc151dd6c684fa29fe106fe593",
+          "bytes": 53393,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-066.json",
+          "sha256": "af12e92804c9844ff9ee8ab8033eef16bbd1eef58018b6a9383e38fbdc2b4503",
+          "bytes": 53299,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-067.json",
+          "sha256": "b5b30b240a91537173ec444b999511a6888328a74bc7c406bd4e7e9e68b8c2c4",
+          "bytes": 53339,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-068.json",
+          "sha256": "ffd77a33b7e81b45db48d760dacaa688913524727385931a82a2a2184b8bd874",
+          "bytes": 53268,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-069.json",
+          "sha256": "bd66d0a481f04e93581549278ffb5f20cf3ae8116ebdf423e63c591c19a0ec71",
+          "bytes": 53283,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-070.json",
+          "sha256": "074194f957df5dbd03ffefd1ebfaec8e4f9f6b87de365bf47c2323a94b089878",
+          "bytes": 53123,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-071.json",
+          "sha256": "e6b703afcf6e98df250b71ab77a3e714eac3ac8cc805c5434756ff2f01c7e1a8",
+          "bytes": 53314,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-072.json",
+          "sha256": "7ef80b35dcdb11e217bc0b8fff8750e95307f49ac50c5f6cf4e36dd57498970e",
+          "bytes": 53195,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-073.json",
+          "sha256": "308f5b8a048f458d7a48a135a3fba813cc8a45566c084576f11488889a7f8f5b",
+          "bytes": 53302,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-074.json",
+          "sha256": "d9fb24c9f95c5fda366bc732fbbf8318a020ea1fc252ffcec201b17e9201fdb8",
+          "bytes": 53255,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-075.json",
+          "sha256": "7ae630b5eafb00804413ae64622e5d2cd663e7c2c54eb4b0dfea4a58a6d93077",
+          "bytes": 53251,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-076.json",
+          "sha256": "b3c9fad022cf8ba98b6e52e8f4c33386553d3454f34af45b713de74b3af2e0f4",
+          "bytes": 53072,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-077.json",
+          "sha256": "17d583217bb663b1f772fedc495b66fb0b0a6da24aacd96cadb35a1d3db79a2d",
+          "bytes": 53239,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-078.json",
+          "sha256": "4a0e324afaf871b9927db58ee0f5d601e7ac664c727e0c4ee4ae5943858fcdd0",
+          "bytes": 53037,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-079.json",
+          "sha256": "134ed734daa034e72ef6249bdab305bfee2f590b4329a4eefc5c672cb955daa1",
+          "bytes": 53196,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-080.json",
+          "sha256": "e11767c1cb9e6170ac824a7e5815065851d9ccbe1178402edc787bd49adfdcc8",
+          "bytes": 53091,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-081.json",
+          "sha256": "c22fda27714e0a1312b86d16571f4857e31602f393b472072b6c5c2ff1b117fe",
+          "bytes": 53163,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-082.json",
+          "sha256": "2e1d3b5241866a00c42aec65c6c857d82b1b11d5fb147ce5322ba49b296d9da7",
+          "bytes": 53185,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-083.json",
+          "sha256": "0934244ebbd99f48d1b4272403d1d52e7d1a6654c637e824a4f34bde72ffa01c",
+          "bytes": 53144,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-084.json",
+          "sha256": "8e3e94971ba767f1160b48c598cc772ba0d18069651c96ac75eff0ea4fa2115b",
+          "bytes": 53291,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-085.json",
+          "sha256": "5570941896dc937253dc76cd977390a85db8f715e1ead756c23f559add35438b",
+          "bytes": 53270,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-086.json",
+          "sha256": "0544c8862fee275a5bab5d213cf1cac480c4abc11eeaeae5b1f5dfc587b9e521",
+          "bytes": 53280,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-087.json",
+          "sha256": "ce41443bdfd9d73c34776133716ef19a1eeb617992c879de4e3d2ee626174d32",
+          "bytes": 53288,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-088.json",
+          "sha256": "cb063b8f0104e025255772f02f80b17f17c17f417df996b4eac01479fd2303c5",
+          "bytes": 53345,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-089.json",
+          "sha256": "2d1f1242575f445b38cefad13f74cd67a6b0d1aaa49733f12989daa587890572",
+          "bytes": 53246,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-090.json",
+          "sha256": "35254a92e854e3d137dcefa57b4229dd9cfe813901b82afe080ed242f7c41443",
+          "bytes": 53276,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-091.json",
+          "sha256": "f9f2cc92e645f33af73c67e262d83d97ccf6f502ae951e3e2303acaa6c2e9ae8",
+          "bytes": 53251,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-092.json",
+          "sha256": "342f9667332f999c8456447d6edf9d58961158f88ffee13c1353ba161b98e449",
+          "bytes": 53261,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-093.json",
+          "sha256": "cdaa55e3ae16465341caaf12ddf5311a43ce87d8ec4c0f219cc45e221ba4a98f",
+          "bytes": 53348,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-094.json",
+          "sha256": "93fa8d5df32bc862a40c2faf602343a22fea8af9f5865b9a615ce724660c95ed",
+          "bytes": 53310,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-095.json",
+          "sha256": "33f3e8d44b266b22fd40903e3bbd2fc170a006b1dd3d4b0b1241026bac3b8b04",
+          "bytes": 53454,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-096.json",
+          "sha256": "5e704b9335ad5353a905975199a7a28346ff62a46d42e485c50808ae42609c45",
+          "bytes": 53345,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-097.json",
+          "sha256": "f7901d8735927aa8bba9f29f2e6325e24b1b3a9772722593ac097ee25c393606",
+          "bytes": 53445,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-098.json",
+          "sha256": "906776c474c9ccd550976e3e84b6868b63fd62edfd2ac327f377b1735de722aa",
+          "bytes": 53414,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-099.json",
+          "sha256": "2ad300c6f1c1ff182124b2dbe4388dcfd4135f04238fb7e8688a34689d8c9d4e",
+          "bytes": 53583,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-100.json",
+          "sha256": "889e917ae14885e9432589dc8b92fec91d16348afe54e8d1d14b523e2636f729",
+          "bytes": 53616,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-101.json",
+          "sha256": "488dc0698a201da0abd2b5c3453884d147ae71d02e96d8bc37dee2450597f4f1",
+          "bytes": 53635,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-102.json",
+          "sha256": "91942704b032156bf48fb8cc4f7966f5619ad871971d51c3435e9ae1e70f2149",
+          "bytes": 53731,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-103.json",
+          "sha256": "ff898dec1ac16a04c9179917a3dda7514184a71cbcbc13514182ab053af8957f",
+          "bytes": 53446,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-104.json",
+          "sha256": "31e81cd8d4ecf9cfae1c49bd2f2285b6583d2add3d150a8f1eee7e1ea5104ba1",
+          "bytes": 53470,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-105.json",
+          "sha256": "84904a7de52b01a846c31a231d1dd4a1b4ec162e90093bb7d9fedfd38de51b2c",
+          "bytes": 53513,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-106.json",
+          "sha256": "b5a7f837f023ae84e6530efefd3e5b962a724a4bba0f55d986c321e282a0a7a8",
+          "bytes": 53435,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-107.json",
+          "sha256": "d01b72887041152ac7d1303dc6c2fbd7ec5ffdd27d4f9f1e1cbe60a7b0c28268",
+          "bytes": 53507,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-108.json",
+          "sha256": "2b693b1ba437048e3555231e27f16adcb825b2281c8415f916112b5c91b583d9",
+          "bytes": 53401,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-109.json",
+          "sha256": "3878a2c2373470116366b7d021f7418c7964fdf9c1d6f910d215c662718c9e97",
+          "bytes": 53566,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-110.json",
+          "sha256": "d3a50db51a0bf232258c5dcb0c09707db04417f1e1967a5d1cb066007b78fec9",
+          "bytes": 53388,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-111.json",
+          "sha256": "caae5c82fe97f08e9694f13157069d5a489e42095425a91c70c9738db6e3e3d5",
+          "bytes": 53416,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-112.json",
+          "sha256": "ef1f7028bba56b05f33385933fe7ed9ee7d5b576adad3df5a1627751a86b38cb",
+          "bytes": 53181,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-113.json",
+          "sha256": "552fdbf862f112a0953dd82b1be0479a37bedc4ed0c18e9c6f6bbcbd4abd5daa",
+          "bytes": 53381,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-114.json",
+          "sha256": "8ac95a994f991b7b4633054069f61331e8cb31fad729884989a8ef132a9cd164",
+          "bytes": 53309,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-115.json",
+          "sha256": "9711aa30296e780d0ba93597008d102340bedb3537b5ee015062927895749e3b",
+          "bytes": 53363,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-116.json",
+          "sha256": "df537934c92c3cc451c566a15789d0c8a505f1d9be31b5b81c7fc195f7f1bc4c",
+          "bytes": 53220,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-117.json",
+          "sha256": "21ee70c56953b74c0ca7f7e986968b8d81380fdafff7300c48b34a388e675b44",
+          "bytes": 53236,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-118.json",
+          "sha256": "59b59d69977233b8c75a372c5e5aece3cf8d0519b978790c63967b220e98f1e2",
+          "bytes": 53247,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-119.json",
+          "sha256": "2dcfa78e13a349a7a75326dfd3b20d052f4c04959063e173707fd382df681f89",
+          "bytes": 53366,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-120.json",
+          "sha256": "c3e50fee5d5a7820c6f9270da3400d11ae3d7dc988fc6556df68318ad5f25ec0",
+          "bytes": 53292,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-121.json",
+          "sha256": "f4ac23f0a69024827a6c15d4f32102b2d736b27ca88d1addf9b73059a5317370",
+          "bytes": 53276,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-122.json",
+          "sha256": "505a00ee7c65c14a663d67d8656515539dde579ecc48e58a27e7b9093cd808ab",
+          "bytes": 53192,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-123.json",
+          "sha256": "2708e69ac27e8e598452ae38c2c56a5b93319ef03e3843cc968ff6c834085489",
+          "bytes": 53315,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-124.json",
+          "sha256": "d2e5c53eecb1ea51364fe7a501668b5f7d3aed0b01e9176cf09b0de18dd1981e",
+          "bytes": 53373,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-125.json",
+          "sha256": "6ba921e6c62051745c392095a71338e46e815e77148d66914e2c6ad6f4405bf4",
+          "bytes": 53225,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-126.json",
+          "sha256": "4a30b99ca7ef9ea6676a759bafd54dfc35174b082ad89610b93d44e95bc9f0ac",
+          "bytes": 53390,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-127.json",
+          "sha256": "4b7fcf94d0bb0f715ba0c7d448f86f6b39c6730a0ea0ea6a21372917ad88ab10",
+          "bytes": 53265,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-128.json",
+          "sha256": "b730549eb93ea1cddbfdf4de0e87e4b9bf482bbe7a4978365a8929c06826c97f",
+          "bytes": 53215,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-129.json",
+          "sha256": "009fea8b4db020ada08719251459bfa1866424b1cd7de9890dbfb65293fc88ec",
+          "bytes": 53294,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-130.json",
+          "sha256": "3ded948b078ee406a680ec736971a58efbf12c20722f09d3d57dd58d1980056a",
+          "bytes": 53343,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-131.json",
+          "sha256": "b39e70c25bc87cac1cc9fdd97231b38e6f9ede73d112165e1fec3256175e7032",
+          "bytes": 53258,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-132.json",
+          "sha256": "5fb11248add2aa5227162c821f755e9dd3540af10acfcb58fccd07169388db72",
+          "bytes": 53115,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-133.json",
+          "sha256": "812102a2473c597533f5e58e3be1bcabb2214577d5a937f86ac249064682761b",
+          "bytes": 53104,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-134.json",
+          "sha256": "2afbd3a5524c76dfac698d606575ca3e28cbec01ebf5c00db86aec6b0afdf6bf",
+          "bytes": 53077,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-135.json",
+          "sha256": "05fce9426263f7befe70c7e9423e45351b8079fbad52e81b947c0382f7a7d305",
+          "bytes": 53090,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-136.json",
+          "sha256": "bc845865f82f44ade84b13cb4a72c35b6a7aeedd32526017eb3c7aeff7f69a3e",
+          "bytes": 52909,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-137.json",
+          "sha256": "f0fc30fa74817ab6139595fe99ae97ee64fb88863a2e6da817889bd783b1ce74",
+          "bytes": 53069,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-138.json",
+          "sha256": "d8ef7e939c78b3d075441e50ad21125fff92c09cfabd7fcfbbbb01050b4f64a1",
+          "bytes": 53164,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-139.json",
+          "sha256": "836ed11f9291935dd6ccd434f5c7bf3efc6fd4a5ce3adf9b236c6704a4ab5634",
+          "bytes": 52981,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-140.json",
+          "sha256": "91b3119cc33eb47529415c7e915fbc7bf90aa3733b0693423180ea7c2119435e",
+          "bytes": 52944,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-141.json",
+          "sha256": "9d730ddb003c4a0475685376137329ef4557778102bfe3154aabc392a39fad6c",
+          "bytes": 53070,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-142.json",
+          "sha256": "a7d815b7f23c6dafc72127d2dbb493a79bedcd22188208c5b91f694481144889",
+          "bytes": 53178,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-143.json",
+          "sha256": "56d4e2b3a02fc377ccd5246770d5860e5ee6b746e8a136d5a101ce8aa6737c07",
+          "bytes": 52975,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-144.json",
+          "sha256": "16dc17ecfd38549acce610a9e8f382782f6026ab500bb78d2904ca8908965560",
+          "bytes": 53266,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-145.json",
+          "sha256": "240d4480ac8cf753af18008ec92a2671f31d2cd12d559ecb3f0d7dee7563ab71",
+          "bytes": 53506,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-146.json",
+          "sha256": "7cfb6cccf0b003493ae795526ff8a1501789290de1d7f0a5e390713364576de4",
+          "bytes": 53809,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-147.json",
+          "sha256": "a78ea3819f6a9cdd2d4bbf43bd708579a57bd156aa2120dfe41ae2e4f73ab23f",
+          "bytes": 53900,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-148.json",
+          "sha256": "90d60d97ae571b37818d659df969deffa736acad80e9a43aad4e194f25c17555",
+          "bytes": 53178,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-149.json",
+          "sha256": "0ba0b194b7d82e34a0eda7a97b6a41b87c3b04153109722c1a12fcc35c0f99d9",
+          "bytes": 53384,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-150.json",
+          "sha256": "a313a436c65c9e68386548093626e8cae7ac465de10a5b2f2a26aef63685002a",
+          "bytes": 53450,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-151.json",
+          "sha256": "0e3bd4b275059a5cfb381728c2f422d04b9be851d16a115a235c92420f8364ca",
+          "bytes": 53589,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-152.json",
+          "sha256": "a9b91608ba5bbc4a8071920d70867a869f1631e85c8e71501ec25464cfbc1f18",
+          "bytes": 53618,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-153.json",
+          "sha256": "f7338640a71a26a6a4ad572e1850a1a083008544261bcd4b0b9df0d12e68d08c",
+          "bytes": 53764,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-154.json",
+          "sha256": "270ffad88768d581f26c3c1ae5440d6547c3828f2f615b52b3eacf582c122a86",
+          "bytes": 53580,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-155.json",
+          "sha256": "b26cb118a309e923b02e8c17d11265cd71e2b07d78c99b37add4b43133461e30",
+          "bytes": 53471,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-156.json",
+          "sha256": "be81fac83d0f76278d7d0a860fd420346c65b746636f185d72f85b72b8e02c83",
+          "bytes": 53484,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-157.json",
+          "sha256": "e461cca8fae91d160424064f087abff6bed1320d2aa38f80c7541352e8cfe5fd",
+          "bytes": 53486,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-158.json",
+          "sha256": "b796d81a8dc4a937e50c06261d46c351306c32ea719cef479f48863f1362dbf0",
+          "bytes": 53544,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-159.json",
+          "sha256": "396839cdff8a1e86126392dbec4bdf77158c46c34b1fa4fe704fd8b6cf1a1bd0",
+          "bytes": 53488,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-160.json",
+          "sha256": "8a2de98fd68ab670e14b0a8c1806155ca2bc24738e8bbb688c8db7e709a242b2",
+          "bytes": 53467,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-161.json",
+          "sha256": "9fcfc9f3c36a1447c45dd8ee0349f8bda09da1161092fa00663ff8061990b5f5",
+          "bytes": 53466,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-162.json",
+          "sha256": "09b1dc81837d7a5ec6c70eb02b1b650e9452a488494d6950db5981f94df68baf",
+          "bytes": 53433,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-163.json",
+          "sha256": "5eaaf76bf01c854f62dd216abf836d0a5dd0aa89641f10e03facd65722ba7ee5",
+          "bytes": 53196,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-164.json",
+          "sha256": "109e74ac74db7a339beac7899bfa948a36234add31296c19a4b75b3463316c0b",
+          "bytes": 53085,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-165.json",
+          "sha256": "10b40338f561a28995a42cca092d5fc1e8e72cb700f6cde9be6d1e2d5779c331",
+          "bytes": 53059,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-166.json",
+          "sha256": "0383200e769b188fe385783311b694945733b58d11b06a632e142c91a3fa2453",
+          "bytes": 52959,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-167.json",
+          "sha256": "1a8f0d24d3d054454cb5394236b32a6638f36619ac6e6796f349d1dfe10d1e6b",
+          "bytes": 53245,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-168.json",
+          "sha256": "e07c659a773ed618f302200f9a0d3f2c1d94b907e1825a4bd8614c33bae3c70a",
+          "bytes": 53553,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-169.json",
+          "sha256": "2d014aba7de616d3d8c59f849e54aba075b03e305ef6c1a078a88b08b4c20eaa",
+          "bytes": 53644,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-170.json",
+          "sha256": "d8f2ffcf570740026836a6e041ab74c975cef13fc36bde88f2aa4f889b62d782",
+          "bytes": 53492,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-171.json",
+          "sha256": "c4b0fdf05d70590e13431154a8c8259d50726f76792d4bb8f5852ae730379172",
+          "bytes": 53654,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-172.json",
+          "sha256": "af2b7b980bb4e249de3779d89742a8c8f0a1ea52f5ba5df40a44a97aab5f66a0",
+          "bytes": 53410,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-173.json",
+          "sha256": "6a1c2f6ef7e0e514cfc3f65634174ee2d87ba857f5f8df98cdb0aff43eeb22a7",
+          "bytes": 53632,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-174.json",
+          "sha256": "7dd5cddfd8b72e23ce5edcd924089d11e4eecfa7b670056b4ca3c4e73d529205",
+          "bytes": 53424,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-175.json",
+          "sha256": "92efe73f6c5a8f104af1d15c9466cfa492e802cc1b20ee906ba8c2c774b915a3",
+          "bytes": 53301,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-176.json",
+          "sha256": "47607b2db37b1d850e88587a174b92f4100033d749620eddf6f95613f33d1ff5",
+          "bytes": 53258,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-177.json",
+          "sha256": "9447120b0c1d46e15217a6d4a8163c70fdc7ccec54e8c623be6632c6cc378693",
+          "bytes": 53183,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-178.json",
+          "sha256": "de1697a1b9044f8565e2da146d713c2f9304734e741d332bc083bb0fcb5f4499",
+          "bytes": 53275,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-179.json",
+          "sha256": "c4086577a9248a755f1c2c1e389d56cf39756d23bf706dd1378b2bc45a344696",
+          "bytes": 53400,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-180.json",
+          "sha256": "71405f839208d66ccb1fe74047a4ecddd90e29106982fc0b9cf7f1f9e5bd841a",
+          "bytes": 53351,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-181.json",
+          "sha256": "416d5747c96ddaef0136e7a2d075bbea522fb626841c0be8a9cedd15dbe3c2cf",
+          "bytes": 53433,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-182.json",
+          "sha256": "09a934a65913b99f1051e2d64d06b543f0e3ea70463ce7c130a3d3982e71e546",
+          "bytes": 53539,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-183.json",
+          "sha256": "0fe972532d93d47e99ad57253f9cdb01183c3ba1739a577713741ae35b4f2f56",
+          "bytes": 53484,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-184.json",
+          "sha256": "b59e0543c49715064a6b31589d962234bed9cd07942c898f4583aa30840aa993",
+          "bytes": 53587,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-185.json",
+          "sha256": "f65c91eb1db9e8b339e3abb23b8c0dbc10651f3b55378c5bc96b9034cbfddfb9",
+          "bytes": 53654,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-186.json",
+          "sha256": "cb863611576a68200b0079861719c3364d0520b8f1a3c48d0b4f2559734f44a2",
+          "bytes": 53560,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-187.json",
+          "sha256": "9e9c31441b80d7ec144df5bbbb386a05d1254a248304f7e9f1047a287e0b5316",
+          "bytes": 53653,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-188.json",
+          "sha256": "113358f20f94f0d42e88ffe20f977ac02527fee7954154a398373b9f246004ec",
+          "bytes": 53439,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-189.json",
+          "sha256": "8383199796d07bfb99ce44682204d610e5585160eb750311138da1d942f814e6",
+          "bytes": 53591,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-190.json",
+          "sha256": "d0d916bb66da68385ec5c61bd37746caa635d122b7ac93dcd282319bdb20d8e5",
+          "bytes": 53486,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-191.json",
+          "sha256": "f189cdd18f3c55abfa7455f2cb2856b974979771bbeabc46c2d0fb734b2b59b1",
+          "bytes": 53563,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-192.json",
+          "sha256": "883b86fea3a2cc66d9f13a357794a2542592d1d7b0ddbed2c1eb3f35dd0ec4e9",
+          "bytes": 53475,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-193.json",
+          "sha256": "22403afbb8820447357817eb13218e2a043266ae58e349e7bcc449c33295701a",
+          "bytes": 53218,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-194.json",
+          "sha256": "aefa786af546ae7c73e29213af9223b0359f7380186cf9ab210a347c130833ff",
+          "bytes": 53037,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-195.json",
+          "sha256": "c66c655c783696e1669c1182961389c8a7570a10c0efb5fb53db6575f7e8bc7c",
+          "bytes": 52947,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-196.json",
+          "sha256": "16bd3b914b76db5182f4f478c7c90dded598f575efd102fd92189abf093efc4a",
+          "bytes": 53005,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-197.json",
+          "sha256": "3b0027c374dfb28dab67a012bf5f34d68151d460f60e4e0d5c950caf46810fbe",
+          "bytes": 53098,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-198.json",
+          "sha256": "3ec6fb6b56bb1dd7702e8541f5a8e1c05f914cac1ea9f6c69c2872b10fb8f569",
+          "bytes": 53181,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-199.json",
+          "sha256": "a1c8e85c02b8659bd73baabe4910eb1aeba6c9e6d91bb7b2f1758c2f8c9b743b",
+          "bytes": 53379,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-200.json",
+          "sha256": "8a455d0afc1c51800c4fb0e9f412cfe1a767b5f7543f49177a36df8acb51f2ae",
+          "bytes": 53398,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-201.json",
+          "sha256": "e6496a1c4b5e5aae8040dec84ffbd456a608efb12cd77324dec496052e7c3fe3",
+          "bytes": 53378,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-202.json",
+          "sha256": "db071d401408da5dbd50a091feed8932ffcaaa0c9b6d0c59238ab30dd3fc8c10",
+          "bytes": 53311,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-203.json",
+          "sha256": "c4209aebc751df93fa2e762f767fd4848c919ae3e583578dadd978492997b837",
+          "bytes": 53415,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-204.json",
+          "sha256": "bbfe25c39eacd48d0b4ce0cb767801cf163405c038a80a48617847723e930a22",
+          "bytes": 53410,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-205.json",
+          "sha256": "1e1ac8a769922112ceeb38747971d376927417ac7014c20ff8e53c4bec6588e4",
+          "bytes": 53379,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-206.json",
+          "sha256": "8982891966a770578bba434260cfde829b66cc3f0ac751f85224cfef19dabfb7",
+          "bytes": 53316,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-207.json",
+          "sha256": "ab09c102517f20dc4b78f45bbd499a0f251210a8d91d10c9b1f063be5f79c122",
+          "bytes": 53400,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-208.json",
+          "sha256": "67e483f8613e3dd290de967ab1db4ecf6edb66774efb19ba97fe17d769e0a78a",
+          "bytes": 53305,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-209.json",
+          "sha256": "8d623871383f0e5e178244f1bf79537a09309ae220dec5410908835d6d950784",
+          "bytes": 53247,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-210.json",
+          "sha256": "52bb28aa4c6fcdac0c318863c86f99cbbddfa4655744828e2c904e9214008032",
+          "bytes": 53238,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-211.json",
+          "sha256": "94ea1a87a26e8ea37556734cd1eecad78d3f61045ad75039885ee389d7c07dc0",
+          "bytes": 53304,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-212.json",
+          "sha256": "cd36172e1edc2d2b6f28d2a8126e5f63daf1f4acffb51a370bcaba903c6baed7",
+          "bytes": 53239,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-213.json",
+          "sha256": "ac4650e1ee8db0acce719f13eaba5a8489ce479f8b2aeba13dd4c3879d667035",
+          "bytes": 53267,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-214.json",
+          "sha256": "eaa83ba20c027e8da55a006b4d34e5a2a5d40aeddd6fd69044802f79d51831b6",
+          "bytes": 53460,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-215.json",
+          "sha256": "d6132f8264c89b3643f9ad8e120efdc676ad63acd596b9ca030df02b42e4908d",
+          "bytes": 53256,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-216.json",
+          "sha256": "0d094aef7eda2dab050c1ad6a3c7728a4c90631d2c75b187164dba12a06e3700",
+          "bytes": 53118,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-217.json",
+          "sha256": "4d4ddc3f4f9f5eb16cd966e518220098e9b7ba0f4acf3e6eb7c1ff6921532dc5",
+          "bytes": 53210,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-218.json",
+          "sha256": "2109104488d7dcc3add6a257022f5254390069331b505c95db219c8d33251aa1",
+          "bytes": 53130,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-219.json",
+          "sha256": "f47c771afb47f7f2e0f63e95c8b10d017b6f7fa6a1d5ecfdfb9cd1ebf3fb368f",
+          "bytes": 53319,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-220.json",
+          "sha256": "1c940c9bcd6cc1df6c5714486aa13ca14baf7da31610b972cbca3d36b2171b51",
+          "bytes": 53313,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-221.json",
+          "sha256": "be2896e86546261577b5973087205019428663dede7c4357cda3d1eb17c9351c",
+          "bytes": 53170,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-222.json",
+          "sha256": "f969bc94383e10b21d8d95d122bb647fe37a9ebee9a2f61203b22a69ee75a342",
+          "bytes": 53178,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-223.json",
+          "sha256": "acd9403954b5aa0d77b44ac680e90d774c398c3c6f76ba118e9669941f8a24c9",
+          "bytes": 53232,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-224.json",
+          "sha256": "65863028532c7952458cfcbce021c154c82ff8b76a7b54f8b2d08f0505a2a0e9",
+          "bytes": 53369,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-225.json",
+          "sha256": "f383c50dd90689ae7cc8a525706321a4e3be762b7611e8440d5b7150dc820950",
+          "bytes": 53437,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-226.json",
+          "sha256": "91aed85ffdd41a3c8002fe15d5b501afda4db21d2826e1ea2be617ffc7e469b4",
+          "bytes": 53261,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-227.json",
+          "sha256": "38058382bd247f2bec7e63dcc316d1c7351ffdcae0d478d79aa2c7ca8d3e4357",
+          "bytes": 53206,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-228.json",
+          "sha256": "2df2aac0b5ab52838deadb9d39cb9542f8978fa2945057e2df0c918a769bc9f1",
+          "bytes": 53471,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-229.json",
+          "sha256": "4d4dc6e664e7011a72f7e8df39ea44d61a43791c722195bb3b772d97d41766d6",
+          "bytes": 53415,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-230.json",
+          "sha256": "56039bbca8a08b4f1d0e150ca9eaf9504a1b2fec054a9cc8d3bd01e17e2430b3",
+          "bytes": 53311,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-231.json",
+          "sha256": "1459793a8b283882e48bc0081216e3910eb5e5d5070813668d982aa591bb8961",
+          "bytes": 53292,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-232.json",
+          "sha256": "6067f56805b512d3806740bf2252a4d4a121ce7142f41e0b35ab6fe5182c685c",
+          "bytes": 53382,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-233.json",
+          "sha256": "9cfd6e67edbdaa38c9e5a0e25e598607a9ac12f44be398e6ee4ccc94bee46c8e",
+          "bytes": 53406,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-234.json",
+          "sha256": "223d4691a88d12483b8dc5acf109322a75f17cb8179d305422ad072ca5fcbc38",
+          "bytes": 53290,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-235.json",
+          "sha256": "2647c20d42a8a9106bb025688466c157ec39d9f03cb82ae0936e399459f90f87",
+          "bytes": 53349,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-236.json",
+          "sha256": "f2fbe643dbf089fb775e3d161ac0fd7b387376c92623061d51c05ee51b76a8e4",
+          "bytes": 53334,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-237.json",
+          "sha256": "fd1b8b51c7f822f79132b412260fb93a39260cf9d102b0aecaf2981c8bdd142b",
+          "bytes": 53420,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-238.json",
+          "sha256": "aaf0403d9cdb20a34a11e3a11450cc07f20a82af3ef550333630d6bb3f77c7af",
+          "bytes": 53264,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-239.json",
+          "sha256": "2e18ea0d0fc5a0d75980466e3883dfe859ce9913f52e831f9bbfd08229c79a76",
+          "bytes": 53446,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-240.json",
+          "sha256": "ba0e28520b536402f8c42772aa319d79a76f08e51c0282d20ebdde24ee6c2b6d",
+          "bytes": 53461,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-241.json",
+          "sha256": "cddcd36f15c5deddcf5ff023ddc8aef673e28b7111c6dece0fec6d51b10f674f",
+          "bytes": 53540,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-242.json",
+          "sha256": "20d9ebc297405041ccbb10d55423bffbcd9b1069008e2e3f781f8cb551339a84",
+          "bytes": 53389,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-243.json",
+          "sha256": "538d0c983d3201beac5aa67e1d954ab957b348ded57b7dc1eb154c8616fc1dce",
+          "bytes": 53564,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-244.json",
+          "sha256": "131645b37dfb8a9e960bde04f380bbe6a3fd1356207c7ae3ea2b1d3b87bce1c7",
+          "bytes": 53259,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-245.json",
+          "sha256": "23f07471fc7e8b8147d66e03362ebcca9a52ad3f6dfa724bb6c7cb068804dac1",
+          "bytes": 53396,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-246.json",
+          "sha256": "5e1e53928e34da6517637f26aeb184e9326365b2d56df0a1b128ece9a836d0e2",
+          "bytes": 53269,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-247.json",
+          "sha256": "79937a0c3be7e0d0461c31c4343e5513f6f52b44d1484269f696052bbb0ffb3a",
+          "bytes": 53237,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-248.json",
+          "sha256": "dd6a9c7e563f9117a738a8414e9eb0cf2e103c050e3461797376d7aa11d396e5",
+          "bytes": 53314,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-249.json",
+          "sha256": "4874936a8e83cc74e3afaa197ce58497ad012d69c165dcec8d8f153b4dcd4cec",
+          "bytes": 53431,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-250.json",
+          "sha256": "14648c549341eb18f350e68364b068e1d4b3f7d186723ca65d765c385ca09a07",
+          "bytes": 53379,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-251.json",
+          "sha256": "dd935c43d4df995cf2bb8db75f0933d42dc990b56b54a5b37ad9223b1dcc2c1c",
+          "bytes": 53481,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-252.json",
+          "sha256": "8d71cf85113dc230c21fc0df3b38e2e86155d6660d6fc79f5ca5263e4e5a094e",
+          "bytes": 53371,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-253.json",
+          "sha256": "7c27abd3957a9f11c615670eb63bf8caebe0c8a96cf51e451542870ec5c7faa8",
+          "bytes": 53489,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-254.json",
+          "sha256": "9ec72044a2c77ae4de5fd8649f3f6f3cb8bc50b9deb3a1e48ee73be4642075e4",
+          "bytes": 53214,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-255.json",
+          "sha256": "9be6a5256db8d99f9179244021b8347553902d3a891c0dcf64ccfdec0fe6a92c",
+          "bytes": 53308,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-256.json",
+          "sha256": "b819453ee5f2402bf26ec72b6964bf1afa09b2b4117732e57057b3d939c8c638",
+          "bytes": 53366,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-257.json",
+          "sha256": "e7d3a47a60d5006a5b57d03c0e0fa9de8eb6f6fd41b6d1e38c09f64addb0f3a0",
+          "bytes": 53294,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-258.json",
+          "sha256": "3ca6e8f3335fcb470ee21b6e4f683c2aa0062b4ed76a83cde93814814dd30077",
+          "bytes": 53345,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-259.json",
+          "sha256": "09876812c82a5944006e4212b8a6768817579846b729bb70e6f5cb801332a198",
+          "bytes": 53300,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-260.json",
+          "sha256": "a1c50e0642b7f31486ae9225fd0eb2b3760d6ce8cd4f67a1e818d80ce40eb51f",
+          "bytes": 53299,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/bls_laus/2024-pack-261.json",
+          "sha256": "997c9aeaf48923660b75bb3d9ef3c5d94875c0dd21ef560a30d65d74545b6c83",
+          "bytes": 49139,
+          "cache_hit": true
+        }
+      ],
+      "normalized_artifact": {
+        "path": "normalized/bls_laus.jsonl",
+        "rows": 157104,
+        "duplicate_keys": 0,
+        "sha256": "cea01105b127c434339c7657168a7439ada6520967305b9c836071b3d88cb1af",
+        "bytes": 52837109
+      },
+      "free_bytes_before": 11014483968,
+      "request_count": 0,
+      "response_bytes": 0,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 262,
+      "duration_seconds": 3.95
+    },
+    "fbi_cde": {
+      "status": "pass",
+      "started_at": "2026-09-19T14:14:22.499849+00:00",
+      "finished_at": "2026-09-19T14:14:22.918081+00:00",
+      "normalized_rows": 3266,
+      "normalization_retrieved_at": "2026-09-19T14:14:22.499849+00:00",
+      "artifacts": [
+        {
+          "path": "raw/full/fbi_cde/AL-homicide-2019-2023.json",
+          "sha256": "e9ff2ce5f5136e69c7d711fd04118a5f04bbb1dd6d7ce51cf0020333f8b0a489",
+          "bytes": 12146,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AL-violent-crime-2019-2023.json",
+          "sha256": "7780017d3cc5db4a0850cb45450c049a5e00da1b11a5df600fac563e895a75c1",
+          "bytes": 12534,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AL-robbery-2019-2023.json",
+          "sha256": "3bb8a5fc313b224d40bc836a2f71bc77498f22b2a6a5a9738e6cdbdb436626c3",
+          "bytes": 12201,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AL-aggravated-assault-2019-2023.json",
+          "sha256": "4f09f070e5be382847a5b772e00c17d559c1a61f9665c3774185c966fa8390fc",
+          "bytes": 12469,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AL-burglary-2019-2023.json",
+          "sha256": "eb508d6e9bf1b8d92a0df37c5c9385185c5d4f469b293b6bdea33b444d027a53",
+          "bytes": 12413,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AL-motor-vehicle-theft-2019-2023.json",
+          "sha256": "56dd1b03765304fdbac39edd30cfbee05380fdff4f16a3cf5202acb62337b361",
+          "bytes": 12368,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AL-rape-2019-2023.json",
+          "sha256": "8a2b855ee6d5c66f7121785ebb60119e2f450c4656b32545c998a79e7ae0bb87",
+          "bytes": 12184,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AK-homicide-2019-2023.json",
+          "sha256": "f257aea1b5425ec842eb22974caa92ee31ab78d18436c9dc94de0d829a5428b4",
+          "bytes": 11906,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AK-violent-crime-2019-2023.json",
+          "sha256": "9e36561fc43e43942388c6f1dcc6477aa472b753337231f17274653082e548e1",
+          "bytes": 12399,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AK-robbery-2019-2023.json",
+          "sha256": "9d9d5078b9c1c64cf7d35da6c526d8649f53977068de1f9ae92d702686a7c888",
+          "bytes": 12050,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AK-aggravated-assault-2019-2023.json",
+          "sha256": "26f0b6283a8a77e456a85a68a77987349bd3ccb6f333d7110940644eeec5fe3a",
+          "bytes": 12371,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AK-burglary-2019-2023.json",
+          "sha256": "7d5f2bdb24df6cff73a8e0591b4c195c485c1dd9ade914938617d3b11b52a729",
+          "bytes": 12223,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AK-motor-vehicle-theft-2019-2023.json",
+          "sha256": "8954998772baff64fc4200c87aa4b974e17a862fd71ae43b356a96eb60d856ec",
+          "bytes": 12217,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AK-rape-2019-2023.json",
+          "sha256": "97dfaaf8c3ec51d98fe22feab94363a52187089cade514ba754cc6a667b93d54",
+          "bytes": 12090,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AZ-homicide-2019-2023.json",
+          "sha256": "fa6018a9cb32a26ecfddb5716d2fd2178bd66962aaa563e9ad0e901adbfa8706",
+          "bytes": 12166,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AZ-violent-crime-2019-2023.json",
+          "sha256": "7213f00d48b06eb9eb3761d8119b023f52ebd90cf65f3e76d8aff57934a13af5",
+          "bytes": 12611,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AZ-robbery-2019-2023.json",
+          "sha256": "1b80201677e88db294b06b67df45e57b6f5ac34cacecff9571dcf6d617c71735",
+          "bytes": 12279,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AZ-aggravated-assault-2019-2023.json",
+          "sha256": "8f4bfda62c52b2cae0c2847fd75b814714df54501f2e8fb521d3779c6f589f2b",
+          "bytes": 12541,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AZ-burglary-2019-2023.json",
+          "sha256": "b130d2b4b4740893c10efaf122e12389ed6a4f26901b26ebdaf33cf260ddfeea",
+          "bytes": 12463,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AZ-motor-vehicle-theft-2019-2023.json",
+          "sha256": "4e1aa6debf59167183a5f6c552ecdf69d14a2d66ed48c0a32280754cfef5150a",
+          "bytes": 12453,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AZ-rape-2019-2023.json",
+          "sha256": "e7959d0c2597989a2cdb3632a2e91fef52dcc0c75ab6ea0cf8f9cadd83468926",
+          "bytes": 12220,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AR-homicide-2019-2023.json",
+          "sha256": "43e61e693b2b88d7ba09a3667b32b1e615e453946dc173b255c1d3df0560abc6",
+          "bytes": 12157,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AR-violent-crime-2019-2023.json",
+          "sha256": "de914a81f5f76e86bceb966a89a2843fa2936cc2eb22d529dd43e1a82770dd9c",
+          "bytes": 12597,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AR-robbery-2019-2023.json",
+          "sha256": "d9f5e605feae7941ca514a8db7311c00ca966cbc971526008e3efab3efa7ccb7",
+          "bytes": 12210,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AR-aggravated-assault-2019-2023.json",
+          "sha256": "4dc3e2a8f20d555fc30d3e9e837e0bf5d93a2feed5cd8b3e867df1bd69a32345",
+          "bytes": 12561,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AR-burglary-2019-2023.json",
+          "sha256": "13d14933f8ac13e74e08ee60a5f4dca65a747351c3319608c61c21f4c495ed6b",
+          "bytes": 12481,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AR-motor-vehicle-theft-2019-2023.json",
+          "sha256": "ef7f64f3b589fc7aef16963f4327a8693dfe74b803d3770a65a63e9bd72bf036",
+          "bytes": 12362,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/AR-rape-2019-2023.json",
+          "sha256": "329099b1a677f4332e9873887bcef54be9e17b9bebbaa7084eacbbc6c352dfd0",
+          "bytes": 12216,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CA-homicide-2019-2023.json",
+          "sha256": "80b7f13efbfca8345bd3801c59b21d2b49f30b0d82ed3d82646191098294de2a",
+          "bytes": 12381,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CA-violent-crime-2019-2023.json",
+          "sha256": "1c068ee42f5e6bc18ec37e07142c0d5ecfb0d2d75371f6c35b15d656e0b8671d",
+          "bytes": 12817,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CA-robbery-2019-2023.json",
+          "sha256": "282df353b1323c13ed74c34867d55a48e8593a5d86b236a65bd68491b91d9c1f",
+          "bytes": 12565,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CA-aggravated-assault-2019-2023.json",
+          "sha256": "83a00664f43d03a384cb3b397fc7902128102cdba404816b5212b6501104bc6a",
+          "bytes": 12753,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CA-burglary-2019-2023.json",
+          "sha256": "e07bfc16fdd4056921215641368bef4f56b41bbffd1fc4e801f1a789c2cfce3f",
+          "bytes": 12708,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CA-motor-vehicle-theft-2019-2023.json",
+          "sha256": "1289e91b2eedac2c0b6a30addfece7b3562301672e809d76b0c216d4ba655fb9",
+          "bytes": 12687,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CA-rape-2019-2023.json",
+          "sha256": "500245f966122834253c72f5265b02deb6ec83b1393a96f0ce656fb7eaddb41d",
+          "bytes": 12445,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CO-homicide-2019-2023.json",
+          "sha256": "e47a1813e70d8e273d151ffa5b810379eaab528c7e526a50aa0cbb6ab9f4b809",
+          "bytes": 12177,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CO-violent-crime-2019-2023.json",
+          "sha256": "86e4996551f37e1eb5491eab460fca367f204696df8181526608f903f48802b6",
+          "bytes": 12631,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CO-robbery-2019-2023.json",
+          "sha256": "97b2f770b0e12c03a704e1d89ac454f14f2da6042c9388f390fbd18e45fdfa95",
+          "bytes": 12292,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CO-aggravated-assault-2019-2023.json",
+          "sha256": "88fde307c21e29ebdb2e98eac7cf34ff7b01130eff06ee0bc2ae87086c520ce3",
+          "bytes": 12566,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CO-burglary-2019-2023.json",
+          "sha256": "ca49aa0d9be9bd0d00907b514f107e2052e708b46ec898661f4fdf45d0eb9702",
+          "bytes": 12484,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CO-motor-vehicle-theft-2019-2023.json",
+          "sha256": "8d4ba88676284f4b00b32a9983359cce1c4c0314f6c635a062e8044d7b0bcc4d",
+          "bytes": 12479,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CO-rape-2019-2023.json",
+          "sha256": "7ccd843b93c02568db64114a5d063b74885a353678521b38199289206cb25202",
+          "bytes": 12251,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CT-homicide-2019-2023.json",
+          "sha256": "51f0868ca31f874150100244ae9ea793ac3440977f7aa05b4ae508803ab295fe",
+          "bytes": 12020,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CT-violent-crime-2019-2023.json",
+          "sha256": "1e3ce6845c1bb5124aec90b461e9745186007665ebddc504e1771de5ff7d7a00",
+          "bytes": 12393,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CT-robbery-2019-2023.json",
+          "sha256": "924f1e9ce4590d6454936f764b00f12857df8ded4da2dae850037c982c4e4ffc",
+          "bytes": 12161,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CT-aggravated-assault-2019-2023.json",
+          "sha256": "7cc280661bb5352d495b8920b7fcf523e9105b2eb256f0d1ecb09f8c0dd54a9e",
+          "bytes": 12316,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CT-burglary-2019-2023.json",
+          "sha256": "14c7a43cf23dd321ae7abdc4e35bad06899bfbec518bd965ac5fb84732e30e4f",
+          "bytes": 12272,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CT-motor-vehicle-theft-2019-2023.json",
+          "sha256": "f13017385ca1713ca92039b337d5a67d582abeed63a3ea98a5df238b02729973",
+          "bytes": 12279,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/CT-rape-2019-2023.json",
+          "sha256": "3dd768012fac7b6e2276f9bc37d854218ddd9c5ae754ca053798dc25e8c170f3",
+          "bytes": 12085,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DE-homicide-2019-2023.json",
+          "sha256": "9bd02f36ce68f8fded45bc4a95ab4694a30feb0a2d08cce3821376f6ed8fae27",
+          "bytes": 11868,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DE-violent-crime-2019-2023.json",
+          "sha256": "0cd7085abee4187842715eda4193544d21277c8d208e3e247acb0d379a337720",
+          "bytes": 12409,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DE-robbery-2019-2023.json",
+          "sha256": "f69f632fb82f323024388372846169e93b56ad32b5f0496f3742780280882e5d",
+          "bytes": 12059,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DE-aggravated-assault-2019-2023.json",
+          "sha256": "f1ad1e133ee38f3aec0885c5045622f5b7a3265ff7559f711c357dc9898cbd7a",
+          "bytes": 12375,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DE-burglary-2019-2023.json",
+          "sha256": "be8c67a5d54d11d053309120184953d71548efb4caa2a8448f4ca11a6d6d3bdd",
+          "bytes": 12249,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DE-motor-vehicle-theft-2019-2023.json",
+          "sha256": "0d85aa5e96578ec3004ba440c76931cfea37b8b818c931338890b03ecd0338ad",
+          "bytes": 12231,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DE-rape-2019-2023.json",
+          "sha256": "7034aaa5a95fe4efca322f98ac386799c960812d04c5d144c963a1f740990314",
+          "bytes": 12038,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DC-homicide-2019-2023.json",
+          "sha256": "882e357b4ecbb35e4bb368fa5947e78ecbb5c79a490c02c7c14034ab839037a5",
+          "bytes": 11940,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DC-violent-crime-2019-2023.json",
+          "sha256": "c7f0329d3a1ad0c0e40e0fd988b2827a8780d264897bd5b7109911ecd73fc18c",
+          "bytes": 12373,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DC-robbery-2019-2023.json",
+          "sha256": "177a59ec4b0bf78143275a50de4064137874e8d4999597345e952cf8d5d88970",
+          "bytes": 12170,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DC-aggravated-assault-2019-2023.json",
+          "sha256": "9d7f0e026b3dd2c928637243c26c4a9f9f8a3dab257445cf1c762bbcc9e70637",
+          "bytes": 12307,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DC-burglary-2019-2023.json",
+          "sha256": "7b75432daa62dcc1db95bd33c2e0ef027594985e794a75725ad0db331c162dc6",
+          "bytes": 12146,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DC-motor-vehicle-theft-2019-2023.json",
+          "sha256": "7eef2d9c446fd07bdfaaf5e56d4b3b3879cd0e65c07de859b2a2f44cd0c44707",
+          "bytes": 12143,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/DC-rape-2019-2023.json",
+          "sha256": "9d24068ddc3449c1e4e79337539b266631706b29555ebfdde9ef6c6aaf65cd5c",
+          "bytes": 11955,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/FL-homicide-2019-2023.json",
+          "sha256": "ed3e44f1a15ce104aebd4256250ec9f23a54a8ac0b04a8c57126afb5296903d4",
+          "bytes": 12129,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/FL-violent-crime-2019-2023.json",
+          "sha256": "9a932150c2308cb563f90edef3151cd018943c9eac13b55a73d20f62d5c2f409",
+          "bytes": 12520,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/FL-robbery-2019-2023.json",
+          "sha256": "300aea9ee744abf5a5daed53e6623250474ac40e7144cfa443b86cd0014d48d1",
+          "bytes": 12250,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/FL-aggravated-assault-2019-2023.json",
+          "sha256": "1a9c465b3788044e17f1c5569a905e1e0a78e9ce0976c699eb6720eb5e694f01",
+          "bytes": 12486,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/FL-burglary-2019-2023.json",
+          "sha256": "de563c850a48c65e346f2ab381813043804941daddbd74a104e8cc08ff54ea8c",
+          "bytes": 12352,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/FL-motor-vehicle-theft-2019-2023.json",
+          "sha256": "5ab88876d2b0afc61a827b6aefea6380eb1d2b0877ec250d9d4acc12c4657473",
+          "bytes": 12364,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/FL-rape-2019-2023.json",
+          "sha256": "89c5de1973b5c26c684858e65d2d8f4f0972bf7a77bc9281baf24dc32fc2fe73",
+          "bytes": 12185,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/GA-homicide-2019-2023.json",
+          "sha256": "7b483d47349dbe275d5ab2080352fca4fdff393b54d0effcdda1cc5b4b37b9df",
+          "bytes": 12265,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/GA-violent-crime-2019-2023.json",
+          "sha256": "5bb5f29ad93d38cec405b78584391cd1dc372413dd19a610f0bd3e359e761007",
+          "bytes": 12663,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/GA-robbery-2019-2023.json",
+          "sha256": "91c1841fc27ea1bfa81e9aa1495c924ac4feb05392c8947debca493b3d51d6c1",
+          "bytes": 12350,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/GA-aggravated-assault-2019-2023.json",
+          "sha256": "7e5ba997b8229d0d7aa4d80697acb506cb19ade2435a0ddb5e34a4cb3d05f018",
+          "bytes": 12586,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/GA-burglary-2019-2023.json",
+          "sha256": "bc7cfd52a99e65f1a157ad7201aa2ca029362ea8b83f5f75ca7158cd5112765b",
+          "bytes": 12577,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/GA-motor-vehicle-theft-2019-2023.json",
+          "sha256": "c0eb5a0318d419521bc813dd650c1b0a5a890e7e30b0ba44b192dac9c4125d8e",
+          "bytes": 12561,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/GA-rape-2019-2023.json",
+          "sha256": "3a58fdebb33fe16077d97fe5c7d1c370fbb00204488db5c90782c7ee924c00e9",
+          "bytes": 12309,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/HI-homicide-2019-2023.json",
+          "sha256": "cde1eee9a0fb1541c66f94019f05cca565f26afef43f021a7998577de5a9ca17",
+          "bytes": 11912,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/HI-violent-crime-2019-2023.json",
+          "sha256": "3b2000eda373dfeaf3be119f5ebac222f23ad1edf47b2ce5328496d8539c236b",
+          "bytes": 12347,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/HI-robbery-2019-2023.json",
+          "sha256": "590dccdb571bcc9413978362fdc2281df64c1b2e5356feb438260125e816e8c2",
+          "bytes": 12059,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/HI-aggravated-assault-2019-2023.json",
+          "sha256": "4af4eb6c568eb1aaf86a94ea920a237a6fbe44235039d52e793b6359e7f5290b",
+          "bytes": 12271,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/HI-burglary-2019-2023.json",
+          "sha256": "cc83cc8d364fe663503a60a11ec5279fe05478a67c96f23ca1bcc7eca731f748",
+          "bytes": 12238,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/HI-motor-vehicle-theft-2019-2023.json",
+          "sha256": "005741e27fb398fa6e18de119f5808d26c10f7d828e1b06c6afb8dfb0b7b97d2",
+          "bytes": 12240,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/HI-rape-2019-2023.json",
+          "sha256": "dfb6179baba0d56548471138f9410d54385041e6ce2b850608ca8a60e4288932",
+          "bytes": 12022,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ID-homicide-2019-2023.json",
+          "sha256": "4ac5f0f3488f6fcc474a82c79673d7cd3de31898102b91325a75347989ea49bd",
+          "bytes": 12026,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ID-violent-crime-2019-2023.json",
+          "sha256": "d687a892e53529cc504aa957bc1c4aadf61b51e87614c8f7f0813069038ebdcc",
+          "bytes": 12512,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ID-robbery-2019-2023.json",
+          "sha256": "b72e3b6b7eb10e11e039fe67896d0c31d89abd0f1b277558a8dfccdcad3fd445",
+          "bytes": 12117,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ID-aggravated-assault-2019-2023.json",
+          "sha256": "2e6fc53d7c2708d21aabfc35690d14c828f29f5196a8190b18416772548d531b",
+          "bytes": 12467,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ID-burglary-2019-2023.json",
+          "sha256": "19cde0049a056d9af6dc930abce6202883ba7ddffaeed66c5efe675fd93a41c7",
+          "bytes": 12340,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ID-motor-vehicle-theft-2019-2023.json",
+          "sha256": "9e5f9ed4ec93e02cb16f4fe78ba240cb2d0a8405d3ed212d9c08a98a27e8e312",
+          "bytes": 12284,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ID-rape-2019-2023.json",
+          "sha256": "666121d4d56051c4f8f129256fd19c9f57727429d977e407bd376a8f1df99ce1",
+          "bytes": 12154,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IL-homicide-2019-2023.json",
+          "sha256": "d1b16c2140fcd6f39700081ceae0e031e44c6c57f32ce72c900473166726ec32",
+          "bytes": 12224,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IL-violent-crime-2019-2023.json",
+          "sha256": "3a26fc4c45add2cf3aaafdb81e24b9dca679a924ed29ba77059049b0e0c5d2be",
+          "bytes": 12605,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IL-robbery-2019-2023.json",
+          "sha256": "d29db33bf093a76e1284ca1a95a860ab9a50415aa006aaa5a59ac7155185e001",
+          "bytes": 12375,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IL-aggravated-assault-2019-2023.json",
+          "sha256": "0ce89880e75f0294c2519abac2d1e6bcefc8769d8d4c96e1013143cd3fec9908",
+          "bytes": 12571,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IL-burglary-2019-2023.json",
+          "sha256": "13446a931493051fcc599e3736f17aac62866b6a75c3d831dbce7bb55b91dbc4",
+          "bytes": 12529,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IL-motor-vehicle-theft-2019-2023.json",
+          "sha256": "f7a9eb69870c6e61b1febd8be74274b422c23cbd95d670ed33cff935fa40e7b1",
+          "bytes": 12503,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IL-rape-2019-2023.json",
+          "sha256": "c95e4c076600e21caa8ace46e4c39c45e75a60d99e9dd798b787011e92f1b57f",
+          "bytes": 12302,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IN-homicide-2019-2023.json",
+          "sha256": "06cfab0d9ded7c00350f949a04fe8129c7edb72ce0e2440da34694678746dbf5",
+          "bytes": 12162,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IN-violent-crime-2019-2023.json",
+          "sha256": "5bb56f97e16236ddc3bec3fb09b4ad90e7a876b38721d5573699d88bd82b7de7",
+          "bytes": 12587,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IN-robbery-2019-2023.json",
+          "sha256": "e91b4ba0598d0acd25718e70dce6ffa97a23187ee6adc15b04ec6fb7de697ef2",
+          "bytes": 12242,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IN-aggravated-assault-2019-2023.json",
+          "sha256": "e8b9e7351b79dbc29744f5cfc037c414ff104aae5e6d0e54fc1725e66ce72d50",
+          "bytes": 12514,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IN-burglary-2019-2023.json",
+          "sha256": "57681becbd43cf929af8d8b0de3897402f505d91c0151c988da614845a8ba660",
+          "bytes": 12472,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IN-motor-vehicle-theft-2019-2023.json",
+          "sha256": "6fd3e69d19e135ea1354d89a1d9ba5978eba996174914667be2e1fe6388bf90c",
+          "bytes": 12450,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IN-rape-2019-2023.json",
+          "sha256": "0af307b5892724da1f95f44a76161e19396b2e360103e9243f34f2d8f395085d",
+          "bytes": 12222,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IA-homicide-2019-2023.json",
+          "sha256": "c5266bc441565a17e60fe98ed7cf6a2cffa6a8ead2069d484e428b588874c63e",
+          "bytes": 12020,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IA-violent-crime-2019-2023.json",
+          "sha256": "6f9e5545074f51cb68823a5597b91022b2d038b13c574f8483f54428679e03d6",
+          "bytes": 12511,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IA-robbery-2019-2023.json",
+          "sha256": "77dfa1b4f62608a78cb84f883909aa42bf8531b687ff5661adbd56c2ff74087a",
+          "bytes": 12164,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IA-aggravated-assault-2019-2023.json",
+          "sha256": "bb3923d6713f5839d8f3ad8b36407737ea583cc0f50a3683c76f8a4d58793211",
+          "bytes": 12455,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IA-burglary-2019-2023.json",
+          "sha256": "9844cc3a1f20d2c55140dccfb87e8f432272e1a5ac17ee11766e0f54ebbf334e",
+          "bytes": 12376,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IA-motor-vehicle-theft-2019-2023.json",
+          "sha256": "b05444c6c48c6061b9afdbfce864ee238facb9729c13f249dfac6afcd115994a",
+          "bytes": 12346,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/IA-rape-2019-2023.json",
+          "sha256": "d8010e7019bb5e2f1d9a0d1819b0f2921bfa15cb20a901753fa65333aed53924",
+          "bytes": 12186,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KS-homicide-2019-2023.json",
+          "sha256": "fa7f00294a54cbe3d0d446945fc65a31927be755329c9eba4219a63a0cf88dc6",
+          "bytes": 12089,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KS-violent-crime-2019-2023.json",
+          "sha256": "9bbfa5b0e40bd2b5146dc8bb4e0eaa5cc1d63c6136ed568e48ddce0eeb8fd218",
+          "bytes": 12547,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KS-robbery-2019-2023.json",
+          "sha256": "945020db94533254686df911c337beb60e04a98d30620314588cf51cd3b8c63c",
+          "bytes": 12179,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KS-aggravated-assault-2019-2023.json",
+          "sha256": "87b10880e2f4c9068668b60c0f65afb87bbbcaf2e85502d06447ac2334ea264d",
+          "bytes": 12492,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KS-burglary-2019-2023.json",
+          "sha256": "b5dc493d85b768b37d3c4c9941d1b5163e7ba3bb836da45140b7832613990641",
+          "bytes": 12359,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KS-motor-vehicle-theft-2019-2023.json",
+          "sha256": "4047333d4786e666b44500b273296f9099c58227f8901679bfc374f19b4849f4",
+          "bytes": 12347,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KS-rape-2019-2023.json",
+          "sha256": "7964596d2f5c9d1b8cd58f51da9bab61a0e4c40e4c71bc521bc752e8fe906127",
+          "bytes": 12199,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KY-homicide-2019-2023.json",
+          "sha256": "0c798983bc37d23876d554719933ddfd2137d64623b399f1e5f2bcb884ee1031",
+          "bytes": 12144,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KY-violent-crime-2019-2023.json",
+          "sha256": "56cefba600a5dae0166f33827635ffadc0f5c7935eb4cfeb2f80860bf29c839f",
+          "bytes": 12475,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KY-robbery-2019-2023.json",
+          "sha256": "0cba4ccba52baefe3f4ac7a7f04694467fba112f78ae9d23934e726b8a2f3260",
+          "bytes": 12220,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KY-aggravated-assault-2019-2023.json",
+          "sha256": "c9a70af07b9870a63a0651a84b1786ae4aee233b4a89b03f94f09936ca7031b0",
+          "bytes": 12416,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KY-burglary-2019-2023.json",
+          "sha256": "94465daac846621309739842d006cecb931eb7b0a5a6a606999943a343d19a65",
+          "bytes": 12438,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KY-motor-vehicle-theft-2019-2023.json",
+          "sha256": "a87fd619974efff01de3f3ea40e166c4e55c970c9db19a0987377e23316e375d",
+          "bytes": 12419,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/KY-rape-2019-2023.json",
+          "sha256": "17eca224ae783a784b62626500515269180a53f38cf263bdc9d3596a0831ef9e",
+          "bytes": 12191,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/LA-homicide-2019-2023.json",
+          "sha256": "85b3a88565a806df44a47bdf9318db60db9f536d33a22819d20715e36733a55a",
+          "bytes": 12181,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/LA-violent-crime-2019-2023.json",
+          "sha256": "ac9f811124549ee48e5479dbb7068b25dcd2d44044571029dbcab22c30060b8d",
+          "bytes": 12599,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/LA-robbery-2019-2023.json",
+          "sha256": "e883276d0f48896ee1dc31c2556d284e4b1235d3b1a1f913520166b6769b117b",
+          "bytes": 12255,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/LA-aggravated-assault-2019-2023.json",
+          "sha256": "87b14378011ad73973fd5600a6809f01309d7118ac118cece4aed408cfe15c75",
+          "bytes": 12573,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/LA-burglary-2019-2023.json",
+          "sha256": "4e554ff56dc4ce935c38680d0bce101bb3d3f4c2bdac14c8aa8df0e97e9f723e",
+          "bytes": 12487,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/LA-motor-vehicle-theft-2019-2023.json",
+          "sha256": "244ac116f6060e9ff408704761cdc90d9068d3a9fc333d9456ea7f385048e803",
+          "bytes": 12456,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/LA-rape-2019-2023.json",
+          "sha256": "ef129f0d46576321f598f07c9ec4d7a3e5c3fbc79d04da7e6148f5b8641a04ab",
+          "bytes": 12232,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ME-homicide-2019-2023.json",
+          "sha256": "714fb9a5961db82bb9bfc7600a5444d95d8df42f08fdcead65e2d92014968105",
+          "bytes": 11891,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ME-violent-crime-2019-2023.json",
+          "sha256": "095fbdff160f734e6c279d113b45c71f4d291c5ddd653efbc35fb063c4c5e2c7",
+          "bytes": 12260,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ME-robbery-2019-2023.json",
+          "sha256": "e62d340af54d35686a146dca6b12f78a438251f08357c22bf25957c94b495eb7",
+          "bytes": 12024,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ME-aggravated-assault-2019-2023.json",
+          "sha256": "e7b25f0dc404aa39a41480d4cad25a56bfd17285df11cfb427ecb8ef60585a97",
+          "bytes": 12154,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ME-burglary-2019-2023.json",
+          "sha256": "9f750399f438a299e71023a22cadfab5ad505d2620433b306c0946629a60b4cc",
+          "bytes": 12224,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ME-motor-vehicle-theft-2019-2023.json",
+          "sha256": "feb29f58421a44d47124144175eef3c3d5d70f377f65c9f2f21ca3ff0cfbf07e",
+          "bytes": 12136,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ME-rape-2019-2023.json",
+          "sha256": "185498817f5380eebb0207d2b9cd229a3f883a70b42f68b95dffba2745d13689",
+          "bytes": 12044,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MD-homicide-2019-2023.json",
+          "sha256": "b7b0689ffdd979bb5404c54318a878d2d910d8fc297e5f511fa5b461e3df8e86",
+          "bytes": 12146,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MD-violent-crime-2019-2023.json",
+          "sha256": "a61c27cc91ee86bb01c950066571294c7dbf87ad0f0c4f9717eb615477cbc4f7",
+          "bytes": 12569,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MD-robbery-2019-2023.json",
+          "sha256": "b8a6db2588f1a829698f39d95aa4579702da059345da87f990d89f09302987f6",
+          "bytes": 12302,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MD-aggravated-assault-2019-2023.json",
+          "sha256": "04de1fb192e36fbb9efac0e6f6de5174618c4c9529b061606e2ec3c5461ab18c",
+          "bytes": 12501,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MD-burglary-2019-2023.json",
+          "sha256": "313a84f9e8ca6b9ba148516f85c7b07b7434db82cf7b2e9cada172ff5d10dbf2",
+          "bytes": 12423,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MD-motor-vehicle-theft-2019-2023.json",
+          "sha256": "bf1cda4931e6f501d4549b8c52caf16410d6eff0df9709f33837c00b39909f12",
+          "bytes": 12381,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MD-rape-2019-2023.json",
+          "sha256": "d2668de11a0921246c94f2cf6873d313468b27c3f7066645c3a65d005621a0ac",
+          "bytes": 12170,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MA-homicide-2019-2023.json",
+          "sha256": "7cdaa4a2ae5d9a3c54208d38b4c227fc71bb9e33c23e708be0efa57d868146cd",
+          "bytes": 12131,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MA-violent-crime-2019-2023.json",
+          "sha256": "0a681b97299b4a20295bf3bda2e4744f192c9954c27e788eef96fb9c157fb687",
+          "bytes": 12629,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MA-robbery-2019-2023.json",
+          "sha256": "3d0d1cb260a5438d08cf4468ba92051e112b76c8ad008cbbd1df5c0bd2c6ca5c",
+          "bytes": 12268,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MA-aggravated-assault-2019-2023.json",
+          "sha256": "8b8227378a4025d5e0163ad731d1baf1d972df5cf4339e8205cbbd99eb36f3fe",
+          "bytes": 12582,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MA-burglary-2019-2023.json",
+          "sha256": "6fc7246b7e8726b29c1245a27bbac3474f9c1b65919db3f223fd671b1e8881ab",
+          "bytes": 12452,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MA-motor-vehicle-theft-2019-2023.json",
+          "sha256": "5bfab994a3e92b14dabd41a0bc9d4e5faafcd3ae1aa8fd742c229d47d0df68ce",
+          "bytes": 12338,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MA-rape-2019-2023.json",
+          "sha256": "911bb682b35609b8365e0ebfdd4745a621c1cdf1ba2515af2d6656e000898d33",
+          "bytes": 12250,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MI-homicide-2019-2023.json",
+          "sha256": "3c6554c8e84aee2ec6a658852a1781715608d7fc8478fed5e1512f3a3dbc2615",
+          "bytes": 12215,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MI-violent-crime-2019-2023.json",
+          "sha256": "b788ba315500e7b7843aefef45590539c242370359158f9bfaa9674577eceddb",
+          "bytes": 12683,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MI-robbery-2019-2023.json",
+          "sha256": "aeb618a918a4cc4a3fed61c00ded181836998040d25040e7f816b5abfada5293",
+          "bytes": 12300,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MI-aggravated-assault-2019-2023.json",
+          "sha256": "a32cb1671c5e6ec7c619c8f8caf91df57e267f0db49740cc97f4bbcc7f43378e",
+          "bytes": 12655,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MI-burglary-2019-2023.json",
+          "sha256": "a21058ed2cdfe091c857a5fe4ccbedf46d98e85e152fd1eb676c62308c8f3e1c",
+          "bytes": 12519,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MI-motor-vehicle-theft-2019-2023.json",
+          "sha256": "0c417279fff4a3434c91d8e76ade95d4c7bdd62af819775ef8539aeb07d3b0e9",
+          "bytes": 12515,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MI-rape-2019-2023.json",
+          "sha256": "fb8e32288c51fe13a006478f9421f03132d066a3b21effb24b2188a80c0b8dbf",
+          "bytes": 12320,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MN-homicide-2019-2023.json",
+          "sha256": "75b39546f91d1c3dcaed62c19ba065904f7f6eb34448f83eec2064feead32a61",
+          "bytes": 12160,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MN-violent-crime-2019-2023.json",
+          "sha256": "22d5e0d8e79c5629095246d7e57a98e398a90f5b71ba7ce492cb95d7c047836e",
+          "bytes": 12562,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MN-robbery-2019-2023.json",
+          "sha256": "24418ca176427a276f182a945a615667db35d09ff76924a60c137be4e2ceeeaf",
+          "bytes": 12246,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MN-aggravated-assault-2019-2023.json",
+          "sha256": "adf8de7aa0cb1bda3432b8718aeca5b9cde9b78d1a6277db1472d79072c1b271",
+          "bytes": 12454,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MN-burglary-2019-2023.json",
+          "sha256": "9ff058ebbeb6e12055fa979666cd6bfe5ea5223fee755fde23b89c3a11fc64fc",
+          "bytes": 12467,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MN-motor-vehicle-theft-2019-2023.json",
+          "sha256": "222d8557d81fcf82bcd2b507e040550a358ed972dff053ecfe3f2e5e14867898",
+          "bytes": 12443,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MN-rape-2019-2023.json",
+          "sha256": "6e14a193835b1f33628a9947facf910edd3a736ed3e00bb606914c2bb99756e9",
+          "bytes": 12240,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MS-homicide-2019-2023.json",
+          "sha256": "90e460353ce7dce8d5edc8e739d1c7cda0d716b8f3b6c4e4b7f48e7a92e0110b",
+          "bytes": 12136,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MS-violent-crime-2019-2023.json",
+          "sha256": "7f9717821f1d272e2ddaa4f322cd138db6b469a88749238e2fd3cfd352fdfef3",
+          "bytes": 12477,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MS-robbery-2019-2023.json",
+          "sha256": "2c13fbf352829689bf25dc3b2c82be32b41575a527fe1ef087a87c69ab53632a",
+          "bytes": 12191,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MS-aggravated-assault-2019-2023.json",
+          "sha256": "989fa0ff067d15e5f74bed3f9fc6b656dc9e53b250fd9644947630b230102642",
+          "bytes": 12422,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MS-burglary-2019-2023.json",
+          "sha256": "be2ad9d86f18e23baf34b70824053db1c087518aad3d3c3a2e7273b7f025e3af",
+          "bytes": 12385,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MS-motor-vehicle-theft-2019-2023.json",
+          "sha256": "cfb1dd64f04a27e9a85074089365fcfe900b920bd066b9721aee11d77ce5d0f8",
+          "bytes": 12379,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MS-rape-2019-2023.json",
+          "sha256": "c21c04356a01e85898a162a889f4677f2749e2363daf83fe921b1fc5f5045eed",
+          "bytes": 12148,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MO-homicide-2019-2023.json",
+          "sha256": "899d144099ec9002f5d8aab47bcdf94b881c1c052d56386be661d715e7c29df2",
+          "bytes": 12184,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MO-violent-crime-2019-2023.json",
+          "sha256": "001ec7193aca71a10ec95a5658fd0c7693b92fcab77c1f9d40b613459bf8728a",
+          "bytes": 12619,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MO-robbery-2019-2023.json",
+          "sha256": "ffdcc94df0f6d5b69c2863a55edb7afce0ee2e5d50da22ccde6103e663c9c603",
+          "bytes": 12262,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MO-aggravated-assault-2019-2023.json",
+          "sha256": "2bda1de8960dde45d74b43518449643d63801585ca85e966ae389e3e51c3e829",
+          "bytes": 12565,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MO-burglary-2019-2023.json",
+          "sha256": "834930f80e02d987274e5a6d3b9c3707132b28bd8b43cf85ea5b5004d793702c",
+          "bytes": 12484,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MO-motor-vehicle-theft-2019-2023.json",
+          "sha256": "aff76a7879e0cec22818a0643d711db7cf033b06970b683b81546a46fac51f5f",
+          "bytes": 12482,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MO-rape-2019-2023.json",
+          "sha256": "f1a1d1d3c56b7e655021b0342d0581e154bf2a0b464cdfbbb48f708c07d60568",
+          "bytes": 12222,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MT-homicide-2019-2023.json",
+          "sha256": "91a84554367111742edac12e34c68d4bfdb1abe1835e37ab0d11dbf4bed88177",
+          "bytes": 12030,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MT-violent-crime-2019-2023.json",
+          "sha256": "9861a734fa8b7ce422aa11f38a1248e59654fed5a2e61198d2096921aab0fa2b",
+          "bytes": 12517,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MT-robbery-2019-2023.json",
+          "sha256": "a19c1c83796030b98aea78eea1c073c3d64a5f92cedda092368ff290ca3b41b5",
+          "bytes": 12135,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MT-aggravated-assault-2019-2023.json",
+          "sha256": "5592755cfcd28b4f7144e5624810ce48c09d800b72b0ae5dd0b586f7e64a92e5",
+          "bytes": 12503,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MT-burglary-2019-2023.json",
+          "sha256": "63757741eda258e1cd332874ea7b4c6f1f50ff420e451ba0c4ace9a6ce521a77",
+          "bytes": 12358,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MT-motor-vehicle-theft-2019-2023.json",
+          "sha256": "3dbf25d99d5e6cca9021d525eaf4715a007960cdd3562f71b145416a173745bf",
+          "bytes": 12358,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/MT-rape-2019-2023.json",
+          "sha256": "b1e9875b08b2d5d112b913485d22bd76973d026a73a56dd9849d230d24ec26f6",
+          "bytes": 12133,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NE-homicide-2019-2023.json",
+          "sha256": "301be7e5cd2e295b5bd22b861fda3416db1062f3f925f326b0eea331837e7b20",
+          "bytes": 12050,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NE-violent-crime-2019-2023.json",
+          "sha256": "80e8450e0c7280bddbe1627b25d8a062d4cff36292a437d8e2b323fe1588c00b",
+          "bytes": 12509,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NE-robbery-2019-2023.json",
+          "sha256": "d41403091b8c0295b8d4ed7da4bc2eeba60f511181fa7ffd0eb37ec87b121e29",
+          "bytes": 12164,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NE-aggravated-assault-2019-2023.json",
+          "sha256": "a7b3f91e73a49f04e63aaede78b4aeb16e59d23a8f982e77c1535d212eb595b9",
+          "bytes": 12445,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NE-burglary-2019-2023.json",
+          "sha256": "15e91b1c1e177636125a35271e4deff241735495bd4361f27b998f062e91eaa3",
+          "bytes": 12359,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NE-motor-vehicle-theft-2019-2023.json",
+          "sha256": "16b9cac327942396442e782981fd574c464d2ab53b4aa6ab1e9422bc88a5f984",
+          "bytes": 12361,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NE-rape-2019-2023.json",
+          "sha256": "c978a6c901d89314cbe74e3fb43073e6e614e94fb5178c199facf1910a2ba1c1",
+          "bytes": 12181,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NV-homicide-2019-2023.json",
+          "sha256": "9a6751f51f22605b44ff1c66c0ab60517196d84e7770c278d86275f42e5a8b80",
+          "bytes": 12112,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NV-violent-crime-2019-2023.json",
+          "sha256": "bfce0185ae7bb535d92b4bcc86910a10fe795c1a28c0a53b12776fb120c8d84c",
+          "bytes": 12545,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NV-robbery-2019-2023.json",
+          "sha256": "87558d161776a6b3fbc97c69072bb3a5c8c2a94970e969635e49b0f60cd1cd59",
+          "bytes": 12206,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NV-aggravated-assault-2019-2023.json",
+          "sha256": "f6b6372f82dcfc256d1a2e002030f806aecd1cb5b8024f81addbbeace7fce3ca",
+          "bytes": 12454,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NV-burglary-2019-2023.json",
+          "sha256": "1b168fc31fc33df7b4be3f5bce965d6b7a992e6ecb61e50236279e52fdf5e159",
+          "bytes": 12415,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NV-motor-vehicle-theft-2019-2023.json",
+          "sha256": "300bff6625dbf201f8e61a5311c27e437e3018e68519d2c652aef7025142527b",
+          "bytes": 12381,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NV-rape-2019-2023.json",
+          "sha256": "618f58d3d9ae3e276b264b06ba9efc1fd5ab10380a37a6eea4934066609ed20a",
+          "bytes": 12177,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NH-homicide-2019-2023.json",
+          "sha256": "39cb97c0c2599c58d6f83198974d0bcc4ed90ad26e459a917e380b994202bcb5",
+          "bytes": 11996,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NH-violent-crime-2019-2023.json",
+          "sha256": "b85c44bd894973b4cae829b2965b5a67a81e53231859802d395e2d8fb7434c95",
+          "bytes": 12437,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NH-robbery-2019-2023.json",
+          "sha256": "36e6d110959f738c3016d6a7ee039f56001984bdd46db9a652d052381aa8eab0",
+          "bytes": 12180,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NH-aggravated-assault-2019-2023.json",
+          "sha256": "d2df2d4bf78448c5ae861c8b7fd6d4e45325033151a862bd6406ea086461d0c2",
+          "bytes": 12313,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NH-burglary-2019-2023.json",
+          "sha256": "96df4e6ebed608e23d2c37179c6ec8289e6494dd6c671ccef427eec9f33cd817",
+          "bytes": 12317,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NH-motor-vehicle-theft-2019-2023.json",
+          "sha256": "05d3754ac1347af59bb97a233128b9174676867b4de599e705a60b530e778209",
+          "bytes": 12286,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NH-rape-2019-2023.json",
+          "sha256": "a662b325ab00f25c77cbbc487fc05f4ec3787d11db5b12e02fe781c34505f98c",
+          "bytes": 12154,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NJ-homicide-2019-2023.json",
+          "sha256": "32efa8c5a1efd103c025d8746137537b5d3a43756bc884ec17b4fe5a834d6c47",
+          "bytes": 12144,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NJ-violent-crime-2019-2023.json",
+          "sha256": "8a93e47ec1cb46e0c8eb412173dc3ecaeb4ad279c2ecf2b53ef665d03d72b906",
+          "bytes": 12503,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NJ-robbery-2019-2023.json",
+          "sha256": "c9962ecc52728f8b430407a5055d6e066037b91937a42ae34fe1c469f57e1b5a",
+          "bytes": 12241,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NJ-aggravated-assault-2019-2023.json",
+          "sha256": "93d0e5fca4c159ebecc04e57eec5806323e33f5d64488712e29bec5cb7a51a44",
+          "bytes": 12417,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NJ-burglary-2019-2023.json",
+          "sha256": "bab1f0de50cb51f6b7ae6195188903c3a0dfeadb225ea10ec3f2569feeb3744c",
+          "bytes": 12421,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NJ-motor-vehicle-theft-2019-2023.json",
+          "sha256": "7e194b514cb07c86b6b49294fb354748c67ac5954a7862585b31dc0a6b8060ed",
+          "bytes": 12344,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NJ-rape-2019-2023.json",
+          "sha256": "d05a789481ab7fc2df3772072865f3809646b655c65b2a0626735ac4c9664d7f",
+          "bytes": 12177,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NM-homicide-2019-2023.json",
+          "sha256": "59126ea56207317797a19af797f7c1e0b8cc5b5858c6b8abfd33f5505618b435",
+          "bytes": 12125,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NM-violent-crime-2019-2023.json",
+          "sha256": "cf89080c3bbe928e75118ea3f1b4ec2e1e4b68997204c3243eaff277f135bb28",
+          "bytes": 12592,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NM-robbery-2019-2023.json",
+          "sha256": "9bfab5d9552e3472aa031bc652e03ef9f6853d88105378d0a52be224cb199c1e",
+          "bytes": 12276,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NM-aggravated-assault-2019-2023.json",
+          "sha256": "31eaa918e3c56b763d15f4977e654c10fa724e82e65f848bd2f69c021ee7699f",
+          "bytes": 12543,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NM-burglary-2019-2023.json",
+          "sha256": "57103ffdd5620a20531d65d8ff17834c7d2dce73bbc1a30c39a9950caf41a06d",
+          "bytes": 12392,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NM-motor-vehicle-theft-2019-2023.json",
+          "sha256": "eed86f4a28a2409b6ed76f2efcb9dc680e990bf3a9c1c5b4d5b3fcd331f74b11",
+          "bytes": 12364,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NM-rape-2019-2023.json",
+          "sha256": "0518c779c6dd89ba865cde9d2b5d353071d7a488b2615e91ca67c9faf2c474c2",
+          "bytes": 12174,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NY-homicide-2019-2023.json",
+          "sha256": "f7ff6414d487f5289485c582ff4dbc34d5860b6e212f4eebf383efb69bb80a91",
+          "bytes": 12288,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NY-violent-crime-2019-2023.json",
+          "sha256": "b2edebe0d9319794b51821edd67987c02720518fa850a197598c55ac8fed465f",
+          "bytes": 12712,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NY-robbery-2019-2023.json",
+          "sha256": "f67b76d027ee02507d4cef3b2b1e1d5cc6e0ddaa367633467bf6257e0b90dc07",
+          "bytes": 12466,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NY-aggravated-assault-2019-2023.json",
+          "sha256": "b343161c60a3ee354975f8f45d9d0e2b198eb5471abc647ad68bb96d2c05a9ce",
+          "bytes": 12671,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NY-burglary-2019-2023.json",
+          "sha256": "021f7dd56ba2535cad153991b076816f005730fdf30ea1c6ebdd337d62779e97",
+          "bytes": 12574,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NY-motor-vehicle-theft-2019-2023.json",
+          "sha256": "03412c8f2b99b9c6b73be1c74e6ed7d73a414c0c2c82c8b07837524ab8cfa05e",
+          "bytes": 12541,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NY-rape-2019-2023.json",
+          "sha256": "4b7e6104e9f94e79adc0f4a40d8dafa9bae820bafd1a5771c897233df1dd3d71",
+          "bytes": 12372,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NC-homicide-2019-2023.json",
+          "sha256": "27efae603d3838f5398f8d70550a03c799965c5a2132ec5684b2b16476ced78b",
+          "bytes": 12332,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NC-violent-crime-2019-2023.json",
+          "sha256": "367c68cce395e2c5244cf4c584411e5ed08b1d8919eed09ffed29fe83a85f67f",
+          "bytes": 12803,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NC-robbery-2019-2023.json",
+          "sha256": "4b2650eb50678d59c0a28bb3954cb1396d48ab4f041b029020c5f3fef56f7b90",
+          "bytes": 12460,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NC-aggravated-assault-2019-2023.json",
+          "sha256": "f07b2e224b36fa15c30788f172e7ca852b914e0832c3fb1be2fb00ddb588c4cd",
+          "bytes": 12712,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NC-burglary-2019-2023.json",
+          "sha256": "36ce4bedb15d5854b2215d262a2afef86665967a2048caa45c1e2be73175afca",
+          "bytes": 12636,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NC-motor-vehicle-theft-2019-2023.json",
+          "sha256": "08dc9c89c6d1c4881ca162ca03e29588ff13e24d48370e35f9834c1e4117cbd8",
+          "bytes": 12630,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/NC-rape-2019-2023.json",
+          "sha256": "5c11d3c8cb811c20a04a6ce42ce2d5b6acdfd4dd480335aec918911194c090e9",
+          "bytes": 12388,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ND-homicide-2019-2023.json",
+          "sha256": "865539e537924a9d8ea2891566fd4fb83f7b0b4bf1c74433abf76039e5ade888",
+          "bytes": 11847,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ND-violent-crime-2019-2023.json",
+          "sha256": "4b2dfd25b8dda536a3790625fdc17b8766bc715673236a63b3e5faa02f23a42d",
+          "bytes": 12351,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ND-robbery-2019-2023.json",
+          "sha256": "f71afefd06e1d2d95cb47491ab1686928d0d1db332228c657c4f04a3125864ee",
+          "bytes": 11989,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ND-aggravated-assault-2019-2023.json",
+          "sha256": "adab370b755117b3d7c138abf1c5dbb7c980b1df631270e7e962b8f1fc77d8bc",
+          "bytes": 12265,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ND-burglary-2019-2023.json",
+          "sha256": "9c672a0c6c73e23f7ade30fd9f81df9f5a1e6f2bc35889b5860f66377e030c97",
+          "bytes": 12208,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ND-motor-vehicle-theft-2019-2023.json",
+          "sha256": "f3f068cab43cb3f6eda879ae7286db5e51512281c30f5c6bc174377d46b250ca",
+          "bytes": 12211,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/ND-rape-2019-2023.json",
+          "sha256": "f9cfe86197d9f6429aaa8503bd2039e081a97a0c565aff2e9a2b02da4897fa56",
+          "bytes": 12000,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OH-homicide-2019-2023.json",
+          "sha256": "32c7431e805831892c789bd3d9fdf3bd7ccd32bc60b8c324f3b88a7109fc341b",
+          "bytes": 12274,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OH-violent-crime-2019-2023.json",
+          "sha256": "35bc007b8479343816148a1812eb59809c0bc3771387e34ff6f5746863e564b4",
+          "bytes": 12631,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OH-robbery-2019-2023.json",
+          "sha256": "110722ff3e71d8797b34ce5fef959bbb359cbeeafe050b6dad673c7a8eb8f586",
+          "bytes": 12395,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OH-aggravated-assault-2019-2023.json",
+          "sha256": "b47fee93d810d93371d4f5f8d9ab47079c56418b272e52e7c3b6773e78f5dc56",
+          "bytes": 12602,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OH-burglary-2019-2023.json",
+          "sha256": "c9eee737270afcc1765ae84cdd68314f9c4fa9372021c7b6177c8c1f130b22ba",
+          "bytes": 12576,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OH-motor-vehicle-theft-2019-2023.json",
+          "sha256": "f7700e3e53f50d198fdcc8f92dad00c755f963599933a7e0b089fafb42674db1",
+          "bytes": 12576,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OH-rape-2019-2023.json",
+          "sha256": "05381639da3a82a2472f1f553a2bfdff1514817f58ca0b708739f6ec2813c203",
+          "bytes": 12320,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OK-homicide-2019-2023.json",
+          "sha256": "74385f114fb493d4763ae87ee559ad47abf3a8ea31b46b4663baf971576df234",
+          "bytes": 12152,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OK-violent-crime-2019-2023.json",
+          "sha256": "5e71f58bd17531503cec468e650c1144b4a467a86c86de322acb66cf6254d693",
+          "bytes": 12594,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OK-robbery-2019-2023.json",
+          "sha256": "e66e65037d887c1a2ef0f4b834e9044453ba244eae65b1d6c6fecf45a0b7bd26",
+          "bytes": 12243,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OK-aggravated-assault-2019-2023.json",
+          "sha256": "58f28ea22c40a0abbe298fff8cb78a32308fbac1563b0ac9f8a1109a65c5d780",
+          "bytes": 12525,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OK-burglary-2019-2023.json",
+          "sha256": "d44ba00d7c73a8da9db64226425ef61bfe99122a4210102b6f033621b4beab09",
+          "bytes": 12476,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OK-motor-vehicle-theft-2019-2023.json",
+          "sha256": "e2cf4d1b4d6b971b5c250f0c2b87c456d3432b534c59424a56d1d8da50675ee7",
+          "bytes": 12460,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OK-rape-2019-2023.json",
+          "sha256": "456738b251c4360a4948fdab5931aa6360c299948d76d5bdc22b23b374120829",
+          "bytes": 12215,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OR-homicide-2019-2023.json",
+          "sha256": "aece95c667383617a70692e72795e7534b11313fbc598455289f649506673964",
+          "bytes": 12112,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OR-violent-crime-2019-2023.json",
+          "sha256": "7c3e0d8e374fab1a9064267ecc29de84ab6435c80fb876f4867a4582461813bc",
+          "bytes": 12564,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OR-robbery-2019-2023.json",
+          "sha256": "4a0c188fe1f2934946ff6b90e33be99ba3f7deb2c087e8789d72006945f60a80",
+          "bytes": 12223,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OR-aggravated-assault-2019-2023.json",
+          "sha256": "f192e1aebce017102ab4a2667a8b7fbf686d4a895c0912e81f7b8c5d93abe45d",
+          "bytes": 12477,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OR-burglary-2019-2023.json",
+          "sha256": "f548b0a2443ae1f32e64da290ff0df300cebc7b83a0b4235309c33086cfe50ff",
+          "bytes": 12468,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OR-motor-vehicle-theft-2019-2023.json",
+          "sha256": "a4eabf03f27d1661de0080259d9c58dc28ae9d1624118da36436c663e34d911c",
+          "bytes": 12450,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/OR-rape-2019-2023.json",
+          "sha256": "d26695811980c1df2c58edbce42b197b329f4a1daf09c1e18fd75e97636f2139",
+          "bytes": 12206,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PA-homicide-2019-2023.json",
+          "sha256": "3323a7ba411839b2195b46908053d7f6c50cd3efe363fd2941685298dc7bf78c",
+          "bytes": 12303,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PA-violent-crime-2019-2023.json",
+          "sha256": "ea20e49f632cb6886016f55b5c7c0b709414470faa3a58d5b4149e96f0434673",
+          "bytes": 12767,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PA-robbery-2019-2023.json",
+          "sha256": "f193fd799ebca25f239a75b58ae384f6a1b6a5638ac5121f141781f72f9ddf35",
+          "bytes": 12426,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PA-aggravated-assault-2019-2023.json",
+          "sha256": "e16e74be4c211393f6e80cf3b44b73fe9c19967b1666c947469d0e0f203f02d7",
+          "bytes": 12667,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PA-burglary-2019-2023.json",
+          "sha256": "01ead311d78ed79f160c7c79280c6d57d5f851219bfa891db1424fd81c1a3db0",
+          "bytes": 12595,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PA-motor-vehicle-theft-2019-2023.json",
+          "sha256": "2bf329402d2997dff930bd13528c4b8663dbbafdb710744a6a074554fa017fed",
+          "bytes": 12576,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PA-rape-2019-2023.json",
+          "sha256": "4118dbb0a0577ccf6e8e04a5a95d1f3e4785956de9c87575d0b020ee651f49c1",
+          "bytes": 12392,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/RI-homicide-2019-2023.json",
+          "sha256": "f111fa7f102c5c49d67d51cf82b71c4145eb3442df87dcd868f5e8bb3eed07ac",
+          "bytes": 11911,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/RI-violent-crime-2019-2023.json",
+          "sha256": "9d2ffea1620e68647d711234c2cf33c1d919aa4531a1fcdcb521846f88c00a32",
+          "bytes": 12363,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/RI-robbery-2019-2023.json",
+          "sha256": "d1a1dea7bb6a8ee3a641170d5f865d5f004e4411cf47ab328a132efa303994e5",
+          "bytes": 12058,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/RI-aggravated-assault-2019-2023.json",
+          "sha256": "1322442f87befe334c20dc5d81d986c28ba906ae41906fb852a59fb3967ffc37",
+          "bytes": 12265,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/RI-burglary-2019-2023.json",
+          "sha256": "f86dad8eb0f2a7e3951764b2ef08c86b3bca26a748de9be07d60d528aed72678",
+          "bytes": 12276,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/RI-motor-vehicle-theft-2019-2023.json",
+          "sha256": "c83b9210861ddcf2818ff5e91c2605409b20cba86e5a57a7efe4d505ab7092fb",
+          "bytes": 12261,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/RI-rape-2019-2023.json",
+          "sha256": "3f3153130a9f0208a282c500534fc8410aef290a05237c2191fae70b34c110d9",
+          "bytes": 12054,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SC-homicide-2019-2023.json",
+          "sha256": "f9988d05480de4630bd247cf37a136596b13e14d90700d0a83363b55f0bccf8e",
+          "bytes": 12218,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SC-violent-crime-2019-2023.json",
+          "sha256": "0ec67128d7513f6faac034b446645752ea38189ef9712754eb9cdb1431384ccf",
+          "bytes": 12678,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SC-robbery-2019-2023.json",
+          "sha256": "fe5398538ef2b912689530749d114a50542c646aee48cd21265adc1076c3ca67",
+          "bytes": 12294,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SC-aggravated-assault-2019-2023.json",
+          "sha256": "0954fcc0bbc9494f2a4e49cf3f495dc947f7dd27dfd3cb128c50f3a91de196fd",
+          "bytes": 12608,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SC-burglary-2019-2023.json",
+          "sha256": "94f8c2072ec0381570aa24e471fffc7241cbca99e47529ed851609572c4761f4",
+          "bytes": 12523,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SC-motor-vehicle-theft-2019-2023.json",
+          "sha256": "a1a79c61d1fbfab14cd0a2db74ac091afb4e5210d097ea553628d85423a888e5",
+          "bytes": 12519,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SC-rape-2019-2023.json",
+          "sha256": "0cb0c74aefc495e7cc1168f2eb443e7765963a15eb24e8378576220aa713cb84",
+          "bytes": 12271,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SD-homicide-2019-2023.json",
+          "sha256": "b81ef93edaa2843ee183560a939d356ecb5de96c2f0c3148a582c8752b31924e",
+          "bytes": 11920,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SD-violent-crime-2019-2023.json",
+          "sha256": "c7dd37e320f4ce10a37a815b7fd94234245eaa44daa3a586a88846557d680169",
+          "bytes": 12435,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SD-robbery-2019-2023.json",
+          "sha256": "8c2dd74e752a92ff25553556dc2289469baa1e8f212c459316e899b676aea2cd",
+          "bytes": 12026,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SD-aggravated-assault-2019-2023.json",
+          "sha256": "1b2d85e7f8c758f509cdff5352a63577b92a607f9f3a969aaa6109fde5df4576",
+          "bytes": 12411,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SD-burglary-2019-2023.json",
+          "sha256": "e749973b336f91a8af24c34c67f60709a19aa7af0fe9406f508451a161e3a38b",
+          "bytes": 12264,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SD-motor-vehicle-theft-2019-2023.json",
+          "sha256": "974e9332eb41d70cf66c6ec01dfc360e10099715036d643349f1bf94a0bb84ea",
+          "bytes": 12272,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/SD-rape-2019-2023.json",
+          "sha256": "ccf4295746ad9a1712d8e1350a7ca7a54063deb748d0c9e7f989e6ffb47923b1",
+          "bytes": 12039,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TN-homicide-2019-2023.json",
+          "sha256": "279541c2ec6dea8bb30d0b7ae47f680316b30a53dce4ff4a7ddf99ae8e8c5562",
+          "bytes": 12136,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TN-violent-crime-2019-2023.json",
+          "sha256": "cc0fc53b088d90c1f2f661c1d97be35c98e92341ca404e9056552445d675ce8e",
+          "bytes": 12621,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TN-robbery-2019-2023.json",
+          "sha256": "6838e9291d32a26998caa209fc1b9a104463ef77025435b07bbd7fc294f68d5d",
+          "bytes": 12235,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TN-aggravated-assault-2019-2023.json",
+          "sha256": "bcc2aa19190aa6b5d89b0998191bf97418bc7634902465a6c7ea88665782e86a",
+          "bytes": 12573,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TN-burglary-2019-2023.json",
+          "sha256": "9b3db7b9bc8fd3c85d3c453eaf626c36161d89eebef29e2f0485125cba05867e",
+          "bytes": 12446,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TN-motor-vehicle-theft-2019-2023.json",
+          "sha256": "c5cc006f627ce2952a3391c3f7b53e7925bd835a61086051dadd4f3a49b85abb",
+          "bytes": 12441,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TN-rape-2019-2023.json",
+          "sha256": "63b9df1bae6d2cf4d487d96fa4663118ca50518d38928eedb957290595748c8b",
+          "bytes": 12192,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TX-homicide-2019-2023.json",
+          "sha256": "1b17f91b13155fdec9a5cf11544b60ef6ff6bb52f6b7287751cb7e0f7c9ec849",
+          "bytes": 12347,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TX-violent-crime-2019-2023.json",
+          "sha256": "ff5e02778cd21e3c94036bdbe7a0b5aa0788df3e848b9d2a7f033dc9a57498b5",
+          "bytes": 12798,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TX-robbery-2019-2023.json",
+          "sha256": "1edf25daf4f62b7fb0354ae5fbaa789ffe7e31893896ea68fd9c81689beef0b6",
+          "bytes": 12449,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TX-aggravated-assault-2019-2023.json",
+          "sha256": "096735df670ac61274a543b86c1922b562f5a4f9b1800eee7bb14b139a874ec3",
+          "bytes": 12657,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TX-burglary-2019-2023.json",
+          "sha256": "6bc57eb66a185b9b1b7ad1984d8f7c0f70602931270bea9ca8a5ab06e074caae",
+          "bytes": 12577,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TX-motor-vehicle-theft-2019-2023.json",
+          "sha256": "f2dd3197599eaca65bfefccbbe1d61ce041a92dabb6046ecbdc9b91ec3538878",
+          "bytes": 12583,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/TX-rape-2019-2023.json",
+          "sha256": "90cecdc72b377a6c4bd5dba535583258c05eaeb98dbc45b22b3cfb3fc3d9e3d6",
+          "bytes": 12425,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/UT-homicide-2019-2023.json",
+          "sha256": "524a7128aa0781a7c1e6adf06e65c101390cfa35871bdaf53008b4a4506ce2c0",
+          "bytes": 12046,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/UT-violent-crime-2019-2023.json",
+          "sha256": "d09e0d74f59c110dba5e3f3748c8d7f47b5e36047fa9a61717729c15c00514c3",
+          "bytes": 12492,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/UT-robbery-2019-2023.json",
+          "sha256": "2bed9c1a027d1aacab54910596d84426e693f513ef5244a06bbdb27d64d20a8f",
+          "bytes": 12169,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/UT-aggravated-assault-2019-2023.json",
+          "sha256": "0e05351d00fb0e038818d1ef9048c900acab0099cbc8aa0eca61e192634a9b44",
+          "bytes": 12418,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/UT-burglary-2019-2023.json",
+          "sha256": "739007738b238957d51cf81ccf5951315cc06f6bdcfb5a7a1b86981727939d1b",
+          "bytes": 12340,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/UT-motor-vehicle-theft-2019-2023.json",
+          "sha256": "080d8ec12d599a638466236662faf96cd18bd407c64dc45fb0fadef6d778f463",
+          "bytes": 12336,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/UT-rape-2019-2023.json",
+          "sha256": "22572fcf1fae88a4d3e74a01cf00bdab74ddc536e38a4825e772c47fba5e2589",
+          "bytes": 12201,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VT-homicide-2019-2023.json",
+          "sha256": "263c2e26aa661078f7a206299b31d81acc23ae4a0dda53630f8492b8829f77fb",
+          "bytes": 11726,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VT-violent-crime-2019-2023.json",
+          "sha256": "07c97a95160e4377d9fb6749543a24e4c93b344b569c259c86095a947178903c",
+          "bytes": 12242,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VT-robbery-2019-2023.json",
+          "sha256": "deea792c0428fb46fa82f00b6d7b4148535b6747ee8e51ec28adc8c57f53b350",
+          "bytes": 11857,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VT-aggravated-assault-2019-2023.json",
+          "sha256": "c753eede9d676450940b70faebae6f65aab9c960465f5465db6aa3170fc86ecf",
+          "bytes": 12135,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VT-burglary-2019-2023.json",
+          "sha256": "3735d156847f3667a12d0020f475c7daf485a692cd4a6f992db2459b29922d14",
+          "bytes": 12105,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VT-motor-vehicle-theft-2019-2023.json",
+          "sha256": "85ec0213e37fb3c73b15f286df07610cb2de8788afc093ec0b65b8517ef15642",
+          "bytes": 12002,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VT-rape-2019-2023.json",
+          "sha256": "3ec2a804f98389bd2aef6d4fbc997d8b194dc9362d702f0284027b5045269738",
+          "bytes": 11922,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VA-homicide-2019-2023.json",
+          "sha256": "e63159ca2852b510dede13f74f0a1daf86afef192d479ba6493f0db24c1a445d",
+          "bytes": 12178,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VA-violent-crime-2019-2023.json",
+          "sha256": "33c032d61268f73f5615dfc2a9af611b673f8b9a828b1ffd1c61db298df8d642",
+          "bytes": 12563,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VA-robbery-2019-2023.json",
+          "sha256": "f007ab62082cec1bdb7d1a0f83e1a306800f243c2bbdc2413691b942862c88e2",
+          "bytes": 12282,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VA-aggravated-assault-2019-2023.json",
+          "sha256": "84c2f4de46bd46526ce34aec6f2ff406425206c9a4e9df70e02b5325902530a0",
+          "bytes": 12487,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VA-burglary-2019-2023.json",
+          "sha256": "4d26b81b8c5b8e33636a737f723bebe4e48d785f99ce8b1d2d3604e353fc71e5",
+          "bytes": 12428,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VA-motor-vehicle-theft-2019-2023.json",
+          "sha256": "1916b8d10bd289620dbdc09943f030ccaaf250c87a0637f382ab154ac7a4ca5d",
+          "bytes": 12441,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/VA-rape-2019-2023.json",
+          "sha256": "c0db528be7eab46002efcb921dc446f85376648199defede4ed0382c53f7887d",
+          "bytes": 12267,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WA-homicide-2019-2023.json",
+          "sha256": "ea310ba59680c9fccb29760176931da7ccbaff63bb4fa98186f928e62d36634d",
+          "bytes": 12188,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WA-violent-crime-2019-2023.json",
+          "sha256": "6548a6753eea386921fce636bdeb05b0a8341321dde317434bd2a4630df611bf",
+          "bytes": 12613,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WA-robbery-2019-2023.json",
+          "sha256": "57b668a697742b37cfb286287dfae86b375229b678c5e1933318ac65b9659f3a",
+          "bytes": 12324,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WA-aggravated-assault-2019-2023.json",
+          "sha256": "15b721ad4314903082f0cc7d066073864b56e0cdbcb386c2479e8a994f15d0be",
+          "bytes": 12515,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WA-burglary-2019-2023.json",
+          "sha256": "562171b214fd6dd8465441c98871cbf4642bb447adf08852e220dd4b6f0df671",
+          "bytes": 12502,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WA-motor-vehicle-theft-2019-2023.json",
+          "sha256": "c7ca925664c0b8b927feb0e0f040d775d8dcd21730ebc4e84609f3dced9020f7",
+          "bytes": 12491,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WA-rape-2019-2023.json",
+          "sha256": "0af55ba5e34e2158a38077943ceec05bdfdeaf8cf97e8f9f456a48bd7e72a44f",
+          "bytes": 12242,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WV-homicide-2019-2023.json",
+          "sha256": "f1912a6d612afe9e12b78b78a1f354a6d4a4fe03d8740dc715128a958eab9db3",
+          "bytes": 12121,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WV-violent-crime-2019-2023.json",
+          "sha256": "83c01d35377e9df8165bf40b3285290dbf04d9d0f9560e45476bce5fe4690707",
+          "bytes": 12533,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WV-robbery-2019-2023.json",
+          "sha256": "fa244c74d9e8275024398a54440d413a1431b34ecaff6cd49c4136037ee73b52",
+          "bytes": 12159,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WV-aggravated-assault-2019-2023.json",
+          "sha256": "e5db462ef8a0a2e0f235b29b2e528d3e3c7541769369914b5141021f81572ee3",
+          "bytes": 12480,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WV-burglary-2019-2023.json",
+          "sha256": "c8b00df6c79b4a97357a46f99cba61ec24ecc256fcb2baeb31f0d84a2ef9ae30",
+          "bytes": 12398,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WV-motor-vehicle-theft-2019-2023.json",
+          "sha256": "83e4df3890f550b607db96a05a17e31a030fb71bfaf8ccd149edfe857eb2c143",
+          "bytes": 12348,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WV-rape-2019-2023.json",
+          "sha256": "f8fe77d8c3f5b2a7318dade8dbb4bb8bf68620e84b637a54514543c7e1461fc9",
+          "bytes": 12185,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WI-homicide-2019-2023.json",
+          "sha256": "ed6a2893bee0c537144977b755426af06027f1fa049448cd5941fce61c6c3fb2",
+          "bytes": 12172,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WI-violent-crime-2019-2023.json",
+          "sha256": "e4aac2680e664f832029aa4d34099b1aa09baf74145bd3e72a9500c2974e0695",
+          "bytes": 12607,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WI-robbery-2019-2023.json",
+          "sha256": "45b37acf32225b16e4aa922925cce6a7fedddb899b762780218570aeda2a75be",
+          "bytes": 12248,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WI-aggravated-assault-2019-2023.json",
+          "sha256": "efaf458bf1473056c90d08431635c57ada03d35bb1ac05e9b9d50fde9b22d1bf",
+          "bytes": 12539,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WI-burglary-2019-2023.json",
+          "sha256": "31a2f9ecaf9f3b3a7291448dc0790ec7f5c09498dfb56568b887c8e7f0293f7c",
+          "bytes": 12440,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WI-motor-vehicle-theft-2019-2023.json",
+          "sha256": "613429000616e06881230c93957c1aa8f561146e6fd8955344f3b30288798bb4",
+          "bytes": 12435,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WI-rape-2019-2023.json",
+          "sha256": "ddec47ce754dbebb30fa5f5c7b8e40a07fd24989d22e9cbf8d5d1c76554d468c",
+          "bytes": 12235,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WY-homicide-2019-2023.json",
+          "sha256": "a078e35437352d205e59d37a99e70b534172c70a0fbe7d5360c300ef07341de8",
+          "bytes": 11759,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WY-violent-crime-2019-2023.json",
+          "sha256": "4f1c4f4ab9486e87b82e3e432da7c57e150c356249c5b026fdd3ccca6a8cad13",
+          "bytes": 12249,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WY-robbery-2019-2023.json",
+          "sha256": "d97ed25c60b634b0774808d2e3076a2a0ba15d9b0332042e774e87667c9f9e58",
+          "bytes": 11891,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WY-aggravated-assault-2019-2023.json",
+          "sha256": "00c6187d82391126da212360918e7a478f5e1ed3032e21c7061be790953869da",
+          "bytes": 12177,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WY-burglary-2019-2023.json",
+          "sha256": "d2ba224e92b77b21131951be0330a2fb0367de9171d72795b1df26472de94c6a",
+          "bytes": 12168,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WY-motor-vehicle-theft-2019-2023.json",
+          "sha256": "753c8dfc2711ca0c9bf180b7dc7573af959dbe6bfd0153377b3a54cbf78417f4",
+          "bytes": 12145,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/WY-rape-2019-2023.json",
+          "sha256": "01230e18f06feeabed6ef2c0965c2601f5a1099c90614fccd75c28a2a11e4a6f",
+          "bytes": 11965,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PR-homicide-2019-2023.json",
+          "sha256": "2cdfcd8a08750f9c4c264c043c39a949e984a8ae70213f8eaf539b5e93a19c08",
+          "bytes": 11646,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PR-violent-crime-2019-2023.json",
+          "sha256": "03d86eb48f69b2598994e82ad8b947754a79e2da46f32b6cee5d45cccdba67f5",
+          "bytes": 11770,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PR-robbery-2019-2023.json",
+          "sha256": "bd3e88fbede6cb5ae330bb671ad20aa204b64d67a171b89bc1eee7475b320fca",
+          "bytes": 11639,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PR-aggravated-assault-2019-2023.json",
+          "sha256": "aab4c460c2be3ae1700e29007b7cb985dcc223538b2c14c4e36e5f77c4ac1c79",
+          "bytes": 11721,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PR-burglary-2019-2023.json",
+          "sha256": "11ccb810cf732b4a890db867c3f0950f3adf3952e931abc89df72545dcb23076",
+          "bytes": 11698,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PR-motor-vehicle-theft-2019-2023.json",
+          "sha256": "13444f1ab1d608f020aa0762d78e943d1c35623b4b33cee433e19f69221d7d35",
+          "bytes": 11696,
+          "cache_hit": true
+        },
+        {
+          "path": "raw/full/fbi_cde/PR-rape-2019-2023.json",
+          "sha256": "98829b902565269b5746673bc8ab33e7337f7ca2f890a9fe1b0af5542003139d",
+          "bytes": 11615,
+          "cache_hit": true
+        }
+      ],
+      "normalized_artifact": {
+        "path": "normalized/fbi_cde.jsonl",
+        "rows": 3266,
+        "duplicate_keys": 0,
+        "sha256": "9b2faaf8b09e0b24347e812434be998d9d58b8c0da586033ef8e3c14f3797320",
+        "bytes": 1365370
+      },
+      "free_bytes_before": 10938036224,
+      "request_count": 0,
+      "response_bytes": 0,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 364,
+      "duration_seconds": 0.418
+    },
+    "census_acs": {
+      "status": "fail",
+      "started_at": "2026-09-19T14:38:07.535800+00:00",
+      "finished_at": "2026-09-19T14:56:20.488803+00:00",
+      "reason": "timeout",
+      "normalization_retrieved_at": "2026-09-19T14:14:22.923122+00:00",
+      "request_count": 97,
+      "response_bytes": 21375851,
+      "retry_count": 0,
+      "http_429_count": 0,
+      "cache_hit_count": 29,
+      "duration_seconds": 1092.898
+    }
+  },
+  "supersedes_manifest_sha256": "eb60c0121c28e5d8e864d132f6d80e061a78f204031ce53e7c1b09b50a319b9b",
+  "updated_at": "2026-09-19T14:56:20.511042+00:00",
+  "interrupted_at": "2026-09-19T14:14:34.525212+00:00",
+  "resumed_at": "2026-09-19T14:38:07.061674+00:00",
+  "finished_at": "2026-09-19T14:56:20.516941+00:00"
+}

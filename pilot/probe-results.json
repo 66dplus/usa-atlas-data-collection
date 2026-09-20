@@ -1,0 +1,78 @@
+{
+  "census_acs": {
+    "status": "pass",
+    "rows": 1
+  },
+  "bls_laus": {
+    "status": "pass",
+    "rows": 12,
+    "credential": "project key"
+  },
+  "fbi_cde": {
+    "status": "pass",
+    "months": 12
+  },
+  "cdc_places": {
+    "status": "pass",
+    "rows": 6,
+    "credential": "project token"
+  },
+  "eia": {
+    "status": "pass",
+    "rows": 1,
+    "credential": "project key"
+  },
+  "bea_rpp_bulk": {
+    "status": "pass",
+    "archive_bytes": 39230
+  },
+  "bea_api": {
+    "status": "pass",
+    "datasets": 13,
+    "credential": "project key"
+  },
+  "epa_aqs": {
+    "status": "pass",
+    "availability": "pass",
+    "rows": 441
+  },
+  "cdc_wonder": {
+    "status": "manual_probe_pass",
+    "constraint": "NVSS API supports national results only; one robot query about every two minutes."
+  },
+  "hud_pit": {
+    "status": "blocked",
+    "constraint": "Direct XLSB request returned an AWS WAF challenge; use approved interactive or alternate bulk-download path."
+  },
+  "bls_oews": {
+    "status": "blocked",
+    "constraint": "Akamai returned 403 to automated ZIP/TXT download from this environment."
+  },
+  "irs_soi": {
+    "status": "manual_probe_pass",
+    "sample": "2022 Delaware XLSX parsed successfully."
+  },
+  "usda_food_environment_atlas": {
+    "status": "manual_probe_pass",
+    "sample": "2025 CSV archive parsed for Alameda County."
+  },
+  "forbes_billionaires": {
+    "status": "not_authorized",
+    "constraint": "Forbes terms prohibit automated scraping/collection; license or replacement source required."
+  },
+  "retail_menu": {
+    "status": "source_unselected"
+  },
+  "gasoline_price": {
+    "status": "metric_and_source_unselected"
+  },
+  "consumer_debt": {
+    "status": "metric_and_source_unselected"
+  },
+  "health_insurance_cost": {
+    "status": "metric_and_source_unselected"
+  },
+  "nchs_life_expectancy": {
+    "status": "dataset_unselected"
+  }
+}

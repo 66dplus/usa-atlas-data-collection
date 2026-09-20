@@ -1,0 +1,28 @@
+.DS_Store
+**/__pycache__/
+**/*.py[cod]
+
+# Credentials always stay outside the repository.
+.env
+.env.*
+*.env
+credentials.env
+
+# Runtime outputs are reproducible and can be large.
+full/normalized/
+full/FIELD-EVAL.json
+full/raw/*
+!full/raw/full/
+full/raw/full/*
+!full/raw/full/census_acs/
+!full/raw/full/census_acs/**
+
+# Keep the durable resume manifest, not process-local state.
+full/state/*
+!full/state/run-manifest.json
+
+# Local database instances and loader locks are not portable artifacts.
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+*.lock
