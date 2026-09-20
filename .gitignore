@@ -9,7 +9,9 @@
 credentials.env
 
 # Runtime outputs are reproducible and can be large.
-full/normalized/
+full/normalized/*
+!full/normalized/fbi_cde.jsonl
+!full/normalized/eia.jsonl
 full/FIELD-EVAL.json
 full/raw/*
 !full/raw/full/

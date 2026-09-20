@@ -1,0 +1,20 @@
+[Unit]
+Description=USA Atlas resumable Census collector
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+WorkingDirectory=/opt/usa-atlas-data-collection
+Environment=PYTHONUNBUFFERED=1
+ExecStartPre=/usr/bin/python3 full/server_runner.py calibrate-if-needed --source census_acs
+ExecStart=/usr/bin/python3 full/server_runner.py run --source census_acs
+Restart=on-failure
+RestartSec=300
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=default.target

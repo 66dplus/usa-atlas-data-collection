@@ -1,8 +1,8 @@
 # Collector repository handoff task
 
-Workflow: FULL  
-Current gate: Implementer  
-Goal version: `collector-repository-v1`  
+Workflow: FULL
+Current gate: Code Review
+Goal version: `collector-repository-v1`
 Acceptance IDs: `RH1`–`RH6`
 
 PlanPass: PASS by independent critic, bound to plan

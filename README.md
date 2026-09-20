@@ -8,7 +8,8 @@ The current transfer checkpoint has eight completed providers and an interrupted
 `census_acs` run. The committed `full/raw/full/census_acs/` payloads let another
 machine resume Census without repeating verified requests. Bulk normalized output,
 non-Census raw downloads, process state, database files, and credentials are not
-versioned.
+versioned. The small completed `fbi_cde.jsonl` and `eia.jsonl` artifacts are retained
+only as hash-bound integration fixtures used by the database tests.
 
 ## Local checks
 
@@ -38,4 +39,3 @@ is city-level. Depending on the source, normalized rows may be state, county, me
 ZIP, or EPA monitor records. Counties are not city neighbourhoods, and the current
 UI's state/city hierarchy does not make deeper provider geographies equivalent to
 city districts.
-
