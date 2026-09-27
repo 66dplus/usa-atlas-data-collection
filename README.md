@@ -2,11 +2,11 @@
 
 ## Repository boundary
 
-This is the data side of a two-repository system. The separate UI currently lives at
-`usa-atlas-design-lab/` in the local workspace and will have its own Git origin. This
-repository owns source acquisition, normalization, provenance, stable field/geography
-semantics, PostgreSQL schema and admission. It does not own map rendering or product
-interaction.
+This is the data side of a two-repository system. The separate UI repository is
+[`66dplus/usa-atlas-design-lab`](https://github.com/66dplus/usa-atlas-design-lab), checked
+out locally at `usa-atlas-design-lab/` in the USA-MAPS workspace. This repository owns
+source acquisition, normalization, provenance, stable field/geography semantics,
+PostgreSQL schema and admission. It does not own map rendering or product interaction.
 
 The integration boundary is the admitted `usa_atlas` PostgreSQL schema plus the
 versioned field and geography contract. UI access is read-only. Collector code and
