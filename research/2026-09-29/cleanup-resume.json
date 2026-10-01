@@ -1,0 +1,16 @@
+{
+  "observed_at": "2026-09-29T13:50:50.494576+00:00",
+  "unit": "usa-atlas-storage-compaction-20260929.service",
+  "progress": {
+    "free_bytes": 80191717376,
+    "phase": "backup_running",
+    "pid": 841908,
+    "updated_at": "2026-09-29T13:46:50.160230+00:00"
+  },
+  "backup_bytes_so_far": 442855424,
+  "original_relation_bytes": 63936045056,
+  "shadow_relation_bytes_before_resume": 17791787008,
+  "dictionary_bytes_before_resume": 2383872,
+  "production_cutover_complete": false,
+  "resume_reason": "serial exact comparison avoids parallel shared-memory failure; unbound old backup archived and replaced under source locks"
+}

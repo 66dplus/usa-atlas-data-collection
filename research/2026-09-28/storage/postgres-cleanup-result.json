@@ -1,0 +1,25 @@
+{
+  "backup": {
+    "bytes": 929358558,
+    "path": "/srv/usa-atlas/maintenance/20260928-compact/usa-atlas-before-compact.dump",
+    "scope": "full usa_atlas schema and all data before compaction",
+    "sha256": "220986156c37684c43ffa8d532d4c52799e03c6546372424fc864f0543059ca0",
+    "source_fingerprint_sha256": "00727a179aba97c7f7ee1391f92ecdb2adf33cf5f27809d6844e46d580b312d7",
+    "verified": "pg_restore read entire archive to /dev/null; no restore into live database"
+  },
+  "catalog_sha256": "2aeb4cff27010265581b0c1a200963b8eb88e3f1a9d60e2e586f041f31cb117d",
+  "compact_relation_bytes": 17794170880,
+  "exact_validation": {
+    "mismatches": 0,
+    "ranges": 101,
+    "rows": 49206438
+  },
+  "free_bytes_after": 143129477120,
+  "old_schema_sha256": "85cf4e458eea7b859563ceb6c4b8ade5eec66237ce190b290720674a176bea9a",
+  "original_relation_bytes": 63936045056,
+  "relation_bytes_freed": 46141874176,
+  "rows_preserved": 49206438,
+  "schema_sha256": "6cf64be22ec298c4b99eadb862bb9759b4c0dd44195ef58bffe8b10a9216042d",
+  "status": "complete",
+  "validation": "exact keyed comparison of all 13 fields across every row; complete counts; full fingerprints; all PK/FK validated"
+}

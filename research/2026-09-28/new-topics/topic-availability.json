@@ -1,0 +1,122 @@
+{
+  "as_of": "2026-09-28",
+  "company_value_definition": {
+    "value": "annual_sales_or_receipts_usd",
+    "decision_status": "assumed_pending_user_clarification",
+    "valuation_separate": true
+  },
+  "status_definitions": {
+    "collected": "Local aggregate rows saved; scope and coverage remain explicit",
+    "proxy": "Related metric with a different definition; never silently substitute",
+    "blocked": "Identified source exists but payload retrieval/verification is incomplete",
+    "source_needed": "No usable exact public metric or full pipeline verified"
+  },
+  "topics": [
+    {
+      "id": "millionaires_net_worth_ge_1m",
+      "catalog_relation": "existing_unfilled",
+      "status": "collected",
+      "collected_exact": false,
+      "finest_verified_geography": "nation",
+      "alternative_source_ids": [
+        "irs_personal_wealth_2019",
+        "irs_agi_state_2023",
+        "fed_scf_2022"
+      ],
+      "reason": "National publisher estimate collected; exact official small-area count absent. Boundary convention is publisher USD millionaire threshold. No county/tract/block group values.",
+      "collection_scope": "national_publisher_estimate_only",
+      "source_ids": [
+        "ubs_gwr_2026"
+      ],
+      "normalized_rows": 1,
+      "subnational_status": "source_needed"
+    },
+    {
+      "id": "billionaires_net_worth_ge_1bn",
+      "catalog_relation": "existing_unfilled",
+      "status": "collected",
+      "collected_exact": false,
+      "finest_verified_geography": "nation",
+      "alternative_source_ids": [
+        "fed_scf_2022"
+      ],
+      "reason": "UBS national point estimate for 2025-04-04 collected. Newer 2026 report only supplies >1000 U.S. billionaires in text. No official county/tract/block-group count verified.",
+      "collection_scope": "national_publisher_estimate_only",
+      "source_ids": [
+        "ubs_billionaire_2025"
+      ],
+      "normalized_rows": 1,
+      "subnational_status": "source_needed"
+    },
+    {
+      "id": "companies_receipts_ge_1m",
+      "catalog_relation": "new",
+      "status": "blocked",
+      "collected_exact": false,
+      "finest_verified_geography": "county_candidate",
+      "source_ids": [
+        "census_abs_receipts_2023",
+        "census_susb_receipts_2022"
+      ],
+      "reason": "ABS receipts table county scope verified; payload values/bands require retrieval."
+    },
+    {
+      "id": "companies_receipts_ge_1bn",
+      "catalog_relation": "new",
+      "status": "blocked",
+      "collected_exact": false,
+      "finest_verified_geography": "country_candidate",
+      "source_ids": [
+        "census_susb_receipts_2022"
+      ],
+      "alternative_source_ids": [
+        "sec_companyfacts"
+      ],
+      "reason": "SUSB large-receipts national workbook found, exact bracket summation pending binary retrieval. SEC is only a filer subset."
+    },
+    {
+      "id": "data_centers_buildings_by_stage",
+      "catalog_relation": "new",
+      "status": "collected",
+      "collected_exact": true,
+      "coverage": "Loudoun County VA only; built+construction and proposed stages",
+      "finest_verified_geography": "local_election_district",
+      "normalized_rows": 63,
+      "source_ids": [
+        "loudoun_dc_2026_03"
+      ],
+      "national_completeness": false
+    },
+    {
+      "id": "wealthholders_net_worth_ge_11_4m_2019",
+      "catalog_relation": "new_separate_metric",
+      "status": "collected",
+      "collected_exact": true,
+      "finest_verified_geography": "state",
+      "normalized_rows": 53,
+      "suppressed_rows": 2,
+      "source_ids": [
+        "irs_personal_wealth_2019"
+      ],
+      "is_proxy_for_millionaires": true
+    },
+    {
+      "id": "data_center_national_electricity",
+      "catalog_relation": "new_context",
+      "status": "collected",
+      "collected_exact": true,
+      "finest_verified_geography": "country",
+      "normalized_rows": 2,
+      "source_ids": [
+        "lbnl_dc_energy_2025_update"
+      ]
+    },
+    {
+      "id": "companies_valuation_ge_1m_or_1bn",
+      "catalog_relation": "definition_pending",
+      "status": "source_needed",
+      "collected_exact": false,
+      "reason": "Revenue definition assumed. Private valuation registry not verified; SEC revenue alone cannot supply valuation."
+    }
+  ]
+}

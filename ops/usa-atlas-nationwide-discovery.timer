@@ -1,0 +1,11 @@
+[Unit]
+Description=Rotate USA Atlas nationwide catalog queries six hours after completion
+
+[Timer]
+OnBootSec=120
+OnUnitInactiveSec=6h
+AccuracySec=30
+Unit=usa-atlas-nationwide-discovery.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,2281 @@
+{
+  "as_of": "2026-09-28",
+  "contract_sha256": "e321baf79add3320961fab36f1e3c62630f46ad2c886e3e77b2a8099bb73603e",
+  "food_excluded": [
+    "08.01",
+    "08.02",
+    "08.03",
+    "08.06",
+    "09.01",
+    "09.02",
+    "09.03"
+  ],
+  "new_live_observations_downloaded": 0,
+  "database_introspected": false,
+  "important": "Historical manifest is not proof that bulk artifacts or DB rows are present in this checkout.",
+  "fields": [
+    {
+      "field_id": "01.01",
+      "label": "Population",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "01.02",
+      "label": "Age",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {
+        "county": {
+          "geographies": 3222,
+          "variables_present": 49,
+          "field_complete": false
+        },
+        "place": {
+          "geographies": 32330,
+          "variables_present": 49,
+          "field_complete": false
+        },
+        "state": {
+          "geographies": 52,
+          "variables_present": 49,
+          "field_complete": false
+        },
+        "tract": {
+          "geographies": 34790,
+          "variables_present": 49,
+          "field_complete": false
+        }
+      },
+      "finest_verified_local": "tract",
+      "catalog_required_variables": 100,
+      "local_acs_variables_present": 49,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "partial_cache_only",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "01.03",
+      "label": "Sex",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {
+        "county": {
+          "geographies": 3222,
+          "variables_present": 49,
+          "field_complete": false
+        },
+        "place": {
+          "geographies": 32330,
+          "variables_present": 49,
+          "field_complete": false
+        },
+        "state": {
+          "geographies": 52,
+          "variables_present": 49,
+          "field_complete": false
+        },
+        "tract": {
+          "geographies": 34790,
+          "variables_present": 49,
+          "field_complete": false
+        }
+      },
+      "finest_verified_local": "tract",
+      "catalog_required_variables": 98,
+      "local_acs_variables_present": 49,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "partial_cache_only",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "01.04",
+      "label": "Race / ethnicity",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 42,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "01.05",
+      "label": "Foreign-born population",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 54,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "tract_pending_table_validation",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Наличие block group проверять по каждой таблице; B050xx с чувствительными темами консервативно оставлены tract до чтения 2024 Table List. Summary File сохраняет только опубликованные GEO_ID.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "01.06",
+      "label": "Country / region of birth",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 356,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "tract_pending_table_validation",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Наличие block group проверять по каждой таблице; B050xx с чувствительными темами консервативно оставлены tract до чтения 2024 Table List. Summary File сохраняет только опубликованные GEO_ID.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "01.07",
+      "label": "Citizenship",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 12,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "tract_pending_table_validation",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Наличие block group проверять по каждой таблице; B050xx с чувствительными темами консервативно оставлены tract до чтения 2024 Table List. Summary File сохраняет только опубликованные GEO_ID.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "01.08",
+      "label": "Year / period of immigration",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 42,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "tract_pending_table_validation",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Наличие block group проверять по каждой таблице; B050xx с чувствительными темами консервативно оставлены tract до чтения 2024 Table List. Summary File сохраняет только опубликованные GEO_ID.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.01",
+      "label": "Median household income",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.02",
+      "label": "Per-capita income",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.03",
+      "label": "Median rent",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.04",
+      "label": "Median home value",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.05",
+      "label": "Mortgage / selected monthly owner costs",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.06",
+      "label": "Rent as % of income / rent burden",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 22,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.07",
+      "label": "Owner / renter ratio",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.08",
+      "label": "Poverty",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.09",
+      "label": "Households earning $200k+",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "02.10",
+      "label": "Cost of living / Regional Price Parities",
+      "excluded_from_new_collection": false,
+      "contract_provider": "bea_rpp",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "metro"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 884,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "metro",
+      "selected_provider_or_candidate": "BEA RPP",
+      "collection_status": "native_ceiling_no_county_tract_bg",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area"
+      ],
+      "notes_ru": "Официальный RPP штат/метро; metro не county. Старый SARPP download содержит штатные серии; MARPP требует отдельного артефакта.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.01",
+      "label": "Bachelor's degree",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.02",
+      "label": "Master's degree",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.03",
+      "label": "Doctorate",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.04",
+      "label": "High school attainment",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 20,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.05",
+      "label": "No diploma",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 32,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.06",
+      "label": "Unemployment",
+      "excluded_from_new_collection": false,
+      "contract_provider": "bls_laus",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 157104,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 8,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "selected_city_or_city_part",
+      "selected_provider_or_candidate": "BLS LAUS",
+      "collection_status": "native_ceiling_no_tract_bg",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.bls.gov/lau/laugeo.htm"
+      ],
+      "notes_ru": "Национальный county слой; также официальные города 25k+ и города/тауншипы Новой Англии. Городская серия отдельная; tract/BG отсутствуют. ACS unemployment — другая методология.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.07",
+      "label": "Average / mean salary",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / metro / nonmetro"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "metro_or_nonmetro",
+      "selected_provider_or_candidate": "BLS OEWS; QCEW county alternative",
+      "collection_status": "definition_source_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.bls.gov/cew/overview.htm"
+      ],
+      "notes_ru": "Контракт ссылается на среднюю зарплату OEWS. QCEW даёт county average weekly/annual pay, но это другая совокупность; не подменять без нового определения.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.08",
+      "label": "Employment growth",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "definition_required",
+      "contract_declared_geographies": [
+        "State / metro / county depending series"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "BLS QCEW",
+      "collection_status": "definition_required",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.bls.gov/cew/overview.htm"
+      ],
+      "notes_ru": "Можно county employment growth по сопоставимым годам/NAICS/ownership с disclosure flag. Выбрать годовой или квартальный рост и базовый период.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "03.09",
+      "label": "Work from home share",
+      "excluded_from_new_collection": false,
+      "contract_provider": "census_acs",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "county",
+        "place",
+        "tract"
+      ],
+      "historical_run_source_status": "fail",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "block_group",
+      "selected_provider_or_candidate": "Census ACS 2024 Detailed Tables",
+      "collection_status": "blocked_network",
+      "probe": "DNS/network_gaierror; see run-acs-summary.json",
+      "evidence_urls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "https://www.census.gov/programs-surveys/acs/data/summary-file.2024.html",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/data_suppression/ACS_Data_Release_Rules.pdf",
+        "https://www2.census.gov/programs-surveys/acs/tech_docs/table_shells/table_lists/2024_DataProductList.xlsx"
+      ],
+      "notes_ru": "Dataset публикует BG; конкретный 2024 payload ещё не скачан. E/M сохраняются вместе, EA/MA отсутствуют в старом кэше; пересчёт долей требует отдельной формулы MOE.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.01",
+      "label": "Murders",
+      "excluded_from_new_collection": false,
+      "contract_provider": "fbi_cde",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 3266,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 260,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.02",
+      "label": "Violent crime",
+      "excluded_from_new_collection": false,
+      "contract_provider": "fbi_cde",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 3266,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 260,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.03",
+      "label": "Robbery",
+      "excluded_from_new_collection": false,
+      "contract_provider": "fbi_cde",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 3266,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 260,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.04",
+      "label": "Aggravated assault",
+      "excluded_from_new_collection": false,
+      "contract_provider": "fbi_cde",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 3266,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 260,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.05",
+      "label": "Burglary",
+      "excluded_from_new_collection": false,
+      "contract_provider": "fbi_cde",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 3266,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 260,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.06",
+      "label": "Motor vehicle theft",
+      "excluded_from_new_collection": false,
+      "contract_provider": "fbi_cde",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 3266,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 260,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.07",
+      "label": "Rape",
+      "excluded_from_new_collection": false,
+      "contract_provider": "fbi_cde",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 3266,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 260,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.08",
+      "label": "Homicide",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "definition_required",
+      "contract_declared_geographies": [
+        "Agency or county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "04.09",
+      "label": "Crime trends",
+      "excluded_from_new_collection": false,
+      "contract_provider": "fbi_cde",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 3266,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 1446,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "agency",
+      "selected_provider_or_candidate": "FBI CDE/UCR",
+      "collection_status": "agency_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.fbi.gov/how-we-can-help-you/more-fbi-services-and-information/ucr"
+      ],
+      "notes_ru": "ORI и участие/месяцы отчётности обязательны. Агентство не совпадает с county/place; нельзя суммировать пересекающиеся зоны. Для 04.08 сначала уточнить police homicide vs mortality.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.01",
+      "label": "Drug overdose deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.02",
+      "label": "Opioid deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.03",
+      "label": "Fentanyl / synthetic opioid deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.04",
+      "label": "Cocaine deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.05",
+      "label": "Methamphetamine / psychostimulant deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.06",
+      "label": "Heroin deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.07",
+      "label": "Alcohol-related deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.08",
+      "label": "Suicide",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.09",
+      "label": "Homicide mortality",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.10",
+      "label": "Heart disease deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.11",
+      "label": "Cancer deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.12",
+      "label": "Accidental deaths",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / county"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CDC WONDER/NVSS",
+      "collection_status": "restricted_geographic_api",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://wonder.cdc.gov/wonder/help/mcd-provisional.html",
+        "https://wonder.cdc.gov/wonder/help/wonder-api.html"
+      ],
+      "notes_ru": "County доступен в интерфейсе; публичный WONDER API запрещает group/filter по location для NVSS. Нужен разрешённый экспорт/публичный файл. Подавленные значения, CI, ICD-10 и underlying/multiple cause обязательны; drug categories пересекаются.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.13",
+      "label": "Life-expectancy-related indicators",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "source_required",
+      "contract_declared_geographies": [
+        "County / state depending dataset"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "tract",
+      "selected_provider_or_candidate": "CDC NCHS USALEEP 2010-2015",
+      "collection_status": "historical_source_selected_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.cdc.gov/nchs/nvss/usaleep/update/usaleep.html"
+      ],
+      "notes_ru": "Есть официальный tract baseline 2010–2015 с observed/modelled flag, SE, границами 2010. Не выдавать его за текущий ежегодно обновляемый показатель.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.14",
+      "label": "Obesity rate",
+      "excluded_from_new_collection": false,
+      "contract_provider": "cdc_places",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 8871,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "tract",
+      "selected_provider_or_candidate": "CDC PLACES 2025",
+      "collection_status": "blocked_network_variant_required",
+      "probe": "DNS/network_gaierror; see run-cdc-places.json",
+      "evidence_urls": [
+        "https://data.cdc.gov/500-Cities-Places/PLACES-Census-Tract-Data-GIS-Friendly-Format-2025-/yjkw-uj5s"
+      ],
+      "notes_ru": "Трактовый GIS файл: crude prevalence, год 2023, границы 2023, модель и 95% CI. Текущий county контракт: age-adjusted. Создать отдельный variant, не заменять существующую серию.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.15",
+      "label": "Diabetes rate",
+      "excluded_from_new_collection": false,
+      "contract_provider": "cdc_places",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 8871,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "tract",
+      "selected_provider_or_candidate": "CDC PLACES 2025",
+      "collection_status": "blocked_network_variant_required",
+      "probe": "DNS/network_gaierror; see run-cdc-places.json",
+      "evidence_urls": [
+        "https://data.cdc.gov/500-Cities-Places/PLACES-Census-Tract-Data-GIS-Friendly-Format-2025-/yjkw-uj5s"
+      ],
+      "notes_ru": "Трактовый GIS файл: crude prevalence, год 2023, границы 2023, модель и 95% CI. Текущий county контракт: age-adjusted. Создать отдельный variant, не заменять существующую серию.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "05.16",
+      "label": "Physical inactivity rate",
+      "excluded_from_new_collection": false,
+      "contract_provider": "cdc_places",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 8871,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 4,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "tract",
+      "selected_provider_or_candidate": "CDC PLACES 2025",
+      "collection_status": "blocked_network_variant_required",
+      "probe": "DNS/network_gaierror; see run-cdc-places.json",
+      "evidence_urls": [
+        "https://data.cdc.gov/500-Cities-Places/PLACES-Census-Tract-Data-GIS-Friendly-Format-2025-/yjkw-uj5s"
+      ],
+      "notes_ru": "Трактовый GIS файл: crude prevalence, год 2023, границы 2023, модель и 95% CI. Текущий county контракт: age-adjusted. Создать отдельный variant, не заменять существующую серию.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "06.01",
+      "label": "Total homeless",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / Continuum of Care"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "continuum_of_care",
+      "selected_provider_or_candidate": "HUD PIT/HIC AHAR",
+      "collection_status": "native_ceiling_coc_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "notes_ru": "CoC может включать несколько counties или часть территории. PIT — однодневная оценка; sheltered/unsheltered, population и method сохранять. County/tract/BG автоматически не выводятся.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "06.02",
+      "label": "Sheltered homeless",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / CoC"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "continuum_of_care",
+      "selected_provider_or_candidate": "HUD PIT/HIC AHAR",
+      "collection_status": "native_ceiling_coc_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "notes_ru": "CoC может включать несколько counties или часть территории. PIT — однодневная оценка; sheltered/unsheltered, population и method сохранять. County/tract/BG автоматически не выводятся.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "06.03",
+      "label": "Unsheltered homeless",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / CoC"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "continuum_of_care",
+      "selected_provider_or_candidate": "HUD PIT/HIC AHAR",
+      "collection_status": "native_ceiling_coc_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "notes_ru": "CoC может включать несколько counties или часть территории. PIT — однодневная оценка; sheltered/unsheltered, population и method сохранять. County/tract/BG автоматически не выводятся.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "06.04",
+      "label": "Homeless veterans",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / CoC"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "continuum_of_care",
+      "selected_provider_or_candidate": "HUD PIT/HIC AHAR",
+      "collection_status": "native_ceiling_coc_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "notes_ru": "CoC может включать несколько counties или часть территории. PIT — однодневная оценка; sheltered/unsheltered, population и method сохранять. County/tract/BG автоматически не выводятся.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "06.05",
+      "label": "Homeless families",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / CoC"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "continuum_of_care",
+      "selected_provider_or_candidate": "HUD PIT/HIC AHAR",
+      "collection_status": "native_ceiling_coc_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "notes_ru": "CoC может включать несколько counties или часть территории. PIT — однодневная оценка; sheltered/unsheltered, population и method сохранять. County/tract/BG автоматически не выводятся.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "06.06",
+      "label": "Chronically homeless",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "blocked_access",
+      "contract_declared_geographies": [
+        "State / CoC"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "continuum_of_care",
+      "selected_provider_or_candidate": "HUD PIT/HIC AHAR",
+      "collection_status": "native_ceiling_coc_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "notes_ru": "CoC может включать несколько counties или часть территории. PIT — однодневная оценка; sheltered/unsheltered, population и method сохранять. County/tract/BG автоматически не выводятся.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "07.01",
+      "label": "Adjusted Gross Income (AGI)",
+      "excluded_from_new_collection": false,
+      "contract_provider": "irs_soi",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "zip"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 827595,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "zip",
+      "selected_provider_or_candidate": "IRS SOI ZIP and County 2022",
+      "collection_status": "native_zip_county_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+        "https://www.irs.gov/statistics/soi-tax-stats-county-data-2022"
+      ],
+      "notes_ru": "ZIP и county доступны отдельными таблицами, ZIP не ZCTA. AGI stub/единицы $1000/returns сохранять; налоговая декларация не человек. Для 07.02/07.05 определить порог и метрику.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "07.02",
+      "label": "High-income taxpayers / returns",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "definition_required",
+      "contract_declared_geographies": [
+        "ZIP / county / state depending table"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "zip",
+      "selected_provider_or_candidate": "IRS SOI ZIP and County 2022",
+      "collection_status": "native_zip_county_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+        "https://www.irs.gov/statistics/soi-tax-stats-county-data-2022"
+      ],
+      "notes_ru": "ZIP и county доступны отдельными таблицами, ZIP не ZCTA. AGI stub/единицы $1000/returns сохранять; налоговая декларация не человек. Для 07.02/07.05 определить порог и метрику.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "07.03",
+      "label": "Capital gains",
+      "excluded_from_new_collection": false,
+      "contract_provider": "irs_soi",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "zip"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 827595,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "zip",
+      "selected_provider_or_candidate": "IRS SOI ZIP and County 2022",
+      "collection_status": "native_zip_county_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+        "https://www.irs.gov/statistics/soi-tax-stats-county-data-2022"
+      ],
+      "notes_ru": "ZIP и county доступны отдельными таблицами, ZIP не ZCTA. AGI stub/единицы $1000/returns сохранять; налоговая декларация не человек. Для 07.02/07.05 определить порог и метрику.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "07.04",
+      "label": "Dividends",
+      "excluded_from_new_collection": false,
+      "contract_provider": "irs_soi",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "zip"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 827595,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "zip",
+      "selected_provider_or_candidate": "IRS SOI ZIP and County 2022",
+      "collection_status": "native_zip_county_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+        "https://www.irs.gov/statistics/soi-tax-stats-county-data-2022"
+      ],
+      "notes_ru": "ZIP и county доступны отдельными таблицами, ZIP не ZCTA. AGI stub/единицы $1000/returns сохранять; налоговая декларация не человек. Для 07.02/07.05 определить порог и метрику.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "07.05",
+      "label": "Taxes / income tax metrics",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "definition_required",
+      "contract_declared_geographies": [
+        "ZIP / county / state"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "zip",
+      "selected_provider_or_candidate": "IRS SOI ZIP and County 2022",
+      "collection_status": "native_zip_county_download_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-individual-income-tax-statistics-zip-code-data-soi",
+        "https://www.irs.gov/statistics/soi-tax-stats-county-data-2022"
+      ],
+      "notes_ru": "ZIP и county доступны отдельными таблицами, ZIP не ZCTA. AGI stub/единицы $1000/returns сохранять; налоговая декларация не человек. Для 07.02/07.05 определить порог и метрику.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "07.06",
+      "label": "Millionaires",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "source_required",
+      "contract_declared_geographies": [
+        "Usually state; granular counts often commercial"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "nation",
+      "selected_provider_or_candidate": "UBS national wealth aggregates; small-area source unconfirmed",
+      "collection_status": "national_context_collected_smallarea_unconfirmed",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.ubs.com/global/en/wealthmanagement/insights/global-wealth-report.html"
+      ],
+      "notes_ru": "В ../new-topics/NEW-TOPICS.md и normalized/ubs-national-wealth.csv сохранены national UBS aggregates: 23 627 000 взрослых миллионеров на конец 2025 / 924 миллиардера на 2025-04-04. Это контекст США, не county/tract/BG; малая география не подтверждена. Условия регулярного использования/лицензия требуют проверки. IRS net worth >=$11.4m — отдельная метрика и exact-millionaire поле >=$1m не заменяет.",
+      "related_research_paths": [
+        "../new-topics/NEW-TOPICS.md",
+        "../new-topics/normalized/ubs-national-wealth.csv"
+      ]
+    },
+    {
+      "field_id": "07.07",
+      "label": "Billionaires",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "license_required",
+      "contract_declared_geographies": [
+        "Person / residence, then aggregate"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "nation",
+      "selected_provider_or_candidate": "UBS national wealth aggregates; small-area source unconfirmed",
+      "collection_status": "national_context_collected_smallarea_unconfirmed",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.ubs.com/us/en/wealth-management/our-solutions/private-wealth-management/insights/billionaires-ambition-report.html"
+      ],
+      "notes_ru": "В ../new-topics/NEW-TOPICS.md и normalized/ubs-national-wealth.csv сохранены national UBS aggregates: 23 627 000 взрослых миллионеров на конец 2025 / 924 миллиардера на 2025-04-04. Это контекст США, не county/tract/BG; малая география не подтверждена. Условия регулярного использования/лицензия требуют проверки. IRS net worth >=$11.4m — отдельная метрика и exact-millionaire поле >=$1m не заменяет.",
+      "related_research_paths": [
+        "../new-topics/NEW-TOPICS.md",
+        "../new-topics/normalized/ubs-national-wealth.csv"
+      ]
+    },
+    {
+      "field_id": "08.01",
+      "label": "Price of a dozen eggs",
+      "excluded_from_new_collection": true,
+      "contract_provider": "disabled",
+      "contract_state": "source_required",
+      "contract_declared_geographies": [
+        "Store / city / metro; custom aggregation"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": null,
+      "selected_provider_or_candidate": "excluded_food",
+      "collection_status": "excluded_by_user",
+      "probe": "not_requested_excluded",
+      "evidence_urls": [],
+      "notes_ru": "Новый сбор еды, напитков, ресторанов, магазинов и food access исключён.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "08.02",
+      "label": "Cup of coffee price",
+      "excluded_from_new_collection": true,
+      "contract_provider": "disabled",
+      "contract_state": "source_required",
+      "contract_declared_geographies": [
+        "Store / city / metro"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": null,
+      "selected_provider_or_candidate": "excluded_food",
+      "collection_status": "excluded_by_user",
+      "probe": "not_requested_excluded",
+      "evidence_urls": [],
+      "notes_ru": "Новый сбор еды, напитков, ресторанов, магазинов и food access исключён.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "08.03",
+      "label": "Big Mac / McDonald's meal price",
+      "excluded_from_new_collection": true,
+      "contract_provider": "disabled",
+      "contract_state": "license_required",
+      "contract_declared_geographies": [
+        "Restaurant / city / metro"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": null,
+      "selected_provider_or_candidate": "excluded_food",
+      "collection_status": "excluded_by_user",
+      "probe": "not_requested_excluded",
+      "evidence_urls": [],
+      "notes_ru": "Новый сбор еды, напитков, ресторанов, магазинов и food access исключён.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "08.04",
+      "label": "Gasoline price",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "definition_required",
+      "contract_declared_geographies": [
+        "State / metro / station depending source"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "selected_city",
+      "selected_provider_or_candidate": "EIA retail gasoline",
+      "collection_status": "definition_required",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.eia.gov/dnav/pet/pet_pri_gnd_a_epm0_pte_dpgal_m.htm"
+      ],
+      "notes_ru": "Публичная EIA серия для отдельных городов/штатов, не национальная station/BG. Выбрать grade, frequency и unit USD/gallon.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "08.05",
+      "label": "Electricity price",
+      "excluded_from_new_collection": false,
+      "contract_provider": "eia",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "state",
+        "utility",
+        "sector"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 310,
+      "verified_local_coverage": {
+        "state": {
+          "rows": 310,
+          "artifact_kind": "committed_integration_fixture"
+        }
+      },
+      "finest_verified_local": "state",
+      "catalog_required_variables": 3,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "utility_state_sector",
+      "selected_provider_or_candidate": "EIA 861",
+      "collection_status": "utility_adapter_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.eia.gov/electricity/data/eia861/"
+      ],
+      "notes_ru": "Средняя цена revenue/sales в utility×state×sector; territory file перечисляет counties, но county price не измеряет. Нельзя растянуть цену utility на BG.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "08.06",
+      "label": "Beer price",
+      "excluded_from_new_collection": true,
+      "contract_provider": "disabled",
+      "contract_state": "license_required",
+      "contract_declared_geographies": [
+        "Store / city / metro"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": null,
+      "selected_provider_or_candidate": "excluded_food",
+      "collection_status": "excluded_by_user",
+      "probe": "not_requested_excluded",
+      "evidence_urls": [],
+      "notes_ru": "Новый сбор еды, напитков, ресторанов, магазинов и food access исключён.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "08.07",
+      "label": "Average consumer debt",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "source_required",
+      "contract_declared_geographies": [
+        "Usually state / metro / ZIP-derived research"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county_candidate_unconfirmed_metric",
+      "selected_provider_or_candidate": "Federal Reserve Bank of New York public aggregates",
+      "collection_status": "source_definition_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.newyorkfed.org/microeconomics/databank"
+      ],
+      "notes_ru": "Есть публичные county агрегаты, но конкретный average debt/student balance denominator, выпуск и покрытие требуют проверки. Consumer Credit Panel microdata не являются открытыми.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "08.08",
+      "label": "Student loan debt",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "source_required",
+      "contract_declared_geographies": [
+        "Usually state / metro / ZIP-derived research"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county_candidate_unconfirmed_metric",
+      "selected_provider_or_candidate": "Federal Reserve Bank of New York public aggregates",
+      "collection_status": "source_definition_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.newyorkfed.org/microeconomics/databank"
+      ],
+      "notes_ru": "Есть публичные county агрегаты, но конкретный average debt/student balance denominator, выпуск и покрытие требуют проверки. Consumer Credit Panel microdata не являются открытыми.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "08.09",
+      "label": "Average health insurance cost",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "definition_required",
+      "contract_declared_geographies": [
+        "State / market / employer plan"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "CMS Marketplace 2026 OEP county PUF",
+      "collection_status": "definition_required_partial_national_coverage",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.cms.gov/data-research/statistics-trends-reports/marketplace-products/2026-marketplace-open-enrollment-period-public-use-files"
+      ],
+      "notes_ru": "County average monthly premium доступна для 30 HealthCare.gov states; это enrolled Marketplace consumers, не стоимость страховки всего населения. До/после subsidy и denominator выбрать явно.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "09.01",
+      "label": "Fast-food restaurants per 10k residents",
+      "excluded_from_new_collection": true,
+      "contract_provider": "usda_fea",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 13388,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": null,
+      "selected_provider_or_candidate": "excluded_food",
+      "collection_status": "excluded_by_user",
+      "probe": "not_requested_excluded",
+      "evidence_urls": [],
+      "notes_ru": "Новый сбор еды, напитков, ресторанов, магазинов и food access исключён.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "09.02",
+      "label": "Access to a grocery store",
+      "excluded_from_new_collection": true,
+      "contract_provider": "usda_fea",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 13388,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 2,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": null,
+      "selected_provider_or_candidate": "excluded_food",
+      "collection_status": "excluded_by_user",
+      "probe": "not_requested_excluded",
+      "evidence_urls": [],
+      "notes_ru": "Новый сбор еды, напитков, ресторанов, магазинов и food access исключён.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "09.03",
+      "label": "Farmers' markets per capita",
+      "excluded_from_new_collection": true,
+      "contract_provider": "usda_fea",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 13388,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": null,
+      "selected_provider_or_candidate": "excluded_food",
+      "collection_status": "excluded_by_user",
+      "probe": "not_requested_excluded",
+      "evidence_urls": [],
+      "notes_ru": "Новый сбор еды, напитков, ресторанов, магазинов и food access исключён.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "09.04",
+      "label": "Fitness / recreation centers per capita",
+      "excluded_from_new_collection": false,
+      "contract_provider": "usda_fea",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 13388,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "county",
+      "selected_provider_or_candidate": "USDA FEA fitness indicator / Census CBP",
+      "collection_status": "native_ceiling_no_tract_bg",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://www.ers.usda.gov/data-products/food-environment-atlas/documentation"
+      ],
+      "notes_ru": "Fitness не исключён; RECFACPTH county из NAICS 713940. Скачивать только нефудовый показатель/CBP; общий food sweep отключён.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "09.05",
+      "label": "Parks / recreation facilities",
+      "excluded_from_new_collection": false,
+      "contract_provider": "disabled",
+      "contract_state": "definition_required",
+      "contract_declared_geographies": [
+        "County / source-dependent"
+      ],
+      "historical_run_source_status": "not_run",
+      "historical_source_rows_not_field_rows": null,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 0,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "unconfirmed_point_or_polygon",
+      "selected_provider_or_candidate": "provider_unselected",
+      "collection_status": "definition_required",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [],
+      "notes_ru": "Сначала определить parks/recreation/public access. PAD-US protected lands не эквивалент всем городским паркам и спортивным объектам; point/polygon агрегаты требуют отдельной методики.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "09.06",
+      "label": "PM2.5",
+      "excluded_from_new_collection": false,
+      "contract_provider": "epa_airdata",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "monitor",
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 19583,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "monitor",
+      "selected_provider_or_candidate": "EPA AirData",
+      "collection_status": "native_monitor_aggregation_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://aqs.epa.gov/aqsweb/airdata/download_files.html"
+      ],
+      "notes_ru": "Нативный монитор: station/POC, parameter, duration, standard, units, completeness. County AQI — отдельный продукт; среднее всех monitor рядов не равно exposure в tract/BG.",
+      "related_research_paths": []
+    },
+    {
+      "field_id": "09.07",
+      "label": "Ozone",
+      "excluded_from_new_collection": false,
+      "contract_provider": "epa_airdata",
+      "contract_state": "run_now",
+      "contract_declared_geographies": [
+        "monitor",
+        "county"
+      ],
+      "historical_run_source_status": "pass",
+      "historical_source_rows_not_field_rows": 19583,
+      "verified_local_coverage": {},
+      "finest_verified_local": null,
+      "catalog_required_variables": 1,
+      "local_acs_variables_present": 0,
+      "finest_legitimate_geography_or_unresolved_candidate": "monitor",
+      "selected_provider_or_candidate": "EPA AirData",
+      "collection_status": "native_monitor_aggregation_pending",
+      "probe": "official_documentation_only_no_bulk_probe",
+      "evidence_urls": [
+        "https://aqs.epa.gov/aqsweb/airdata/download_files.html"
+      ],
+      "notes_ru": "Нативный монитор: station/POC, parameter, duration, standard, units, completeness. County AQI — отдельный продукт; среднее всех monitor рядов не равно exposure в tract/BG.",
+      "related_research_paths": []
+    }
+  ]
+}

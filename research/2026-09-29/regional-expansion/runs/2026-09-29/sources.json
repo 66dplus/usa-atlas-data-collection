@@ -1,0 +1,77 @@
+[
+  {
+    "id": "tx-reservoir-current",
+    "jurisdiction": "TX water network (including shared/out-of-state reservoirs)",
+    "kind": "reservoir",
+    "url": "https://waterdatafortexas.org/reservoirs/recent-conditions.json",
+    "official_provenance": "https://www.twdb.texas.gov/surfacewater/conditions/index.asp",
+    "download_documentation": "https://waterdatafortexas.org/reservoirs/download",
+    "geo_type": "reservoir_gauge_point",
+    "boundary_vintage": null,
+    "units": {
+      "conservation_storage": "acre_feet",
+      "conservation_capacity": "acre_feet",
+      "volume": "acre_feet",
+      "elevation": "feet",
+      "area": "acres",
+      "percent_full": "percent"
+    },
+    "limitations": [
+      "Reservoir storage is not county/tract water availability or water accessible to a specific data center.",
+      "Some reservoirs cross borders; Elephant Butte is in New Mexico. No jurisdiction inferred from bounding box.",
+      "Gauge coordinates are not reservoir boundaries or service territories.",
+      "Flood-control-only reservoirs may have null conservation metrics; preserve null and source tags.",
+      "Texas shares and cross-border accounting require official notes before aggregation.",
+      "No independent live reservoir-count endpoint verified; complete bounded JSON response only."
+    ]
+  },
+  {
+    "id": "co-well-permits-county-status",
+    "jurisdiction": "CO",
+    "kind": "socrata",
+    "host": "data.colorado.gov",
+    "dataset": "wumm-7awb",
+    "owner": "Division of Water Resources",
+    "name": "DWR Well Application Permit",
+    "group": [
+      "county",
+      "current_status"
+    ],
+    "where": null,
+    "official_provenance": "https://dwr.colorado.gov/services/data-information",
+    "geo_type": "provider_county_name",
+    "boundary_vintage": null,
+    "limitations": [
+      "Counts of application/permit source records by current status, not counts of operating wells.",
+      "Permit counts do not measure groundwater reserves, pumping volumes, or sustainable yield.",
+      "County labels retained as published; no unverified FIPS assignment.",
+      "No permit-holder names, residential addresses or individual well locations downloaded.",
+      "Record history and source statuses require interpretation before comparing counties."
+    ]
+  },
+  {
+    "id": "wa-electric-vehicles-tract-type",
+    "jurisdiction": "WA",
+    "kind": "socrata",
+    "host": "data.wa.gov",
+    "dataset": "f6w7-q2d2",
+    "owner": "Department of Licensing",
+    "name": "Electric Vehicle Population Data",
+    "group": [
+      "_2020_census_tract",
+      "county",
+      "ev_type"
+    ],
+    "where": "state='WA'",
+    "geo_type": "tract",
+    "boundary_vintage": 2020,
+    "official_provenance": "https://data.wa.gov/Transportation/Electric-Vehicle-Population-Data/f6w7-q2d2",
+    "limitations": [
+      "WA registration records for BEV/PHEV; counts are not charging stations, electricity consumption or capacity.",
+      "Restricts source state to WA because the full registration dataset includes out-of-state addresses.",
+      "2020 tract GEOID comes from provider metadata; absent tracts are not automatically zeros.",
+      "No VIN, vehicle ID, owner address or vehicle point coordinates downloaded.",
+      "ODbL terms are preserved in metadata; attribution/license review required before product admission."
+    ]
+  }
+]

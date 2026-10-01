@@ -1,0 +1,21 @@
+{
+  "bindings": {
+    "collector_sha256": "6609c6ac51c448d4a5e96df38793d95d33d9ad4442de7ba503f4d0de7f89d134",
+    "contract_sha256": "e321baf79add3320961fab36f1e3c62630f46ad2c886e3e77b2a8099bb73603e",
+    "geographies": [
+      "block_group",
+      "county",
+      "tract"
+    ],
+    "plan_sha256": "ca8d583c34b5ffd158af81d1ae1c8921b97ba0dbd40517327c99af3b6a2ddd1b"
+  },
+  "jobs": {
+    "acs-summary-B01001": {
+      "attempted_at": "2026-09-28T17:29:45.064711+00:00",
+      "reason": "network_gaierror",
+      "status": "blocked_or_failed",
+      "url": "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b01001.dat"
+    }
+  },
+  "status": "partial_or_blocked"
+}

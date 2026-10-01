@@ -1,0 +1,16 @@
+{
+  "status": "blocked_server_access",
+  "capabilities": {
+    "systemd_access": false,
+    "atlas_postgres_running": false,
+    "host_unit_directory_writable_hint": false,
+    "effective_uid": 0
+  },
+  "reason": "Requires actual host systemd, Docker and unit-directory access. No escalation or bypass attempted.",
+  "recorded_at": "2026-09-29T16:26:47.746753+00:00",
+  "exit_code": 75,
+  "database_migration_executed": false,
+  "pipeline_timer_installed": false,
+  "existing_services_modified": false,
+  "container_state": "Not observable from this restricted session; the false capability result does not establish that PostgreSQL stopped."
+}

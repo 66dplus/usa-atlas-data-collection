@@ -1,0 +1,920 @@
+{
+  "catalog_fields_without_rows": [
+    {
+      "catalog_field_id": "02.01",
+      "catalog_label": "Median household income",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "02.02",
+      "catalog_label": "Per-capita income",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "02.03",
+      "catalog_label": "Median rent",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "02.04",
+      "catalog_label": "Median home value",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "02.05",
+      "catalog_label": "Mortgage / selected monthly owner costs",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "02.06",
+      "catalog_label": "Rent as % of income / rent burden",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "02.07",
+      "catalog_label": "Owner / renter ratio",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "02.08",
+      "catalog_label": "Poverty",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "02.09",
+      "catalog_label": "Households earning $200k+",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "03.01",
+      "catalog_label": "Bachelor's degree",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "03.02",
+      "catalog_label": "Master's degree",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "03.03",
+      "catalog_label": "Doctorate",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "03.04",
+      "catalog_label": "High school attainment",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "03.05",
+      "catalog_label": "No diploma",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "03.07",
+      "catalog_label": "Average / mean salary",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "03.08",
+      "catalog_label": "Employment growth",
+      "planned_state": "definition_required"
+    },
+    {
+      "catalog_field_id": "03.09",
+      "catalog_label": "Work from home share",
+      "planned_state": "run_now"
+    },
+    {
+      "catalog_field_id": "04.08",
+      "catalog_label": "Homicide",
+      "planned_state": "definition_required"
+    },
+    {
+      "catalog_field_id": "05.01",
+      "catalog_label": "Drug overdose deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.02",
+      "catalog_label": "Opioid deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.03",
+      "catalog_label": "Fentanyl / synthetic opioid deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.04",
+      "catalog_label": "Cocaine deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.05",
+      "catalog_label": "Methamphetamine / psychostimulant deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.06",
+      "catalog_label": "Heroin deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.07",
+      "catalog_label": "Alcohol-related deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.08",
+      "catalog_label": "Suicide",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.09",
+      "catalog_label": "Homicide mortality",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.10",
+      "catalog_label": "Heart disease deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.11",
+      "catalog_label": "Cancer deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.12",
+      "catalog_label": "Accidental deaths",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "05.13",
+      "catalog_label": "Life-expectancy-related indicators",
+      "planned_state": "source_required"
+    },
+    {
+      "catalog_field_id": "06.01",
+      "catalog_label": "Total homeless",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "06.02",
+      "catalog_label": "Sheltered homeless",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "06.03",
+      "catalog_label": "Unsheltered homeless",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "06.04",
+      "catalog_label": "Homeless veterans",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "06.05",
+      "catalog_label": "Homeless families",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "06.06",
+      "catalog_label": "Chronically homeless",
+      "planned_state": "blocked_access"
+    },
+    {
+      "catalog_field_id": "07.02",
+      "catalog_label": "High-income taxpayers / returns",
+      "planned_state": "definition_required"
+    },
+    {
+      "catalog_field_id": "07.05",
+      "catalog_label": "Taxes / income tax metrics",
+      "planned_state": "definition_required"
+    },
+    {
+      "catalog_field_id": "07.06",
+      "catalog_label": "Millionaires",
+      "planned_state": "source_required"
+    },
+    {
+      "catalog_field_id": "07.07",
+      "catalog_label": "Billionaires",
+      "planned_state": "license_required"
+    },
+    {
+      "catalog_field_id": "08.01",
+      "catalog_label": "Price of a dozen eggs",
+      "planned_state": "source_required"
+    },
+    {
+      "catalog_field_id": "08.02",
+      "catalog_label": "Cup of coffee price",
+      "planned_state": "source_required"
+    },
+    {
+      "catalog_field_id": "08.03",
+      "catalog_label": "Big Mac / McDonald's meal price",
+      "planned_state": "license_required"
+    },
+    {
+      "catalog_field_id": "08.04",
+      "catalog_label": "Gasoline price",
+      "planned_state": "definition_required"
+    },
+    {
+      "catalog_field_id": "08.06",
+      "catalog_label": "Beer price",
+      "planned_state": "license_required"
+    },
+    {
+      "catalog_field_id": "08.07",
+      "catalog_label": "Average consumer debt",
+      "planned_state": "source_required"
+    },
+    {
+      "catalog_field_id": "08.08",
+      "catalog_label": "Student loan debt",
+      "planned_state": "source_required"
+    },
+    {
+      "catalog_field_id": "08.09",
+      "catalog_label": "Average health insurance cost",
+      "planned_state": "definition_required"
+    },
+    {
+      "catalog_field_id": "09.05",
+      "catalog_label": "Parks / recreation facilities",
+      "planned_state": "definition_required"
+    }
+  ],
+  "completed_at": "2026-09-29T15:23:39.347234+00:00",
+  "coverage": [
+    {
+      "catalog_field_id": "01.01",
+      "catalog_label": "Population",
+      "distinct_geo_ids": 3222,
+      "geo_type": "county",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 6444,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.01",
+      "catalog_label": "Population",
+      "distinct_geo_ids": 32330,
+      "geo_type": "place",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 64660,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.01",
+      "catalog_label": "Population",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 104,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.01",
+      "catalog_label": "Population",
+      "distinct_geo_ids": 85382,
+      "geo_type": "tract",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 170764,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.02",
+      "catalog_label": "Age",
+      "distinct_geo_ids": 3222,
+      "geo_type": "county",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 322200,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.02",
+      "catalog_label": "Age",
+      "distinct_geo_ids": 32330,
+      "geo_type": "place",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 3233000,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.02",
+      "catalog_label": "Age",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 5200,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.02",
+      "catalog_label": "Age",
+      "distinct_geo_ids": 85382,
+      "geo_type": "tract",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 8538200,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.03",
+      "catalog_label": "Sex",
+      "distinct_geo_ids": 3222,
+      "geo_type": "county",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 315756,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.03",
+      "catalog_label": "Sex",
+      "distinct_geo_ids": 32330,
+      "geo_type": "place",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 3168340,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.03",
+      "catalog_label": "Sex",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 5096,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.03",
+      "catalog_label": "Sex",
+      "distinct_geo_ids": 85382,
+      "geo_type": "tract",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 8367436,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.04",
+      "catalog_label": "Race / ethnicity",
+      "distinct_geo_ids": 3222,
+      "geo_type": "county",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 135324,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.04",
+      "catalog_label": "Race / ethnicity",
+      "distinct_geo_ids": 32330,
+      "geo_type": "place",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 1357860,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.04",
+      "catalog_label": "Race / ethnicity",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 2184,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.04",
+      "catalog_label": "Race / ethnicity",
+      "distinct_geo_ids": 85382,
+      "geo_type": "tract",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 3586044,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.05",
+      "catalog_label": "Foreign-born population",
+      "distinct_geo_ids": 3222,
+      "geo_type": "county",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 173988,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.05",
+      "catalog_label": "Foreign-born population",
+      "distinct_geo_ids": 32330,
+      "geo_type": "place",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 1745820,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.05",
+      "catalog_label": "Foreign-born population",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 2808,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.05",
+      "catalog_label": "Foreign-born population",
+      "distinct_geo_ids": 85382,
+      "geo_type": "tract",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 4610628,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.06",
+      "catalog_label": "Country / region of birth",
+      "distinct_geo_ids": 3144,
+      "geo_type": "county",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 286104,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.06",
+      "catalog_label": "Country / region of birth",
+      "distinct_geo_ids": 32038,
+      "geo_type": "place",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 2067758,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.06",
+      "catalog_label": "Country / region of birth",
+      "distinct_geo_ids": 51,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 4641,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.06",
+      "catalog_label": "Country / region of birth",
+      "distinct_geo_ids": 84401,
+      "geo_type": "tract",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 3544842,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.07",
+      "catalog_label": "Citizenship",
+      "distinct_geo_ids": 3144,
+      "geo_type": "county",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 37728,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.07",
+      "catalog_label": "Citizenship",
+      "distinct_geo_ids": 32038,
+      "geo_type": "place",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 384456,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.07",
+      "catalog_label": "Citizenship",
+      "distinct_geo_ids": 51,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 612,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.07",
+      "catalog_label": "Citizenship",
+      "distinct_geo_ids": 84401,
+      "geo_type": "tract",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 1012812,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.08",
+      "catalog_label": "Year / period of immigration",
+      "distinct_geo_ids": 3144,
+      "geo_type": "county",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 132048,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.08",
+      "catalog_label": "Year / period of immigration",
+      "distinct_geo_ids": 32038,
+      "geo_type": "place",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 1345596,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.08",
+      "catalog_label": "Year / period of immigration",
+      "distinct_geo_ids": 51,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 2142,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "01.08",
+      "catalog_label": "Year / period of immigration",
+      "distinct_geo_ids": 84401,
+      "geo_type": "tract",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 3544842,
+      "source": "census_acs"
+    },
+    {
+      "catalog_field_id": "02.10",
+      "catalog_label": "Cost of living / Regional Price Parities",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2008",
+      "observation_rows": 884,
+      "source": "bea_rpp"
+    },
+    {
+      "catalog_field_id": "03.06",
+      "catalog_label": "Unemployment",
+      "distinct_geo_ids": 3221,
+      "geo_type": "county",
+      "max_period": "2024-M12",
+      "min_period": "2024-M01",
+      "observation_rows": 154608,
+      "source": "bls_laus"
+    },
+    {
+      "catalog_field_id": "03.06",
+      "catalog_label": "Unemployment",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2024-M12",
+      "min_period": "2024-M01",
+      "observation_rows": 2496,
+      "source": "bls_laus"
+    },
+    {
+      "catalog_field_id": "04.01",
+      "catalog_label": "Murders",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2023",
+      "min_period": "2019",
+      "observation_rows": 260,
+      "source": "fbi_cde"
+    },
+    {
+      "catalog_field_id": "04.02",
+      "catalog_label": "Violent crime",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2023",
+      "min_period": "2019",
+      "observation_rows": 260,
+      "source": "fbi_cde"
+    },
+    {
+      "catalog_field_id": "04.03",
+      "catalog_label": "Robbery",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2023",
+      "min_period": "2019",
+      "observation_rows": 260,
+      "source": "fbi_cde"
+    },
+    {
+      "catalog_field_id": "04.04",
+      "catalog_label": "Aggravated assault",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2023",
+      "min_period": "2019",
+      "observation_rows": 260,
+      "source": "fbi_cde"
+    },
+    {
+      "catalog_field_id": "04.05",
+      "catalog_label": "Burglary",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2023",
+      "min_period": "2019",
+      "observation_rows": 260,
+      "source": "fbi_cde"
+    },
+    {
+      "catalog_field_id": "04.06",
+      "catalog_label": "Motor vehicle theft",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2023",
+      "min_period": "2019",
+      "observation_rows": 260,
+      "source": "fbi_cde"
+    },
+    {
+      "catalog_field_id": "04.07",
+      "catalog_label": "Rape",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2023",
+      "min_period": "2019",
+      "observation_rows": 260,
+      "source": "fbi_cde"
+    },
+    {
+      "catalog_field_id": "04.09",
+      "catalog_label": "Crime trends",
+      "distinct_geo_ids": 52,
+      "geo_type": "state",
+      "max_period": "2023",
+      "min_period": "2020",
+      "observation_rows": 1446,
+      "source": "fbi_cde"
+    },
+    {
+      "catalog_field_id": "05.14",
+      "catalog_label": "Obesity rate",
+      "distinct_geo_ids": 2957,
+      "geo_type": "county",
+      "max_period": "2023",
+      "min_period": "2023",
+      "observation_rows": 2957,
+      "source": "cdc_places"
+    },
+    {
+      "catalog_field_id": "05.15",
+      "catalog_label": "Diabetes rate",
+      "distinct_geo_ids": 2957,
+      "geo_type": "county",
+      "max_period": "2023",
+      "min_period": "2023",
+      "observation_rows": 2957,
+      "source": "cdc_places"
+    },
+    {
+      "catalog_field_id": "05.16",
+      "catalog_label": "Physical inactivity rate",
+      "distinct_geo_ids": 2957,
+      "geo_type": "county",
+      "max_period": "2023",
+      "min_period": "2023",
+      "observation_rows": 2957,
+      "source": "cdc_places"
+    },
+    {
+      "catalog_field_id": "07.01",
+      "catalog_label": "Adjusted Gross Income (AGI)",
+      "distinct_geo_ids": 27588,
+      "geo_type": "zip",
+      "max_period": "2022",
+      "min_period": "2022",
+      "observation_rows": 165519,
+      "source": "irs_soi"
+    },
+    {
+      "catalog_field_id": "07.03",
+      "catalog_label": "Capital gains",
+      "distinct_geo_ids": 27588,
+      "geo_type": "zip",
+      "max_period": "2022",
+      "min_period": "2022",
+      "observation_rows": 331038,
+      "source": "irs_soi"
+    },
+    {
+      "catalog_field_id": "07.04",
+      "catalog_label": "Dividends",
+      "distinct_geo_ids": 27588,
+      "geo_type": "zip",
+      "max_period": "2022",
+      "min_period": "2022",
+      "observation_rows": 331038,
+      "source": "irs_soi"
+    },
+    {
+      "catalog_field_id": "08.05",
+      "catalog_label": "Electricity price",
+      "distinct_geo_ids": 62,
+      "geo_type": "state",
+      "max_period": "2024",
+      "min_period": "2024",
+      "observation_rows": 310,
+      "source": "eia"
+    },
+    {
+      "catalog_field_id": "09.01",
+      "catalog_label": "Fast-food restaurants per 10k residents",
+      "distinct_geo_ids": 2672,
+      "geo_type": "county",
+      "max_period": "2020",
+      "min_period": "2020",
+      "observation_rows": 2672,
+      "source": "usda_fea"
+    },
+    {
+      "catalog_field_id": "09.02",
+      "catalog_label": "Access to a grocery store",
+      "distinct_geo_ids": 3141,
+      "geo_type": "county",
+      "max_period": "2019",
+      "min_period": "2019",
+      "observation_rows": 6282,
+      "source": "usda_fea"
+    },
+    {
+      "catalog_field_id": "09.03",
+      "catalog_label": "Farmers' markets per capita",
+      "distinct_geo_ids": 3140,
+      "geo_type": "county",
+      "max_period": "2018",
+      "min_period": "2018",
+      "observation_rows": 3140,
+      "source": "usda_fea"
+    },
+    {
+      "catalog_field_id": "09.04",
+      "catalog_label": "Fitness / recreation centers per capita",
+      "distinct_geo_ids": 1294,
+      "geo_type": "county",
+      "max_period": "2020",
+      "min_period": "2020",
+      "observation_rows": 1294,
+      "source": "usda_fea"
+    },
+    {
+      "catalog_field_id": "09.06",
+      "catalog_label": "PM2.5",
+      "distinct_geo_ids": 1044,
+      "geo_type": "monitor",
+      "max_period": "2025",
+      "min_period": "2025",
+      "observation_rows": 14383,
+      "source": "epa_airdata"
+    },
+    {
+      "catalog_field_id": "09.07",
+      "catalog_label": "Ozone",
+      "distinct_geo_ids": 1209,
+      "geo_type": "monitor",
+      "max_period": "2025",
+      "min_period": "2025",
+      "observation_rows": 5200,
+      "source": "epa_airdata"
+    }
+  ],
+  "coverage_groups": 56,
+  "database": "usa_atlas",
+  "elapsed_seconds": 247.955,
+  "notes": [
+    "Counts describe committed production observations in one consistent snapshot; downloaded files awaiting admission are excluded.",
+    "Distinct geo_id is per catalog_field_id/source/geo_type group and must not be summed as a national unique-geography total.",
+    "geo_type and geo_id reflect stored source codes; state-like regional codes have not been relabeled as Census states.",
+    "min_period and max_period are lexical extrema of stored period text, reported separately by source and geography.",
+    "Observation rows can include multiple field_id series and margins of error within one catalog field."
+  ],
+  "observation_rows": 49206438,
+  "populated_catalog_fields": 31,
+  "query_limits": {
+    "max_parallel_workers_per_gather": 0,
+    "statement_timeout": "30min",
+    "temp_file_limit": "16GB",
+    "work_mem": "128MB"
+  },
+  "query_sha256": "653a16f447fd00151f5ac3f5873daebe467b7ad2935fa28ff4402fe562e99dba",
+  "relation": "usa_atlas.observation_data",
+  "schema_sha256": "6cf64be22ec298c4b99eadb862bb9759b4c0dd44195ef58bffe8b10a9216042d",
+  "snapshot_at": "2026-09-29T15:19:31.678925+00:00",
+  "snapshot_id": "794:794:",
+  "sources": [
+    {
+      "observation_rows": 884,
+      "populated_catalog_fields": 1,
+      "source": "bea_rpp",
+      "stored_geo_types": [
+        "state"
+      ]
+    },
+    {
+      "observation_rows": 157104,
+      "populated_catalog_fields": 1,
+      "source": "bls_laus",
+      "stored_geo_types": [
+        "county",
+        "state"
+      ]
+    },
+    {
+      "observation_rows": 8871,
+      "populated_catalog_fields": 3,
+      "source": "cdc_places",
+      "stored_geo_types": [
+        "county"
+      ]
+    },
+    {
+      "observation_rows": 48175437,
+      "populated_catalog_fields": 8,
+      "source": "census_acs",
+      "stored_geo_types": [
+        "county",
+        "place",
+        "state",
+        "tract"
+      ]
+    },
+    {
+      "observation_rows": 310,
+      "populated_catalog_fields": 1,
+      "source": "eia",
+      "stored_geo_types": [
+        "state"
+      ]
+    },
+    {
+      "observation_rows": 19583,
+      "populated_catalog_fields": 2,
+      "source": "epa_airdata",
+      "stored_geo_types": [
+        "monitor"
+      ]
+    },
+    {
+      "observation_rows": 3266,
+      "populated_catalog_fields": 8,
+      "source": "fbi_cde",
+      "stored_geo_types": [
+        "state"
+      ]
+    },
+    {
+      "observation_rows": 827595,
+      "populated_catalog_fields": 3,
+      "source": "irs_soi",
+      "stored_geo_types": [
+        "zip"
+      ]
+    },
+    {
+      "observation_rows": 13388,
+      "populated_catalog_fields": 4,
+      "source": "usda_fea",
+      "stored_geo_types": [
+        "county"
+      ]
+    }
+  ],
+  "started_at": "2026-09-29T15:19:31.392700+00:00",
+  "status": "complete"
+}

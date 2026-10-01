@@ -1,0 +1,345 @@
+{
+  "observed_at": "2026-09-29T15:26:03.008955+00:00",
+  "acs-summary": {
+    "status": "complete",
+    "pid": 1605155,
+    "process_alive": false,
+    "completed_jobs": 19,
+    "planned_jobs": 19,
+    "active_job": null,
+    "updated_at": "2026-09-28T18:49:36.405018+00:00"
+  },
+  "cdc-places": {
+    "status": "complete",
+    "pid": 1605156,
+    "process_alive": false,
+    "completed_jobs": 1,
+    "planned_jobs": 1,
+    "active_job": null,
+    "updated_at": "2026-09-28T18:38:16.192260+00:00"
+  },
+  "acs-extensions": {
+    "attempt": 1,
+    "collector_sha256": "c19a470270c64d419eb7b9780647c0a85daccc1b493478b530afbf7eefde8500",
+    "completed_at": "2026-09-28T18:50:58.498233+00:00",
+    "extension_script_sha256": "a17364c4cc95998affb77c8d2ca5dd24881b72f380cfa35510422ab07aaeca7f",
+    "metric_checks": [
+      {
+        "candidate_pairs_without_legacy_match": 0,
+        "candidate_table": "B17021",
+        "catalog_field_id": "02.08",
+        "legacy_table": "B17001",
+        "matching_common_county_tract_pairs": 177208,
+        "mismatch_examples": [],
+        "mismatching_common_county_tract_pairs": 0,
+        "production_admitted": false
+      },
+      {
+        "candidate_pairs_without_legacy_match": 0,
+        "candidate_table": "B05012",
+        "catalog_field_id": "01.05",
+        "legacy_table": "B05002",
+        "matching_common_county_tract_pairs": 175090,
+        "mismatch_examples": [],
+        "mismatching_common_county_tract_pairs": 0,
+        "production_admitted": false
+      }
+    ],
+    "pid": 1625974,
+    "primary": "/root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/full/runtime/deep-20260928",
+    "started_at": "2026-09-28T18:45:02.498236+00:00",
+    "status": "complete",
+    "updated_at": "2026-09-28T18:49:42.596884+00:00",
+    "process_alive": false
+  },
+  "public-source-tables": {
+    "status": "complete_source_tables",
+    "jobs": {
+      "susb-receipts-2022": {
+        "status": "source_tables_collected",
+        "rows": 32207
+      },
+      "susb-large-receipts-2022": {
+        "status": "source_tables_collected",
+        "rows": 149
+      },
+      "irs-state-agi-2023": {
+        "status": "source_tables_collected",
+        "rows": 594
+      },
+      "irs-county-agi-2023": {
+        "status": "source_tables_collected",
+        "rows": 25552
+      },
+      "bea-metro-rpp": {
+        "status": "source_tables_collected",
+        "rows": 2344
+      },
+      "epa-monitors-2025": {
+        "status": "source_tables_collected",
+        "rows": 19584
+      }
+    },
+    "production_admission": false
+  },
+  "local-portals": {
+    "pid": 1672842,
+    "process_alive": true,
+    "cycle_completed_at": "2026-09-29T13:01:32.171363+00:00",
+    "collections": {
+      "ca-dwr-bg-income-2023": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:50:32.766157+00:00",
+        "last_attempt_epoch": 1790621432.7661638,
+        "error": null,
+        "failed_at": "2026-09-28T18:47:07.435408+00:00",
+        "completed_at": "2026-09-28T18:50:40.333745+00:00",
+        "last_success_epoch": 1790621440.3337781,
+        "rows": 25607,
+        "manifest": "manifests/ca-dwr-bg-income-2023.json"
+      },
+      "ca-dwr-bg-water-vulnerability-2024": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:53:09.645914+00:00",
+        "last_attempt_epoch": 1790621589.6459272,
+        "error": null,
+        "failed_at": "2026-09-28T18:50:44.890838+00:00",
+        "completed_at": "2026-09-28T18:53:15.679479+00:00",
+        "last_success_epoch": 1790621595.6794977,
+        "rows": 25607,
+        "manifest": "manifests/ca-dwr-bg-water-vulnerability-2024.json"
+      },
+      "loudoun-dc-building-records": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:47:19.272971+00:00",
+        "last_attempt_epoch": 1790621239.2729788,
+        "completed_at": "2026-09-28T18:47:22.700584+00:00",
+        "last_success_epoch": 1790621242.7006035,
+        "rows": 239,
+        "manifest": "manifests/loudoun-dc-building-records.json",
+        "error": null
+      },
+      "dc-mpd-crime-bg-2025": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:50:44.895703+00:00",
+        "last_attempt_epoch": 1790621444.8957155,
+        "error": null,
+        "failed_at": "2026-09-28T18:47:33.006353+00:00",
+        "completed_at": "2026-09-28T18:50:53.193003+00:00",
+        "last_success_epoch": 1790621453.1930215,
+        "rows": 2840,
+        "manifest": "manifests/dc-mpd-crime-bg-2025.json"
+      },
+      "dc-mpd-crime-bg-2026": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:50:53.195000+00:00",
+        "last_attempt_epoch": 1790621453.1950133,
+        "error": null,
+        "failed_at": "2026-09-28T18:47:40.531635+00:00",
+        "completed_at": "2026-09-28T18:51:02.013244+00:00",
+        "last_success_epoch": 1790621462.013261,
+        "rows": 2635,
+        "manifest": "manifests/dc-mpd-crime-bg-2026.json"
+      },
+      "ny-county-income-tax-1999-2014": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:47:40.535721+00:00",
+        "last_attempt_epoch": 1790621260.535736,
+        "completed_at": "2026-09-28T18:47:52.386292+00:00",
+        "last_success_epoch": 1790621272.386314,
+        "rows": 13515,
+        "manifest": "manifests/ny-county-income-tax-1999-2014.json",
+        "error": null
+      }
+    },
+    "discovery_query_count": 104,
+    "heartbeat": {
+      "pid": 1672842,
+      "boot_id": "8195abc6-fbc7-4f5d-bfcf-dde33cb210d8",
+      "process_start_ticks": 55456953,
+      "phase": "sleeping",
+      "updated_at": "2026-09-29T15:25:56.041384+00:00",
+      "progress_at": "2026-09-29T13:01:32.174458+00:00",
+      "next_cycle_at": "2026-09-29T19:01:32.174816+00:00",
+      "last_cycle_outcome": "success",
+      "consecutive_cycle_errors": 0,
+      "last_error_class": null
+    }
+  },
+  "regional-refresh": {
+    "status": "complete",
+    "snapshot_date": "2026-09-29",
+    "finished_at": "2026-09-29T14:01:33.158823+00:00",
+    "jobs": {
+      "tx-reservoir-current": {
+        "status": "complete",
+        "rows": 122
+      },
+      "co-well-permits-county-status": {
+        "status": "complete",
+        "rows": 1239
+      },
+      "wa-electric-vehicles-tract-type": {
+        "status": "complete",
+        "rows": 3528
+      }
+    },
+    "production_admission": false
+  },
+  "pwc-data-center-buildings": {
+    "status": "collected_verified_source_snapshot",
+    "completed_at": "2026-09-29T14:11:08.071018+00:00",
+    "actual_building_records": 248,
+    "status_counts": {
+      "Completed": 57,
+      "Pending": 68,
+      "Planned": 92,
+      "Under Construction": 31
+    },
+    "native_geography": "point",
+    "production_admission": false
+  },
+  "nationwide-discovery": {
+    "stage": "complete_bounded_metadata_discovery",
+    "completed_at": "2026-09-29T14:14:59.392132+00:00",
+    "jurisdictions_planned": 52,
+    "actual_server_catalog_query_pages": 180,
+    "catalog_listing_filter_jobs": 80,
+    "candidate_occurrences": 953,
+    "errors_requiring_attention": {
+      "http_error_attempts": 17,
+      "unresolved_adapters": 0,
+      "query_errors": 0,
+      "blocked_query_jobs": 0
+    },
+    "schedule_status": "complete",
+    "next_query": "accidental deaths",
+    "scope": "Catalog metadata candidates; not collected observation datasets."
+  },
+  "regional-dataset-totals": {
+    "completed_datasets": 10,
+    "source_rows": 75580,
+    "scope": "Mixed source units, including aggregates and buildings; not production observations.",
+    "production_admission": false
+  },
+  "database-compaction": {
+    "backup": {
+      "bytes": 929358558,
+      "path": "/srv/usa-atlas/maintenance/20260928-compact/usa-atlas-before-compact.dump",
+      "scope": "full usa_atlas schema and all data before compaction",
+      "sha256": "220986156c37684c43ffa8d532d4c52799e03c6546372424fc864f0543059ca0",
+      "source_fingerprint_sha256": "00727a179aba97c7f7ee1391f92ecdb2adf33cf5f27809d6844e46d580b312d7",
+      "verified": "pg_restore read entire archive to /dev/null; no restore into live database"
+    },
+    "catalog_sha256": "2aeb4cff27010265581b0c1a200963b8eb88e3f1a9d60e2e586f041f31cb117d",
+    "compact_relation_bytes": 17794170880,
+    "exact_validation": {
+      "mismatches": 0,
+      "ranges": 101,
+      "rows": 49206438
+    },
+    "free_bytes": 143129452544,
+    "free_bytes_after": 143129477120,
+    "old_schema_sha256": "85cf4e458eea7b859563ceb6c4b8ade5eec66237ce190b290720674a176bea9a",
+    "original_relation_bytes": 63936045056,
+    "phase": "complete",
+    "pid": 1082750,
+    "relation_bytes_freed": 46141874176,
+    "rows_preserved": 49206438,
+    "schema_sha256": "6cf64be22ec298c4b99eadb862bb9759b4c0dd44195ef58bffe8b10a9216042d",
+    "status": "complete",
+    "updated_at": "2026-09-29T15:17:36.555384+00:00",
+    "validation": "exact keyed comparison of all 13 fields across every row; complete counts; full fingerprints; all PK/FK validated",
+    "process_alive": false,
+    "result": {
+      "backup": {
+        "bytes": 929358558,
+        "path": "/srv/usa-atlas/maintenance/20260928-compact/usa-atlas-before-compact.dump",
+        "scope": "full usa_atlas schema and all data before compaction",
+        "sha256": "220986156c37684c43ffa8d532d4c52799e03c6546372424fc864f0543059ca0",
+        "source_fingerprint_sha256": "00727a179aba97c7f7ee1391f92ecdb2adf33cf5f27809d6844e46d580b312d7",
+        "verified": "pg_restore read entire archive to /dev/null; no restore into live database"
+      },
+      "catalog_sha256": "2aeb4cff27010265581b0c1a200963b8eb88e3f1a9d60e2e586f041f31cb117d",
+      "compact_relation_bytes": 17794170880,
+      "exact_validation": {
+        "mismatches": 0,
+        "ranges": 101,
+        "rows": 49206438
+      },
+      "free_bytes_after": 143129477120,
+      "old_schema_sha256": "85cf4e458eea7b859563ceb6c4b8ade5eec66237ce190b290720674a176bea9a",
+      "original_relation_bytes": 63936045056,
+      "relation_bytes_freed": 46141874176,
+      "rows_preserved": 49206438,
+      "schema_sha256": "6cf64be22ec298c4b99eadb862bb9759b4c0dd44195ef58bffe8b10a9216042d",
+      "status": "complete",
+      "validation": "exact keyed comparison of all 13 fields across every row; complete counts; full fingerprints; all PK/FK validated"
+    },
+    "backup_bytes_so_far": 929358558,
+    "backup_verified": true
+  },
+  "production-coverage-snapshot": {
+    "snapshot_at": "2026-09-29T15:19:31.678925+00:00",
+    "observation_rows": 49206438,
+    "populated_catalog_fields": 31,
+    "catalog_fields_total": 81,
+    "populated_non_food_fields": 28,
+    "block_group_rows": 0,
+    "stored_geo_types": [
+      "county",
+      "monitor",
+      "place",
+      "state",
+      "tract",
+      "zip"
+    ],
+    "scope": "Saved production inventory at snapshot_at, not a fresh database query; later admissions require a new inventory."
+  },
+  "watchdog": {
+    "checked_at": "2026-09-29T15:24:10.256015+00:00",
+    "snapshot_age_seconds": 113,
+    "snapshot_stale": false,
+    "overall_state": "healthy",
+    "needs_attention": [],
+    "jobs": {
+      "acs-extensions": {
+        "state": "complete",
+        "reason": "all_planned_jobs_complete"
+      },
+      "acs-summary": {
+        "state": "complete",
+        "reason": "all_planned_jobs_complete"
+      },
+      "cdc-places": {
+        "state": "complete",
+        "reason": "all_planned_jobs_complete"
+      },
+      "database-compaction": {
+        "state": "complete",
+        "reason": "database_maintenance_complete"
+      },
+      "local-portals": {
+        "state": "idle",
+        "reason": "waiting_for_scheduled_cycle"
+      },
+      "nationwide-discovery": {
+        "state": "idle",
+        "reason": "scheduled_cycle_complete_waiting_for_timer"
+      },
+      "public-sources": {
+        "state": "complete",
+        "reason": "all_planned_jobs_complete"
+      },
+      "pwc-refresh": {
+        "state": "idle",
+        "reason": "scheduled_cycle_complete_waiting_for_timer"
+      },
+      "regional-refresh": {
+        "state": "idle",
+        "reason": "scheduled_cycle_complete_waiting_for_timer"
+      }
+    }
+  },
+  "note": "Checkpoint status is not production admission. PID liveness alone does not prove progress; inspect timestamps and logs."
+}

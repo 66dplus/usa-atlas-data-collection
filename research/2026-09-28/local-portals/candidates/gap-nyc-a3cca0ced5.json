@@ -1,0 +1,40 @@
+{
+  "query": {
+    "id": "gap-nyc-a3cca0ced5",
+    "portal_id": "nyc",
+    "query": "obesity",
+    "desired_geo": "block_group",
+    "field_ids": [
+      "05.14"
+    ],
+    "source": "live-coverage gap intake",
+    "food_excluded": true
+  },
+  "checked_at": "2026-09-30T16:48:48.356471+00:00",
+  "status": "needs_review",
+  "total_catalog_matches": 2,
+  "page_offset": 0,
+  "next_cursor": 0,
+  "max_search_results_per_cycle": 100,
+  "search_complete": true,
+  "candidates": [
+    {
+      "id": "csut-3wpr",
+      "title": "New York City Community Health Survey",
+      "url": "https://data.cityofnewyork.us/Health/New-York-City-Community-Health-Survey/csut-3wpr",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/csut-3wpr.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "3qty-g4aq",
+      "title": "Youth Behavior Risk Survey (High School)",
+      "url": "https://data.cityofnewyork.us/Health/Youth-Behavior-Risk-Survey-High-School-/3qty-g4aq",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/3qty-g4aq.json",
+      "status": "needs_review"
+    }
+  ],
+  "meaning": "not_available means zero matches for this query only; unknown schemas require review",
+  "response_sha256": "8e570e5e61b38a3adb252c53b22271880007596b67dfd6ef14bc02040543e032"
+}

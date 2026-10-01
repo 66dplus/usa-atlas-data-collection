@@ -1,0 +1,3280 @@
+{
+  "query": {
+    "id": "gap-ca-78aad30559",
+    "portal_id": "ca",
+    "query": "cost of living",
+    "desired_geo": "block_group",
+    "field_ids": [
+      "02.10"
+    ],
+    "source": "live-coverage gap intake",
+    "food_excluded": true
+  },
+  "checked_at": "2026-10-01T10:50:12.165419+00:00",
+  "status": "needs_review",
+  "total_catalog_matches": 184,
+  "page_offset": 40,
+  "next_cursor": 60,
+  "max_search_results_per_cycle": 100,
+  "search_complete": false,
+  "candidates": [
+    {
+      "id": "fa64fe43-c81e-429e-977d-0d87b2772f01",
+      "title": "Living Wage",
+      "url": "https://data.ca.gov/dataset/living-wage",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/6c9485da-cf3e-40af-b939-eae953b81685/download/hcilivingwage770narrativeandexamples9-30-13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/f5a57e7a-e0fe-4d80-b0f6-92d66ecb907f/download/hci_living_wage_770_pl_co_re_ca_9-29-13-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/f6ae935b-d0ba-4be2-be35-717fe42ecc6c/download/livingwage-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/8420fdbf-8492-4740-8e92-e8cdfd41b659/download/living-wage-idvop5ms.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "92ba3741-8df5-461c-a555-acb238bf227e",
+      "title": "ALW Assisted Living Facilities",
+      "url": "https://data.ca.gov/dataset/alw-assisted-living-facilities",
+      "publisher": "California Department of Health Care Services",
+      "resources": [
+        {
+          "url": "https://gis.dhcs.ca.gov/datasets/CADHCS::alw-assisted-living-facilities",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/ALW_Assisted_Living_Facilities/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/api/download/v1/items/c9b6f8ecdd194f46be0ea41d46b875c3/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/api/download/v1/items/c9b6f8ecdd194f46be0ea41d46b875c3/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/api/download/v1/items/c9b6f8ecdd194f46be0ea41d46b875c3/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/api/download/v1/items/c9b6f8ecdd194f46be0ea41d46b875c3/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/datasets/c9b6f8ecdd194f46be0ea41d46b875c3_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/8149f0fb-fb24-467e-bb97-889fbcec9c97/resource/69dddffc-dc35-4abc-918f-123a574ea004/download/alw-assisted-living-facilities-qz7mlvza.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "9a48b5d1-8385-43fd-91ca-2165e30e45d0",
+      "title": "Total Construction Cost of Healthcare Projects",
+      "url": "https://data.ca.gov/dataset/total-construction-cost-of-healthcare-projects",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a396cdc6-0cd2-4faf-beea-f158e8581460/resource/cb040707-4ced-4f69-8867-53bba4513bee/download/ca-hcai-total-construction-cost-09172026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a396cdc6-0cd2-4faf-beea-f158e8581460/resource/d64ea389-3cf7-42a1-9e31-ac1d589bc9ba/download/datadictionary-hospital-building-data.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a396cdc6-0cd2-4faf-beea-f158e8581460/resource/4fc9d8ee-8326-47ee-bf97-3efc2eb41410/download/total-construction-cost-of-healthcare-projects-q9_mlzxo.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "22187897-5df3-437b-91a5-8f3778de8f0a",
+      "title": "Statewide Live Birth Profiles",
+      "url": "https://data.ca.gov/dataset/statewide-live-birth-profiles",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/6e2b5bcd-5670-4ab8-bb0a-ba19383ac6e5/download/test-cdph-statewide-live-birth-profiles-84dveb47.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/cad870a3-1576-4fb4-b21c-c75ceed5d60d/download/2026-09_births_provisional_state_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/b990913a-d2a1-4b28-a740-45b7967dc610/download/20251121_births_final_state_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/9ac9a3a1-a6f4-4683-af1e-89b6b220ed57/download/20251121_births_final_state_year_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/fb31db18-b363-4204-b0a6-446b53d1375e/download/data-dictionary-births-statewide.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "52f12ee7-d006-4dbd-82bc-536bf0cf097e",
+      "title": "Live Birth Profiles by County",
+      "url": "https://data.ca.gov/dataset/live-birth-profiles-by-county",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/d2413aed-324d-4591-8486-1d114df0ea17/download/live-birth-profiles-by-county-5z0mxruj.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/94a186da-7184-427b-b0b5-224bb0a05cd8/download/2026-09_births_provisional_county_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/d6c30e46-8618-407a-ba5a-bae308f86a1c/download/20260319_births_final_county_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/260fbfb0-e386-465d-85a4-6f28868dd51a/download/20260319_births_final_county_year_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/49b07eb5-1312-4b9d-bd0e-ea2a89b852d1/download/data-dictionary-births-by-county.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "76530cc2-a912-4cee-8f8d-b2d6ff85aca6",
+      "title": "California's Groundwater Live Supporting Data",
+      "url": "https://data.ca.gov/dataset/californias-groundwater-live-supporting-data",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://calgwlive.water.ca.gov/",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/c000cb9f-2fe3-4871-b9df-fcc974128a49/download/calgw-live_gwl-percentiles-layout.jpg",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/fb3e0d93-7b3e-4bd1-aba7-195554a3d7eb/download/calge-live_insar-layout.jpg",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/GWL_Recently_Measured_v3/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/GroundwaterLevelPercentileClass_gdb/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/SeasonalChangeCalGWLive_gdb/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/MannKendallGWLTrendCalGWLive_gdb/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/i07_WellCompletionReports_Exported_v2_gdb/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/PSW_2026_Q2/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/HouseholdWaterSupplyShortageReports_2025v2_1/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/tre-altamira-insar-subsidence",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/Dry_Domestic_Well_Susceptibility_by_PLSS_Section/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/9c58b42b-dc7d-438c-8225-3d5dbf9bc20d/download/dry-well-reporting-fact-sheet.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/e0bf3d2b-ceca-41ca-876f-d3e378503583/download/drywellsusceptibilitymethodsandassumptions_v2.docx",
+          "format": "DOCX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/c1c30d5f-c4bf-43fa-94d3-e7c9d5037df9/download/drydomesticwellsusceptibilityanalysispythonnotebook_v1.2.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "da6d1bbe-c542-400f-adad-a03608c2d5e9",
+      "title": "Housing Cost Burden",
+      "url": "https://data.ca.gov/dataset/housing-cost-burden",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4ea8fbae-0d14-4e4a-952e-acb4c813c84c/resource/c697aac1-3bee-47b1-bb46-d7f887d65880/download/hcihousingcostburdenchasandacs106narrative7-11-14.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4ea8fbae-0d14-4e4a-952e-acb4c813c84c/resource/5c7ad34f-f14b-4056-81c5-3df113a6e14b/download/hci_acs_chas_raceincome_housingcostburden_ct_pl_co_re_st_7-30-14-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4ea8fbae-0d14-4e4a-952e-acb4c813c84c/resource/fdac78bb-a06b-42d4-b0f0-1458202b244f/download/housingcostburdendd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4ea8fbae-0d14-4e4a-952e-acb4c813c84c/resource/b6d4d405-cf39-4f10-b5bd-202ba7b06fdc/download/housing-cost-burden-2006-2010-yckf7vfq.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "c4c8e91a-ef06-4b08-bbce-fe12eb6d8abb",
+      "title": "Live Birth Profiles by ZIP Code",
+      "url": "https://data.ca.gov/dataset/live-birth-profiles-by-zip-code",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/511174dc-04ae-45e5-83ed-e5e0ecd76e2f/download/cdph_live-birth-by-zip-code-5i0ek458.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/35f92111-e883-4c0b-b4e7-546482a47748/download/20251117_births_final_zip_year_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/1813fbc9-456c-403f-83be-9280cde98873/download/data-dictionary-births-by-zip-code.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/8e832f07-56b4-435c-9536-ed2fc81ceb3c/download/20251117_births_final_zip_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/2a60bef1-9536-4d47-9cd1-1dc6d5a182f7/download/20250402_births_final_2011-2020__zip_month_sup.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "80d5301a-cee8-4081-9831-7d2a9417a884",
+      "title": "California Income Tax Expenditures - Taxable Year 2012 - Actual Cost And Estimated Costs",
+      "url": "https://data.ca.gov/dataset/california-income-tax-expenditures-taxable-year-2012-actual-cost-and-estimated-costs",
+      "publisher": "California Franchise Tax Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/80d5301a-cee8-4081-9831-7d2a9417a884/resource/925baac4-2a1c-466d-ad54-ac6b7ac73fd4/download/california_income_tax_expenditures_-_taxable_year_2012_-_actual_cost_and_estimated_costs.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "e2ba6487-d133-4c19-aca6-49df564b911f",
+      "title": "CalHeatScore Live Data for API Use",
+      "url": "https://data.ca.gov/dataset/calheatscore-live-data-for-api-use",
+      "publisher": "California Office of Environmental Health Hazard Assessment",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/OEHHA::calheatscore-live-data-for-api-use-1",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services1.arcgis.com/PCHfdHz4GlDNAhBb/arcgis/rest/services/CalHeatScore_Live_Data_for_API_Use/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/filegdb?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/featureCollection?layers=0",
+          "format": "TXT"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/excel?layers=0",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/geoPackage?layers=0",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/361a6b4e0f8b4ce3a1a10d72928fc858/sqlite?layers=0",
+          "format": "GDB"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "cfe246b5-95c1-4f00-9139-a008cf661563",
+      "title": "Healthcare Payments Data (HPD) Medical Out-of-Pocket Costs and Chronic Conditions",
+      "url": "https://data.ca.gov/dataset/healthcare-payments-data-hpd-medical-out-of-pocket-costs-and-chronic-conditions",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/becda735-95a1-4efb-b3d5-7af4a6c75fbb/resource/e7794d13-4134-4230-b2d5-8698d438fd34/download/hpd_oop_chronic_2022_masked.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/becda735-95a1-4efb-b3d5-7af4a6c75fbb/resource/d69a5b5f-ab94-490a-8583-d56d5b0d4e19/download/data-dictionary-oop-cost-final.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/becda735-95a1-4efb-b3d5-7af4a6c75fbb/resource/8f868d74-788c-4f13-a041-837411c36ab1/download/tech_note_for_hpd_medical_oop_and_chronic_condition_2022_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/becda735-95a1-4efb-b3d5-7af4a6c75fbb/resource/5bfe370b-dcef-4085-a82f-c48a2c22a47a/download/healthcare-payments-data-hpd-medical-out-of-pocket-costs-and-chronic-conditions-96hzjei6.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "f745bf40-50d9-4d00-b7c9-601eaf4f056c",
+      "title": "Healthcare Payments Data Inpatient Hospital Cost",
+      "url": "https://data.ca.gov/dataset/healthcare-payments-data-inpatient-hospital-cost",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/06fd4747-5182-44ca-9da5-c55910cbcf53/resource/96d1782c-b424-4a5e-beb4-6cd58181bc72/download/masked_inpatient_drg_2023_09102026.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/06fd4747-5182-44ca-9da5-c55910cbcf53/resource/ec3113a1-a355-4753-b3e1-e3b752112b58/download/inpatient-cost-2023-data-dictionary.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/06fd4747-5182-44ca-9da5-c55910cbcf53/resource/b8959733-c593-4c5b-874f-1e4d95839f0a/download/tech_note_for_hospital_inpatient_cost_09092026.docx",
+          "format": "DOCX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/06fd4747-5182-44ca-9da5-c55910cbcf53/resource/248925ba-1ff4-46b8-9fda-695a5c62b786/download/tech_note_inpatient_hospital_cost_09112026_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/06fd4747-5182-44ca-9da5-c55910cbcf53/resource/584fd57e-2d0e-4780-a20e-46ca10a8546f/download/healthcare-payments-data-inpatient-hospital-cost-ej583bmw.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "a13806b3-d7f8-45ed-a9d2-7d6d873c224a",
+      "title": "California Independent Living and Traumatic Brain Injury Center Locations",
+      "url": "https://data.ca.gov/dataset/california-independent-living-and-traumatic-brain-injury-center-locations",
+      "publisher": "California Department of Rehabilitation",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d83f142d-fc61-42e8-828c-8ab8be8800d1/resource/2412adc5-5d49-4ec0-a43e-e1ca4766e397/download/california-independent-living-and-traumatic-brain-injury-center-locations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d83f142d-fc61-42e8-828c-8ab8be8800d1/resource/628da29e-3467-4cbd-ab17-0fbf40c8aec6/download/data-dictionary-for-independent-living-centers-new-5-14-2015.docx",
+          "format": "DOCX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d83f142d-fc61-42e8-828c-8ab8be8800d1/resource/71296333-9252-4415-bbd4-700dd740be80/download/california-independent-living-and-traumatic-brain-injury-center-locations-_0i_nje6.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "df92eda2-8763-44aa-8d17-d493032367fe",
+      "title": "Prescription Drug Wholesale Acquisition Cost (WAC) Increases",
+      "url": "https://data.ca.gov/dataset/prescription-drug-wholesale-acquisition-cost-wac-increases",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/3a133d3f-da34-43ae-8171-14cdab782b1d/download/prescription-drug-wac-increase-data-dictionary.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/5c0ca772-6c65-428a-a5b7-8c1ab35dbf57/download/prescription-drug-5-year-history-wac-increase-data-dictionary.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/b4554543-fec7-46c7-a518-b7d07bd1c1f3/download/wac-increase-data-jan-aug-2026.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/dda8a083-bc81-4f6d-b02f-935a2df70328/download/wac-increase-data-jan-aug-2026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/2fe618fd-b03d-4453-aa32-de5b4a470e00/download/5-year-wac-increase-history-jan-aug-2026.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/d754c567-c3c3-4ecf-a236-8144578549dd/download/5-year-wac-increase-history-jan-aug-2026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/46b78eef-5952-4fff-84c7-1fa758990ce8/download/q1-q4-2025-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/e2c970a8-a2ab-436c-a47e-10986572df1c/download/2025-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/882bb30d-44ed-48c9-b722-beb5aedc2c1b/download/q1-q4-2024-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/225c5d83-d8cd-4aea-aa55-faca99501def/download/2024-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/aca55cd5-a1a7-49cb-a490-997df1e27480/download/q1-q4-2023-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/91dbf176-8349-4d65-a7ca-d2f3ffb8d726/download/2023-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/dbed46b3-e823-487a-8a96-c0b2381af2c9/download/q1-q4-2022-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/252a735f-e49d-4d73-9955-e79de8adabb1/download/2022-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/34c373bb-cf9a-463e-93bf-6ae4ff3afad8/download/q1-q4-2021-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/ccc65919-378c-408e-85fb-164e4975de58/download/2021-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/f3e4ba62-3df4-40dd-9876-f7aea7384c1b/download/q1-q4-2020-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/b57d3435-a56c-4f74-83b3-d54775a005a2/download/2020-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/9b8e12dc-1b3c-4c36-9ba9-adba6b921a6c/download/q1-q4-2019-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/568dc2b7-c493-431a-8113-49c6bcad0457/download/2019-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/69a98f92-ce08-46de-a719-1743744a761e/download/diabetes-ndcs-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/0b6b35ce-a642-426a-9bca-e6905a1bfa33/download/prescription-drug-wholesale-acquisition-cost-wac-increases-o2a3rjlf.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "61f7dc8f-fa85-46ab-8c30-b86e2f0f9089",
+      "title": "Infant Mortality, Deaths Per 1,000 Live Births (LGHC Indicator)",
+      "url": "https://data.ca.gov/dataset/infant-mortality-deaths-per-1000-live-births-lghc-indicator",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a10630c1-536b-4f36-97ef-5ce831fc279d/resource/ae78da8f-1661-45f6-b2d0-1014857d16e3/download/infant-mortality-deaths-per-1000-live-births-lghc-indicator-01.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://letsgethealthy.ca.gov/goals/healthy-beginnings/reducing-infant-mortality/",
+          "format": "Chart"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a10630c1-536b-4f36-97ef-5ce831fc279d/resource/17fc3dda-662c-47b8-8a16-d4c828b2d1b4/download/infant-mortality-deaths-per-1000-live-births-lghc-indicator-01-7qrd476u.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "414e3204-c631-4ea0-a780-0fd47304a1ac",
+      "title": "Population Distribution for Medi-Cal Enrollees by Met and Unmet Share of Cost (SOC)",
+      "url": "https://data.ca.gov/dataset/population-distribution-for-medi-cal-enrollees-by-met-and-unmet-share-of-cost-soc",
+      "publisher": "California Department of Health Care Services",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/873fb5df-a612-448c-8d77-9d33b3453cb1/resource/24d514e5-9e90-4a2b-b017-7be7e7ddd36d/download/population-distribution-for-medi-cal-enrollees-by-met-and-unmet-share-of-cost-soc-ydj39asi.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/873fb5df-a612-448c-8d77-9d33b3453cb1/resource/b8087144-5456-48fa-8d53-68d9f62ed896/download/soc-categories-medical-odp-05.07.2026.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "9240af56-070a-4e6d-b13b-6cdc07a02db4",
+      "title": "Healthcare Payments Data (HPD): Fee-For-Service Drug Costs",
+      "url": "https://data.ca.gov/dataset/healthcare-payments-data-hpd-fee-for-service-drug-costs",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f5179998-41d1-405c-999e-017d3902f3b5/resource/a5b31412-00f8-43cf-b7f6-cc4b228b6e66/download/healthcare-payments-data-hpd-fee-for-service-drug-costs.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f5179998-41d1-405c-999e-017d3902f3b5/resource/49420949-2d1d-4114-9867-c73358f0d3c2/download/data-dictionary-healthcare-payments-data-hpd-fee-for-service-drug-costs.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f5179998-41d1-405c-999e-017d3902f3b5/resource/ec8b4324-d5c9-4d19-aa8a-dadd0bd02009/download/hpd-tech-note-fee-for-service-drug-costs-v2-ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f5179998-41d1-405c-999e-017d3902f3b5/resource/a7de9221-89f7-4817-aa87-3c791dacf7f2/download/hpd-tech-note-fee-for-service-drug-costs-in-the-commercial-market-2021.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f5179998-41d1-405c-999e-017d3902f3b5/resource/e038beb9-d7ef-4aa7-845e-65dfe7c860b2/download/hpd-fee-for-service-drug-costs-uwpvowvf.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "2d400c13-6590-4250-96e2-4f69c3e2d9ca",
+      "title": "Targeted Case Management for High Cost Medi-Cal Members",
+      "url": "https://data.ca.gov/dataset/targeted-case-management-for-high-cost-medi-cal-members",
+      "publisher": "California Department of Health Care Services",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/da7a0fc1-aa2b-47d1-8ac5-f00713968f26/resource/ff144418-aa66-4bfd-8430-d925908d4520/download/hcm-tcm_cy2020-2023.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/da7a0fc1-aa2b-47d1-8ac5-f00713968f26/resource/6799c0f3-b070-4eec-94ac-014c52c11ae6/download/tcm-for-hcm-enuk44x4.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "08afeee6-99c2-4abf-bf9b-49d97502f431",
+      "title": "Bobcat least-cost corridors for NSNF Connectivity - CDFW [ds1010]",
+      "url": "https://data.ca.gov/dataset/bobcat-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1010",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::bobcat-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1010",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1010_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/2b0254b22bc746b6b274141c4d62b403/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/2b0254b22bc746b6b274141c4d62b403/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/2b0254b22bc746b6b274141c4d62b403/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/2b0254b22bc746b6b274141c4d62b403/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1010.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "7c3a9fe1-2550-4a74-a5f3-6d966e659807",
+      "title": "Mule Deer least-cost corridors for NSNF Connectivity - CDFW [ds1015]",
+      "url": "https://data.ca.gov/dataset/mule-deer-least-cost-corridors-for-nsnf-connectivity-cdfw-ds10151",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::mule-deer-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1015",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1015_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/51be64edf1e4470baaeb5c004796f079/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/51be64edf1e4470baaeb5c004796f079/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/51be64edf1e4470baaeb5c004796f079/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/51be64edf1e4470baaeb5c004796f079/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1015.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "62273c05-0cc3-4ba0-912f-d9c0aaffd430",
+      "title": "Mountain Lion least-cost corridors for NSNF Connectivity - CDFW [ds1014]",
+      "url": "https://data.ca.gov/dataset/mountain-lion-least-cost-corridors-for-nsnf-connectivity-cdfw-ds10141",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::mountain-lion-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1014",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1014_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/8aa47ea25697463fb45de6bf50cfc7a4/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/8aa47ea25697463fb45de6bf50cfc7a4/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/8aa47ea25697463fb45de6bf50cfc7a4/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/8aa47ea25697463fb45de6bf50cfc7a4/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1014.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "e82946b8-2f31-4b57-9fc5-95af19cf9ec0",
+      "title": "Gray Fox least-cost corridors for NSNF Connectivity - CDFW [ds1013]",
+      "url": "https://data.ca.gov/dataset/gray-fox-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1013",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::gray-fox-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1013",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1013_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ea4ca40515424342bb0d927fa643e596/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ea4ca40515424342bb0d927fa643e596/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ea4ca40515424342bb0d927fa643e596/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ea4ca40515424342bb0d927fa643e596/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1013.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "98dbcf02-9260-4464-9cab-6036d3be7806",
+      "title": "Black Bear least-cost corridors for NSNF Connectivity - CDFW [ds1009]",
+      "url": "https://data.ca.gov/dataset/black-bear-least-cost-corridors-for-nsnf-connectivity-cdfw-ds10091",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::black-bear-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1009",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1009_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ef0f542ff792444bbce8b20176bcfc2b/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ef0f542ff792444bbce8b20176bcfc2b/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ef0f542ff792444bbce8b20176bcfc2b/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ef0f542ff792444bbce8b20176bcfc2b/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1009.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "71bf399d-a164-404d-ace2-801e7701f49f",
+      "title": "Western Pond Turtle least-cost corridors for NSNF Connectivity - CDFW [ds1017]",
+      "url": "https://data.ca.gov/dataset/western-pond-turtle-least-cost-corridors-for-nsnf-connectivity-cdfw-ds10171",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::western-pond-turtle-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1017",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1017_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/d563540a13424dd18cb94720180c16da/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/d563540a13424dd18cb94720180c16da/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/d563540a13424dd18cb94720180c16da/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/d563540a13424dd18cb94720180c16da/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1017.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "be7611cd-2c4d-4088-8e81-f064c5ccb7b4",
+      "title": "Western Gray Squirrel least-cost corridors for NSNF Connectivity - CDFW [ds1016]",
+      "url": "https://data.ca.gov/dataset/western-gray-squirrel-least-cost-corridors-for-nsnf-connectivity-cdfw-ds10161",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::western-gray-squirrel-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1016",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1016_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/4598b9393fd049349d925fbe846ab7a0/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/4598b9393fd049349d925fbe846ab7a0/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/4598b9393fd049349d925fbe846ab7a0/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/4598b9393fd049349d925fbe846ab7a0/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1016.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "1c6a37d6-21ea-4856-893a-43ad647ccb4f",
+      "title": "Dusky-footed Woodrat least-cost corridors for NSNF Connectivity - CDFW [ds1012]",
+      "url": "https://data.ca.gov/dataset/dusky-footed-woodrat-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1012",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::dusky-footed-woodrat-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1012",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1012_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/74f4ead507d947c483e11c24542b466f/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/74f4ead507d947c483e11c24542b466f/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/74f4ead507d947c483e11c24542b466f/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/74f4ead507d947c483e11c24542b466f/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1012.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "761d55e7-7490-41ef-aa9e-b45a1bd0bcae",
+      "title": "Black-tailed Jackrabbit least-cost corridors for NSNF Connectivity - CDFW [ds1011]",
+      "url": "https://data.ca.gov/dataset/black-tailed-jackrabbit-least-cost-corridors-for-nsnf-connectivity-cdfw-ds10111",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::black-tailed-jackrabbit-least-cost-corridors-for-nsnf-connectivity-cdfw-ds1011",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1011_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/8dad23d7e7be431e8b1b7e00165f077d/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/8dad23d7e7be431e8b1b7e00165f077d/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/8dad23d7e7be431e8b1b7e00165f077d/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/8dad23d7e7be431e8b1b7e00165f077d/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1011.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "8b8d28fa-67de-444a-8c8e-29ecc4de8e30",
+      "title": "Long-term Care Facility Integrated Disclosure and Medi-Cal Cost Report Data & Pivot Tables",
+      "url": "https://data.ca.gov/dataset/long-term-care-facility-integrated-disclosure-and-medi-cal-cost-report-data-pivot-tables",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://siera.oshpd.ca.gov/FinancialDisclosure.aspx",
+          "format": "HTML"
+        },
+        {
+          "url": "https://oshpd.ca.gov/data-and-reports/submit-data/financial-reporting/#ltc-manual",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/432e7056-c8d6-44b7-83af-2d0de350febf/download/ltc-adr-pcl-labels_2024.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/27298ade-534d-422c-bba9-faea7dced649/download/data_file_documentation_selected_20242.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/dd8de80a-bb8f-48f1-98b3-61804401675f/download/ltc-adr_excel-full-db-documentation-2024-.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/46c9e973-b549-45c1-b61e-977fc84a68e5/download/ltc-adr-pcl-labels_2020.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/03d208f4-4136-4331-9a20-9546f6206c87/download/ltc-adr-pcl-labels_2018.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/526212ea-0648-4ed4-bfdd-2850e4fc537a/download/2020-current-ltc-complete-datafile-documentation.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/857957ed-9059-4033-98e6-0e8d47d6fe50/download/2001-2019-ltc-complete-datafile-documentation.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/5d8c2a00-88b4-43cb-8f16-b4a72e35212c/download/lafd12current.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/023998f6-5da3-413c-bd4e-3fe16a468a6c/download/ltc-financial-trend-pivot-19-23.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/1b8ff1ea-67f1-4fcf-bc17-74312d93d477/download/ltc_fulldataextract_2024_submitted.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/9c4ae53a-926c-489c-b9eb-6c7bb02139eb/download/lafd1224_sub.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/521c682c-497d-4e74-8cc1-353d1680438d/download/2024-as-submitted-pivot-final_odp.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/47bb8443-b568-41c9-a53f-60a5e71347cf/download/ltc-complete-data-2023-submitted.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/7637fd8a-fb8a-4e06-b039-056d9f18592a/download/lafd-2023-sub-for-odp.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/823a77f7-8dcb-42a1-8a24-1eaf77ad8d6f/download/ltc-financial-pivot-2023-submitted.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/ef096e20-5182-45dd-9e43-19e1da19daa2/download/ltc-complete-data-2022-audited.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/b8e56328-c555-48db-a181-25d1035509a5/download/lafd-1222-aud-selected.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/3dadc8cb-0732-4c8d-95a5-e3a03af79b27/download/ltc-financial-pivot-2022-audited.xlsm",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/3f8d5b71-1a4e-451a-ae74-2406c968cccd/download/ltc-complete-data-2021-audited-june-2025.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/57dbea9a-b916-4964-b715-3fff8d9677af/download/lafd2021_audited_final_for_odp.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/77f333c5-7093-4cf3-b263-ecba9353347b/download/ltc-financial-pivot-2021-audited.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/11ae3e83-775c-4fc1-9ef3-b6d405bc2b15/download/ltc-complete-data-2020-audited.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/d8fb89b0-1f27-4333-aef9-118548ad4d3d/download/lafd1220-aud-final-to-post.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/4f920b00-80e4-400f-a662-4adadbc3dd8a/download/ltc-financial-pivot-2020-audited.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/dcea9837-2722-40f2-8281-9aa866b0a0bb/download/ltc-complete-data-2019-audited-extracted-011325.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/9f1e4a28-37d7-419e-b304-24c6b79238d6/download/rev-lafd-2019-aud-final-for-odp.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/904acb73-31f1-4579-95a5-cd764f90337f/download/ltc-financial-pivot-2019-audited2.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/a0ec28b8-d09a-4ec4-b41e-99e6edc0748d/download/ltc-complete-data-2018-audited_april-2022.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/0856b659-b8dc-4f2b-a2a6-8417c3ab0935/download/lafd_2018_audited.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/7f09191f-cef0-4092-bcdc-8110629b14af/download/ltc-financial-pivot-2018_audited.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/6281e8f3-8d5f-4264-b462-814289f9442e/download/ltc-complete-data-2017-audited.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/36611790-dd00-4cbf-879b-eaabc2e5d0cd/download/lafd-1217-revised-2020_final_odp.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/11c9744a-c9ff-479d-a44d-ee35772a083f/download/ltc-financial-pivot-2017-revised-072020_odp.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/7c23f34f-af3b-4b2a-a5d3-aca097d44443/download/ltc-complete-data-2016-audited.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/6d768f90-6288-49ce-9fbd-1a318dae484c/download/lafd1216_aud_rev_finalselected-file.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/e0edc093-d152-4b92-8ad6-d7e3c8c313b5/download/ltc-financial-pivot-2016_revised2019.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/531dd786-8163-4c53-8766-4f9d52f47dee/download/ltc-financial-data-2015-complete-data-set.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/19133706-4b13-44b4-8f4f-8508489685c4/download/ltccalendaryear2015selected.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/62008619-aafa-4a55-ac97-7b1d7f82bb9f/download/ltcfinancialpivot2015-102017-extract.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/69c9794c-7ef3-4fe7-91f5-c1ab3d30958d/download/ltc-financial-data-2014-complete-data-set.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/ad13fc17-486e-43d8-a293-1f2bd7a300c7/download/ltccalendaryear2014selected.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/acd71a47-592d-4a81-a84b-9e0db3a46962/download/ltcfinancialpivot2014-102017-extract.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/66175fdc-02e5-4861-a84e-7eeae8a164a0/download/ltccalendaryear2013selected.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/7daf1d87-9bef-4988-b63d-848022672471/download/ltcfinancialpivot2013.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/3f2edfd2-f845-4d65-ad38-3ea3f22f17d1/download/lafd1212selectedrevisedoct2014.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/ee127633-ca49-415a-b61b-da6834c79b98/download/ltcfinancialpivot2012-122014-extract.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/pre-2012-long-term-care-facility-integrated-disclosure-and-medi-cal-cost-report-data-pivot-tables",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/a5805aa5-6238-4e73-94e8-85c11780a527/download/long-term-care-facility-disclosure-report-data-22u4yta6.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/b3eb8c1f-878c-4ae3-8378-0398b307ec73/download/long-term-care-facility-disclosure-report-data-uv99w0_m.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/70fcfed4-c9b8-4c13-8c5f-06591261cba4/resource/2f881a1d-38f9-4f18-a3bf-1c5118c6197c/download/long-term-care-facility-disclosure-report-data-mm31yef4.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "d5389520-98b7-48c8-9db1-fb00fce834f2",
+      "title": "Pre-2012 Long-term Care Facility Integrated Disclosure and Medi-Cal Cost Report Data & Pivot Tables",
+      "url": "https://data.ca.gov/dataset/pre-2012-long-term-care-facility-integrated-disclosure-and-medi-cal-cost-report-data-pivot-tabl",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://siera.oshpd.ca.gov/FinancialDisclosure.aspx",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/long-term-care-facility-disclosure-report-data",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/4b4ddc0c-3ffb-4898-a107-1cb3fc409cd2/download/lafd1211revisedoct2014.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/c6904e7d-4905-4bbc-9af6-9ebc008c3b23/download/ltcfinancialpivot2011.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/44fc463f-5c5e-4bad-8c35-64eb3bcdad91/download/lafd1211.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/f47242b3-c969-4272-8ad3-8e815bedf5d1/download/lafd1210.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/4cc1df4e-e2b8-44b7-b2a2-db1e7c1e2881/download/lafd122010.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/50a41c4e-6701-43b6-b279-f3282494265f/download/ltcfinancialpivot2010.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/a98e0d18-71e7-4592-9dc7-a1b4838623bf/download/lafd1209.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/0eb4101b-1d49-43ee-9fc0-3703da783c54/download/lafd122009revisedoct2012.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/62b67e19-f042-455e-9d6e-0f22c166dab7/download/ltcfinancialpivot2009.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/7a6973fb-5f75-4d44-9eaf-991a051d14ad/download/lafd1208.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/d8658c92-b7af-4bbb-acc5-0eb36c335e2f/download/lafd1208revised-oct-2011.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/273b7f32-f40b-420f-bfa2-e11ffa697c67/download/ltcfinancialpivot2008.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/cf3f605f-6544-403d-8d30-237bc012fecf/download/lafd1207.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/39b645c9-adc9-4033-a1f5-1f8a896f80bb/download/lafd1207revised-oct-2011.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/27f8be46-2b66-4231-aa63-cf976690021f/download/ltcfinancialpivot2007.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/bb11b4f3-f507-452c-901c-fb4a51657ed2/download/lafd1206.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/d8f7110a-7b7e-439c-aaaa-d26fb774efca/download/lafd1206.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/bca19237-91b2-464d-850b-5703995eba4d/download/ltcfinancialpivot2006.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/1173aa6b-471e-45ea-b95f-2ccb73b7b139/download/lafd1205.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/b50cf71e-0e67-44e0-b498-f8e7de9e8c8c/download/lafd1205.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/ba4390f2-7f3c-486b-ba3c-d1e50693a71a/download/lafdpivot2005.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/36ba77a8-b697-4895-b5a4-83377f5062db/download/lafd1204doc.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/d30f5844-f03e-4bd1-bf56-66bf84334ce7/download/lafd1204.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/b00d68f9-5671-4388-861b-af73d052a84c/download/lafdpivot2004.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/85a45855-541b-4f32-86f8-520438623931/download/lafd1203documentation.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/0beb52fe-7b95-4275-afd1-5ae70713284d/download/lafd1203.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/1ce3fd68-0a8a-48b7-97ae-c825b8ef20ff/download/lafdpivot2003.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/c940954e-e2da-40ca-86d1-8135fd5eea4b/download/lafd1202.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/78efbbf5-3ccd-4c98-abd4-8b76c8079c76/download/lafd1202.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/afcfbaff-be0f-42a5-909b-1d20c7c727cb/download/lafdpivot2002.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/6eb2f06d-83ca-4879-b864-e11ea0553c11/download/lafd1201documentation.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/2c074d4e-e72e-4af8-bb8d-aebeee1cb32c/download/lafd1201.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/2d3346de-38f7-467a-9c37-ff34ae5dacf7/download/lafdpivot2001.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/b994d04c-8546-47d8-82af-c1f50248b996/download/lfd1200a.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/dd08cb31-5432-49be-a670-e57576322490/download/lfd1200b.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/193ee4c7-0761-4cc8-813b-ce75e27deee4/download/lfd1200a.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/879e0d76-2ddf-40a2-adda-4b60415abc1b/download/lfd1200b.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/6f68720b-0a5c-4723-aa44-7af63a1512a2/download/lafdpivot2000.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/d7890081-f36c-4daf-898b-67f8967b7e38/download/lafd1299.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/258a60e1-5c6b-4524-8be1-ca2cbf100cd6/download/lafd1299.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/12ffdc3a-2bf3-4baf-8bec-5ae26b78d3be/download/lafd1298.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/d943f393-b187-4062-91f8-1a7efd5c6913/download/lafd1298.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/435d7e54-39ec-463b-a028-ed755c26cbb9/download/lfd1297a.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/cf41fb8f-f79d-4afc-8ac0-12edf840711e/download/lfd1297b.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/e066b5d3-f6a2-4911-960f-7c2ce3e0fa38/download/lfd1297a.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/2bb93959-423c-43b6-baf0-65944fdf4585/download/lfd1297b.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7282bb6c-c8ec-45dd-b6b3-5f18084240bf/resource/9582a913-047a-433c-be7b-c83d18279dd2/download/pre-2012-long-term-care-facility-integrated-disclosure-and-medi-cal-cost-report-data-pivot-table.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "e64d090e-d0d6-4e69-bc8e-dc6073c1f471",
+      "title": "Key Characteristics of Californians Age 60 and Over",
+      "url": "https://data.ca.gov/dataset/key-characteristics-of-californians-age-60-and-over1",
+      "publisher": "California Department of Aging",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/feb9acc8-4a0b-410c-8ccc-7b715a41eedc/resource/b0f835f3-aed2-438f-bd5f-aa973f9dd48d/download/key-characteristics-age-60-and-over-2014-2019.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/feb9acc8-4a0b-410c-8ccc-7b715a41eedc/resource/f79607c4-80fa-481a-a0a5-a3118e07eaec/download/popen-data-projectfinal-publishing-oshpdattachments-xochisdata-dictionary-key-characteristic.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/feb9acc8-4a0b-410c-8ccc-7b715a41eedc/resource/c8bf33b3-090b-4099-af09-f496ade4b8c2/download/popen-data-projectfinal-publishing-oshpdattachments-xochissecondary-sources-for-key-characteri.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/feb9acc8-4a0b-410c-8ccc-7b715a41eedc/resource/40fbf307-39c0-4e6e-89bd-36c3357b7464/download/psa-services-description-updated.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/feb9acc8-4a0b-410c-8ccc-7b715a41eedc/resource/a6bc6234-72ae-4642-bf44-d6dc10b6509f/download/popen-data-projectfinal-publishing-oshpdattachments-xochisplanning-and-services-area-map.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/feb9acc8-4a0b-410c-8ccc-7b715a41eedc/resource/97b049bf-df12-410a-91a8-98db8294a3ee/download/key-characteristics-of-californians-age-60-and-over-6xzc9i5j.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "3cd71e5d-2136-4b83-a70f-9a8a92c1161f",
+      "title": "C-3, Sources of Income For All Corporations",
+      "url": "https://data.ca.gov/dataset/c-3-sources-of-income-for-all-corporations",
+      "publisher": "California Franchise Tax Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/3cd71e5d-2136-4b83-a70f-9a8a92c1161f/resource/17c7edf8-a695-4b5d-9b84-514913b82db4/download/2023_c-3-sources-of-income-for-all-corporations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/3cd71e5d-2136-4b83-a70f-9a8a92c1161f/resource/8d095660-2a23-4e4c-be9e-0f4e4cdde2e5/download/c-3_sources_of_income_for_all_corporations_data_dictionary.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "9a34abfb-2cce-46ee-a58d-71a68144a51c",
+      "title": "Population Percentage Within a Quarter Mile of Alcohol Outlets",
+      "url": "https://data.ca.gov/dataset/population-percentage-within-a-quarter-mile-of-alcohol-outlets",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/56436b25-193c-40bf-9ef2-922ad3807c4e/resource/263584b2-5af7-43f5-8d5e-43b4c9669700/download/hci_alcohol_outlets_774_narrative_2_3_2021_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/56436b25-193c-40bf-9ef2-922ad3807c4e/resource/46d4fe24-aa73-4959-8405-2b16b6cd590d/download/hci_alcoholoutletsq_774_co_cd_pl_ct-a-y-5-16-14-ada.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/56436b25-193c-40bf-9ef2-922ad3807c4e/resource/bb047d48-e91a-4c37-9aa2-3ea432d59a13/download/population-percentage-within-a-quarter-mile-of-alcohol-outlets-2014-t7lp7kzi.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "70d7aa20-12b8-4b05-b967-ea1919be1115",
+      "title": "C-3A And C-3B, Sources of Income, C and S Corporations",
+      "url": "https://data.ca.gov/dataset/c-3a-and-c-3b-sources-of-income-c-and-s-corporations",
+      "publisher": "California Franchise Tax Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/70d7aa20-12b8-4b05-b967-ea1919be1115/resource/87179fa2-a80a-43d9-a4ca-583f7942ad07/download/2023_c-3a-and-c-3b-sources-of-income-c-and-s-corporations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/70d7aa20-12b8-4b05-b967-ea1919be1115/resource/2769a9c1-85b6-4eb2-a05c-1c68cfb17376/download/c-3a_and_c-3b_sources_of_income_for_c_and_s_corporations_data_dictionary.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "e11387ca-f48f-4a15-a24a-76186d97a142",
+      "title": "Demographic Profile of Family PACT Clients Served by Fiscal Year",
+      "url": "https://data.ca.gov/dataset/demographic-profile-of-family-pact-clients-served-by-fiscal-year",
+      "publisher": "California Department of Health Care Services",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c0cbbda0-ea44-4bf0-a640-66a6677a258b/resource/e78877ea-a890-48b4-877e-677eca8a9b0c/download/4.-demographic-profile-of-family-pact-clients-served-by-fiscal-year.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c0cbbda0-ea44-4bf0-a640-66a6677a258b/resource/d8b1dc96-58d1-4bbd-ae21-adc7bc167a7d/download/demographic-profile-of-family-pact-clients-served-by-fiscal-year-gfqmli6a.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "e29076e8-54e8-4a75-a58a-e2d71f30bc92",
+      "title": "Proportion of Adults Who Are Current Smokers (LGHC Indicator) (ARCHIVED)",
+      "url": "https://data.ca.gov/dataset/proportion-of-adults-who-are-current-smokers-lghc-indicator-archived",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a66328ec-2a61-401a-8af1-84fc9e2e421d/resource/71a99ce5-3e6b-4be4-8cd0-b958d92c5b7b/download/proportion-of-adults-who-are-current-smokers-lghc-indicator-19.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a66328ec-2a61-401a-8af1-84fc9e2e421d/resource/96e35f60-1284-4625-8d49-e3f60231b96c/download/proportion-of-adults-who-are-current-smokers-lghc-indicator-19-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://letsgethealthy.ca.gov/goals/living-well/reducing-adult-tobacco-use/",
+          "format": "Chart"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a66328ec-2a61-401a-8af1-84fc9e2e421d/resource/4a865e0d-9b72-4a9a-8f6c-d72d222d76c3/download/proportion-of-adults-who-are-current-smokers-lghc-indicator-19-jka4oqtz.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0bd5f40b-c59b-4183-be22-d057eae8383c",
+      "title": "CalEnviroScreen 3.0 Results",
+      "url": "https://data.ca.gov/dataset/calenviroscreen-3-0-results",
+      "publisher": "California Office of Environmental Health Hazard Assessment",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/0bd5f40b-c59b-4183-be22-d057eae8383c/resource/850cbbb8-f616-48c0-9240-971003c99413/download/calenviroscreen-3.0-report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/0bd5f40b-c59b-4183-be22-d057eae8383c/resource/89b3f4e9-0bf8-4690-8c6f-715a717f3fae/download/calenviroscreen-3.0-results-june-2018-update.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/0bd5f40b-c59b-4183-be22-d057eae8383c/resource/ed7da629-7ac7-4bd1-b6db-4b4efac45894/download/calenviroscreen-3.0-shapefile.zip",
+          "format": "SHP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "c263d3ad-6574-4c9c-87ec-7e497ae8473a",
+      "title": "Citizen Scientist Monitoring of Rocky Reefs and Kelp Forests, California South Coast MPA Baseline Study, 2011 to 2012",
+      "url": "https://data.ca.gov/dataset/citizen-scientist-monitoring-of-rocky-reefs-and-kelp-forests-california-south-coast-mpa-ba-2012",
+      "publisher": "California Ocean Protection Council",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/e6114a41-be7b-41b7-9aed-30986b9c618d/download/scmpa-21-final-report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/b5ac4ac6-6213-4725-8ede-eaf10390c993/download/citizensciencekelpforest.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/74499237-b461-4172-9856-5c08409b9cbb/download/scmpabaselineprograminformationlookuptable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/cfa76bf5-b17d-418f-abc0-ef2c4c06862e/download/scmpabaselineprograminformationlookuptablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/3801a5a8-ca83-407b-b7c8-058fb0619dc4/download/scmpaboundaryinformationlookuptable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/00e539cf-91ef-44ac-8161-b44e8b28866c/download/scmpaboundaryinformationlookuptablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/601697d0-3beb-46af-8d00-5fa1915cfd88/download/scrccasiteslookuptable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/1d86c32e-d910-4179-ad78-4984f0d60c2b/download/scrccasiteslookuptablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/a261b482-ea50-4832-8f2a-cb26d345c39a/download/methodsandsamplingmetadatareefcheckalgaesurveys.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/ce3406a5-668e-4dce-99ea-0ae634c4657f/download/scrccaalgaedatatable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/51f77557-5130-495d-bf73-cd1099d94456/download/scrccaalgaedatatablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/51736f7a-16b1-4c5a-96e9-1d01b7c69b7f/download/scrccaalgaespecieslookuptable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/1b69cf48-e81d-4298-848a-9fd4a136f8ad/download/scrccaalgaespecieslookuptablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/fdceeb39-e1ed-4de7-a7ae-fc4566ac8d59/download/methodsandsamplingmetadatareefcheckfishsurveys0.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/b74dcb99-d39b-4a93-aafc-ec0e23408f60/download/scrccafishdatatable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/121ce4fe-8e0e-4c76-8f59-9cb6429ce1dd/download/scrccafishdatatablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/843da39e-ad9b-4502-8506-8271981937d2/download/scrccafishspecieslookuptable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/c0a2e005-918d-449f-83fa-136987369b74/download/scrccafishspecieslookuptablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/8d3f9f98-b2db-4577-b568-1083513cc8c7/download/methodsandsamplingmetadatareefcheckinvertebratesurveys.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/850fbac1-a2cd-4fe3-8a0d-44f6be3ff4cc/download/scrccainvertebratedatatable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/e1eb2bc0-3331-4adf-a68a-518a133006b1/download/scrccainvertebratedatatablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/e78747f1-c302-465d-98d3-472eb52343bd/download/scrccainvertebratelookuptable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/e92c6eda-8663-4025-bf5b-788f4e83ac7b/download/scrccainvertebratespecieslookuptablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/a08ac2dd-a20f-41e0-ad08-a70e5e9fb209/download/methodsandsamplingmetadatareefcheckupcsurveys.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/14222032-947b-4c67-8318-cb2cb4b9f758/download/rccaupcdatatable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/a06d5096-bf1b-46ac-9ce6-8ca6c726f0a8/download/scrccaupcdatatablemetadata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/1bf02a81-f6f4-4c44-8ad1-5e63f7c07209/download/scrccaupclookuptable.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d4a9849-a035-4312-84ca-3930c7441ff3/resource/9eaaaffe-4d76-40e0-a64e-dc9938836857/download/scrccaupclookuptablemetadata.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "6410aaf4-d30e-4354-a8aa-6c3a58ca9da7",
+      "title": "Number of licensed day care center slots per 1,000 children aged 0-5 years",
+      "url": "https://data.ca.gov/dataset/number-of-licensed-day-care-center-slots-per-1000-children-aged-0-5-years",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e5095eba-b0f3-4050-a971-cf5c17f5ede3/resource/956ec024-dea4-4495-b89e-3d14aced344a/download/hcilicensed-daycare-center760narrative11-13-15.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e5095eba-b0f3-4050-a971-cf5c17f5ede3/resource/48772b13-65c3-4140-8985-b48fc279de48/download/hci_licensed_daycare_centers_760_ca_re_co_cd_pl_ct_110215-ada2.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e5095eba-b0f3-4050-a971-cf5c17f5ede3/resource/30f4de45-a7c6-4b7c-9158-60408529758c/download/licensed-daycare-centers-data-dictionary.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e5095eba-b0f3-4050-a971-cf5c17f5ede3/resource/2fe8f320-948b-43d2-b566-62e258cc7cdc/download/test-cdph-number-of-licensed-daycare-center-slots-per-1-000-children-aged-0-5-years-6se6pidg.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "487dc11a-2909-4b37-b2d9-46894e949e69",
+      "title": "CalVTP Approved and Completed Projects Map (Deprecated)",
+      "url": "https://data.ca.gov/dataset/calvtp-approved-and-completed-projects-map-deprecated",
+      "publisher": "CAL FIRE",
+      "resources": [
+        {
+          "url": "https://gis.data.cnra.ca.gov/maps/CALFIRE-Forestry::calvtp-approved-and-completed-projects-map-deprecated",
+          "format": "HTML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "6c4e9fc2-b13c-4443-bba4-e9c8fa824a66",
+      "title": "CalVTP Approved and Completed Projects App (Deprecated)",
+      "url": "https://data.ca.gov/dataset/calvtp-approved-and-completed-projects-app-deprecated",
+      "publisher": "CAL FIRE",
+      "resources": [
+        {
+          "url": "https://gis.data.cnra.ca.gov/apps/CALFIRE-Forestry::calvtp-approved-and-completed-projects-app-deprecated",
+          "format": "HTML"
+        },
+        {
+          "url": "https://CALFIRE-Forestry.maps.arcgis.com/apps/webappviewer/index.html?id=4a4c99f99ba1407c851d86f37e4c01b5",
+          "format": "ArcGIS GeoServices REST API"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "16089c20-c3c9-4914-85c2-38afad8cb5f6",
+      "title": "CalVTP Proposed Projects App (Deprecated)",
+      "url": "https://data.ca.gov/dataset/calvtp-proposed-projects-app-deprecated",
+      "publisher": "CAL FIRE",
+      "resources": [
+        {
+          "url": "https://gis.data.cnra.ca.gov/apps/CALFIRE-Forestry::calvtp-proposed-projects-app-deprecated",
+          "format": "HTML"
+        },
+        {
+          "url": "https://calfire-forestry.maps.arcgis.com/apps/webappviewer/index.html?id=c15f3b7d642f4ddbb35cf7b1beddbc7e",
+          "format": "ArcGIS GeoServices REST API"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "f544de88-0fbd-42ef-bfa6-a7319aad88f5",
+      "title": "Percent of Household Overcrowding (> 1.0 persons per room) and Severe Overcrowding (> 1.5 persons per room)",
+      "url": "https://data.ca.gov/dataset/percent-of-household-overcrowding-1-0-persons-per-room-and-severe-overcrowding-1-5-persons-per-",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/34ba03ea-d6d4-402b-bde4-ed255076d3d6/resource/9cf0037a-62cd-48fc-8646-18086a1b5e53/download/hci_housing_crowding_137_chasandacs_narrative12-06-17-ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/34ba03ea-d6d4-402b-bde4-ed255076d3d6/resource/b653d438-bec1-42a3-9828-dc0b86f98510/download/hci_housing_crowding_137_ca_re_co_cd_pl_ct_overcrowding_total2017-11-06.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/34ba03ea-d6d4-402b-bde4-ed255076d3d6/resource/325ba8b9-091c-4719-86d8-df06fcb713c2/download/hci_housing_crowding_137_ca_re_co_cd_pl_ct_severeovercrowding_total2017-11-06.csv",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/34ba03ea-d6d4-402b-bde4-ed255076d3d6/resource/4482e6ae-aea3-4de2-957d-d6d152dde29a/download/housing-crowding-h1etrehg.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.cdph.ca.gov/Programs/OHE/Pages/HCI-Housing-Overcrowding.aspx",
+          "format": ""
+        },
+        {
+          "url": "https://cdphdata.maps.arcgis.com/apps/MapSeries/index.html?appid=f3f5c38477d24b2fbbc616d54907df97",
+          "format": ""
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/34ba03ea-d6d4-402b-bde4-ed255076d3d6/resource/13d90e77-3507-468f-af73-dbc2628d5980/download/metropolitan_planning_organization_mpo_region-list.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "4e28edee-db5c-4711-b707-13ca112a8213",
+      "title": "Delta Smelt Enclosure Studies, North Delta Arc of the upper San Francisco Estuary, CA, 2019 - 2024",
+      "url": "https://data.ca.gov/dataset/delta-smelt-enclosure-studies-north-delta-arc-of-the-upper-san-francisco-estuary-ca-2019-2024",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/87fa2d01e7b6c1f13b74c13bf9c9cb9f",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/f3c3184ecf10d6a1558df15edc1c5ba8",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/319a0a8d3cb1bc14de2a4c9c006ce715",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/cd83b2139b666fd62469fdf21746b91f",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/61f197ecfcec93420e9060906ce3e8ca",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/af430ec8db24cee5d8fcb3a48dae773b",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/49ccff9cf37c4e43468f33d931cae7ab",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/dd9abde94909701fe7b8c1fd557c62dc",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/17f7ec4da5340a6df7a8349dcf3833a0",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/5ece2e1c7b7f44a999b4909b6cb0d2a1",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/2187/1/f5074df848f206e825b97c60db9cabad",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://portal.edirepository.org/nis/provenanceGenerator?packageid=edi.2187.1&key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "HTML"
+        },
+        {
+          "url": "https://portal.edirepository.org/nis/metadataviewer?packageid=edi.2187.1&key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "HTML"
+        },
+        {
+          "url": "https://portal.edirepository.org/nis/reportviewer?packageid=edi.2187.1&key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "HTML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "88953cf4-1cc9-4146-afc8-c7e1970bef65",
+      "title": "Use of Estuarine, Intertidal, and Subtidal Habitats by Seabirds, California South Coast MPA Baseline Study, 2011 to 2013",
+      "url": "https://data.ca.gov/dataset/use-of-estuarine-intertidal-and-subtidal-habitats-by-seabirds-california-south-coast-mpa-b-2013",
+      "publisher": "California Ocean Protection Council",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/73afde0e-67fc-40f9-90ae-3742bc2053c0/download/scmpa-28-final-report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/4535042f-6fbe-435f-9e4c-63e977fbe333/download/seabirdnearshoreestuarine.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/a354b01a-8c2a-4f89-89f9-65f347dadf44/download/scmpabaselineprograminformationlookuptable0.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/a110025b-12b8-4fd5-9dea-45c4eafb3799/download/scmpabaselineprograminformationlookuptablemetadata0.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/d6056a5d-2f15-4493-893e-ae3556865e66/download/scmpaboundaryinformationlookuptable00.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/33f8c753-07ce-4e4b-8047-37da9a9db000/download/scmpaboundaryinformationlookuptablemetadata10.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/91334ff4-1117-4427-b152-abbd156444d2/download/methodsandsamplingmetadataseabirddisturbancemonitoring.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/798852f1-51d5-453d-8252-a785d5259397/download/scseabirddisturbance1studydata20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/5265c778-5fd7-45f3-bb5b-921c416c7320/download/scseabirddisturbance1studydata20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/ad917bf8-3022-4758-af57-e81a80d44c92/download/scseabirddisturbance1studylookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/828528f9-db57-4214-8bf1-1c16d100d08e/download/scseabirddisturbance1studylookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/4208773e-07c8-49c7-b913-03be5eb35a0a/download/scseabirddisturbance2observerlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/ff26096a-8301-4391-9271-2d870c9ca2fb/download/scseabirddisturbance2observerlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/fc073b19-0ef3-483d-be55-e0081710cc1f/download/scseabirddisturbance3sourcesdata20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/34ff1547-ddff-473f-83d3-1c4ba0f7d122/download/scseabirddisturbance3sourcesdata20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/e7015877-74d5-4c0d-9956-9518c3c99454/download/scseabirddisturbance3sourceslookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/3158e501-a146-44c8-bfb9-1dcd61491560/download/scseabirddisturbance3sourceslookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/5c30ce4a-bb3a-4e7e-b4e4-513affaba49b/download/scseabirddisturbance4locationlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/1c0c9213-9b3e-4e85-ba9c-aba6961956c4/download/scseabirddisturbance4locationlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/457e7825-a93d-4c58-bd7a-d253b57edeb4/download/scseabirddisturbance5coordinatelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/5a0a21f3-0cc2-4433-abce-f23b78e1a136/download/scseabirddisturbance5coordinatelookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/877b11bd-29f6-42f2-b9bb-f612fb0ec332/download/scseabirddisturbance6speciesdata20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/91c8de10-6ec7-4539-b6e1-bc0ade588a6e/download/scseabirddisturbance6speciesdata20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/249262d4-c711-4522-be71-7762250c38ba/download/scseabirddisturbance7taxonlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/971a4779-dd71-468e-bf55-25a5354fb293/download/scseabirddisturbance7taxonlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/f206fe77-b35e-45e9-a046-bd4526778507/download/scseabirddisturbance8statuslookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/f8877956-3ea3-42a4-93f5-419e87d0af88/download/scseabirddisturbance8statuslookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/fa19372f-bec2-499d-a4cf-b58756b51b31/download/scseabirddisturbance9offspringdata20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/da94977f-9c49-406e-8787-0b0a5468db05/download/scseabirddisturbance9offspringdata20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/c2afd8d1-fb65-4941-a4f3-b3012ab8d6da/download/scseabirddisturbance10reactionlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/9e79ae70-b72d-4191-bb56-f01ed4cdc1dc/download/scseabirddisturbance10reactionlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/b0a70d95-d054-4468-bfb2-7e4fa293c1a2/download/methodsandsamplingmetadataleastterndietdata.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/0d34458e-1cf0-4904-8e98-841b7e998e9f/download/scleastterndiet1data20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/e5fd8988-1bec-47e3-a7b3-7c8572d273ff/download/scleastterndiet1data20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/2fb3200b-0801-41f8-a3bf-ea24cd744b68/download/scleastterndiet2locationlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/c4f6f1b7-fc43-42d4-bc08-b0144601f68f/download/scleastterndiet2locationlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/31ab901f-2362-4d6a-ba04-b5561da09f0b/download/scleastterndiet3observerlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/f0b03574-c1f4-4dfb-af94-4d8b1930b591/download/scleastterndiet3observerlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/12b5ea97-5cc1-4115-892d-c5c936709e87/download/scleastterndiet4taxonlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/a8747cc6-932a-43ac-bce2-b0257058be28/download/scleastterndiet4taxonlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/8b9c9fde-8aef-431d-a0f8-fe7eb8e520f1/download/methodsandsamplingmetadataseabirdnearshoreforagingdata.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/4eb35f42-8133-4e12-a84e-ff782cfd1ce5/download/scseabirdforaging1data20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/c0294fc3-f1f6-4ef8-a910-e913074d1f79/download/scseabirdforaging1data20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/d60118ff-00eb-4e19-90a9-9604ed1bc22b/download/scseabirdforaging2locationlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/ab819ab0-eb3a-49d6-9e0d-62a85c3688d5/download/scseabirdforaging2locationlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/29be3640-290f-4601-a6a1-123ae1ed7e07/download/scseabirdforaging3coordinatelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/cd4d09c6-7bd6-42d6-bb49-6f229729f3d6/download/scseabirdforaging3coordinatelookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/9bf045a1-8f73-4ef0-92e5-d62b3a63b583/download/scseabirdforaging4taxonlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/beaf9246-5802-4d68-ba3d-46e1a292a7fd/download/scseabirdforaging4taxonlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/fe389343-134b-4fd4-a9b5-f6a4c25db7cd/download/scseabirdforaging5beaufortlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/b30f7675-d278-4486-b1f5-c3d1a82be625/download/scseabirdforaging5beaufortlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/7768bc58-2a0b-4b9b-85da-dde3acf60238/download/scseabirdforaging6visibilitylookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/1e5631bb-1c28-413d-b69f-979eb2feb7a1/download/scseabirdforaging6visibilitylookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/413d022f-67cc-425f-8f64-2e20f1dccc07/download/scseabirdforaging7observerlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/78254eb6-af30-4af1-b041-f453f865fc6e/download/scseabirdforaging7observerlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/2aa82a64-5dc2-4481-9dc4-46b7128ef485/download/scseabirdforaging8intervallookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/97c30ce4-3c29-4035-af3e-1d4116bd8e7a/download/scseabirdforaging8intervallookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/81c8c3e8-d2a8-4cfb-aa85-0ce5a80be2c1/download/scseabirdforaging9blocklookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/4984868d-1960-4d86-b5ad-47ba84e38f0f/download/scseabirdforaging9blocklookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/c69f249e-b325-461c-b959-1b25af564142/download/methodsandsamplingmetadataseabirdpopulationtransectsurveys.pdf",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/727ecb4e-223e-47aa-bd78-ea94bcc06bf9/download/scseabirdpopulation1data20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/dfb02383-6a2a-43d2-96dd-d51f134d1743/download/scseabirdpopulation1data20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/3673965b-ee49-4915-849e-66facd6aaa60/download/scseabirdpopulation2locationlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/36ec5b02-5a53-43a7-8c94-193314fdf682/download/scseabirdpopulation2locationlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/64af73ec-5133-4d8f-9e9f-b2ea60827d1e/download/scseabirdpopulation3coordinatelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/02e359ec-ed3a-4794-ab25-160f4cd03aaf/download/scseabirdpopulation3coordinatelookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/2d90fc95-d097-4174-a395-4789add0ee20/download/scseabirdpopulation4taxonlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/618c6e76-a052-40ae-8c4b-68994bf6d484/download/scseabirdpopulation4taxonlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/ccc43d45-104a-4427-9233-7e4092e4d79b/download/scseabirdpopulation5beaufortlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/f9668ee1-75bb-4d11-b0d9-d2b458c4058d/download/scseabirdpopulation5beaufortlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/c75d3bab-2fe1-4bd5-a585-67883120fdda/download/scseabirdpopulation6visibilitylookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/46e8ffea-0087-4019-a103-e1844b069f30/download/scseabirdpopulation6visibilitylookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/6d4d1628-9734-4117-854a-8f36aec4e3af/download/scseabirdpopulation7observerlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/70650040-3fa8-4f6f-9892-2edaae06e400/download/scseabirdpopulation7observerlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/0c70cc35-d323-4007-91f9-e5a837b98268/download/methodsandsamplingmetadataseabirdpopulationtransectsurveys.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/6eba3595-3263-4425-9be0-5c63923b83d3/download/scseabirdproductivity1blackoystercatcherdata20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/7c4aa0cf-1a01-41b2-9c7b-965bb2106206/download/scseabirdproductivity1brandtscormorantdata20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/265dc70e-b1b4-4432-ba98-a289199c6bd2/download/scseabirdproductivity1pelagiccormorantdata20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/136bb0ed-1ec9-442e-888d-d82d93d53e0b/download/scseabirdproductivity1westerngulldata20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/11eb6720-8913-492c-9dff-8c0d03430625/download/scseabirdproductivity1data20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/eadb60d6-5956-4dbf-ab0a-e7cbb7277b9b/download/scseabirdproductivity2activelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/3d3b6911-faa2-48d0-9564-356b734d2ff4/download/scseabirdproductivity2activelookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/c8bcb518-05ec-4d02-b465-5f43bd1753bc/download/scseabirdproductivity3laydatelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/f2dd9204-2a0a-4f99-a78b-e9a326cd4eec/download/scseabirdproductivity3laydatelookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/12b82c79-01a8-497c-8735-ef491a99568b/download/scseabirdproductivity4hatchdatelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/1fee7245-65a5-458a-93ae-1863cb33ef74/download/scseabirdproductivity4hatchdatelookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/19b5c0cc-8587-40ba-8b55-75d291fdaebf/download/scseabirdproductivity5datelastobslookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/dfdf7f91-5afe-400d-9dc7-969fe429f2ce/download/scseabirdproductivity5datelastobslookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/1b47484e-e015-495e-a7bc-effd998761f0/download/scseabirdproductivity6relaylookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/200c2518-a0ef-44ae-b65a-d28dbb37dc39/download/scseabirdproductivity6relaylookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/6a512849-0d71-44c2-a16b-c02fbadd1b37/download/scseabirdproductivity7nestconditionlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/07c0101c-1272-4043-abf6-83ce97dc831b/download/scseabirdproductivity7nestconditionlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/e7150e04-77b3-464e-a729-c81590173b32/download/scseabirdproductivity8eggfatelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/4dead5f5-b568-4122-9fda-887d02f0cc89/download/scseabirdproductivity8eggfatelookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/725249c1-9087-45af-905d-7482c1dcaa67/download/scseabirdproductivity9chickfatelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/53cd2fea-5417-4db7-ab50-0cad1d880962/download/scseabirdproductivity9chickfatelookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/7b2873b8-81d1-4a37-885f-24f16ba5cb1a/download/scseabirdproductivity10taxonlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/01d2cf97-34b5-482c-a44a-fba3ba395097/download/scseabirdproductivity10taxonlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/8dcffb71-2f01-44d6-bdf6-253e8f948e6e/download/scseabirdproductivity11observerlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/74398f08-b4d9-4f84-b60a-1416255229a6/download/scseabirdproductivity11observerlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/9468de0b-32da-46e9-9216-45da41fe2093/download/scseabirdproductivity12locationlookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/6e4b0283-1547-41f6-b732-c3236b002ba2/download/scseabirdproductivity12locationlookuptable20122013metadata.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/c0897dce-381d-4a32-a453-6f11940e2934/download/scseabirdproductivity13coordinatelookuptable20122013.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ce0e75c6-7ce3-458e-8a69-d98c4f66f8be/resource/cf12b9e7-9237-4574-b2b9-667e130c5a09/download/scseabirdproductivity13coordinatelookuptable20122013metadata.txt",
+          "format": "TXT"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "7b2b5d26-9407-4368-8744-d5b659024dd7",
+      "title": "Toxicity Criteria Database",
+      "url": "https://data.ca.gov/dataset/toxicity-criteria-database",
+      "publisher": "California Office of Environmental Health Hazard Assessment",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/7b2b5d26-9407-4368-8744-d5b659024dd7/resource/0d417a2b-6559-4725-820f-add7c57a8bc9/download/oehha-toxicity-criteria-database-20260818.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/7b2b5d26-9407-4368-8744-d5b659024dd7/resource/1d05aa04-f2e5-4a60-bc69-20940a677a56/download/toxicity-criteria-database-data-dictionary.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "3b8e3adc-0b7f-4acc-b7dc-65f8991d5d99",
+      "title": "HIV/AIDS Cases",
+      "url": "https://data.ca.gov/dataset/hiv-aids-cases",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/2269414f-024a-47fa-b055-ee3b28dda27e/resource/ffc84784-957e-486f-ad34-9b14d07583c1/download/persons-living-with-hiv-aids.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/2269414f-024a-47fa-b055-ee3b28dda27e/resource/3fa428a1-891b-450e-91bb-d47525c06a68/download/persons-newly-diagnosed-with-hiv.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/2269414f-024a-47fa-b055-ee3b28dda27e/resource/ff1b0ec6-60f3-4e82-a10b-9c0c8ea8fb2f/download/deaths-of-persons-diagnosed-with-hiv-aids.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/2269414f-024a-47fa-b055-ee3b28dda27e/resource/84871481-e091-48ea-8add-b5cd9c84907d/download/hiv-aids-dd.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/2269414f-024a-47fa-b055-ee3b28dda27e/resource/8194685d-c32a-4f15-a5f6-e532c0bf967b/download/hiv-aids-cases-yi5h8vop.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "b36fa6dc-40ec-4d54-9f24-9f71eba198d4",
+      "title": "California's Groundwater Semi-Annual Conditions Updates",
+      "url": "https://data.ca.gov/dataset/californias-groundwater-semi-annual-conditions-updates",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/7c2b76c3-cd3c-4411-9cfb-7ed2eb5c8350/download/may_2026_semi_annual_groundwater_report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/25b2404a-1a01-4c9f-8b74-8eaa7586b071/download/oct_2025_semi_annual_groundwater_conditions_report_11182025.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/fe2f982a-cc34-4b11-a6e7-6aef5e5cb8d6/download/may_2025_semi_annual_groundwater_conditions_report_v2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/7dec17f2-6674-42bc-a743-24b4edce9261/download/finaldraft_oct_2024_semi_annual_groundwater_conditions_report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/ba12c11f-b8b8-4d37-a9e4-13c2d7831285/download/may_2024_semi_annual_groundwater_conditions_report_v4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/7a9f6a69-0f43-474c-b9a5-b8b6f3e5ed48/download/final_oct_2023_semi_annual_groundwater_conditions_report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/72ed7f9c-36cb-4c0a-a3de-63b8f5a0a0ef/download/final_v4_march_2023_semi_annual_groundwater_conditions_report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/7e57614f-9868-4d2e-bbb8-0621be558b9c/download/2022-spring-groundwater-conditions-report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/a4c0bed6-1ea7-45b0-9fd1-3f49815a93c3/download/fall-2021-groundwater-conditions-report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/13e743aa-e059-4b23-b3ae-69fbb3d2585a/download/spring-2021-groundwater-conditions-report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/ab6e6d69-45b0-4807-9e6f-f7072c8787dd/download/spring-2020-groundwater-conditions-report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/0f8636e9-d536-45b7-82e3-f3f654690ae5/download/spring-2019-groundwater-conditions-report.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/aa353fe5-09ea-4039-b269-888d440dcce1/download/water-year-2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae160cf2-51d8-450d-82cc-2708e63ccd95/resource/98889070-225d-40d6-84dd-0c60799b5793/download/fall-2017-groundwater-conditions-report.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "95596130-fe2a-4760-9530-9bd7cb6a50c0",
+      "title": "Pre-2012 Hospital Annual Utilization Report & Pivot Tables",
+      "url": "https://data.ca.gov/dataset/pre-2012-hospital-annual-utilization-report-pivot-tables",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/hospital-annual-utilization-report",
+          "format": "HTML"
+        },
+        {
+          "url": "https://alirts.oshpd.ca.gov/AdvSearch.aspx",
+          "format": "aspx"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/d2538e76-bdbd-4b9a-8f22-ab5bf22e6569/download/data-importing-instructions-for-excel.docx",
+          "format": "DOCX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/60dae327-5d90-410c-9fb9-a37ad1bf8bf8/download/2011-forms-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/fde25f6c-ed34-4f57-b7a4-98b4d473814d/download/2011-instructions-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/7b07cf58-db62-4aa3-81c2-731b0b5bad8b/download/hosp11utildatafinal.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/6fa37ec6-b168-4900-a803-87f7aff22987/download/aurh2011pivot-profile.xlsm",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/5dcd65b1-866b-4a74-9b24-f50b088598e3/download/2010-instructions-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/f0ceb55b-ecd6-4d85-8165-324f969be3b1/download/2010-forms-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/d8be4988-bcff-404e-91a2-be41c295bea0/download/hosp10utildatafinal.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/11043aba-b73d-49e0-b34d-20d89378fdc0/download/aurh2010pivot-profile.xlsm",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/537fed18-c540-454d-9ba3-0c2b0190a774/download/2009-february-hospital-technical-bulletin.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/cbd0a1c7-af4b-4308-b4e8-56b8408d0748/download/2009-january-hospital-technical-bulletin.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/75418fc6-67bd-44fc-aaf6-8ef254600104/download/2009-instructions-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/3ad0d101-51fa-41c4-be5e-c62df0d9a072/download/2009-forms-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/38cd3563-b2f7-4ac6-aa2b-427f95a7bb6c/download/hosp09utildatafinal.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/ebf52993-ba01-496d-aa01-877a435af3f6/download/aurh2009pivot-profile.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/c95d3b49-54b4-423f-b925-d7d4fcbd8909/download/2008-instructions-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/b5a12fae-54d3-4a75-a9cb-e2cfa1576c7a/download/2008-forms-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/7f7a1078-f525-4d70-a730-5095b2116b97/download/hosp08utildatafinal.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/c9ac5b84-27d4-4dd2-9355-8664d905dd95/download/aurh2008pivot-profilerev412.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/5c64bfef-fcb0-4721-9e6e-9a0d72139147/download/2007-instructions-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/e7c4cc31-e4e5-4b80-a3e7-243f88d34c88/download/2007-forms-hospital-utilization.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/4e19eb90-2cd0-4c9d-a2b7-6ca04ec47cc6/download/hospital07utildatafinal.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/72d62373-a6c3-4790-9720-4fc5b29e0891/download/aurh2007pivot-profile.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/c9640431-3b4d-4c97-a4ab-43abdf8b3e89/download/hospital-utilization-documentation-2006.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/892e5c89-ea18-426f-a8df-7d9f576d340e/download/hospital06utildatafinal.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/9c222cad-d124-4a96-a92c-afc346c7c036/download/aurh2006pivot-profile.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/ab66ea25-fa49-43ee-a7ac-f3b30b113ca5/download/hospital-2005documentationfinalsept2006.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/d2120f05-feef-41b8-856d-b7a7d5c99ec2/download/hospital-2005util-datafinalsept2006.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/feb1677b-1c5e-40e7-a3f6-ed2fdbe4ddff/download/aurh2005pivot-profiler42-09-07.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/446d8233-295b-47c6-9073-91c0987f978e/download/hosp-2004util-docu.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/1c96c48e-3031-417f-b524-71b96eb18ca8/download/hosp-2004util-data.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/5c519938-68d4-45fa-ae01-c94e05f76195/download/aurh2004pivot-profiler1-1006.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/1a4f46b7-dbc5-4748-b2bf-58ed4f800aba/download/hosp-2003utildocumentation.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/3a7a464c-18ce-49c1-b71a-243236b6a07f/download/hosp-2003util-data.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/38e5a546-4524-4c1b-ac93-af4a1cac6c5a/download/aurh2003pivot-profiler1-1006.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/89489fd5-d890-46b3-9976-a6e5dff26a3b/download/hosp-2002utildocumentation.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/d815de51-c4a1-481d-a834-ffebc051fff7/download/hosp-2002util-data.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/f34b4da6-99a8-432e-bf72-c3ae92398251/download/aurh2002pivot-profiler1-1006.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/734df85d-be24-4ca7-96f1-e3f97a8762e9/download/hosp-2001-readme.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/ffb7675e-d186-4d18-97b0-f20df4d30221/download/hosp-2001-documentation.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/25c34dd3-6459-4f92-b40e-3624e53a5929/download/hosp-util-01-file-01.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/e00a2b3a-ac54-4f61-b444-46c10229f703/download/hosp-util-01-file-02.txt",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/276201b9-c517-466c-867b-171f3aa71337/download/aurh2001pivot-profile.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5ea4b306-5f8b-4ca1-beb3-038b3e76fbe5/resource/83aedd21-f0ff-466e-9bd2-b1e35d5ad130/download/pre-2012-hospital-annual-utilization-report-pivot-tables-y7k8yvm2.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "a3d7a54a-2f9f-4cd9-ab46-83b9416aa5b4",
+      "title": "Data Brief: GLP-1 Prescriptions for Weight Loss over Time, 2018 to 2023",
+      "url": "https://data.ca.gov/dataset/data-brief-glp-1-prescriptions-for-weight-loss-over-time-2018-to-2023",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c5d9fb69-fcb7-44b8-9434-3277162dfba6/resource/f55553f5-93b1-429b-ad27-52df66bdff2d/download/hpd_glp1_data_brief_dataset.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c5d9fb69-fcb7-44b8-9434-3277162dfba6/resource/303159c0-aba7-4ad2-a550-dd7ba1255804/download/data-brief-glp-1-prescriptions-for-weight-loss-over-time-2018-to-2023-4dy94qas.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "2d195339-fd95-4139-bb19-c93336650c9e",
+      "title": "California Precipitation Data (Federated)",
+      "url": "https://data.ca.gov/dataset/california-precipitation-data-federated",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVDataServlet?Stations=8SI&SensorNums=45&dur_code=D&Start=2015-10-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVDataServlet?Stations=5SI&SensorNums=45&dur_code=D&Start=2015-10-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVDataServlet?Stations=6SI&SensorNums=45&dur_code=D&Start=2015-10-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVDataServlet?Stations=8SI&SensorNums=2&dur_code=M&Start=2015-10-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVDataServlet?Stations=5SI&SensorNums=2&dur_code=M&Start=2015-10-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVDataServlet?Stations=6SI&SensorNums=2&dur_code=M&Start=2015-10-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=8SP&Start=1996-01-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=5SP&Start=1996-01-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=6SP&Start=1996-01-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=PP1&Start=2024-01-01&End=2024-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=PP2&Start=2024-01-01&End=2024-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=PP3&Start=2024-01-01&End=2024-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=PP4&Start=2024-01-01&End=2024-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=PP5&Start=2024-01-01&End=2024-1-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/req/CSVGroupServlet?GroupIds=OR1&Start=1987-01-01&End=2030-12-31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/dynamicapp/staSearch?sta=&sensor_chk=on&sensor=45&collect=DATA+COLLECTION+TYPE&dur=D",
+          "format": "HTML"
+        },
+        {
+          "url": "https://github.com/CADWRDeltaModeling/cdec_maps",
+          "format": "Software (Python package)"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/reportapp/javareports?name=MonthlyPrecip",
+          "format": "HTML"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/reportapp/javareports?name=DailyPrecip",
+          "format": "HTML"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/queryCSV.html",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/reportapp/javareports?name=PRECIPMON",
+          "format": "HTML"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/cgi-progs/nwc_rpts/HYD",
+          "format": "HTML"
+        },
+        {
+          "url": "https://cdec.water.ca.gov/reportapp/javareports?name=FlagList",
+          "format": "HTML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "ab4e1b38-df76-4397-b3cf-002fd16937c3",
+      "title": "CalEnviroScreen 2.0",
+      "url": "https://data.ca.gov/dataset/calenviroscreen-2-0",
+      "publisher": "California Office of Environmental Health Hazard Assessment",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/ab4e1b38-df76-4397-b3cf-002fd16937c3/resource/6d6a9a5c-9221-4fc5-9b00-35015ae65837/download/calenviroscreen-final-report.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ab4e1b38-df76-4397-b3cf-002fd16937c3/resource/cb5fe61f-a1af-4e53-83e2-fd3e19d0e707/download/cal-enviro-screen-data-dictionary.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ab4e1b38-df76-4397-b3cf-002fd16937c3/resource/e5f71995-e879-4e19-a74b-33badbfb0830/download/cal-enviro-screen-additional-information.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "cb8411ca-2cc4-4050-b991-4c6da82b995a",
+      "title": "Hospital Annual Utilization Report & Pivot Tables",
+      "url": "https://data.ca.gov/dataset/hospital-annual-utilization-report-pivot-tables",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://lfis.hcai.ca.gov/",
+          "format": "aspx"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/8919688d-ff9d-45ba-9e70-0de95c7da3d5/download/data-importing-instructions-for-excel.docx",
+          "format": "DOCX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/cbc8c679-88cf-4e17-8a5b-ad3218205b62/download/2025_aur_hosp_form.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/992da44b-9cbc-4a47-a525-27cd82f5673f/download/2025_aur_hosp_instruct.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/355051b2-a10c-4429-9da6-69edc65b7834/download/hosp25_util_data_prelim.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/d032d056-21db-432d-b55b-cb560c6911d0/download/2024_aur_hosp_form.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/67e29d7f-a3b4-44ad-90b3-936959f99fff/download/2024_aur_hosp_instruct.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/e4f70066-c0ca-40f9-8f54-0ea033f900d9/download/hosp24_util_data_final.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/f346f6ef-d027-4df9-be92-4100ec649bf7/download/2023_aur_hosp_form.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/9b739643-1581-427a-9b8d-781a94ffa75c/download/2023_aur_hosp_instruct.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/d7b1bd2c-fd8c-4ebe-b1ac-1de197c01e5e/download/hosp23_util_data_final.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/dfb5fe7b-35a4-4478-adf7-9a5736aaf216/download/hosp_util_pivot_2023.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/6bee725e-f2d8-4759-9e42-a0061488f766/download/2022_aur_hosp_form.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/1dc652a2-4585-470a-8236-58b6872fc9fa/download/2022_aur_hosp_instruct.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/2b63a9e4-f695-4ea1-b229-5dff70f04ae8/download/hosp22_util_data_final_revised_11.28.2023.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/6af715ad-0de7-4b85-bd59-2746016ced2b/download/2022_hosp_util_pivot.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/a046c2e5-6067-46d0-bb6f-8c9ba6d7fb5b/download/2021_aur_hosp_form.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/a8a76c64-bffb-4894-98ca-a4c2fc43db7d/download/2021_aur_hosp_instruct.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/e2ef5e5a-1dbc-4b67-894f-5bad34b79798/download/hosp21_util_data_final-revised-06.15.2023.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/c5d3b100-470b-430e-b5a4-371a33e42292/download/2021_hosp_util_pivot.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/d71434db-9adc-4537-8295-715fb955d8cb/download/2020_aur_hosp_form.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/37008ff2-de72-4f2b-b8bc-c2142f343ed5/download/2020_aur_hosp_instruct.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/9916ce3d-9158-4b0e-9109-4f7bde9b40eb/download/hosp20_util_data_final-revised-06.15.2023.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/19a02e57-a4d1-408c-9ec9-dd3c56f7a0ca/download/2020_hosp_util_pivot.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/e9cf7a2e-1690-4033-9fcc-d16cdad68c86/download/2019_aur_hosp_form.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/c5b7d5c8-cd85-403f-9963-57a804326a33/download/2019_-instruct_aur_hosp.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/69b3e5b9-6e48-4598-af9e-72cdf4d34134/download/hosp19_util_data_final.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/144b3a4f-2fda-44bb-9934-bc5d17b29176/download/2019_hosp_util_pivot.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/845e3f01-0d14-4194-a527-ecbf59a5bc15/download/2018_aur_hosp_form.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/b08eae33-b840-4c84-bfe8-bcb5f8838bdf/download/2018_-instruct_aur_hosp.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/71b3ecc0-961d-44ff-8f6b-fdaded864380/download/hosp18_util_data_final.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/4ee65e8c-ca6e-42d3-9aec-adcc56383856/download/2018_hosp_util_pivot_20191231.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/78622c04-a158-4c95-8ea3-7660725e9526/download/2012_current_year_hosp_util_mr.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/aa51adcf-5789-4589-9cf0-dac4b7e9aac1/download/hosfrm17.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/24f975e6-b4e3-4add-847a-3dd55c46a43f/download/hosinstrct17.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/1f5723e4-9ecd-46ad-ae4f-328b7bc5ec95/download/hosp17_util_data_final.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/54383cf7-fff6-43f9-b953-308f8bd767a5/download/2017_hosp_util_pivot.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/c4764cd2-6993-431e-8015-3de03ca1cc2a/download/hosfrm16.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/9066799e-394e-40c3-911d-dce47a361341/download/hosinstrct16.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/115efc1b-0d15-477c-9b89-4617ada14d5f/download/hosp16utildatafinal.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/14c55276-0026-4b43-87d2-d5ba6196ef53/download/2016hosputilpivot.xlsm",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/c1ec00af-7f67-409c-b47d-2e2b09900811/download/hosfrm15.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/8ad41ab3-27a3-4875-95e1-b330ba3db072/download/hosinstrct15.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/830d2ec5-436d-4375-aeb7-0a52d2e4a68e/download/hosp15utildatafinal.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/0ed0c13c-6471-492a-8b7c-a2637458f3f6/download/2015hosputilpivot20161230.xlsm",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/a18c9107-e4c8-42c0-a2ca-f9e93f9e7754/download/hosfrm14.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/214a3e88-e63f-4061-a479-6b1c4807397d/download/hosinstrct14.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/dfd6a52d-c14f-41c1-bbb8-cc93c2893190/download/hosp14utildatafinal.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/17472681-117c-4b97-87eb-a5d15957a8aa/download/2014hosputilpivot8-10.xlsm",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/5409eee8-21d1-4d4a-8a36-479b0ce70f93/download/hosfrm13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/f99effa4-d3b8-4c9b-97a4-dd304d46c93b/download/hosinstrct13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/d71c944c-8de0-41f2-b92c-46377f0c5f21/download/hosp13utildatafinal.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/d527cab8-83c4-4d54-b2d5-bcd8a817faa8/download/auhr2013profile.xlsm",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/b7ae53ce-0f57-43fa-9eb3-7d0848242eda/download/hosfrm12.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/531b0df8-7842-46b2-bdf4-26546ee68681/download/hosinstrct12.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/49b5ebfa-04a7-40b3-9fdf-bcd5270a9802/download/hosp12utildatafinal.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/98f94d11-8f15-4892-84cb-4a9a6eaa0e71/download/auhr2012profile.xlsm",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/pre-2012-hospital-annual-utilization-report-pivot-tables",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/a3fae18e-510d-4cc7-b73d-d0d3537abe3f/download/hospital-annual-utilization-report-lxwkkb2s.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/1902083c-f16a-434d-b8ac-f7a573a305df/resource/3128ce77-a307-4fd1-8ccb-91505aadd57a/download/hosp_utilization_pivot_2024_final.xlsx",
+          "format": "XLSX"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "04a2db3c-68e4-4ad7-b22c-40a6d9677065",
+      "title": "Food Affordability",
+      "url": "https://data.ca.gov/dataset/food-affordability",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/3ccd7a4b-890c-4db6-9811-8472dda2af4b/download/foodaffordabilitynarrativeexamples4-14-13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/916e2a2e-383b-4af5-9f5b-310500961cb5/download/food_afford_cdp_co_region_ca4-14-13-ada.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/da6d5b83-bbde-4192-92cb-e575fc6417ca/download/foodaffordabilitydd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/bdafb620-7bf9-478c-9ec6-47c4b0f13736/download/food-affordability-2006-2010-qutxlugv.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "806fc6a8-5452-4e26-bfb9-97b7dbf0c2cb",
+      "title": "Eligible Individuals Enrolled in Medicare Savings Programs (MSP)",
+      "url": "https://data.ca.gov/dataset/eligible-individuals-enrolled-in-medicare-savings-programs-msp",
+      "publisher": "California Department of Health Care Services",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/de5f2ae4-b594-4504-8976-22154894fa33/resource/c075da8c-0078-4ba5-9160-39600b1d489f/download/eligible-individuals-enrolled-in-medicare-savings-programs-msp-52nfmsoj.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/de5f2ae4-b594-4504-8976-22154894fa33/resource/42174984-b5d0-473b-83a9-962c70458458/download/msp-dataset-2026-q1_suprsd_odp.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "799dcdfd-cb75-46c9-9bbf-5ca7e5733c62",
+      "title": "California's Groundwater Update 2025 (Bulletin 118)",
+      "url": "https://data.ca.gov/dataset/californias-groundwater-update-2025-bulletin-118",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/54dc813e-c311-4992-b116-3e2b4a7454ff/download/final_b118_using_calgw_update2025.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/1b8acd84-4a2b-437f-9ce4-0b910e9a14a3/download/final_b118_calgw_update2025_highlights.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/5041f189-322a-4f9c-99cd-94b64114b3ac/download/final_b118_calgw_update2025_highlights_spanish.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/888cc330-a01c-4f5d-8a10-d1ffab86db36/download/final_b118_calgw_update2025_statewide_ch1-7_web.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/def30832-7c18-42cc-ba02-cf862c52c84d/download/final_b118_calgw_update2025_statewide_ch1-6_web.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/a0897952-9543-4f72-bbb9-57819563fde9/download/final_b118_calgw_update2025_chapter7_web.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/68225958-1d4a-4a6a-b32b-8d4b5124554a/download/final_b118_calgw_update2025_factsheet.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/1fb42daf-c944-4558-b3e7-b99007680f6c/download/final_b118_calgw_update2025_factsheet_spanish.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/eba73833-4a6f-40a2-9ad0-37b2edb5e93b/download/final_b118_calgw_update2025_key_topics_index.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/a89dd5ef-f5cf-44dd-98be-024a726faf58/download/final_b118_calgw_update2025_appendix_a_findings_recs.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/ad0a5a7f-710b-4a21-98a0-fed25eb77935/download/final_b118_calgw_update2025_appendix_b_glossary.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/46356547-de33-48fa-9e7c-a404b563519c/download/final_b118_calgw_update2025_appendix_c_methodsassumptions.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/4531b8ed-1889-47dd-9c86-549578bdf5a2/download/final_b118_calgw_update2025_appendix_d_references.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/86b60aa0-4a61-4d98-9f9c-7271d39b9e51/download/final_b118_calgw_update2025_appendix_e_basin_maps_tables.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/6cec4fe7-43f7-43bf-a47b-20d1310388ae/download/final_b118_calgw_update2025_appendix_f_water_use.xlsx",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/59ebe219-dcf2-4ceb-9f2b-833e5b22ceca/download/final_b118_calgw_update2025_appendix_g_hydrologic_region_tables.xlsx",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/2a5875dd-655b-42cb-8de8-001d929a5d10/download/final_b118_calgw_update2025_appendix_g_basin_data.xlsx",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/7812e539-7e3a-49e3-b3dd-6c9913ca5935/download/final_b118_calgw_update2025_appendix_g_county_data.xlsx",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/593b59eb-1aec-44fb-b1ee-002c7f0c7ea2/download/final_b118_calgw_update2025_appendix_h_semiannualupdates.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/a6caa77d-f19a-4b80-b90c-32c05c5a72da/download/final_b118_calgw_update2025_appendix_i_subsidence.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/2585d59d-899a-4f61-a641-c00956744ad1/download/final_b118_calgw_update2025_appendix_j_pmas.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://calgwlive.water.ca.gov/",
+          "format": "URL"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/0df8f5c7-1a84-493b-bd44-84e29fe7513e/download/ch_01_select_datasets.zip",
+          "format": ".zip"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/bd298a64-66d5-4cf1-b2e7-35682b2c3142/download/ch_02_select_datasets.zip",
+          "format": ".zip"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/d829048e-ff2d-4c06-a2a0-35ef402bc9c9/download/ch_03_select_datasets.zip",
+          "format": ".zip"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/a8957ea3-f67d-41c9-b74b-cf189a981eeb/download/ch_04_select_datasets.zip",
+          "format": ".zip"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/4f2a81f5-6c91-42bd-92ce-e4989e155bf1/download/ch_05_select_datasets.zip",
+          "format": ".zip"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/eb6f663f-ab39-4be9-9049-87c2fe44b7ea/resource/adeba82e-89e6-4c27-8a8e-ae890abb5dd9/download/ch_06_select_datasets.zip",
+          "format": ".zip"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0e2b835f-3fa7-402c-8c2d-b8281f03e0b5",
+      "title": "DDS Consumers Served by Residence Type and Regional Center",
+      "url": "https://data.ca.gov/dataset/dds-consumers-served-by-residence-type-and-regional-center",
+      "publisher": "California Department of Developmental Services",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d1881982-1b2c-4232-87ab-1e0440af836d/resource/b5ba45bc-2d8f-4af2-a88a-aa73a8acec8c/download/dds-consumers-served-by-residence-type-and-regional-center.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d1881982-1b2c-4232-87ab-1e0440af836d/resource/b4a30681-97e7-474a-be8d-d174d1bf1fe6/download/dds-odp-consumers-served-by-res-type-and-rc-data-dictionary.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d1881982-1b2c-4232-87ab-1e0440af836d/resource/4185aa56-632a-45c9-8855-13cee28a398c/download/consumers-served-by-residence-type-and-regional-center-hkzkyx_z.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "e5a20dfa-eaa7-4770-ae97-047c55ae2e6b",
+      "title": "NSNF - Wildlife Linkages - CDFW [ds1005]",
+      "url": "https://data.ca.gov/dataset/nsnf-wildlife-linkages-cdfw-ds10051",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::nsnf-wildlife-linkages-cdfw-ds1005",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds1005_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/b2383a7220f94d899f898a0607632089/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/b2383a7220f94d899f898a0607632089/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/b2383a7220f94d899f898a0607632089/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/b2383a7220f94d899f898a0607632089/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1000_1099/ds1005.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "8a017dbf-7a20-4899-889c-ca0b8283a767",
+      "title": "Prescription Drugs Introduced to Market",
+      "url": "https://data.ca.gov/dataset/prescription-drugs-introduced-to-market",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/74c10fe7-1b66-4288-b870-9ea3db310b26/download/new-prescription-drug-data-dictionary.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/4cf317a8-c7a4-40b7-8fa0-13fcad2ad0a2/download/new-drug-data-jan-aug-2026.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/2be5663e-8862-42e8-bd0e-3476d8baf7c3/download/new-drug-data-jan-aug-2026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/80eea566-e1a0-4b62-884b-b0dfb58887e3/download/q1-q4-2025-prescription-drugs-introduced-to-market.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/0e3afcfc-a5eb-41c6-a633-deaa2bfb5710/download/q1-q4-2024-prescription-drugs-introduced-to-market.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/f0899438-0fb5-42d5-87f5-621e2f0b1b51/download/q1-q4-2023-prescription-drugs-introduced-to-market.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/11a91095-1597-4b6a-b0b3-09e76422ce40/download/q1-q4-2022-prescription-drugs-introduced-to-market.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/5a80b890-24bb-4d66-a0bb-d6c46a150065/download/q1-q4-2021-prescription-drugs-introduced-to-market.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/9a37709e-4151-4300-a031-91ea7813da60/download/q1-q4-2020-prescription-drugs-introduced-to-market.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/6393cda0-6101-424e-b738-07aee9e6f94f/download/q1-q4-2019-prescription-drugs-introduced-to-market.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e54d331c-65d3-4c6e-b4ba-390bd7024248/resource/82883221-f421-4b0f-90b6-616cee618e6a/download/prescription-drugs-introduced-to-market-dsfutgc4.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "73fd6654-e28c-4bc6-8755-d8129f4fa314",
+      "title": "C-2A And C-2B, Tax Liability Computations, C And S Corporations",
+      "url": "https://data.ca.gov/dataset/c-2a-and-c-2b-tax-liability-computations-c-and-s-corporations",
+      "publisher": "California Franchise Tax Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/73fd6654-e28c-4bc6-8755-d8129f4fa314/resource/6551b2f9-1c4a-450c-8d54-41766c566d77/download/2023_c-2a_and_c-2b__tax_liability_computations__c_and_s_corporations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/73fd6654-e28c-4bc6-8755-d8129f4fa314/resource/a1c725a4-4d6f-41f8-866f-a9d68d48798e/download/c-2a_and_c-2b_tax_liability_computations_all_corporations_data_dictionary.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "2240d5c1-e625-42f6-b33f-13b917bd36ec",
+      "title": "C-2, Tax Liability Computations All Corporations",
+      "url": "https://data.ca.gov/dataset/c-2-tax-liability-computations-all-corporations",
+      "publisher": "California Franchise Tax Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/2240d5c1-e625-42f6-b33f-13b917bd36ec/resource/a0eb3ab9-7cac-4783-9f94-5afca901a3ca/download/2023_c-2__tax_liability_computations_all_corporations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/2240d5c1-e625-42f6-b33f-13b917bd36ec/resource/d7f45619-21f6-468a-8b8c-475f309e46cc/download/c-2_tax_liability_computations_all_corporations_data_dictionary.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    }
+  ],
+  "meaning": "not_available means zero matches for this query only; unknown schemas require review",
+  "response_sha256": "94fff77d5d3674f62519460e1480da1baa6b58ef41982c7f6dced1c03f1ea6ef"
+}

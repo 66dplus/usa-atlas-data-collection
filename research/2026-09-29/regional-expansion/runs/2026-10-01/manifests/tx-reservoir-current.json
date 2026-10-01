@@ -1,0 +1,105 @@
+{
+  "id": "tx-reservoir-current",
+  "jurisdiction": "TX water network (including shared/out-of-state reservoirs)",
+  "kind": "reservoir",
+  "url": "https://waterdatafortexas.org/reservoirs/recent-conditions.json",
+  "official_provenance": "https://www.twdb.texas.gov/surfacewater/conditions/index.asp",
+  "download_documentation": "https://waterdatafortexas.org/reservoirs/download",
+  "geo_type": "reservoir_gauge_point",
+  "boundary_vintage": null,
+  "units": {
+    "conservation_storage": "acre_feet",
+    "conservation_capacity": "acre_feet",
+    "volume": "acre_feet",
+    "elevation": "feet",
+    "area": "acres",
+    "percent_full": "percent"
+  },
+  "limitations": [
+    "Reservoir storage is not county/tract water availability or water accessible to a specific data center.",
+    "Some reservoirs cross borders; Elephant Butte is in New Mexico. No jurisdiction inferred from bounding box.",
+    "Gauge coordinates are not reservoir boundaries or service territories.",
+    "Flood-control-only reservoirs may have null conservation metrics; preserve null and source tags.",
+    "Texas shares and cross-border accounting require official notes before aggregation.",
+    "No independent live reservoir-count endpoint verified; complete bounded JSON response only."
+  ],
+  "status": "complete",
+  "retrieved_at": "2026-10-01T03:15:05.372900+00:00",
+  "bindings": {
+    "collector_sha256": "5717d31caeff7e941ac174c0f1ce2e4c7cfa7edf355b91a870a551d3c43593c0",
+    "plan_sha256": "c5117f27eb12b67be8079e02951f4e8abf78bbb02aec80cb6d4a29cfb4db71c4"
+  },
+  "production_admission": "needs_review",
+  "normalized": {
+    "path": "runtime/normalized/tx-reservoir-current.jsonl.gz",
+    "rows": 122,
+    "bytes": 12450,
+    "sha256": "b4f5872800ae011cc7200ffe7e857f66113a49b8f48d99685a134cc041ba3c44",
+    "body_sha256": "58fb7c5810db90d74c7d678995d54d4bd30c88355e0fdce20efecd6bb93d21c5"
+  },
+  "checks": {
+    "source_records": 122,
+    "unique_reservoir_ids": 122,
+    "points_present": 122,
+    "observation_dates": [
+      "2026-09-30"
+    ],
+    "quality": {
+      "conservation_storage_missing": 2,
+      "conservation_capacity_missing": 2,
+      "volume_missing": 2,
+      "elevation_missing": 0,
+      "area_missing": 9,
+      "percent_full_missing": 2
+    },
+    "independent_source_count_available": false,
+    "numeric_values_not_reinterpreted": true
+  },
+  "requests": [
+    {
+      "url": "https://www.twdb.texas.gov/surfacewater/conditions/index.asp",
+      "final_url": "https://www.twdb.texas.gov/surfacewater/conditions/index.asp",
+      "retrieved_at": "2026-10-01T03:15:01.828401+00:00",
+      "headers": {
+        "Content-Type": "text/html",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "body_bytes": 65145,
+      "body_sha256": "18aa235ae950f7a654cb3b0d82476a526dbd71fb615f44ff3db289ec97f1ce15",
+      "path": "runtime/raw/tx-reservoir-current/official-source.gz",
+      "gzip_bytes": 13849,
+      "gzip_sha256": "afacafd11e93c16cf3f58626415b6d8aefecfcfda942af1d0ae4d43726f65959"
+    },
+    {
+      "url": "https://waterdatafortexas.org/reservoirs/download",
+      "final_url": "https://waterdatafortexas.org/reservoirs/download",
+      "retrieved_at": "2026-10-01T03:15:02.455419+00:00",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "body_bytes": 20437,
+      "body_sha256": "4f5e184cc2a237217ba948204cd44efe0f58263265a838e2bd51547d1f3cd0f2",
+      "path": "runtime/raw/tx-reservoir-current/download-documentation.gz",
+      "gzip_bytes": 5491,
+      "gzip_sha256": "66d0a10263bd294141932af09ac03946fd77486834c88b7fa6a6dd5a94fa4fe8"
+    },
+    {
+      "url": "https://waterdatafortexas.org/reservoirs/recent-conditions.json",
+      "final_url": "https://waterdatafortexas.org/reservoirs/recent-conditions.json",
+      "retrieved_at": "2026-10-01T03:15:05.363782+00:00",
+      "headers": {
+        "Content-Type": "application/json",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "body_bytes": 73271,
+      "body_sha256": "0e770671465588d97e11fb5e3c7bb7419b499974eb2a297051f212b92d2ceadb",
+      "path": "runtime/raw/tx-reservoir-current/conditions.gz",
+      "gzip_bytes": 11441,
+      "gzip_sha256": "fd83519b249da2e58ff03bb841f46f55205747ef6b7beb397ea4144de17a8c1b"
+    }
+  ]
+}

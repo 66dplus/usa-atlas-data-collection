@@ -1,0 +1,45 @@
+{
+  "source_id": "loudoun-dc-building-records",
+  "status": "source_collected",
+  "complete": true,
+  "retrieved_at": "2026-09-30T22:49:12.091029+00:00",
+  "endpoint": "https://services1.arcgis.com/MxjRokvPm7bjslyR/arcgis/rest/services/Existing_Permitted_Data_Center_Buildings/FeatureServer/1",
+  "rows": 239,
+  "geo_type": "facility_point",
+  "boundary_vintage": null,
+  "coverage": "Loudoun County existing/permitted data-center building records only",
+  "release": "Official app labels 3/1/2026; layer editingInfo records later updates, preserve both",
+  "limitations": [
+    "239 source records were observed during discovery; AM_LOUD_ID/AM_LOUD_UNIT_ID each have 238 distinct values. Do not silently deduplicate or equate rows with operating facilities.",
+    "Earlier PDF snapshot totals 233 buildings; reconciliation with live layer requires review.",
+    "BUILT vs UNDER CONSTRUCTION must stay separate. YEAR_BUILT=1000 is a source sentinel.",
+    "No street address, parcel ID, owner or individual identifier collected. Points are commercial facility records; no Census BG spatial join performed."
+  ],
+  "checks": {
+    "source_expected_rows": 239,
+    "unique_fields": {
+      "AM_LOUD_UNIT_ID": 238,
+      "AM_LOUD_ID": 238
+    },
+    "categories": {
+      "BUILT_STATUS": {
+        "UNDER CONSTRUCTION": 52,
+        "BUILT": 187
+      }
+    },
+    "source_editing_info": {
+      "lastEditDate": 1781177875574,
+      "schemaLastEditDate": 1781177875574,
+      "dataLastEditDate": 1781177875574
+    },
+    "consistency": "IDs before/after and editingInfo match; no transactional snapshot guarantee"
+  },
+  "review_status": "validated_for_aggregate_download",
+  "production_admission": "needs_review",
+  "normalized_path": "runtime/normalized/loudoun-dc-building-records.jsonl.gz",
+  "normalized_sha256": "69e5458e1a880a02cb8b46a5d858818976fa2ce97db50387ce57dc920178181a",
+  "normalized_file_sha256": "b8f0e3a8b8a7095690bf49d0113f4fb586c1542f69d955d38816ee40678b306b",
+  "raw_requests_path": "runtime/raw/loudoun-dc-building-records/20260930T224909Z/requests.json",
+  "request_count": 8,
+  "raw_response_bytes": 323317
+}
