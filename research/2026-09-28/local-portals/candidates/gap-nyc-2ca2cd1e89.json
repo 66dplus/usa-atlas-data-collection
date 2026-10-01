@@ -1,0 +1,65 @@
+{
+  "query": {
+    "id": "gap-nyc-2ca2cd1e89",
+    "portal_id": "nyc",
+    "query": "foreign born",
+    "desired_geo": "block_group",
+    "field_ids": [
+      "01.05",
+      "01.06"
+    ],
+    "source": "live-coverage gap intake",
+    "food_excluded": true
+  },
+  "checked_at": "2026-10-01T10:50:06.084687+00:00",
+  "status": "needs_review",
+  "total_catalog_matches": 5,
+  "page_offset": 0,
+  "next_cursor": 0,
+  "max_search_results_per_cycle": 100,
+  "search_complete": true,
+  "candidates": [
+    {
+      "id": "bray-s6dc",
+      "title": "OCDV Family Justice Center Foreign Born Report",
+      "url": "https://data.cityofnewyork.us/Public-Safety/OCDV-Family-Justice-Center-Foreign-Born-Report/bray-s6dc",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/bray-s6dc.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "wr2n-ag8h",
+      "title": "ENDGBV: Family Justice Centers: Supporting Our Foreign Born Clients Report",
+      "url": "https://data.cityofnewyork.us/Public-Safety/ENDGBV-Family-Justice-Centers-Supporting-Our-Forei/wr2n-ag8h",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/wr2n-ag8h.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "v5w4-adxa",
+      "title": "Where Are the Unbanked and Underbanked in New York City",
+      "url": "https://data.cityofnewyork.us/Business/Where-Are-the-Unbanked-and-Underbanked-in-New-York/v5w4-adxa",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/v5w4-adxa.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "4kc9-zrs2",
+      "title": "Emergency Food Supply Gap",
+      "url": "https://data.cityofnewyork.us/City-Government/Emergency-Food-Supply-Gap/4kc9-zrs2",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/4kc9-zrs2.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "ipu7-kigb",
+      "title": "ENDGBV in Focus: Outreach Campaigns and Activities, 2018-2019",
+      "url": "https://data.cityofnewyork.us/Social-Services/ENDGBV-in-Focus-Outreach-Campaigns-and-Activities-/ipu7-kigb",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/ipu7-kigb.json",
+      "status": "needs_review"
+    }
+  ],
+  "meaning": "not_available means zero matches for this query only; unknown schemas require review",
+  "response_sha256": "63e0ff5a5ee25202271f000386d4ff51094df69508a7596a595a7a9458b5f2ab"
+}

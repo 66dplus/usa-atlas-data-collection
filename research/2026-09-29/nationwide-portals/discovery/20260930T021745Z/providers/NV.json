@@ -1,0 +1,19 @@
+{
+  "jurisdiction_code": "NV",
+  "catalog_id": "nv-primary",
+  "catalog_url": "https://gis.dot.nv.gov/rhgis/rest/services/GeoHub",
+  "started_at": "2026-09-30T02:17:51.841827+00:00",
+  "attempts": [
+    {
+      "adapter": "arcgis_directory",
+      "endpoint": "https://gis.dot.nv.gov/rhgis/rest/services/GeoHub",
+      "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    },
+    {
+      "adapter": "html_catalog_scan",
+      "endpoint": "https://gis.dot.nv.gov/rhgis/rest/services/GeoHub",
+      "error": "HTTPError: HTTP Error 500: Internal Server Error"
+    }
+  ],
+  "status": "unresolved_adapter"
+}

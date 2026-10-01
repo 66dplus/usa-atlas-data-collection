@@ -1,0 +1,189 @@
+{
+  "jurisdiction_code": "MS",
+  "catalog_id": "ms-primary",
+  "catalog_url": "https://opendata.gis.ms.gov/",
+  "started_at": "2026-09-29T14:10:22.713267+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://opendata.gis.ms.gov/api/search/v1/collections/all/items",
+  "domain": "opendata.gis.ms.gov",
+  "validation_receipt": 36,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 41,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "26fa350b599f4719ad667c75c1d69d9a",
+                  "d5186855abf4476cb2785a29a799b685",
+                  "049b89c5bad1435e9603977f959f099a"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "26fa350b599f4719ad667c75c1d69d9a",
+                  "d5186855abf4476cb2785a29a799b685",
+                  "049b89c5bad1435e9603977f959f099a"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Dataset",
+        "key": "dataset",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Document",
+        "key": "document",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "App and Map",
+        "key": "appAndMap",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

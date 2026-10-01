@@ -1,0 +1,27 @@
+{
+  "as_of": "2026-09-28",
+  "attempts": [
+    {
+      "method": "python urllib.request.urlopen",
+      "url": "https://www.irs.gov/statistics/soi-tax-stats-historic-table-2",
+      "error": "URLError <urlopen error [Errno -3] Temporary failure in name resolution>"
+    },
+    {
+      "method": "web click",
+      "url": "https://www.irs.gov/pub/irs-soi/23in55cmcsv.csv",
+      "error": "400 Unsupported content-type: text/csv"
+    },
+    {
+      "method": "web click",
+      "url": "https://www2.census.gov/programs-surveys/susb/tables/2022/us_naicssector_large_rcptsize_2022.xlsx",
+      "error": "400 Unsupported content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "method": "web open",
+      "url": "https://api.census.gov/data/2023/abscs?get=NAME,FIRMPDEMP,FIRMPDEMP_F,RCPSZFI_LABEL&for=us:*&NAICS2022=00&SEX=001&ETH_GROUP=001&RACE_GROUP=00&VET_GROUP=001&RCPSZFI=532",
+      "error": "URL is not accessible via this tool; no successful response verified",
+      "note": "Exploratory query: receipt code must still be checked against current company-summary labels."
+    }
+  ]
+}
+

@@ -1,0 +1,276 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "gasoline",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T08:19:03.267995+00:00",
+  "candidates": [
+    {
+      "id": "3a7e266e008443a1819dd3d2813c95c2",
+      "title": "National Pipeline Mapping System",
+      "url": "https://gis.data.mn.gov/api/search/v1/collections/all/items/3a7e266e008443a1819dd3d2813c95c2",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Pipeline and Hazardous Materials Safety Administration uses the NPMS as a tool to support various regulatory programs, pipeline inspections, and authorized external customers.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -179,
+                73
+              ],
+              [
+                -66,
+                73
+              ],
+              [
+                -66,
+                18
+              ],
+              [
+                -179,
+                18
+              ],
+              [
+                -179,
+                73
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document",
+          "Metadata",
+          "PDF"
+        ],
+        "description": "<p>The National Pipeline Mapping System (NPMS) is a geographic information system (GIS) created by the U.S. Department of Transportation, Pipeline and Hazardous Materials Safety Administration (PHMSA), Office of Pipeline Safety (OPS) in cooperation with other federal and state governmental agencies and the pipeline industry. The NPMS consists of geospatial data, attribute data, public contact information, and metadata pertaining to the interstate and intrastate hazardous liquid trunklines and hazardous liquid low-stress lines as well as gas transmission pipelines, liquefied natural gas (LNG) plants, and hazardous liquid breakout tanks jurisdictional to PHMSA.</p>\n<div style='display:flex; flex-direction:column;'><div style='background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><b>National Pipeline Mapping System Webpage</b></span><a href='https://www.npms.phmsa.dot.gov/' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>View</b></a></div><div style='background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><b>National Pipeline Mapping Public Viewer</b></span><a href='https://www.npms.phmsa.dot.gov/PublicViewer/' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>View</b></a></div></div>",
+        "licenseInfo": "<p>Neither the United States Government nor any party involved in the creation and compilation of NPMS data and maps guarantees the accuracy or completeness of the products. NPMS data should be considered no more accurate than plus or minus 500 feet and must never be used as a substitute for contacting the appropriate local one-call center prior to digging.</p>",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "National Pipeline Mapping System",
+        "type": "PDF",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1775138793000,
+        "avgRating": 0,
+        "id": "3a7e266e008443a1819dd3d2813c95c2",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790262000000,
+        "thumbnail": "thumbnail/thumbnail1775137549849.png",
+        "languages": [],
+        "created": 1775137900000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "",
+        "tags": [
+          "utilitiesCommunication",
+          "LNG Facility",
+          "Pipeline",
+          "Oil",
+          "Gas",
+          "Natural Gas",
+          "U.S.",
+          "USA",
+          "United States",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 51,
+        "numComments": 0,
+        "size": 153970,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "National_Pipeline_Mapping_System.pdf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "U.S. Dept. of Transportation - Pipeline and Hazardous Materials Safety Administration (PHMSA)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/3a7e266e008443a1819dd3d2813c95c2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "53bfdc20c89a4aff863706b8cc0a8d0a",
+      "title": "MPCA Remediation Sites",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_remediation_sites/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The attributes and locations of remediation sites provide information and context to support decisions on environmental cleanup, emergency management, and maintaining environmental quality.  These data are intended to inform environmental research and public inquiries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset represents the locations, classifications, and physical characteristics of remediation activities carried out by the Minnesota Pollution Control Agency. The locations represent leak clean up, emergency response, petroleum brownfields, non-petroleum brownfields (Voluntary Investigation and Cleanup), Superfund, RCRA, integrated remediation and site assessment sites.\n<br /><br />\nThe geodatabase, env_remediation_sites.gdb, contains two related datasets: (1) the remediation_sites point feature class, which has one record for each remediation site, and (2) the spatial_rem_activity table, which contains one record for each MPCA effort to investigate contamination at a site. The two datasets can be related using the ITEM_ID. In most cases, there will be one record in spatial_rem_activity for each record in remediation_sites. However, reopened leak sites may have multiple records in spatial_rem_activity for a single site, and CERCLIS/SEMS sites where the EPA was the lead agency may have zero records in spatial_rem_activity. The spatial_rem_activity table only exists in the file geodatabase format of this dataset.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>remediation_sites.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/remediation_sites.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>spatial_rem_activity.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/spatial_rem_activity.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>schema.ini</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/schema.ini' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/env_remediation_sites.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/env_remediation_sites.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "The publisher of this resource has not provided a use license. Please refer to the item metadata for complete details.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "MPCA Remediation Sites",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790409781000,
+        "avgRating": 0,
+        "id": "53bfdc20c89a4aff863706b8cc0a8d0a",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Health"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790611200000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613898000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_remediation_sites/FeatureServer",
+        "tags": [
+          "Minnesota Pollution Control Agency",
+          "Pollution Control Agency",
+          "environment",
+          "health",
+          "brownfield",
+          "superfund",
+          "RCRA",
+          "clean up",
+          "leak",
+          "emergency response",
+          "spill",
+          "site assessment",
+          "PLP",
+          "NPL",
+          "institutional control",
+          "unpermitted dump",
+          "petroleum",
+          "VIC",
+          "state assessment",
+          "Minnesota"
+        ],
+        "numViews": 2119,
+        "numComments": 0,
+        "size": 106,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/53bfdc20c89a4aff863706b8cc0a8d0a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    142
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "8fa1fd42598ff6e2a77ff4c9848d1f998bd9f33f24458bf34c6fd9d5daac393e",
+  "search_complete": true
+}

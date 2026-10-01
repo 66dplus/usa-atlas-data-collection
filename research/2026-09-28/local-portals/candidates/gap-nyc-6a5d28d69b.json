@@ -1,0 +1,32 @@
+{
+  "query": {
+    "id": "gap-nyc-6a5d28d69b",
+    "portal_id": "nyc",
+    "query": "diabetes",
+    "desired_geo": "block_group",
+    "field_ids": [
+      "05.15"
+    ],
+    "source": "live-coverage gap intake",
+    "food_excluded": true
+  },
+  "checked_at": "2026-09-30T16:48:52.235749+00:00",
+  "status": "needs_review",
+  "total_catalog_matches": 1,
+  "page_offset": 0,
+  "next_cursor": 0,
+  "max_search_results_per_cycle": 100,
+  "search_complete": true,
+  "candidates": [
+    {
+      "id": "g5gn-bmye",
+      "title": "DOHMH Severe Maternal Morbidity",
+      "url": "https://data.cityofnewyork.us/Health/DOHMH-Severe-Maternal-Morbidity/g5gn-bmye",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/g5gn-bmye.json",
+      "status": "needs_review"
+    }
+  ],
+  "meaning": "not_available means zero matches for this query only; unknown schemas require review",
+  "response_sha256": "71e86e6a7c5eaa77cafe4a079d26ac18bb6c1d18453dffff11c2fcb552f715ab"
+}

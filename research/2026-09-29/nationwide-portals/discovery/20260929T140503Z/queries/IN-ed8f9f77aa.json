@@ -1,0 +1,31 @@
+{
+  "jurisdiction_code": "IN",
+  "query": "overdose",
+  "adapter": null,
+  "status": "blocked_adapter",
+  "executed_at": "2026-09-29T14:05:50.827432+00:00",
+  "candidates": [],
+  "page_receipts": [],
+  "http_query_count": 0,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "unresolved",
+  "candidate_geographic_scope_verified": false,
+  "error": [
+    {
+      "adapter": "ckan",
+      "endpoint": "https://hub.mph.in.gov/api/3/action/package_search",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "adapter": "hub",
+      "endpoint": "https://hub.mph.in.gov/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "adapter": "html_catalog_scan",
+      "endpoint": "https://hub.mph.in.gov/",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ]
+}

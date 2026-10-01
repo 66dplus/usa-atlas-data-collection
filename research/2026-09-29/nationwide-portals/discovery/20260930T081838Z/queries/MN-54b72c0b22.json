@@ -1,0 +1,1206 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T08:19:09.421416+00:00",
+  "candidates": [
+    {
+      "id": "b3f7866444ed40e4a527b01a1e17cd0c",
+      "title": "Groundwater Capture Area",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_health/water_groundwater_capture_zones/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset was developed with the intention of protecting the public drinking water supply and complies with the federal Safe Drinking Water Act, United States Code, title 42 and the State of Minnesota Rule (parts 4720.5100 to 4720.5590).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The “capture zone”  is the proposed capture area within the aquifer. When there isn't a surface water contribution, the groundwater capture area is identical to the wellhead protection zone. When a conjunctive delineation is used, the groundwater capture area (GWCA – same as “capture zone’) and the surface water contribution area ( SWCA) are combined to form the wellhead protection area (WHPA).<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/198/water_groundwater_capture_zones.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/198/water_groundwater_capture_zones.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/198/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata.  Acknowledgement of the publisher would be appreciated.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Groundwater Capture Area",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790398418000,
+        "avgRating": 0,
+        "id": "b3f7866444ed40e4a527b01a1e17cd0c",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters",
+          "/Categories/Health"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790550000000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613678000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_health/water_groundwater_capture_zones/FeatureServer",
+        "tags": [
+          "environment",
+          "inlandWaters",
+          "Minnesota"
+        ],
+        "numViews": 356,
+        "numComments": 0,
+        "size": 119,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Health - Environmental Health Division",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/b3f7866444ed40e4a527b01a1e17cd0c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1b608d6a45b348f692a3244d576a6b54",
+      "title": "Groundwater Management Areas, Minnesota",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_groundwater_mgmt_areas/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To identify GWMA boundaries on maps or using GIS software.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "A Groundwater Management Area (GWMA) is the surface and subsurface area within which a GWMA Plan, approved by the commissioner of the Department of Natural Resources, is implemented in accordance with Minnesota Statute 103G.287, Subd. 4. The boundaries of a GWMA are delineated by identifiable physical features, Minnesota Department of Natural Resources Catchments, and/or political or administrative boundaries.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/633/bdry_groundwater_mgmt_areas.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/633/bdry_groundwater_mgmt_areas.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/633/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Use of the data are constrained only by the DNR GIS Data License Agreement. See the Distribution Liability section below for a link.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Groundwater Management Areas, Minnesota",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789505211000,
+        "avgRating": 0,
+        "id": "1b608d6a45b348f692a3244d576a6b54",
+        "categories": [
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790600400000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613680000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_groundwater_mgmt_areas/FeatureServer",
+        "tags": [
+          "Groundwater Management Area",
+          "groundwater management",
+          "North and East Metro",
+          "Bonanza Valley",
+          "Straight River",
+          "Minnesota"
+        ],
+        "numViews": 416,
+        "numComments": 0,
+        "size": 112,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/1b608d6a45b348f692a3244d576a6b54"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d795914803964a0f829e582db699b988",
+      "title": "Minnesota Groundwater Contamination Atlas",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_mn_gw_contamination_atlas/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data resource shows groundwater contamination across Minnesota from MPCA data.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The Minnesota Groundwater Contamination Atlas GIS data allows users to view groundwater areas of concern for sites in remediation programs. The data does not map areas of risk to the health of the communities. If there are potential health risks associated with a groundwater area of concern, proper remediation treatments or activities are implemented to protect human health.\n<br /><br />\nThe six different layers in the geodatabase work together to represent what is shown on the site story maps in the Atlas. MPCA hydrogeologists reviewed many reports and data files, then used geographic information systems technology and professional judgment to map these areas. The dashed and solid outlines for these mapped areas represent two different levels of certainty. The solid outline represents area of concern boundaries that are more certain, while the dashed outline represents area of concern boundaries that are less certain.\n<br /><br />\nThe MN Groundwater Contamination Atlas geodatabase includes the following datasets:\n<ul>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_mn_gw_contamination_atlas/FeatureServer/2/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Atlas sites</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_mn_gw_contamination_atlas/FeatureServer/1/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Atlas sites no contamination area</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_mn_gw_contamination_atlas/FeatureServer/0/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Atlas wells contamination results summary</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_mn_gw_contamination_atlas/FeatureServer/5/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Atlas cotamination areas of concern</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_mn_gw_contamination_atlas/FeatureServer/3/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Atlas contamination boundaries</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_mn_gw_contamination_atlas/FeatureServer/4/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Atlas potential source areas</a></li>\n</ul><div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/324/env_mn_gw_contamination_atlas.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/324/env_mn_gw_contamination_atlas.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/324/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "If you obtain data from the MPCA, it is understood that you and/or your organization have the right to use them for any purpose. If you modify the data, you should document those changes in a metadata record that should accompany all redistributed data. If you transmit or provide these data in any form to another user, the data should be accompanied by all documentation provided with the original data set including the full metadata record.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Minnesota Groundwater Contamination Atlas",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790409484000,
+        "avgRating": 0,
+        "id": "d795914803964a0f829e582db699b988",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790611200000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613817000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_mn_gw_contamination_atlas/FeatureServer",
+        "tags": [
+          "area of concern",
+          "groundwater",
+          "Minnesota"
+        ],
+        "numViews": 3454,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency (MPCA)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/d795914803964a0f829e582db699b988"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "fef37a7fa215473ba0ef1ec96520b0e3",
+      "title": "Surface Water Groundwater Interaction",
+      "url": "https://arcgis.metc.state.mn.us/data1/rest/services/water/Surface_Water/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These data were developed as an aid in determining the vulnerability of surface-water features to groundwater pumping.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.2996556922034,
+                45.7590958850857
+              ],
+              [
+                -92.6020184240779,
+                45.7590958850857
+              ],
+              [
+                -92.6020184240779,
+                44.4589438590199
+              ],
+              [
+                -94.2996556922034,
+                44.4589438590199
+              ],
+              [
+                -94.2996556922034,
+                45.7590958850857
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<p style='margin:0in;'>____________________________________________________________</p><p style='margin:0in;'><b><i><font size='3'>NOTE - although it's recommended to use the feature layer web service, the file geodatabase is available for download.</font></i></b></p><p style='margin:0in;'><b><i><br /></i></b></p>\n<p><a href='https://gisdata.metc.state.mn.us/gisdata/Water/surf_grndwtr_interaction.zip' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><strong>Download FGDB</strong></a></p><p>____________________________________________________________</p><p><b><font size='4'>More Details</font></b></p><p>These data represent surface water features, derived from the Minnesota DNR's Public Waters Inventory and the US Fish and Wildlife Services' National Wetlands Inventory.</p><p>1. PWI basins were intersected with NWI wetlands - the area of each unique wetland type within each basin was calculated. Each basin was then assigned that wetland type which covered the greatest proportion of its extent.</p><p>2. Approximate depths were assigned to all wetland types present in the study area. The data were saved in tabular form, and joined to the basins feature class by wetland type - thus an approximate depth was derived for each basin.</p><p>3. The basin extents were clipped from the wetlands feature class - wetland fragments less than 60 square meters were then removed, as the basin and wetland edges weren't perfectly coincident, and polygon slivers remained after the clip.</p><p>4. The depth table was joined to the wetlands by wetland type, and each wetland was assigned an approximate depth. Adjacent wetlands of the same depth were then dissolved together.</p><p>5. Basins and wetlands were merged into a single feature class. An ID was assigned to each wetland, based on the county in which the greatest proportion of the wetland is found.</p>",
+        "licenseInfo": "",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Surface Water Groundwater Interaction",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785510868000,
+        "avgRating": 0,
+        "id": "fef37a7fa215473ba0ef1ec96520b0e3",
+        "categories": [
+          "/Categories/Inland waters",
+          "/Categories/Intelligence and military"
+        ],
+        "spatialReference": "NAD_1983_UTM_Zone_15N",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790672400000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1785508815000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data1/rest/services/water/Surface_Water/FeatureServer",
+        "tags": [
+          "Twin Cities",
+          "Water",
+          "Inland Waters"
+        ],
+        "numViews": 541,
+        "numComments": 0,
+        "size": 85,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Barr Engineering",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/fef37a7fa215473ba0ef1ec96520b0e3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4c7faa8f4005420c95b750ce07fc593a",
+      "title": "Mean annual potential groundwater recharge rates from 1996 - 2010 for Minnesota",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/geos_gw_recharge_1996_2010_mean/ImageServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These data represent mean annual potential recharge rates from 1996-2010 to surficial materials for Minnesota using the Soil-Water-Balance model (Westenbroek and others, 2010). They can be used wherever regional estimates of recharge are needed, for example, preliminary estimates for watershed planners and groundwater modelers to obtain potential recharge estimates for an area of interest. \n\nThe methodology is documented in: Smith, E.A., and Westenbroek, S.M., 2015, Potential groundwater recharge for the state of Minnesota using the Soil-Water-Balance model, 1996-2010: U.S. Geological Survey Scientific Investigations Report 2015-5038 (project report). The original SWB model is documented in: Westenbroek, S.M., Kelson, V.A., Dripps, W.R., Hunt, R.J., and Bradbury, K.R., 2010, SWB - A modified Thornthwaite-Mather Soil-Water-Balance code for estimating groundwater recharge: U.S. Geological Survey Techniques and Methods, book 6, chap. A31, 60 p. Also available at http://pubs.usgs.gov/tm/tm6-a31/",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.269875,
+                49.348372
+              ],
+              [
+                -89.395466,
+                49.348372
+              ],
+              [
+                -89.395466,
+                43.43655
+              ],
+              [
+                -97.269875,
+                43.43655
+              ],
+              [
+                -97.269875,
+                49.348372
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Image Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Estimated mean annual potential groundwater recharge rates in Minnesota from 1996-2010 based on the Soil-Water-Balance (SWB) model.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>USGS Project Report</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://pubs.usgs.gov/sir/2015/5038/' rel='nofollow ugc noopener noreferrer'><strong>View</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>sir2015-5038.pdf</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/342/sir2015-5038.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/342/geos_gw_recharge_1996_2010_mean.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/342/geos_gw_recharge_1996_2010_mean.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/342/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Mean annual potential groundwater recharge rates from 1996 - 2010 for Minnesota",
+        "type": "Image Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789671460000,
+        "avgRating": 0,
+        "id": "4c7faa8f4005420c95b750ce07fc593a",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790348400000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1781157247000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/geos_gw_recharge_1996_2010_mean/ImageServer",
+        "tags": [
+          "hydrography",
+          "groundwater recharge",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 26,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "U.S. Geological Survey",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/4c7faa8f4005420c95b750ce07fc593a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e246e6ef8b7e43ab9b5542bbd7a5da8b",
+      "title": "Groundwater Provinces of Minnesota 2021",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/geos_groundwater_provinces_mn/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The map defines provinces of the state with unique combinations of bedrock and unconsolidated aquifer characteristics. Water resource planners, managers, and users should recognize these differences when evaluating groundwater resources for future use.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The Minnesota Groundwater Provinces map summarizes aquifer and groundwater resource differences at the regional level. Some parts of the state have several groundwater resources to choose from, while other parts of the state may have only limited groundwater resources available.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/784/geos_groundwater_provinces_mn.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/784/geos_groundwater_provinces_mn.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/784/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Users may wish to verify critical information; sources include both the references here and information on file in the offices of the Minnesota Geological Survey and the Minnesota Department of Natural Resources. Every effort has been made to ensure the interpretation shown conforms to sound geologic and cartographic principles. This map should not be used to establish legal title, boundaries, or locations of improvements.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Groundwater Provinces of Minnesota 2021",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789761329000,
+        "avgRating": 0,
+        "id": "e246e6ef8b7e43ab9b5542bbd7a5da8b",
+        "categories": [
+          "/Categories/Inland waters",
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790568000000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613681000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/geos_groundwater_provinces_mn/FeatureServer",
+        "tags": [
+          "aquifer",
+          "groundwater",
+          "regional",
+          "Minnesota"
+        ],
+        "numViews": 412,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Ecological and Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/e246e6ef8b7e43ab9b5542bbd7a5da8b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6a40451ae0994de1aeceed827c011d33",
+      "title": "DNR Hydrography - Groundwater Dominated Lakes",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/env_groundwater_dominated_lakes/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature class represents lakes that may be more influenced by groundwater flow than surface-water flow. The lakes were selected based solely on watershed area to lake area ratio. This ratio is a major factor in determining if lakes are dominated by groundwater flow or surface water flow. Other factors, such as local geology and groundwater gradient are important. But they are often not as well quantified as the watershed to lake area ratio. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The Groundwater Dominated Lakes feature class is derived from the DNR Lakes and Open Water and DNR Level 09 Autocatchment datasets. It represents lakes that have watershed area to lake area ratios of 10 or less and are larger than 10 acres. Lakes larger than 100,000 acres are excluded because they may behave differently from smaller lakes . Because of their relatively small watersheds, these lakes are likely to have a significant groundwater component relative to surface water. The watershed to lake area ratio is a screening tool that indicates the relative importance of groundwater flow to the water balance of a lake. However, the ultimate determination of whether a particular lake is dominated by groundwater flow requires more site specific information.\n\nA best first characterization of lakes into groundwater dominated or surface water dominated can be made by watershed area to lake area ratio. Lakes with a ratio of greater than 10 are likely surface water dominated. Lakes with a ratio of between 5 and 10 may be groundwater dominated, especially if the sediment around the lake is predominantly sandy. Lakes with a watershed to lake area of less than 5 are very likely groundwater dominated, either through relatively large groundwater inflow, outflow, or both. But if the sediment surrounding the lake is clayey there may be little interaction between the lake water and groundwater.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/722/env_groundwater_dominated_lakes.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/722/env_groundwater_dominated_lakes.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/722/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "DNR Hydrography - Groundwater Dominated Lakes",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789587732000,
+        "avgRating": 0,
+        "id": "6a40451ae0994de1aeceed827c011d33",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790596800000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613615000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/env_groundwater_dominated_lakes/FeatureServer",
+        "tags": [
+          "Hydrography",
+          "Groundwater",
+          "Watershed",
+          "Catchment",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 437,
+        "numComments": 0,
+        "size": 116,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Fisheries",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/6a40451ae0994de1aeceed827c011d33"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "558e505f24c14114a07f21ab24c6e568",
+      "title": "DNR Cooperative Ground Water Monitoring Locations",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/env_wiski_groundwater_monitoring/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To provide locations and a summary of the associated data of stations apart of the Cooperative Ground Water Monitoring Network. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Minnesota DNR Cooperative Ground Water Monitoring locations extracted from KISTER'S Water Information Systems (WISKI) time series database. The locations mirror the available data on the MNDNR's Cooperative Ground Water Monitoring website: https://www.dnr.state.mn.us/waters/cgm/index.html<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/774/env_wiski_groundwater_monitoring.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/774/env_wiski_groundwater_monitoring.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/774/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "DNR Cooperative Ground Water Monitoring Locations",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790408487000,
+        "avgRating": 0,
+        "id": "558e505f24c14114a07f21ab24c6e568",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790589600000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613597000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/env_wiski_groundwater_monitoring/FeatureServer",
+        "tags": [
+          "Groundwater",
+          "Permit required monitoring",
+          "Wells",
+          "Obwell.",
+          "Minnesota"
+        ],
+        "numViews": 538,
+        "numComments": 0,
+        "size": 117,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Ecological and Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/558e505f24c14114a07f21ab24c6e568"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "feb54e44e46542aeb9eb942121971dae",
+      "title": "Groundwater Atlas Statewide Water Chemistry",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/geos_groundwater_atlas_chemistry/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater Atlas Program",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The Groundwater Atlas Program statewide water chemistry database includes analytical results from well, spring, surface water, and atmospheric sampling by DNR staff. Most of the data were collected for Groundwater Atlas studies with additional data from special projects. Chemical parameters analyzed include the following: major cations and anions, trace elements, field parameters, tritium, stable isotopes of hydrogen and oxygen, and carbon-14.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1002/geos_groundwater_atlas_chemistry.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1002/geos_groundwater_atlas_chemistry.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1002/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Groundwater Atlas Statewide Water Chemistry",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789761406000,
+        "avgRating": 0,
+        "id": "feb54e44e46542aeb9eb942121971dae",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790575200000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613676000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/geos_groundwater_atlas_chemistry/FeatureServer",
+        "tags": [
+          "Groundwater",
+          "water chemistry",
+          "residence time",
+          "stable isotopes",
+          "wells",
+          "springs",
+          "surface water",
+          "atmospheric",
+          "Minnesota"
+        ],
+        "numViews": 679,
+        "numComments": 0,
+        "size": 117,
+        "listed": false,
+        "scoreCompleteness": 88,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Ecological and Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/feb54e44e46542aeb9eb942121971dae"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5f4bc177747c4e1b9e75300314d5fd4a",
+      "title": "MPCA Wastewater Program - Groundwater Monitoring Sites",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/util_wastewater_gw_moni/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this data layer is to show groundwater monitoring locations required by wastewater permits. The monitoring results are stored on monthly Discharge Monitoring Reports (DMRs).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Wastewater permits can have groundwater monitoring stations. Many of the groundwater monitoring requirements are part of Large Subsurface Sewage System (LSTS) permits, but any permit can contain groundwater monitoring requirements. The data for these stations are reported on monthly Discharge Monitoring Reports (DMRs) and may not be part of other MPCA ambient data storage systems (EQuIS).<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>wastewater_gw_moni.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/348/wastewater_gw_moni.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/348/util_wastewater_gw_moni.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/348/util_wastewater_gw_moni.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/348/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Reasonable effort has been made to ensure the accuracy of the data on which this analysis is based. However, the Minnesota Pollution Control Agency does not warrant the accuracy, completeness, or suitability for any implied uses of these data. For more information, see http://www.pca.state.mn.us/clyp45.   Limitations: Although extensive effort has been made to produce error-free and complete data, all geographic information has limitations due to the scale, resolution, date and interpretation of the original source materials. Users should consult available data documentation (metadata) for this particular data to determine limitations and the precision to which the data depict distance, direction, location or other geographic characteristics. Data may be subject to change without prior notification.   No warranty: Data is provided \"as is,\" without any warranty whatsoever, including but not limited to any warranty as to performance, merchantability or fitness for any particular purpose.   Liability: The entire risk as to the results of the use of this data is assumed by the user. The MPCA is not responsible for any interpretation or conclusions made by those who acquire or use it. The MPCA shall not be liable for any direct, indirect, special, incidental, compensatory or consequential damages or third-party claims resulting from the use of this data, even if the MPCA has been advised of the possibility of such potential loss or damage. In states that do not allow the exclusion or limitation of incidental or consequential damages, this data may not be used.   Redistribution conditions: In obtaining this data from the MPCA, it is understood that individuals or organizations have the right to use it for any internal purpose. If data is modified, changes should be documented in a metadata record that should accompany all redistributed data. If data is transmitted or provided in any form to another user, the data should be accompanied by a copy of this disclaimer and all documentation provided with the original data set, including the full metadata record.   Data delivered on electronic media: If data has been requested from the MPCA on magnetic media, CD or any other physical media, the MPCA will deliver it in the computer-readable format agreed upon with the requestor. The MPCA will reissue data if it is unreadable by correctly adjusted computer input devices or when the media is delivered in a damaged condition. Requests for reissue of this digital data product must be made within 30 days of the date shipped from the MPCA.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "MPCA Wastewater Program - Groundwater Monitoring Sites",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790410544000,
+        "avgRating": 0,
+        "id": "5f4bc177747c4e1b9e75300314d5fd4a",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790596800000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613900000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/util_wastewater_gw_moni/FeatureServer",
+        "tags": [
+          "Minnesota Pollution Control Agency",
+          "MPCA",
+          "groundwater",
+          "monitoring",
+          "monitoring stations",
+          "water quality",
+          "water chemistry",
+          "NPDES",
+          "wastewater",
+          "Minnesota"
+        ],
+        "numViews": 391,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency (MPCA)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/5f4bc177747c4e1b9e75300314d5fd4a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    178
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 27,
+  "next_offset": 10,
+  "response_sha256": "be5a0e4b379b56846939bb58f582e7359d939197046904a1dbdb47209cd550cc",
+  "search_complete": false
+}

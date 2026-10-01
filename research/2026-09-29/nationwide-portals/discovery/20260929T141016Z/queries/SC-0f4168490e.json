@@ -1,0 +1,1087 @@
+{
+  "jurisdiction_code": "SC",
+  "query": "water",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:11:15.943471+00:00",
+  "candidates": [
+    {
+      "id": "42e9fb3c4f564f06bf21a109c4d2dc9d",
+      "title": "South Carolina Public Water Access PUBLIC VIEW",
+      "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/South_Carolina_Public_Water_Access_PUBLIC_VIEW/FeatureServer",
+      "publisher": "DavisJH_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Publicly accessible fishing, boating, and paddling access for South Carolina. This is the public view, available in fishing access and boating applications, and the open data portal. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -83.42982604138278,
+                35.172867608789616
+              ],
+              [
+                -78.53207762798519,
+                35.172867608789616
+              ],
+              [
+                -78.53207762798519,
+                32.082253297048155
+              ],
+              [
+                -83.42982604138278,
+                32.082253297048155
+              ],
+              [
+                -83.42982604138278,
+                35.172867608789616
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset includes publicly accessible fishing, boating, and paddling access for South Carolina. The data are compiled by SCDNR for information purposes and to promote outdoor recreation on South Carolina waterways. The locations in this dataset are NOT necessarily owned or maintained by SCDNR. </span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset is used the Public Fishing Finder and Boating Finder applications, other water access applications, and the open data. </div>",
+        "licenseInfo": "<span style='color:rgb(34, 34, 34); font-family:Consolas, &quot;Lucida Console&quot;, &quot;Courier New&quot;, monospace; font-size:12px;'>The S.C. Department of Natural Resources makes no representation or warranty as to its accuracy, and in particular, its accuracy as to labeling, dimensions, boundaries, or placement or location of any map features thereon. The S.C. Department of Natural Resources makes NO Warranty of merchantability or Warranty for fitness of use for a particular purpose, express or implied, with respect to this map product. Any user of this map product accepts the same as IS, with ALL FAULTS, and assumes all responsibility for the use thereof, and further covenants and agrees to hold the S.C. Department of Natural Resources harmless from and against any damage, loss, or liability arising from any use of the map product.</span>",
+        "title": "South Carolina Public Water Access PUBLIC VIEW",
+        "type": "Feature Service",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1754325342000,
+        "avgRating": 0,
+        "id": "42e9fb3c4f564f06bf21a109c4d2dc9d",
+        "categories": [],
+        "spatialReference": "103146",
+        "numRatings": 0,
+        "owner": "DavisJH_scdnr",
+        "accessInformation": "SCDNR",
+        "largeThumbnail": null,
+        "lastViewed": 1754406000000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1729002520000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/South_Carolina_Public_Water_Access_PUBLIC_VIEW/FeatureServer",
+        "tags": [
+          "fishing",
+          "boating",
+          "paddling",
+          "fish",
+          "access",
+          "water",
+          "rivers",
+          "lakes"
+        ],
+        "numViews": 321452,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "South_Carolina_Public_Water_Access_PUBLIC_VIEW",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/42e9fb3c4f564f06bf21a109c4d2dc9d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c01145201c8345d688a6f3c93d69340b",
+      "title": "SCDNR Groundwater Data Viewer",
+      "url": "https://hydrology.dnr.sc.gov/groundwater-data/",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "App for viewing and downloading groundwater data from SCDNR's groundwater monitoring network. ",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Ready To Use",
+          "Web Map"
+        ],
+        "description": "This app on the hydrology website allows views and downloads of groundwater data (daily water levels) from the SCDNR Hydrology Section's Groundwater Monitoring Network. A hydrograph can be viewed for each well. The period of record can be customized, and data can be download in CSV format.<div><br /></div><div>Data are updated approximately monthly. </div>",
+        "licenseInfo": "<span style='color:rgb(5, 31, 56); font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size:12.8px;'>Data presented on this web site may have been retrieved partially or entirely from several sources including federal or other state agencies. SCDNR makes every effort to provide accurate and complete information, however, the database is a &quot;work in progress&quot; and updates will occur regularly. In no event should the South Carolina Department of Natural Resources or any contributing agencies be liable for any direct or indirect, incidental, or other damages arising from the use of these data. SCDNR does not warrant, guarantee, or make any representations regarding the use, or the results of the use, of the information provided to you by the Department in terms of correctness, accuracy, reliability, timeliness or otherwise. The entire risk as to the results and performance of any information obtained from the SCDNR is entirely assumed by the recipient. SCDNR welcomes suggestions on how to improve our home page and correct errors.</span>",
+        "title": "SCDNR Groundwater Data Viewer",
+        "type": "Web Mapping Application",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1646842044000,
+        "avgRating": 0,
+        "id": "c01145201c8345d688a6f3c93d69340b",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": "SCDNR Hydrology Section",
+        "largeThumbnail": null,
+        "lastViewed": 1753992000000,
+        "thumbnail": "thumbnail/thumbnail1646841576335.png",
+        "languages": [],
+        "created": 1646841444000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://hydrology.dnr.sc.gov/groundwater-data/",
+        "tags": [
+          "hydrology",
+          "groundwater",
+          "water"
+        ],
+        "numViews": 28,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/c01145201c8345d688a6f3c93d69340b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3db2b3e015a84d459fd24dc45023e1b0",
+      "title": "SC_Scenic_Rivers_WRR",
+      "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SC_Scenic_Rivers_WRR/FeatureServer",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "South Carolina designated State Scenic Rivers.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -82.64589271887284,
+                35.14002773975093
+              ],
+              [
+                -79.1043509814175,
+                35.14002773975093
+              ],
+              [
+                -79.1043509814175,
+                32.46849748374307
+              ],
+              [
+                -82.64589271887284,
+                32.46849748374307
+              ],
+              [
+                -82.64589271887284,
+                35.14002773975093
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "This feature layer consists of stream centerlines for designated South Carolina State Scenic Rivers - South Carolina Scenic Rivers Act (Title 49, Chapter 29 of the S.C. Code of Laws).<div><br /></div><div><br /></div>",
+        "licenseInfo": "The S.C. Department of Natural Resources makes no representation or warranty as to its accuracy, and in particular, its accuracy as to labeling, dimensions, boundaries, or placement or location of any map features thereon. The S.C. Department of Natural Resources makes NO Warranty of merchantability or Warranty for fitness of use for a particular purpose, express or implied, with respect to this map product. Any user of this map product accepts the same as IS, with ALL FAULTS, and assumes all responsibility for the use thereof, and further covenants and agrees to hold the S.C. Department of Natural Resources harmless from and against any damage, loss, or liability arising from any use of the map product.",
+        "title": "SC_Scenic_Rivers_WRR",
+        "type": "Feature Service",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1753994602000,
+        "avgRating": 0,
+        "id": "3db2b3e015a84d459fd24dc45023e1b0",
+        "categories": [],
+        "spatialReference": "26917",
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": "Stream lines subset from the National Hydrography Dataset.",
+        "largeThumbnail": null,
+        "lastViewed": 1754406000000,
+        "thumbnail": "thumbnail/thumbnail1660765902454.png",
+        "languages": [],
+        "created": 1578324936000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SC_Scenic_Rivers_WRR/FeatureServer",
+        "tags": [
+          "south carolina",
+          "scenic rivers",
+          "rivers",
+          "water",
+          "water resources"
+        ],
+        "numViews": 8924,
+        "numComments": 0,
+        "size": 1023,
+        "listed": false,
+        "scoreCompleteness": 88,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SC_Scenic_Rivers_WRR",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/3db2b3e015a84d459fd24dc45023e1b0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "302c6991986c48a28f0ded8fd5a7bea8",
+      "title": "Marinas with Pumpout Stations - Public View",
+      "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/Marinas_with_Pumpout_view/FeatureServer",
+      "publisher": "DavisJH_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Marinas in South Carolina with pumpout stations.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -83.01611917254284,
+                35.12363714175543
+              ],
+              [
+                -78.53482680539291,
+                35.12363714175543
+              ],
+              [
+                -78.53482680539291,
+                32.10926339803897
+              ],
+              [
+                -83.01611917254284,
+                32.10926339803897
+              ],
+              [
+                -83.01611917254284,
+                35.12363714175543
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Locations of marinas in South Carolina with pumpout stations. </span>",
+        "licenseInfo": "<b>Disclaimer: </b>The S.C. Department of Natural Resources makes no representation or warranty as to its accuracy, and in particular, its accuracy as to labeling, dimensions, boundaries, or placement or location of any map features thereon. The S.C. Department of Natural Resources makes NO Warranty of merchantability or Warranty for fitness of use for a particular purpose, express or implied, with respect to this map product. Any user of this map product accepts the same as IS, with ALL FAULTS, and assumes all responsibility for the use thereof, and further covenants and agrees to hold the S.C. Department of Natural Resources harmless from and against any damage, loss, or liability arising from any use of the map product.",
+        "title": "Marinas with Pumpout Stations - Public View",
+        "type": "Feature Service",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1754325271000,
+        "avgRating": 0,
+        "id": "302c6991986c48a28f0ded8fd5a7bea8",
+        "categories": [
+          "/Categories/Marine Resources Division"
+        ],
+        "spatialReference": "2273",
+        "numRatings": 0,
+        "owner": "DavisJH_scdnr",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1754380800000,
+        "thumbnail": "thumbnail/thumbnail1663956093204.png",
+        "languages": [],
+        "created": 1663956067000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/Marinas_with_Pumpout_view/FeatureServer",
+        "tags": [
+          "boating",
+          "clean water",
+          "water",
+          "recreation",
+          "lakes",
+          "coastal"
+        ],
+        "numViews": 34645,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 88,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Marinas_with_Pumpout_view",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/302c6991986c48a28f0ded8fd5a7bea8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "434902c3637644748f1301116aaa921a",
+      "title": "SCDNR_Groundwater_Data_Public_View",
+      "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Groundwater_Data_Public_View/FeatureServer",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "SCDNR groundwater monitoring map with wells, well clusters, and well level data. Used in the online data viewer on the hydrology website. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -82.62751275494597,
+                35.17506002758418
+              ],
+              [
+                -78.86690874256065,
+                35.17506002758418
+              ],
+              [
+                -78.86690874256065,
+                32.071881249968094
+              ],
+              [
+                -82.62751275494597,
+                32.071881249968094
+              ],
+              [
+                -82.62751275494597,
+                35.17506002758418
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Multilayer",
+          "Service",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>SCDNR groundwater monitoring map with wells, well clusters, and well level data. Used in the online data viewer on the hydrology website.</span><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Well locations and cluster site polygons are generalized and approximate and are shown in a grid pattern for visualization. These are not precise well locations. </span></div>",
+        "licenseInfo": "<span style='color:rgb(63, 74, 34); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The S.C. Department of Natural Resources makes no representation or warranty as to its accuracy, and in particular, its accuracy as to labeling, dimensions, boundaries, or placement or location of any map features thereon. The S.C. Department of Natural Resources makes NO Warranty of merchantability or Warranty for fitness of use for a particular purpose, express or implied, with respect to this map product. Any user of this map product accepts the same as IS, with ALL FAULTS, and assumes all responsibility for the use thereof, and further covenants and agrees to hold the S.C. Department of Natural Resources harmless from and against any damage, loss, or liability arising from any use of the map product.</span>",
+        "title": "SCDNR_Groundwater_Data_Public_View",
+        "type": "Feature Service",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1753994554000,
+        "avgRating": 0,
+        "id": "434902c3637644748f1301116aaa921a",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1754395200000,
+        "thumbnail": "thumbnail/thumbnail1653494503323.png",
+        "languages": [],
+        "created": 1653494442000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Groundwater_Data_Public_View/FeatureServer",
+        "tags": [
+          "hydrology",
+          "water",
+          "groudnwater"
+        ],
+        "numViews": 7808,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SCDNR_Groundwater_Data_Public_View",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/434902c3637644748f1301116aaa921a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3b02d6b5b98a4795bbac6dadf8f4c16a",
+      "title": "SCDNR Coastal Plain Well Inventory",
+      "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Coastal_Plain_Well_Inventory/FeatureServer",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Hydrology Section of the SCDNR has records of more than 14,000 water wells located in the Coastal Plain counties of South Carolina.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -81.99177543796985,
+                34.99354195492677
+              ],
+              [
+                -78.55749292946534,
+                34.99354195492677
+              ],
+              [
+                -78.55749292946534,
+                32.047247445719876
+              ],
+              [
+                -81.99177543796985,
+                32.047247445719876
+              ],
+              [
+                -81.99177543796985,
+                34.99354195492677
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "The Hydrology Section of the SCDNR has records of more than 14,000 water wells located in the Coastal Plain counties of South Carolina. Find wells with Geophysical Logs, Chemical Analysis, Drill Logs, and Pump Tests, and other well data such as depth, flow rates, casing, and more. \n\nDisclaimer: The SCDNR does not guarantee the accuracy of this well information. The accuracy and precision of individual well locations is not guaranteed. Many well locations were collected to the nearest Second (or roughly 100 ft) and should not be regarded as survey locations. Some well locations have been changed so that wells with very close proximity are visible in the application. In many cases, our well information comes from old records, and as a result, some of the information, such as the well owner or the well use, may no longer be accurate. This is in no way a complete inventory of all the water wells in the South Carolina Coastal Plain.",
+        "licenseInfo": "The SCDNR does not guarantee the accuracy of this well information. In many cases, our well information comes from old records, and as a result, some of the information, such as the well owner or the well use, may no longer be accurate. This is in no way a complete inventory of all the water wells in the South Carolina Coastal Plain.",
+        "title": "SCDNR Coastal Plain Well Inventory",
+        "type": "Feature Service",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1651154647000,
+        "avgRating": 0,
+        "id": "3b02d6b5b98a4795bbac6dadf8f4c16a",
+        "categories": [],
+        "spatialReference": "26917",
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1763060400000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1570810410000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Coastal_Plain_Well_Inventory/FeatureServer",
+        "tags": [
+          "hydrology",
+          "wells",
+          "groundwater",
+          "water well"
+        ],
+        "numViews": 26272,
+        "numComments": 0,
+        "size": 31391744,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SCDNR_Coastal_Plain_Well_Inventory",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/3b02d6b5b98a4795bbac6dadf8f4c16a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5052e9310cb242eaa5b07340b406ab5a",
+      "title": "SCDNR Well Inventory",
+      "url": "https://scdnr.maps.arcgis.com/apps/webappviewer/index.html?id=5052e9310cb242eaa5b07340b406ab5a",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "App for viewing SCDNR Coastal Plain Well Inventory",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Ready To Use",
+          "WAB2D",
+          "Web AppBuilder",
+          "Web Map"
+        ],
+        "description": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>The Hydrology Section of the SCDNR has records of more than 14,000 water wells located in the Coastal Plain counties of South Carolina. Find wells with Geophysical Logs, Chemical Analysis, Drill Logs, and Pump Tests, and other well data such as depth, flow rates, casing, and more. </span><div><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></span></div><div><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>Last update: September 2019</span></div><div><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></span></div><div style='text-align: left;'><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><b>Disclaimer</b>: The SCDNR does not guarantee the accuracy of this well information. The accuracy and precision of individual well locations is not guaranteed. Many well locations were collected to the nearest Second (or roughly 100 ft) and should not be regarded as survey locations. Some well locations have been changed so that wells with very close proximity are visible in the application. In many cases, our well information comes from old records, and as a result, some of the information, such as the well owner or the well use, may no longer be accurate. This is in no way a complete inventory of all the water wells in the South Carolina Coastal Plain.</span></div>",
+        "licenseInfo": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>The SCDNR does not guarantee the accuracy of this well information. The accuracy and precision of individual well locations is not guaranteed.</span>",
+        "title": "SCDNR Well Inventory",
+        "type": "Web Mapping Application",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1651159337000,
+        "avgRating": 0,
+        "id": "5052e9310cb242eaa5b07340b406ab5a",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1763060400000,
+        "thumbnail": "thumbnail/thumbnail1635884067103.png",
+        "languages": [],
+        "created": 1570816082000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://scdnr.maps.arcgis.com/apps/webappviewer/index.html?id=5052e9310cb242eaa5b07340b406ab5a",
+        "tags": [
+          "hydrology",
+          "wells",
+          "groundwater",
+          "water resources"
+        ],
+        "numViews": 21018,
+        "numComments": 0,
+        "size": 145058,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "lastUpdatedThumbnailUrlByWab": "https://scdnr.maps.arcgis.com/sharing/rest/content/items/5b8485d5d7ce496bbd64f029d1c82f13/info/thumbnail/ago_downloaded.png"
+        },
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/5052e9310cb242eaa5b07340b406ab5a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2352618096134f5ca6d1acc363f2592f",
+      "title": "SC Public Boat Ramps",
+      "url": "https://experience.arcgis.com/experience/2352618096134f5ca6d1acc363f2592f",
+      "publisher": "DavisJH_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "App for finding public boat ramps across South Carolina on public waterways.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "publishVersion:1.15.0",
+          "Ready To Use",
+          "status: Published",
+          "version:1.17.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<div>From the coast to the mountains and everywhere in between, there are great places for boating in South Carolina. Use this map to find public access to South Carolina waterways and your next trophy catch. </div><div><br /></div><div>At SCDNR, we do our best to provide this information as accurately as possible. Please help us keep it up-to-date! Do you know of a public boat ramp that we are missing? Fill out this form to suggest a new access. Or use the link from the information popup to suggest a change or report an error to an existing access on the map.</div><div><br /></div><div>SCDNR appreciates your contribution in making South Carolina a wonderful place to enjoy the great natural resource based recreational activities. Follow all fishing and boating regulations. Respect resource by properly disposing of litter, garbage and fish remains in public trash containers or at home. Do not release your bait bucket or move fish from one water body to another. Do your part in taking care of the resource.  </div>",
+        "licenseInfo": "<span style='box-sizing:border-box; font-weight:bolder; font-family:&quot;Avenir Next&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color:rgba(0, 0, 0, 0); font-size:12px; color:var(--dark-600);'>Disclaimer:</span><span style='box-sizing:border-box; font-family:&quot;Avenir Next&quot;, &quot;Helvetica Neue&quot;, sans-serif; background-color:rgba(0, 0, 0, 0); font-size:12px; color:var(--dark-600);'> The S.C. Department of Natural Resources makes no representation or warranty as to its accuracy, and in particular, its accuracy as to labeling, dimensions, boundaries, or placement or location of any map features thereon. The S.C. Department of Natural Resources makes NO Warranty of merchantability or Warranty for fitness of use for a particular purpose, express or implied, with respect to this map product. Any user of this map product accepts the same as IS, with ALL FAULTS, and assumes all responsibility for the use thereof, and further covenants and agrees to hold the S.C. Department of Natural Resources harmless from and against any damage, loss, or liability arising from any use of the map product.</span>",
+        "title": "SC Public Boat Ramps",
+        "type": "Web Experience",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1741130666000,
+        "avgRating": 0,
+        "id": "2352618096134f5ca6d1acc363f2592f",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DavisJH_scdnr",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1754406000000,
+        "thumbnail": "thumbnail/thumbnail1641406054820.jpg",
+        "languages": [],
+        "created": 1640791005000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/2352618096134f5ca6d1acc363f2592f",
+        "tags": [
+          "lakes",
+          "rivers",
+          "coastal",
+          "boating"
+        ],
+        "numViews": 89125,
+        "numComments": 0,
+        "size": 2576049,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/2352618096134f5ca6d1acc363f2592f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "368c6b8ebc164f21877eda6aa3aa4fcf",
+      "title": "SC Public Fishing Access",
+      "url": "https://experience.arcgis.com/experience/368c6b8ebc164f21877eda6aa3aa4fcf",
+      "publisher": "DavisJH_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "App for finding public fishing locations across South Carolina, including boat ramps, paddle launches, and pier and bank fishing sites on public waterways. ",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "modified: 1774544986041",
+          "publishVersion:1.17.0",
+          "Ready To Use",
+          "status: Published",
+          "template:foldable",
+          "version:1.20.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<div><font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif'><span style='font-size:16px;'>South Carolina is home to world class fishing. From saltwater, to major rivers and lakes, to small trout streams, we have it all. Use this map to find public access to South Carolina waterways and your next trophy catch. </span></font></div><div><br /></div><div><font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif'><span style='font-size:16px;'>At SCDNR, we do our best to provide this information as accurately as possible. Please help us keep it up-to-date! Is there a public fishing spot missing? Fill out this form to suggest a new access. Or use the link from the information popup to suggest a change or report an error to an existing access on the map.</span></font></div><div><br /></div><div><font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif'><span style='font-size:16px;'>SCDNR appreciates your contribution in making South Carolina a wonderful place to enjoy the great natural resource based recreational activities. Follow all fishing and boating regulations. Respect resource by properly disposing of litter, garbage and fish remains in public trash containers or at home. Do not release your bait bucket or move fish from one water body to another. Do your part in taking care of the resource.  </span></font></div>",
+        "licenseInfo": "<span style='box-sizing:border-box; font-weight:bolder; font-family:Arial, &quot;Helvetica Neue&quot;, sans-serif; background-color:rgba(0, 0, 0, 0); font-size:12px; color:var(--dark-600);'>Disclaimer:</span><span style='box-sizing:border-box; font-family:Arial, &quot;Helvetica Neue&quot;, sans-serif; background-color:rgba(0, 0, 0, 0); font-size:12px; color:var(--dark-600);'> The S.C. Department of Natural Resources makes no representation or warranty as to its accuracy, and in particular, its accuracy as to labeling, dimensions, boundaries, or placement or location of any map features thereon. The S.C. Department of Natural Resources makes NO Warranty of merchantability or Warranty for fitness of use for a particular purpose, express or implied, with respect to this map product. Any user of this map product accepts the same as IS, with ALL FAULTS, and assumes all responsibility for the use thereof, and further covenants and agrees to hold the S.C. Department of Natural Resources harmless from and against any damage, loss, or liability arising from any use of the map product.</span>",
+        "title": "SC Public Fishing Access",
+        "type": "Web Experience",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1774545007000,
+        "avgRating": 0,
+        "id": "368c6b8ebc164f21877eda6aa3aa4fcf",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DavisJH_scdnr",
+        "accessInformation": "SCDNR",
+        "largeThumbnail": null,
+        "lastViewed": 1774544400000,
+        "thumbnail": "thumbnail/SC_Public_Fishing_Access.jpg",
+        "languages": [],
+        "created": 1620921801000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/368c6b8ebc164f21877eda6aa3aa4fcf",
+        "tags": [
+          "Fishing",
+          "Fish",
+          "South Carolina",
+          "Rivers",
+          "Lakes",
+          "State Lakes",
+          "Saltwater"
+        ],
+        "numViews": 476967,
+        "numComments": 0,
+        "size": 3492070,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/368c6b8ebc164f21877eda6aa3aa4fcf"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3326b73b9b3045f080ddb5dc9c92fe5c",
+      "title": "Saltwater Freshwater Dividing Line",
+      "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/Saltwater_Freshwater_Dividing_Line/FeatureServer",
+      "publisher": "MRD_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To provide legal boundaries between fresh and salt water based on SC Code of Laws Section 50-5-80. Lines indicate exceptions to the freshwater/saltwater dividing line of US Highway 17. Attribute data indicates if the dividing line is the entire lengt",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -81.13426999454248,
+                33.91851579927667
+              ],
+              [
+                -78.59239067833981,
+                33.91851579927667
+              ],
+              [
+                -78.59239067833981,
+                32.08538255523812
+              ],
+              [
+                -81.13426999454248,
+                32.08538255523812
+              ],
+              [
+                -81.13426999454248,
+                33.91851579927667
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "SECTION 50-5-80. Dividing line between salt and fresh water on rivers. The dividing line between salt water and freshwater on the rivers listed is defined in this section, and all waters of the rivers and their tributaries, streams, and estuaries lying seaward of the dividing lines are considered salt waters, and all waters lying landward or upstream from all dividing lines are considered freshwaters for purposes of licensing and regulating commercial and recreational fishing. Except as otherwise provided below, the saltwater/freshwater dividing line is U.S. Highway 17: (1) On Savannah River the dividing line is the abandoned Seaboard Railroad track bed located approximately one and three?fourths miles upstream from the U.S. Highway 17A bridge. (2) Wright River is salt water for its entire length. (3) On Ashepoo River the dividing line is the old Seaboard Railroad track bed. (4) On New River the dividing line is at Cook's Landing. (5) Wallace River, Rantowles Creek, Long Branch Creek, and Shem Creek are salt water for their entire lengths. (6) On Edisto River the dividing line is the abandoned Seaboard Railroad track bed near Matthews Canal Cut. (7) On Ashley River the dividing line is the confluence of Popper Dam Creek directly across from Magnolia Gardens. (8) On Cooper River the dividing line is the seaward shoreline of Old Back River at the confluence of Old Back River downstream from Bushy Park Reservoir. (9) Wando River is salt water for its entire length. (10) On the Intracoastal Waterway in Horry County the dividing line is the bridge across the Intracoastal Waterway at the intersection of S.C. Highway 9 and U.S. Highway 17.",
+        "licenseInfo": "Neither the State of South Carolina, the Department of Natural Resources, nor any of its employees, is responsible for any improper or incorrect use of the information described and/or contained herein, and assume no responsibility for the use of the information.",
+        "title": "Saltwater Freshwater Dividing Line",
+        "type": "Feature Service",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1761258314000,
+        "avgRating": 0,
+        "id": "3326b73b9b3045f080ddb5dc9c92fe5c",
+        "categories": [
+          "/Categories/Marine Resources Division/Marine Operations/GIS"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "MRD_scdnr",
+        "accessInformation": "None. Acknowledgement of the South Carolina Department of Natural Resources would be appreciated in products derived from these data.",
+        "largeThumbnail": null,
+        "lastViewed": 1780005600000,
+        "thumbnail": "thumbnail/thumbnail.bmp",
+        "languages": [],
+        "created": 1613681614000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/Saltwater_Freshwater_Dividing_Line/FeatureServer",
+        "tags": [
+          "MRD",
+          "saltwater",
+          "fishing"
+        ],
+        "numViews": 24845,
+        "numComments": 0,
+        "size": 196608,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/3326b73b9b3045f080ddb5dc9c92fe5c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    189
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 18,
+  "next_offset": 10,
+  "response_sha256": "d7ac0b135a162db8d999ccf64c3747451509867d21e1b37516faf47fdd91524a",
+  "search_complete": false
+}

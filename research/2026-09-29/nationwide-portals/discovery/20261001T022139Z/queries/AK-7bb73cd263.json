@@ -1,0 +1,1278 @@
+{
+  "jurisdiction_code": "AK",
+  "query": "data center",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T02:22:25.521761+00:00",
+  "candidates": [
+    {
+      "id": "9e027341b7a444d5839a7475763ce06a",
+      "title": "Dispatch Center Locations Public View",
+      "url": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/Dispatch_Center_Locations_Public_View/FeatureServer",
+      "publisher": "for_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Alaska Division of Forestry Wildland Fire Service Dispatch Center Locations.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -156.958731,
+                64.968027
+              ],
+              [
+                -142.523367,
+                64.968027
+              ],
+              [
+                -142.523367,
+                60.233389
+              ],
+              [
+                -156.958731,
+                60.233389
+              ],
+              [
+                -156.958731,
+                64.968027
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "Alaska Division of Forestry Wildland Fire Service dispatch center locations including FAA location data.",
+        "licenseInfo": "<p style='margin-bottom: 8px;'>The Alaska Division of Forestry &amp; Fire Protection does not guarantee the accuracy of the data. This dataset is an approximation and for display purposes only. Every reasonable effort has been made to ensure that data is current and accurate. The representations depicted and information retrieved are only as accurate as the source, which may be from other agencies and organizations.</p><p style='margin-bottom: 8px;'>Any hard copies or published datasets utilizing these datasets shall clearly indicate their source; State of Alaska, Department of Natural Resources, Division of Forestry &amp; Fire Protection. If the user has modified the data in any way, the user is obligated to describe the types of modifications that the user has made. The user specifically agrees to not misrepresent these datasets, nor to imply that the changes made by the user were approved by the State of Alaska, Department of Natural Resources, Division of Forestry &amp; Fire Protection.</p><p style='margin-bottom: 8px;'>The State of Alaska makes no express or implied warranties with respect to the character, functions, or capabilities of the electronic data or products or their appropriateness for any user's purposes. In no event will the State of Alaska be liable for any incidental, indirect, special, consequential, or other damages suffered by the user or any other person or entity whether from the use of the electronic services or products or any failure thereof or otherwise.</p><p><span></span></p><p style='margin-bottom: 8px;'>Questions regarding the data can be directed to the Division of Forestry &amp; Fire Protection GIS Unit&nbsp;<a href='mailto:dof.gis@alaska.gov' target='_blank' style='overflow-wrap: break-word;' rel='nofollow ugc noopener noreferrer'><u>dof.gis@alaska.gov</u></a>&nbsp;.</p>",
+        "ownerId": "c1706aafd83b41af08ba72df2a6488c8",
+        "title": "Dispatch Center Locations Public View",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789082017000,
+        "avgRating": 0,
+        "id": "9e027341b7a444d5839a7475763ce06a",
+        "categories": [
+          "/Categories/Utilities and communication",
+          "/Categories/Natural Resources/Forestry"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "for_admin",
+        "accessInformation": "Alaska Division of Forestry and Fire Protection",
+        "largeThumbnail": "largethumbnail/9e027341b7a444d5839a7475763ce06a.png",
+        "lastViewed": 1790787600000,
+        "thumbnail": "thumbnail/9e027341b7a444d5839a7475763ce06a.png",
+        "languages": [],
+        "created": 1597362279000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/Dispatch_Center_Locations_Public_View/FeatureServer",
+        "tags": [
+          "Alaska",
+          "Wildland Fire",
+          "Dispatch Centers",
+          "Division of Forestry",
+          "Locations",
+          "Natural Resources",
+          "DOF",
+          "Department of Natural Resources",
+          "AKDNR",
+          "DNR",
+          "Forestry",
+          "Natural Resource",
+          "Alaska Division of Forestry  & Fire Protection",
+          "Public"
+        ],
+        "numViews": 6988,
+        "numComments": 0,
+        "size": 1023,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Dispatch_Center_Locations_Public_View",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Division of Forestry",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/9e027341b7a444d5839a7475763ce06a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a76144963d3d4c5c96a185eb8c50d940",
+      "title": "BLM National Interagency Fire Center NIFC",
+      "url": "https://data-nifc.opendata.arcgis.com/",
+      "publisher": "blm_arcgis_hub_natl",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The National Interagency Fire Center (NIFC) serves out the official Fire data for the BLM.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -161.69699999979844,
+                80.69499999989812
+              ],
+              [
+                -36.30302574935648,
+                80.69499999989812
+              ],
+              [
+                -36.30302574935648,
+                -0.36142717047349116
+              ],
+              [
+                -161.69699999979844,
+                -0.36142717047349116
+              ],
+              [
+                -161.69699999979844,
+                80.69499999989812
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Web Map",
+          "Metadata"
+        ],
+        "description": "<span style='color:rgb(0, 0, 0); font-family:Calibri, Helvetica, sans-serif; font-size:16px;'>National Interagency Fire Center (NIFC) official wildland maps and fire data, an open data site for searching NIFC data and applications.</span>",
+        "licenseInfo": "<div style='font-size:12pt; border:0px; font-variant-numeric:inherit; font-variant-east-asian:inherit; font-stretch:inherit; font-family:Calibri, Helvetica, sans-serif; margin:0px; padding:0px; color:black !important;'><span style='border:0px; font-style:inherit; font-variant:inherit; font-weight:inherit; font-stretch:inherit; font-size:12pt; font-family:Calibri, sans-serif; margin:0px; padding:0px; color:inherit;'>Access Constraints: <span style='border:0px; font-style:inherit; font-variant:inherit; font-weight:inherit; font-stretch:inherit; font-size:12pt; font-family:inherit; margin:0px; padding:0px; color:rgb(76, 76, 76) !important;'>None, these data are considered public domain.</span><span style='border:0px; font-style:inherit; font-variant:inherit; font-weight:inherit; font-stretch:inherit; font-size:12pt; font-family:inherit; margin:0px; padding:0px; color:inherit;'> </span></span></div><div style='font-size:12pt; border:0px; font-variant-numeric:inherit; font-variant-east-asian:inherit; font-stretch:inherit; font-family:Calibri, Helvetica, sans-serif; margin:0px; padding:0px; color:black !important;'><br /></div><div style='font-size:12pt; border:0px; font-variant-numeric:inherit; font-variant-east-asian:inherit; font-stretch:inherit; font-family:Calibri, Helvetica, sans-serif; margin:0px; padding:0px; color:black !important;'><span style='border:0px; font-style:inherit; font-variant:inherit; font-weight:inherit; font-stretch:inherit; font-size:12pt; font-family:Calibri, sans-serif; margin:0px; padding:0px; color:inherit;'>Use Constraints:</span></div><div style='font-size:16px; border:0px; font-variant-numeric:inherit; font-variant-east-asian:inherit; font-stretch:inherit; font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif; margin:0px; padding:0px; color:rgb(36, 36, 36);'><div style='border:0px; font-style:inherit; font-variant:inherit; font-weight:inherit; font-stretch:inherit; font-size:12pt; font-family:Calibri, Helvetica, sans-serif; margin:0px; padding:0px; color:black !important;'><span style='border:0px; font-style:inherit; font-variant:inherit; font-weight:inherit; font-stretch:inherit; font-size:12pt; font-family:Calibri, sans-serif; margin:0px; padding:0px; color:rgb(76, 76, 76) !important;'>These data are provided by Bureau of Land Management (BLM) &quot;as is&quot; and might contain errors or omissions. The User assumes the entire risk associated with its use of these data and bears all responsibility in determining whether these data are fit for the User's intended use. The information contained in these data is dynamic and may change over time. The data are not better than the sources from which they were derived, and both scale and accuracy may vary across the data set. These data might not have the accuracy, resolution, completeness, timeliness, or other characteristics appropriate for applications that potential users of the data may contemplate. The User is encouraged to carefully consider the content of the metadata file associated with these data. These data are neither legal documents nor land surveys, and must not be used as such. Official records may be referenced at most BLM offices. Please report any errors in the data to the BLM office from which it was obtained. The BLM should be cited as the data source in any products derived from these data. Any Users wishing to modify the data should describe the types of modifications they have performed. The User should not misrepresent the data, nor imply that changes made were approved or endorsed by BLM. This data may be updated by the BLM without notification.</span></div></div>",
+        "title": "BLM National Interagency Fire Center NIFC",
+        "type": "Web Mapping Application",
+        "orgId": "KbxwQRRfWyEYLgp4",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1719434958000,
+        "avgRating": 0,
+        "id": "a76144963d3d4c5c96a185eb8c50d940",
+        "categories": [
+          "/Categories/fire and aviation"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "blm_arcgis_hub_natl",
+        "accessInformation": "NIFC – National Interagency Fire Center, Bureau of Land Management",
+        "largeThumbnail": null,
+        "lastViewed": 1781218800000,
+        "thumbnail": "thumbnail/thumbnail1677196536167.png",
+        "languages": [],
+        "created": 1677196494000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://data-nifc.opendata.arcgis.com/",
+        "tags": [
+          "environment",
+          "Fire",
+          "geospatial",
+          "NIFC",
+          "National Interagency Fire Center",
+          "BLM",
+          "Bureau of Land Management"
+        ],
+        "numViews": 6523,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Bureau of Land Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/a76144963d3d4c5c96a185eb8c50d940"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "7d177000d07e46768b66d84dcd607dac",
+      "title": "Downloadable Data from MOAGIS",
+      "url": "https://data-muniorg.hub.arcgis.com",
+      "publisher": "MOAGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Find available data in multiple formats",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -150.57161466761198,
+                61.6964155569127
+              ],
+              [
+                -148.72024095567983,
+                61.6964155569127
+              ],
+              [
+                -148.72024095567983,
+                60.77463837958177
+              ],
+              [
+                -150.57161466761198,
+                60.77463837958177
+              ],
+              [
+                -150.57161466761198,
+                61.6964155569127
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubSite",
+          "hubSolution",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "OpenData",
+          "Ready To Use",
+          "selfConfigured",
+          "Web Map",
+          "Registered App"
+        ],
+        "description": "<p>Create your own initiative by combining existing applications with a custom site. Use this initiative to form teams around a problem and invite your community to participate.</p>",
+        "licenseInfo": "null",
+        "ownerId": "6250d9a59df4d059ce811c38f7daf11f",
+        "title": "Downloadable Data from MOAGIS",
+        "type": "Hub Site Application",
+        "orgId": "Ce3DhLRthdwbHlfF",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790010824000,
+        "avgRating": 0,
+        "id": "7d177000d07e46768b66d84dcd607dac",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "MOAGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790010000000,
+        "thumbnail": "thumbnail/thumbnail_thumbnail1788995813688.png",
+        "languages": [],
+        "created": 1789593753000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://data-muniorg.hub.arcgis.com",
+        "tags": [
+          "Hub Site",
+          "MOAGIS",
+          "Featured Things",
+          "Data Downloads"
+        ],
+        "numViews": 203,
+        "numComments": 0,
+        "size": 1988390,
+        "listed": false,
+        "scoreCompleteness": 88,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "collaborationGroupId": "62d477fe347e4c9e853259ef33b99de6",
+          "schemaVersion": 1.9,
+          "discussionBoundary": {
+            "type": "none"
+          },
+          "children": [],
+          "followersGroupId": "53e79079ae6744ec926242e1680cb045",
+          "location": {
+            "extent": [
+              [
+                -150.57161466761198,
+                60.77463837958177
+              ],
+              [
+                -148.72024095567983,
+                61.6964155569127
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 60.77463837958177,
+                "xmin": -150.57161466761198,
+                "ymax": 61.6964155569127,
+                "xmax": -148.72024095567983,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "org",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          },
+          "contentGroupId": "b50f15b871c64965a857d0ba9c609914",
+          "orgUrlKey": "muniorg"
+        },
+        "source": "Municipality of Anchorage",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/7d177000d07e46768b66d84dcd607dac"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "836e7e1d6239444490bce33144d514ef",
+      "title": " MOA GIS Public Resources",
+      "url": "https://storymaps.arcgis.com/stories/836e7e1d6239444490bce33144d514ef",
+      "publisher": "MOAGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "A brief overview of the Municipality of Anchorage maps and apps gallery",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "arcgis-storymaps",
+          "smdraftresourceid:draft_1772811690220.json",
+          "smfirstpublisheddate:1772582696092",
+          "smpublisheddate:1772811690220",
+          "smstatuspublished",
+          "smversiondraft:26.10.1215",
+          "smversionpublished:26.10.1215",
+          "StoryMap",
+          "Web Application"
+        ],
+        "description": "<p><strong>The Geographic Data and Information Center (GDIC) maintains Maps and Data for the Municipality of Anchorage. From the Municipality of Anchorage </strong><strong>home page,</strong><strong>  the gallery is easily accessed from a central hyperlink.</strong></p><p></p>",
+        "licenseInfo": "<p><a target='_blank' href='https://experience.arcgis.com/experience/62736e6a03fd4747bd6bfd53c5e27fcc/' rel='nofollow ugc noopener noreferrer'>Terms of Use and Disclaimer</a></p>",
+        "ownerId": "6250d9a59df4d059ce811c38f7daf11f",
+        "title": " MOA GIS Public Resources",
+        "type": "StoryMap",
+        "orgId": "Ce3DhLRthdwbHlfF",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788998061000,
+        "avgRating": 0,
+        "id": "836e7e1d6239444490bce33144d514ef",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "MOAGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1788994800000,
+        "thumbnail": "thumbnail/thumbnail1788998059807.png",
+        "languages": [],
+        "created": 1772575439000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://storymaps.arcgis.com/stories/836e7e1d6239444490bce33144d514ef",
+        "tags": [
+          "MOAGIS",
+          "Featured Things"
+        ],
+        "numViews": 3773,
+        "numComments": 0,
+        "size": 3137302,
+        "listed": false,
+        "scoreCompleteness": 86,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "thumbnail": [
+            "url",
+            "https://su.example/content/items/836e7e1d6239444490bce33144d514ef/resources/JBSoNLwdlAABDClGXmX8r.png{{qp|[[\"wago\"],[\"ust\"]]}}"
+          ],
+          "shouldHideCover": false
+        },
+        "source": "Municipality of Anchorage",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/836e7e1d6239444490bce33144d514ef"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c4c10ee9aa814fc4803764af53f0cb14",
+      "title": "FWS NWRS Marine Protected Areas Parcels",
+      "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_HQ_NWRS_Marine_Protected_Areas_Parcels/FeatureServer",
+      "publisher": "richard_easterbrook@fws.gov_fws",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Provides a parcel level dataset that can be used to view and evaluate Marine Protected Areas on U.S. Fish and Wildlife Service National Wildlife Refuges.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -179.15008344005733,
+                70.17046699321075
+              ],
+              [
+                179.77510008617452,
+                70.17046699321075
+              ],
+              [
+                179.77510008617452,
+                -14.559743972598179
+              ],
+              [
+                -179.15008344005733,
+                -14.559743972598179
+              ],
+              [
+                -179.15008344005733,
+                70.17046699321075
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Provides a parcel level dataset of Marine Protected Areas (MPAs) within the U.S. Fish and Wildlife Service National Wildlife Refuges. The dataset includes a distinction between parcels that are Marine/Estuarine and those that are Terrestrial.<div><br /></div><div>Data Set Contact: U.S. Fish and Wildlife Service Natural Resource Program Center, GIS Team Lead, <a href='mailto:richard_easterbrook@fws.gov' rel='nofollow ugc' target='_blank'>richard_easterbrook@fws.gov</a><br /></div>",
+        "licenseInfo": "The United States Fish and Wildlife Service (Service) shall not be held liable for improper or incorrect use of the data described and/or contained herein. While the Service makes every reasonable effort to ensure the accuracy and completeness of data provided for distribution, it may not have the necessary accuracy or completeness required for every possible intended use. The Service recommends that data users consult the associated metadata record to understand the quality and possible limitations of the data. The Service creates metadata records in accordance with the standards endorsed by the Federal Geographic Data Committee.<div><br /><div>As a result of the above considerations, the Service gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of the data. It is the responsibility of the data user to use the data in a manner consistent with the limitations of geospatial data in general and these data in particular. Although these data have been processed successfully on a computer system at the Service, no warranty, expressed or implied, is made regarding the utility of the data on another system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. This applies to the use of the data both alone and in aggregate with other data and information.</div></div>",
+        "ownerId": "bb6f3f6e2f3c2c15db50ba70d9cde643",
+        "title": "FWS NWRS Marine Protected Areas Parcels",
+        "type": "Feature Service",
+        "orgId": "QVENGdaPbd4LUkLV",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1595362010000,
+        "avgRating": 0,
+        "id": "c4c10ee9aa814fc4803764af53f0cb14",
+        "categories": [
+          "/Categories/Marine"
+        ],
+        "spatialReference": "GCS_North_American_1983",
+        "numRatings": 0,
+        "owner": "richard_easterbrook@fws.gov_fws",
+        "accessInformation": "U.S. Fish and Wildlife Service, National Wildlife Refuge System, Natural Resources Program Center",
+        "largeThumbnail": null,
+        "lastViewed": 1787680800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1501008066000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_HQ_NWRS_Marine_Protected_Areas_Parcels/FeatureServer",
+        "tags": [
+          "Estuary",
+          "Inventory and Monitoring",
+          "Natural Resources",
+          "environment",
+          "inlandWaters",
+          "Fisheries and Conservation",
+          "Ecosystem",
+          "boundaries",
+          "Marine",
+          "Conservation",
+          "United States",
+          "Water",
+          "Environment",
+          "oceans",
+          "HQ_NWRS",
+          "FWS",
+          "USFWS",
+          "U.S. Fish and Wildlife Service",
+          "NWRS"
+        ],
+        "numViews": 9382,
+        "numComments": 0,
+        "size": 709992448,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "FWS_HQ_NWRS_Marine_Protected_Areas_Parcels",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "U.S. Fish and Wildlife Service, Natural Resource Program Center",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/c4c10ee9aa814fc4803764af53f0cb14"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b4b7f221950b442d915ac2e19c3f0d18",
+      "title": "Mat-Su Borough Public Emergency Information Map",
+      "url": "https://experience.arcgis.com/experience/b4b7f221950b442d915ac2e19c3f0d18",
+      "publisher": "MatSuBorough",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Emergency information provided by the Mat-Su Borough Emergency Management staff, including wildfire status, road closures due to flooding, shelters, and evacuation zones.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Copy Item",
+          "EXB Experience",
+          "JavaScript",
+          "modified: 1775154248880",
+          "publishVersion:1.20.0",
+          "Ready To Use",
+          "status: Published",
+          "template:dashboard",
+          "version:1.20.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<p><span style='font-family:Calibri; font-size:large;'>This dashboard is intended to provide crucial data for the Emergency Operations Center. In the event of an emergency in the Mat-Su Borough, this dashboard allows the Emergency Operations Center to respond to the public with accurate and up-to-date information on the event. Information shared here includes wildfire status, road closures due to flooding, shelters, and evacuation zones.</span></p>",
+        "licenseInfo": "<div>The Matanuska-Susitna Borough (&quot;Borough&quot;) makes published geographic electronic data available to the data recipient (&quot;Recipient&quot;) as a public service. To protect the Borough and the population the Borough serves, the data provided to the Recipient is designated as copyrighted material. The Borough grants the Recipient the right to duplicate the electronic data for their personal or business' internal use and to use this digital data as a source for which to create other electronic data, electronic maps, or paper maps. Any transfer, sale, lease, or transmittal of the original data to any third party without value added or without the written authorization of the Borough Office of Information Technology may be considered a violation of this copyright and subject the Recipient to civil liability. Any hardcopy maps or published datasets utilizing this data shall clearly indicate their source with the following citation: &quot;________ (title of dataset), current as of _______ (published currency date), was originally obtained from the Matanuska-Susitna Borough Office of Information Technology, and was used to create this product. The Matanuska-Susitna Borough assumes no responsibility for the completeness or accuracy of the data contained within.&quot; If the Recipient has modified the data in any way, the Recipient is obligated to note the types of modifications that have been performed. The Recipient specifically agrees not to misrepresent the data, nor to imply that the Borough has approved any changes made by the Recipient.</div><div><br /></div>",
+        "title": "Mat-Su Borough Public Emergency Information Map",
+        "type": "Web Experience",
+        "orgId": "fX5IGselyy1TirdY",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1776892897000,
+        "avgRating": 0,
+        "id": "b4b7f221950b442d915ac2e19c3f0d18",
+        "categories": [
+          "/Categories/Hazard"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "MatSuBorough",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1781262000000,
+        "thumbnail": "thumbnail/Mat-Su_Borough_Public_Emergency_Information_Map.png",
+        "languages": [],
+        "created": 1738697567000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/b4b7f221950b442d915ac2e19c3f0d18",
+        "tags": [
+          "Matanuska-Susitna Borough",
+          "Matanuska Susitna Borough",
+          "Matanuska",
+          "Susitna",
+          "Borough",
+          "MatSu",
+          "Mat-Su",
+          "Mat-Su Borough",
+          "MatSu Borough",
+          "MSB",
+          "Emergency",
+          "Public Information",
+          "Public Affairs"
+        ],
+        "numViews": 1628,
+        "numComments": 0,
+        "size": 1556855,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Matanuska-Susitna Borough",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/b4b7f221950b442d915ac2e19c3f0d18"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "065d1db901644430a6dedc4cdf644b62",
+      "title": "FWS National Hunting and Fishing Opportunities",
+      "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_HuntFishCentroids/FeatureServer",
+      "publisher": "mery_casady@fws.gov_fws",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "U.S. Fish and Wildlife station centroids representing hunting and fishing opportunities.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                90
+              ],
+              [
+                180,
+                90
+              ],
+              [
+                180,
+                -27.798243341810156
+              ],
+              [
+                -180,
+                -27.798243341810156
+              ],
+              [
+                -180,
+                90
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "This data layer depicts a single point for all lands and waters administered by the U.S. Fish and Wildlife Service (USFWS) in North America, U.S. Trust Territories and Possessions where hunting and fishing opportunities exist.  These points were generated, using a centroid geoprocessing tool, on the <a href='https://fws.maps.arcgis.com/home/item.html?id=745ed874c1394da3a9aae50267c9e049' target='_blank' rel='nofollow ugc noopener noreferrer'>FWS National Realty Boundaries</a> layer.<div><br /></div><div><div>Data Set Contact: U.S. Fish and Wildlife Service Natural Resource Program Center, GIS Team Lead, <a href='mailto:richard_easterbrook@fws.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>richard_easterbrook@fws.gov</a></div></div>",
+        "licenseInfo": "The United States Fish and Wildlife Service (Service) shall not be held liable for improper or incorrect use of the data described and/or contained herein. While the Service makes every reasonable effort to ensure the accuracy and completeness of data provided for distribution, it may not have the necessary accuracy or completeness required for every possible intended use. The Service recommends that data users consult the associated metadata record to understand the quality and possible limitations of the data. The Service creates metadata records in accordance with the standards endorsed by the Federal Geographic Data Committee. As a result of the above considerations, the Service gives no warranty, expressed or implied, as to the accuracy, reliability, or completeness of the data. It is the responsibility of the data user to use the data in a manner consistent with the limitations of geospatial data in general and these data in particular. Although these data have been processed successfully on a computer system at the Service, no warranty, expressed or implied, is made regarding the utility of the data on another system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. This applies to the use of the data both alone and in aggregate with other data and information.",
+        "ownerId": "acaecba3be8a27ea2e2aa864d3dec482",
+        "title": "FWS National Hunting and Fishing Opportunities",
+        "type": "Feature Service",
+        "orgId": "QVENGdaPbd4LUkLV",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1749732096000,
+        "avgRating": 0,
+        "id": "065d1db901644430a6dedc4cdf644b62",
+        "categories": [
+          "/Categories/Locations"
+        ],
+        "spatialReference": "102003",
+        "numRatings": 0,
+        "owner": "mery_casady@fws.gov_fws",
+        "accessInformation": "U.S. Fish and Wildlife Service, National Wildlife Refuge System, Natural Resources Program Center",
+        "largeThumbnail": null,
+        "lastViewed": 1787680800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1664819726000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWS_NWRS_HQ_HuntFishCentroids/FeatureServer",
+        "tags": [
+          "Montana",
+          "North Carolina",
+          "Virginia",
+          "Louisiana",
+          "Florida",
+          "Missouri",
+          "West Virginia",
+          "Washington",
+          "Michigan",
+          "Rhode Island",
+          "Delaware",
+          "Indiana",
+          "Utah",
+          "location",
+          "Nebraska",
+          "Puerto Rico",
+          "New York",
+          "Colorado",
+          "Kansas",
+          "Maine",
+          "Pennsylvania",
+          "Ohio",
+          "New Jersey",
+          "Idaho",
+          "Iowa",
+          "Mississippi",
+          "Alaska",
+          "Vermont",
+          "South Carolina",
+          "Virgin Islands",
+          "Minnesota",
+          "Kentucky",
+          "Massachusetts",
+          "Oklahoma",
+          "Nevada",
+          "Hawaii",
+          "Arizona",
+          "Oregon",
+          "California",
+          "New Hampshire",
+          "United States",
+          "Canada",
+          "Arkansas",
+          "Alabama",
+          "Connecticut",
+          "Georgia",
+          "North Dakota",
+          "New Mexico",
+          "Texas",
+          "Wisconsin",
+          "South Dakota",
+          "Tennessee",
+          "Illinois",
+          "Maryland",
+          "Wyoming",
+          "HQ_NWRS",
+          "biota",
+          "FWS",
+          "USFWS",
+          "U.S. Fish and Wildlife Service"
+        ],
+        "numViews": 21198,
+        "numComments": 0,
+        "size": 4308992,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "FWS_NWRS_HQ_HuntFishCentroids",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "U.S. Fish and Wildlife Service Natural Resource Program Center",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/065d1db901644430a6dedc4cdf644b62"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "82b2f82dc1db4bee8c07b7bf8f44405f",
+      "title": "Federal Action",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Ownership_FederalAction/FeatureServer",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was developed to provide the general public with easy access to land records information\nas it appears on the State status plats.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                76.7862
+              ],
+              [
+                180,
+                76.7862
+              ],
+              [
+                180,
+                42.5092
+              ],
+              [
+                -180,
+                42.5092
+              ],
+              [
+                -180,
+                76.7862
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Alaska DNR Federal Actions includes federal actions that are depicted on State status\nplats in order to identify any exclusions, reservations. or other stipulations that\naffect the transfer of the land to the State\n\nThis shape file characterizes the geographic representation of land parcels within the State\nof Alaska contained by the Federal Actions category. It has been extracted from data sets\nused to produce the State status plats. This data set includes cases noted on the digital\nstatus plats up to one day prior to data extraction.\n\nThose requiring more information regarding State land records should contact the Alaska Department\nof Natural Resources Public Information Center directly.",
+        "licenseInfo": "Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "Federal Action",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1736983686000,
+        "avgRating": 0,
+        "id": "82b2f82dc1db4bee8c07b7bf8f44405f",
+        "categories": [
+          "/Categories/Land Records/Land Estate",
+          "/Categories/Land Records/Ownership",
+          "/Categories/Land Records/Mineral Estate"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/82b2f82dc1db4bee8c07b7bf8f44405f.png",
+        "lastViewed": 1790773200000,
+        "thumbnail": "thumbnail/thumbnail1736983684896.png",
+        "languages": [],
+        "created": 1635875671000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Ownership_FederalAction/FeatureServer",
+        "tags": [
+          "planningCadastre",
+          "federal",
+          "BLM",
+          "conveyance",
+          "land record",
+          "Alaska",
+          "sync"
+        ],
+        "numViews": 5147,
+        "numComments": 0,
+        "size": 97,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Information Resource Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/82b2f82dc1db4bee8c07b7bf8f44405f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "317584be86494f509372aa4373b6d56c",
+      "title": "Alaska Native Languages Boundaries",
+      "url": "https://maps.commerce.alaska.gov/server/rest/services/ANLPAC/Alaska_Native_Languages_Boundaries/MapServer/0",
+      "publisher": "DCRAOpenData",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Boundary lines for Alaska Native languages based off detailed linguistic analysis. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                71.5353
+              ],
+              [
+                180,
+                71.5353
+              ],
+              [
+                180,
+                51.4967
+              ],
+              [
+                -180,
+                51.4967
+              ],
+              [
+                -180,
+                71.5353
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Service",
+          "Data"
+        ],
+        "description": "Boundaries of the indigenous languages of Alaska, based on Krauss (1974)\n Native Peoples and Languages of Alaska. Boundaries defined based on \nboth linguistic and social criteria.<div><br /></div><div><div>Source: Alaska Native Language Center</div><div><br /></div><div><span style='font-size: 12pt; line-height: 17.12px; font-family: &quot;Times New Roman&quot;, serif;'>This\n data is provided as a service in the DCRA Information Portal by the \nAlaska Department of Commerce, Community, and Economic Development \nDivision of Community and Regional Affairs (SOA DCCED DCRA), Research \nand Analysis section. SOA DCCED DCRA Research and Analysis is not the \nauthoritative source for this data. For more information and for \nquestions about this data, see:</span><a href='https://www.uaf.edu/anlc/' target='_blank'> Alaska Native Language Center</a>.</div></div>",
+        "licenseInfo": "<div><p style='margin: 2pt 0in; line-height: normal;'><b><span style='font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;'>DISCLAIMER:</span></b><span style='font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;'> The  Division of Community and Regional Affairs (DCRA) provides the  Community Database Online (CDO) as a source of information to aid in  advising and assisting local governments, including for research  purposes. DCRA is not a referral agency and cannot make specific  recommendations or endorsements. Links to other agencies and related  organizations are provided as a service, and do not constitute  endorsement or recommendations for the agencies/organizations or  websites. </span></p><p style='margin: 2pt 0in; line-height: normal;'><span style='font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;'> </span></p><p style='margin-bottom: 0.0001pt; line-height: normal;'><b><span style='font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;'>Please note:</span></b><span style='font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;'> In  an effort to uphold information data integrity in the CDO we always  welcome and appreciate your help and review of your community's data. If  you encounter any incorrect information, please send an e-mail to: </span><a href='mailto:DCRAResearchAndAnalysis@alaska.gov'><span style='font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif; color: blue;'>DCRA Research and Analysis</span></a></p></div>",
+        "ownerId": "dc434b68cc05d28cf8109ca8651577b9",
+        "title": "Alaska Native Languages Boundaries",
+        "type": "Feature Service",
+        "orgId": "0DjevcWawQ1dy3il",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731425546000,
+        "avgRating": 0,
+        "id": "317584be86494f509372aa4373b6d56c",
+        "categories": [
+          "/Categories/Open Data/Education",
+          "/Categories/Open Data/Cultural"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "DCRAOpenData",
+        "accessInformation": "Krauss, Michael E., Gary Holton, Jim Kerr, and Colin T. West. 2011. Indigenous Peoples and Languages of Alaska. Fairbanks and Anchorage: Alaska Native Language Center and Institute of Social and Economic Research.",
+        "largeThumbnail": "",
+        "lastViewed": 1787680800000,
+        "thumbnail": "thumbnail/thumbnail1596074187793.png",
+        "languages": [],
+        "created": 1568303729000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://maps.commerce.alaska.gov/server/rest/services/ANLPAC/Alaska_Native_Languages_Boundaries/MapServer/0",
+        "tags": [
+          "cultural",
+          "language",
+          "native",
+          "anlpac",
+          "culture",
+          "language boundaries",
+          "boundaries",
+          "linguistic",
+          "alaska native language center",
+          "language family",
+          "alaska native language preservation and advisory council",
+          "Alaska DCRA",
+          "DCRA Regions"
+        ],
+        "numViews": 23097,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Dept. of Commerce, Community, & Economic Development",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/317584be86494f509372aa4373b6d56c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5f9663250ea24f72afab17a710f87a18",
+      "title": "LiDAR Tiles, Photos and Contours - 2015",
+      "url": "https://experience.arcgis.com/experience/5f9663250ea24f72afab17a710f87a18",
+      "publisher": "MOAGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "LiDAR Tiles, Photos and Contours - 2015",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "lastEditor:MOAGIS",
+          "modified: 1783368535786",
+          "publishVersion:1.20.0",
+          "Ready To Use",
+          "status: Published",
+          "template:foldable",
+          "version:1.21.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<p style='background-color:rgb(255, 255, 255); box-sizing:border-box; color:rgb(50, 50, 50); font-family:&quot;Avenir Light&quot;, Verdana, Geneva, sans-serif; font-size:medium; line-height:1.5em; margin-bottom:0px; margin-top:0px; padding:0px;'><span style='font-size:small;'><font style='box-sizing:border-box;'><span style='box-sizing:border-box;'>The&nbsp;Municipality of Anchorage Geographic Data and Information Center (GDIC)&nbsp;acquired seamless, area wide photography and 1 foot interval elevation information in 2015.&nbsp;</span></font></span></p><p style='background-color:rgb(255, 255, 255); box-sizing:border-box; color:rgb(50, 50, 50); font-family:&quot;Avenir Light&quot;, Verdana, Geneva, sans-serif; font-size:medium; line-height:1.5em; margin-bottom:0px; margin-top:0px; padding:0px;'><span style='font-size:small;'><font style='box-sizing:border-box;'><span style='box-sizing:border-box;'>The elevation dataset was cooperatively funded with grant funding from the USGS 3D Elevation program.&nbsp; This is the first Anchorage elevation dataset which extends seamlessly from Eklutna to Portage.</span></font></span></p><p style='background-color:rgb(255, 255, 255); box-sizing:border-box; color:rgb(50, 50, 50); font-family:&quot;Avenir Light&quot;, Verdana, Geneva, sans-serif; font-size:medium; line-height:1.5em; margin-bottom:0px; margin-top:0px; padding:0px;'><br />&nbsp;</p><p style='background-color:rgb(255, 255, 255); color:rgb(81, 81, 81); font-family:Lato, sans-serif; font-size:small; margin-bottom:1.55rem; margin-top:0px;'><span style='color:rgb(30,37,41); font-family:Tahoma, sans-serif; font-size:8.5pt;'><font style='font-family:Lato, sans-serif !important; font-size:12px !important;'><span style='text-align:justify;'>Please Accept the Maps and Apps Gallery Terms of Use and Disclaimer</span></font></span></p><p style='background-color:rgb(255, 255, 255); color:rgb(81, 81, 81); font-family:Lato, sans-serif; font-size:small; margin-bottom:1.55rem; margin-top:0px;'><span style='background-color:transparent; color:rgb(76,76,76); font-family:Arial, sans-serif; font-size:8pt;'><font style='font-family:Lato, sans-serif !important; font-size:12px !important;'><span style='text-align:justify;'>All users of the Municipal Maps and Apps Gallery must agree to the</span></font><span style='text-align:justify;'>&nbsp;</span></span><a style='background-color:transparent; color:rgb(0, 121, 193); font-family:&quot;Avenir LT W01 35 Light&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-decoration-line:none;' target='_blank' href='https://experience.arcgis.com/experience/62736e6a03fd4747bd6bfd53c5e27fcc/' rel='nofollow ugc noopener noreferrer'>Terms of Use and Disclaimer.</a><span style='background-color:transparent; color:black; font-family:Arial, sans-serif; font-size:8pt;'><font style='font-family:Lato, sans-serif !important; font-size:12px !important;'><span style='text-align:justify;'>&nbsp;By selecting any product you agree to the&nbsp;</span><i><span style='text-align:justify;'>Terms of Use and Disclaimer.</span></i></font></span></p>",
+        "licenseInfo": null,
+        "ownerId": "6250d9a59df4d059ce811c38f7daf11f",
+        "title": "LiDAR Tiles, Photos and Contours - 2015",
+        "type": "Web Experience",
+        "orgId": "Ce3DhLRthdwbHlfF",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1783368550000,
+        "avgRating": 0,
+        "id": "5f9663250ea24f72afab17a710f87a18",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "MOAGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1783368000000,
+        "thumbnail": "thumbnail/LiDAR_Tiles_2C_Photos_and_Contours_-_2015.png",
+        "languages": [],
+        "created": 1766772676000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/5f9663250ea24f72afab17a710f87a18",
+        "tags": [
+          "MOA",
+          "LiDAR",
+          "Contours",
+          "Anchorage",
+          "Alaska",
+          "MOAGIS",
+          "Municipality of Anchorage"
+        ],
+        "numViews": 721,
+        "numComments": 0,
+        "size": 322139,
+        "listed": false,
+        "scoreCompleteness": 78,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Municipality of Anchorage",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/5f9663250ea24f72afab17a710f87a18"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    236
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 177,
+  "next_offset": 10,
+  "response_sha256": "fd0458e600d2550ec17a45b6bbf4b81fc149b3c8f2977c7555c778fb52a88c5e",
+  "search_complete": false
+}

@@ -1,0 +1,1250 @@
+{
+  "jurisdiction_code": "AK",
+  "query": "water",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T08:23:09.773562+00:00",
+  "candidates": [
+    {
+      "id": "a8805e11f95a4d2a9d59dee953a37f2c",
+      "title": "Reservation Of Water",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_ReservationOfWater/FeatureServer",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was developed to provide the general public with easy access to land records information\nas it appears on the State status plats.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -169.20041761791543,
+                71.7561762240358
+              ],
+              [
+                -129.1721101153885,
+                71.7561762240358
+              ],
+              [
+                -129.1721101153885,
+                50.23104100058573
+              ],
+              [
+                -169.20041761791543,
+                50.23104100058573
+              ],
+              [
+                -169.20041761791543,
+                71.7561762240358
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "A reservation of water for instream use is a water right that protects specific instream water uses,\nsuch as fish spawning or recreation. It sets aside the water necessary for these activities and keeps\nlater water users from appropriating water that may affect the instream activity.\n\nWater can be reserved for one or more permissible uses on a particular part of a stream or lake during a\ncertain period of time. Under AS 46.15.145, permissible instream uses include:\n\nProtection of fish and wildlife habitat, migration, and propagation\nRecreation and parks\nNavigation and transportation\nSanitation and water quality\n\nA reservation of water for one use may also allow that same water to be used or reserved for another purpose.\nFor example, a reservation for recreation may also benefit fish spawning.\n\nLike an out-of-stream water right, an instream reservation of water is similar to a property right.\nIt cannot be abandoned, transferred, assigned, or converted to another use without approval of the\nDepartment of Natural Resources.\n\nThis shape file characterizes the geographic representation of land parcels within the State\nof Alaska contained by the Instream Flow Reservation category. It has been\nextracted from data sets used to produce the State status plats. This data set includes\ncases noted on the digital status plats up to one day prior to data extraction.\n\nEach feature has an associated attribute record, including a Land Administration System (LAS)\nfile-type and file-number which serves as an index to related LAS case-file information. Additional\nLAS case-file and customer information may be obtained at: http://dnr.alaska.gov/projects/las/\nThose requiring more information regarding State land records should contact the Alaska Department\nof Natural Resources Public Information Center directly.",
+        "licenseInfo": "Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "Reservation Of Water",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1736983853000,
+        "avgRating": 0,
+        "id": "a8805e11f95a4d2a9d59dee953a37f2c",
+        "categories": [
+          "/Categories/Land Records/Water Estate"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/a8805e11f95a4d2a9d59dee953a37f2c.png",
+        "lastViewed": 1790809200000,
+        "thumbnail": "thumbnail/thumbnail1736983851555.png",
+        "languages": [],
+        "created": 1626392822000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_ReservationOfWater/FeatureServer",
+        "tags": [
+          "planningCadastre",
+          "instream flows",
+          "water",
+          "reservation",
+          "instream flow reservation",
+          "Alaska",
+          "sync"
+        ],
+        "numViews": 7919,
+        "numComments": 0,
+        "size": 98,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Information Resource Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/a8805e11f95a4d2a9d59dee953a37f2c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "271d2998e2e34bfea906f7625a1411d3",
+      "title": "Reservation Of Water",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_ReservationOfWater/MapServer",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was developed to provide the general public with easy access to land records information\nas it appears on the State status plats.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -179.9999885408437,
+                72.06514140042805
+              ],
+              [
+                -127.26563645907532,
+                72.06514140042805
+              ],
+              [
+                -127.26563645907532,
+                50.787742810388046
+              ],
+              [
+                -179.9999885408437,
+                50.787742810388046
+              ],
+              [
+                -179.9999885408437,
+                72.06514140042805
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Dynamic",
+          "Map Service",
+          "Metadata",
+          "Multilayer",
+          "Service"
+        ],
+        "description": "A reservation of water for instream use is a water right that protects specific instream water uses,\nsuch as fish spawning or recreation. It sets aside the water necessary for these activities and keeps\nlater water users from appropriating water that may affect the instream activity.\n\nWater can be reserved for one or more permissible uses on a particular part of a stream or lake during a\ncertain period of time. Under AS 46.15.145, permissible instream uses include:\n\nProtection of fish and wildlife habitat, migration, and propagation\nRecreation and parks\nNavigation and transportation\nSanitation and water quality\n\nA reservation of water for one use may also allow that same water to be used or reserved for another purpose.\nFor example, a reservation for recreation may also benefit fish spawning.\n\nLike an out-of-stream water right, an instream reservation of water is similar to a property right.\nIt cannot be abandoned, transferred, assigned, or converted to another use without approval of the\nDepartment of Natural Resources.\n\nThis shape file characterizes the geographic representation of land parcels within the State\nof Alaska contained by the Instream Flow Reservation category. It has been\nextracted from data sets used to produce the State status plats. This data set includes\ncases noted on the digital status plats up to one day prior to data extraction.\n\nEach feature has an associated attribute record, including a Land Administration System (LAS)\nfile-type and file-number which serves as an index to related LAS case-file information. Additional\nLAS case-file and customer information may be obtained at: http://dnr.alaska.gov/projects/las/\nThose requiring more information regarding State land records should contact the Alaska Department\nof Natural Resources Public Information Center directly.",
+        "licenseInfo": "Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "Reservation Of Water",
+        "type": "Map Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1666372672000,
+        "avgRating": 0,
+        "id": "271d2998e2e34bfea906f7625a1411d3",
+        "categories": [
+          "/Categories/Land Records/Water Estate"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/271d2998e2e34bfea906f7625a1411d3.png",
+        "lastViewed": 1790802000000,
+        "thumbnail": "thumbnail/271d2998e2e34bfea906f7625a1411d3.png",
+        "languages": [],
+        "created": 1622156665000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_ReservationOfWater/MapServer",
+        "tags": [
+          "planningCadastre",
+          "instream flows",
+          "water",
+          "reservation",
+          "instream flow reservation",
+          "land record",
+          "land estate",
+          "801",
+          "Alaska",
+          "data.gov"
+        ],
+        "numViews": 9315,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Information Resource Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/271d2998e2e34bfea906f7625a1411d3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "12721d35a01449f9af801a4cf5720f93",
+      "title": "Surface Water Right",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_SurfaceWaterRight/MapServer",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was developed to provide the general public with easy access to land records information\nas it appears on the State status plats.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -179.9999885408437,
+                72.57756264142684
+              ],
+              [
+                -125.99997712680027,
+                72.57756264142684
+              ],
+              [
+                -125.99997712680027,
+                49.25188125840195
+              ],
+              [
+                -179.9999885408437,
+                49.25188125840195
+              ],
+              [
+                -179.9999885408437,
+                72.57756264142684
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Dynamic",
+          "Map Service",
+          "Metadata",
+          "Multilayer",
+          "Service"
+        ],
+        "description": "A water right is a legal right to use surface or ground water under the Alaska Water Use\nAct (AS 46.15).  A water right allows a specific amount of water from a specific water\nsource to be diverted, impounded, or withdrawn for a specific use.  When a water right\nis granted, it becomes appurtenant to the land where the water is being used for as long\nas the water is used.  If the land is sold, the water right transfers with the land to\nthe new owner, unless the Department of Natural Resources (DNR) approves its separation\nfrom the land.  In Alaska, because water wherever it naturally occurs is a common property\nresource, landowners do not have automatic rights to ground water or surface water.\nFor example, if a farmer has a creek running through his property, he will need a water right\nto authorize his use of a significant amount of water.  Using water without a permit or\ncertificate does not give the user a legal right to use the water.\n\nThis shape file characterizes the geographic representation of point locations within the State\nof Alaska contained by the Surface Water Rights category. It has been extracted from data\nsets used to produce the State status plats. This data set includes cases noted on the digital\nstatus plats up to one day prior to data extraction.\n\nEach feature has an associated attribute record, including a Land Administration System (LAS)\nfile-type and file-number which serves as an index to related LAS case-file information. Additional\nLAS case-file and customer information may be obtained at: http://dnr.alaska.gov/projects/las/\nThose requiring more information regarding State land records should contact the Alaska Department\nof Natural Resources Public Information Center directly.",
+        "licenseInfo": "Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "Surface Water Right",
+        "type": "Map Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1666372672000,
+        "avgRating": 0,
+        "id": "12721d35a01449f9af801a4cf5720f93",
+        "categories": [
+          "/Categories/Land Records/Water Estate"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/12721d35a01449f9af801a4cf5720f93.png",
+        "lastViewed": 1790830800000,
+        "thumbnail": "thumbnail/12721d35a01449f9af801a4cf5720f93.png",
+        "languages": [],
+        "created": 1622160017000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_SurfaceWaterRight/MapServer",
+        "tags": [
+          "planningCadastre",
+          "water right",
+          "water",
+          "surface",
+          "diversion",
+          "land record",
+          "land estate",
+          "801",
+          "Alaska",
+          "data.gov"
+        ],
+        "numViews": 9109,
+        "numComments": 0,
+        "size": 93,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Information Resource Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/12721d35a01449f9af801a4cf5720f93"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6a06bce7ad1e450c9e398238a70296b1",
+      "title": "Subsurface Water Right",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_SubsurfaceWaterRight/MapServer",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was developed to provide the general public with easy access to land records information\nas it appears on the State status plats.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -179.9999885408437,
+                71.978332933381
+              ],
+              [
+                -127.82812787600612,
+                71.978332933381
+              ],
+              [
+                -127.82812787600612,
+                49.7087107074859
+              ],
+              [
+                -179.9999885408437,
+                49.7087107074859
+              ],
+              [
+                -179.9999885408437,
+                71.978332933381
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Dynamic",
+          "Map Service",
+          "Metadata",
+          "Multilayer",
+          "Service"
+        ],
+        "description": "A water right is a legal right to use surface or ground water under the Alaska Water Use Act (AS 46.15).\nA water right allows a specific amount of water from a specific water source to be diverted, impounded,\nor withdrawn for a specific use.  When a water right is granted, it becomes appurtenant to the land where\nthe water is being used for as long as the water is used.  If the land is sold, the water right transfers\nwith the land to the new owner, unless the Department of Natural Resources (DNR) approves its separation\nfrom the land.  In Alaska, because water wherever it naturally occurs is a common property resource, landowners\ndo not have automatic rights to ground water or surface water.  For example, if a farmer has a creek running\nthrough his property, he will need a water right to authorize his use of a significant amount of water.  Using\nwater without a permit or certificate does not give the user a legal right to use the water.\n\nThis shape file characterizes the geographic representation of land parcels within the State\nof Alaska contained by the Subsurface Water Rights category. It has been\nextracted from data sets used to produce the State status plats. This data set includes\ncases noted on the digital status plats up to one day prior to data extraction.\n\nEach feature has an associated attribute record, including a Land Administration System (LAS)\nfile-type and file-number which serves as an index to related LAS case-file information. Additional\nLAS case-file and customer information may be obtained at: http://dnr.alaska.gov/projects/las/\nThose requiring more information regarding State land records should contact the Alaska Department\nof Natural Resources Public Information Center directly.",
+        "licenseInfo": "Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "Subsurface Water Right",
+        "type": "Map Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1666372672000,
+        "avgRating": 0,
+        "id": "6a06bce7ad1e450c9e398238a70296b1",
+        "categories": [
+          "/Categories/Land Records/Water Estate"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/6a06bce7ad1e450c9e398238a70296b1.png",
+        "lastViewed": 1790802000000,
+        "thumbnail": "thumbnail/6a06bce7ad1e450c9e398238a70296b1.png",
+        "languages": [],
+        "created": 1622159944000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_SubsurfaceWaterRight/MapServer",
+        "tags": [
+          "planningCadastre",
+          "water right",
+          "water",
+          "subsurface",
+          "diversion",
+          "land record",
+          "land estate",
+          "801",
+          "Alaska",
+          "data.gov"
+        ],
+        "numViews": 7554,
+        "numComments": 0,
+        "size": 96,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Information Resource Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/6a06bce7ad1e450c9e398238a70296b1"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "87130b4443a34966b7c072b1657c71b3",
+      "title": "Surface Water Right",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_SurfaceWaterRight/FeatureServer",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was developed to provide the general public with easy access to land records information\nas it appears on the State status plats.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -169.20041761791543,
+                71.7561762240358
+              ],
+              [
+                -129.1721101153885,
+                71.7561762240358
+              ],
+              [
+                -129.1721101153885,
+                50.23104100058573
+              ],
+              [
+                -169.20041761791543,
+                50.23104100058573
+              ],
+              [
+                -169.20041761791543,
+                71.7561762240358
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "A water right is a legal right to use surface or ground water under the Alaska Water Use\nAct (AS 46.15).  A water right allows a specific amount of water from a specific water\nsource to be diverted, impounded, or withdrawn for a specific use.  When a water right\nis granted, it becomes appurtenant to the land where the water is being used for as long\nas the water is used.  If the land is sold, the water right transfers with the land to\nthe new owner, unless the Department of Natural Resources (DNR) approves its separation\nfrom the land.  In Alaska, because water wherever it naturally occurs is a common property\nresource, landowners do not have automatic rights to ground water or surface water.\nFor example, if a farmer has a creek running through his property, he will need a water right\nto authorize his use of a significant amount of water.  Using water without a permit or\ncertificate does not give the user a legal right to use the water.\n\nThis shape file characterizes the geographic representation of point locations within the State\nof Alaska contained by the Surface Water Rights category. It has been extracted from data\nsets used to produce the State status plats. This data set includes cases noted on the digital\nstatus plats up to one day prior to data extraction.\n\nEach feature has an associated attribute record, including a Land Administration System (LAS)\nfile-type and file-number which serves as an index to related LAS case-file information. Additional\nLAS case-file and customer information may be obtained at: http://dnr.alaska.gov/projects/las/\nThose requiring more information regarding State land records should contact the Alaska Department\nof Natural Resources Public Information Center directly.",
+        "licenseInfo": "Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "Surface Water Right",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1736983401000,
+        "avgRating": 0,
+        "id": "87130b4443a34966b7c072b1657c71b3",
+        "categories": [
+          "/Categories/Land Records/Water Estate"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/87130b4443a34966b7c072b1657c71b3.png",
+        "lastViewed": 1790802000000,
+        "thumbnail": "thumbnail/thumbnail1736983400036.png",
+        "languages": [],
+        "created": 1626392915000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_SurfaceWaterRight/FeatureServer",
+        "tags": [
+          "planningCadastre",
+          "water right",
+          "surface",
+          "diversion",
+          "land record",
+          "Alaska",
+          "sync"
+        ],
+        "numViews": 7330,
+        "numComments": 0,
+        "size": 97,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Information Resource Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/87130b4443a34966b7c072b1657c71b3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c8ff40e801a3442b8ddc8edb94f2f483",
+      "title": "Subsurface Water Right",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_SubsurfaceWaterRight/FeatureServer",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was developed to provide the general public with easy access to land records information\nas it appears on the State status plats.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -20000000,
+                20000000
+              ],
+              [
+                20000000,
+                20000000
+              ],
+              [
+                20000000,
+                -20000000
+              ],
+              [
+                -20000000,
+                -20000000
+              ],
+              [
+                -20000000,
+                20000000
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "A water right is a legal right to use surface or ground water under the Alaska Water Use Act (AS 46.15).\nA water right allows a specific amount of water from a specific water source to be diverted, impounded,\nor withdrawn for a specific use.  When a water right is granted, it becomes appurtenant to the land where\nthe water is being used for as long as the water is used.  If the land is sold, the water right transfers\nwith the land to the new owner, unless the Department of Natural Resources (DNR) approves its separation\nfrom the land.  In Alaska, because water wherever it naturally occurs is a common property resource, landowners\ndo not have automatic rights to ground water or surface water.  For example, if a farmer has a creek running\nthrough his property, he will need a water right to authorize his use of a significant amount of water.  Using\nwater without a permit or certificate does not give the user a legal right to use the water.\n\nThis shape file characterizes the geographic representation of land parcels within the State\nof Alaska contained by the Subsurface Water Rights category. It has been\nextracted from data sets used to produce the State status plats. This data set includes\ncases noted on the digital status plats up to one day prior to data extraction.\n\nEach feature has an associated attribute record, including a Land Administration System (LAS)\nfile-type and file-number which serves as an index to related LAS case-file information. Additional\nLAS case-file and customer information may be obtained at: http://dnr.alaska.gov/projects/las/\nThose requiring more information regarding State land records should contact the Alaska Department\nof Natural Resources Public Information Center directly.",
+        "licenseInfo": "Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "Subsurface Water Right",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1736983023000,
+        "avgRating": 0,
+        "id": "c8ff40e801a3442b8ddc8edb94f2f483",
+        "categories": [
+          "/Categories/Land Records/Water Estate"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/c8ff40e801a3442b8ddc8edb94f2f483.png",
+        "lastViewed": 1790816400000,
+        "thumbnail": "thumbnail/thumbnail1736983021607.png",
+        "languages": [],
+        "created": 1626392878000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Water_SubsurfaceWaterRight/FeatureServer",
+        "tags": [
+          "planningCadastre",
+          "water right",
+          "subsurface",
+          "diversion",
+          "land record",
+          "Alaska",
+          "sync"
+        ],
+        "numViews": 7709,
+        "numComments": 0,
+        "size": 100,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Information Resource Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/c8ff40e801a3442b8ddc8edb94f2f483"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ba3c585772444f79b470a58f3e623d5b",
+      "title": "North Slope Water Sources",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/NaturalResource_NorthSlopeWaterSources/MapServer",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this dataset is to identify surveyed lakes on the North Slope. These lakes are commonly used for water withdrawls supporting oil and gas activity.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -179.9999885408437,
+                71.75952880547361
+              ],
+              [
+                -126.00002004214477,
+                71.75952880547361
+              ],
+              [
+                -126.00002004214477,
+                49.61768497742275
+              ],
+              [
+                -179.9999885408437,
+                49.61768497742275
+              ],
+              [
+                -179.9999885408437,
+                71.75952880547361
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Dynamic",
+          "Map Service",
+          "Metadata",
+          "Multilayer",
+          "Service"
+        ],
+        "description": "Initial dataset was acquired by DNR to assist in identifying water use locations on the North Slope. These lake names and locations were supplied to DNR by Conoco Phillips and Exxon Mobile.",
+        "licenseInfo": "The State of Alaska makes no express or implied warranties (including warranties of merchantability and fitness) with respect to the character, function, or capabilities of the electronic services or products or their appropriateness for any users purposes. In no event will the State of Alaska be liable for any incidental, indirect, special, consequential or other damages suffered by the user or any other person or entity whether from the use of the electronic services or products, any failure thereof or otherwise, and in no event will the State of Alaska's liability to the requestor or anyone else exceed the fee paid for the electronic service or product.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "North Slope Water Sources",
+        "type": "Map Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1666372672000,
+        "avgRating": 0,
+        "id": "ba3c585772444f79b470a58f3e623d5b",
+        "categories": [
+          "/Categories/Natural Resources/Water",
+          "/Categories/Land Records/Water Estate"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/ba3c585772444f79b470a58f3e623d5b.png",
+        "lastViewed": 1790816400000,
+        "thumbnail": "thumbnail/ba3c585772444f79b470a58f3e623d5b.png",
+        "languages": [],
+        "created": 1622156313000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/NaturalResource_NorthSlopeWaterSources/MapServer",
+        "tags": [
+          "planningCadastre",
+          "Alaska DNR",
+          "Water",
+          "North Slope",
+          "Temporary Water Use",
+          "Water Rights",
+          "data.gov"
+        ],
+        "numViews": 6826,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Information Resource Management, GIS Public Access Coordinator",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/ba3c585772444f79b470a58f3e623d5b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "98429a09729a4620a8cf29cf939a9054",
+      "title": "Tongass National Forest Water Crossing Public View",
+      "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Tongass_National_Forest_WaterXing_Public_View/FeatureServer",
+      "publisher": "USFSRegion10",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data represents information collected at road-fish stream crossing intersections on the Tongass National Forest. Physical and biological data along with passage status for all known fish crossings on the Tongass National Forest are included. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -148.58928419395204,
+                59.76110054886094
+              ],
+              [
+                6.3511196475934015e-12,
+                59.76110054886094
+              ],
+              [
+                6.3511196475934015e-12,
+                -48.82916389094586
+              ],
+              [
+                -148.58928419395204,
+                -48.82916389094586
+              ],
+              [
+                -148.58928419395204,
+                59.76110054886094
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Mosaic Dataset",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<div style='text-align:Left;'><div style='box-sizing:border-box; font-family:&quot;Segoe UI&quot;, system-ui, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, sans-serif; font-size:14px;'><span style='font-size:11pt;'><span><span style='font-family:Calibri,sans-serif;'>This data represents information collected at road-fish stream crossing intersections on the Tongass National Forest. Physical and biological data along with passage status for all known fish crossings on the Tongass National Forest are included. This data is used by the Forest Service for project planning and NEPA analysis. </span></span></span><span style='font-size:11pt;'><span><span style='font-family:Calibri,sans-serif;'>The purpose for sharing this data with the public is for general information purposes, project planning, and for possible partnership opportunities for remediating high priority sites.</span></span></span></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>The Forest Service uses the most current and complete data available. GIS data and product accuracy may vary. They may be developed from sources of differing accuracy; accurate only at certain scales; based on modeling or interpretation; incomplete while being created or revised; etc. Using GIS products for purposes other than those for which they were created, may yield inaccurate or misleading results. The Forest Service reserves the right to correct, update, modify or replace GIS products without notification. Any hardcopy or electronic products utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way, they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that the US Forest Service, Tongass National Forest approved the changes.</span></p></div></div></div>",
+        "ownerId": "5f75643a0e6ac7f7998515159e21f36f",
+        "title": "Tongass National Forest Water Crossing Public View",
+        "type": "Feature Service",
+        "orgId": "gGHDlz6USftL5Pau",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1729107179000,
+        "avgRating": 0,
+        "id": "98429a09729a4620a8cf29cf939a9054",
+        "categories": [
+          "/Categories/Ecosystems",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "26931",
+        "numRatings": 0,
+        "owner": "USFSRegion10",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1787684400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1612291877000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Tongass_National_Forest_WaterXing_Public_View/FeatureServer",
+        "tags": [
+          "Water Crossings",
+          "Water Xings",
+          "Tongass National Forest",
+          "Alaska",
+          "Southeast",
+          "USDA Forest Service",
+          "USFS",
+          "Alaska Region",
+          "R10",
+          "Forest Service"
+        ],
+        "numViews": 15629,
+        "numComments": 2,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Tongass_National_Forest_WaterXing_Public_View",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Tongass Aquatics Staff, USFS Tongass National Forest, Forest Aquatics Staff",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/98429a09729a4620a8cf29cf939a9054"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e5e72135fc2240d3b9251139543fd73e",
+      "title": "Water Treatment Systems",
+      "url": "https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/8",
+      "publisher": "DCRAOpenData",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Water Treatment systems in Alaskan communities based on DEC Certified Water/Wastewater Operator Database. DEC Drinking Water Watch Sources are tied to DCRA community point locations where a relationship exists. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                73.851
+              ],
+              [
+                180,
+                73.851
+              ],
+              [
+                180,
+                47.6309
+              ],
+              [
+                -180,
+                47.6309
+              ],
+              [
+                -180,
+                73.851
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>Water Treatment Systems in Alaskan communities as listed in the Alaska Department of Environmental Conservation, Division of Water (DEC) Alaska Certified Water/Wastewater Operator Database with community tied to DEC Drinking Water Watch Source Water GIS Locations where a relationship exists. The presented location of the Operator Database record which is non-spatial is mapped to the appropriate DCRA Community centroid.<br /></div><div><br /></div><div>Source: State of Alaska DEC<br /></div><div><br /></div><div><br /><span style='font-size:12.0pt; font-family:&quot;Times New Roman&quot;,serif;'>This\ndata has been visualized in a Geographic Information Systems (GIS) format and\nis provided as a service in the DCRA Information Portal by the Alaska\nDepartment of Commerce, Community, and Economic Development Division of\nCommunity and Regional Affairs (SOA DCCED DCRA), Research and Analysis section.\nSOA DCCED DCRA Research and Analysis is not the authoritative source for this\ndata. For more information and for questions about this data, see: </span><a href='https://dec.alaska.gov/Applications/Water/OpCert/Home.aspx' rel='nofollow ugc' target='_blank'>Alaska DEC Division of Water</a></div>",
+        "licenseInfo": "<div><p style='margin-top:2.0pt;margin-right:0in;margin-bottom:2.0pt; margin-left:0in;line-height:normal;text-autospace:none'><b><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family: &quot;Times New Roman&quot;'>DISCLAIMER:</span></b><span style='font-size:12.0pt; font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;'> The Division of Community and Regional Affairs (DCRA) provides the Community Database Online (CDO) as a source of information to aid in advising and assisting local governments, including for research purposes. DCRA is not a referral agency and cannot make specific recommendations or endorsements. Links to other agencies and related organizations are provided as a service, and do not constitute endorsement or recommendations for the agencies/organizations or websites. </span></p>  <p style='margin-top:2.0pt;margin-right:0in;margin-bottom:2.0pt; margin-left:0in;line-height:normal;text-autospace:none'><span style='font-size: 12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;'> </span></p>  <b><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;'>Please note:</span></b><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family: &quot;Times New Roman&quot;'> In an effort to uphold information data integrity in the CDO we always welcome and appreciate your help and review of your community's data. If you encounter any incorrect information, please send an e-mail to: </span><a href='mailto:DCRAResearchAndAnalysis@alaska.gov'><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family: &quot;Times New Roman&quot;;color:blue'>DCRA Research and Analysis</span></a></div>",
+        "ownerId": "dc434b68cc05d28cf8109ca8651577b9",
+        "title": "Water Treatment Systems",
+        "type": "Feature Service",
+        "orgId": "0DjevcWawQ1dy3il",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [
+          "[]"
+        ],
+        "modified": 1786985999000,
+        "avgRating": 0,
+        "id": "e5e72135fc2240d3b9251139543fd73e",
+        "categories": [
+          "/Categories/Open Data/Utilities"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "DCRAOpenData",
+        "accessInformation": "SOA DEC DW, SOA DCCED DCRA",
+        "largeThumbnail": "",
+        "lastViewed": 1787677200000,
+        "thumbnail": "thumbnail/thumbnail1596763678772.png",
+        "languages": [
+          "[]"
+        ],
+        "created": 1567557698000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/8",
+        "tags": [
+          "Water Treatment",
+          "Alaska DCRA",
+          "Utilities",
+          "General Services",
+          "Water",
+          "Department of Environmental Conservation",
+          "DEC",
+          "Operator Database"
+        ],
+        "numViews": 5086,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [
+          "[]"
+        ],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Dept. of Commerce, Community, & Economic Development",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/e5e72135fc2240d3b9251139543fd73e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e67c438c127c41b8b36463d16db19259",
+      "title": "Water Distribution Systems",
+      "url": "https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/9",
+      "publisher": "DCRAOpenData",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Water Distribution systems in Alaskan communities based on DEC Certified Water/Wastewater Operator Database. DEC Drinking Water Watch Sources are tied to DCRA community point locations where a relationship exists. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                72.5604
+              ],
+              [
+                180,
+                72.5604
+              ],
+              [
+                180,
+                51.7643
+              ],
+              [
+                -180,
+                51.7643
+              ],
+              [
+                -180,
+                72.5604
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>Water Distribution Systems in Alaskan communities as listed in the Alaska Department of Environmental Conservation, Division of Water (DEC) Alaska Certified Water/Wastewater Operator Database with community tied to DEC Drinking Water Watch Source Water GIS Locations where a relationship exists. The presented location of the Operator Database record which is non-spatial is mapped to the appropriate DCRA Community centroid.<br /></div><div><br /></div><div>Source: State of Alaska DEC<br /></div><div><br /></div><div><span style='font-size:12pt; font-family:&quot;Times New Roman&quot;, serif;'>This data has been visualized in a Geographic Information Systems (GIS) format and is provided as a service in the DCRA Information Portal by the Alaska Department of Commerce, Community, and Economic Development Division of Community and Regional Affairs (SOA DCCED DCRA), Research and Analysis section. SOA DCCED DCRA Research and Analysis is not the authoritative source for this data. For more information and for questions about this data, see: </span><a href='https://dec.alaska.gov/Applications/Water/OpCert/Home.aspx' rel='nofollow ugc' target='_blank'>Alaska DEC Division of Water</a></div>",
+        "licenseInfo": "<div><p style='margin-top:2.0pt;margin-right:0in;margin-bottom:2.0pt; margin-left:0in;line-height:normal;text-autospace:none'><b><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family: &quot;Times New Roman&quot;'>DISCLAIMER:</span></b><span style='font-size:12.0pt; font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;'> The Division of Community and Regional Affairs (DCRA) provides the Community Database Online (CDO) as a source of information to aid in advising and assisting local governments, including for research purposes. DCRA is not a referral agency and cannot make specific recommendations or endorsements. Links to other agencies and related organizations are provided as a service, and do not constitute endorsement or recommendations for the agencies/organizations or websites. </span></p>  <p style='margin-top:2.0pt;margin-right:0in;margin-bottom:2.0pt; margin-left:0in;line-height:normal;text-autospace:none'><span style='font-size: 12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family:&quot;Times New Roman&quot;'> </span></p>  <b><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif; mso-fareast-font-family:&quot;Times New Roman&quot;'>Please note:</span></b><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family: &quot;Times New Roman&quot;'> In an effort to uphold information data integrity in the CDO we always welcome and appreciate your help and review of your community's data. If you encounter any incorrect information, please send an e-mail to: </span><a href='mailto:DCRAResearchAndAnalysis@alaska.gov'><span style='font-size:12.0pt;font-family:&quot;Times New Roman&quot;,serif;mso-fareast-font-family: &quot;Times New Roman&quot;;color:blue'>DCRA Research and Analysis</span></a></div>",
+        "ownerId": "dc434b68cc05d28cf8109ca8651577b9",
+        "title": "Water Distribution Systems",
+        "type": "Feature Service",
+        "orgId": "0DjevcWawQ1dy3il",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [
+          "[]"
+        ],
+        "modified": 1786985993000,
+        "avgRating": 0,
+        "id": "e67c438c127c41b8b36463d16db19259",
+        "categories": [
+          "/Categories/Open Data/Utilities"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "DCRAOpenData",
+        "accessInformation": "SOA DEC DW, SOA DCCED DCRA",
+        "largeThumbnail": "",
+        "lastViewed": 1787659200000,
+        "thumbnail": "thumbnail/thumbnail1596763674574.png",
+        "languages": [
+          "[]"
+        ],
+        "created": 1567558172000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://maps.commerce.alaska.gov/server/rest/services/Services/CDO_Utilities/MapServer/9",
+        "tags": [
+          "Water Distribution",
+          "Water",
+          "Utilities",
+          "General Services",
+          "Alaska DCRA",
+          "Department of Environmental Conservation",
+          "DEC",
+          "Operator Database"
+        ],
+        "numViews": 5856,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [
+          "[]"
+        ],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Dept. of Commerce, Community, & Economic Development",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/e67c438c127c41b8b36463d16db19259"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    127
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 234,
+  "next_offset": 10,
+  "response_sha256": "8bc3006339b7b1ce7435aa9557f1687c4c4bdfd851e22d4cfd9880a817d97f58",
+  "search_complete": false
+}

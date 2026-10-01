@@ -1,0 +1,219 @@
+{
+  "jurisdiction_code": "ID",
+  "catalog_id": "id-primary",
+  "catalog_url": "https://gis-idaho.hub.arcgis.com/",
+  "started_at": "2026-09-29T14:14:06.391365+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items",
+  "domain": "gis-idaho.hub.arcgis.com",
+  "validation_receipt": 16,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 20,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "6779ef83f8c94b18a94c78896aa20c67",
+                  "971c1bb814fc46e6a688e067e34ac768",
+                  "4bbd62788e66466bad533439b86f6e26",
+                  "20af2e576c4b45c3a4502b51d543ceb0",
+                  "c05e88e97b394e72a3d7c8e24d3ee9e1",
+                  "16db815280a04891bc78e3c3dccd2801",
+                  "a04db5ad67b84cf782ac24b099ddcc71",
+                  "a8ba45d48d054ab59228fef690fd89e4",
+                  "d2dd7e27e87a427e9b2a70254c7630fa",
+                  "07488ed399844417be241d748a1b2bcc",
+                  "5b26a3d7cf5d44ed801cfbaa26658354",
+                  "3ed4742a38df46aab23e530cbef226ce",
+                  "23f5f24f613b4810897d5fb89a9cb88a",
+                  "9d3d34ebb3714d92ba88462cced0311e",
+                  "a582760bf6904f719b2b361d814e4c7d",
+                  "48634ca5bc6440bea3821e040f9d0e70",
+                  "2b021c01ca5641958fad8f502a171a89",
+                  "6367b515a8ed49f39748db341f06de64"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "6779ef83f8c94b18a94c78896aa20c67",
+                  "971c1bb814fc46e6a688e067e34ac768",
+                  "4bbd62788e66466bad533439b86f6e26",
+                  "20af2e576c4b45c3a4502b51d543ceb0",
+                  "c05e88e97b394e72a3d7c8e24d3ee9e1",
+                  "16db815280a04891bc78e3c3dccd2801",
+                  "a04db5ad67b84cf782ac24b099ddcc71",
+                  "a8ba45d48d054ab59228fef690fd89e4",
+                  "d2dd7e27e87a427e9b2a70254c7630fa",
+                  "07488ed399844417be241d748a1b2bcc",
+                  "5b26a3d7cf5d44ed801cfbaa26658354",
+                  "3ed4742a38df46aab23e530cbef226ce",
+                  "23f5f24f613b4810897d5fb89a9cb88a",
+                  "9d3d34ebb3714d92ba88462cced0311e",
+                  "a582760bf6904f719b2b361d814e4c7d",
+                  "48634ca5bc6440bea3821e040f9d0e70",
+                  "2b021c01ca5641958fad8f502a171a89",
+                  "6367b515a8ed49f39748db341f06de64"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Documents",
+        "key": "document",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

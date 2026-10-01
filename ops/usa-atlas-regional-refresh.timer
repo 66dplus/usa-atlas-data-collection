@@ -1,0 +1,11 @@
+[Unit]
+Description=Refresh USA Atlas regional data daily at 03:15 UTC
+
+[Timer]
+OnCalendar=*-*-* 03:15:00 UTC
+Persistent=true
+AccuracySec=30
+Unit=usa-atlas-regional-refresh.service
+
+[Install]
+WantedBy=timers.target

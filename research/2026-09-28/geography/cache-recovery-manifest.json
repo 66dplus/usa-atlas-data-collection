@@ -1,0 +1,1112 @@
+{
+  "artifacts": [
+    {
+      "bytes": 10351829,
+      "path": "data/recovered-acs-2024.csv.gz",
+      "sha256": "97e7164c98f7ee76a9d2e5d9531e8b98d8d4d56094d23ba48e11fca2584d734e"
+    },
+    {
+      "bytes": 531976,
+      "path": "data/recovered-geographies-2024.csv.gz",
+      "sha256": "16bba66f520fb29fb42f403205a46cabb95cdfd2798b303204cbd8b2539cface"
+    }
+  ],
+  "data_payload_count": 125,
+  "data_period": "2020-2024",
+  "geography_counts": {
+    "county": 3222,
+    "place": 32330,
+    "state": 52,
+    "tract": 34790
+  },
+  "geography_vintage": "2024 ACS publication geography",
+  "geometry_downloaded": false,
+  "legacy_bindings": {
+    "collector_sha256": "1a8a60c9b30afe63e7b756855a43f86c2a3d95a7eba0b06d08bfa57f2a87d72c",
+    "config_sha256": "7f949db21a832f397035b327eb9e3742e14a58e1aed3bafa94b2ec9538887c01",
+    "contract_sha256": "e321baf79add3320961fab36f1e3c62630f46ad2c886e3e77b2a8099bb73603e",
+    "plan_sha256": "8b9ac1e9c6696eb43d97830332712376500b467e91287f9b968e35424822c781"
+  },
+  "limitations": [
+    "Incomplete source and catalog fields; pairs with missing M remain explicit.",
+    "No block groups recovered.",
+    "EA/MA columns absent from legacy cache; annotations not collected.",
+    "B01001 total must not silently replace the contracted B01003 population series."
+  ],
+  "metadata_payload_count": 7,
+  "not_admitted_to_production": true,
+  "observation_pairs_by_geography": {
+    "county": 80550,
+    "place": 808250,
+    "state": 1300,
+    "tract": 869750
+  },
+  "observation_pairs_total": 1759850,
+  "observed_variables_by_geography": {
+    "county": [
+      "B01001_001E",
+      "B01001_001M",
+      "B01001_002E",
+      "B01001_002M",
+      "B01001_003E",
+      "B01001_003M",
+      "B01001_004E",
+      "B01001_004M",
+      "B01001_005E",
+      "B01001_005M",
+      "B01001_006E",
+      "B01001_006M",
+      "B01001_007E",
+      "B01001_007M",
+      "B01001_008E",
+      "B01001_008M",
+      "B01001_009E",
+      "B01001_009M",
+      "B01001_010E",
+      "B01001_010M",
+      "B01001_011E",
+      "B01001_011M",
+      "B01001_012E",
+      "B01001_012M",
+      "B01001_013E",
+      "B01001_013M",
+      "B01001_014E",
+      "B01001_014M",
+      "B01001_015E",
+      "B01001_015M",
+      "B01001_016E",
+      "B01001_016M",
+      "B01001_017E",
+      "B01001_017M",
+      "B01001_018E",
+      "B01001_018M",
+      "B01001_019E",
+      "B01001_019M",
+      "B01001_020E",
+      "B01001_020M",
+      "B01001_021E",
+      "B01001_021M",
+      "B01001_022E",
+      "B01001_022M",
+      "B01001_023E",
+      "B01001_023M",
+      "B01001_024E",
+      "B01001_024M",
+      "B01001_025E"
+    ],
+    "place": [
+      "B01001_001E",
+      "B01001_001M",
+      "B01001_002E",
+      "B01001_002M",
+      "B01001_003E",
+      "B01001_003M",
+      "B01001_004E",
+      "B01001_004M",
+      "B01001_005E",
+      "B01001_005M",
+      "B01001_006E",
+      "B01001_006M",
+      "B01001_007E",
+      "B01001_007M",
+      "B01001_008E",
+      "B01001_008M",
+      "B01001_009E",
+      "B01001_009M",
+      "B01001_010E",
+      "B01001_010M",
+      "B01001_011E",
+      "B01001_011M",
+      "B01001_012E",
+      "B01001_012M",
+      "B01001_013E",
+      "B01001_013M",
+      "B01001_014E",
+      "B01001_014M",
+      "B01001_015E",
+      "B01001_015M",
+      "B01001_016E",
+      "B01001_016M",
+      "B01001_017E",
+      "B01001_017M",
+      "B01001_018E",
+      "B01001_018M",
+      "B01001_019E",
+      "B01001_019M",
+      "B01001_020E",
+      "B01001_020M",
+      "B01001_021E",
+      "B01001_021M",
+      "B01001_022E",
+      "B01001_022M",
+      "B01001_023E",
+      "B01001_023M",
+      "B01001_024E",
+      "B01001_024M",
+      "B01001_025E"
+    ],
+    "state": [
+      "B01001_001E",
+      "B01001_001M",
+      "B01001_002E",
+      "B01001_002M",
+      "B01001_003E",
+      "B01001_003M",
+      "B01001_004E",
+      "B01001_004M",
+      "B01001_005E",
+      "B01001_005M",
+      "B01001_006E",
+      "B01001_006M",
+      "B01001_007E",
+      "B01001_007M",
+      "B01001_008E",
+      "B01001_008M",
+      "B01001_009E",
+      "B01001_009M",
+      "B01001_010E",
+      "B01001_010M",
+      "B01001_011E",
+      "B01001_011M",
+      "B01001_012E",
+      "B01001_012M",
+      "B01001_013E",
+      "B01001_013M",
+      "B01001_014E",
+      "B01001_014M",
+      "B01001_015E",
+      "B01001_015M",
+      "B01001_016E",
+      "B01001_016M",
+      "B01001_017E",
+      "B01001_017M",
+      "B01001_018E",
+      "B01001_018M",
+      "B01001_019E",
+      "B01001_019M",
+      "B01001_020E",
+      "B01001_020M",
+      "B01001_021E",
+      "B01001_021M",
+      "B01001_022E",
+      "B01001_022M",
+      "B01001_023E",
+      "B01001_023M",
+      "B01001_024E",
+      "B01001_024M",
+      "B01001_025E"
+    ],
+    "tract": [
+      "B01001_001E",
+      "B01001_001M",
+      "B01001_002E",
+      "B01001_002M",
+      "B01001_003E",
+      "B01001_003M",
+      "B01001_004E",
+      "B01001_004M",
+      "B01001_005E",
+      "B01001_005M",
+      "B01001_006E",
+      "B01001_006M",
+      "B01001_007E",
+      "B01001_007M",
+      "B01001_008E",
+      "B01001_008M",
+      "B01001_009E",
+      "B01001_009M",
+      "B01001_010E",
+      "B01001_010M",
+      "B01001_011E",
+      "B01001_011M",
+      "B01001_012E",
+      "B01001_012M",
+      "B01001_013E",
+      "B01001_013M",
+      "B01001_014E",
+      "B01001_014M",
+      "B01001_015E",
+      "B01001_015M",
+      "B01001_016E",
+      "B01001_016M",
+      "B01001_017E",
+      "B01001_017M",
+      "B01001_018E",
+      "B01001_018M",
+      "B01001_019E",
+      "B01001_019M",
+      "B01001_020E",
+      "B01001_020M",
+      "B01001_021E",
+      "B01001_021M",
+      "B01001_022E",
+      "B01001_022M",
+      "B01001_023E",
+      "B01001_023M",
+      "B01001_024E",
+      "B01001_024M",
+      "B01001_025E"
+    ]
+  },
+  "output_schema_version": "deep-research-1",
+  "quality_counts": {
+    "estimate:observed": 1759850,
+    "moe:moe_controlled_estimate": 3971,
+    "moe:not_collected": 70394,
+    "moe:observed": 1685485
+  },
+  "recovered_at": "2026-09-28T17:29:44.607269+00:00",
+  "recovery_collector_sha256": "6609c6ac51c448d4a5e96df38793d95d33d9ad4442de7ba503f4d0de7f89d134",
+  "retrieval_timestamp_note": "Legacy run timestamp; individual HTTP retrieval timestamps are unavailable.",
+  "source_release": "2024-acs-acs5",
+  "source_retrieved_at": "2026-09-19T14:14:22.923122+00:00",
+  "states_by_geography": {
+    "county": [
+      "01",
+      "02",
+      "04",
+      "05",
+      "06",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "53",
+      "54",
+      "55",
+      "56",
+      "72"
+    ],
+    "place": [
+      "01",
+      "02",
+      "04",
+      "05",
+      "06",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "53",
+      "54",
+      "55",
+      "56",
+      "72"
+    ],
+    "state": [
+      "01",
+      "02",
+      "04",
+      "05",
+      "06",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50",
+      "51",
+      "53",
+      "54",
+      "55",
+      "56",
+      "72"
+    ],
+    "tract": [
+      "01",
+      "02",
+      "04",
+      "05",
+      "06",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23"
+    ]
+  },
+  "status": "partial_recovered_verified_cache",
+  "verified_inputs": [
+    {
+      "bytes": 7674,
+      "path": "full/raw/full/census_acs/2024-county-01-pack-00.json.gz",
+      "sha256": "d6dd607ecfedb2d390206ae92cf176354e4c18f40c30a3901d949d64e98dd6ef"
+    },
+    {
+      "bytes": 3332,
+      "path": "full/raw/full/census_acs/2024-county-02-pack-00.json.gz",
+      "sha256": "9c2afe70a320bb9b6eed499e171ba191676df8e5cdc97a82035290a7c3379265"
+    },
+    {
+      "bytes": 2108,
+      "path": "full/raw/full/census_acs/2024-county-04-pack-00.json.gz",
+      "sha256": "965c8ed801742c9e5af078abef67ee5a5331a8df0218072ae1a888509f59cd92"
+    },
+    {
+      "bytes": 8179,
+      "path": "full/raw/full/census_acs/2024-county-05-pack-00.json.gz",
+      "sha256": "3a4bff0425c08f3333d74e62d2e61d498dc1a6635d2844bf809dcb513d583021"
+    },
+    {
+      "bytes": 7509,
+      "path": "full/raw/full/census_acs/2024-county-06-pack-00.json.gz",
+      "sha256": "836ed8c3b941a8a385f29a853cdf360298820a1f167c0c9f97ef5a57e72bc3b8"
+    },
+    {
+      "bytes": 7007,
+      "path": "full/raw/full/census_acs/2024-county-08-pack-00.json.gz",
+      "sha256": "89a9054f9c945a817e47e1035972c6755b0e2eaaa64892162bc6ed86862cb977"
+    },
+    {
+      "bytes": 1502,
+      "path": "full/raw/full/census_acs/2024-county-09-pack-00.json.gz",
+      "sha256": "08f3cabf8ebb82152130281d1a55f657ccdc23326839e080aff4213227448adc"
+    },
+    {
+      "bytes": 618,
+      "path": "full/raw/full/census_acs/2024-county-10-pack-00.json.gz",
+      "sha256": "bf68c9bae4bf1a212d31d24974f2ca2124027d417cadb44e5164fe872f8cd00d"
+    },
+    {
+      "bytes": 363,
+      "path": "full/raw/full/census_acs/2024-county-11-pack-00.json.gz",
+      "sha256": "5f77ee122b1e1b9dde05642e2c71aecc1087d8e5aeadeb57c7f948a1beaeb651"
+    },
+    {
+      "bytes": 8420,
+      "path": "full/raw/full/census_acs/2024-county-12-pack-00.json.gz",
+      "sha256": "e5403deae4ef32349b8505d962f439619b7dcc3575c23726c4df2dff8705f5e7"
+    },
+    {
+      "bytes": 17176,
+      "path": "full/raw/full/census_acs/2024-county-13-pack-00.json.gz",
+      "sha256": "5e54b1d426bf0388c401090afb73a616b68c23aea354c70adea7015fecd75e98"
+    },
+    {
+      "bytes": 793,
+      "path": "full/raw/full/census_acs/2024-county-15-pack-00.json.gz",
+      "sha256": "0674f40bf106fe61267ef7ae421d57519602da688b3887420ffdc0db407597d1"
+    },
+    {
+      "bytes": 4806,
+      "path": "full/raw/full/census_acs/2024-county-16-pack-00.json.gz",
+      "sha256": "9fc617d250bf6836c0a62e3ff12298651139cfd8d2991f74cc6a09b9936c7630"
+    },
+    {
+      "bytes": 11187,
+      "path": "full/raw/full/census_acs/2024-county-17-pack-00.json.gz",
+      "sha256": "80b10a6336289c258e22a7ffd5636d21a8018c67043d4a905756c1d304e94d79"
+    },
+    {
+      "bytes": 10390,
+      "path": "full/raw/full/census_acs/2024-county-18-pack-00.json.gz",
+      "sha256": "ac61c2739097d7f3c55168921ca91f11d5dc6834b28abe46692c88d05f2d27fc"
+    },
+    {
+      "bytes": 10304,
+      "path": "full/raw/full/census_acs/2024-county-19-pack-00.json.gz",
+      "sha256": "cb4c42c5407a1daa62b58cbab38e322672ba79f7a13aa03b3da1371c9222fc30"
+    },
+    {
+      "bytes": 10249,
+      "path": "full/raw/full/census_acs/2024-county-20-pack-00.json.gz",
+      "sha256": "9c2ef935d4f314c111e7a27a2183d87d26bf880b8440ce49459a99a3cc5e0721"
+    },
+    {
+      "bytes": 12712,
+      "path": "full/raw/full/census_acs/2024-county-21-pack-00.json.gz",
+      "sha256": "a4c81f8ec2a2bdf67199fd6cb8811ee23b789616aecbc52c2524eeec0ae1d0d7"
+    },
+    {
+      "bytes": 7430,
+      "path": "full/raw/full/census_acs/2024-county-22-pack-00.json.gz",
+      "sha256": "8ae5c5696648cfe676631aab876e9243fe385138c4c718c17133bc390b1e8a24"
+    },
+    {
+      "bytes": 2153,
+      "path": "full/raw/full/census_acs/2024-county-23-pack-00.json.gz",
+      "sha256": "4fedc09166081746b533be494b247faef4c5471d48526fa19bbecb470cc7f302"
+    },
+    {
+      "bytes": 3258,
+      "path": "full/raw/full/census_acs/2024-county-24-pack-00.json.gz",
+      "sha256": "849180b8f4371aaed2727dc9efc0f319f7e244508f00f085f4786eff5ddf3aa7"
+    },
+    {
+      "bytes": 2091,
+      "path": "full/raw/full/census_acs/2024-county-25-pack-00.json.gz",
+      "sha256": "2c15a360b6946fea14627759c5a7699508c92819f1ac7736277a6bb1c292e736"
+    },
+    {
+      "bytes": 9538,
+      "path": "full/raw/full/census_acs/2024-county-26-pack-00.json.gz",
+      "sha256": "c5febb316bf8b4cb85d7019699fea51dfb08fdc15d89e3ac586447ae4eae7356"
+    },
+    {
+      "bytes": 9515,
+      "path": "full/raw/full/census_acs/2024-county-27-pack-00.json.gz",
+      "sha256": "bcf99e2d5201a6a405c6f37d01c632e984d077c2565dd45f188df77715b9aba9"
+    },
+    {
+      "bytes": 8980,
+      "path": "full/raw/full/census_acs/2024-county-28-pack-00.json.gz",
+      "sha256": "53ed67e8ff2a86083ccc8bed0757dd52fc2a107508d523f57e1bd31062a9b270"
+    },
+    {
+      "bytes": 12184,
+      "path": "full/raw/full/census_acs/2024-county-29-pack-00.json.gz",
+      "sha256": "ea2f6a0fa981cab206a9185f22ce4bc8fed710c2780f96d49c7719a4a06fbe94"
+    },
+    {
+      "bytes": 5637,
+      "path": "full/raw/full/census_acs/2024-county-30-pack-00.json.gz",
+      "sha256": "5251b194287b078f6b10e43ad35ace50e1cd5ee0fb4d1bbb4c022bdeff522329"
+    },
+    {
+      "bytes": 8729,
+      "path": "full/raw/full/census_acs/2024-county-31-pack-00.json.gz",
+      "sha256": "19e0da71bfe4ccae7b4d7774a7456267470f0df8b1c44fafbc8da8fa29f49768"
+    },
+    {
+      "bytes": 2088,
+      "path": "full/raw/full/census_acs/2024-county-32-pack-00.json.gz",
+      "sha256": "cd25dd19b557f5987eda31ad4dd30f833caa770e1f8b07263f1ff631107c171d"
+    },
+    {
+      "bytes": 1502,
+      "path": "full/raw/full/census_acs/2024-county-33-pack-00.json.gz",
+      "sha256": "cdfe5d972bd38741528114de7330dbaea9fbcc4eb05127cf0ad4df811ef1cd43"
+    },
+    {
+      "bytes": 3011,
+      "path": "full/raw/full/census_acs/2024-county-34-pack-00.json.gz",
+      "sha256": "10d7d92aa61a5cbeff572b341b6909539f6e0301e6695a93877270648067eb57"
+    },
+    {
+      "bytes": 3895,
+      "path": "full/raw/full/census_acs/2024-county-35-pack-00.json.gz",
+      "sha256": "b7e209c9f3b0fdb8c76414ac15659b5a9173b0f50a8f9ff7128227c53d51f02c"
+    },
+    {
+      "bytes": 7755,
+      "path": "full/raw/full/census_acs/2024-county-36-pack-00.json.gz",
+      "sha256": "0e8fb0a99c43d558ba7a6ae28ffe32848ef4bf91e448c51f215b3c2cf5b5533a"
+    },
+    {
+      "bytes": 11617,
+      "path": "full/raw/full/census_acs/2024-county-37-pack-00.json.gz",
+      "sha256": "7b19cee79328e584ee65b074aa1ccf18502210e648b108e266533b2d4cb01d0b"
+    },
+    {
+      "bytes": 5126,
+      "path": "full/raw/full/census_acs/2024-county-38-pack-00.json.gz",
+      "sha256": "b75d868a5c6ee16c5437fa12700e323c66e6d0c0107ba30ff9ac219224aa427e"
+    },
+    {
+      "bytes": 10402,
+      "path": "full/raw/full/census_acs/2024-county-39-pack-00.json.gz",
+      "sha256": "edd9bcd7271f72b378b6e39223c2fc8d979bb1a389306938575c486a1083a251"
+    },
+    {
+      "bytes": 8258,
+      "path": "full/raw/full/census_acs/2024-county-40-pack-00.json.gz",
+      "sha256": "d3313031f1ea164139ade2acb0ce67eba0a7940205428e2d05a24208f88943bd"
+    },
+    {
+      "bytes": 4353,
+      "path": "full/raw/full/census_acs/2024-county-41-pack-00.json.gz",
+      "sha256": "9c986bbfb875f39c10b0d4cdd158062d223d1d9639eadec2bebd136039efca63"
+    },
+    {
+      "bytes": 8210,
+      "path": "full/raw/full/census_acs/2024-county-42-pack-00.json.gz",
+      "sha256": "41e9841b80492c0f72328822c01737d4139e64bd00f5d771cd22997637821ae6"
+    },
+    {
+      "bytes": 898,
+      "path": "full/raw/full/census_acs/2024-county-44-pack-00.json.gz",
+      "sha256": "c11035bc865aa2aebefde8d7ccd8b64e3fb30453f20a4094ecf1eaa2aef22404"
+    },
+    {
+      "bytes": 5610,
+      "path": "full/raw/full/census_acs/2024-county-45-pack-00.json.gz",
+      "sha256": "56e657f2daf4e61a019fa48e407e591f31e40b9b9c549db10bddaca0b6e3da96"
+    },
+    {
+      "bytes": 6361,
+      "path": "full/raw/full/census_acs/2024-county-46-pack-00.json.gz",
+      "sha256": "da189b0500560a0b37f86bded19c4d160289beb100b126045711cea63b6a86a6"
+    },
+    {
+      "bytes": 10700,
+      "path": "full/raw/full/census_acs/2024-county-47-pack-00.json.gz",
+      "sha256": "2f8e65dc593a0bff2fbdea9a9d60ed85cc06de2edbd31460fe91bfedb1eab71a"
+    },
+    {
+      "bytes": 26528,
+      "path": "full/raw/full/census_acs/2024-county-48-pack-00.json.gz",
+      "sha256": "6112ba890a6509850475ab5101c6b6d50809f988c823c2a308327967ef5fe351"
+    },
+    {
+      "bytes": 3373,
+      "path": "full/raw/full/census_acs/2024-county-49-pack-00.json.gz",
+      "sha256": "43f6b187d5a7aab0fcc3fb92fed95a44252fc47baf1f1a8429898c913e0bec85"
+    },
+    {
+      "bytes": 1800,
+      "path": "full/raw/full/census_acs/2024-county-50-pack-00.json.gz",
+      "sha256": "9b96900e1432bb289d9402793dd333c3e06478d1df78424f49d6ec76e134d427"
+    },
+    {
+      "bytes": 14742,
+      "path": "full/raw/full/census_acs/2024-county-51-pack-00.json.gz",
+      "sha256": "7bc706f1550a89eef9197981075f8c47725d5d021aa3ab97c8378d7da0a716d9"
+    },
+    {
+      "bytes": 4824,
+      "path": "full/raw/full/census_acs/2024-county-53-pack-00.json.gz",
+      "sha256": "c81c3f525d3876b56b938b568abed37f87c2bbd754ad181fd7c1abf57055d222"
+    },
+    {
+      "bytes": 6117,
+      "path": "full/raw/full/census_acs/2024-county-54-pack-00.json.gz",
+      "sha256": "f37532e3be4fbd95caaee4f65908f2a2406e9c3fb330870562661f57ac61deb4"
+    },
+    {
+      "bytes": 8252,
+      "path": "full/raw/full/census_acs/2024-county-55-pack-00.json.gz",
+      "sha256": "f9ae20a33d008cc836f83251c213cb3fabc0457ac6d7266612f3f04a78f12c50"
+    },
+    {
+      "bytes": 2702,
+      "path": "full/raw/full/census_acs/2024-county-56-pack-00.json.gz",
+      "sha256": "459adebc222a7318c31e83ba9185a29ea3c1069845f0a5de52570d923242d0c2"
+    },
+    {
+      "bytes": 8508,
+      "path": "full/raw/full/census_acs/2024-county-72-pack-00.json.gz",
+      "sha256": "95cbc49397045d77297581813ffe42f498ff9dda8bd87159ec8990dd01f1fb2e"
+    },
+    {
+      "bytes": 45519,
+      "path": "full/raw/full/census_acs/2024-place-01-pack-00.json.gz",
+      "sha256": "f20c63da5816730f56fa1d8459f350e2d63d80a7177b4929afc273e0555a4088"
+    },
+    {
+      "bytes": 20386,
+      "path": "full/raw/full/census_acs/2024-place-02-pack-00.json.gz",
+      "sha256": "4bad6ff010161e94d84fb94ad1076ea7a318c3fbff7a54e68e6623e2467ec196"
+    },
+    {
+      "bytes": 32327,
+      "path": "full/raw/full/census_acs/2024-place-04-pack-00.json.gz",
+      "sha256": "4fe2c957024ef453df59c150a0c1d5a0c7a8f592533b2f58349a76cb0cc82ff1"
+    },
+    {
+      "bytes": 41168,
+      "path": "full/raw/full/census_acs/2024-place-05-pack-00.json.gz",
+      "sha256": "909e1dba519387dc2b1df1d8f29d90f2ae756ad96ea0f2e4f4630f726f03218e"
+    },
+    {
+      "bytes": 133492,
+      "path": "full/raw/full/census_acs/2024-place-06-pack-00.json.gz",
+      "sha256": "2f09ffe8889c26e0ed1fc2b636b181a09d0a216a6a98479a38f7578ccd4d04d0"
+    },
+    {
+      "bytes": 35336,
+      "path": "full/raw/full/census_acs/2024-place-08-pack-00.json.gz",
+      "sha256": "71e4ce1829ea10ffc2608203e32ea52582d244c21861d3bcd0ff65b64ab37c0a"
+    },
+    {
+      "bytes": 18328,
+      "path": "full/raw/full/census_acs/2024-place-09-pack-00.json.gz",
+      "sha256": "c786fc52694a5b76987f86c234cd8f05fa5dbd45194728e469f8496cdd05c914"
+    },
+    {
+      "bytes": 6925,
+      "path": "full/raw/full/census_acs/2024-place-10-pack-00.json.gz",
+      "sha256": "1982e18553d67917bc6289b83b662ef8f053d457e9b677e9c1d8513c40fe0ada"
+    },
+    {
+      "bytes": 373,
+      "path": "full/raw/full/census_acs/2024-place-11-pack-00.json.gz",
+      "sha256": "98a222ff21e10a59be8bec65881591de6f775137c456afea6a70b5cdd0500220"
+    },
+    {
+      "bytes": 86826,
+      "path": "full/raw/full/census_acs/2024-place-12-pack-00.json.gz",
+      "sha256": "b651adb60efdf7c6270ca1c298bc4ca40703002396586eb40076c2c7956ccafb"
+    },
+    {
+      "bytes": 53402,
+      "path": "full/raw/full/census_acs/2024-place-13-pack-00.json.gz",
+      "sha256": "0813cfc9f5f4b933b3d1e58325cab4b75677d7ac5afeb67ea7ec3b4586c12972"
+    },
+    {
+      "bytes": 14226,
+      "path": "full/raw/full/census_acs/2024-place-15-pack-00.json.gz",
+      "sha256": "e6ade31abb6b3d0f803ee6f5ea896c1ff1c9f1062cd0913fc1c309833f6e4613"
+    },
+    {
+      "bytes": 17317,
+      "path": "full/raw/full/census_acs/2024-place-16-pack-00.json.gz",
+      "sha256": "30ec1f5224ea233dcbe3b13874795070974493c1ba6496d1f9228cd4e6e07288"
+    },
+    {
+      "bytes": 110122,
+      "path": "full/raw/full/census_acs/2024-place-17-pack-00.json.gz",
+      "sha256": "2d1d7a411b9a930d074bffacf3f34999bd2ae50c0553d024ecb741b1797d96c3"
+    },
+    {
+      "bytes": 64461,
+      "path": "full/raw/full/census_acs/2024-place-18-pack-00.json.gz",
+      "sha256": "e63db93a19540b824e73d0b0e7a745e5eb5bdc653ede231e298133afecda48e4"
+    },
+    {
+      "bytes": 65567,
+      "path": "full/raw/full/census_acs/2024-place-19-pack-00.json.gz",
+      "sha256": "97b561b49ce3eb5e6125b6499a06e276e8a4b580b49ddefe19e348680da76715"
+    },
+    {
+      "bytes": 44757,
+      "path": "full/raw/full/census_acs/2024-place-20-pack-00.json.gz",
+      "sha256": "7389383f37b98420bf3a9fac7fad2b34c0589b04ac36a7abe708245ea012e451"
+    },
+    {
+      "bytes": 40215,
+      "path": "full/raw/full/census_acs/2024-place-21-pack-00.json.gz",
+      "sha256": "658a3945471494e7226fa902e62ce11673ad3555a3d49793fa97b93a917064aa"
+    },
+    {
+      "bytes": 37954,
+      "path": "full/raw/full/census_acs/2024-place-22-pack-00.json.gz",
+      "sha256": "fb981325c276e149edbd80fad3bdd9835e1cb60e1e11d45c5153361d78b4b527"
+    },
+    {
+      "bytes": 12645,
+      "path": "full/raw/full/census_acs/2024-place-23-pack-00.json.gz",
+      "sha256": "566c66acf846ad64c3801955bc5580b6b4fe58e918617182fd1153b9285e44ff"
+    },
+    {
+      "bytes": 43250,
+      "path": "full/raw/full/census_acs/2024-place-24-pack-00.json.gz",
+      "sha256": "574aa952081664fab999042f19507a3096e49e90fe3741fd83de0172e5732664"
+    },
+    {
+      "bytes": 23446,
+      "path": "full/raw/full/census_acs/2024-place-25-pack-00.json.gz",
+      "sha256": "3acc453aeae99a5cf6f560b541f759be6802f6f84aec304cc794477898b6026e"
+    },
+    {
+      "bytes": 58600,
+      "path": "full/raw/full/census_acs/2024-place-26-pack-00.json.gz",
+      "sha256": "37a6e3b92daa55169e2ae8e8c2a373b1767d016f2538ac9a755f415d60fa1562"
+    },
+    {
+      "bytes": 65264,
+      "path": "full/raw/full/census_acs/2024-place-27-pack-00.json.gz",
+      "sha256": "1c60949c0c23e804f966dcbba4dca1fb90ebe9843fdb4937b346043b6da30bb9"
+    },
+    {
+      "bytes": 30280,
+      "path": "full/raw/full/census_acs/2024-place-28-pack-00.json.gz",
+      "sha256": "6b58b5d2115fc11caab395273d04a66c61ffbbee6debc6fea9dd286d98941420"
+    },
+    {
+      "bytes": 72764,
+      "path": "full/raw/full/census_acs/2024-place-29-pack-00.json.gz",
+      "sha256": "967a18eb802a51230bfe29ef2ed102566710d30c9ed34c1679e0acd3b098c44d"
+    },
+    {
+      "bytes": 26776,
+      "path": "full/raw/full/census_acs/2024-place-30-pack-00.json.gz",
+      "sha256": "ef0dc93c7e1b18458f2bfc5befe45950ab898eee50f0bd912e10b6acde0ee216"
+    },
+    {
+      "bytes": 35499,
+      "path": "full/raw/full/census_acs/2024-place-31-pack-00.json.gz",
+      "sha256": "c07d739ad28200db257c0dd50906e78b1c6e54ac384e2ca932070681717ef827"
+    },
+    {
+      "bytes": 9768,
+      "path": "full/raw/full/census_acs/2024-place-32-pack-00.json.gz",
+      "sha256": "47a72e5dbe6cab2139d3d1a5e955beadda4d837fdd6a2f19c5f2ae2f79110e32"
+    },
+    {
+      "bytes": 8153,
+      "path": "full/raw/full/census_acs/2024-place-33-pack-00.json.gz",
+      "sha256": "cdabf09be611aa1265ef6a8ebc6d248a001f51ecebefd0aec21b8b971b9e4bea"
+    },
+    {
+      "bytes": 59663,
+      "path": "full/raw/full/census_acs/2024-place-34-pack-00.json.gz",
+      "sha256": "b5d59a52094420e28c147785bd95def94cc1ce8c88521abcb07efc804f4e73d9"
+    },
+    {
+      "bytes": 30844,
+      "path": "full/raw/full/census_acs/2024-place-35-pack-00.json.gz",
+      "sha256": "ae83378e5fa274ae22280c547569fb342708bfb813e62474008df36c4ad6780f"
+    },
+    {
+      "bytes": 104211,
+      "path": "full/raw/full/census_acs/2024-place-36-pack-00.json.gz",
+      "sha256": "fa70d4865caa6cb2377abd22588ad029984a9870bbd9d6330d70aa973335d6a1"
+    },
+    {
+      "bytes": 60199,
+      "path": "full/raw/full/census_acs/2024-place-37-pack-00.json.gz",
+      "sha256": "3eb9256ebc8e5b453078c1dcb6479c45ee8902e7b92063b467d531ece7380d53"
+    },
+    {
+      "bytes": 21556,
+      "path": "full/raw/full/census_acs/2024-place-38-pack-00.json.gz",
+      "sha256": "9a68b6cbff43e3b0a703d1ef7eb9276d39ba3c01104bc252721909820ab32801"
+    },
+    {
+      "bytes": 97197,
+      "path": "full/raw/full/census_acs/2024-place-39-pack-00.json.gz",
+      "sha256": "f95d1e3707dfe3460199a44562ef099d911abaef2021cad5faa7256f5083e70f"
+    },
+    {
+      "bytes": 52530,
+      "path": "full/raw/full/census_acs/2024-place-40-pack-00.json.gz",
+      "sha256": "aa1d3468137e605636f4bef2cda2ea0917c5a6652942040e9a8a4740b69ce3fc"
+    },
+    {
+      "bytes": 32100,
+      "path": "full/raw/full/census_acs/2024-place-41-pack-00.json.gz",
+      "sha256": "ab122bf77d423a36e11f3cfca1a4d0a9ff2d85a4c9c87d2df445772b94cea117"
+    },
+    {
+      "bytes": 143292,
+      "path": "full/raw/full/census_acs/2024-place-42-pack-00.json.gz",
+      "sha256": "99af1bd44de2023d24f3c513967ddef785fc35dde914e19d58c9370633c12bcf"
+    },
+    {
+      "bytes": 3561,
+      "path": "full/raw/full/census_acs/2024-place-44-pack-00.json.gz",
+      "sha256": "82cf68ed0f608ba6f988ba897ce9da8da1205b1c380217954d3ff465002133a3"
+    },
+    {
+      "bytes": 36491,
+      "path": "full/raw/full/census_acs/2024-place-45-pack-00.json.gz",
+      "sha256": "fc0b5c8f1b37f6592666814398be3b7a3e52a21f29c43d920d8c22f7e2ec3fe0"
+    },
+    {
+      "bytes": 25767,
+      "path": "full/raw/full/census_acs/2024-place-46-pack-00.json.gz",
+      "sha256": "af328bc4ef6d40c466b95d56a7b56a2aacae58f9a8657e34b9e7351e8cd4d9cb"
+    },
+    {
+      "bytes": 39580,
+      "path": "full/raw/full/census_acs/2024-place-47-pack-00.json.gz",
+      "sha256": "143cafc3ba8fc214d3f34131159df654b63b7141ddcf8670b3382af2ac306572"
+    },
+    {
+      "bytes": 138479,
+      "path": "full/raw/full/census_acs/2024-place-48-pack-00.json.gz",
+      "sha256": "a13776548cbf10c54788c07e607c9205315ae4568c6d581b1d3e18d444116b2c"
+    },
+    {
+      "bytes": 26346,
+      "path": "full/raw/full/census_acs/2024-place-49-pack-00.json.gz",
+      "sha256": "e494b44d653d98e65bc2504477c2695d09a7a8ede5e75981310fae814a13b766"
+    },
+    {
+      "bytes": 11472,
+      "path": "full/raw/full/census_acs/2024-place-50-pack-00.json.gz",
+      "sha256": "101f8e319f5175cc4983a8c730c4e85dee3ddfafc95d9c2356d1243872352cbd"
+    },
+    {
+      "bytes": 52664,
+      "path": "full/raw/full/census_acs/2024-place-51-pack-00.json.gz",
+      "sha256": "78591bbaa772e6ce3952c3ce67132ebacffd7ec92fc3a8d30ee81648a3b1b0c8"
+    },
+    {
+      "bytes": 51296,
+      "path": "full/raw/full/census_acs/2024-place-53-pack-00.json.gz",
+      "sha256": "aff60c37cb57462e6f54ee9d5a3a5f7ba46efe8ca385352ed83830de2e5142d7"
+    },
+    {
+      "bytes": 27958,
+      "path": "full/raw/full/census_acs/2024-place-54-pack-00.json.gz",
+      "sha256": "698deb749ddb717e2618f839a427b6dc4591473af332af905418f9db37fe147a"
+    },
+    {
+      "bytes": 60595,
+      "path": "full/raw/full/census_acs/2024-place-55-pack-00.json.gz",
+      "sha256": "f304ddd4ac4e4401817e61199d41ca275d451ebff740a956d91bacf1e478d795"
+    },
+    {
+      "bytes": 12473,
+      "path": "full/raw/full/census_acs/2024-place-56-pack-00.json.gz",
+      "sha256": "ba5acd8ee753a8c27e1dde57f0fe8d775f0b04ea2f76892c0e4fff49a1b21ddd"
+    },
+    {
+      "bytes": 22785,
+      "path": "full/raw/full/census_acs/2024-place-72-pack-00.json.gz",
+      "sha256": "495ef058b7be6776bbcf5f382837421104759d2e29c06b7ac8654fd62aa64e3a"
+    },
+    {
+      "bytes": 8205,
+      "path": "full/raw/full/census_acs/2024-state-all-pack-00.json.gz",
+      "sha256": "c1bd3f618192ce27668581dc82c26acda05950b76109471cd6a56791d26aea81"
+    },
+    {
+      "bytes": 116635,
+      "path": "full/raw/full/census_acs/2024-tract-01-pack-00.json.gz",
+      "sha256": "314e3c9e10c4400f2dff5bdf6cc1d69d4556d4fb5101ba9e89a3d3317c470591"
+    },
+    {
+      "bytes": 15497,
+      "path": "full/raw/full/census_acs/2024-tract-02-pack-00.json.gz",
+      "sha256": "c9839611c09f990973e9afb2e905aa892b2b94ada781dad3b759d5f47b927d53"
+    },
+    {
+      "bytes": 144244,
+      "path": "full/raw/full/census_acs/2024-tract-04-pack-00.json.gz",
+      "sha256": "74929ebcef53fc5ac351f6ba799b81aefc463e33a40a4ae148dd091449a52385"
+    },
+    {
+      "bytes": 68288,
+      "path": "full/raw/full/census_acs/2024-tract-05-pack-00.json.gz",
+      "sha256": "035f6bee1c736f6f95a2a070bd00504db97ae82e693f6181fd91b80ab6402ce6"
+    },
+    {
+      "bytes": 755347,
+      "path": "full/raw/full/census_acs/2024-tract-06-pack-00.json.gz",
+      "sha256": "60b716d0e33dee5266d11480ae7548b91dc041c359e6185361c89155d9f3a88e"
+    },
+    {
+      "bytes": 119195,
+      "path": "full/raw/full/census_acs/2024-tract-08-pack-00.json.gz",
+      "sha256": "3811aa2b4770cfef551da5aa19e242566b2b80416ee1a80b2e16ada30662f577"
+    },
+    {
+      "bytes": 73931,
+      "path": "full/raw/full/census_acs/2024-tract-09-pack-00.json.gz",
+      "sha256": "fd50dcf91349ea72607d02681ca4b74c6634bfb40ee8d9d276a0c759fa4a3a18"
+    },
+    {
+      "bytes": 21667,
+      "path": "full/raw/full/census_acs/2024-tract-10-pack-00.json.gz",
+      "sha256": "1734e017b5f05779c9afab2c6abe6e629104d006c65d1d5eea729b64a1c4abcf"
+    },
+    {
+      "bytes": 16176,
+      "path": "full/raw/full/census_acs/2024-tract-11-pack-00.json.gz",
+      "sha256": "e49e4771a755cfa67887229ce249ae820592cd9476cb0b79a71b2ba864a1a317"
+    },
+    {
+      "bytes": 422290,
+      "path": "full/raw/full/census_acs/2024-tract-12-pack-00.json.gz",
+      "sha256": "b01b13f83ba273ee0af0792b2ab0d1e5c745a817a459ad88148016be826490ce"
+    },
+    {
+      "bytes": 228709,
+      "path": "full/raw/full/census_acs/2024-tract-13-pack-00.json.gz",
+      "sha256": "d05df36a790d09179b84368ec297dfb9564b816d9c2091eb782559df560c0643"
+    },
+    {
+      "bytes": 34841,
+      "path": "full/raw/full/census_acs/2024-tract-15-pack-00.json.gz",
+      "sha256": "f7861594e05c98cd7fdceb168c00e8ae30b240a054d8a0ac1f628466b27b3b22"
+    },
+    {
+      "bytes": 38705,
+      "path": "full/raw/full/census_acs/2024-tract-16-pack-00.json.gz",
+      "sha256": "ef51e433be01e4b49f1ff26c2c6b20e3840cc645262012bab693f8c11229898b"
+    },
+    {
+      "bytes": 265693,
+      "path": "full/raw/full/census_acs/2024-tract-17-pack-00.json.gz",
+      "sha256": "116aadc268273ad8753f4765c0847a84d3072fd43fde1d3681514b1276a199b1"
+    },
+    {
+      "bytes": 140106,
+      "path": "full/raw/full/census_acs/2024-tract-18-pack-00.json.gz",
+      "sha256": "07312eea4026e1ff7e54d88410f8f2513f4aecc8da24bc46a59f7a7355fa2a9d"
+    },
+    {
+      "bytes": 73261,
+      "path": "full/raw/full/census_acs/2024-tract-19-pack-00.json.gz",
+      "sha256": "aebc6827c210d819f0ab1ae1a7d2f4dc2f1ab6fae663b116f3393da5327e72f4"
+    },
+    {
+      "bytes": 67869,
+      "path": "full/raw/full/census_acs/2024-tract-20-pack-00.json.gz",
+      "sha256": "c5202daa2836cf82ff767e71fed3dee48c568c87474e212dc2ae63726d676b45"
+    },
+    {
+      "bytes": 106322,
+      "path": "full/raw/full/census_acs/2024-tract-21-pack-00.json.gz",
+      "sha256": "c5c194733ea19063805d5174e3a2c7d130832cc49825aad830febccfe06bd440"
+    },
+    {
+      "bytes": 110775,
+      "path": "full/raw/full/census_acs/2024-tract-22-pack-00.json.gz",
+      "sha256": "2bfca623899c92f5be0f0d2ce89e6646a64d3ee6bd09788b5407cf7a73b4f014"
+    },
+    {
+      "bytes": 33011,
+      "path": "full/raw/full/census_acs/2024-tract-23-pack-00.json.gz",
+      "sha256": "39155c5a62840497314a7636d034709f00af8fefa92272846a5d793011739a8a"
+    },
+    {
+      "bytes": 19577,
+      "path": "full/raw/full/census_acs/group-B01001.json.gz",
+      "sha256": "c3d31b1682c5b2198bebf6dea4d8f3de678471ce5ecf3f57ae76ad181bae803f"
+    },
+    {
+      "bytes": 19122,
+      "path": "full/raw/full/census_acs/group-B03002.json.gz",
+      "sha256": "4acff26e238c6bbf019a1024b0c44a45aced4b1991e9de381427b493e15424a5"
+    },
+    {
+      "bytes": 18151,
+      "path": "full/raw/full/census_acs/group-B05001.json.gz",
+      "sha256": "4e2c1b96f60f885f4062eac3f1e72109f5c4dccef4525c36de4fd485cd4fe61c"
+    },
+    {
+      "bytes": 18779,
+      "path": "full/raw/full/census_acs/group-B05002.json.gz",
+      "sha256": "505929b3d2bf5441ca4d0afc7df447f350cd7b47b672cf27324d52db2f3b7f11"
+    },
+    {
+      "bytes": 18839,
+      "path": "full/raw/full/census_acs/group-B05005.json.gz",
+      "sha256": "c689227d4f97327365a2252c6db5d6560f9ca8b3d9c071c39b0663473cb9bdee"
+    },
+    {
+      "bytes": 26066,
+      "path": "full/raw/full/census_acs/group-B05006.json.gz",
+      "sha256": "00b944e2a0c3fca6a64ecc91df715fce9c2b2835dd90dafb39ed3db8e2b88072"
+    },
+    {
+      "bytes": 18443,
+      "path": "full/raw/full/census_acs/group-B25070.json.gz",
+      "sha256": "dfece8fd4fa839539d3a8b82349b55cc7bf21928b319023ce52e0687cdc34a91"
+    }
+  ]
+}

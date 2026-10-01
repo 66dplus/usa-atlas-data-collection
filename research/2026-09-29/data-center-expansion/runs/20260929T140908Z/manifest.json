@@ -1,0 +1,128 @@
+{
+  "started_at": "2026-09-29T14:09:08.968672+00:00",
+  "status": "collection_failed",
+  "source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/Planning/Build_Out_Analysis/MapServer/9",
+  "collector_sha256": "2aedaa562d0569384159765d1496e14c0cd1059de56b45694e60e1a759e5d036",
+  "unit": "data_center_building_record",
+  "source_publisher": "Prince William County Planning Office",
+  "publisher_evidence": "https://www.pwcva.gov/department/planning-office/build-out-analysis/",
+  "catalog_evidence": "https://data.virginia.gov/dataset/data-center-buildings",
+  "declared_geographic_scope": "Prince William County, Virginia",
+  "native_geography": "point",
+  "census_bg_join_performed": false,
+  "production_admission": false,
+  "projects_layer_included": false,
+  "privacy_projection": "Public-facility IDs, statuses, floor areas, dates and geometry only; names, addresses, creator users excluded.",
+  "source_geometry_type": "esriGeometryPoint",
+  "selected_fields": [
+    "OBJECTID",
+    "GlobalID",
+    "BuildingID",
+    "BuildingStatus",
+    "YearBuilt",
+    "GFA",
+    "ApprovedGFA",
+    "PermittedGFA",
+    "REATaxedGFA",
+    "BPGFA",
+    "OCCDate",
+    "PermitStatus",
+    "DCOOD",
+    "CreateDate",
+    "LastEditDate"
+  ],
+  "field_domains": {
+    "OBJECTID": null,
+    "GlobalID": null,
+    "BuildingID": null,
+    "BuildingStatus": {
+      "type": "codedValue",
+      "name": "DataCenterBuildingStatus",
+      "description": "Values for BuildingStatus field in DataCenters",
+      "codedValues": [
+        {
+          "name": "Completed",
+          "code": "Completed"
+        },
+        {
+          "name": "Pending",
+          "code": "Pending"
+        },
+        {
+          "name": "Planned",
+          "code": "Planned"
+        },
+        {
+          "name": "Under Construction",
+          "code": "Under Construction"
+        },
+        {
+          "name": "Approved Site Plan",
+          "code": "Approved Site Plan"
+        }
+      ],
+      "mergePolicy": "esriMPTDefaultValue",
+      "splitPolicy": "esriSPTDefaultValue"
+    },
+    "YearBuilt": null,
+    "PermitStatus": {
+      "type": "codedValue",
+      "name": "DataCenterPermitStatus",
+      "description": "Values for PermitStatus field in DataCenters",
+      "codedValues": [
+        {
+          "name": "Issued",
+          "code": "Issued"
+        },
+        {
+          "name": "Pending",
+          "code": "Pending"
+        },
+        {
+          "name": "Planned",
+          "code": "Planned"
+        },
+        {
+          "name": "Potential",
+          "code": "Potential"
+        },
+        {
+          "name": "Finaled",
+          "code": "Finaled"
+        }
+      ],
+      "mergePolicy": "esriMPTDefaultValue",
+      "splitPolicy": "esriSPTDefaultValue"
+    },
+    "GFA": null,
+    "DCOOD": {
+      "type": "codedValue",
+      "name": "YesNo",
+      "description": "YesNo",
+      "codedValues": [
+        {
+          "name": "Yes",
+          "code": "Yes"
+        },
+        {
+          "name": "No",
+          "code": "No"
+        }
+      ],
+      "mergePolicy": "esriMPTDefaultValue",
+      "splitPolicy": "esriSPTDuplicate"
+    },
+    "OCCDate": null,
+    "BPGFA": null,
+    "CreateDate": null,
+    "LastEditDate": null,
+    "ApprovedGFA": null,
+    "PermittedGFA": null,
+    "REATaxedGFA": null
+  },
+  "editing_info": null,
+  "source_copyright": "Prince William County Planning Office - Countywide Planning GIS/Data Analysis Team\nPrince William County Department of Development Services\nPrince William County Economic Development and Tourism\nPrince William County Department of Information Technology - Geospatial Technology Services (GTS) Team\nPrince William County Department of Real Estate Assessments",
+  "completed_at": "2026-09-29T14:09:39.492838+00:00",
+  "error": "RuntimeError: TimeoutError: The read operation timed out",
+  "request_count": 2
+}

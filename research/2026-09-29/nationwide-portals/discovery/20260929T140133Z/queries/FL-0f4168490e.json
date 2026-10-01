@@ -1,0 +1,40 @@
+{
+  "jurisdiction_code": "FL",
+  "query": "water",
+  "adapter": "arcgis_directory",
+  "status": "candidates_need_review",
+  "executed_at": "2026-09-29T14:02:23.044169+00:00",
+  "candidates": [
+    {
+      "id": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer",
+      "title": "OpenData/IMPAIRED_WATERS",
+      "url": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/IMPAIRED_WATERS/MapServer",
+      "publisher": null,
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false
+    },
+    {
+      "id": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/SURFACE_WATER/MapServer",
+      "title": "OpenData/SURFACE_WATER",
+      "url": "https://ags.dep.state.fl.us/arcgis/rest/services/OpenData/SURFACE_WATER/MapServer",
+      "publisher": null,
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false
+    }
+  ],
+  "page_receipts": [],
+  "http_query_count": 0,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "local_filter_of_fetched_catalog_metadata",
+  "total_matches_in_fetched_listing": 2,
+  "search_complete": true,
+  "catalog_receipt": 13,
+  "coverage_note": "Only this fetched listing was searched; folders/pages beyond it remain unsearched."
+}

@@ -1,0 +1,1218 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "data center",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T02:22:28.456356+00:00",
+  "candidates": [
+    {
+      "id": "038b0504d5e74b708121a008abe0f0e9",
+      "title": "HCMC Clinics",
+      "url": "https://gis.hennepin.us/arcgis/rest/services/HennepinData/HEALTH/MapServer/0",
+      "publisher": "hennepin.county.maps",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Dataset created based on the original Hennepin County Medical Center (HCMC) Clinic locations.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.3558,
+                45.0938
+              ],
+              [
+                -93.2195,
+                45.0938
+              ],
+              [
+                -93.2195,
+                44.8606
+              ],
+              [
+                -93.3558,
+                44.8606
+              ],
+              [
+                -93.3558,
+                45.0938
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<font color='#007799'><p style='color:rgb(77, 77, 77);'></p><font color='#000000' size='3'><p style='color:rgb(77, 77, 77); background-color:rgb(0, 0, 0);'>\n\n</p></font></font><p style='margin:0in 0in 0pt;'>This dataset is based on the\noriginal <a href='https://www.hennepinhealthcare.org/' rel='nofollow ugc' target='_blank'>Hennepin County Medical Center Clinic locations</a> created for the\nHennepin County Enterprise GIS data warehouse and use in various online applications.\nThe data was update September, 2018 based on the changes and information collected\nfrom the various websites and directly from HCMC.</p><p>\n\n</p><p style='margin:0in 0in 0pt;'> Link\nto Attribute Table Information: <a href='https://gis-stage.hennepin.us/OpenData/Metadata/HCMC%20Clinics.pdf' rel='nofollow ugc' target='_blank'>https://gis.hennepin.us/OpenData/Metadata/HCMC%20Clinics.pdf</a></p><font color='#007799'><font color='#000000' size='3'><p style='color:rgb(77, 77, 77); background-color:rgb(0, 0, 0);'>\n\n</p></font><p style='color:rgb(77, 77, 77);'></p><font color='#000000' size='3' style='color:rgb(77, 77, 77);'><p><span></span></p></font><font color='#4d4d4d' size='3'></font></font><span></span>",
+        "licenseInfo": "<span style='line-height: 1.3846;'>This data (i) is furnished &quot;AS IS&quot; with no representation as to completeness or accuracy; (ii) is furnished with no warranty of any kind; and (iii) is not suitable for legal, engineering or surveying purposes. Hennepin County shall not be liable for any damage, injury or loss resulting from this data.</span>",
+        "ownerId": "34fe3338ceacf760ecb6b1ca8a8dc1e5",
+        "title": "HCMC Clinics",
+        "type": "Feature Service",
+        "orgId": "ziLNoRgqnICUM0q1",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1775850943000,
+        "avgRating": 0,
+        "id": "038b0504d5e74b708121a008abe0f0e9",
+        "categories": [
+          "/Categories/Society",
+          "/Categories/Health"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "hennepin.county.maps",
+        "accessInformation": "Hennepin County GIS Office, Hennepin County Health & Human Services",
+        "largeThumbnail": null,
+        "lastViewed": 1790568000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1442256829000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.hennepin.us/arcgis/rest/services/HennepinData/HEALTH/MapServer/0",
+        "tags": [
+          "opendata_places",
+          "opendata_health",
+          "hennepin",
+          "places",
+          "health"
+        ],
+        "numViews": 4686,
+        "numComments": 0,
+        "size": 75,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Hennepin County GIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/038b0504d5e74b708121a008abe0f0e9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d09e8539ef224100aefe716c812d1d8d",
+      "title": "Public Lands, Minnesota, 1983",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/plan_public_lands_mn_1983/ImageServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Minnesota Public Lands, 1983 was the result of an effort to improve the organization and accessibility of summary public land record information in Minnesota.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.25,
+                49.4
+              ],
+              [
+                -89.48,
+                49.4
+              ],
+              [
+                -89.48,
+                43.5
+              ],
+              [
+                -97.25,
+                43.5
+              ],
+              [
+                -97.25,
+                49.4
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Image Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This data set identifies publicly administered lands in Minnesota. Land ownership data, current as of 1983 or earlier, was collected by 40-acre parcel for federal, state, metropolitan commission, and tax-forfeited lands. The data was compiled cooperatively by the Minnesota Land Management Information Center (now MnGeo) and the Minnesota Department of Natural Resources (DNR). An accompanying printed report contains numerous state maps and summary tables: <a href=\"MN_Public_Lands_1983.pdf\">MN_Public_Lands_1983.pdf</a>",
+        "licenseInfo": "There are no known restrictions on the use of these data.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Public Lands, Minnesota, 1983",
+        "type": "Image Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789651457000,
+        "avgRating": 0,
+        "id": "d09e8539ef224100aefe716c812d1d8d",
+        "categories": [
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1788433200000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1773089704000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/plan_public_lands_mn_1983/ImageServer",
+        "tags": [
+          "planningCadastre, public land ownership, federal land ownership, state land ownership, county land ownership, tax-forfeited land, property, parcel",
+          "Minnesota, MN"
+        ],
+        "numViews": 39,
+        "numComments": 0,
+        "size": 110,
+        "listed": false,
+        "scoreCompleteness": 90,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Geospatial Information Office (MnGeo)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/d09e8539ef224100aefe716c812d1d8d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b1645123a70a4128bc877beac3dc748c",
+      "title": "Land Use for Clearwater and Beltrami Counties, Minnesota, 1986",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/biota_landcover_beltclea_1986/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To update available land use information to create a more recent land use data layer for use in Comprehensive Local Water Planning activities.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -95.6,
+                48.55
+              ],
+              [
+                -94.41,
+                48.55
+              ],
+              [
+                -94.41,
+                47.15
+              ],
+              [
+                -95.6,
+                47.15
+              ],
+              [
+                -95.6,
+                48.55
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "An updated raster version of land use was created for Clearwater and Beltrami Counties in 1987, based on 1986 aerial photography.  The original Land Management Information Center 40-acre (MLMIS40) 1969 land use classification for these counties was updated by the Beltrami and Clearwater Soil and Water Conservation Districts, using air photo interpretation.  Information was updated by the Geography Department at Bemidji State University using the edit routines in the Environmental Planning Programming Language (EPPL7) software. Data was later converted to ERDAS GIS raster and Esri vector formats.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/438/biota_landcover_beltclea_1986.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/438/biota_landcover_beltclea_1986.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/438/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Acknowledgement of the appropriate  developer agencies would be appreciated in products derived from these data.  See Disclaimer field for complete use conditions.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Land Use for Clearwater and Beltrami Counties, Minnesota, 1986",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790165641000,
+        "avgRating": 0,
+        "id": "b1645123a70a4128bc877beac3dc748c",
+        "categories": [
+          "/Categories/Biota",
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790560800000,
+        "thumbnail": "thumbnail/preview.png",
+        "languages": [],
+        "created": 1778613767000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/biota_landcover_beltclea_1986/FeatureServer",
+        "tags": [
+          "biota",
+          "imageryBaseMapsEarthCover",
+          "Land Use",
+          "Land Cover",
+          "Land Type",
+          "Vegetation Cover",
+          "Minnesota",
+          "MN",
+          "Clearwater County",
+          "Beltrami County"
+        ],
+        "numViews": 427,
+        "numComments": 0,
+        "size": 116,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Department of Geography, Bemidji State University",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/b1645123a70a4128bc877beac3dc748c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bbc0be7fd6594623a9d3f03294bbe8a9",
+      "title": "Telephone Exchange Service Area Boundaries, Minnesota",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_telephone_exchange/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The data are intended to provide a statewide overview of telephone exchanges and are the official telephone exchange boundary maps in Minnesota. Please contact the Department of Commerce at (651) 539-1500 with questions on any boundary lines.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This data set provides a statewide view of telephone exchange service area boundaries. \n\nIn addition, LATAs (local access and transport areas) and wire centers are included. At the time of the Bell System breakup, Bell operating companies were restricted to operations within specific areas called LATAs. Wire centers or 'wire center serving area', refers to the area to which local service is provided by one or more switches located at a single point. The wire center serving area is often the same area as the exchange, but a wire center can be equal to a portion of an exchange or to several exchanges combined.\n\nThe data was compiled in cooperation with the Minnesota Department of Commerce and the Minnesota incumbent local exchange carriers.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/521/util_telephone_exchange.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/521/util_telephone_exchange.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/521/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Redistribution conditions:  In obtaining this data from MnGeo, it is understood that you and/or your organization have the right to use it for any purpose.  If you modify it, you are encouraged to apply responsible best practices by documenting those changes in a metadata record.  If you transmit or provide the data to another user, it is your responsibility to provide appropriate content, limitation, warranty and liability information as you see fit.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Telephone Exchange Service Area Boundaries, Minnesota",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789652530000,
+        "avgRating": 0,
+        "id": "bbc0be7fd6594623a9d3f03294bbe8a9",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790600400000,
+        "thumbnail": "thumbnail/preview.png",
+        "languages": [],
+        "created": 1778614208000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_telephone_exchange/FeatureServer",
+        "tags": [
+          "utilitiesCommunication",
+          "telephone exchanges",
+          "telecommunications",
+          "telecom",
+          "area code",
+          "LATA zone",
+          "wire center",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 456,
+        "numComments": 0,
+        "size": 110,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Geospatial Information Office (MnGeo)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/bbc0be7fd6594623a9d3f03294bbe8a9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6607744f7c044d4d9d416d68e227a8ec",
+      "title": "Transportation Improvement Program (TIP) Final Data 2026-2029",
+      "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/TIP_final/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This Metropolitan Council dataset visualizes and locates funded Transportation Improvement Program (TIP) project locations across the Metropolitan Council's planning area.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.9909259232604,
+                45.399751464568
+              ],
+              [
+                -92.7641793566583,
+                45.399751464568
+              ],
+              [
+                -92.7641793566583,
+                44.4672893241108
+              ],
+              [
+                -93.9909259232604,
+                44.4672893241108
+              ],
+              [
+                -93.9909259232604,
+                45.399751464568
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The Transportation Improvement Program (TIP) describes all proposed federally-funded transportation projects within the Twin Cities metropolitan planning organization (MPO) area. Data is published annually after the Draft TIP is released (usually in the spring). <div><br /></div><div>As a Metropolitan Planning Organization, the Metropolitan Council is federally required to prepare the TIP as a short-range program that complements its long-range transportation plan. The TIP is prepared in coordination with the Minnesota Department of Transportation (MnDOT) State Transportation Improvement Program. </div><div><br /></div><div>The Transportation Improvement Program dataset includes 4 data pieces.\nTwo geographic files for project location (note there is no overlap between these two, projects fall into one or the other) and two tables.</div><div><br /></div><div>1) TIP Final Point: Projects as points - centralized project work at one or multiple defined locations or at generalized center of project work scope (ex: intersection improvements at intersection of roads A and B). </div><div>2) TIP Final Line: Projects as lines - linear project work along a feature's length (ex: road X reconstruction from point A to point B). </div><div>4) TIP Final Unmapped: List of projects not mapped due to broad or generalized project location. </div><div>3) TIP Final Full Table: Full list of TIP projects for the Final 2026-2029 TIP. This should include all the projects from Points, Lines, and Unmapped table. </div><div><br /></div><div>Geographic TIP data was created using project descriptions and did not use engineering level data. This data should be used for regional scale planning and visualization purposes. It is not intended for site specific applications. Project extents are correct to staff knowledge but are subject to change based on project plans and TIP amendments. </div><div><br /></div><div>More information on the TIP can be found at the Met Council's website: <a href='https://metrocouncil.org/TIP.aspx' target='_blank' rel='nofollow ugc noopener noreferrer'>https://metrocouncil.org/TIP.aspx</a></div>",
+        "licenseInfo": "None. This dataset is public domain under the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13).",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Transportation Improvement Program (TIP) Final Data 2026-2029",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1778172878000,
+        "avgRating": 0,
+        "id": "6607744f7c044d4d9d416d68e227a8ec",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "NAD_1983_UTM_Zone_15N",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790758800000,
+        "thumbnail": "thumbnail/thumbnail1778170870335.png",
+        "languages": [],
+        "created": 1778172512000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/TIP_final/FeatureServer",
+        "tags": [
+          "Twin Cities",
+          "TIP",
+          "Transportation Improvement Program",
+          "Transportation",
+          "Investment",
+          "Solicitation"
+        ],
+        "numViews": 2681,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/6607744f7c044d4d9d416d68e227a8ec"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ef277672b70045b7a29be3da6d3e7a73",
+      "title": "Transportation Improvement Program (TIP) Draft Data 2027-2030",
+      "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/TIP_draft/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This Metropolitan Council dataset visualizes and locates funded Transportation Improvement Program (TIP) project locations across the Metropolitan Council's planning area.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.012,
+                45.415
+              ],
+              [
+                -92.732,
+                45.415
+              ],
+              [
+                -92.732,
+                44.471
+              ],
+              [
+                -94.012,
+                44.471
+              ],
+              [
+                -94.012,
+                45.415
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<p style='margin:0in;'>____________________________________________________________</p><p style='margin:0in;'><span style='font-size:medium;'><i><strong>NOTE - although it's recommended to use the feature layer web service, the file geodatabase is available for download.</strong></i></span></p><p style='margin:0in;'><br /></p><p><a href='https://gisdata.metc.state.mn.us/gisdata/Transportation/tip_draft_data.zip' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><strong>Download FGDB</strong></a></p><p>____________________________________________________________</p><p><span style='font-size:large;'><strong>More Details</strong></span></p><p><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>The Transportation Improvement Program (TIP) describes all proposed federally-funded transportation projects within the Twin Cities metropolitan planning organization (MPO) area. Data is published annually after the Draft TIP is released (usually in the spring).</span></span><br /><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>As a Metropolitan Planning Organization, the Metropolitan Council is federally required to prepare the TIP as a short-range program that complements its long-range transportation plan. The TIP is prepared in coordination with the Minnesota Department of Transportation (MnDOT) State Transportation Improvement Program.</span></span><br /><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>The Transportation Improvement Program dataset includes 4 data pieces.</span></span><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Two geographic files for project location (note there is no overlap between these two, projects fall into one or the other)-</span></span><br /><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>- TIPdraftPoint: Projects as points - Centralized project work at one or multiple defined locations or at generalized center of project work scope (ex: intersection improvements at intersection of roads A and B).</span></span><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>- TIPdraftLine: Projects as lines - Linear project work along a feature's length (ex: road X reconstruction from point A to point B).</span></span><br /><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Two Tables-</span></span><br /><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>- TIPdraftUnmapped: List of projects not mapped due to broad or generalized project location.</span></span><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>- TIPdraftFullTable: Full list of TIP projects for the Draft 2027-2030 TIP. This should include all the projects from Points, Lines, and Unmapped table.</span></span><br /><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Geographic TIP data was created using project descriptions and did not use engineering level data. This data should be used for regional scale planning and visualization purposes. It is not intended for site specific applications. Project extents are correct to staff knowledge but are subject to change based on project plans and TIP amendments.</span></span><br /><br /><span style='background-color:rgb(255,255,255); color:rgb(0,0,32); font-family:calibri; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>More information on the TIP can be found at the Met Council's website: </span></span><a href='https://metrocouncil.org/TIP.aspx' style='background-color:rgb(255, 255, 255); color:rgb(9, 142, 166); font-family:calibri; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://metrocouncil.org/TIP.aspx</a></p>",
+        "licenseInfo": "None. This dataset is public domain under the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13).",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Transportation Improvement Program (TIP) Draft Data 2027-2030",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1787843708000,
+        "avgRating": 0,
+        "id": "ef277672b70045b7a29be3da6d3e7a73",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "NAD_1983_UTM_Zone_15N",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790758800000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1778172497000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/TIP_draft/FeatureServer",
+        "tags": [
+          "Transportation",
+          "Twin Cities",
+          "TIP",
+          "Transportation Improvement Program",
+          "Investment",
+          "Solicitation"
+        ],
+        "numViews": 2665,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/ef277672b70045b7a29be3da6d3e7a73"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "182b48fd464544f188160d9063aa659b",
+      "title": "Bridges in Minnesota",
+      "url": "https://webgis.dot.state.mn.us/65agsf1/rest/services/sdw_infra/BRIDGES/FeatureServer",
+      "publisher": "MnDOT_GIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature class is intended to be used independently or with other feature classes/shapefiles for analysis of in-service bridges and culverts.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.50897,
+                49.652543
+              ],
+              [
+                -89.02899,
+                49.652543
+              ],
+              [
+                -89.02899,
+                43.192405
+              ],
+              [
+                -97.50897,
+                43.192405
+              ],
+              [
+                -97.50897,
+                49.652543
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Bulk Published Service",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This is a point displayed dataset of in-service bridge locations throughout Minnesota, maintained by the MnDOT Bridge Inventory Management Unit located at the MnDOT Bridge Office. Points are generally placed in the center of a structure using aerial imagery as reference. There is a wide variety of data associated with each structure including geographic location, structure type, service carried and service under, clearances, load ratings, condition rating, and some roadway data.\nMnDOT Bridge Office keeps inventory of all bridge structures 10ft and over in length. Calculated and observed inventory items from construction plans and other documents along with scheduled routine inspections help maintain data throughout the life of a bridge. Definition of a Bridge is described in MN Statute 165.01, Subdivision 3. This data set is based on the 1995 FHWA coding guide and 2025 MnDOT Bridges and Structures Inspection Program Manual - Chapter D. Data may be limited for structures added in 2025 and forward. A new dataset based on the SNBI is in development.",
+        "licenseInfo": "None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata.  Acknowledgement of the publisher would be appreciated.",
+        "ownerId": "74071b77bc758bd2a5329434bfaabd15",
+        "title": "Bridges in Minnesota",
+        "type": "Feature Service",
+        "orgId": "qWbGMYB49y8mLbRt",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1783436600000,
+        "avgRating": 0,
+        "id": "182b48fd464544f188160d9063aa659b",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "NAD_1983_UTM_Zone_15N",
+        "numRatings": 0,
+        "owner": "MnDOT_GIS",
+        "accessInformation": "Minnesota Department of Transportation",
+        "largeThumbnail": "",
+        "lastViewed": 1790611200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1713199942000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://webgis.dot.state.mn.us/65agsf1/rest/services/sdw_infra/BRIDGES/FeatureServer",
+        "tags": [
+          "Minnesota",
+          "Bridge",
+          "Location",
+          "Bridge Load Posting",
+          "Bridge Condition",
+          "Bridge Owner",
+          "Best Source SDW",
+          "MnDOT",
+          "MN",
+          "Official MnDOT",
+          "Safety",
+          "Traffic",
+          "Transportation Other"
+        ],
+        "numViews": 15051,
+        "numComments": 0,
+        "size": 84,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Transportation",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/182b48fd464544f188160d9063aa659b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "50a2589a9e51483e9a4af6d58a1ee696",
+      "title": "TRANS_Street",
+      "url": "https://gis.ramseycountymn.gov/server/rest/services/Transportation/TRANS_Street_ViewOnly/FeatureServer/0",
+      "publisher": "christina.ulrich@co.ramsey.mn.us_RamseyGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Streets data represents all public roads in Ramsey County and many private roads open to public access. Road centerlines help support map general production, thematic mapping, land surveying and engineering projects.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.2287,
+                45.125
+              ],
+              [
+                -92.9827,
+                45.125
+              ],
+              [
+                -92.9827,
+                44.8907
+              ],
+              [
+                -93.2287,
+                44.8907
+              ],
+              [
+                -93.2287,
+                45.125
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p>Streets provide a routable network of federal, state, county and municipal and private roads. All public roads should be represented in the database as well as many of the private roads that are open to the general public. A private section of pavement that serves less than three households is generally considered a private drive and is not included in this set. The features are intended to represent the driving surfaces of the roads, and are often near the center of the road pavement, however, this varies by feature. Where the pavement is divided by a median or raised divider of more than 50', a separate feature represents the pavement in each direction (a dual carriageway representation). The center of physical roadway pavement may or may not represent the center of the road right of way. Road right of ways may taper or change width.&nbsp;</p><p>There has been no attempt to alter the road centerline to conform to right of way that is not parallel or alters in width. This data set provides a routable street network of federal, state, county and municipal roads with address attribution appropriate for geocoding. Many of the current attributes were added to support the Ramsey County Computer Aided Dispatch system.</p>",
+        "licenseInfo": "<p><span style=\"color:rgb(0,0,0);font-family:calibri;font-size:medium;\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata. Acknowledgment of the publisher would be appreciated.</span></span></p>",
+        "ownerId": "5255621b39e617844a9f259e4456d526",
+        "title": "TRANS_Street",
+        "type": "Feature Service",
+        "orgId": "527XtFVf9JKOTqu5",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788185436000,
+        "avgRating": 0,
+        "id": "50a2589a9e51483e9a4af6d58a1ee696",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "103768",
+        "numRatings": 0,
+        "owner": "christina.ulrich@co.ramsey.mn.us_RamseyGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790607600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1779471440000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ramseycountymn.gov/server/rest/services/Transportation/TRANS_Street_ViewOnly/FeatureServer/0",
+        "tags": [
+          "transportation",
+          "street"
+        ],
+        "numViews": 395,
+        "numComments": 0,
+        "size": 104,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Ramsey County",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/50a2589a9e51483e9a4af6d58a1ee696"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ca65f2aa87ff44bb93e674a50457ff31",
+      "title": "Regional Bicycle Transportation Network (RBTN) - Destinations",
+      "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/RBTN_Destinations/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This Metropolitan Council dataset was developed as part of the 2014 Twin Cities Regional Bicycle System Study and was used to score and prioritize routes in the development of the Regional Bicycle Transportation Network (RBTN).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.6364587847885,
+                45.2238879219275
+              ],
+              [
+                -92.8499768499278,
+                45.2238879219275
+              ],
+              [
+                -92.8499768499278,
+                44.6638080331208
+              ],
+              [
+                -93.6364587847885,
+                44.6638080331208
+              ],
+              [
+                -93.6364587847885,
+                45.2238879219275
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<p style='margin:0in;'>____________________________________________________________</p><p style='margin:0in;'><b><i><font size='3'>NOTE - although it's recommended to use the feature layer web service, the file geodatabase is available for download.</font></i></b></p><p style='margin:0in;'><b><i><br /></i></b></p>\n<p><a href='https://gisdata.metc.state.mn.us/gisdata/Transportation/regional_bike_trans_destinations.zip' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><strong>Download FGDB</strong></a></p><p>____________________________________________________________</p><p><b><font size='4'>More Details</font></b></p><p>Point file of regionally recongnized activity nodes or corridors where people work, shop, recreate, or are entertained. These may be further defined by one or more activity thresholds. Regional Destinations will typically be centers where multiple transportation modal options such as high-level transit service are provided.</p><div></div><div>Job Centers were identified in the ThriveMSP 20140 study using 2010 employment data from the Census, 2010 existing land use data, and the LEHD data from the Center for Economics Studies.</div><div><br /></div><div></div><div>Regional Destination High Schools had an enrollment of over 2000 students.</div><div><br /></div><div></div><div>Higher Education facilities had enrollments of over 2000 students.</div><div><br /></div><div></div><div>Highly Visited Regional Parks had over 400,000 annual visitors. In October 2023 Allianz Soccer Filed, the Vikings TOC Practice Facility, Bus Transitway Stations, and Rail Transitway stations were added to the destinations.</div>",
+        "licenseInfo": "None. This dataset is public domain under the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13).",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Regional Bicycle Transportation Network (RBTN) - Destinations",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785336743000,
+        "avgRating": 0,
+        "id": "ca65f2aa87ff44bb93e674a50457ff31",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "NAD_1983_UTM_Zone_15N",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790758800000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1785334656000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/RBTN_Destinations/FeatureServer",
+        "tags": [
+          "Twin Cities",
+          "Bicycle",
+          "Transportation"
+        ],
+        "numViews": 324,
+        "numComments": 0,
+        "size": 98,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/ca65f2aa87ff44bb93e674a50457ff31"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1f3685e9ae7242e3bca8319bc60b9d2c",
+      "title": "Township, Range, and Section (TRS) Boundaries, Minnesota",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/plan_mngeo_trs/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Many irregularities occur when the theory of the PLSS is applied to land surveys on the ground. However, the PLSS acts today as the structure around which all legal descriptions of land parcels in Minnesota are based. It is, therefore, an important framework for most geographic investigations that require information about land ownership. PLSS information is intended to be used for regional studies conducted at the county or multi-county level. The section lines are not meant to be used as legal records.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.5,
+                49.5
+              ],
+              [
+                -89,
+                49.5
+              ],
+              [
+                -89,
+                43
+              ],
+              [
+                -97.5,
+                43
+              ],
+              [
+                -97.5,
+                49.5
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The TRS digital data set represents the Township, Range, and Section boundaries of the state. Beginning in the late 1840s, the federal government began surveying Minnesota as part of the Public Land Survey System (PLSS). The resulting network of land survey lines divided the state into townships, ranges, sections, quarter sections, quarter-quarter sections and government lots, and laid the groundwork for contemporary land ownership patterns. \n\nThe township, range and section boundaries were digitized at MnGeo (formerly known as the Land Management Information Center - LMIC) from stable base mylars of the U.S. Geological Survey (USGS) 30-minute latitude by 60-minute longitude map series (1:100,000-scale). All survey lines were extended across water bodies despite the fact that U.S. Geological Survey base maps depict them only on land. This addition allows all sections and townships to be represented as closed areas (polygons) ensuring that township and range location can be determined for any point in the state.  It also means that the data set is not affected if lake levels change over time.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/509/plan_mngeo_trs.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/509/plan_mngeo_trs.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/509/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Redistribution conditions: In obtaining this data from MnGeo, it is understood that you and/or your organization have the right to use it for any purpose. If you modify it, you are encouraged to apply responsible best practices by documenting those changes in a metadata record. If you transmit or provide the data to another user, it is your responsibility to provide appropriate content, limitation, warranty and liability information as you see fit.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Township, Range, and Section (TRS) Boundaries, Minnesota",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790166304000,
+        "avgRating": 0,
+        "id": "1f3685e9ae7242e3bca8319bc60b9d2c",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790607600000,
+        "thumbnail": "thumbnail/preview.png",
+        "languages": [],
+        "created": 1778614231000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/plan_mngeo_trs/FeatureServer",
+        "tags": [
+          "planningCadastre",
+          "boundaries",
+          "Public Land Survey System",
+          "PLSS",
+          "Public Land Survey",
+          "PLS",
+          "State Boundary",
+          "County Boundaries",
+          "Township Boundaries",
+          "Section Boundaries",
+          "TRS",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 11397,
+        "numComments": 0,
+        "size": 101,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Geospatial Information Office (MnGeo)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/1f3685e9ae7242e3bca8319bc60b9d2c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    254
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 24,
+  "next_offset": 10,
+  "response_sha256": "01ddcc456f5362a550abb272eba1f183454ca8be6bef111ce878884a0819496f",
+  "search_complete": false
+}

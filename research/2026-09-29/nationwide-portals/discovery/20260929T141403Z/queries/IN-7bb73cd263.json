@@ -1,0 +1,1210 @@
+{
+  "jurisdiction_code": "IN",
+  "query": "data center",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:14:22.219302+00:00",
+  "candidates": [
+    {
+      "id": "ab62101a4eb945bea5d23895024754e0",
+      "title": "Religious Center Locations 2020",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Religious_Centers_2020/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains point features representing the locations of religious centers or places of worship in 2020. This dataset was filtered to the State of Indiana and downloaded from the Homeland Infrastructure Foundation-Level Data (HIFLD) open geospatial portal on 5/15/2023 (https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::all-places-of-worship/about).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.1551,
+                41.8132
+              ],
+              [
+                -84.6944,
+                41.8132
+              ],
+              [
+                -84.6944,
+                37.7457
+              ],
+              [
+                -88.1551,
+                37.7457
+              ],
+              [
+                -88.1551,
+                41.8132
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>The purpose of the All Places of Worship dataset is to provide a national dataset that contains places of worship (e.g. churches, temples, mosques, and so on) for the publics use.</div><div><br /></div><div>The All Places of Worship dataset was created from the IRS master files containing the public national record of all 501(c)(3) non-profit organizations (found at https://www.irs.gov/charities-non-profits/exempt-organizations-business-master-file-extract-eo-bmf). The dataset was queried to include only places of worship and geocoded the dataset using the reported places of worship addresses to create a geospatially enabled All Places of Worship dataset. The dataset was delivered to the Homeland Infrastructure Foundation-Level Data (HIFLD), and the HIFLD Support Team (HST) performed some quality control (QC) tasks on the dataset, such as populating metadata based on the IRS Exempt Organizations Business Master File Extract (EO BMF).</div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.</span>",
+        "title": "Religious Center Locations 2020",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335506000,
+        "avgRating": 0,
+        "id": "ab62101a4eb945bea5d23895024754e0",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1780336800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335505000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Religious_Centers_2020/FeatureServer",
+        "tags": [
+          "Religion",
+          "Worship",
+          "Churches",
+          "Temples",
+          "Mosques",
+          "Facilities",
+          "Buildings"
+        ],
+        "numViews": 1,
+        "numComments": 0,
+        "size": 793705,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Religious_Centers_2020",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/ab62101a4eb945bea5d23895024754e0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "384f2d5041a14c34bd9e807c568784da",
+      "title": "Building Footprints 2016-2020",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Building_Footprints/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Building footprint locations generated from LiDAR point clouds. LiDAR used was from 2016-2020 period of the USGS QL2 program, covering the entire state of Indiana.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.091253474,
+                41.760706355
+              ],
+              [
+                -84.7852399079999,
+                41.760706355
+              ],
+              [
+                -84.7852399079999,
+                37.773360924
+              ],
+              [
+                -88.091253474,
+                37.773360924
+              ],
+              [
+                -88.091253474,
+                41.760706355
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset contains polygons representing the footprint of structures within Indiana. This data was derived by the Polis Center at Indiana University Purdue University Indianapolis (IUPUI) from statewide LiDAR data collected during the 2016-2020 USGS 3DEP program. This dataset was developed as part of the Cooperating Technical Partner program with the Federal Emergency Management Agency and the Indiana Department of Natural Resources.",
+        "licenseInfo": "This data set was compiled by the Polis Center at IUPUI, using LiDAR data and automated process. This product is distributed \"AS-IS\" without warranties of any kind, either expressed or implied, including but not limited to warranties of suitability of a particular purpose or use. No attempt has been made in either the designed format or production of these data to define the limits or jurisdiction of any federal, state, or local government. These data are intended for use only at the published scale or smaller and are for reference purposes only. They are not to be construed as a legal document or survey instrument. A detailed on-the-ground survey and historical analysis of a single site may differ from this data.",
+        "title": "Building Footprints 2016-2020",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773239285000,
+        "avgRating": 0,
+        "id": "384f2d5041a14c34bd9e807c568784da",
+        "categories": [
+          "/Categories/Structure"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Polis Center at IUPUI",
+        "largeThumbnail": "",
+        "lastViewed": 1780336800000,
+        "thumbnail": "thumbnail/thumbnail1676050416891.png",
+        "languages": [],
+        "created": 1660073444000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Building_Footprints/FeatureServer",
+        "tags": [
+          "Structure",
+          "Building",
+          "Building Footprints"
+        ],
+        "numViews": 19606,
+        "numComments": 0,
+        "size": 326910842,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geographic Information Office",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/384f2d5041a14c34bd9e807c568784da"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e83718c6b7964cf6bfc1b6c4cb188c3a",
+      "title": "Public School Locations 2021-2022",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Public_School_Locations_2021_2022/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Point locations of public elementary and secondary schools from the 2021-2022 Common Core of Data created by the National Center for Education Statistics' (NCES) Education Demographic and Geographic Estimates (EDGE) program.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.90800548299995,
+                41.75640791400008
+              ],
+              [
+                -84.81510476299997,
+                41.75640791400008
+              ],
+              [
+                -84.81510476299997,
+                37.88110715900007
+              ],
+              [
+                -87.90800548299995,
+                37.88110715900007
+              ],
+              [
+                -87.90800548299995,
+                41.75640791400008
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The National Center for Education Statistics’ (NCES) Education Demographic and Geographic Estimate (EDGE) program develops annually updated point locations (latitude and longitude) for public elementary and secondary schools included in the NCES Common Core of Data (CCD). The CCD is an annual collection of basic administrative characteristics that includes the physical address for all public schools, school districts, and state education agencies in the United States. The NCES EDGE program collaborates with the U.S. Census Bureau’s Education Demographic, Geographic, and Economic Statistics (EDGE) Branch to develop point locations for schools and school district administrative offices based on these addresses. The point locations in this data layer were developed from the 2021-2022 CCD collection. For more information about NCES school point data, see: https://nces.ed.gov/programs/edge/Geographic/SchoolLocations.</SPAN></P><P><SPAN><SPAN>All information contained in this file is in the public domain. Data users are advised to review NCES program documentation and feature class metadata to understand the limitations and appropriate use of these data.</SPAN></SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN><SPAN>https://www.usa.gov/publicdomain/label/1.0/</SPAN></SPAN></P></DIV></DIV></DIV>",
+        "title": "Public School Locations 2021-2022",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335725000,
+        "avgRating": 0,
+        "id": "e83718c6b7964cf6bfc1b6c4cb188c3a",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "NCES EDGE",
+        "largeThumbnail": "",
+        "lastViewed": 1780336800000,
+        "thumbnail": "thumbnail/thumbnail1681148942376.png",
+        "languages": [],
+        "created": 1780335725000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Public_School_Locations_2021_2022/FeatureServer",
+        "tags": [
+          "Common Core of Data",
+          "CCD",
+          "Public Schools",
+          "National Center for Education Statistics",
+          "NCES",
+          "Public School Locations",
+          "U.S. Census Bureau",
+          "Education Demographic and Geographic Estimates Program",
+          "EDGE",
+          "Points",
+          "United States"
+        ],
+        "numViews": 2,
+        "numComments": 0,
+        "size": 246827,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Public_School_Locations_2021_2022",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "National Center for Education Statistics",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/e83718c6b7964cf6bfc1b6c4cb188c3a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f3326987eeec4fc4ba598c8477a460fd",
+      "title": "Fire Stations 2023",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Fire_Stations_2023/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this dataset is to document the spatial location of fire stations in the U.S. for general cartographic purposes on USGS mapping products at 1:24,000 scale. Data downloaded from the HIFLD open geospatial data portal on 4/27/2023.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.97881761299999,
+                41.75131988600003
+              ],
+              [
+                -84.81136914899997,
+                41.75131988600003
+              ],
+              [
+                -84.81136914899997,
+                37.860465419000036
+              ],
+              [
+                -87.97881761299999,
+                37.860465419000036
+              ],
+              [
+                -87.97881761299999,
+                41.75131988600003
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset contains point features representing building locations of fire stations in the United States, District of Columbia, Puerto Rico and the U.S. Virgin Islands. The purpose of this collection is to represent the fire station locations on general purpose cartographic products. The data includes manned fire stations and buildings from which a fire response occurs, such as a volunteer fire department building to which fire fighters report for duty, but which is not continuously manned. The data includes both private and governmental entities. In some cases, where fire stations are known to exist but could not be located on a specific building, such as on a military base, airport or manufacturing location, a point was placed at the entrance or the general center of the facility or complex. Some fire locations are approximate, most prevalently in rural areas. Fire training facilities are not included unless these locations also have an active fire station. Locations solely for storing or maintaining fire equipment, or fire stations without a permanent location, were generally excluded.",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.</span>",
+        "title": "Fire Stations 2023",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335499000,
+        "avgRating": 0,
+        "id": "f3326987eeec4fc4ba598c8477a460fd",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "United States Geological Survey (USGS), Homeland Infrastructure Foundation-Level Data (HIFLD)",
+        "largeThumbnail": "",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1682606067685.png",
+        "languages": [],
+        "created": 1780335499000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Fire_Stations_2023/FeatureServer",
+        "tags": [
+          "Fire",
+          "Fire Station",
+          "Fire Departments",
+          "Location"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 266467,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Fire_Stations_2023",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/f3326987eeec4fc4ba598c8477a460fd"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4bc9c57e433241e59475e208cf4c1a9d",
+      "title": "City and Town Hall Locations 2023",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/City_and_Town_Hall_Locations_2023/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Geological Survey, displays City/Town Halls in Indiana. Data downloaded and filtered from the USGS National Structures Dataset in a shapefile format before publishing on 4/27/2023.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.9339294940509,
+                41.7512640334085
+              ],
+              [
+                -84.8081822392189,
+                41.7512640334085
+              ],
+              [
+                -84.8081822392189,
+                37.8829438401861
+              ],
+              [
+                -87.9339294940509,
+                37.8829438401861
+              ],
+              [
+                -87.9339294940509,
+                41.7512640334085
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "USGS Structures from The National Map (TNM) consists of data to include the name, function, location, and other core information and characteristics of selected manmade facilities. The types of structures collected are largely determined by the needs of disaster planning and emergency response, and homeland security organizations. Structures currently being collected are: School, College/University, Fire Station/EMS Station, Law Enforcement, Prison/Correctional Facility, State Capitol, Hospital/Medical Center, Ambulance Services, Cemetery, and Post Office. Structures data are designed to be used in general mapping and in the analysis of structure related activities using geographic information system technology. The National Map structures data is commonly combined with other data themes, such as boundaries, elevation, hydrography, and transportation, to produce general reference base maps. The National Map viewer allows free downloads of public domain structures data in either Esri File Geodatabase or Shapefile formats. For additional information on the structures data model, go to https://nationalmap.gov/structures.html.",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.</span>",
+        "title": "City and Town Hall Locations 2023",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335666000,
+        "avgRating": 0,
+        "id": "4bc9c57e433241e59475e208cf4c1a9d",
+        "categories": [],
+        "spatialReference": "GCS_WGS_1984",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "United States Geological Survey (USGS)",
+        "largeThumbnail": "",
+        "lastViewed": 1780336800000,
+        "thumbnail": "thumbnail/thumbnail1682611614550.png",
+        "languages": [],
+        "created": 1780335666000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/City_and_Town_Hall_Locations_2023/FeatureServer",
+        "tags": [
+          "Local Government",
+          "City",
+          "Town",
+          "City Hall",
+          "Town Hall"
+        ],
+        "numViews": 3,
+        "numComments": 0,
+        "size": 184595,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "City_and_Town_Hall_Locations_2023",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/4bc9c57e433241e59475e208cf4c1a9d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "178c53df58464937b2a445f832f924ad",
+      "title": "Medical Care Facilities 2011",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Medical_Care_Facilities_2011/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Medical Care Facilities in Indiana (MHMP), 2011 - Shows locations of medical care facilities in Indiana, derived by The Polis Center as part of several 'DMA2000 Multi-Hazard Mitigation Planning' (MHMP) projects, from data of the 'Hazards U.S. Multi-Hazards' (Hazus-MH MR1, v 1.1) program (data from 2003) developed by the Federal Emergency Management Agency (FEMA). This data set is more complete in many counties in Indiana than the data set for essential facilities provided by FEMA with the Hazus-MH software. Attributes include the name, address, and contact information for each facility. The Federal Emergency Management Agency awarded Multi-Hazard Mitigation Planning (MHMP) Grants in 2003, 2005, and 2007 to the Indiana Department of Homeland Security. A total of 67 counties participated in the MHMP process. The Disaster Mitigation Act of 2000 (DMA 2000) requires every jurisdiction in the United States to perform a natural hazard risk analysis and identify mitigation strategies to reduce the losses from future disasters. By completing a plan, the jurisdictions are eligible for funding to help implement mitigation projects.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.98472950990863,
+                41.73451399514705
+              ],
+              [
+                -84.75766185030734,
+                41.73451399514705
+              ],
+              [
+                -84.75766185030734,
+                37.86390289600082
+              ],
+              [
+                -87.98472950990863,
+                37.86390289600082
+              ],
+              [
+                -87.98472950990863,
+                41.73451399514705
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The predecessor shapefile for MEDICAL_CARE_FACILITIES_MHMP_IN.SHP was produced by The Polis Center, as part of an essential facilities database for several DMA2000 Multi-Hazard Mitigation Planning (MHMP) projects to assist communities in preparing hazard mitigation planning document and procedures. The following is excerpted from metadata supplied by The Polis Center for the source shapefile named \"HZCAREFLTY.SHP\":\"This data is used to estimate the damage (and resulting loss of functionality) associated with emergency response facilities for a given flood, hurricane, and/or earthquake scenario. By evaluating this information, the Hazus user can determine whether the emergency response capabilities of the region are likely to be overwhelmed by the flood, hurricane, and/or earthquake scenario.\" </SPAN></P><P><SPAN /></P><P><SPAN>MEDICAL_CARE_FACILITIES_MHMP_IN.SHP is a point shapefile that shows medical care facilities in Indiana. MEDICAL_CARE_FACILITIES_MHMP_IN.SHP was derived from the shapefile named \"HZCAREFLTY.SHP,\" which was provided to Indiana Geological Survey personnel by personnel of The Polis Center. This data set was derived by The Polis Center as part of several \"DMA2000 Multi-Hazard Mitigation Planning\" (MHMP) projects, from data of the \"Hazards U.S. Multi-Hazards\" (Hazus-MH MR1, v 1.1) program (data from 2003) developed by the Federal Emergency Management Agency (FEMA). This data set is more complete in many counties in Indiana than the data set for essential facilities provided by FEMA with the Hazus-MH software.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Medical Care Facilities 2011",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335756000,
+        "avgRating": 0,
+        "id": "178c53df58464937b2a445f832f924ad",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Multi-Hazard Mitigation Plan, Indiana Geological Survey, Indiana Geographic Information Office",
+        "largeThumbnail": "",
+        "lastViewed": 1782799200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335755000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Medical_Care_Facilities_2011/FeatureServer",
+        "tags": [
+          "medical",
+          "medical care",
+          "hospitals",
+          "health",
+          "healthcare"
+        ],
+        "numViews": 57,
+        "numComments": 0,
+        "size": 914279,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Medical_Care_Facilities_2011",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Multi-Hazard Mitigation Plan",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/178c53df58464937b2a445f832f924ad"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2a8367439f1a45f5b860343818dcbd6c",
+      "title": "Alternative Fuel Stations 2023",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Alternative_Fuel_Stations_2023/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Alternative Fueling Station dataset helps fleet managers and drivers of alternative fuel vehicles find stations that offer biodiesel (B20 and above), electric vehicle charging, ethanol (E85), hydrogen, natural gas (compressed and liquefied), and propane (LPG). Downloaded from the US Bureau of Statistics (BTS) open geospatial data portal on 4/28/2023.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.89325899999994,
+                41.747078370000054
+              ],
+              [
+                -84.81218699999994,
+                41.747078370000054
+              ],
+              [
+                -84.81218699999994,
+                37.93353200000007
+              ],
+              [
+                -87.89325899999994,
+                37.93353200000007
+              ],
+              [
+                -87.89325899999994,
+                41.747078370000054
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The Alternative Fueling Stations dataset is updated daily from the National Renewable Energy Laboratory (NREL) and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transportation Statistics (BTS) National Transportation Atlas Database (NTAD). For more information about the update cycle and data collection methods, please refer to https://afdc.energy.gov/stations/#/find/nearest?show_about=true. This dataset shows all station access types (public and private) and statuses (available, planned, and temporarily unavailable) by default. To view only publicly available stations, use the access and status filters. The U.S. Department of Energy collects these data in partnership with Clean Cities coalitions and their stakeholders to help fleets and consumers find alternative fueling stations. Clean Cities coalitions foster the nation's economic, environmental, and energy security by working locally to advance affordable, efficient, and clean transportation fuels and technologies. This data can be found on the Alternative Fuels Data Center: https://doi.org/10.21949/1519144. For more information about the data schema and data dictionary, please see https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/all/#response-fields.",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.</span>",
+        "title": "Alternative Fuel Stations 2023",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335511000,
+        "avgRating": 0,
+        "id": "2a8367439f1a45f5b860343818dcbd6c",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1780336800000,
+        "thumbnail": "thumbnail/thumbnail1682694628731.png",
+        "languages": [],
+        "created": 1780335510000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Alternative_Fuel_Stations_2023/FeatureServer",
+        "tags": [
+          "Transportation",
+          "Alternative Fuel",
+          "Alternative Fueling Stations",
+          "Biodiesel",
+          "Electric Vehicles",
+          "Ethanol",
+          "Hydrogen",
+          "Natural Gas",
+          "Propane"
+        ],
+        "numViews": 1,
+        "numComments": 0,
+        "size": 209066,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Alternative_Fuel_Stations_2023",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/2a8367439f1a45f5b860343818dcbd6c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "585203106509438b920f60b9f627118f",
+      "title": "Earthquake Epicenters",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Earthquake_Epicenters/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "EARTHQUAKE_EPICENTERS_IN.SHP was created to show the distribution of earthquakes (with Mw greater than or equal to 3.0) that have occurred in Indiana, in the form of a GIS data layer. It was subsequently updated by personnel of the IGS when the more authoritative and standardized source of event records became available from the CEUS SSC catalog (as of December 31, 2008) and the U.S. Geological Survey, National Earthquake Information Center (for three recent earthquake events that occurred on December 30, 2010, January 26, 2012, and May 10, 2012).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.05389303331945,
+                41.624803248205765
+              ],
+              [
+                -84.86513510145714,
+                41.624803248205765
+              ],
+              [
+                -84.86513510145714,
+                37.882792019032195
+              ],
+              [
+                -88.05389303331945,
+                37.882792019032195
+              ],
+              [
+                -88.05389303331945,
+                41.624803248205765
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>EARTHQUAKE_EPICENTERS_IN.SHP shows the locations of all known historical earthquakes in Indiana with a moment magnitude (Mw) greater than or equal to 3.0. It includes earthquake locations derived from both instrumented recordings and estimations from historical accounts. The shapefile is an amalgam of points created from the CEUS SSC catalog maintained by the U.S. Nuclear Regulatory Commission (up to December 31, 2008) and the U.S. Geological Survey, National Earthquake Information Center (three events on December 30, 2010, January 26, 2012, and May 10, 2012). Values of Moment Magnitude (Mw) are used in this data. Mw refers to the energy released by the event, which is proportional to the slip on a fault multiplied by the area of the fault surface that slips. Events below Mw 3.0 have been omitted, as those events are below the energies felt by humans. Also, all pre-shock and aftershock, non-tectonic (e.g., mine blast), and duplicate event entries have been omitted. Data attributes include event date and time, x-y coordinate locations, and Moment Magnitude (Mw) values.</div>",
+        "licenseInfo": "<div>DATA DISCLAIMER</div><div>This data set was compiled by Indiana University, Indiana Geological Survey, using data believed to be accurate; however, a degree of error is inherent in all data. This product is distributed &quot;AS-IS&quot; without warranties of any kind, either expressed or implied, including but not limited to warranties of suitability of a particular purpose or use. No attempt has been made in either the designed format or production of these data to define the limits or jurisdiction of any federal, state, or local government.</div><div><br /></div><div>These data are intended for use only at the published scale or smaller and are for reference purposes only. They are not to be construed as a legal document or survey instrument. A detailed on-the-ground survey and historical analysis of a single site may differ from this data.</div><div><br /></div><div>It is requested that the Indiana Geological Survey be cited in any products generated from this data. The following source citation should be included:</div><div>[EARTHQUAKE_EPICENTERS_IN: Epicenters of Earthquakes in Indiana with a Moment Magnitude Equal to or Greater Than 3.0 (Indiana Geological Survey, 1:500,000, Point Shapefile), 20140630].</div><div><br /></div><div>WARRANTY</div><div>Indiana University, Indiana Geological Survey warrants that the media on which this product is stored will be free from defect in materials and workmanship for ninety (90) days from the date of acquisition. If such a defect is found, return the media to Publication Sales, Indiana Geological Survey, 611 North Walnut Grove, Bloomington, Indiana 47405-2208, and it will be replaced free of charge.</div><div><br /></div><div>LIMITATION OF WARRANTIES AND LIABILITY</div><div>Except for the expressed warranty above, the product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. Indiana University, Indiana Geological Survey shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. Indiana University, Indiana Geological Survey is not responsible for claims by a third party. The maximum aggregate liability to the original purchaser shall not exceed the amount paid by you for the product.</div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Earthquake Epicenters",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335436000,
+        "avgRating": 0,
+        "id": "585203106509438b920f60b9f627118f",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological Survey (IGS)",
+        "largeThumbnail": "",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335435000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Earthquake_Epicenters/FeatureServer",
+        "tags": [
+          "Seismic",
+          "Earthquake",
+          "Epicenter",
+          "Indiana Geological Survey (IGS)",
+          "US Nuclear Regulatory Commission (USNRC)",
+          "US Geological Survey (USGS)",
+          "seismology",
+          "geologic hazard",
+          "hazard tectonic",
+          "Moment Magnitude (Mw)"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 197511,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Earthquake_Epicenters",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/585203106509438b920f60b9f627118f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "46a5bd8386734f12b6792744173f3af4",
+      "title": "Indiana Water Balance Network 2017",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Indiana_Water_Balance_Network_2017/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The layer was created to provide locations of the Indiana Water Balance Network monitoring stations in Indiana, suitable for use in GIS.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.271880351566,
+                41.5833715798683
+              ],
+              [
+                -85.1089826398033,
+                41.5833715798683
+              ],
+              [
+                -85.1089826398033,
+                39.1786718680312
+              ],
+              [
+                -87.271880351566,
+                39.1786718680312
+              ],
+              [
+                -87.271880351566,
+                41.5833715798683
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>WATER_BALANCE_NETWORK_IN.SHP is a point shapefile that shows the locations of thirteen meteorological, soil-water, and groundwater monitoring stations  maintained by personnel of the Center for Geospatial Data Analysis, Indiana Geological &amp; Water Survey (IGS). Each of the monitoring stations has been located  in a unique hydrogeologic setting in Indiana. Meteorological sensors include tipping bucket rain gages, air temperature and relative humidity sensors,  pyranometers and net radiometers (used to measure natural solar radiation fluxes), and anemometers. Unsaturated-zone instrumentation is installed at nine  of the glaciated terrain sites and includes soil-moisture and temperature sensors (at most sites, located at depths of one foot to six feet below the ground  surface). Monitoring wells are also installed with pressure transducers to track shallow water-table fluctuations at stations where soil-moisture sensors  are installed. The data that are collected provide essential information for expanding the understanding of soil moisture and climate interactions. Attributes  include station names, soil texture, soil parent material, landscape description, vegetation, and a Website URL that allows users to access real-time  water-balance data for each individual monitoring station.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>DATA DISCLAIMER    This data set was compiled by Indiana University, Indiana Geological &amp; Water Survey, using data believed to be accurate; however, a degree of error is inherent in  all data. This product is distributed \"AS-IS\" without warranties of any kind, either expressed or implied, including but not limited to warranties  of suitability to a particular purpose or use. No attempt has been made in either the design or production of these data to define the limits or jurisdiction of  any federal, state, or local government. These data are intended for use only at the published scale or smaller and are for reference purposes only. They are  not to be construed as a legal document or survey instrument. A detailed on-the-ground survey and historical analysis of a single site may differ from these data.    CREDIT    It is requested that the Indiana Geological &amp; Water Survey be cited in any products generated from this data. The following source citation should be included:  [WATER_BALANCE_NETWORK_IN.SHP: Meteorological, Soil-Water, and Groundwater Monitoring Stations in Indiana (Indiana Geological &amp; Water Survey, Point Shapefile), 20170912].    LIMITATION OF WARRANTIES AND LIABILITY    This product is provided \"AS IS\", without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality,  or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. Indiana University, Indiana  Geological &amp; Water Survey shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to,  loss of revenue or profit, lost or damaged data or other commercial or economic loss. Indiana University, Indiana Geological &amp; Water Survey is not responsible for claims  by a third party. The maximum aggregate liability to the original purchaser shall not exceed the amount paid by you for the product.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Indiana Water Balance Network 2017",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335731000,
+        "avgRating": 0,
+        "id": "46a5bd8386734f12b6792744173f3af4",
+        "categories": [],
+        "spatialReference": "NAD_1983_UTM_Zone_16N",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological and Water Survey (IGWS), Indiana Geographic Information Office (IGIO)",
+        "largeThumbnail": "",
+        "lastViewed": 1782831600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335730000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Indiana_Water_Balance_Network_2017/FeatureServer",
+        "tags": [
+          "climatology",
+          "Meteorology",
+          "Atmosphere",
+          "geoscientific Information",
+          "environment",
+          "streamflow",
+          "Indiana Geological & Water Survey (IGS)",
+          "Center for Geospatial Data Analysis (CGDA)",
+          "Indiana Water Balance Network (IWBN)",
+          "real-time weather data",
+          "rain gauge",
+          "air temperature",
+          "soil temperature",
+          "relative humidity",
+          "pyranometer",
+          "net radiometer",
+          "anemometer",
+          "soil-moisture sensor",
+          "water table",
+          "unsaturated-zone",
+          "Indiana",
+          "Allen County",
+          "Delaware County",
+          "Fayette County",
+          "Hendricks County",
+          "Henry County",
+          "Lake County",
+          "Marion County",
+          "Monroe County",
+          "Morgan County",
+          "Rush County"
+        ],
+        "numViews": 415,
+        "numComments": 0,
+        "size": 865362,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Indiana_Water_Balance_Network_2017",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geographic Information Office",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/46a5bd8386734f12b6792744173f3af4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "7f28d72f38554211af185e7a24528e70",
+      "title": "Civil Township Boundaries 2021",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Township_Boundaries_of_Indiana/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Boundaries of civil townships within Indiana provided by the US Census Bureau's TIGER/Line Shapefiles site. Data provided is from 2021, downloaded from the Census TIGER/Line site in November 2022. This data was updated on 1/3/2024 to correct some township boundaries and names (see description).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.09789787570709,
+                41.76137598575852
+              ],
+              [
+                -84.78453956655325,
+                41.76137598575852
+              ],
+              [
+                -84.78453956655325,
+                37.77167908835761
+              ],
+              [
+                -88.09789787570709,
+                37.77167908835761
+              ],
+              [
+                -88.09789787570709,
+                41.76137598575852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>Civil townships are a unit of local government, typically subordinate to the County. In Indiana, each township is served by an elected township trustee.</div><div><br /></div><div>Civil townships are primarily represented as Minor Civil Divisions (MCDs) in the source data by the US Census Bureau. Per the US Census, MCDs are the primary governmental or administrative divisions of a county in many states. This data mostly contains MCD boundaries, with some corrected township boundaries (see explanation below). </div><div><br /></div><div>On 1/3/2024, IGIO staff updated the boundaries and/or attributes of 6 townships: Center (Delaware Co), Mount Pleasant (Delaware Co), Eagle (Boone Co), Perry (Boone Co), Union (Boone Co), and Worth (Boone Co). The Delaware County townships were attributed as either Muncie City or Yorktown Town and had associated incorporated area boundaries overlapping the civil township boundary. Boone County had townships attributed as Zionsville City and Whitestown Town and had associated incorporated are boundaries overlapping the real civil township boundary. Civil township boundaries from the 2023 Data Harvest were used when possible to correct geometry, and the neighboring census township boundaries to maintain topology when needed. Eagle and Union townships do not have a populated GEOID since the corrected boundary does not correspond to a census MCD geography to avoid incorrect joins to census tabular data by end users.</div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.</span>",
+        "title": "Civil Township Boundaries 2021",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773239334000,
+        "avgRating": 0,
+        "id": "7f28d72f38554211af185e7a24528e70",
+        "categories": [
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "4269",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "United States Census Bureau",
+        "largeThumbnail": "",
+        "lastViewed": 1780336800000,
+        "thumbnail": "thumbnail/thumbnail1676048380496.png",
+        "languages": [],
+        "created": 1664455408000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Township_Boundaries_of_Indiana/FeatureServer",
+        "tags": [
+          "Townships",
+          "Civil Divisions",
+          "Minor Civil Division (MCD)",
+          "Civil Township"
+        ],
+        "numViews": 19713,
+        "numComments": 0,
+        "size": 1689119,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Township_Boundaries_of_Indiana",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/7f28d72f38554211af185e7a24528e70"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    99
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 32,
+  "next_offset": 10,
+  "response_sha256": "13a7fc9148322ab7a5bcbc8671ce9cedbc3853e551453c090d0d39e2acaa7d88",
+  "search_complete": false
+}

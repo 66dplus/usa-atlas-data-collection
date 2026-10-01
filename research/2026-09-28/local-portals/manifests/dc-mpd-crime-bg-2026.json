@@ -1,0 +1,33 @@
+{
+  "source_id": "dc-mpd-crime-bg-2026",
+  "status": "source_collected",
+  "complete": true,
+  "retrieved_at": "2026-09-30T22:49:30.529433+00:00",
+  "endpoint": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer/41",
+  "rows": 2638,
+  "geo_type": "provider_block_group",
+  "boundary_vintage": null,
+  "coverage": "Entire DC layer aggregated by provider BLOCK_GROUP, CENSUS_TRACT and OFFENSE; missing geographies retained",
+  "release": "2026 reporting-year layer; year to date, incomplete annual period",
+  "limitations": [
+    "Server-side aggregates only; no incident names, case IDs, addresses, coordinates or event-level rows downloaded.",
+    "Provider assigns BG/tract before anonymizing locations. Boundary vintage is not verified; do not admit as canonical Census BG or claim own spatial join.",
+    "Counts represent reports in MPD layer, not victims, mortality or population-normalized crime rates.",
+    "2026 is incomplete; compare same reporting periods only."
+  ],
+  "checks": {
+    "source_incidents": 16195,
+    "sum_grouped_incidents": 16195,
+    "source_offenses": 9,
+    "missing_bg_incidents": 11,
+    "consistency": "aggregate sum equals count before/after; source can retrospectively revise assignments"
+  },
+  "review_status": "validated_for_aggregate_download",
+  "production_admission": "needs_review",
+  "normalized_path": "runtime/normalized/dc-mpd-crime-bg-2026.jsonl.gz",
+  "normalized_sha256": "62a09dd653b7cd1638108177c6dc69d12bdf0544f43b2744aa463f41ab92a8fd",
+  "normalized_file_sha256": "02dca87721ee2b399673ba5379f7abb8c7f505772f584e1a60a34fcd7807d995",
+  "raw_requests_path": "runtime/raw/dc-mpd-crime-bg-2026/20260930T224922Z/requests.json",
+  "request_count": 13,
+  "raw_response_bytes": 235473
+}

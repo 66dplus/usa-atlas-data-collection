@@ -1,0 +1,58 @@
+{
+  "jurisdiction_code": "CO",
+  "query": "suicide",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-01T02:22:01.782901+00:00",
+  "candidates": [
+    {
+      "id": "tubg-3s36",
+      "title": "Suicide Mortality Rate by Colorado Census Tract",
+      "url": "https://data.colorado.gov/dataset/Suicide-Mortality-Rate-by-Colorado-Census-Tract/tubg-3s36",
+      "publisher": "Colorado Geospatial Data Portal",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.colorado.gov/resource/tubg-3s36.json",
+      "description": "This dataset contains the Age-Adjusted Mortality Rate Per 100,000 Persons for Colorado Census Tract; Underlying Cause of Death Suicide (2020-2024)."
+    },
+    {
+      "id": "fqds-aa4n",
+      "title": "CDPHE Composite Selected Health Outcome Dataset (Census Tract)",
+      "url": "https://data.colorado.gov/Health/CDPHE-Composite-Selected-Health-Outcome-Dataset-Ce/fqds-aa4n",
+      "publisher": "CDPHE_spatial_data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.colorado.gov/resource/fqds-aa4n.json",
+      "description": "This census tract geography dataset contains eight selected 2011-2015 health outcome rates calculated at the census tract geography for all of the census tracts in Colorado: (Asthma Hospitalizations, Diabetes Hospitalizations, Heart Disease Mortality, Influenza Hospitalizations, Low Weight Birth, Motor Vehicle Accident Mortality, Suicide Mortality, and Teen Fertility).  The rates contained in this dataset represent 2011-2015 5-Year Averages and include the 95% confidence interval for each census tract rate as well as the Colorado state average.  Published rates that have large confidence intervals should be interpreted with caution.  This dataset is assembled and maintained annually by the Colorado Department of Public Health and Environment."
+    },
+    {
+      "id": "uppm-w53n",
+      "title": "CDPHE Composite Selected Health Outcome Dataset (County)",
+      "url": "https://data.colorado.gov/Health/CDPHE-Composite-Selected-Health-Outcome-Dataset-Co/uppm-w53n",
+      "publisher": "CDPHE_spatial_data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.colorado.gov/resource/uppm-w53n.json",
+      "description": "This county geography dataset contains eight selected 2011-2015 health outcome rates calculated at the county geography for all of the counties in Colorado: (Asthma Hospitalizations, Diabetes Hospitalizations, Heart Disease Mortality, Influenza Hospitalizations, Low Weight Birth, Motor Vehicle Accident Mortality, Suicide Mortality, and Teen Fertility).  The rates contained in this dataset represent 2011-2015 5-Year Averages and include the 95% confidence interval for each county rate as well as the Colorado state average.  Published rates that have large confidence intervals should be interpreted with caution.  This dataset is assembled and maintained annually by the Colorado Department of Public Health and Environment."
+    }
+  ],
+  "page_receipts": [
+    95
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 3,
+  "next_offset": 3,
+  "response_sha256": "e88ce5d3d4ab65e9a2d17da5eb8dbd7f4f832b2782ef86dd5abd11eece21ff8c",
+  "search_complete": true
+}

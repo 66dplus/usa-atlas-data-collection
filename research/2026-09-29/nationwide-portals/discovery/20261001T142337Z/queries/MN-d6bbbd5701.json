@@ -1,0 +1,1228 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "air quality",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T14:23:59.771199+00:00",
+  "candidates": [
+    {
+      "id": "1b49ef6a4a924c3588b129a7b3f19c09",
+      "title": "MPCA Air Quality Permits",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_air_quality_permits/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nThe attributes and locations of facilities with air quality permits provide information and context to support decisions on air quality, emergency management, and maintaining environmental quality. These data are intended to inform environmental research and public inquiries. \n            ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset represents the locations and classifications of facilities with air quality permits regulated by the Minnesota Pollution Control Agency.\n<br /><br />\n<a href='https://www.pca.state.mn.us/business-with-us/air-permits' target='_blank' rel='nofollow ugc noopener noreferrer'>MPCA Air Permits Homepage</a><div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>MPCA Air Permits Homepage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://www.pca.state.mn.us/business-with-us/air-permits' rel='nofollow ugc noopener noreferrer'><strong>View</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>aq_permits.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/274/aq_permits.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/274/env_air_quality_permits.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/274/env_air_quality_permits.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/274/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "MPCA Air Quality Permits",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790408813000,
+        "avgRating": 0,
+        "id": "1b49ef6a4a924c3588b129a7b3f19c09",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790586000000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613888000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_air_quality_permits/FeatureServer",
+        "tags": [
+          "Air Quality",
+          "Emissions",
+          "Permits",
+          "Minnesota"
+        ],
+        "numViews": 385,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency (MPCA)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/1b49ef6a4a924c3588b129a7b3f19c09"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a40377dd5789414aa6d10d699fe2a6d3",
+      "title": "Composite Image Service WMS, Minnesota",
+      "url": "https://gis.data.mn.gov/api/search/v1/collections/all/items/a40377dd5789414aa6d10d699fe2a6d3",
+      "publisher": "commons_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This image service is intended only to be a backdrop or reference layer and is not intended for any specific image analysis purposes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -101.2,
+                51.3
+              ],
+              [
+                -86.8,
+                51.3
+              ],
+              [
+                -86.8,
+                40.8
+              ],
+              [
+                -101.2,
+                40.8
+              ],
+              [
+                -101.2,
+                51.3
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Online",
+          "Explorer Web Map",
+          "Map",
+          "Metadata",
+          "Online Map",
+          "Web Map"
+        ],
+        "description": "<p>The goal of the Composite Image Service is to provide a single layer image service that automatically switches to an appropriate set of air photos or satellite imagery depending on the scale and extent. The images are provided as a WMS (web map service). The primary focus is the Twin Cities Metropolitan Area and the State of Minnesota. The secondary interest is the areas bordering Minnesota, especially Wisconsin counties close to the metro area. Imagery is evaluated based on criteria of color, currency, resolution, coverage, season, leaf cover and image quality in order to determine which imagery to include at which scale. See the Lineage field for a list of imagery layers that are visible at different scales. More information about this map service and the imagery resources displayed at various scales is available on the MnGeo Composite Image Service webpage: https://www.mngeo.state.mn.us/chouse/wms/composite_image.html</p><div style='display:flex; flex-direction:column; gap:10px; max-width:1000px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>OGC Web Map Service</strong></span> <a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://imageserver.gisdata.mn.gov/cgi-bin/mncomp?SERVICE=WMS&amp;VERSION=1.3.0&amp;REQUEST=GetCapabilities' rel='nofollow ugc noopener noreferrer'><strong>View</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>MN Geospatial Image Service Homepage</strong></span> <a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://www.mngeo.state.mn.us/chouse/wms/composite_image.html' rel='nofollow ugc noopener noreferrer'><strong>View</strong></a></div></div>",
+        "licenseInfo": "In obtaining this service from MnGeo, it is understood that you and/or your organization have the right to use it for any purpose. If you use the service to transmit or provide data to another user, it is your responsibility to provide appropriate content, limitation, warranty and liability information as you see fit.",
+        "ownerId": "a3d698ee8e6d4faca7233b1be84ddd7f",
+        "title": "Composite Image Service WMS, Minnesota",
+        "type": "Web Map",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773956168000,
+        "avgRating": 0,
+        "id": "a40377dd5789414aa6d10d699fe2a6d3",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "commons_user",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790604000000,
+        "thumbnail": "thumbnail/thumbnail1773926711023.png",
+        "languages": [],
+        "created": 1773925902000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "Digital Orthorectified Image",
+          "Digital Orthophoto Quad",
+          "Ortho",
+          "Orthophoto",
+          "DOQ",
+          "NAIP",
+          "Compliance",
+          "Air Photo",
+          "Air Photography",
+          "Aerial Photo",
+          "Aerial Photography",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 2946,
+        "numComments": 0,
+        "size": 923,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Geospatial Information Office (MnGeo)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/a40377dd5789414aa6d10d699fe2a6d3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5f4bc177747c4e1b9e75300314d5fd4a",
+      "title": "MPCA Wastewater Program - Groundwater Monitoring Sites",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/util_wastewater_gw_moni/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this data layer is to show groundwater monitoring locations required by wastewater permits. The monitoring results are stored on monthly Discharge Monitoring Reports (DMRs).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Wastewater permits can have groundwater monitoring stations. Many of the groundwater monitoring requirements are part of Large Subsurface Sewage System (LSTS) permits, but any permit can contain groundwater monitoring requirements. The data for these stations are reported on monthly Discharge Monitoring Reports (DMRs) and may not be part of other MPCA ambient data storage systems (EQuIS).<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>wastewater_gw_moni.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/348/wastewater_gw_moni.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/348/util_wastewater_gw_moni.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/348/util_wastewater_gw_moni.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/348/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Reasonable effort has been made to ensure the accuracy of the data on which this analysis is based. However, the Minnesota Pollution Control Agency does not warrant the accuracy, completeness, or suitability for any implied uses of these data. For more information, see http://www.pca.state.mn.us/clyp45.   Limitations: Although extensive effort has been made to produce error-free and complete data, all geographic information has limitations due to the scale, resolution, date and interpretation of the original source materials. Users should consult available data documentation (metadata) for this particular data to determine limitations and the precision to which the data depict distance, direction, location or other geographic characteristics. Data may be subject to change without prior notification.   No warranty: Data is provided \"as is,\" without any warranty whatsoever, including but not limited to any warranty as to performance, merchantability or fitness for any particular purpose.   Liability: The entire risk as to the results of the use of this data is assumed by the user. The MPCA is not responsible for any interpretation or conclusions made by those who acquire or use it. The MPCA shall not be liable for any direct, indirect, special, incidental, compensatory or consequential damages or third-party claims resulting from the use of this data, even if the MPCA has been advised of the possibility of such potential loss or damage. In states that do not allow the exclusion or limitation of incidental or consequential damages, this data may not be used.   Redistribution conditions: In obtaining this data from the MPCA, it is understood that individuals or organizations have the right to use it for any internal purpose. If data is modified, changes should be documented in a metadata record that should accompany all redistributed data. If data is transmitted or provided in any form to another user, the data should be accompanied by a copy of this disclaimer and all documentation provided with the original data set, including the full metadata record.   Data delivered on electronic media: If data has been requested from the MPCA on magnetic media, CD or any other physical media, the MPCA will deliver it in the computer-readable format agreed upon with the requestor. The MPCA will reissue data if it is unreadable by correctly adjusted computer input devices or when the media is delivered in a damaged condition. Requests for reissue of this digital data product must be made within 30 days of the date shipped from the MPCA.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "MPCA Wastewater Program - Groundwater Monitoring Sites",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790410544000,
+        "avgRating": 0,
+        "id": "5f4bc177747c4e1b9e75300314d5fd4a",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790596800000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613900000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/util_wastewater_gw_moni/FeatureServer",
+        "tags": [
+          "Minnesota Pollution Control Agency",
+          "MPCA",
+          "groundwater",
+          "monitoring",
+          "monitoring stations",
+          "water quality",
+          "water chemistry",
+          "NPDES",
+          "wastewater",
+          "Minnesota"
+        ],
+        "numViews": 391,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency (MPCA)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/5f4bc177747c4e1b9e75300314d5fd4a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9d62ddd9d50c45cbb727648a246c0f7b",
+      "title": "Impaired Waterbodies, Minnesota, Draft 2026",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These data are intended to be used for planning, informational, and cartographic purposes related to surface water quality in Minnesota.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This is a set of the impaired waterbodies as determined by MPCA's surface water quality assessment process for the 2026 reporting cycle to US Environmental Protection Agency (EPA). Waterbodies declared impaired prior to 2026 are also included in this dataset unless they have been delisted. The waterbodies included in the dataset are made available for public comment as part of the impaired waters list. \n<br /><br />\nNote that for the purpose of submitting the impaired waters list to EPA, waterbodies partially within Indian reservation boundaries are published in separate datasets. The MPCA still considers these waters impaired and has an interest in restoring them. The MPCA respectfully requests that the waters partially within Tribal Nation boundaries be symbolized differently on map products so that viewers can differentiate them from waters not intersecting Tribal Nation boundaries.  \n<br /><br />\nThese waterbodies are a subset and enhancement of the 1:24,000 scale National Hydrography Dataset (NHD). In cases where the NHD does not include a feature that MPCA has assessed, a feature is added by MPCA. Since the impaired waterbodies are a small subset of the NHD, only that subset is included in the dataset. This dataset includes impaired waterbodies that have not yet had a TMDL plan approved by the US EPA.\n<br /><br />\n<a href='https://www.pca.state.mn.us/air-water-land-climate/minnesotas-impaired-waters-list' target='_blank' rel='nofollow ugc noopener noreferrer'>MPCA Impaired Waters Web Page</a>\n<br /><br />\nSee the metadata of the individual datasets for details on their lineage.\n<ul>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/7/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Streams, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/6/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Streams Partially Within Reservations, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/13/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Lakes, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/12/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Lakes Partially Within Reservations, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/2/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Lakes Points, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/1/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Lakes Points Partially Within Reservations, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/11/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Wetlands, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/0/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Wetlands Points, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/8/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Beaches, Minnesota, Draft 2026</a></li>\n\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/9/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Delisted Streams, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/14/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Delisted Lakes, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/3/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Delisted Lakes Points, Minnesota, Draft 2026</a></li>\n\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/10/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Corrected Streams, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/16/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Corrected Lakes, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/5/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Corrected Lakes Points, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/15/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Corrected Wetlands, Minnesota, Draft 2026</a></li>\n<li><a href='https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer/4/metadata?format=default&f=html' target='_blank' rel='nofollow ugc noopener noreferrer'>Corrected Wetlands Points, Minnesota, Draft 2026</a></li>\n</ul><div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1170/env_impaired_water_2026_draft.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1170/env_impaired_water_2026_draft.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1170/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Impaired Waterbodies, Minnesota, Draft 2026",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790193661000,
+        "avgRating": 0,
+        "id": "9d62ddd9d50c45cbb727648a246c0f7b",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790568000000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778918907000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2026_draft/FeatureServer",
+        "tags": [
+          "inlandWaters",
+          "surface water",
+          "water chemistry",
+          "water quality",
+          "impaired waters",
+          "Minnesota"
+        ],
+        "numViews": 6864,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency (MPCA)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/9d62ddd9d50c45cbb727648a246c0f7b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "fbc6c35059894add9476f94753df37b6",
+      "title": "Impaired Streams 2010",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_streams_2010/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The data set was created as part of the Minnesota Pollution Control Agency's Environmental Data Access System, which allows for public access to surface water monitoring data.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -96.833053,
+                49.036548
+              ],
+              [
+                -89.890492,
+                49.036548
+              ],
+              [
+                -89.890492,
+                43.435437
+              ],
+              [
+                -96.833053,
+                43.435437
+              ],
+              [
+                -96.833053,
+                49.036548
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This is a set of the impaired streams as determined by MPCA in 2009 for the 2010 reporting cycling to US EPA.\n\nThe streams are a subset and enhancement of the 1:24,000 scale National Hydrography Dataset (NHD). MPCA adds additional stream reaches. Since the impaired streams are a small subset of the NHD streams, only that subset is included in the dataset.  This dataset includes impaired streams which have not yet had a TMDL plan approved by the US EPA, those that have a US EPA approved TMDL plan as well as those streams that do not need a TMDL plan.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/302/env_impaired_streams_2010.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/302/env_impaired_streams_2010.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/302/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "NOTICE: The Geographic Information System (GIS) Data to which this notice is attached are made available pursuant to the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13). THE GIS DATA ARE PROVIDED TO YOU AS IS AND WITHOUT ANY WARRANTY AS TO THEIR PERFORMANCE, MERCHANTABILITY, OR FITNESS FOR ANY PARTICULAR PURPOSE. The GIS Data were developed by the Minnesota Pollution Control Agnecy for its own internal business purposes. The Minnesota Pollution Control Agency does not represent or warrant that the GIS Data or the data documentation are error-free, complete, current, or accurate. You are responsible for any consequences resulting from your use of the GIS Data or your reliance on the GIS Data. You should consult the data documentation for this particular GIS Data to determine the limitations of the GIS Data and the precision with which the GIS Data may depict distance, direction, location, or other geographic features. If you transmit or provide the GIS Data (or any portion of it) to another user, the GIS Data must include a copy of this disclaimer.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Impaired Streams 2010",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790166709000,
+        "avgRating": 0,
+        "id": "fbc6c35059894add9476f94753df37b6",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790600400000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613691000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_streams_2010/FeatureServer",
+        "tags": [
+          "surface water",
+          "water chemistry",
+          "water quality",
+          "impaired waters",
+          "TMDL",
+          "303(d)",
+          "Minnesota"
+        ],
+        "numViews": 182,
+        "numComments": 0,
+        "size": 110,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/fbc6c35059894add9476f94753df37b6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0d1578a108ac49a68e94ce6010402ce6",
+      "title": "Assessed Waters, Minnesota, 2014 (Final)",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_assessed_water_2014/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These data are intended to be used for planning, informational, and cartographic purposes related to surface water quality in Minnesota.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This is a set of the waterbodies assessed by MPCA's surface water quality assessment process for the 2014 303(d)/305(b) integrated report to EPA. \n\nPlease consult the metadata of the individual datasets for details on their lineage.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/279/env_assessed_water_2014.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/279/env_assessed_water_2014.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/279/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "NOTICE: The Geographic Information System (GIS) Data to which this notice is attached are made available pursuant to the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13). THE GIS DATA ARE PROVIDED TO YOU AS IS AND WITHOUT ANY WARRANTY AS TO THEIR PERFORMANCE, MERCHANTABILITY, OR FITNESS FOR ANY PARTICULAR PURPOSE. The GIS Data were developed by the Minnesota Pollution Control Agnecy for its own internal business purposes. The Minnesota Pollution Control Agency does not represent or warrant that the GIS Data or the data documentation are error-free, complete, current, or accurate. You are responsible for any consequences resulting from your use of the GIS Data or your reliance on the GIS Data. You should consult the data documentation for this particular GIS Data to determine the limitations of the GIS Data and the precision with which the GIS Data may depict distance, direction, location, or other geographic features. If you transmit or provide the GIS Data (or any portion of it) to another user, the GIS Data must include a copy of this disclaimer.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Assessed Waters, Minnesota, 2014 (Final)",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789761418000,
+        "avgRating": 0,
+        "id": "0d1578a108ac49a68e94ce6010402ce6",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "4269",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790575200000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613557000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_assessed_water_2014/FeatureServer",
+        "tags": [
+          "inlandWaters",
+          "surface water",
+          "water chemistry",
+          "water quality",
+          "Minnesota"
+        ],
+        "numViews": 1155,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/0d1578a108ac49a68e94ce6010402ce6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0cc71a190111493685a86ca1067d655b",
+      "title": "Impaired Waterbodies, Minnesota, 2022",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2022/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These data are intended to be used for planning, informational, and cartographic purposes related to surface water quality in Minnesota.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This is a set of the impaired waterbodies as determined by MPCA's surface water quality assessment process for the 2022 reporting cycle to US Environmental Protection Agency (EPA). Waterbodies declared impaired prior to 2022 are also included in this dataset unless they have been delisted. The waterbodies included in the dataset are made available for public comment as part of the impaired waters list. \n\nNote that for the purpose of submitting the impaired waters list to EPA, waterbodies partially or wholly within Indian reservation boundaries are published in separate datasets. The MPCA still considers these waters impaired and has an interest in restoring them. The MPCA respectfully requests that the waters partially or wholly within Indian reservations be symbolized differently on map products so that viewers can differentiate them from waters not intersecting Indian reservations. \n\nThese waterbodies are a subset and enhancement of the 1:24,000 scale National Hydrography Dataset (NHD). In cases where the NHD does not include a feature that MPCA has assessed, a feature is added by MPCA. Since the impaired waterbodies are a small subset of the NHD, only that subset is included in the dataset. This dataset includes impaired waterbodies that have not yet had a TMDL plan approved by the US EPA.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/312/env_impaired_water_2022.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/312/env_impaired_water_2022.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/312/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Impaired Waterbodies, Minnesota, 2022",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789664055000,
+        "avgRating": 0,
+        "id": "0cc71a190111493685a86ca1067d655b",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790578800000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613718000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_water_2022/FeatureServer",
+        "tags": [
+          "inlandWaters",
+          "surface water",
+          "water chemistry",
+          "water quality",
+          "impaired waters",
+          "Minnesota"
+        ],
+        "numViews": 3573,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/0cc71a190111493685a86ca1067d655b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9f0c08307ce14c8fb23dec156e71854f",
+      "title": "Impaired Lakes 2012",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_lakes_2012/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The data set was created as part of the Minnesota Pollution Control Agency's Environmental Data Access System, which allows for public access to surface water monitoring data.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.140714,
+                49.394786
+              ],
+              [
+                -89.389596,
+                49.394786
+              ],
+              [
+                -89.389596,
+                43.439806
+              ],
+              [
+                -97.140714,
+                43.439806
+              ],
+              [
+                -97.140714,
+                49.394786
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset represents impaired lakes as determined by MPCA in 2011 for the 2012 reporting cycle to US EPA.\n\nThe lakes are a subset and enhancement of the 1:24,000 scale National Hydrography Dataset (NHD). MPCA adds additional lakes. Since the impaired lakes are a small subset of the NHD lakes, only that subset is included in the dataset.  This dataset includes impaired lakes which have not yet had a TMDL plan approved by the US EPA, those that have a US EPA approved TMDL plan as well as those lakes that do not need a TMDL plan.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/301/env_impaired_lakes_2012.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/301/env_impaired_lakes_2012.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/301/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "NOTICE: The Geographic Information System (GIS) Data to which this notice is attached are made available pursuant to the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13). THE GIS DATA ARE PROVIDED TO YOU AS IS AND WITHOUT ANY WARRANTY AS TO THEIR PERFORMANCE, MERCHANTABILITY, OR FITNESS FOR ANY PARTICULAR PURPOSE. The GIS Data were developed by the Minnesota Pollution Control Agnecy for its own internal business purposes. The Minnesota Pollution Control Agency does not represent or warrant that the GIS Data or the data documentation are error-free, complete, current, or accurate. You are responsible for any consequences resulting from your use of the GIS Data or your reliance on the GIS Data. You should consult the data documentation for this particular GIS Data to determine the limitations of the GIS Data and the precision with which the GIS Data may depict distance, direction, location, or other geographic features. If you transmit or provide the GIS Data (or any portion of it) to another user, the GIS Data must include a copy of this disclaimer.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Impaired Lakes 2012",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789661112000,
+        "avgRating": 0,
+        "id": "9f0c08307ce14c8fb23dec156e71854f",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613691000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_lakes_2012/FeatureServer",
+        "tags": [
+          "surface water",
+          "water chemistry",
+          "water quality",
+          "impaired waters",
+          "TMDL",
+          "303(d)",
+          "Minnesota"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/9f0c08307ce14c8fb23dec156e71854f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e1a52ed4955946399bccbb16c6f24d53",
+      "title": "Impaired Lakes 2010",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_lakes_2010/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The data set was created as part of the Minnesota Pollution Control Agency's Environmental Data Access System, which allows for public access to surface water monitoring data.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -96.591873,
+                48.993325
+              ],
+              [
+                -89.932085,
+                48.993325
+              ],
+              [
+                -89.932085,
+                43.450467
+              ],
+              [
+                -96.591873,
+                43.450467
+              ],
+              [
+                -96.591873,
+                48.993325
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This is a set of the impaired lakes as determined by MPCA in 2009 for the 2010 reporting cycling to US EPA. \n\nThe lakes are a subset and enhancement of the 1:24,000 scale National Hydrography Dataset (NHD). MPCA adds additional lakes. Since the impaired lakes are a small subset of the NHD lakes, only that subset is included in the dataset.   This dataset includes impaired lakes which have not yet had a TMDL plan approved by the US EPA, as well as those lakes that have a US EPA approved TMDL plan.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/300/env_impaired_lakes_2010.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/300/env_impaired_lakes_2010.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/300/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "NOTICE: The Geographic Information System (GIS) Data to which this notice is attached are made available pursuant to the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13). THE GIS DATA ARE PROVIDED TO YOU AS IS AND WITHOUT ANY WARRANTY AS TO THEIR PERFORMANCE, MERCHANTABILITY, OR FITNESS FOR ANY PARTICULAR PURPOSE. The GIS Data were developed by the Minnesota Pollution Control Agnecy for its own internal business purposes. The Minnesota Pollution Control Agency does not represent or warrant that the GIS Data or the data documentation are error-free, complete, current, or accurate. You are responsible for any consequences resulting from your use of the GIS Data or your reliance on the GIS Data. You should consult the data documentation for this particular GIS Data to determine the limitations of the GIS Data and the precision with which the GIS Data may depict distance, direction, location, or other geographic features. If you transmit or provide the GIS Data (or any portion of it) to another user, the GIS Data must include a copy of this disclaimer.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Impaired Lakes 2010",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789660622000,
+        "avgRating": 0,
+        "id": "e1a52ed4955946399bccbb16c6f24d53",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790560800000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613691000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_impaired_lakes_2010/FeatureServer",
+        "tags": [
+          "surface water",
+          "water chemistry",
+          "water quality",
+          "impaired waters",
+          "TMDL",
+          "303(d)",
+          "Minnesota"
+        ],
+        "numViews": 405,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/e1a52ed4955946399bccbb16c6f24d53"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "00d66d2869624d11ad44b12a4fd17079",
+      "title": "Subsurface Sewage Treatment System (SSTS) Licensed Businesses",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/util_ssts_licensed_business/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The SSTS Licensed Businesses data is meant to be used by Local Program Administrators in order to verify licensure. If you are a system owner, recognize that licensed businesses may work anywhere in Minnesota and are not restricted to the city or county in which they are located. The data provided by this resource are not intended to be used as advertising.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Subsurface sewage treatment system (SSTS) work in Minnesota must be completed by licensed businesses under the supervision of certified individuals (with certain licensure exemptions, such local units of government that conduct SSTS work; see Minn. Stat. § 115.56 Subd. 2). This dataset contains business licenses and individual certifications related to SSTS design and installation. Locations may be represented by a street address, zip code, or county centroid.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>ssts_licensed_business.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/345/ssts_licensed_business.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/345/util_ssts_licensed_business.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/345/util_ssts_licensed_business.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/345/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Reasonable effort has been made to ensure the accuracy of the data on which this analysis is based. However, the Minnesota Pollution Control Agency does not warrant the accuracy, completeness, or suitability for any implied uses of these data. For more information, see http://www.pca.state.mn.us/clyp45.   Limitations: Although extensive effort has been made to produce error-free and complete data, all geographic information has limitations due to the scale, resolution, date and interpretation of the original source materials. Users should consult available data documentation (metadata) for this particular data to determine limitations and the precision to which the data depict distance, direction, location or other geographic characteristics. Data may be subject to change without prior notification.   No warranty: Data is provided \"as is,\" without any warranty whatsoever, including but not limited to any warranty as to performance, merchantability or fitness for any particular purpose.   Liability: The entire risk as to the results of the use of this data is assumed by the user. The MPCA is not responsible for any interpretation or conclusions made by those who acquire or use it. The MPCA shall not be liable for any direct, indirect, special, incidental, compensatory or consequential damages or third-party claims resulting from the use of this data, even if the MPCA has been advised of the possibility of such potential loss or damage. In states that do not allow the exclusion or limitation of incidental or consequential damages, this data may not be used.   Redistribution conditions: In obtaining this data from the MPCA, it is understood that individuals or organizations have the right to use it for any internal purpose. If data is modified, changes should be documented in a metadata record that should accompany all redistributed data. If data is transmitted or provided in any form to another user, the data should be accompanied by a copy of this disclaimer and all documentation provided with the original data set, including the full metadata record.   Data delivered on electronic media: If data has been requested from the MPCA on magnetic media, CD or any other physical media, the MPCA will deliver it in the computer-readable format agreed upon with the requestor. The MPCA will reissue data if it is unreadable by correctly adjusted computer input devices or when the media is delivered in a damaged condition. Requests for reissue of this digital data product must be made within 30 days of the date shipped from the MPCA.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Subsurface Sewage Treatment System (SSTS) Licensed Businesses",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790410328000,
+        "avgRating": 0,
+        "id": "00d66d2869624d11ad44b12a4fd17079",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790596800000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778614183000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/util_ssts_licensed_business/FeatureServer",
+        "tags": [
+          "Minnesota",
+          "MN",
+          "Minnesota Pollution Control Agency",
+          "MPCA",
+          "Water Quality",
+          "Subsurface Sewage Treatment Systems",
+          "SSTS",
+          "Minnesota"
+        ],
+        "numViews": 371,
+        "numComments": 0,
+        "size": 112,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency (MPCA)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/00d66d2869624d11ad44b12a4fd17079"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    104
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 53,
+  "next_offset": 10,
+  "response_sha256": "e5bb58700d84890fd9b2c7ed700e2aab55a6296367b11420d8f3cb04c7a87798",
+  "search_complete": false
+}

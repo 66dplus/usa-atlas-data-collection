@@ -1,0 +1,11 @@
+[Unit]
+Description=Refresh USA Atlas Prince William County buildings Sundays at 03:45 UTC
+
+[Timer]
+OnCalendar=Sun *-*-* 03:45:00 UTC
+Persistent=true
+AccuracySec=30
+Unit=usa-atlas-pwc-refresh.service
+
+[Install]
+WantedBy=timers.target

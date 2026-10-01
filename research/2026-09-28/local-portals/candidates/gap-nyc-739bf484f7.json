@@ -1,0 +1,33 @@
+{
+  "query": {
+    "id": "gap-nyc-739bf484f7",
+    "portal_id": "nyc",
+    "query": "wealth",
+    "desired_geo": "block_group",
+    "field_ids": [
+      "07.06",
+      "07.07"
+    ],
+    "source": "live-coverage gap intake",
+    "food_excluded": true
+  },
+  "checked_at": "2026-09-30T16:49:07.995830+00:00",
+  "status": "needs_review",
+  "total_catalog_matches": 1,
+  "page_offset": 0,
+  "next_cursor": 0,
+  "max_search_results_per_cycle": 100,
+  "search_complete": true,
+  "candidates": [
+    {
+      "id": "r3dx-pew9",
+      "title": "Neighborhood Financial Health Digital Mapping and Data Tool",
+      "url": "https://data.cityofnewyork.us/Business/Neighborhood-Financial-Health-Digital-Mapping-and-/r3dx-pew9",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/r3dx-pew9.json",
+      "status": "needs_review"
+    }
+  ],
+  "meaning": "not_available means zero matches for this query only; unknown schemas require review",
+  "response_sha256": "64fefc4f813ca0f46c0761c46e183dfd39376e34dff94e76d31ff89d7b911b04"
+}

@@ -1,0 +1,1185 @@
+{
+  "jurisdiction_code": "AK",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T08:19:06.663516+00:00",
+  "candidates": [
+    {
+      "id": "00f233b98fab4dcab6a10cf0a910941a",
+      "title": "Alaska DEC Groundwater Plumes - Public",
+      "url": "https://services.arcgis.com/8MMg7skvEbOESlSM/arcgis/rest/services/Plumes_Non_Edit/FeatureServer",
+      "publisher": "adecadmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was created by Alaska Department of Environmental Conservation (DEC) Contaminated Sites Program to provide the public easier access to contaminated groundwater plume information associated with contaminated sites.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -147.8931671254829,
+                64.86850938100922
+              ],
+              [
+                -147.53549366772933,
+                64.86850938100922
+              ],
+              [
+                -147.53549366772933,
+                64.79370347130235
+              ],
+              [
+                -147.8931671254829,
+                64.79370347130235
+              ],
+              [
+                -147.8931671254829,
+                64.86850938100922
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p style='background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:#000020;'>This data set\nis composed of polygons encompassing the inferred lateral extents of validated\ncontaminant detections in groundwater promulgated in regulations at 18 AAC 75\nby the Alaska Department of Environmental Conservation (ADEC). Please note that\nthere may be additional unidentified sources associated with groundwater\nplumes.</span></p><table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse;'>\n <tbody><tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Hazard\n  ID</span></p>\n  </td>\n  <td style='width:4.25in; border:solid windowtext 1.0pt; border-left:none; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Contaminated\n  Sites Program Database (CSP DB) Hazard ID</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Site\n  Name</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Site\n  name from CSP DB</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>File\n  Number</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>File\n  Number from CSP DB</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Status</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Site\n  Status from CSP DB</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Primary\n  Contaminant</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Plume\n  Contaminant(s)</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Primary\n  Plume Category</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Primary\n  (type or category) of groundwater contamination</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Effective\n  Date</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Effective\n  date of the plume as it is represented</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Source\n  Document</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Where\n  the data for how the plume was derived is presented (e.g. 2017 SC report;\n  optional)</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Notes</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Field\n  for identifying additional information, contacts, qualifiers, site specific\n  websites, etc. (optional)</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Plume\n  Name</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Plume\n  Name (optional; e.g. ‘Bentley Plume’)</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Source\n  Area Name</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Source\n  Area name from CSP DB (optional)</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Defined\n  Downgradient?</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Uncertainty\n  field which identifies if the plume has been delimited downgradient (defined\n  in DQOs)</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Defined\n  Laterally?</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Uncertainty\n  field which addresses whether the lateral definition of the plume has been\n  identified (defined in DQOs)</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Minimum\n  Depth (ft. bgs)</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Minimum\n  depth of the plume (optional)</span></p>\n  </td>\n </tr>\n <tr>\n  <td style='width:157.25pt; border:solid windowtext 1.0pt; border-top:none; padding:0in 5.4pt 0in 5.4pt;' valign='top' width='210'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Maximum\n  Depth (ft. bgs)</span></p>\n  </td>\n  <td style='width:4.25in; border-top:none; border-left:none; border-bottom:solid windowtext 1.0pt; border-right:solid windowtext 1.0pt; padding:0in 0in 0in 0in;' valign='top' width='408'>\n  <p style='margin-bottom:0in;'><span style='font-size:12.0pt; font-family:&quot;Garamond&quot;,serif; color:black;'>Maximum\n  depth of the plume (optional)</span></p>\n  </td>\n </tr>\n</tbody></table><p><br /></p><p style='margin:0in 0in 8pt;'>\n\n\n\n<br /></p>",
+        "licenseInfo": "<p style='margin: 0in 0in 8pt;'><span style='line-height: 107%; font-family: &quot;Garamond&quot;,serif; font-size: 12pt;'><font color='#000000'><font face='Calibri'>The Groundwater Plumes Webmap depicts some, but not all, known areas of groundwater contamination in Alaska.<span style='mso-spacerun: yes;'>  </span>This webmap only displays select groundwater plumes that staff have entered.<span style='mso-spacerun: yes;'>  </span>The individual plume boundaries depicted are approximations based on groundwater data provided to the department and should not be considered definitive boundaries.<span style='mso-spacerun: yes;'>  </span>The actual extent of groundwater contamination may be larger or smaller and additional areas of contamination may exist that have not been identified. This map was developed using the best available information provided to the department and standard quality control criteria. </font></font></span></p><p style='margin: 0in 0in 8pt;'><span style='line-height: 107%; font-family: &quot;Garamond&quot;,serif; font-size: 12pt;'><font color='#000000' face='Calibri'></font></span></p><p style='margin: 0in 0in 8pt;'><font color='#000000'><font face='Times New Roman'>  </font></font></p><p style='margin: 0in 0in 8pt;'><font color='#000000'><font face='Times New Roman'><font face='Calibri'>Additionally, the Plumes Webmap is only as accurate as the date it was created. ADEC receives additional groundwater data regularly. The plume data on the webmap will not be updated in realtime. Therefore, the webmap should be used in conjunction with the contaminated sites database, which is accessible on-line at the following URL: </font><a href='http://dec.alaska.gov/Applications/SPAR/PublicMVC/CSP/Search' rel='nofollow ugc'><font color='#0563c1' face='Calibri'>http://dec.alaska.gov/Applications/SPAR/PublicMVC/CSP/Search</font></a><font face='Calibri'>.<span style='mso-spacerun: yes;'>  </span>The contaminated sites database and the site files contain additional more detailed information, which may be more current.<span style='mso-spacerun: yes;'>  </span>ADEC recommends contacting the project manager assigned to an individual site if there are questions.</font></font></font></p><p style='margin: 0in 0in 8pt;'></p><p></p><p style='margin: 0in 0in 8pt;'></p><p style='margin: 0in 0in 8pt;'><font color='#000000'><font face='Times New Roman'>  </font></font></p>",
+        "ownerId": "957660bbe04c14628790ba777d2fcc4c",
+        "title": "Alaska DEC Groundwater Plumes - Public",
+        "type": "Feature Service",
+        "orgId": "8MMg7skvEbOESlSM",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785344105000,
+        "avgRating": 0,
+        "id": "00f233b98fab4dcab6a10cf0a910941a",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "adecadmin",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1787680800000,
+        "thumbnail": "thumbnail/thumbnail1637626530481.png",
+        "languages": [],
+        "created": 1511996207000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/8MMg7skvEbOESlSM/arcgis/rest/services/Plumes_Non_Edit/FeatureServer",
+        "tags": [
+          "plumes",
+          "adec",
+          "CSP"
+        ],
+        "numViews": 209883,
+        "numComments": 0,
+        "size": 1023,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Plumes_Non_Edit",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "AK Department of Environmental Conservation AGO",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/00f233b98fab4dcab6a10cf0a910941a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b9945dcb82a34ac1a33fbb9884917db1",
+      "title": "DMLW Environmental Assessment Map",
+      "url": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/b9945dcb82a34ac1a33fbb9884917db1",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Map containing various natural resource and environmental datasets.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                75.08314542183106
+              ],
+              [
+                -105.06087350750937,
+                75.08314542183106
+              ],
+              [
+                -105.06087350750937,
+                30.860574835698547
+              ],
+              [
+                -180,
+                30.860574835698547
+              ],
+              [
+                -180,
+                75.08314542183106
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Online",
+          "Explorer Web Map",
+          "Map",
+          "Online Map",
+          "Web Map"
+        ],
+        "description": "<p>Map containing Alaska Department of Environmental Conservation (ADEC) Contaminated Sites, Groundwater Plume, PFAS, Water Quality Standards (ADEC), Drinking Water Protection Areas, and Solid Waste Sites/Boundaries data, Alaska Resource Data File (USGS), Surface Well Location (AOGCC), Formerly Used Defense Sites - FUDS and Interim Risk Management - IRM (USACE).&nbsp;Alaska Department of Natural Resources (ADNR) Land Ownership, Potential Hazardous Sites and Landfill data, as well as other land use.</p>",
+        "licenseInfo": "<p>The State of Alaska makes no expressed or implied warranties (including warranties of merchantability and fitness) with respect to the character, function, or capabilities of this product or its appropriateness for any user's purposes.<span style='mso-spacerun:yes'>  </span>In no event, will the State of Alaska be liable for any incidental, indirect, special, consequential or other damages suffered by the user or any other person or entity whether from use of the product, any failure thereof or otherwise, and in no event, will the State of Alaska's liability to you or anyone else exceed the fee paid for the electronic service or product.</p>",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "DMLW Environmental Assessment Map",
+        "type": "Web Map",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1776717072000,
+        "avgRating": 0,
+        "id": "b9945dcb82a34ac1a33fbb9884917db1",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Natural Resources"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1790337600000,
+        "thumbnail": "thumbnail/thumbnail1670374354565.png",
+        "languages": [],
+        "created": 1549572081000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          "contaminated sites",
+          "solid waste sites",
+          "other activity",
+          "dec",
+          "FUDS",
+          "potential hazardous sites",
+          "SAIL",
+          "DNR",
+          "DMLW",
+          "BUMO"
+        ],
+        "numViews": 9370,
+        "numComments": 0,
+        "size": 346563,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources ArcGIS Online",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/b9945dcb82a34ac1a33fbb9884917db1"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "62a07ce22d864c349af6e475877dbcc4",
+      "title": "Geothermal Wells Alaska",
+      "url": "https://geoportal.dggs.dnr.alaska.gov/arcgis/rest/services/Hosted/geothermal_wells_public/FeatureServer",
+      "publisher": "ggs_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Alaska is geothermally active with 97 known thermal springs. It is one of eight states generating electricity from geothermal energy. Alaska's first geothermal power plant at Chena Hot Springs has a generating capacity of 730 kilowatts and began operation in 2006.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                172,
+                71.450459
+              ],
+              [
+                -124,
+                71.450459
+              ],
+              [
+                -124,
+                49.128799
+              ],
+              [
+                172,
+                49.128799
+              ],
+              [
+                172,
+                71.450459
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Between 1979 and 1982, the Alaska Division of Geological &amp; Geophysical Surveys (DGGS) and the Geophysical Institute, University of Alaska Fairbanks, undertook an assessment of the states geothermal resources under a program jointly sponsored by the U.S. Department of Energy and the State of Alaska. During this period, reconnaissance investigations of more than 100 thermal spring sites and fumarole fields located in Alaska were conducted by DGGS.<div><br /></div><div>More recently, DGGS completed a<font size='3'><span style='color:rgb(0, 0, 0); font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'> </span><a href='https://dggs.alaska.gov/pubs/project/886' rel='nofollow ugc' style='color:rgb(0, 102, 204); text-decoration-line:none; font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'>cooperative project with the National Geothermal Data System</a><span style='color:rgb(0, 0, 0); font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'> on thermal springs and related geothermal data of Alaska. The Alaska geothermal database modules include comprehensive information on thermal springs, including temperature and flow rates, direct use, aqueous spring chemistry, physical samples, volcanic vents, geothermal wells, borehole temperature data and geothermal references.</span></font></div><div><font size='3'><span style='color:rgb(0, 0, 0); font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'><br /></span></font></div><div><p style='margin-top:0px; margin-bottom:20px; color:rgb(0, 0, 0); font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:14px;'>DGGS developed and maintains an <a href='https://geoportal.dggs.dnr.alaska.gov/portal/apps/webappviewer/index.html?id=28ed3938684448bb8d8fabad2c505e4d' rel='nofollow ugc' style='color:rgb(0, 102, 204); text-decoration-line:none; font-family:inherit;'>interactive geothermal web application</a> that brings together various data services related to geothermal sites throughout Alaska.</p><ul><li>Geothermal springs: Includes temperature and flow information. Spring location uncertainty and data sources are also included.</li><li>Geothermal wells: Location and name only</li><li>Volcanoes: Direct from the Historically Active Volcanoes of Alaska service</li></ul></div>",
+        "licenseInfo": "Any hard copies or published datasets utilizing these datasets shall clearly indicate their source. If the user has modified the data in any way, the user is obligated to describe the types of modifications the user has made. User specifically agrees not to misrepresent these datasets, nor to imply that changes made by the user were approved by the State of Alaska, Department of Natural Resources, Division of Geological & Geophysical Surveys.",
+        "ownerId": "8545f15043a0d3c742babc54b51c3ded",
+        "title": "Geothermal Wells Alaska",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784757396000,
+        "avgRating": 0,
+        "id": "62a07ce22d864c349af6e475877dbcc4",
+        "categories": [],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "ggs_admin",
+        "accessInformation": "Funding for this project was jointly supplied by the U.S. Department of Energy and the State of Alaska. Additional Acknowledgments: John W. Reeder of DGGS supplied information. Map produced by Ronald H. Smith, Cooperative Institute for Research in Environmental Sciences (CIRES), University of Colorado/NOAA, and Joy Ikelman, NGDC/NOAA, Boulder, Colorado, in cooperation with the Earth Science Laboratory/University of Utah Research Institute, Salt Lake City, Utah. Digital thermal well and spring data available from GEOTHERM Project, U.S. Geological Survey, 345 Middlefield Road, MS84, Menlo Park, California 94025.",
+        "largeThumbnail": "",
+        "lastViewed": 1790344800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1644652836000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://geoportal.dggs.dnr.alaska.gov/arcgis/rest/services/Hosted/geothermal_wells_public/FeatureServer",
+        "tags": [
+          "Active Volcanoes",
+          "Chemistry",
+          "Energy Resources",
+          "Gas Rocks Hot Springs",
+          "Geochemistry",
+          "Geology",
+          "Geothermal",
+          "Ground Water",
+          "Heat Flow Study",
+          "Hydrothermal Deposit",
+          "Mineral Spring",
+          "Thermal History",
+          "Volcanic Rocks",
+          "Well Chemistry"
+        ],
+        "numViews": 8576,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "geothermal_wells_public",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Alaska, Department of Natural Resources, Division of Geological & Geophysical Surveys",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/62a07ce22d864c349af6e475877dbcc4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "017974a5bf7a4e4ba97e250487231b48",
+      "title": "Geothermal Springs Alaska",
+      "url": "https://geoportal.dggs.dnr.alaska.gov/arcgis/rest/services/Hosted/geothermal_springs_2/FeatureServer",
+      "publisher": "ggs_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Alaska is geothermally active with 97 known thermal springs. It is one of eight states generating electricity from geothermal energy. Alaska's first geothermal power plant at Chena Hot Springs has a generating capacity of 730 kilowatts and began operation in 2006.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -177.15001581817862,
+                69.62722399696305
+              ],
+              [
+                -131.26660812827717,
+                69.62722399696305
+              ],
+              [
+                -131.26660812827717,
+                51.916665445360145
+              ],
+              [
+                -177.15001581817862,
+                51.916665445360145
+              ],
+              [
+                -177.15001581817862,
+                69.62722399696305
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Between 1979 and 1982, the Alaska Division of Geological &amp; Geophysical Surveys (DGGS) and the Geophysical Institute, University of Alaska Fairbanks, undertook an assessment of the states geothermal resources under a program jointly sponsored by the U.S. Department of Energy and the State of Alaska. During this period, reconnaissance investigations of more than 100 thermal spring sites and fumarole fields located in Alaska were conducted by DGGS.<div><br /></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>More recently, DGGS completed a</span><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color:rgb(0, 0, 0);'> </span><a href='https://dggs.alaska.gov/pubs/project/886' rel='nofollow ugc' style='color:rgb(0, 102, 204); text-decoration-line:none; font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'>cooperative project with the National Geothermal Data System</a><span style='font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; color:rgb(0, 0, 0);'> on thermal springs and related geothermal data of Alaska. The Alaska geothermal database modules include comprehensive information on thermal springs, including temperature and flow rates, direct use, aqueous spring chemistry, physical samples, volcanic vents, geothermal wells, borehole temperature data and geothermal references.</span></font><br /></div><div><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><p style='margin-top:0px; margin-bottom:20px; color:rgb(0, 0, 0); font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:14px;'><br /></p><p style='margin-top:0px; margin-bottom:20px; color:rgb(0, 0, 0); font-family:&quot;Open Sans&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:14px;'>DGGS developed and maintains an <a href='https://geoportal.dggs.dnr.alaska.gov/portal/apps/webappviewer/index.html?id=28ed3938684448bb8d8fabad2c505e4d' rel='nofollow ugc' style='color:rgb(0, 102, 204); text-decoration-line:none;'>interactive geothermal web application</a> that brings together various data services related to geothermal sites throughout Alaska.</p><ul><li>Geothermal springs: Includes temperature and flow information. Spring location uncertainty and data sources are also included.</li><li>Geothermal wells: Location and name only</li><li>Volcanoes: Direct from the Historically Active Volcanoes of Alaska service</li></ul></font></div>",
+        "licenseInfo": "Any hard copies or published datasets utilizing these datasets shall clearly indicate their source. If the user has modified the data in any way, the user is obligated to describe the types of modifications the user has made. User specifically agrees not to misrepresent these datasets, nor to imply that changes made by the user were approved by the State of Alaska, Department of Natural Resources, Division of Geological & Geophysical Surveys.",
+        "ownerId": "8545f15043a0d3c742babc54b51c3ded",
+        "title": "Geothermal Springs Alaska",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784756924000,
+        "avgRating": 0,
+        "id": "017974a5bf7a4e4ba97e250487231b48",
+        "categories": [],
+        "spatialReference": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+        "numRatings": 0,
+        "owner": "ggs_admin",
+        "accessInformation": "Funding for this project was jointly supplied by the U.S. Department of Energy and the State of Alaska. Additional Acknowledgments: John W. Reeder of DGGS supplied information. Map produced by Ronald H. Smith, Cooperative Institute for Research in Environmental Sciences (CIRES), University of Colorado/NOAA, and Joy Ikelman, NGDC/NOAA, Boulder, Colorado, in cooperation with the Earth Science Laboratory/University of Utah Research Institute, Salt Lake City, Utah. Digital thermal well and spring data available from GEOTHERM Project, U.S. Geological Survey, 345 Middlefield Road, MS84, Menlo Park, California 94025.",
+        "largeThumbnail": "",
+        "lastViewed": 1790344800000,
+        "thumbnail": "thumbnail/thumbnail1674695093337.png",
+        "languages": [],
+        "created": 1644652829000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://geoportal.dggs.dnr.alaska.gov/arcgis/rest/services/Hosted/geothermal_springs_2/FeatureServer",
+        "tags": [
+          "Active Volcanoes",
+          "Chemistry",
+          "Energy Resources",
+          "Gas Rocks Hot Springs",
+          "Geochemistry",
+          "Geology",
+          "Geothermal",
+          "Ground Water",
+          "Heat Flow Study",
+          "Hydrothermal Deposit",
+          "Mineral Spring",
+          "Thermal History",
+          "Volcanic Rocks",
+          "Well Chemistry"
+        ],
+        "numViews": 20184,
+        "numComments": 0,
+        "size": 62628,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "geothermal_springs_2",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "indexJobId": ""
+        },
+        "source": "State of Alaska, Department of Natural Resources, Division of Geological & Geophysical Surveys",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/017974a5bf7a4e4ba97e250487231b48"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e15bfd7616c0479ea215106afe05709d",
+      "title": "National Levee Database (Alaska)",
+      "url": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/e15bfd7616c0479ea215106afe05709d",
+      "publisher": "AlaskaGeospatialOffice",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Army Corps of Engineers, displays levees within the United States. This layer is checked annually for updates.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -146.54062381406803,
+                61.19071446426652
+              ],
+              [
+                -146.15644565244745,
+                61.19071446426652
+              ],
+              [
+                -146.15644565244745,
+                61.08033478474384
+              ],
+              [
+                -146.54062381406803,
+                61.08033478474384
+              ],
+              [
+                -146.54062381406803,
+                61.19071446426652
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "Group Layer",
+          "Map"
+        ],
+        "description": "This layer is derived from the National Levee Database dataset hosted by <a href='https://www.arcgis.com/home/user.html?user=Esri_US_Federal_Data' rel='nofollow ugc'>Esri Federal Data</a> and displays only Alaska features.<br /><br /><div style='text-align:center;'><span style='font-size:x-large;'>National Levee Database</span><br />&nbsp;</div><div style='text-align:left;'><span style='color:#000000; font-size:large;'>This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Army Corps of Engineers (USACE), displays levees within the United States. Per&nbsp;</span><a target='_blank' href='https://levees.sec.usace.army.mil/about/purpose-and-history/' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>USACE</span></a><span style='color:#000000; font-size:large;'>, “The National Levee Database captures all known levees in the United States. It provides users with the ability to search for specific data about levees and serves as a national resource to support awareness and preparedness around flooding.&nbsp;The USACE is responsible for maintaining the National Levee Database and works in partnership with the Federal Emergency Management Agency (FEMA), and in close collaboration with other federal, state, and local governments and entities responsible for levees to obtain and share accurate and complete information.”</span><br />&nbsp;</div><div style='display:inherit; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; max-width:100%; text-align:center;'><img src='https://fedmaps.maps.arcgis.com/sharing/rest/content/items/e2519014c4974104b42d379a3fd1674a/data' alt='NGDA _ National Levee Database _ 800x400 _ Screen Capture' /><br /><span style='font-size:large;'><i>Leveed area in Morrisville, Pennsylvania</i></span></div><div style='display:inherit; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; max-width:100%; text-align:left;'><span style='color:#000000; font-size:large;'><font style='background-color:rgb(255, 255, 255);'><strong>Data downloaded:</strong>&nbsp;9/22/2025</font></span><br /><span style='color:#000000; font-size:large;'><strong>Data source:</strong></span><span style='font-size:large;'><strong>&nbsp;</strong></span><a target='_blank' href='https://geospatial.sec.usace.army.mil/dls/rest/services/NLD/Public/FeatureServer' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,30%); font-size:large;'>NLD/Public</span></a><br /><span style='color:#000000; font-size:large;'><font style='color:rgb(0, 0, 0); font-family:inherit;'><strong>NGDAID:</strong>&nbsp;</font></span><a target='_blank' href='https://ngda-portfolio-community-geoplatform.hub.arcgis.com/pages/portfolio' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,38%); font-size:large;'><font>161 (National Levee Database)</font></span></a><br /><span style='color:#000000; font-size:large;'><font><strong>OGC API Features Link:</strong> (</font></span><a target='_blank' href='https://fedmaps.maps.arcgis.com/home/item.html?id=bcc2970c74dd439db3ba6bbebd6506be' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,38%); font-size:large;'><font>National Levee Database&nbsp;- OGC Features</font></span></a><span style='color:#000000; font-size:large;'><font>) copy this link to embed it in OGC Compliant viewers</font></span><br /><span style='color:#000000; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:large;'><font><strong>For more information, please visit:</strong>&nbsp;</font></span><a target='_blank' href='https://levees.sec.usace.army.mil/#/' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,38%); font-size:large;'><font>National Levee Database</font></span></a><br /><span style='color:#000000; font-size:large;'><font style='font-family:inherit;'><strong>Support documentation:&nbsp;</strong></font></span><a target='_blank' href='https://levees.sec.usace.army.mil/pdfs/NLD_Data_Dictionary_FEB-2024.pdf' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,38%); font-size:large;'>NLD Data Dictionary</span></a></div><div style='text-align:left;'><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'><span style='color:#000000; font-size:large;'><font style='font-family:inherit;'><strong>For feedback please contact:</strong></font><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'>&nbsp;</font></span><a style='font-size:16px; text-decoration-line:none;' href='mailto:Esri_US_Federal_Data@esri.com' target='_blank' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,38%); font-size:large;'><font style='font-family:inherit;'>Esri_US_Federal_Data@esri.com</font></span></a><br />&nbsp;</div><div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:17px; text-align:center;'><span style='color:#000000; font-size:x-large;'><font style='font-family:inherit;'>NGDA Data Set</font></span><br />&nbsp;</div><div><span style='color:#000000; font-size:large;'><font>This data set is part of the&nbsp;</font></span><a target='_blank' href='https://communities.geoplatform.gov/ngda-waterinland/' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,38%); font-size:large;'>NGDA Water - Inland Theme Community</span></a><span style='color:#000000; font-size:large;'><font>. Per the Federal Geospatial Data Committee (FGDC),&nbsp;</font></span><a target='_blank' href='https://www.fgdc.gov/policyandplanning/a-16/appendixe/20170324-ngda-themes-fgdc-sc-revised-appendixe.pdf' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,38%); font-size:large;'>Water - Inland</span></a><span style='color:#000000; font-size:large;'><font>&nbsp;is defined as the “interior hydrologic features and characteristics, including classification, measurements, location, and extent. Includes aquifers, watersheds, wetlands, navigation, water quality, water quantity, and groundwater information.”</font></span><br />&nbsp;</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:17px;'><span style='color:#000000; font-size:large;'><font style='font-family:inherit;'>For other NGDA Content:&nbsp;</font></span><a style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.2019rem; text-decoration-line:none; text-overflow:ellipsis;' target='_blank' href='https://fedmaps.maps.arcgis.com/home/group.html?id=8c90888d825d440a9e4754fda9e4e92e' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,38%); font-size:large;'>Esri Federal Datasets</span></a></div></div></div>",
+        "licenseInfo": null,
+        "ownerId": "ba0ef05da736439ca59859ee4068190f",
+        "title": "National Levee Database (Alaska)",
+        "type": "Group Layer",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782777222000,
+        "avgRating": 0,
+        "id": "e15bfd7616c0479ea215106afe05709d",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "AlaskaGeospatialOffice",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1781852400000,
+        "thumbnail": "thumbnail/thumbnail1759330389019.png",
+        "languages": [],
+        "created": 1781805150000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "NGDA",
+          "National Geospatial Data Asset",
+          "FGDC",
+          "Federal Geospatial Data Committee",
+          "U.S. Army Corps of Engineers",
+          "USACE",
+          "federal",
+          "levee",
+          "levee systems",
+          "flooding",
+          "flood risks",
+          "critical infrastructure",
+          "levees",
+          "infrastructure",
+          "flood management",
+          "Water & Hydrography",
+          "Hazards",
+          "Energy",
+          "Land Records & Ownership",
+          "Infrastructure & Facilities",
+          "Emergency Management"
+        ],
+        "numViews": 7,
+        "numComments": 0,
+        "size": 38133,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources ArcGIS Online",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/e15bfd7616c0479ea215106afe05709d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a839dfa787b0408883a800ce27b1008f",
+      "title": "Environmental Assessment App",
+      "url": "https://experience.arcgis.com/experience/a839dfa787b0408883a800ce27b1008f",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Environmental Assessment Application",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "publishVersion:1.18.0",
+          "Ready To Use",
+          "status: Published",
+          "version:1.18.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:17px; padding:0.5rem 0px;'><span style='font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px;'>Map containing Alaska Department of Environmental Conservation (ADEC) Contaminated Sites, Groundwater Plume, PFAS, Drinking Water Protection Areas, and Solid Waste Sites/Boundaries data, Alaska Resource Data File (USGS), Surface Well Location (AOGCC), Formerly Used Defense Sites - FUDS and Interim Risk Management - IRM (USACE). Alaska Department of Natural Resources (ADNR) Land Ownership, Potential Hazardous Sites and Landfill data, Submerged Lands Act Boundary (MMC), US State Submerged Lands (NOAA), as well as other land use.</span></div><div style='padding:0.5rem 0px;'><div style='margin-bottom:3rem; display:inherit;'><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/LandActivity_PotentialHazardousSites/FeatureServer/1' target='_blank' rel='nofollow ugc noopener noreferrer'>Potential Hazardous Sites - Point - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/LandActivity_PotentialHazardousSites/FeatureServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>Potential Hazardous Sites - Line - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/LandActivity_PotentialHazardousSites/MapServer/2' target='_blank' rel='nofollow ugc noopener noreferrer'>Potential Hazardous Sites - Polygon - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/LandActivity_WellSite/MapServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>Case Type 951 Well Sites - DNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/Water/Impaired_Waters/MapServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Waters - Streams - ADEC</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/Water/Impaired_Waters/MapServer/1' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Waters - Areas - ADEC</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/Water/Impaired_Waters/MapServer/2' target='_blank' rel='nofollow ugc noopener noreferrer'>Impaired Waters - Assessed Waters HUC12 - ADEC</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://gis.boem.gov/arcgis/rest/services/BOEM_BSEE/MMC_Layers/MapServer/8' target='_blank' rel='nofollow ugc noopener noreferrer'>Submerged Lands Act Boundary - MMC</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://coast.noaa.gov/arcgismc/rest/services/Hosted/USStateSubmergedLands/FeatureServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>US State Submerged Lands - NOAA</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/Mapper/Water_Estate_Layers/FeatureServer/14' target='_blank' rel='nofollow ugc noopener noreferrer'>Critical Water Management Area (CWMA) - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://services7.arcgis.com/n1YM8pTrFmm7L4hs/ArcGIS/rest/services/fuds/FeatureServer/1' target='_blank' rel='nofollow ugc noopener noreferrer'>FUDS Property Point - USACE</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://services7.arcgis.com/n1YM8pTrFmm7L4hs/ArcGIS/rest/services/fuds/FeatureServer/2' target='_blank' rel='nofollow ugc noopener noreferrer'>FUDS Project Point - USACE</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://services7.arcgis.com/n1YM8pTrFmm7L4hs/ArcGIS/rest/services/fuds/FeatureServer/3' target='_blank' rel='nofollow ugc noopener noreferrer'>FUDS Munitions Response Site - USACE</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://services7.arcgis.com/n1YM8pTrFmm7L4hs/ArcGIS/rest/services/fuds/FeatureServer/4' target='_blank' rel='nofollow ugc noopener noreferrer'>FUDS Property Polygon - USACE</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://soa-dnr.maps.arcgis.com/home/item.html?id=b9945dcb82a34ac1a33fbb9884917db1&amp;view=service' target='_blank' rel='nofollow ugc noopener noreferrer'>Interim Risk Management Property Point - USACE</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://services7.arcgis.com/n1YM8pTrFmm7L4hs/ArcGIS/rest/services/fuds/FeatureServer/7' target='_blank' rel='nofollow ugc noopener noreferrer'>Interim Risk Management Project Boundary - USACE</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://services7.arcgis.com/n1YM8pTrFmm7L4hs/ArcGIS/rest/services/fuds/FeatureServer/8' target='_blank' rel='nofollow ugc noopener noreferrer'>Interim Risk Management Property Boundary - USACE</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/SPAR/Contaminated_Sites/FeatureServer/1' target='_blank' rel='nofollow ugc noopener noreferrer'>Contaminated Sites - ADEC</a><br /></div></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/SPAR/PFAS_Sites/FeatureServer/2' target='_blank' rel='nofollow ugc noopener noreferrer'>PFAS Sites - ADEC</a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/EH/Solid_Waste_Sites/MapServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>Solid Waste Sites - ADEC</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/EH/Solid_Waste_Sites/MapServer/1' target='_blank' rel='nofollow ugc noopener noreferrer'>Solid Waste Site Boundaries - ADEC</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://soa-dnr.maps.arcgis.com/home/item.html?id=f66b10eb208b45569a0ea95e974e5dc0' target='_blank' rel='nofollow ugc noopener noreferrer'>Well Log (WELTS) - ADNR</a><br /></div></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://services.arcgis.com/8MMg7skvEbOESlSM/arcgis/rest/services/Plumes_Non_Edit/FeatureServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>Groundwater Plumes - ADEC</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dog.dnr.alaska.gov/gis/rest/services/AOGCCWellSurfaceLocation/FeatureServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>Well Surface Location - AOGCC</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://soa-dnr.maps.arcgis.com/home/item.html?id=22cc7a770b274938a40e75cdb4fb6b04' target='_blank' rel='nofollow ugc noopener noreferrer'>Alaska Resource Data File (ARDF) - USGS</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/ReferenceGrid_PLSSgridUnclipped/FeatureServer/1' target='_blank' rel='nofollow ugc noopener noreferrer'>PLSS Sections - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/ReferenceGrid_PLSSgridUnclipped/FeatureServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>PLSS Townships - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://services.arcgis.com/8MMg7skvEbOESlSM/arcgis/rest/services/EDWPP_Status_Map_Inventory/FeatureServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>Endorsed Drinking Water Source Protection Plan Status - ADEC</a><br /></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><font size='3'><a href='https://dec.alaska.gov/arcgis/rest/services/EH/PWS_Zone_Separation/MapServer/0' target='_blank' rel='nofollow ugc noopener noreferrer'>PWS Zone Separation - PWS Separation Distance 100 ft ADEC</a><br /></font></div><div style='padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/EH/PWS_Zone_Separation/MapServer/1' target='_blank' rel='nofollow ugc noopener noreferrer'><font size='3'>PWS Zone Separation - PWS Separation Distance 200 ft - ADEC</font></a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://dec.alaska.gov/arcgis/rest/services/EH/Drinking_Water_Protection_Areas/MapServer' target='_blank' rel='nofollow ugc noopener noreferrer'>Drinking Water Protection Areas - ADEC</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/MLW/PotentialHazards/MapServer' target='_blank' rel='nofollow ugc noopener noreferrer'>Industry Activity - ADNR &amp; BLM</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Oil &amp; Gas Permit or Lease </div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Federal Mining Claims</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>State Mining Claims</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/LandActivity_RestrictedUseAuth/MapServer' target='_blank' rel='nofollow ugc noopener noreferrer'>Restricted Use Authorization - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/LandActivity_Easement/MapServer' target='_blank' rel='nofollow ugc noopener noreferrer'>Active Easements - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Easement - Point</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Easement - Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Easement - Polygon</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/LandActivity_LandPermitOrLease/MapServer' target='_blank' rel='nofollow ugc noopener noreferrer'>Active Land Permits or Leases - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Land Permit or Lease - Point</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Land Permit or Lease - Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Land Permit or Lease - Polygon</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Ownership_LandDisposal_All/MapServer' style='color:rgb(0, 121, 193); text-decoration-line:none;' target='_blank' rel='nofollow ugc noopener noreferrer'>All Active Land Disposals - ADNR</a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Land Disposal - Point</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Land Disposal - Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Land Disposal - Polygon</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding-top:0.375rem; padding-bottom:0.375rem;'><a href='https://arcgis.dnr.alaska.gov/arcgis/rest/services/Mapper/Ownership_Layers/MapServer' target='_blank' rel='nofollow ugc noopener noreferrer'>Ownership Layers - ADNR</a><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Simple Coastline</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Agreement Settlement Reconveyance Point<br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Agreement Settlement Reconveyance Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Land Disposal Conveyed Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Other State Acquired All Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>RS2477 Trails Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Federal Action Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Management Agreement Line</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Agreement Settlement Reconveyance Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Federal Action Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Land Disposal Conveyed Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Management Agreement Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Mental Health Trust Land Poly<br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Municipal Entitlement Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Municipal Tideland Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Native Allotment Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>ANILCA Topfiled All Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>State Selected Land All Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>Other State Acquired All Poly</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; padding:0.375rem 1rem; border-left:1px solid rgb(239, 239, 239);'>State TA Patented All Poly</div></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; margin-bottom:3rem;'><div style='margin-bottom:0.75rem;'>Basemap</div><div style='margin-bottom:0.75rem;'><a href='https://geoportal.alaska.gov/arcgis/rest/services/ahri_2020_rgb_cache/MapServer' target='_blank' rel='nofollow ugc noopener noreferrer'>Alaska High Resolution RGB Imagery (50cm)</a><br /></div><div><br /></div></div></div>",
+        "licenseInfo": "<p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.</span></span></p>",
+        "title": "Environmental Assessment App",
+        "type": "Web Experience",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1779986500000,
+        "avgRating": 0,
+        "id": "a839dfa787b0408883a800ce27b1008f",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Land Records/Land Estate",
+          "/Categories/Land Records/Water Estate"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1781283600000,
+        "thumbnail": "thumbnail/thumbnail1745007254000.png",
+        "languages": [],
+        "created": 1744832769000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/a839dfa787b0408883a800ce27b1008f",
+        "tags": [
+          "dec",
+          "solid waste sites",
+          "contaminated sites",
+          "alaska dnr",
+          "well log",
+          "pfas",
+          "groundwater plumes",
+          "FUDS",
+          "potential hazardous sites",
+          "BUMO"
+        ],
+        "numViews": 979,
+        "numComments": 0,
+        "size": 2007433,
+        "listed": false,
+        "scoreCompleteness": 88,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources ArcGIS Online",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/a839dfa787b0408883a800ce27b1008f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d4aade67695a4225ac8b989ce418e61d",
+      "title": "Monitoring Trends in Burn Severity in the Conterminous U.S. (Alaska)",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/EDW_MTBS_v1/FeatureServer/0",
+      "publisher": "AlaskaGeospatialOffice",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Forest Service, displays severity as unburned to low, low, moderate, high, and increased greenness (increased post-fire vegetation response). This layer is checked weekly for updates.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This layer is derived from the Monitoring Trends in Burn Severity in the Conterminous U.S. dataset hosted by <a href='https://www.arcgis.com/home/user.html?user=Esri_US_Federal_Data' rel='nofollow ugc'>Esri Federal Data</a> and displays only Alaska features.<br /><br /><div style='text-align:center;'><div><span style='font-size:x-large;'>Monitoring Trends in Burn Severity in the Conterminous U.S.</span></div></div><div>&nbsp;</div><div><span style='font-size:large;'>This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Forest Service (USFS), displays severity as unburned to low, low, moderate, high, and increased greenness (increased post-fire vegetation response). Per the&nbsp;</span><a target='_blank' href='https://data.fs.usda.gov/geodata/edw/edw_resources/meta/S_USA.MTBS_BURN_AREA_BOUNDARY.xml' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>USFS</span></a><span style='font-size:large;'>, \"The Monitoring Trends in Burn Severity (MTBS) Program assesses the frequency, extent, and magnitude (size and severity) of all large wildland fires (including wildfires and prescribed fires) in the conterminous United States (CONUS), Alaska, Hawaii, and Puerto Rico for the period of 1984 and beyond. All fires reported as greater than 1,000 acres in the western U.S. and greater than 500 acres in the eastern U.S. are mapped across all ownerships.\"</span></div><div>&nbsp;</div><div style='text-align:center;'><img src='https://fedmaps.maps.arcgis.com/sharing/rest/content/items/04e0a902237443b68e9f02c5a76c43fe/data' alt='NGDA _ Monitoring Trends in Burn Severity in the Conterminous U_S_ _ 800x400 _ screen capture' /></div><div style='text-align:center;'><span style='font-size:large;'><i>Warren Grove Fire</i></span></div><div>&nbsp;</div><div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'><span style='color:#000000; font-family:inherit; font-size:large;'><font style='font-family:inherit;'><strong>Data currency:</strong> This cached Esri federal service is checked weekly for updates from its enterprise federal source (</font></span><a target='_blank' href='https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_MTBS_01/MapServer/63' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Burned Area Boundaries (All Years)</span></a><span style='color:rgb(0,0,0); font-family:inherit; font-size:large;'>) and will support mapping, analysis, data exports and OGC API – Feature access</span></div><div><span style='color:#000000; font-size:large;'><font style='color:rgb(0, 0, 0); font-family:inherit;'><strong>NGDAID:</strong>&nbsp;</font></span><a target='_blank' href='https://ngda-portfolio-community-geoplatform.hub.arcgis.com/pages/portfolio' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>116 (Monitoring Trends in Burn Severity Conterminous United States (Map Service))</span></a></div><div><div><span style='color:#000000; font-size:large;'><strong>OGC API Features Link: </strong>(</span><a target='_blank' href='https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/edw_mtbs_ogc/OGCFeatureServer' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Monitoring Trends in Burn Severity in the Conterminous U.S.&nbsp;- OGC Features</span></a><span style='color:rgb(0,0,0); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:large;'>) copy this link to embed it in OGC Compliant viewers</span></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'><span style='color:rgb(0,0,0); font-family:inherit; font-size:large;'><font style='font-family:inherit;'><strong>For more information:</strong></font></span><span style='color:rgb(0,0,0); font-family:inherit; font-size:16px;'><font style='font-family:inherit;'>&nbsp;</font></span><a target='_blank' href='https://www.sciencebase.gov/catalog/item/5e541969e4b0ff554f753113' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Monitoring Trends in Burn Severity</span></a><span style='font-size:large;'><font style='font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'>;&nbsp;</font></span><a style='font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;' target='_blank' href='https://www.mtbs.gov/' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>MTBS</span></a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'><span style='color:#000000; font-size:large;'><strong>Support Documentation:</strong> </span><a target='_blank' href='https://data.fs.usda.gov/geodata/edw/edw_resources/meta/S_USA.MTBS_BURN_AREA_BOUNDARY.xml' rel='nofollow ugc noopener noreferrer'><span style='color:hsl(202,100%,30%); font-size:large;'>S_USA.MTBS_Burn_Area_Boundary</span></a></div><div><div style='color:rgb(77, 77, 77); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; margin:0px; padding:0px;'><span style='color:#000000; font-size:large;'><font style='font-family:inherit;'><strong>For feedback please contact:</strong></font></span><span style='font-size:large;'><font style='font-family:inherit;'>&nbsp;</font></span><a style='color:rgb(0, 121, 193); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; text-decoration-line:none;' href='mailto:Esri_US_Federal_Data@esri.com' target='_blank' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'><font style='font-family:inherit;'>Esri_US_Federal_Data@esri.com</font></span></a><br />&nbsp;</div><div style='font-family:inherit; margin:0px; padding:0px;'><div style='font-family:inherit; margin:0px; padding:0px;'><div style='font-family:inherit; margin:0px; padding:0px;'><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; text-align:center;'><span style='font-size:x-large;'><font style='font-family:inherit;'>NGDA Data Set</font></span></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; text-align:left;'>&nbsp;</div><div style='font-family:inherit;'><span style='font-size:large;'><font style='font-family:inherit;'>This data set is part of the&nbsp;</font></span><a target='_blank' href='https://ngda-land-use-land-cover-geoplatform.hub.arcgis.com/' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>NGDA Land Use Land Cover Theme Community</span></a><span style='font-size:large;'><font style='font-family:inherit;'>. Per the Federal Geospatial Data Committee (FGDC),&nbsp;</font></span><a target='_blank' href='https://www.fgdc.gov/policyandplanning/a-16/appendixe/20170324-ngda-themes-fgdc-sc-revised-appendixe.pdf' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Land Use-Land Cover</span></a><span style='font-size:large;'><font style='font-family:inherit;'>&nbsp;\"is a term&nbsp;</font></span><span style='font-family:inherit; font-size:large;'>referring collectively to natural and man-made surface features that cover the land (Land Cover) and&nbsp;to the primary ways in which land cover is used by humans (Land Use). Examples of Land Cover may be grass,&nbsp;asphalt, trees, bare ground, water, etc. Examples of Land Use may be urban, agricultural, ranges, and forest areas.\"</span></div></div></div><div style='color:rgb(77, 77, 77); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:17px; margin:0px; padding:0px;'>&nbsp;</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:16px; margin:0px; padding:0px;'><div style='font-family:inherit; margin:0px; padding:0px;'><div style='font-family:inherit;'><span style='color:#000000; font-family:inherit; font-size:large;'><font style='font-family:inherit;'>For other NGDA Content:&nbsp;</font></span><a style='color:rgb(0, 94, 149); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.2019rem; text-decoration-line:none; text-overflow:ellipsis;' target='_blank' href='https://fedmaps.maps.arcgis.com/home/group.html?id=8c90888d825d440a9e4754fda9e4e92e' rel='nofollow ugc noopener noreferrer'>Esri Federal Datasets</a></div></div></div></div></div></div></div>",
+        "licenseInfo": null,
+        "ownerId": "ba0ef05da736439ca59859ee4068190f",
+        "title": "Monitoring Trends in Burn Severity in the Conterminous U.S. (Alaska)",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782777231000,
+        "avgRating": 0,
+        "id": "d4aade67695a4225ac8b989ce418e61d",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "AlaskaGeospatialOffice",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790301600000,
+        "thumbnail": "thumbnail/thumbnail1692906076706.png",
+        "languages": [],
+        "created": 1781803050000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/EDW_MTBS_v1/FeatureServer/0",
+        "tags": [
+          "NGDA",
+          "National Geospatial Data Asset",
+          "fire location",
+          "fire occurrence",
+          "landsat",
+          "wildland fire",
+          "prescribed fire",
+          "wildfire",
+          "Fire and Aviation",
+          "Monitoring Trends in Burn Severity",
+          "MTBS",
+          "Federal Geospatial Data Committee",
+          "FGDC",
+          "U.S. Forest Service",
+          "USFS",
+          "U.S. Geological Survey",
+          "USGS",
+          "DOI",
+          "USDA",
+          "Department of Agriculture",
+          "Department of the Interior",
+          "federal",
+          "fire",
+          "U.S. Department of Agriculture",
+          "U.S. Department of the Interior",
+          "Hazards"
+        ],
+        "numViews": 233,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "english",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources ArcGIS Online",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/d4aade67695a4225ac8b989ce418e61d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6e8aab1f0f6449c08dba50a47aeae009",
+      "title": "Alaska DEC Drinking Water Protection Areas",
+      "url": "https://dec.alaska.gov/arcgis/rest/services/EH/Drinking_Water_Protection_Areas/MapServer",
+      "publisher": "adecdwp",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Drinking Water Protection Areas (DWPAs) are delineated areas around public water system sources created to meet the requirements of the Safe Drinking Water Act. This map service is publicly available and is provided to promote the protection of public drinking water sources, with local governments and state agencies encouraged to use it when reviewing permits for activities that may affect a public drinking water source. DWPAs are divided into zones based on source type — groundwater, surface water, or groundwater under direct influence (GWUDI) of surface water — and can also be used to help determine sampling and monitoring requirements for public water systems.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -175.31248496456658,
+                72.29978988099371
+              ],
+              [
+                -121.25002099582149,
+                72.29978988099371
+              ],
+              [
+                -121.25002099582149,
+                49.40372207450571
+              ],
+              [
+                -175.31248496456658,
+                49.40372207450571
+              ],
+              [
+                -175.31248496456658,
+                72.29978988099371
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Service"
+        ],
+        "description": "<p>Drinking Water Protection Areas (DWPAs) are delineated areas around public water system sources created to meet the requirements of the Safe Drinking Water Act. This feature service is publicly available to promote the protection of public drinking water sources and also allows DEC staff to add the data to ArcGIS Pro for local desktop analysis and export. Local governments and state agencies are encouraged to use this data when reviewing permits for activities that may affect a public drinking water source. DWPAs can also be used to help determine sampling and monitoring requirements for public water systems.</p><p>The data is updated daily. Note that any data downloaded or exported locally is only current as of the date and time of download; regular exports are recommended to ensure you are working with the most current version.</p><p><strong>Zone Definitions</strong>&nbsp;DWPAs are divided into Zones A, B, C, E, F, and G. Zone definitions vary depending on the source type: groundwater, surface water, or groundwater under the direct influence (GWUDI) of surface water.<strong>&nbsp;Note: Zone D (10-year Time of Travel) has been discontinued.</strong></p><ul><li><strong>Zone A</strong>&nbsp;— Groundwater: equivalent to several months' Time of Travel. Surface water: 1,000-foot buffer.</li><li><strong>Zone B</strong>&nbsp;— Groundwater: equivalent to 2-year Time of Travel. Surface water: 1-mile buffer.</li><li><strong>Zone C</strong>&nbsp;— Surface water: equivalent to the immediate watershed.</li><li><strong>Zone E</strong>&nbsp;— GWUDI: 1,000-foot buffer of the nearest surface water body.</li><li><strong>Zone F</strong>&nbsp;— GWUDI: 1-mile buffer of the nearest surface water body.</li><li><strong>Zone G</strong>&nbsp;— GWUDI: watershed contributing to the nearest surface water body.</li><li><strong>Provisional Protection Areas</strong>&nbsp;— A 1,000-foot buffer around a regulated well or intake that is new or has not yet received a Source Water Assessment delineation.</li></ul><p>For further information, visit the&nbsp;<a target='_blank' href='https://dec.alaska.gov/eh/dw/resources/source-water-assessment-info/' rel='nofollow ugc noopener noreferrer'>Source Water Assessment resource page</a>. Users are also encouraged to use this service alongside the&nbsp;<a target='_blank' href='https://www.arcgis.com/apps/mapviewer/index.html?webmap=13ed2116e4094f9994775af9a62a1e85' rel='nofollow ugc noopener noreferrer'>Alaska DEC Drinking Water Protection Areas Web Map</a>.</p><p><span style='font-family:&quot;Aptos&quot;,sans-serif; font-size:12.0pt;'><span style='line-height:115%;'>Questions regarding this data can be directed to the DEC Drinking Water Protection Program at 907-269-7549&nbsp;or via email at&nbsp;</span></span><a href='mailto:chris.miller@alaska.gov' rel='nofollow ugc'><span style='font-family:&quot;Aptos&quot;,sans-serif; font-size:12.0pt;'><span style='line-height:115%;'>chris.miller@alaska.gov</span></span></a></p>",
+        "licenseInfo": "<font size='4'><span style='font-family:Garamond;'>Alaska DEC Drinking Water Protection Areas map service is a grouped layer that displays two data sources</span></font><p><span style=''><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span style='font-family:Garamond;'><font size='4'><span style=''><span style='font-weight:bold;'><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>This  data should be used to promote protection efforts at the local level.  There are currently  no regulatory restrictions associated with the  Drinking Water Protection Areas. The data is being provided for  informational purposes. </span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></font></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>",
+        "ownerId": "de47c0b6d3c3bdc2407b3c148c66e81e",
+        "title": "Alaska DEC Drinking Water Protection Areas",
+        "type": "Map Service",
+        "orgId": "8MMg7skvEbOESlSM",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1777596348000,
+        "avgRating": 0,
+        "id": "6e8aab1f0f6449c08dba50a47aeae009",
+        "categories": [
+          "/Categories/Environmental Health",
+          "/Categories/Public"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "adecdwp",
+        "accessInformation": "State of Alaska, DEC, Drinking Water Program",
+        "largeThumbnail": null,
+        "lastViewed": 1787680800000,
+        "thumbnail": "thumbnail/thumbnail1525996384262.png",
+        "languages": [],
+        "created": 1381261205000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dec.alaska.gov/arcgis/rest/services/EH/Drinking_Water_Protection_Areas/MapServer",
+        "tags": [
+          "EH",
+          "Drinking Water Protection",
+          "EPA",
+          "SDWA. Alaska"
+        ],
+        "numViews": 133134,
+        "numComments": 0,
+        "size": 87,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "boundary": "item"
+        },
+        "source": "AK Department of Environmental Conservation AGO",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/6e8aab1f0f6449c08dba50a47aeae009"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2dc8d76737ce4663a08e4a5ce4d029c3",
+      "title": "DEC Drinking Water Protection Areas",
+      "url": "https://dec.alaska.gov/arcgis/rest/services/EH/Drinking_Water_Protection_Areas/FeatureServer",
+      "publisher": "adecdwp",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Drinking Water Protection Areas (DWPAs) are delineated areas around public water system sources created to meet the requirements of the Safe Drinking Water Act. This feature service is publicly available and is provided to promote the protection of public drinking water sources, with local governments and state agencies encouraged to use it when reviewing permits for activities that may affect a public drinking water source. DWPAs are divided into zones based on source type — groundwater, surface water, or groundwater under direct influence (GWUDI) of surface water — and can also be used to help determine sampling and monitoring requirements for public water systems.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -168.57420729084416,
+                73.02209715474932
+              ],
+              [
+                -118.476573959078,
+                73.02209715474932
+              ],
+              [
+                -118.476573959078,
+                46.500978992665104
+              ],
+              [
+                -168.57420729084416,
+                46.500978992665104
+              ],
+              [
+                -168.57420729084416,
+                73.02209715474932
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Multilayer",
+          "Service"
+        ],
+        "description": "<p>Drinking Water Protection Areas (DWPAs) are delineated areas around public water system sources created to meet the requirements of the Safe Drinking Water Act. This feature service is publicly available to promote the protection of public drinking water sources and also allows DEC staff to add the data to ArcGIS Pro for local desktop analysis and export. Local governments and state agencies are encouraged to use this data when reviewing permits for activities that may affect a public drinking water source. DWPAs can also be used to help determine sampling and monitoring requirements for public water systems.</p><p>The data is updated daily. Note that any data downloaded or exported locally is only current as of the date and time of download; regular exports are recommended to ensure you are working with the most current version.</p><p><strong>Zone Definitions</strong> DWPAs are divided into Zones A, B, C, E, F, and G. Zone definitions vary depending on the source type: groundwater, surface water, or groundwater under the direct influence (GWUDI) of surface water.<strong> Note: Zone D (10-year Time of Travel) has been discontinued.</strong></p><ul><li><strong>Zone A</strong> — Groundwater: equivalent to several months' Time of Travel. Surface water: 1,000-foot buffer.</li><li><strong>Zone B</strong> — Groundwater: equivalent to 2-year Time of Travel. Surface water: 1-mile buffer.</li><li><strong>Zone C</strong> — Surface water: equivalent to the immediate watershed.</li><li><strong>Zone E</strong> — GWUDI: 1,000-foot buffer of the nearest surface water body.</li><li><strong>Zone F</strong> — GWUDI: 1-mile buffer of the nearest surface water body.</li><li><strong>Zone G</strong> — GWUDI: watershed contributing to the nearest surface water body.</li><li><strong>Provisional Protection Areas</strong> — A 1,000-foot buffer around a regulated well or intake that is new or has not yet received a Source Water Assessment delineation.</li></ul><p>For further information, visit the <a target='_blank' href='https://dec.alaska.gov/eh/dw/resources/source-water-assessment-info/' rel='nofollow ugc noopener noreferrer'>Source Water Assessment resource page</a>. Users are also encouraged to use this service alongside the <a target='_blank' href='https://www.arcgis.com/apps/mapviewer/index.html?webmap=13ed2116e4094f9994775af9a62a1e85' rel='nofollow ugc noopener noreferrer'>Alaska DEC Drinking Water Protection Areas Web Map</a>.</p><p>Questions regarding this data can be directed to the DEC Drinking Water Protection Program at 907-269-7549 <span style='overflow:auto;'>or via email at </span><a href='mailto:chris.miller@alaska.gov' rel='nofollow ugc'><span style='overflow:auto;'>chris.miller@alaska.go</span><span style='color:rgb(68,68,68);'><span style='overflow:auto;'>v</span></span></a></p>",
+        "licenseInfo": "<p>No restrictions</p>",
+        "ownerId": "de47c0b6d3c3bdc2407b3c148c66e81e",
+        "title": "DEC Drinking Water Protection Areas",
+        "type": "Feature Service",
+        "orgId": "8MMg7skvEbOESlSM",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1777596018000,
+        "avgRating": 0,
+        "id": "2dc8d76737ce4663a08e4a5ce4d029c3",
+        "categories": [
+          "/Categories/Environmental Health",
+          "/Categories/Internal"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "adecdwp",
+        "accessInformation": "State of Alaska, DEC, Drinking Water Program",
+        "largeThumbnail": null,
+        "lastViewed": 1787659200000,
+        "thumbnail": "thumbnail/thumbnail1777595942953.png",
+        "languages": [],
+        "created": 1420249794000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dec.alaska.gov/arcgis/rest/services/EH/Drinking_Water_Protection_Areas/FeatureServer",
+        "tags": [
+          "Drinking Water Protection",
+          "DEC",
+          "EPA",
+          "SDWA"
+        ],
+        "numViews": 5757,
+        "numComments": 0,
+        "size": 106,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "AK Department of Environmental Conservation AGO",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/2dc8d76737ce4663a08e4a5ce4d029c3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "166dccafa5f241fc97679da40e94ea33",
+      "title": "National Inventory of Dams (Alaska)",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/NID_v1/FeatureServer/0",
+      "publisher": "AlaskaGeospatialOffice",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Army Corps of Engineers, displays dams within the United States, Puerto Rico and Guam. This layer is checked weekly for updates.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This layer is derived from the National Inventory of Dams dataset hosted by <a href='https://www.arcgis.com/home/user.html?user=Esri_US_Federal_Data' rel='nofollow ugc'>Esri Federal Data</a> and displays only Alaska features.<br /><br /><div style='text-align:center;'><span style='color:#000000; font-size:x-large;'>National Inventory of Dams</span><br />&nbsp;</div><p><span style='color:#000000; font-size:large;'><font>This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Army Corps of Engineers (USACE), displays dams within the United States, Puerto Rico and Guam. Per the&nbsp;</font></span><a target='_blank' href='https://nid.sec.usace.army.mil/#/what-is-nid/closer-look' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>USACE</span></a><span style='color:#000000; font-size:large;'><font>, \"</font></span><span style='background-color:rgb(255,255,255); color:#000000; font-size:large;'>The National Inventory of Dams&nbsp;(NID) consists of dams meeting at least one of the following criteria:</span></p><div><ul><li><span style='color:#000000; font-size:large;'>Dams where downstream flooding would likely result in loss of human life (high hazard potential).</span><br />&nbsp;</li><li><span style='color:#000000; font-size:large;'>Dams where downstream flooding would likely result in disruption of access to critical facilities, damage to public and private facilities, and require difficult mitigation efforts (significant hazard potential).</span><br />&nbsp;</li><li><span style='color:#000000; font-size:large;'>Dams that meet minimum height and reservoir size requirements, even though they do not pose the same level of life or economic risk as those above – these dams are typically equal to or exceed 25 feet in height and exceed 15 acre-feet in storage, or equal to or exceeding 50 acre-feet storage and exceeding 6 feet in height.</span><br />&nbsp;</li></ul></div><div><span style='color:#000000; font-size:large;'>The NID does not yet contain all dams in the U.S. that meet these criteria. Continued, routine updates to the NID and enhanced data collection efforts, focused on the most reliable data sources (primarily the many federal and state government dam regulatory programs), will help capture these dams and result in a more robust dataset over time.\"</span><br />&nbsp;</div><div style='text-align:center;'><img src='https://fedmaps.maps.arcgis.com/sharing/rest/content/items/fcd6f293251644f78e1235191f07c1cd/data' alt='NGDA _ National Inventory of Dams _ 800x400 _ Screen Capture' /></div><div style='text-align:center;'><span style='font-size:large;'><i>Hoover, Davis &amp; Glen Canyon Dams</i></span></div><div><div style='text-align:center;'>&nbsp;</div><div><div><div><span style='color:#000000; font-size:large;'><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'><strong>Data currency:</strong> This cached Esri federal service is checked weekly for updates from its enterprise federal source (</font></span><a target='_blank' href='https://geospatial.sec.usace.army.mil/dls/rest/services/NID/National_Inventory_of_Dams_Public_Service/FeatureServer/0' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Dams</span></a><span style='color:rgb(0,0,0); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:large;'>) and will support mapping, analysis, data exports and OGC API – Feature access.</span></div></div><div><span style='color:#000000; font-size:large;'><font style='color:rgb(0, 0, 0); font-family:inherit;'><strong>NGDAID:</strong>&nbsp;</font></span><a target='_blank' href='https://ngda-portfolio-community-geoplatform.hub.arcgis.com/pages/portfolio' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>160 (National Inventory of Dams)</span></a></div><div><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; margin:0in 0in 0.0001pt;'><span style='color:#000000; font-size:large;'><strong>OGC API Features Link:</strong> (</span><a target='_blank' href='https://fedmaps.maps.arcgis.com/home/item.html?id=dc37b3d77e934955a1af164974277746&amp;view=service' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>National Inventory of Dams&nbsp;- OGC Features</span></a><span style='color:#000000; font-size:large;'>) copy this link to embed it in OGC Compliant viewers</span></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; margin:0in 0in 0.0001pt;'><span style='color:#000000; font-size:large;'><strong>For more information, please visit:</strong></span><span style='color:rgb(0,0,0); font-size:large;'>&nbsp;</span><a target='_blank' href='https://nid.sec.usace.army.mil/#/' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>National Inventory of Dams</span></a></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; margin:0in 0in 0.0001pt;'><span style='color:#000000; font-size:large;'><strong>Support Documentation:&nbsp;</strong></span><a target='_blank' href='https://nid.sec.usace.army.mil/#/documents' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Reference Documents</span></a></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; margin:0in 0in 0.0001pt;'><span style='color:#000000; font-size:large;'><font style='color:rgb(77, 77, 77); font-family:inherit;'><strong>For feedback please contact:</strong></font></span><span style='font-size:large;'><font style='color:rgb(77, 77, 77); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'>&nbsp;</font></span><a style='color:rgb(0, 94, 149); text-decoration-line:none;' href='mailto:Esri_US_Federal_Data@esri.com' target='_blank' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'><font style='font-family:inherit;'>Esri_US_Federal_Data@esri.com</font></span></a></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; margin:0in 0in 0.0001pt;'><span style='color:#000000; font-size:large;'><font style='color:rgb(77, 77, 77); font-family:inherit;'><strong>Thumbnail courtesy of: </strong>Esri Basemaps Imagery</font></span></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif !important; margin:0in 0in 0.0001pt;'><br />&nbsp;</p><div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif !important; text-align:center;'><span style='color:#000000; font-size:x-large;'>NGDA Data Set</span></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif !important; text-align:center;'>&nbsp;</div><div><div style='box-sizing:border-box;'><p><span style='color:#000000; font-size:large;'>This data set is part of the&nbsp;</span><a target='_blank' href='https://ngda-water-inland-geoplatform.hub.arcgis.com/' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>NGDA Water - Inland Theme Community</span></a><span style='color:#000000; font-size:large;'>. Per the Federal Geospatial Data Committee (FGDC),&nbsp;</span><a target='_blank' href='https://www.fgdc.gov/policyandplanning/a-16/appendixe/20170324-ngda-themes-fgdc-sc-revised-appendixe.pdf' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Water - Inland</span></a><span style='color:#000000; font-size:large;'>&nbsp;is defined as the \"interior hydrologic features and characteristics, including classification, measurements, location, and extent. Includes aquifers, watersheds, wetlands, navigation, water quality, water quantity, and groundwater information.\"</span></p><div style='font-family:Calibri;'><span style='color:#000000; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:large;'><font style='font-family:inherit;'>For other NGDA Content:&nbsp;</font></span><a style='color:rgb(0, 94, 149); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.2019rem; text-decoration-line:none; text-overflow:ellipsis;' target='_blank' href='https://fedmaps.maps.arcgis.com/home/group.html?id=8c90888d825d440a9e4754fda9e4e92e' rel='nofollow ugc noopener noreferrer'>Esri Federal Datasets</a></div></div></div></div></div></div></div>",
+        "licenseInfo": null,
+        "ownerId": "ba0ef05da736439ca59859ee4068190f",
+        "title": "National Inventory of Dams (Alaska)",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782777219000,
+        "avgRating": 0,
+        "id": "166dccafa5f241fc97679da40e94ea33",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "AlaskaGeospatialOffice",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790316000000,
+        "thumbnail": "thumbnail/thumbnail1743777791288.png",
+        "languages": [],
+        "created": 1781803121000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/NID_v1/FeatureServer/0",
+        "tags": [
+          "infrastructure",
+          "transportation",
+          "federal",
+          "U.S. Army Corps of Engineers",
+          "USACE",
+          "Marine",
+          "Inland Waters",
+          "structure",
+          "water",
+          "dams",
+          "waterway",
+          "hydrography",
+          "National Inventory of Dams",
+          "NID",
+          "NGDA",
+          "National Geospatial Data Asset",
+          "FGDC",
+          "Federal Geospatial Data Committee",
+          "Water & Hydrography",
+          "Hazards",
+          "Energy",
+          "Land Records & Ownership",
+          "Infrastructure & Facilities",
+          "Emergency Management"
+        ],
+        "numViews": 253,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "english",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources ArcGIS Online",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/166dccafa5f241fc97679da40e94ea33"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    163
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 11,
+  "next_offset": 10,
+  "response_sha256": "08aa42aa1df010ad2721f0d7e5c2f6b08e3dbbfab278cd7a519bfa83216d9054",
+  "search_complete": false
+}

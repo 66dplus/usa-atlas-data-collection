@@ -1,0 +1,458 @@
+{
+  "jurisdiction_code": "HI",
+  "query": "employment",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T02:18:28.206928+00:00",
+  "candidates": [
+    {
+      "id": "0fe15f99a2034214960ff635bc21c177",
+      "title": "SLR Annual High Wave Flooding - 1.1 Ft. Scenario",
+      "url": "https://geodata.hawaii.gov/arcgis/rest/services/Climate/MapServer/53",
+      "publisher": "HawaiiStateGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Estimated annual high wave flooding, modeled using a 1.1 foot sea level rise scenario.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -159.7893,
+                22.233
+              ],
+              [
+                -154.7321,
+                22.233
+              ],
+              [
+                -154.7321,
+                18.893
+              ],
+              [
+                -159.7893,
+                18.893
+              ],
+              [
+                -159.7893,
+                22.233
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>Hawaii is exposed to large waves annually on all open coasts due to its location in the Central North Pacific Ocean. The distance over which waves run-up and wash across the shoreline will increase with sea level rise. As water levels increase, less wave energy will be dissipated through breaking on nearshore reefs and waves will arrive at a higher elevation at the shoreline. Computer model simulations of future annual high wave flooding were conducted by the University of Hawaii Coastal Geology Group using the XBeach (for eXtreme Beach behavior) numerical model developed by a consortium of research institutions. The model propagates the maximum annually recurring wave, calculated from offshore wave buoy data, over the reef and to the shore along one-dimensional (1D) cross-shore profiles extracted from a 1-meter DEM. Profiles are spaced 20 meters apart along the coast. This approach was used to model the transformation of the wave as it breaks across the reef and includes shallow water wave processes such as wave set-up and overtopping. The IPCC AR5 RCP8.5 sea level rise scenario was used in modeling exposure to annual high wave flooding from sea level rise at 0.5, 1.1, 2.0, and 3.2 feet. This particular layer depicts annual high wave flooding using the 1.1-ft (0.3224-m) sea level rise scenario. While the RCP8.5 predicts that this scenario would be reached by the year 2050, questions remain around the exact timing of sea level rise and recent observations and projections suggest a sooner arrival. Historical data used to model annual high wave flooding include hourly measurements of significant wave height, peak wave period, and peak wave direction, and was acquired from offshore wave buoy data from PacIOOS. Maximum surface elevation and depth of the annual high wave flooding is calculated from the mean of the five highest modeled water elevations at each model location along each profile. Output from the simulations is interpolated between transects and compiled in a 5-meter map grid. Depth grid cells with values less than 10 centimeters are not included in the impact assessment. This was done to remove very thin layers of water excursions that (1) are beyond the accuracy of the model and (2) might not constitute a significant impact to land and resources when only occurring once annually. Any low-lying flooded areas that are not connected to the ocean are also removed. Annual high wave flood modeling covered wave-exposed coasts with low-lying development on Maui, Oahu, and Kauai. Annual high wave flooding was not available for the islands of Hawaii, Molokai, and Lanai, nor for harbors or other back-reef areas throughout all the islands. Additional studies would be needed to add the annual high wave flooding for those areas. The maximum annually recurring wave parameters (significant wave height, period, direction) were statistically determined using historical wave climate records and do not include potential changes in future wave climate, the effects of storm surge, or less-frequent high wave events (e.g., a 1-in-10 year wave event). In some locations, the extent of flooding modeled was limited by the extent of the 1-meter DEM. Changes in shoreline location due to coastal erosion are not included in this modeling. As shorelines retreat, annual high wave flooding will reach farther inland along retreating shorelines. Waves are propagated along a &quot;bare earth&quot; DEM which is void of shoreline structures, buildings, and vegetation, and waves are assumed to flow over an impermeable surface. The DEM represents a land surface at one particular time, and may not be representative of the beach shape during the season of most severe wave impact, particularly for highly variable north and west-exposed beaches. Undesirable artifacts of 1D modeling include over-predicted flooding along some transects with deep, shore-perpendicular indentations in the sea bottom such as nearshore reef channels. The 1D modeling does not account for the presence of nearby shallow reef which refracts and dissipates some of the wave energy traveling through the channel toward the shore. Wave flooding modeling may be improved in future efforts by employing more complex and data-intensive 2D modeling and through local field experiments. </span><span><span>Data compiled by the Pacific Islands Ocean Observing System (PacIOOS) for the Hawaii Sea Level Rise Viewer hosted at </span></span><a href='https://pacioos.org/shoreline/slr-hawaii/' rel='nofollow ugc' target='_blank'>https://pacioos.org/shoreline/slr-hawaii/</a><span>. For further information, please see the Hawaii Sea Level Rise Vulnerability and Adaptation Report: <a href='https://climateadaptation.hawaii.gov/wp-content/uploads/2017/12/SLR-Report_Dec2017.pdf' rel='nofollow ugc' target='_blank'>https://climateadaptation.hawaii.gov/wp-content/uploads/2017/12/SLR-Report_Dec2017.pdf</a>.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Use Limitation: </span><span>Based on the methodology of sea level rise modeling used in the Hawaii Sea Level Rise Vulnerability and Adaptation Report (Report) and the Hawaii Sea Level Rise Viewer (Viewer), having gone through peer review and publication in the Nature Journal Scientific Reports, the results of this study are sufficiently validated to be appropriately used in land management decisions as the best available information as of the date of publication of the Report, December 2017, consistent with the intent of Act 83 SLH 2014 as amended. This Report is intended to provide a state-wide assessment of Hawaii's vulnerability to sea level rise. The location of projected impacts and economic costs from damages are estimates based on a particular sea level rise scenario. The hazard and vulnerability data and maps provided herein are based on observational data and computer-based models as described in the Report and in published research (Anderson et al., 2018). As with all models, it is important to understand the methods, assumptions, limitations, and uncertainties of the methods used. The risks associated with use or non-use of the results are assumed by the user.</span></p><div><div><div><div><p style='margin-bottom:0.0001pt;'><font size='3'><a href='https://portal.ehawaii.gov/page/terms-of-use/' target='_blank' rel='nofollow ugc noopener noreferrer'>State of Hawaii Terms of Use. </a></font></p><p style='margin-bottom:0.0001pt;'><font size='3'><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>  </span></font></p>  <p style='margin-bottom:0.0001pt;'><font size='3'><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>The  contents of this web page are public domain and to the extent indicated  otherwise in the Terms of Use, are exempt from Terms of Use policy  restrictions.There are no expressed warranties associated with the  release of this data or product. Specifically, no warranty is made that  the GIS data or any subsequent updates will be error free and no  warranty is made regarding the positional or thematic accuracy of the  GIS data. The GIS data and any features depicted do not represent or  confer any legal rights, privileges, benefits, boundaries or claims of  any kind. The </span><span style='color:rgb(77, 77, 77);'>Office of Planning and Sustainable Development</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'> encourages users to report any  discrepancies or errors found.</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>  Contact: Hawaii Statewide GIS Program, </span><span style='color:rgb(77, 77, 77);'>Office of Planning and Sustainable Development</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>, State of Hawaii; PO Box 2359, Honolulu, Hi. 96804; (808) 587-2846; </span>email:<a href='mailto:gis@hawaii.gov' rel='nofollow ugc'><span style='color:rgb(33, 117, 155); background-color:white; background-position:initial initial; background-repeat:initial initial;'> gis@hawaii.gov. </span></a><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>Website:</span><a href='https://planning.hawaii.gov/gis' target='_blank' rel='nofollow ugc noopener noreferrer'> https://planning.hawaii.gov/gis</a><span style='background-color:white;'>.</span></font></p></div></div></div></div></div></div></div>",
+        "title": "SLR Annual High Wave Flooding - 1.1 Ft. Scenario",
+        "type": "Feature Service",
+        "orgId": "HQ0xoN0EzDPBOEci",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1662369235000,
+        "avgRating": 0,
+        "id": "0fe15f99a2034214960ff635bc21c177",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "HawaiiStateGIS",
+        "accessInformation": "SOEST, UH CGG, PacIOOS",
+        "largeThumbnail": null,
+        "lastViewed": 1742216400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1519699565000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://geodata.hawaii.gov/arcgis/rest/services/Climate/MapServer/53",
+        "tags": [
+          " Floods"
+        ],
+        "numViews": 2517,
+        "numComments": 0,
+        "size": 67,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "University of Hawaii Coastal Geology Group (CGG)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geoportal.hawaii.gov/api/search/v1/collections/all/items/0fe15f99a2034214960ff635bc21c177"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geoportal.hawaii.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e6ff553429724137a46603bbdc6eab4e",
+      "title": "SLR Annual High Wave Flooding - 2.0 Ft. Scenario",
+      "url": "https://geodata.hawaii.gov/arcgis/rest/services/Climate/MapServer/54",
+      "publisher": "HawaiiStateGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Estimated annual high wave flooding, modeled using a 2.0 foot sea level rise scenario.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -159.7893,
+                22.231
+              ],
+              [
+                -156.3321,
+                22.231
+              ],
+              [
+                -156.3321,
+                20.6176
+              ],
+              [
+                -159.7893,
+                20.6176
+              ],
+              [
+                -159.7893,
+                22.231
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>Hawaii is exposed to large waves annually on all open coasts due to its location in the Central North Pacific Ocean. The distance over which waves run-up and wash across the shoreline will increase with sea level rise. As water levels increase, less wave energy will be dissipated through breaking on nearshore reefs and waves will arrive at a higher elevation at the shoreline. Computer model simulations of future annual high wave flooding were conducted by the University of Hawaii Coastal Geology Group using the XBeach (for eXtreme Beach behavior) numerical model developed by a consortium of research institutions. The model propagates the maximum annually recurring wave, calculated from offshore wave buoy data, over the reef and to the shore along one-dimensional (1D) cross-shore profiles extracted from a 1-meter DEM. Profiles are spaced 20 meters apart along the coast. This approach was used to model the transformation of the wave as it breaks across the reef and includes shallow water wave processes such as wave set-up and overtopping. The IPCC AR5 RCP8.5 sea level rise scenario was used in modeling exposure to annual high wave flooding from sea level rise at 0.5, 1.1, 2.0, and 3.2 feet. This particular layer depicts annual high wave flooding using the 2.0-ft (0.5991-m) sea level rise scenario. While the RCP8.5 predicts that this scenario would be reached by the year 2075, questions remain around the exact timing of sea level rise and recent observations and projections suggest a sooner arrival. Historical data used to model annual high wave flooding include hourly measurements of significant wave height, peak wave period, and peak wave direction, and was acquired from offshore wave buoy data from PacIOOS. Maximum surface elevation and depth of the annual high wave flooding is calculated from the mean of the five highest modeled water elevations at each model location along each profile. Output from the simulations is interpolated between transects and compiled in a 5-meter map grid. Depth grid cells with values less than 10 centimeters are not included in the impact assessment. This was done to remove very thin layers of water excursions that (1) are beyond the accuracy of the model and (2) might not constitute a significant impact to land and resources when only occurring once annually. Any low-lying flooded areas that are not connected to the ocean are also removed. Annual high wave flood modeling covered wave-exposed coasts with low-lying development on Maui, Oahu, and Kauai. Annual high wave flooding was not available for the islands of Hawaii, Molokai, and Lanai, nor for harbors or other back-reef areas throughout all the islands. Additional studies would be needed to add the annual high wave flooding for those areas. The maximum annually recurring wave parameters (significant wave height, period, direction) were statistically determined using historical wave climate records and do not include potential changes in future wave climate, the effects of storm surge, or less-frequent high wave events (e.g., a 1-in-10 year wave event). In some locations, the extent of flooding modeled was limited by the extent of the 1-meter DEM. Changes in shoreline location due to coastal erosion are not included in this modeling. As shorelines retreat, annual high wave flooding will reach farther inland along retreating shorelines. Waves are propagated along a &quot;bare earth&quot; DEM which is void of shoreline structures, buildings, and vegetation, and waves are assumed to flow over an impermeable surface. The DEM represents a land surface at one particular time, and may not be representative of the beach shape during the season of most severe wave impact, particularly for highly variable north and west-exposed beaches. Undesirable artifacts of 1D modeling include over-predicted flooding along some transects with deep, shore-perpendicular indentations in the sea bottom such as nearshore reef channels. The 1D modeling does not account for the presence of nearby shallow reef which refracts and dissipates some of the wave energy traveling through the channel toward the shore. Wave flooding modeling may be improved in future efforts by employing more complex and data-intensive 2D modeling and through local field experiments. </span><span><span>Data compiled by the Pacific Islands Ocean Observing System (PacIOOS) for the Hawaii Sea Level Rise Viewer hosted at </span></span><a href='https://pacioos.org/shoreline/slr-hawaii/' rel='nofollow ugc' target='_blank'>https://pacioos.org/shoreline/slr-hawaii/</a><span>. For further information, please see the Hawaii Sea Level Rise Vulnerability and Adaptation Report: <a href='https://climateadaptation.hawaii.gov/wp-content/uploads/2017/12/SLR-Report_Dec2017.pdf' rel='nofollow ugc' target='_blank'>https://climateadaptation.hawaii.gov/wp-content/uploads/2017/12/SLR-Report_Dec2017.pdf</a>.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Use Limitation: </span><span>Based on the methodology of sea level rise modeling used in the Hawaii Sea Level Rise Vulnerability and Adaptation Report (Report) and the Hawaii Sea Level Rise Viewer (Viewer), having gone through peer review and publication in the Nature Journal Scientific Reports, the results of this study are sufficiently validated to be appropriately used in land management decisions as the best available information as of the date of publication of the Report, December 2017, consistent with the intent of Act 83 SLH 2014 as amended. This Report is intended to provide a state-wide assessment of Hawaii's vulnerability to sea level rise. The location of projected impacts and economic costs from damages are estimates based on a particular sea level rise scenario. The hazard and vulnerability data and maps provided herein are based on observational data and computer-based models as described in the Report and in published research (Anderson et al., 2018). As with all models, it is important to understand the methods, assumptions, limitations, and uncertainties of the methods used. The risks associated with use or non-use of the results are assumed by the user.</span></p><div><div><div><div><p style='margin-bottom:0.0001pt;'><font size='3'><a href='https://portal.ehawaii.gov/page/terms-of-use/' target='_blank' rel='nofollow ugc noopener noreferrer'>State of Hawaii Terms of Use. </a></font></p><p style='margin-bottom:0.0001pt;'><font size='3'><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>  </span></font></p>  <p style='margin-bottom:0.0001pt;'><font size='3'><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>The  contents of this web page are public domain and to the extent indicated  otherwise in the Terms of Use, are exempt from Terms of Use policy  restrictions.There are no expressed warranties associated with the  release of this data or product. Specifically, no warranty is made that  the GIS data or any subsequent updates will be error free and no  warranty is made regarding the positional or thematic accuracy of the  GIS data. The GIS data and any features depicted do not represent or  confer any legal rights, privileges, benefits, boundaries or claims of  any kind. The </span><span style='color:rgb(77, 77, 77);'>Office of Planning and Sustainable Development</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'> encourages users to report any  discrepancies or errors found.</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>  Contact: Hawaii Statewide GIS Program, </span><span style='color:rgb(77, 77, 77);'>Office of Planning and Sustainable Development</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>, State of Hawaii; PO Box 2359, Honolulu, Hi. 96804; (808) 587-2846; </span>email:<a href='mailto:gis@hawaii.gov' rel='nofollow ugc'><span style='color:rgb(33, 117, 155); background-color:white; background-position:initial initial; background-repeat:initial initial;'> gis@hawaii.gov. </span></a><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>Website:</span><a href='https://planning.hawaii.gov/gis' target='_blank' rel='nofollow ugc noopener noreferrer'> https://planning.hawaii.gov/gis</a><span style='background-color:white;'>.</span></font></p></div></div></div></div></div></div></div>",
+        "title": "SLR Annual High Wave Flooding - 2.0 Ft. Scenario",
+        "type": "Feature Service",
+        "orgId": "HQ0xoN0EzDPBOEci",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1662369273000,
+        "avgRating": 0,
+        "id": "e6ff553429724137a46603bbdc6eab4e",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "HawaiiStateGIS",
+        "accessInformation": "SOEST, UH CGG, PacIOOS",
+        "largeThumbnail": null,
+        "lastViewed": 1756623600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1519699633000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://geodata.hawaii.gov/arcgis/rest/services/Climate/MapServer/54",
+        "tags": [
+          " Floods"
+        ],
+        "numViews": 5310,
+        "numComments": 0,
+        "size": 67,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "University of Hawaii Coastal Geology Group (CGG)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geoportal.hawaii.gov/api/search/v1/collections/all/items/e6ff553429724137a46603bbdc6eab4e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geoportal.hawaii.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d65ace5e64de4489832176ce93ad0c29",
+      "title": "SLR Annual High Wave Flooding - 0.5 Ft. Scenario",
+      "url": "https://geodata.hawaii.gov/arcgis/rest/services/Climate/MapServer/52",
+      "publisher": "HawaiiStateGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Estimated annual high wave flooding, modeled using a 0.5 foot sea level rise scenario.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -159.7893,
+                22.233
+              ],
+              [
+                -154.7321,
+                22.233
+              ],
+              [
+                -154.7321,
+                18.893
+              ],
+              [
+                -159.7893,
+                18.893
+              ],
+              [
+                -159.7893,
+                22.233
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>Hawaii is exposed to large waves annually on all open coasts due to its location in the Central North Pacific Ocean. The distance over which waves run-up and wash across the shoreline will increase with sea level rise. As water levels increase, less wave energy will be dissipated through breaking on nearshore reefs and waves will arrive at a higher elevation at the shoreline. Computer model simulations of future annual high wave flooding were conducted by the University of Hawaii Coastal Geology Group using the XBeach (for eXtreme Beach behavior) numerical model developed by a consortium of research institutions. The model propagates the maximum annually recurring wave, calculated from offshore wave buoy data, over the reef and to the shore along one-dimensional (1D) cross-shore profiles extracted from a 1-meter DEM. Profiles are spaced 20 meters apart along the coast. This approach was used to model the transformation of the wave as it breaks across the reef and includes shallow water wave processes such as wave set-up and overtopping. The IPCC AR5 RCP8.5 sea level rise scenario was used in modeling exposure to annual high wave flooding from sea level rise at 0.5, 1.1, 2.0, and 3.2 feet. This particular layer depicts annual high wave flooding using the 0.5-ft (0.1660-m) sea level rise scenario. While the RCP8.5 predicts that this scenario would be reached by the year 2030, questions remain around the exact timing of sea level rise and recent observations and projections suggest a sooner arrival. Historical data used to model annual high wave flooding include hourly measurements of significant wave height, peak wave period, and peak wave direction, and was acquired from offshore wave buoy data from PacIOOS. Maximum surface elevation and depth of the annual high wave flooding is calculated from the mean of the five highest modeled water elevations at each model location along each profile. Output from the simulations is interpolated between transects and compiled in a 5-meter map grid. Depth grid cells with values less than 10 centimeters are not included in the impact assessment. This was done to remove very thin layers of water excursions that (1) are beyond the accuracy of the model and (2) might not constitute a significant impact to land and resources when only occurring once annually. Any low-lying flooded areas that are not connected to the ocean are also removed. Annual high wave flood modeling covered wave-exposed coasts with low-lying development on Maui, Oahu, and Kauai. Annual high wave flooding was not available for the islands of Hawaii, Molokai, and Lanai, nor for harbors or other back-reef areas throughout all the islands. Additional studies would be needed to add the annual high wave flooding for those areas. The maximum annually recurring wave parameters (significant wave height, period, direction) were statistically determined using historical wave climate records and do not include potential changes in future wave climate, the effects of storm surge, or less-frequent high wave events (e.g., a 1-in-10 year wave event). In some locations, the extent of flooding modeled was limited by the extent of the 1-meter DEM. Changes in shoreline location due to coastal erosion are not included in this modeling. As shorelines retreat, annual high wave flooding will reach farther inland along retreating shorelines. Waves are propagated along a &quot;bare earth&quot; DEM which is void of shoreline structures, buildings, and vegetation, and waves are assumed to flow over an impermeable surface. The DEM represents a land surface at one particular time, and may not be representative of the beach shape during the season of most severe wave impact, particularly for highly variable north and west-exposed beaches. Undesirable artifacts of 1D modeling include over-predicted flooding along some transects with deep, shore-perpendicular indentations in the sea bottom such as nearshore reef channels. The 1D modeling does not account for the presence of nearby shallow reef which refracts and dissipates some of the wave energy traveling through the channel toward the shore. Wave flooding modeling may be improved in future efforts by employing more complex and data-intensive 2D modeling and through local field experiments. </span><span><span>Data compiled by the Pacific Islands Ocean Observing System (PacIOOS) for the Hawaii Sea Level Rise Viewer hosted at </span></span><a href='https://pacioos.org/shoreline/slr-hawaii/' rel='nofollow ugc' target='_blank'>https://pacioos.org/shoreline/slr-hawaii/</a><span>. For further information, please see the Hawaii Sea Level Rise Vulnerability and Adaptation Report: <a href='https://climateadaptation.hawaii.gov/wp-content/uploads/2017/12/SLR-Report_Dec2017.pdf' rel='nofollow ugc' target='_blank'>https://climateadaptation.hawaii.gov/wp-content/uploads/2017/12/SLR-Report_Dec2017.pdf</a>.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Use Limitation: </span><span><span>Based on the methodology of sea level rise modeling used in the Hawaii Sea Level Rise Vulnerability and Adaptation Report (Report) and the Hawaii Sea Level Rise Viewer (Viewer), having gone through peer review and publication in the Nature Journal Scientific Reports, the results of this study are sufficiently validated to be appropriately used in land management decisions as the best available information as of the date of publication of the Report, December 2017, consistent with the intent of Act 83 SLH 2014 as amended. This Report is intended to provide a state-wide assessment of Hawaii's vulnerability to sea level rise. The location of projected impacts and economic costs from damages are estimates based on a particular sea level rise scenario. The hazard and vulnerability data and maps provided herein are based on observational data and computer-based models as described in the Report and in published research (Anderson et al., 2018). As with all models, it is important to understand the methods, assumptions, limitations, and uncertainties of the methods used. The risks associated with use or non-use of the results are assumed by the user.</span></span></p><div><div><p style='margin-bottom:0.0001pt;'><font size='3'><a href='https://portal.ehawaii.gov/page/terms-of-use/' target='_blank' rel='nofollow ugc noopener noreferrer'>State of Hawaii Terms of Use. </a></font></p><p style='margin-bottom:0.0001pt;'><font size='3'><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>  </span></font></p>  <p style='margin-bottom:0.0001pt;'><font size='3'><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>The  contents of this web page are public domain and to the extent indicated  otherwise in the Terms of Use, are exempt from Terms of Use policy  restrictions.There are no expressed warranties associated with the  release of this data or product. Specifically, no warranty is made that  the GIS data or any subsequent updates will be error free and no  warranty is made regarding the positional or thematic accuracy of the  GIS data. The GIS data and any features depicted do not represent or  confer any legal rights, privileges, benefits, boundaries or claims of  any kind. The </span><span style='color:rgb(77, 77, 77);'>Office of Planning and Sustainable Development</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'> encourages users to report any  discrepancies or errors found.</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>  Contact: Hawaii Statewide GIS Program, </span><span style='color:rgb(77, 77, 77);'>Office of Planning and Sustainable Development</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>, State of Hawaii; PO Box 2359, Honolulu, Hi. 96804; (808) 587-2846; </span>email:<a href='mailto:gis@hawaii.gov' rel='nofollow ugc'><span style='color:rgb(33, 117, 155); background-color:white; background-position:initial initial; background-repeat:initial initial;'> gis@hawaii.gov. </span></a><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>Website:</span><a href='https://planning.hawaii.gov/gis' target='_blank' rel='nofollow ugc noopener noreferrer'> https://planning.hawaii.gov/gis</a><span style='background-color:white;'>.</span></font></p></div></div><p></p></div></div></div>",
+        "title": "SLR Annual High Wave Flooding - 0.5 Ft. Scenario",
+        "type": "Feature Service",
+        "orgId": "HQ0xoN0EzDPBOEci",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1662368943000,
+        "avgRating": 0,
+        "id": "d65ace5e64de4489832176ce93ad0c29",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "HawaiiStateGIS",
+        "accessInformation": "SOEST, UH CGG, PacIOOS",
+        "largeThumbnail": null,
+        "lastViewed": 1742263200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1519699484000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://geodata.hawaii.gov/arcgis/rest/services/Climate/MapServer/52",
+        "tags": [
+          " Floods"
+        ],
+        "numViews": 3111,
+        "numComments": 0,
+        "size": 67,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "University of Hawaii Coastal Geology Group (CGG)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geoportal.hawaii.gov/api/search/v1/collections/all/items/d65ace5e64de4489832176ce93ad0c29"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geoportal.hawaii.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "694a2da478674927a345bd2e79a3c7d3",
+      "title": "SLR Annual High Wave Flooding - 3.2 Ft. Scenario",
+      "url": "https://geodata.hawaii.gov/arcgis/rest/services/Climate/MapServer/55",
+      "publisher": "HawaiiStateGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Estimated annual high wave flooding, modeled using a 3.2 foot sea level rise scenario.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -159.7893,
+                22.231
+              ],
+              [
+                -156.3321,
+                22.231
+              ],
+              [
+                -156.3321,
+                20.6177
+              ],
+              [
+                -159.7893,
+                20.6177
+              ],
+              [
+                -159.7893,
+                22.231
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>Hawaii is exposed to large waves annually on all open coasts due to its location in the Central North Pacific Ocean. The distance over which waves run-up and wash across the shoreline will increase with sea level rise. As water levels increase, less wave energy will be dissipated through breaking on nearshore reefs and waves will arrive at a higher elevation at the shoreline. Computer model simulations of future annual high wave flooding were conducted by the University of Hawaii Coastal Geology Group using the XBeach (for eXtreme Beach behavior) numerical model developed by a consortium of research institutions. The model propagates the maximum annually recurring wave, calculated from offshore wave buoy data, over the reef and to the shore along one-dimensional (1D) cross-shore profiles extracted from a 1-meter DEM. Profiles are spaced 20 meters apart along the coast. This approach was used to model the transformation of the wave as it breaks across the reef and includes shallow water wave processes such as wave set-up and overtopping. The IPCC AR5 RCP8.5 sea level rise scenario was used in modeling exposure to annual high wave flooding from sea level rise at 0.5, 1.1, 2.0, and 3.2 feet. This particular layer depicts annual high wave flooding using the 3.2-ft (0.9767-m) sea level rise scenario. While the RCP8.5 predicts that this scenario would be reached by the year 2100, questions remain around the exact timing of sea level rise and recent observations and projections suggest a sooner arrival. Historical data used to model annual high wave flooding include hourly measurements of significant wave height, peak wave period, and peak wave direction, and was acquired from offshore wave buoy data from PacIOOS. Maximum surface elevation and depth of the annual high wave flooding is calculated from the mean of the five highest modeled water elevations at each model location along each profile. Output from the simulations is interpolated between transects and compiled in a 5-meter map grid. Depth grid cells with values less than 10 centimeters are not included in the impact assessment. This was done to remove very thin layers of water excursions that (1) are beyond the accuracy of the model and (2) might not constitute a significant impact to land and resources when only occurring once annually. Any low-lying flooded areas that are not connected to the ocean are also removed. Annual high wave flood modeling covered wave-exposed coasts with low-lying development on Maui, Oahu, and Kauai. Annual high wave flooding was not available for the islands of Hawaii, Molokai, and Lanai, nor for harbors or other back-reef areas throughout all the islands. Additional studies would be needed to add the annual high wave flooding for those areas. The maximum annually recurring wave parameters (significant wave height, period, direction) were statistically determined using historical wave climate records and do not include potential changes in future wave climate, the effects of storm surge, or less-frequent high wave events (e.g., a 1-in-10 year wave event). In some locations, the extent of flooding modeled was limited by the extent of the 1-meter DEM. Changes in shoreline location due to coastal erosion are not included in this modeling. As shorelines retreat, annual high wave flooding will reach farther inland along retreating shorelines. Waves are propagated along a &quot;bare earth&quot; DEM which is void of shoreline structures, buildings, and vegetation, and waves are assumed to flow over an impermeable surface. The DEM represents a land surface at one particular time, and may not be representative of the beach shape during the season of most severe wave impact, particularly for highly variable north and west-exposed beaches. Undesirable artifacts of 1D modeling include over-predicted flooding along some transects with deep, shore-perpendicular indentations in the sea bottom such as nearshore reef channels. The 1D modeling does not account for the presence of nearby shallow reef which refracts and dissipates some of the wave energy traveling through the channel toward the shore. Wave flooding modeling may be improved in future efforts by employing more complex and data-intensive 2D modeling and through local field experiments. </span><span><span>Data compiled by the Pacific Islands Ocean Observing System (PacIOOS) for the Hawaii Sea Level Rise Viewer hosted at </span></span><a href='https://pacioos.org/shoreline/slr-hawaii/' rel='nofollow ugc' target='_blank'>https://pacioos.org/shoreline/slr-hawaii/</a><span>. For further information, please see the Hawaii Sea Level Rise Vulnerability and Adaptation Report: <a href='https://climateadaptation.hawaii.gov/wp-content/uploads/2017/12/SLR-Report_Dec2017.pdf' rel='nofollow ugc' target='_blank'>https://climateadaptation.hawaii.gov/wp-content/uploads/2017/12/SLR-Report_Dec2017.pdf</a>.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Use Limitation: </span><span>Based on the methodology of sea level rise modeling used in the Hawaii Sea Level Rise Vulnerability and Adaptation Report (Report) and the Hawaii Sea Level Rise Viewer (Viewer), having gone through peer review and publication in the Nature Journal Scientific Reports, the results of this study are sufficiently validated to be appropriately used in land management decisions as the best available information as of the date of publication of the Report, December 2017, consistent with the intent of Act 83 SLH 2014 as amended. This Report is intended to provide a state-wide assessment of Hawaii's vulnerability to sea level rise. The location of projected impacts and economic costs from damages are estimates based on a particular sea level rise scenario. The hazard and vulnerability data and maps provided herein are based on observational data and computer-based models as described in the Report and in published research (Anderson et al., 2018). As with all models, it is important to understand the methods, assumptions, limitations, and uncertainties of the methods used. The risks associated with use or non-use of the results are assumed by the user.</span></p><div><div><div><div><p style='margin-bottom:0.0001pt;'><font size='3'><a href='https://portal.ehawaii.gov/page/terms-of-use/' target='_blank' rel='nofollow ugc noopener noreferrer'>State of Hawaii Terms of Use. </a></font></p><p style='margin-bottom:0.0001pt;'><font size='3'><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>  </span></font></p>  <p style='margin-bottom:0.0001pt;'><font size='3'><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>The  contents of this web page are public domain and to the extent indicated  otherwise in the Terms of Use, are exempt from Terms of Use policy  restrictions.There are no expressed warranties associated with the  release of this data or product. Specifically, no warranty is made that  the GIS data or any subsequent updates will be error free and no  warranty is made regarding the positional or thematic accuracy of the  GIS data. The GIS data and any features depicted do not represent or  confer any legal rights, privileges, benefits, boundaries or claims of  any kind. The </span><span style='color:rgb(77, 77, 77);'>Office of Planning and Sustainable Development</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'> encourages users to report any  discrepancies or errors found.</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>  Contact: Hawaii Statewide GIS Program, </span><span style='color:rgb(77, 77, 77);'>Office of Planning and Sustainable Development</span><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>, State of Hawaii; PO Box 2359, Honolulu, Hi. 96804; (808) 587-2846; </span>email:<a href='mailto:gis@hawaii.gov' rel='nofollow ugc'><span style='color:rgb(33, 117, 155); background-color:white; background-position:initial initial; background-repeat:initial initial;'> gis@hawaii.gov. </span></a><span style='background-color:white; background-position:initial initial; background-repeat:initial initial;'>Website:</span><a href='https://planning.hawaii.gov/gis' target='_blank' rel='nofollow ugc noopener noreferrer'> https://planning.hawaii.gov/gis</a><span style='background-color:white;'>.</span></font></p></div></div></div></div></div></div></div>",
+        "title": "SLR Annual High Wave Flooding - 3.2 Ft. Scenario",
+        "type": "Feature Service",
+        "orgId": "HQ0xoN0EzDPBOEci",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1662369315000,
+        "avgRating": 0,
+        "id": "694a2da478674927a345bd2e79a3c7d3",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "HawaiiStateGIS",
+        "accessInformation": "SOEST, UH CGG, PacIOOS",
+        "largeThumbnail": null,
+        "lastViewed": 1756670400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1519699692000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://geodata.hawaii.gov/arcgis/rest/services/Climate/MapServer/55",
+        "tags": [
+          " Floods"
+        ],
+        "numViews": 13719,
+        "numComments": 0,
+        "size": 67,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "University of Hawaii Coastal Geology Group (CGG)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geoportal.hawaii.gov/api/search/v1/collections/all/items/694a2da478674927a345bd2e79a3c7d3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geoportal.hawaii.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    243
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 4,
+  "next_offset": 4,
+  "response_sha256": "e1fdc00b6f5f9f542285deddc7172f08528011bc044a3bf597681d9f6b9a0bc8",
+  "search_complete": true
+}

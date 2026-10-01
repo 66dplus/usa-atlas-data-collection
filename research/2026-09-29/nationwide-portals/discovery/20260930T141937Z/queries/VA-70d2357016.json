@@ -1,0 +1,207 @@
+{
+  "jurisdiction_code": "VA",
+  "query": "homeless",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-09-30T14:20:00.106419+00:00",
+  "candidates": [
+    {
+      "id": "0b3923bd-6ac8-4534-8f90-7f412125be39",
+      "title": "Homeless Public School Students",
+      "url": "https://data.virginia.gov/dataset/homeless-public-school-students",
+      "publisher": "City of Norfolk",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/ivw7-r79u/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/ivw7-r79u/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/ivw7-r79u/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "The McKinney-Vento Homeless Assistance Act is federal legislation that ensures educational rights and protection for youth and children experiencing homelessness. According to federal legislation, any child who lacks a fixed, regular, and adequate nighttime residence is considered homeless. If a student is found eligible for services under the McKinney-Vento Act, Norfolk Public Schools can provide transportation, free meals, clothing and school supplies, and referrals to local resources.\n\nThis dataset includes, by school year, the total number of students enrolled in Norfolk Public Schools that are identified as homeless. The data is pulled from Virginia’s Program for the Education of Homeless Children and Youth: Project HOPE-Virginia. This dataset will be updated annually."
+    },
+    {
+      "id": "9f7c7abc-8cbf-4f18-b812-eb2e2c728156",
+      "title": "Homeless Services in Norfolk",
+      "url": "https://data.virginia.gov/dataset/homeless-services-in-norfolk",
+      "publisher": "City of Norfolk",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [],
+      "description": "This data story showcases information about the homeless services ecosystem in Norfolk and the region."
+    },
+    {
+      "id": "fcf1ebd8-f990-41f3-bbaa-7e779235dbf1",
+      "title": "Homelessness Point in Time Count",
+      "url": "https://data.virginia.gov/dataset/homelessness-point-in-time-count",
+      "publisher": "City of Norfolk",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/4crf-zrb8/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/4crf-zrb8/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/4crf-zrb8/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "Each year, homeless coalitions across the country conduct a Point in Time Count (PIT) during the same 24-hour period in January to estimate the number of persons experiencing homelessness living in their region. The PIT count includes those living in emergency shelters, transitional housing programs, and those living unsheltered on the street. The PIT count does not include homeless families and youth who are doubled up with family or friends, or those at imminent risk of becoming homeless. The numbers are a “snapshot” on a single day rather than a definitive count. Despite these limitations, the count helps communities plan for programs and services, identifies gaps in the homeless system, and provides\ndemographic information about populations who experience homelessness.\n\nThis dataset includes key measures that have been counted during each PIT since 2019. This dataset will be updated annually."
+    },
+    {
+      "id": "4e01d410-29e6-4e3a-9ab8-90f489d477ef",
+      "title": "Runaway and Youth Homelessness",
+      "url": "https://data.virginia.gov/dataset/runaway-and-youth-homelessness",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.rhyttac.net/assets/docs/RHY-HMIS/2021/RHY-HMIS%20Data%20Collection%20User%20Guide%20April%202021.pdf",
+          "format": "HTML"
+        },
+        {
+          "url": "https://idsvr.rhy-hmis.acf.hhs.gov/identity/core/login?signin=1307d0472a3b48e253d85693c01aa6d8",
+          "format": "HTML"
+        }
+      ],
+      "description": "The RHY-HMIS Dashboard allows grantees and RHY federal project officers to visualize their data, compare their data against other programs and targets, share data, and easily insert specific data fields into reports. They can see their own grant-level data as well as state, regional, and national RHY-HMIS data. Authorized grantees have special logon credentials that allow them to see their own grant-level data as well as state, regional, and national RHY data. The general public will not need to log on. Public access users will not be able to see any grantee-level data but will be able to access state, regional, and national data.\n\n<b>Units of Response: </b>RHY Grantees, Runaway and Homeless Youth\n\n<b>Type of Data: </b>Administrative\n\n<b>Tribal Data: </b>Unavailable\n\n<b>Periodicity: </b>Biannual\n\n<b>Demographic Indicators: </b>Disability;Ethnicity;Housing Status;Military;Race\n\n<b>SORN: </b>https://www.federalregister.gov/documents/2015/04/02/2015-07440/privacy-act-of-1974-system-of-records-notice\n\n<b>Data Use Agreement: </b>Unavailable\n\n<b>Data Use Agreement Location: </b>Unavailable\n\n<b>Granularity: </b>Grant;Program;State\n\n<b>Spatial: </b>United States\n\n<b>Geocoding: </b>Region;State"
+    },
+    {
+      "id": "de7af4d4-82d0-4772-9f23-be2631058a9e",
+      "title": "Runaway and Homeless Youth Management Information System (1997)",
+      "url": "https://data.virginia.gov/dataset/runaway-and-homeless-youth-management-information-system-1997",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=77",
+          "format": "HTML"
+        }
+      ],
+      "description": "It is estimated that over a million young people run away or become homeless each year.  These youth face increasingly complex issues, including substance abuse, physical and sexual abuse, and AIDS.  The serious issues faced by these youths are coupled with funding constraints among almost all agencies providing services to this population.In 1974 the Family and Youth Services Bureau (FYSB) authorized funding to assist community based programs to serve youth who were not otherwise being served by traditional human service agencies.  The funding was used for the operation of basic center programs which would provide support for runaway and homeless youth (RHY).  The programs offered emergency shelter, crisis intervention services, and family reunification services. In 1988 the Transitional Living Program was introduced in order to provide services to older youth requiring assistance in becoming self-sufficient. While helping to support at-risk youth, the FYSB laws also mandate that certain data be regularly collected and reported. For example, FYSB supported agencies must report on the profile of the youth and families they serve, and provide an overview of the services which they deliver under their grant programs.  In order to assist these grantees in their reporting responsibilities, FYSB funded the development of a Runaway and Homeless Youth Management Information System (RHY MIS).   The RHY MIS was designed to provide comprehensive information on youth served, services pr"
+    },
+    {
+      "id": "d665c33e-a7f6-4317-af9e-76fc5924fa7d",
+      "title": "Runaway and Homeless Youth Management Information System (1996)",
+      "url": "https://data.virginia.gov/dataset/runaway-and-homeless-youth-management-information-system-1996",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=74",
+          "format": "HTML"
+        }
+      ],
+      "description": "It is estimated that over a million young people run away or become homeless each year.  These youth face increasingly complex issues, including substance abuse, physical and sexual abuse, and AIDS.  The serious issues faced by these youths are coupled with funding constraints among almost all agencies providing services to this population.  In 1974 the Family and Youth Services Bureau (FYSB) authorized funding to assist community based programs to serve youth who were not otherwise being served by traditional human service agencies.  The funding was used for the operation of basic center programs which would provide support for runaway and homeless youth (RHY).  The programs offered emergency shelter, crisis intervention services, and family reunification services.   In 1988 the Transitional Living Program was introduced in order to provide services to older youth requiring assistance in becoming self-sufficient.While helping to support at-risk youth, the FYSB laws also mandate that certain data be regularly collected and reported.  For example, FYSB supported agencies must report on the profile of the youth and families they serve, and provide an overview of the services which they deliver under their grant programs.  In order to assist these grantees in their reporting responsibilities, FYSB funded the development of a Runaway and Homeless Youth Management Information System (RHY MIS).  The RHY MIS was designed to provide comprehensive information on youth served, services"
+    },
+    {
+      "id": "f6dc1078-bc5b-4e27-ab82-78a82fb71b5c",
+      "title": "Runaway and Homeless Youth Management Information System (1992-1995)",
+      "url": "https://data.virginia.gov/dataset/runaway-and-homeless-youth-management-information-system-1992-1995",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=76",
+          "format": "HTML"
+        }
+      ],
+      "description": "It is estimated that over a million young people run away or become homeless each year.  These youth face increasingly complex issues, including substance abuse, physical and sexual abuse, and AIDS.  The serious issues faced by these youths are coupled with funding constraints among almost all agencies providing services to this population.  In 1974 the Family and Youth Services Bureau (FYSB) authorized funding to assist community based programs to serve youth who were not otherwise being served by traditional human service agencies. The funding was used for the operation of basic center programs which would provide support for runaway and homeless youth (RHY).  The programs offered emergency shelter, crisis intervention services, and family reunification services.   In 1988 the Transitional Living Program was introduced in order to provide services to older youth requiring assistance in becoming self-sufficient. While helping to support at-risk youth, the FYSB laws also mandate that certain data be regularly collected and reported. For example, FYSB supported agencies must report on the profile of the youth and families they serve, and provide an overview of the services which they deliver under their grant programs.  In order to assist these grantees in their reporting responsibilities, FYSB funded the development of a Runaway and Homeless Youth Management Information System (RHY MIS).   The RHY MIS was designed to provide comprehensive information on youth served, services"
+    },
+    {
+      "id": "ee0a4f3b-4063-463f-a615-c056018f44ac",
+      "title": "Residence of individuals experiencing homelessness prior to enrollment in Projects for Assistance in Transition from Homelessness (PATH) program: Findings from the 2023 PATH Evaluation",
+      "url": "https://data.virginia.gov/dataset/residence-of-individuals-experiencing-homelessness-prior-to-enrollment-in-projects-for-assistan",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.samhsa.gov/data/report/path-clients-resid-prior-enroll",
+          "format": "HTML"
+        }
+      ],
+      "description": "This spotlight highlights a notable finding from the evaluation of SAMHSA’s Projects for Assistance in Transition from Homelessness (PATH) program published in 2024. The PATH program is intended to reduce homelessness among persons experiencing severe mental illness or co-occurring mental illness and substance use disorders. PATH collects data on the reported residence of clients the night prior to enrolling in services. An examination of these data for FY 2019 to 2021 revealed an approximately ten-point percentage increase of PATH clients reporting being in an unsheltered situation the night prior to enrollment."
+    },
+    {
+      "id": "6d411001-fffc-46e2-8012-ecb3de809c12",
+      "title": "ACF/HUD Letter to Support Collaboration to Prevent and End Homelessness",
+      "url": "https://data.virginia.gov/dataset/acf-hud-letter-to-support-collaboration-to-prevent-and-end-homelessness",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://acf.gov/cb/policy-guidance/acf/hud-letter-support-collaboration-prevent-and-end-homelessness",
+          "format": "HTML"
+        }
+      ],
+      "description": "May 29, 2014\n\nDear Colleague:\n\nMay is National Foster Care Month, a time for our Nation to reaffirm its commitment to America’s children.  Last year, roughly 200,000 young people entered into foster care because of abuse and/or neglect.   Inadequate housing was a factor in many of these cases.  In fact, every year, inadequate housing contributes to the removal of 22,000 children from their families.  This can have lasting consequences for young people.\n\nResearch shows that children facing housing instability, homelessness, and poverty are more likely to be involved in the child welfare system.  When a family is living in distressed conditions or experiencing homelessness, it can affect their ability to care for their kids, and it can have a negative impact on the ability of kids to learn in school, maintain good health, and keep their hope for the future.  With this in mind, it is critical that we do everything we can to provide them with the safe and stable housing they need to succeed.\n\nTo achieve this goal, it is critical that all of us—Federal agencies, public housing authorities, Continuums of Care, and local child welfare agencies—closely collaborate with each other.  The needs of families are diverse.  Some need intensive support and long-term access to appropriate services.  Others simply need financial assistance to care for their children.  In many cases, neither child welfare agencies nor programs aimed at preventing homelessness can meet all of these needs alone.\n"
+    },
+    {
+      "id": "2f7df03d-0f2b-416d-b705-463b149c33f3",
+      "title": "Twenty-one Percent of Veterans in Substance Abuse Treatment Were Homeless",
+      "url": "https://data.virginia.gov/dataset/twenty-one-percent-of-veterans-in-substance-abuse-treatment-were-homeless",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.samhsa.gov/data/report/twenty-one-percent-veterans-substance-abuse-treatment-were-homeless",
+          "format": "HTML"
+        }
+      ],
+      "description": "This Data Spotlight from the Treatment Episode Data Set (TEDS) discusses homelessness among military veterans who were admitted to substance abuse treatment during 2011, by age group."
+    }
+  ],
+  "page_receipts": [
+    122
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 36,
+  "next_offset": 10,
+  "response_sha256": "3fe7d009befe7d180365f4a3b7c0067b9ab14c2df8f79d0369b2edb14d972b85",
+  "search_complete": false
+}

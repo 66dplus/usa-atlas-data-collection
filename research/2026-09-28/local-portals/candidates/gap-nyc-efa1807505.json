@@ -1,0 +1,48 @@
+{
+  "query": {
+    "id": "gap-nyc-efa1807505",
+    "portal_id": "nyc",
+    "query": "student debt",
+    "desired_geo": "block_group",
+    "field_ids": [
+      "08.08"
+    ],
+    "source": "live-coverage gap intake",
+    "food_excluded": true
+  },
+  "checked_at": "2026-09-30T22:49:41.933040+00:00",
+  "status": "needs_review",
+  "total_catalog_matches": 3,
+  "page_offset": 0,
+  "next_cursor": 0,
+  "max_search_results_per_cycle": 100,
+  "search_complete": true,
+  "candidates": [
+    {
+      "id": "2c9f-2ta9",
+      "title": "Financial Services for NYCHA Residents by Borough - Local Law 163",
+      "url": "https://data.cityofnewyork.us/City-Government/Financial-Services-for-NYCHA-Residents-by-Borough-/2c9f-2ta9",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/2c9f-2ta9.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "vk6p-jwjf",
+      "title": "Financial Services for NYCHA Residents by Council District - Local Law 163",
+      "url": "https://data.cityofnewyork.us/City-Government/Financial-Services-for-NYCHA-Residents-by-Council-/vk6p-jwjf",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/vk6p-jwjf.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "fiag-ac7u",
+      "title": "Financial Services for NYCHA Residents by Development - Local Law 163",
+      "url": "https://data.cityofnewyork.us/City-Government/Financial-Services-for-NYCHA-Residents-by-Developm/fiag-ac7u",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/fiag-ac7u.json",
+      "status": "needs_review"
+    }
+  ],
+  "meaning": "not_available means zero matches for this query only; unknown schemas require review",
+  "response_sha256": "d6d48751d9eb5c3ede6267e4d6a015f337aff2727e0f8f53ad3bd42accfa9a41"
+}

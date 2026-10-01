@@ -1,0 +1,633 @@
+{
+  "generated_at": "2026-10-01T14:23:37.001151+00:00",
+  "coverage_source": "research/2026-09-28/geography/live-coverage.json",
+  "coverage_sha256": "5132ff65f6e79e2f1540ca7eeea42ea3e0e50b55a14433bc476a87713222d447",
+  "coverage_captured_at": "2026-09-29T12:54:10.007501+00:00",
+  "contract_sha256": "e321baf79add3320961fab36f1e3c62630f46ad2c886e3e77b2a8099bb73603e",
+  "seed_sha256": "e213ea9d645b5576698b7f7cbb914213e3e6bb85b231593108fd6126fd034d45",
+  "excluded_food_ids": [
+    "08.01",
+    "08.02",
+    "08.03",
+    "08.06",
+    "09.01",
+    "09.02",
+    "09.03"
+  ],
+  "fields": [
+    {
+      "field_id": "01.05",
+      "label": "Foreign-born population",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "source_snapshot_status": "all_required_source_tables_collected",
+      "extension_variants": [
+        {
+          "catalog_field_id": "01.05",
+          "denominator": "B05012_001",
+          "identity": "Native foreign-born count and total population; does not reproduce the full birthplace/citizenship breakdown in B05002.",
+          "legacy_denominator": "B05002_001",
+          "legacy_numerator": "B05002_013",
+          "legacy_table": "B05002",
+          "metric": "foreign_born_population",
+          "numerator": "B05012_003",
+          "table": "B05012",
+          "universe": "Total population in the United States",
+          "variables": [
+            "B05012_001",
+            "B05012_002",
+            "B05012_003"
+          ],
+          "status": "collected_native_alternative",
+          "geography_counts": {
+            "county": 3144,
+            "nation": 1,
+            "place": 32038,
+            "state": 51,
+            "tract": 84401
+          },
+          "available_native_levels": [
+            "county",
+            "nation",
+            "place",
+            "state",
+            "tract"
+          ],
+          "normalized_observations": 358905
+        }
+      ],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "01.06",
+      "label": "Country / region of birth",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "source_snapshot_status": "all_required_source_tables_collected",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "01.07",
+      "label": "Citizenship",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "source_snapshot_status": "all_required_source_tables_collected",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "01.08",
+      "label": "Year / period of immigration",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "source_snapshot_status": "all_required_source_tables_collected",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "02.10",
+      "label": "Cost of living / Regional Price Parities",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "03.06",
+      "label": "Unemployment",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "03.07",
+      "label": "Average / mean salary",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "03.08",
+      "label": "Employment growth",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.01",
+      "label": "Murders",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.02",
+      "label": "Violent crime",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.03",
+      "label": "Robbery",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.04",
+      "label": "Aggravated assault",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.05",
+      "label": "Burglary",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.06",
+      "label": "Motor vehicle theft",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.07",
+      "label": "Rape",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.08",
+      "label": "Homicide",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "04.09",
+      "label": "Crime trends",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.01",
+      "label": "Drug overdose deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.02",
+      "label": "Opioid deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.03",
+      "label": "Fentanyl / synthetic opioid deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.04",
+      "label": "Cocaine deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.05",
+      "label": "Methamphetamine / psychostimulant deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.06",
+      "label": "Heroin deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.07",
+      "label": "Alcohol-related deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.08",
+      "label": "Suicide",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.09",
+      "label": "Homicide mortality",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.10",
+      "label": "Heart disease deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.11",
+      "label": "Cancer deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.12",
+      "label": "Accidental deaths",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.13",
+      "label": "Life-expectancy-related indicators",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.14",
+      "label": "Obesity rate",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [
+        "tract"
+      ],
+      "source_snapshot_status": "collected_separate_crude_variant",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.15",
+      "label": "Diabetes rate",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [
+        "tract"
+      ],
+      "source_snapshot_status": "collected_separate_crude_variant",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "05.16",
+      "label": "Physical inactivity rate",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [
+        "tract"
+      ],
+      "source_snapshot_status": "collected_separate_crude_variant",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "06.01",
+      "label": "Total homeless",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "06.02",
+      "label": "Sheltered homeless",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "06.03",
+      "label": "Unsheltered homeless",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "06.04",
+      "label": "Homeless veterans",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "06.05",
+      "label": "Homeless families",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "06.06",
+      "label": "Chronically homeless",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "07.01",
+      "label": "Adjusted Gross Income (AGI)",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "07.02",
+      "label": "High-income taxpayers / returns",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "07.03",
+      "label": "Capital gains",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "07.04",
+      "label": "Dividends",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "07.05",
+      "label": "Taxes / income tax metrics",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "07.06",
+      "label": "Millionaires",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "07.07",
+      "label": "Billionaires",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "08.04",
+      "label": "Gasoline price",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "08.05",
+      "label": "Electricity price",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "08.07",
+      "label": "Average consumer debt",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "08.08",
+      "label": "Student loan debt",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "08.09",
+      "label": "Average health insurance cost",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "09.04",
+      "label": "Fitness / recreation centers per capita",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "09.05",
+      "label": "Parks / recreation facilities",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "09.06",
+      "label": "PM2.5",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    },
+    {
+      "field_id": "09.07",
+      "label": "Ozone",
+      "desired_geography": "block_group",
+      "available_native_levels_in_snapshot": [],
+      "source_snapshot_status": "not_part_of_this_acs_cdc_run",
+      "extension_variants": [],
+      "status": "planned_search",
+      "reason": "Native BG absent from this source snapshot; jurisdiction-specific absence is not established."
+    }
+  ]
+}

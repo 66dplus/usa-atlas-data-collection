@@ -1,0 +1,802 @@
+{
+  "updated_at": "2026-10-01T10:50:15.045878+00:00",
+  "pid": 3479692,
+  "mode": "daemon",
+  "runtime_state": "runtime/state.json",
+  "collections": {
+    "ca-dwr-bg-income-2023": {
+      "status": "source_collected",
+      "started_at": "2026-09-28T18:50:32.766157+00:00",
+      "last_attempt_epoch": 1790621432.7661638,
+      "error": null,
+      "failed_at": "2026-09-28T18:47:07.435408+00:00",
+      "completed_at": "2026-09-28T18:50:40.333745+00:00",
+      "last_success_epoch": 1790621440.3337781,
+      "rows": 25607,
+      "manifest": "manifests/ca-dwr-bg-income-2023.json"
+    },
+    "ca-dwr-bg-water-vulnerability-2024": {
+      "status": "source_collected",
+      "started_at": "2026-09-28T18:53:09.645914+00:00",
+      "last_attempt_epoch": 1790621589.6459272,
+      "error": null,
+      "failed_at": "2026-09-28T18:50:44.890838+00:00",
+      "completed_at": "2026-09-28T18:53:15.679479+00:00",
+      "last_success_epoch": 1790621595.6794977,
+      "rows": 25607,
+      "manifest": "manifests/ca-dwr-bg-water-vulnerability-2024.json"
+    },
+    "loudoun-dc-building-records": {
+      "status": "source_collected",
+      "started_at": "2026-09-30T22:49:09.006990+00:00",
+      "last_attempt_epoch": 1790808549.0070176,
+      "completed_at": "2026-09-30T22:49:12.093567+00:00",
+      "last_success_epoch": 1790808552.0935876,
+      "rows": 239,
+      "manifest": "manifests/loudoun-dc-building-records.json",
+      "error": null
+    },
+    "dc-mpd-crime-bg-2025": {
+      "status": "source_collected",
+      "started_at": "2026-09-30T22:49:12.096660+00:00",
+      "last_attempt_epoch": 1790808552.0966814,
+      "error": null,
+      "failed_at": "2026-09-28T18:47:33.006353+00:00",
+      "completed_at": "2026-09-30T22:49:22.857927+00:00",
+      "last_success_epoch": 1790808562.8579433,
+      "rows": 2840,
+      "manifest": "manifests/dc-mpd-crime-bg-2025.json"
+    },
+    "dc-mpd-crime-bg-2026": {
+      "status": "source_collected",
+      "started_at": "2026-09-30T22:49:22.861638+00:00",
+      "last_attempt_epoch": 1790808562.8616564,
+      "error": null,
+      "failed_at": "2026-09-28T18:47:40.531635+00:00",
+      "completed_at": "2026-09-30T22:49:30.531210+00:00",
+      "last_success_epoch": 1790808570.5312295,
+      "rows": 2638,
+      "manifest": "manifests/dc-mpd-crime-bg-2026.json"
+    },
+    "ny-county-income-tax-1999-2014": {
+      "status": "source_collected",
+      "started_at": "2026-09-28T18:47:40.535721+00:00",
+      "last_attempt_epoch": 1790621260.535736,
+      "completed_at": "2026-09-28T18:47:52.386292+00:00",
+      "last_success_epoch": 1790621272.386314,
+      "rows": 13515,
+      "manifest": "manifests/ny-county-income-tax-1999-2014.json",
+      "error": null
+    }
+  },
+  "discovery": {
+    "ca-01": {
+      "status": "source_matched",
+      "next_cursor": 20,
+      "total_catalog_matches": 38,
+      "response_sha256": "b5dd3e06d76b2a5e027e7df21bc744c1fec26ae5b01ded3aaef67d190af8502f",
+      "last_attempt_epoch": 1790830191.5607746
+    },
+    "ca-02": {
+      "status": "needs_review",
+      "next_cursor": 60,
+      "total_catalog_matches": 140,
+      "response_sha256": "19b4ac27ac3edcebd6324261f74003f20c8250d085c16319968e97ce5b7d97fd",
+      "last_attempt_epoch": 1790830192.6963413
+    },
+    "ca-03": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
+      "last_attempt_epoch": 1790830193.2903714
+    },
+    "ca-04": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 11,
+      "response_sha256": "edfc8439eb444ad3a2f74418b8020aedcab3411dd5fd6f6b902ed2a3ab8c5dea",
+      "last_attempt_epoch": 1790830194.1573858
+    },
+    "cnra-05": {
+      "status": "needs_review",
+      "next_cursor": 20,
+      "total_catalog_matches": 39,
+      "response_sha256": "f72ff0debe357bf3b6b38d6d52be517744d5992ae3168e9a1b52851ab2d37f46",
+      "last_attempt_epoch": 1790830195.5133092
+    },
+    "ny-06": {
+      "status": "source_matched",
+      "next_cursor": 20,
+      "total_catalog_matches": 21,
+      "response_sha256": "20bfe264f59c9032ae8bbd3b9c1ab0e9c0db4cb83a9a062ba0094e4d689b5e1e",
+      "last_attempt_epoch": 1790830196.492442
+    },
+    "ny-07": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "7437488cc7212d9bd13257b26bcdd085adf6b33a0fb74cdfcb8ea39469bdf3e6",
+      "last_attempt_epoch": 1790830197.0670166
+    },
+    "nyc-08": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 45,
+      "response_sha256": "f227fb9df681842b0d7077e7c2a9ca2281a32ed4e57e2713cc3e6284c0e7dd22",
+      "last_attempt_epoch": 1790830198.0737069
+    },
+    "nyc-09": {
+      "status": "needs_review",
+      "next_cursor": 60,
+      "total_catalog_matches": 134,
+      "response_sha256": "6ecb7cc0aba30736137049ffb39ec4955fc96c19c70a5b119a65f67fd9d6bcb0",
+      "last_attempt_epoch": 1790830199.0976913
+    },
+    "loudoun-10": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 59,
+      "response_sha256": "a3b5143baaec1ab273ba901106b483c1f6794f94b2a78007d15426fa473480e0",
+      "last_attempt_epoch": 1790830199.3971455
+    },
+    "dc-11": {
+      "status": "source_matched",
+      "next_cursor": 20,
+      "total_catalog_matches": 33,
+      "response_sha256": "e8b60a20647679adf236121f771a615613110fbd64fd3a43b918bc91109dfc10",
+      "last_attempt_epoch": 1790830200.0202937
+    },
+    "dc-12": {
+      "status": "needs_review",
+      "next_cursor": 20,
+      "total_catalog_matches": 30,
+      "response_sha256": "4e704da4a4b2c816c884a9fe3379e96bcf674a26952906e88d6f3099077ababd",
+      "last_attempt_epoch": 1790851801.3404949
+    },
+    "va-13": {
+      "status": "needs_review",
+      "next_cursor": 60,
+      "total_catalog_matches": 11227,
+      "response_sha256": "8d794882a2f023fa69e027d9dfe97eb368d4d81768f023035f1c8a6b504fcb71",
+      "last_attempt_epoch": 1790851802.5794423
+    },
+    "va-14": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 16,
+      "response_sha256": "b1c70abaf8a29d72987b4814f10bc57f2fee63aba73be3fa7e14046c774ab7a5",
+      "last_attempt_epoch": 1790851803.8086798
+    },
+    "gap-ca-2ca2cd1e89": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 2,
+      "response_sha256": "df378f43ab797fe2ce0bdbffae608d62f96037085a296c34b1c69ce3193f7f5e",
+      "last_attempt_epoch": 1790851804.5436277
+    },
+    "gap-ny-2ca2cd1e89": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "91d1772e2aef803172767842600ddeb5b032981dcd0417f145b7e50480f47897",
+      "last_attempt_epoch": 1790851805.1309025
+    },
+    "gap-nyc-2ca2cd1e89": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 5,
+      "response_sha256": "63e0ff5a5ee25202271f000386d4ff51094df69508a7596a595a7a9458b5f2ab",
+      "last_attempt_epoch": 1790851806.0867376
+    },
+    "gap-ca-1757d2fb96": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
+      "last_attempt_epoch": 1790851806.7081494
+    },
+    "gap-ny-1757d2fb96": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "908360d9c3c31d44b1e1a5d7323467909ead1c88a9c788961fed62caf6f9a0ab",
+      "last_attempt_epoch": 1790851807.3851845
+    },
+    "gap-nyc-1757d2fb96": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 6,
+      "response_sha256": "f400c4749795993aabb4acd4a5580cc80a2b8d3e71396c058bb48a8b7874e9a1",
+      "last_attempt_epoch": 1790851808.3819938
+    },
+    "gap-ca-9ecfc652f6": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 8,
+      "response_sha256": "95eaa03cd4e413b8ac112fc7fbb9eab91a1387994815032be018f7f2b574ebbf",
+      "last_attempt_epoch": 1790851809.284552
+    },
+    "gap-ny-9ecfc652f6": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 1,
+      "response_sha256": "e2ce872ce988e7ec64831b7fddc011a735f09d9cf17b8699a2be91f4eda4463f",
+      "last_attempt_epoch": 1790851809.957283
+    },
+    "gap-nyc-9ecfc652f6": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 9,
+      "response_sha256": "5aa55851224efca50599690a2d8d888bcd78584a260f6250276f48d84cf54bb9",
+      "last_attempt_epoch": 1790851810.9644768
+    },
+    "gap-ca-d84afde29c": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 20,
+      "response_sha256": "3af30bbe84e111ee17fe41c10a18257bd17dfe2e3e7abf275d21becb81208603",
+      "last_attempt_epoch": 1790621602.8842542
+    },
+    "gap-ny-d84afde29c": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 10,
+      "response_sha256": "1ed83b11f4eb57d9fdb818f2bded8f319c8fb982a173a170b254d67bec70f8f6",
+      "last_attempt_epoch": 1790621603.7469575
+    },
+    "gap-nyc-d84afde29c": {
+      "status": "needs_review",
+      "next_cursor": 20,
+      "total_catalog_matches": 64,
+      "response_sha256": "325f716620c70c142e0929f31ac44356cd60118d8c8a09e90d9903955a60d5e9",
+      "last_attempt_epoch": 1790621604.709309
+    },
+    "gap-ca-78aad30559": {
+      "status": "needs_review",
+      "next_cursor": 60,
+      "total_catalog_matches": 184,
+      "response_sha256": "94fff77d5d3674f62519460e1480da1baa6b58ef41982c7f6dced1c03f1ea6ef",
+      "last_attempt_epoch": 1790851812.179771
+    },
+    "gap-ny-78aad30559": {
+      "status": "needs_review",
+      "next_cursor": 20,
+      "total_catalog_matches": 26,
+      "response_sha256": "8f93eeba985fdc26b8ff852096a91352f811674b8d18f7082f8e77c0fcc82e2e",
+      "last_attempt_epoch": 1790851813.3664446
+    },
+    "gap-nyc-78aad30559": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 6,
+      "response_sha256": "d8866d123f4fd055eab17267d45b0a7a7beaad481599f35bbd30f86b5d587706",
+      "last_attempt_epoch": 1790851814.6265962
+    },
+    "gap-ca-0ab37c8e4a": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 15,
+      "response_sha256": "76a3f09ee8364a31393d46acce5ff1ee04d31434f02ffa72affd01222aec834d",
+      "last_attempt_epoch": 1790851815.0323718
+    },
+    "gap-ny-0ab37c8e4a": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 25,
+      "response_sha256": "191fae16af08c837b1f6b51f8c8385d5629cf8b30230de07b68010e4766346f2",
+      "last_attempt_epoch": 1790730138.3256743
+    },
+    "gap-nyc-0ab37c8e4a": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 4,
+      "response_sha256": "df0406ba0a12d641f33f74e16c3b6226ca96228080b529876d9553fcf7e265b6",
+      "last_attempt_epoch": 1790730139.0982869
+    },
+    "gap-ca-678db3bc7b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 13,
+      "response_sha256": "f3d24e0ffbfbca58b2c3650dd5268fb31225dad8fc2a55da2f29e23fc534fed9",
+      "last_attempt_epoch": 1790730139.3848765
+    },
+    "gap-ny-678db3bc7b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 32,
+      "response_sha256": "abffca5e2635a5045f34b52560dc513504e1b642f3a9eedc11d65c6196181472",
+      "last_attempt_epoch": 1790730140.4719503
+    },
+    "gap-nyc-678db3bc7b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 23,
+      "response_sha256": "2d8e79d9ab3cda44f495671e40f7283d77b32269ff1e4c905462e522b5306d32",
+      "last_attempt_epoch": 1790730141.1361444
+    },
+    "gap-ca-0b22f40bb7": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 59,
+      "response_sha256": "19b9f37c3da086679f6c586984662c775c9cb29aa1140db4377e267b9ab9914b",
+      "last_attempt_epoch": 1790743700.7293863
+    },
+    "gap-ny-0b22f40bb7": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 152,
+      "response_sha256": "da1d8b7b09de28590eaa021da1b56a7542c554478b1b3699687541ea72afa521",
+      "last_attempt_epoch": 1790743701.639286
+    },
+    "gap-nyc-0b22f40bb7": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 66,
+      "response_sha256": "3ec20eb9e9964cc620bb38840e8bdf5fccc75d4962c17dd20805a644c195124c",
+      "last_attempt_epoch": 1790743702.4905002
+    },
+    "gap-dc-54bd8ea967": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 81,
+      "response_sha256": "c0bc70b089a8008d51634a30c99249f8ed8184ccd12f0ce0f8244b9485b88a32",
+      "last_attempt_epoch": 1790743702.9583492
+    },
+    "gap-nyc-54bd8ea967": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 31,
+      "response_sha256": "2e6d9ee05f9170fd53473524ca4561758c6560f9c7b2e3ae261d67d415845f02",
+      "last_attempt_epoch": 1790743703.8341367
+    },
+    "gap-ca-54bd8ea967": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 1,
+      "response_sha256": "ca92cf0811f6e3f9cf290dfbc5fafff834e328e768905efa3afc309d7916b2f9",
+      "last_attempt_epoch": 1790743704.332794
+    },
+    "gap-dc-ed8f9f77aa": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 30,
+      "response_sha256": "5d856f70c2ac8a23decc089c170403614bf7f3441e90c1c1fa37cdc149eea245",
+      "last_attempt_epoch": 1790743704.6093974
+    },
+    "gap-ca-ed8f9f77aa": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
+      "last_attempt_epoch": 1790743705.1784
+    },
+    "gap-ny-ed8f9f77aa": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "cbb05a77809ea324f76e5bbfc021946eebfcc90fdd5fe1124fa576441c817aa8",
+      "last_attempt_epoch": 1790743705.735751
+    },
+    "gap-ca-7f651438dd": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 4,
+      "response_sha256": "ad82350ac8c4428dcc799f126d08b65935402e9635598dd5c6c50140ab3c64a5",
+      "last_attempt_epoch": 1790743706.1314406
+    },
+    "gap-ny-7f651438dd": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "134a11cffd945a9a8c4ed2fb1d46c83a3d78e24b50f6c2245723dbad60f6b56c",
+      "last_attempt_epoch": 1790743706.7208471
+    },
+    "gap-nyc-7f651438dd": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "938a75c18714326d025a348589155ea03397af176c694b16a22bdf3d8724a435",
+      "last_attempt_epoch": 1790743707.277734
+    },
+    "gap-ca-5304378d00": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 3,
+      "response_sha256": "c2dc49c9e142947356866374d636d52592f9931fe72d316c57bd4975b0a425e9",
+      "last_attempt_epoch": 1790743708.1215296
+    },
+    "gap-ny-5304378d00": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 3,
+      "response_sha256": "435f7d46cbe44bacb1249ba1a4cda25c02c83a91f71110f66b2a5fd1c2164cfc",
+      "last_attempt_epoch": 1790743708.913431
+    },
+    "gap-nyc-5304378d00": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 1,
+      "response_sha256": "bd2527a20f18900a98d1da16a18a4a38fe1a978cf8f3276212b1e81828602446",
+      "last_attempt_epoch": 1790743709.4697354
+    },
+    "gap-ca-aec0429f74": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 3,
+      "response_sha256": "fa9e9d9da1ce5ad0f14c60fa85f3b1c9e5569711e3bb1a1c35cd828d494b3413",
+      "last_attempt_epoch": 1790743710.3191445
+    },
+    "gap-ny-aec0429f74": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 13,
+      "response_sha256": "d9601e39b84cad58a9ef970d1ed21f216ae43b3d63aa388bb51c0500a5a668aa",
+      "last_attempt_epoch": 1790765314.2107756
+    },
+    "gap-nyc-aec0429f74": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 10,
+      "response_sha256": "824287017ff99909eeff2466ab66e98e92aad20755be396f72ac75bf0816f6b8",
+      "last_attempt_epoch": 1790765315.0169494
+    },
+    "gap-ca-1678109dd1": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 13,
+      "response_sha256": "54d681597cff84ec9ff87418e8712c31b0f1e83854ceb1f4a9a50bcb3073d5ce",
+      "last_attempt_epoch": 1790765315.9783263
+    },
+    "gap-ny-1678109dd1": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 5,
+      "response_sha256": "9fafd0ebfc057cd7e0294d736c21960f7d9b90f28a6ac00158962977370602e2",
+      "last_attempt_epoch": 1790765318.0227664
+    },
+    "gap-nyc-1678109dd1": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "0cd2df84e4c64526441db93d207011bb655c54d07094e7aa73b14fba78c12af6",
+      "last_attempt_epoch": 1790765318.694685
+    },
+    "gap-ca-5600ae99b1": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 19,
+      "response_sha256": "d3eab60b9f5d5a16709df63283a09fc94d9928e3f2b838f06e75cecf86241cdd",
+      "last_attempt_epoch": 1790765319.6073108
+    },
+    "gap-ny-5600ae99b1": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 12,
+      "response_sha256": "a8d7de3daeb7616aa74d7061b00b1b97df85d93e79e5044bb3bebb3548eeb76d",
+      "last_attempt_epoch": 1790765320.7625299
+    },
+    "gap-nyc-5600ae99b1": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 2,
+      "response_sha256": "442d132bb0fe3f0cefb2d7537a8d5d1998f8843791cf5bdf1fa6c7c09b3c6f10",
+      "last_attempt_epoch": 1790765321.324019
+    },
+    "gap-ca-1073d3e680": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 2,
+      "response_sha256": "fcedfca806b68351d9e71ba146610b4c27f464648919880e815c7cbcb77fdd36",
+      "last_attempt_epoch": 1790765321.6009045
+    },
+    "gap-ny-1073d3e680": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "ba0411f6733ad9b1f5bc9b74f0877cfb31f7fe70eea0405c197b871ed8666508",
+      "last_attempt_epoch": 1790765322.1554768
+    },
+    "gap-nyc-1073d3e680": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "ba0411f6733ad9b1f5bc9b74f0877cfb31f7fe70eea0405c197b871ed8666508",
+      "last_attempt_epoch": 1790765322.7393558
+    },
+    "gap-ca-5a1bef18cd": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 89,
+      "response_sha256": "ed4f935fa58ff69689b2afc28a71911b72700f52dab51cb752bb0eaf0f342b86",
+      "last_attempt_epoch": 1790765323.7481558
+    },
+    "gap-ny-5a1bef18cd": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 9,
+      "response_sha256": "9e956f3bfe8842d105a39896714634c233b8ec15200ca0c8f392488135e5dd86",
+      "last_attempt_epoch": 1790765324.7263749
+    },
+    "gap-nyc-5a1bef18cd": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 3,
+      "response_sha256": "b252a94b1a0429d383a8e91fbccd700578a98f2b4657200e9f0ebba0c881e020",
+      "last_attempt_epoch": 1790765325.6178405
+    },
+    "gap-ca-a3cca0ced5": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 12,
+      "response_sha256": "2fc8d544d33204d941500c138ac5d164abe58faf84e46d65b3d12b76e80cbb30",
+      "last_attempt_epoch": 1790765325.939252
+    },
+    "gap-ny-a3cca0ced5": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 5,
+      "response_sha256": "76802cb5753846b7933b536d72b18861765e7d4de48bd425a21b2ac8a7a103a0",
+      "last_attempt_epoch": 1790765326.8622375
+    },
+    "gap-nyc-a3cca0ced5": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 2,
+      "response_sha256": "8e570e5e61b38a3adb252c53b22271880007596b67dfd6ef14bc02040543e032",
+      "last_attempt_epoch": 1790786928.3589342
+    },
+    "gap-ca-6a5d28d69b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 22,
+      "response_sha256": "5dc84276116f9233107e633e8fe56946ce2ce677fba975f8bded77435aabd744",
+      "last_attempt_epoch": 1790786929.1104035
+    },
+    "gap-ny-6a5d28d69b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 5,
+      "response_sha256": "ba03de4afc736b0e954e7b9c0452ef31ee5560476e7e969c16f180bef3ad7c7f",
+      "last_attempt_epoch": 1790786931.6450176
+    },
+    "gap-nyc-6a5d28d69b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 1,
+      "response_sha256": "71e86e6a7c5eaa77cafe4a079d26ac18bb6c1d18453dffff11c2fcb552f715ab",
+      "last_attempt_epoch": 1790786932.236431
+    },
+    "gap-ca-50b4fc97bb": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 27,
+      "response_sha256": "0b93c97f9309fdd4c324b7a41ba8595daecb3da4e9885595ca711fc70ed0eaaf",
+      "last_attempt_epoch": 1790786933.2657313
+    },
+    "gap-ny-50b4fc97bb": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 29,
+      "response_sha256": "4985237182d194088fc4afc7fcab8f34cc48ab64bf43ff19d48468b0eac5df10",
+      "last_attempt_epoch": 1790786934.2790852
+    },
+    "gap-nyc-50b4fc97bb": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 29,
+      "response_sha256": "5d8e96a81eee4b6c848de952ab9a06ba7f255c5b7710949a1058c4d23cce77b8",
+      "last_attempt_epoch": 1790786936.2627664
+    },
+    "gap-ca-70d2357016": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 11,
+      "response_sha256": "4eb116e9b0af4ce22775309f7f52b2f00411bd6bc3c72d6a1418cd8edeff22bf",
+      "last_attempt_epoch": 1790786937.442417
+    },
+    "gap-ny-70d2357016": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 11,
+      "response_sha256": "e9ecbc2442a54c316838aaad7533a56889c3a2ddc78a6da52172ebd010ffaf61",
+      "last_attempt_epoch": 1790786938.3928757
+    },
+    "gap-nyc-70d2357016": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 45,
+      "response_sha256": "6387650e80d4b8d31a1ab09e4bf0fc5409e393c4058a8e16ae3dae2265cce426",
+      "last_attempt_epoch": 1790786939.4694777
+    },
+    "gap-ca-78f9ccfa3a": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 122,
+      "response_sha256": "cbff8120cf78cf52ab3bd399a3e83f35920099fb84014b8d5cbec7287b3977b0",
+      "last_attempt_epoch": 1790786940.4093492
+    },
+    "gap-ny-78f9ccfa3a": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 58,
+      "response_sha256": "7e4992cb5fb736d1e76c9c7047dcd38c48a419cd0928c1ec246b271c2c846cf5",
+      "last_attempt_epoch": 1790786942.1963027
+    },
+    "gap-nyc-78f9ccfa3a": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 28,
+      "response_sha256": "873a47d0e4622e9d77ab36e7f64dfef5307b772a624559d748ae41a8cc652535",
+      "last_attempt_epoch": 1790786944.6343045
+    },
+    "gap-ca-739bf484f7": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 9,
+      "response_sha256": "953e69344a4407d05d1f6e3f58055fee3618629ad71a1807a054bcabf822faeb",
+      "last_attempt_epoch": 1790786945.9399006
+    },
+    "gap-ny-739bf484f7": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "116876fc30f315c42cd081d24a895d951abfda6827f67ee22df62e99655aa73c",
+      "last_attempt_epoch": 1790786946.9183865
+    },
+    "gap-nyc-739bf484f7": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 1,
+      "response_sha256": "64fefc4f813ca0f46c0761c46e183dfd39376e34dff94e76d31ff89d7b911b04",
+      "last_attempt_epoch": 1790786947.9965143
+    },
+    "gap-ca-4325ed4bef": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 7,
+      "response_sha256": "1ab261bf564a513cd15fd6dd4c6edc2b44a383fb31713d84dc363f3ceb20f4b1",
+      "last_attempt_epoch": 1790808571.350698
+    },
+    "gap-ny-4325ed4bef": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 19,
+      "response_sha256": "b65b96e0206b3f7393598225ca01b3500a749db06295323a5aaa651b3aafd599",
+      "last_attempt_epoch": 1790808572.4456742
+    },
+    "gap-nyc-4325ed4bef": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 1,
+      "response_sha256": "9a1d65403a3a27330355ec087a70cbf1933e68b3d1b1d0504d22e2a265ec3555",
+      "last_attempt_epoch": 1790808572.980892
+    },
+    "gap-ca-ae80c18496": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 135,
+      "response_sha256": "343f2fb9f17fbfe79b9f43e05e35a96efbff9f48e96c39d4c561409735d3aa81",
+      "last_attempt_epoch": 1790808573.980631
+    },
+    "gap-ny-ae80c18496": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 155,
+      "response_sha256": "7e4ea8b1fcee679ebc53ada41bed0a3a92ea0c3f4e3a76b01cb51081be787027",
+      "last_attempt_epoch": 1790808576.373289
+    },
+    "gap-va-ae80c18496": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 234,
+      "response_sha256": "41c54c39553fc0b5a2c43279485fa89568bdda3bc9a1cf6885cc8f8c4e937cae",
+      "last_attempt_epoch": 1790808577.2667615
+    },
+    "gap-ca-31fc0cef9b": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
+      "last_attempt_epoch": 1790808577.8020167
+    },
+    "gap-ny-31fc0cef9b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 1,
+      "response_sha256": "a907d9ad711f87ca3b04c9442ee355e9959d682d9c5b71a3566ace6dd3efe818",
+      "last_attempt_epoch": 1790808578.6438942
+    },
+    "gap-nyc-31fc0cef9b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 4,
+      "response_sha256": "85defb267e0947db36e8348408e69154eaf0be3c5d4580741d46be36c8766cdb",
+      "last_attempt_epoch": 1790808579.4365752
+    },
+    "gap-ca-efa1807505": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
+      "last_attempt_epoch": 1790808580.5478692
+    },
+    "gap-ny-efa1807505": {
+      "status": "not_available",
+      "next_cursor": 0,
+      "total_catalog_matches": 0,
+      "response_sha256": "ba0411f6733ad9b1f5bc9b74f0877cfb31f7fe70eea0405c197b871ed8666508",
+      "last_attempt_epoch": 1790808581.193873
+    },
+    "gap-nyc-efa1807505": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 3,
+      "response_sha256": "d6d48751d9eb5c3ede6267e4d6a015f337aff2727e0f8f53ad3bd42accfa9a41",
+      "last_attempt_epoch": 1790808581.9337044
+    },
+    "gap-ca-6010edd27b": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 51,
+      "response_sha256": "f17744e024c3e23d707042d6367fbf8b0ffb2d849c00e4f00b25b908e548905d",
+      "last_attempt_epoch": 1790808582.8429563
+    },
+    "gap-ny-6010edd27b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 23,
+      "response_sha256": "906ad050cf2260b44819f7f5d40bd824008a8439d1af462b46cf0d114343366e",
+      "last_attempt_epoch": 1790808583.7451622
+    },
+    "gap-nyc-6010edd27b": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 11,
+      "response_sha256": "76f9f34693c8c0061baeee960a02965ae67c18ca0884bb9a236ca6dce56bdf8f",
+      "last_attempt_epoch": 1790808584.9719293
+    },
+    "gap-ca-3789e352cc": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 219,
+      "response_sha256": "ba109ffaa2653788d59a7b7ec060ba2a5e0e3e37ef1d3bac81d462c097da5003",
+      "last_attempt_epoch": 1790808585.3168912
+    },
+    "gap-ny-3789e352cc": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 128,
+      "response_sha256": "24b8a5f40949aa0cf26de0d4bffa299831fe5eaa5e43edf554d3caa585337f2a",
+      "last_attempt_epoch": 1790830187.0804436
+    },
+    "gap-nyc-3789e352cc": {
+      "status": "needs_review",
+      "next_cursor": 40,
+      "total_catalog_matches": 295,
+      "response_sha256": "d6d72bac34d56c870458f5f1202b269ec324bd1124ba2d2f3e18a0dd43eadc3d",
+      "last_attempt_epoch": 1790830187.8548775
+    },
+    "gap-ca-d6bbbd5701": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 12,
+      "response_sha256": "f02cf4e54f2cfd3d9511d7794a0e512b23fac8456e1990900f8be565d6487d59",
+      "last_attempt_epoch": 1790830188.7755208
+    },
+    "gap-ny-d6bbbd5701": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 22,
+      "response_sha256": "95cdb54ed241d40a99f4dfb11cac9abe42dc052be801fca03452170b61e197e6",
+      "last_attempt_epoch": 1790830189.5657089
+    },
+    "gap-nyc-d6bbbd5701": {
+      "status": "needs_review",
+      "next_cursor": 0,
+      "total_catalog_matches": 12,
+      "response_sha256": "195e5ddf79cc95b158d40d15961cef0d68d1e49a425510deb87b452f3cc1e9be",
+      "last_attempt_epoch": 1790830190.555585
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "unemployment",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T02:22:10.471127+00:00",
+  "candidates": [
+    {
+      "id": "3725da4adb3841d9b84642e7ae1ea65d",
+      "title": "Metropolitan Job Density",
+      "url": "https://arcgis.metc.state.mn.us/data1/rest/services/society/Other_Society_Public_2/FeatureServer/0",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This Metropolitan Council dataset identifies locations of concentrated jobs in the 7-county Twin Cities metropolian area.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.02179424214769,
+                45.41620262118661
+              ],
+              [
+                -92.72699719529739,
+                45.41620262118661
+              ],
+              [
+                -92.72699719529739,
+                44.4648178051564
+              ],
+              [
+                -94.02179424214769,
+                44.4648178051564
+              ],
+              [
+                -94.02179424214769,
+                45.41620262118661
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Data"
+        ],
+        "description": "<p style='margin:0in;'>____________________________________________________________</p><p style='margin:0in;'><b><i><font size='3'>NOTE - although it's recommended to use the feature layer web service, the file geodatabase is available for download.</font></i></b></p><p style='margin:0in;'><b><i><br /></i></b></p>\n<p><a href='https://gisdata.metc.state.mn.us/gisdata/Society/job_density.zip' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><strong>Download FGDB</strong></a></p><p>____________________________________________________________</p><p><b><font size='4'>More Details</font></b></p>Job Density displays the most accurately located employment density within the 7-county Twin Cities Metropolitan area of Minneapolis and St. Paul, Minnesota. Job Density is based on employer locations and counts from the Minnesota Dept. of Employment and Economic Development's (MNDEED) Quarterly Census of Employment and Wages (QCEW) and supplemented with Department of Education public education staffing locations. The QCEW data only includes jobs that are covered by the Unemployment Insurance Program (about 90-95% of all jobs) therefore, some self-employment jobs might be excluded. <div><br /></div><div>The combined jobs data was converted to a smoothly tapered surface of employment values. The resulting data surface provides the best representation of job density in the Twin Cities Metropolitan Area, Minnesota.</div>",
+        "licenseInfo": "None. This dataset is public domain under the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13).",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Metropolitan Job Density",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785256464000,
+        "avgRating": 0,
+        "id": "3725da4adb3841d9b84642e7ae1ea65d",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790758800000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1785254446000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data1/rest/services/society/Other_Society_Public_2/FeatureServer/0",
+        "tags": [
+          "Employment",
+          "QCEW",
+          "Employment Density",
+          "Twin Cities",
+          "Society"
+        ],
+        "numViews": 335,
+        "numComments": 0,
+        "size": 96,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/3725da4adb3841d9b84642e7ae1ea65d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2bc04491f04447aaa9ce3c1324b33cfb",
+      "title": "Census Workplace Area Characteristics",
+      "url": "https://arcgis.metc.state.mn.us/data1/rest/services/society/Other_Society_Public/FeatureServer/2",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This Metropolitan Council table, describing Local Origin-Destination Employment Statistics - Workplace Area Characteristics, provides local approximation of employment levels and characteristics.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Feature Access",
+          "Table",
+          "Feature Service",
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Data"
+        ],
+        "description": "<p style='margin:0in;'>____________________________________________________________</p><p style='margin:0in;'><b><i><font size='3'>NOTE - although it's recommended to use the feature layer web service, the file geodatabase is available for download.</font></i></b></p><p style='margin:0in;'><b><i><br /></i></b></p>\n<p><a href='https://gisdata.metc.state.mn.us/gisdata/Society/census_workplace_area_char.zip' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><strong>Download FGDB</strong></a></p><p>____________________________________________________________</p><p><b><font size='4'>More Details</font></b></p>Local Origin-Destination Employment Statistics - Workplace Area Characteristics provides local approximation of employment levels and characteristics.  This dataset is an administrative records data mining product of U.S. Census Bureau.  The Bureau obtains incumbent worker characteristics and home locations from Social Security Administration. Worksite locations, employment counts, quarterly wage totals and other worksite characteristics are obtained from Unemployment Insurance payroll data maintained by State employment security agencies. <div><br /></div><div>U.S. Census Bureau geocodes most worksite locations. Geocoded locations are then &quot;fuzzed&quot; or randomly moved from true locations in order to obscure the identity of individual employers and worksites. Those worksites that cannot be geocoded are assigned probable locations through a Bayesian imputation process. Finally, the resulting employment distributions are summarized to Census blocks. Local Origin-Destination Employment Statistics serves as a reasonable approximation of local employment distributions and journey-to-work patterns.</div>",
+        "licenseInfo": "None. This dataset is public domain under the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13).",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Census Workplace Area Characteristics",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784302572000,
+        "avgRating": 0,
+        "id": "2bc04491f04447aaa9ce3c1324b33cfb",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790758800000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1779315292000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data1/rest/services/society/Other_Society_Public/FeatureServer/2",
+        "tags": [
+          "employment",
+          "jobs",
+          "Twin Cities",
+          "commuting",
+          "Society"
+        ],
+        "numViews": 895,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/2bc04491f04447aaa9ce3c1324b33cfb"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    146
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "af84b4eaa3ec38c197695e539ebf03beff464afeec93fe2843840860a9a11101",
+  "search_complete": true
+}

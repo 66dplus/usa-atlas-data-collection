@@ -1,0 +1,747 @@
+{
+  "format": "usa_atlas_auto_pipeline_preparation_v1",
+  "captured_at": "2026-09-29T16:19:17.917827+00:00",
+  "prepared_at": "2026-09-29T16:18:20.680481+00:00",
+  "status": "prepared_pending_deployment",
+  "current_candidates": 43,
+  "prepared_candidates": 43,
+  "national_bounded_first_batches": 22,
+  "regional_complete_snapshots": 21,
+  "discovery_errors": {},
+  "quarantined_candidates": 0,
+  "prepared_wire_rows": {
+    "observations": 5394180,
+    "quality": 105819,
+    "records": 156140,
+    "artifact_bytes": 80834722
+  },
+  "preparation_is_database_admission": false,
+  "accepted_rows_by_pipeline": 0,
+  "pipeline_config_enabled_for_database": false,
+  "validation_scope": {
+    "static_code_review": true,
+    "actual_artifact_preparation": true,
+    "tests_run": false,
+    "database_admission_tested": false,
+    "migration_executed": false
+  },
+  "superseded_unadmitted_workspace_revisions_preserved": 43,
+  "adapter_code_sha256": {
+    "national-deep": {
+      "full/prepare_admission.py": "a02d1f4f1ec1990797f4227c13ae7810a81079f1c84394d65c5e506909b7afad"
+    },
+    "regional": {
+      "full/prepare_regional_admission.py": "8faa17652b26b0fde60bc16421e96db2349b41530766d975dd611c99976270e1"
+    }
+  },
+  "deployment": {
+    "status": "blocked_server_access",
+    "workspace_pin_stage": "complete",
+    "missing_loader_dependencies": [
+      "database/pipeline-schema-manifest.json"
+    ],
+    "missing_dependency_reason": "Generated only by the successful actual v3 database migration.",
+    "final_loader_code_sha256": {
+      "database/auto_ingest.py": "d25842cc9efca51ca2150d501e9861584a18e419c4dfc46fbadf90834ea0b242",
+      "database/migrate_pipeline.py": "2d36e24fa90c73b297423a0fc3f21aa78c882a6fe6f72d97648f5aee0d991bbd",
+      "database/pipeline_schema.sql": "856ed6def0cfbaf12a9732fbf72954c1afed9891fb4a8147fd6ddf1e5ea5b4c3"
+    },
+    "pipeline_timer_installed": false,
+    "database_admission_run": false,
+    "explicit_migration_command": "python3 database/migrate_pipeline.py --apply --result <receipt.json>",
+    "install_command": "python3 ops/install_auto_pipeline.py --apply --register-watchdog",
+    "schedule_after_install": "Every15minutes UTC, persistent catchup and boot120s; bounded45-minute cycles.",
+    "installation_attempt": "research/2026-09-29/auto-pipeline-installation-attempt.json"
+  },
+  "batches": [
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B01001",
+      "adapter_id": "national-deep",
+      "batch_id": "e0e6cefc23d4b8779fd5c47f19f2e2c9859e6e3e17c6a61510bd669d2bc47067",
+      "manifest": "full/runtime/auto-pipeline/batches/5337a652916340bfeaaee0727d3da779be0d036159182f950194ca0d2d120a52/8b3e88c67704f69749e9972a964d04eee0fa1a87e8ea233b81612caaa427384f/admission-manifest.json",
+      "manifest_sha256": "8a931c5460241bd4ca339dca2027b00207351dabbc470ba6f392b6429ff29813",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 247106,
+        "quality": 2894,
+        "records": 0
+      },
+      "artifact_bytes": 3023054,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B01002",
+      "adapter_id": "national-deep",
+      "batch_id": "60b4173c1a4ec8c937d3f94812b23623be9914896745379ac26b71892a898362",
+      "manifest": "full/runtime/auto-pipeline/batches/4dfb527e49a7d97dbe69a226beb9780b08cae62583bf3b371e0a13b91a89fa71/f2111554d39be78b6ccbc53ac6fe261737cff570bdd6f475e7ba407be3d5c4be/admission-manifest.json",
+      "manifest_sha256": "169327a17704e42d57f6697d827df788dce60e0dfe473b408288078bfd4f19f6",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 247880,
+        "quality": 2120,
+        "records": 0
+      },
+      "artifact_bytes": 2821305,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B01003",
+      "adapter_id": "national-deep",
+      "batch_id": "a55d81131d498e3bf7052c3ea53fc65c281d85a0940ffd1d399061deb7bb6f6d",
+      "manifest": "full/runtime/auto-pipeline/batches/b3ffd79aa42a8513f99d30910e646480db789cab6c90973e416c73d946974983/f8f29704f86d5e8209923e14e5a047be193817f26cbaefbd7ea6cf3013df4c15/admission-manifest.json",
+      "manifest_sha256": "df15f9c1e8157a9bd8615f46b026ef0ceaa01faae580dadf5d59c0b1e82898b3",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 246747,
+        "quality": 3253,
+        "records": 0
+      },
+      "artifact_bytes": 2909483,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B03002",
+      "adapter_id": "national-deep",
+      "batch_id": "1354d2e1d1d80673bdb5508ab6e88a3014f84e5336fa6c6ead3a45dcc9c269d0",
+      "manifest": "full/runtime/auto-pipeline/batches/6c03db36f4bc87efe452aeb30793bbc8d6bccbc64b6aadc1cc7350d52fc842a6/916d6c7b065fcc73f804f864fbf98db5447ce79247e74215fa0be3e6aad7e35f/admission-manifest.json",
+      "manifest_sha256": "c0602aa147a51e933f7f53189fdf33bd304a4f619dd265fd752338a604a6a120",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 241340,
+        "quality": 8660,
+        "records": 0
+      },
+      "artifact_bytes": 3099276,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B05001",
+      "adapter_id": "national-deep",
+      "batch_id": "479981797d6c874b6a7a627139c36752e17ade7fcdbefa8551b17c50e00f10ae",
+      "manifest": "full/runtime/auto-pipeline/batches/9198d994104690059ced0b17b2c9a97dc8386b8d402f60bb5531dc0329c2ded1/8be4b8de27cf19059791f7aafe482dd0a211a3da74ccaf24540e064fdd7f2bd3/admission-manifest.json",
+      "manifest_sha256": "ecb294b0d0399d6046d11ccfadcbab2abeccd66539b824ea4e5b63d0f5c52702",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 246926,
+        "quality": 3074,
+        "records": 0
+      },
+      "artifact_bytes": 3314803,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B05002",
+      "adapter_id": "national-deep",
+      "batch_id": "407371293aed22d7df9d750055becee5f963099381add53808b165956f4dd604",
+      "manifest": "full/runtime/auto-pipeline/batches/a01a78fb323ab1133bc62f3d6302fe0c1ade8e694bc9d09f1eac769f076b2b56/83adbe3c09c9b66d185b905c9fc8bb09e768a44a69c70f30614ea5df04d30a25/admission-manifest.json",
+      "manifest_sha256": "eb303f79addd79ee21d7cbddc0ee98a20147f52ddede2b9eacc7779f60bb2e2e",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 246857,
+        "quality": 3143,
+        "records": 0
+      },
+      "artifact_bytes": 3124683,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B05005",
+      "adapter_id": "national-deep",
+      "batch_id": "b6c6ea7f95ec49e4bd97718d87c0e52518d15692e8ade53ba6238df5caaa22f7",
+      "manifest": "full/runtime/auto-pipeline/batches/f886b319d8de9250c590321a89333788597e2dc4198785ab3421f207257664f8/62af5b46105a72a293fab5a0edb89de4cddfd1137b7b7b3751bf8bd28291ea2b/admission-manifest.json",
+      "manifest_sha256": "b0722454133b11496bc1f70029d923a4be03b2f1c858f257a6d1072e3fac40b7",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 250000,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 3034796,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B05006",
+      "adapter_id": "national-deep",
+      "batch_id": "71261e4e1c293fac30eff55ac2dcd7d48765d2c71c15a2eb7eaac9883c8f64ab",
+      "manifest": "full/runtime/auto-pipeline/batches/871a78e671e988a5f7b7bb55f74061c7d88d64920240ac0e2666ae037a02aef4/05d5c8e0c21868f5ea147a1b9a0355e492b564f5f3fb511d5edfa6ab4cff9879/admission-manifest.json",
+      "manifest_sha256": "f8f436cfcae1d1d7a0685a3e7c40e264058c320e74797e2a62b21ff25be4100e",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 250000,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 2616463,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B08301",
+      "adapter_id": "national-deep",
+      "batch_id": "80748a4b8acb83f2709d9dafe0278e127174290497d3f79c90369486a3ccb24d",
+      "manifest": "full/runtime/auto-pipeline/batches/190669c0a9825ad6f263b49d702265bcec0d02561dce9f51dbce971eba26ec0b/74b41aa503135d4c3a4218f37c1fdd0222b91f504baad816cfea9d9f3035332a/admission-manifest.json",
+      "manifest_sha256": "c155acece2cc9c0be6f87b5b5020ca5560f4768ee5588179a35dfc5d8853873e",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 250000,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 3433950,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B15003",
+      "adapter_id": "national-deep",
+      "batch_id": "08996b5f9939ee5a9f81142b0210ee2473e2622a85be7e354bdd0f6a4b3e3bfa",
+      "manifest": "full/runtime/auto-pipeline/batches/7f64658eafa03da6f608c0e1f049a9023ef7fe85f5d930ee2d8cfa58fdafd870/db6bc1630d56a3ab17b37ca2b0f3a6c89e09da3b7b746654113a265289876834/admission-manifest.json",
+      "manifest_sha256": "1b8f2ed37bbda2bf072eca8b1ee40457f2ce5c619b5bf8a99ff6efba8c524fc9",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 249505,
+        "quality": 495,
+        "records": 0
+      },
+      "artifact_bytes": 3495489,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B17001",
+      "adapter_id": "national-deep",
+      "batch_id": "34787d7cb2fb63a7292fefddc7f8c6d33d3c5261160b505d383a912f7551791f",
+      "manifest": "full/runtime/auto-pipeline/batches/1268b7343b3464625518b3afa662a4dea890df52a2ede39b3534a4f7584d4ed3/19c71b4c8eb517d7a93c8d2275d9a90feee2c8a8555c8ae7de63df4ccc808391/admission-manifest.json",
+      "manifest_sha256": "2881dd58e47b01b4be6b86bb6ae271ccb254ec1c0f1b5e0df96aaeaf25c8aeca",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 250000,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 3255401,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B19001",
+      "adapter_id": "national-deep",
+      "batch_id": "c25f32be38a74b745412120b8755830eeeaa5272d6bc94ce6f89116a4617eb5b",
+      "manifest": "full/runtime/auto-pipeline/batches/4b565977db1fd21e4d7ea82ed78215d2efd8c9082e49be6ed29e013670791d85/0aa46f95ac07b0039797e1acccf79d6c9b9af461770ea1bc5811472c88fd2781/admission-manifest.json",
+      "manifest_sha256": "02766aabf0b01ad9cc711cf3071dd78b036640b4c8975f28d13abbd5fa186ce3",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 250000,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 3398907,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B19013",
+      "adapter_id": "national-deep",
+      "batch_id": "8847691b5fdd3db424d20d61ed7e8535330315084b1ea7acdcc7fabe90599d57",
+      "manifest": "full/runtime/auto-pipeline/batches/3a606e650f441bf16bcb9c85a805e8fc9b61085efb4bc765e1fef372761fcff5/38b8538a1f299371820924cff3dcbccc95e83ab1bd01efc913d586d1ee5a3fb7/admission-manifest.json",
+      "manifest_sha256": "df6601aca014cc45b8cfc51ce6778891d1bddc9336dff72187b0ef6745efbf39",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 240443,
+        "quality": 9557,
+        "records": 0
+      },
+      "artifact_bytes": 3200864,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B19301",
+      "adapter_id": "national-deep",
+      "batch_id": "6ef3b0afca87c743727f26e782b51d731327d45fedae392ae5350073bd4b63c2",
+      "manifest": "full/runtime/auto-pipeline/batches/048a62de2750763c56bc9a5a1f2b757bcf8eb98ef987fa06023103129f2c3c11/9997a48f49eff25412cf90bef05cc72ac9c14b3231c20ed797a107dc5d016264/admission-manifest.json",
+      "manifest_sha256": "8b65e0e2143d62f5dba0dc7f4b1585892a324b99986a05fe0827fe6faeaaf334",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 248002,
+        "quality": 1998,
+        "records": 0
+      },
+      "artifact_bytes": 3137480,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B25003",
+      "adapter_id": "national-deep",
+      "batch_id": "ce4e2ff36dc3695845be8ab554d2cab16a6223d60d80cec963e62eac5ff045ff",
+      "manifest": "full/runtime/auto-pipeline/batches/a50f2b81f90117f08ab8c009273c23c0197bb05a251c04f4b61eb53d4d5d2f58/2066d841e055b15bc4ee75adb7104592c653288f94afb5d59673459a03ba6737/admission-manifest.json",
+      "manifest_sha256": "222c8b5e06c098eff4134a417361101e7d212a05ecf2dfcae058d5bf91b585f0",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 250000,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 3229515,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B25064",
+      "adapter_id": "national-deep",
+      "batch_id": "b3aad9ceada7e591ca3c0796c27f0154d914e0fd1ebfc4f87cb896e97ec9725d",
+      "manifest": "full/runtime/auto-pipeline/batches/98ad481e3b25779413c2b25a17faded8d02b1db590cd1da741a739b8a7b4fc0e/52b6ad00aaf2622084e407a5176dd3fec1f738d7411f857b7f027f8782eec000/admission-manifest.json",
+      "manifest_sha256": "3200a9c4647b5042e7b4e831c53abe650df2ef775a49613ea49f91c887492305",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 219461,
+        "quality": 30539,
+        "records": 0
+      },
+      "artifact_bytes": 2870094,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B25070",
+      "adapter_id": "national-deep",
+      "batch_id": "fbfd77189a38b45674dafcaaf64a0ff099cce4cf81d229d976d65346c1865185",
+      "manifest": "full/runtime/auto-pipeline/batches/c5639c37a7cbd85184af3bda1091011c35945a257a481b8418c02f2c7ccc6ad9/d744d6056e61519524422f26a1839e94ae7296a8eaed9604baf1e5229c588261/admission-manifest.json",
+      "manifest_sha256": "c94c6415480fad3bb21f9da57f46248baa56b14626b9ad15acff272f9eb4e262",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 250000,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 3322761,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B25077",
+      "adapter_id": "national-deep",
+      "batch_id": "7abfc99ca3ee48a25a1647943d469da037b9e9cd4a477880f04560528bc64cf9",
+      "manifest": "full/runtime/auto-pipeline/batches/d582e4d655c8925a31dc0a72b941a09fbd8fe4ccfd2564856eeaa72ba893df01/72e590ce369c36b3cfcb3f182bf1eeac8466ffb05b469a8eb0fc7d3ceff8c2d9/admission-manifest.json",
+      "manifest_sha256": "25a7949d68c128f1b906813eff4d9477557cc9be565b9b01a776c358116a980b",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 234246,
+        "quality": 15754,
+        "records": 0
+      },
+      "artifact_bytes": 3179543,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B25088",
+      "adapter_id": "national-deep",
+      "batch_id": "cb08f427ecfa58fa40a95b28bb04edac1b5fe93c0b376744e1a770cfdd5b08a5",
+      "manifest": "full/runtime/auto-pipeline/batches/1d940c01ed953246a29890fe646e4e000af9580ede84159c552855a5183dae45/ee48ac12384ec4b2c6e4fd3a0fa21707448c8e2fd9721890a9f6cf08ff04f2a3/admission-manifest.json",
+      "manifest_sha256": "24d6e608c8f7caf74f18cce61c31eba56c052116a147ded94362dce84cd0ed6d",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 228774,
+        "quality": 21226,
+        "records": 0
+      },
+      "artifact_bytes": 2887680,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "cdc_places/PLACES-2025/PLACES-2025-tract-crude",
+      "adapter_id": "national-deep",
+      "batch_id": "4e953ed1176fbab53ed1851dd112ceb2ef09c3611d724feacb79427cbe48f407",
+      "manifest": "full/runtime/auto-pipeline/batches/f493f450718ee7ff503788c49b8055341f6e0bd0f171d5a949954cefbf2f4e82/2d469833f1ca5137c74132f91c2fb5b779218f09f5d009d97e2063841ee9c2ee/admission-manifest.json",
+      "manifest_sha256": "063216e602ee403577d3cbe50be104d024e56dbecd967208a69c8d351786b1b0",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 249999,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 4034945,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B05012",
+      "adapter_id": "national-deep",
+      "batch_id": "86ee37c82fbbe0725c6791a5e28bce59eed57b3650bf949c7e2f213c2a1f4967",
+      "manifest": "full/runtime/auto-pipeline/batches/97f485bb9f4c73144eeb754f5fd61723fb466609a4e414755479f477447c25a5/402cc2b15887c17d15aaa6ed704500d21a5817fa76fd48018da35693b465412a/admission-manifest.json",
+      "manifest_sha256": "a55ba692f566ef63c3781b99c47fff6a64adf072821fc5dfd6a5bfeb0dfc1a89",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 246894,
+        "quality": 3106,
+        "records": 0
+      },
+      "artifact_bytes": 3410448,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "census_acs/2024-acs-acs5/B17021",
+      "adapter_id": "national-deep",
+      "batch_id": "b662aab93703324937b46f0feeece297ff5bc854ec4b449d8274c50a24fd1220",
+      "manifest": "full/runtime/auto-pipeline/batches/8ec615102bf2e47a446f839b3e0a9fc34d6e87db571799f62bebd4a7e2dddb67/7edc74c117fc377317b02696cb65d5a0f0f87c89ddd5e9653da917f5ba4a5117/admission-manifest.json",
+      "manifest_sha256": "daa519ca3aea0b758456e6a3ac109cb6943ff0ad2ede14056a897b515ed6fef2",
+      "kind": "observations",
+      "wire_rows": {
+        "observations": 250000,
+        "quality": 0,
+        "records": 0
+      },
+      "artifact_bytes": 3272656,
+      "source_snapshot_fully_prepared": false,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "local:ca-dwr-bg-income-2023",
+      "adapter_id": "regional",
+      "batch_id": "ae2f98bc4821806a59e175bf86d7e450e13e82e1aa161ed14fe8ed3fcc922f8d",
+      "manifest": "full/runtime/auto-pipeline/batches/292a67057f76fb133cb85ff9ef4fad43587e19b4a052c60b3e431d09c7041dd7/8d773004e2dafa083df28a8a45540b34b1f553c6c2c8f0cd567611d6d3a99d1f/admission-manifest.json",
+      "manifest_sha256": "01aea341c835b3c75d50063cc2ea42020f44f168f3bfe287455e8b06fc1359c9",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 25607
+      },
+      "artifact_bytes": 817296,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "local:ca-dwr-bg-water-vulnerability-2024",
+      "adapter_id": "regional",
+      "batch_id": "327e59f0f263501d829627e5182e3623820054da01938b2bfe6293624a1a9939",
+      "manifest": "full/runtime/auto-pipeline/batches/02908d8b75a6490bb3948f30717ab298b48be3854fbc7967b8f83054bd175cd5/7d0b8fe8879f4d9216a3f057add635a4782c7e7e0aa2cf7091756878d3c5e651/admission-manifest.json",
+      "manifest_sha256": "3aa3539cd429794d0c80ba16caff3f6a1ed194db85af189befd3f397d014d71c",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 25607
+      },
+      "artifact_bytes": 947314,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "local:dc-mpd-crime-bg-2025",
+      "adapter_id": "regional",
+      "batch_id": "de75a386d7a455e7d497e66699ce90f1f870cd1369d0601eb17bef05702cfbd9",
+      "manifest": "full/runtime/auto-pipeline/batches/cbdfbf228d6ebff1afdde254a3d606ee7419a4c340751df2455b980b7753c602/37403d7cc0559323f8123f7f1aa1102028b14a5ac5eada7d41104e16bff5c6a3/admission-manifest.json",
+      "manifest_sha256": "bc79c9d7775934d6cd4b0f42d8b9b778d5eedd75116e25aed62114f986ab082d",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 2840
+      },
+      "artifact_bytes": 57780,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "local:dc-mpd-crime-bg-2026",
+      "adapter_id": "regional",
+      "batch_id": "602c93a3fb84e44c0a52b00650c8851c53ac53b58edfc52c10a48d65cd1c5ee5",
+      "manifest": "full/runtime/auto-pipeline/batches/f88aed34a83826ad6468cbd8d3087185041d7b0a6018424ced5f3384e57e607c/a76e27fa9433568b07f8cdf0c738937f8c8f8721c115ad7e6c4e3693d31be68e/admission-manifest.json",
+      "manifest_sha256": "f99e6b2f8ba23b3142b45c43926853a9dd1b519e4a77201db4b2a6c50cc5945c",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 2635
+      },
+      "artifact_bytes": 53240,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "local:loudoun-dc-building-records",
+      "adapter_id": "regional",
+      "batch_id": "d8f2a2355e7e8ad8653b244c35e3dcc736374d052e5735dbd876ac2d7dfe6008",
+      "manifest": "full/runtime/auto-pipeline/batches/8378bc3863f0519d357e7a5f13c563a80934c31d255d30e10a43cb3dc9e15644/113bc3b627b02a4f3a586085c36ca1e3dea2a51a564ab666258857a1e8f6ac25/admission-manifest.json",
+      "manifest_sha256": "4ad524ffb6dfa350f0c0e9a850a5b668113059d517c6e45eaa588b6089a2e83a",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 239
+      },
+      "artifact_bytes": 12556,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "local:ny-county-income-tax-1999-2014",
+      "adapter_id": "regional",
+      "batch_id": "c6457db382e721978310cfd7d5c0ceae22cc112f6832790437a4d5aa7cec79e0",
+      "manifest": "full/runtime/auto-pipeline/batches/4335d73a3ebd86b362a47f7c01e17f85df859655bcc413baa9127883c0fdc08b/55b80d21616dbfbc7dd4573f5eee8cc11603bf9a88720f8804e95f4ef3598afd/admission-manifest.json",
+      "manifest_sha256": "9a27b4ec0498bdb7b82d61af45a8572602699cb6ac894f222e0f9ed27c45d1d2",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 13515
+      },
+      "artifact_bytes": 635103,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "regional:tx-reservoir-current",
+      "adapter_id": "regional",
+      "batch_id": "a40bbc56cd0b8dbe2bc64b722d1f5c87439d4e590375d5aa7b6f48b4a13e43bc",
+      "manifest": "full/runtime/auto-pipeline/batches/4a340c5fa9704eb0dd19f3f39d6abfa3ec8a32e5b1bde364bac5ff63e0ad65e7/9d7d78c221246c19c8dc267196ea015eddd05d34aa3e5c9e6e014ccdf206bffe/admission-manifest.json",
+      "manifest_sha256": "91535e67eb816a27f0a5c7eeb947cbfbc1c0cc7c4ca384bdd2494c8f0511c113",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 122
+      },
+      "artifact_bytes": 12916,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "regional:co-well-permits-county-status",
+      "adapter_id": "regional",
+      "batch_id": "2a9664c06a13fcf705b9cd8717380186928871d66de3afd79bdf39b081ec34fc",
+      "manifest": "full/runtime/auto-pipeline/batches/c146a91549ab37b7f716e3c80f81e0bd639b5ea814b893b3412a192dc4d932e6/090a77fd98d6595cb0a2b01d68eba055c0a9cfa0e2656a9acd358ae724112166/admission-manifest.json",
+      "manifest_sha256": "457c07efc301300df8cb07f980e412e1764e3fde075f6b136166d43cbd0f2c93",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 1239
+      },
+      "artifact_bytes": 14366,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "regional:wa-electric-vehicles-tract-type",
+      "adapter_id": "regional",
+      "batch_id": "06b6b7725d46c05179368c498874d2405ff0570bcc92d238bb1bbd1563e34c1b",
+      "manifest": "full/runtime/auto-pipeline/batches/4907e839738bd56afd42a8aa1dca80a13a7d2cbb0b3b684246ac2a7b3da712e1/b3bc472f4f678844a06928e86d4e6e97c7c7f74de020db36fd8e2d960cc521aa/admission-manifest.json",
+      "manifest_sha256": "9edb6904e870d945cba88fc77c383488ce47dd4b5fa23ceff5b9e2c3143df6c0",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 3528
+      },
+      "artifact_bytes": 39526,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "public:susb-receipts-2022",
+      "adapter_id": "regional",
+      "batch_id": "50bd6689a82fe5918b3bdbc16fb66dee0af0c2673cc65b369b22df9c946034a5",
+      "manifest": "full/runtime/auto-pipeline/batches/4bf9dcdd77c802a0b65ce426fb2bb4d0c009533ef8886b7e13ac00334d7d7084/8d6967d3891155e3199a4339c92df83432503ec09637ef93b0e993dd2a033886/admission-manifest.json",
+      "manifest_sha256": "93279a00d0799007a5e2bc682f16d5e2700d8c9a21216c35714a7fbc1258b590",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 32207
+      },
+      "artifact_bytes": 750786,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "public:susb-large-receipts-2022",
+      "adapter_id": "regional",
+      "batch_id": "bc33b7fe93eae18224b1f7a80814bb9192f15db1d62e489226b95809c2920b68",
+      "manifest": "full/runtime/auto-pipeline/batches/ec0464272aa6c334ddb1fc5afa15e040e2deae6ae8b244c9f10a70ae54c98c97/efaf48fd85e878c7b55ab0f60a3cf3461779ceda440bf72d8c4ff9fa011ad2b3/admission-manifest.json",
+      "manifest_sha256": "19f600270199133ba06d99bf00ef449dc2871c35f3d0c0966ac78a2ebd3d1ca2",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 149
+      },
+      "artifact_bytes": 6336,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "public:irs-state-agi-2023",
+      "adapter_id": "regional",
+      "batch_id": "4b40b738fcd846a3ed6385e0ce2a765e9f3c97acb53a96d2cdb9bf27495ede80",
+      "manifest": "full/runtime/auto-pipeline/batches/c8c64f66f950fef4c5a95495d8033977ba061d9c52bda196e0be0b428d8b1a28/e42557d57c0bbefcc8c2f4e6b52ad11d44c2c81a872283141feb1843e89304b7/admission-manifest.json",
+      "manifest_sha256": "fa9425ccd6e60a58f38445f93bc7a926aa86fd829bb4bc8eaebd9a6540004e6f",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 594
+      },
+      "artifact_bytes": 271923,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "public:irs-county-agi-2023",
+      "adapter_id": "regional",
+      "batch_id": "91a336be525123e229c592c36e10b51d16e9ac5b73fcb47830b0d85a9c81c24c",
+      "manifest": "full/runtime/auto-pipeline/batches/e277b65a2ed58bb38a3212e20fa27994e9e4bdcb684f4764b7b9c5d938bd5f46/d74379810774815f6cf82f1d6f93d42f4b3c2db4e741fea65f046225970af6ee/admission-manifest.json",
+      "manifest_sha256": "4ef952140be07a6855bb032cbc6f21aacfb2ce6b1381224d04e7b33cdc5e8c5a",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 25552
+      },
+      "artifact_bytes": 6168936,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "public:bea-metro-rpp",
+      "adapter_id": "regional",
+      "batch_id": "336b7422d31a6f314e251e8ef6ba43d1d5c2e22c2319dcfe25c36ab1cb8febeb",
+      "manifest": "full/runtime/auto-pipeline/batches/ca0930a256e9ce2c093e06c4c97377a86fe962e54416b11bbec754d0c42b9f9f/630dbeabe0dee927545156e00f6c2fdc497210d5d85adc6ea2d28fd3963093f5/admission-manifest.json",
+      "manifest_sha256": "785c26572fdc203ce6fe682badbc10f9cf29c3eee4173352223b7ddd347ef758",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 2344
+      },
+      "artifact_bytes": 171999,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "public:epa-monitors-2025",
+      "adapter_id": "regional",
+      "batch_id": "cb028bd22a520a165c074f45c9d71ffbc61deaf0bf7574e2b38a4e8ab60f2ca3",
+      "manifest": "full/runtime/auto-pipeline/batches/d746fc3b57012f71cab00b5770bbffd75ea10f9c80fce47473e51088b01f1107/15f17326cd02509e4481d72b0b487da9fb186bd140ad3fb9d26bc4e33908a8b2/admission-manifest.json",
+      "manifest_sha256": "7b3fbd3aa9cdd99282f24f51c4ca61523a5237c6043cd714f3a39c9b52e72de6",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 19584
+      },
+      "artifact_bytes": 777272,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "reference:irs-wealth-2019",
+      "adapter_id": "regional",
+      "batch_id": "eb28fcd4cd1ec1f19414b92b520963483719acf58ad12abf998f2e556ff2f38d",
+      "manifest": "full/runtime/auto-pipeline/batches/6b26041855ae643a5e1cf94e73e2d8e5383b221d311b6c8373d1011b4d7e5fae/2bb6750006ca142968efa9c961cbb27edb33ee81bb15db342abc70e4e85a8ca9/admission-manifest.json",
+      "manifest_sha256": "29b8db356570fc39cf63a314303a0af0887d2217e337947b5e25e89707bf436d",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 53
+      },
+      "artifact_bytes": 1512,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "reference:lbnl-energy-2024",
+      "adapter_id": "regional",
+      "batch_id": "d1b43a904267bc739a6e828956783e07720aa2ae6a3766b996f3a73495cca517",
+      "manifest": "full/runtime/auto-pipeline/batches/22f4c15179039f288c583abd328a6ed3a9f8772dd6c98950485429dfa49c007f/9e468cc8835d79c8b4f29354a8b217c320f5d4262279d1bde7699486bed76ab5/admission-manifest.json",
+      "manifest_sha256": "8386114aa39d54b65197ccdacad81da9d2e0773b1ba07d7ffd5d7683ba4be036",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 2
+      },
+      "artifact_bytes": 252,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "reference:loudoun-datacenters-2026-03-01",
+      "adapter_id": "regional",
+      "batch_id": "21f4b2eed8f778e5e4953b4cb664f0771030bfbf6c9ef8c9b755c3cdc4f464c7",
+      "manifest": "full/runtime/auto-pipeline/batches/852525ca415b1511f1651ea1b9cb0120a8bfcb63ff0e5b04d1ac4f6f6074b9ff/047757386e11471f583397f55629cab473e1701157b52e00699ab1a9b6ec0f65/admission-manifest.json",
+      "manifest_sha256": "4fde48f689d1460f551994f97c5becdcf218ad8b51363572117b161406933906",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 63
+      },
+      "artifact_bytes": 1415,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "reference:ubs-national-wealth",
+      "adapter_id": "regional",
+      "batch_id": "44b7a5f8b0b61f1cabb43b5578706b14be00c076d948fb2cd2db3c101d42e725",
+      "manifest": "full/runtime/auto-pipeline/batches/462cd04a10cd32c8b668160ed063585dd572b80dd62bf209556ee3a9a34e3382/0d194be84f3ee844473e790fdb57b33d7c3774339b43f293f984bc91d1def00a/admission-manifest.json",
+      "manifest_sha256": "5e87b88e657809360cc3df8122ba5918110fbb31ef0e64ffacbefeb159a696db",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 2
+      },
+      "artifact_bytes": 325,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "local:pwc-data-center-buildings",
+      "adapter_id": "regional",
+      "batch_id": "3207d493a59ceacbe0b188bf607aca4d1ac2a8da3eccadb913016f0b3c91dbb6",
+      "manifest": "full/runtime/auto-pipeline/batches/6f85854fbc9e324703ff2f82e7a5b6dfb20c38ef06cc5f6a81739b6755b6edc4/942bbf3535792856de7369d3c330eaae64a9cf05c2ad3a4f1c42184b1e2ae309/admission-manifest.json",
+      "manifest_sha256": "a4c3877f4a05c2360080dcafb8ad2614cff542c7bcf1fde7cfb8419c8054fd89",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 248
+      },
+      "artifact_bytes": 19123,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    },
+    {
+      "dataset_id": "demand:google-trends-us-rss",
+      "adapter_id": "regional",
+      "batch_id": "7fd360b0e55bb8ec066f6e33ff3108af3df2556b4244ea18cef54000d772d392",
+      "manifest": "full/runtime/auto-pipeline/batches/6dd3a85c29c9433abfc90c649fc0ef2ee62525ec80633b3e44be938200d2eac2/ffa8af885d691b57e13b34e50b63e349b8307d08904ab509120a859afb5724e1/admission-manifest.json",
+      "manifest_sha256": "b59827f739891047629eaa695bd388d17534683d134f9ff0294b3f631403c409",
+      "kind": "records",
+      "wire_rows": {
+        "observations": 0,
+        "quality": 0,
+        "records": 10
+      },
+      "artifact_bytes": 1150,
+      "source_snapshot_fully_prepared": true,
+      "source_cursor_advanced_after_admission": false
+    }
+  ],
+  "scope_note": "National entries are first bounded batches only; remaining source rows wait behind unchanged admission cursors. Regional entries are full registered snapshots. Historical unadmitted revisions are not part of the current43."
+}

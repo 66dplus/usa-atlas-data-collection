@@ -1,0 +1,20 @@
+[Unit]
+Description=USA Atlas official local portal discovery and aggregate collection
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=3600
+StartLimitBurst=3
+
+[Service]
+Type=simple
+WorkingDirectory=/root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/research/2026-09-28/local-portals
+ExecStart=/usr/bin/python3 -u /root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/research/2026-09-28/local-portals/collect_local.py daemon --interval 21600 --discovery-limit 16
+Restart=on-failure
+RestartSec=120
+TimeoutStopSec=60
+StandardOutput=append:/root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/research/2026-09-28/local-portals/runtime/daemon.log
+StandardError=append:/root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/research/2026-09-28/local-portals/runtime/daemon.log
+UMask=0022
+
+[Install]
+WantedBy=multi-user.target

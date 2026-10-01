@@ -1,0 +1,1268 @@
+{
+  "jurisdiction_code": "NH",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T08:19:10.219588+00:00",
+  "candidates": [
+    {
+      "id": "d588657284af4838b26189f8fdcd298c",
+      "title": "Groundwater Rise Modeled Areas",
+      "url": "https://nhgeodata.unh.edu/nhgeodata/rest/services/Topical/CV_OceansAndCoasts/MapServer/41",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The MODFLOW-USG Transport model (Panday, 2022) was used to simulate groundwater flow and saltwater intrusion in NH Seacoast communities. The water table depth was also modeled and mapped, and areas vulnerable to groundwater impacts were identified.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.072381,
+                43.288162
+              ],
+              [
+                -70.70403,
+                43.288162
+              ],
+              [
+                -70.70403,
+                42.859655
+              ],
+              [
+                -71.072381,
+                42.859655
+              ],
+              [
+                -71.072381,
+                43.288162
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p>This map shows the model domains for the analyses of groundwater rise, groundwater depth, and vulnerable areas. The first model constructed was the NH Seacoast model. This model originated from the USGS Groundwater Model constructed by Thomas Mack (Mack, 2009). We modified the model to simulate groundwater rise caused by SLR (Knott et al., 2019). For this project, the model was converted to MODFLOW-USG and updated to be consistent with the other models. Converting it to a saltwater intrusion model was beyond this project's scope, consequently, saltwater intrusion was not simulated in this model domain. The \"Dover_Plus &amp; Durham\" model domain includes the coastal areas of Rollinsford, Dover, Madbury, and Durham. A new groundwater model with SWI was constructed for the northern communities and was merged with the existing Durham groundwater model (Pimental et al., 2022). Another groundwater flow and SWI model was built for Newmarket, Newfields, Exeter, and part of Stratham. This is labeled \"Newfields &amp; Exeter\" on the domain map. The \"Portsmouth &amp; NC\" domain consists of a new groundwater flow and SWI model for Portsmouth, Newington, New Castle, and part of Rye. All models constructed for this project used the MODFLOW-USG Transport code and are capable of simulating contaminant transport in addition to GW flow in the future if needed.</p>",
+        "licenseInfo": null,
+        "title": "Groundwater Rise Modeled Areas",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1768491421000,
+        "avgRating": 0,
+        "id": "d588657284af4838b26189f8fdcd298c",
+        "categories": [
+          "/Categories/Oceans and Coasts"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": "Jayne F. Knott, Ph.D. of JFK Environmental Services LLC and Jennifer M. Jacobs, Ph.D. of Jennifer M. Jacobs & Associates LLC. This work was funded by the NH Department of Environmental Services.",
+        "largeThumbnail": null,
+        "lastViewed": 1768489200000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1768489876000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/nhgeodata/rest/services/Topical/CV_OceansAndCoasts/MapServer/41",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "oceans",
+          "Inland Waters",
+          "Coastal",
+          "coastal flooding",
+          "resiliency planning",
+          "groundwater rise",
+          "groundwater",
+          "Sea Level Rise",
+          "NH",
+          "New Hampshire"
+        ],
+        "numViews": 1,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/d588657284af4838b26189f8fdcd298c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "585e06a2f09947ce97deb0930cb6c7dd",
+      "title": "Groundwater Rise Caused by 6-ft SLR",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/31",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map illustrates the extent and magnitude of groundwater rise resulting from 6 feet of sea-level rise.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.069366,
+                43.230323
+              ],
+              [
+                -70.705991,
+                43.230323
+              ],
+              [
+                -70.705991,
+                42.862914
+              ],
+              [
+                -71.069366,
+                42.862914
+              ],
+              [
+                -71.069366,
+                43.230323
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The MODFLOW-USG Transport model (Panday, 2022) was used to simulate groundwater flow and saltwater intrusion in these communities.  This map shows the extent of the groundwater rise caused by 6 feet of sea level rise.",
+        "licenseInfo": "<p>The data are intended for planning purposes only and are not for legal or engineering use.</p>",
+        "title": "Groundwater Rise Caused by 6-ft SLR",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767194831000,
+        "avgRating": 0,
+        "id": "585e06a2f09947ce97deb0930cb6c7dd",
+        "categories": [
+          "/Categories/Oceans and Coasts",
+          "/Categories/Oceans",
+          "/Categories/Geological and Geophysical"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": "Jayne F. Knott, Ph.D. of JFK Environmental Services LLC and Jennifer M. Jacobs of Jennifer M. Jacobs & Associates LLC.  The project was funded by the NH Department of Environmental Services.",
+        "largeThumbnail": null,
+        "lastViewed": 1767193200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1725913628000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/31",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "oceans",
+          "nhcoastalviewer_0188",
+          "New Hampshire",
+          "coastal flooding",
+          "resiliency planning",
+          "Sea Level Rise",
+          "Inland Waters",
+          "groundwater",
+          "groundwater rise",
+          "years 2020 through 2150"
+        ],
+        "numViews": 8081,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/585e06a2f09947ce97deb0930cb6c7dd"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "78e35af415664e16bcce0219e23eb718",
+      "title": "Groundwater Rise Caused by 1-ft SLR",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/28",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map illustrates the extent and magnitude of groundwater rise resulting from 1 foot of sea-level rise.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.96561,
+                43.228938
+              ],
+              [
+                -70.706004,
+                43.228938
+              ],
+              [
+                -70.706004,
+                42.866443
+              ],
+              [
+                -70.96561,
+                42.866443
+              ],
+              [
+                -70.96561,
+                43.228938
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The computer code MODFLOW-USG Transport (Panday, 2022) was used to simulate groundwater flow and saltwater intrusion in these communities.  This map shows the extent of the groundwater rise caused by 1 foot of sea level rise.",
+        "licenseInfo": "<p>The data are intended for planning purposes only and are not for legal or engineering use.</p>",
+        "title": "Groundwater Rise Caused by 1-ft SLR",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767194950000,
+        "avgRating": 0,
+        "id": "78e35af415664e16bcce0219e23eb718",
+        "categories": [
+          "/Categories/Oceans and Coasts",
+          "/Categories/Oceans",
+          "/Categories/Geological and Geophysical"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": "Jayne F. Knott, Ph.D. of JFK Environmental Services LLC and Jennifer M. Jacobs of Jennifer M. Jacobs & Associates LLC.  The project was funded by the NH Department of Environmental Services.",
+        "largeThumbnail": null,
+        "lastViewed": 1767193200000,
+        "thumbnail": "thumbnail/thumbnail1725911728235.png",
+        "languages": [],
+        "created": 1725911627000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/28",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "oceans",
+          "nhcoastalviewer_0188",
+          "groundwater rise",
+          "Sea Level Rise",
+          "New Hampshire",
+          "resiliency planning",
+          "groundwater",
+          "Coastal",
+          "coastal flooding",
+          "years 2020 through 2150"
+        ],
+        "numViews": 8164,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/78e35af415664e16bcce0219e23eb718"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4a2318c1e06a4a14a34101d586b5eed6",
+      "title": "Groundwater Rise Caused by 8-ft SLR",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/32",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map illustrates the extent and magnitude of groundwater rise resulting from 8 feet of sea-level rise.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.986377,
+                43.229854
+              ],
+              [
+                -70.705991,
+                43.229854
+              ],
+              [
+                -70.705991,
+                42.861828
+              ],
+              [
+                -70.986377,
+                42.861828
+              ],
+              [
+                -70.986377,
+                43.229854
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The computer code MODFLOW-USG Transport (Panday, 2022) was used to simulate groundwater flow and saltwater intrusion in these communities.  This map shows the extent of the groundwater rise caused by 8 feet of sea level rise.",
+        "licenseInfo": "<p>The data are intended for planning purposes only and are not for legal or engineering use.</p>",
+        "title": "Groundwater Rise Caused by 8-ft SLR",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767194885000,
+        "avgRating": 0,
+        "id": "4a2318c1e06a4a14a34101d586b5eed6",
+        "categories": [
+          "/Categories/Oceans and Coasts",
+          "/Categories/Oceans",
+          "/Categories/Geological and Geophysical"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": "Jayne F. Knott, Ph.D. of  JFK Environmental Services LLC and Jennifer M. Jacobs of Jennifer M. Jacobs & Associates LLC.  The project was funded by the NH Department of Environmental Services.",
+        "largeThumbnail": null,
+        "lastViewed": 1767193200000,
+        "thumbnail": "thumbnail/thumbnail1725913945686.png",
+        "languages": [],
+        "created": 1725913880000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/32",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "oceans",
+          "nhcoastalviewer_0188",
+          "New Hampshire",
+          "coastal flooding",
+          "Coastal",
+          "groundwater",
+          "groundwater rise",
+          "Sea Level Rise",
+          "resiliency planning",
+          "years 2020 through 2150"
+        ],
+        "numViews": 8062,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/4a2318c1e06a4a14a34101d586b5eed6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c7b22cf491b54386a03a385dbf5ca44f",
+      "title": "Groundwater Rise Zone with 8-ft of SLR",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/36",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map illustrates the inland extent of groundwater rise resulting from 8 feet of sea-level rise.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.986377,
+                43.229854
+              ],
+              [
+                -70.705991,
+                43.229854
+              ],
+              [
+                -70.705991,
+                42.861828
+              ],
+              [
+                -70.986377,
+                42.861828
+              ],
+              [
+                -70.986377,
+                43.229854
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The MODFLOW-USG Transport model (Panday, 2022) was used to simulate groundwater flow and saltwater intrusion in these communities.  This map shows the inland extent of groundwater rise resulting from 8 feet of sea-level rise.",
+        "licenseInfo": null,
+        "title": "Groundwater Rise Zone with 8-ft of SLR",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1768490420000,
+        "avgRating": 0,
+        "id": "c7b22cf491b54386a03a385dbf5ca44f",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": "Jayne F. Knott, Ph.D. of JFK Environmental Services LLC and Jennifer M. Jacobs of Jennifer M. Jacobs & Associates LLC.  The project was funded by the NH Department of Environmental Services.",
+        "largeThumbnail": null,
+        "lastViewed": 1768485600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1767910486000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/36",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "inlandWaters",
+          "oceans",
+          "groundwater rise; sea level rise; coastal flooding; Dover",
+          "NH; years 2020 through 2150; resiliency planning"
+        ],
+        "numViews": 37,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/c7b22cf491b54386a03a385dbf5ca44f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2871472e49304afe8d3ba61ab5853336",
+      "title": "Groundwater Rise Caused by 4-ft SLR",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/30",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map illustrates the extent and magnitude of groundwater rise resulting from 4 feet of sea-level rise.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.9871,
+                43.229858
+              ],
+              [
+                -70.705991,
+                43.229858
+              ],
+              [
+                -70.705991,
+                42.863186
+              ],
+              [
+                -70.9871,
+                42.863186
+              ],
+              [
+                -70.9871,
+                43.229858
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The computer code MODFLOW-USG Transport (Panday, 2022) was used to simulate groundwater flow and saltwater intrusion in these communities.  This map shows the extent of the groundwater rise caused by 4 feet of sea level rise.",
+        "licenseInfo": "<p>The data are intended for planning purposes only and are not for legal or engineering use.</p>",
+        "title": "Groundwater Rise Caused by 4-ft SLR",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767194998000,
+        "avgRating": 0,
+        "id": "2871472e49304afe8d3ba61ab5853336",
+        "categories": [
+          "/Categories/Oceans and Coasts",
+          "/Categories/Oceans",
+          "/Categories/Geological and Geophysical"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": "Jayne F. Knott, Ph.D. of JFK Environmental Services LLC and Jennifer M. Jacobs of Jennifer M. Jacobs & Associates LLC.  The project was funded by the NH Department of Environmental Services.",
+        "largeThumbnail": null,
+        "lastViewed": 1767193200000,
+        "thumbnail": "thumbnail/thumbnail1725913367636.png",
+        "languages": [],
+        "created": 1725913302000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/30",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "oceans",
+          "nhcoastalviewer_0188",
+          "resiliency planning",
+          "coastal flooding",
+          "New Hampshire",
+          "groundwater rise",
+          "Sea Level Rise",
+          "Inland Waters",
+          "groundwater",
+          "years 2020 through 2150"
+        ],
+        "numViews": 8087,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/2871472e49304afe8d3ba61ab5853336"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "60636f64ccaf4a96ac8da8959c4f4170",
+      "title": "Groundwater Rise Caused by 2-ft SLR",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/29",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map illustrates the extent and magnitude of groundwater rise resulting from 2 feet of sea-level rise.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.968985,
+                43.228651
+              ],
+              [
+                -70.706009,
+                43.228651
+              ],
+              [
+                -70.706009,
+                42.864814
+              ],
+              [
+                -70.968985,
+                42.864814
+              ],
+              [
+                -70.968985,
+                43.228651
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The computer code MODFLOW-USG Transport (Panday, 2022) was used to simulate groundwater flow and saltwater intrusion in these communities.  This map shows the extent of the groundwater rise caused by 2 feet of sea level rise.",
+        "licenseInfo": "<p>The data are intended for planning purposes only and are not for legal or engineering use.</p>",
+        "title": "Groundwater Rise Caused by 2-ft SLR",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767194756000,
+        "avgRating": 0,
+        "id": "60636f64ccaf4a96ac8da8959c4f4170",
+        "categories": [
+          "/Categories/Oceans and Coasts",
+          "/Categories/Oceans",
+          "/Categories/Geological and Geophysical"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": "Jayne F. Knott, Ph.D. of JFK Environmental Services LLC and Jennifer M. Jacobs of Jennifer M. Jacobs & Associates LLC.  The project was funded by the NH Department of Environmental Services.",
+        "largeThumbnail": null,
+        "lastViewed": 1767193200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1725912945000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/29",
+        "tags": [
+          "environment",
+          "nhcoastalviewer_0188",
+          "New Hampshire",
+          "Inland Waters",
+          "Coastal",
+          "coastal flooding",
+          "resiliency planning",
+          "groundwater rise",
+          "groundwater",
+          "Sea Level Rise"
+        ],
+        "numViews": 8070,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/60636f64ccaf4a96ac8da8959c4f4170"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "390ca190bb954d9ea0a607d528100139",
+      "title": "Groundwater Depth less than 5-feet (No SLR)",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/38",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map identifies areas where the groundwater surface (water table) is currently less than 5 feet below the land surface.  The purpose of this work is to identify vulnerable areas within the zone where groundwater is projected to rise with SLR, and where groundwater levels are already shallow.  Many forms of infrastructure, including pavements and other transportation assets, septic systems, sewer pipes and pumping stations, stormwater BMPs, basements, and historic places, may be negatively affected by shallow groundwater.\n\nGeneralized impacts associated with groundwater depth zones:\n0–5 ft - Critically shallow. High risk of direct interaction between groundwater and buried structures. Roads and pavements; basements/foundations; septic systems; most buried utilities; stormwater assets; private wells; contaminated sites; critical facilities.\n\n5–10 ft - Transition zone. Still crucial for performance and for near-term rise. Deeper sewers and storm drains; many infiltration/green infrastructure practices; some foundations; wells in sensitive aquifers; some contaminated sites.\n\n10–15 ft - Future risk/planning zone, and relevant for very deep or critical assets. Deep-trunk utilities, large below-grade structures, and long-lived infrastructure that will experience groundwater rise over their design lives.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.973667,
+                43.229457
+              ],
+              [
+                -70.705996,
+                43.229457
+              ],
+              [
+                -70.705996,
+                42.86178
+              ],
+              [
+                -70.973667,
+                42.86178
+              ],
+              [
+                -70.973667,
+                43.229457
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The calibrated MODFLOW-USG Transport model (Panday, 2022) was used to simulate groundwater elevations under current sea levels and under various sea-level rise scenarios. Groundwater depth without SLR was estimated by subtracting the current groundwater levels from LiDAR ground surface elevations.  Groundwater depths of less than 15 ft, 10 ft, and 5 ft were mapped for the current conditions.  Groundwater depth for the various SLR scenarios can be estimated by subtracting the simulated SLR-induced groundwater rise from the current groundwater depth.",
+        "licenseInfo": null,
+        "title": "Groundwater Depth less than 5-feet (No SLR)",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767021523000,
+        "avgRating": 0,
+        "id": "390ca190bb954d9ea0a607d528100139",
+        "categories": [
+          "/Categories/Oceans and Coasts",
+          "/Categories/Oceans",
+          "/Categories/Geological and Geophysical"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1768489200000,
+        "thumbnail": "thumbnail/thumbnail1766255671512.png",
+        "languages": [],
+        "created": 1766255466000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/38",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "oceans",
+          "Coastal",
+          "New Hampshire",
+          "coastal flooding",
+          "Inland Waters",
+          "resiliency planning",
+          "Sea Level Rise",
+          "groundwater",
+          "groundwater rise",
+          "nhcoastalviewer_0188"
+        ],
+        "numViews": 416,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/390ca190bb954d9ea0a607d528100139"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b05d2ad33247439fa817bfe1e2f28ae7",
+      "title": "Groundwater Depth less than 15-feet No SLR",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/37",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map identifies areas where the groundwater surface (water table) is currently less than 15 feet below the land surface.  The purpose of this work is to identify vulnerable areas within the zone where groundwater is projected to rise with SLR, and where groundwater levels are already shallow.  Many forms of infrastructure, including pavements and other transportation assets, septic systems, sewer pipes and pumping stations, stormwater BMPs, basements, and historic places, may be negatively affected by shallow groundwater.\n\nGeneralized impacts associated with groundwater depth zones:\n0–5 ft - Critically shallow. High risk of direct interaction between groundwater and buried structures. Roads and pavements; basements/foundations; septic systems; most buried utilities; stormwater assets; private wells; contaminated sites; critical facilities.\n\n5–10 ft - Transition zone. Still crucial for performance and for near-term rise. Deeper sewers and storm drains; many infiltration/green infrastructure practices; some foundations; wells in sensitive aquifers; some contaminated sites.\n\n10–15 ft - Future risk/planning zone, and relevant for very deep or critical assets. Deep-trunk utilities, large below-grade structures, and long-lived infrastructure that will experience groundwater rise over their design lives.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.973667,
+                43.229459
+              ],
+              [
+                -70.706261,
+                43.229459
+              ],
+              [
+                -70.706261,
+                42.861782
+              ],
+              [
+                -70.973667,
+                42.861782
+              ],
+              [
+                -70.973667,
+                43.229459
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The calibrated MODFLOW-USG Transport model (Panday, 2022) was used to simulate groundwater elevations under current sea levels and under various sea-level rise scenarios. Groundwater depth without SLR was estimated by subtracting the current groundwater levels from LiDAR ground surface elevations.  Groundwater depths of less than 15 ft, 10 ft, and 5 ft were mapped for the current conditions.  Groundwater depth for the various SLR scenarios can be estimated by subtracting the simulated SLR-induced groundwater rise from the current groundwater depth.",
+        "licenseInfo": null,
+        "title": "Groundwater Depth less than 15-feet No SLR",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767021407000,
+        "avgRating": 0,
+        "id": "b05d2ad33247439fa817bfe1e2f28ae7",
+        "categories": [
+          "/Categories/Oceans and Coasts",
+          "/Categories/Oceans",
+          "/Categories/Geological and Geophysical"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1768485600000,
+        "thumbnail": "thumbnail/thumbnail1766256118685.png",
+        "languages": [],
+        "created": 1766255958000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/37",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "oceans",
+          "Coastal",
+          "New Hampshire",
+          "coastal flooding",
+          "resiliency planning",
+          "groundwater",
+          "groundwater rise",
+          "Sea Level Rise",
+          "Inland Waters",
+          "nhcoastalviewer_0188"
+        ],
+        "numViews": 414,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/b05d2ad33247439fa817bfe1e2f28ae7"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d3a16098e0894190ae169826987a3824",
+      "title": "Groundwater Depth less than 10-feet (No SLR)",
+      "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/39",
+      "publisher": "NHGRANIT",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map identifies areas where the groundwater surface (water table) is currently less than 10 feet below the land surface.  The purpose of this work is to identify vulnerable areas within the zone where groundwater is projected to rise with SLR, and where groundwater levels are already shallow.  Many forms of infrastructure, including pavements and other transportation assets, septic systems, sewer pipes and pumping stations, stormwater BMPs, basements, and historic places, may be negatively affected by shallow groundwater.\n\nGeneralized impacts associated with groundwater depth zones:\n0–5 ft - Critically shallow. High risk of direct interaction between groundwater and buried structures. Roads and pavements; basements/foundations; septic systems; most buried utilities; stormwater assets; private wells; contaminated sites; critical facilities.\n\n5–10 ft - Transition zone. Still crucial for performance and for near-term rise. Deeper sewers and storm drains; many infiltration/green infrastructure practices; some foundations; wells in sensitive aquifers; some contaminated sites.\n\n10–15 ft - Future risk/planning zone, and relevant for very deep or critical assets. Deep-trunk utilities, large below-grade structures, and long-lived infrastructure that will experience groundwater rise over their design lives.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.973667,
+                43.229459
+              ],
+              [
+                -70.706261,
+                43.229459
+              ],
+              [
+                -70.706261,
+                42.861782
+              ],
+              [
+                -70.973667,
+                42.861782
+              ],
+              [
+                -70.973667,
+                43.229459
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Groundwater modeling was used to simulate the effects of sea-level rise on groundwater levels in the New Hampshire Seacoast. The calibrated MODFLOW-USG Transport model (Panday, 2022) was used to simulate groundwater elevations under current sea levels and under various sea-level rise scenarios. Groundwater depth without SLR was estimated by subtracting the current groundwater levels from LiDAR ground surface elevations.  Groundwater depths of less than 15 ft, 10 ft, and 5 ft were mapped for the current conditions.  Groundwater depth for the various SLR scenarios can be estimated by subtracting the simulated SLR-induced groundwater rise from the current groundwater depth.",
+        "licenseInfo": null,
+        "title": "Groundwater Depth less than 10-feet (No SLR)",
+        "type": "Feature Service",
+        "orgId": "wnvDDrXX8EouLkZP",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767021642000,
+        "avgRating": 0,
+        "id": "d3a16098e0894190ae169826987a3824",
+        "categories": [
+          "/Categories/Oceans and Coasts",
+          "/Categories/Oceans",
+          "/Categories/Geological and Geophysical"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NHGRANIT",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1768489200000,
+        "thumbnail": "thumbnail/thumbnail1766255951909.png",
+        "languages": [],
+        "created": 1766255769000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://nhgeodata.unh.edu/hosting/rest/services/Hosted/CV_OceansAndCoasts/FeatureServer/39",
+        "tags": [
+          "environment",
+          "geoscientificInformation",
+          "oceans",
+          "New Hampshire",
+          "groundwater rise",
+          "groundwater",
+          "Sea Level Rise",
+          "coastal flooding",
+          "resiliency planning",
+          "Inland Waters",
+          "nhcoastalviewer_0188",
+          "Coastal"
+        ],
+        "numViews": 412,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Steven Couture, NH Department of Environmental Services, Coastal Program Administrator",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items/d3a16098e0894190ae169826987a3824"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    182
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 31,
+  "next_offset": 10,
+  "response_sha256": "637958e69019183b338472cabfb5208eb54238b4d7da54b73b58b3e0e49c7c7f",
+  "search_complete": false
+}

@@ -33,7 +33,7 @@ DISK_FLOOR_BYTES = 6 * 1024**3
 SCRATCH_MIN_BYTES = 256 * 1024**2
 LOAD_FIXED_BYTES = 512 * 1024**2
 # Generated from canonical_catalog_document() after applying this schema to fresh PG16.
-EXPECTED_SCHEMA_CATALOG_SHA256 = "caf322c65cf86e41659a082689ba43b640229b58b61ddacec4980e8ffd6bf7f6"
+EXPECTED_SCHEMA_CATALOG_SHA256 = "29ab269cdd70e8f096a7c831b5d94eecf1a96f8cc3465c4ba35d9e159772734c"
 
 REQUIRED_FIELDS = {
     "geo_id", "geo_type", "year", "field_id", "catalog_field_id", "value", "unit",
@@ -754,7 +754,22 @@ def no_scan_projection(admissions: list[Admission], full_dir: Path) -> StoragePr
     return StorageProjection(selected, 0, 0, available, available, available, available)
 
 
+def reject_pipeline_managed_target() -> None:
+    """Historic exact-manifest commands cannot refresh pipeline-owned facts."""
+    _, owner = target_identity()
+    if not owner:
+        return
+    exists = psql(["--tuples-only", "--no-align", "--command",
+                   "SELECT to_regclass('usa_atlas_pipeline.dataset') IS NOT NULL"], capture=True)
+    if exists == "t":
+        managed = psql(["--tuples-only", "--no-align", "--command",
+                        "SELECT EXISTS(SELECT 1 FROM usa_atlas_pipeline.dataset)"], capture=True)
+        if managed == "t":
+            raise AdmissionError("pipeline_managed_target_use_auto_ingest")
+
+
 def _load_database_locked(sources: list[str], full_dir: Path) -> LoadOutcome:
+    reject_pipeline_managed_target()
     admissions = preflight_sources(sources, full_dir)
     current_role, target_owner = target_identity()
     if target_owner and target_owner != current_role:
@@ -783,6 +798,7 @@ def load_database(sources: list[str], full_dir: Path = FULL) -> LoadOutcome:
 def verify_database(sources: list[str], full_dir: Path = FULL) -> dict[str, object]:
     """Fail closed on the complete state and prove a no-op idempotent rerun."""
     with loader_lock(full_dir):
+        reject_pipeline_managed_target()
         admissions = preflight_sources(sources, full_dir)
         before = assert_complete_state(admissions)
         rerun = _load_database_locked(sources, full_dir)

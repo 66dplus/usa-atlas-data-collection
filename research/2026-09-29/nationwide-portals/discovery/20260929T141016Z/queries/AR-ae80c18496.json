@@ -1,0 +1,1842 @@
+{
+  "jurisdiction_code": "AR",
+  "query": "electricity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:10:45.286091+00:00",
+  "candidates": [
+    {
+      "id": "506710f2e33b44059a8bed988b9f8196",
+      "title": "Power Line HFILD (line)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/9",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature class/shapefile represents electric power transmission lines. Transmission Lines are the system of structures, wires, insulators and associated hardware that carry electric energy from one point to another in an electric power system. Lines are operated at relatively high voltages varying from 69 kV up to 765 kV, and are capable of transmitting large quantities of electricity over long distances. Underground transmission lines are included where sources were available. The following updates have been made since the previous release: 1,166 features added. The State of Arkansas was clipped out from the dataset available at https://hifld-geoplatform.hub.arcgis.com/datasets/geoplatform::transmission-lines/about for upload to gis.arkansas.gov",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.6005,
+                36.5285
+              ],
+              [
+                -89.696,
+                36.5285
+              ],
+              [
+                -89.696,
+                32.9719
+              ],
+              [
+                -94.6005,
+                32.9719
+              ],
+              [
+                -94.6005,
+                36.5285
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This feature class/shapefile represents electric power transmission lines. Transmission Lines are the system of structures, wires, insulators and associated hardware that carry electric energy from one point to another in an electric power system. Lines are operated at relatively high voltages varying from 69 kV up to 765 kV, and are capable of transmitting large quantities of electricity over long distances. Underground transmission lines are included where sources were available. The following updates have been made since the previous release: 1,166 features added. The State of Arkansas was clipped out for upload to gis.arkansas.gov</span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Power Line HFILD (line)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667621000,
+        "avgRating": 0,
+        "id": "506710f2e33b44059a8bed988b9f8196",
+        "categories": [
+          "/Categories/Utilities"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776803167000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/9",
+        "tags": [
+          "Utilites",
+          "Electricity",
+          "Power Lines",
+          "energy"
+        ],
+        "numViews": 137,
+        "numComments": 0,
+        "size": 87,
+        "listed": false,
+        "scoreCompleteness": 81,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.6005,
+                32.9719
+              ],
+              [
+                -89.696,
+                36.5285
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9719,
+                "xmin": -94.6005,
+                "ymax": 36.5285,
+                "xmax": -89.696,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/506710f2e33b44059a8bed988b9f8196"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6ad7db3d96ea4415b65b4b56a5cc5396",
+      "title": "Electric Providers (Point)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/21",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Electronic Providers layer provides location information and related attributes for use by the Arkansas Public Service Commission and Arkansas Economic Development Commission.\n\nAttribute information includes local and headquarters addresses, contact, phone number, and web address",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5544,
+                36.4394
+              ],
+              [
+                -89.883,
+                36.4394
+              ],
+              [
+                -89.883,
+                33.1978
+              ],
+              [
+                -94.5544,
+                33.1978
+              ],
+              [
+                -94.5544,
+                36.4394
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>Data available online through the Arkansas Spatial Data Infrastructure at http://gis.arkansas.gov. The subject file contains location information for electric providers for the state of Arkansas. These locations were derived from the Arkansas Public Service Commission and the Arkansas Economic Development Commission. </span></p><p><span>Attribute information includes local and headquarters addresses, contact, phone number, and web addresses,</span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Electric Providers (Point)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667665000,
+        "avgRating": 0,
+        "id": "6ad7db3d96ea4415b65b4b56a5cc5396",
+        "categories": [
+          "/Categories/Utilities"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776869857000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/21",
+        "tags": [
+          "energy",
+          "Electricity",
+          "Utilites",
+          "Structures",
+          "Power Lines"
+        ],
+        "numViews": 115,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5544,
+                33.1978
+              ],
+              [
+                -89.883,
+                36.4394
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 33.1978,
+                "xmin": -94.5544,
+                "ymax": 36.4394,
+                "xmax": -89.883,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/6ad7db3d96ea4415b65b4b56a5cc5396"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2472eee058a84d61a7154794b75bcdfa",
+      "title": "Electric Power Substations (Point)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/18",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this dataset is to represent as accurately as possible Electric Power Substations structures or features that are currently present within the State of Arkansas at the time of publication. Numerous datasets were utilized to identify potential Power Sub Stations locations including Address Points, Power Lines, Roads, and Imagery.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5708,
+                36.5283
+              ],
+              [
+                -89.6956,
+                36.5283
+              ],
+              [
+                -89.6956,
+                32.9873
+              ],
+              [
+                -94.5708,
+                32.9873
+              ],
+              [
+                -94.5708,
+                36.5283
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This dataset was generated by the Arkansas GIS Office to represent the locations for Electric Power Substations within the State of Arkansas. </span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Electric Power Substations (Point)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667619000,
+        "avgRating": 0,
+        "id": "2472eee058a84d61a7154794b75bcdfa",
+        "categories": [
+          "/Categories/Utilities"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Arkansas GIS Office",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776805107000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/18",
+        "tags": [
+          "Electricity",
+          "Utilites",
+          "Structures",
+          "Power Lines",
+          "energy"
+        ],
+        "numViews": 124,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 76,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5708,
+                32.9873
+              ],
+              [
+                -89.6956,
+                36.5283
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9873,
+                "xmin": -94.5708,
+                "ymax": 36.5283,
+                "xmax": -89.6956,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/2472eee058a84d61a7154794b75bcdfa"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "09bd0b5349ff4fffa88185f3fe89dcaf",
+      "title": "Electric Utility Service Territories (polygon)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/12",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data is a graphic representation of electric utility service territories. The file has not been certified by a Professional Surveyor. This data is not suitable for legal purposes. The purpose of this data is to provide a generalized statewide view of electric service territories. The data does not include individual or commercial releases. A release is an agreement between adjoining utilities that release customers from one utility to be served by the adjoining utility. A customer release does not change the territory boundary. The file has been compiled from numerous sources and as such contains errors. The data only contains the electric utility service territories and the name of the utility.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.6183,
+                36.532
+              ],
+              [
+                -89.6169,
+                36.532
+              ],
+              [
+                -89.6169,
+                32.9693
+              ],
+              [
+                -94.6183,
+                32.9693
+              ],
+              [
+                -94.6183,
+                36.532
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This data is a graphic representation of electric utility service territories. The file has not been certified by a Professional Surveyor. This data is not suitable for legal purposes. The purpose of this data is to provide a generalized statewide view of electric service territories. The data does not include individual or commercial releases. A release is an agreement between adjoining utilities that release customers from one utility to be served by the adjoining utility. A customer release does not change the territory boundary. The file has been compiled from numerous sources and as such contains errors. The data only contains the electric utility service territories and the name of the utility.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Electric Utility Service Territories (polygon)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667616000,
+        "avgRating": 0,
+        "id": "09bd0b5349ff4fffa88185f3fe89dcaf",
+        "categories": [
+          "/Categories/Utilities"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "AR Geographic Information Office",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780338269598.png",
+        "languages": [],
+        "created": 1776803912000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/12",
+        "tags": [
+          "Electricity",
+          "Utilites",
+          "energy",
+          "boundaries"
+        ],
+        "numViews": 166,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.6183,
+                32.9693
+              ],
+              [
+                -89.6169,
+                36.532
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9693,
+                "xmin": -94.6183,
+                "ymax": 36.532,
+                "xmax": -89.6169,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/09bd0b5349ff4fffa88185f3fe89dcaf"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d50f16c906bc4e368e4637c70adb16a8",
+      "title": "Power Plant (point)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/19",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These data identify operable electric generating plants in the United States by energy source, as of November 2023.\n\nThe attribute data for this point dataset come from the U.S. Energy Information Administration, EIA-860, Annual Electric Generator Report; EIA-860M, Monthly Update to the Annual Electric Generator Report; and EIA-923, Power Plant Operations Report. It includes all operable plants by energy source with a combined nameplate capacity of 1 megawatt or more that are operating, are on standby, or out of service for short- or long-term.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5234,
+                36.4333
+              ],
+              [
+                -89.7603,
+                36.4333
+              ],
+              [
+                -89.7603,
+                33.0956
+              ],
+              [
+                -94.5234,
+                33.0956
+              ],
+              [
+                -94.5234,
+                36.4333
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This dataset is a subset of the dataset titled ALL CULTRAL POINTS, created by the Arkansas Energy Information Administration. Combinations of all of the cultural features are plotted when updating county and city maps in the Mapping Section at the Arkansas Energy Information Administration.</span></p><p><span /></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Power Plant (point)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667480000,
+        "avgRating": 0,
+        "id": "d50f16c906bc4e368e4637c70adb16a8",
+        "categories": [
+          "/Categories/Utilities"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "In all cases, a credit line stating \"Base Map Provided By The Mapping Section, Planning and Research Division, Arkansas Energy Information Administration, In Cooperation With The U.S. Government\"",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780338203198.png",
+        "languages": [],
+        "created": 1776864518000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/19",
+        "tags": [
+          "Utilites",
+          "Power Lines",
+          "energy"
+        ],
+        "numViews": 123,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5234,
+                33.0956
+              ],
+              [
+                -89.7603,
+                36.4333
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 33.0956,
+                "xmin": -94.5234,
+                "ymax": 36.4333,
+                "xmax": -89.7603,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/d50f16c906bc4e368e4637c70adb16a8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f0d47d40a8cc4841b107d3256bbb5656",
+      "title": "Arkansas Oil and Gas Wells",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/5",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset represents the location and description of oil and gas wells within the State of Arkansas that have been mapped. Unmapped Wells are not represented in this dataset and are available in the original database with Section Township Range information. This dataset was processed from an Access database downloaded from https://aogc.state.ar.us/WellData/Files/AOGC.zip.  For additional information regarding field values please refer to the metadata.\n\nACCURACIES VARY ON METHOD OF COLLECTION. All information contained within this file was extracted from the Arkansas Oil and Gas Commissions online database .",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5306,
+                36.4959
+              ],
+              [
+                -90.0122,
+                36.4959
+              ],
+              [
+                -90.0122,
+                32.9833
+              ],
+              [
+                -94.5306,
+                32.9833
+              ],
+              [
+                -94.5306,
+                36.4959
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This dataset represents the location and description of oil and gas wells within the State of Arkansas. ACCURACIES VARY ON METHOD OF COLLECTION. All information contained within this file was extracted from the Arkansas Oil & Gas Commisions online database.</span></p><p><span /></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Arkansas Oil and Gas Wells",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667311000,
+        "avgRating": 0,
+        "id": "f0d47d40a8cc4841b107d3256bbb5656",
+        "categories": [
+          "/Categories/Utilities"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Arkansas Oil and Gas Commision",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776797806000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/5",
+        "tags": [
+          "Utilites",
+          "Oil and Gas",
+          "Oil",
+          "Gas Wells",
+          "Natural Gas",
+          "energy",
+          "environment"
+        ],
+        "numViews": 161,
+        "numComments": 0,
+        "size": 87,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5306,
+                32.9833
+              ],
+              [
+                -90.0122,
+                36.4959
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9833,
+                "xmin": -94.5306,
+                "ymax": 36.4959,
+                "xmax": -90.0122,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/f0d47d40a8cc4841b107d3256bbb5656"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a7fba83e9fb242e4b99fd7db7ffba163",
+      "title": "gSSURGO Ready2map NE FY2013",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Farming/FeatureServer/2",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the common Map Unit attributes for each polygon within the gSSURGO database plus NRCS derived attributes from a data summary table called the National Valu Added Look Up (valu) Table #1. It is comprised of 57 pre-summarized or “ready to map” derived soil survey geographic database attributes including soil organic carbon, available water storage, crop productivity indices, crop root zone depths, available water storage within crop root zone depths, drought vulnerable soil landscapes, and potential wetland soil landscapes. Related metadata values for themes are included. These attribute data are pre-summarized to the map unit level using best practice generalization methods intended to meet the needs of most users. The generalization methods include map unit component weighted averages and percent of the map unit meeting a given criteria. These themes were prepared to better meet the mapping needs of users of soil survey information and can be used with both SSURGO and Gridded SSURGO (gSSURGO) datasets. Gridded SSURGO (gSSURGO) Database is derived from the official Soil Survey Geographic (SSURGO) Database.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.2276,
+                36.5293
+              ],
+              [
+                -89.6168,
+                36.5293
+              ],
+              [
+                -89.6168,
+                34.8155
+              ],
+              [
+                -92.2276,
+                34.8155
+              ],
+              [
+                -92.2276,
+                36.5293
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This dataset contains the common Map Unit attributes for each polygon within the gSSURGO database plus NRCS derived attributes from a data summary table called the National Valu Added Look Up (valu) Table #1. It is comprised of 57 pre-summarized or \"ready to map\" derived soil survey geographic database attributes including soil organic carbon, available water storage, crop productivity indices, crop root zone depths, available water storage within crop root zone depths, drought vulnerable soil landscapes, and potential wetland soil landscapes. Related metadata values for themes are included. These attribute data are pre-summarized to the map unit level using best practice generalization methods intended to meet the needs of most users. The generalization methods include map unit component weighted averages and percent of the map unit meeting a given criteria. These themes were prepared to better meet the mapping needs of users of soil survey information and can be used with both SSURGO and Gridded SSURGO (gSSURGO) datasets. Gridded SSURGO (gSSURGO) Database is derived from the official Soil Survey Geographic (SSURGO) Database. SSURGO is generally the most detailed level of soil geographic data developed by the National Cooperative Soil Survey (NCSS) in accordance with NCSS mapping standards. The tabular data represent the soil attributes, and are derived from properties and characteristics stored in the National Soil Information System (NASIS). The gSSURGO data were prepared by merging traditional SSURGO digital vector map and tabular data into State-wide extents, and adding a State-wide gridded map layer derived from the vector, plus a new value added look up (valu) table containing \"ready to map\" attributes. The gridded map layer is offered in an ArcGIS file geodatabase raster format. The raster and vector map data have a State-wide extent. The raster map data have a 10 meter cell size that approximates the vector polygons in an Albers Equal Area projection. Each cell (and polygon) is linked to a map unit identifier called the map unit key. A unique map unit key is used to link to raster cells and polygons to attribute tables, including the new value added look up (valu) table that contains additional derived data.VALU Table Content:The map unit average Soil Organic Carbon (SOC) values are given in units of g C per square meter for eleven standard layer or zone depths. The average thickness of soil map unit component horizons used in these layer/zone calcuations is also included. The standard layers include: 0-5cm, 5-20cm, 20-50cm, 50-100cm, 100-150cm, and 150-150+cm (maximum reported soil depth). The standard zones include: 0-5cm (also a standard layer), o-20cm, 0-30cm, 0-100cm, and 0-150+cm (full reported soil depth). Zero cm represents the soil surface.The map unit average Available Water Storage (AWS) values are given in units of millimeters for eleven standard layer or zone depths. The average thickness of soil map unit component horizons used in these layer/zone calcuations is also included. The standard layers include: 0-5cm, 5-20cm, 20-50cm, 50-100cm, 100-150cm, and 150-150+cm (maximum reported soil depth). The standard zones include: 0-5cm (also a standard layer), 0-20cm, 0-30cm, 0-100cm, and 0-150+cm (full reported soil depth). Zero cm represents the soil surface.The map unit average National Commodity Crop Productivity Index (NCCPI) values (low index values indicate low productivity and high index values indicate high productivity) are provided for major earthy components. NCCPI values are included for corn/soybeans, small grains, and cotton crops. Of these crops, the highest overall NCCPI value is also identified. Earthy components are those soil series or higher level taxa components that can support crop growth. Major components are those soil components where the majorcompflag = 'Yes' in the SSURGO component table. A map unit percent composition for earthy major components is provided. See Dobos, R. R., H. R. Sinclair, Jr, and M. P. Robotham. 2012. National Commodity Crop Productivity Index (NCCPI) User Guide, Version 2. USDA-NRCS. Available at: ftp://ftp-fc.sc.egov.usda.gov/NSSC/NCCPI/NCCPI_user_guide.pdfThe map unit average root zone depth values for commodity crops are given in centimeters for major earthy components. Criteria for root-limiting soil depth include: presence of hard bedrock, soft bedrock, a fragipan, a duripan, sulfuric material, a dense layer, a layer having a pH of less than 3.5, or a layer having an electrical conductivity of more than 12 within the component soil profile. If no root-restricting zone is identified, a depth of 150 cm is used to approximate the root zone depth (Dobos et al., 2012). The map unit average available water storage within the root zone depth for major earthy components value is given in millimeters.Drought vulnerable soil landscapes comprise those map units that have available water storage within the root zone for commodity crops that is less than or equal to 6 inches (152 mm) expressed as \"1\" for a drought vulnerable soil landscape map unit or \"0\" for a nondroughty soil landscape map unit or NULL for miscellaneous areas (includes water bodies).The potential wetland soil landscapes (PWSL version 1) information is given as the percentage of the map unit (all components) that meet the criteria for a potential wetland soil landscape. See table column (field) description for criteria details. If water was determined to account for 80 or greater percent of a map unit, a value of 999 was used to indicate a water body. This is not a perfect solution, but is helpful to identifying a general water body class for mapping.The map unit sum of the component percentage representative values is also provided as useful metadata. For all valu table columns, NULL values are presented where data are incomplete or not available. How NoData or NULL values and incomplete data were handled during VALU table SOC and AWS calculations:The gSSURGO calculations for SOC and AWS as reported in the VALU table use the following data checking and summarization rules. The guiding principle was to only use the official data in the SSURGO database, and not to make assumptions in case there were some data entry errors. However, there were a few exceptions to this principle if there was a good reason for a Null value in a critical variable, or to accommodate the data coding conventions used in some soil surveys.Horizon depths considerations:If the depth to the top of the surface horizon was missing, but otherwise the horizon depths were all okay, then the depth to the top of the surface horizon (hzdept_r) was set to zero.If the depth to the bottom of the last horizon was missing, and the horizon represented bedrock or had missing bulk density, the depth to the bottom was set to equal to the depth to the top of the same horizon (hzdepb_r = hzdept_r), effectively giving the horizon zero thickness (and thus zero SOC or AWS), but not blocking calculation of other horizons in the profile due to horizon depth errors.Other types of horizon depth errors were considered uncorrectable, and led to all horizon depths for the component being set to a NoData value, effectively eliminating the component from the analysis. The errors included gaps or overlaps in the horizon depths of the soil profile, other cases of missing data for horizon depths, including missing data for the bottom depth of the last horizon if the soil texture information did not indicate bedrock and a bulk density value was coded. The SOC or AWS values were effectively set to zero for components eliminated in this way, so the values at the map unit level could be an underestimate for some soils.Horizon rock fragment considerations:Part of the algorithm for calculating the SOC requires finding the volume of soil that is not rock. This requires three SSURGO variables that indicate rock fragments (fraggt10_r, frag3to10_r, and sieveno10_r). If the soil is not organic, and any of these are missing, then the ratio of the volume of soil fines to the total soil volume was set to “NoData”, and the SOC results were coded as “NoData” and effectively set to zero for the horizon. If the soil is organic, then it may be logical that no measurement of rock fragments was made, and default values for the “zero rock” situation was assumed for these variables (i.e., fraggt10_r = 0, frag3to10_r = 0, sieveno10_r = 100). Organic soils were identified by an “O” in the horizon designator or the texture code represented “Peat”, “Muck” or “Decomposed Plant Material”. If all three of the fragment variables were present, but indicated more than 100% rock, then 100% rock was assumed (zero volume of soil and thus zero for SOC). The rock fragment variables do not influence the AWS calculation because rock content is already accounted for in the available water capacity (awc_r) variable at the horizon level.Horizon to component summary:To summarize data from the horizon level to the component level, the evaluation proceeded downward from the surface. If a valid value for AWS could not be calculated for any horizon, then the result for that horizon and all deeper horizons was set to NoData. The same rule was separately applied to the SOC calculation, so it was possible to have results for SOC but not AWS, or vice versa.Component to mapunit summary:To summarize data from the component level to the map unit level, the component percentages must be valid. There are tests both of the individual component percentage (comppct_r) data, and also of the sum of the component percentages at the map unit level (mu_sum_comppct_r). For the gSSURGO VALU table, the following rules were applied for the individual components: 1) The comppct_r must be in the range from 0 to 100, inclusive. 2) Individual components with a comppct_r that was Null (nothing coded) were ignored. A zero comppct_r value excludes the component from having an effect on the map unit calculation. No values more than 100% were found in the data for individual comppct_r.Two additional rules were applied for the sum of the component percentages in a map unit (ignoring NoData for comppct_r): 3) The mu_sum_comppct_r must be in the range from 1 to 100, inclusive, otherwise map unit level output was set to NoData, and 4) The mu_sum_comppct_r were not scaled to equal 100%. With these rules, the results may be an under-estimate of the value for AWS or SOC compared to what would have been calculated if there were complete data and/or no comppct_r errors.Metadata variables: sums of component percentages:Several metadata variables are provided in the VALU table to help understand when the AWS and SOC values are underestimated because of these component percentage issues. The sum of the component percentages for the map unit are reported in “mu_sum_comppct_r”. If this is greater than 100% or the comppct_r was NoData for all components, then no results will be given for the map unit. If the mu_sum_comppct_r is less than 100%, then the soil scientists likely did not report on all soils in the map unit. The AWS and SOC values will only reflect the reported soils, and therefore would be an underestimate if the unreported soils would have had values for these measures.The sums of the component percentages that were used in the AWS and SOC calculations are also reported (mu_sum_comppct_aws and mu_sum_comppct_soc, respectively). If these values are less than the mu_sum_comppct_r, it is an indication that there was insufficient data to compute the AWS and/or SOC values for all of the components. These variables essentially represent metadata for each map unit. In some cases, the lack of an AWS or SOC value may be appropriate (for example, for non-soils such as bedrock at the surface, gravel pits, or water).A full discussion of these rules and their implications, including explicit examples, will be given in a forthcoming publication as Soil Survey Investigations Report No. 53, USDA NRCS, Lincoln, NE.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "gSSURGO Ready2map NE FY2013",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784726959000,
+        "avgRating": 0,
+        "id": "a7fba83e9fb242e4b99fd7db7ffba163",
+        "categories": [
+          "/Categories/Farming"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. National value added look up (valu) table for Gridded Soil Survey Geographic (SSURGO) Database for the United States of America and the Territories, Commonwealths, and Island Nations served by the USDA NRCS. Available online at http://datagateway.nrcs.usda.gov/ October 15, 2012.",
+        "largeThumbnail": null,
+        "lastViewed": 1784725200000,
+        "thumbnail": "thumbnail/thumbnail1780332473859.png",
+        "languages": [],
+        "created": 1777485872000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Farming/FeatureServer/2",
+        "tags": [
+          "Farming",
+          "environment",
+          "soils"
+        ],
+        "numViews": 105,
+        "numComments": 0,
+        "size": 85,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -92.2276,
+                34.8155
+              ],
+              [
+                -89.6168,
+                36.5293
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 34.8155,
+                "xmin": -92.2276,
+                "ymax": 36.5293,
+                "xmax": -89.6168,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/a7fba83e9fb242e4b99fd7db7ffba163"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3ac9fdfa084248bab8f0b60ccee4511a",
+      "title": "gSSURGO Ready2map SE FY 2013",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Farming/FeatureServer/4",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the common Map Unit attributes for each polygon within the gSSURGO database plus NRCS derived attributes from a data summary table called the National Valu Added Look Up (valu) Table #1.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.7607,
+                35.0995
+              ],
+              [
+                -90.4005,
+                35.0995
+              ],
+              [
+                -90.4005,
+                32.9856
+              ],
+              [
+                -92.7607,
+                32.9856
+              ],
+              [
+                -92.7607,
+                35.0995
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This dataset contains the common Map Unit attributes for each polygon within the gSSURGO database plus NRCS derived attributes from a data summary table called the National Valu Added Look Up (valu) Table #1. It is comprised of 57 pre-summarized or \"ready to map\" derived soil survey geographic database attributes including soil organic carbon, available water storage, crop productivity indices, crop root zone depths, available water storage within crop root zone depths, drought vulnerable soil landscapes, and potential wetland soil landscapes. Related metadata values for themes are included. These attribute data are pre-summarized to the map unit level using best practice generalization methods intended to meet the needs of most users. The generalization methods include map unit component weighted averages and percent of the map unit meeting a given criteria. These themes were prepared to better meet the mapping needs of users of soil survey information and can be used with both SSURGO and Gridded SSURGO (gSSURGO) datasets. Gridded SSURGO (gSSURGO) Database is derived from the official Soil Survey Geographic (SSURGO) Database. SSURGO is generally the most detailed level of soil geographic data developed by the National Cooperative Soil Survey (NCSS) in accordance with NCSS mapping standards. The tabular data represent the soil attributes, and are derived from properties and characteristics stored in the National Soil Information System (NASIS). The gSSURGO data were prepared by merging traditional SSURGO digital vector map and tabular data into State-wide extents, and adding a State-wide gridded map layer derived from the vector, plus a new value added look up (valu) table containing \"ready to map\" attributes. The gridded map layer is offered in an ArcGIS file geodatabase raster format. The raster and vector map data have a State-wide extent. The raster map data have a 10 meter cell size that approximates the vector polygons in an Albers Equal Area projection. Each cell (and polygon) is linked to a map unit identifier called the map unit key. A unique map unit key is used to link to raster cells and polygons to attribute tables, including the new value added look up (valu) table that contains additional derived data.VALU Table Content:The map unit average Soil Organic Carbon (SOC) values are given in units of g C per square meter for eleven standard layer or zone depths. The average thickness of soil map unit component horizons used in these layer/zone calcuations is also included. The standard layers include: 0-5cm, 5-20cm, 20-50cm, 50-100cm, 100-150cm, and 150-150+cm (maximum reported soil depth). The standard zones include: 0-5cm (also a standard layer), o-20cm, 0-30cm, 0-100cm, and 0-150+cm (full reported soil depth). Zero cm represents the soil surface.The map unit average Available Water Storage (AWS) values are given in units of millimeters for eleven standard layer or zone depths. The average thickness of soil map unit component horizons used in these layer/zone calcuations is also included. The standard layers include: 0-5cm, 5-20cm, 20-50cm, 50-100cm, 100-150cm, and 150-150+cm (maximum reported soil depth). The standard zones include: 0-5cm (also a standard layer), 0-20cm, 0-30cm, 0-100cm, and 0-150+cm (full reported soil depth). Zero cm represents the soil surface.The map unit average National Commodity Crop Productivity Index (NCCPI) values (low index values indicate low productivity and high index values indicate high productivity) are provided for major earthy components. NCCPI values are included for corn/soybeans, small grains, and cotton crops. Of these crops, the highest overall NCCPI value is also identified. Earthy components are those soil series or higher level taxa components that can support crop growth. Major components are those soil components where the majorcompflag = 'Yes' in the SSURGO component table. A map unit percent composition for earthy major components is provided. See Dobos, R. R., H. R. Sinclair, Jr, and M. P. Robotham. 2012. National Commodity Crop Productivity Index (NCCPI) User Guide, Version 2. USDA-NRCS. Available at: ftp://ftp-fc.sc.egov.usda.gov/NSSC/NCCPI/NCCPI_user_guide.pdfThe map unit average root zone depth values for commodity crops are given in centimeters for major earthy components. Criteria for root-limiting soil depth include: presence of hard bedrock, soft bedrock, a fragipan, a duripan, sulfuric material, a dense layer, a layer having a pH of less than 3.5, or a layer having an electrical conductivity of more than 12 within the component soil profile. If no root-restricting zone is identified, a depth of 150 cm is used to approximate the root zone depth (Dobos et al., 2012). The map unit average available water storage within the root zone depth for major earthy components value is given in millimeters.Drought vulnerable soil landscapes comprise those map units that have available water storage within the root zone for commodity crops that is less than or equal to 6 inches (152 mm) expressed as \"1\" for a drought vulnerable soil landscape map unit or \"0\" for a nondroughty soil landscape map unit or NULL for miscellaneous areas (includes water bodies).The potential wetland soil landscapes (PWSL version 1) information is given as the percentage of the map unit (all components) that meet the criteria for a potential wetland soil landscape. See table column (field) description for criteria details. If water was determined to account for 80 or greater percent of a map unit, a value of 999 was used to indicate a water body. This is not a perfect solution, but is helpful to identifying a general water body class for mapping.The map unit sum of the component percentage representative values is also provided as useful metadata. For all valu table columns, NULL values are presented where data are incomplete or not available. How NoData or NULL values and incomplete data were handled during VALU table SOC and AWS calculations:The gSSURGO calculations for SOC and AWS as reported in the VALU table use the following data checking and summarization rules. The guiding principle was to only use the official data in the SSURGO database, and not to make assumptions in case there were some data entry errors. However, there were a few exceptions to this principle if there was a good reason for a Null value in a critical variable, or to accommodate the data coding conventions used in some soil surveys.Horizon depths considerations:If the depth to the top of the surface horizon was missing, but otherwise the horizon depths were all okay, then the depth to the top of the surface horizon (hzdept_r) was set to zero.If the depth to the bottom of the last horizon was missing, and the horizon represented bedrock or had missing bulk density, the depth to the bottom was set to equal to the depth to the top of the same horizon (hzdepb_r = hzdept_r), effectively giving the horizon zero thickness (and thus zero SOC or AWS), but not blocking calculation of other horizons in the profile due to horizon depth errors.Other types of horizon depth errors were considered uncorrectable, and led to all horizon depths for the component being set to a NoData value, effectively eliminating the component from the analysis. The errors included gaps or overlaps in the horizon depths of the soil profile, other cases of missing data for horizon depths, including missing data for the bottom depth of the last horizon if the soil texture information did not indicate bedrock and a bulk density value was coded. The SOC or AWS values were effectively set to zero for components eliminated in this way, so the values at the map unit level could be an underestimate for some soils.Horizon rock fragment considerations:Part of the algorithm for calculating the SOC requires finding the volume of soil that is not rock. This requires three SSURGO variables that indicate rock fragments (fraggt10_r, frag3to10_r, and sieveno10_r). If the soil is not organic, and any of these are missing, then the ratio of the volume of soil fines to the total soil volume was set to “NoData”, and the SOC results were coded as “NoData” and effectively set to zero for the horizon. If the soil is organic, then it may be logical that no measurement of rock fragments was made, and default values for the “zero rock” situation was assumed for these variables (i.e., fraggt10_r = 0, frag3to10_r = 0, sieveno10_r = 100). Organic soils were identified by an “O” in the horizon designator or the texture code represented “Peat”, “Muck” or “Decomposed Plant Material”. If all three of the fragment variables were present, but indicated more than 100% rock, then 100% rock was assumed (zero volume of soil and thus zero for SOC). The rock fragment variables do not influence the AWS calculation because rock content is already accounted for in the available water capacity (awc_r) variable at the horizon level.Horizon to component summary:To summarize data from the horizon level to the component level, the evaluation proceeded downward from the surface. If a valid value for AWS could not be calculated for any horizon, then the result for that horizon and all deeper horizons was set to NoData. The same rule was separately applied to the SOC calculation, so it was possible to have results for SOC but not AWS, or vice versa.Component to mapunit summary:To summarize data from the component level to the map unit level, the component percentages must be valid. There are tests both of the individual component percentage (comppct_r) data, and also of the sum of the component percentages at the map unit level (mu_sum_comppct_r). For the gSSURGO VALU table, the following rules were applied for the individual components: 1) The comppct_r must be in the range from 0 to 100, inclusive. 2) Individual components with a comppct_r that was Null (nothing coded) were ignored. A zero comppct_r value excludes the component from having an effect on the map unit calculation. No values more than 100% were found in the data for individual comppct_r.Two additional rules were applied for the sum of the component percentages in a map unit (ignoring NoData for comppct_r): 3) The mu_sum_comppct_r must be in the range from 1 to 100, inclusive, otherwise map unit level output was set to NoData, and 4) The mu_sum_comppct_r were not scaled to equal 100%. With these rules, the results may be an under-estimate of the value for AWS or SOC compared to what would have been calculated if there were complete data and/or no comppct_r errors.Metadata variables: sums of component percentages:Several metadata variables are provided in the VALU table to help understand when the AWS and SOC values are underestimated because of these component percentage issues. The sum of the component percentages for the map unit are reported in “mu_sum_comppct_r”. If this is greater than 100% or the comppct_r was NoData for all components, then no results will be given for the map unit. If the mu_sum_comppct_r is less than 100%, then the soil scientists likely did not report on all soils in the map unit. The AWS and SOC values will only reflect the reported soils, and therefore would be an underestimate if the unreported soils would have had values for these measures.The sums of the component percentages that were used in the AWS and SOC calculations are also reported (mu_sum_comppct_aws and mu_sum_comppct_soc, respectively). If these values are less than the mu_sum_comppct_r, it is an indication that there was insufficient data to compute the AWS and/or SOC values for all of the components. These variables essentially represent metadata for each map unit. In some cases, the lack of an AWS or SOC value may be appropriate (for example, for non-soils such as bedrock at the surface, gravel pits, or water).A full discussion of these rules and their implications, including explicit examples, will be given in a forthcoming publication as Soil Survey Investigations Report No. 53, USDA NRCS, Lincoln, NE.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "gSSURGO Ready2map SE FY 2013",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667701000,
+        "avgRating": 0,
+        "id": "3ac9fdfa084248bab8f0b60ccee4511a",
+        "categories": [
+          "/Categories/Farming"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. National value added look up (valu) table for Gridded Soil Survey Geographic (SSURGO) Database for the United States of America and the Territories, Commonwealths, and Island Nations served by the USDA NRCS. Available online at http://datagateway.nrcs.usda.gov/ October 15, 2012.",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780332519623.png",
+        "languages": [],
+        "created": 1777489628000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Farming/FeatureServer/4",
+        "tags": [
+          "Farming",
+          "environment",
+          "soils"
+        ],
+        "numViews": 106,
+        "numComments": 0,
+        "size": 85,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -92.7607,
+                32.9856
+              ],
+              [
+                -90.4005,
+                35.0995
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9856,
+                "xmin": -92.7607,
+                "ymax": 35.0995,
+                "xmax": -90.4005,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/3ac9fdfa084248bab8f0b60ccee4511a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9cc17d4ddeef47b4ba825214735d5d86",
+      "title": "gSSURGO Ready2map SW FY 2013",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Farming/FeatureServer/5",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the common Map Unit attributes for each polygon within the gSSURGO database plus NRCS derived attributes from a data summary table called the National Valu Added Look Up (valu) Table #1.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5074,
+                34.8589
+              ],
+              [
+                -92.0486,
+                34.8589
+              ],
+              [
+                -92.0486,
+                33.0028
+              ],
+              [
+                -94.5074,
+                33.0028
+              ],
+              [
+                -94.5074,
+                34.8589
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This dataset contains the common Map Unit attributes for each polygon within the gSSURGO database plus NRCS derived attributes from a data summary table called the National Valu Added Look Up (valu) Table #1. It is comprised of 57 pre-summarized or \"ready to map\" derived soil survey geographic database attributes including soil organic carbon, available water storage, crop productivity indices, crop root zone depths, available water storage within crop root zone depths, drought vulnerable soil landscapes, and potential wetland soil landscapes. Related metadata values for themes are included. These attribute data are pre-summarized to the map unit level using best practice generalization methods intended to meet the needs of most users. The generalization methods include map unit component weighted averages and percent of the map unit meeting a given criteria. These themes were prepared to better meet the mapping needs of users of soil survey information and can be used with both SSURGO and Gridded SSURGO (gSSURGO) datasets. Gridded SSURGO (gSSURGO) Database is derived from the official Soil Survey Geographic (SSURGO) Database. SSURGO is generally the most detailed level of soil geographic data developed by the National Cooperative Soil Survey (NCSS) in accordance with NCSS mapping standards. The tabular data represent the soil attributes, and are derived from properties and characteristics stored in the National Soil Information System (NASIS). The gSSURGO data were prepared by merging traditional SSURGO digital vector map and tabular data into State-wide extents, and adding a State-wide gridded map layer derived from the vector, plus a new value added look up (valu) table containing \"ready to map\" attributes. The gridded map layer is offered in an ArcGIS file geodatabase raster format. The raster and vector map data have a State-wide extent. The raster map data have a 10 meter cell size that approximates the vector polygons in an Albers Equal Area projection. Each cell (and polygon) is linked to a map unit identifier called the map unit key. A unique map unit key is used to link to raster cells and polygons to attribute tables, including the new value added look up (valu) table that contains additional derived data.VALU Table Content:The map unit average Soil Organic Carbon (SOC) values are given in units of g C per square meter for eleven standard layer or zone depths. The average thickness of soil map unit component horizons used in these layer/zone calcuations is also included. The standard layers include: 0-5cm, 5-20cm, 20-50cm, 50-100cm, 100-150cm, and 150-150+cm (maximum reported soil depth). The standard zones include: 0-5cm (also a standard layer), o-20cm, 0-30cm, 0-100cm, and 0-150+cm (full reported soil depth). Zero cm represents the soil surface.The map unit average Available Water Storage (AWS) values are given in units of millimeters for eleven standard layer or zone depths. The average thickness of soil map unit component horizons used in these layer/zone calcuations is also included. The standard layers include: 0-5cm, 5-20cm, 20-50cm, 50-100cm, 100-150cm, and 150-150+cm (maximum reported soil depth). The standard zones include: 0-5cm (also a standard layer), 0-20cm, 0-30cm, 0-100cm, and 0-150+cm (full reported soil depth). Zero cm represents the soil surface.The map unit average National Commodity Crop Productivity Index (NCCPI) values (low index values indicate low productivity and high index values indicate high productivity) are provided for major earthy components. NCCPI values are included for corn/soybeans, small grains, and cotton crops. Of these crops, the highest overall NCCPI value is also identified. Earthy components are those soil series or higher level taxa components that can support crop growth. Major components are those soil components where the majorcompflag = 'Yes' in the SSURGO component table. A map unit percent composition for earthy major components is provided. See Dobos, R. R., H. R. Sinclair, Jr, and M. P. Robotham. 2012. National Commodity Crop Productivity Index (NCCPI) User Guide, Version 2. USDA-NRCS. Available at: ftp://ftp-fc.sc.egov.usda.gov/NSSC/NCCPI/NCCPI_user_guide.pdfThe map unit average root zone depth values for commodity crops are given in centimeters for major earthy components. Criteria for root-limiting soil depth include: presence of hard bedrock, soft bedrock, a fragipan, a duripan, sulfuric material, a dense layer, a layer having a pH of less than 3.5, or a layer having an electrical conductivity of more than 12 within the component soil profile. If no root-restricting zone is identified, a depth of 150 cm is used to approximate the root zone depth (Dobos et al., 2012). The map unit average available water storage within the root zone depth for major earthy components value is given in millimeters.Drought vulnerable soil landscapes comprise those map units that have available water storage within the root zone for commodity crops that is less than or equal to 6 inches (152 mm) expressed as \"1\" for a drought vulnerable soil landscape map unit or \"0\" for a nondroughty soil landscape map unit or NULL for miscellaneous areas (includes water bodies).The potential wetland soil landscapes (PWSL version 1) information is given as the percentage of the map unit (all components) that meet the criteria for a potential wetland soil landscape. See table column (field) description for criteria details. If water was determined to account for 80 or greater percent of a map unit, a value of 999 was used to indicate a water body. This is not a perfect solution, but is helpful to identifying a general water body class for mapping.The map unit sum of the component percentage representative values is also provided as useful metadata. For all valu table columns, NULL values are presented where data are incomplete or not available. How NoData or NULL values and incomplete data were handled during VALU table SOC and AWS calculations:The gSSURGO calculations for SOC and AWS as reported in the VALU table use the following data checking and summarization rules. The guiding principle was to only use the official data in the SSURGO database, and not to make assumptions in case there were some data entry errors. However, there were a few exceptions to this principle if there was a good reason for a Null value in a critical variable, or to accommodate the data coding conventions used in some soil surveys.Horizon depths considerations:If the depth to the top of the surface horizon was missing, but otherwise the horizon depths were all okay, then the depth to the top of the surface horizon (hzdept_r) was set to zero.If the depth to the bottom of the last horizon was missing, and the horizon represented bedrock or had missing bulk density, the depth to the bottom was set to equal to the depth to the top of the same horizon (hzdepb_r = hzdept_r), effectively giving the horizon zero thickness (and thus zero SOC or AWS), but not blocking calculation of other horizons in the profile due to horizon depth errors.Other types of horizon depth errors were considered uncorrectable, and led to all horizon depths for the component being set to a NoData value, effectively eliminating the component from the analysis. The errors included gaps or overlaps in the horizon depths of the soil profile, other cases of missing data for horizon depths, including missing data for the bottom depth of the last horizon if the soil texture information did not indicate bedrock and a bulk density value was coded. The SOC or AWS values were effectively set to zero for components eliminated in this way, so the values at the map unit level could be an underestimate for some soils.Horizon rock fragment considerations:Part of the algorithm for calculating the SOC requires finding the volume of soil that is not rock. This requires three SSURGO variables that indicate rock fragments (fraggt10_r, frag3to10_r, and sieveno10_r). If the soil is not organic, and any of these are missing, then the ratio of the volume of soil fines to the total soil volume was set to “NoData”, and the SOC results were coded as “NoData” and effectively set to zero for the horizon. If the soil is organic, then it may be logical that no measurement of rock fragments was made, and default values for the “zero rock” situation was assumed for these variables (i.e., fraggt10_r = 0, frag3to10_r = 0, sieveno10_r = 100). Organic soils were identified by an “O” in the horizon designator or the texture code represented “Peat”, “Muck” or “Decomposed Plant Material”. If all three of the fragment variables were present, but indicated more than 100% rock, then 100% rock was assumed (zero volume of soil and thus zero for SOC). The rock fragment variables do not influence the AWS calculation because rock content is already accounted for in the available water capacity (awc_r) variable at the horizon level.Horizon to component summary:To summarize data from the horizon level to the component level, the evaluation proceeded downward from the surface. If a valid value for AWS could not be calculated for any horizon, then the result for that horizon and all deeper horizons was set to NoData. The same rule was separately applied to the SOC calculation, so it was possible to have results for SOC but not AWS, or vice versa.Component to mapunit summary:To summarize data from the component level to the map unit level, the component percentages must be valid. There are tests both of the individual component percentage (comppct_r) data, and also of the sum of the component percentages at the map unit level (mu_sum_comppct_r). For the gSSURGO VALU table, the following rules were applied for the individual components: 1) The comppct_r must be in the range from 0 to 100, inclusive. 2) Individual components with a comppct_r that was Null (nothing coded) were ignored. A zero comppct_r value excludes the component from having an effect on the map unit calculation. No values more than 100% were found in the data for individual comppct_r.Two additional rules were applied for the sum of the component percentages in a map unit (ignoring NoData for comppct_r): 3) The mu_sum_comppct_r must be in the range from 1 to 100, inclusive, otherwise map unit level output was set to NoData, and 4) The mu_sum_comppct_r were not scaled to equal 100%. With these rules, the results may be an under-estimate of the value for AWS or SOC compared to what would have been calculated if there were complete data and/or no comppct_r errors.Metadata variables: sums of component percentages:Several metadata variables are provided in the VALU table to help understand when the AWS and SOC values are underestimated because of these component percentage issues. The sum of the component percentages for the map unit are reported in “mu_sum_comppct_r”. If this is greater than 100% or the comppct_r was NoData for all components, then no results will be given for the map unit. If the mu_sum_comppct_r is less than 100%, then the soil scientists likely did not report on all soils in the map unit. The AWS and SOC values will only reflect the reported soils, and therefore would be an underestimate if the unreported soils would have had values for these measures.The sums of the component percentages that were used in the AWS and SOC calculations are also reported (mu_sum_comppct_aws and mu_sum_comppct_soc, respectively). If these values are less than the mu_sum_comppct_r, it is an indication that there was insufficient data to compute the AWS and/or SOC values for all of the components. These variables essentially represent metadata for each map unit. In some cases, the lack of an AWS or SOC value may be appropriate (for example, for non-soils such as bedrock at the surface, gravel pits, or water).A full discussion of these rules and their implications, including explicit examples, will be given in a forthcoming publication as Soil Survey Investigations Report No. 53, USDA NRCS, Lincoln, NE.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "gSSURGO Ready2map SW FY 2013",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667538000,
+        "avgRating": 0,
+        "id": "9cc17d4ddeef47b4ba825214735d5d86",
+        "categories": [
+          "/Categories/Farming"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. National value added look up (valu) table for Gridded Soil Survey Geographic (SSURGO) Database for the United States of America and the Territories, Commonwealths, and Island Nations served by the USDA NRCS. Available online at http://datagateway.nrcs.usda.gov/ October 15, 2012.",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780332540242.png",
+        "languages": [],
+        "created": 1777489748000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Farming/FeatureServer/5",
+        "tags": [
+          "Farming",
+          "environment",
+          "soils"
+        ],
+        "numViews": 92,
+        "numComments": 0,
+        "size": 85,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5074,
+                33.0028
+              ],
+              [
+                -92.0486,
+                34.8589
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 33.0028,
+                "xmin": -94.5074,
+                "ymax": 34.8589,
+                "xmax": -92.0486,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/9cc17d4ddeef47b4ba825214735d5d86"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1979fe410c10453aac3e0e5219cb9f73",
+      "title": "gSSURGO Ready2map NW FY 2013",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Farming/FeatureServer/3",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the common Map Unit attributes for each polygon within the gSSURGO database plus NRCS derived attributes from a data summary table called the National Valu Added Look Up (valu) Table #1. It is comprised of 57 pre-summarized or “ready to map” derived soil survey geographic database attributes including soil organic carbon, available water storage, crop productivity indices, crop root zone depths, available water storage within crop root zone depths, drought vulnerable soil landscapes, and potential wetland soil landscapes. Related metadata values for themes are included.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.6179,
+                36.5104
+              ],
+              [
+                -91.7773,
+                36.5104
+              ],
+              [
+                -91.7773,
+                34.6589
+              ],
+              [
+                -94.6179,
+                34.6589
+              ],
+              [
+                -94.6179,
+                36.5104
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This dataset contains the common Map Unit attributes for each polygon within the gSSURGO database plus NRCS derived attributes from a data summary table called the National Valu Added Look Up (valu) Table #1. It is comprised of 57 pre-summarized or \"ready to map\" derived soil survey geographic database attributes including soil organic carbon, available water storage, crop productivity indices, crop root zone depths, available water storage within crop root zone depths, drought vulnerable soil landscapes, and potential wetland soil landscapes. Related metadata values for themes are included. These attribute data are pre-summarized to the map unit level using best practice generalization methods intended to meet the needs of most users. The generalization methods include map unit component weighted averages and percent of the map unit meeting a given criteria. These themes were prepared to better meet the mapping needs of users of soil survey information and can be used with both SSURGO and Gridded SSURGO (gSSURGO) datasets. Gridded SSURGO (gSSURGO) Database is derived from the official Soil Survey Geographic (SSURGO) Database. SSURGO is generally the most detailed level of soil geographic data developed by the National Cooperative Soil Survey (NCSS) in accordance with NCSS mapping standards. The tabular data represent the soil attributes, and are derived from properties and characteristics stored in the National Soil Information System (NASIS). The gSSURGO data were prepared by merging traditional SSURGO digital vector map and tabular data into State-wide extents, and adding a State-wide gridded map layer derived from the vector, plus a new value added look up (valu) table containing \"ready to map\" attributes. The gridded map layer is offered in an ArcGIS file geodatabase raster format. The raster and vector map data have a State-wide extent. The raster map data have a 10 meter cell size that approximates the vector polygons in an Albers Equal Area projection. Each cell (and polygon) is linked to a map unit identifier called the map unit key. A unique map unit key is used to link to raster cells and polygons to attribute tables, including the new value added look up (valu) table that contains additional derived data.VALU Table Content:The map unit average Soil Organic Carbon (SOC) values are given in units of g C per square meter for eleven standard layer or zone depths. The average thickness of soil map unit component horizons used in these layer/zone calcuations is also included. The standard layers include: 0-5cm, 5-20cm, 20-50cm, 50-100cm, 100-150cm, and 150-150+cm (maximum reported soil depth). The standard zones include: 0-5cm (also a standard layer), o-20cm, 0-30cm, 0-100cm, and 0-150+cm (full reported soil depth). Zero cm represents the soil surface.The map unit average Available Water Storage (AWS) values are given in units of millimeters for eleven standard layer or zone depths. The average thickness of soil map unit component horizons used in these layer/zone calcuations is also included. The standard layers include: 0-5cm, 5-20cm, 20-50cm, 50-100cm, 100-150cm, and 150-150+cm (maximum reported soil depth). The standard zones include: 0-5cm (also a standard layer), 0-20cm, 0-30cm, 0-100cm, and 0-150+cm (full reported soil depth). Zero cm represents the soil surface.The map unit average National Commodity Crop Productivity Index (NCCPI) values (low index values indicate low productivity and high index values indicate high productivity) are provided for major earthy components. NCCPI values are included for corn/soybeans, small grains, and cotton crops. Of these crops, the highest overall NCCPI value is also identified. Earthy components are those soil series or higher level taxa components that can support crop growth. Major components are those soil components where the majorcompflag = 'Yes' in the SSURGO component table. A map unit percent composition for earthy major components is provided. See Dobos, R. R., H. R. Sinclair, Jr, and M. P. Robotham. 2012. National Commodity Crop Productivity Index (NCCPI) User Guide, Version 2. USDA-NRCS. Available at: ftp://ftp-fc.sc.egov.usda.gov/NSSC/NCCPI/NCCPI_user_guide.pdfThe map unit average root zone depth values for commodity crops are given in centimeters for major earthy components. Criteria for root-limiting soil depth include: presence of hard bedrock, soft bedrock, a fragipan, a duripan, sulfuric material, a dense layer, a layer having a pH of less than 3.5, or a layer having an electrical conductivity of more than 12 within the component soil profile. If no root-restricting zone is identified, a depth of 150 cm is used to approximate the root zone depth (Dobos et al., 2012). The map unit average available water storage within the root zone depth for major earthy components value is given in millimeters.Drought vulnerable soil landscapes comprise those map units that have available water storage within the root zone for commodity crops that is less than or equal to 6 inches (152 mm) expressed as \"1\" for a drought vulnerable soil landscape map unit or \"0\" for a nondroughty soil landscape map unit or NULL for miscellaneous areas (includes water bodies).The potential wetland soil landscapes (PWSL version 1) information is given as the percentage of the map unit (all components) that meet the criteria for a potential wetland soil landscape. See table column (field) description for criteria details. If water was determined to account for 80 or greater percent of a map unit, a value of 999 was used to indicate a water body. This is not a perfect solution, but is helpful to identifying a general water body class for mapping.The map unit sum of the component percentage representative values is also provided as useful metadata. For all valu table columns, NULL values are presented where data are incomplete or not available. How NoData or NULL values and incomplete data were handled during VALU table SOC and AWS calculations:The gSSURGO calculations for SOC and AWS as reported in the VALU table use the following data checking and summarization rules. The guiding principle was to only use the official data in the SSURGO database, and not to make assumptions in case there were some data entry errors. However, there were a few exceptions to this principle if there was a good reason for a Null value in a critical variable, or to accommodate the data coding conventions used in some soil surveys.Horizon depths considerations:If the depth to the top of the surface horizon was missing, but otherwise the horizon depths were all okay, then the depth to the top of the surface horizon (hzdept_r) was set to zero.If the depth to the bottom of the last horizon was missing, and the horizon represented bedrock or had missing bulk density, the depth to the bottom was set to equal to the depth to the top of the same horizon (hzdepb_r = hzdept_r), effectively giving the horizon zero thickness (and thus zero SOC or AWS), but not blocking calculation of other horizons in the profile due to horizon depth errors.Other types of horizon depth errors were considered uncorrectable, and led to all horizon depths for the component being set to a NoData value, effectively eliminating the component from the analysis. The errors included gaps or overlaps in the horizon depths of the soil profile, other cases of missing data for horizon depths, including missing data for the bottom depth of the last horizon if the soil texture information did not indicate bedrock and a bulk density value was coded. The SOC or AWS values were effectively set to zero for components eliminated in this way, so the values at the map unit level could be an underestimate for some soils.Horizon rock fragment considerations:Part of the algorithm for calculating the SOC requires finding the volume of soil that is not rock. This requires three SSURGO variables that indicate rock fragments (fraggt10_r, frag3to10_r, and sieveno10_r). If the soil is not organic, and any of these are missing, then the ratio of the volume of soil fines to the total soil volume was set to “NoData”, and the SOC results were coded as “NoData” and effectively set to zero for the horizon. If the soil is organic, then it may be logical that no measurement of rock fragments was made, and default values for the “zero rock” situation was assumed for these variables (i.e., fraggt10_r = 0, frag3to10_r = 0, sieveno10_r = 100). Organic soils were identified by an “O” in the horizon designator or the texture code represented “Peat”, “Muck” or “Decomposed Plant Material”. If all three of the fragment variables were present, but indicated more than 100% rock, then 100% rock was assumed (zero volume of soil and thus zero for SOC). The rock fragment variables do not influence the AWS calculation because rock content is already accounted for in the available water capacity (awc_r) variable at the horizon level.Horizon to component summary:To summarize data from the horizon level to the component level, the evaluation proceeded downward from the surface. If a valid value for AWS could not be calculated for any horizon, then the result for that horizon and all deeper horizons was set to NoData. The same rule was separately applied to the SOC calculation, so it was possible to have results for SOC but not AWS, or vice versa.Component to mapunit summary:To summarize data from the component level to the map unit level, the component percentages must be valid. There are tests both of the individual component percentage (comppct_r) data, and also of the sum of the component percentages at the map unit level (mu_sum_comppct_r). For the gSSURGO VALU table, the following rules were applied for the individual components: 1) The comppct_r must be in the range from 0 to 100, inclusive. 2) Individual components with a comppct_r that was Null (nothing coded) were ignored. A zero comppct_r value excludes the component from having an effect on the map unit calculation. No values more than 100% were found in the data for individual comppct_r.Two additional rules were applied for the sum of the component percentages in a map unit (ignoring NoData for comppct_r): 3) The mu_sum_comppct_r must be in the range from 1 to 100, inclusive, otherwise map unit level output was set to NoData, and 4) The mu_sum_comppct_r were not scaled to equal 100%. With these rules, the results may be an under-estimate of the value for AWS or SOC compared to what would have been calculated if there were complete data and/or no comppct_r errors.Metadata variables: sums of component percentages:Several metadata variables are provided in the VALU table to help understand when the AWS and SOC values are underestimated because of these component percentage issues. The sum of the component percentages for the map unit are reported in “mu_sum_comppct_r”. If this is greater than 100% or the comppct_r was NoData for all components, then no results will be given for the map unit. If the mu_sum_comppct_r is less than 100%, then the soil scientists likely did not report on all soils in the map unit. The AWS and SOC values will only reflect the reported soils, and therefore would be an underestimate if the unreported soils would have had values for these measures.The sums of the component percentages that were used in the AWS and SOC calculations are also reported (mu_sum_comppct_aws and mu_sum_comppct_soc, respectively). If these values are less than the mu_sum_comppct_r, it is an indication that there was insufficient data to compute the AWS and/or SOC values for all of the components. These variables essentially represent metadata for each map unit. In some cases, the lack of an AWS or SOC value may be appropriate (for example, for non-soils such as bedrock at the surface, gravel pits, or water).A full discussion of these rules and their implications, including explicit examples, will be given in a forthcoming publication as Soil Survey Investigations Report No. 53, USDA NRCS, Lincoln, NE.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "gSSURGO Ready2map NW FY 2013",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667610000,
+        "avgRating": 0,
+        "id": "1979fe410c10453aac3e0e5219cb9f73",
+        "categories": [
+          "/Categories/Farming"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Soil Survey Staff, Natural Resources Conservation Service, United States Department of Agriculture. National value added look up (valu) table for Gridded Soil Survey Geographic (SSURGO) Database for the United States of America and the Territories, Commonwealths, and Island Nations served by the USDA NRCS. Available online at http://datagateway.nrcs.usda.gov/ October 15, 2012.",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780332496706.png",
+        "languages": [],
+        "created": 1777488224000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Farming/FeatureServer/3",
+        "tags": [
+          "Farming",
+          "soils",
+          "environment"
+        ],
+        "numViews": 105,
+        "numComments": 0,
+        "size": 85,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.6179,
+                34.6589
+              ],
+              [
+                -91.7773,
+                36.5104
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 34.6589,
+                "xmin": -94.6179,
+                "ymax": 36.5104,
+                "xmax": -91.7773,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/1979fe410c10453aac3e0e5219cb9f73"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    125
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 10,
+  "next_offset": 10,
+  "response_sha256": "646aaa89ad00a9b5b7b870e7ceb6bc0a4fcf403762c83b9a37874c4e9273d9a8",
+  "search_complete": true
+}

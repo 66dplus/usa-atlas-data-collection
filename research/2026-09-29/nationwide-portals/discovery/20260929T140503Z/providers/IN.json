@@ -1,0 +1,24 @@
+{
+  "jurisdiction_code": "IN",
+  "catalog_id": "in-primary",
+  "catalog_url": "https://hub.mph.in.gov/",
+  "started_at": "2026-09-29T14:05:07.233254+00:00",
+  "attempts": [
+    {
+      "adapter": "ckan",
+      "endpoint": "https://hub.mph.in.gov/api/3/action/package_search",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "adapter": "hub",
+      "endpoint": "https://hub.mph.in.gov/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "adapter": "html_catalog_scan",
+      "endpoint": "https://hub.mph.in.gov/",
+      "error": "HTTPError: HTTP Error 403: Forbidden"
+    }
+  ],
+  "status": "unresolved_adapter"
+}

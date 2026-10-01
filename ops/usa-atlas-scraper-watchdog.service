@@ -1,0 +1,17 @@
+[Unit]
+Description=USA Atlas scraper health and bounded recovery
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection
+ExecStart=/usr/bin/python3 /root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/ops/scraper_watchdog.py --check --apply
+TimeoutStartSec=90
+UMask=0077
+Nice=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

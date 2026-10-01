@@ -1,0 +1,682 @@
+{
+  "jurisdiction_code": "RI",
+  "query": "electricity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:05:35.888864+00:00",
+  "candidates": [
+    {
+      "id": "1541f0245f8a4c96b671a825418fa31d",
+      "title": "Electrical Transmission Lines",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/UTILITY_Electrical_Transmission_Lines/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Inventory and general mapping of electric utility infrastructure",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.87467686399071,
+                42.0188316044447
+              ],
+              [
+                -71.17360510152812,
+                42.0188316044447
+              ],
+              [
+                -71.17360510152812,
+                41.36618708503112
+              ],
+              [
+                -71.87467686399071,
+                41.36618708503112
+              ],
+              [
+                -71.87467686399071,
+                42.0188316044447
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><b>This hosted feature layer has been published in RI State Plane Feet NAD 83</b></div><div><b><br /></b></div>Major above ground high voltage electrical transmission lines as shown on USGS 7.5 minute topo quads and/or as confirmed through identification of visible right of way cuts on digital orthophotography",
+        "licenseInfo": "This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at http://www.rigis.org/logos.",
+        "title": "Electrical Transmission Lines",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731601574000,
+        "avgRating": 0,
+        "id": "1541f0245f8a4c96b671a825418fa31d",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept. of Administration, Division of Planning",
+        "largeThumbnail": "largethumbnail/1541f0245f8a4c96b671a825418fa31d.png",
+        "lastViewed": 1762524000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1730738486000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/UTILITY_Electrical_Transmission_Lines/FeatureServer",
+        "tags": [
+          "UTILITY",
+          "RIGIS",
+          "Rhode Island",
+          "infrastructure",
+          "electric transmission",
+          "high voltage power"
+        ],
+        "numViews": 1559,
+        "numComments": 0,
+        "size": 139264,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "UTILITY_Electrical_Transmission_Lines",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Division of Planning",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/1541f0245f8a4c96b671a825418fa31d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b723d7f78d844845bbe8e1c27e5a48da",
+      "title": "Solar Farms",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/UTILITY_Solar_farms_RI_MA/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset is a polygon layer of solar farm footprints in Rhode Island and Massachusetts",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -73.4296226197611,
+                42.866484833341744
+              ],
+              [
+                -69.95536059767255,
+                42.866484833341744
+              ],
+              [
+                -69.95536059767255,
+                41.33108198879344
+              ],
+              [
+                -73.4296226197611,
+                41.33108198879344
+              ],
+              [
+                -73.4296226197611,
+                42.866484833341744
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b><br /></p><p><span>The solar farm footprints were digitized from high-resolution imagery. Locations were first identified using coordinates, provided by the Energy Information Administration, as well as automated classification of 2024 Sentinel-2 imagery to identify solar farms omitted from EIA data. High-resolution aerial imagery was used to confirm solar farm location and digitize footprints and determine the approximate year of construction.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/pages/logos </span></p></div></div></div>",
+        "title": "Solar Farms",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731008220000,
+        "avgRating": 0,
+        "id": "b723d7f78d844845bbe8e1c27e5a48da",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Luran Dong, Jason Parent University of Rhode Island",
+        "largeThumbnail": "largethumbnail/b723d7f78d844845bbe8e1c27e5a48da.png",
+        "lastViewed": 1762531200000,
+        "thumbnail": "thumbnail/b723d7f78d844845bbe8e1c27e5a48da.png",
+        "languages": [],
+        "created": 1729694585000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/UTILITY_Solar_farms_RI_MA/FeatureServer",
+        "tags": [
+          "UTILITY",
+          "RIGIS",
+          "Rhode Island",
+          "Massachusetts",
+          "energy",
+          "renewable"
+        ],
+        "numViews": 1414,
+        "numComments": 0,
+        "size": 1302528,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "UTILITY_Solar_farms_RI_MA",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "University of Rhode Island, Department of Natural Resources Science",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/b723d7f78d844845bbe8e1c27e5a48da"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1bf2525b7be1430aa1ffe65dd4f1de5c",
+      "title": "Industrial Areas",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/Industrial_Areas/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Land designated for industrial development by through zoning code or municipal comprehensive land use plans with development potential classification.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.84658912370078,
+                42.016109135807994
+              ],
+              [
+                -71.15004602705152,
+                42.016109135807994
+              ],
+              [
+                -71.15004602705152,
+                41.34281421049399
+              ],
+              [
+                -71.84658912370078,
+                41.34281421049399
+              ],
+              [
+                -71.84658912370078,
+                42.016109135807994
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Land designated for industrial development through zoning code or municipal comprehensive land use plans with development potential classification. For use in statewide economic development planning.",
+        "licenseInfo": "<span style='font-weight: bold;'>These data are shared under the RIGIS license agreement, which can be viewed below: </span><br />This  dataset is provided 'as is.’ The producer(s) of this dataset,  contributors to this dataset, the Rhode Island Geographic Information  System (RIGIS) consortium, the State of Rhode Island, and the University  of Rhode Island do not make any warranties of any kind for this  dataset, and are not liable for any loss or damage however and whenever  caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS  and the primary producer(s) of this dataset in any derived products.   Versions of the RIGIS logo suitable for both printed and web-based  products are available at <a href='http://www.rigis.org/logos'>http://www.rigis.org/logos</a>.",
+        "title": "Industrial Areas",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1690908257000,
+        "avgRating": 0,
+        "id": "1bf2525b7be1430aa1ffe65dd4f1de5c",
+        "categories": [
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept. of Administration, Division of Planning. Icon Credit: Luis Prado via The Noun Project",
+        "largeThumbnail": null,
+        "lastViewed": 1697590800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "tokenExpirationDate": -1,
+        "created": 1472484378000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/Industrial_Areas/FeatureServer",
+        "tags": [
+          "PLAN",
+          "RIGIS",
+          "Rhode Island",
+          "economy",
+          "land use",
+          "economic zoning",
+          "industrial",
+          "industry"
+        ],
+        "numViews": 2678,
+        "numComments": 0,
+        "size": 475136,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "name": "Industrial_Areas",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Division of Planning",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/1bf2525b7be1430aa1ffe65dd4f1de5c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "202bc6df592c4689a72782ad3fcbb405",
+      "title": "Railroad Rights of Way",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/TRANS_Railroad_Rights_of_Way_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was created for the Rhode Island Department of Transportation to show and reference all rail lines, active and inactive, as well as abandoned trolley lines in the state of Rhode Island.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.83515547079121,
+                42.018339546697575
+              ],
+              [
+                -71.19262999334126,
+                42.018339546697575
+              ],
+              [
+                -71.19262999334126,
+                41.37978821490477
+              ],
+              [
+                -71.83515547079121,
+                41.37978821490477
+              ],
+              [
+                -71.83515547079121,
+                42.018339546697575
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><p><span style='font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-size:16px; font-weight:700; text-indent:48px;'>This hosted feature layer has been published in RI State Plane Feet NAD 83</span></p><p>This dataset represents railroad rights of way (including rail lines, active and inactive, as well as abandoned trolley lines) present within Rhode Island.</p><p>This data set was created for the Rhode Island Department of Transportation to show and reference all rail lines, active and inactive, as well as abandoned trolley lines in the state of Rhode Island.</p><p>Rail coverage contains all rail center lines, active and inactive, as well as abandoned trolley lines and old abandoned rail systems now used for other than rail purposes digitized from Spring 1997 photography and since updated using aerial photography from Spring 2008. National Grid (New England Electric System) contracted with Intermap Technologies, Ontario, Canada in creating the original Massachusetts, Rhode Island 1:5000 scale dataset using digital orthophotography.</p><div><br /></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><p><span>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/pages/logos </span></p></div></div>",
+        "title": "Railroad Rights of Way",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1762373088000,
+        "avgRating": 0,
+        "id": "202bc6df592c4689a72782ad3fcbb405",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Dept. of Transportation / National Grid",
+        "largeThumbnail": "largethumbnail/202bc6df592c4689a72782ad3fcbb405.png",
+        "lastViewed": 1762372800000,
+        "thumbnail": "thumbnail/202bc6df592c4689a72782ad3fcbb405.png",
+        "languages": [],
+        "created": 1736783657000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/TRANS_Railroad_Rights_of_Way_spf/FeatureServer",
+        "tags": [
+          "TRANS",
+          "RIGIS",
+          "Rhode Island",
+          "rail"
+        ],
+        "numViews": 1402,
+        "numComments": 0,
+        "size": 966656,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "TRANS_Railroad_Rights_of_Way_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              },
+              {
+                "hidden": true,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -71.83515547079121,
+                41.37978821490477
+              ],
+              [
+                -71.19262999334126,
+                42.018339546697575
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 41.37978821490477,
+                "xmin": -71.83515547079121,
+                "ymax": 42.018339546697575,
+                "xmax": -71.19262999334126,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Rhode Island Department of Transportation",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/202bc6df592c4689a72782ad3fcbb405"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ef161876a18446479fe639bad0af03fa",
+      "title": "Broadband Wireline Provider Service: Optical Carrier Fiber",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/Broadband_Wireline_Provider_Service_Optical_Carrier_Fiber/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset represents the availability of wireline broadband Internet access in Rhode Island via \"Optical Carrier - Fiber to the End User\" technology.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.86726204777693,
+                42.01886784340383
+              ],
+              [
+                -71.13078816708973,
+                42.01886784340383
+              ],
+              [
+                -71.13078816708973,
+                41.30347856995091
+              ],
+              [
+                -71.86726204777693,
+                41.30347856995091
+              ],
+              [
+                -71.86726204777693,
+                42.01886784340383
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Broadband availability is summarized at the census block level using the US Census Bureau's 2010 decennial census measurement areas. These data were compiled by Broadband Rhode Island (http://broadband.ri.gov) in support of the National Telecommunications and Infrastructure Administration (NTIA) State Broadband Initiative (http://www2.ntia.doc.gov/sbdd). <br /><br />Broadband is considered to be available within a census block if a facilities-based provider of broadband service currently serves at least one location within the block, or can provide broadband services of minimal characteristics to at least one location within the block within 7 - 10 business days. For each census block, the provider name and the respective technologies they provide are represented. In addition, general categories for maximum advertised upload and download speeds are also reported for most provider / technology type / census block combinations. \nThese data were created in support of Broadband Rhode Island to depict broadband infrastructure and connectivity in Rhode Island. \n<br /><br />Optical Carrier - Fiber to the End User wireline broadband technology definition: &quot;This refers to a fiber-optic-based broadband network. Fiber optic technology converts electrical signals carrying data to light and then sends the light through transparent glass fibers about the diameter of a human hair. Fiber has the capacity to transmit data at speeds surpassing any other broadband technology.&quot; (Definition credit: NTIA National Broadband Map Broadband Classroom, http://www.broadbandmap.gov/classroom/technology. Date last access: 2 October 2012.) &quot;Broadband&quot; refers to a high-speed, always-on connection to the Internet. For information to be included on the National Broadband Map, the technology must provide a two-way data transmission (to and from the Internet) with advertised speeds of at least 768 kilobits per second (Kbps) downstream and at least 200 Kbps upstream to end users. (Source: NTIA, http://broadbandmap.gov/classroom, last date accessed: 27 September 2012). A ''broadband service'' is the provision, on either a commercial or non-commercial basis, of data transmission technology that provides two-way data transmission to and from the Internet with advertised speeds of at least 768 kilobits per second (kbps) downstream and greater than 200 kbps upstream to end users, or providing sufficient capacity in a middle mile project to support the provision of broadband service to end-users within the project area. An &quot;end user&quot; of broadband service is a residential or business party, institution or State or local government entity that may use broadband service for its own purposes and that does not resell such service to other entities or incorporate such service into retail Internet-access services. Internet Service Providers (ISPs) are not ''end users'' for this purpose. An entity is considered a &quot;facilities based&quot; provider of broadband service connections to end user locations if any of the following conditions are met: (1) It owns the portion of the physical facility that terminates at the end user location; (2) it obtains unbundled network elements (UNEs), special access lines, or other leased facilities that terminate at the end user location and provisions/equips them as broadband; or (3) it provisions/equips a broadband wireless channel to the end user location over licensed or unlicensed spectrum. A broadband service is considered &quot;available&quot; at an address if the provider does, or could, within a typical service interval (7 to 10 business days) without an extraordinary commitment of resources, provision two-way data transmission to and from the Internet with advertised speeds of at least 768 kilobits per second (kbps) downstream and greater than 200 kbps upstream to end-users at that address. For more information regarding broadband in Rhode Island, please visit http://broadband.ri.gov.",
+        "licenseInfo": "<span style='font-weight: bold;'>These data are shared under the RIGIS license agreement, which can be viewed below: </span><br />This  dataset is provided 'as is.’ The producer(s) of this dataset,  contributors to this dataset, the Rhode Island Geographic Information  System (RIGIS) consortium, the State of Rhode Island, and the University  of Rhode Island do not make any warranties of any kind for this  dataset, and are not liable for any loss or damage however and whenever  caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS  and the primary producer(s) of this dataset in any derived products.   Versions of the RIGIS logo suitable for both printed and web-based  products are available at <a href='http://www.rigis.org/logos'>http://www.rigis.org/logos</a>.",
+        "title": "Broadband Wireline Provider Service: Optical Carrier Fiber",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1690908258000,
+        "avgRating": 0,
+        "id": "ef161876a18446479fe639bad0af03fa",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; URI EDC; National Telecommunications and Information Administration (NTIA). Icon Credit: Ana Maria Lora Macias via The Noun Project",
+        "largeThumbnail": null,
+        "lastViewed": 1762531200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1473352092000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/Broadband_Wireline_Provider_Service_Optical_Carrier_Fiber/FeatureServer",
+        "tags": [
+          "UTILITY",
+          "RIGIS",
+          "Rhode Island",
+          "internet"
+        ],
+        "numViews": 3903,
+        "numComments": 0,
+        "size": 24625152,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Broadband_Wireline_Provider_Service_Optical_Carrier_Fiber",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "University of Rhode Island Environmental Data Center",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/ef161876a18446479fe639bad0af03fa"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    153
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "0c2c39232676eebfeee27ed8930fd444bd4c8746235b96bc4a37c6d402b579f5",
+  "search_complete": true
+}

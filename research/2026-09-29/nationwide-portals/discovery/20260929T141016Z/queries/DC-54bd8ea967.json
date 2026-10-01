@@ -1,0 +1,1596 @@
+{
+  "jurisdiction_code": "DC",
+  "query": "crime",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:11:32.470201+00:00",
+  "candidates": [
+    {
+      "id": "452087bce8c749998cee5598bc73bbf2",
+      "title": "Bias Crime",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/7",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Under the Bias-Related Crime Act of 1989 (D.C. Official Code § 22-3700 et. seq.), a bias-related, or hate, crime is a criminal act or attempted criminal act “that demonstrates an accused’s prejudice based on the actual or perceived race, color, religion, national origin, sex, age, marital status, personal appearance, sexual orientation, gender identity or expression, family responsibility, homelessness, physical disability, matriculation, or political affiliation of a victim.”",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.13,
+                39.01
+              ],
+              [
+                -76.9,
+                39.01
+              ],
+              [
+                -76.9,
+                38.78
+              ],
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -77.13,
+                39.01
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>It is important for the community to understand what is – and is not – a hate crime. First and foremost, the incident must be a crime. Although that may seem obvious, most speech is not a hate crime, regardless of how offensive it may be. In addition, a hate crime is not a crime, but a possible motive for a crime.</span></p><p><span>It can be difficult to establish a motive for a crime. Therefore, the classification as a hate crime is subject to change as an investigation proceeds – even as prosecutors continue an investigation. If a person is found guilty of a hate crime, the court may fine the offender up to 1½ times the maximum fine and imprison him or her for up to 1½ times the maximum term authorized for the underlying crime.</span></p><p><span>While the District strives to reduce crime for all residents of and visitors to the city, hate crimes can make a particular community feel vulnerable and more fearful. This is unacceptable, and is the reason everyone must work together not just to address allegations of hate crimes, but also to proactively educate the public about hate crimes.</span></p><p><span>The figures in this data align with DC Official Code 22-3700.  Because the DC statute differs from the FBI Uniform Crime Reporting (UCR) and National Incident-Based Reporting System (NIBRS) definitions, these figures may be higher than those reported to the FBI.  </span></p><p><span>Each month, an MPD team reviews crimes that have been identified as potentially motivated by hate/bias to determine whether there is sufficient information to support that designation. The data in this document is current through the end of the most recent month. </span></p><p><span>The hate crimes dataset is not an official MPD database of record and may not match details in records pulled from the official Records Management System (RMS). </span></p><p><span>Unknown or blank values in the Targeted Group field may be present prior to 2016 data. As of January 2022, an offense with multiple bias categories would be reflected as such. </span></p><p><span>Data is updated on the 15th of every month.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0/\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "Bias Crime",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788289599000,
+        "avgRating": 0,
+        "id": "452087bce8c749998cee5598bc73bbf2",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1788289200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1708542815000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/7",
+        "tags": [
+          "washington dc",
+          "district of columbia",
+          "dc",
+          "hate crime",
+          "crime",
+          "mpd"
+        ],
+        "numViews": 7931,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/452087bce8c749998cee5598bc73bbf2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3d553e9f7ba941918537d51f26d746e7",
+      "title": "DC Crime Cards",
+      "url": "https://crimecards.dc.gov",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "An interactive public crime mapping application providing DC residents and visitors easy-to-understand data visualizations of crime locations, types and trends across all eight wards.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.16448258300784,
+                39.034067387345196
+              ],
+              [
+                -76.88570450683585,
+                39.034067387345196
+              ],
+              [
+                -76.88570450683585,
+                38.78508166198064
+              ],
+              [
+                -77.16448258300784,
+                38.78508166198064
+              ],
+              [
+                -77.16448258300784,
+                39.034067387345196
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map",
+          "Mapping Site",
+          "Metadata",
+          "Online Map",
+          "Ready To Use",
+          "Web Map"
+        ],
+        "description": "<div>An interactive public crime mapping application providing DC residents and visitors easy-to-understand data visualizations of crime locations, types and trends across all eight wards. Crime Cards was created by the DC Metropolitan Police Department (MPD) and Office of the Chief Technology Officer (OCTO). Special thanks to the community members who participated in reviews with MPD Officers and IT staff, and those who joined us for the #SaferStrongerSmarterDC roundtable design review. All statistics presented in Crime Cards are based on preliminary DC Index crime data reported from 2009 to midnight of today’s date. They are compiled based on the date the offense was reported (Report Date) to MPD. The application displays two main crime categories: Violent Crime and Property Crime. Violent Crimes include homicide, sex abuse, assault with a dangerous weapon (ADW), and robbery. Violent crimes can be further searched by the weapon used. Property Crimes include burglary, motor vehicle theft, theft from vehicle, theft (other), and arson.</div><div>&nbsp;</div><div>CrimeCards collaboration between the&nbsp;<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://mpdc.dc.gov\">Metropolitan Police Department (MPD)</a> and the&nbsp;<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://octo.dc.gov\">Office of the Chief Technology Officer (OCTO)</a>.</div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' target='_blank'>Creative Commons Attribution 4.0 International License</a><span>.</span></p></div></div></div>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "DC Crime Cards",
+        "type": "Web Mapping Application",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763668208000,
+        "avgRating": 0,
+        "id": "3d553e9f7ba941918537d51f26d746e7",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1786057200000,
+        "thumbnail": "thumbnail/thumbnail1763668207059.png",
+        "languages": [],
+        "created": 1520617498000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://crimecards.dc.gov",
+        "tags": [
+          "mpd",
+          "metropolitan police department",
+          "washington dc",
+          "district of columbia",
+          "crime cards",
+          "public safety",
+          "safety",
+          "homicide",
+          "sex abuse",
+          "assault",
+          "weapon",
+          "robbery",
+          "burglary",
+          "theft",
+          "arson"
+        ],
+        "numViews": 1274,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/3d553e9f7ba941918537d51f26d746e7"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "35034fcb3b36499c84c94c069ab1a966",
+      "title": "Crime Incidents in 2015",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/27",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level.  This change impacts approximately one percent of Ward assignments. This change was not applied to datasets pre-2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.1142,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.9949
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains a subset of locations and attributes of incidents reported in the ASAP (Analytical Services Application) crime report database by the District of Columbia Metropolitan Police Department (MPD). Visit </span><a href='https://crimecards.dc.gov/' style='text-decoration:underline;' rel='nofollow ugc'><span>crimecards.dc.gov</span></a><span> for more information. This data is shared via an automated process where addresses are geocoded to the District's Master Address Repository and assigned to the appropriate street block. Block locations for some crime points could not be automatically assigned resulting in 0,0 for x,y coordinates. These can be interactively assigned using the </span><a href='https://mar2.data.dc.gov:443/' style='text-decoration:underline;' rel='nofollow ugc'><span>MAR Geocoder</span></a><span>.</span></p><p><span>On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level. This change impacts approximately one percent of Ward assignments.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Crime Incidents in 2015",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755106012000,
+        "avgRating": 0,
+        "id": "35034fcb3b36499c84c94c069ab1a966",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1775062800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1450370973000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/27",
+        "tags": [
+          "Washington DC",
+          "Crime",
+          "Feeds",
+          "District of Columbia",
+          "cdw",
+          "MPD",
+          "safety",
+          "robbery",
+          "homicide",
+          "assault",
+          "burglary",
+          "theft"
+        ],
+        "numViews": 11800,
+        "numComments": 0,
+        "size": 74,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -76.9099,
+                38.9949
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.8134,
+                "xmin": -77.1142,
+                "ymax": 38.9949,
+                "xmax": -76.9099,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/35034fcb3b36499c84c94c069ab1a966"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f9cc541fc8c04106a05a1a4f1e7e813c",
+      "title": "Crime Incidents in 2022",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/4",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level.  This change impacts approximately one percent of Ward assignments. This change was not applied to datasets pre-2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.1142,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.9949
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains a subset of locations and attributes of incidents reported in the ASAP (Analytical Services Application) crime report database by the District of Columbia Metropolitan Police Department (MPD). Visit </span><a href='https://crimecards.dc.gov/' style='text-decoration:underline;' rel='nofollow ugc'><span>crimecards.dc.gov</span></a><span> for more information. This data is shared via an automated process where addresses are geocoded to the District's Master Address Repository and assigned to the appropriate street block. Block locations for some crime points could not be automatically assigned resulting in 0,0 for x,y coordinates. These can be interactively assigned using the </span><a href='https://mar2.data.dc.gov:443/' style='text-decoration:underline;' rel='nofollow ugc'><span>MAR Geocoder</span></a><span>.</span></p><p><span>On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level. This change impacts approximately one percent of Ward assignments.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Crime Incidents in 2022",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755105756000,
+        "avgRating": 0,
+        "id": "f9cc541fc8c04106a05a1a4f1e7e813c",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1775044800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1639670981000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/4",
+        "tags": [
+          "Washington DC",
+          "Crime",
+          "Feeds",
+          "District of Columbia",
+          "cdw",
+          "MPD",
+          "safety",
+          "robbery",
+          "homicide",
+          "assault",
+          "burglary",
+          "theft"
+        ],
+        "numViews": 27690,
+        "numComments": 0,
+        "size": 68,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -76.9099,
+                38.9949
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.8134,
+                "xmin": -77.1142,
+                "ymax": 38.9949,
+                "xmax": -76.9099,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/f9cc541fc8c04106a05a1a4f1e7e813c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "89561a4f02ba46cca3c42333425d1b87",
+      "title": "Crime Incidents in 2023",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/5",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level.  This change impacts approximately one percent of Ward assignments. This change was not applied to datasets pre-2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.1142,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.9949
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains a subset of locations and attributes of incidents reported in the ASAP (Analytical Services Application) crime report database by the District of Columbia Metropolitan Police Department (MPD). Visit </span><a href='https://crimecards.dc.gov/' style='text-decoration:underline;' rel='nofollow ugc'><span>crimecards.dc.gov</span></a><span> for more information. This data is shared via an automated process where addresses are geocoded to the District's Master Address Repository and assigned to the appropriate street block. Block locations for some crime points could not be automatically assigned resulting in 0,0 for x,y coordinates. These can be interactively assigned using the </span><a href='https://mar2.data.dc.gov:443/' style='text-decoration:underline;' rel='nofollow ugc'><span>MAR Geocoder</span></a><span>.</span></p><p><span>On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level. This change impacts approximately one percent of Ward assignments.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Crime Incidents in 2023",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755105730000,
+        "avgRating": 0,
+        "id": "89561a4f02ba46cca3c42333425d1b87",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1775052000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1672242004000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/5",
+        "tags": [
+          "Washington DC",
+          "Crime",
+          "Feeds",
+          "District of Columbia",
+          "cdw",
+          "MPD",
+          "safety",
+          "robbery",
+          "homicide",
+          "assault",
+          "burglary",
+          "theft"
+        ],
+        "numViews": 43077,
+        "numComments": 0,
+        "size": 68,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -76.9099,
+                38.9949
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.8134,
+                "xmin": -77.1142,
+                "ymax": 38.9949,
+                "xmax": -76.9099,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/89561a4f02ba46cca3c42333425d1b87"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "74d924ddc3374e3b977e6f002478cb9b",
+      "title": "Crime Incidents in 2025",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/7",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level.  This change impacts approximately one percent of Ward assignments. This change was not applied to datasets pre-2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.1141999999987,
+                38.994899999999326
+              ],
+              [
+                -76.9098999999987,
+                38.994899999999326
+              ],
+              [
+                -76.9098999999987,
+                38.81339999999934
+              ],
+              [
+                -77.1141999999987,
+                38.81339999999934
+              ],
+              [
+                -77.1141999999987,
+                38.994899999999326
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains a subset of locations and attributes of incidents reported in the ASAP (Analytical Services Application) crime report database by the District of Columbia Metropolitan Police Department (MPD). Visit </span><a href='https://crimecards.dc.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>crimecards.dc.gov</a><span> for more information. This data is shared via an automated process where addresses are geocoded to the District's Master Address Repository and assigned to the appropriate street block. Block locations for some crime points could not be automatically assigned resulting in 0,0 for x,y coordinates. These can be interactively assigned using the </span><a href='https://mar2.data.dc.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>MAR Geocoder</a><span>.</span></p><p><span>On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level. This change impacts approximately one percent of Ward assignments.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Crime Incidents in 2025",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755105482000,
+        "avgRating": 0,
+        "id": "74d924ddc3374e3b977e6f002478cb9b",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1775062800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1736182954000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/7",
+        "tags": [
+          "Washington DC",
+          "Crime",
+          "Feeds",
+          "District of Columbia",
+          "cdw",
+          "MPD",
+          "safety",
+          "robbery",
+          "homicide",
+          "assault",
+          "burglary",
+          "theft"
+        ],
+        "numViews": 111094,
+        "numComments": 0,
+        "size": 68,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/74d924ddc3374e3b977e6f002478cb9b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "180d56a1551c4e76ac2175e63dc0dce9",
+      "title": "Crime Incidents in 2008",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/32",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level.  This change impacts approximately one percent of Ward assignments. This change was not applied to datasets pre-2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.1142,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.9949
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains a subset of locations and attributes of incidents reported in the ASAP (Analytical Services Application) crime report database by the District of Columbia Metropolitan Police Department (MPD). Visit </span><a href='https://crimecards.dc.gov:443/' style='text-decoration:underline;' rel='nofollow ugc'><span>https://crimecards.dc.gov</span></a><span> for more information. This data is shared via an automated process where addresses are geocoded to the District's Master Address Repository and assigned to the appropriate street block. Block locations for some crime points could not be automatically assigned resulting in 0,0 for x,y coordinates. These can be interactively assigned using the </span><a href='https://mar2.data.dc.gov:443/' style='text-decoration:underline;' rel='nofollow ugc'><span>MAR Geocoder</span></a><span>.</span></p><p><span>On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level. This change impacts approximately one percent of Ward assignments.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Crime Incidents in 2008",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755106429000,
+        "avgRating": 0,
+        "id": "180d56a1551c4e76ac2175e63dc0dce9",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1775052000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1471965714000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/32",
+        "tags": [
+          "Washington DC",
+          "Crime",
+          "Feeds",
+          "District of Columbia",
+          "cdw",
+          "MPD",
+          "safety",
+          "robbery",
+          "homicide",
+          "assault",
+          "burglary",
+          "theft"
+        ],
+        "numViews": 9306,
+        "numComments": 0,
+        "size": 74,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -76.9099,
+                38.9949
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.8134,
+                "xmin": -77.1142,
+                "ymax": 38.9949,
+                "xmax": -76.9099,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/180d56a1551c4e76ac2175e63dc0dce9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "73cd2f2858714cd1a7e2859f8e6e4de4",
+      "title": "Crime Incidents in 2009",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/33",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level.  This change impacts approximately one percent of Ward assignments. This change was not applied to datasets pre-2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.1142,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.9949
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains a subset of locations and attributes of incidents reported in the ASAP (Analytical Services Application) crime report database by the District of Columbia Metropolitan Police Department (MPD). Visit </span><a href='https://crimecards.dc.gov/' style='text-decoration:underline;' rel='nofollow ugc'><span>crimecards.dc.gov</span></a><span> for more information. This data is shared via an automated process where addresses are geocoded to the District's Master Address Repository and assigned to the appropriate street block. Block locations for some crime points could not be automatically assigned resulting in 0,0 for x,y coordinates. These can be interactively assigned using the </span><a href='https://mar2.data.dc.gov:443/' style='text-decoration:underline;' rel='nofollow ugc'><span>MAR Geocoder</span></a><span>.</span></p><p><span>On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level. This change impacts approximately one percent of Ward assignments.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Crime Incidents in 2009",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755106394000,
+        "avgRating": 0,
+        "id": "73cd2f2858714cd1a7e2859f8e6e4de4",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1775062800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1471965927000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/33",
+        "tags": [
+          "Washington DC",
+          "Crime",
+          "Feeds",
+          "District of Columbia",
+          "cdw",
+          "MPD",
+          "safety",
+          "robbery",
+          "homicide",
+          "assault",
+          "burglary",
+          "theft"
+        ],
+        "numViews": 8455,
+        "numComments": 0,
+        "size": 74,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -76.9099,
+                38.9949
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.8134,
+                "xmin": -77.1142,
+                "ymax": 38.9949,
+                "xmax": -76.9099,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/73cd2f2858714cd1a7e2859f8e6e4de4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bda20763840448b58f8383bae800a843",
+      "title": "Crime Incidents in 2016",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/26",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level.  This change impacts approximately one percent of Ward assignments. This change was not applied to datasets pre-2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.1142,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.9949
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains a subset of locations and attributes of incidents reported in the ASAP (Analytical Services Application) crime report database by the District of Columbia Metropolitan Police Department (MPD). Visit </span><a href='https://crimecards.dc.gov/' style='text-decoration:underline;' rel='nofollow ugc'><span>crimecards.dc.gov</span></a><span> for more information. This data is shared via an automated process where addresses are geocoded to the District's Master Address Repository and assigned to the appropriate street block. Block locations for some crime points could not be automatically assigned resulting in 0,0 for x,y coordinates. These can be interactively assigned using the </span><a href='https://mar2.data.dc.gov:443/' style='text-decoration:underline;' rel='nofollow ugc'><span>MAR Geocoder</span></a><span>.</span></p><p><span>On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level. This change impacts approximately one percent of Ward assignments.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Crime Incidents in 2016",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755105931000,
+        "avgRating": 0,
+        "id": "bda20763840448b58f8383bae800a843",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1775062800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1451919479000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/26",
+        "tags": [
+          "Washington DC",
+          "Crime",
+          "Feeds",
+          "District of Columbia",
+          "cdw",
+          "MPD",
+          "safety",
+          "robbery",
+          "homicide",
+          "assault",
+          "burglary",
+          "theft"
+        ],
+        "numViews": 14296,
+        "numComments": 0,
+        "size": 74,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -76.9099,
+                38.9949
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.8134,
+                "xmin": -77.1142,
+                "ymax": 38.9949,
+                "xmax": -76.9099,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/bda20763840448b58f8383bae800a843"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "619c5bd17ca2411db0689bb0a211783c",
+      "title": "Crime Incidents in 2021",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/3",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level.  This change impacts approximately one percent of Ward assignments. This change was not applied to datasets pre-2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.1142,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.9949
+              ],
+              [
+                -76.9099,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -77.1142,
+                38.9949
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains a subset of locations and attributes of incidents reported in the ASAP (Analytical Services Application) crime report database by the District of Columbia Metropolitan Police Department (MPD). Visit </span><a href='https://crimecards.dc.gov/' style='text-decoration:underline;' rel='nofollow ugc'><span>crimecards.dc.gov</span></a><span> for more information. This data is shared via an automated process where addresses are geocoded to the District's Master Address Repository and assigned to the appropriate street block. Block locations for some crime points could not be automatically assigned resulting in 0,0 for x,y coordinates. These can be interactively assigned using the </span><a href='https://mar2.data.dc.gov:443/' style='text-decoration:underline;' rel='nofollow ugc'><span>MAR Geocoder</span></a><span>.</span></p><p><span>On February 1 2020, the methodology of geography assignments of crime data was modified to increase accuracy. From January 1 2020 going forward, all crime data will have Ward, ANC, SMD, BID, Neighborhood Cluster, Voting Precinct, Block Group and Census Tract values calculated prior to, rather than after, anonymization to the block level. This change impacts approximately one percent of Ward assignments.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Crime Incidents in 2021",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1765835525000,
+        "avgRating": 0,
+        "id": "619c5bd17ca2411db0689bb0a211783c",
+        "categories": [
+          "/Categories/Safety/Crimes or Incidents"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Metropolitan Police Department",
+        "largeThumbnail": null,
+        "lastViewed": 1775062800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1609779291000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/3",
+        "tags": [
+          "Washington DC",
+          "Crime",
+          "Feeds",
+          "District of Columbia",
+          "cdw",
+          "MPD",
+          "safety",
+          "robbery",
+          "homicide",
+          "assault",
+          "burglary",
+          "theft"
+        ],
+        "numViews": 20947,
+        "numComments": 0,
+        "size": 68,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.1142,
+                38.8134
+              ],
+              [
+                -76.9099,
+                38.9949
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.8134,
+                "xmin": -77.1142,
+                "ymax": 38.9949,
+                "xmax": -76.9099,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Metropolitan Police Department",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/619c5bd17ca2411db0689bb0a211783c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    239
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 49,
+  "next_offset": 10,
+  "response_sha256": "138a7a29893d4301ad403cac44fd37e4970c328b3c6966aece495fa05bfd7772",
+  "search_complete": false
+}

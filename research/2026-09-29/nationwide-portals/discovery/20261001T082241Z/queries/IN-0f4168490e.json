@@ -1,0 +1,1236 @@
+{
+  "jurisdiction_code": "IN",
+  "query": "water",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T08:23:11.316400+00:00",
+  "candidates": [
+    {
+      "id": "ab137d7b6a5f4a0faa8704120051219b",
+      "title": "FLOODHAZARD_DNR_WATER_PROD",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/FLOODHAZARD_DNR_WATER_PROD/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.16066205296934,
+                41.78118544033344
+              ],
+              [
+                -84.68820604367028,
+                41.78118544033344
+              ],
+              [
+                -84.68820604367028,
+                37.75541710115701
+              ],
+              [
+                -88.16066205296934,
+                37.75541710115701
+              ],
+              [
+                -88.16066205296934,
+                41.78118544033344
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "",
+        "licenseInfo": "",
+        "title": "FLOODHAZARD_DNR_WATER_PROD",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335273000,
+        "avgRating": 0,
+        "id": "ab137d7b6a5f4a0faa8704120051219b",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1780335272000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/FLOODHAZARD_DNR_WATER_PROD/FeatureServer",
+        "tags": [
+          ""
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 265521329,
+        "listed": false,
+        "scoreCompleteness": 33,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "FLOODHAZARD_DNR_WATER_PROD",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/ab137d7b6a5f4a0faa8704120051219b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "736e24139eb04173acffe8e9fb4764ef",
+      "title": "FloodHazard_BestAvai_DNR_Water_PROD",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/FloodHazard_BestAvai_DNR_Water_PROD/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Best available flood hazard data for Indiana. It includes effective mapping with additional updates based on the Zone A mapping project data, DNR model reviews, and other floodplain data that is not FEMA approved but is considered \"best available\" by the Indiana Department of Natural Resources.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.16066205296934,
+                41.78118544033344
+              ],
+              [
+                -84.68820604367028,
+                41.78118544033344
+              ],
+              [
+                -84.68820604367028,
+                37.75541710115701
+              ],
+              [
+                -88.16066205296934,
+                37.75541710115701
+              ],
+              [
+                -88.16066205296934,
+                41.78118544033344
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div><div style='text-align:Left;'><div><div><p><span>The\n data layer &quot;Best Available Flood Hazard Area&quot; (&quot;Best Available&quot;) is the\n Effective with additional studies that have been reviewed and approved \nby the Division of Water. While this data has not yet been submitted to \nFEMA for inclusion in the FIRMs or NFHL (DFIRMs), this data can be used \nfor general planning, construction, and development purposes. However, \nBest Available cannot be used for flood insurance determinations. The \nmajority of local jurisdictions have options for using best available \ndata; however typically only the FEMA floodplain limits have been \nadopted into the local floodplain ordinance.</span></p><p><span></span></p><p><span>The\n floodplain data shown in the Best Available layer is generally more \nrecent than the official FEMA NHFL data in the Effective layer. However,\n while the Best Available layer has been approved by the Division of \nWater, this data not gone through the due process standards FEMA \nrequires for publication in the NFHL.</span></p><p><span></span></p><p><span>Where\n a floodway analysis has been completed, an &quot;Approximate Floodway&quot; is \nincluded in the Best Available layer. These floodways are based on \nnon-detailed floodplain modeling (i. e. no bridges), but otherwise meet \nthe guidelines for development of floodways in Indiana. These floodways \nare acceptable for general use in determining jurisdiction for the \nIndiana Flood Control Act, but should be used with caution. These \nfloodways do not meet the requirements for publication in the FIRMs or \nNFHL. </span></p></div></div></div></div>",
+        "licenseInfo": "<p><span><span>No restrictions</span></span><span><span>: This item, including its underlying data, is distributed &quot;AS-IS&quot; without warranties</span></span></p><p><span><span>of any kind, either expressed or implied, including but not limited to warranties of suitability of a</span></span></p><p><span><span>particular purpose or use. These data are graphical representations and are for reference</span></span></p><p><span><span>purposes only. They are not to be construed as a legal document or survey instrument. A</span></span></p><p><span><span>detailed on-the-ground survey and historical analysis of individual features may differ from this</span></span></p><p><span><span>data.</span></span></p>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "FloodHazard_BestAvai_DNR_Water_PROD",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782742010000,
+        "avgRating": 0,
+        "id": "736e24139eb04173acffe8e9fb4764ef",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Department of Natural Resources, Indiana Geographic Information Offce",
+        "largeThumbnail": "",
+        "lastViewed": 1782738000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1752598680000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/FloodHazard_BestAvai_DNR_Water_PROD/FeatureServer",
+        "tags": [
+          "BAFL",
+          "Best Available Flood Hazard",
+          "Flood",
+          "Hazard",
+          "Flood Hazard",
+          "floodway",
+          "BFE",
+          "FEMA",
+          "Division of Water",
+          "DNR",
+          "IDNR",
+          "floodplain permitting",
+          "floodplain",
+          "hydrologic model",
+          "flood model"
+        ],
+        "numViews": 10436,
+        "numComments": 0,
+        "size": 346994205,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "FloodHazard_BestAvai_DNR_Water_PROD",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "indexJobId": ""
+        },
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/736e24139eb04173acffe8e9fb4764ef"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "02f6eb45e79149f9b91b04a78653059a",
+      "title": "Water Wells and Boreholes 1998",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Water_Wells_and_Boreholes_1998/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Water Wells and Boreholes - iLITH Database, 1998 - Shows data points that represent water wells and boreholes contained in the iLITH database, which is derived from the water-well database of the Indiana Department of Natural Resources (IDNR). The following description of the iLITH database is taken from Indiana Geological Survey Open-File Study 00-08: 'iLITH differs from the IDNR database in that lithologic descriptions and drilling contractor names have been standardized, locational information for ~104,000 water-well logs has been verified, and the spatial information in the database has been standardized for use with U.S. Geological Survey digital elevation data and U.S. Census Bureau Tiger data.' \n\nThe iLITH shapefile was developed as a tool for display of the iLITH version of the IDNR water-well record database in a GIS environment. The shapefile provides a display of the entire database and can be used with ESRI ArcView 3.2 extensions that are written in Avenue and were authored by IGS personnel. Use of the extensions allows immediate display of the water well records in map form and can be used to create and display lithologic cross sections or 3-D Scenes using ESRI ArcView 3D Analyst.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.11776449694699,
+                41.779176008200324
+              ],
+              [
+                -84.69210771516981,
+                41.779176008200324
+              ],
+              [
+                -84.69210771516981,
+                37.77855246865498
+              ],
+              [
+                -88.11776449694699,
+                37.77855246865498
+              ],
+              [
+                -88.11776449694699,
+                41.779176008200324
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This point shapefile was created to display in a Geographic Information Systems (GIS) environment the data points that represent water wells and boreholes contained in the iLITH database. The following description of the iLITH database contains the information contained in the shapefile, taken from Open-File Study 00-08 -- \"iLITH is a Microsoft Access database containing GIS capabilities that allows users to interact with a portion of the Indiana Department of Natural Resources (IDNR) Water-Well Record Database. iLITH differs from the IDNR database in that lithologic descriptions and drilling contractor names have been standardized, locational information for ~104,000 water-well logs has been verified, and the spatial information in the database has been standardized for use with USGS digital elevation data and U.S. Census Bureau Tiger data. The iLITH graphical interface facilitates efficient interaction between the user and the database.\" </SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Water Wells and Boreholes 1998",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335303000,
+        "avgRating": 0,
+        "id": "02f6eb45e79149f9b91b04a78653059a",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological and Water Survey (IGWS), Indiana Geographic Information Office (IGIO)",
+        "largeThumbnail": "",
+        "lastViewed": 1782813600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335302000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Water_Wells_and_Boreholes_1998/FeatureServer",
+        "tags": [
+          "water wells",
+          "boreholes",
+          "iLITH",
+          "iLITH database",
+          "lithology",
+          "lithologic",
+          "geology",
+          "hydrogeology",
+          "groundwater",
+          "water levels"
+        ],
+        "numViews": 434,
+        "numComments": 0,
+        "size": 5256802,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Water_Wells_and_Boreholes_1998",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geological Survey",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/02f6eb45e79149f9b91b04a78653059a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1d770cafb3b04a5f87711ae670297c35",
+      "title": "Fixed Station Water Quality Monitoring",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Fixed_Stations/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Fixed Station Monitoring Program provides data for analyzing and for the Indiana Integrated Report, TMDL development, and NPDES permitting.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.79339258869481,
+                41.760094100384
+              ],
+              [
+                -84.76318920624381,
+                41.760094100384
+              ],
+              [
+                -84.76318920624381,
+                37.891506111897876
+              ],
+              [
+                -87.79339258869481,
+                37.891506111897876
+              ],
+              [
+                -87.79339258869481,
+                41.760094100384
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>Current data now available at:</div><div><ul><li>Active Sites:  <a href='https://gisdata.in.gov/portal/home/item.html?id=854bd57c7d5a4938bc3b78abf6cd97e7' target='_blank' rel='nofollow ugc noopener noreferrer'>https://gisdata.in.gov/portal/home/item.html?id=854bd57c7d5a4938bc3b78abf6cd97e7</a></li><li>Inactive Sites: <a href='https://gisdata.in.gov/portal/home/item.html?id=a5d9d66bff7d400bb5c13da3f0d2ccab' target='_blank' rel='nofollow ugc noopener noreferrer'>https://gisdata.in.gov/portal/home/item.html?id=a5d9d66bff7d400bb5c13da3f0d2ccab</a></li></ul></div><div><br /></div>A portion of Indiana’s surface waters are sampled annually, either by IDEM or through U.S. EPA support. That data is included in the National Aquatic Resource Surveys, a national overview of water quality. The IDEM Watersheds programs - Nonpoint Source and Total Maximum Daily Load (TMDL), contribute data and information about pollutant loads that staff and watershed groups use when collaborating on planning and implementation activities that will improve water quality.",
+        "licenseInfo": "<div>THE INDIANA DEPARTMENT OF ENVIRONMENTAL MANAGEMENT (IDEM), ITS EMPLOYEES, SUCCESSORS OR ASSIGNS MAKE NO REPRESENTATIONS OR WARRANTIES ABOUT THE COMPLETENESS, SUITABILITY, RELIABILITY, AVAILABILITY AND ACCURACY OF DATA, SOFTWARE, INFORMATION OR SERVICES PROVIDED.</div><div><br /></div><div>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ANY INFORMATION RETRIEVED FROM OR DELIVERED TO AN INDIVIDUAL OR ENTITY THROUGH THE AUSPICES OF IDEM ARE PROVIDED &quot;AS IS&quot; AND INCLUDES ALL FAULTS WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND. THE RECIPIENT, OF THE DATA, SOFTWARE, INFORMATION OR SERVICES, ACKNOWLEDGES AND AGREES THAT IT HAS RECEIVED ADEQUATE NOTICE THAT USE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES IS AT RECIPIENTS OWN RISK.</div><div><br /></div><div>IDEM AND OR ITS RESPECTIVE SUPPLIERS HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE AFOREMENTIONED MATERIAL, INCLUDING WARRANTIES OF MERCHANTABILITY, TITLE, NONINFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE, LACK OF VIRUSES, ACCURACY OR COMPLETENESS OF RESPONSES, RESULTS, LACK OF NEGLIGENCE OR LACK OF WORKMANLIKE EFFORT, QUIET ENJOYMENT, QUIET POSSESSION, AND CORRESPONDENCE TO DESCRIPTION. FURTHER THE ABOVE LIST OF DISCLAIMED WARRANTIES IS NOT EXHAUSTIVE AS ANY AND ALL WARRANTIES AND CONDITIONS ARE DISCLAIMED. THE ENTIRE RISK ARISING OUT OF THE USE OF OR PERFORMANCE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES IS BORNE BY THE RECIPIENT.</div><div><br /></div><div>EXCLUSION OF INCIDENTAL, CONSEQUENTIAL AND CERTAIN OTHER DAMAGES.</div><div><br /></div><div>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL IDEM OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR: LOSS OF PROFITS, LOSS OF CONFIDENTIAL OR OTHER INFORMATION, BUSINESS INTERRUPTION, PERSONAL INJURY, LOSS OF PRIVACY, FAILURE TO MEET ANY DUTY (INCLUDING GOOD FAITH AND REASONABLE CARE), NEGLIGENCE, AND ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER, ARISING OUT OF OR IN ANY WAY RELATED TO THE USE OR INABILITY TO USE, THE DATA, SOFTWARE, INFORMATION OR SERVICES, EVEN IF THE RECIPIENT IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. RECIPIENT'S SOLE REMEDY IS TO DISCONTINUE THE USE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES.</div><div><br /></div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Fixed Station Water Quality Monitoring",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "contentStatus": "deprecated",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1774321783000,
+        "avgRating": 0,
+        "id": "1d770cafb3b04a5f87711ae670297c35",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Office of Water Quality, Indiana Department of Environmental Management",
+        "largeThumbnail": "",
+        "lastViewed": 1788361200000,
+        "thumbnail": "thumbnail/thumbnail1684964059938.png",
+        "languages": [],
+        "created": 1660674748000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Fixed_Stations/FeatureServer",
+        "tags": [
+          "Fixed Station",
+          "Water Quality",
+          "IDEM",
+          "Office of Water"
+        ],
+        "numViews": 11757,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Fixed_Stations",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/1d770cafb3b04a5f87711ae670297c35"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "46a5bd8386734f12b6792744173f3af4",
+      "title": "Indiana Water Balance Network 2017",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Indiana_Water_Balance_Network_2017/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The layer was created to provide locations of the Indiana Water Balance Network monitoring stations in Indiana, suitable for use in GIS.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.271880351566,
+                41.5833715798683
+              ],
+              [
+                -85.1089826398033,
+                41.5833715798683
+              ],
+              [
+                -85.1089826398033,
+                39.1786718680312
+              ],
+              [
+                -87.271880351566,
+                39.1786718680312
+              ],
+              [
+                -87.271880351566,
+                41.5833715798683
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>WATER_BALANCE_NETWORK_IN.SHP is a point shapefile that shows the locations of thirteen meteorological, soil-water, and groundwater monitoring stations  maintained by personnel of the Center for Geospatial Data Analysis, Indiana Geological &amp; Water Survey (IGS). Each of the monitoring stations has been located  in a unique hydrogeologic setting in Indiana. Meteorological sensors include tipping bucket rain gages, air temperature and relative humidity sensors,  pyranometers and net radiometers (used to measure natural solar radiation fluxes), and anemometers. Unsaturated-zone instrumentation is installed at nine  of the glaciated terrain sites and includes soil-moisture and temperature sensors (at most sites, located at depths of one foot to six feet below the ground  surface). Monitoring wells are also installed with pressure transducers to track shallow water-table fluctuations at stations where soil-moisture sensors  are installed. The data that are collected provide essential information for expanding the understanding of soil moisture and climate interactions. Attributes  include station names, soil texture, soil parent material, landscape description, vegetation, and a Website URL that allows users to access real-time  water-balance data for each individual monitoring station.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>DATA DISCLAIMER    This data set was compiled by Indiana University, Indiana Geological &amp; Water Survey, using data believed to be accurate; however, a degree of error is inherent in  all data. This product is distributed \"AS-IS\" without warranties of any kind, either expressed or implied, including but not limited to warranties  of suitability to a particular purpose or use. No attempt has been made in either the design or production of these data to define the limits or jurisdiction of  any federal, state, or local government. These data are intended for use only at the published scale or smaller and are for reference purposes only. They are  not to be construed as a legal document or survey instrument. A detailed on-the-ground survey and historical analysis of a single site may differ from these data.    CREDIT    It is requested that the Indiana Geological &amp; Water Survey be cited in any products generated from this data. The following source citation should be included:  [WATER_BALANCE_NETWORK_IN.SHP: Meteorological, Soil-Water, and Groundwater Monitoring Stations in Indiana (Indiana Geological &amp; Water Survey, Point Shapefile), 20170912].    LIMITATION OF WARRANTIES AND LIABILITY    This product is provided \"AS IS\", without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality,  or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. Indiana University, Indiana  Geological &amp; Water Survey shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to,  loss of revenue or profit, lost or damaged data or other commercial or economic loss. Indiana University, Indiana Geological &amp; Water Survey is not responsible for claims  by a third party. The maximum aggregate liability to the original purchaser shall not exceed the amount paid by you for the product.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Indiana Water Balance Network 2017",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335731000,
+        "avgRating": 0,
+        "id": "46a5bd8386734f12b6792744173f3af4",
+        "categories": [],
+        "spatialReference": "NAD_1983_UTM_Zone_16N",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological and Water Survey (IGWS), Indiana Geographic Information Office (IGIO)",
+        "largeThumbnail": "",
+        "lastViewed": 1782831600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335730000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Indiana_Water_Balance_Network_2017/FeatureServer",
+        "tags": [
+          "climatology",
+          "Meteorology",
+          "Atmosphere",
+          "geoscientific Information",
+          "environment",
+          "streamflow",
+          "Indiana Geological & Water Survey (IGS)",
+          "Center for Geospatial Data Analysis (CGDA)",
+          "Indiana Water Balance Network (IWBN)",
+          "real-time weather data",
+          "rain gauge",
+          "air temperature",
+          "soil temperature",
+          "relative humidity",
+          "pyranometer",
+          "net radiometer",
+          "anemometer",
+          "soil-moisture sensor",
+          "water table",
+          "unsaturated-zone",
+          "Indiana",
+          "Allen County",
+          "Delaware County",
+          "Fayette County",
+          "Hendricks County",
+          "Henry County",
+          "Lake County",
+          "Marion County",
+          "Monroe County",
+          "Morgan County",
+          "Rush County"
+        ],
+        "numViews": 415,
+        "numComments": 0,
+        "size": 865362,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Indiana_Water_Balance_Network_2017",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geographic Information Office",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/46a5bd8386734f12b6792744173f3af4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "57b2a166bac74a52ad04c46a63905270",
+      "title": "National Water Quality Portal Sites 2023",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/National_Water_Quality_Portal_Sites_2023/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains point features representing the locations of water quality sampling stations from the National Water Quality Monitoring Council's Water Quality Portal (https://www.waterqualitydata.us/). All stations in Indiana were downloaded from this site in .csv format and mapped by latitude and longitude to a feature class before publishing on 9/28/2023. Two attributes were created by IGIO staff before publishing - 1 concatenated URL to direct users to a station overview on waterqualitydata.us, and 1 concatenated URL to direct users to a monitoring report page for the station on mywaterway.epa.gov.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.08145864186345,
+                41.76111612624582
+              ],
+              [
+                -84.79358992052406,
+                41.76111612624582
+              ],
+              [
+                -84.79358992052406,
+                37.776109993988364
+              ],
+              [
+                -88.08145864186345,
+                37.776109993988364
+              ],
+              [
+                -88.08145864186345,
+                41.76111612624582
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The Water Quality Portal (WQP) is the premiere source of discrete water-quality data in the United States and beyond. This cooperative service integrates publicly available water-quality data from the United States Geological Survey (USGS), the Environmental Protection Agency (EPA), and over 400 state, federal, tribal, and local agencies. <a href='https://www.waterqualitydata.us/portal_userguide/' rel='nofollow ugc' target='_blank'>Learn More</a><div><br /></div><div>Most attributes in this dataset are related to each station's characteristics - this data can be joined to a variety of historic sampling and testing information available on waterqualitydata.us. Users can also explore more information about each site and monitoring history by clicking on either of the URLs at the end of the attribute table or pop-up for each point.<br /></div><div><br /></div><div>Per waterqualitydata.us:</div><div>Data from the NWIS (USGS) was last updated on 9/28/2023.</div><div>Data from Stewards (ARS) was last updated on 10/30/2022.</div><div>Data from WQX (EPA) was last updated on 9/28/2023.</div>",
+        "licenseInfo": "LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "National Water Quality Portal Sites 2023",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335834000,
+        "avgRating": 0,
+        "id": "57b2a166bac74a52ad04c46a63905270",
+        "categories": [],
+        "spatialReference": "4269",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "United States Environmental Protection Agency (EPA), United States Geological Survey (USGS)",
+        "largeThumbnail": "",
+        "lastViewed": 1782813600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335833000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/National_Water_Quality_Portal_Sites_2023/FeatureServer",
+        "tags": [
+          "Water Quality",
+          "Environment",
+          "USGS",
+          "ARS",
+          "IDEM",
+          "US EPA",
+          "Environmental Protection Agency",
+          "US Geological Survey"
+        ],
+        "numViews": 599,
+        "numComments": 0,
+        "size": 1898512,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "National_Water_Quality_Portal_Sites_2023",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/57b2a166bac74a52ad04c46a63905270"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "01a69ecb3fcb4f4aa354bbdeb4b017f5",
+      "title": "Exceptional Use Waters of Indiana",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Exceptional_Use_Water/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset provides for the cross-referencing of Exceptional Use Waters in the administration of the Federal Clean Water Act.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.3619,
+                41.9903
+              ],
+              [
+                -84.5387,
+                41.9903
+              ],
+              [
+                -84.5387,
+                37.5861
+              ],
+              [
+                -88.3619,
+                37.5861
+              ],
+              [
+                -88.3619,
+                41.9903
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Waterbodies whose quality exceeds that necessary to support propagation of fish, shellfish, and wildlife and recreation in and on the water.",
+        "licenseInfo": "<div>THE INDIANA DEPARTMENT OF ENVIRONMENTAL MANAGEMENT (IDEM), ITS EMPLOYEES, SUCCESSORS OR ASSIGNS MAKE NO REPRESENTATIONS OR WARRANTIES ABOUT THE COMPLETENESS, SUITABILITY, RELIABILITY, AVAILABILITY AND ACCURACY OF DATA, SOFTWARE, INFORMATION OR SERVICES PROVIDED.</div><div><br /></div><div>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ANY INFORMATION RETRIEVED FROM OR DELIVERED TO AN INDIVIDUAL OR ENTITY THROUGH THE AUSPICES OF IDEM ARE PROVIDED &quot;AS IS&quot; AND INCLUDES ALL FAULTS WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND. THE RECIPIENT, OF THE DATA, SOFTWARE, INFORMATION OR SERVICES, ACKNOWLEDGES AND AGREES THAT IT HAS RECEIVED ADEQUATE NOTICE THAT USE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES IS AT RECIPIENTS OWN RISK.</div><div><br /></div><div>IDEM AND OR ITS RESPECTIVE SUPPLIERS HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE AFOREMENTIONED MATERIAL, INCLUDING WARRANTIES OF MERCHANTABILITY, TITLE, NONINFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE, LACK OF VIRUSES, ACCURACY OR COMPLETENESS OF RESPONSES, RESULTS, LACK OF NEGLIGENCE OR LACK OF WORKMANLIKE EFFORT, QUIET ENJOYMENT, QUIET POSSESSION, AND CORRESPONDENCE TO DESCRIPTION. FURTHER THE ABOVE LIST OF DISCLAIMED WARRANTIES IS NOT EXHAUSTIVE AS ANY AND ALL WARRANTIES AND CONDITIONS ARE DISCLAIMED. THE ENTIRE RISK ARISING OUT OF THE USE OF OR PERFORMANCE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES IS BORNE BY THE RECIPIENT.</div><div><br /></div><div>EXCLUSION OF INCIDENTAL, CONSEQUENTIAL AND CERTAIN OTHER DAMAGES.</div><div><br /></div><div>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL IDEM OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR: LOSS OF PROFITS, LOSS OF CONFIDENTIAL OR OTHER INFORMATION, BUSINESS INTERRUPTION, PERSONAL INJURY, LOSS OF PRIVACY, FAILURE TO MEET ANY DUTY (INCLUDING GOOD FAITH AND REASONABLE CARE), NEGLIGENCE, AND ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER, ARISING OUT OF OR IN ANY WAY RELATED TO THE USE OR INABILITY TO USE, THE DATA, SOFTWARE, INFORMATION OR SERVICES, EVEN IF THE RECIPIENT IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. RECIPIENT'S SOLE REMEDY IS TO DISCONTINUE THE USE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES.</div><div><br /></div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Exceptional Use Waters of Indiana",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335706000,
+        "avgRating": 0,
+        "id": "01a69ecb3fcb4f4aa354bbdeb4b017f5",
+        "categories": [],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Office of Water Quality, Indiana Department of Environmental Management",
+        "largeThumbnail": "",
+        "lastViewed": 1782824400000,
+        "thumbnail": "thumbnail/thumbnail1685026918141.png",
+        "languages": [],
+        "created": 1780335706000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Exceptional_Use_Water/FeatureServer",
+        "tags": [
+          "Hydrography",
+          "327 IAC 2-1-11 (b)",
+          "Stream",
+          "River",
+          "surface water",
+          "Canal",
+          "Ditch",
+          "Exceptional Use",
+          "\"Water Quality Standards",
+          "IAC",
+          "Artificial Path",
+          "Reach Code",
+          "Indiana Administrative Code",
+          "water",
+          "inland waters",
+          "Indiana",
+          "IDEM Indiana Map"
+        ],
+        "numViews": 569,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Exceptional_Use_Water",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/01a69ecb3fcb4f4aa354bbdeb4b017f5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9dade7032fc74f3683f337024ca06a5e",
+      "title": "IDEM Water Quality Assessment Information Management System",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/AIMS/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The IDEM Water Quality Assessment Information Management System (AIMS) provides water monitoring results across the state of Indiana that span over 20 years.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.2179,
+                41.9387
+              ],
+              [
+                -84.5924,
+                41.9387
+              ],
+              [
+                -84.5924,
+                37.6704
+              ],
+              [
+                -88.2179,
+                37.6704
+              ],
+              [
+                -88.2179,
+                41.9387
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>The IDEM Office of Water Quality (OWQ) has been collecting water quality data across Indiana for many years. Since 1990 data have been collected and maintained in a central repository called the Assessment Information Management System (AIMS), including the surface water monitoring activities conducted for the last 20 years. The OWQ Surface water program, Nonpoint Source and Total Maximum Daily Load (TMDL) programs, the Integrated Report, and the 303(d) Impaired Waters Listing/Delisting programs use this system and data. The parameters collected include general chemistry and other field measurements, aquatic biological life integrity and community variables, and habitat evaluations. A limited version of this data is available to the public through the Indiana Water Quality Atlas and the full complement of data is available upon request. The OWQ’s Water Quality Monitoring Strategy 2017-2021 identifies key water quality monitoring objectives and the monitoring approaches used to collect the data necessary to achieve them.<br /></div>",
+        "licenseInfo": "<div>THE INDIANA DEPARTMENT OF ENVIRONMENTAL MANAGEMENT (IDEM), ITS EMPLOYEES, SUCCESSORS OR ASSIGNS MAKE NO REPRESENTATIONS OR WARRANTIES ABOUT THE COMPLETENESS, SUITABILITY, RELIABILITY, AVAILABILITY AND ACCURACY OF DATA, SOFTWARE, INFORMATION OR SERVICES PROVIDED.</div><div><br /></div><div>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ANY INFORMATION RETRIEVED FROM OR DELIVERED TO AN INDIVIDUAL OR ENTITY THROUGH THE AUSPICES OF IDEM ARE PROVIDED &quot;AS IS&quot; AND INCLUDES ALL FAULTS WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND. THE RECIPIENT, OF THE DATA, SOFTWARE, INFORMATION OR SERVICES, ACKNOWLEDGES AND AGREES THAT IT HAS RECEIVED ADEQUATE NOTICE THAT USE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES IS AT RECIPIENTS OWN RISK.</div><div><br /></div><div>IDEM AND OR ITS RESPECTIVE SUPPLIERS HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE AFOREMENTIONED MATERIAL, INCLUDING WARRANTIES OF MERCHANTABILITY, TITLE, NONINFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE, LACK OF VIRUSES, ACCURACY OR COMPLETENESS OF RESPONSES, RESULTS, LACK OF NEGLIGENCE OR LACK OF WORKMANLIKE EFFORT, QUIET ENJOYMENT, QUIET POSSESSION, AND CORRESPONDENCE TO DESCRIPTION. FURTHER THE ABOVE LIST OF DISCLAIMED WARRANTIES IS NOT EXHAUSTIVE AS ANY AND ALL WARRANTIES AND CONDITIONS ARE DISCLAIMED. THE ENTIRE RISK ARISING OUT OF THE USE OF OR PERFORMANCE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES IS BORNE BY THE RECIPIENT.</div><div><br /></div><div>EXCLUSION OF INCIDENTAL, CONSEQUENTIAL AND CERTAIN OTHER DAMAGES.</div><div><br /></div><div>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL IDEM OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR: LOSS OF PROFITS, LOSS OF CONFIDENTIAL OR OTHER INFORMATION, BUSINESS INTERRUPTION, PERSONAL INJURY, LOSS OF PRIVACY, FAILURE TO MEET ANY DUTY (INCLUDING GOOD FAITH AND REASONABLE CARE), NEGLIGENCE, AND ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER, ARISING OUT OF OR IN ANY WAY RELATED TO THE USE OR INABILITY TO USE, THE DATA, SOFTWARE, INFORMATION OR SERVICES, EVEN IF THE RECIPIENT IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. RECIPIENT'S SOLE REMEDY IS TO DISCONTINUE THE USE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES.</div><div><br /></div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "IDEM Water Quality Assessment Information Management System",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335456000,
+        "avgRating": 0,
+        "id": "9dade7032fc74f3683f337024ca06a5e",
+        "categories": [],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Office of Water Quality, Indiana Department of Environmental Management",
+        "largeThumbnail": "",
+        "lastViewed": 1782741600000,
+        "thumbnail": "thumbnail/thumbnail1685026883536.png",
+        "languages": [],
+        "created": 1780335455000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/AIMS/FeatureServer",
+        "tags": [
+          "IDEM",
+          "OWQ",
+          "IN",
+          "IWQA",
+          "Indiana",
+          "Indiana Water Quality Atlas",
+          "water quality",
+          "statewide",
+          "locations",
+          "monitoring",
+          "field chemistry sites",
+          "IDEM Indiana Map"
+        ],
+        "numViews": 973,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "AIMS",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/9dade7032fc74f3683f337024ca06a5e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1536abe5e5504e5db380ccfaa9b6fd8d",
+      "title": "Terrain with Labels",
+      "url": "https://www.indianamap.org/api/search/v1/collections/all/items/1536abe5e5504e5db380ccfaa9b6fd8d",
+      "publisher": "esri_en",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map features shaded relief imagery, bathymetry and coastal water features that provide neutral background with political boundaries and placenames for reference purposes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                89.9962
+              ],
+              [
+                180,
+                89.9962
+              ],
+              [
+                180,
+                -89.9962
+              ],
+              [
+                -180,
+                -89.9962
+              ],
+              [
+                -180,
+                89.9962
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Online",
+          "Explorer Web Map",
+          "Map",
+          "Online Map",
+          "sourceId#Terrain_with_Labels_Vector",
+          "Web Map"
+        ],
+        "description": "<div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 17px;'><div style='word-wrap: break-word; max-width: 100%; display: inherit;'><div><div style='word-wrap: break-word; max-width: 100%; display: inherit;'>This map features shaded relief imagery, bathymetry and coastal water features that provide neutral background with political boundaries and placenames for reference purposes. The map is intended to support the ArcGIS Online basemap gallery. For more details on the map, please visit the <a href='http://goto.arcgisonline.com/maps/Elevation/World_Hillshade' target='_blank' rel='nofollow ugc noopener noreferrer'>World Hillshade</a> and <a href='http://goto.arcgisonline.com/vector/Terrain_with_Labels' target='_blank' rel='nofollow ugc noopener noreferrer'>Terrain with Labels</a>.</div><div><br /></div></div><div style='margin-top: 3.1rem; margin-bottom: 3.1rem; display: inherit;'><div style='display: inherit;'></div></div></div></div><div style='margin-top: 3.1rem; margin-bottom: 3.1rem; display: inherit; font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 17px;'><div style='display: inherit;'></div></div>",
+        "licenseInfo": "This work is licensed under the Esri Master License Agreement.<br /><a href='https://links.esri.com/agol_mla' target='_blank' rel='nofollow ugc noopener noreferrer'><b>View Terms of Use</b></a>",
+        "ownerId": "eea3c410b1142e8e2baaf8423d130e23",
+        "title": "Terrain with Labels",
+        "type": "Web Map",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782338353000,
+        "avgRating": 3.75,
+        "id": "1536abe5e5504e5db380ccfaa9b6fd8d",
+        "categories": [],
+        "robots": [
+          "noindex",
+          "nofollow"
+        ],
+        "spatialReference": null,
+        "numRatings": 1,
+        "owner": "esri_en",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790834400000,
+        "thumbnail": "thumbnail/Terrain_Labels_Web_map.jpg",
+        "languages": [],
+        "created": 1498600875000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "basemap",
+          "vector"
+        ],
+        "numViews": 503537238,
+        "numComments": 0,
+        "size": 1004,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "0310_Terrain_Labels_Title",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/1536abe5e5504e5db380ccfaa9b6fd8d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "7c922844b92e4497a70cb460b77bcbcb",
+      "title": "National Pollutant Discharge Elimination System",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/National_Pollutant_Discharge_Elimination_System/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Indiana outfall locations for permitted NPDES municipal, industrial, and general facilities.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.7652780001494,
+                47.454722199822896
+              ],
+              [
+                -83.99999999968577,
+                47.454722199822896
+              ],
+              [
+                -83.99999999968577,
+                30.53666670021857
+              ],
+              [
+                -88.7652780001494,
+                30.53666670021857
+              ],
+              [
+                -88.7652780001494,
+                47.454722199822896
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Service",
+          "Data"
+        ],
+        "description": "National Pollutant Discharge Elimination System (NPDES) Program outfall locations. Extracted from the national EPA Integrated Compliance Information System (ICIS) database, this layer focuses on active state-regulated wastewater facility permit discharge points discharging into surface water bodies in Indiana. This dataset was last updated December, 2025.",
+        "licenseInfo": "",
+        "title": "National Pollutant Discharge Elimination System",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335368000,
+        "avgRating": 0,
+        "id": "7c922844b92e4497a70cb460b77bcbcb",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Department of Environmental Management Office of Water Quality, Environmental Protection Agency",
+        "largeThumbnail": "",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1684963711874.png",
+        "languages": [],
+        "created": 1780335367000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/National_Pollutant_Discharge_Elimination_System/FeatureServer",
+        "tags": [
+          "ICIS",
+          "NPDES",
+          "Outfalls"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "National_Pollutant_Discharge_Elimination_System",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/7c922844b92e4497a70cb460b77bcbcb"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    136
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 174,
+  "next_offset": 10,
+  "response_sha256": "0553902350ff18dfb98a543dcf07545ddfb654e0ea718c02706781cec04fb052",
+  "search_complete": false
+}

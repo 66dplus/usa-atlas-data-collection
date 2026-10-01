@@ -1,0 +1,80 @@
+{
+  "adapters": [
+    {
+      "code_sha256": {
+        "full/prepare_admission.py": "a02d1f4f1ec1990797f4227c13ae7810a81079f1c84394d65c5e506909b7afad"
+      },
+      "enabled": true,
+      "id": "national-deep",
+      "reviewed": true,
+      "reviewed_code_files": [
+        "full/prepare_admission.py"
+      ],
+      "script": "full/prepare_admission.py"
+    },
+    {
+      "code_sha256": {
+        "full/prepare_regional_admission.py": "8faa17652b26b0fde60bc16421e96db2349b41530766d975dd611c99976270e1"
+      },
+      "enabled": true,
+      "id": "regional",
+      "reviewed": true,
+      "reviewed_code_files": [
+        "full/prepare_regional_admission.py"
+      ],
+      "script": "full/prepare_regional_admission.py"
+    }
+  ],
+  "discovery_timeout_seconds": 120,
+  "disk_floor_bytes": 12884901888,
+  "enabled": true,
+  "ingest_timeout_seconds": 900,
+  "loader": {
+    "code_sha256": {
+      "database/auto_ingest.py": "d25842cc9efca51ca2150d501e9861584a18e419c4dfc46fbadf90834ea0b242",
+      "database/load.py": "d37814e23706b91ac5487ec20802b10c4fb5e974208d633e90c1407b21364684",
+      "database/migrate_pipeline.py": "2d36e24fa90c73b297423a0fc3f21aa78c882a6fe6f72d97648f5aee0d991bbd",
+      "database/pipeline-schema-manifest.json": "c2e8ef8871316a3acec14b803e5f62480e51322e54bfeb333c9bc8ee7d860967",
+      "database/pipeline_schema.sql": "856ed6def0cfbaf12a9732fbf72954c1afed9891fb4a8147fd6ddf1e5ea5b4c3",
+      "database/schema.sql": "e541b91a152b039d2993df92dd066d686d12578a2d396ad77aee24a965574b5f"
+    },
+    "reviewed_code_files": [
+      "database/auto_ingest.py",
+      "database/migrate_pipeline.py",
+      "database/pipeline_schema.sql",
+      "database/schema.sql",
+      "database/load.py",
+      "database/pipeline-schema-manifest.json"
+    ],
+    "script": "database/auto_ingest.py"
+  },
+  "maintenance_locks": [
+    "/srv/usa-atlas/maintenance/20260928-compact/process.lock",
+    "full/state/.usa-atlas-load.lock",
+    "/opt/usa-atlas-production/admission-20260922/full/state/.usa-atlas-load.lock"
+  ],
+  "max_batches_per_cycle": 100,
+  "max_input_rows_per_batch": 250000,
+  "max_runtime_seconds": 2700,
+  "orchestrator_code_sha256": {
+    "ops/auto_pipeline.py": "c7a1e45efb1c0ddbcf45b059157cc0cc6842249bcd4d7c35ed12f463602aef82",
+    "ops/auto_pipeline_retention.py": "67f44e2c6dc848b019032944f556ce059c5d30233074f30c6da23ce4586a7571"
+  },
+  "prepare_timeout_seconds": 900,
+  "retention": {
+    "accepted_payload_days": 7,
+    "archive_months": 24,
+    "completed_ledger_days": 30,
+    "max_batches_per_cycle": 25
+  },
+  "retry": {
+    "base_seconds": 60,
+    "jitter_fraction": 0.2,
+    "maintenance_seconds": 300,
+    "max_attempts_per_window": 6,
+    "max_seconds": 3600,
+    "window_seconds": 86400
+  },
+  "runtime": "full/runtime/auto-pipeline",
+  "version": 1
+}

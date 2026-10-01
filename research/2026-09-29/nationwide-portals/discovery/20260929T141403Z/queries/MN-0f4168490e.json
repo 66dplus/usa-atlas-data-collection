@@ -1,0 +1,1213 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "water",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:14:38.483868+00:00",
+  "candidates": [
+    {
+      "id": "41dc1b9b3a3c41519f27c2d55017f5af",
+      "title": "WATER_WaterLine",
+      "url": "https://gis.ramseycountymn.gov/server/rest/services/Physical_Environment/WATER_WaterLine_ViewOnly/FeatureServer/0",
+      "publisher": "christina.ulrich@co.ramsey.mn.us_RamseyGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Water Line contains representations of water bodies, less than 10' wide. Natural and made features include rivers, streams, ditches and canals. The data also includes connectors, created to maintain connectivity between network features, and artifici",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.2351,
+                45.1293
+              ],
+              [
+                -92.9769,
+                45.1293
+              ],
+              [
+                -92.9769,
+                44.8912
+              ],
+              [
+                -93.2351,
+                44.8912
+              ],
+              [
+                -93.2351,
+                45.1293
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p>Water lines in this dataset support many functions including thematic mapping, land records, property assessment, and surveying and engineering projects. Additional attributes are included to aid in linking to non-County resources.</p>",
+        "licenseInfo": "<p><span style=\"color:rgb(0,0,0);font-family:calibri;font-size:medium;\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata. Acknowledgment of the publisher would be appreciated.</span></span></p>",
+        "ownerId": "5255621b39e617844a9f259e4456d526",
+        "title": "WATER_WaterLine",
+        "type": "Feature Service",
+        "orgId": "527XtFVf9JKOTqu5",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788185849000,
+        "avgRating": 0,
+        "id": "41dc1b9b3a3c41519f27c2d55017f5af",
+        "categories": [
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "103768",
+        "numRatings": 0,
+        "owner": "christina.ulrich@co.ramsey.mn.us_RamseyGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790582400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1778248684000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ramseycountymn.gov/server/rest/services/Physical_Environment/WATER_WaterLine_ViewOnly/FeatureServer/0",
+        "tags": [
+          "Water Lines",
+          "Ramsey County",
+          "Environmental"
+        ],
+        "numViews": 316,
+        "numComments": 0,
+        "size": 113,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Ramsey County",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/41dc1b9b3a3c41519f27c2d55017f5af"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e03ba9bac0404493a367cf33146bd5c9",
+      "title": "WATER_WaterBody",
+      "url": "https://gis.ramseycountymn.gov/server/rest/services/Physical_Environment/WATER_WaterBody_ViewOnly/FeatureServer/0",
+      "publisher": "christina.ulrich@co.ramsey.mn.us_RamseyGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Open water areas and islands residing in this data set support many functions including thematic mapping, land records, property assessment, and surveying and engineering projects.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.2351,
+                45.1377
+              ],
+              [
+                -92.9604,
+                45.1377
+              ],
+              [
+                -92.9604,
+                44.8442
+              ],
+              [
+                -93.2351,
+                44.8442
+              ],
+              [
+                -93.2351,
+                45.1377
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p>This data set contains open water area outlines including, creeks, lakes, rivers. This data set also contains islands within open water areas. The open water areas are created from aerial photography observation and interpretation using stereo processing techniques. Vector line work was originally plotted from 2009 photography. All graphical lines contain a character based layer name that identifies the different mapping features.</p>",
+        "licenseInfo": "<p><span style=\"color:rgb(0,0,0);font-family:calibri;font-size:medium;\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata. Acknowledgment of the publisher would be appreciated.</span></span></p>",
+        "ownerId": "5255621b39e617844a9f259e4456d526",
+        "title": "WATER_WaterBody",
+        "type": "Feature Service",
+        "orgId": "527XtFVf9JKOTqu5",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788185577000,
+        "avgRating": 0,
+        "id": "e03ba9bac0404493a367cf33146bd5c9",
+        "categories": [
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "103768",
+        "numRatings": 0,
+        "owner": "christina.ulrich@co.ramsey.mn.us_RamseyGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790560800000,
+        "thumbnail": "thumbnail/thumbnail1778175270138.png",
+        "languages": [],
+        "created": 1778174536000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ramseycountymn.gov/server/rest/services/Physical_Environment/WATER_WaterBody_ViewOnly/FeatureServer/0",
+        "tags": [
+          "Environmental",
+          "Water Bodies"
+        ],
+        "numViews": 411,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 88,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Ramsey County",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/e03ba9bac0404493a367cf33146bd5c9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e33f8c1bd2854b25957a88c64197f500",
+      "title": "Minnesota Water Trails",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_water_trails_minnesota/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Use this layer to show state monitored recreation canoeing and kayaking opportunities.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset represents state water trails in the State of Minnesota as designated through legislation and recognized by the Department of Natural Resources. The alignments represent the approximate river centerlines as interpreted from 2009 aerial photographs. The alignments were created at a scale between 1:2000 and 1:10000.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/837/trans_water_trails_minnesota.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/837/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Free for public use, cannot be sold or used as legal information and should be understood as an approximation of the water trail location.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Minnesota Water Trails",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790141205000,
+        "avgRating": 0,
+        "id": "e33f8c1bd2854b25957a88c64197f500",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790607600000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613835000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_water_trails_minnesota/FeatureServer",
+        "tags": [
+          "Water Trails",
+          "Canoe and Boating Routes",
+          "Kayak Trail",
+          "Statewide",
+          "Rivers"
+        ],
+        "numViews": 1847,
+        "numComments": 0,
+        "size": 113,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Parks and Trails, Information Systems Team",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/e33f8c1bd2854b25957a88c64197f500"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "fef37a7fa215473ba0ef1ec96520b0e3",
+      "title": "Surface Water Groundwater Interaction",
+      "url": "https://arcgis.metc.state.mn.us/data1/rest/services/water/Surface_Water/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These data were developed as an aid in determining the vulnerability of surface-water features to groundwater pumping.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.2996556922034,
+                45.7590958850857
+              ],
+              [
+                -92.6020184240779,
+                45.7590958850857
+              ],
+              [
+                -92.6020184240779,
+                44.4589438590199
+              ],
+              [
+                -94.2996556922034,
+                44.4589438590199
+              ],
+              [
+                -94.2996556922034,
+                45.7590958850857
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<p style='margin:0in;'>____________________________________________________________</p><p style='margin:0in;'><b><i><font size='3'>NOTE - although it's recommended to use the feature layer web service, the file geodatabase is available for download.</font></i></b></p><p style='margin:0in;'><b><i><br /></i></b></p>\n<p><a href='https://gisdata.metc.state.mn.us/gisdata/Water/surf_grndwtr_interaction.zip' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><strong>Download FGDB</strong></a></p><p>____________________________________________________________</p><p><b><font size='4'>More Details</font></b></p><p>These data represent surface water features, derived from the Minnesota DNR's Public Waters Inventory and the US Fish and Wildlife Services' National Wetlands Inventory.</p><p>1. PWI basins were intersected with NWI wetlands - the area of each unique wetland type within each basin was calculated. Each basin was then assigned that wetland type which covered the greatest proportion of its extent.</p><p>2. Approximate depths were assigned to all wetland types present in the study area. The data were saved in tabular form, and joined to the basins feature class by wetland type - thus an approximate depth was derived for each basin.</p><p>3. The basin extents were clipped from the wetlands feature class - wetland fragments less than 60 square meters were then removed, as the basin and wetland edges weren't perfectly coincident, and polygon slivers remained after the clip.</p><p>4. The depth table was joined to the wetlands by wetland type, and each wetland was assigned an approximate depth. Adjacent wetlands of the same depth were then dissolved together.</p><p>5. Basins and wetlands were merged into a single feature class. An ID was assigned to each wetland, based on the county in which the greatest proportion of the wetland is found.</p>",
+        "licenseInfo": "",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Surface Water Groundwater Interaction",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785510868000,
+        "avgRating": 0,
+        "id": "fef37a7fa215473ba0ef1ec96520b0e3",
+        "categories": [
+          "/Categories/Inland waters",
+          "/Categories/Intelligence and military"
+        ],
+        "spatialReference": "NAD_1983_UTM_Zone_15N",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790672400000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1785508815000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data1/rest/services/water/Surface_Water/FeatureServer",
+        "tags": [
+          "Twin Cities",
+          "Water",
+          "Inland Waters"
+        ],
+        "numViews": 541,
+        "numComments": 0,
+        "size": 85,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Barr Engineering",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/fef37a7fa215473ba0ef1ec96520b0e3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3b42527d3e6e43cf9213edac1a2448c0",
+      "title": "Water Quality Stressors Identified",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_watershed_stressors_streams/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These data are intended to be used for planning, informational, and cartographic purposes related to general high-level information about the findings of the stressor identification process. These data can be used to aid prioritization efforts and inform both interagency and public inquiries as it relates to stressors to the fish and macroinvertebrates in Minnesota's surface waters. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This data was created as a result of the Minnesota Pollution Control Agency's (MPCA) biological stressor identification process (SID). Biological stressors are determined after a reach has been listed as impaired for aquatic life. Stressors are determined to inform the WRAPS (Watershed Restoration and Protection Strategy) developed by the MPCA for each major watershed. The MPCA follows the CADDIS (Causal Analysis/Diagnosis Decision Information System) protocol which includes EPA's Stressor Identification Process, and other guidance to understand and identify the most probably cause of biological impairment.\n<br /><br />\nFor more information, visit <a href='https://www.pca.state.mn.us/business-with-us/stressor-identification' target='_blank' rel='nofollow ugc noopener noreferrer'>MPCA's Stressor Identification Website</a>.\n<br /><br /><div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>stressors_identified.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/340/stressors_identified.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/340/env_watershed_stressors_streams.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/340/env_watershed_stressors_streams.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/340/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Reasonable effort has been made to ensure the accuracy of the data on which this analysis is based. However, the Minnesota Pollution Control Agency does not warrant the accuracy, completeness, or suitability for any implied uses of these data. For more information, see http://www.pca.state.mn.us/clyp45.    Limitations: Although extensive effort has been made to produce error-free and complete data, all geographic information has limitations due to the scale, resolution, date and interpretation of the original source materials. Users should consult available data documentation (metadata) for this particular data to determine limitations and the precision to which the data depict distance, direction, location or other geographic characteristics. Data may be subject to change without prior notification.    No warranty: Data is provided \"as is,\" without any warranty whatsoever, including but not limited to any warranty as to performance, merchantability or fitness for any particular purpose.    Liability: The entire risk as to the results of the use of this data is assumed by the user. The MPCA is not responsible for any interpretation or conclusions made by those who acquire or use it. The MPCA shall not be liable for any direct, indirect, special, incidental, compensatory or consequential damages or third-party claims resulting from the use of this data, even if the MPCA has been advised of the possibility of such potential loss or damage. In states that do not allow the exclusion or limitation of incidental or consequential damages, this data may not be used.    Redistribution conditions: In obtaining this data from the MPCA, it is understood that individuals or organizations have the right to use it for any internal purpose. If data is modified, changes should be documented in a metadata record that should accompany all redistributed data. If data is transmitted or provided in any form to another user, the data should be accompanied by a copy of this disclaimer and all documentation provided with the original data set, including the full metadata record.    Data delivered on electronic media: If data has been requested from the MPCA on magnetic media, CD or any other physical media, the MPCA will deliver it in the computer-readable format agreed upon with the requestor. The MPCA will reissue data if it is unreadable by correctly adjusted computer input devices or when the media is delivered in a damaged condition. Requests for reissue of this digital data product must be made within 30 days of the date shipped from the MPCA.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Water Quality Stressors Identified",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790410195000,
+        "avgRating": 0,
+        "id": "3b42527d3e6e43cf9213edac1a2448c0",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters",
+          "/Categories/Biota"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790586000000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778614269000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_watershed_stressors_streams/FeatureServer",
+        "tags": [
+          "biota",
+          "fish",
+          "macroinvertebrate",
+          "environment",
+          "pollution",
+          "analysis",
+          "inlandWaters",
+          "rivers",
+          "streams",
+          "dams",
+          "water quality",
+          "MPCA",
+          "Minnesota Pollution Control Agency",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 663,
+        "numComments": 0,
+        "size": 116,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/3b42527d3e6e43cf9213edac1a2448c0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "8b7333de140045a189e2dd431a16e4c8",
+      "title": "Source Water Assessment Areas",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_health/water_source_water_assess_areas/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\tThis dataset was developed with the intention of protecting the public drinking water supply and complies with the federal Safe Drinking Water Act, United States Code, title 42 and the State of Minnesota Rule (parts 4720.5100 to 4720.5590).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Source water assessment area (SWAA) is the Minnesota Department of Health (MDH) interim surface and subsurface area surrounding a public water supply well that completely contains the scientifically calculated time-of-travel (TOT) area. The primary purpose of the SWAA is to give the public water supplier an idea of the potential size of the final Wellhead Protection Area (WHPA). The TOT for a non-vulnerable SWAA (Meth_code = FRC) is 3 years and for a vulnerable SWAA (Meth_code = AM) is 10 years. Ultimately the SWAA will be replaced by a WHPA and a corresponding Drinking Water Supply Management Area (DWSMA).<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/201/water_source_water_assess_areas.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/201/water_source_water_assess_areas.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/201/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Geospatial data is provided \"as-is\". MDH makes no warranty, expressed or implied, and disclaims all implied warranties of the data for any purpose. MDH also does not warrant that the geospatial data is error free. The geospatial data was developed for MDH internal business purposes. MDH shall not be liable for any activity involving the geospatial data with respect to the following: a.) Lost profits, lost savings or any other consequential damages; b.) The fitness of the geospatial data for a particular purpose; or c.) The installation of the geospatial data, its use or the results obtained.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Source Water Assessment Areas",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789493059000,
+        "avgRating": 0,
+        "id": "8b7333de140045a189e2dd431a16e4c8",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters",
+          "/Categories/Health"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1778614072000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_health/water_source_water_assess_areas/FeatureServer",
+        "tags": [
+          "environment",
+          "health",
+          "Minnesota"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 119,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Health - Environmental Health Division",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/8b7333de140045a189e2dd431a16e4c8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "de8aeb026769412cb7e8e4ef581cef96",
+      "title": "Drinking Water Supply Management Areas",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_health/water_drinking_water_supply/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset was developed with the intention of protecting the public drinking water supply and complies with the federal Safe Drinking Water Act, United States Code, title 42 and the State of Minnesota Rule (parts 4720.5100 to 4720.5590).\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.072169,
+                48.805032
+              ],
+              [
+                -91.139865,
+                48.805032
+              ],
+              [
+                -91.139865,
+                43.432979
+              ],
+              [
+                -97.072169,
+                43.432979
+              ],
+              [
+                -97.072169,
+                48.805032
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "These sets of data include the drinking water supply management area boundaries and the vulnerability levels within each management area in Minnesota.\n\n More information can be found at:\nhttps://www.health.state.mn.us/communities/environment/water/swp/reqrec.html\n\nFollow the links below to the access the individual metadata pages for each layer:\n\n<b>Drinking Water Supply Management Areas:</b> <a href='drinking_water_supply_management_areas.html' rel='nofollow ugc'>drinking_water_supply_management_areas.html</a>\n\n<b>Drinking Water Supply Management Areas Vulnerability:</b> <a href='drinking_water_supply_management_area_vulnerability.html' rel='nofollow ugc'>drinking_water_supply_management_area_vulnerability.html</a><div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/185/water_drinking_water_supply.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/185/water_drinking_water_supply.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/185/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Geospatial data is provided \"as-is\". MDH makes no warranty, expressed or implied, and disclaims all implied warranties of the data for any purpose. MDH also does not warrant that the geospatial data is error free. The geospatial data was developed for MDH internal business purposes. MDH shall not be liable for any activity involving the geospatial data with respect to the following: a.) Lost profits, lost savings or any other consequential damages; b.) The fitness of the geospatial data for a particular purpose; or c.) The installation of the geospatial data, its use or the results obtained.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Drinking Water Supply Management Areas",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790398021000,
+        "avgRating": 0,
+        "id": "de8aeb026769412cb7e8e4ef581cef96",
+        "categories": [
+          "/Categories/Inland waters",
+          "/Categories/Health"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790607600000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613635000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_health/water_drinking_water_supply/FeatureServer",
+        "tags": [
+          "Drinking Water Supply Management Area",
+          "Groundwatershed",
+          "Vulnerability",
+          "Drinking water",
+          "Capture zone",
+          "Wellhead Protection",
+          "Minnesota"
+        ],
+        "numViews": 1337,
+        "numComments": 0,
+        "size": 115,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Health - Environmental Health Division",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/de8aeb026769412cb7e8e4ef581cef96"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3a9d864061f742e6b0b3fd537d843eef",
+      "title": "Source Water Assessment Area - Surface Water",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_health/water_source_water_assess_surf/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To assist in the development of Source Water Assessments for public water suppliers using surface water intakes, the Minnesota Department of Health assembled a local source water assessment team to develop each source water assessment.  Each source water assessment includes 1) a general description of the area which supplies water to the public water supply system, 2) an overview of why this water supply is susceptible to potential contaminants, 3) a description of the contaminants of concern which may impact the users of the public water supply, and 4) to the extent practical, the origins of the contaminants of concern.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.163281,
+                48.727869
+              ],
+              [
+                -90.207193,
+                48.727869
+              ],
+              [
+                -90.207193,
+                43.474307
+              ],
+              [
+                -97.163281,
+                43.474307
+              ],
+              [
+                -97.163281,
+                48.727869
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "These areas were delineated in 2002 and 2003. The source water assessment area for community public water supply systems using surface water intakes includes three distinct nested areas. The inner emergency response area is designed to help the city address contaminant releases which present an immediate (acute) health concern to water users. This geographic area is defined by the amount of notification time the city needs to close the surface intake and a \"buffer time\" to accommodate unanticipated delays in notification and shut down. The outer source water management area is designed to enable protection of water users from long-term (chronic) health effects related to low levels of chemical contamination or the periodic presence of contaminants at low levels in the surface water used by the city. This area is intended to enable protection of users from contaminants that may 1) be usually present at treatable levels in the source water and 2) occasionally present an acute health concern under certain conditions, such as periods of high runoff or storm events. The establishment of this area also recognizes the potential for future land-use development that may influence source water. The third assessment area is the entire watershed in Minnesota. This area is designated to provide the water supplier with a broad perspective in which to prioritize specific types of land uses that may impact the water quality of the source water used. U.S. Environmental Protection Agency guidelines suggest including the entire watershed up to the state boundaries as part of the source water assessment area. Altogether, these three areas are collectively labeled the \"source water assessment area.\" The entire watershed area is currently not included in the GIS dataset. Non-community source water assessment areas for surface water are also not included. Burnsville currently has a surface water intake but did not during the time period this dataset was created. Beaver Bay and Silver Bay do not have an inner emergency response area and share an outer source water management area. These will be replaced by new generation assessment areas in the near future.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/202/water_source_water_assess_surf.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/202/water_source_water_assess_surf.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/202/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Source Water Assessment Area - Surface Water",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789493112000,
+        "avgRating": 0,
+        "id": "3a9d864061f742e6b0b3fd537d843eef",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters",
+          "/Categories/Health"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "Minnesota Department of Health - Environmental Health - Drinking Water Protection - Source Water Protection Unit",
+        "largeThumbnail": "",
+        "lastViewed": 1790586000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1778614068000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_health/water_source_water_assess_surf/FeatureServer",
+        "tags": [
+          "Drinking water",
+          "source water assessment area",
+          "Minnesota"
+        ],
+        "numViews": 384,
+        "numComments": 0,
+        "size": 118,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Health-Environmental Health-Drinking Water Protection Section",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/3a9d864061f742e6b0b3fd537d843eef"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "12e18d9bb4db4a1fa5385de26c1d4101",
+      "title": "Minnesota Water Table Aquifer Vulnerability",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mda/water_aquifer_vulnerability/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset is intended to be used for Statewide planning purposes.  County specific information should be used whenever available (eg. County Geologic Atlas or Regional Hydrologic Assessmeants). ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset provides a rating of Minnesota water table aquifer vulnerability. The data, methodology and ratings are based on similar work done previously by Porcher [Porcher, E. (1989), Ground water contamination susceptibility in Minnesota, Minnesota Pollution Control Agency, St. Paul, Minn., 29 p.].\n\nIn 1989, Porcher prepared a statewide assessment of groundwater contamination susceptibility, using the statewide Quaternary geology map that was prepared by the Minnesota Geological Survey (Hobbs, 1982). In 2011, an interagency group (MDH, MDA, and DNR) worked to find a map that would be an update to the map used by Porcher in 1989.  The interagency work group decided that the statewide geomorphology layer that was produced by the Minnesota Geological Survey and the University of Minnesota at Duluth (DNR, UMD, MGS 1997) provided an updated interpretation of Quaternary materials and at higher level of resolution than the 1982 map with the addition of a Quaternary sand and gravel layer file to capture the \"Beach Sands\" in the northeast.  The geomorphology layer includes generalized categories of the sediments or bedrock types that are associated with landforms and can be used to assign geologic sensitivity ratings.  The ratings are based upon guidance from the Geologic Sensitivity Project Workgroup (DNR, 1991).\n\nMDA developed this dataset based on the guidance from the 2011 interagency workgroup.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/262/water_aquifer_vulnerability.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/262/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata.  Acknowledgement of the publisher would be appreciated.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Minnesota Water Table Aquifer Vulnerability",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789633463000,
+        "avgRating": 0,
+        "id": "12e18d9bb4db4a1fa5385de26c1d4101",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "NAD_1983_UTM_Zone_15N",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790571600000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613834000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mda/water_aquifer_vulnerability/FeatureServer",
+        "tags": [
+          "environment",
+          "inlandWaters",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 767,
+        "numComments": 0,
+        "size": 112,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Agriculture",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/12e18d9bb4db4a1fa5385de26c1d4101"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "feb54e44e46542aeb9eb942121971dae",
+      "title": "Groundwater Atlas Statewide Water Chemistry",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/geos_groundwater_atlas_chemistry/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater Atlas Program",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "The Groundwater Atlas Program statewide water chemistry database includes analytical results from well, spring, surface water, and atmospheric sampling by DNR staff. Most of the data were collected for Groundwater Atlas studies with additional data from special projects. Chemical parameters analyzed include the following: major cations and anions, trace elements, field parameters, tritium, stable isotopes of hydrogen and oxygen, and carbon-14.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1002/geos_groundwater_atlas_chemistry.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1002/geos_groundwater_atlas_chemistry.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/1002/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Groundwater Atlas Statewide Water Chemistry",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789761406000,
+        "avgRating": 0,
+        "id": "feb54e44e46542aeb9eb942121971dae",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790575200000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613676000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/geos_groundwater_atlas_chemistry/FeatureServer",
+        "tags": [
+          "Groundwater",
+          "water chemistry",
+          "residence time",
+          "stable isotopes",
+          "wells",
+          "springs",
+          "surface water",
+          "atmospheric",
+          "Minnesota"
+        ],
+        "numViews": 679,
+        "numComments": 0,
+        "size": 117,
+        "listed": false,
+        "scoreCompleteness": 88,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Ecological and Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/feb54e44e46542aeb9eb942121971dae"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    178
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 254,
+  "next_offset": 10,
+  "response_sha256": "320d0e384f50adfc69c80ee0a35d8753be69e09e0fe453fb896aee4accf1cc63",
+  "search_complete": false
+}

@@ -1,0 +1,24 @@
+{
+  "jurisdiction_code": "NE",
+  "catalog_id": "ne-primary",
+  "catalog_url": "https://data.outdoornebraska.gov/",
+  "started_at": "2026-09-29T14:01:41.917995+00:00",
+  "attempts": [
+    {
+      "adapter": "hub",
+      "endpoint": "https://data.outdoornebraska.gov/api/search/v1/collections/all/items",
+      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "adapter": "ckan",
+      "endpoint": "https://data.outdoornebraska.gov/api/3/action/package_search",
+      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    },
+    {
+      "adapter": "html_catalog_scan",
+      "endpoint": "https://data.outdoornebraska.gov/",
+      "error": "URLError: <urlopen error [Errno -2] Name or service not known>"
+    }
+  ],
+  "status": "unresolved_adapter"
+}

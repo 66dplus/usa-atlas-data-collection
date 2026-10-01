@@ -1,0 +1,245 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-29T15:18:51.974050+00:00",
+  "scope": "Independent read-only catalog, view definition, reader access, code hashes, physical sizes and completed maintenance evidence; no full data rescan and no automated tests.",
+  "checks": {
+    "catalog_matches_v2": true,
+    "schema_matches_v2": true,
+    "production_code_matches_staged_v2": true,
+    "only_expected_final_relations": true,
+    "view_definition_preserves_complete_record": true,
+    "view_column_order_unchanged": true,
+    "all_constraints_validated": true,
+    "all_four_foreign_keys_present": true,
+    "all_three_indexes_ready_valid": true,
+    "primary_key_present": true,
+    "reader_can_read_view": true,
+    "all_101_exact_ranges_complete_zero_differences": true,
+    "exact_counts_preserved": true,
+    "exact_checkpoint_binding_matches": true,
+    "both_fresh_fingerprints_match_captured_locked_data": true,
+    "physical_sizes_match_result": true
+  },
+  "catalog_sha256": "2aeb4cff27010265581b0c1a200963b8eb88e3f1a9d60e2e586f041f31cb117d",
+  "production_file_hashes": {
+    "schema.sql": "6cf64be22ec298c4b99eadb862bb9759b4c0dd44195ef58bffe8b10a9216042d",
+    "load.py": "dbaa5ca77359b2639cc8ed147d1fd39eacf29447f7ad7403a16607cbf5e2aaf2"
+  },
+  "checkpoint_sha256": "a30ca3e641eb1f5d4f82dc51f12d0321200babbe264e361c14139f87b5b62827",
+  "exact_validation_sha256": "d0345ee3deb8a74a6b205b6fc03998bdf9bfc641f16f249c608e407e95fcf4b8",
+  "evidence_copies": {
+    "compact-exact-resume-checkpoint.json": {
+      "sha256": "a30ca3e641eb1f5d4f82dc51f12d0321200babbe264e361c14139f87b5b62827",
+      "source": "/srv/usa-atlas/maintenance/20260928-compact/exact-resume-checkpoint.json"
+    },
+    "compact-exact-validation.json": {
+      "sha256": "d0345ee3deb8a74a6b205b6fc03998bdf9bfc641f16f249c608e407e95fcf4b8",
+      "source": "/srv/usa-atlas/maintenance/20260928-compact/exact-validation.json"
+    },
+    "compact-checkpoint-guard-receipt.json": {
+      "sha256": "da5cd9fb54dbecc75bf84138b880300a024638057155ffa19d04a1b3715d898c",
+      "source": "/srv/usa-atlas/maintenance/20260928-compact/exact-checkpoint-guard-progress.json"
+    }
+  },
+  "live": {
+    "checked_at": "2026-09-29T15:18:51.764668+00:00",
+    "schema_sha256": "6cf64be22ec298c4b99eadb862bb9759b4c0dd44195ef58bffe8b10a9216042d",
+    "view_definition": " SELECT o.geo_id,\n    o.geo_type,\n    o.period,\n    o.field_id,\n    o.catalog_field_id,\n    o.value,\n    o.unit,\n    o.source,\n    o.source_release,\n    r.source_url,\n    m.methodology_note,\n    o.retrieved_at,\n    o.ingest_id\n   FROM usa_atlas.observation_data o\n     JOIN usa_atlas.source_resource r USING (resource_id)\n     JOIN usa_atlas.methodology m USING (methodology_id);",
+    "relations": [
+      {
+        "name": "methodology",
+        "kind": "r",
+        "oid": 16548,
+        "total_bytes": 802816,
+        "table_bytes": 327680,
+        "indexes_bytes": 475136
+      },
+      {
+        "name": "observation",
+        "kind": "v",
+        "oid": 16664,
+        "total_bytes": null,
+        "table_bytes": null,
+        "indexes_bytes": null
+      },
+      {
+        "name": "observation_data",
+        "kind": "r",
+        "oid": 16557,
+        "total_bytes": 17791787008,
+        "table_bytes": 8227749888,
+        "indexes_bytes": 9564037120
+      },
+      {
+        "name": "source_resource",
+        "kind": "r",
+        "oid": 16537,
+        "total_bytes": 1581056,
+        "table_bytes": 974848,
+        "indexes_bytes": 606208
+      }
+    ],
+    "view_columns": [
+      {
+        "number": 1,
+        "name": "geo_id",
+        "type": "text"
+      },
+      {
+        "number": 2,
+        "name": "geo_type",
+        "type": "text"
+      },
+      {
+        "number": 3,
+        "name": "period",
+        "type": "text"
+      },
+      {
+        "number": 4,
+        "name": "field_id",
+        "type": "text"
+      },
+      {
+        "number": 5,
+        "name": "catalog_field_id",
+        "type": "text"
+      },
+      {
+        "number": 6,
+        "name": "value",
+        "type": "double precision"
+      },
+      {
+        "number": 7,
+        "name": "unit",
+        "type": "text"
+      },
+      {
+        "number": 8,
+        "name": "source",
+        "type": "text"
+      },
+      {
+        "number": 9,
+        "name": "source_release",
+        "type": "text"
+      },
+      {
+        "number": 10,
+        "name": "source_url",
+        "type": "text"
+      },
+      {
+        "number": 11,
+        "name": "methodology_note",
+        "type": "text"
+      },
+      {
+        "number": 12,
+        "name": "retrieved_at",
+        "type": "timestamp with time zone"
+      },
+      {
+        "number": 13,
+        "name": "ingest_id",
+        "type": "uuid"
+      }
+    ],
+    "data_constraints": [
+      {
+        "name": "observation_data_catalog_field_id_fkey",
+        "type": "f",
+        "validated": true,
+        "definition": "FOREIGN KEY (catalog_field_id) REFERENCES usa_atlas.catalog_field(catalog_field_id)"
+      },
+      {
+        "name": "observation_data_ingest_id_fkey",
+        "type": "f",
+        "validated": true,
+        "definition": "FOREIGN KEY (ingest_id) REFERENCES usa_atlas.ingest_run(ingest_id)"
+      },
+      {
+        "name": "observation_data_methodology_id_fkey",
+        "type": "f",
+        "validated": true,
+        "definition": "FOREIGN KEY (methodology_id) REFERENCES usa_atlas.methodology(methodology_id)"
+      },
+      {
+        "name": "observation_data_resource_id_fkey",
+        "type": "f",
+        "validated": true,
+        "definition": "FOREIGN KEY (resource_id) REFERENCES usa_atlas.source_resource(resource_id)"
+      },
+      {
+        "name": "observation_data_value_check",
+        "type": "c",
+        "validated": true,
+        "definition": "CHECK (value > '-Infinity'::double precision AND value < 'Infinity'::double precision)"
+      },
+      {
+        "name": "observation_pkey",
+        "type": "p",
+        "validated": true,
+        "definition": "PRIMARY KEY (geo_id, period, field_id, source_release)"
+      }
+    ],
+    "data_indexes": [
+      {
+        "name": "observation_ingest_idx",
+        "valid": true,
+        "ready": true,
+        "is_unique": false,
+        "is_primary": false
+      },
+      {
+        "name": "observation_lookup_idx",
+        "valid": true,
+        "ready": true,
+        "is_unique": false,
+        "is_primary": false
+      },
+      {
+        "name": "observation_pkey",
+        "valid": true,
+        "ready": true,
+        "is_unique": true,
+        "is_primary": true
+      }
+    ],
+    "reader_schema_usage": true,
+    "reader_view_select": true,
+    "source_resource_rows": 1387,
+    "methodology_rows": 1156,
+    "database_bytes": 17802673175
+  },
+  "reader": {
+    "role": "usa_atlas_reader",
+    "row_visible": true
+  },
+  "maintenance_result": {
+    "backup": {
+      "bytes": 929358558,
+      "path": "/srv/usa-atlas/maintenance/20260928-compact/usa-atlas-before-compact.dump",
+      "scope": "full usa_atlas schema and all data before compaction",
+      "sha256": "220986156c37684c43ffa8d532d4c52799e03c6546372424fc864f0543059ca0",
+      "source_fingerprint_sha256": "00727a179aba97c7f7ee1391f92ecdb2adf33cf5f27809d6844e46d580b312d7",
+      "verified": "pg_restore read entire archive to /dev/null; no restore into live database"
+    },
+    "catalog_sha256": "2aeb4cff27010265581b0c1a200963b8eb88e3f1a9d60e2e586f041f31cb117d",
+    "compact_relation_bytes": 17794170880,
+    "exact_validation": {
+      "mismatches": 0,
+      "ranges": 101,
+      "rows": 49206438
+    },
+    "free_bytes_after": 143129477120,
+    "old_schema_sha256": "85cf4e458eea7b859563ceb6c4b8ade5eec66237ce190b290720674a176bea9a",
+    "original_relation_bytes": 63936045056,
+    "relation_bytes_freed": 46141874176,
+    "rows_preserved": 49206438,
+    "schema_sha256": "6cf64be22ec298c4b99eadb862bb9759b4c0dd44195ef58bffe8b10a9216042d",
+    "status": "complete",
+    "validation": "exact keyed comparison of all 13 fields across every row; complete counts; full fingerprints; all PK/FK validated"
+  }
+}

@@ -1,0 +1,512 @@
+{
+  "jurisdiction_code": "RI",
+  "query": "air quality",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T20:17:21.322033+00:00",
+  "candidates": [
+    {
+      "id": "0c55d6bb8bda45a898010932aa8e15a2",
+      "title": "Coastal Waters (24K)",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Estuary_24K/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Coastal waters originally derived through manual digitizing of USGS 1:24000 Topographic Maps. Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy. RIDEM Integrated Water Quality Monitoring and Assessment Reporting Rhode Island's Section 305(b) State of the State's Waters Report and Section 303(d) List of Impaired Waters",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.90939982597695,
+                41.87647405130299
+              ],
+              [
+                -71.09307646345016,
+                41.87647405130299
+              ],
+              [
+                -71.09307646345016,
+                41.09529128134074
+              ],
+              [
+                -71.90939982597695,
+                41.09529128134074
+              ],
+              [
+                -71.90939982597695,
+                41.87647405130299
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><p><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b><font size='3'><br /></font></p><p><font size='3'>Coastal waters originally derived through manual digitizing of USGS 1:24000 Topographic Maps.  Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy.</font></p><p><font size='3'>Water Quality<span> - </span></font></p><p><font size='3'>Integrated Report<span> - Prior to 2008, DEM submitted the 305(b) Report and 303(d) List as separate documents. Recent USEPA guidance recommends that states develop and submit an Integrated Water Quality Monitoring and Assessment Report (Integrated Report). This guidance recommends that states integrate their Section 305(b) water quality assessment report and their Section 303(d) Impaired Waters List into a single document. The Integrated Report is intended to provide a streamlined approach to assessing and reporting on water quality.</span></font></p><p><font size='3'>The new federal guidance results in a fundamentally different scope, organization, and options for communicating about water quality than previous guidance for these individual reports. Five new categories of assessment determination replace the old 305(b) assessment terminology (fully supporting, threatened, partially supporting, not supporting) and the 303(d) List Group format previously utilized by DEM. The new format provides an Integrated List consisting of 5 categories of water quality assessment information, with the fifth category being the list of impaired waters needing a TMDL.</font></p><p><font size='3'>Assessments may result in different use support attainment status for the different designated uses for individual waterbodies. For example, a waterbody may be Fully Supporting swimming use, but there may be insufficient data to develop an aquatic life use support status. The Integrated Report Categories are presented below with a description of how the results of the individual assessments for each designated use on a waterbody are integrated to determine the final Integrated Report Category for each waterbody. In general, the integration of assessment determinations follows a hierarchical approach where a determination of impairment for any cause for any of the waterbody's designated uses will result in placement of the waterbody in Category 5. Similarly, there is a hierarchical approach to placement of a waterbody into Category 4A over 4B over 4C. While each waterbody is placed into only one of the 5 reporting categories, the attainment status of each designated use for each waterbody is documented on the Integrated Lists to facilitate tracking of information and to assist in addressing data gaps and directing water quality monitoring efforts.</font></p><p><span style='font-size:medium;'>SRPW_1 - Identifies Special Resource Protection Waters as identified in the DEM Water Quality Regulations</span><br /></p><p><font size='3'>SW_Pot - Waters potentially impaired by storm water runoff</font></p><p><font size='3'>SW_Con - Waters confirmed impaired by storm water runoff</font></p><p><font size='3'>URL_1 - Link to USEPA Waterbody Report</font></p><p><font size='3'>IWQMA_AsmntType - Integrated Water Quality Monitoring and Assessment Type. </font></p></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><p><span>These data are shared under the RIGIS license agreement, which can be viewed below: This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. </span></p><p><span>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/logos/ </span></p></div></div>",
+        "title": "Coastal Waters (24K)",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1733765698000,
+        "avgRating": 0,
+        "id": "0c55d6bb8bda45a898010932aa8e15a2",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/0c55d6bb8bda45a898010932aa8e15a2.png",
+        "lastViewed": 1743786000000,
+        "thumbnail": "thumbnail/0c55d6bb8bda45a898010932aa8e15a2.png",
+        "languages": [],
+        "created": 1701113465000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Estuary_24K/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "water quality",
+          "impairments",
+          "TMDL"
+        ],
+        "numViews": 1939,
+        "numComments": 0,
+        "size": 3301376,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Estuary_24K",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "hosted": true
+          }
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/0c55d6bb8bda45a898010932aa8e15a2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b3427ffc24804776b0d4c123ff3e0d37",
+      "title": "Lakes and Ponds (24K)",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Lakes_and_Ponds_24K/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": " Lakes and Ponds originally derived through manual digitizing of USGS 1:24000 Topographic Maps. Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy. RIDEM Integrated Water Quality Monitoring and Assessment Reporting Rhode Island's Section 305(b) State of the State's Waters Report and Section 303(d) List of Impaired Waters.  .",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.85805968191661,
+                42.01969885911846
+              ],
+              [
+                -71.12056145736645,
+                42.01969885911846
+              ],
+              [
+                -71.12056145736645,
+                41.14912661724466
+              ],
+              [
+                -71.85805968191661,
+                41.14912661724466
+              ],
+              [
+                -71.85805968191661,
+                42.01969885911846
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><p><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b><span style='font-size:medium;'><br /></span></p><p><span style='font-size:medium;'>RIDEM Integrated Water Quality Monitoring and Assessment Reporting Rhode Island's Section 305(b) State of the State's Waters Report and Section 303(d) List of Impaired Waters</span><br /></p><p><span style='font-size:medium;'>Water Quality -</span></p><p><span style='font-size:medium;'>Integrated Report - Prior to 2008, DEM submitted the 305(b) Report and 303(d) List as separate documents. Recent USEPA guidance recommends that states develop and submit an Integrated Water Quality Monitoring and Assessment Report (Integrated Report). This guidance recommends that states integrate their Section 305(b) water quality assessment report and their Section 303(d) Impaired Waters List into a single document. The Integrated Report is intended to provide a streamlined approach to assessing and reporting on water quality.</span></p><p><span style='font-size:medium;'>The new federal guidance results in a fundamentally different scope, organization, and options for communicating about water quality than previous guidance for these individual reports. Five new categories of assessment determination replace the old 305(b) assessment terminology (fully supporting, threatened, partially supporting, not supporting) and the 303(d) List Group format previously utilized by DEM. The new format provides an Integrated List consisting of 5 categories of water quality assessment information, with the fifth category being the list of impaired waters needing a TMDL.</span></p><p><span style='font-size:medium;'>Assessments may result in different use support attainment status for the different designated uses for individual waterbodies. For example, a waterbody may be Fully Supporting swimming use, but there may be insufficient data to develop an aquatic life use support status. The Integrated Report Categories are presented below with a description of how the results of the individual assessments for each designated use on a waterbody are integrated to determine the final Integrated Report Category for each waterbody. In general, the integration of assessment determinations follows a hierarchical approach where a determination of impairment for any cause for any of the waterbody's designated uses will result in placement of the waterbody in Category 5. Similarly, there is a hierarchical approach to placement of a waterbody into Category 4A over 4B over 4C. While each waterbody is placed into only one of the 5 reporting categories, the attainment status of each designated use for each waterbody is documented on the Integrated Lists to facilitate tracking of information and to assist in addressing data gaps and directing water quality monitoring efforts.</span></p><p><span style='font-size:medium;'>Cold/Warm - An assessment by Division of Fish &amp; Wildlife identifying cold or warm water fish habitat.</span></p><p><span style='font-size:medium;'>SRPW_1 - Identifies Special Resource Protection Waters as identified in the DEM Water Quality Regulations</span></p><p><span style='font-size:medium;'>SW_Pot - Waters potentially impaired by storm water runoff</span></p><p><span style='font-size:medium;'>SW_Con - Waters confirmed impaired by storm water runoff</span></p><p><span style='font-size:medium;'>URL_1 - Link to USEPA Waterbody Report</span></p><p><span style='font-size:medium;'>IWQMA_AsmntType - Integrated Water Quality Monitoring and Assessment Type. Some lakes, especially some run-of-river impoundments, are assessed as linear river centerlines.</span></p><p></p></div>",
+        "licenseInfo": "<p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><strong>These data are shared under the RIGIS license agreement, which can be viewed below:</strong></span><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at</span><a href='https://info.rigis.org/pages/logos/' style='color:rgb(0, 97, 155); text-decoration-line:none; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://info.rigis.org/pages/logos/</a><br /></p>",
+        "title": "Lakes and Ponds (24K)",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1733765652000,
+        "avgRating": 0,
+        "id": "b3427ffc24804776b0d4c123ff3e0d37",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/b3427ffc24804776b0d4c123ff3e0d37.png",
+        "lastViewed": 1743674400000,
+        "thumbnail": "thumbnail/b3427ffc24804776b0d4c123ff3e0d37.png",
+        "languages": [],
+        "created": 1700507775000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Lakes_and_Ponds_24K/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "water quality",
+          "impairments",
+          "TMDL"
+        ],
+        "numViews": 4243,
+        "numComments": 0,
+        "size": 7610368,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Lakes_and_Ponds_24K",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "hosted": true
+          },
+          "indexJobId": ""
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/b3427ffc24804776b0d4c123ff3e0d37"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "59e1f3b322b34d80ab6a413529b333b4",
+      "title": "Rivers and Streams (24K)",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Rivers_and_Streams_24K/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Rivers and Streams originally derived through manual digitizing of USGS 1:24000 Topographic Maps.  Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy. RIDEM Integrated Water Quality Monitoring and Assessment Reporting Rhode Island's Section 305(b) State of the State's Waters Report and Section 303(d) List of Impaired Waters.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.8466935641602,
+                42.01880136194365
+              ],
+              [
+                -71.12167034800626,
+                42.01880136194365
+              ],
+              [
+                -71.12167034800626,
+                41.33307860563652
+              ],
+              [
+                -71.8466935641602,
+                41.33307860563652
+              ],
+              [
+                -71.8466935641602,
+                42.01880136194365
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b><font size='3'><br /></font></p><p><font size='3'>Rivers and Streams originally derived through manual digitizing of USGS 1:24000 Topographic Maps.  Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy.</font></p><p><font size='3'>WQS_1 - Water Quality Standard</font></p><p><font size='3'>The federal Clean Water Act under Section 305(b) requires states to assess and report on the overall quality of waters in their state. Historically, the Department has summarized the overall water quality of the state in a biennial (every even year) report &quot;State of the State's Waters&quot; (also known as the 305(b) Report). The attainment of the CWA goals is measured by determining how well waters support their designated uses. For the purposes of the 305(b) water quality assessments, seven designated uses are evaluated: fish and wildlife habitat (aquatic life use); drinking water supply; shellfish consumption; shellfish controlled relay and depuration; fish consumption; primary contact recreation; secondary contact recreation. In the assessments, use support status is determined by comparing available water quality information to the water quality standards established in the Rhode Island Water Quality Regulations. The methodology for this assessment process is outlined in Rhode Island's Consolidated Assessment and Listing Methodology (CALM). The results of this comparison are then used to assess each waterbody's specific designated uses as &quot;Fully Supporting&quot; or &quot;Not Supporting&quot;. If data is not available to evaluate a designated use, it is considered &quot;Not Assessed&quot;. Waterbodies that are not meeting their criteria or designated uses as determined during the 305(b) assessment process, are placed on the state's List of Impaired Waters which is developed in accordance with Section 303(d) of the CWA. This List is prioritized and schedules are set for developing Water Quality Restoration Plans, also known as Total Maximum Daily Loads (TMDLs).1. Class AA - These waters are designated as a source of public drinking water supply (PDWS) or as tributary waters within a public drinking water supply watershed (the terminal reservoir of the PDWS are identified in § 1.25 of this Part), for primary and secondary contact recreational activities and for fish and wildlife habitat. These waters shall have excellent aesthetic value.a. </font></p><p><font size='3'>Class AA - Waters used for public drinking water supply may be subject to restricted recreational use by State and local authorities.2. </font></p><p><font size='3'>Class A - These waters are designated for primary and secondary contact recreational activities and for fish and wildlife habitat. They shall be suitable for compatible industrial processes and cooling, hydropower, aquacultural uses, navigation, and irrigation and other agricultural uses. These waters shall have excellent aesthetic value.3. </font></p><p><font size='3'>Class B - These waters are designated for fish and wildlife habitat and primary and secondary contact recreational activities. They shall be suitable for compatible industrial processes and cooling, hydropower, aquacultural uses, navigation, and irrigation and other agricultural uses. These waters shall have good aesthetic value.a. Certain waterbody segments may have partial use designations assigned to them as noted in § 1.9(D) of this Part.4. </font></p><p><font size='3'>Class B1 - These waters are designated for primary and secondary contact recreational activities and fish and wildlife habitat. They shall be suitable for compatible industrial processes and cooling, hydropower, aquacultural uses, navigation, and irrigation and other agricultural uses. These waters shall have good aesthetic value. Primary contact recreational activities may be impacted due to pathogens from approved wastewater discharges. However all Class B criteria must be met.a. Certain waterbody segments may have partial use designations assigned to them as noted in § 1.9(D) of this Part.5. </font></p><p><font size='3'>Class C - These waters are designated for secondary contact recreational activities and fish and wildlife habitat. They shall be suitable for compatible industrial processes and cooling, hydropower, aquacultural uses, navigation, and irrigation and other agricultural uses. These water shall have good aesthetic value.</font></p><p><font size='3'>CAT_1  Integrated Report Category (formerly 303d)</font></p><p><font size='3'>Category 1 - Attaining all designated uses. Waterbodies will be placed into this Category if, in accordance with the requirements of the CALM, the assessment results indicated that the waterbody is attaining all water quality standards for all designated uses.</font></p><p><font size='3'>Category 2 - Attaining some of the designated uses; and insufficient or no data and information is available to determine if the remaining uses are attained. Waterbodies will be placed in this Category if there are data and information which, in accordance with the CALM, support a determination that some, but not all, uses are attained and attainment status of the remaining uses is unknown because there is insufficient or no data or information.</font></p><p><font size='3'>Category 3 - Insufficient or no data and information are available to determine if any designated use is attained or impaired. Waterbodies will be placed in this Category where the data or information to support an attainment determination for any use are not sufficient, consistent with the requirements of the CALM. In general, these uses and waterbodies are considered Not Assessed.</font></p><p><font size='3'>Category 4 - Impaired or threatened for one or more designated uses but does not require development of a TMDL. (Three subcategories):4A TMDL has been completed. Waterbodies will be placed in this subcategory once all TMDLs for the waterbody have been developed and approved by EPA.</font></p><p style='margin:1 1 1 20;'><font size='3'>4B Other pollution control requirements are reasonably expected to result in attainment of the water quality standard in the near future. Waterbodies will be placed in this subcategory where other pollution control requirements are stringent enough to implement any water quality standard applicable to the water.</font></p><p style='margin:1 1 1 20;'><font size='3'>4C Impairment is not caused by a pollutant. Waterbodies will be placed in this subcategory if pollution (e.g., flow) rather than a pollutant causes the impairment.</font></p><p><font size='3'>Category 5 - Impaired or threatened for one or more designated uses by a pollutant(s), and requires a TMDL. This Category constitutes the 303(d) List of waters impaired or threatened by a pollutant(s) for which one or more TMDL(s) are needed.</font></p><p><font size='3'>The new format provides an Integrated List consisting of 5 categories of water quality assessment information, with the fifth category being the list of impaired waters needing a TMDL. Assessments may result in different use support attainment status for the different designated uses for individual waterbodies. For example, a waterbody may be Fully Supporting swimming use, but there may be insufficient data to develop an aquatic life use support status. The Integrated Report Categories are presented below with a description of how the results of the individual assessments for each designated use on a waterbody are integrated to determine the final Integrated Report Category for each waterbody. In general, the integration of assessment determinations follows a hierarchical approach where a determination of impairment for any cause for any of the waterbody's designated uses will result in placement of the waterbody in Category 5. Similarly, there is a hierarchical approach to placement of a waterbody into Category 4A over 4B over 4C. While each waterbody is placed into only one of the 5 reporting categories, the attainment status of each designated use for each waterbody is documented on the Integrated Lists to facilitate tracking of information and to assist in addressing data gaps and directing water quality monitoring efforts.</font></p><p><font size='3'>Cold/Warm - An assessment by Division of Fish &amp;amp; Wildlife identifying cold or warm water fish habitat. </font></p><p><font size='3'>SRPW_1 - Identifies Special Resource Protection Waters as identified in the DEM Water Quality Regulations</font></p><p><font size='3'>SW_Pot - Waters potentially impaired by stormwater runoffSW_Con - Waters confirmed impaired by stormwater runoff</font></p><p><font size='3'>URL_1 - Link to USEPA Waterbody ReportIWQMA_AsmntType - Integrated Water Quality Monitoring and Assessment TypeSome lakes, especially some run-of-river impoundments, are assessed as linear river centerlines.</font></p><p><font size='3'>Length_Mi - Feature length in statute miles</font></p><p><font size='3'>FType - Features found on USGS 1:24,000 Topographic Maps are rivers, those not found on the topos are identified as streams.  A small number of features depict flows that have been directed into underground culverts.</font></p><p></p></div></div></div>",
+        "licenseInfo": "<span style='margin:0px; padding:0px; color:rgb(0, 0, 0); font-size:11pt; line-height:16px; font-family:Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif; font-variant-ligatures:none !important;'><span style='margin:0px; padding:0px;'>This dataset is provided 'as is.’ The producer(s) o</span><span style='margin:0px; padding:0px;'>f this dataset, contributors to this dataset, the Rhode Island Geographic Information </span><span style='margin:0px; padding:0px;'>System (</span><span style='margin:0px; padding:0px;'>RIGIS) consortium</span><span style='margin:0px; padding:0px;'>, the State of Rhode Island, and the University of Rhode </span><span style='margin:0px; padding:0px;'>Island do not make any warranties of any kind for this </span><span style='margin:0px; padding:0px;'>dataset and</span><span style='margin:0px; padding:0px;'> are not liable for any </span><span style='margin:0px; padding:0px;'>loss or damage however and whenever caused by any use of this dataset. Please </span><span style='margin:0px; padding:0px;'>acknowledge both RIGIS and the primary producer(s) of this dataset in any derived </span><span style='margin:0px; padding:0px;'>products</span><span style='margin:0px; padding:0px;'>.  </span><span style='margin:0px; padding:0px;'>Versions of the RIGIS logo suitable for both printed and web-based products </span><span style='margin:0px; padding:0px;'>are available a</span><span style='margin:0px; padding:0px;'>t https://info.rigis.org/pages/logos</span></span><span style='margin:0px; padding:0px; color:rgb(0, 0, 0); font-size:11pt; line-height:16px; font-family:Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif;'> </span>",
+        "title": "Rivers and Streams (24K)",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1734360943000,
+        "avgRating": 0,
+        "id": "59e1f3b322b34d80ab6a413529b333b4",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/59e1f3b322b34d80ab6a413529b333b4.png",
+        "lastViewed": 1734357600000,
+        "thumbnail": "thumbnail/59e1f3b322b34d80ab6a413529b333b4.png",
+        "languages": [],
+        "created": 1700577316000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Rivers_and_Streams_24K/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "water quality",
+          "impairments"
+        ],
+        "numViews": 4089,
+        "numComments": 0,
+        "size": 4382720,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Rivers_and_Streams_24K",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "hosted": true
+          },
+          "indexJobId": ""
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/59e1f3b322b34d80ab6a413529b333b4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "687bc8051fce49c98ca982a36693e6bf",
+      "title": "Groundwater Quality Standard",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Groundwater_Quality_Standard_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater Quality Standards as determined by the RI Dept. of Environmental Management.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.90161028156912,
+                42.01894384373176
+              ],
+              [
+                -71.11743818624043,
+                42.01894384373176
+              ],
+              [
+                -71.11743818624043,
+                41.14591871176814
+              ],
+              [
+                -71.90161028156912,
+                41.14591871176814
+              ],
+              [
+                -71.90161028156912,
+                42.01894384373176
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><b>This hosted feature layer has been published in RI State Plane Feet NAD 83</b></div><div><b><br /></b></div>Groundwater Quality Rules (250-RICR-150-05-3). The Rhode Island Department of Environmental Management (DEM) Groundwater Quality Rules classify all of the state's groundwater resources and establish groundwater quality standards for each class. The four classes are designated GAA, GA, GB, and GC. Groundwater classified GAA and GA is to be protected to maintain drinking water quality, whereas groundwater classified GB and GC is known or presumed to be unsuitable for drinking water use without treatment. The groundwater classes were delineated on 1:24,000 scale US Geological Survey quadrangle maps. These maps, which represent the official delineations, are available for review at the Office of Water Resources and on the DEM website at www.dem.ri.gov. Class GAA Groundwater classified GAA are those groundwater resources that are known or presumed to be suitable for drinking water use without treatment and are located in one of the three areas described below. Groundwater classified GAA includes the following: The state's major stratified drift aquifers that are capable of serving as a significant source for a public water supply (&quot;groundwater reservoirs&quot;) and the critical portion of their recharge area as delineated by DEM; The DEM delineated wellhead protection area for each community water supply well or another delineation accepted by DEM; and Groundwater dependent areas that are physically isolated from reasonable alternative water supplies and where the existing groundwater warrants the highest level of protection. At present, only Block Island has been designated as meeting this criterion.",
+        "licenseInfo": "Please consider the source, spatial accuracy, attribute accuracy, currentness, and scale of these data before incorporating them into your project. This dataset is provided 'as is' The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at http://info.rigis.org/logos.",
+        "title": "Groundwater Quality Standard",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1732125952000,
+        "avgRating": 0,
+        "id": "687bc8051fce49c98ca982a36693e6bf",
+        "categories": [
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept. of Environmental Management",
+        "largeThumbnail": "largethumbnail/687bc8051fce49c98ca982a36693e6bf.png",
+        "lastViewed": 1756918800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1730745136000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Groundwater_Quality_Standard_spf/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "regulation",
+          "classification",
+          "quality",
+          "standard",
+          "305(b)",
+          "groundwater",
+          "inland water resources"
+        ],
+        "numViews": 2559,
+        "numComments": 0,
+        "size": 4055040,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Groundwater_Quality_Standard_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management, Office of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/687bc8051fce49c98ca982a36693e6bf"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    153
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 4,
+  "next_offset": 4,
+  "response_sha256": "6a9b218ecb54e64b2db687986eb33f95755b22dd2c2c9cd177cd24c1be3d3c70",
+  "search_complete": true
+}

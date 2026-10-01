@@ -1,0 +1,1417 @@
+{
+  "jurisdiction_code": "NC",
+  "query": "data center",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:10:39.914049+00:00",
+  "candidates": [
+    {
+      "id": "5a4fbdd6df8c417ca388afcb05eb715b",
+      "title": "1970 Census Boundary/Population",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/0",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This file was developed to enable a user to see population and housing statistics from the 1970 Census as a way of track population and housing counts over time. This data was created to assist governmental agencies and others in making resource management decisions through use of a Geographic Information System (GIS).\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.4233,
+                36.6179
+              ],
+              [
+                -75.4141,
+                36.6179
+              ],
+              [
+                -75.4141,
+                33.727
+              ],
+              [
+                -84.4233,
+                33.727
+              ],
+              [
+                -84.4233,
+                36.6179
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The NC Center for Geographic Information and Analysis,  using US Department of Commerce, Bureau of the Census data,  developed the digital 1970 Census Boundaries/Population data file  containing easily accessible population and housing counts for the  state of North Carolina.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "1970 Census Boundary/Population",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "token2ExpirationDate": -1,
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499869000,
+        "avgRating": 0,
+        "id": "5a4fbdd6df8c417ca388afcb05eb715b",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1714874400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484247377000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/0",
+        "tags": [
+          "1970 Census",
+          "1970 population",
+          "TIGER/Line",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap",
+          "boundaries"
+        ],
+        "numViews": 1380,
+        "numComments": 0,
+        "size": 76,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "token1ExpirationDate": -1,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC Center for Geographic Information and Analysis",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/5a4fbdd6df8c417ca388afcb05eb715b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bb3150b20e3b40749fe509ed4d10e0ba",
+      "title": "Medical Facilities",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Health/MapServer/2",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was created to locate health and medical facilities (including hospitals) for the State of North Carolina.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.3,
+                36.5655
+              ],
+              [
+                -75.573,
+                36.5655
+              ],
+              [
+                -75.573,
+                33.8028
+              ],
+              [
+                -84.3,
+                33.8028
+              ],
+              [
+                -84.3,
+                36.5655
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The North Carolina State Center for Health Statistics in cooperation with the Division of Facility Services in the Department of Health and Human Services, developed the GIS data set, Medical Facility Point Locations, to identify locations of health and medical facilities for the entire State of North Carolina. Point locations were geocoded from the facilities database provided by the Division of Facility Services.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "Medical Facilities",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499871000,
+        "avgRating": 0,
+        "id": "bb3150b20e3b40749fe509ed4d10e0ba",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": "NC State Center of Health Statistics and the Division of Facility Services, Department of Health and Human Services.",
+        "largeThumbnail": null,
+        "lastViewed": 1767988800000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484251945000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Health/MapServer/2",
+        "tags": [
+          "health facilities",
+          "facility locations",
+          "transportation",
+          "North Carolina",
+          "medical facilities",
+          "NC",
+          "NC OneMap",
+          "Department of Health and Human Services",
+          "DHHS",
+          "health"
+        ],
+        "numViews": 11297,
+        "numComments": 0,
+        "size": 76,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC State Center for Health Statistics, Division of Public Health, Department of Health & Human Services",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/bb3150b20e3b40749fe509ed4d10e0ba"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e1cf28ce6a5740d498301db9c98154b9",
+      "title": "Public Libraries",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Education/MapServer/1",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data was created to assist governmental agencies and others in making resource management decisions through use of a Geographic Information System (GIS).\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.1168,
+                36.5396
+              ],
+              [
+                -75.6365,
+                36.5396
+              ],
+              [
+                -75.6365,
+                33.8091
+              ],
+              [
+                -84.1168,
+                33.8091
+              ],
+              [
+                -84.1168,
+                36.5396
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><P><SPAN>NC Center for Geographic Information and Analysis developed the digital  Public Libraries data from addresses provided by the State Library  of North Carolina on 3/20/03.  This file enables users to identify public  library locations. This data covers the entire extent of North Carolina.</SPAN></P></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "Public Libraries",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "token2ExpirationDate": -1,
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499870000,
+        "avgRating": 0,
+        "id": "e1cf28ce6a5740d498301db9c98154b9",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1709838000000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484248549000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Education/MapServer/1",
+        "tags": [
+          "Public Library",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap",
+          "structures",
+          "learning",
+          "education"
+        ],
+        "numViews": 1975,
+        "numComments": 0,
+        "size": 79,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "token1ExpirationDate": -1,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State Library of North Carolina",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/e1cf28ce6a5740d498301db9c98154b9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0028cf77418744dbb39b367a1264ce2f",
+      "title": "2000 Census Blocks",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/4",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This file was developed to enable a user to see the geographic component from the 2000 Census.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.4222,
+                36.6172
+              ],
+              [
+                -75.3557,
+                36.6172
+              ],
+              [
+                -75.3557,
+                33.642
+              ],
+              [
+                -84.4222,
+                33.642
+              ],
+              [
+                -84.4222,
+                36.6172
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The NC Center for Geographic Information and Analysis, using TIGER/line  2000 files and statistics from the US Department of Commerce/Bureau of  the Census, developed the GIS 2000 Census Block data sets for each of  the 100 counties in North Carolina and combined the data into one  statewide coverage.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "2000 Census Blocks",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499870000,
+        "avgRating": 0,
+        "id": "0028cf77418744dbb39b367a1264ce2f",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1737309600000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1484247667000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/4",
+        "tags": [
+          "2000 Census",
+          "Block",
+          "society",
+          "North Carolina",
+          "NC",
+          "NC OneMap",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "population",
+          "boundaries"
+        ],
+        "numViews": 1860,
+        "numComments": 0,
+        "size": 76,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "US Department of Commerce, Bureau of the Census",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/0028cf77418744dbb39b367a1264ce2f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f4cf94d4537141938113bd7f884ec531",
+      "title": "2000 Census Tracts",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/6",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This file was developed to enable a user to see the geographic component from the 2000 Census.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.4222,
+                36.6172
+              ],
+              [
+                -75.3557,
+                36.6172
+              ],
+              [
+                -75.3557,
+                33.642
+              ],
+              [
+                -84.4222,
+                33.642
+              ],
+              [
+                -84.4222,
+                36.6172
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The NC Center for Geographic Information and Analysis, using TIGER/line  2000 files and statistics from the US Department of Commerce/Bureau of  the Census, developed the GIS 2000 Census Tract data sets for each of  the 100 counties in North Carolina and combined the data into one  statewide coverage.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "2000 Census Tracts",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499870000,
+        "avgRating": 0,
+        "id": "f4cf94d4537141938113bd7f884ec531",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1721098800000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484248172000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/6",
+        "tags": [
+          "2000 Census",
+          "Tract",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap"
+        ],
+        "numViews": 1320,
+        "numComments": 0,
+        "size": 76,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "US Department of Commerce, Bureau of the Census",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/f4cf94d4537141938113bd7f884ec531"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "45700033dccc434e9bb8c8782cd60e82",
+      "title": "2000 Census Block Groups",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/5",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This file was developed to enable a user to see the geographic component from the 2000 Census.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.4222,
+                36.6172
+              ],
+              [
+                -75.3557,
+                36.6172
+              ],
+              [
+                -75.3557,
+                33.642
+              ],
+              [
+                -84.4222,
+                33.642
+              ],
+              [
+                -84.4222,
+                36.6172
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The NC Center for Geographic Information and Analysis, using TIGER/line  2000 files and statistics from the US Department of Commerce/Bureau of  the Census, developed the GIS 2000 Census Block Group data sets for each of  the 100 counties in North Carolina and combined the data into one  statewide coverage.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "2000 Census Block Groups",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499870000,
+        "avgRating": 0,
+        "id": "45700033dccc434e9bb8c8782cd60e82",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1721034000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1484248130000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/5",
+        "tags": [
+          "2000 Census",
+          "Block Group",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap"
+        ],
+        "numViews": 1413,
+        "numComments": 0,
+        "size": 76,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "US Department of Commerce, Bureau of the Census",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/45700033dccc434e9bb8c8782cd60e82"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c2f641dfffb74852835f6c733cc4d31a",
+      "title": "Major Hydrography (Waterbodies)",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Hydrography/MapServer/2",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data was created to assist governmental agencies and others in making resource management decisions through the use of a Geographic Information System (GIS) where information on general hydrographic features is needed.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.3854,
+                36.5969
+              ],
+              [
+                -75.4252,
+                36.5969
+              ],
+              [
+                -75.4252,
+                33.7403
+              ],
+              [
+                -84.3854,
+                33.7403
+              ],
+              [
+                -84.3854,
+                36.5969
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p>The NC Center for Geographic Information and Analysis, developed this digital Major Hydrography data to enhance planning, siting and impact analysis in areas directly affecting surface waters consisting of streams and rivers, lakes, reservoirs, and shorelines. The data is a subset of the 1:24,000-scale detailed hydrography data.</p></div></div></div>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "Major Hydrography (Waterbodies)",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1718884293000,
+        "avgRating": 0,
+        "id": "c2f641dfffb74852835f6c733cc4d31a",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1745517600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484252284000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Hydrography/MapServer/2",
+        "tags": [
+          "inlandWaters",
+          "Hydrography",
+          "Surface waters",
+          "North Carolina",
+          "NC",
+          "NC OneMap",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "small scale"
+        ],
+        "numViews": 9990,
+        "numComments": 0,
+        "size": 81,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NCCGIA",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/c2f641dfffb74852835f6c733cc4d31a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d47b29e6369b4a0cb8bb996aa683e1cf",
+      "title": "Major Hydrography (Streams/Rivers)",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Hydrography/MapServer/1",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data was created to assist governmental agencies and others in making resource management decisions through the use of a Geographic Information System (GIS) where information on general hydrographic features is needed.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.3866,
+                36.6149
+              ],
+              [
+                -75.4244,
+                36.6149
+              ],
+              [
+                -75.4244,
+                33.7403
+              ],
+              [
+                -84.3866,
+                33.7403
+              ],
+              [
+                -84.3866,
+                36.6149
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><p>The NC Center for Geographic Information and Analysis, developed this digital Major Hydrography data to enhance planning, siting and impact analysis in areas directly affecting surface waters consisting of streams and rivers, lakes, reservoirs, and shorelines. The data is a subset of the 1:24,000-scale detailed hydrography data.</p></div></div>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "Major Hydrography (Streams/Rivers)",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1718884365000,
+        "avgRating": 0,
+        "id": "d47b29e6369b4a0cb8bb996aa683e1cf",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1771358400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484252191000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Hydrography/MapServer/1",
+        "tags": [
+          "inlandWaters",
+          "Hydrography",
+          "Surface waters",
+          "North Carolina",
+          "NC",
+          "NC OneMap",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "small scale"
+        ],
+        "numViews": 38457,
+        "numComments": 0,
+        "size": 81,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NCCGIA",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/d47b29e6369b4a0cb8bb996aa683e1cf"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2e4446b89e1c4052a4f14bc7069d4d10",
+      "title": "1990 Census TIGER/Lines (arcs)",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/10",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These file was developed to enable a user to see the geographic component from the 1990 Census.  They can be used to join demographic data from the 1990 census for use in a GIS.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.4222,
+                36.6172
+              ],
+              [
+                -75.3557,
+                36.6172
+              ],
+              [
+                -75.3557,
+                33.642
+              ],
+              [
+                -84.4222,
+                33.642
+              ],
+              [
+                -84.4222,
+                36.6172
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The NC Center for Geographic Information and Analysis,  using US Department of Commerce, Bureau of the Census data, developed  the GIS data set versions of the 1990 Census TIGER/Line files  for each of the 100 counties in North Carolina. This data is  stored in a county library under the layer name tiger90.  Associated attribute tables also reside in each tile workspace.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "1990 Census TIGER/Lines (arcs)",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "token2ExpirationDate": -1,
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499874000,
+        "avgRating": 0,
+        "id": "2e4446b89e1c4052a4f14bc7069d4d10",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1714906800000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1541788251000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/10",
+        "tags": [
+          "1990 Census TIGER/Line",
+          "1990 Census",
+          "North Carolina",
+          "Alamance",
+          "Alexander",
+          "Alleghany",
+          "Anson",
+          "Ashe",
+          "Avery",
+          "Beaufort",
+          "Bertie",
+          "Bladen",
+          "Brunswick",
+          "Buncombe",
+          "Burke",
+          "Cabarrus",
+          "Caldwell",
+          "Camden",
+          "Carteret",
+          "Caswell",
+          "Catawba",
+          "Chatham",
+          "Cherokee",
+          "Chowan",
+          "Clay",
+          "Cleveland",
+          "Columbus",
+          "Craven",
+          "Cumberland",
+          "Currituck",
+          "Dare",
+          "Davidson",
+          "Davie",
+          "Duplin",
+          "Durham",
+          "Edgecombe",
+          "Forsyth",
+          "Franklin",
+          "Gaston",
+          "Gates",
+          "Graham",
+          "Granville",
+          "Greene",
+          "Guilford",
+          "Halifax",
+          "Harnett",
+          "Haywood",
+          "Henderson",
+          "Hertford",
+          "Hoke",
+          "Hyde",
+          "Iredell",
+          "Jackson",
+          "Johnston",
+          "Jones",
+          "Lee",
+          "Lenoir",
+          "Lincoln",
+          "McDowell",
+          "Macon",
+          "Madison",
+          "Martin",
+          "Mecklenburg",
+          "Mitchell",
+          "Montgomery",
+          "Moore",
+          "Nash",
+          "New Hanover",
+          "Northampton",
+          "Onslow",
+          "Orange",
+          "Pamlico",
+          "Pasquotank",
+          "Pender",
+          "Person",
+          "Perquimans",
+          "Pitt",
+          "Polk",
+          "Randolph",
+          "Richmond",
+          "Robeson",
+          "Rockingham",
+          "Rowan",
+          "Rutherford",
+          "Sampson",
+          "Scotland",
+          "Stanly",
+          "Stokes",
+          "Surry",
+          "Swain",
+          "Transylvania",
+          "Tyrrell",
+          "Union",
+          "Vance",
+          "Wake",
+          "Warren",
+          "Washington",
+          "Watauga",
+          "Wayne",
+          "Wilkes",
+          "Wilson",
+          "Yadkin",
+          "Yancy",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap"
+        ],
+        "numViews": 974,
+        "numComments": 0,
+        "size": 77,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "token1ExpirationDate": -1,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "US Department of Commerce, Bureau of the\nCensus",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/2e4446b89e1c4052a4f14bc7069d4d10"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a315a3ff1295439d82a202270d9344e8",
+      "title": "1990 Census TIGER/Lines (polys)",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/11",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These file was developed to enable a user to see the geographic component from the 1990 Census.  They can be used to join demographic data from the 1990 census for use in a GIS.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.4222,
+                36.6172
+              ],
+              [
+                -75.3557,
+                36.6172
+              ],
+              [
+                -75.3557,
+                33.642
+              ],
+              [
+                -84.4222,
+                33.642
+              ],
+              [
+                -84.4222,
+                36.6172
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><P><SPAN>The NC Center for Geographic Information and Analysis,  using US Department of Commerce, Bureau of the Census data, developed  the GIS data set versions of the 1990 Census TIGER/Line files  for each of the 100 counties in North Carolina. This data is  stored in a county library under the layer name tiger90.  Associated attribute tables also reside in each tile workspace.</SPAN></P></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "1990 Census TIGER/Lines (polys)",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "token2ExpirationDate": -1,
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499874000,
+        "avgRating": 0,
+        "id": "a315a3ff1295439d82a202270d9344e8",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1714989600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1541788402000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Census/MapServer/11",
+        "tags": [
+          "1990 Census TIGER/Line",
+          "1990 Census",
+          "North Carolina",
+          "Alamance",
+          "Alexander",
+          "Alleghany",
+          "Anson",
+          "Ashe",
+          "Avery",
+          "Beaufort",
+          "Bertie",
+          "Bladen",
+          "Brunswick",
+          "Buncombe",
+          "Burke",
+          "Cabarrus",
+          "Caldwell",
+          "Camden",
+          "Carteret",
+          "Caswell",
+          "Catawba",
+          "Chatham",
+          "Cherokee",
+          "Chowan",
+          "Clay",
+          "Cleveland",
+          "Columbus",
+          "Craven",
+          "Cumberland",
+          "Currituck",
+          "Dare",
+          "Davidson",
+          "Davie",
+          "Duplin",
+          "Durham",
+          "Edgecombe",
+          "Forsyth",
+          "Franklin",
+          "Gaston",
+          "Gates",
+          "Graham",
+          "Granville",
+          "Greene",
+          "Guilford",
+          "Halifax",
+          "Harnett",
+          "Haywood",
+          "Henderson",
+          "Hertford",
+          "Hoke",
+          "Hyde",
+          "Iredell",
+          "Jackson",
+          "Johnston",
+          "Jones",
+          "Lee",
+          "Lenoir",
+          "Lincoln",
+          "McDowell",
+          "Macon",
+          "Madison",
+          "Martin",
+          "Mecklenburg",
+          "Mitchell",
+          "Montgomery",
+          "Moore",
+          "Nash",
+          "New Hanover",
+          "Northampton",
+          "Onslow",
+          "Orange",
+          "Pamlico",
+          "Pasquotank",
+          "Pender",
+          "Person",
+          "Perquimans",
+          "Pitt",
+          "Polk",
+          "Randolph",
+          "Richmond",
+          "Robeson",
+          "Rockingham",
+          "Rowan",
+          "Rutherford",
+          "Sampson",
+          "Scotland",
+          "Stanly",
+          "Stokes",
+          "Surry",
+          "Swain",
+          "Transylvania",
+          "Tyrrell",
+          "Union",
+          "Vance",
+          "Wake",
+          "Warren",
+          "Washington",
+          "Watauga",
+          "Wayne",
+          "Wilkes",
+          "Wilson",
+          "Yadkin",
+          "Yancy",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap"
+        ],
+        "numViews": 1290,
+        "numComments": 0,
+        "size": 77,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "token1ExpirationDate": -1,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "US Department of Commerce, Bureau of the\nCensus",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/a315a3ff1295439d82a202270d9344e8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    112
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 57,
+  "next_offset": 10,
+  "response_sha256": "3bd4f43f44943cd2194b9f72984bf6f0a2288d84dfe3294032a2199fc5f33c08",
+  "search_complete": false
+}

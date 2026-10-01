@@ -1,0 +1,1384 @@
+{
+  "jurisdiction_code": "KY",
+  "query": "data center",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:05:22.188770+00:00",
+  "candidates": [
+    {
+      "id": "bd4c5dade14d4a4696e4d62ca524792c",
+      "title": "Sinkhole Drainage Areas in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Sinkhole_Drainage_Areas/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Land surface areas that drain into sinkholes in Kentucky.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.537969,
+                39.085514
+              ],
+              [
+                -82.988087,
+                39.085514
+              ],
+              [
+                -82.988087,
+                36.557194
+              ],
+              [
+                -88.537969,
+                36.557194
+              ],
+              [
+                -88.537969,
+                39.085514
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Vector data set consisting of polygons representing areas drained by sinkholes in Kentucky. Created by the USGS, Kentucky Water Science Center.</span></p><p><br />&nbsp;</p><p><span>Box Download:&nbsp;</span><a style=\"border-bottom-style:solid; border-bottom-width:1px; color:rgb(78, 104, 22); font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13.3333px;\" target=\"_new\"><strong>https://ky.app.box.com/v/kymartiandata/file/850632967347</strong></a></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Preliminary data</span></p><p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.</span><span><br /></span></p></div></div></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Sinkhole Drainage Areas in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658515000,
+        "avgRating": 0,
+        "id": "bd4c5dade14d4a4696e4d62ca524792c",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "USGS, Kentucky Water Science Center",
+        "largeThumbnail": null,
+        "lastViewed": 1789650000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1724776246000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Sinkhole_Drainage_Areas/FeatureServer",
+        "tags": [
+          "USGS",
+          "karst",
+          "inlandWaters",
+          "vector data",
+          "sinkhole",
+          "drainage area",
+          "water resources",
+          "DOW"
+        ],
+        "numViews": 4660,
+        "numComments": 0,
+        "size": 166797312,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "U.S. Geological Survey",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/bd4c5dade14d4a4696e4d62ca524792c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "077ce42d28184d62adc15c59a08417dd",
+      "title": "KYAPED Phase 3 Image Frame Centroids",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Phase3_Image_Frame_Centroids_WM/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To allow the user to find information related to the centroid of an image frame collected by Kentucky's Aerial Photography and Elevation Data program (KYAPED).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.60413881360222,
+                39.183779287556284
+              ],
+              [
+                -81.92384828489581,
+                39.183779287556284
+              ],
+              [
+                -81.92384828489581,
+                36.466841640323274
+              ],
+              [
+                -89.60413881360222,
+                36.466841640323274
+              ],
+              [
+                -89.60413881360222,
+                39.183779287556284
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Point features coded with comprehensive information related to 3 inch aerial photography image frames collected by Kentucky's Aerial Photography and Elevation Data program (KYAPED) from 2022-2024. Aerial photography related to this data was captured in late winter and early spring of consecutive years as part of a collaborative effort among federal, state and local government agencies as well as educational entities in Kentucky. <a target='_blank' href='https://ky.box.com/v/kymartian-image-center-Phase3' rel='nofollow ugc noopener noreferrer'>https://ky.box.com/v/kymartian-image-center-Phase3</a></p>",
+        "licenseInfo": "<p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;'>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</span></p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "KYAPED Phase 3 Image Frame Centroids",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658367000,
+        "avgRating": 0,
+        "id": "077ce42d28184d62adc15c59a08417dd",
+        "categories": [
+          "/Categories/Imagery and basemaps"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "NV5, Kentucky Division of Geographic Information",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail1782410665009.png",
+        "languages": [],
+        "created": 1755877687000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Phase3_Image_Frame_Centroids_WM/FeatureServer",
+        "tags": [
+          "Centroids",
+          "Imagery",
+          "KYAPED",
+          "Phase 3",
+          "3 Inch",
+          "3IN",
+          "FLight Path",
+          "Frame",
+          "Kentucky",
+          "Commonwealth",
+          "DGI",
+          "ky",
+          "kygeonet",
+          "kygeoportal",
+          "kygovmaps",
+          "imageryBaseMapsEarthCover",
+          "10K"
+        ],
+        "numViews": 4615,
+        "numComments": 0,
+        "size": 2376761344,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/077ce42d28184d62adc15c59a08417dd"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "81d87f90c8494c788ee34c8977e6a7ce",
+      "title": "KYAPED Phase 2 Image Frame Centroids",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KYAPED_ImageFrameCentroids_Phase2_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To allow the user to find information related to the centroid of an image frame collected by Kentucky's Aerial Photography and Elevation Data program (KYAPED).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.59461574812245,
+                39.17087794593829
+              ],
+              [
+                -81.96745312862451,
+                39.17087794593829
+              ],
+              [
+                -81.96745312862451,
+                36.466343792561325
+              ],
+              [
+                -89.59461574812245,
+                36.466343792561325
+              ],
+              [
+                -89.59461574812245,
+                39.17087794593829
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Point features coded with comprehensive information related to 6 inch aerial photography image frames collected by Kentucky's Aerial Photography and Elevation Data program (KYAPED) from 2019-2021. Aerial photography related to this data was captured in late winter and early spring of consecutive years as part of a collaborative effort among federal, state and local government agencies as well as educational entities in Kentucky.  <a href='https://ky.box.com/v/kymartian-image-center-Phase2' target='_blank' rel='nofollow ugc noopener noreferrer'>https://ky.box.com/v/kymartian-image-center-Phase2</a>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</span><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "KYAPED Phase 2 Image Frame Centroids",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658363000,
+        "avgRating": 0,
+        "id": "81d87f90c8494c788ee34c8977e6a7ce",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Quantum Spatial, Kentucky Division of Geographic Information",
+        "largeThumbnail": null,
+        "lastViewed": 1789646400000,
+        "thumbnail": "thumbnail/thumbnail1750876476236.png",
+        "languages": [],
+        "created": 1717782104000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KYAPED_ImageFrameCentroids_Phase2_WM_gdb/FeatureServer",
+        "tags": [
+          "Kentucky",
+          "kygeoportal",
+          "Centroid",
+          "kygeonet",
+          "commonwealth",
+          "Flight Path",
+          "6 inch",
+          "Frame",
+          "Aerial Photography",
+          "Imagery",
+          "kentucky",
+          "KYAPED",
+          "Phase2",
+          "ky",
+          "imageryBaseMapsEarthCover",
+          "dgi",
+          "6IN",
+          "kygovmaps"
+        ],
+        "numViews": 2598,
+        "numComments": 0,
+        "size": 11091968,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/81d87f90c8494c788ee34c8977e6a7ce"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e4cfbeea0c23413ebc63c905317cfc1e",
+      "title": "KYAPED Phase 1 Image Frame Centroids",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KYAPED_ImageFrameCentroids_Phase1_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To allow the user to find information related to the centroid of an image frame collected by Kentucky's Aerial Photography and Elevation Data program (KYAPED) from 2012 - 2014.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.56734972688601,
+                39.162510798555644
+              ],
+              [
+                -83.94603615600312,
+                39.162510798555644
+              ],
+              [
+                -83.94603615600312,
+                36.47883678977346
+              ],
+              [
+                -89.56734972688601,
+                36.47883678977346
+              ],
+              [
+                -89.56734972688601,
+                39.162510798555644
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Point features coded with comprehensive information related to both 6 inch and 1 foot aerial photography image frames collected by Kentucky's Aerial Photography and Elevation Data program (KYAPED) from 2012 - 2014. Aerial photography related to this data was captured in late winter and early spring of consecutive years as part of a collaborative effort among federal, state and local government agencies as well as educational entities in Kentucky. <a href='https://ky.box.com/v/kymartian-image-center-2012-14' target='_blank' rel='nofollow ugc noopener noreferrer'>https://ky.box.com/v/kymartian-image-center-2012-14</a>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</span><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "KYAPED Phase 1 Image Frame Centroids",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658356000,
+        "avgRating": 0,
+        "id": "e4cfbeea0c23413ebc63c905317cfc1e",
+        "categories": [
+          "/Categories/Imagery and basemaps"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Quantum Spatial, Kentucky Division of Geographic Information",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail1750876445272.png",
+        "languages": [],
+        "created": 1717781336000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KYAPED_ImageFrameCentroids_Phase1_WM_gdb/FeatureServer",
+        "tags": [
+          "kygeonet",
+          "Aerial Photography",
+          "kentucky",
+          "Kentucky",
+          "KYAPED",
+          "Frame",
+          "dgi",
+          "Imagery",
+          "Flight Path",
+          "Centroid",
+          "kygovmaps",
+          "imageryBaseMapsEarthCover",
+          "ky",
+          "kygeoportal",
+          "commonwealth"
+        ],
+        "numViews": 2267,
+        "numComments": 0,
+        "size": 10297344,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/e4cfbeea0c23413ebc63c905317cfc1e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c3d8b5b1fc7f4518a6e8b09ed510b791",
+      "title": "STORET Legacy (EPA) - KY Locations (pre-1999)",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_EPPC_STORET_Legacy_EPA_Pre1999/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Legacy Data Center (LDC) contains historical water quality data dating back to the early part of the 20th century and collected up to the end of 1998. Modern STORET contains data collected beginning in 1999, along with older data that has been properly documented and migrated from the LDC. Both systems contain raw biological, chemical, and physical data on surface and ground water collected by federal, state and local agencies, Indian Tribes, volunteer groups, academics, and others. All 50 States, territories, and jurisdictions of the U.S. are represented in these systems.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.714746,
+                39.366994
+              ],
+              [
+                -81.966058,
+                39.366994
+              ],
+              [
+                -81.966058,
+                36.021542
+              ],
+              [
+                -89.714746,
+                36.021542
+              ],
+              [
+                -89.714746,
+                39.366994
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Data supplied to EPA before 1999 were all placed in Legacy STORET. This system, de-signed in the 1960s, was a pioneer in the long term archival of field water monitoring results. The Legacy Data Center (LDC) contains data of undocumented quality. Further, these data are static. The Legacy Data Center does not permit updates, and data here will not change over time. All new data are being entered into Modernized STORET. Because the data do not change over time, it is never necessary to repeat a specific download.<div><br /></div><div>Box Download: <a href=\"https://ky.box.com/v/energy-environment/file/850632671213\" style=\"border-bottom:1px solid; color:rgb(78, 104, 22); font-weight:bold; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13.3333px;\" target=\"_new\">https://ky.box.com/v/energy-environment/file/850632671213</a></div>",
+        "licenseInfo": "Distribution Unlimited.<div><br /></div><div>LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.<br /></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "STORET Legacy (EPA) - KY Locations (pre-1999)",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658525000,
+        "avgRating": 0,
+        "id": "c3d8b5b1fc7f4518a6e8b09ed510b791",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "USGS Kentucky Water Science Center",
+        "largeThumbnail": null,
+        "lastViewed": 1789650000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1724784800000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_EPPC_STORET_Legacy_EPA_Pre1999/FeatureServer",
+        "tags": [
+          "USGS",
+          "inlandWaters",
+          "water",
+          "DGI",
+          "water resources"
+        ],
+        "numViews": 2582,
+        "numComments": 0,
+        "size": 3186688,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "USGS Kentucky Water Science Center",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/c3d8b5b1fc7f4518a6e8b09ed510b791"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a0633412f37f454dbff661f390ddbd73",
+      "title": "Kentucky's Portion of the US National Grid",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_USNG_1KM_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this data layer is to enable and promote the use of US National Grid as an \"attributed polygon overlay\" over other feature data layers in paper and digital maps.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.58140658421334,
+                39.15182567826895
+              ],
+              [
+                -81.96201132148154,
+                39.15182567826895
+              ],
+              [
+                -81.96201132148154,
+                36.489981231688304
+              ],
+              [
+                -89.58140658421334,
+                36.489981231688304
+              ],
+              [
+                -89.58140658421334,
+                39.15182567826895
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><p><span>This is a polygon feature data layer of United States National Grid (1000m x 1000m polygons ) constructed by the Center for Interdisciplinary Geospatial Information Technologies at Delta State University with support from the US Geological Survey under the Cooperative Agreement 07ERAG0083. For correct display, please set the base coordinate system and projection such that it matches the UTM zone for which these data were constructed using the NAD 83 datum. Further information about the US National Grid is available from https://www.fgdc.gov/usng and a viewing of these layers as applied to local geography may be seen at the National Map, https://www.nationalmap.gov. The name of each dataset has the following format - StateAbbv_USNG_UTMXX. For example, for the UTM zone 15 of Mississippi, the dataset is named MS_USNG_UTM15.</span></p><p>Data Download: <a href='https://ky.box.com/v/kymartian-us-national-grid-1km' target='_blank' rel='nofollow ugc noopener noreferrer'>https://ky.box.com/v/kymartian-us-national-grid-1km</a></p></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><p><span>The Information contained in this map was derived from a variety of public and private sources. The GIS Center and Delta State University make no warranties as to the completeness, accuracy, reliability or suitability of the source data or for any conclusions derived from this map. Use at your own risk.</span></p><p><span>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</span></p></div></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky's Portion of the US National Grid",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658245000,
+        "avgRating": 0,
+        "id": "a0633412f37f454dbff661f390ddbd73",
+        "categories": [
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Center for Interdisciplinary Geospatial Information Technologies, Delta State University, Cleveland Mississippi 38733",
+        "largeThumbnail": null,
+        "lastViewed": 1789650000000,
+        "thumbnail": "thumbnail/thumbnail1739472735690.png",
+        "languages": [],
+        "created": 1739472099000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_USNG_1KM_WM_gdb/FeatureServer",
+        "tags": [
+          "USNG",
+          "national grid",
+          "grid",
+          "index"
+        ],
+        "numViews": 2000,
+        "numComments": 0,
+        "size": 68591616,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/a0633412f37f454dbff661f390ddbd73"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "73bc4cf4006544a4adbb5e6688a3e09b",
+      "title": "Kentucky (KyFromAbove) Phase 3 Oblique Imagery Centroids with Camera Bearing",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/phase_3_centroids_with_flight_camera_directions_gdb/FeatureServer",
+      "publisher": "boyd.shearer_kygeonet",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Kentucky From Above Phase 3 (2022-2024) oblique imagery is open data and publically available. This feature layer contains image centroids with an attribute for the camera's bearing in cardinal directions. Published by the Kentucky Division of Geographic Information.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>4,428,945 point features representing centroid locations for oblique aerial imagery captured as part of Kentucky's KYAPED (Kentucky Aerial Photography and Elevation Data) Phase 3 collection program, a component of the KyFromAbove statewide imagery initiative. The dataset spans three collection years:&nbsp;</p><ul><li>2023 (2,464,925 images),</li><li>2024 (1,927,325 images)</li><li>2022 (36,695 images)<br />&nbsp;</li></ul><p>The majority of imagery was captured during Season 1, Spring (4,068,655 images), with additional collection in Season 2, Fall (360,290 images). Each point represents the center location of an individual aerial photograph, with flight lines running in alternating North and South directions (approximately 2.2 million images each). The dataset includes imagery from five camera positions on each aircraft:&nbsp;</p><ul><li>Color (885,789) – nadir/vertical view&nbsp;</li><li>Forward (Fwd) and Backward (Bwd) (885,789 each) – oblique views along the flight line&nbsp;</li><li>Left and Right (885,789 each) – oblique views perpendicular to the flight path&nbsp;<br />&nbsp;</li></ul><p>Camera directions are recorded as North, South, East, or West based on the aircraft's heading, enabling users to select imagery with specific viewing angles for a location. The data encompasses 2,553 unique flight lines with 3-inch resolution imagery. Key attributes include filename, flight date and time, flight line ID, shot ID, collection year and season, and a direct S3 URL link to access each image from the KyFromAbove cloud storage. This index layer enables efficient discovery and retrieval of oblique imagery for applications including infrastructure inspection, change detection, emergency response, and detailed site analysis across Kentucky.</p>",
+        "licenseInfo": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(74,74,74);font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</span></span></p>",
+        "ownerId": "36fef690469a4c21a02b00ca32dd14a8",
+        "title": "Kentucky (KyFromAbove) Phase 3 Oblique Imagery Centroids with Camera Bearing",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1783366289000,
+        "avgRating": 0,
+        "id": "73bc4cf4006544a4adbb5e6688a3e09b",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "boyd.shearer_kygeonet",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1787598000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1767565985000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/phase_3_centroids_with_flight_camera_directions_gdb/FeatureServer",
+        "tags": [
+          "kyfromabove",
+          "oblique imagery",
+          "Phase 3",
+          "camera bearing",
+          "cardinal directions",
+          "aerial photography",
+          "point feature",
+          "URL",
+          "attributes",
+          "dgi",
+          "commonwealth"
+        ],
+        "numViews": 7292,
+        "numComments": 0,
+        "size": 2482716672,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/73bc4cf4006544a4adbb5e6688a3e09b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9cb433485e7a4e918602d0739ed52dac",
+      "title": "Kentucky Tree Canopy Closure 2001 - National Land Cover Database (NLCD)",
+      "url": "https://tiles.arcgis.com/tiles/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_CanopyClosure_2001_30M/MapServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The National Land Cover Database 2001 tree canopy layer for mapping zone 47 was produced through a cooperative project conducted by the Multi-Resolution Land Characteristics (MRLC) Consortium.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.705333,
+                39.152727
+              ],
+              [
+                -81.88348,
+                39.152727
+              ],
+              [
+                -81.88348,
+                36.456522
+              ],
+              [
+                -89.705333,
+                36.456522
+              ],
+              [
+                -89.705333,
+                39.152727
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Metadata",
+          "Service",
+          "WMTS",
+          "Hosted Service"
+        ],
+        "description": "The National Land Cover Database 2001 tree canopy layer for mapping zone 47 was produced through a cooperative project conducted by the Multi-Resolution Land Characteristics (MRLC) Consortium. The MRLC Consortium is a partnership of federal agencies (www.mrlc.gov), consisting of the U.S. Geological Survey (USGS), the National Oceanic and Atmospheric Administration (NOAA), the U.S. Environmental Protection Agency (EPA), the U.S. Department of Agriculture (USDA) Forest Service (USFS), the National Park Service (NPS), the U.S. Fish and Wildlife Service (FWS), the Bureau of Land Management (BLM) and the USDA Natural Resources Conservation Service (NRCS). One of the primary goals of the project is to generate a current, consistent, seamless, and accurate National Land cover Database (NLCD) circa 2001 for the United States at medium spatial resolution. For a detailed definition and discussion on MRLC and the NLCD 2001 products, refer to Homer et al. (2003) and &lt;http://www.mrlc.gov/mrlc2k.asp&gt;.\n\nThe NLCD 2001 was created by partitioning the U.S. into mapping zones. A total of 66 mapping zones were delineated within the conterminous U.S. based on ecoregion and geographical characteristics, edgematching features and the size requirement of Landsat mosaics. Mapping zone 47 encompasses whole or portions of several states including the states of Kentucky, Indiana, Ohio, Tennessee, and Missouri. Questions about the NLCD mapping zone 47 can be directed to the NLCD 2001 land cover mapping team at the USGS EROS Data Center (EDC), Sioux Falls, SD (605) 594-6151 or mrlc@usgs.gov.\n\nThis document explains the methods employed to map percent tree canopy closure of NLCD Mapping Zones 47 and 53, which include the state of Kentucky.",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p>",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky Tree Canopy Closure 2001 - National Land Cover Database (NLCD)",
+        "type": "Map Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785254013000,
+        "avgRating": 0,
+        "id": "9cb433485e7a4e918602d0739ed52dac",
+        "categories": [
+          "/Categories/Imagery and basemaps"
+        ],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "U.S. Geological Survey",
+        "largeThumbnail": null,
+        "lastViewed": 1787598000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1752430716000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://tiles.arcgis.com/tiles/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_CanopyClosure_2001_30M/MapServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "Agriculture",
+          "Anderson",
+          "Anderson Classification",
+          "Anderson Level II",
+          "Anderson Level 2",
+          "Change Detection",
+          "Commonwealth",
+          "Commonwealth of Kentucky",
+          "Cover",
+          "Digital Spatial Data",
+          "Digital Geospatial Data",
+          "EDC",
+          "Environment",
+          "EROS",
+          "EPA",
+          "ETM+",
+          "Farming",
+          "Forestry",
+          "Geological Survey",
+          "geoscientificInformation",
+          "Geographic Information Systems",
+          "GIS",
+          "Imagery",
+          "Imperviousness",
+          "Infrared Imagery",
+          "Kentucky",
+          "Kentucky Landscape Snapshot Project",
+          "Kentucky Landscape Snapshot",
+          "KLS",
+          "Land",
+          "Land Characterization",
+          "Land Cover",
+          "Land Management",
+          "Land Planning",
+          "Land Resources",
+          "Land Use",
+          "Landcover",
+          "Landsat 7",
+          "Landsat",
+          "Landscape",
+          "Landuse",
+          "Land Cover/Land Use",
+          "Level II",
+          "Level 2",
+          "Medium Resolution",
+          "Metadata",
+          "Mining",
+          "MRLC",
+          "Multispectral",
+          "NLCD",
+          "NLCD01",
+          "Planning",
+          "Remote Sensing",
+          "Resolution",
+          "Sanborn",
+          "Satellite",
+          "Satellite Imagery",
+          "Space Imaging",
+          "Thematic Mapper",
+          "Urban Development",
+          "Urban Forestry",
+          "Urban Sprawl",
+          "Use",
+          "U.S. Geological Survey",
+          "USGS",
+          "USGS Zone 47",
+          "USGS Zone 53",
+          "Water Resources",
+          "Open Water",
+          "Developed",
+          "Open Space",
+          "Low Intensity",
+          "Medium Intensity",
+          "High Intensity",
+          "Natural Barren",
+          "Deciduous Forest",
+          "Evergreen Forest",
+          "Mixed Forest",
+          "Scrub/Shrub",
+          "Grasslands/Herbaceous",
+          "Pasture/Hay",
+          "Cultivated Crops",
+          "Woody Wetland",
+          "Emergent Herbaceous Wetland",
+          "30 meter",
+          "Sub-pixel",
+          "IKONOS",
+          "High Resolution",
+          "Cubist",
+          "Regression Tree Algorithm",
+          "DOQQ",
+          "Tree Canopy",
+          "Canopy",
+          "Canopy Closure",
+          "United States",
+          "U.S.",
+          "US",
+          "Zone 47",
+          "mid- Westregion",
+          "District of Columbia",
+          "Tennessee",
+          "Ohio",
+          "Indiana",
+          "West Virgina",
+          "Zone 53"
+        ],
+        "numViews": 1019,
+        "numComments": 0,
+        "size": 4312790932,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Ky_CanopyClosure_2001_30M",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "U.S. Geological Survey (USGS)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/9cb433485e7a4e918602d0739ed52dac"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2c2731ce6b7442eeb0cdfa6cd522375d",
+      "title": "Federal Campgrounds in Kentucky",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Structures_Recreation_v1/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Geological Survey, displays recreation structures in the U.S.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.647055,
+                39.39273
+              ],
+              [
+                -81.275768,
+                39.39273
+              ],
+              [
+                -81.275768,
+                36.092389
+              ],
+              [
+                -90.647055,
+                36.092389
+              ],
+              [
+                -90.647055,
+                39.39273
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p><span style='background-color:rgb(255,255,255); color:rgb(20,20,20); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;'>This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Geological Survey, displays recreation structures in the U.S.</span></span></p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Federal Campgrounds in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789657993000,
+        "avgRating": 0,
+        "id": "2c2731ce6b7442eeb0cdfa6cd522375d",
+        "categories": [
+          "/Categories/Location",
+          "/Categories/Economy",
+          "/Categories/Structure"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "USGS",
+        "largeThumbnail": null,
+        "lastViewed": 1789642800000,
+        "thumbnail": "thumbnail/thumbnail1752506957853.png",
+        "languages": [],
+        "created": 1752505710000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Structures_Recreation_v1/FeatureServer",
+        "tags": [
+          "NGDA",
+          "National Geospatial Data Asset",
+          "FGDC",
+          "Federal Geospatial Data Committee",
+          "structures",
+          "federal",
+          "USGS",
+          "U.S. Geological Survey",
+          "USDOI",
+          "DOI",
+          "U.S. Department of the Interior",
+          "Department of the Interior",
+          "The National Map",
+          "campgrounds",
+          "trailheads",
+          "visitor information centers",
+          "Recreation",
+          "cabins",
+          "shelters",
+          "picnic areas",
+          "headquarters",
+          "ranger stations"
+        ],
+        "numViews": 7972,
+        "numComments": 0,
+        "size": 105,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-gb",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/2c2731ce6b7442eeb0cdfa6cd522375d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9d50029c2f8c441a801df7d31afa3b7c",
+      "title": "Major Traffic Generator Facilities in Kentucky",
+      "url": "https://services2.arcgis.com/CcI36Pduqd0OR4W9/arcgis/rest/services/Major_Traffic_Generator_Facilities_in_Kentucky/FeatureServer",
+      "publisher": "KYTCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature layer shows the locations of Major Traffic Generator facilities in Kentucky at a statewide scale. These types of facilities generate 100 vehicle trips or more per day.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.272968444511,
+                39.12381274036907
+              ],
+              [
+                -81.99418424033831,
+                39.12381274036907
+              ],
+              [
+                -81.99418424033831,
+                36.48902270306404
+              ],
+              [
+                -89.272968444511,
+                36.48902270306404
+              ],
+              [
+                -89.272968444511,
+                39.12381274036907
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p>This feature layer shows point feature locations of Major Traffic Generators in Kentucky at a statewide scale. These types of facilities generate 100 vehicle trips or more per day and they include, but are not limited to schools, hospitals, shopping centers, sports complexes, arenas, office parks, truck stops, and industrial parks. This dataset includes facilities that generate passenger vehicle traffic as well as freight traffic. In some cases, Major Traffic Generators can also be considered a Major Freight User.</p><p>Data Download: <a target='_blank' href='https://ky.app.box.com/s/ohf80039flk9p27935uqo2r3to2dlf5a' rel='nofollow ugc noopener noreferrer'>https://ky.app.box.com/s/ohf80039flk9p27935uqo2r3to2dlf5a</a></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p>KYTC publishes this data under the Creative Commons Zero (CC0) license. The data is public domain and KYTC does not warrant the data. It is the users' responsibility to determine if it is appropriate for their purposes. For further details about the CC0 license, please refer to <a target='_blank' href='https://creativecommons.org/publicdomain/zero/1.0/' rel='nofollow ugc noopener noreferrer'>https://creativecommons.org/publicdomain/zero/1.0/</a></p></div></div></div>",
+        "ownerId": "24515d9a6afb9184fcb7d56f3c126dfe",
+        "title": "Major Traffic Generator Facilities in Kentucky",
+        "type": "Feature Service",
+        "orgId": "CcI36Pduqd0OR4W9",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773273170000,
+        "avgRating": 0,
+        "id": "9d50029c2f8c441a801df7d31afa3b7c",
+        "categories": [
+          "/Categories/Environment/Production",
+          "/Categories/Administrative/Owner/KYTC GIS",
+          "/Categories/Business Unit/Department of Highways/Planning"
+        ],
+        "spatialReference": "102763",
+        "numRatings": 0,
+        "owner": "KYTCGIS",
+        "accessInformation": "Kentucky Transportation Cabinet, Division of Planning, Modal Programs",
+        "largeThumbnail": null,
+        "lastViewed": 1787598000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1771270332000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/CcI36Pduqd0OR4W9/arcgis/rest/services/Major_Traffic_Generator_Facilities_in_Kentucky/FeatureServer",
+        "tags": [
+          "Major Traffic Generators",
+          "Analysis",
+          "Planning",
+          "Freight",
+          "Forecasting",
+          "Modeling",
+          "KYTC",
+          "KY DOT",
+          "US DOT",
+          "Transportation",
+          "AASHTO",
+          "Kentucky Transportation Cabinet",
+          "CC0",
+          "FHWA"
+        ],
+        "numViews": 1119,
+        "numComments": 0,
+        "size": 4022272,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Major_Traffic_Generator_Facilities_in_Kentucky",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Transportation Cabinet",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/9d50029c2f8c441a801df7d31afa3b7c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    103
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 12,
+  "next_offset": 10,
+  "response_sha256": "8e4b067becd702bdb58820da173e56d22f06a1cf4603be9b236dcb48b350089f",
+  "search_complete": false
+}

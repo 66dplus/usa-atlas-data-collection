@@ -1,0 +1,872 @@
+{
+  "jurisdiction_code": "DC",
+  "query": "citizenship",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T20:17:36.004493+00:00",
+  "candidates": [
+    {
+      "id": "c45c42377c6747f292c8ae5c11e67719",
+      "title": "ACS Social Characteristics DC Experimental",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/55",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Due to the impact of the COVID-19 pandemic, instead of providing the standard 1-year data products, the Census Bureau released experimental estimates from the 1-year data. These are 1-year estimates shown by District of Columbia boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.14074011718749,
+                39.00962959609984
+              ],
+              [
+                -76.89354773437499,
+                39.00962959609984
+              ],
+              [
+                -76.89354773437499,
+                38.77479683242797
+              ],
+              [
+                -77.14074011718749,
+                38.77479683242797
+              ],
+              [
+                -77.14074011718749,
+                39.00962959609984
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>Experimenal Household type, Education, Disability, Language, Computer/Internet Use variables. Due to the impact of the COVID-19 pandemic, instead of providing the standard 1-year data products, the Census Bureau released experimental estimates from the 1-year data. This includes a limited number of data tables for the nation, states, and the District of Columbia. </span></p><p><span>Please visting the following webpage for details. </span><a href='https://www.census.gov:443/programs-surveys/acs/data/experimental-data.html' target='_blank' style='text-decoration:underline;' rel='nofollow ugc noopener noreferrer'><span>https://www.census.gov/programs-surveys/acs/data/experimental-data.html</span></a></p><p><span>Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: District-wide. Current Vintage: 2020. ACS Table(s): Social - Experimental. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 18, 2022. National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org:443/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS Social Characteristics DC Experimental",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1745867515000,
+        "avgRating": 0,
+        "id": "c45c42377c6747f292c8ae5c11e67719",
+        "categories": [
+          "/Categories/Demographic/Social Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning, Census Bureau",
+        "largeThumbnail": null,
+        "lastViewed": 1785420000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1655992691000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/55",
+        "tags": [
+          "American Community Survey",
+          "census bureau",
+          "Computer",
+          "Disability",
+          "district of columbia",
+          "District-Wide",
+          "Education",
+          "Household",
+          "Internet Use",
+          "Language",
+          "Social Characteristics",
+          "washington dc",
+          "experimental",
+          "1-year",
+          "covid-19",
+          "coronavirus"
+        ],
+        "numViews": 3886,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -76.909262,
+                38.995852
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.79159,
+                "xmin": -77.119862,
+                "ymax": 38.995852,
+                "xmax": -76.909262,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "D.C. Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/c45c42377c6747f292c8ae5c11e67719"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "60aae35567f44e96b2408ed2fb719126",
+      "title": "ACS 5-Year Social Characteristics DC Ward",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/48",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about social characteristics. These are 5-year estimates shown by 2022 Ward boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119862,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.995852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Household type, Education, Disability, Language, Computer/Internet Use, and more. This service is updated annually with American Community Survey (ACS) 5-year data. Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: 2022 Wards (State Legislative Districts [Upper Chamber]). </span><span style=\"font-weight:bold;\">Current Vintage: 2020-2024. ACS Table(s): DP02. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 11, 2026.</span><span> National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data). The effect of nonsampling error is not represented in these tables. Data Processing Notes: This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. Boundaries come from the US Census TIGER geodatabases. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage as specified by the Census. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2020 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k TIGER Cartographic Boundary Shapefiles. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). Field alias names were created based on the Table Shells file available from the American Community Survey Summary File Documentation page. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS 5-Year Social Characteristics DC Ward",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788880082000,
+        "avgRating": 0,
+        "id": "60aae35567f44e96b2408ed2fb719126",
+        "categories": [
+          "/Categories/Demographic/Social Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1789437600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1611602626000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/48",
+        "tags": [
+          "Social Characteristics",
+          "Wards",
+          "acs",
+          "american community survey",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 11161,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of Planning",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/60aae35567f44e96b2408ed2fb719126"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "cfa155f3c0dc4088bf5c59e8f6b3584d",
+      "title": "ACS 5-Year Social Characteristics DC Census Tract",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/47",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about social characteristics. These are 5-year estimates shown by 2020 Census Tract boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119862,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.995852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Household type, Education, Disability, Language, Computer/Internet Use, and more. This service is updated annually with American Community Survey (ACS) 5-year data. Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: Census Tracts. </span><span style=\"font-weight:bold;\">Current Vintage: 2020-2024. ACS Table(s): DP02. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 11, 2026</span><span>. National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data). The effect of nonsampling error is not represented in these tables. Data Processing Notes: This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. Boundaries come from the US Census TIGER geodatabases. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage as specified by the Census. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2020 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k TIGER Cartographic Boundary Shapefiles. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). Field alias names were created based on the Table Shells file available from the American Community Survey Summary File Documentation page. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS 5-Year Social Characteristics DC Census Tract",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788879926000,
+        "avgRating": 0,
+        "id": "cfa155f3c0dc4088bf5c59e8f6b3584d",
+        "categories": [
+          "/Categories/Demographic/Social Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1789441200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1611602415000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/47",
+        "tags": [
+          "Social Characteristics",
+          "Census Tracts",
+          "acs",
+          "american community survey",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 15245,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of Planning",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/cfa155f3c0dc4088bf5c59e8f6b3584d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "fdbc8f7c0b394fae8903b4b0be9a8e15",
+      "title": "ACS 5-Year Social Characteristics DC",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/46",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about social characteristics. These are 5-year estimates shown by District of Columbia boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119862,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.995852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Household type, Education, Disability, Language, Computer/Internet Use, and more. This service is updated annually with American Community Survey (ACS) 5-year data. Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: District-wide. </span><span style=\"font-weight:bold;\">Current Vintage: 2020-2024. ACS Table(s): DP02. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 11, 2026.</span><span> National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data). The effect of nonsampling error is not represented in these tables. Data Processing Notes: This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. Boundaries come from the US Census TIGER geodatabases. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage as specified by the Census. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2020 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k TIGER Cartographic Boundary Shapefiles. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). Field alias names were created based on the Table Shells file available from the American Community Survey Summary File Documentation page. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS 5-Year Social Characteristics DC",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788879799000,
+        "avgRating": 0,
+        "id": "fdbc8f7c0b394fae8903b4b0be9a8e15",
+        "categories": [
+          "/Categories/Demographic/Social Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1789437600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1611602217000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/46",
+        "tags": [
+          "Social Characteristics",
+          "District-Wide",
+          "acs",
+          "american community survey",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 7520,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of Planning",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/fdbc8f7c0b394fae8903b4b0be9a8e15"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5cfb6793e22e4de49380b6be984f19f7",
+      "title": "ACS 1-Year Social Characteristics DC",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/60",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about social characteristics. These are 1-year estimates shown by District of Columbia boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119862,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.995852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Household type, Education, Disability, Language, Computer/Internet Use, and more. This service is updated annually with American Community Survey (ACS) 1-year data. Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: District-wide. </span><span style=\"font-weight:bold;\">Current Vintage: 2024. ACS Table(s): DP02. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 11, 2026</span><span>. National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data). The effect of nonsampling error is not represented in these tables. Data Processing Notes: This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. Boundaries come from the US Census TIGER geodatabases. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage as specified by the Census. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2020 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k TIGER Cartographic Boundary Shapefiles. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). Field alias names were created based on the Table Shells file available from the American Community Survey Summary File Documentation page. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS 1-Year Social Characteristics DC",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788878181000,
+        "avgRating": 0,
+        "id": "5cfb6793e22e4de49380b6be984f19f7",
+        "categories": [
+          "/Categories/Demographic/Social Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1789398000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1679073607000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/60",
+        "tags": [
+          "Social Characteristics",
+          "District-Wide",
+          "acs",
+          "american community survey",
+          "washington dc",
+          "district of columbia"
+        ],
+        "numViews": 5827,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of Planning",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/5cfb6793e22e4de49380b6be984f19f7"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    239
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "565a8819dd2f239b5be33a38cfc65540f9a9dd8d94f02b10d1f8ac4071b2402d",
+  "search_complete": true
+}

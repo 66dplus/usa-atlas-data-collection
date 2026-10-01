@@ -1,0 +1,46 @@
+{
+  "jurisdiction_code": "MI",
+  "query": "data center",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-09-29T14:01:55.906165+00:00",
+  "candidates": [
+    {
+      "id": "qtrs-mihe",
+      "title": "Labor Force",
+      "url": "https://data.michigan.gov/Economy/Labor-Force/qtrs-mihe",
+      "publisher": "MCDA Team",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.michigan.gov/resource/qtrs-mihe.json",
+      "description": "This dataset shows a time series of Michigan's labor force dating back to 1976. This dataset is refreshed monthly.\n\nSource: Local Area Unemployment Statistics, Michigan Center for Data and Analytics"
+    },
+    {
+      "id": "6rbe-zjpu",
+      "title": "MDOT Bureau of Bridges and Structures - Common Bridge Inventory Items - Includes MDOT Owned Bridges and Local Agency NBI Bridges with Size and Design Info",
+      "url": "https://data.michigan.gov/Infrastructure/MDOT-Bureau-of-Bridges-and-Structures-Common-Bridg/6rbe-zjpu",
+      "publisher": "Daniel Wolgemuth",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.michigan.gov/resource/6rbe-zjpu.json",
+      "description": "Formal Notice Regarding Open Data Portal Transition\n\nThe State of Michigan Open Data Portal will transition to a new platform on or before Oct. 1. All datasets currently hosted in Tyler Data & Insights (TDI) will be migrated to the new system. Users who access these datasets via API should be aware that field names, schema definitions and other dataset attributes may change after the transition. Any systems, applications or automated processes that rely on these elements may need updates to remain fully functional.\n\nMiBridge / BrM - Report 44 dataset - Includes MDOT Owned Bridges and Local Agency NBI Bridges with Size and Design Info. By using this dataset, you are accepting the terms of use attached.\n\nThis dataset is intended to be updated weekly and is replacing MDOT Bureau of Bridges and Structures - Common Bridge Inventory Items - NBI Only. \n\nDataset Owner: mdot-bridge-data-request@michigan.gov"
+    }
+  ],
+  "page_receipts": [
+    107
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "4549a9b84de12d578050b599e4785bf13c40552edae0b8a08222df626e920cff",
+  "search_complete": true
+}

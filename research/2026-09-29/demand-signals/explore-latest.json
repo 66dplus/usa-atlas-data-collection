@@ -1,0 +1,61 @@
+{
+  "run": "explore-attempts/20260929T144805Z",
+  "started_at": "2026-09-29T14:48:05.836654+00:00",
+  "status": "public_explore_unavailable",
+  "keywords": [
+    "data center",
+    "electricity rates",
+    "water shortage",
+    "overdose"
+  ],
+  "request": {
+    "comparisonItem": [
+      {
+        "keyword": "data center",
+        "geo": "US",
+        "time": "today 12-m"
+      },
+      {
+        "keyword": "electricity rates",
+        "geo": "US",
+        "time": "today 12-m"
+      },
+      {
+        "keyword": "water shortage",
+        "geo": "US",
+        "time": "today 12-m"
+      },
+      {
+        "keyword": "overdose",
+        "geo": "US",
+        "time": "today 12-m"
+      }
+    ],
+    "category": 0,
+    "property": ""
+  },
+  "official_ui_url": "https://trends.google.com/trends/explore?geo=US&q=data+center%2Celectricity+rates%2Cwater+shortage%2Coverdose&date=today+12-m",
+  "authorization_used": false,
+  "proxy_or_access_bypass_used": false,
+  "maximum_requests": 2,
+  "collector_sha256": "d249bb4432fb0e08c9138503d9d3b252eaff47ffdcb6c3ea5990731397466310",
+  "measurement": "relative_search_interest_not_absolute_search_volume",
+  "failure": {
+    "name": "explore",
+    "requested_at": "2026-09-29T14:48:05.837148+00:00",
+    "url": "https://trends.google.com/trends/api/explore?hl=en-US&tz=0&req=%7B%22comparisonItem%22%3A%5B%7B%22keyword%22%3A%22data+center%22%2C%22geo%22%3A%22US%22%2C%22time%22%3A%22today+12-m%22%7D%2C%7B%22keyword%22%3A%22electricity+rates%22%2C%22geo%22%3A%22US%22%2C%22time%22%3A%22today+12-m%22%7D%2C%7B%22keyword%22%3A%22water+shortage%22%2C%22geo%22%3A%22US%22%2C%22time%22%3A%22today+12-m%22%7D%2C%7B%22keyword%22%3A%22overdose%22%2C%22geo%22%3A%22US%22%2C%22time%22%3A%22today+12-m%22%7D%5D%2C%22category%22%3A0%2C%22property%22%3A%22%22%7D",
+    "result": "error",
+    "error": "HTTPError: HTTP Error 429: unknown",
+    "status": 429,
+    "retry_after": null,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 1701,
+    "response_sha256": "7857a76a66da49841acb2218a195ec610a3f8ac04616e1184e4b1cafc93d37fe",
+    "raw_file": "explore.raw",
+    "completed_at": "2026-09-29T14:48:06.046237+00:00"
+  },
+  "blocked_requests_not_retried": true,
+  "completed_at": "2026-09-29T14:48:06.053561+00:00",
+  "http_requests": 1,
+  "monthly_keyword_volume_available": false
+}

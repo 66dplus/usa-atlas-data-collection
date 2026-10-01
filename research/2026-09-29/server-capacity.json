@@ -1,0 +1,20 @@
+{
+  "captured_at": "2026-09-29T12:53:07.836289+00:00",
+  "disk": {
+    "total_bytes": 206900281344,
+    "used_bytes": 126406840320,
+    "free_bytes": 80476663808
+  },
+  "memory_meminfo": {
+    "MemTotal": "12247540 kB",
+    "MemAvailable": "7285856 kB",
+    "Shmem": "2294392 kB"
+  },
+  "original_database_rows": 49206438,
+  "original_observation_bytes_before_migration": 63936045056,
+  "cleanup_status": "failed_before_cutover",
+  "failure": "PostgreSQL shared memory segment could not grow to 268435456 bytes",
+  "continuation_prepared": "database/cleanup_storage.py compact --apply --renew-unbound-backup",
+  "continuation_executed": false,
+  "technical_blocker": "Current session cannot access Docker API or systemd bus; host files outside writable roots cannot be modified."
+}

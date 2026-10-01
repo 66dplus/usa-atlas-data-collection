@@ -1,0 +1,446 @@
+{
+  "jurisdiction_code": "DC",
+  "query": "cancer",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T14:24:13.038784+00:00",
+  "candidates": [
+    {
+      "id": "de63a68eb7674548ae0ac01867123f7e",
+      "title": "DC Health Planning Neighborhoods",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/13",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset is used by DC Health, partners, and researchers to facilitate analysis and statistical modeling on a variety of health, economic, social, and other topics. DC Health delineates statistical neighborhoods to facilitate small-area analyses and visualization of health, economic, social, and other indicators to display and uncover disparate outcomes among populations across the city.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119759,
+                38.995548
+              ],
+              [
+                -76.909393,
+                38.995548
+              ],
+              [
+                -76.909393,
+                38.791645
+              ],
+              [
+                -77.119759,
+                38.791645
+              ],
+              [
+                -77.119759,
+                38.995548
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p style='margin:0 0 11 0;'><span><span>This dataset contains polygons that represent the boundaries of statistical neighborhoods as defined by the DC Department of Health (DC Health). DC Health delineates statistical neighborhoods to facilitate small-area analyses and visualization of health, economic, social, and other indicators to display and uncover disparate outcomes among populations across the city. The neighborhoods are also used to determine eligibility for some health services programs and support research by various entities within and outside of government. DC Health Planning Neighborhood boundaries follow census tract 2010 lines defined by the US Census Bureau. Each neighborhood is a group of between one and seven different, contiguous census tracts. This allows for easier comparison to Census data and calculation of rates per population (including estimates from the American Community Survey and Annual Population Estimates). These do not reflect precise neighborhood locations and do not necessarily include all commonly-used neighborhood designations. There is no formal set of standards that describes which neighborhoods are included in this dataset. Note that the District of Columbia does not have official neighborhood boundaries. </span></span></p><p style='margin:0 0 11 0;'><span><span>Origin of boundaries: each neighborhood is a group of between one and seven different, contiguous census tracts. They were originally determined in 2015 as part of an analytical research project with technical assistance from the Centers for Disease Control and Prevention (CDC) and the Council for State and Territorial Epidemiologists (CSTE) to define small area estimates of life expectancy. Census tracts were grouped roughly following the Office of Planning Neighborhood Cluster boundaries, where possible, and were made just large enough to achieve standard errors of less than 2 for each neighborhood's calculation of life expectancy. The resulting neighborhoods were used in the </span></span><a href='https://dchealth.dc.gov/publication/health-equity-report-district-columbia-2018' style='text-decoration:underline;' rel='nofollow ugc'><span style='text-decoration:underline;'><span>DC Health Equity Report (2018)</span></span></a><span> with updated names. HPNs were modified slightly in 2019, incorporating one census tract that was consistently suppressed due to low numbers into a neighboring HPN (Lincoln Park incorporated into Capitol Hill). Demographic information were analyzed to identify the bordering group with the most similarities to the single census tract. A second change split a neighborhood (GWU/National Mall) into two to facilitate separate analysis.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "DC Health Planning Neighborhoods",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1655302986000,
+        "avgRating": 0,
+        "id": "de63a68eb7674548ae0ac01867123f7e",
+        "categories": [
+          "/Categories/Health and Human Services"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "https://dchealth.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1774886400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1589208939000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/13",
+        "tags": [
+          "CDC",
+          "Centers for Disease Control and Prevention",
+          "Council for State and Territorial Epidemiologists",
+          "CSTE",
+          "dc",
+          "dc health",
+          "disease",
+          "district of columbia",
+          "doh",
+          "epidemiology",
+          "health",
+          "neighborhood",
+          "washington dc"
+        ],
+        "numViews": 31250,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "City of Washington, DC",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/de63a68eb7674548ae0ac01867123f7e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "20c55739045b4fe7b7b7ade69456c109",
+      "title": "DC Health Planning Neighborhoods to Census Tracts",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/14",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This is a cross reference table to show DC Health neighborhood names for each 2010 Census Tract.  DC Health, partners, and researchers use Health Planning Neighborhoods to facilitate analysis and statistical modeling on a variety of health, economic, social, and other topics. DC Health delineates statistical neighborhoods to facilitate small-area analyses and visualization of health, economic, social, and other indicators to display and uncover disparate outcomes among populations across the city.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.13,
+                39.01
+              ],
+              [
+                -76.9,
+                39.01
+              ],
+              [
+                -76.9,
+                38.78
+              ],
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -77.13,
+                39.01
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Table"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p style='margin:0 0 11 0;'><span><span>This dataset contains polygons that represent the boundaries of statistical neighborhoods as defined by the DC Department of Health (DC Health). DC Health delineates statistical neighborhoods to facilitate small-area analyses and visualization of health, economic, social, and other indicators to display and uncover disparate outcomes among populations across the city. The neighborhoods are also used to determine eligibility for some health services programs and support research by various entities within and outside of government. DC Health Planning Neighborhood boundaries follow census tract 2010 lines defined by the US Census Bureau. Each neighborhood is a group of between one and seven different, contiguous census tracts. This allows for easier comparison to Census data and calculation of rates per population (including estimates from the American Community Survey and Annual Population Estimates). These do not reflect precise neighborhood locations and do not necessarily include all commonly-used neighborhood designations. There is no formal set of standards that describes which neighborhoods are included in this dataset. Note that the District of Columbia does not have official neighborhood boundaries. </span></span></p><p style='margin:0 0 11 0;'><span><span>Origin of boundaries: each neighborhood is a group of between one and seven different, contiguous census tracts. They were originally determined in 2015 as part of an analytical research project with technical assistance from the Centers for Disease Control and Prevention (CDC) and the Council for State and Territorial Epidemiologists (CSTE) to define small area estimates of life expectancy. Census tracts were grouped roughly following the Office of Planning Neighborhood Cluster boundaries, where possible, and were made just large enough to achieve standard errors of less than 2 for each neighborhood's calculation of life expectancy. The resulting neighborhoods were used in the </span></span><a href='https://dchealth.dc.gov/publication/health-equity-report-district-columbia-2018' style='text-decoration:underline;' rel='nofollow ugc'><span><span>DC Health Equity Report (2018)</span></span></a><span> with updated names. HPNs were modified slightly in 2019, incorporating one census tract that was consistently suppressed due to low numbers into a neighboring HPN (Lincoln Park incorporated into Capitol Hill). Demographic information were analyzed to identify the bordering group with the most similarities to the single census tract. A second change split a neighborhood (GWU/National Mall) into two to facilitate separate analysis.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span><span>This work is licensed under a </span></span><a href='https://creativecommons.org:443/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span><span>Creative Commons Attribution 4.0 International License</span></span></a><span><span>.</span></span></p></div></div></div>",
+        "title": "DC Health Planning Neighborhoods to Census Tracts",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1727379624000,
+        "avgRating": 0,
+        "id": "20c55739045b4fe7b7b7ade69456c109",
+        "categories": [
+          "/Categories/Health and Human Services"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "DC Health",
+        "largeThumbnail": null,
+        "lastViewed": 1774886400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1716332134000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/14",
+        "tags": [
+          "ACS",
+          "American Community Survey",
+          "CDC",
+          "census tract",
+          "Centers for Disease Control and Prevention",
+          "Council for State and Territorial Epidemiologists",
+          "CSTE",
+          "DC Health",
+          "disease",
+          "District of Columbia",
+          "DOH",
+          "epidemiology",
+          "health",
+          "HPN",
+          "neighborhood",
+          "statistic",
+          "Washington DC"
+        ],
+        "numViews": 3667,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "D.C. Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/20c55739045b4fe7b7b7ade69456c109"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9767d4bebd9e4559aae36785b77db901",
+      "title": "Mosquito Trap Sites",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/11",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.14474152465803,
+                38.971769387509234
+              ],
+              [
+                -76.8999524011232,
+                38.971769387509234
+              ],
+              [
+                -76.8999524011232,
+                38.80956472890744
+              ],
+              [
+                -77.14474152465803,
+                38.80956472890744
+              ],
+              [
+                -77.14474152465803,
+                38.971769387509234
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>These data represent mosquito trap site results in the District of Columbia from 2016 to 2018. Trap locations are considered approximate address and/or the “nearest” street address or block to the stated coordinates in the data. Visit </span><a href='https://dcgis.maps.arcgis.com/apps/MapJournal/index.html?appid=30c7550c37f04be3803c36928e6cac7c' rel='nofollow ugc'><span>Fight the Bite: Protecting the District of Columbia from Mosquitoes</span></a><span>- a collection of the 2016-2018 Arbovirus Surveillance Program conducted annually by DC Health, Health Regulation &amp; Licensing Admin., Animal Services Div.</span></p><p><span>Mosquitoes have the potential to spread harmful diseases. During the annual mosquito season in Washington DC, usually from April – October, </span><a href='https://dchealth.dc.gov/' rel='nofollow ugc'><span>DC Health</span></a> <span>deploys surveillance and mitigation methods to control the mosquito population in the District. DC Health (also known as the D.C. Department of Health or formerly DOH) has been trapping and testing mosquitoes for West Nile virus (WNV) for well over a decade. Starting in 2016, and in response to the Zika outbreak in Latin America and the Caribbean, DC Health substantially increased mosquito monitoring activities across the city. There were a total of 28 sites and 36 traps across the 8 wards. Data was submitted to the Centers for Disease Control MoquitoNet Portal.</span></p><p><span>Note: the 2017 analysis does not include data for October. This is because October of 2017 would have skewed the results far too much based on a few variables that occurred. For example, the number of traps which had failed by the end of the season.</span></p><p><span>Mosquito species in Washington, D.C.:</span></p><p><span>Culex Pipiens, Salinarius and Culex Restuan: spread West Nile Virus</span></p><p><span>Aedes aegypti : according to the Centers for Disease Control (CDC), health experts have determined this species to be the most competent vector, capable of transmitting Zika to the human population. To date, none of the Aedes aegypti trapped in Washington, D.C. have been found to carry the Zika virus.</span></p><p><span>Aedes albopictus: capable of spreading Zika to people. However, health experts are still learning whether it is likely to do so as it appears at this time, it is not as competent a vector for transmitting Zika as is the Aedes aegypti. Just because a mosquito can carry the virus does not mean that it will cause disease. So far, none of the Aedes albopictus trapped in Washington, D.C. have been found to carry the Zika virus.</span></p><p><span>Aedes japonicus: normally found in South Florida, is present in D.C. in small numbers. Presently there is no indication that they are competent vectors for spreading Zika to the human population.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' target='_blank' rel='nofollow ugc noopener noreferrer'>Creative Commons Attribution 4.0 International License</a><span>.</span></p></div></div></div>",
+        "title": "Mosquito Trap Sites",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "contentStatus": "deprecated",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1638992539000,
+        "avgRating": 0,
+        "id": "9767d4bebd9e4559aae36785b77db901",
+        "categories": [
+          "/Categories/Health and Human Services"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "https://dchealth.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1774893600000,
+        "thumbnail": "thumbnail/thumbnail1638992538273.png",
+        "languages": [],
+        "created": 1554751032000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/11",
+        "tags": [
+          "animal regulation",
+          "arbovirus",
+          "cdc",
+          "disease",
+          "doh",
+          "health",
+          "mosquito",
+          "trap",
+          "Washington dc",
+          "west nile virus",
+          "zika"
+        ],
+        "numViews": 5663,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "City of Washington, DC",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/9767d4bebd9e4559aae36785b77db901"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    167
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 3,
+  "next_offset": 3,
+  "response_sha256": "0f5660a538640b5b27f449e46a748bba7763a4b12179385daed3c595579a10b7",
+  "search_complete": true
+}

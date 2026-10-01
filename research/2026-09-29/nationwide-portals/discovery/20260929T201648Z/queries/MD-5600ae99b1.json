@@ -1,0 +1,46 @@
+{
+  "jurisdiction_code": "MD",
+  "query": "cancer",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-09-29T20:17:31.545825+00:00",
+  "candidates": [
+    {
+      "id": "sx7q-snbm",
+      "title": "Number of Cancer Cases for All Cancer Sites by Jurisdiction, Gender, and Race, Maryland 2009",
+      "url": "https://opendata.maryland.gov/Health-and-Human-Services/Number-of-Cancer-Cases-for-All-Cancer-Sites-by-Jur/sx7q-snbm",
+      "publisher": "Andrea Bankoski",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://opendata.maryland.gov/resource/sx7q-snbm.json",
+      "description": "This is historical data. The update frequency has been set to \"Static Data\" and is here for historic value. Updated 8/14/2024. \n\nDefinition of \"All Cancer Sites\": ICD-O-3 Topography (Site) Codes  C00.0 – C80.9  with histology codes including all invasive cancers of all sites except basal and squamous cell skin cancers, and in situ cancer cases of the urinary bladder.  Total includes cases reported as transexual, hermaphrodite, and unknown gender.  Some cells are missing data due to suppression of low cell counts."
+    },
+    {
+      "id": "yg8i-6p9m",
+      "title": "Age-Adjusted Incidence Rates for All Cancer Sites by Jurisdiction, Gender, and Race, Maryland 2009",
+      "url": "https://opendata.maryland.gov/Health-and-Human-Services/Age-Adjusted-Incidence-Rates-for-All-Cancer-Sites-/yg8i-6p9m",
+      "publisher": "Andrea Bankoski",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://opendata.maryland.gov/resource/yg8i-6p9m.json",
+      "description": "This is historical data. The update frequency has been set to \"Static Data\" and is here for historic value. Updated 8/14/2024. \n\nDefinition of \"All Cancer Sites\": ICD-O-3 Topography (Site) Codes  C00.0 – C80.9  with histology codes including all invasive cancers of all sites except basal and squamous cell skin cancers, and in situ cancer cases of the urinary bladder.  Rates are per 100,000 population and are age-adjusted to 2000 U.S. standard population. Rates based on case counts of 1-15 are suppressed per DHMH/MCR Data Use Policy and Procedures."
+    }
+  ],
+  "page_receipts": [
+    210
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "e1e4b0869689fa6e9b238f0793f9a92b8b0f6e233dd0cb2d755f87dd7d7317e5",
+  "search_complete": true
+}

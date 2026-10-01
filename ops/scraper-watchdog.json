@@ -1,0 +1,336 @@
+{
+  "disk_floor_bytes": 12884901888,
+  "enabled": true,
+  "initial_backoff_seconds": 120,
+  "jobs": [
+    {
+      "code_sha256": {
+        "full/collect_deep.py": "c19a470270c64d419eb7b9780647c0a85daccc1b493478b530afbf7eefde8500",
+        "full/field-contract.json": "e321baf79add3320961fab36f1e3c62630f46ad2c886e3e77b2a8099bb73603e",
+        "ops/start_deep_collection.py": "4673e4737ea4fe4f4c8cfc6c3dc5a600c0b96fc58528865deab80693a1ae35cc"
+      },
+      "enabled": true,
+      "expected_jobs": 19,
+      "id": "acs-summary",
+      "kind": "batch",
+      "locks": [
+        "full/runtime/deep-20260928/acs-summary.lock"
+      ],
+      "manifest": "full/runtime/deep-20260928/run-acs-summary.json",
+      "processes": [
+        {
+          "required": [
+            "worker",
+            "--provider",
+            "acs-summary"
+          ],
+          "script": "ops/start_deep_collection.py"
+        },
+        {
+          "required": [
+            "collect",
+            "--provider",
+            "acs-summary"
+          ],
+          "script": "full/collect_deep.py"
+        }
+      ],
+      "restart_command": [
+        "/usr/bin/python3",
+        "-u",
+        "{root}/ops/start_deep_collection.py",
+        "worker",
+        "--out",
+        "{root}/full/runtime/deep-20260928",
+        "--provider",
+        "acs-summary"
+      ],
+      "stale_seconds": 3600,
+      "supervisor": "full/runtime/deep-20260928/supervisor-acs-summary.json"
+    },
+    {
+      "code_sha256": {
+        "full/collect_deep.py": "c19a470270c64d419eb7b9780647c0a85daccc1b493478b530afbf7eefde8500",
+        "full/field-contract.json": "e321baf79add3320961fab36f1e3c62630f46ad2c886e3e77b2a8099bb73603e",
+        "ops/start_deep_collection.py": "4673e4737ea4fe4f4c8cfc6c3dc5a600c0b96fc58528865deab80693a1ae35cc"
+      },
+      "enabled": true,
+      "expected_jobs": 1,
+      "id": "cdc-places",
+      "kind": "batch",
+      "locks": [
+        "full/runtime/deep-20260928/cdc-places.lock"
+      ],
+      "manifest": "full/runtime/deep-20260928/run-cdc-places.json",
+      "processes": [
+        {
+          "required": [
+            "worker",
+            "--provider",
+            "cdc-places"
+          ],
+          "script": "ops/start_deep_collection.py"
+        },
+        {
+          "required": [
+            "collect",
+            "--provider",
+            "cdc-places"
+          ],
+          "script": "full/collect_deep.py"
+        }
+      ],
+      "restart_command": [
+        "/usr/bin/python3",
+        "-u",
+        "{root}/ops/start_deep_collection.py",
+        "worker",
+        "--out",
+        "{root}/full/runtime/deep-20260928",
+        "--provider",
+        "cdc-places"
+      ],
+      "stale_seconds": 3600,
+      "supervisor": "full/runtime/deep-20260928/supervisor-cdc-places.json"
+    },
+    {
+      "code_sha256": {
+        "full/collect_deep.py": "c19a470270c64d419eb7b9780647c0a85daccc1b493478b530afbf7eefde8500",
+        "full/field-contract.json": "e321baf79add3320961fab36f1e3c62630f46ad2c886e3e77b2a8099bb73603e",
+        "ops/collect_deep_extensions.py": "a17364c4cc95998affb77c8d2ca5dd24881b72f380cfa35510422ab07aaeca7f",
+        "ops/start_deep_collection.py": "4673e4737ea4fe4f4c8cfc6c3dc5a600c0b96fc58528865deab80693a1ae35cc"
+      },
+      "enabled": true,
+      "expected_jobs": 2,
+      "id": "acs-extensions",
+      "kind": "batch",
+      "locks": [
+        "full/runtime/deep-20260928/extensions/extensions.lock"
+      ],
+      "manifest": "full/runtime/deep-20260928/extensions/run-acs-summary.json",
+      "processes": [
+        {
+          "required": [
+            "worker"
+          ],
+          "script": "ops/collect_deep_extensions.py"
+        }
+      ],
+      "restart_command": [
+        "/usr/bin/python3",
+        "-u",
+        "{root}/ops/collect_deep_extensions.py",
+        "worker",
+        "--primary",
+        "{root}/full/runtime/deep-20260928",
+        "--out",
+        "{root}/full/runtime/deep-20260928/extensions",
+        "--collector-sha256",
+        "c19a470270c64d419eb7b9780647c0a85daccc1b493478b530afbf7eefde8500"
+      ],
+      "stale_seconds": 3600,
+      "supervisor": "full/runtime/deep-20260928/extensions/supervisor.json"
+    },
+    {
+      "code_sha256": {
+        "full/collect_public.py": "a3df2cda538bb27d8a57c363b66071f3702addbd89e9de647ef833ae6aecad75"
+      },
+      "enabled": true,
+      "expected_jobs": 6,
+      "id": "public-sources",
+      "kind": "public",
+      "locks": [
+        "full/runtime/public-20260928/collector.lock"
+      ],
+      "manifest": "full/runtime/public-20260928/manifest.json",
+      "processes": [
+        {
+          "required": [],
+          "script": "full/collect_public.py"
+        }
+      ],
+      "restart_command": [
+        "/usr/bin/python3",
+        "-u",
+        "{root}/full/collect_public.py",
+        "--out",
+        "{root}/full/runtime/public-20260928"
+      ],
+      "stale_seconds": 3600
+    },
+    {
+      "code_sha256": {
+        "/etc/systemd/system/usa-atlas-local-portals.service": "b9ffb2bc834d4f7920062bc0c00cd2da9aff33a80a11b54415142198d590a96d",
+        "research/2026-09-28/local-portals/collect_local.py": "8ef19a2d857c00a7ac8f055b0581083b8ad36913eb5be4f32bce315109ebe788"
+      },
+      "enabled": true,
+      "heartbeat": "research/2026-09-28/local-portals/runtime/heartbeat.json",
+      "id": "local-portals",
+      "idle_grace_seconds": 900,
+      "interval_seconds": 21600,
+      "kind": "local",
+      "locks": [
+        "research/2026-09-28/local-portals/runtime/collector.lock"
+      ],
+      "manifest": "research/2026-09-28/local-portals/runtime/state.json",
+      "processes": [
+        {
+          "required": [
+            "daemon"
+          ],
+          "script": "research/2026-09-28/local-portals/collect_local.py"
+        }
+      ],
+      "service": "usa-atlas-local-portals.service",
+      "stale_seconds": 1800,
+      "unit_file": "/etc/systemd/system/usa-atlas-local-portals.service"
+    },
+    {
+      "enabled": true,
+      "id": "database-compaction",
+      "kind": "database",
+      "manifest": "/srv/usa-atlas/maintenance/20260928-compact/progress.json",
+      "processes": [
+        {
+          "required": [],
+          "script": "database/cleanup_storage.py"
+        }
+      ],
+      "result": "/srv/usa-atlas/maintenance/20260928-compact/result.json",
+      "stale_seconds": 21600
+    },
+    {
+      "code_sha256": {
+        "/etc/systemd/system/usa-atlas-regional-refresh.service": "9d55bdcbb46614754c01925469aa5ad1dcd5e20f641434fcfb8bdbb64bdbd36e",
+        "/etc/systemd/system/usa-atlas-regional-refresh.timer": "c1f8a9815f541dbb2b8653232a0956fe8167a055ee11f76d2f50ce5900bd0148",
+        "research/2026-09-29/regional-expansion/collect_regional.py": "5717d31caeff7e941ac174c0f1ce2e4c7cfa7edf355b91a870a551d3c43593c0",
+        "research/2026-09-29/regional-expansion/refresh_regional.py": "28f8842975b169b63a1ceb17756b3a272c543f7b9cf2459400623035b76603c0"
+      },
+      "enabled": true,
+      "expected_jobs": 3,
+      "freshness_seconds": 93600,
+      "id": "regional-refresh",
+      "kind": "scheduled",
+      "manifest": "research/2026-09-29/regional-expansion/latest.json",
+      "processes": [
+        {
+          "required": [],
+          "script": "research/2026-09-29/regional-expansion/refresh_regional.py"
+        }
+      ],
+      "run_deadline_seconds": 1800,
+      "service": "usa-atlas-regional-refresh.service",
+      "success_statuses": [
+        "complete"
+      ],
+      "summary_pointer": "summary",
+      "timer": "usa-atlas-regional-refresh.timer",
+      "timer_file": "/etc/systemd/system/usa-atlas-regional-refresh.timer",
+      "unit_file": "/etc/systemd/system/usa-atlas-regional-refresh.service"
+    },
+    {
+      "code_sha256": {
+        "/etc/systemd/system/usa-atlas-nationwide-discovery.service": "cad02f3e22cb7545f99e03e2358a6ba5954fe29f71e71180360e914fc81cf471",
+        "/etc/systemd/system/usa-atlas-nationwide-discovery.timer": "7c6f46e9b56f431615f57657c07a3f463b2a7d9cb8cc239150bf14a960ba823e",
+        "research/2026-09-29/nationwide-portals/build_queue.py": "ee8fbdf6d5a6d1897fbe7cf57537c2e59c8bfdfac52c1d4c4effad8c3f9c0b3a",
+        "research/2026-09-29/nationwide-portals/discover.py": "6915af52f3018d08c13a7bf713fb24820f5877a1b58f8868b9a7247f72340273",
+        "research/2026-09-29/nationwide-portals/scheduled_discovery.py": "fa3b90288abdebe70130d64c27b386923d87c94b0b1f244c902cf7dad80eb619"
+      },
+      "enabled": true,
+      "expected_jurisdictions": 52,
+      "freshness_seconds": 28800,
+      "id": "nationwide-discovery",
+      "kind": "scheduled",
+      "manifest": "research/2026-09-29/nationwide-portals/runtime/schedule-state.json",
+      "processes": [
+        {
+          "required": [],
+          "script": "research/2026-09-29/nationwide-portals/scheduled_discovery.py"
+        }
+      ],
+      "run_deadline_seconds": 3900,
+      "service": "usa-atlas-nationwide-discovery.service",
+      "success_statuses": [
+        "complete",
+        "waiting_query_cadence"
+      ],
+      "summary_file": "research/2026-09-29/nationwide-portals/discovery-latest.json",
+      "timer": "usa-atlas-nationwide-discovery.timer",
+      "timer_file": "/etc/systemd/system/usa-atlas-nationwide-discovery.timer",
+      "unit_file": "/etc/systemd/system/usa-atlas-nationwide-discovery.service"
+    },
+    {
+      "artifact_list_field": "artifacts",
+      "code_sha256": {
+        "/etc/systemd/system/usa-atlas-pwc-refresh.service": "99ee86c6712090525ad48e1b44fc05751a10bb1f50516d4a80ebf4113ddfe5bf",
+        "/etc/systemd/system/usa-atlas-pwc-refresh.timer": "0302c855a789aa4e61859ba356753124fbbcaad295ce433896ecbe478129b49b",
+        "research/2026-09-29/data-center-expansion/collect_pwc.py": "945822278e42cac6c61a88e3fb83adfdf31feefdbeeb110ffa109319051757c5"
+      },
+      "enabled": true,
+      "freshness_seconds": 691200,
+      "id": "pwc-refresh",
+      "kind": "scheduled",
+      "manifest": "research/2026-09-29/data-center-expansion/latest.json",
+      "processes": [
+        {
+          "required": [],
+          "script": "research/2026-09-29/data-center-expansion/collect_pwc.py"
+        }
+      ],
+      "record_count_field": "actual_building_records",
+      "run_deadline_seconds": 1800,
+      "service": "usa-atlas-pwc-refresh.service",
+      "success_statuses": [
+        "collected_verified_source_snapshot"
+      ],
+      "timer": "usa-atlas-pwc-refresh.timer",
+      "timer_file": "/etc/systemd/system/usa-atlas-pwc-refresh.timer",
+      "unit_file": "/etc/systemd/system/usa-atlas-pwc-refresh.service"
+    },
+    {
+      "code_sha256": {
+        "/etc/systemd/system/usa-atlas-auto-pipeline.service": "625e25bcf590f607a3806628ebc81caaa473e3d8cf112b7a083e186d73b8851e",
+        "/etc/systemd/system/usa-atlas-auto-pipeline.timer": "85df7f43632343bd710a6a6963cbe6e0376aebd341c55b3c9ff668e21624dfae",
+        "ops/auto-pipeline.json": "1b31fa6714740faa03449e73fa364314b7a69d85e055b3b5ba3a9224d9619346",
+        "ops/auto_pipeline.py": "c7a1e45efb1c0ddbcf45b059157cc0cc6842249bcd4d7c35ed12f463602aef82"
+      },
+      "enabled": true,
+      "freshness_seconds": 7200,
+      "id": "auto-pipeline",
+      "kind": "scheduled",
+      "manifest": "full/runtime/auto-pipeline/state.json",
+      "processes": [
+        {
+          "required": [
+            "--once",
+            "--apply"
+          ],
+          "script": "ops/auto_pipeline.py"
+        }
+      ],
+      "run_deadline_seconds": 2800,
+      "service": "usa-atlas-auto-pipeline.service",
+      "success_statuses": [
+        "complete",
+        "idle",
+        "partial",
+        "retry_wait",
+        "deferred_maintenance",
+        "prepared"
+      ],
+      "timer": "usa-atlas-auto-pipeline.timer",
+      "timer_file": "/etc/systemd/system/usa-atlas-auto-pipeline.timer",
+      "unit_file": "/etc/systemd/system/usa-atlas-auto-pipeline.service"
+    }
+  ],
+  "max_backoff_seconds": 1800,
+  "max_recovery_attempts": 3,
+  "notes": [
+    "Disable globally or per job before intentional worker maintenance.",
+    "Restart commands are reviewed and source hashes pinned; changed code needs explicit operator re-pin.",
+    "Database maintenance never restarted or stopped.",
+    "A 6-hour database checkpoint threshold allows long fingerprint/index phases; no SQL probes or locks."
+  ],
+  "retry_window_seconds": 3600,
+  "version": 1
+}

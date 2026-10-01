@@ -1,0 +1,1370 @@
+{
+  "jurisdiction_code": "KS",
+  "query": "gasoline",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T08:19:02.085837+00:00",
+  "candidates": [
+    {
+      "id": "35eeca97ecc246bc9cdf994e0fd425fb",
+      "title": "Gas Production by Section",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Gas_Production_by_Section/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data layer shows cumulative gas production in Kansas aggregated by section and measured in thousands of cubic feet (mcf). The Kansas Geological Survey (KGS) manages the data. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.04991997220338,
+                39.916099968841316
+              ],
+              [
+                -94.61477002764389,
+                39.916099968841316
+              ],
+              [
+                -94.61477002764389,
+                36.99310002892426
+              ],
+              [
+                -102.04991997220338,
+                36.99310002892426
+              ],
+              [
+                -102.04991997220338,
+                39.916099968841316
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='font-size:12pt; text-align:Left;'><p><span>This data layer shows cumulative gas production in Kansas aggregated by section. Production values represent total production reported through the most recent quarter in thousands of cubic feet (mcf). The Kansas Department of Revenue reports the production data by oil and gas lease to the </span><a target='_blank' href='https://kgs.ku.edu' rel='nofollow ugc noopener noreferrer'><span>Kansas Geological Survey</span></a><span> (KGS). The KGS aggregates the data by section-township-range and updates it quarterly. To request a point representation of the data, contact </span><a href='mailto:kgs.gis@ku.edu' rel='nofollow ugc'><span>kgs.gis@ku.edu</span></a><span>.&nbsp;</span></p></div>",
+        "licenseInfo": "<div style='text-align:Left;font-size:12pt'><p><span>None. Users can determine if this data fits their purposes.</span></p></div>",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Gas Production by Section",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788196238000,
+        "avgRating": 0,
+        "id": "35eeca97ecc246bc9cdf994e0fd425fb",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1788195600000,
+        "thumbnail": "thumbnail/thumbnail1787579516965.png",
+        "languages": [],
+        "created": 1778702446000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Gas_Production_by_Section/FeatureServer",
+        "tags": [
+          "gas",
+          "KGS",
+          "Kansas",
+          "production",
+          "geologic",
+          "geology"
+        ],
+        "numViews": 44554,
+        "numComments": 0,
+        "size": 7766016,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Gas_Production_by_Section",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "view": {
+            "mapSettings": {
+              "featureLayerStyle": "item"
+            }
+          },
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -102.04991997220338,
+                36.99310002892426
+              ],
+              [
+                -94.61477002764389,
+                39.916099968841316
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 36.99310002892426,
+                "xmin": -102.04991997220338,
+                "ymax": 39.916099968841316,
+                "xmax": -94.61477002764389,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/35eeca97ecc246bc9cdf994e0fd425fb"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "390ee1b9eade40bca42ee3534a813b20",
+      "title": "Oil and Gas Fields",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Oil_and_Gas_Fields/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data layer shows oil and gas field boundaries in Kansas. The data represent oil and gas fields as defined by the Oil and Gas Nomenclature Committee. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.05004764975472,
+                40.00275574130051
+              ],
+              [
+                -94.60317741353109,
+                40.00275574130051
+              ],
+              [
+                -94.60317741353109,
+                36.995484911317135
+              ],
+              [
+                -102.05004764975472,
+                36.995484911317135
+              ],
+              [
+                -102.05004764975472,
+                40.00275574130051
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div>This data layer shows the boundaries of oil and gas fields in Kansas as defined by the Oil and Gas Nomenclature Committee. The <a target='_blank' href='https://kgs.ku.edu' rel='nofollow ugc noopener noreferrer'>Kansas Geological Survey</a> maintains this polygon dataset for research and for others interested in the state's oil and gas resources. The data solely represent field boundaries. For a full mapping experience, visit the <a target='_blank' href='https://maps.kgs.ku.edu/oilgas' rel='nofollow ugc noopener noreferrer'>Oil &amp; Gas interactive map</a>. Find information on <a target='_blank' href='https://www.kgs.ku.edu/Magellan/Field/index.html' rel='nofollow ugc noopener noreferrer'>oil and gas field production</a>.&nbsp;</div>",
+        "licenseInfo": "None. Users can decide what data best fits their purposes.",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Oil and Gas Fields",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788366360000,
+        "avgRating": 0,
+        "id": "390ee1b9eade40bca42ee3534a813b20",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1788364800000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1629824239000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Oil_and_Gas_Fields/FeatureServer",
+        "tags": [
+          "KGS",
+          "oil & gas",
+          "fields",
+          "oil",
+          "gas",
+          "energy",
+          "utilities"
+        ],
+        "numViews": 402933,
+        "numComments": 0,
+        "size": 14393344,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Oil_and_Gas_Fields",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/390ee1b9eade40bca42ee3534a813b20"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "66970100423e4363bd89416349426a30",
+      "title": "Oil and Gas Leases",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Leases/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Oil and gas leases in Kansas. These points represent areas where landowners have leased mineral rights for exploration, drilling, and production of oil and gas.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.04438421745272,
+                40.00118961074139
+              ],
+              [
+                2.030192543582572e-05,
+                40.00118961074139
+              ],
+              [
+                2.030192543582572e-05,
+                2.080498205729633e-06
+              ],
+              [
+                -102.04438421745272,
+                2.080498205729633e-06
+              ],
+              [
+                -102.04438421745272,
+                40.00118961074139
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "An oil and/or gas lease is an agreement between a mineral owner (lessor) and a company (lessee) in which the owner grants the company the right to explore, drill and produce oil, gas, and other minerals below the surface of the earth. Oil and gas leases are created so that property owner can maintain their mineral rights while leasing their land to an extraction company.<div><br /></div><div>The <a href='https://kgs.ku.edu' target='_blank' rel='nofollow ugc noopener noreferrer'>Kansas Geological Survey</a> maintains and publishes this GIS data. The Kansas Department of Revenue is the data originator, and they send updates to the KGS monthly.</div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>None. Users should determine that the data are appropriate for their uses.</span>",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Oil and Gas Leases",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790686454000,
+        "avgRating": 0,
+        "id": "66970100423e4363bd89416349426a30",
+        "categories": [
+          "/Categories/Geoscientific information",
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1790683200000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1629823639000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Leases/FeatureServer",
+        "tags": [
+          "KGS",
+          "leases",
+          "oil & gas",
+          "oil",
+          "gas",
+          "energy",
+          "utilities"
+        ],
+        "numViews": 428493,
+        "numComments": 0,
+        "size": 73891840,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Leases",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/66970100423e4363bd89416349426a30"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "514428df866b46c893b6834ff0bf303d",
+      "title": "Oil and Gas Well Data",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Oil_and_Gas_Wells_Download/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data layer shows oil and gas wells in Kansas. The data is for use by citizens and companies interested in the oil and gas resources of the state. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.05456259854239,
+                40.00199334779116
+              ],
+              [
+                -94.59410206928723,
+                40.00199334779116
+              ],
+              [
+                -94.59410206928723,
+                36.99406054032381
+              ],
+              [
+                -102.05456259854239,
+                36.99406054032381
+              ],
+              [
+                -102.05456259854239,
+                40.00199334779116
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p>This is GIS data of well-header information for oil and gas wells in Kansas. The data is based on well information submitted to the Kansas Corporation Commission on wells planned, drilled, worked over, or plugged. Well information is also collected from wireline logs, core or cuttings submitted for storage, or historical compilations. Some data from other states is included for research purposes. The&nbsp;<a target='_blank' href='https://kgs.ku.edu' rel='nofollow ugc noopener noreferrer'>Kansas Geological Survey&nbsp;</a>compiles and publishes this data. For field/column definitions, download&nbsp;<a target='_blank' href='https://www.kgs.ku.edu/PRS/OG_Column_Definitions.xlsx' rel='nofollow ugc noopener noreferrer'>this spreadsheet</a>.</p><p>The Kansas Geological Survey works with the Kansas Corporation Commission and the Kansas Department of Revenue to create an accurate list of the oil and gas wells in Kansas. While the other agencies have regulatory duties facilitated by having an accurate accounting of oil and gas wells, the Survey maintains the list for research purposes and for use by citizens and companies interested in the oil and gas resources of the state.&nbsp;</p>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>None. Users should determine that the data are appropriate for their uses.</span>",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Oil and Gas Well Data",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789591253000,
+        "avgRating": 0,
+        "id": "514428df866b46c893b6834ff0bf303d",
+        "categories": [
+          "/Categories/Geoscientific information",
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1789588800000,
+        "thumbnail": "thumbnail/thumbnail1698961635251.png",
+        "languages": [],
+        "created": 1698961348000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Oil_and_Gas_Wells_Download/FeatureServer",
+        "tags": [
+          "KGS",
+          "oil & gas",
+          "oil",
+          "gas",
+          "energy",
+          "wells"
+        ],
+        "numViews": 683698,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Oil_and_Gas_Wells_Download",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "view": {
+            "mapSettings": {
+              "featureLayerStyle": "item"
+            }
+          },
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -102.05456259854239,
+                36.99406054032381
+              ],
+              [
+                -94.59410206928723,
+                40.00199334779116
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 36.99406054032381,
+                "xmin": -102.05456259854239,
+                "ymax": 40.00199334779116,
+                "xmax": -94.59410206928723,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/514428df866b46c893b6834ff0bf303d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6e2bed503ba6409d8d7ff0db9928b45d",
+      "title": "Waterflood Areas",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Waterflood/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data layer shows waterflood areas for oil production in Kansas. These are areas where water or fluids have been injected into wells to enhance oil recovery. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.04213911016542,
+                40.002646689069216
+              ],
+              [
+                -95.6125977360573,
+                40.002646689069216
+              ],
+              [
+                -95.6125977360573,
+                36.99331623609625
+              ],
+              [
+                -102.04213911016542,
+                36.99331623609625
+              ],
+              [
+                -102.04213911016542,
+                40.002646689069216
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>This data layer shows waterflood areas for oil production in Kansas. This layer depicts areas where water or other fluids have been injected into wells to enhance the recovery of oil through pressure maintenance. This layer is from the <a target='_blank' href='https://kgs.ku.edu' rel='nofollow ugc noopener noreferrer'>Kansas Geological Survey</a>.&nbsp;</p>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>None. Users should determine that the data are appropriate for their uses.</span>",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Waterflood Areas",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789502265000,
+        "avgRating": 0,
+        "id": "6e2bed503ba6409d8d7ff0db9928b45d",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1789498800000,
+        "thumbnail": "thumbnail/thumbnail1646253793641.png",
+        "languages": [],
+        "created": 1629821750000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Waterflood/FeatureServer",
+        "tags": [
+          "KGS",
+          "environmental",
+          "oil",
+          "gas",
+          "energy"
+        ],
+        "numViews": 389097,
+        "numComments": 0,
+        "size": 16670720,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Waterflood",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/6e2bed503ba6409d8d7ff0db9928b45d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a570398574804430ae92ae2b6a6b7df7",
+      "title": "Class II Wells",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Class_II_Wells/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer shows Class II Injection Wells in Kansas. Class II injection wells are used to inject fluids associated with oil and gas production into the ground.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.0484957094901,
+                40.00016357634282
+              ],
+              [
+                -94.61492553230778,
+                40.00016357634282
+              ],
+              [
+                -94.61492553230778,
+                36.99409553624332
+              ],
+              [
+                -102.0484957094901,
+                36.99409553624332
+              ],
+              [
+                -102.0484957094901,
+                40.00016357634282
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;font-size:12pt'><div><div><p><span>Class II injection wells come in two varieties: disposal wells and secondary/enhanced oil recovery wells. Disposal wells are used to inject fluids into rock formations that do not produce oil or gas. The formations are isolated from usable quality groundwater and are sealed above and below by unbroken and impermeable rock formations. </span></p><p><span /></p><p><span>Secondary/enhanced oil recovery wells are used to inject fluids into formations/reservoirs that produce oil or gas. The formations are also isolated. Injection of fluid into these formations often allows for increased recovery of oil or gas reserves. </span></p><p><span /></p><p><span>For more information, see the Kansas Corporation Commission's </span><a href='https://kcc.ks.gov/oil-gas/injection-wells-frequently-asked-questions' style='text-decoration:underline;' rel='nofollow ugc'><span>FAQ on Class II Injection Wells</span></a><span>. To query Class II wells, see the interactive </span><a href='https://www.kgs.ku.edu/Magellan/Qualified/class2_db.html' style='text-decoration:underline;' rel='nofollow ugc'><span>KGS query tool</span></a><span>.</span></p><p><span /></p><p><span>Class II injection wells in Kansas are regulated by the Kansas Corporation Commission. The data is collected and distributed by the </span><a href='https://kgs.ku.edu' style='text-decoration:underline;' rel='nofollow ugc'><span>Kansas Geological Survey</span></a><span>.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;font-size:12pt'><p><span>None. Users should determine that the data are appropriate for their uses.</span></p></div>",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Class II Wells",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790733110000,
+        "avgRating": 0,
+        "id": "a570398574804430ae92ae2b6a6b7df7",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1790730000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1648755353000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Class_II_Wells/FeatureServer",
+        "tags": [
+          "oil",
+          "gas",
+          "KGS",
+          "oil & gas",
+          "saltwater",
+          "injection",
+          "Kansas",
+          "energy",
+          "energy",
+          "energy",
+          "energy",
+          "energy"
+        ],
+        "numViews": 410210,
+        "numComments": 0,
+        "size": 34971648,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Class_II_Wells",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "view": {
+            "mapSettings": {
+              "featureLayerStyle": "item"
+            }
+          },
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -102.0484957094901,
+                36.99409553624332
+              ],
+              [
+                -94.61492553230778,
+                40.00016357634282
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 36.99409553624332,
+                "xmin": -102.0484957094901,
+                "ymax": 40.00016357634282,
+                "xmax": -94.61492553230778,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/a570398574804430ae92ae2b6a6b7df7"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "7889d5d368f1498ab26a8e2bac3a16e6",
+      "title": "Type Wells",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Type_Wells/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer shows oil and gas wells in Kansas that were part of the Type Logs Project. Log ASCII Standard (LAS) 3.0 files are available for these wells. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.04018313006861,
+                39.99622034745546
+              ],
+              [
+                -94.66633400835217,
+                39.99622034745546
+              ],
+              [
+                -94.66633400835217,
+                34.70165997619657
+              ],
+              [
+                -102.04018313006861,
+                34.70165997619657
+              ],
+              [
+                -102.04018313006861,
+                39.99622034745546
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>This data layer shows locations of oil and gas wells that were designated to be part of the Type Logs Project, which created extended data for wells. Some of the extended data includes the well tops for each well and the owner of the tops, the result of the Type Log Committee evaluation of the tops, the Stratigraphic Units for the Type Log Project &amp; CO2 Project, the Committee members for the Type Log Project who selected and evaluated the tops, and LAS 3.0 files. The type LAS 3.0 file includes the final files containing the Log Data, Tops Data, and, if present, the Geologist Report Data. These files are part of the final deliverables for the Type Log Project and are also part of the CO2 Project mapper program to allow users to build General Cross Sections. This project was conducted by the Energy Research Department of the <a target='_blank' href='https://kgs.ku.edu' rel='nofollow ugc noopener noreferrer'>Kansas Geological Survey</a>.&nbsp;</p>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div style='font-size:12pt'><p><span><span>None. Users should determine that the data are appropriate for their uses.</span></span></p></div></div></div>",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Type Wells",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789500631000,
+        "avgRating": 0,
+        "id": "7889d5d368f1498ab26a8e2bac3a16e6",
+        "categories": [
+          "/Categories/Geoscientific information",
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "4267",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1789498800000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1648762257000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Type_Wells/FeatureServer",
+        "tags": [
+          "KGS",
+          "oil",
+          "gas",
+          "oil & gas",
+          "type",
+          "well",
+          "Kansas",
+          "energy",
+          "logs"
+        ],
+        "numViews": 389847,
+        "numComments": 0,
+        "size": 1466368,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Type_Wells",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "view": {
+            "mapSettings": {
+              "featureLayerStyle": "item"
+            }
+          },
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -102.04018313006861,
+                34.70165997619657
+              ],
+              [
+                -94.66633400835217,
+                39.99622034745546
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 34.70165997619657,
+                "xmin": -102.04018313006861,
+                "ymax": 39.99622034745546,
+                "xmax": -94.66633400835217,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/7889d5d368f1498ab26a8e2bac3a16e6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4ec6f22e30d64305ae41c6773784b158",
+      "title": "Oil Production by Section",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Oil_Production_by_Section/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data layer shows cumulative oil production in Kansas aggregated by section and measured in barrels (bbls). The Kansas Geological Survey (KGS) manages the data. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.04543997237187,
+                40.00274996933577
+              ],
+              [
+                -94.60801002816278,
+                40.00274996933577
+              ],
+              [
+                -94.60801002816278,
+                36.99310002892426
+              ],
+              [
+                -102.04543997237187,
+                36.99310002892426
+              ],
+              [
+                -102.04543997237187,
+                40.00274996933577
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>This data layer shows cumulative oil production in Kansas aggregated by section. Production is measured in barrels (bbls) and represents total production reported through the most recent quarter. The production data is reported to the Kansas Department of Revenue by oil and gas lease. The data is then passed to the <a target='_blank' href='https://kgs.ku.edu' rel='nofollow ugc noopener noreferrer'>Kansas Geological Survey</a> (KGS) and aggregated by section-township-range.&nbsp;</p><p>Data is updated quarterly and managed by the KGS. A point representation of this layer is available on request by contacting <a href='mailto:kgs.gis@ku.edu' rel='nofollow ugc'>kgs.gis@ku.edu</a>.&nbsp;</p>",
+        "licenseInfo": "<div style='text-align:Left;font-size:12pt'><p><span>None. Users can determine if this data fits their purposes.</span></p></div>",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Oil Production by Section",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788387099000,
+        "avgRating": 0,
+        "id": "4ec6f22e30d64305ae41c6773784b158",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1788386400000,
+        "thumbnail": "thumbnail/thumbnail1779457438674.png",
+        "languages": [],
+        "created": 1778702052000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Oil_Production_by_Section/FeatureServer",
+        "tags": [
+          "oil",
+          "KGS",
+          "Kansas",
+          "production",
+          "geologic",
+          "geology"
+        ],
+        "numViews": 45785,
+        "numComments": 0,
+        "size": 11632640,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Oil_Production_by_Section",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "view": {
+            "mapSettings": {
+              "featureLayerStyle": "item"
+            }
+          },
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -102.04543997237187,
+                36.99310002892426
+              ],
+              [
+                -94.60801002816278,
+                40.00274996933577
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 36.99310002892426,
+                "xmin": -102.04543997237187,
+                "ymax": 40.00274996933577,
+                "xmax": -94.60801002816278,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/4ec6f22e30d64305ae41c6773784b158"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    136
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 8,
+  "next_offset": 8,
+  "response_sha256": "696cd76d0615e19068ea59c36e6fdc546c09b135cb5064d69fa7c085d88e790a",
+  "search_complete": true
+}

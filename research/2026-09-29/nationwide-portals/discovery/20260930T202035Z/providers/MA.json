@@ -1,0 +1,24 @@
+{
+  "jurisdiction_code": "MA",
+  "catalog_id": "ma-primary",
+  "catalog_url": "https://www.mass.gov/get-massgis-geospatial-data",
+  "started_at": "2026-09-30T20:20:43.023890+00:00",
+  "attempts": [
+    {
+      "adapter": "hub",
+      "endpoint": "https://www.mass.gov/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "adapter": "ckan",
+      "endpoint": "https://www.mass.gov/api/3/action/package_search",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "status": "html_catalog_only",
+  "adapter": "html_catalog_scan",
+  "endpoint": "https://www.mass.gov/get-massgis-geospatial-data",
+  "validation_receipt": 37,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_page_links_only_geography_unverified"
+}

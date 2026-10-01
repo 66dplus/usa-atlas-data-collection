@@ -1,0 +1,190 @@
+{
+  "jurisdiction_code": "RI",
+  "query": "foreign born",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T08:18:59.163137+00:00",
+  "candidates": [
+    {
+      "id": "6a9d1bd2532e48fea52b4f689f6ecf1e",
+      "title": "Rhode Island: ACS Population and Housing Basics - Boundaries",
+      "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Highlights_Population_Housing_Basics_Boundaries/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about basic population and housing context. These are 5-year estimates shown by tract, county, and state boundaries. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.85899999994047,
+                42.033999999965054
+              ],
+              [
+                -71.08499999994112,
+                42.033999999965054
+              ],
+              [
+                -71.08499999994112,
+                41.117999999965846
+              ],
+              [
+                -71.85899999994047,
+                41.117999999965846
+              ],
+              [
+                -71.85899999994047,
+                42.033999999965054
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Multilayer",
+          "Service"
+        ],
+        "description": null,
+        "licenseInfo": "",
+        "title": "Rhode Island: ACS Population and Housing Basics - Boundaries",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1769607615000,
+        "avgRating": 0,
+        "id": "6a9d1bd2532e48fea52b4f689f6ecf1e",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1769605200000,
+        "thumbnail": "thumbnail/thumbnail1742479624494.png",
+        "languages": [],
+        "created": 1738944421000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Highlights_Population_Housing_Basics_Boundaries/FeatureServer",
+        "tags": [
+          "American Community Survey",
+          "ACS",
+          "Census",
+          "Census Bureau",
+          "demographics",
+          "people",
+          "states",
+          "counties",
+          "tracts",
+          "current year",
+          "population",
+          "housing",
+          "age",
+          "income",
+          "homeownership",
+          "home value",
+          "rent",
+          "race",
+          "Hispanic origin",
+          "foreign-born",
+          "demographics",
+          "American Community Survey",
+          "policy",
+          "recent",
+          "SOCIO"
+        ],
+        "numViews": 3635,
+        "numComments": 0,
+        "size": 131,
+        "listed": false,
+        "scoreCompleteness": 66,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "view": {
+            "mapSettings": {
+              "featureLayerStyle": "item"
+            }
+          },
+          "location": {
+            "extent": [
+              [
+                -71.85899999994047,
+                41.117999999965846
+              ],
+              [
+                -71.08499999994112,
+                42.033999999965054
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 41.117999999965846,
+                "xmin": -71.85899999994047,
+                "ymax": 42.033999999965054,
+                "xmax": -71.08499999994112,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Environmental Data Center",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/6a9d1bd2532e48fea52b4f689f6ecf1e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    117
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "ca215670b973c8105b4a27247983b4d7bffd67351cc71a1cde11c1b42aa08e07",
+  "search_complete": true
+}

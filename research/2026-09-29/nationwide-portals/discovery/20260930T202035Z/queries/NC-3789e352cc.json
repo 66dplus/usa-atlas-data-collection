@@ -1,0 +1,518 @@
+{
+  "jurisdiction_code": "NC",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T20:21:25.933144+00:00",
+  "candidates": [
+    {
+      "id": "e504423033674533a0e0da7672a9c541",
+      "title": "Coastal Plain Paddle Trails - (Points)",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Recreation/MapServer/0",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data was created as part of the North Carolina Coastal Plain Paddle Trails Initiative, a private grant funded program with NC Sea Grant. This initiative consisted off multiple parts that ranged from a paddler's inventory to economic impact assessments. This effort has developed an understanding of how paddling and paddling related actions impact and interact with the environment, local establishment and infrastructure and can help guide efforts in the development of ecotourism.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -79.4512,
+                36.5784
+              ],
+              [
+                -75.8348,
+                36.5784
+              ],
+              [
+                -75.8348,
+                33.8187
+              ],
+              [
+                -79.4512,
+                33.8187
+              ],
+              [
+                -79.4512,
+                36.5784
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>North Carolina Sea Grant and the North Carolina Department of Environment and Natural Resources, Division of Parks and Recreation, in cooperation with the NC Center for Geographic Information and Analysis, developed the digital geographic information system (GIS) Paddle Trails, Coastal Plain data to as part of an ongoing effort to inventory and publicize water trails through DPR's trails programs. This data contains the trail locations and access points for the inventoried trails in the coastal plain of North Carolina. Other trails in the coastal plain and in other portions of the state are to be inventoried as resources allow.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "Coastal Plain Paddle Trails - (Points)",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499871000,
+        "avgRating": 0,
+        "id": "e504423033674533a0e0da7672a9c541",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1722200400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484254499000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Recreation/MapServer/0",
+        "tags": [
+          "canoeing",
+          "inlandWaters",
+          "paddle trails",
+          "water trails",
+          "coastal recreation",
+          "trails",
+          "North Carolina",
+          "kayaking",
+          "ecotourism",
+          "vacation",
+          "coastal plain",
+          "NC",
+          "NC OneMap",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA"
+        ],
+        "numViews": 1974,
+        "numComments": 0,
+        "size": 80,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "North Carolina Sea Grant",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/e504423033674533a0e0da7672a9c541"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6c06fd77fa574a96b12f3ffa91694981",
+      "title": "North Carolina Natural Heritage Program Managed Areas",
+      "url": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer",
+      "publisher": "NCNaturalHeritage",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The North Carolina Natural Heritage Program's Managed Areas are a collection of properties and easements where natural resource conservation is one of the primary management goals or are of conservation interest.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.2959,
+                36.5882
+              ],
+              [
+                -75.461,
+                36.5882
+              ],
+              [
+                -75.461,
+                33.842
+              ],
+              [
+                -84.2959,
+                33.842
+              ],
+              [
+                -84.2959,
+                36.5882
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Dynamic",
+          "Map Service",
+          "Metadata",
+          "Multilayer",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>The North Carolina Natural Heritage Program\"s Managed Areas are primarily a collection of fee simple properties and easements where natural resource conservation is one of the primary management goals. It does include a number of properties and easements that are not primarily managed for conservation, but that are of conservation interest. This conservation interest ranges from properties and easements which support rare species and intact, high-quality natural communities to those that are open spaces in places where open space is scarce. Lands that are Dedicated Nature Preserves or Registered Heritage Areas are found in this data set.</span></p><p><span>These data are the current equivalent of the Conservation Tax Credit Properties and Land Trust Conservation Properties data set. </span></p><p><span style=\"font-weight:bold;\">Some of the Managed Areas represented in this data set are on private land and are not open to the public. Written permission should be obtained from all appropriate landowners before visiting any of these sites.</span></p><p><span>NOTE: This is a large dataset and compiling the download using the map may take some time or fail. The data is also available as an Esri shapefile in a ZIP download from the North Carolina Natural Heritage Program\"s Data Explorer data download page (https://ncnhde.natureserve.org/content/data-download).</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN STYLE=\"font-size:10pt\">The North Carolina Natural Heritage Program (NCNHP) provides data for the purposes of research, education, environmental review, assessment, and project planning, including screening for potential impacts to natural heritage resources, as described in N.C.G.S. 143B 135.256.</SPAN></P><P><SPAN STYLE=\"font-size:10pt\">The property and easement boundaries in this data set were acquired from a wide variety of sources, including federal and state agencies, local governments, or land trusts, and in some cases their boundaries are approximate. Because of these inaccuracies, these data are intended to be used as an aid to conservation planning only. These data are not intended to indicate the authoritative location of property boundaries, shape or contour of the earth, or fixed works. These data are not a survey and do not meet the minimum accuracy standards of a Land Information System/Geographic Information System Survey in North Carolina (21 NCAC 56.1608). Inclusion of an area in this data set in no way implies that the area is open to the public.</SPAN></P><P><SPAN STYLE=\"font-size:10pt\">Since boundaries are approximate in many cases, there can be some limited overlap with adjacent boundaries. Furthermore, properties where fee simple ownership is depicted could also have partial or fully overlapping easement or other non-fee based property interest represented. Careful review of the Owner Type, Category, and other attributes is required where stacked polygons are found.</SPAN></P><P><SPAN STYLE=\"font-size:10pt\">NCNHP data require some understanding of NCNHP methods and definitions for proper use and analysis. NCNHP staff is available to advise all data users regarding the technical aspects of these data.If the data provided are used in reports, papers, maps, or other publications, the NCNHP must be cited as the source, and the data date must be included in the citation. The NCNHP shall be notified if its data are used in publications. Researchers shall submit to NCNHP copies of final reports or publications resulting from research that used NCNHP data. The citation shall be: </SPAN></P><P><SPAN STYLE=\"font-size:9pt\">North Carolina Natural Heritage Program. &lt;year&gt;. Geographic Information System (GIS) data. NCDNCR, Raleigh, North Carolina. Available at www.ncnhp.org. (Accessed: &lt;date&gt;).</SPAN></P><P><SPAN STYLE=\"font-size:10pt\">Because these data can quickly become outdated, the Department of Natural and Cultural Resources, Division of Land and Water Stewardship, North Carolina Natural Heritage Program should be contacted before use of the data set to ensure data currency. The NCNHP makes no warranties as to the completeness and accuracy of the data presented.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "50bc52fc43ed4bf2a88c9a354d187d65",
+        "title": "North Carolina Natural Heritage Program Managed Areas",
+        "type": "Map Service",
+        "orgId": "iFBq2AW9XO0jYYF7",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784735150000,
+        "avgRating": 0,
+        "id": "6c06fd77fa574a96b12f3ffa91694981",
+        "categories": [
+          "/Categories/Boundaries/Environmental"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "NCNaturalHeritage",
+        "accessInformation": "North Carolina Department of Natural and Cultural Resources, North Carolina Natural Heritage Program",
+        "largeThumbnail": null,
+        "lastViewed": 1788998400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1572290996000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://ncnhde.natureserve.org/arcgis/rest/services/NC_Public/Managed_Areas/MapServer",
+        "tags": [
+          "North Carolina",
+          "NC",
+          "Department of Natural and Cultural Resources",
+          "DNCR",
+          "North Carolina Natural Heritage Program",
+          "NCNHP",
+          "Natural Heritage",
+          "managed area",
+          "conservation",
+          "easement",
+          "land",
+          "natural heritage",
+          "North America",
+          "wild scenic",
+          "preservation",
+          "recreation",
+          "plant protection",
+          "plant",
+          "wildlife",
+          "PlanningCadastre",
+          "USA",
+          "refuge",
+          "natural",
+          "property",
+          "land trust conservation properties",
+          "dedicated nature preserve",
+          "registered heritage area",
+          "open space",
+          "protection",
+          "forest",
+          "natural and scenic",
+          "areas",
+          "federal",
+          "state",
+          "easements",
+          "conservation tax credit",
+          "preserve",
+          "coastal",
+          "protected",
+          "park",
+          "NC OneMap",
+          "federal land",
+          "federal lands"
+        ],
+        "numViews": 110535,
+        "numComments": 0,
+        "size": 85,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "North Carolina Natural Heritage Program",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/6c06fd77fa574a96b12f3ffa91694981"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b0cf4673793f4e7cb03b1abc2f481d36",
+      "title": "Elevation",
+      "url": "https://www.nconemap.gov/api/search/v1/collections/all/items/b0cf4673793f4e7cb03b1abc2f481d36",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": null,
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubPage",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "OpenData",
+          "selfConfigured",
+          "Web Map"
+        ],
+        "description": "DO NOT DELETE OR MODIFY THIS ITEM. This item is managed by the ArcGIS Hub application. To make changes to this page, please visit https://nconemap.hub.arcgis.com:/overview/edit.",
+        "licenseInfo": null,
+        "title": "Elevation",
+        "type": "Hub Page",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773255743000,
+        "avgRating": 0,
+        "id": "b0cf4673793f4e7cb03b1abc2f481d36",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1773255600000,
+        "thumbnail": null,
+        "languages": [],
+        "created": 1692186360000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          ""
+        ],
+        "numViews": 105097,
+        "numComments": 0,
+        "size": 34527,
+        "listed": false,
+        "scoreCompleteness": 10,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC OneMap / State of North Carolina",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/b0cf4673793f4e7cb03b1abc2f481d36"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6e015c96eb4a42968b66acf5e7e23565",
+      "title": "Shellfish Growing Area Classifications",
+      "url": "https://services2.arcgis.com/kCu40SDxsCGcuUWO/arcgis/rest/services/ShellfishGrowingArea/FeatureServer",
+      "publisher": "ecmason_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Shellfish Growing Area Classifications designated by the Shellfish Sanitationa and Recreational Water Quality Section of the Division of Marine Fisheries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -78.8262401244313,
+                36.55301991057172
+              ],
+              [
+                -75.46623651468965,
+                36.55301991057172
+              ],
+              [
+                -75.46623651468965,
+                33.85059277112355
+              ],
+              [
+                -78.8262401244313,
+                33.85059277112355
+              ],
+              [
+                -78.8262401244313,
+                36.55301991057172
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>The North Carolina (NC) Department of Environmental Quality (DEQ) Division of Marine Fisheries (DMF) - Shellfish Sanitation and Recreational Water Quality Section (SSRWQ) identifies Designated Shellfish Growing Areas (SGA) covering the entire NC coast. The SSRWQ performs water sampling at designated stations throughout the year to determine the extent of contamination of waters in each SGA. Based on these results, shoreline survey information, and hydrographic factors, the DMF disseminates proclamations to create closed harvesting areas with specified closure boundaries, in which the harvest of shellfish is prohibited. Waters within each SGA may be permanently closed (prohibited), restricted, open (approved), or subject to being opened or closed (conditionally approved open or conditionally approved closed) based on an existing management plan for the area.</p>",
+        "licenseInfo": "",
+        "ownerId": "d0b05eb06d064c128aee388d0f57643d",
+        "title": "Shellfish Growing Area Classifications",
+        "type": "Feature Service",
+        "orgId": "kCu40SDxsCGcuUWO",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790191262000,
+        "avgRating": 0,
+        "id": "6e015c96eb4a42968b66acf5e7e23565",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "ecmason_admin",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1790190000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1772642840000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/kCu40SDxsCGcuUWO/arcgis/rest/services/ShellfishGrowingArea/FeatureServer",
+        "tags": [
+          "United States",
+          "Boundaries",
+          "oceans",
+          "FDA",
+          "Estuary",
+          "health",
+          "North Carolina",
+          "Shellfish",
+          "Fisheries",
+          "DMF",
+          "NCDENR",
+          "NCDEQ",
+          "Dmf",
+          "Feature Service",
+          "NCDMF",
+          "dmf",
+          "Final",
+          "Water"
+        ],
+        "numViews": 25937,
+        "numComments": 0,
+        "size": 102432768,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "ShellfishGrowingArea",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC Dept. of Environmental Quality",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/6e015c96eb4a42968b66acf5e7e23565"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    220
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 4,
+  "next_offset": 4,
+  "response_sha256": "7441584257e31e909d15ce36fee4cb2235c7b1b2bce1f7681d4cecbf361ac280",
+  "search_complete": true
+}

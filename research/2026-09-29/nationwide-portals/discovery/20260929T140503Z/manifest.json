@@ -1,0 +1,102 @@
+{
+  "started_at": "2026-09-29T14:05:03.007663+00:00",
+  "stage": "complete_bounded_metadata_discovery",
+  "jurisdictions_planned": 52,
+  "priority_queries": [
+    "data center",
+    "electricity",
+    "water",
+    "overdose",
+    "crime"
+  ],
+  "registry_sha256": "894d265e66f53a8f14d2864d1980843a58e9f69294000078d4a78a96bc851835",
+  "runner_sha256": "de355e184ba13a2b12f8bba621c0d0224e686d3c46cefe2d504ab52251a796f6",
+  "new_observation_datasets_downloaded": 0,
+  "production_mutations": 0,
+  "arguments": {
+    "workers": 4,
+    "max_requests": 600,
+    "timeout": 25,
+    "page_size": 10,
+    "max_pages": 1,
+    "jurisdictions": null,
+    "queries": [
+      "data center",
+      "electricity",
+      "water",
+      "overdose",
+      "crime"
+    ]
+  },
+  "completed_at": "2026-09-29T14:06:03.545515+00:00",
+  "http_attempts": 262,
+  "provider_statuses": {
+    "validated_metadata_adapter": 41,
+    "unresolved_adapter": 3,
+    "html_catalog_only": 8
+  },
+  "provider_adapters": {
+    "arcgis_directory": 7,
+    "hub": 17,
+    "ckan": 3,
+    "socrata": 14,
+    "unresolved": 3,
+    "html_catalog_scan": 8
+  },
+  "query_results": 260,
+  "query_statuses": {
+    "zero_matches_in_bounded_search": 126,
+    "candidates_need_catalog_scope_review": 50,
+    "candidates_need_review": 69,
+    "blocked_adapter": 15
+  },
+  "actual_server_catalog_query_pages": 170,
+  "catalog_listing_filter_jobs": 75,
+  "candidate_occurrences": 900,
+  "jurisdictions_searched_returning_candidate_records": [
+    "AK",
+    "AR",
+    "CA",
+    "CO",
+    "CT",
+    "DC",
+    "DE",
+    "FL",
+    "HI",
+    "IA",
+    "ID",
+    "KS",
+    "KY",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "NC",
+    "ND",
+    "NH",
+    "NJ",
+    "NY",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "TN",
+    "TX",
+    "VA",
+    "VT",
+    "WA",
+    "WI"
+  ],
+  "candidate_occurrences_needing_catalog_scope_review": 383,
+  "verified_local_candidate_occurrences": 0,
+  "errors_requiring_attention": {
+    "http_error_attempts": 26,
+    "unresolved_adapters": 3,
+    "query_errors": 0,
+    "blocked_query_jobs": 15
+  },
+  "unique_candidate_keys": 884
+}

@@ -1,0 +1,20 @@
+[Unit]
+Description=USA Atlas weekly Prince William County data center building snapshot
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=3600
+StartLimitBurst=3
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection
+ExecCondition=/usr/bin/python3 /root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/ops/scraper_watchdog.py --preflight pwc-refresh
+ExecStart=/usr/bin/python3 -u /root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/research/2026-09-29/data-center-expansion/collect_pwc.py
+Restart=on-failure
+RestartSec=300
+TimeoutStartSec=1800
+TimeoutStopSec=60
+KillMode=control-group
+UMask=0022
+StandardOutput=journal
+StandardError=journal

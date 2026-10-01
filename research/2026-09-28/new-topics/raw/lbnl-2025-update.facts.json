@@ -1,0 +1,29 @@
+{
+  "source_url": "https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update",
+  "doi": "10.71468/P1RP4F",
+  "retrieved_date": "2026-09-28",
+  "source_release": "2026-06-18",
+  "reference_year": 2024,
+  "page_index": 9,
+  "acquisition": "Manual factual extraction from PDF via web tool; not original PDF bytes",
+  "license": "CC-BY-4.0 per PDF cover",
+  "observations": [
+    {
+      "metric": "data_center_electricity_twh",
+      "value": 192,
+      "unit": "TWh"
+    },
+    {
+      "metric": "data_center_share_us_electricity_pct",
+      "value": 4.7,
+      "unit": "percent",
+      "denominator": "total U.S. electricity consumption"
+    }
+  ],
+  "notes": [
+    "Model estimates; historical input data end 2024.",
+    "Cryptocurrency mining excluded.",
+    "2025 onward values are projections and are not included in this snapshot."
+  ]
+}
+

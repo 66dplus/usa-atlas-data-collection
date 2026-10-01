@@ -1,0 +1,241 @@
+{
+  "jurisdiction_code": "AK",
+  "catalog_id": "ak-primary",
+  "catalog_url": "https://akgeoportal.alaska.gov/",
+  "started_at": "2026-09-30T14:19:37.228868+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items",
+  "domain": "akgeoportal.alaska.gov",
+  "validation_receipt": 2,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 6,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": {
+                  "any": [
+                    "705db769b7624af18a0367d58225aed4",
+                    "18028130a7a14132bd922bcd830f27c6",
+                    "e09f40dee931443485e5f36b55d7dd09",
+                    "112a233ad29c46ae861fdeb0475aff8b",
+                    "031b68d1f04943d6969a3f764b98377e",
+                    "dc223b8c3bd44111b8b0d56cc106a9f3",
+                    "7ae0e98a30e840d28cea2e97fb86d15d",
+                    "2277e4402d15474eb22ad64b410292b5",
+                    "503809f0fdf7478eb2cba0015179e226",
+                    "593bb33b063f4327b2d3beea351d0fe8",
+                    "cceaf377149d4657871e224c25cf756d",
+                    "805318360e5046cb9d7b252ee0c3105b",
+                    "c34ed10758ec4f4eb8aa6826ee5be3ff",
+                    "fe64dcf67823472fb0bbc13a74f1e3c7",
+                    "a3ff58da1bf04e209e44a1f50efab18c",
+                    "3bd5a02cc81e45efb677ff9f2a136714",
+                    "5719024a3e1145c18485221200542c6d",
+                    "9f50b42277a94f369002f2e7db25384b",
+                    "a068034be2ed4be2921943ae2ad7aa16",
+                    "37ac60c091744e80a379c33c80fbf64d",
+                    "d02c85d843ee4231850b68e7359f316f",
+                    "e2dffb4a9f834e4e968e8ffb5be3a822",
+                    "0c27db95e5754212b0ecc1ea3b3b6cb7",
+                    "9c08399657674ee8af2bd48f6227a94c",
+                    "b5dceabe78cd45108f098e11d6f9738e",
+                    "6402741bf0834b3e980faaf368828756",
+                    "1d9018a5eb6943a186783e9f5316828b",
+                    "8d3fe081e13c43ab9de36df7f3bda769",
+                    "55a229f339d0408993c4e6843bfd472b",
+                    "af4558c6355043c4a3f0e5b21f355923",
+                    "92e64142305d4cd49f34bb6b4edd6bbe",
+                    "c65a62261f37455688cf8b341ef4f056",
+                    "390f0484d4124c63a06a457df379ba3e",
+                    "3d8bd0386130402dbf537f3710c681a5",
+                    "67afcaca36504340a2b8677bf6690cd3",
+                    "83138efadde84abfbca204b4e8c980df",
+                    "5a9a54cd969d46b5ab06d4d1b90bbd70",
+                    "88913104c16e4753be5fa2ce93e64b8c",
+                    "a5055ea72899425c8cc4e01b32658a45",
+                    "61326d2c46174d84916856e323f809ad",
+                    "9b70d86fb59848e99ba979e4fb68b577",
+                    "27f53ccba1dc49f0a8605dac3290d66c",
+                    "d0c373659fc647ce8912401853f9a1ad",
+                    "12ec5f46fcc14313898c1576ff3a5384",
+                    "a83a57d1017e41e8b1fae30dc2d2fb27"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "705db769b7624af18a0367d58225aed4",
+                  "35b50de06c7d4bc68aa2bfd5a36b8db8",
+                  "02c4a836deea412b87a4154e07ceb2f9",
+                  "841a2eb9c5ef49efb80c5c40463304d3",
+                  "e3c91661bf714527aaf491bcbbef1765",
+                  "e52af62148324c7fac1876ab43813c8a",
+                  "711ca9a786f744ebbaccfa90f290c769",
+                  "ae38aabae0714f7da1c6cdd92b9742c9",
+                  "85716708a50e43bbb2ab2a8f920768d1",
+                  "f4524774ba674f5187021a4452fd18a5",
+                  "40fc601574154e75bbe942428b5c472c",
+                  "267a16ed0c5d4074a7534620614d44a8",
+                  "a09e30e4fb63466389415a4c626a16a5",
+                  "d7111591b3f34c4eac1773e02e56f2ed"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Documents",
+        "key": "document",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

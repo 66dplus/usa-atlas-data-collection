@@ -1,0 +1,540 @@
+{
+  "jurisdiction_code": "SC",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T08:19:11.690539+00:00",
+  "candidates": [
+    {
+      "id": "c01145201c8345d688a6f3c93d69340b",
+      "title": "SCDNR Groundwater Data Viewer",
+      "url": "https://hydrology.dnr.sc.gov/groundwater-data/",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "App for viewing and downloading groundwater data from SCDNR's groundwater monitoring network. ",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Ready To Use",
+          "Web Map"
+        ],
+        "description": "This app on the hydrology website allows views and downloads of groundwater data (daily water levels) from the SCDNR Hydrology Section's Groundwater Monitoring Network. A hydrograph can be viewed for each well. The period of record can be customized, and data can be download in CSV format.<div><br /></div><div>Data are updated approximately monthly. </div>",
+        "licenseInfo": "<span style='color:rgb(5, 31, 56); font-family:-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size:12.8px;'>Data presented on this web site may have been retrieved partially or entirely from several sources including federal or other state agencies. SCDNR makes every effort to provide accurate and complete information, however, the database is a &quot;work in progress&quot; and updates will occur regularly. In no event should the South Carolina Department of Natural Resources or any contributing agencies be liable for any direct or indirect, incidental, or other damages arising from the use of these data. SCDNR does not warrant, guarantee, or make any representations regarding the use, or the results of the use, of the information provided to you by the Department in terms of correctness, accuracy, reliability, timeliness or otherwise. The entire risk as to the results and performance of any information obtained from the SCDNR is entirely assumed by the recipient. SCDNR welcomes suggestions on how to improve our home page and correct errors.</span>",
+        "title": "SCDNR Groundwater Data Viewer",
+        "type": "Web Mapping Application",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1646842044000,
+        "avgRating": 0,
+        "id": "c01145201c8345d688a6f3c93d69340b",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": "SCDNR Hydrology Section",
+        "largeThumbnail": null,
+        "lastViewed": 1753992000000,
+        "thumbnail": "thumbnail/thumbnail1646841576335.png",
+        "languages": [],
+        "created": 1646841444000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://hydrology.dnr.sc.gov/groundwater-data/",
+        "tags": [
+          "hydrology",
+          "groundwater",
+          "water"
+        ],
+        "numViews": 28,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/c01145201c8345d688a6f3c93d69340b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "434902c3637644748f1301116aaa921a",
+      "title": "SCDNR_Groundwater_Data_Public_View",
+      "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Groundwater_Data_Public_View/FeatureServer",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "SCDNR groundwater monitoring map with wells, well clusters, and well level data. Used in the online data viewer on the hydrology website. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -82.62751275494597,
+                35.17506002758418
+              ],
+              [
+                -78.86690874256065,
+                35.17506002758418
+              ],
+              [
+                -78.86690874256065,
+                32.071881249968094
+              ],
+              [
+                -82.62751275494597,
+                32.071881249968094
+              ],
+              [
+                -82.62751275494597,
+                35.17506002758418
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Multilayer",
+          "Service",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>SCDNR groundwater monitoring map with wells, well clusters, and well level data. Used in the online data viewer on the hydrology website.</span><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Well locations and cluster site polygons are generalized and approximate and are shown in a grid pattern for visualization. These are not precise well locations. </span></div>",
+        "licenseInfo": "<span style='color:rgb(63, 74, 34); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The S.C. Department of Natural Resources makes no representation or warranty as to its accuracy, and in particular, its accuracy as to labeling, dimensions, boundaries, or placement or location of any map features thereon. The S.C. Department of Natural Resources makes NO Warranty of merchantability or Warranty for fitness of use for a particular purpose, express or implied, with respect to this map product. Any user of this map product accepts the same as IS, with ALL FAULTS, and assumes all responsibility for the use thereof, and further covenants and agrees to hold the S.C. Department of Natural Resources harmless from and against any damage, loss, or liability arising from any use of the map product.</span>",
+        "title": "SCDNR_Groundwater_Data_Public_View",
+        "type": "Feature Service",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1753994554000,
+        "avgRating": 0,
+        "id": "434902c3637644748f1301116aaa921a",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1754395200000,
+        "thumbnail": "thumbnail/thumbnail1653494503323.png",
+        "languages": [],
+        "created": 1653494442000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Groundwater_Data_Public_View/FeatureServer",
+        "tags": [
+          "hydrology",
+          "water",
+          "groudnwater"
+        ],
+        "numViews": 7808,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SCDNR_Groundwater_Data_Public_View",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/434902c3637644748f1301116aaa921a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3b02d6b5b98a4795bbac6dadf8f4c16a",
+      "title": "SCDNR Coastal Plain Well Inventory",
+      "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Coastal_Plain_Well_Inventory/FeatureServer",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Hydrology Section of the SCDNR has records of more than 14,000 water wells located in the Coastal Plain counties of South Carolina.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -81.99177543796985,
+                34.99354195492677
+              ],
+              [
+                -78.55749292946534,
+                34.99354195492677
+              ],
+              [
+                -78.55749292946534,
+                32.047247445719876
+              ],
+              [
+                -81.99177543796985,
+                32.047247445719876
+              ],
+              [
+                -81.99177543796985,
+                34.99354195492677
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "The Hydrology Section of the SCDNR has records of more than 14,000 water wells located in the Coastal Plain counties of South Carolina. Find wells with Geophysical Logs, Chemical Analysis, Drill Logs, and Pump Tests, and other well data such as depth, flow rates, casing, and more. \n\nDisclaimer: The SCDNR does not guarantee the accuracy of this well information. The accuracy and precision of individual well locations is not guaranteed. Many well locations were collected to the nearest Second (or roughly 100 ft) and should not be regarded as survey locations. Some well locations have been changed so that wells with very close proximity are visible in the application. In many cases, our well information comes from old records, and as a result, some of the information, such as the well owner or the well use, may no longer be accurate. This is in no way a complete inventory of all the water wells in the South Carolina Coastal Plain.",
+        "licenseInfo": "The SCDNR does not guarantee the accuracy of this well information. In many cases, our well information comes from old records, and as a result, some of the information, such as the well owner or the well use, may no longer be accurate. This is in no way a complete inventory of all the water wells in the South Carolina Coastal Plain.",
+        "title": "SCDNR Coastal Plain Well Inventory",
+        "type": "Feature Service",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1651154647000,
+        "avgRating": 0,
+        "id": "3b02d6b5b98a4795bbac6dadf8f4c16a",
+        "categories": [],
+        "spatialReference": "26917",
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1763060400000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1570810410000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SCDNR_Coastal_Plain_Well_Inventory/FeatureServer",
+        "tags": [
+          "hydrology",
+          "wells",
+          "groundwater",
+          "water well"
+        ],
+        "numViews": 26272,
+        "numComments": 0,
+        "size": 31391744,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SCDNR_Coastal_Plain_Well_Inventory",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/3b02d6b5b98a4795bbac6dadf8f4c16a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5b8485d5d7ce496bbd64f029d1c82f13",
+      "title": "SCDNR_CP_Wells",
+      "url": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/5b8485d5d7ce496bbd64f029d1c82f13",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "map for viewing SCDNR Coastal Plain Well Inventory",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -81.0702938293444,
+                34.02093211167177
+              ],
+              [
+                -80.99132959594604,
+                34.02093211167177
+              ],
+              [
+                -80.99132959594604,
+                33.958235232793704
+              ],
+              [
+                -81.0702938293444,
+                33.958235232793704
+              ],
+              [
+                -81.0702938293444,
+                34.02093211167177
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Online",
+          "Explorer Web Map",
+          "Map",
+          "Offline",
+          "Online Map",
+          "Web Map"
+        ],
+        "description": "",
+        "licenseInfo": null,
+        "title": "SCDNR_CP_Wells",
+        "type": "Web Map",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1651160110000,
+        "avgRating": 0,
+        "id": "5b8485d5d7ce496bbd64f029d1c82f13",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1763060400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1570816322000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          "hydrology",
+          "groundwater",
+          "water resources"
+        ],
+        "numViews": 18670,
+        "numComments": 0,
+        "size": 23219,
+        "listed": false,
+        "scoreCompleteness": 63,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "South Carolina Department of Natural Resources",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/5b8485d5d7ce496bbd64f029d1c82f13"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5052e9310cb242eaa5b07340b406ab5a",
+      "title": "SCDNR Well Inventory",
+      "url": "https://scdnr.maps.arcgis.com/apps/webappviewer/index.html?id=5052e9310cb242eaa5b07340b406ab5a",
+      "publisher": "clarkrl_scdnr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "App for viewing SCDNR Coastal Plain Well Inventory",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Ready To Use",
+          "WAB2D",
+          "Web AppBuilder",
+          "Web Map"
+        ],
+        "description": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>The Hydrology Section of the SCDNR has records of more than 14,000 water wells located in the Coastal Plain counties of South Carolina. Find wells with Geophysical Logs, Chemical Analysis, Drill Logs, and Pump Tests, and other well data such as depth, flow rates, casing, and more. </span><div><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></span></div><div><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>Last update: September 2019</span></div><div><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></span></div><div style='text-align: left;'><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><b>Disclaimer</b>: The SCDNR does not guarantee the accuracy of this well information. The accuracy and precision of individual well locations is not guaranteed. Many well locations were collected to the nearest Second (or roughly 100 ft) and should not be regarded as survey locations. Some well locations have been changed so that wells with very close proximity are visible in the application. In many cases, our well information comes from old records, and as a result, some of the information, such as the well owner or the well use, may no longer be accurate. This is in no way a complete inventory of all the water wells in the South Carolina Coastal Plain.</span></div>",
+        "licenseInfo": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>The SCDNR does not guarantee the accuracy of this well information. The accuracy and precision of individual well locations is not guaranteed.</span>",
+        "title": "SCDNR Well Inventory",
+        "type": "Web Mapping Application",
+        "orgId": "acgZYxoN5Oj8pDLa",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1651159337000,
+        "avgRating": 0,
+        "id": "5052e9310cb242eaa5b07340b406ab5a",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "clarkrl_scdnr",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1763060400000,
+        "thumbnail": "thumbnail/thumbnail1635884067103.png",
+        "languages": [],
+        "created": 1570816082000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://scdnr.maps.arcgis.com/apps/webappviewer/index.html?id=5052e9310cb242eaa5b07340b406ab5a",
+        "tags": [
+          "hydrology",
+          "wells",
+          "groundwater",
+          "water resources"
+        ],
+        "numViews": 21018,
+        "numComments": 0,
+        "size": 145058,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "lastUpdatedThumbnailUrlByWab": "https://scdnr.maps.arcgis.com/sharing/rest/content/items/5b8485d5d7ce496bbd64f029d1c82f13/info/thumbnail/ago_downloaded.png"
+        },
+        "source": "South Carolina Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all/items/5052e9310cb242eaa5b07340b406ab5a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-scdnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    190
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "963b17a3caeea05c71268e8ef32ae57d28fa7f0e1156a5af7a6697eb6877cb16",
+  "search_complete": true
+}

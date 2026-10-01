@@ -1,0 +1,364 @@
+{
+  "jurisdiction_code": "CA",
+  "query": "data center",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-09-29T14:10:34.574528+00:00",
+  "candidates": [
+    {
+      "id": "4f7bedd5-7301-4a53-b724-ee44bfccd3d8",
+      "title": "County Medi-Cal Call Center Data",
+      "url": "https://data.ca.gov/dataset/county-medi-cal-call-center-data",
+      "publisher": "California Department of Health Care Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/176e1bec-f1cc-41db-994c-ce5d460bbb68/resource/d192f34c-48d2-4ba0-88f6-bfd4b12cc902/download/total-call-volume.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/176e1bec-f1cc-41db-994c-ce5d460bbb68/resource/8b0301ff-5bd9-4520-8223-b3e1a8b4679a/download/average-call-wait-time-june-2026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/176e1bec-f1cc-41db-994c-ce5d460bbb68/resource/9ecaa5b1-6d4d-4d0a-8b50-d8984f4c5c7e/download/average-call-abandonment-rate.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/176e1bec-f1cc-41db-994c-ce5d460bbb68/resource/67d2fe1c-5c0e-488b-8064-01a0ba9e36ea/download/county-medi-cal-call-center-data-wwimo8q1.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "The county Medi-Cal call center data, required per California Senate Bill 1289 (SB 1289, Roth, Chapter 792, Statutes of 2024) includes the number of calls received during working hours, the number of calls received after working hours, and the total calls received by county; the average wait time for all languages and per language by county; and the average call abandonment rate per county. These data will be compiled on a monthly basis and posted quarterly."
+    },
+    {
+      "id": "8ad68573-f6fa-44f4-924b-e3445918f7ad",
+      "title": "DDS RegionalCenters",
+      "url": "https://data.ca.gov/dataset/dds-regionalcenters1",
+      "publisher": "California Department of Developmental Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://gis.data.chhs.ca.gov/datasets/7de345d230e54972bb6e3347cd083580_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/aogSfRJCHNPulIe6/arcgis/rest/services/DDS_RegionalCenters/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.chhs.ca.gov/api/download/v1/items/7de345d230e54972bb6e3347cd083580/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.chhs.ca.gov/api/download/v1/items/7de345d230e54972bb6e3347cd083580/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.chhs.ca.gov/api/download/v1/items/7de345d230e54972bb6e3347cd083580/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.chhs.ca.gov/api/download/v1/items/7de345d230e54972bb6e3347cd083580/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/ea080d7e-71e2-4144-b896-a827272ad2c3/resource/a4c4622f-b98e-4d80-a518-d2dfce4b0f17/download/dds-regionalcenters1-47456zvu.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "<p><span style='background-color:rgb(255,255,255); color:rgb(76,76,76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>The State of California, Department of Developmental Services oversees and organizes services for individuals with developmental disabilities in California. This is achieved through a network of 21 non-profit, community-based agencies called regional centers. These regional centers are responsible for evaluating individuals, determining their eligibility for services, and providing case management.  For more information, please see the Department of Developmental Services website at </span></span><a href='https://www.dds.ca.gov/' rel='nofollow ugc'>Home : CA Department of Developmental Services</a></p>"
+    },
+    {
+      "id": "b51a3782-6c4e-4a9f-8bce-6ec196cad6b7",
+      "title": "DDS RegionalCenters",
+      "url": "https://data.ca.gov/dataset/dds-regionalcenters",
+      "publisher": "California Department of Developmental Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/datasets/7de345d230e54972bb6e3347cd083580_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/aogSfRJCHNPulIe6/arcgis/rest/services/DDS_RegionalCenters/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/api/download/v1/items/7de345d230e54972bb6e3347cd083580/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/api/download/v1/items/7de345d230e54972bb6e3347cd083580/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/api/download/v1/items/7de345d230e54972bb6e3347cd083580/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/api/download/v1/items/7de345d230e54972bb6e3347cd083580/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/maps/7de345d230e54972bb6e3347cd083580_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cde334d6-19fb-4294-9c31-5461bde79a6c/resource/88737e3d-fc4d-467e-b80e-569f400b3ba5/download/dds-regionalcenters-91lrwhzw.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "<p><span style='background-color:rgb(255,255,255); color:rgb(76,76,76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>The State of California, Department of Developmental Services oversees and organizes services for individuals with developmental disabilities in California. This is achieved through a network of 21 non-profit, community-based agencies called regional centers. These regional centers are responsible for evaluating individuals, determining their eligibility for services, and providing case management.  For more information, please see the Department of Developmental Services website at </span></span><a href='https://www.dds.ca.gov/' rel='nofollow ugc'>Home : CA Department of Developmental Services</a></p>"
+    },
+    {
+      "id": "41c1cda5-79d0-4a64-b04d-f03cc2974e7a",
+      "title": "RegionalCenter CatchmentAreas",
+      "url": "https://data.ca.gov/dataset/regionalcenter-catchmentareas",
+      "publisher": "California Department of Developmental Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/datasets/a7fb51a97be547a1a6ad2f4834c1ca48_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/aogSfRJCHNPulIe6/arcgis/rest/services/RegionalCenter_CatchmentAreas/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/api/download/v1/items/a7fb51a97be547a1a6ad2f4834c1ca48/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/api/download/v1/items/a7fb51a97be547a1a6ad2f4834c1ca48/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/api/download/v1/items/a7fb51a97be547a1a6ad2f4834c1ca48/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/api/download/v1/items/a7fb51a97be547a1a6ad2f4834c1ca48/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://ckanharvest-dds-chhs-opendata.hub.arcgis.com/maps/a7fb51a97be547a1a6ad2f4834c1ca48_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/79950c2c-0fff-4069-8d48-22c9df6b570b/resource/e22ae119-4cc1-4185-8bc2-8121cf958b43/download/regionalcenter-catchmentareas-k5dzkcjn.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/79950c2c-0fff-4069-8d48-22c9df6b570b/resource/257358dc-61ec-472e-b360-7464167337f3/download/regionalcenter-catchmentareas-0nc0splf.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/79950c2c-0fff-4069-8d48-22c9df6b570b/resource/e979330c-6610-4beb-b299-3b04d456b1d5/download/regionalcenter-catchmentareas-oo679oe0.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/79950c2c-0fff-4069-8d48-22c9df6b570b/resource/d949a79f-6626-49e0-b291-7509277186f2/download/regionalcenter-catchmentareas-d0hwb1rq.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(76,76,76);font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">The State of California, Department of Developmental Services oversees and organizes services for individuals with developmental disabilities in California. This is achieved through a network of 21 non-profit, community-based agencies called regional centers. These regional centers are responsible for evaluating individuals, determining their eligibility for services, and providing case management. The Regional Center Catchment Areas were developed to capture the extent of services associated with a regional center. This data, when added to the DDS Regional Center Lookup helps current and future consumers of the DDS Regional Center services in determining which Regional Center to contact according to their location within an associated catchment (service) area. When an address is entered into the Regional Center Lookup application, a zonal search of the catchment "
+    },
+    {
+      "id": "6ab00bc9-0490-43a8-ab54-1e9f29814419",
+      "title": "RegionalCenter CatchmentAreas",
+      "url": "https://data.ca.gov/dataset/regionalcenter-catchmentareas1",
+      "publisher": "California Department of Developmental Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://gis.data.chhs.ca.gov/datasets/a7fb51a97be547a1a6ad2f4834c1ca48_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/aogSfRJCHNPulIe6/arcgis/rest/services/RegionalCenter_CatchmentAreas/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.chhs.ca.gov/api/download/v1/items/a7fb51a97be547a1a6ad2f4834c1ca48/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.chhs.ca.gov/api/download/v1/items/a7fb51a97be547a1a6ad2f4834c1ca48/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.chhs.ca.gov/api/download/v1/items/a7fb51a97be547a1a6ad2f4834c1ca48/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.chhs.ca.gov/api/download/v1/items/a7fb51a97be547a1a6ad2f4834c1ca48/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6d421f63-dbf2-47bc-9dbf-1306e4a36e53/resource/588c58d9-e62e-4cea-81fd-e3cb19c54eb9/download/regionalcenter-catchmentareas1-jotjiufw.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6d421f63-dbf2-47bc-9dbf-1306e4a36e53/resource/b339eaf8-2e0a-4353-8ea4-3baffd7adf34/download/regionalcenter-catchmentareas1-qvgm02do.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6d421f63-dbf2-47bc-9dbf-1306e4a36e53/resource/570760e1-ce8d-49ac-8da3-25c86e7db770/download/regionalcenter-catchmentareas1-qcyr_9dk.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "<p><span style=\"background-color:rgb(255,255,255);color:rgb(76,76,76);font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">The State of California, Department of Developmental Services oversees and organizes services for individuals with developmental disabilities in California. This is achieved through a network of 21 non-profit, community-based agencies called regional centers. These regional centers are responsible for evaluating individuals, determining their eligibility for services, and providing case management. The Regional Center Catchment Areas were developed to capture the extent of services associated with a regional center. This data, when added to the DDS Regional Center Lookup helps current and future consumers of the DDS Regional Center services in determining which Regional Center to contact according to their location within an associated catchment (service) area. When an address is entered into the Regional Center Lookup application, a zonal search of the catchment "
+    },
+    {
+      "id": "21db0673-afc2-4584-847d-290535179198",
+      "title": "HCAI Facilities Emergency Operations Center - App Public",
+      "url": "https://data.ca.gov/dataset/hcai-facilities-emergency-operations-center-app-public",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://opendata-hcai.hub.arcgis.com/apps/hcai::hcai-facilities-emergency-operations-center-app-public",
+          "format": "HTML"
+        },
+        {
+          "url": "https://hcai.maps.arcgis.com/apps/webappviewer/index.html?id=783b89c5f62a4853a92f08a320d6d518",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4dda7d02-8e33-4f2c-857d-c5f612c6783a/resource/36400e4f-45b2-487c-bddc-8ed91c577467/download/hcai-facilities-emergency-operations-center-app-public-0q98mp2c.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "HCAI Emergency Operations Center Application for Earthquakes, Fires, PSPS."
+    },
+    {
+      "id": "a13806b3-d7f8-45ed-a9d2-7d6d873c224a",
+      "title": "California Independent Living and Traumatic Brain Injury Center Locations",
+      "url": "https://data.ca.gov/dataset/california-independent-living-and-traumatic-brain-injury-center-locations",
+      "publisher": "California Department of Rehabilitation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d83f142d-fc61-42e8-828c-8ab8be8800d1/resource/2412adc5-5d49-4ec0-a43e-e1ca4766e397/download/california-independent-living-and-traumatic-brain-injury-center-locations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d83f142d-fc61-42e8-828c-8ab8be8800d1/resource/628da29e-3467-4cbd-ab17-0fbf40c8aec6/download/data-dictionary-for-independent-living-centers-new-5-14-2015.docx",
+          "format": "DOCX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d83f142d-fc61-42e8-828c-8ab8be8800d1/resource/71296333-9252-4415-bbd4-700dd740be80/download/california-independent-living-and-traumatic-brain-injury-center-locations-_0i_nje6.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset include individual locations of the Independent Living Section of the Department of Rehabilitation (DOR).  Independent Living Centers (ILC) and Traumatic Brain Injury (TBI) locations are dedicated to the ideal that communities become fully accessible and integrated so that all persons with disabilities can live, work, shop, and play where they choose, without barriers.  This data is public information and also shared on the DOR website."
+    },
+    {
+      "id": "0e2b835f-3fa7-402c-8c2d-b8281f03e0b5",
+      "title": "DDS Consumers Served by Residence Type and Regional Center",
+      "url": "https://data.ca.gov/dataset/dds-consumers-served-by-residence-type-and-regional-center",
+      "publisher": "California Department of Developmental Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d1881982-1b2c-4232-87ab-1e0440af836d/resource/b5ba45bc-2d8f-4af2-a88a-aa73a8acec8c/download/dds-consumers-served-by-residence-type-and-regional-center.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d1881982-1b2c-4232-87ab-1e0440af836d/resource/b4a30681-97e7-474a-be8d-d174d1bf1fe6/download/dds-odp-consumers-served-by-res-type-and-rc-data-dictionary.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/d1881982-1b2c-4232-87ab-1e0440af836d/resource/4185aa56-632a-45c9-8855-13cee28a398c/download/consumers-served-by-residence-type-and-regional-center-hkzkyx_z.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "Living arrangement by regional center for the DDS population from January 2015 to present. Information reported by Regional Centers to DDS."
+    },
+    {
+      "id": "6448dea0-bb35-4b98-8136-d7a86939bb22",
+      "title": "Federally Qualified Health Center Wrap Payment and Managed Care Encounter",
+      "url": "https://data.ca.gov/dataset/federally-qualified-health-center-wrap-payment-and-managed-care-encounter",
+      "publisher": "California Department of Health Care Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/8f648030-6285-4613-8a57-61ca0816e219/resource/7c4b8fa3-680e-44d3-bf23-b1c9a17f40d2/download/suppression_wrap_payment_2021-2023-_cdo.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/8f648030-6285-4613-8a57-61ca0816e219/resource/c55f082a-7d4a-4d8d-92aa-3f64bf22b249/download/federally-qualified-health-center-wrap-payment-and-managed-care-encounter-frbni1rk.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains an analysis of wrap claims and encounters reported to DHCS. The match percentage is based on the count of wraps received matching to their encounter. A Wrap Payment is a supplemental payment to Federally Qualified Health Centers (FQHC), covering the difference between their per-visit PPS (Per-Visit Payment System) rate and the amount received from managed care plans for services to Medi-Cal managed care members."
+    },
+    {
+      "id": "e4c70d40-35e7-4b82-8d5d-c12a16c83286",
+      "title": "DDS Consumers by Diagnosis, Early Start Consumers, and Regional Center",
+      "url": "https://data.ca.gov/dataset/dds-consumers-by-diagnosis-early-start-consumers-and-regional-center",
+      "publisher": "California Department of Developmental Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0d08fe6f-fc2e-41b5-aa5a-85617f5dc4fa/resource/69aec9ae-040c-4f3a-aa60-459706753251/download/dds-consumers-by-diagnosis-early-start-consumers-and-regional-center.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0d08fe6f-fc2e-41b5-aa5a-85617f5dc4fa/resource/1be30d0a-ae15-42f8-bb56-452efea5459a/download/dds-odp-consumers-served-by-diagnosis-and-rc-data-dictionary.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0d08fe6f-fc2e-41b5-aa5a-85617f5dc4fa/resource/c7df9d78-8ba9-4ca6-b817-1a99d166862d/download/consumers-with-intellectual-disability-indicator-by-regional-center-96mh8js1.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "Department of Developmental Services (DDS) consumer population by diagnosis and regional center as reported on the Client Development Evaluation Report (CDER). Information reported by Regional Centers to DDS. It  is  common  for  a  consumer  to  have  a  combination  of  two  or  more  developmental  disabilities (Intellectual  Disability,  Autism,  Epilepsy,  Cerebral  Palsy,  or  5th Category) recorded on their CDER. Early Start consumers do not have CDERs, Early Start and total population counts derived from the Client Master File (CMF)."
+    }
+  ],
+  "page_receipts": [
+    91
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 303,
+  "next_offset": 10,
+  "response_sha256": "392836b0cb9514730be26a316984fb7c37eba2480f2301e57b19b03b4f4f76c5",
+  "search_complete": false
+}

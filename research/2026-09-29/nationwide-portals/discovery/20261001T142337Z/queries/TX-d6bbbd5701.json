@@ -1,0 +1,46 @@
+{
+  "jurisdiction_code": "TX",
+  "query": "air quality",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-01T14:24:04.145457+00:00",
+  "candidates": [
+    {
+      "id": "tdzs-qqjn",
+      "title": "Texas Commission on Environmental Quality - Complaints",
+      "url": "https://data.texas.gov/dataset/Texas-Commission-on-Environmental-Quality-Complain/tdzs-qqjn",
+      "publisher": "TCEQ Information Resources Division",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.texas.gov/resource/tdzs-qqjn.json",
+      "description": "View complaints received by the TCEQ with their associated Complaint Number. The information alleged by the complainant is documented and associated to that unique number and then further investigated. Note, a complaint may be listed more than once if there are multiple associated Customer Names, Released Materials, Media, and/or Effects."
+    },
+    {
+      "id": "xagr-a3x2",
+      "title": "Texas Commission on Environmental Quality - Emergency Response Spills",
+      "url": "https://data.texas.gov/dataset/Texas-Commission-on-Environmental-Quality-Emergenc/xagr-a3x2",
+      "publisher": "TCEQ Information Resources Division",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.texas.gov/resource/xagr-a3x2.json",
+      "description": "Emergency Response Spills received by the TCEQ are assigned an Incident Tracking Number. The information submitted by the reporting party is documented and associated to that unique number and then further investigated. An Incident Tracking Number may be listed more than once if there are multiple Customer Names, Released Materials, Media, and/or Effects."
+    }
+  ],
+  "page_receipts": [
+    120
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "0e542a6069cb3b24241e44f32abc29e16fd83680e1f3fb2a1ea2842e20f271f8",
+  "search_complete": true
+}

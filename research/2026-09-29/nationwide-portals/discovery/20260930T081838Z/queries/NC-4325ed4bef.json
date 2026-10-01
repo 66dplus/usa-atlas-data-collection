@@ -1,0 +1,268 @@
+{
+  "jurisdiction_code": "NC",
+  "query": "gasoline",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-30T08:19:04.367195+00:00",
+  "candidates": [
+    {
+      "id": "aa128b49103c433bb45335f154b0a3ec",
+      "title": "GasStations",
+      "url": "https://services6.arcgis.com/3Sj1fiIDvQtFfbvg/arcgis/rest/services/GasStations/FeatureServer",
+      "publisher": "NCDA_EP_vosech",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset was created by NCDA&CS to accurately display the locations of public and private Gas Stations in North Carolina",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.21747599999996,
+                36.56029300000006
+              ],
+              [
+                -75.46727799999996,
+                36.56029300000006
+              ],
+              [
+                -75.46727799999996,
+                33.890183000000036
+              ],
+              [
+                -84.21747599999996,
+                33.890183000000036
+              ],
+              [
+                -84.21747599999996,
+                36.56029300000006
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "This is a comprehensive gas station dataset that identifies the spatial locations of North Carolina gas stations. It is created by the North Carolina Department of Agriculture and Consumer Services Standard Divisions. Other information includes: address, city, zip-code, county; phone number; store type; number of gas diesel, kerosene, and non-highway diesel nozzles.",
+        "licenseInfo": "This data is public record and  free to use. This data is NOT 100% accurate and some gas stations are missing or have changed brands.",
+        "title": "GasStations",
+        "type": "Feature Service",
+        "orgId": "3Sj1fiIDvQtFfbvg",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1660048412000,
+        "avgRating": 0,
+        "id": "aa128b49103c433bb45335f154b0a3ec",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "NCDA_EP_vosech",
+        "accessInformation": "NCDA&CS Standards Division -- Weighs and Measure data.",
+        "largeThumbnail": null,
+        "lastViewed": 1767985200000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1591893990000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services6.arcgis.com/3Sj1fiIDvQtFfbvg/arcgis/rest/services/GasStations/FeatureServer",
+        "tags": [
+          "North Carolina Gas Stations",
+          "Diesel",
+          "Kerosene",
+          "Fuel",
+          "Motor fuel",
+          "Gas",
+          "Oil",
+          "Energy",
+          "Public Gas Stations in NC",
+          "Service Station"
+        ],
+        "numViews": 15782,
+        "numComments": 0,
+        "size": 1761280,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "GasStations",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NCDA&CS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/aa128b49103c433bb45335f154b0a3ec"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6c9a740f143b49f5bfcffe59c082b1c2",
+      "title": "DukeTransmissionEasements",
+      "url": "https://services3.arcgis.com/oX5r75R7mapdoI2F/arcgis/rest/services/DukeTransmission/FeatureServer",
+      "publisher": "Kirsten.Huntley1",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Duke Energy electric and natural gas transmission line easements.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -83.99282256397771,
+                36.58337463217528
+              ],
+              [
+                -75.71351096569045,
+                36.58337463217528
+              ],
+              [
+                -75.71351096569045,
+                33.84405860902239
+              ],
+              [
+                -83.99282256397771,
+                33.84405860902239
+              ],
+              [
+                -83.99282256397771,
+                36.58337463217528
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span style='color:#000000; font-family:Verdana; font-size:14px;'><span>This polygon service represents easements acquired by Duke Energy and Piedmont Natural Gas, either directly or from legacy companies, for purposes of energy transmission throughout North Carolina. The layer is updated monthly.</span></span><br /><span style='color:#000000; font-family:Verdana; font-size:14px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>This service is provided for general informational purposes only. Duke Energy does not provide detailed easement information, property research, or legal advice regarding individual properties through this service. Please reach out to Customer Service at 800-777-9898 (residential) or 800-653-5307 (business) or visit </span></span><a target='_blank' href='https://www.duke-energy.com/customer-service' rel='nofollow ugc noopener noreferrer'>our Customer Service website</a><span style='color:#000000; font-family:Verdana; font-size:14px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'> with questions.</span></span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span><span>All information provided by Duke Energy is for general informational purposes only. Duke Energy makes no representation or warranty whatsoever regarding the completeness or accuracy of this information </span></span><span><span>and assumes no responsibility or liability for any damages arising out of recipient’s use of or reliance upon this information</span></span><span><span>.  This information shall not be used or relied upon by recipient to </span></span><span><span>relieve it of complying with or undertaking any necessary or prudent acts, diligence or obligations in connection with the subject matter addressed herein or </span></span><span><span>recipient’s intended purposes, including, without limitation, use of 811 before performing any digging and obtaining an encroachment permit from Piedmont Natural Gas</span></span></p></div></div></div>",
+        "title": "DukeTransmissionEasements",
+        "type": "Feature Service",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1774381782000,
+        "avgRating": 0,
+        "id": "6c9a740f143b49f5bfcffe59c082b1c2",
+        "categories": [
+          "/Categories/Infrastructure/Utilities"
+        ],
+        "spatialReference": "103122",
+        "numRatings": 0,
+        "owner": "Kirsten.Huntley1",
+        "accessInformation": "Duke Energy",
+        "largeThumbnail": null,
+        "lastViewed": 1778850000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1601403235000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/oX5r75R7mapdoI2F/arcgis/rest/services/DukeTransmission/FeatureServer",
+        "tags": [
+          "Duke Energy",
+          "Piedmont Natural Gas",
+          "PNG",
+          "Easements",
+          "Right of Way",
+          "ROW",
+          "Utility",
+          "Transmission",
+          "Electric",
+          "Gas",
+          "Land Rights",
+          "Encumbrances",
+          "NC",
+          "North Carolina",
+          "NC OneMap",
+          "PlanningCadastre"
+        ],
+        "numViews": 107621,
+        "numComments": 0,
+        "size": 93700096,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "DukeTransmission",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/6c9a740f143b49f5bfcffe59c082b1c2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    148
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "c57927840dd169c5a3b25cb6abe30e5b312708f9701c363e81b439cefdebaf1b",
+  "search_complete": true
+}

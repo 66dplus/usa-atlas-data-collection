@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "scope": "research_only_not_admitted_to_production",
+  "retrieved_date": "2026-09-28",
+  "provider_original_bytes_downloaded": false,
+  "original_download_blocker": "Sandbox DNS failure; web tool parses PDF/HTML but rejects CSV/XLSX transport",
+  "artifacts": [
+    {
+      "path": "raw/access-attempts.json",
+      "bytes": 1132,
+      "sha256": "11eb53f65092075df1e34fec9543a088e0f3dc24d2564889f5f417892293000b",
+      "row_count": null,
+      "representation": "web_extraction_or_transcription"
+    },
+    {
+      "path": "raw/irs-wealth-2019-table6.web-extract.json",
+      "bytes": 5466,
+      "sha256": "d5c87f768f1582507e771785a0d89e5232a4b4f49cd17824e0ca77b057c6436f",
+      "row_count": null,
+      "representation": "web_extraction_or_transcription"
+    },
+    {
+      "path": "raw/lbnl-2025-update.facts.json",
+      "bytes": 876,
+      "sha256": "81d4482cd312e6dffe4c3aa3d66c3caea277bc55ea4321c67e21676a02c6bc9c",
+      "row_count": null,
+      "representation": "web_extraction_or_transcription"
+    },
+    {
+      "path": "raw/loudoun-datacenters-2026-03-01.transcription.json",
+      "bytes": 4025,
+      "sha256": "7c35002d64c75c47a49ccabf7c55e62fd202fcdfe9a1d9bf42b60c7894e3a9d8",
+      "row_count": null,
+      "representation": "web_extraction_or_transcription"
+    },
+    {
+      "path": "raw/ubs-national-wealth.facts.json",
+      "bytes": 2929,
+      "sha256": "52dc624458ead6f01a1373053c5d26fdb47c75e964696d60f94bd645c3628401",
+      "row_count": null,
+      "representation": "web_extraction_or_transcription"
+    },
+    {
+      "path": "normalized/irs-wealth-2019.csv",
+      "bytes": 7209,
+      "sha256": "d9063278c8b2e0eba44048fc296db964ef3f9a05352ebd74eb75f087a0d4f923",
+      "row_count": 53,
+      "representation": "normalized_aggregate_csv"
+    },
+    {
+      "path": "normalized/lbnl-energy-2024.csv",
+      "bytes": 454,
+      "sha256": "43b9df8d433d6baf95c6f80b49653b0aa66f28d55c620009a81e9d116e1dd582",
+      "row_count": 2,
+      "representation": "normalized_aggregate_csv"
+    },
+    {
+      "path": "normalized/loudoun-datacenters-2026-03-01.csv",
+      "bytes": 14433,
+      "sha256": "8d2928c75adc5cfc5e0cb9e31a3508154fb7736c7bdc10c45e2e3f1f9a8911c5",
+      "row_count": 63,
+      "representation": "normalized_aggregate_csv"
+    },
+    {
+      "path": "normalized/ubs-national-wealth.csv",
+      "bytes": 587,
+      "sha256": "5b9fbd48e30bb068ab3adea5be05a37625ae031582731e8962926703454c3f50",
+      "row_count": 2,
+      "representation": "normalized_aggregate_csv"
+    }
+  ],
+  "normalized_rows": 120,
+  "checks": {
+    "irs_rows": 53,
+    "irs_suppressed_states": 2,
+    "irs_exact_geography_coverage": true,
+    "loudoun_rows": 63,
+    "loudoun_district_sums_match_county": true,
+    "loudoun_components_match_subtotals": true,
+    "loudoun_keys_unique": true,
+    "energy_rows": 2,
+    "publisher_wealth_rows": 2
+  },
+  "note": "Hashes bind local extraction/transcription and CSV bytes, not source PDF/XLSX bytes."
+}

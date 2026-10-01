@@ -1,0 +1,46 @@
+{
+  "jurisdiction_code": "NJ",
+  "query": "electricity",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-09-29T14:02:08.966891+00:00",
+  "candidates": [
+    {
+      "id": "9qpt-bnm4",
+      "title": "NJ Private Inspection Facilities and Emission Repair Facilities",
+      "url": "https://data.nj.gov/Transportation/NJ-Private-Inspection-Facilities-and-Emission-Repa/9qpt-bnm4",
+      "publisher": "npalko",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.nj.gov/resource/9qpt-bnm4.json",
+      "description": "A re-upload of the Motor Vehicle Commission's \"Vehicle Inspection Facility Locations\" dataset to make a more user friendly map/visualization with a focus on Emission Repair Facilities. \n\nThe original dataset can be found here: https://data.nj.gov/Transportation/Vehicle-Inspection-Facility-Locations/t6tk-mr48"
+    },
+    {
+      "id": "w9se-dmra",
+      "title": "NJ Construction Permit Data",
+      "url": "https://data.nj.gov/Reference-Data/NJ-Construction-Permit-Data/w9se-dmra",
+      "publisher": "Richard Byrne",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.nj.gov/resource/w9se-dmra.json",
+      "description": "Data received as of 08/07/2026.\n\nN.J.A.C. 5:23-4.5 (d) requires municipalities to report to DCA monthly, information on each construction permit issued. \nContains information about construction permits issued in New Jersey, including demolition permits.\nData is collected from most, but not all municipalities that issue permits.\nIt is processed and updated monthly.\nData is purged from this dataset after 60 months have elapsed since the data was received.\n\nAccuracy of this data is not guaranteed, it may contain errors, and may not be complete.  Data for permits issued in the immediate previous two months has not been reviewed.\n\nNote that this is the raw unaudited data, and may vary from the official published information in the monthly and annual Construction Reporter, as the official report contains corrected data, and the official report does not include updates received after the date of publication.\n\nWe have no data for these municipalities:\nANDOVER BOROUGH\tSUSSEX\t1901,\nLAKEHURST\tOCEAN\t1513,\nLOWER ALLOWAYS CREEK SALEM 1704\nNATIONAL PARK\tGLOUCESTER\t0812,\t\nPINE BEACH\tOCEAN\t1522,\nVICTORY GARDENS\tMORRIS\t1437,\t\nWALPACK  SUSSEX  1923\nWINFIELD\tUNION\t2021\n\nNote:  We've added Treasury Municipality Code to this dataset, and separated the Municipality Name in to Muni Name and Muni Type.\n\nNote 2:  Questions on individual permit records, or information on individual properties should be directed to the office or agency which originally issued the permit.\n\nNote 3:  This is raw data.  An "
+    }
+  ],
+  "page_receipts": [
+    145
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "e8aeaf9600e6da4a6827d67658208063964e86800b089f6c26131cfc5a242a20",
+  "search_complete": true
+}

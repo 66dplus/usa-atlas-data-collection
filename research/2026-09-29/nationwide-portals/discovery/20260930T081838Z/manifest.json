@@ -1,0 +1,97 @@
+{
+  "started_at": "2026-09-30T08:18:38.302832+00:00",
+  "stage": "complete_bounded_metadata_discovery",
+  "jurisdictions_planned": 52,
+  "priority_queries": [
+    "foreign born",
+    "gasoline",
+    "groundwater",
+    "health insurance",
+    "heart disease"
+  ],
+  "registry_sha256": "955f155a150bf58a027e0cef3c74a430decc73cc54001b9ead8d0c66a6a4a6d9",
+  "runner_sha256": "6915af52f3018d08c13a7bf713fb24820f5877a1b58f8868b9a7247f72340273",
+  "new_observation_datasets_downloaded": 0,
+  "production_mutations": 0,
+  "arguments": {
+    "workers": 4,
+    "max_requests": 600,
+    "timeout": 25,
+    "page_size": 10,
+    "max_pages": 1,
+    "jurisdictions": null,
+    "queries": [
+      "foreign born",
+      "gasoline",
+      "groundwater",
+      "health insurance",
+      "heart disease"
+    ]
+  },
+  "completed_at": "2026-09-30T08:19:25.655447+00:00",
+  "http_attempts": 268,
+  "provider_statuses": {
+    "validated_metadata_adapter": 44,
+    "html_catalog_only": 8
+  },
+  "provider_adapters": {
+    "arcgis_directory": 8,
+    "hub": 19,
+    "ckan": 3,
+    "socrata": 14,
+    "html_catalog_scan": 8
+  },
+  "query_results": 260,
+  "query_statuses": {
+    "zero_matches_in_bounded_search": 177,
+    "candidates_need_review": 51,
+    "candidates_need_catalog_scope_review": 32
+  },
+  "actual_server_catalog_query_pages": 180,
+  "catalog_listing_filter_jobs": 80,
+  "candidate_occurrences": 491,
+  "jurisdictions_searched_returning_candidate_records": [
+    "AK",
+    "AR",
+    "CA",
+    "CO",
+    "CT",
+    "DC",
+    "DE",
+    "HI",
+    "ID",
+    "IN",
+    "KS",
+    "KY",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NY",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "TX",
+    "VA",
+    "VT",
+    "WA",
+    "WI"
+  ],
+  "candidate_occurrences_needing_catalog_scope_review": 211,
+  "verified_local_candidate_occurrences": 0,
+  "errors_requiring_attention": {
+    "http_error_attempts": 17,
+    "unresolved_adapters": 0,
+    "query_errors": 0,
+    "blocked_query_jobs": 0
+  },
+  "unique_candidate_keys": 478
+}

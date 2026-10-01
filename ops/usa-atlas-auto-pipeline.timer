@@ -1,0 +1,12 @@
+[Unit]
+Description=Admit completed USA Atlas source batches every fifteen minutes
+
+[Timer]
+OnCalendar=*-*-* *:00,15,30,45:00 UTC
+OnBootSec=120
+Persistent=true
+AccuracySec=30
+Unit=usa-atlas-auto-pipeline.service
+
+[Install]
+WantedBy=timers.target

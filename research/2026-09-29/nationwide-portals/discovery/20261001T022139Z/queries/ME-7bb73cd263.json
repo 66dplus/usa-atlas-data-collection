@@ -1,0 +1,1240 @@
+{
+  "jurisdiction_code": "ME",
+  "query": "data center",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T02:22:27.756509+00:00",
+  "candidates": [
+    {
+      "id": "6e4eaba344514590a5d5d096d771877d",
+      "title": "Maine United States National Grid (USNG) 19T WFS",
+      "url": "https://dservices1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/services/Maine_United_States_National_Grid/WFSServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine United States National Grid (USNG) 19T WFS",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.9382201068896,
+                47.884443495647744
+              ],
+              [
+                -66.06178062607286,
+                47.884443495647744
+              ],
+              [
+                -66.06178062607286,
+                42.39542067842755
+              ],
+              [
+                -71.9382201068896,
+                42.39542067842755
+              ],
+              [
+                -71.9382201068896,
+                47.884443495647744
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Metadata",
+          "Multilayer",
+          "OGC",
+          "Service",
+          "Web Feature Service",
+          "WFS",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left; font-size:12pt;'><p><span>Maine United States National Grid (USNG) 19T 100,000 Meter, 10,000 Meter, 1,000 Meter.  Source data obtained from <a href='https://usngcenter.org/' target='_blank' rel='nofollow ugc noopener noreferrer'>U.S. National Grid Information Center</a></span></p></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;font-size:12pt\"><P><SPAN>Access: Public Use: User assumes risk</SPAN></P></DIV>",
+        "title": "Maine United States National Grid (USNG) 19T WFS",
+        "type": "WFS",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1637514101000,
+        "avgRating": 0,
+        "id": "6e4eaba344514590a5d5d096d771877d",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "102388",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "MaineGIS, U.S. National Grid Information Center",
+        "largeThumbnail": null,
+        "lastViewed": 1724954400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1572083132000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dservices1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/services/Maine_United_States_National_Grid/WFSServer",
+        "tags": [
+          "Maine",
+          "USNG",
+          "US National Grid",
+          "National Grid",
+          "19T",
+          "elevation"
+        ],
+        "numViews": 85,
+        "numComments": 0,
+        "size": 93954048,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Maine_United_States_National_Grid",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/6e4eaba344514590a5d5d096d771877d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bff40f03f80544aba92b3a0dab2d10ba",
+      "title": "Maine United States National Grid (USNG) 19T Feature",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_United_States_National_Grid/FeatureServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine United States National Grid (USNG) 19T Feature",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.9382201068896,
+                47.884443495647744
+              ],
+              [
+                -66.06178062607286,
+                47.884443495647744
+              ],
+              [
+                -66.06178062607286,
+                42.39542067842755
+              ],
+              [
+                -71.9382201068896,
+                42.39542067842755
+              ],
+              [
+                -71.9382201068896,
+                47.884443495647744
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Hosted Service"
+        ],
+        "description": "<div style='font-size:12pt; text-align:Left;'><p><span>Maine United States National Grid (USNG) 19T 100,000 Meter, 10,000 Meter, 1,000 Meter.&nbsp; Source data obtained from </span><a target='_blank' href='https://usngcenter.org/' rel='nofollow ugc noopener noreferrer'><span>U. S. National Grid Information Center</span></a>. Use this layer to determine which 2-foot contour tiles cover the intended area of interest.</p></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;font-size:12pt\"><P><SPAN>Access: Public Use: User assumes risk</SPAN></P></DIV>",
+        "title": "Maine United States National Grid (USNG) 19T Feature",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1753376560000,
+        "avgRating": 0,
+        "id": "bff40f03f80544aba92b3a0dab2d10ba",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "102388",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "MaineGIS, U.S. National Grid Information Center",
+        "largeThumbnail": null,
+        "lastViewed": 1753376400000,
+        "thumbnail": "thumbnail/thumbnail1633080465799.png",
+        "languages": [],
+        "created": 1572083010000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_United_States_National_Grid/FeatureServer",
+        "tags": [
+          "Maine",
+          "USNG",
+          "US National Grid",
+          "National Grid",
+          "elevation",
+          "19T",
+          "MaineGeoLibrary"
+        ],
+        "numViews": 45094,
+        "numComments": 0,
+        "size": 549199872,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Maine_United_States_National_Grid",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/bff40f03f80544aba92b3a0dab2d10ba"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "05043c7d1564468f8011403346b7c469",
+      "title": "NECEC Centerline WFS",
+      "url": "https://dservices1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/services/NECEC_Centerline/WFSServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "New England Clean Energy Connect Power Transmission Center Line WFS",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.72073951148776,
+                45.527147298561864
+              ],
+              [
+                -69.55260387512675,
+                45.527147298561864
+              ],
+              [
+                -69.55260387512675,
+                43.92537710096998
+              ],
+              [
+                -70.72073951148776,
+                43.92537710096998
+              ],
+              [
+                -70.72073951148776,
+                45.527147298561864
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Metadata",
+          "Multilayer",
+          "OGC",
+          "Service",
+          "Web Feature Service",
+          "WFS",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>New England Clean Energy Connect Power Transmission Center Line.  Source: </span><a href='https://www.maine.gov:443/dep/gis/datamaps/lawb_necec_project/NECEC%20Revision%201%20December%2030,%202020.kmz' rel='nofollow ugc' style='text-decoration:underline;'><span>https://www.maine.gov/dep/gis/datamaps/lawb_necec_project/NECEC%20Revision%201%20December%2030,%202020.kmz</span></a><span>.  Accessed 2021-02-02.  Source data re-projected from geographic coordinate reference system EPSG 4326 to projected coordinate reference system EPSG 6348.</span></p></div></div></div>",
+        "licenseInfo": "Access: Public.  Use: User assumes risk.",
+        "title": "NECEC Centerline WFS",
+        "type": "WFS",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1637514819000,
+        "avgRating": 0,
+        "id": "05043c7d1564468f8011403346b7c469",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102388",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "MaineDEP, MaineGIS",
+        "largeThumbnail": null,
+        "lastViewed": 1722693600000,
+        "thumbnail": "thumbnail/thumbnail1612346052711.png",
+        "languages": [],
+        "created": 1612281679000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dservices1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/services/NECEC_Centerline/WFSServer",
+        "tags": [
+          "utilitiesCommunication",
+          "electricity",
+          "electric",
+          "power transmission",
+          "New England Clean Energy Connect",
+          "NECEC",
+          "MaineDEP",
+          "MaineGIS",
+          "Maine"
+        ],
+        "numViews": 52,
+        "numComments": 0,
+        "size": 131072,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NECEC_Centerline",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/05043c7d1564468f8011403346b7c469"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "8152b34d02174d5f8463c8d8ed7d2048",
+      "title": "NECEC Centerline Layer",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/NECEC_Centerline/FeatureServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "New England Clean Energy Connect Power Transmission Center Line",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.72073951148776,
+                45.527147298561864
+              ],
+              [
+                -69.55260387512675,
+                45.527147298561864
+              ],
+              [
+                -69.55260387512675,
+                43.92537710096998
+              ],
+              [
+                -70.72073951148776,
+                43.92537710096998
+              ],
+              [
+                -70.72073951148776,
+                45.527147298561864
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>New England Clean Energy Connect Power Transmission Center Line.  Source: </span><a href='https://www.maine.gov:443/dep/gis/datamaps/lawb_necec_project/NECEC%20Revision%201%20December%2030,%202020.kmz' rel='nofollow ugc' style='text-decoration:underline;'><span>https://www.maine.gov/dep/gis/datamaps/lawb_necec_project/NECEC%20Revision%201%20December%2030,%202020.kmz</span></a><span>.  Accessed 2021-02-02.  Source data re-projected from geographic coordinate reference system EPSG 4326 to projected coordinate reference system EPSG 6348.</span></p></div></div></div>",
+        "licenseInfo": "Access: Public.  Use: User accepts risk.",
+        "title": "NECEC Centerline Layer",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1612346104000,
+        "avgRating": 0,
+        "id": "8152b34d02174d5f8463c8d8ed7d2048",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102388",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "MaineDEP, MaineGIS",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1612346087952.png",
+        "languages": [],
+        "created": 1612281655000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/NECEC_Centerline/FeatureServer",
+        "tags": [
+          "utilitiesCommunication",
+          "electricity",
+          "electric",
+          "power transmission",
+          "New England Clean Energy Connect",
+          "NECEC",
+          "MaineDEP",
+          "MaineGIS",
+          "Maine"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 131072,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NECEC_Centerline",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/8152b34d02174d5f8463c8d8ed7d2048"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f0f136a298534f5e87f8829c003bf12f",
+      "title": "Maine E911 Addresses, Roads, Structure, and PSAP FGDB",
+      "url": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/f0f136a298534f5e87f8829c003bf12f",
+      "publisher": "bob.bistrais@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine E911 Addresses, Roads, Structure, and PSAP FGDB.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.58935546874504,
+                47.65403673838359
+              ],
+              [
+                -66.58691406249365,
+                47.65403673838359
+              ],
+              [
+                -66.58691406249365,
+                42.78246999891357
+              ],
+              [
+                -71.58935546874504,
+                42.78246999891357
+              ],
+              [
+                -71.58935546874504,
+                47.65403673838359
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "File Geodatabase",
+          "Metadata",
+          "zip"
+        ],
+        "description": "Information cutoff 2026-08-27 15:34:32.227419 NG_Addresses show point locations for addressable structures and other landmark locations such as ballparks, cemetaries, boat launches, etc. The data is attributed with a physical address, site type, and other related information. NG_ROADS contains updated road centerline and road name data for Maine at 1to24,000 scale. NG_PSAP data was developed to implement the Next Generation 911 project in Maine. This data contains up-to-date public-safety answering point (PSAP), sometimes called public-safety access point, which is a call center responsible for answering calls to an emergency telephone number for police, firefighting, and ambulance services.",
+        "licenseInfo": "Access: Public. Use: User assumes risk.",
+        "ownerId": "f5c7bdc3810eca23eb809f6ae119570b",
+        "title": "Maine E911 Addresses, Roads, Structure, and PSAP FGDB",
+        "type": "File Geodatabase",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1787844875000,
+        "avgRating": 0,
+        "id": "f0f136a298534f5e87f8829c003bf12f",
+        "categories": [
+          "/Categories/Society",
+          "/Categories/Location"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "bob.bistrais@maine.gov_maine",
+        "accessInformation": "MaineESCB, MaineIT GIS",
+        "largeThumbnail": null,
+        "lastViewed": 1787832000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1731515177000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "E911",
+          "addresses",
+          "address",
+          "roads",
+          "road",
+          "structures",
+          "structure",
+          "buildings",
+          "building",
+          "PSAP",
+          "NG911",
+          "Maine",
+          "location",
+          "society"
+        ],
+        "numViews": 921,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "english",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "E911Agol.gdb.zip",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine Office of GIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/f0f136a298534f5e87f8829c003bf12f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "39edcc48ec9842198393de80e1c17e11",
+      "title": "Maine Orthoimagery Coastal South Coast 2008 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Coastal/orthoCoastalSouthCoast2008/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this survey was to obtain the existing conditions of the beach and near shore in support of the Joint Airborne LIDAR Bathymetric Technical Center of Expertise National Coastal mapping Program.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.7489,
+                43.8859
+              ],
+              [
+                -69.7216,
+                43.8859
+              ],
+              [
+                -69.7216,
+                43.0286
+              ],
+              [
+                -70.7489,
+                43.0286
+              ],
+              [
+                -70.7489,
+                43.8859
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div><font size='3'><a href='https://www.maine.gov/geolib/imgdiscovery/site/landing.html' target='_blank'>Tile Download Lin<span style='color: rgb(76, 76, 76);'>k</span></a></font><font size='2'>  The U.S. Army Corps of Engineers collects (by themselves and contractors) and maintains LiDAR data including orthophotos in coastal areas of the United States and its territories. The Corps acquires this data in the course of performing its mission of Flood Control, Navigation, Environmental Engineering, and support for the Army and others. Digital orthophotos were produced with QuickBird high-resolution satellite imagery.\nThe purpose of this survey was to obtain the existing conditions of the beach and near shore in support of the Joint Airborne LIDAR Bathymetric Technical Center of Expertise National Coastal mapping Program.</font></div><div><font size='2'><br /></font></div><div><font size='2'><span style='color: rgb(0, 0, 32); font-family: Verdana, Gill, Helvetica, sans-serif; font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>The purpose of this survey was to obtain the existing conditions of the beach and near shore in support of the Joint Airborne LIDAR Bathymetric Technical Center of Expertise National Coastal mapping Program.</span></font></div><div><font size='2'><span style='color: rgb(0, 0, 32); font-family: Verdana, Gill, Helvetica, sans-serif; font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'></span><br /><span style='color: rgb(0, 0, 32); font-family: Verdana, Gill, Helvetica, sans-serif; font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'><span style='color: rgb(0, 0, 32); font-family: Verdana, Gill, Helvetica, sans-serif; font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'>These data depict the heights at the time of the survey and are only accurate for that time. Acknowledgement of the Joint Airborne LIDAR Bathymetry Center of Expertise (JALBTCX) would be appreciated in any publications or derived products.</span></span></font></div><div><span style='color: rgb(0, 0, 32); font-family: Verdana, Gill, Helvetica, sans-serif; font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'><br /></span></div><div><span style='color: rgb(0, 0, 32); font-family: Verdana, Gill, Helvetica, sans-serif; font-size: 12.8px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;'><br /></span></div>",
+        "licenseInfo": "User assumes any risk associated with use of this service.  These data depict the heights at the time of the survey and are only accurate for that time. Acknowledgement of the Joint Airborne LIDAR Bathymetry Center of Expertise (JALBTCX) would be appreciated in any publications or derived products.",
+        "title": "Maine Orthoimagery Coastal South Coast 2008 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763410563000,
+        "avgRating": 0,
+        "id": "39edcc48ec9842198393de80e1c17e11",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Fugro Pelagos Inc, NOAA, Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763409600000,
+        "thumbnail": "thumbnail/thumbnail1540408045273.png",
+        "languages": [],
+        "created": 1540312037000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Coastal/orthoCoastalSouthCoast2008/ImageServer",
+        "tags": [
+          "MaineGIS",
+          "ImageryBaseMapsEarthCover",
+          "MaineGeolibrary",
+          "Maine",
+          "Atlantic",
+          "MaineGeoLibrary"
+        ],
+        "numViews": 365,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine GeoLibrary",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/39edcc48ec9842198393de80e1c17e11"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9798cfa1003b496f815841e75349ea34",
+      "title": "Maine Orthoimagery Coastal Penobscot Bay 1982 and 1983 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Coastal/orthoCoastalPenobscotBay1982And1983/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Orthoimagery Coastal Penobscot Bay 1982 and 1983 (Imagery Layer)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -69.2222,
+                44.5784
+              ],
+              [
+                -68.5541,
+                44.5784
+              ],
+              [
+                -68.5541,
+                43.9035
+              ],
+              [
+                -69.2222,
+                43.9035
+              ],
+              [
+                -69.2222,
+                44.5784
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><font size='2'><span><a href='https://www.maine.gov/geolib/imgdiscovery/site/landing.html' target='_blank'>Tile Download Link</a> Provide an interpreted low-tide level imagery from which the tide line was interpreted. These data can be used in conjunction with other data layers for improving the understanding of the physical characteristics of the Penobscot Bay study area. This is part of a project titled 'Applications of Remote Sensing and Geographic Information Systems for Marine Resource Management in Penobscot Bay, Maine’.Processing began at the National Geophysical Data Center, in Boulder, Colorado, an orthophoto mosaic was constructed using 76 aerial photographs obtained from NOAA's National Ocean Service, using Socet Set photogrammetric software. The photography was collected at low tide stage, on four dates in 1982 and 1983. After digital scanning the photography had a pixel resolution of 1.2 meters. After mosaicking, a vector layer of the interpreted low-tide line was delineated.</span></font></p></div></div></div>",
+        "licenseInfo": "Access: Public Use: User assumes risk.",
+        "title": "Maine Orthoimagery Coastal Penobscot Bay 1982 and 1983 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763412194000,
+        "avgRating": 0,
+        "id": "9798cfa1003b496f815841e75349ea34",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "NGDC, Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763409600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1539113160000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Coastal/orthoCoastalPenobscotBay1982And1983/ImageServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "ortho",
+          "orthoimagery",
+          "orthophotography",
+          "GeoLibrary",
+          "Maine",
+          "MaineGeoLibrary",
+          "MaineGIS",
+          "coastal",
+          "Penobscot Bay",
+          "1982",
+          "1983",
+          "raster"
+        ],
+        "numViews": 520,
+        "numComments": 0,
+        "size": 116,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/9798cfa1003b496f815841e75349ea34"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b66024f47bf5489ca4d004d118ff3600",
+      "title": "Maine Orthoimagery Regional 2 Foot 2003 to 2005 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Regional/orthoRegional2Foot2003to2005/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Orthoimagery Regional 2 Foot 2003 to 2005",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1938,
+                47.3797
+              ],
+              [
+                -66.834,
+                47.3797
+              ],
+              [
+                -66.834,
+                43.6173
+              ],
+              [
+                -71.1938,
+                43.6173
+              ],
+              [
+                -71.1938,
+                47.3797
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:left;'><div><p><a href='https://gis.maine.gov/arcgis/rest/services/imageryBaseMapsEarthCover/orthoRegional2Foot2003to2005/ImageServer' rel='nofollow ugc' target='_blank'>Image Service</a> | <a href='https://gis.maine.gov/arcgis/services/imageryBaseMapsEarthCover/orthoRegional2Foot2003to2005/ImageServer/WCSServer?request=GetCapabilities&amp;service=WCS' rel='nofollow ugc' target='_blank'>OGC WCS</a> | <a href='https://gis.maine.gov/arcgis/services/imageryBaseMapsEarthCover/orthoRegional2Foot2003to2005/ImageServer/WMSServer?request=GetCapabilities&amp;service=WMS' rel='nofollow ugc' target='_blank'>OGC WMS</a> | <a href='https://gis.maine.gov/arcgis/rest/services/imageryBaseMapsEarthCover/orthoRegional2Foot2003to2005/ImageServer/kml/mapImage.kmz' rel='nofollow ugc' target='_blank'>KMZ</a></p><p>ORTHO_2F was collected at a 2 foot ground sample distance (GSD) , high resolution digital orthophotographs produced from aerial photos collected over southwestern, central and northeastern Maine in the Spring of 2003, 2004 and 2005. Each pixel represents a planimetric square 2 feet on a side on the ground. Aerial photography for ORTHO_2F was flown at 12,000 feet above mean ground level. Source elevation data were 10 meter Digital Elevation Models produced for this project by USGS from 1:24,000 scale elevation and hydrography data supplied by MEGIS. The digital orthorectified images (image chips) are referenced to North American Datum 1983, UTM Zone 19, expressed in units of meters. Cartographic Services for orthorectification and the creation of digital elevation models were provided by USGS Mid-Continent Mapping Center (USGSMCMC). ORTHO_2F provides a digital photographic map suitable for applications requiring a 1:4800 map scale, a National Map Accuracy Standard (NMAS) of +/- 13.33 feet. The multi-agreement program was developed and funded in coordination with the Maine GeoLibrary Board. The U.S. Department of Agriculture, Natural Resource Conservation Service (NRCS) contributed toward this project via a separate funding agreement with USGS. The completed orthorectified GeoTIFF files represent quarter-quadrangle (QQ) sized tiles with a 300m over-edge. All overedges for ORTHO_2f overlap adjacent ORTHO_1F orthophotography by this distance. ORTHO_2F tiles provide complete coverage of the TIER B boundaries as defined by the project. Tiles split by tier and project boundaries were completed to their full tile extent. Towns designated TIER B will have complete coverage by 2 foot GSD imagery.</p></div></div>",
+        "licenseInfo": "Access: Public Use: User assumes risk.",
+        "title": "Maine Orthoimagery Regional 2 Foot 2003 to 2005 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763477842000,
+        "avgRating": 0,
+        "id": "b66024f47bf5489ca4d004d118ff3600",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763470800000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1540304215000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Regional/orthoRegional2Foot2003to2005/ImageServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "ortho",
+          "orthoimagery",
+          "orthophotography",
+          "GeoLibrary",
+          "Maine",
+          "MaineGeoLibrary",
+          "MaineGIS",
+          "regional",
+          "ortho 2 foot",
+          "ORTHO_2F",
+          "2003",
+          "2004",
+          "2005",
+          "orthoRegional2F"
+        ],
+        "numViews": 12893,
+        "numComments": 0,
+        "size": 109,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/b66024f47bf5489ca4d004d118ff3600"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "685c622ec1064d3ab4dbae13f1f86af9",
+      "title": "Maine Orthoimagery Regional 1 Foot 2003 to 2005 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Regional/orthoRegional1Foot2003to2005/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Orthoimagery Regional 1 Foot 2003 to 2005 (Imagery Layer)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1345,
+                46.9766
+              ],
+              [
+                -67.7708,
+                46.9766
+              ],
+              [
+                -67.7708,
+                42.939
+              ],
+              [
+                -71.1345,
+                42.939
+              ],
+              [
+                -71.1345,
+                46.9766
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div><a href='https://gis.maine.gov/arcgis/rest/services/imageryBaseMapsEarthCover/orthoRegional1Foot2003to2005/ImageServer' rel='nofollow ugc' target='_blank'>Image Service</a> | <a href='https://gis.maine.gov/arcgis/services/imageryBaseMapsEarthCover/orthoRegional1Foot2003to2005/ImageServer/WCSServer?request=GetCapabilities&amp;service=WCS' rel='nofollow ugc' target='_blank'>OGC WCS</a> | <a href='https://gis.maine.gov/arcgis/services/imageryBaseMapsEarthCover/orthoRegional1Foot2003to2005/ImageServer/WMSServer?request=GetCapabilities&amp;service=WMS' rel='nofollow ugc' target='_blank'>OGC WMS</a> | <a href='https://gis.maine.gov/arcgis/rest/services/imageryBaseMapsEarthCover/orthoRegional1Foot2003to2005/ImageServer/kml/mapImage.kmz' rel='nofollow ugc' target='_blank'>KMZ</a><br /></div><div>ORTHO_1F are high resolution digital orthophotographs produced from aerial photos collected over southwestern, central and northeastern Maine in the Spring of 2003, 2004 and 2005. Each pixel represents a planimetric square 1 foot on a side on the ground. Aerial photography for ORTHO_1F was flown at 6,000 feet above mean ground level. Source elevation data were 10 meter Digital Elevation Models produced for this project by USGS from 1:24,000 scale elevation and hydrography data supplied by MEGIS. The digital orthorectified images (image chips) are referenced to North American Datum 1983, UTM Zone 19, expressed in units of meters. Cartographic Services for orthorectification and the creation of digital elevation models were provided by USGS Mid-Continent Mapping Center (USGSMCMC). ORTHO_1F provides a digital photographic map suitable for applications requiring a 1:2400 map scale, a National Map Accuracy Standard (NMAS) of +/- 6.67 feet. The multi-agreement program was developed and funded in coordination with the Maine GeoLibrary Board. The U.S. Department of Agriculture, Natural Resource Conservation Service (NRCS) contributed toward this project via a separate funding agreement with USGS. The completed orthorectified files represent quarter-quarter-quadrangle (QQQ) sized tiles with a 300m over-edge. All overedges for ORTHO_1F also overlap adjacent ORTHO_HF and ORTHO_2F orthophotography by this distance. ORTHO_1F tiles provide complete coverage of the TIER A boundaries as defined by the Towns designated TIER A will have complete coverage by 1 foot GSD imagery.</div>",
+        "licenseInfo": "Access: Public Use: User assumes risk.",
+        "title": "Maine Orthoimagery Regional 1 Foot 2003 to 2005 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763477780000,
+        "avgRating": 0,
+        "id": "685c622ec1064d3ab4dbae13f1f86af9",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763067600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1540488992000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Regional/orthoRegional1Foot2003to2005/ImageServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "ortho",
+          "orthoimagery",
+          "orthophotography",
+          "GeoLibrary",
+          "Maine",
+          "MaineGeoLibrary",
+          "MaineGIS",
+          "ORTHO_1F",
+          "raster"
+        ],
+        "numViews": 1958,
+        "numComments": 0,
+        "size": 109,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/685c622ec1064d3ab4dbae13f1f86af9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "700c5910a7734da8877e525f0ed79a63",
+      "title": "The National Map: USGS Hydro Cached Map Service",
+      "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSHydroCached/MapServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The National Map: USGS Hydro Cached Map Service",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                89
+              ],
+              [
+                -179.9891,
+                89
+              ],
+              [
+                -179.9891,
+                -89.0002
+              ],
+              [
+                -180,
+                -89.0002
+              ],
+              [
+                -180,
+                89
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Tiled"
+        ],
+        "description": "This service is a cached overlay of a cartographic representation of the National Hydrography Dataset (NHD). ​The NHD is a comprehensive set of digital ​geo​spatial data that encodes information about naturally occurring and constructed bodies of surface water​, paths through which water flows​, ​related features​ such as stream gages and dams​​, and additional hydrologic information​. ​It is available nationwide ​in a 1:24,000-scale seamless dataset, referred to as high resolution NHD. The NHD supports many applications, such as making maps, geocoding observations, flow modeling, data maintenance and stewardship. For additional information, go to http://nhd.usgs.gov. Additional datasets are used for small-scale hydrography representation as well​, including medium resolution NHDPlus published by EPA​; USGS Small-Scale hydrography; and bathymetry from ETOPO1 Global Relief, provided by NOAA National Centers for Environmental Information, U.S. Coastal Relief Model.",
+        "licenseInfo": null,
+        "title": "The National Map: USGS Hydro Cached Map Service",
+        "type": "Map Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1624535308000,
+        "avgRating": 0,
+        "id": "700c5910a7734da8877e525f0ed79a63",
+        "categories": [
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "USGS The National Map: National Hydrography Dataset. Data refreshed April, 2021.",
+        "largeThumbnail": null,
+        "lastViewed": 1782392400000,
+        "thumbnail": "thumbnail/thumbnail1624534134801.png",
+        "languages": [],
+        "created": 1624533986000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://basemap.nationalmap.gov/arcgis/rest/services/USGSHydroCached/MapServer",
+        "tags": [
+          "NHD",
+          "WBD",
+          "USGS",
+          "hydrography",
+          "cache",
+          "wbd",
+          "nhd",
+          "hydro",
+          "river",
+          "stream",
+          "lakes",
+          "TNM",
+          "inlandWaters",
+          "inland waters",
+          "external",
+          "Map service"
+        ],
+        "numViews": 26357,
+        "numComments": 0,
+        "size": 78,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/700c5910a7734da8877e525f0ed79a63"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    250
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 10,
+  "next_offset": 10,
+  "response_sha256": "98b98a4c5a673e3e8f4d031af773a4e1fa17d9668db2eff133daff7ea2ea9eb0",
+  "search_complete": true
+}

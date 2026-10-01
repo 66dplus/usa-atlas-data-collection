@@ -1,0 +1,217 @@
+{
+  "observed_at": "2026-09-28T19:09:02.363242+00:00",
+  "acs-summary": {
+    "status": "complete",
+    "pid": 1605155,
+    "process_alive": false,
+    "completed_jobs": 19,
+    "planned_jobs": 19,
+    "active_job": null,
+    "updated_at": "2026-09-28T18:49:36.405018+00:00"
+  },
+  "cdc-places": {
+    "status": "complete",
+    "pid": 1605156,
+    "process_alive": false,
+    "completed_jobs": 1,
+    "planned_jobs": 1,
+    "active_job": null,
+    "updated_at": "2026-09-28T18:38:16.192260+00:00"
+  },
+  "acs-extensions": {
+    "attempt": 1,
+    "collector_sha256": "c19a470270c64d419eb7b9780647c0a85daccc1b493478b530afbf7eefde8500",
+    "completed_at": "2026-09-28T18:50:58.498233+00:00",
+    "extension_script_sha256": "a17364c4cc95998affb77c8d2ca5dd24881b72f380cfa35510422ab07aaeca7f",
+    "metric_checks": [
+      {
+        "candidate_pairs_without_legacy_match": 0,
+        "candidate_table": "B17021",
+        "catalog_field_id": "02.08",
+        "legacy_table": "B17001",
+        "matching_common_county_tract_pairs": 177208,
+        "mismatch_examples": [],
+        "mismatching_common_county_tract_pairs": 0,
+        "production_admitted": false
+      },
+      {
+        "candidate_pairs_without_legacy_match": 0,
+        "candidate_table": "B05012",
+        "catalog_field_id": "01.05",
+        "legacy_table": "B05002",
+        "matching_common_county_tract_pairs": 175090,
+        "mismatch_examples": [],
+        "mismatching_common_county_tract_pairs": 0,
+        "production_admitted": false
+      }
+    ],
+    "pid": 1625974,
+    "primary": "/root/Documents/Codex/2026-09-28/https-github-com-66dplus-usa-atlas/usa-atlas-data-collection/full/runtime/deep-20260928",
+    "started_at": "2026-09-28T18:45:02.498236+00:00",
+    "status": "complete",
+    "updated_at": "2026-09-28T18:49:42.596884+00:00",
+    "process_alive": false
+  },
+  "public-source-tables": {
+    "status": "complete_source_tables",
+    "jobs": {
+      "susb-receipts-2022": {
+        "status": "source_tables_collected",
+        "rows": 32207
+      },
+      "susb-large-receipts-2022": {
+        "status": "source_tables_collected",
+        "rows": 149
+      },
+      "irs-state-agi-2023": {
+        "status": "source_tables_collected",
+        "rows": 594
+      },
+      "irs-county-agi-2023": {
+        "status": "source_tables_collected",
+        "rows": 25552
+      },
+      "bea-metro-rpp": {
+        "status": "source_tables_collected",
+        "rows": 2344
+      },
+      "epa-monitors-2025": {
+        "status": "source_tables_collected",
+        "rows": 19584
+      }
+    },
+    "production_admission": false
+  },
+  "local-portals": {
+    "pid": 1672842,
+    "process_alive": true,
+    "cycle_completed_at": "2026-09-28T19:00:53.965882+00:00",
+    "collections": {
+      "ca-dwr-bg-income-2023": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:50:32.766157+00:00",
+        "last_attempt_epoch": 1790621432.7661638,
+        "error": null,
+        "failed_at": "2026-09-28T18:47:07.435408+00:00",
+        "completed_at": "2026-09-28T18:50:40.333745+00:00",
+        "last_success_epoch": 1790621440.3337781,
+        "rows": 25607,
+        "manifest": "manifests/ca-dwr-bg-income-2023.json"
+      },
+      "ca-dwr-bg-water-vulnerability-2024": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:53:09.645914+00:00",
+        "last_attempt_epoch": 1790621589.6459272,
+        "error": null,
+        "failed_at": "2026-09-28T18:50:44.890838+00:00",
+        "completed_at": "2026-09-28T18:53:15.679479+00:00",
+        "last_success_epoch": 1790621595.6794977,
+        "rows": 25607,
+        "manifest": "manifests/ca-dwr-bg-water-vulnerability-2024.json"
+      },
+      "loudoun-dc-building-records": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:47:19.272971+00:00",
+        "last_attempt_epoch": 1790621239.2729788,
+        "completed_at": "2026-09-28T18:47:22.700584+00:00",
+        "last_success_epoch": 1790621242.7006035,
+        "rows": 239,
+        "manifest": "manifests/loudoun-dc-building-records.json",
+        "error": null
+      },
+      "dc-mpd-crime-bg-2025": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:50:44.895703+00:00",
+        "last_attempt_epoch": 1790621444.8957155,
+        "error": null,
+        "failed_at": "2026-09-28T18:47:33.006353+00:00",
+        "completed_at": "2026-09-28T18:50:53.193003+00:00",
+        "last_success_epoch": 1790621453.1930215,
+        "rows": 2840,
+        "manifest": "manifests/dc-mpd-crime-bg-2025.json"
+      },
+      "dc-mpd-crime-bg-2026": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:50:53.195000+00:00",
+        "last_attempt_epoch": 1790621453.1950133,
+        "error": null,
+        "failed_at": "2026-09-28T18:47:40.531635+00:00",
+        "completed_at": "2026-09-28T18:51:02.013244+00:00",
+        "last_success_epoch": 1790621462.013261,
+        "rows": 2635,
+        "manifest": "manifests/dc-mpd-crime-bg-2026.json"
+      },
+      "ny-county-income-tax-1999-2014": {
+        "status": "source_collected",
+        "started_at": "2026-09-28T18:47:40.535721+00:00",
+        "last_attempt_epoch": 1790621260.535736,
+        "completed_at": "2026-09-28T18:47:52.386292+00:00",
+        "last_success_epoch": 1790621272.386314,
+        "rows": 13515,
+        "manifest": "manifests/ny-county-income-tax-1999-2014.json",
+        "error": null
+      }
+    },
+    "discovery_query_count": 62,
+    "heartbeat": {
+      "pid": 1672842,
+      "boot_id": "8195abc6-fbc7-4f5d-bfcf-dde33cb210d8",
+      "process_start_ticks": 55456953,
+      "phase": "sleeping",
+      "updated_at": "2026-09-28T19:08:54.194122+00:00",
+      "progress_at": "2026-09-28T19:00:53.969344+00:00",
+      "next_cycle_at": "2026-09-29T01:00:53.969692+00:00",
+      "last_cycle_outcome": "success",
+      "consecutive_cycle_errors": 0,
+      "last_error_class": null
+    }
+  },
+  "database-compaction": {
+    "completed_rows": 166859,
+    "expected_rows": 49206438,
+    "free_bytes": 98757529600,
+    "phase": "copy_source_running",
+    "pid": 1636747,
+    "source": "census_acs",
+    "source_expected_rows": 48175437,
+    "updated_at": "2026-09-28T19:05:04.976668+00:00",
+    "process_alive": true,
+    "result": {},
+    "backup_bytes_so_far": 592524948,
+    "backup_verified": true
+  },
+  "watchdog": {
+    "checked_at": "2026-09-28T19:07:31.646767+00:00",
+    "snapshot_age_seconds": 91,
+    "snapshot_stale": false,
+    "overall_state": "healthy",
+    "needs_attention": [],
+    "jobs": {
+      "acs-extensions": {
+        "state": "complete",
+        "reason": "all_planned_jobs_complete"
+      },
+      "acs-summary": {
+        "state": "complete",
+        "reason": "all_planned_jobs_complete"
+      },
+      "cdc-places": {
+        "state": "complete",
+        "reason": "all_planned_jobs_complete"
+      },
+      "database-compaction": {
+        "state": "healthy",
+        "reason": "database_maintenance_running_no_automatic_actions"
+      },
+      "local-portals": {
+        "state": "idle",
+        "reason": "waiting_for_scheduled_cycle"
+      },
+      "public-sources": {
+        "state": "complete",
+        "reason": "all_planned_jobs_complete"
+      }
+    }
+  },
+  "note": "Checkpoint status is not production admission. PID liveness alone does not prove progress; inspect timestamps and logs."
+}

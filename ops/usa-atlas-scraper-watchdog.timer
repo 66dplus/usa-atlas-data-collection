@@ -1,0 +1,11 @@
+[Unit]
+Description=Check USA Atlas scrapers every two minutes
+
+[Timer]
+OnBootSec=60
+OnUnitInactiveSec=120
+AccuracySec=10
+Unit=usa-atlas-scraper-watchdog.service
+
+[Install]
+WantedBy=timers.target

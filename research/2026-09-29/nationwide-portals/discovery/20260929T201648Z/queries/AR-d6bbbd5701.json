@@ -1,0 +1,204 @@
+{
+  "jurisdiction_code": "AR",
+  "query": "air quality",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T20:17:16.505470+00:00",
+  "candidates": [
+    {
+      "id": "de41099651f840d19b59eae8b9115272",
+      "title": "Air Division Districts (polygon)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/10",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Bounding polygons representing the scope of individual inspection districts for Air Division within the Arkansas Department of Environmental Quality.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.6183,
+                36.532
+              ],
+              [
+                -89.6169,
+                36.532
+              ],
+              [
+                -89.6169,
+                32.9693
+              ],
+              [
+                -94.6183,
+                32.9693
+              ],
+              [
+                -94.6183,
+                36.532
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Bounding polygons representing the scope of individual inspection districts for Air Division within the Arkansas Department of Environmental Quality. Updated 5 March 2013.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Air Division Districts (polygon)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667698000,
+        "avgRating": 0,
+        "id": "de41099651f840d19b59eae8b9115272",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Arkansas Department of Environmental Quality",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1777571977131.png",
+        "languages": [],
+        "created": 1777571811000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/10",
+        "tags": [
+          "ADEQ",
+          "environment",
+          "Air Inspectors",
+          "ADEE"
+        ],
+        "numViews": 96,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 76,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.6183,
+                32.9693
+              ],
+              [
+                -89.6169,
+                36.532
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9693,
+                "xmin": -94.6183,
+                "ymax": 36.532,
+                "xmax": -89.6169,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/de41099651f840d19b59eae8b9115272"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    126
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "9d85558e026ca0a080204f221adbc99282c68ac3dd75464dbd67f34231bcab6e",
+  "search_complete": true
+}

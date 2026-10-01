@@ -1,0 +1,1448 @@
+{
+  "jurisdiction_code": "DC",
+  "query": "air quality",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T20:17:17.200986+00:00",
+  "candidates": [
+    {
+      "id": "20c07bd1506249d4877ee45acfa73b71",
+      "title": "Air Quality Realtime",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/76",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To provide the public with near-real-time air quality data from the Environmental Protection Agency's AirNow system.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.13,
+                39.01
+              ],
+              [
+                -76.9,
+                39.01
+              ],
+              [
+                -76.9,
+                38.78
+              ],
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -77.13,
+                39.01
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Table"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN STYLE=\"font-size:12pt\">Dataset is comprised of hourly air quality data points captured from the District’s air monitoring network sites. The dataset is quality controlled by a process of field data verification and validation. The District of Columbia is providing this data for a rolling 1-year period. For complete real-time data, visit the EPA AirNow system at </SPAN><A href=\"https://docs.airnowapi.org/\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN STYLE=\"font-size:12pt\">docs.airnowapi.org</SPAN></A></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0/\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "Air Quality Realtime",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790662520000,
+        "avgRating": 0,
+        "id": "20c07bd1506249d4877ee45acfa73b71",
+        "categories": [
+          "/Categories/Environment/Air Quality"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Department of Energy and Environment",
+        "largeThumbnail": null,
+        "lastViewed": 1790668800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1639584676000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/76",
+        "tags": [
+          "air quality",
+          "district of columbia",
+          "real-time",
+          "washington dc",
+          "epa",
+          "airnow",
+          "environment",
+          "carbon monoxide",
+          "particulate matter"
+        ],
+        "numViews": 26345,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Department of Energy and Environment",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/20c07bd1506249d4877ee45acfa73b71"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "515f2c8ff3534302a34bf47f6902ac0d",
+      "title": "Air Quality History",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/77",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To provide the public the data to see air quality trends. Moreover, the dataset provides an opportunity to see the District’s seasonal and diurnal cyclical flux of pollutants and its interaction with local weather patterns.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.13,
+                39.01
+              ],
+              [
+                -76.9,
+                39.01
+              ],
+              [
+                -76.9,
+                38.78
+              ],
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -77.13,
+                39.01
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Table"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN STYLE=\"font-size:12pt\">This dataset contains quality assured and DOEE-certified air quality data collected from the District’s five air monitoring network sites. The dataset covers a three-year period and includes hourly concentration data points from the Environmental Protection Agency (EPA)’s criteria pollutants, air toxics, and speciation. It also includes hourly surface meteorology data points. The District of Columbia is providing this data for a rolling 3-year period when data become available from the EPA. For complete history of data, visit the EPA Air Quality System API at </SPAN><A href=\"http://aqs.epa.gov/aqsweb/documents/data_api.html\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN STYLE=\"font-size:12pt\">aqs.epa.gov/aqsweb/documents/data_api.html</SPAN></A></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0/\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Air Quality History",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1764001911000,
+        "avgRating": 0,
+        "id": "515f2c8ff3534302a34bf47f6902ac0d",
+        "categories": [
+          "/Categories/Environment/Air Quality"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Department of Energy and Environment",
+        "largeThumbnail": null,
+        "lastViewed": 1774861200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1639584914000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/77",
+        "tags": [
+          "air quality",
+          "ozone",
+          "PM2.5",
+          "carbon monoxide",
+          "washington dc",
+          "district of columbia",
+          "dc",
+          "environment",
+          "particulate matter"
+        ],
+        "numViews": 12217,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Department of Energy and Environment",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/515f2c8ff3534302a34bf47f6902ac0d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "80daabebf3a54050ae99c022614e8b20",
+      "title": "Air Quality Purple Air Sensors",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/0",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this dataset is to share hyper-local air quality data, consisting of PM2.5, PM10, and meteorological measurements, collected through our Purple Air network in the District of Columbia.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.225759,
+                39.000862
+              ],
+              [
+                -76.812535,
+                39.000862
+              ],
+              [
+                -76.812535,
+                38.786659
+              ],
+              [
+                -77.225759,
+                38.786659
+              ],
+              [
+                -77.225759,
+                39.000862
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Table"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This dataset is made up of hourly measurements of PM2.5 and PM10, and meteorological measurements, collected through DOEE’s Purple Air network in the District of Columbia. The meteorological data collected are the sensor’s internal temperature and relative humidity readings. Measurements are collected to gain a better understanding of hyper-local air quality data. This data is collected through 24-hour continuous measurements.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0/\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "Air Quality Purple Air Sensors",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790158243000,
+        "avgRating": 0,
+        "id": "80daabebf3a54050ae99c022614e8b20",
+        "categories": [
+          "/Categories/Environment/Air Quality"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Department of Energy and Environment",
+        "largeThumbnail": null,
+        "lastViewed": 1790125200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1761587056000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/0",
+        "tags": [
+          "air quality",
+          "environment",
+          "washington dc",
+          "district of columbia",
+          "dc",
+          "Air quality",
+          "air pollutants",
+          "particulate matter",
+          "pm 10",
+          "pm 2.5",
+          "ozone",
+          "pollution",
+          "purple air",
+          "NO2",
+          "hourly",
+          "sensor"
+        ],
+        "numViews": 4196,
+        "numComments": 0,
+        "size": 105,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Department of Energy and Environment",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/80daabebf3a54050ae99c022614e8b20"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "aef3f004c5c646fea60c7e3982e7955c",
+      "title": "Air Quality Clarity Node Sensors",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/81",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this dataset is to share hyper-local air quality data, consisting of PM2.5, PM10, and meteorological measurements, collected through our Clarity Node network in the District of Columbia.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.225759,
+                39.000862
+              ],
+              [
+                -76.812535,
+                39.000862
+              ],
+              [
+                -76.812535,
+                38.786659
+              ],
+              [
+                -77.225759,
+                38.786659
+              ],
+              [
+                -77.225759,
+                39.000862
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Table"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This dataset is made up of hourly measurements of PM2.5 and PM10, and meteorological measurements, collected through DOEE’s Clarity Node network in the District of Columbia. The meteorological data collected are the sensor’s internal temperature and relative humidity readings. Measurements are collected to gain a better understanding of hyper-local air quality data. This data is collected through 24-hour continuous measurements.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/licenses/by/4.0/\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "Air Quality Clarity Node Sensors",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790158249000,
+        "avgRating": 0,
+        "id": "aef3f004c5c646fea60c7e3982e7955c",
+        "categories": [
+          "/Categories/Environment/Air Quality"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Department of Energy and Environment",
+        "largeThumbnail": null,
+        "lastViewed": 1790496000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1701966739000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/81",
+        "tags": [
+          "air quality",
+          "environment",
+          "washington dc",
+          "district of columbia",
+          "dc",
+          "Air quality",
+          "air pollutants",
+          "particulate matter",
+          "pm 10",
+          "pm 2.5",
+          "ozone",
+          "pollution",
+          "clarity node",
+          "NO2",
+          "hourly",
+          "sensor"
+        ],
+        "numViews": 11317,
+        "numComments": 0,
+        "size": 106,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.22575899999869,
+                38.78665899999935
+              ],
+              [
+                -76.8125349999987,
+                39.00086199999934
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78665899999935,
+                "xmin": -77.22575899999869,
+                "ymax": 39.00086199999934,
+                "xmax": -76.8125349999987,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Department of Energy and Environment",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/aef3f004c5c646fea60c7e3982e7955c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a7d35688b0274798afe9cfa7bfbb18f3",
+      "title": "Planting by Ward",
+      "url": "https://opendata.dc.gov/api/search/v1/collections/all/items/a7d35688b0274798afe9cfa7bfbb18f3",
+      "publisher": "earl.eutsler_UFA",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Tree planting in DC by Wards. Our Goal: Cover 40% of the District with a healthy tree canopy.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.22575918267839,
+                39.00086195800861
+              ],
+              [
+                -76.81253535472528,
+                39.00086195800861
+              ],
+              [
+                -76.81253535472528,
+                38.786658888995845
+              ],
+              [
+                -77.22575918267839,
+                38.786658888995845
+              ],
+              [
+                -77.22575918267839,
+                39.00086195800861
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Dashboards",
+          "Dashboard",
+          "Mobile",
+          "Operations Dashboard"
+        ],
+        "description": "The District is on a mission to reach and maintain urban tree canopy coverage of 40% by 2032. Urban tree canopy is the layer of leaves, stems, and branches that cover the city. Among many other benefits, these trees improve our air and water quality, cool our neighborhoods, and provide critical habitat for birds and bees. See our progress and learn more about how we are achieving this ambitious goal.",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' target='_blank' rel='nofollow ugc noopener noreferrer'>Creative Commons Attribution 4.0 International License</a><span>.</span></p></div></div></div>",
+        "ownerId": "aca71c6e8648608abc20897d4cead9bb",
+        "title": "Planting by Ward",
+        "type": "Dashboard",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1760731519000,
+        "avgRating": 0,
+        "id": "a7d35688b0274798afe9cfa7bfbb18f3",
+        "categories": [
+          "/Categories/Environment/Urban Forestry"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "earl.eutsler_UFA",
+        "accessInformation": "https://trees.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1786064400000,
+        "thumbnail": "thumbnail/thumbnail1646422353508.png",
+        "languages": [],
+        "created": 1539204242000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          "Planting by Ward",
+          "urban forestry",
+          "trees",
+          "District of Columbia",
+          "Washington DC",
+          "environment"
+        ],
+        "numViews": 33972,
+        "numComments": 0,
+        "size": 38396,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "City of Washington, DC",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/a7d35688b0274798afe9cfa7bfbb18f3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "79a80bb4a7074b6989f94a4a5b154675",
+      "title": "Report on Air Quality Trends in the District of Columbia",
+      "url": "https://storymaps.arcgis.com/stories/79a80bb4a7074b6989f94a4a5b154675",
+      "publisher": "kane.samuel@dc.gov_DCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "A look back at the District's air quality from 1996 through 2025",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.175875,
+                39.001
+              ],
+              [
+                -76.893338,
+                39.001
+              ],
+              [
+                -76.893338,
+                38.787
+              ],
+              [
+                -77.175875,
+                38.787
+              ],
+              [
+                -77.175875,
+                39.001
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "arcgis-storymaps",
+          "Metadata",
+          "smdraftresourceid:draft_1784918948582.json",
+          "smfirstpublisheddate:1648560308031",
+          "smpublisheddate:1784918948581",
+          "smstatuspublished",
+          "smversiondraft:26.28.1313",
+          "smversionpublished:26.28.1313",
+          "StoryMap",
+          "Web Application"
+        ],
+        "description": "<p>To better understand the current air quality status in the District, the following summary highlights key pollutants and their compliance with the <strong>National Ambient Air Quality Standards (NAAQS)</strong>. These standards are designed to ensure the air remains safe and healthy for both residents and visitors. In this context, areas are classified as either in &quot;attainment&quot; (meeting EPA air quality standards) or &quot;nonattainment&quot; (not meeting them). The summary below outlines the District&apos;s current status with respect to these classifications. </p><ul><li> <strong>Ground-Level Ozone (O</strong><sub>3</sub><strong>)</strong>: The District and the metropolitan region are currently in <span><strong>moderate nonattainment</strong></span> status of the 2015 8-hour ground-level O<sub>3</sub> NAAQS, though have also been determined by EPA to have attained &quot;clean data&quot; and are in the process of submitting a redesignation request to EPA. </li><li><strong>Particulate Matter</strong>: The District is in <span><strong>attainment</strong></span> for the 2012 annual PM<sub>2.5</sub> NAAQS and the 24-hour NAAQS. EPA strengthened the primary annual PM2.5  standard in 2024 from 12.0 μg/m³ to 9.0 μg/m³; this revised standard should be considered separately from the District&apos;s prior attainment status. </li><li><strong>Carbon Monoxide (CO)</strong>: The District is in <span><strong>attainment</strong></span> for the current 8-hour and the 1-hour NAAQS.</li><li><strong>Sulfur Dioxide (SO</strong><sub>2</sub><strong>)</strong>: The District is in <span><strong>attainment</strong></span> for the 2010 1-hour primary SO<sub>2</sub> NAAQS and the 2024 annual secondary SO<sub>2</sub> NAAQS. </li><li><strong>Nitrogen Dioxide (NO</strong><sub>2</sub><strong>)</strong>: The District is in <span><strong>attainment</strong></span> for the 2010 1-hour and the 1971 annual NAAQS. </li><li>Lead (Pb): The District is in <span><strong>attainment</strong></span> for the 2008 NAAQS.</li></ul>",
+        "licenseInfo": "<p>This work is licensed under a <a target='_blank' href='https://creativecommons.org/licenses/by/4.0/' rel='nofollow ugc noopener noreferrer'>Creative Commons Attribution 4.0 International License</a>.</p>",
+        "ownerId": "514465279169493ba7f850de6499c19b",
+        "title": "Report on Air Quality Trends in the District of Columbia",
+        "type": "StoryMap",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784920065000,
+        "avgRating": 0,
+        "id": "79a80bb4a7074b6989f94a4a5b154675",
+        "categories": [
+          "/Categories/Environment/Air Quality"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "kane.samuel@dc.gov_DCGIS",
+        "accessInformation": "Department of Energy and Envrionment",
+        "largeThumbnail": null,
+        "lastViewed": 1784919600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1642688465000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://storymaps.arcgis.com/stories/79a80bb4a7074b6989f94a4a5b154675",
+        "tags": [
+          "naaqs",
+          "air quality",
+          "carbon",
+          "nitrogen",
+          "particulate matter",
+          "ozone",
+          "climate",
+          "doee",
+          "environment",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 5602,
+        "numComments": 0,
+        "size": 1204883,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "thumbnail": [
+            "url",
+            "https://su.example/content/items/79a80bb4a7074b6989f94a4a5b154675/resources/eQfsncyd104BOJK08BaL3.jpeg{{qp|[[\"wago\"],[\"ust\"]]}}"
+          ],
+          "shouldHideCover": false
+        },
+        "source": "Department of Energy and Environment",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/79a80bb4a7074b6989f94a4a5b154675"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a98fde39c8db4719be60d80e90d4c655",
+      "title": "Heritage Tree Relocations in Washington D.C.",
+      "url": "https://storymaps.arcgis.com/stories/a98fde39c8db4719be60d80e90d4c655",
+      "publisher": "DDOThub",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The why, when, and how of moving heritage trees.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.22575918267839,
+                39.00086195800861
+              ],
+              [
+                -76.81253535472528,
+                39.00086195800861
+              ],
+              [
+                -76.81253535472528,
+                38.786658888995845
+              ],
+              [
+                -77.22575918267839,
+                38.786658888995845
+              ],
+              [
+                -77.22575918267839,
+                39.00086195800861
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "arcgis-storymaps",
+          "Metadata",
+          "smdraftresourceid:draft_1665160234355.json",
+          "smfirstpublisheddate:1632338238315",
+          "smpublisheddate:1665160234354",
+          "smstatuspublished",
+          "smversiondraft:22.41.331",
+          "smversionpublished:22.41.331",
+          "StoryMap",
+          "Web Application"
+        ],
+        "description": "<p>Trees in the city are critical to our well-being. Among many other benefits, trees improve our air and water quality, cool our neighborhoods, and provide nurturing habitats for birds, bees, and numerous other wildlife. Large trees provide greater environmental benefits than smaller trees and are protected from unnecessary damage or removal by the Urban Forest Preservation Act and the <a href='https://code.dccouncil.us/dc/council/code/sections/8-651.04a.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Tree Canopy Protection Act</a> in the District of Columbia. Any tree with a trunk greater than 100” in circumference is called a heritage tree. Heritage trees may only be removed if considered hazardous by a city arborist, otherwise, heritage trees cannot be removed, topped, girdled, or destroyed.</p><p>If a heritage tree is within the limits of disturbance of a construction project, then they need to be properly protected throughout construction. However, there are times when the site plans cannot provide adequate protection, and so the only remaining legal option is to move the tree to a safer place on the property. This is a laborious, careful process, but ultimately preserves the environmental benefits and the cultural significance of the heritage tree.</p>",
+        "licenseInfo": "This work is licensed under a <a href='https://creativecommons.org/licenses/by/4.0/' target='_blank' rel='nofollow ugc noopener noreferrer'>Creative Commons Attribution 4.0 International License</a>.",
+        "title": "Heritage Tree Relocations in Washington D.C.",
+        "type": "StoryMap",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773759153000,
+        "avgRating": 0,
+        "id": "a98fde39c8db4719be60d80e90d4c655",
+        "categories": [
+          "/Categories/Environment/Urban Forestry"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DDOThub",
+        "accessInformation": "District Department of Transportation",
+        "largeThumbnail": null,
+        "lastViewed": 1773752400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1632336095000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://storymaps.arcgis.com/stories/a98fde39c8db4719be60d80e90d4c655",
+        "tags": [
+          "District of Columbia",
+          "Washington DC",
+          "canopy",
+          "historic",
+          "trees",
+          "ufa",
+          "wooded",
+          "urban foestry",
+          "ddot",
+          "dc",
+          "environment"
+        ],
+        "numViews": 1731,
+        "numComments": 0,
+        "size": 2869385,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "thumbnail": [
+            "url",
+            "https://su.example/content/items/a98fde39c8db4719be60d80e90d4c655/resources/pY0Yw_dxFqKjPxY1-yyc3.jpeg{{qp|[[\"wago\"],[\"ust\"]]}}"
+          ]
+        },
+        "source": "District Department of Transportation",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/a98fde39c8db4719be60d80e90d4c655"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "95e7fb85527f472a947865ec15b95db5",
+      "title": "Urban Forestry",
+      "url": "https://trees.dc.gov",
+      "publisher": "earl.eutsler_UFA",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "DDOT's Urban Forestry Division (UFD) is the primary steward of Washington DC's ~175,000 public trees and has a mission of keeping this resource healthy, safe, & growing.  Learn more here. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.22575918267839,
+                39.00086195800861
+              ],
+              [
+                -76.81253535472528,
+                39.00086195800861
+              ],
+              [
+                -76.81253535472528,
+                38.786658888995845
+              ],
+              [
+                -77.22575918267839,
+                38.786658888995845
+              ],
+              [
+                -77.22575918267839,
+                39.00086195800861
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubSite",
+          "hubSolution",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Metadata",
+          "Online Map",
+          "OpenData",
+          "Ready To Use",
+          "selfConfigured",
+          "Web Map",
+          "Registered App"
+        ],
+        "description": "DDOT's Urban Forestry Division (UFD) is the primary steward of Washington DC's ~200,000 public trees and has a mission of keeping this resource healthy, safe, &amp; growing! Trees in the city are critical to our well-being. Among many other benefits, these trees improve our air and water quality, cool our neighborhoods, and provide critical habitat for birds, bees, and...people, too! To help the public understand and connect with the forest that surrounds them, UFD has created this interactive portal. Scroll down to explore information describing the history, value, and management of the urban forest in Washington, DC.",
+        "licenseInfo": "This work is licensed under a <a href='https://creativecommons.org/licenses/by/4.0/' target='_blank' rel='nofollow ugc noopener noreferrer'>Creative Commons Attribution 4.0 International License</a>.",
+        "ownerId": "aca71c6e8648608abc20897d4cead9bb",
+        "title": "Urban Forestry",
+        "type": "Hub Site Application",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1783542354000,
+        "avgRating": 0,
+        "id": "95e7fb85527f472a947865ec15b95db5",
+        "categories": [
+          "/Categories/Environment/Urban Forestry"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "earl.eutsler_UFA",
+        "accessInformation": "District Department of Transportation",
+        "largeThumbnail": null,
+        "lastViewed": 1783540800000,
+        "thumbnail": "thumbnail/thumbnail1726168199512.png",
+        "languages": [],
+        "created": 1583942927000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://trees.dc.gov",
+        "tags": [
+          "Hub Site",
+          "washington dc",
+          "district of columbia",
+          "dc",
+          "ddot",
+          "urban forestry"
+        ],
+        "numViews": 1878595,
+        "numComments": 0,
+        "size": 145527,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "collaborationGroupId": "e23b3445935c470abf5b26dc796b3c8d",
+          "schemaVersion": 1.9,
+          "createdFrom": "defaultInitiativeSiteTemplate",
+          "teams": [
+            "f09e57940e5c495c959f271490747c95"
+          ],
+          "children": [],
+          "hasSeenGlobalNav": true,
+          "parentInitiativeId": "2f9956410f9d4ea480567e22442874d3",
+          "followersGroupId": "893cfaf917614caca1039bc3e6efb4c2",
+          "telemetry": {
+            "plugins": {
+              "adobe": {
+                "disabled": true
+              },
+              "google": {
+                "disabled": false,
+                "measurementId": "G-384477150"
+              },
+              "siteImprove": {
+                "disabled": true
+              }
+            }
+          },
+          "contentGroupId": "2da4bf308b7e468ba9685750527bfb07"
+        },
+        "source": "District Department of Transportation",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/95e7fb85527f472a947865ec15b95db5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ff589f6c46284ca7b6e32b885b33eae5",
+      "title": "Potomac Interceptor",
+      "url": "https://potomacinterceptor.dc.gov",
+      "publisher": "alicia.ritzenthaler@dc.gov_DCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "E. coli monitoring data compiled in response to the January 2026 Potomac Interceptor Collapse.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.354609,
+                38.980683
+              ],
+              [
+                -76.970881,
+                38.980683
+              ],
+              [
+                -76.970881,
+                38.347206
+              ],
+              [
+                -77.354609,
+                38.347206
+              ],
+              [
+                -77.354609,
+                38.980683
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "Hub Site",
+          "hubSite",
+          "Metadata",
+          "OpenData",
+          "Registered App"
+        ],
+        "description": "<p><span style=\"font-size:16px;\">A regional dataset containing<i> E. coli</i> monitoring sampling results collected along the Potomac and Anacostia Rivers, in response to the January 2026 Potomac Interceptor Collapse. Each data provider retains responsibility for its own data and submits to this compilation dataset voluntarily. Check the <i>Source</i> field to identify the data provider:</span></p><ul><li><a target=\"_blank\" href=\"https://doee.dc.gov/\"><span style=\"font-size:16px;\">DC Department of Energy &amp; Environment (DOEE)</span></a></li><li><a target=\"_blank\" href=\"https://mde.maryland.gov/Pages/index.aspx\"><span style=\"font-size:16px;\">Maryland Department of the Environment (MDE)</span></a></li><li><a target=\"_blank\" href=\"https://www.deq.virginia.gov/\"><span style=\"font-size:16px;\">Virginia Deparment of Environmental Quality (VADEQ)</span></a></li><li><a target=\"_blank\" href=\"https://www.dcwater.com/\"><span style=\"font-size:16px;\">DC Water</span></a></li><li><a target=\"_blank\" href=\"https://potomacriverkeepernetwork.org/\"><span style=\"font-size:16px;\">Potomac Riverkeepers Network (PRK)</span></a><span style=\"font-size:16px;\"> with University of Maryland (UMD)&nbsp;</span></li></ul><p><span style=\"font-size:16px;\">Contact individual data providers to learn more about their data (i.e., collection, quality assurance, terms of use, etc.). Questions regarding DC Department of Energy &amp; Environment sampling sites can be directed to </span><a href=\"mailto:pi.data@dc.gov\"><span style=\"font-size:16px;\">pi.data@dc.gov</span></a><span style=\"font-size:16px;\">.</span></p>",
+        "licenseInfo": "<p>Contact specific data providers/agencies for data qualifications and/or terms of use. This work is licensed under a <a target='_blank' href='https://creativecommons.org/licenses/by/4.0/' rel='nofollow ugc noopener noreferrer'>Creative Commons Attribution 4.0 International License</a>.</p>",
+        "ownerId": "5849ed911ecf4e26b941511ad61a9f37",
+        "title": "Potomac Interceptor",
+        "type": "Hub Site Application",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785354819000,
+        "avgRating": 0,
+        "id": "ff589f6c46284ca7b6e32b885b33eae5",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Environment/Water and Sewer"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "alicia.ritzenthaler@dc.gov_DCGIS",
+        "accessInformation": "Department of Energy and Environment",
+        "largeThumbnail": null,
+        "lastViewed": 1785351600000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1772732712000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://potomacinterceptor.dc.gov",
+        "tags": [
+          "E.coli",
+          "Water Quality",
+          "Potomac"
+        ],
+        "numViews": 76591,
+        "numComments": 0,
+        "size": 70750,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "clientId": "",
+          "schemaVersion": 1.9,
+          "customHostname": "",
+          "subdomain": "",
+          "location": {
+            "type": "none"
+          },
+          "orgUrlKey": "dcgis",
+          "defaultHostname": ""
+        },
+        "source": "Department of Energy and Environment",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/ff589f6c46284ca7b6e32b885b33eae5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ecb21bcf908e4ec4a15f261f5135ef9d",
+      "title": "Potomac Interceptor E. coli Sample Results",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/PI_Spill_Sampling_Sites_with_all_samples/FeatureServer",
+      "publisher": "alicia.ritzenthaler@dc.gov_DCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "E. coli monitoring data compiled in response to the January 2026 Potomac Interceptor Collapse.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.354609,
+                38.980683
+              ],
+              [
+                -76.970881,
+                38.980683
+              ],
+              [
+                -76.970881,
+                38.347206
+              ],
+              [
+                -77.354609,
+                38.347206
+              ],
+              [
+                -77.354609,
+                38.980683
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multi Services View",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p><span style='font-size:16px;'>A regional dataset containing<i> E. coli</i> monitoring sampling results collected along the Potomac and Anacostia Rivers, in response to the January 2026 Potomac Interceptor Collapse. Each data provider retains responsibility for its own data and submits to this compilation dataset voluntarily. Check the <i>Source</i> field to identify the data provider:</span></p><ul><li><a target='_blank' href='https://doee.dc.gov/' rel='nofollow ugc noopener noreferrer'><span style='font-size:16px;'>DC Department of Energy &amp; Environment (DOEE)</span></a></li><li><a target='_blank' href='https://mde.maryland.gov/Pages/index.aspx' rel='nofollow ugc noopener noreferrer'><span style='font-size:16px;'>Maryland Department of the Environment (MDE)</span></a></li><li><a target='_blank' href='https://www.deq.virginia.gov/' rel='nofollow ugc noopener noreferrer'><span style='font-size:16px;'>Virginia Deparment of Environmental Quality (VADEQ)</span></a></li><li><a target='_blank' href='https://www.dcwater.com/' rel='nofollow ugc noopener noreferrer'><span style='font-size:16px;'>DC Water</span></a></li><li><a target='_blank' href='https://potomacriverkeepernetwork.org/' rel='nofollow ugc noopener noreferrer'><span style='font-size:16px;'>Potomac Riverkeepers Network (PRK)</span></a><span style='font-size:16px;'> with University of Maryland (UMD)&nbsp;</span></li></ul><p><span style='font-size:16px;'>Contact individual data providers to learn more about their data (i.e., collection, quality assurance, terms of use, etc.). Questions regarding DC Department of Energy &amp; Environment sampling sites can be directed to </span><a href='mailto:pi.data@dc.gov' rel='nofollow ugc'><span style='font-size:16px;'>pi.data@dc.gov</span></a><span style='font-size:16px;'>.</span></p>",
+        "licenseInfo": "<p>Contact specific data providers/agencies for data qualifications and/or terms of use. This work is licensed under a <a target='_blank' href='https://creativecommons.org/licenses/by/4.0/' rel='nofollow ugc noopener noreferrer'>Creative Commons Attribution 4.0 International License</a>.</p>",
+        "title": "Potomac Interceptor E. coli Sample Results",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1772825604000,
+        "avgRating": 0,
+        "id": "ecb21bcf908e4ec4a15f261f5135ef9d",
+        "categories": [
+          "/Categories/Environment/Water and Sewer"
+        ],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "alicia.ritzenthaler@dc.gov_DCGIS",
+        "accessInformation": "Department of Energy and Environment",
+        "largeThumbnail": null,
+        "lastViewed": 1772823600000,
+        "thumbnail": "thumbnail/thumbnail1772825601405.png",
+        "languages": [],
+        "created": 1772650154000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/PI_Spill_Sampling_Sites_with_all_samples/FeatureServer",
+        "tags": [
+          "E.coli",
+          "Water Quality",
+          "Potomac"
+        ],
+        "numViews": 2192,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "PI_Spill_Sampling_Sites_with_all_samples",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Department of Energy and Environment",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/ecb21bcf908e4ec4a15f261f5135ef9d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    131
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 24,
+  "next_offset": 10,
+  "response_sha256": "e61bfa392d24f6233b5243f6ec9385c89cd0b6bf9dfdf3cecf3465f23151fab6",
+  "search_complete": false
+}

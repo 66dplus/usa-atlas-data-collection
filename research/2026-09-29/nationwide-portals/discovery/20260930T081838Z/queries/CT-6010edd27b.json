@@ -1,0 +1,82 @@
+{
+  "jurisdiction_code": "CT",
+  "query": "health insurance",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-09-30T08:19:13.839097+00:00",
+  "candidates": [
+    {
+      "id": "aagd-92m2",
+      "title": "Tax Revenue by Month",
+      "url": "https://data.ct.gov/Tax-and-Revenue/Tax-Revenue-by-Month/aagd-92m2",
+      "publisher": "DRS RAF Unit",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.ct.gov/resource/aagd-92m2.json",
+      "description": "Tax revenue by tax type by month"
+    },
+    {
+      "id": "rm6f-b9qj",
+      "title": "Nursing Facility Registry",
+      "url": "https://data.ct.gov/Health-and-Human-Services/Nursing-Facility-Registry/rm6f-b9qj",
+      "publisher": "Cody Clark",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.ct.gov/resource/rm6f-b9qj.json",
+      "description": "This registry provides a list of licensed nursing facilities in Connecticut as of September 30th each year, beginning with data from 2013.  For each facility, this dataset includes aggregate resident demographic information, private pay rates for private and semi-private rooms, payment sources and occupancy levels for each year."
+    },
+    {
+      "id": "avfh-2eg7",
+      "title": "State of CT: Open Expenditures - Ledger Archive",
+      "url": "https://data.ct.gov/Government/State-of-CT-Open-Expenditures-Ledger-Archive/avfh-2eg7",
+      "publisher": "PSAdmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.ct.gov/resource/avfh-2eg7.json",
+      "description": "This archived data allows citizens to view who received payments from the State for goods or services and how much they received for historical fiscal years beginning in state fiscal year 2011-2012. The data can be explored by searching for specific payee names or by browsing by Government Function. The <a href = \"https://opencheckbook.ct.gov\" target =\"_blank\"> Open Checkbook app </a> allows the user to drill down from aggregated spending accounts all the way down to each individual payment to a payee for more recent fiscal years.\n\nThe actively updated, most recent seven fiscal years are available <a href = \"https://data.ct.gov/Government/State-of-CT-Open-Expenditures-Ledger/jz5u-r6jf/about_data\" target =\"_blank\"> here </a> \n\nThis data is appended annually with an additional year of historical data.\n\nCertain payee names have been removed in order to protect the privacy of individuals, in accordance with Health Insurance Portability and Accountability Act (HIPAA) regulations or where the information is otherwise protected by law. \n\nRedacted information includes:\n•Payees who are statutorily protected\n•Information that would lead to violating HIPAA laws\n•Information of Minors"
+    },
+    {
+      "id": "ajdm-rvz7",
+      "title": "State of CT: Open Expenditures - Ledger Current",
+      "url": "https://data.ct.gov/Government/State-of-CT-Open-Expenditures-Ledger-Current/ajdm-rvz7",
+      "publisher": "PSAdmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.ct.gov/resource/ajdm-rvz7.json",
+      "description": "Note: This dataset is undergoing essential maintenance until Wednesday September 30th. The data currently reflects payments made through September 24th, 2026. More recent records will be available when maintenance is completed.\n\nThis data allows citizens to view who received payments from the state for goods or services and how much they received. The data can be explored by searching for specific payee names or by browsing by Government Function. <a href=\"http://opencheckbook.ct.gov\">The Open Checkbook app</a> allows the user to drill down from aggregated spending accounts all the way down to each individual payment to a payee. \n\nThe  data is updated nightly and therefore reflects current spending activities more accurately than any other publicly available source. In general the data reflects all payments made up to 24 to 48 hours prior to view.\n\nCertain payee names have been removed in order to protect the privacy of individuals, in accordance with Health Insurance Portability and Accountability Act (HIPAA) regulations or where the information is otherwise protected by law. \n\nRedacted information includes:\n•Payees who are statutorily protected\n•Information that would lead to violating HIPAA laws\n•Information of Minors"
+    },
+    {
+      "id": "9fwx-gjzt",
+      "title": "Tax Refunds By Month",
+      "url": "https://data.ct.gov/Tax-and-Revenue/Tax-Refunds-By-Month/9fwx-gjzt",
+      "publisher": "DRS RAF Unit",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.ct.gov/resource/9fwx-gjzt.json",
+      "description": "Refunds of Tax Overpayments by the Department of Revenue Services"
+    }
+  ],
+  "page_receipts": [
+    201
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "95700511dec9d13d1112236c9b660f5893a05b918228c2e44873f07568a64f97",
+  "search_complete": true
+}

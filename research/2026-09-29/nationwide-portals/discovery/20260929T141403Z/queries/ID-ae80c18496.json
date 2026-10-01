@@ -1,0 +1,150 @@
+{
+  "jurisdiction_code": "ID",
+  "query": "electricity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:14:29.820466+00:00",
+  "candidates": [
+    {
+      "id": "0ac00051ce174615bfbd48b777448a63",
+      "title": "Generalized Fish Distribution",
+      "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/GeneralFishDistribution/FeatureServer",
+      "publisher": "idahofishandgame",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Current presence and use type by species, run, subrun, and stream section. Presence and suspected presence data showing where fish have been found given a certain time, place, and method, and where they are likely to be found given the above and adjacent, accessible, and suitable habitat.  Derived from range-wide assessments and survey data.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -118.07804771661344,
+                49.06328106576224
+              ],
+              [
+                -110.40160090165757,
+                49.06328106576224
+              ],
+              [
+                -110.40160090165757,
+                41.723105513674355
+              ],
+              [
+                -118.07804771661344,
+                41.723105513674355
+              ],
+              [
+                -118.07804771661344,
+                49.06328106576224
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Generalized Fish Distribution intersecting Idaho in StreamNet DEF for Snake River spring, summer, fall chinook salmon, Snake River sockeye salmon, coho salmon, Snake River summer steelhead trout, pacific lamprey, white sturgeon, bull trout, westslope cutthroat trout, bonneville cutthroat trout, redband trout, and yellowstone cutthroat trout.<div><br /></div><div><div>Credits:  StreamNet, IDFG, USFS, USBLM, USFWS, Nez Perce Tribe, Shoshone-Bannock Tribe, Coeur d'Alene Tribe, Kootenai Tribe, Potlatch Corp., Idaho State University.</div><div><br /></div><div><b><u>Attributes:</u></b></div><div><b>Name:</b>  Name of the stream/river.</div><div><b>SPECIE:</b>  Species of fish in stream/river.</div><div><b>Run:</b>  Run of fish.</div><div><b>SubRun:</b>  Subrun of fish.</div><div><b>UseType:</b>  Primary use type of section of stream by species.</div><div><b>Title:</b>  Title of data source.</div><div><b>Authors:</b>  Authors of the data source.</div><div><b>PubYear:</b>  Year the data source was published or completed.</div><div><b>LifeHist:</b>  Anadromous, Fluvial/Adfluvial, Fluvial/Adfluvial/Year-round, unknown, or Year-round Resident</div></div>",
+        "licenseInfo": "This report is the result of a query of the StreamNet fish distribution database at the Idaho Department of Fish and Game (IDFG). Efforts have been made to ensure an accurate and complete database. However, not all IDFG fishery databases have been incorporated into StreamNet. In addition, other agencies have their own databases that may contain fisheries information not included in StreamNet. We recommend that you follow up this report at your local IDFG regional office and both state and federal natural resource agency offices.",
+        "title": "Generalized Fish Distribution",
+        "type": "Feature Service",
+        "orgId": "FjJI5xHF2dUPVrgK",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1759513820000,
+        "avgRating": 0,
+        "id": "0ac00051ce174615bfbd48b777448a63",
+        "categories": [],
+        "spatialReference": "102605",
+        "numRatings": 0,
+        "owner": "idahofishandgame",
+        "accessInformation": "StreamNet, IDFG, USFS, USBLM, USFWS, Nez Perce Tribe, Shoshone-Bannock Tribe, Coeur d'Alene Tribe, Kootenai Tribe, Potlatch Corp., Idaho State University, Shoshone-Paiute Tribes, NDOW.",
+        "largeThumbnail": null,
+        "lastViewed": 1773082800000,
+        "thumbnail": "thumbnail/thumbnail1634221917452.png",
+        "languages": [],
+        "created": 1589318461000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/GeneralFishDistribution/FeatureServer",
+        "tags": [
+          "pacific lamprey",
+          "westslope cutthroat trout",
+          "chinook salmon",
+          "steelhead trout",
+          "coho salmon",
+          "white sturgeon",
+          "yellowstone cutthroat trout",
+          "bull trout",
+          "bonneville cutthroat trout",
+          "sockeye salmon",
+          "Snake River Drainage",
+          "Bear River Drainage",
+          "Salmon River Drainage",
+          "Kootenai River Drainage",
+          "Spokane River Drainage",
+          "Clearwater River Drainage",
+          "Current",
+          "2018"
+        ],
+        "numViews": 10077,
+        "numComments": 0,
+        "size": 49569792,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "GeneralFishDistribution",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Fish and Game",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/0ac00051ce174615bfbd48b777448a63"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    134
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "293c2e25a58424f71a0404b2d758e290a7febe4e781dd70405033737c4a1504b",
+  "search_complete": true
+}

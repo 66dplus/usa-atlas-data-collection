@@ -1,0 +1,1363 @@
+{
+  "jurisdiction_code": "RI",
+  "query": "water",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-09-29T14:11:15.647427+00:00",
+  "candidates": [
+    {
+      "id": "5df7bbeaa28a43ec9f6c426982978fe0",
+      "title": "Water Use Categories",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Water_Use_Categories/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Vector polygon representations of al RI Water Subject to CRMC Regulation as described in the Publication.\"State of Rhode Island, Coastal Resources Management Program, As Amended\" (aka, The Redbook) Section 200 Tidal and Coastal Pond Waters A.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.91244016906361,
+                42.0189438339247
+              ],
+              [
+                -71.09216947084535,
+                42.0189438339247
+              ],
+              [
+                -71.09216947084535,
+                41.095283894712445
+              ],
+              [
+                -71.91244016906361,
+                41.095283894712445
+              ],
+              [
+                -71.91244016906361,
+                42.0189438339247
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><span style='font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-size:12pt;'><strong>This hosted feature layer has been published in RI State Plane Feet NAD 83.</strong></span><br /></div><div><br /></div><p>RI CRMC Water Use Category Mapping -- Vector polygon representations of all RI Water Subject to CRMC Regulation as described in the Publication &quot;The State of Rhode Island, Coastal Resources Management Program, As Amended&quot; (aka, The Redbook) Section 200 Tidal and Coastal Pond Waters A. The six categories of waters defined in this Program are directly linked to the characteristics of the shoreline, since the activities on the adjacent mainland are the primary determinant of the uses and qualities of any specific water site.</p><div></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The six categories of waters defined in this Program are directly linked to the characteristics of the shoreline, since the activities on the adjacent mainland are the primary determinant of the uses and qualities of any specific water site.</span></div><div><ul><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Type 1 waters abut shorelines in a natural undisturbed condition, where alterations, including the construction of docks and any dredging, are considered by the Council as unsuitable.</span></li><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Type 2 waters are adjacent to predominantly residential areas, where docks are acceptable, but more intense forms of development, including more marinas and new dredging projects (but not maintenance dredging), would change the area's character and alter the established balance among uses. Alterations such as these would bring more intensive uses and are therefore prohibited in Type 2 waters. The waters along some 70 percent of the state's 420 miles of shoreline have been assigned to Type 1 and Type 2, and should be expected to retain their high scenic values and established patterns of low-intensity use.</span></li></ul></div><div><ul><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Type 3 waters are dominated by commercial facilities that support recreational boating. Here, marinas, boatyards, and associated businesses take priority over other uses, and dredging and shoreline alterations are to be expected.</span></li><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Type 4 areas include the open waters of the Bay and the Sounds, where a balance must be maintained among fishing, recreational boating, and commercial traffic. Here high water quality and a healthy ecosystem are primary concerns. The last two water use categories are assigned to areas adjacent to ports and industrial waterfronts. In these waters, maintenance of adequate water depths is essential, high water quality is seldom achievable, and some filling may be desirable.</span></li><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Within Type 5 ports, a mix of commercial and recreational activities must co-exist,</span></li><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>while in Type 6 waters, water-dependent industrial and commercial activities take precedence over all other activities.</span></li></ul><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The water categories described in this section are complemented by policies for shoreline types (Section 210), and the two must be combined to identify the Program's policies for a specific coastal site. More than 90 percent of Rhode Island's tidal waters are classified by the R.I. Department of Environmental Management as SA, the highest water quality rating. Water pollution, however, is a major concern, with eutrophication and bacterial contamination a growing concern in the salt ponds and with all major indicators of pollution showing strong gradients down the Bay from the Providence metropolitan area. Despite the pollutants and intense fishing pressure, Rhode Island's tidal waters support large seasonal populations of a variety of finfish. In the Bay, the quahog supports a large and important commercial fishery. Recreational fishing for flounder, bluefish, and striped bass is important nearshore. Rhode Island has a rich history of maritime commerce and industry. In this century, however, the once-booming urban waterfronts of the upper Bay have stagnated and declined despite major infusions of public funds to deepen the access channel to Providence to 40 feet and build new terminal facilities. During the postwar decades, oil imports have dominated waterborne commerce, but this sector has declined sharply since the mid-seventies. In 1973, the U.S. Navy announced a major pullout from its extensive facilities in the lower Bay, and by 1980 hundreds of acres of port facilities at Quonset, Davisville, Melville, and Coddington Cove had been turned over to the state. The State of Rhode Island now owns a large inventory of unutilized or underutilized port facilities. As commercial shipping has declined, recreational boating has increased. Facilities for the in-water storage of boats are in short supply, but with very few exceptions expansion of marinas into new areas could only be accomplished if remaining salt marshes and other important natural features were sacrificed. Since this is considered unacceptable by the Council, the emphasis must be on the more efficient use of existing facilities, recycling of underutilized but already disturbed sites, and improvements to public launching facilities. Activities that are dependent on Rhode Island's tidal waters generate substantial economic benefits to the state. Nearly one billion dollars are generated each year by such water-related activities as marine industry, transportation and education, commercial fishing and marine recreation (Farrell and Rorholm, 1981). Substantial additional economic benefits are generated by water-enhanced residential development, tourism, and the importance of an attractive marine environment in drawing high-quality businesses to Rhode Island. Coastal Resources Management Council approved changes to Water Types adopted 2010: Portion of the Seekonk River along the Providence shoreline from Type 4 to Type 1 Portion of the Providence River at Bold Point from Type 6 to Type 4 Portion of the Providence River south of the Providence and Worcester Railroad quay from Type 6 to Type 5 Portion of the Providence River along the East Providence shoreline from Type 6 to Type 2 Coastal Resource Management Council Approved Changes to Water Types adopted June 2011: 1. Portion of Ninigret Pond adjacent to the Ninigret National Wildlife Refuge (former Charlestown NAS) changed from Type 2 - Low Intensity Use to Type 1 - Conservation Area 2. Portion of Bissel Cove, North Kingstown adjacent to John H. Chafee Rome Point Conservation area changed from Type 2 toType 1 3. Portion of Dutch Harbor, Jamestown adjacent to Watson Farm &amp; Great Creek changed from Type 2 to Type 1 4. Portion of Warren River at Jacobs Point, adjacent to ASRI Claire D. McIntosh Refuge changed from Type 2 to Type 1 5. Type 1 Waters along the Providence shoreline of the Seekonk River from a point starting 250 feet north of the Narragansett Boat Club property (parcel 41-258) north to the Pawtucket city line and out to within approximately 50 feet of the existing federal channel(Adopted by the Council on January 27, 2010). 6. A straight line running WNW from the Union Oil property boundary with Bold Point Park in East Providence to the easterly boundary of the State of Rhode Island property (parcel 18-344) at India Point (Adopted by the Council on January 27, 2010). 7. A straight line starting approximately 120 feet south of the existing Providence &amp; Worcester quay (parcel 7-1-3) running WSW and more or less perpendicular to the federal channel out into the river ending approximately 120 from the federal channel (Adopted by the Council on January 27, 2010). 8. A straight line starting at the boundary of parcels 109-1-1 and 109-1-3 running WSW and more or less perpendicular to the federal channel out into the river ending approximately 120 from the federal channel (Adopted by the Council on January 27, 2010). 9. A straight line starting at the boundary of parcels 210-3-6 and 210-3-8 running West out into the river stopping approximately 120 from the federal channel (Adopted by the Council on January 27, 2010). Coastal Resources Management Council approved changes to Water Types adopted 2013: Portion of Mt Hope Bay at Roger Williams University from Type 1 to Type 2 Additional Information: RI Coastal Resources Management Council Website: https://www.crmc.ri.gov/index.html CRMC Redbook: https://www.crmc.ri.gov/pubs/programs/redbook.pdf Delineation of water use classifications is based on descriptions in Appendix 1 of the Redbook. The Rhode Island offshore 3 mile limit was taken from NOAA Office of Coast Survey GIS data 2004.</span><font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif'><span style='font-size:16px;'><br /></span></font></div></div>",
+        "licenseInfo": "While every attempt has been made to ensure the accuracy of this data, users are cautioned that use of this data or derived products does not relieve them of the responsibility to consult with CRMC Staff on matters covered by RI General Law and CRMC Regulatory Authority. Please consider the source, spatial accuracy, attribute accuracy, currentness, and scale of these data before incorporating them into your project. <div><br /></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><strong>These data are shared under the RIGIS license agreement, which can be viewed below:</strong></span><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at</span><a href='https://info.rigis.org/pages/logos/' style='color:rgb(0, 97, 155); text-decoration-line:none; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://info.rigis.org/pages/logos/</a><br /></div>",
+        "title": "Water Use Categories",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1760541183000,
+        "avgRating": 0,
+        "id": "5df7bbeaa28a43ec9f6c426982978fe0",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Coastal Resources Management Council; RI Dept. of Environmental Management",
+        "largeThumbnail": "largethumbnail/5df7bbeaa28a43ec9f6c426982978fe0.png",
+        "lastViewed": 1760540400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1712947315000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Water_Use_Categories/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "marine",
+          "estuarine",
+          "coastal",
+          "regulation",
+          "water use"
+        ],
+        "numViews": 4044,
+        "numComments": 0,
+        "size": 7405568,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Water_Use_Categories",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Coastal Resources Management Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/5df7bbeaa28a43ec9f6c426982978fe0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f183cdf27fe54b7ca6582b6a2af96742",
+      "title": "Water Type Boundaries ",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Water_Type_Boundaries_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Water Type Boundary lines describe those points along a coastline where one water use type changes to another. The dataset was developed for cartographic and planning purposes only.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.86517631046999,
+                41.87647405860927
+              ],
+              [
+                -71.19002846885762,
+                41.87647405860927
+              ],
+              [
+                -71.19002846885762,
+                41.172878127267026
+              ],
+              [
+                -71.86517631046999,
+                41.172878127267026
+              ],
+              [
+                -71.86517631046999,
+                41.87647405860927
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><b>This hosted feature layer has been published in RI State Plane Feet NAD 83</b></div><div><b><br /></b></div>Water Type Boundary lines describe those points along a coastline where one water use type changes to another. Each mapped boundary is coded by number with verbal descriptions found in the Maps of Water Use Categories in the Coastal Resources Management Plan https://www.crmc.ri.gov/regulations/RICRMP.pdf. Except where otherwise noted, the water use classifications along any shoreline reach and between two boundary line designations run parallel to the general coastal trend and extend 500 feet seaward from the mean high water mark.",
+        "licenseInfo": "<span style='font-weight:bold;'><span style='text-decoration-line:underline;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></span><br />This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. <div><br /><span style='font-weight:bold;'><span style='text-decoration-line:underline;'>Additional Use Constraints from Originator:</span></span><br />While every attempt has been made to ensure the accuracy of this data, users are cautioned that use of this data or derived products does not relieve them of the responsibility to consult with CRMC Staff on matters covered by RI General Law and CRMC Regulatory Authority. Please consider the source, spatial accuracy, attribute accuracy, currentness, and scale of these data before incorporating them into your project.</div>",
+        "title": "Water Type Boundaries ",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731605802000,
+        "avgRating": 0,
+        "id": "f183cdf27fe54b7ca6582b6a2af96742",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Coastal Resources Management Council; RI Dept. of Environmental Management",
+        "largeThumbnail": "largethumbnail/f183cdf27fe54b7ca6582b6a2af96742.png",
+        "lastViewed": 1731603600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1730747906000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Water_Type_Boundaries_spf/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "marine",
+          "estuarine",
+          "coastal",
+          "regulation",
+          "lagoon",
+          "coastal resources",
+          "water boundaries"
+        ],
+        "numViews": 73,
+        "numComments": 0,
+        "size": 139264,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Water_Type_Boundaries_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Coastal Resources Management Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/f183cdf27fe54b7ca6582b6a2af96742"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "66a51fea8e67431490c45b9f0f26342c",
+      "title": "Surface Water Protection Areas",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Surface_Water_Protection_Areas_2024/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Drainage areas contributing to drinking water supply reservoirs serving public water systems in Rhode Island.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.807029,
+                42.223529
+              ],
+              [
+                -71.14294,
+                42.223529
+              ],
+              [
+                -71.14294,
+                41.151395
+              ],
+              [
+                -71.807029,
+                41.151395
+              ],
+              [
+                -71.807029,
+                42.223529
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><strong>This hosted feature layer has been published in RI State Plane Feet NAD83</strong><span><br /></span></p><p><span>Surface Water Protection Areas: Drainage areas contributing to drinking water supply reservoirs serving public water systems in Rhode Island. Includes areas in Massachusetts contributing to Woonsocket Water Supply -- Harris Pond. </span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><p><strong><u>These data are shared under the RIGIS license agreement, which can be viewed below:</u></strong><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset is provided &quot;as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at </span><a href='https://info.rigis.org/pages/logos/' style='color:rgb(0, 97, 155); text-decoration-line:none; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://info.rigis.org/pages/logos/</a><br /></p></div>",
+        "title": "Surface Water Protection Areas",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1733764426000,
+        "avgRating": 0,
+        "id": "66a51fea8e67431490c45b9f0f26342c",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Clay Commons, RIDOH Paul Jordan RIDEM Elizabeth Scott, RIDEM",
+        "largeThumbnail": "largethumbnail/66a51fea8e67431490c45b9f0f26342c.png",
+        "lastViewed": 1743786000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1727098789000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Surface_Water_Protection_Areas_2024/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "reservoir",
+          "drinking water",
+          "water supply"
+        ],
+        "numViews": 877,
+        "numComments": 0,
+        "size": 360448,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Surface_Water_Protection_Areas_2024",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "indexJobId": ""
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/66a51fea8e67431490c45b9f0f26342c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6be22d825b06420f9de4130b8e860a45",
+      "title": "Public Water Supply Reservoirs",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Public_Water_Supply_Reservoirs_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Large public water reservoirs used by public water suppliers in Rhode Island.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.775279,
+                42.043861
+              ],
+              [
+                -71.145698,
+                42.043861
+              ],
+              [
+                -71.145698,
+                41.152957
+              ],
+              [
+                -71.775279,
+                41.152957
+              ],
+              [
+                -71.775279,
+                42.043861
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><b>This hosted feature layer has been published in RI State Plane Feet NAD 83</b></div><div><b><br /></b></div>These reservoirs were selected from the already published RIGIS Lakes5K10 dataset. This dataset fully replaces the published RIGIS Public Water Supply Reservoirs (reservoirs) circa 01/1994.",
+        "licenseInfo": "<span style='font-weight:bold;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span><br />This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.",
+        "title": "Public Water Supply Reservoirs",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731606408000,
+        "avgRating": 0,
+        "id": "6be22d825b06420f9de4130b8e860a45",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS, Center for Drinking Water Quality",
+        "largeThumbnail": "largethumbnail/6be22d825b06420f9de4130b8e860a45.png",
+        "lastViewed": 1743786000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1730746116000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Public_Water_Supply_Reservoirs_spf/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "reservoirs",
+          "hydrography",
+          "drinking"
+        ],
+        "numViews": 533,
+        "numComments": 0,
+        "size": 827392,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Public_Water_Supply_Reservoirs_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Center for Drinking Water Quality",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/6be22d825b06420f9de4130b8e860a45"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "603055b4c1944653b56d034a0080ae0d",
+      "title": "Water Supply Districts (2022)",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/UTILITY_Water_Supply_Districts_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data is intended for planning, research, utility inventory, and emergency management.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.882685,
+                42.018491
+              ],
+              [
+                -71.149962,
+                42.018491
+              ],
+              [
+                -71.149962,
+                41.155822
+              ],
+              [
+                -71.882685,
+                41.155822
+              ],
+              [
+                -71.882685,
+                42.018491
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b></div><div><b><br /></b></div>The Rhode Island Water Resources Board requires all large water supplies (suppliers that withdraw greater than 50 million gallons annually) to submit updated Water Supply System Management Plans (WSSMP) every five years. A requirement of the WSSMPs is an updated water supplier district coverage. This dataset includes: district coverages for 25 large water suppliers that are required to submit WSSMPs, Block Island (not required to submit a WSSMP), and a separate feature for the Connecticut side of the Westerly district coverage. Also, some water district boundaries were created by providing a1000ft buffer from the end of water lines defined in 2005. A buffer was created to ensure that all buildings served within the district are included, though this may cause some potential errors and some buildings not served by the supplier may be included within the buffered area.",
+        "licenseInfo": "This polygon dataset is for informational and planning purposes only, and NOT FOR LEGAL USE.This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset and are not liable for any loss or damage however, and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available https://info.rigis.org/pages/logos",
+        "title": "Water Supply Districts (2022)",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1733768654000,
+        "avgRating": 0,
+        "id": "603055b4c1944653b56d034a0080ae0d",
+        "categories": [],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC; RIGIS; RI Water Resources Board; RI Department of Health",
+        "largeThumbnail": "largethumbnail/603055b4c1944653b56d034a0080ae0d.png",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1730731598000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/UTILITY_Water_Supply_Districts_spf/FeatureServer",
+        "tags": [
+          "UTILITY",
+          "RIGIS",
+          "Rhode Island",
+          "public water"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 1753088,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "UTILITY_Water_Supply_Districts_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Water Resources Board, Kathleen Crawley, Acting General Manager",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/603055b4c1944653b56d034a0080ae0d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ab526ef72e6e494e9a3bce5d1cda1739",
+      "title": "Coastal Waters",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Coastal_Waters_2014_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data represents Rhode Island coastal waters and its coastline, and is intended for cartographic purposes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -72.12865881887149,
+                41.87647404237866
+              ],
+              [
+                -70.91272860534728,
+                41.87647404237866
+              ],
+              [
+                -70.91272860534728,
+                40.908942149410315
+              ],
+              [
+                -72.12865881887149,
+                40.908942149410315
+              ],
+              [
+                -72.12865881887149,
+                41.87647404237866
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b></div><div><b><br /></b></div>This dataset represents coastal waters and the coastline of Rhode Island, as well as portions of neighboring Connecticut, Massachusetts, and New York. Includes Narragansett Bay, salt ponds, and tributaries.",
+        "licenseInfo": "<div><span style='font-weight:bold;'><span style='text-decoration-line:underline;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></span><br />This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at <span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>https://info.rigis.org/logos/</span><br /><br /><span style='text-decoration-line:underline;'><span style='font-weight:bold;'>Additional Use Constraints from Originator:</span></span><br />These data were created for informational, planning and guidance use only. They are a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of these data may requre the assistance of appropriate professional services. The cartographic representations depicted have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. The producer makes no warranty, express or implied, related to the accuracy, reliability, completeness, or currentness of these data.</div>",
+        "title": "Coastal Waters",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1762363054000,
+        "avgRating": 0,
+        "id": "ab526ef72e6e494e9a3bce5d1cda1739",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Department of Administration, Statewide Planning Program",
+        "largeThumbnail": "largethumbnail/ab526ef72e6e494e9a3bce5d1cda1739.png",
+        "lastViewed": 1762362000000,
+        "thumbnail": "thumbnail/ab526ef72e6e494e9a3bce5d1cda1739.png",
+        "languages": [],
+        "created": 1732557563000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Coastal_Waters_2014_spf/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "coastline",
+          "bay",
+          "salt ponds"
+        ],
+        "numViews": 2086,
+        "numComments": 0,
+        "size": 2908160,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Coastal_Waters_2014_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              },
+              {
+                "hidden": true,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -72.12865881887149,
+                40.908942149410315
+              ],
+              [
+                -70.91272860534728,
+                41.87647404237866
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 40.908942149410315,
+                "xmin": -72.12865881887149,
+                "ymax": 41.87647404237866,
+                "xmax": -70.91272860534728,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "RI Department of Administration",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/ab526ef72e6e494e9a3bce5d1cda1739"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0c55d6bb8bda45a898010932aa8e15a2",
+      "title": "Coastal Waters (24K)",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Estuary_24K/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Coastal waters originally derived through manual digitizing of USGS 1:24000 Topographic Maps. Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy. RIDEM Integrated Water Quality Monitoring and Assessment Reporting Rhode Island's Section 305(b) State of the State's Waters Report and Section 303(d) List of Impaired Waters",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.90939982597695,
+                41.87647405130299
+              ],
+              [
+                -71.09307646345016,
+                41.87647405130299
+              ],
+              [
+                -71.09307646345016,
+                41.09529128134074
+              ],
+              [
+                -71.90939982597695,
+                41.09529128134074
+              ],
+              [
+                -71.90939982597695,
+                41.87647405130299
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><p><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b><font size='3'><br /></font></p><p><font size='3'>Coastal waters originally derived through manual digitizing of USGS 1:24000 Topographic Maps.  Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy.</font></p><p><font size='3'>Water Quality<span> - </span></font></p><p><font size='3'>Integrated Report<span> - Prior to 2008, DEM submitted the 305(b) Report and 303(d) List as separate documents. Recent USEPA guidance recommends that states develop and submit an Integrated Water Quality Monitoring and Assessment Report (Integrated Report). This guidance recommends that states integrate their Section 305(b) water quality assessment report and their Section 303(d) Impaired Waters List into a single document. The Integrated Report is intended to provide a streamlined approach to assessing and reporting on water quality.</span></font></p><p><font size='3'>The new federal guidance results in a fundamentally different scope, organization, and options for communicating about water quality than previous guidance for these individual reports. Five new categories of assessment determination replace the old 305(b) assessment terminology (fully supporting, threatened, partially supporting, not supporting) and the 303(d) List Group format previously utilized by DEM. The new format provides an Integrated List consisting of 5 categories of water quality assessment information, with the fifth category being the list of impaired waters needing a TMDL.</font></p><p><font size='3'>Assessments may result in different use support attainment status for the different designated uses for individual waterbodies. For example, a waterbody may be Fully Supporting swimming use, but there may be insufficient data to develop an aquatic life use support status. The Integrated Report Categories are presented below with a description of how the results of the individual assessments for each designated use on a waterbody are integrated to determine the final Integrated Report Category for each waterbody. In general, the integration of assessment determinations follows a hierarchical approach where a determination of impairment for any cause for any of the waterbody's designated uses will result in placement of the waterbody in Category 5. Similarly, there is a hierarchical approach to placement of a waterbody into Category 4A over 4B over 4C. While each waterbody is placed into only one of the 5 reporting categories, the attainment status of each designated use for each waterbody is documented on the Integrated Lists to facilitate tracking of information and to assist in addressing data gaps and directing water quality monitoring efforts.</font></p><p><span style='font-size:medium;'>SRPW_1 - Identifies Special Resource Protection Waters as identified in the DEM Water Quality Regulations</span><br /></p><p><font size='3'>SW_Pot - Waters potentially impaired by storm water runoff</font></p><p><font size='3'>SW_Con - Waters confirmed impaired by storm water runoff</font></p><p><font size='3'>URL_1 - Link to USEPA Waterbody Report</font></p><p><font size='3'>IWQMA_AsmntType - Integrated Water Quality Monitoring and Assessment Type. </font></p></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><p><span>These data are shared under the RIGIS license agreement, which can be viewed below: This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. </span></p><p><span>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/logos/ </span></p></div></div>",
+        "title": "Coastal Waters (24K)",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1733765698000,
+        "avgRating": 0,
+        "id": "0c55d6bb8bda45a898010932aa8e15a2",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/0c55d6bb8bda45a898010932aa8e15a2.png",
+        "lastViewed": 1743786000000,
+        "thumbnail": "thumbnail/0c55d6bb8bda45a898010932aa8e15a2.png",
+        "languages": [],
+        "created": 1701113465000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Estuary_24K/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "water quality",
+          "impairments",
+          "TMDL"
+        ],
+        "numViews": 1939,
+        "numComments": 0,
+        "size": 3301376,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Estuary_24K",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "hosted": true
+          }
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/0c55d6bb8bda45a898010932aa8e15a2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "45c9590c5c1841198e8895026ba3d108",
+      "title": "Groundwater Reservoirs",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_GroundwaterReservois/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater aquifers reservoirs defined by RIDEM as significant sub-surface water sources.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.8540794284709,
+                42.019082269696554
+              ],
+              [
+                -71.30243006904638,
+                42.019082269696554
+              ],
+              [
+                -71.30243006904638,
+                41.375123543630686
+              ],
+              [
+                -71.8540794284709,
+                41.375123543630686
+              ],
+              [
+                -71.8540794284709,
+                42.019082269696554
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><span style='margin:0px; padding:0px; font-variant-numeric:normal; font-variant-east-asian:normal; font-variant-alternates:normal; font-variant-position:normal; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-weight:bold;'>This hosted feature layer has been published in RI State Plane Feet NAD 83.</span><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'> </span><br /></div><div><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'><br /></span></div>Groundwater aquifers reservoirs defined by Rhode Island Department of Environmental Management as significant sub-surface water sources.",
+        "licenseInfo": "<span style='font-weight:bold;'><span style='text-decoration-line:underline;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></span><br />This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at <a href='https://info.rigis.org/pages/logos/' target='_blank' rel='nofollow ugc noopener noreferrer'>https://info.rigis.org/pages/logos/</a>",
+        "title": "Groundwater Reservoirs",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731607610000,
+        "avgRating": 0,
+        "id": "45c9590c5c1841198e8895026ba3d108",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URIEDC, RIGIS, RI Dept. of Environmental Management",
+        "largeThumbnail": "largethumbnail/45c9590c5c1841198e8895026ba3d108.png",
+        "lastViewed": 1731607200000,
+        "thumbnail": "thumbnail/45c9590c5c1841198e8895026ba3d108.png",
+        "languages": [],
+        "created": 1712861480000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_GroundwaterReservois/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "sub-surface",
+          "groundwater",
+          "aquifer",
+          "reservoirs"
+        ],
+        "numViews": 928,
+        "numComments": 0,
+        "size": 286720,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_GroundwaterReservois",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/45c9590c5c1841198e8895026ba3d108"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1c5935aa900547869f5ef81af8c846fb",
+      "title": "NBC Sewer Overflows",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/UTILITY_NBC_Sewer_Overflows_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Utility faculty engineering structure inventory",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.46019,
+                41.89819
+              ],
+              [
+                -71.368258,
+                41.89819
+              ],
+              [
+                -71.368258,
+                41.784063
+              ],
+              [
+                -71.46019,
+                41.784063
+              ],
+              [
+                -71.46019,
+                41.89819
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><span style='font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-size:16px; font-weight:700; text-indent:48px;'>This hosted feature layer has been published in RI State Plane Feet NAD 83.</span></div><div><span style='font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-size:16px; font-weight:700; text-indent:48px;'><br /></span></div>Combined sewer overflow and waste water discharge points managed by the Narragansett bay commission - NBC - in Providence county RI",
+        "licenseInfo": "This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at<a href='https://info.rigis.org/pages/logos/' target='_blank' rel='nofollow ugc noopener noreferrer'> https://info.rigis.org/pages/logos</a>/.",
+        "title": "NBC Sewer Overflows",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731599842000,
+        "avgRating": 0,
+        "id": "1c5935aa900547869f5ef81af8c846fb",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "NBC; RIGIS",
+        "largeThumbnail": "largethumbnail/1c5935aa900547869f5ef81af8c846fb.png",
+        "lastViewed": 1762524000000,
+        "thumbnail": "thumbnail/1c5935aa900547869f5ef81af8c846fb.png",
+        "languages": [],
+        "created": 1730733200000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/UTILITY_NBC_Sewer_Overflows_spf/FeatureServer",
+        "tags": [
+          "UTILITY",
+          "RIGIS",
+          "Rhode Island",
+          "sewer",
+          "waste water",
+          "discharge",
+          "outfall",
+          "overflow"
+        ],
+        "numViews": 1366,
+        "numComments": 0,
+        "size": 32768,
+        "listed": false,
+        "scoreCompleteness": 88,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "UTILITY_NBC_Sewer_Overflows_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Division of Planning",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/1c5935aa900547869f5ef81af8c846fb"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "491a2bff2d3e432fa9af73bcb67966a8",
+      "title": "Ferry Routes",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/TRANS_Ferry_Routes_2015_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data set was created for general mapping for transportation planning. This data set contains established commercial passenger and vehicle water ferry routes for Rhode Island ports and ferry docks.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -72.10244,
+                41.70573
+              ],
+              [
+                -70.580775,
+                41.70573
+              ],
+              [
+                -70.580775,
+                41.070114
+              ],
+              [
+                -72.10244,
+                41.070114
+              ],
+              [
+                -72.10244,
+                41.70573
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span style='font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-size:16px; font-weight:700; text-indent:48px;'>This hosted feature layer has been published in RI State Plane Feet NAD 83</span><span></span></p><p><span>This data set contains established commercial passenger and vehicle water ferry routes for Rhode Island ports and ferry docks. This dataset was updated using the latest website information for the associated ferry companies.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span style='font-weight:bold;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></p><p><span>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</span></p><p><span>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/pages/logos/</span></p></div></div></div>",
+        "title": "Ferry Routes",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1762373111000,
+        "avgRating": 0,
+        "id": "491a2bff2d3e432fa9af73bcb67966a8",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Statewide Planning Program",
+        "largeThumbnail": "largethumbnail/491a2bff2d3e432fa9af73bcb67966a8.png",
+        "lastViewed": 1762372800000,
+        "thumbnail": "thumbnail/491a2bff2d3e432fa9af73bcb67966a8.png",
+        "languages": [],
+        "created": 1736190064000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/TRANS_Ferry_Routes_2015_spf/FeatureServer",
+        "tags": [
+          "TRANS",
+          "RIGIS",
+          "Rhode Island",
+          "water routes"
+        ],
+        "numViews": 1025,
+        "numComments": 0,
+        "size": 49152,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "TRANS_Ferry_Routes_2015_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              },
+              {
+                "hidden": true,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -72.10244,
+                41.070114
+              ],
+              [
+                -70.580775,
+                41.70573
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 41.070114,
+                "xmin": -72.10244,
+                "ymax": 41.70573,
+                "xmax": -70.580775,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Rhode Island Division of Planning",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/491a2bff2d3e432fa9af73bcb67966a8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    188
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 80,
+  "next_offset": 10,
+  "response_sha256": "15091b8731b15d428bf5fd47f7985897765eb7eb5b916897bb9d541790ca2b25",
+  "search_complete": false
+}

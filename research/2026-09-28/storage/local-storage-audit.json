@@ -1,0 +1,634 @@
+{
+  "audit_version": 1,
+  "directories": [
+    {
+      "allocated_file_bytes": 86626304,
+      "bytes_by_suffix": {
+        "(none)": 59697,
+        ".idx": 206760,
+        ".pack": 86213070,
+        ".rev": 29436,
+        ".sample": 25821
+      },
+      "file_count": 28,
+      "largest_files": [
+        {
+          "bytes": 86213070,
+          "path": ".git/objects/pack/pack-02bd5e91f73cef06dd5677b0d42b6879a797af79.pack"
+        },
+        {
+          "bytes": 206760,
+          "path": ".git/objects/pack/pack-02bd5e91f73cef06dd5677b0d42b6879a797af79.idx"
+        },
+        {
+          "bytes": 58184,
+          "path": ".git/index"
+        },
+        {
+          "bytes": 29436,
+          "path": ".git/objects/pack/pack-02bd5e91f73cef06dd5677b0d42b6879a797af79.rev"
+        },
+        {
+          "bytes": 4898,
+          "path": ".git/hooks/pre-rebase.sample"
+        },
+        {
+          "bytes": 4726,
+          "path": ".git/hooks/fsmonitor-watchman.sample"
+        },
+        {
+          "bytes": 3650,
+          "path": ".git/hooks/update.sample"
+        },
+        {
+          "bytes": 2783,
+          "path": ".git/hooks/push-to-checkout.sample"
+        }
+      ],
+      "logical_file_bytes": 86534784,
+      "path": ".git"
+    },
+    {
+      "allocated_file_bytes": 10825728,
+      "bytes_by_suffix": {
+        ".gz": 5726425,
+        ".json": 2043621,
+        ".jsonl": 1504151,
+        ".md": 2559,
+        ".py": 130389,
+        ".pyc": 35487,
+        ".sha256": 9035
+      },
+      "file_count": 430,
+      "largest_files": [
+        {
+          "bytes": 1365370,
+          "path": "full/normalized/fbi_cde.jsonl"
+        },
+        {
+          "bytes": 755347,
+          "path": "full/raw/full/census_acs/2024-tract-06-pack-00.json.gz"
+        },
+        {
+          "bytes": 423815,
+          "path": "full/raw/full/census_acs/group-B05006.json"
+        },
+        {
+          "bytes": 422290,
+          "path": "full/raw/full/census_acs/2024-tract-12-pack-00.json.gz"
+        },
+        {
+          "bytes": 265693,
+          "path": "full/raw/full/census_acs/2024-tract-17-pack-00.json.gz"
+        },
+        {
+          "bytes": 238245,
+          "path": "full/raw/full/census_acs/group-B01001.json"
+        },
+        {
+          "bytes": 228709,
+          "path": "full/raw/full/census_acs/2024-tract-13-pack-00.json.gz"
+        },
+        {
+          "bytes": 227337,
+          "path": "full/raw/full/census_acs/group-B05002.json"
+        }
+      ],
+      "logical_file_bytes": 9451667,
+      "path": "full"
+    },
+    {
+      "allocated_file_bytes": 8896512,
+      "bytes_by_suffix": {
+        ".gz": 5726425,
+        ".json": 1811843,
+        ".sha256": 9035
+      },
+      "file_count": 417,
+      "largest_files": [
+        {
+          "bytes": 755347,
+          "path": "full/raw/full/census_acs/2024-tract-06-pack-00.json.gz"
+        },
+        {
+          "bytes": 423815,
+          "path": "full/raw/full/census_acs/group-B05006.json"
+        },
+        {
+          "bytes": 422290,
+          "path": "full/raw/full/census_acs/2024-tract-12-pack-00.json.gz"
+        },
+        {
+          "bytes": 265693,
+          "path": "full/raw/full/census_acs/2024-tract-17-pack-00.json.gz"
+        },
+        {
+          "bytes": 238245,
+          "path": "full/raw/full/census_acs/group-B01001.json"
+        },
+        {
+          "bytes": 228709,
+          "path": "full/raw/full/census_acs/2024-tract-13-pack-00.json.gz"
+        },
+        {
+          "bytes": 227337,
+          "path": "full/raw/full/census_acs/group-B05002.json"
+        },
+        {
+          "bytes": 224543,
+          "path": "full/raw/full/census_acs/group-B05005.json"
+        }
+      ],
+      "logical_file_bytes": 7547303,
+      "path": "full/raw"
+    },
+    {
+      "allocated_file_bytes": 1507328,
+      "bytes_by_suffix": {
+        ".jsonl": 1504151
+      },
+      "file_count": 2,
+      "largest_files": [
+        {
+          "bytes": 1365370,
+          "path": "full/normalized/fbi_cde.jsonl"
+        },
+        {
+          "bytes": 138781,
+          "path": "full/normalized/eia.jsonl"
+        }
+      ],
+      "logical_file_bytes": 1504151,
+      "path": "full/normalized"
+    },
+    {
+      "allocated_file_bytes": 151552,
+      "bytes_by_suffix": {
+        ".json": 150450
+      },
+      "file_count": 1,
+      "largest_files": [
+        {
+          "bytes": 150450,
+          "path": "full/state/run-manifest.json"
+        }
+      ],
+      "logical_file_bytes": 150450,
+      "path": "full/state"
+    },
+    {
+      "allocated_file_bytes": 143360,
+      "bytes_by_suffix": {
+        ".md": 33764,
+        ".py": 71401,
+        ".sql": 9690
+      },
+      "file_count": 15,
+      "largest_files": [
+        {
+          "bytes": 41376,
+          "path": "database/load.py"
+        },
+        {
+          "bytes": 18701,
+          "path": "database/test_database.py"
+        },
+        {
+          "bytes": 11324,
+          "path": "database/audit_storage.py"
+        },
+        {
+          "bytes": 10295,
+          "path": "database/LOAD-PLAN.md"
+        },
+        {
+          "bytes": 6164,
+          "path": "database/schema.sql"
+        },
+        {
+          "bytes": 5242,
+          "path": "database/DATABASE-PLAN.md"
+        },
+        {
+          "bytes": 3548,
+          "path": "database/DATABASE-LOAD-PLAN.md"
+        },
+        {
+          "bytes": 3526,
+          "path": "database/audit_storage.sql"
+        }
+      ],
+      "logical_file_bytes": 114855,
+      "path": "database"
+    },
+    {
+      "allocated_file_bytes": 606208,
+      "bytes_by_suffix": {
+        ".json": 511464,
+        ".py": 24897,
+        ".zip": 39230
+      },
+      "file_count": 12,
+      "largest_files": [
+        {
+          "bytes": 495657,
+          "path": "pilot/raw/epa-pm25-alameda.json"
+        },
+        {
+          "bytes": 39230,
+          "path": "pilot/raw/bea-sarpp.zip"
+        },
+        {
+          "bytes": 17431,
+          "path": "pilot/run_pilot.py"
+        },
+        {
+          "bytes": 7466,
+          "path": "pilot/test_run_pilot.py"
+        },
+        {
+          "bytes": 5114,
+          "path": "pilot/normalized/pilot-samples.json"
+        },
+        {
+          "bytes": 3039,
+          "path": "pilot/raw/fbi-cde-violent-crime.json"
+        },
+        {
+          "bytes": 2655,
+          "path": "pilot/raw/bls-laus.json"
+        },
+        {
+          "bytes": 1889,
+          "path": "pilot/probe-results.json"
+        }
+      ],
+      "logical_file_bytes": 575591,
+      "path": "pilot"
+    }
+  ],
+  "file_sizes_note": "Overlapping directory inventories must not be summed; allocated bytes omit directory metadata.",
+  "manifest": {
+    "manifest_sha256": "bed2362258d475f2438c89307c914f76d956b12082c19c724e72ada7e45315cf",
+    "manifest_updated_at": "2026-09-19T14:56:20.511042+00:00",
+    "note": "Manifest declarations are historical metadata, not evidence of a running database.",
+    "sources": [
+      {
+        "artifact_path": "normalized/bea_rpp.jsonl",
+        "declared_normalized_rows": 884,
+        "declared_raw_artifact_count": 1,
+        "file_present": false,
+        "manifest_bytes": 282190,
+        "manifest_rows": 884,
+        "present_raw_artifact_count": 0,
+        "sha256_matches_manifest": null,
+        "source": "bea_rpp",
+        "status": "pass"
+      },
+      {
+        "artifact_path": "normalized/bls_laus.jsonl",
+        "declared_normalized_rows": 157104,
+        "declared_raw_artifact_count": 262,
+        "file_present": false,
+        "manifest_bytes": 52837109,
+        "manifest_rows": 157104,
+        "present_raw_artifact_count": 0,
+        "sha256_matches_manifest": null,
+        "source": "bls_laus",
+        "status": "pass"
+      },
+      {
+        "artifact_path": "normalized/cdc_places.jsonl",
+        "declared_normalized_rows": 8871,
+        "declared_raw_artifact_count": 1,
+        "file_present": false,
+        "manifest_bytes": 5667549,
+        "manifest_rows": 8871,
+        "present_raw_artifact_count": 0,
+        "sha256_matches_manifest": null,
+        "source": "cdc_places",
+        "status": "pass"
+      },
+      {
+        "declared_normalized_rows": null,
+        "declared_raw_artifact_count": 0,
+        "present_raw_artifact_count": 0,
+        "source": "census_acs",
+        "status": "fail"
+      },
+      {
+        "artifact_path": "normalized/eia.jsonl",
+        "declared_normalized_rows": 310,
+        "declared_raw_artifact_count": 1,
+        "file_present": true,
+        "manifest_bytes": 138781,
+        "manifest_rows": 310,
+        "present_raw_artifact_count": 0,
+        "sha256_matches_manifest": true,
+        "source": "eia",
+        "status": "pass"
+      },
+      {
+        "artifact_path": "normalized/epa_airdata.jsonl",
+        "declared_normalized_rows": 19583,
+        "declared_raw_artifact_count": 1,
+        "file_present": false,
+        "manifest_bytes": 13528098,
+        "manifest_rows": 19583,
+        "present_raw_artifact_count": 0,
+        "sha256_matches_manifest": null,
+        "source": "epa_airdata",
+        "status": "pass"
+      },
+      {
+        "artifact_path": "normalized/fbi_cde.jsonl",
+        "declared_normalized_rows": 3266,
+        "declared_raw_artifact_count": 364,
+        "file_present": true,
+        "manifest_bytes": 1365370,
+        "manifest_rows": 3266,
+        "present_raw_artifact_count": 0,
+        "sha256_matches_manifest": true,
+        "source": "fbi_cde",
+        "status": "pass"
+      },
+      {
+        "artifact_path": "normalized/irs_soi.jsonl",
+        "declared_normalized_rows": 827595,
+        "declared_raw_artifact_count": 1,
+        "file_present": false,
+        "manifest_bytes": 296460877,
+        "manifest_rows": 827595,
+        "present_raw_artifact_count": 0,
+        "sha256_matches_manifest": null,
+        "source": "irs_soi",
+        "status": "pass"
+      },
+      {
+        "artifact_path": "normalized/usda_fea.jsonl",
+        "declared_normalized_rows": 13388,
+        "declared_raw_artifact_count": 1,
+        "file_present": false,
+        "manifest_bytes": 5189771,
+        "manifest_rows": 13388,
+        "present_raw_artifact_count": 0,
+        "sha256_matches_manifest": null,
+        "source": "usda_fea",
+        "status": "pass"
+      }
+    ],
+    "status": "partial"
+  },
+  "measured_at": "2026-09-28T17:26:33.323160+00:00",
+  "normalized_files": [
+    {
+      "candidate_gzip_level6_bytes": 3435,
+      "candidate_gzip_scope": "entire decompressed file; in-memory compression; not PostgreSQL storage",
+      "decompressed_jsonl_bytes": 138781,
+      "field_stats": {
+        "catalog_field_id": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 5,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 1545,
+          "utf8_value_bytes": 1550
+        },
+        "field_id": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 80,
+          "distinct_values_or_lower_bound": 5,
+          "repeated_utf8_value_bytes": 4880,
+          "utf8_value_bytes": 4960
+        },
+        "geo_id": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 136,
+          "distinct_values_or_lower_bound": 62,
+          "repeated_utf8_value_bytes": 544,
+          "utf8_value_bytes": 680
+        },
+        "geo_type": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 5,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 1545,
+          "utf8_value_bytes": 1550
+        },
+        "methodology_note": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 50,
+          "distinct_values_or_lower_bound": 5,
+          "repeated_utf8_value_bytes": 3050,
+          "utf8_value_bytes": 3100
+        },
+        "retrieved_at": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 32,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 9888,
+          "utf8_value_bytes": 9920
+        },
+        "source": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 3,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 927,
+          "utf8_value_bytes": 930
+        },
+        "source_release": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 33,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 10197,
+          "utf8_value_bytes": 10230
+        },
+        "source_url": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 129,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 39861,
+          "utf8_value_bytes": 39990
+        },
+        "unit": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 23,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 7107,
+          "utf8_value_bytes": 7130
+        },
+        "year": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 4,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 1236,
+          "utf8_value_bytes": 1240
+        }
+      },
+      "geo_type_counts": {
+        "state": 310
+      },
+      "path": "full/normalized/eia.jsonl",
+      "rows": 310,
+      "sha256": "8a33ec49918aababa9fdf8ee7e00e5a18de1055cf46ddcf57c783e306f1a1dfa",
+      "stored_bytes": 138781
+    },
+    {
+      "candidate_gzip_level6_bytes": 46737,
+      "candidate_gzip_scope": "entire decompressed file; in-memory compression; not PostgreSQL storage",
+      "decompressed_jsonl_bytes": 1365370,
+      "field_stats": {
+        "catalog_field_id": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 40,
+          "distinct_values_or_lower_bound": 8,
+          "repeated_utf8_value_bytes": 16290,
+          "utf8_value_bytes": 16330
+        },
+        "field_id": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 182,
+          "distinct_values_or_lower_bound": 14,
+          "repeated_utf8_value_bytes": 39282,
+          "utf8_value_bytes": 39464
+        },
+        "geo_id": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 104,
+          "distinct_values_or_lower_bound": 52,
+          "repeated_utf8_value_bytes": 6428,
+          "utf8_value_bytes": 6532
+        },
+        "geo_type": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 5,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 16325,
+          "utf8_value_bytes": 16330
+        },
+        "methodology_note": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 71,
+          "distinct_values_or_lower_bound": 2,
+          "repeated_utf8_value_bytes": 129149,
+          "utf8_value_bytes": 129220
+        },
+        "retrieved_at": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 32,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 104480,
+          "utf8_value_bytes": 104512
+        },
+        "source": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 7,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 22855,
+          "utf8_value_bytes": 22862
+        },
+        "source_release": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 17,
+          "distinct_values_or_lower_bound": 1,
+          "repeated_utf8_value_bytes": 55505,
+          "utf8_value_bytes": 55522
+        },
+        "source_url": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 36036,
+          "distinct_values_or_lower_bound": 364,
+          "repeated_utf8_value_bytes": 287296,
+          "utf8_value_bytes": 323332
+        },
+        "unit": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 6,
+          "distinct_values_or_lower_bound": 2,
+          "repeated_utf8_value_bytes": 10540,
+          "utf8_value_bytes": 10546
+        },
+        "year": {
+          "distinct_exact": true,
+          "distinct_utf8_value_bytes": 20,
+          "distinct_values_or_lower_bound": 5,
+          "repeated_utf8_value_bytes": 13044,
+          "utf8_value_bytes": 13064
+        }
+      },
+      "geo_type_counts": {
+        "state": 3266
+      },
+      "path": "full/normalized/fbi_cde.jsonl",
+      "rows": 3266,
+      "sha256": "9b2faaf8b09e0b24347e812434be998d9d58b8c0da586033ef8e3c14f3797320",
+      "stored_bytes": 1365370
+    }
+  ],
+  "postgres": {
+    "connection_values_disclosed": false,
+    "psql_available": false,
+    "reason": "psql_missing",
+    "status": "not_measured"
+  },
+  "raw_cache": {
+    "binding_limit": "Only payload hashes and binding key presence checked; compatibility with current code/config is not admitted.",
+    "binding_sidecar_bytes": 61438,
+    "binding_sidecar_count": 139,
+    "errors": {},
+    "payload_hash_and_binding_payload_verified": 139,
+    "plain_gzip_pairs": [
+      {
+        "expanded_gzip_bytes": 238245,
+        "gzip_bytes": 19577,
+        "plain_bytes": 238245,
+        "plain_path": "full/raw/full/census_acs/group-B01001.json",
+        "uncompressed_bytes_equal": true
+      },
+      {
+        "expanded_gzip_bytes": 220273,
+        "gzip_bytes": 19122,
+        "plain_bytes": 220273,
+        "plain_path": "full/raw/full/census_acs/group-B03002.json",
+        "uncompressed_bytes_equal": true
+      },
+      {
+        "expanded_gzip_bytes": 205481,
+        "gzip_bytes": 18151,
+        "plain_bytes": 205481,
+        "plain_path": "full/raw/full/census_acs/group-B05001.json",
+        "uncompressed_bytes_equal": true
+      },
+      {
+        "expanded_gzip_bytes": 227337,
+        "gzip_bytes": 18779,
+        "plain_bytes": 227337,
+        "plain_path": "full/raw/full/census_acs/group-B05002.json",
+        "uncompressed_bytes_equal": true
+      },
+      {
+        "expanded_gzip_bytes": 224543,
+        "gzip_bytes": 18839,
+        "plain_bytes": 224543,
+        "plain_path": "full/raw/full/census_acs/group-B05005.json",
+        "uncompressed_bytes_equal": true
+      },
+      {
+        "expanded_gzip_bytes": 423815,
+        "gzip_bytes": 26066,
+        "plain_bytes": 423815,
+        "plain_path": "full/raw/full/census_acs/group-B05006.json",
+        "uncompressed_bytes_equal": true
+      },
+      {
+        "expanded_gzip_bytes": 210711,
+        "gzip_bytes": 18443,
+        "plain_bytes": 210711,
+        "plain_path": "full/raw/full/census_acs/group-B25070.json",
+        "uncompressed_bytes_equal": true
+      }
+    ],
+    "sha256_sidecar_bytes": 9035,
+    "sha256_sidecar_count": 139
+  },
+  "scope": "Local checkout file sizes; PostgreSQL sizes only if postgres.status=measured_read_only."
+}

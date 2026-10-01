@@ -1,0 +1,152 @@
+{
+  "jurisdiction_code": "NC",
+  "query": "air quality",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T14:24:01.634673+00:00",
+  "candidates": [
+    {
+      "id": "5e20770426fd497981871223868aea6c",
+      "title": "Urban Forest Priority",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Environment/MapServer/5",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The identification of urban and rural priority areas is a requirement of all statewide assessments of forest resources, as specified in the S&PF Redesign guidance developed by the USDA Forest Service: State forest resource assessments will identify, describe, and spatially define forest landscape areas where forestry program outreach and activity will be emphasized and coordinated. Establishment of these priority areas is intended to (1) enable the efficient, strategic, and focused use of limited program resources; (2) address current state and national resource management priorities; and (3) produce the most benefit in terms of critical forest resource values and public benefits. This component of a states assessment should be geospatially based. Mapped priority areas provide a method for focusing on areas where federal investment can most effectively stimulate or leverage desired action and engage multiple partners. Mapping must enable the discovery of multistate areas in which collaboration can lead to stronger outcomes. Accomplishments using federal funds may be evaluated against priority areas to determine the effectiveness of S&PF program implementation.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.4219,
+                36.6175
+              ],
+              [
+                -75.0558,
+                36.6175
+              ],
+              [
+                -75.0558,
+                33.4918
+              ],
+              [
+                -84.4219,
+                33.4918
+              ],
+              [
+                -84.4219,
+                36.6175
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><p><span>Maintaining Viable Urban Forests (FIGURE 1b-5) The Maintaining Viable Urban Forests map shows areas of North Carolina that are essential for restoring, conserving, and maintaining healthy urban trees and forests. These lands are experiencing rapid urbanization, increased amounts of impervious surface, and a higher number of catastrophic storm events, while also having tree canopy potential to offset the negative impacts of land-use change. These urban forestlands also have high values for energy conservation and improved air quality. Many municipalities within the priority areas manage their urban forests with limited resources and lack one or more of the components necessary for a sustained community forestry program. Coordinated planning and management of urban forests across jurisdictional boundaries will require new partnerships and initiatives at municipal, county, and statewide levels.</span></p><p><span>Download dataset </span><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://dit-cgia-gis-data.s3.us-east-1.amazonaws.com/NCOM-data/forest/urban_forest_priority.zip\"><span>here</span></a><span>.</span></p></div></div>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "Urban Forest Priority",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1769105325000,
+        "avgRating": 0,
+        "id": "5e20770426fd497981871223868aea6c",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1769104800000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484250622000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Environment/MapServer/5",
+        "tags": [
+          "Ecosystem",
+          "environment",
+          "Environment",
+          "Response",
+          "Ecology",
+          "Conservation",
+          "Management",
+          "Urban forest",
+          "Natural Resources",
+          "United States",
+          "Land",
+          "Risk",
+          "Human",
+          "Modeling",
+          "Urban",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap"
+        ],
+        "numViews": 2528,
+        "numComments": 0,
+        "size": 82,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC Division of Forest Resources, Central Office (CO) GIS Program",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/5e20770426fd497981871223868aea6c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    112
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "876992f3c40e580fe22239435b0271348b4f99dd90b1650a1dc1556cf26d357c",
+  "search_complete": true
+}

@@ -1,0 +1,222 @@
+{
+  "jurisdiction_code": "VA",
+  "query": "crime",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-09-29T14:14:56.407246+00:00",
+  "candidates": [
+    {
+      "id": "5297fac3-c87f-4149-84d5-8a70fa04a362",
+      "title": "Crime Mapping",
+      "url": "https://data.virginia.gov/dataset/crime-mapping",
+      "publisher": "City of Norfolk",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.crimemapping.com/",
+          "format": "HTML"
+        },
+        {
+          "url": "https://www.norfolk.gov/index.aspx?NID=310",
+          "format": "HTML"
+        }
+      ],
+      "description": "CrimeMapping.com allows citizens to query and map recent crimes and incidents within the City’s borders. Crime data is extracted on a regular basis from each department's records system so that the information being viewed through a Web browser is the most current available."
+    },
+    {
+      "id": "5b519038-067f-4013-8616-1f808ffd5ed7",
+      "title": "Crime Reports",
+      "url": "https://data.virginia.gov/dataset/crime-reports",
+      "publisher": "Loudoun County",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://geohub-loudoungis.opendata.arcgis.com/apps/LoudounGIS::crime-reports",
+          "format": "HTML"
+        },
+        {
+          "url": "https://www.crimereports.com/",
+          "format": "ArcGIS GeoServices REST API"
+        }
+      ],
+      "description": "<p>The Sheriff's Office provides an online mapping and analysis service that combines the value of law enforcement data with the ease of use of Google-based mapping and an analytics module so that members of the public can view police data in a high-impact map or summary descriptive format. <br /><br /> The online mapping tool allows residents to view information about crimes relevant to their community.</p><p><a href='https://sheriff.loudoun.gov/index.aspx?NID=106' target='_blank'>View daily crime reports and significant incident reports.</a></p>"
+    },
+    {
+      "id": "a19451ce-921e-46a0-91cb-cbaada8d33c1",
+      "title": "Crime Incidents - Locations",
+      "url": "https://data.virginia.gov/dataset/crime-incidents-locations",
+      "publisher": "City of Lynchburg - GIS Portal ",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/datasets/CityofLynchburg::crime-incidents-locations",
+          "format": "HTML"
+        },
+        {
+          "url": "https://mapviewer.lynchburgva.gov/arcgis/rest/services/OpenData/ODPDynamic/MapServer/6",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/3c7b25e759a643cb9ef7d8caf6f5db21/csv?layers=6",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/3c7b25e759a643cb9ef7d8caf6f5db21/shapefile?layers=6",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/3c7b25e759a643cb9ef7d8caf6f5db21/geojson?layers=6",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/3c7b25e759a643cb9ef7d8caf6f5db21/kml?layers=6",
+          "format": "KML"
+        }
+      ],
+      "description": "Location of crime incidents within the City of Lynchburg as provided by the Lynchburg Police Department. Crime data is updated on a monthly bases and goes back 10 years. Any address or location information has been generalized to a block level location as opposed to a specific address location for reasons of privacy. This data is not inclusive due to georeferencing conflicts. To view all records, please use the tabular version of this data - Crime Locations - Tabular."
+    },
+    {
+      "id": "6abdbde7-c3db-4362-a0c4-1b128d2983be",
+      "title": "Call For Crimes Against Persons",
+      "url": "https://data.virginia.gov/dataset/call-for-crimes-against-persons",
+      "publisher": "Dumfries",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [],
+      "description": "This measure evaluates monthly crimes against persons."
+    },
+    {
+      "id": "d1f1f0e7-02b6-4715-aedb-9cc359daecf4",
+      "title": "Call For Crimes Against Property",
+      "url": "https://data.virginia.gov/dataset/call-for-crimes-against-property",
+      "publisher": "Dumfries",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [],
+      "description": "This measure evaluates monthly crimes against property."
+    },
+    {
+      "id": "0d091544-06b6-4a46-8263-ce2474e0dc66",
+      "title": "Loudoun County Sheriff's Office App",
+      "url": "https://data.virginia.gov/dataset/loudoun-county-sheriffs-office-app",
+      "publisher": "Loudoun County",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://geohub-loudoungis.opendata.arcgis.com/apps/LoudounGIS::loudoun-county-sheriffs-office-app",
+          "format": "HTML"
+        },
+        {
+          "url": "https://www.loudoun.gov/4760/Loudoun-County-Sheriffs-Office-App",
+          "format": "ArcGIS GeoServices REST API"
+        }
+      ],
+      "description": "Put Crime Information at Your Fingertips"
+    },
+    {
+      "id": "a2d16838-8e89-41a5-aa62-f28b46329962",
+      "title": "Police Department General Orders and Policies",
+      "url": "https://data.virginia.gov/dataset/police-department-general-orders-and-policies",
+      "publisher": "City of Norfolk",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://public.powerdms.com/NORFOLK/tree",
+          "format": "HTML"
+        }
+      ],
+      "description": "Norfolk Police Department General Orders are written policies and procedures that guide the actions of police officers while on duty. They provide clear guidelines for how officers should handle different situations, such as making arrests, using force, interacting with the public, and conducting investigations. The following link leads to the official administrative and operational General Orders for the Norfolk Police Department, as well as the Police Officer's Manual. This information is provided for public access, to achieve transparency and understanding between the Norfolk Police Department and the citizens they serve. These General Orders combined with the Police Officer’s Manual set forth responsibilities and standards of conduct expected of all police officers. As new General Orders are added or updated, they will be included in this list of available scanned documents."
+    },
+    {
+      "id": "344f736f-d97f-45b2-beea-acf0c2036fa0",
+      "title": "National Household Survey on Drug Abuse (NHSDA-1996)",
+      "url": "https://data.virginia.gov/dataset/national-household-survey-on-drug-abuse-nhsda-1996",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://datafiles.samhsa.gov/study/national-household-survey-drug-abuse-nhsda-1996-nid13564",
+          "format": "HTML"
+        }
+      ],
+      "description": "<p>This series measures the prevalence and correlates of drug use in the United States. The surveys are designed to provide quarterly, as well as annual, estimates. Information is provided on the use of illicit drugs, alcohol, and tobacco among members of United States households aged 12 and older. Questions include age at first use as well as lifetime, annual, and past-month usage for the following drug classes: marijuana, cocaine (and crack), hallucinogens, heroin, inhalants, alcohol, tobacco, and nonmedical use of prescription drugs, including psychotherapeutics. Respondents were also asked about substance abuse treatment history, illegal activities, problems resulting from the use of drugs, personal and family income sources and amounts, need for treatment for drug or alcohol use, criminal record, and needle-sharing. Questions on mental health and access to care, which were introduced in the 1994-B questionnaire (see NATIONAL HOUSEHOLD SURVEY ON DRUG ABUSE, 1994), were retained in this administration of the survey. In 1996, the section on risk/availability of drugs was reintroduced, and sections on driving behavior and personal behavior were added. Demographic data include sex, race, age, ethnicity, marital status, educational level, job status, income level, veteran status, and current household composition. This study has 1 Data Set.</p>"
+    },
+    {
+      "id": "2d6e9e5a-1aab-4118-a016-6c596cfe12cc",
+      "title": "Third National Juvenile Online Victimization Incidence Study (NJOV-3)",
+      "url": "https://data.virginia.gov/dataset/third-national-juvenile-online-victimization-incidence-study-njov-3",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ndacan.acf.hhs.gov/datasets/dataset-details.cfm?ID=209",
+          "format": "HTML"
+        }
+      ],
+      "description": "The 3rd National Online Victimization Study (NJOV-3) is the third wave of a longitudinal study. Wave 1 (NJOV-1) pertained to arrests for technology-facilitated crimes (e.g., sex offenders using the Internet to meet minors, solicitations to undercover investigators posing online as minors, downloading of child pornography) that occurred between July 1, 2000 and June 30, 2001; Wave 2 (NJOV-2) pertained to arrests during 2006. NJOV-3 collected data about technology-facilitated child sexual exploitation crimes ending in arrest in 2009 .\nFor each wave of the NJOV Arrest Study, data was collected in two phases. Phase 1 was mail survey of a national sample of law enforcement agencies that asked if agencies had made arrests for technology-facilitated child sexual exploitation crimes during a specific time frame.  Phase 2 was telephone interviews with investigators to collect details about individual cases reported in the mail surveys. The goal of this methodology was to 1) utilize a representative national sample of law enforcement agencies that would give us an overall picture of these crimes in the United States, 2) understand how these cases emerged and were handled in a diverse group of agencies, 3) get detailed data about the characteristics of these crimes from well-informed, reliable sources, and 4) see how the prevalence and characteristics of such crimes may have changed over time.\n\nInvestigators: Wolak, J., Finkelhor, D, & Mitchell, K. J."
+    },
+    {
+      "id": "7f6bded7-13e4-47f4-8f52-2758efea6370",
+      "title": "Public Safety",
+      "url": "https://data.virginia.gov/dataset/public-safety1",
+      "publisher": "Dumfries",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.dumfriesva.gov/api/v3/views/444v-fdeb/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.dumfriesva.gov/api/v3/views/444v-fdeb/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.dumfriesva.gov/api/v3/views/444v-fdeb/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "This dataset is provided by Police Department of Town of Dumfries. It includes crimes against, property, persons and calls of service. Data set is updated monthly and always one month behind."
+    }
+  ],
+  "page_receipts": [
+    266
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 51,
+  "next_offset": 10,
+  "response_sha256": "1e1e760c2aa5cfe2090b15779090f0e202c2cad0e55a5c61eafcb753111f0119",
+  "search_complete": false
+}

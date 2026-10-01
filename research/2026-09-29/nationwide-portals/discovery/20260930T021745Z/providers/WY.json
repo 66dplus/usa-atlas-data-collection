@@ -1,0 +1,24 @@
+{
+  "jurisdiction_code": "WY",
+  "catalog_id": "wy-primary",
+  "catalog_url": "https://portal.wsgs.wyo.gov/",
+  "started_at": "2026-09-30T02:18:01.511384+00:00",
+  "attempts": [
+    {
+      "adapter": "hub",
+      "endpoint": "https://portal.wsgs.wyo.gov/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "adapter": "ckan",
+      "endpoint": "https://portal.wsgs.wyo.gov/api/3/action/package_search",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "status": "html_catalog_only",
+  "adapter": "html_catalog_scan",
+  "endpoint": "https://portal.wsgs.wyo.gov/",
+  "validation_receipt": 91,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_page_links_only_geography_unverified"
+}

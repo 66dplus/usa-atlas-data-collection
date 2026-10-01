@@ -1,0 +1,97 @@
+{
+  "jurisdiction_code": "AR",
+  "catalog_id": "ar-primary",
+  "catalog_url": "https://geodata.gis.arkansas.gov/",
+  "started_at": "2026-09-29T14:05:03.024292+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items",
+  "domain": "geodata.gis.arkansas.gov",
+  "validation_receipt": 4,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 7,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "4854b8bdb50449ecb0a9693a1ca00915"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "4854b8bdb50449ecb0a9693a1ca00915"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}
