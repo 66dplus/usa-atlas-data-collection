@@ -1,5 +1,11 @@
 # PostgreSQL storage
 
+Current production measurements, all 81 catalog indicators, geography depth,
+and the October storage work are in the
+[2 October coverage and storage report](../research/2026-10-02/README.md).
+The online index operation is recorded in the
+[lookup-index migration note](LOOKUP-INDEX-MIGRATION.md).
+
 ## Automatic collection admission: v3 deployed
 
 The additive v3 migration committed on 2026-10-01 at 08:50 UTC, and the
