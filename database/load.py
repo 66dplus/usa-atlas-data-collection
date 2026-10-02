@@ -33,7 +33,7 @@ DISK_FLOOR_BYTES = 6 * 1024**3
 SCRATCH_MIN_BYTES = 256 * 1024**2
 LOAD_FIXED_BYTES = 512 * 1024**2
 # Generated from canonical_catalog_document() after applying this schema to fresh PG16.
-EXPECTED_SCHEMA_CATALOG_SHA256 = "29ab269cdd70e8f096a7c831b5d94eecf1a96f8cc3465c4ba35d9e159772734c"
+EXPECTED_SCHEMA_CATALOG_SHA256 = "9a9b11d1266ec0e16e517b7eed08a2d069d8b2979880dd3d870308799f085f10"
 
 REQUIRED_FIELDS = {
     "geo_id", "geo_type", "year", "field_id", "catalog_field_id", "value", "unit",
