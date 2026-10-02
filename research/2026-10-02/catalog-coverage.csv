@@ -1,0 +1,82 @@
+catalog_field_id,catalog_label,planned_state,has_numeric,block_group,tract,county,state,nation,place,zip,monitor
+01.01,Population,run_now,t,t,t,t,t,t,t,f,f
+01.02,Age,run_now,t,t,t,t,t,t,t,f,f
+01.03,Sex,run_now,t,t,t,t,t,t,t,f,f
+01.04,Race / ethnicity,run_now,t,t,t,t,t,t,t,f,f
+01.05,Foreign-born population,run_now,t,f,t,t,t,t,t,f,f
+01.06,Country / region of birth,run_now,t,f,t,t,t,t,t,f,f
+01.07,Citizenship,run_now,t,f,t,t,t,t,t,f,f
+01.08,Year / period of immigration,run_now,t,f,t,t,t,t,t,f,f
+02.01,Median household income,run_now,t,t,t,t,t,t,t,f,f
+02.02,Per-capita income,run_now,t,t,t,t,t,t,t,f,f
+02.03,Median rent,run_now,t,t,t,t,t,t,t,f,f
+02.04,Median home value,run_now,t,t,t,t,t,t,t,f,f
+02.05,Mortgage / selected monthly owner costs,run_now,t,t,t,t,t,t,t,f,f
+02.06,Rent as % of income / rent burden,run_now,t,t,t,t,t,t,t,f,f
+02.07,Owner / renter ratio,run_now,t,t,t,t,t,t,t,f,f
+02.08,Poverty,run_now,t,t,t,t,t,t,t,f,f
+02.09,Households earning $200k+,run_now,t,t,t,t,t,t,t,f,f
+02.10,Cost of living / Regional Price Parities,run_now,t,f,f,f,t,f,f,f,f
+03.01,Bachelor's degree,run_now,t,t,t,t,t,t,t,f,f
+03.02,Master's degree,run_now,t,t,t,t,t,t,t,f,f
+03.03,Doctorate,run_now,t,t,t,t,t,t,t,f,f
+03.04,High school attainment,run_now,t,t,t,t,t,t,t,f,f
+03.05,No diploma,run_now,t,t,t,t,t,t,t,f,f
+03.06,Unemployment,run_now,t,f,f,t,t,f,f,f,f
+03.07,Average / mean salary,blocked_access,f,f,f,f,f,f,f,f,f
+03.08,Employment growth,definition_required,f,f,f,f,f,f,f,f,f
+03.09,Work from home share,run_now,t,t,t,t,t,t,t,f,f
+04.01,Murders,run_now,t,f,f,f,t,f,f,f,f
+04.02,Violent crime,run_now,t,f,f,f,t,f,f,f,f
+04.03,Robbery,run_now,t,f,f,f,t,f,f,f,f
+04.04,Aggravated assault,run_now,t,f,f,f,t,f,f,f,f
+04.05,Burglary,run_now,t,f,f,f,t,f,f,f,f
+04.06,Motor vehicle theft,run_now,t,f,f,f,t,f,f,f,f
+04.07,Rape,run_now,t,f,f,f,t,f,f,f,f
+04.08,Homicide,definition_required,f,f,f,f,f,f,f,f,f
+04.09,Crime trends,run_now,t,f,f,f,t,f,f,f,f
+05.01,Drug overdose deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.02,Opioid deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.03,Fentanyl / synthetic opioid deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.04,Cocaine deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.05,Methamphetamine / psychostimulant deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.06,Heroin deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.07,Alcohol-related deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.08,Suicide,blocked_access,f,f,f,f,f,f,f,f,f
+05.09,Homicide mortality,blocked_access,f,f,f,f,f,f,f,f,f
+05.10,Heart disease deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.11,Cancer deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.12,Accidental deaths,blocked_access,f,f,f,f,f,f,f,f,f
+05.13,Life-expectancy-related indicators,source_required,f,f,f,f,f,f,f,f,f
+05.14,Obesity rate,run_now,t,f,t,t,f,f,f,f,f
+05.15,Diabetes rate,run_now,t,f,t,t,f,f,f,f,f
+05.16,Physical inactivity rate,run_now,t,f,t,t,f,f,f,f,f
+06.01,Total homeless,blocked_access,f,f,f,f,f,f,f,f,f
+06.02,Sheltered homeless,blocked_access,f,f,f,f,f,f,f,f,f
+06.03,Unsheltered homeless,blocked_access,f,f,f,f,f,f,f,f,f
+06.04,Homeless veterans,blocked_access,f,f,f,f,f,f,f,f,f
+06.05,Homeless families,blocked_access,f,f,f,f,f,f,f,f,f
+06.06,Chronically homeless,blocked_access,f,f,f,f,f,f,f,f,f
+07.01,Adjusted Gross Income (AGI),run_now,t,f,f,f,f,f,f,t,f
+07.02,High-income taxpayers / returns,definition_required,f,f,f,f,f,f,f,f,f
+07.03,Capital gains,run_now,t,f,f,f,f,f,f,t,f
+07.04,Dividends,run_now,t,f,f,f,f,f,f,t,f
+07.05,Taxes / income tax metrics,definition_required,f,f,f,f,f,f,f,f,f
+07.06,Millionaires,source_required,f,f,f,f,f,f,f,f,f
+07.07,Billionaires,license_required,f,f,f,f,f,f,f,f,f
+08.01,Price of a dozen eggs,source_required,f,f,f,f,f,f,f,f,f
+08.02,Cup of coffee price,source_required,f,f,f,f,f,f,f,f,f
+08.03,Big Mac / McDonald's meal price,license_required,f,f,f,f,f,f,f,f,f
+08.04,Gasoline price,definition_required,f,f,f,f,f,f,f,f,f
+08.05,Electricity price,run_now,t,f,f,f,t,f,f,f,f
+08.06,Beer price,license_required,f,f,f,f,f,f,f,f,f
+08.07,Average consumer debt,source_required,f,f,f,f,f,f,f,f,f
+08.08,Student loan debt,source_required,f,f,f,f,f,f,f,f,f
+08.09,Average health insurance cost,definition_required,f,f,f,f,f,f,f,f,f
+09.01,Fast-food restaurants per 10k residents,run_now,t,f,f,t,f,f,f,f,f
+09.02,Access to a grocery store,run_now,t,f,f,t,f,f,f,f,f
+09.03,Farmers' markets per capita,run_now,t,f,f,t,f,f,f,f,f
+09.04,Fitness / recreation centers per capita,run_now,t,f,f,t,f,f,f,f,f
+09.05,Parks / recreation facilities,definition_required,f,f,f,f,f,f,f,f,f
+09.06,PM2.5,run_now,t,f,f,f,f,f,f,f,t
+09.07,Ozone,run_now,t,f,f,f,f,f,f,f,t
