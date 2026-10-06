@@ -1,0 +1,1915 @@
+{
+  "schema_version": "1.0",
+  "researched_at": "2026-10-03",
+  "scope": "wealth-industry",
+  "production_ready": false,
+  "verification_definition_ru": "Подтверждено указанное датированное событие; текущий статус отдельно описан в caveats и period.",
+  "stories": [
+    {
+      "id": "bezos-seattle-miami-2023",
+      "headline_ru": "Безос объявил о переезде из Сиэтла в Майами",
+      "summary_ru": "2 ноября 2023 года Джефф Безос сообщил о личном переезде из штата Вашингтон во Флориду. В своём заявлении он назвал близость родителей и растущую роль операций Blue Origin на мысе Канаверал.",
+      "themes": [
+        "wealth",
+        "billionaires",
+        "personal_moves"
+      ],
+      "states": [
+        "WA",
+        "FL"
+      ],
+      "places": [
+        {
+          "name": "Seattle",
+          "kind": "city",
+          "state_code": "WA"
+        },
+        {
+          "name": "Miami",
+          "kind": "city",
+          "state_code": "FL"
+        },
+        {
+          "name": "Cape Canaveral",
+          "kind": "city",
+          "state_code": "FL"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Miami",
+            "kind": "city",
+            "state_code": "FL"
+          },
+          "reason_ru": "Контекст для сравнения Вашингтона и Флориды по миграции и концентрации богатства; один переезд не измеряет поток населения.",
+          "comparison_type": "personal_move",
+          "from": {
+            "name": "Seattle",
+            "kind": "city",
+            "state_code": "WA"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2023-11-02",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/0f04558aa909f1f5b56735e82a0a2011",
+          "title": "Jeff Bezos, after founding Amazon in a Seattle garage three decades ago, packs his bags for Miami",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2023-11-03",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "AP передаёт объявление о личном переезде и названные Безосом причины.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.axios.com/2023/11/03/jeff-bezos-moves-miami-blue-origin",
+          "title": "Jeff Bezos is moving to Miami after three decades in Seattle",
+          "publisher": "Axios",
+          "role": "media",
+          "published_date": "2023-11-03",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Ссылка на первоначальное заявление в Instagram.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Дата объявления, а не установленная дата налогового резидентства.",
+        "Исходный пост Instagram недоступен инструменту; подтверждение через AP и ссылку Axios.",
+        "Налоговую экономию нельзя объявлять причиной по этому заявлению.",
+        "Личный переезд не означает переезда штаб-квартиры Amazon."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://apnews.com/article/0f04558aa909f1f5b56735e82a0a2011",
+          "https://www.axios.com/2023/11/03/jeff-bezos-moves-miami-blue-origin"
+        ]
+      },
+      "entity_kind": "person",
+      "entity_name": "Jeff Bezos"
+    },
+    {
+      "id": "musk-california-texas-2020",
+      "headline_ru": "Маск сообщил о личном переезде в Техас раньше переезда Tesla",
+      "summary_ru": "8 декабря 2020 года Илон Маск сообщил на конференции WSJ, что переехал из Калифорнии в Техас. Отдельное объявление о корпоративной штаб-квартире Tesla последовало в 2021 году.",
+      "themes": [
+        "wealth",
+        "billionaires",
+        "personal_moves"
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "California",
+          "kind": "state",
+          "state_code": "CA",
+          "geoid": "06"
+        },
+        {
+          "name": "Texas",
+          "kind": "state",
+          "state_code": "TX",
+          "geoid": "48"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX",
+            "geoid": "48"
+          },
+          "reason_ru": "История личной миграции между штатами; сравнение доходов не доказывает причину переезда.",
+          "comparison_type": "personal_move",
+          "from": {
+            "name": "California",
+            "kind": "state",
+            "state_code": "CA",
+            "geoid": "06"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2020-12-08",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.axios.com/2020/12/08/elon-musk-texas-california-silicon-valley",
+          "title": "Tesla CEO Elon Musk moves to Texas from California",
+          "publisher": "Axios",
+          "role": "media",
+          "published_date": "2020-12-08",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Маск публично сообщил о состоявшемся личном переезде на WSJ CEO Council.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.houstonchronicle.com/news/houston-texas/space/article/Elon-Musk-confirms-that-he-has-moved-to-Texas-15784985.php",
+          "title": "Elon Musk confirms that he has moved to Texas",
+          "publisher": "Houston Chronicle",
+          "role": "media",
+          "published_date": "2020-12-08",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Сообщение интервью связывает использование времени в Техасе с проектами Tesla и SpaceX.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Собственное заявление о проживании; налоговое резидентство административно не проверено.",
+        "Город проживания из этих источников не устанавливается.",
+        "Оценка состояния и статус триллионера этим событием не подтверждаются."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.axios.com/2020/12/08/elon-musk-texas-california-silicon-valley",
+          "https://www.houstonchronicle.com/news/houston-texas/space/article/Elon-Musk-confirms-that-he-has-moved-to-Texas-15784985.php"
+        ]
+      },
+      "entity_kind": "person",
+      "entity_name": "Elon Musk"
+    },
+    {
+      "id": "citadel-chicago-miami-2022",
+      "headline_ru": "Citadel перенесла глобальную штаб-квартиру из Чикаго в Майами",
+      "summary_ru": "В июне 2022 года Citadel и Citadel Securities объявили о переезде штаб-квартир из Иллинойса во Флориду. Актуальная страница Citadel указывает глобальную штаб-квартиру в Майами; офис в Чикаго сохраняется.",
+      "themes": [
+        "wealth",
+        "finance",
+        "corporate_moves"
+      ],
+      "states": [
+        "IL",
+        "FL"
+      ],
+      "places": [
+        {
+          "name": "Chicago",
+          "kind": "city",
+          "state_code": "IL"
+        },
+        {
+          "name": "Miami",
+          "kind": "city",
+          "state_code": "FL"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Miami",
+            "kind": "city",
+            "state_code": "FL"
+          },
+          "reason_ru": "Сравнение финансовых центров Чикаго и Майами; на уровне штатов — Иллинойс и Флорида.",
+          "comparison_type": "corporate_headquarters_move",
+          "from": {
+            "name": "Chicago",
+            "kind": "city",
+            "state_code": "IL"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2022-06-23",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.citadelsecurities.com/news-and-insights/citadel-to-relocate-hq-from-chicago-to-miami/",
+          "title": "Citadel and Citadel Securities to Relocate HQ from Chicago to Miami",
+          "publisher": "Citadel Securities",
+          "role": "primary",
+          "published_date": "2022-06-23",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Компания официально объявила о переносе глобальных штаб-квартир.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.citadel.com/who-we-are/",
+          "title": "Who We Are",
+          "publisher": "Citadel",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Текущий сайт указывает Global Headquarters, 830 Brickell Plaza, Miami, и отдельный офис Chicago.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.axios.com/local/chicago/2022/06/28/corporate-headquarters-leaving-chicago",
+          "title": "Corporate headquarters leaving Chicago",
+          "publisher": "Axios",
+          "role": "media",
+          "published_date": "2022-06-28",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Переезд объявлен; офис Чикаго должен сохраняться.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Местонахождение компании и личное проживание Кена Гриффина — разные утверждения.",
+        "Переезд штаб-квартиры не равен переезду всех работников или закрытию офиса в Иллинойсе."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.citadelsecurities.com/news-and-insights/citadel-to-relocate-hq-from-chicago-to-miami/",
+          "https://www.citadel.com/who-we-are/",
+          "https://www.axios.com/local/chicago/2022/06/28/corporate-headquarters-leaving-chicago"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Citadel / Citadel Securities"
+    },
+    {
+      "id": "tesla-corporate-hq-2021",
+      "headline_ru": "Tesla перенесла корпоративную штаб-квартиру в Техас",
+      "summary_ru": "7 октября 2021 года Tesla объявила о переносе корпоративной штаб-квартиры из Пало-Альто в район Остина. В последующем документе компании подтверждён переезд в 2021 году.",
+      "themes": [
+        "corporate_moves",
+        "technology",
+        "manufacturing"
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "Palo Alto",
+          "kind": "city",
+          "state_code": "CA"
+        },
+        {
+          "name": "Austin area / Gigafactory Texas",
+          "kind": "metro_context",
+          "state_code": "TX"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Austin area / Gigafactory Texas",
+            "kind": "metro_context",
+            "state_code": "TX"
+          },
+          "reason_ru": "Корпоративная география между Калифорнией и Техасом, с явным контекстом района Остина.",
+          "comparison_type": "corporate_headquarters_move",
+          "from": {
+            "name": "Palo Alto",
+            "kind": "city",
+            "state_code": "CA"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2021-10-07",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/austin-cheers-teslas-headquarters-move-but-local-home-buyers-left-on-edge-2640008",
+          "title": "Austin cheers Tesla's headquarters move, but local home buyers left on edge",
+          "publisher": "Reuters via Investing.com",
+          "role": "media",
+          "published_date": "2021-10-08",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Reuters сообщает объявление Маска от 7 октября: Palo Alto → Austin.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://ir.tesla.com/_flysystem/s3/sec/000110465924048040/tm2326076d13_pre14a-gen.pdf",
+          "title": "Tesla 2024 preliminary proxy statement",
+          "publisher": "Tesla",
+          "role": "primary",
+          "published_date": "2024-04-17",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Документ компании подтверждает перенос корпоративной штаб-квартиры из Калифорнии в Остин в 2021 году.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Октябрь — дата объявления; не дата прекращения всех операций в Калифорнии.",
+        "Адрес Gigafactory Texas находится в Travis County; название Austin не используется как доказательство городской границы.",
+        "Инженерная штаб-квартира рассматривается отдельной историей."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.investing.com/news/stock-market-news/austin-cheers-teslas-headquarters-move-but-local-home-buyers-left-on-edge-2640008",
+          "https://ir.tesla.com/_flysystem/s3/sec/000110465924048040/tm2326076d13_pre14a-gen.pdf"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Tesla"
+    },
+    {
+      "id": "tesla-engineering-palo-alto-2023",
+      "headline_ru": "Инженерная штаб-квартира Tesla открылась в Калифорнии",
+      "summary_ru": "22 февраля 2023 года Tesla и губернатор Калифорнии представили глобальную инженерную и AI-штаб-квартиру в Пало-Альто. Корпоративная штаб-квартира компании к этому времени находилась в Техасе.",
+      "themes": [
+        "corporate_moves",
+        "technology",
+        "ai"
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "Texas",
+          "kind": "state",
+          "state_code": "TX",
+          "geoid": "48"
+        },
+        {
+          "name": "Palo Alto",
+          "kind": "city",
+          "state_code": "CA"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Palo Alto",
+            "kind": "city",
+            "state_code": "CA"
+          },
+          "reason_ru": "Иллюстрирует разные функции компании в разных штатах; не является маршрутом переезда из Техаса.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX",
+            "geoid": "48"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2023-02-22",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.gov.ca.gov/2023/02/22/governor-newsom-welcomes-new-tesla-global-engineering-and-ai-hq-in-california/",
+          "title": "Governor Newsom Welcomes New Tesla Global Engineering and AI HQ in California",
+          "publisher": "Governor of California",
+          "role": "primary",
+          "published_date": "2023-02-22",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Губернатор участвовал в открытии инженерной и AI-штаб-квартиры Tesla в Palo Alto.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/tesla-set-to-make-announcement-at-california-engineering-headquarters-3010958",
+          "title": "Eureka! Tesla says California is still home - for its engineering HQ",
+          "publisher": "Reuters via Investing.com",
+          "role": "media",
+          "published_date": "2023-02-22",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Reuters различает инженерную штаб-квартиру в Калифорнии и корпоративную в Техасе.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Это функциональное разделение штаб-квартир; обратный перенос корпоративной штаб-квартиры не заявлен.",
+        "Сравнение state → city содержит разные географические уровни, явно указанные в kind."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.gov.ca.gov/2023/02/22/governor-newsom-welcomes-new-tesla-global-engineering-and-ai-hq-in-california/",
+          "https://www.investing.com/news/stock-market-news/tesla-set-to-make-announcement-at-california-engineering-headquarters-3010958"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Tesla",
+      "implementation_status": "opened"
+    },
+    {
+      "id": "chevron-san-ramon-houston-2024",
+      "headline_ru": "Chevron объявила о переносе штаб-квартиры в Хьюстон",
+      "summary_ru": "2 августа 2024 года Chevron объявила о переносе штаб-квартиры из Сан-Рамона в Хьюстон. Компания описала постепенный перевод корпоративных функций в течение пяти лет и сохранение позиций, обслуживающих операции в Калифорнии.",
+      "themes": [
+        "corporate_moves",
+        "energy",
+        "employment"
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "San Ramon",
+          "kind": "city",
+          "state_code": "CA"
+        },
+        {
+          "name": "Houston",
+          "kind": "city",
+          "state_code": "TX"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Houston",
+            "kind": "city",
+            "state_code": "TX"
+          },
+          "reason_ru": "Переезд управленческого центра энергетической компании между CA и TX.",
+          "comparison_type": "corporate_headquarters_move",
+          "from": {
+            "name": "San Ramon",
+            "kind": "city",
+            "state_code": "CA"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2024-08-02",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://chevroncorp.gcs-web.com/news-releases/news-release-details/chevron-announces-headquarters-relocation-and-senior-leadership",
+          "title": "Chevron Announces Headquarters Relocation and Senior Leadership Changes",
+          "publisher": "Chevron",
+          "role": "primary",
+          "published_date": "2024-08-02",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Официальный релиз: HQ San Ramon → Houston; корпоративные функции переходят за пять лет.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.texastribune.org/2024/08/02/chevron-houston-texas-california/",
+          "title": "Chevron to move its headquarters from California to Texas",
+          "publisher": "The Texas Tribune",
+          "role": "media",
+          "published_date": "2024-08-02",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Независимое сообщение о переносе штаб-квартиры и продолжающемся присутствии в Калифорнии.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Историческое объявление; завершение всех этапов до 2029 года здесь не проверено.",
+        "Нельзя считать всех 2 000 работников Сан-Рамона переехавшими.",
+        "Сохранение операций в Калифорнии прямо предусмотрено релизом."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://chevroncorp.gcs-web.com/news-releases/news-release-details/chevron-announces-headquarters-relocation-and-senior-leadership",
+          "https://www.texastribune.org/2024/08/02/chevron-houston-texas-california/"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Chevron",
+      "implementation_status": "announced_phased_transition"
+    },
+    {
+      "id": "caterpillar-deerfield-irving-2022",
+      "headline_ru": "Caterpillar выбрала Ирвинг для глобальной штаб-квартиры",
+      "summary_ru": "14 июня 2022 года Caterpillar объявила о переносе глобальной штаб-квартиры из Дирфилда, Иллинойс, в существующий офис компании в Ирвинге, Техас. Начало перехода было запланировано на 2022 год.",
+      "themes": [
+        "corporate_moves",
+        "manufacturing"
+      ],
+      "states": [
+        "IL",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "Deerfield",
+          "kind": "municipality",
+          "state_code": "IL"
+        },
+        {
+          "name": "Irving",
+          "kind": "city",
+          "state_code": "TX"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Irving",
+            "kind": "city",
+            "state_code": "TX"
+          },
+          "reason_ru": "Сравнение управленческих центров производства IL и TX.",
+          "comparison_type": "corporate_headquarters_move",
+          "from": {
+            "name": "Deerfield",
+            "kind": "municipality",
+            "state_code": "IL"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2022-06-14",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://investors.caterpillar.com/news/news-details/2022/Caterpillar-to-Relocate-Global-Headquarters-to-Dallas-Fort-Worth-Area/default.aspx",
+          "title": "Caterpillar to Relocate Global Headquarters to Dallas-Fort Worth Area",
+          "publisher": "Caterpillar",
+          "role": "primary",
+          "published_date": "2022-06-14",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Компания объявила перенос глобальной штаб-квартиры из Deerfield в Irving с началом в 2022 году.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/caterpillar-to-move-global-headquarters-to-texas-2836944",
+          "title": "Caterpillar to move global headquarters from Illinois to Texas",
+          "publisher": "Reuters via Investing.com",
+          "role": "media",
+          "published_date": "2022-06-14",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Reuters подтверждает исходный и целевой города объявления.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Дирфилд — отдельный муниципалитет; не подменять исходный город Чикаго.",
+        "Переезд штаб-квартиры не измеряет количество перемещённых заводов или рабочих мест."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://investors.caterpillar.com/news/news-details/2022/Caterpillar-to-Relocate-Global-Headquarters-to-Dallas-Fort-Worth-Area/default.aspx",
+          "https://www.investing.com/news/stock-market-news/caterpillar-to-move-global-headquarters-to-texas-2836944"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Caterpillar",
+      "implementation_status": "historical_announcement"
+    },
+    {
+      "id": "boeing-chicago-arlington-2022",
+      "headline_ru": "Boeing объявила глобальную штаб-квартиру в Вирджинии",
+      "summary_ru": "5 мая 2022 года Boeing объявила, что её кампус в Арлингтоне станет глобальной штаб-квартирой вместо Чикаго. Компания назвала близость клиентов, заинтересованных сторон и технических кадров.",
+      "themes": [
+        "corporate_moves",
+        "aerospace",
+        "employment"
+      ],
+      "states": [
+        "IL",
+        "VA"
+      ],
+      "places": [
+        {
+          "name": "Chicago",
+          "kind": "city",
+          "state_code": "IL"
+        },
+        {
+          "name": "Arlington County",
+          "kind": "county",
+          "state_code": "VA",
+          "geoid": "51013"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Arlington County",
+            "kind": "county",
+            "state_code": "VA",
+            "geoid": "51013"
+          },
+          "reason_ru": "Сравнение корпоративного присутствия Иллинойса и Вирджинии; географический уровень city → county явный.",
+          "comparison_type": "corporate_headquarters_move",
+          "from": {
+            "name": "Chicago",
+            "kind": "city",
+            "state_code": "IL"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2022-05-05",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://investors.boeing.com/investors/news/press-release-details/2022/Boeing-Names-Northern-Virginia-Office-Its-Global-Headquarters-Establishes-Research--Technology-Hub/default.aspx/1000/",
+          "title": "Boeing Names Northern Virginia Office Its Global Headquarters; Establishes Research & Technology Hub",
+          "publisher": "Boeing",
+          "role": "primary",
+          "published_date": "2022-05-05",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Boeing объявила глобальную штаб-квартиру на кампусе Arlington, Virginia.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.axios.com/2022/05/06/boeing-relocates-virginia",
+          "title": "Boeing relocating headquarters to D.C.-area",
+          "publisher": "Axios",
+          "role": "media",
+          "published_date": "2022-05-06",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Сообщение о маршруте штаб-квартиры Chicago → Arlington, Virginia.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Арлингтон — округ в Вирджинии, не Washington, DC.",
+        "Наличие штаб-квартиры не означает, что всё производство Boeing находится в Вирджинии."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://investors.boeing.com/investors/news/press-release-details/2022/Boeing-Names-Northern-Virginia-Office-Its-Global-Headquarters-Establishes-Research--Technology-Hub/default.aspx/1000/",
+          "https://www.axios.com/2022/05/06/boeing-relocates-virginia"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Boeing"
+    },
+    {
+      "id": "hpe-san-jose-spring-2022",
+      "headline_ru": "HPE открыла новую штаб-квартиру в Spring, Техас",
+      "summary_ru": "О переезде из Сан-Хосе компания HPE сообщила в декабре 2020 года. 4 апреля 2022 года она объявила торжественное открытие нового кампуса штаб-квартиры в Spring, рядом с Хьюстоном.",
+      "themes": [
+        "corporate_moves",
+        "technology"
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "San Jose",
+          "kind": "city",
+          "state_code": "CA"
+        },
+        {
+          "name": "Spring",
+          "kind": "locality",
+          "state_code": "TX"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Spring",
+            "kind": "locality",
+            "state_code": "TX"
+          },
+          "reason_ru": "Переход корпоративного центра CA → TX с сохранением точного названия локальности.",
+          "comparison_type": "corporate_headquarters_move",
+          "from": {
+            "name": "San Jose",
+            "kind": "city",
+            "state_code": "CA"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2022-04-04",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.hpe.com/us/en/newsroom/blog-post/2022/04/hpe-celebrates-grand-opening-of-houston-headquarters.html",
+          "title": "HPE celebrates grand opening of Houston headquarters",
+          "publisher": "HPE",
+          "role": "primary",
+          "published_date": "2022-04-04",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Президент HPE описывает открытие нового кампуса в Spring, Texas, рядом с Houston.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.axios.com/2020/12/02/hp-silicon-valley-texas",
+          "title": "HP Enterprise is leaving Silicon Valley for Texas",
+          "publisher": "Axios",
+          "role": "media",
+          "published_date": "2020-12-02",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Предшествующее объявление о переносе штаб-квартиры из San Jose, California.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.hpe.com/us/en/about/enterprise-technology-us.html",
+          "title": "Enterprise Technology in the United States",
+          "publisher": "HPE",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Текущая страница указывает головной офис на 1701 E Mossy Oaks Rd, Spring, TX.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Spring — локальность, не город Houston; точные муниципальные границы адреса здесь не определяются.",
+        "HPE и HP Inc. — разные компании; история относится к Hewlett Packard Enterprise."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.hpe.com/us/en/newsroom/blog-post/2022/04/hpe-celebrates-grand-opening-of-houston-headquarters.html",
+          "https://www.axios.com/2020/12/02/hp-silicon-valley-texas",
+          "https://www.hpe.com/us/en/about/enterprise-technology-us.html"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Hewlett Packard Enterprise",
+      "implementation_status": "campus_opened"
+    },
+    {
+      "id": "oracle-redwood-austin-2020",
+      "headline_ru": "Oracle перенесла штаб-квартиру из Калифорнии в Остин",
+      "summary_ru": "В декабре 2020 года Oracle объявила о переносе штаб-квартиры из Редвуд-Сити в Остин. На проверенной 3 октября 2026 года странице офисов компания по-прежнему обозначает адрес в Остине как World Headquarters.",
+      "themes": [
+        "corporate_moves",
+        "technology"
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "Redwood City",
+          "kind": "city",
+          "state_code": "CA"
+        },
+        {
+          "name": "Austin",
+          "kind": "city",
+          "state_code": "TX"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Austin",
+            "kind": "city",
+            "state_code": "TX"
+          },
+          "reason_ru": "История бизнес-географии CA → TX; не личный переезд основателя.",
+          "comparison_type": "corporate_headquarters_move",
+          "from": {
+            "name": "Redwood City",
+            "kind": "city",
+            "state_code": "CA"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2020-12-11",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.investing.com/news/stock-market-news/oracle-moves-headquarters-to-texas-from-silicon-valley-2367237",
+          "title": "Oracle moves headquarters to Texas from Silicon Valley",
+          "publisher": "Reuters via Investing.com",
+          "role": "media",
+          "published_date": "2020-12-11",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Reuters сообщает перенос корпоративной штаб-квартиры Redwood City → Austin.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.oracle.com/corporate/contact/field-offices/",
+          "title": "United States Field Offices",
+          "publisher": "Oracle",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Страница указывает World Headquarters: 2300 Oracle Way, Austin, TX 78741.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Текущая страница адресов — свидетельство на дату доступа, а не гарантия постоянного статуса.",
+        "Личное место проживания Ларри Эллисона не выводится из местонахождения Oracle.",
+        "Будущий кампус Nashville описан отдельно."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.investing.com/news/stock-market-news/oracle-moves-headquarters-to-texas-from-silicon-valley-2367237",
+          "https://www.oracle.com/corporate/contact/field-offices/"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Oracle"
+    },
+    {
+      "id": "oracle-nashville-plan-2024",
+      "headline_ru": "Oracle назвала Nashville будущим местом мировой штаб-квартиры",
+      "summary_ru": "23 апреля 2024 года председатель Oracle Ларри Эллисон заявил, что планируемый кампус в Нэшвилле станет мировой штаб-квартирой. Он связал выбор с концентрацией медицинского бизнеса; официальный список офисов пока указывает штаб-квартиру в Остине.",
+      "themes": [
+        "corporate_moves",
+        "technology",
+        "healthcare",
+        "planned_projects"
+      ],
+      "states": [
+        "TX",
+        "TN"
+      ],
+      "places": [
+        {
+          "name": "Austin",
+          "kind": "city",
+          "state_code": "TX"
+        },
+        {
+          "name": "Nashville",
+          "kind": "city",
+          "state_code": "TN"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Nashville",
+            "kind": "city",
+            "state_code": "TN"
+          },
+          "reason_ru": "Будущий маршрут корпоративной штаб-квартиры TX → TN; пригоден для контекста медицинских кластеров.",
+          "comparison_type": "planned_corporate_headquarters_move",
+          "from": {
+            "name": "Austin",
+            "kind": "city",
+            "state_code": "TX"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2024-04-23",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/cf74172176f6c90210e8ac96e1ff6f52",
+          "title": "Oracle's Larry Ellison says planned Nashville campus will be company's 'world headquarters'",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2024-04-24",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "AP описывает заявление Эллисона о будущем кампусе и связи с медицинской отраслью.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.oracle.com/corporate/contact/field-offices/",
+          "title": "United States Field Offices",
+          "publisher": "Oracle",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "На дату доступа World Headquarters всё ещё обозначен адресом Austin, TX.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Подтверждено объявление о намерении; завершённый перенос в TN не подтверждён.",
+        "Председатель Эллисон в этом источнике не обозначается генеральным директором.",
+        "Город Nashville и штат TN имеют разные уровни географии."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://apnews.com/article/cf74172176f6c90210e8ac96e1ff6f52",
+          "https://www.oracle.com/corporate/contact/field-offices/"
+        ]
+      },
+      "entity_kind": "company",
+      "entity_name": "Oracle",
+      "implementation_status": "planned_not_confirmed_complete"
+    },
+    {
+      "id": "meta-richland-announcement-2024",
+      "headline_ru": "Первоначальный проект Meta в Луизиане оценивался более чем в $10 млрд",
+      "summary_ru": "4 декабря 2024 года Meta объявила о будущем дата-центре в Richland Parish с инвестициями более $10 млрд после завершения. Это историческая первая оценка кампуса; в июле 2026 года план был существенно расширен.",
+      "themes": [
+        "datacenters",
+        "ai",
+        "investment",
+        "planned_projects"
+      ],
+      "states": [
+        "LA"
+      ],
+      "places": [
+        {
+          "name": "Louisiana",
+          "kind": "state",
+          "state_code": "LA",
+          "geoid": "22"
+        },
+        {
+          "name": "Richland Parish",
+          "kind": "county_equivalent",
+          "state_code": "LA",
+          "geoid": "22083"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Richland Parish",
+            "kind": "county_equivalent",
+            "state_code": "LA",
+            "geoid": "22083"
+          },
+          "reason_ru": "Связь statewide-контекста Луизианы с конкретным parish; это не сравнение двух одинаковых территорий.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Louisiana",
+            "kind": "state",
+            "state_code": "LA",
+            "geoid": "22"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2024-12-04",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://datacenters.atmeta.com/2024/12/hello-louisiana/",
+          "title": "Hello, Louisiana!",
+          "publisher": "Meta",
+          "role": "primary",
+          "published_date": "2024-12-04",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Первая оценка кампуса: более $10 млрд после завершения, более 500 операционных рабочих мест.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://apnews.com/article/1cf320ad4d50bff8d3fac4d0535a0004",
+          "title": "Meta is building a massive $10 billion AI data center in Louisiana",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2024-12-04",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "AP освещает первоначальный проект в сельском Richland Parish.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Порог первоначального объявленного плана, не фактически потраченные деньги.",
+        "Устаревшую оценку не показывать как актуальный бюджет 2026 года.",
+        "Кампус не равен одному зданию и не увеличивает текущий operating-count автоматически."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://datacenters.atmeta.com/2024/12/hello-louisiana/",
+          "https://apnews.com/article/1cf320ad4d50bff8d3fac4d0535a0004"
+        ]
+      },
+      "value": 10000000000,
+      "unit": "USD_announced_investment_lower_bound",
+      "value_operator": ">",
+      "entity_name": "Meta Richland Parish / Hyperion",
+      "superseded_by": "meta-hyperion-expansion-2026",
+      "implementation_status": "historical_announcement"
+    },
+    {
+      "id": "meta-hyperion-expansion-2026",
+      "headline_ru": "Meta расширила план Hyperion до 5 GW и более $50 млрд",
+      "summary_ru": "13 июля 2026 года Meta сообщила о расширении кампуса Hyperion в Richland Parish до 5 GW вычислительной мощности и более $50 млрд инвестиций в регионе. Полная мощность и число будущих рабочих мест относятся к плану, а не к уже работающему объекту.",
+      "themes": [
+        "datacenters",
+        "ai",
+        "investment",
+        "energy",
+        "planned_projects"
+      ],
+      "states": [
+        "LA"
+      ],
+      "places": [
+        {
+          "name": "Louisiana",
+          "kind": "state",
+          "state_code": "LA",
+          "geoid": "22"
+        },
+        {
+          "name": "Richland Parish",
+          "kind": "county_equivalent",
+          "state_code": "LA",
+          "geoid": "22083"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Richland Parish",
+            "kind": "county_equivalent",
+            "state_code": "LA",
+            "geoid": "22083"
+          },
+          "reason_ru": "County-level история внутри LA для сопоставления инвестиций, энергии и занятости.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Louisiana",
+            "kind": "state",
+            "state_code": "LA",
+            "geoid": "22"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2026-07-13",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+          "title": "Teachers and Local Businesses Win as Meta Expands Louisiana Data Center",
+          "publisher": "Meta",
+          "role": "primary",
+          "published_date": "2026-07-13",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Meta объявляет 5 GW и более $50 млрд; более 1 000 будущих операционных ролей и >$1,6 млрд местных контрактов.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://siliconangle.com/2026/07/13/meta-boosts-investment-hyperion-data-center-campus-50b/",
+          "title": "Meta boosts investment in Hyperion data center campus to $50B+",
+          "publisher": "SiliconANGLE",
+          "role": "media",
+          "published_date": "2026-07-13",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "СМИ подтверждает расширение и отличает новый масштаб от первоначального плана 2024 года.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Предполагаемый масштаб полного развёртывания; не текущая измеренная электрическая нагрузка.",
+        "Определение compute capacity используется по формулировке оператора; не подменять чистой IT-мощностью.",
+        "Суммы 2024, 2025 и 2026 относятся к одному развивающемуся проекту; их нельзя складывать.",
+        "На первичной странице видны обе даты July 13 и July 12; дата объявления подтверждается СМИ как 13 июля."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/",
+          "https://siliconangle.com/2026/07/13/meta-boosts-investment-hyperion-data-center-campus-50b/"
+        ]
+      },
+      "value": 50000000000,
+      "unit": "USD_announced_regional_investment_lower_bound",
+      "value_operator": ">",
+      "related_values": [
+        {
+          "value": 5,
+          "unit": "GW_planned_compute_capacity"
+        }
+      ],
+      "entity_name": "Meta Hyperion",
+      "supersedes": "meta-richland-announcement-2024",
+      "implementation_status": "expansion_announced_not_full_operation"
+    },
+    {
+      "id": "aws-indiana-new-carlisle-2024",
+      "headline_ru": "AWS объявила $11 млрд для кампуса в округе St. Joseph",
+      "summary_ru": "25 апреля 2024 года AWS объявила инвестиционный план на $11 млрд для дата-центров в St. Joseph County, Индиана, рядом с New Carlisle. Заявлено создание не менее 1 000 новых рабочих мест; строительство описано как многолетний проект.",
+      "themes": [
+        "datacenters",
+        "ai",
+        "investment",
+        "employment"
+      ],
+      "states": [
+        "IN"
+      ],
+      "places": [
+        {
+          "name": "Indiana",
+          "kind": "state",
+          "state_code": "IN",
+          "geoid": "18"
+        },
+        {
+          "name": "St. Joseph County",
+          "kind": "county",
+          "state_code": "IN",
+          "geoid": "18141"
+        },
+        {
+          "name": "New Carlisle",
+          "kind": "municipality",
+          "state_code": "IN"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "St. Joseph County",
+            "kind": "county",
+            "state_code": "IN",
+            "geoid": "18141"
+          },
+          "reason_ru": "State → county контекст инвестиционного проекта Индианы.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Indiana",
+            "kind": "state",
+            "state_code": "IN",
+            "geoid": "18"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2024-04-25",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.aboutamazon.com/news/aws/aws-indiana-investment-11-billion",
+          "title": "AWS plans to invest $11 billion in Indiana",
+          "publisher": "Amazon",
+          "role": "primary",
+          "published_date": "2024-04-25",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "AWS объявляет $11 млрд и минимум 1 000 рабочих мест в St. Joseph County; местный чиновник описывает строительство за десятилетие.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://apnews.com/article/ccdad82728a72025f37383e3811f13f6",
+          "title": "Amazon cloud computing unit plans to invest $11 billion to build data center in northern Indiana",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2024-04-25",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "AP сообщает план near New Carlisle и называет St. Joseph County.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Объявленный общий инвестиционный план, не кассовые расходы к 2026 году.",
+        "Кампус и здания внутри кампуса требуют отдельного подсчёта.",
+        "Новый план $15 млрд в 2025 году явно дополнительный; не считать его заменой $11 млрд."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.aboutamazon.com/news/aws/aws-indiana-investment-11-billion",
+          "https://apnews.com/article/ccdad82728a72025f37383e3811f13f6"
+        ]
+      },
+      "value": 11000000000,
+      "unit": "USD_announced_investment",
+      "related_values": [
+        {
+          "value": 1000,
+          "unit": "planned_jobs_lower_bound",
+          "operator": ">="
+        }
+      ],
+      "entity_name": "AWS St. Joseph County",
+      "implementation_status": "dated_investment_plan"
+    },
+    {
+      "id": "aws-mississippi-madison-2024",
+      "headline_ru": "В Mississippi AWS запланировала два комплекса на $10 млрд",
+      "summary_ru": "25 января 2024 года власти Mississippi одобрили стимулы для плана AWS на $10 млрд. Компания указала два индустриальных парка в Madison County и создание не менее 1 000 новых рабочих мест.",
+      "themes": [
+        "datacenters",
+        "ai",
+        "investment",
+        "employment"
+      ],
+      "states": [
+        "MS"
+      ],
+      "places": [
+        {
+          "name": "Mississippi",
+          "kind": "state",
+          "state_code": "MS",
+          "geoid": "28"
+        },
+        {
+          "name": "Madison County",
+          "kind": "county",
+          "state_code": "MS",
+          "geoid": "28089"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Madison County",
+            "kind": "county",
+            "state_code": "MS",
+            "geoid": "28089"
+          },
+          "reason_ru": "State → county контекст Mississippi, с отдельной географией будущих комплексов.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Mississippi",
+            "kind": "state",
+            "state_code": "MS",
+            "geoid": "28"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2024-01-25",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi",
+          "title": "AWS plans to invest $10 billion in Mississippi",
+          "publisher": "Amazon",
+          "role": "primary",
+          "published_date": "2024-01-25",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "План $10 млрд для комплексов в двух промышленных парках Madison County и минимум 1 000 рабочих мест.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://apnews.com/article/a143ba6970a4e1ff401f5463f2cd80a8",
+          "title": "Mississippi legislators approve incentives for 2 large data centers by Amazon Web Services",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2024-01-25",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "AP подтверждает решение о стимулах и два проекта в Madison County.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Два комплекса/сайта не равны двум зданиям или двум operating facilities.",
+        "Исторический план 2024 года; последующие $3 млрд и новые объявления в штате нужно дедуплицировать отдельно.",
+        "Одобрение стимулов не доказывает завершённый ввод."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi",
+          "https://apnews.com/article/a143ba6970a4e1ff401f5463f2cd80a8"
+        ]
+      },
+      "value": 10000000000,
+      "unit": "USD_announced_investment",
+      "related_values": [
+        {
+          "value": 2,
+          "unit": "planned_site_complexes"
+        }
+      ],
+      "entity_name": "AWS Madison County",
+      "implementation_status": "historical_investment_announcement"
+    },
+    {
+      "id": "microsoft-mount-pleasant-2024",
+      "headline_ru": "Microsoft объявила $3,3 млрд на AI-инфраструктуру в Wisconsin",
+      "summary_ru": "8 мая 2024 года Microsoft объявила $3,3 млрд инвестиций в облачную и AI-инфраструктуру, включая кампус дата-центра в Mount Pleasant. Первичный релиз задаёт срок программы до конца 2026 года и отдельно описывает строительство и обучение работников.",
+      "themes": [
+        "datacenters",
+        "ai",
+        "investment",
+        "employment"
+      ],
+      "states": [
+        "WI"
+      ],
+      "places": [
+        {
+          "name": "Wisconsin",
+          "kind": "state",
+          "state_code": "WI",
+          "geoid": "55"
+        },
+        {
+          "name": "Mount Pleasant",
+          "kind": "municipality",
+          "state_code": "WI"
+        },
+        {
+          "name": "Racine County",
+          "kind": "county",
+          "state_code": "WI",
+          "geoid": "55101"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Mount Pleasant",
+            "kind": "municipality",
+            "state_code": "WI"
+          },
+          "reason_ru": "География кампуса внутри WI для сравнения занятости и инвестиций.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Wisconsin",
+            "kind": "state",
+            "state_code": "WI",
+            "geoid": "55"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2024-05-08",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://news.microsoft.com/source/2024/05/08/microsoft-announces-3-3-billion-investment-in-wisconsin-to-spur-artificial-intelligence-innovation-and-economic-growth/",
+          "title": "Microsoft announces $3.3 billion investment in Wisconsin",
+          "publisher": "Microsoft",
+          "role": "primary",
+          "published_date": "2024-05-08",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Релиз задаёт $3,3 млрд до конца 2026 года на кампус Mount Pleasant; 2 300 строительных рабочих мест ожидаются к 2025 году.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://apnews.com/article/ec3501d041d7b8b563563b22fcc23db5",
+          "title": "Biden lauds new Microsoft center on the same site where Trump's Foxconn project failed",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2024-05-08",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "AP освещает объявление и связь локации с прежним проектом Foxconn.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Обещанный бюджет программы — не подтверждённые текущие расходы.",
+        "AP передаёт политическое заявление о 2 000 постоянных работниках; первичный релиз такого числа не закрепляет, поэтому число не принято.",
+        "Место президентского выступления Sturtevant не подменяет местоположение кампуса Mount Pleasant.",
+        "Текущий статус частичного ввода требует отдельного обновления."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://news.microsoft.com/source/2024/05/08/microsoft-announces-3-3-billion-investment-in-wisconsin-to-spur-artificial-intelligence-innovation-and-economic-growth/",
+          "https://apnews.com/article/ec3501d041d7b8b563563b22fcc23db5"
+        ]
+      },
+      "value": 3300000000,
+      "unit": "USD_announced_cloud_AI_investment",
+      "entity_name": "Microsoft Mount Pleasant",
+      "implementation_status": "dated_program_2024_through_2026"
+    },
+    {
+      "id": "google-iowa-expansion-2025",
+      "headline_ru": "Google объявила ещё $7 млрд для двух локаций в Iowa",
+      "summary_ru": "30 мая 2025 года Google объявила дополнительный инвестиционный план на $7 млрд в Iowa на следующие два года. Он включает новый дата-центр в Cedar Rapids, расширение Council Bluffs и развитие кадров.",
+      "themes": [
+        "datacenters",
+        "ai",
+        "investment",
+        "workforce"
+      ],
+      "states": [
+        "IA"
+      ],
+      "places": [
+        {
+          "name": "Cedar Rapids",
+          "kind": "city",
+          "state_code": "IA"
+        },
+        {
+          "name": "Council Bluffs",
+          "kind": "city",
+          "state_code": "IA"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Council Bluffs",
+            "kind": "city",
+            "state_code": "IA"
+          },
+          "reason_ru": "Две локации одного statewide-плана; городские суммы по отдельности неизвестны.",
+          "comparison_type": "in_state_project_locations",
+          "from": {
+            "name": "Cedar Rapids",
+            "kind": "city",
+            "state_code": "IA"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2025-05-30",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://blog.google/feed/new-7-billion-investment-iowa/",
+          "title": "Google announces new $7 billion investment in Iowa",
+          "publisher": "Google",
+          "role": "primary",
+          "published_date": "2025-05-30",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Google объявляет дополнительные $7 млрд за два года: Cedar Rapids, Council Bluffs, кадровые программы.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.kcrg.com/2025/05/30/google-holds-celebration-new-data-center-cedar-rapids/",
+          "title": "Google holds celebration for new data center in Cedar Rapids",
+          "publisher": "KCRG",
+          "role": "media",
+          "published_date": "2025-05-30",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Местное СМИ подтверждает объявление на строительной площадке Cedar Rapids.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.kcrg.com/2026/05/27/cedar-rapids-mayor-deliver-state-city-address/",
+          "title": "Cedar Rapids Mayor defends data centers, pleads for civility in State of City",
+          "publisher": "KCRG",
+          "role": "media",
+          "published_date": "2026-05-27",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "В мае 2026 года СМИ продолжает описывать строительство кампусов Google и QTS в Cedar Rapids.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Не распределять все $7 млрд только на Cedar Rapids: план охватывает обе локации и обучение.",
+        "Инвестиции в течение двух лет не означают уже потраченные $7 млрд.",
+        "Заявление 2026 года о продолжающемся строительстве не устанавливает статус каждой отдельной очереди."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://blog.google/feed/new-7-billion-investment-iowa/",
+          "https://www.kcrg.com/2025/05/30/google-holds-celebration-new-data-center-cedar-rapids/",
+          "https://www.kcrg.com/2026/05/27/cedar-rapids-mayor-deliver-state-city-address/"
+        ]
+      },
+      "value": 7000000000,
+      "unit": "USD_announced_two_year_statewide_investment",
+      "entity_name": "Google Iowa",
+      "implementation_status": "investment_program_and_construction"
+    },
+    {
+      "id": "three-mile-island-microsoft-2024",
+      "headline_ru": "Соглашение Microsoft поддержало план перезапуска Three Mile Island Unit 1",
+      "summary_ru": "20 сентября 2024 года Constellation объявила 20-летнее соглашение о продаже энергии Microsoft и план перезапуска блока 1 Three Mile Island в Pennsylvania под названием Crane Clean Energy Center. Объявленная мощность — около 835 MW.",
+      "themes": [
+        "datacenters",
+        "energy",
+        "nuclear",
+        "planned_projects"
+      ],
+      "states": [
+        "PA"
+      ],
+      "places": [
+        {
+          "name": "Pennsylvania",
+          "kind": "state",
+          "state_code": "PA",
+          "geoid": "42"
+        },
+        {
+          "name": "Londonderry Township",
+          "kind": "municipality",
+          "state_code": "PA"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Londonderry Township",
+            "kind": "municipality",
+            "state_code": "PA"
+          },
+          "reason_ru": "Контекст энергоснабжения дата-центров; география генератора не устанавливает географию всех покупателей энергии.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Pennsylvania",
+            "kind": "state",
+            "state_code": "PA",
+            "geoid": "42"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2024-09-20",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://investors.constellationenergy.com/news-releases/news-release-details/constellation-launch-crane-clean-energy-center-restoring-jobs",
+          "title": "Constellation to Launch Crane Clean Energy Center",
+          "publisher": "Constellation Energy",
+          "role": "primary",
+          "published_date": "2024-09-20",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Объявление 20-летнего PPA с Microsoft для перезапуска Unit 1, около 835 MW.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://apnews.com/article/8f47ba63a7aab8831a7805dfde0e2c39",
+          "title": "The AI boom may give Three Mile Island a new life supplying power to Microsoft's data centers",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2024-09-20",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "AP подтверждает план перезапуска для энергоснабжения дата-центров и необходимость разрешений.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Блок 1 — не аварийный блок 2 1979 года.",
+        "Проект энергогенерации не является новым дата-центром и не увеличивает число дата-центров PA.",
+        "Не утверждать, что Microsoft получает всё питание по выделенному прямому кабелю.",
+        "Первоначальный срок 2028 года может измениться; текущий ввод здесь не подтверждён."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://investors.constellationenergy.com/news-releases/news-release-details/constellation-launch-crane-clean-energy-center-restoring-jobs",
+          "https://apnews.com/article/8f47ba63a7aab8831a7805dfde0e2c39"
+        ]
+      },
+      "value": 835,
+      "unit": "MW_planned_generation_capacity_approximate",
+      "entity_name": "Crane Clean Energy Center / TMI Unit 1",
+      "implementation_status": "restart_plan_power_agreement"
+    },
+    {
+      "id": "duane-arnold-google-2025",
+      "headline_ru": "Google и NextEra договорились о будущем перезапуске АЭС в Iowa",
+      "summary_ru": "27 октября 2025 года Google и NextEra объявили соглашение для перезапуска Duane Arnold Energy Center рядом с Cedar Rapids. Публично заявленная мощность — 615 MW; ожидаемое возобновление работы относится к 2029 году.",
+      "themes": [
+        "datacenters",
+        "energy",
+        "nuclear",
+        "planned_projects"
+      ],
+      "states": [
+        "IA"
+      ],
+      "places": [
+        {
+          "name": "Iowa",
+          "kind": "state",
+          "state_code": "IA",
+          "geoid": "19"
+        },
+        {
+          "name": "Palo / Duane Arnold Energy Center",
+          "kind": "locality",
+          "state_code": "IA"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Palo / Duane Arnold Energy Center",
+            "kind": "locality",
+            "state_code": "IA"
+          },
+          "reason_ru": "State → locality контекст связи AI-инфраструктуры с энергетическими проектами Iowa.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Iowa",
+            "kind": "state",
+            "state_code": "IA",
+            "geoid": "19"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2025-10-27",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/news-and-events/news-releases/2025/NextEra%20Energy%20and%20Google%20Announce%20New%20Collaboration%20to%20Accelerate%20Nuclear%20Energy%20Deployment%20in%20the%20US.pdf",
+          "title": "NextEra Energy and Google Announce New Collaboration to Accelerate Nuclear Energy Deployment in the U.S.",
+          "publisher": "NextEra Energy",
+          "role": "primary",
+          "published_date": "2025-10-27",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Компании объявили соглашение о перезапуске 615-MW Duane Arnold; доступность мощности — после возобновления работы.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/nextera-energy-partners-with-google-to-restart-iowa-nuclear-plant-ce7d5ddfdc88ff23",
+          "title": "NextEra Energy partners with Google to restart Iowa nuclear plant",
+          "publisher": "Reuters via MarketScreener",
+          "role": "media",
+          "published_date": "2025-10-27",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Reuters указывает ожидаемый перезапуск в начале 2029 года.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "615 MW — проектная мощность генерации, не число или действующая нагрузка дата-центров.",
+        "Перезапуск зависит от разрешений и работ; не показывать как уже работающий источник.",
+        "Рядом с Cedar Rapids не означает внутри административной границы города."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/news-and-events/news-releases/2025/NextEra%20Energy%20and%20Google%20Announce%20New%20Collaboration%20to%20Accelerate%20Nuclear%20Energy%20Deployment%20in%20the%20US.pdf",
+          "https://www.marketscreener.com/news/nextera-energy-partners-with-google-to-restart-iowa-nuclear-plant-ce7d5ddfdc88ff23"
+        ]
+      },
+      "value": 615,
+      "unit": "MW_planned_generation_capacity",
+      "entity_name": "Duane Arnold Energy Center",
+      "implementation_status": "restart_planned_2029"
+    },
+    {
+      "id": "northern-virginia-global-capacity-2024",
+      "headline_ru": "Аудит Virginia оценил роль северной части штата в мировой мощности дата-центров",
+      "summary_ru": "В отчёте JLARC декабря 2024 года Northern Virginia названа крупнейшим рынком дата-центров: около 13% сообщённой операционной мощности в мире и 25% в Америке. Эти доли относятся к мощности рынка, а не к числу зданий.",
+      "themes": [
+        "datacenters",
+        "regional_concentration",
+        "energy"
+      ],
+      "states": [
+        "VA"
+      ],
+      "places": [
+        {
+          "name": "Virginia",
+          "kind": "state",
+          "state_code": "VA",
+          "geoid": "51"
+        },
+        {
+          "name": "Northern Virginia",
+          "kind": "region",
+          "state_code": "VA"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Northern Virginia",
+            "kind": "region",
+            "state_code": "VA"
+          },
+          "reason_ru": "State → region контекст концентрации мощностей; сравнение со всем миром не поддерживается как обычная пара штатов.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Virginia",
+            "kind": "state",
+            "state_code": "VA",
+            "geoid": "51"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2024-12-09",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+          "title": "Data Centers in Virginia",
+          "publisher": "Virginia JLARC",
+          "role": "primary",
+          "published_date": "2024-12-09",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Государственный аудит указывает 13% глобальной и 25% американской сообщённой операционной мощности Northern Virginia.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.publicpower.org/periodical/article/report-details-challenges-virginia-power-grid-tied-growth-data-centers",
+          "title": "Report Details Challenges to Virginia Power Grid Tied to Growth of Data Centers",
+          "publisher": "American Public Power Association",
+          "role": "media",
+          "published_date": "2024-12-13",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Отраслевое издание пересказывает доли из JLARC и энергетические последствия.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Reported operational capacity — база опубликованных сведений, не перепись всех дата-центров мира.",
+        "Northern Virginia — регион, не весь штат и не только Loudoun County.",
+        "Доли исторического отчёта не подтверждены как текущий мировой рейтинг октября 2026 года.",
+        "Источник издания отраслевой ассоциации обозначен media; его пересказ не независим от JLARC."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp",
+          "https://www.publicpower.org/periodical/article/report-details-challenges-virginia-power-grid-tied-growth-data-centers"
+        ]
+      },
+      "value": 13,
+      "unit": "percent_reported_global_operational_capacity",
+      "related_values": [
+        {
+          "value": 25,
+          "unit": "percent_reported_Americas_operational_capacity"
+        }
+      ],
+      "entity_name": "Northern Virginia data-center market",
+      "implementation_status": "historical_report_estimate"
+    },
+    {
+      "id": "aws-indiana-additional-investment-2025",
+      "headline_ru": "AWS объявила дополнительные $15 млрд для северной Indiana",
+      "summary_ru": "24 ноября 2025 года Amazon объявила дополнительные $15 млрд для новых кампусов в северной Indiana. Компания прямо отделяет этот план от $11 млрд, объявленных в St. Joseph County годом ранее, и указывает будущую мощность 2,4 GW.",
+      "themes": [
+        "datacenters",
+        "ai",
+        "investment",
+        "energy",
+        "planned_projects"
+      ],
+      "states": [
+        "IN"
+      ],
+      "places": [
+        {
+          "name": "Indiana",
+          "kind": "state",
+          "state_code": "IN",
+          "geoid": "18"
+        },
+        {
+          "name": "Northern Indiana",
+          "kind": "region",
+          "state_code": "IN"
+        }
+      ],
+      "comparisons": [
+        {
+          "to": {
+            "name": "Northern Indiana",
+            "kind": "region",
+            "state_code": "IN"
+          },
+          "reason_ru": "State → region география нового плана; county нельзя унаследовать от объявления 2024 года.",
+          "comparison_type": "geographic_context",
+          "from": {
+            "name": "Indiana",
+            "kind": "state",
+            "state_code": "IN",
+            "geoid": "18"
+          }
+        }
+      ],
+      "period": {
+        "event_date": "2025-11-24",
+        "kind": "dated_event"
+      },
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-15-billion-indiana-data-centers",
+          "title": "Amazon plans to invest $15 billion in Northern Indiana to build new data center campuses and advance AI innovation",
+          "publisher": "Amazon",
+          "role": "primary",
+          "published_date": "2025-11-24",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "План $15 млрд назван дополнительным к St. Joseph County; новые площадки по Indiana и будущие 2,4 GW.",
+          "access_note": "read_via_browser"
+        },
+        {
+          "url": "https://www.investing.com/news/stock-market-news/amazon-to-invest-15-billion-in-indiana-to-boost-data-center-infrastructure-4375851",
+          "title": "Amazon to invest $15 billion in Indiana to boost data center infrastructure",
+          "publisher": "Reuters via Investing.com",
+          "role": "media",
+          "published_date": "2025-11-24",
+          "accessed_at": "2026-10-03",
+          "evidence_ru": "Reuters подтверждает объявление о $15 млрд в Northern Indiana для AI/cloud кампусов.",
+          "access_note": "read_via_browser"
+        }
+      ],
+      "caveats": [
+        "Новые кампусы не привязаны целиком к St. Joseph County; county остаётся неизвестным без уточнения площадок.",
+        "Дополнительный план и прежние $11 млрд не означают уже потраченные $26 млрд.",
+        "2,4 GW — заявленный будущий масштаб проекта, не текущая измеренная нагрузка."
+      ],
+      "refresh": {
+        "method": "manual_source_review_then_primary_corroboration; automation_requires_publisher_permission",
+        "frequency": "quarterly_and_before_publication",
+        "source_urls": [
+          "https://www.aboutamazon.com/news/company-news/amazon-15-billion-indiana-data-centers",
+          "https://www.investing.com/news/stock-market-news/amazon-to-invest-15-billion-in-indiana-to-boost-data-center-infrastructure-4375851"
+        ]
+      },
+      "value": 15000000000,
+      "unit": "USD_additional_announced_investment",
+      "related_values": [
+        {
+          "value": 2.4,
+          "unit": "GW_planned_data_center_capacity"
+        }
+      ],
+      "entity_name": "AWS Northern Indiana expansion",
+      "implementation_status": "additional_investment_plan"
+    }
+  ]
+}

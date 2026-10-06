@@ -1,0 +1,569 @@
+{
+  "population": {
+    "name": "Population",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "01.01"
+  },
+  "age": {
+    "name": "Age",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "01.02"
+  },
+  "sex": {
+    "name": "Sex",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "01.03"
+  },
+  "race-ethnicity": {
+    "name": "Race / ethnicity",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "01.04"
+  },
+  "foreign-born-population": {
+    "name": "Foreign-born population",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "01.05"
+  },
+  "country-region-of-birth": {
+    "name": "Country / region of birth",
+    "source": "Census ACS",
+    "state_supported": false,
+    "county_supported": false,
+    "catalog_field_id": "01.06"
+  },
+  "citizenship": {
+    "name": "Citizenship",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "01.07"
+  },
+  "year-period-of-immigration": {
+    "name": "Year / period of immigration",
+    "source": "Census ACS",
+    "state_supported": false,
+    "county_supported": false,
+    "catalog_field_id": "01.08"
+  },
+  "median-household-income": {
+    "name": "Median household income",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.01"
+  },
+  "per-capita-income": {
+    "name": "Per-capita income",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.02"
+  },
+  "median-rent": {
+    "name": "Median rent",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.03"
+  },
+  "median-home-value": {
+    "name": "Median home value",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.04"
+  },
+  "mortgage-selected-monthly-owner-costs": {
+    "name": "Mortgage / selected monthly owner costs",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.05"
+  },
+  "rent-as-of-income-rent-burden": {
+    "name": "Rent as % of income / rent burden",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.06"
+  },
+  "owner-renter-ratio": {
+    "name": "Owner / renter ratio",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.07"
+  },
+  "poverty": {
+    "name": "Poverty",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.08"
+  },
+  "households-earning-200k": {
+    "name": "Households earning $200k+",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "02.09"
+  },
+  "cost-of-living-regional-price-parities": {
+    "name": "Cost of living / Regional Price Parities",
+    "source": "BEA RPP",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "02.10"
+  },
+  "bachelors-degree": {
+    "name": "Bachelor's degree",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "03.01"
+  },
+  "masters-degree": {
+    "name": "Master's degree",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "03.02"
+  },
+  "doctorate": {
+    "name": "Doctorate",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "03.03"
+  },
+  "high-school-attainment": {
+    "name": "High school attainment",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "03.04"
+  },
+  "no-diploma": {
+    "name": "No diploma",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "03.05"
+  },
+  "unemployment": {
+    "name": "Unemployment",
+    "source": "BLS OEWS / LAUS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "03.06"
+  },
+  "average-mean-salary": {
+    "name": "Average / mean salary",
+    "source": "BLS OEWS / LAUS",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "03.07"
+  },
+  "employment-growth": {
+    "name": "Employment growth",
+    "source": "BLS OEWS / LAUS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "03.08"
+  },
+  "work-from-home-share": {
+    "name": "Work from home share",
+    "source": "Census ACS",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "03.09"
+  },
+  "murders": {
+    "name": "Murders",
+    "source": "FBI CDE",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "04.01"
+  },
+  "violent-crime": {
+    "name": "Violent crime",
+    "source": "FBI CDE",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "04.02"
+  },
+  "robbery": {
+    "name": "Robbery",
+    "source": "FBI CDE",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "04.03"
+  },
+  "aggravated-assault": {
+    "name": "Aggravated assault",
+    "source": "FBI CDE",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "04.04"
+  },
+  "burglary": {
+    "name": "Burglary",
+    "source": "FBI CDE",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "04.05"
+  },
+  "motor-vehicle-theft": {
+    "name": "Motor vehicle theft",
+    "source": "FBI CDE",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "04.06"
+  },
+  "rape": {
+    "name": "Rape",
+    "source": "FBI CDE",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "04.07"
+  },
+  "homicide": {
+    "name": "Homicide",
+    "source": "FBI CDE / CDC WONDER",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "04.08"
+  },
+  "crime-trends": {
+    "name": "Crime trends",
+    "source": "FBI CDE",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "04.09"
+  },
+  "drug-overdose-deaths": {
+    "name": "Drug overdose deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.01"
+  },
+  "opioid-deaths": {
+    "name": "Opioid deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.02"
+  },
+  "fentanyl-synthetic-opioid-deaths": {
+    "name": "Fentanyl / synthetic opioid deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.03"
+  },
+  "cocaine-deaths": {
+    "name": "Cocaine deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.04"
+  },
+  "methamphetamine-psychostimulant-deaths": {
+    "name": "Methamphetamine / psychostimulant deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.05"
+  },
+  "heroin-deaths": {
+    "name": "Heroin deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.06"
+  },
+  "alcohol-related-deaths": {
+    "name": "Alcohol-related deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.07"
+  },
+  "suicide": {
+    "name": "Suicide",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.08"
+  },
+  "homicide-mortality": {
+    "name": "Homicide mortality",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.09"
+  },
+  "heart-disease-deaths": {
+    "name": "Heart disease deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.10"
+  },
+  "cancer-deaths": {
+    "name": "Cancer deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.11"
+  },
+  "accidental-deaths": {
+    "name": "Accidental deaths",
+    "source": "CDC WONDER",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.12"
+  },
+  "life-expectancy-related-indicators": {
+    "name": "Life-expectancy-related indicators",
+    "source": "CDC / NCHS datasets",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "05.13"
+  },
+  "obesity-rate": {
+    "name": "Obesity rate",
+    "source": "CDC PLACES",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "05.14"
+  },
+  "diabetes-rate": {
+    "name": "Diabetes rate",
+    "source": "CDC PLACES",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "05.15"
+  },
+  "physical-inactivity-rate": {
+    "name": "Physical inactivity rate",
+    "source": "CDC PLACES",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "05.16"
+  },
+  "total-homeless": {
+    "name": "Total homeless",
+    "source": "HUD AHAR/PIT",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "06.01"
+  },
+  "sheltered-homeless": {
+    "name": "Sheltered homeless",
+    "source": "HUD AHAR/PIT",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "06.02"
+  },
+  "unsheltered-homeless": {
+    "name": "Unsheltered homeless",
+    "source": "HUD AHAR/PIT",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "06.03"
+  },
+  "homeless-veterans": {
+    "name": "Homeless veterans",
+    "source": "HUD AHAR/PIT",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "06.04"
+  },
+  "homeless-families": {
+    "name": "Homeless families",
+    "source": "HUD AHAR/PIT",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "06.05"
+  },
+  "chronically-homeless": {
+    "name": "Chronically homeless",
+    "source": "HUD AHAR/PIT",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "06.06"
+  },
+  "adjusted-gross-income-agi": {
+    "name": "Adjusted Gross Income (AGI)",
+    "source": "IRS SOI",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "07.01"
+  },
+  "high-income-taxpayers-returns": {
+    "name": "High-income taxpayers / returns",
+    "source": "IRS SOI",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "07.02"
+  },
+  "capital-gains": {
+    "name": "Capital gains",
+    "source": "IRS SOI",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "07.03"
+  },
+  "dividends": {
+    "name": "Dividends",
+    "source": "IRS SOI",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "07.04"
+  },
+  "taxes-income-tax-metrics": {
+    "name": "Taxes / income tax metrics",
+    "source": "IRS SOI",
+    "state_supported": true,
+    "county_supported": true,
+    "catalog_field_id": "07.05"
+  },
+  "millionaires": {
+    "name": "Millionaires",
+    "source": "Millionaire estimate source TBD",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "07.06"
+  },
+  "billionaires": {
+    "name": "Billionaires",
+    "source": "Forbes Billionaires",
+    "state_supported": false,
+    "county_supported": false,
+    "catalog_field_id": "07.07"
+  },
+  "price-of-a-dozen-eggs": {
+    "name": "Price of a dozen eggs",
+    "source": "Retail / menu dataset",
+    "state_supported": false,
+    "county_supported": false,
+    "catalog_field_id": "08.01"
+  },
+  "cup-of-coffee-price": {
+    "name": "Cup of coffee price",
+    "source": "Retail / menu dataset",
+    "state_supported": false,
+    "county_supported": false,
+    "catalog_field_id": "08.02"
+  },
+  "big-mac-mcdonalds-meal-price": {
+    "name": "Big Mac / McDonald's meal price",
+    "source": "Retail / menu dataset",
+    "state_supported": false,
+    "county_supported": false,
+    "catalog_field_id": "08.03"
+  },
+  "gasoline-price": {
+    "name": "Gasoline price",
+    "source": "Retail / fuel price dataset",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "08.04"
+  },
+  "electricity-price": {
+    "name": "Electricity price",
+    "source": "EIA Electricity",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "08.05"
+  },
+  "beer-price": {
+    "name": "Beer price",
+    "source": "Retail / menu dataset",
+    "state_supported": false,
+    "county_supported": false,
+    "catalog_field_id": "08.06"
+  },
+  "average-consumer-debt": {
+    "name": "Average consumer debt",
+    "source": "Consumer debt source TBD",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "08.07"
+  },
+  "student-loan-debt": {
+    "name": "Student loan debt",
+    "source": "Consumer debt source TBD",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "08.08"
+  },
+  "average-health-insurance-cost": {
+    "name": "Average health insurance cost",
+    "source": "Health insurance source TBD",
+    "state_supported": true,
+    "county_supported": false,
+    "catalog_field_id": "08.09"
+  },
+  "fast-food-restaurants-per-10k-residents": {
+    "name": "Fast-food restaurants per 10k residents",
+    "source": "USDA Food Environment Atlas",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "09.01"
+  },
+  "access-to-a-grocery-store": {
+    "name": "Access to a grocery store",
+    "source": "USDA Food Environment Atlas",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "09.02"
+  },
+  "farmers-markets-per-capita": {
+    "name": "Farmers' markets per capita",
+    "source": "USDA Food Environment Atlas",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "09.03"
+  },
+  "fitness-recreation-centers-per-capita": {
+    "name": "Fitness / recreation centers per capita",
+    "source": "USDA Food Environment Atlas",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "09.04"
+  },
+  "parks-recreation-facilities": {
+    "name": "Parks / recreation facilities",
+    "source": "USDA Food Environment Atlas",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "09.05"
+  },
+  "pm2-5": {
+    "name": "PM2.5",
+    "source": "EPA AirData",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "09.06"
+  },
+  "ozone": {
+    "name": "Ozone",
+    "source": "EPA AirData",
+    "state_supported": false,
+    "county_supported": true,
+    "catalog_field_id": "09.07"
+  }
+}

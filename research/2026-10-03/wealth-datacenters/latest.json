@@ -1,0 +1,38 @@
+{
+  "started_utc": "2026-10-03T07:19:51+00:00",
+  "completed_utc": "2026-10-03T07:19:57+00:00",
+  "results": {
+    "minnesota_deed": {
+      "status": "collected",
+      "records": 42,
+      "project_type_counts": {
+        "New": 16,
+        "Refurbishment": 26
+      },
+      "source_cities": 21,
+      "inferred_candidate_counties": 10,
+      "county_counts_admitted": false,
+      "source_date": "2026-07-15",
+      "extraction_method": "manual_pdf_transcription",
+      "transcription_sha256": "2021fcbe75a345064668566b2bd48c8e00d3768fbf78bece249d18c1964e53e3",
+      "geographic_reference_response_hashes": [
+        "302ff3cf031217aca032d89f42c0dd93611a76d72ab2036944fa40d5c23c6613",
+        "9f6e5f6eb6ac2f5e9a36d5fd01dec77991bddc75118f748a069441a4782970d6"
+      ]
+    }
+  },
+  "observations": 23,
+  "production_writes": 0,
+  "collector_sha256": "574e054ae1bfa3c9a22b13ba5c2aaae6cfffa6dea8d1957d971093bcf6d8fe50",
+  "run_path": "runs/20261003T071951Z",
+  "requests": 3,
+  "artifact_hashes": {
+    "runs/20261003T071951Z/minnesota-designated-projects.json": "d2bf3b9ff565ea635f09093aae37608a90a576d5deeceb3752489333b7a59267",
+    "runs/20261003T071951Z/minnesota-transcription-used.json": "2021fcbe75a345064668566b2bd48c8e00d3768fbf78bece249d18c1964e53e3",
+    "runs/20261003T071951Z/observations.json": "550c65d5bd2b0f5ee79d28c9696fec850a2bf8383338ea04331f244355bceb1b",
+    "runs/20261003T071951Z/raw/001-minnesota-deed-list-e3c9937b6f2b876030487e65772855de2857770136817f5b8a20ca30d905be28.bin.gz": "333c71bd1ddc0ac2634889b9dcd24744ad9ce9cb44862b629c0c28312be0a6a9",
+    "runs/20261003T071951Z/raw/002-census2020-places-302ff3cf031217aca032d89f42c0dd93611a76d72ab2036944fa40d5c23c6613.bin.gz": "60cb791db77416229f35b9108a0cfa3ac390afa54ea55331ebdc4e2a00434dff",
+    "runs/20261003T071951Z/raw/003-census2020-counties-9f6e5f6eb6ac2f5e9a36d5fd01dec77991bddc75118f748a069441a4782970d6.bin.gz": "55cd51a4b281a29f60c9f69a67b90925db83040d018a64472661a402b06b0c51",
+    "runs/20261003T071951Z/receipts.json": "0c8d481a0cbe7b3b226d1bc09ba27bc777d02af3800186d89d631570aad3b335"
+  }
+}

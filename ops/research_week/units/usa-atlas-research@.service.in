@@ -1,0 +1,26 @@
+[Unit]
+Description=USA Atlas continuous Codex research: %i
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=@REPO@
+Environment=TZ=Europe/Berlin
+Environment=PYTHONUNBUFFERED=1
+Environment=PATH=/usr/local/bin:/usr/bin:/bin:%h/.local/bin
+ExecStart=/usr/bin/python3 @REPO@/ops/research_week/runner.py run %i --retry-failed
+TimeoutStartSec=2760
+TimeoutStopSec=30
+KillMode=control-group
+Restart=no
+UMask=0077
+Nice=10
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=@REPO@/research/2026-10-03/%i @REPO@/ops/research_week/runtime %h/.codex
+PrivateTmp=yes
+NoNewPrivileges=yes
+StandardOutput=journal
+StandardError=journal

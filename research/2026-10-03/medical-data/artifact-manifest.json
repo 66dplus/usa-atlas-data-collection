@@ -1,0 +1,996 @@
+{
+  "created_at": "2026-10-05T12:38:33.144259+00:00",
+  "scope": "this medical seed; separate child-county support excluded",
+  "files": [
+    {
+      "path": ".first-session.json",
+      "bytes": 1509,
+      "sha256": "3f64792e1e148ffb4ad3f86f4c53d68113c58947476a5a3e67d29dc9eeefd26b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 30413,
+      "sha256": "ba24f2332065b65d309bb0ec74294576b9d247166bf67a5c850b70e8fed55463"
+    },
+    {
+      "path": "WEEKLY-HANDOFF.md",
+      "bytes": 6472,
+      "sha256": "91c2b31f72876426bd825146735e561be051ebc6548d8fdb120f1e0f8875089b"
+    },
+    {
+      "path": "additional-surveillance/README.md",
+      "bytes": 7714,
+      "sha256": "0b94fe500eb9b992cf5c7d72c6dd575817b81825c389685af21710844bd880a8"
+    },
+    {
+      "path": "additional-surveillance/coverage.json",
+      "bytes": 36614,
+      "sha256": "604a5225adb514b35aee5b8693084be10fb0c3c42dc242300c1a9be6611b748c"
+    },
+    {
+      "path": "additional-surveillance/observations.csv",
+      "bytes": 790353,
+      "sha256": "97356ec376b6f4cb8333d2528587bef36a503968eb9a1507b5d4b291f7a07caa"
+    },
+    {
+      "path": "additional-surveillance/observations.json",
+      "bytes": 1407204,
+      "sha256": "9f3e94f4b6d5a7636c5473d393100cea66886d28b4a8af883edd8b50d6bcefe9"
+    },
+    {
+      "path": "additional-surveillance/source-checks.json",
+      "bytes": 2751,
+      "sha256": "4f915b74436172d3897a14c14e5b9e6c45b227974d4eca6ce447cd2d4924b703"
+    },
+    {
+      "path": "all-metric-inventory.csv",
+      "bytes": 66816,
+      "sha256": "0186132955fee84528bfce72e27054425c4407227518b8318eee625fb24f9498"
+    },
+    {
+      "path": "audit_medical.py",
+      "bytes": 33698,
+      "sha256": "4b337a99198d6ee9f136e36de3a1174b52350ccf2ee36914030b8b7ed2f847b1"
+    },
+    {
+      "path": "backlog.json",
+      "bytes": 11645,
+      "sha256": "ac046f9f49c5b5ea343c16df9f7fd6b68e0e287dab31ffe671ea4d777197f0e7"
+    },
+    {
+      "path": "build_overview.py",
+      "bytes": 8396,
+      "sha256": "572cb0ecf7ab5a57e1312f4f483bb6bef54a9dbdb960dd00bd29762bb6b38de0"
+    },
+    {
+      "path": "child-age-bands/census-pep-2025-age1-4-population.csv",
+      "bytes": 38116392,
+      "sha256": "7fd119be36b1f6c4c37fbaa1022ca6a4aae6d7f2b7496de83d0e8fbc79ed1e19"
+    },
+    {
+      "path": "child-age-bands/census-pep-2025-coverage.json",
+      "bytes": 42952,
+      "sha256": "4b5a5b26ec33d2331d2829d683032a3508e60cf1f55bd3dde2f43beecaa11dd4"
+    },
+    {
+      "path": "collect_additional_surveillance.py",
+      "bytes": 44557,
+      "sha256": "3d8e69700ded086fe4fdc9d05bb6babb89a4b105833c048af56e3982e43527f4"
+    },
+    {
+      "path": "collect_child_age_bands.py",
+      "bytes": 7456,
+      "sha256": "73b89ad1683091482e8d461bffe1980964a64c1dd895fe0f390d8fafbf69429e"
+    },
+    {
+      "path": "collect_child_population_denominators.py",
+      "bytes": 11500,
+      "sha256": "81a4c0be87af3b397648e13d82c60f58e43a4bc1fd1a4986c6f08264945dcfed"
+    },
+    {
+      "path": "collect_hiv_estimates.py",
+      "bytes": 2767,
+      "sha256": "48e6e24949883bac9688abac3a2e6156aa1ebbbe9a906cad2aff10e177de0d14"
+    },
+    {
+      "path": "collect_hiv_preliminary.py",
+      "bytes": 40982,
+      "sha256": "ee46ce2c9012ec17833a90c0d634c5846a597768b7d551b8653ae50d1b4c37a4"
+    },
+    {
+      "path": "collect_infant_county.py",
+      "bytes": 7288,
+      "sha256": "2f52c357bcf8eca41b68ddf9d2f5764c549d0f59579ba72819347695df0cda3f"
+    },
+    {
+      "path": "collect_medical.py",
+      "bytes": 8091,
+      "sha256": "7347a2d80e5733cb8b391000e6c9b428d660578c6d357d163ce3310040c2f1a2"
+    },
+    {
+      "path": "coverage-geographies.json",
+      "bytes": 5085615,
+      "sha256": "772ecf4c4b3380285608454cf38b9f032e2a8cf4d8f466b96cd82ce4f555f235"
+    },
+    {
+      "path": "coverage.json",
+      "bytes": 110401,
+      "sha256": "0d94ec53cd99f3068d78a85359a3aa6e21b53aff9f83cdfb2bc1daae6da0cce7"
+    },
+    {
+      "path": "geography-mismatches.json",
+      "bytes": 321,
+      "sha256": "a8f58163c27ac7938250c627fd681c1bc351ecb334f2514ecb927ce95fdd6dcf"
+    },
+    {
+      "path": "hiv-county-selection-audit.json",
+      "bytes": 4638,
+      "sha256": "fcb4f629d3891d6a5a5340fdf683c272220593235117c37f3517d5129bafa081"
+    },
+    {
+      "path": "hiv-preliminary/README.md",
+      "bytes": 2689,
+      "sha256": "ca677e9771b0ece73e60d00467b4471c963a62999d5b454d273dd53da1c13b52"
+    },
+    {
+      "path": "hiv-preliminary/coverage-geographies.csv",
+      "bytes": 156505,
+      "sha256": "1cc46178c826f28c01433e7d077904124b56cb765ca51bc85f65167bbaab841d"
+    },
+    {
+      "path": "hiv-preliminary/coverage.json",
+      "bytes": 5296,
+      "sha256": "dae4c675f8242ec8c6077aa2d21d4e97f45b002cf414d023affada94e08b3334"
+    },
+    {
+      "path": "hiv-preliminary/observations.csv",
+      "bytes": 705129,
+      "sha256": "5b8510660ea58fec20077284cafb5077d1be532ea6904be05f8c5edc23a0dd69"
+    },
+    {
+      "path": "hiv-preliminary/observations.json",
+      "bytes": 1195329,
+      "sha256": "214ecf5062038bb0f1995c64ed6327c89cd37a3bc0e453de8f5f3434ac4f4774"
+    },
+    {
+      "path": "hiv-preliminary/source-checks.json",
+      "bytes": 1908,
+      "sha256": "20d20e80ab77fcdffb80ce65ea3f4c724a181174033e9b510b8894e8ba8cff02"
+    },
+    {
+      "path": "http-receipts.jsonl",
+      "bytes": 373112,
+      "sha256": "793e08a61c6374628c9be67575b85a029274f56c2dd32be641e499d93f624aaf"
+    },
+    {
+      "path": "metric-inventory.csv",
+      "bytes": 66556,
+      "sha256": "65d203f643a101bd7f867d9e9f4df0e4f901896a20071447249c6c1d525e28ea"
+    },
+    {
+      "path": "metric-inventory.json",
+      "bytes": 110206,
+      "sha256": "fb5028c391ff2d9e8b3c63207ecb277b0223dbf7bb47e226a09ba951d4744dc3"
+    },
+    {
+      "path": "normalize_medical.py",
+      "bytes": 50464,
+      "sha256": "d5d606d51530d931e97b4337d6d17ed72047cba3ef81d8cef0b76bdafa936f8b"
+    },
+    {
+      "path": "normalized/observations.csv",
+      "bytes": 124483308,
+      "sha256": "702a2874ee5242d59b1ebb212e41ff35f15898a7821894a1f070b41bf3f306f3"
+    },
+    {
+      "path": "normalized/observations.json",
+      "bytes": 195295679,
+      "sha256": "3e5b4ae3842121da353165760207fffabf8c48bc29ee487ce63dfd0a34006d6e"
+    },
+    {
+      "path": "raw/atlas-0.bundle.js",
+      "bytes": 3511,
+      "sha256": "eea49e4aaed20bd675885744764e667926079c01ecfa69c68b12559f75c67864"
+    },
+    {
+      "path": "raw/atlas-2.bundle.js",
+      "bytes": 389782,
+      "sha256": "324530a832937869bcd51455afe156f86e56f4b6a67e7bc7cd6c860f0c595315"
+    },
+    {
+      "path": "raw/atlas-3.bundle.js",
+      "bytes": 227538,
+      "sha256": "c4bed032828f52e353c4a1a6377e30f32db967191484e4ab5b4dd3517b878a16"
+    },
+    {
+      "path": "raw/atlas-init.json",
+      "bytes": 2652218,
+      "sha256": "240a44b2fa47466dd3f75d181d6ac51df6b1e305fa0f0c90078c8aaa5c04e4d1"
+    },
+    {
+      "path": "raw/atlas-main.bundle.js",
+      "bytes": 89351,
+      "sha256": "c2471b4dbcccaed0117ff1f4e5d96ee5f43df039d8221396680a2aabde6b2be2"
+    },
+    {
+      "path": "raw/cdc-atlas-hepatitis-a-state-2023.json",
+      "bytes": 3835,
+      "sha256": "ae7d811d0fee4c0369e57709bf8d32bb98633410d408af7996204e6f115237ad"
+    },
+    {
+      "path": "raw/cdc-atlas-hepatitis-a-state-2024.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "raw/cdc-atlas-hepatitis-b-acute-state-2023.json",
+      "bytes": 3837,
+      "sha256": "84eb9ee0cf46a47532d68e908936b1c4be737bfa1e7ea9df37bc88212ca5f733"
+    },
+    {
+      "path": "raw/cdc-atlas-hepatitis-b-acute-state-2024.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "raw/cdc-atlas-hepatitis-c-acute-state-2023.json",
+      "bytes": 3855,
+      "sha256": "28936a8d7681f1db9c7aff4851e7aef04de845e300566447bac9e355b0dbacd8"
+    },
+    {
+      "path": "raw/cdc-atlas-hepatitis-c-acute-state-2024.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "raw/cdc-atlas-historical-20250430.csv",
+      "bytes": 34822051,
+      "sha256": "937664e86eedc603ae1efa4489bccaadb4638bb9384b383d2cd4624af98e8cea"
+    },
+    {
+      "path": "raw/cdc-atlas-historical-readme.pdf",
+      "bytes": 345330,
+      "sha256": "eede06c455c0c9b5685a9981c9911481f0696310f0f5c501571a8bbf76252e87"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part1.json",
+      "bytes": 30026,
+      "sha256": "4fe4b28536e0934acd8c1493e6a897445438a2c43288f49c5d7db82b1d134b3d"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part2.json",
+      "bytes": 30005,
+      "sha256": "a18d5dc35b68e61129da900b2e3fe5ccb6803f02f06e593790b9cd7d0886be5a"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part3.json",
+      "bytes": 29803,
+      "sha256": "5ab24f58964b20d1746dffaba0a9e5ba8420bb321fe52a36c5b7ffb68a058ed4"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part4.json",
+      "bytes": 29964,
+      "sha256": "b4926e8af1f6e960283ec1094fe2292c51c81a899ce0f0d44e018b8ce727a0eb"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part5-retry-1.json",
+      "bytes": 7390,
+      "sha256": "57b6cdc2c68e9b9807a27c833249d3b3ed67d4b9f51013cc0e18393e42bfd64d"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part5-retry-2.json",
+      "bytes": 7404,
+      "sha256": "a2f1f864f8004d092d33cd18350408d2fbdb0bde0e2b25d9d245090e5e58861d"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part5-retry-3.json",
+      "bytes": 7621,
+      "sha256": "d23e0af7dc64952c225f30754820b274305df157fb37ecd246d936dcea7c77b8"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part5-retry-4.json",
+      "bytes": 7595,
+      "sha256": "e435da74e336fc66d1fdafad974061be537b36a39211bc23b577b8ddec357fe5"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part6.json",
+      "bytes": 30004,
+      "sha256": "767c341304cd5da7d909f5e69b0e1742a887cdd7897ed5c4153a7b1754cbb7ee"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part7.json",
+      "bytes": 29938,
+      "sha256": "69cd035a951176f0274c13fab9a91fa8d8530b6c2482e1e7d4efa6e6c7a4b845"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part8.json",
+      "bytes": 26771,
+      "sha256": "cbaf3e41ac4a279ca17c9cd3273b634ec6a2bdc10b5937fda78c1a9ae17cb67d"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnosed-prevalence-state-2024.json",
+      "bytes": 4065,
+      "sha256": "77c80ab4b74ab7a785783a567a7cf508c89963a8ea3c63f71e9adb4965246841"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part1.json",
+      "bytes": 29544,
+      "sha256": "1d9980a9293ca3dc4ca6a806d16de2c0b67e66ba01f37f8cd98a7bf0327b33f1"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part2.json",
+      "bytes": 29571,
+      "sha256": "c32f0588d26b93aadedd3aececf202bb37ae9c86e0dfd01ef072136b7f813380"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part3.json",
+      "bytes": 29342,
+      "sha256": "9e7e23da136a9855d07fd26f4ca05ff8d3b110897b7ea5ebb377e40fcb71ecb0"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part4.json",
+      "bytes": 29462,
+      "sha256": "f923720247598948083c01ebfbc447d404a80429906e1629f2d51d61ce05fd7b"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part5-retry-1.json",
+      "bytes": 7249,
+      "sha256": "021b19e53cfaef572beb60d20165f9e913494c181cd7cf02a7703442506f6c16"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part5-retry-2.json",
+      "bytes": 7297,
+      "sha256": "52af0e998b27fc033c20e549cab14286f7d02e3fd760839736f171943ebd73c6"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part5-retry-3.json",
+      "bytes": 7461,
+      "sha256": "7fbf0aed7e6a1d367628f819684a3aa5e8994064b34852420e9dddd8dfa12015"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part5-retry-4.json",
+      "bytes": 7465,
+      "sha256": "697f38dd195bfefed2008382e1a02a75f9267271c9ea5805faeca091af9f2bb2"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part6.json",
+      "bytes": 29480,
+      "sha256": "b9123d900c0d7e049c7ce6ece4d1311da15adfc6abd4bd01aa7314cf1fb43276"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part7-retry-1.json",
+      "bytes": 7355,
+      "sha256": "946c474e0ff9a344f6ab7bf13e813b6d22c18b4659ccc6a79f1d541fe47709f2"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part7-retry-2.json",
+      "bytes": 7403,
+      "sha256": "63a6365b2a1cf6a379e930ad56dc0d3426add4ac82d8a5a90caeffa03bd30e41"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part7-retry-3.json",
+      "bytes": 7367,
+      "sha256": "e82982c51ae8febd21941941b8c7440caaf7b7212ce18eeabf75bf1de4ebc4fa"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part7-retry-4.json",
+      "bytes": 7367,
+      "sha256": "b88752c67426a2f9be5a51f7d459c438e020c4f42e4aa76a8d6eccb973758b9a"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-county-2024-part8.json",
+      "bytes": 26464,
+      "sha256": "602e0f9243a89915a9f872b52aa6b1fb5c0f3eab3a643adb3e183eda2380a467"
+    },
+    {
+      "path": "raw/cdc-atlas-hiv-diagnoses-state-2024.json",
+      "bytes": 3908,
+      "sha256": "8dbbb0b39176a72c73105c08884c85057963e45ff18ce1f3d7446d4f74110975"
+    },
+    {
+      "path": "raw/cdc-child-deaths-metadata.json",
+      "bytes": 27253,
+      "sha256": "386e3dc126b5ebc5d2e734432c28a4ed33ce06c6c74ed1853e14f29db686f8bf"
+    },
+    {
+      "path": "raw/cdc-child-health-final-2024.html",
+      "bytes": 102743,
+      "sha256": "02a4426cf68e9ce2003278f5739ad8ecec578000fe473e5713a673605691735f"
+    },
+    {
+      "path": "raw/cdc-ehe-hiv-preliminary-through-2026-06.html",
+      "bytes": 87427,
+      "sha256": "6e2ab547ac949ddf8b97bdb5893d4045832af357818466e4e9cb26ddef7082a4"
+    },
+    {
+      "path": "raw/cdc-ehe-hiv-preliminary-through-2026-06.xlsx",
+      "bytes": 3186177,
+      "sha256": "036a29a8a8a87a990fc93de03b14319e5d2ba8789d1c959c6c381455a61e5a96"
+    },
+    {
+      "path": "raw/cdc-ehe-methodology-2023.pdf",
+      "bytes": 4988196,
+      "sha256": "b909868a9cf82327aa92e072370ad1c12eab8b4066991efecea4192b387e559f"
+    },
+    {
+      "path": "raw/cdc-heptracker-overview.html",
+      "bytes": 70401,
+      "sha256": "36fb463af145bd1d6e37d05e2da236c7c08e9682a4d9da5d3222013067e761fb"
+    },
+    {
+      "path": "raw/cdc-hiv-estimated-incidence-2022-ehe-county.csv",
+      "bytes": 5256,
+      "sha256": "fe65b50c209ade0a844927b508bc6079cceaac8fe7ac721932ef41c6374025a1"
+    },
+    {
+      "path": "raw/cdc-hiv-estimated-incidence-2022-state.csv",
+      "bytes": 4957,
+      "sha256": "ad8d8fecdcc348f25dc7676102fedf90ba45dbe0f118d010f83f4704e0f3c155"
+    },
+    {
+      "path": "raw/cdc-hiv-estimated-incidence-prevalence-2018-2022.pdf",
+      "bytes": 9155010,
+      "sha256": "dcb13fbebb596b217fdc873d3bf5a2ba4200ea0a8616f301797b25fa640e1563"
+    },
+    {
+      "path": "raw/cdc-hiv-estimated-prevalence-2022-ehe-county.csv",
+      "bytes": 5732,
+      "sha256": "5173abe2145b948656c02392fc0219b7ccd46def2cfd8ea30edbe57652a9fc90"
+    },
+    {
+      "path": "raw/cdc-hiv-estimated-prevalence-2022-state.csv",
+      "bytes": 5132,
+      "sha256": "7cbd109d996a461a88bc39dc4f19f83eeab9715546f41869d8fa72292f496e7b"
+    },
+    {
+      "path": "raw/cdc-sti-surveillance-2024-provisional-data-files.zip",
+      "bytes": 101460,
+      "sha256": "b02c137cd63cd25a49a896a7cbf0fcf0ca614b58e4ec09b86969b3fc65f82439"
+    },
+    {
+      "path": "raw/cdc-sti-surveillance-2024-provisional.html",
+      "bytes": 68895,
+      "sha256": "8ef1aa8955294f63adf6b03631042fb45d138447bbd83f2c7639d90877e91f3d"
+    },
+    {
+      "path": "raw/cdc-tb-reporting-areas-2023-2024.html",
+      "bytes": 58495,
+      "sha256": "4ffcf132061d95573805aa521216e55568513b7d19fe5db772369b4010733896"
+    },
+    {
+      "path": "raw/cdc-tb-technical-notes.html",
+      "bytes": 83471,
+      "sha256": "ef0b7d0b7322db65da744a7db55bfdc7d996473b5ec0df9c92d0dfbbd95966b4"
+    },
+    {
+      "path": "raw/cdc-wonder-child-mortality-county-2020-2024.tsv",
+      "bytes": 363490,
+      "sha256": "27aae80772553023316ce698611518f9cea8d10c7872993be8f16787b11427bb"
+    },
+    {
+      "path": "raw/cdc-wonder-child-mortality-county-5year-2020-2024.tsv",
+      "bytes": 927144,
+      "sha256": "dad45fe12b7cfdda1c981ad0f3a18bad95744d6b6a23fbc6e266702458a4b042"
+    },
+    {
+      "path": "raw/cdc-wonder-child-mortality-state-2020-2024.tsv",
+      "bytes": 14706,
+      "sha256": "832b3d4628f4645b2f6550d7fee2b914770e4e28b464370ea00cb7665a2f9cf1"
+    },
+    {
+      "path": "raw/cdc-wonder-lbd-expanded-consent.html",
+      "bytes": 518521,
+      "sha256": "fdbbce3a1f0c2c2f3bcd7b9dd6b179d3f8fed81e00eb9a636b64cd0d4464d29a"
+    },
+    {
+      "path": "raw/cdc-wonder-lbd-expanded-landing.html",
+      "bytes": 174769,
+      "sha256": "3c1495b874c5fbc099445c570b26d85a005e96d40c083836cd330abfedcfd151"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-county-2020.tsv",
+      "bytes": 18128,
+      "sha256": "6fffb8ccf27b6c61903adc2dcffd48d0ae72175ba0cd2f52e3e392f4cd281b5d"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-county-2021.tsv",
+      "bytes": 18084,
+      "sha256": "3742959feb7908f4462ee6244efceba5b169295cc22a3f5313312e795a48c400"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-county-2022.tsv",
+      "bytes": 18123,
+      "sha256": "a5a371961ef65e3b5e6cd6139dfb2893e52459424a719f6589166a1cdeb160a9"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-county-2023.tsv",
+      "bytes": 18119,
+      "sha256": "c2f15e797928f2b0640cb0b6ae53992d06aedaac607dd073b08a4ccf52c44e8c"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-county-2024.tsv",
+      "bytes": 18170,
+      "sha256": "e9097616dca186b85b05627ef3a1767a00afafe47d0badfd041d0aaf48e13a3b"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-state-2020.tsv",
+      "bytes": 3452,
+      "sha256": "80f0eed31a87fcb365c7961678546e30a425afd9838328b4cdd8b170fff3169c"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-state-2021.tsv",
+      "bytes": 3453,
+      "sha256": "31c601fb7b0a5ebafc8ac2a89f8dcab5ce849ed472a57e5cca345f38120012c9"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-state-2022.tsv",
+      "bytes": 3177,
+      "sha256": "bdbaa55a41be22ad5bd81abd1ca4a9e2987fb774f665d4cf7b3662e52dfabb7d"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-state-2023.tsv",
+      "bytes": 3447,
+      "sha256": "18a31d4498fc3b5218ca17598f610207ec1a527c4f84945ae98fd54fbdc3aae3"
+    },
+    {
+      "path": "raw/cdc-wonder-linked-infant-mortality-state-2024.tsv",
+      "bytes": 3176,
+      "sha256": "7d1c60ce713a8571e49e4036939f5a1b0817180f68479a6b16defdec59b9345a"
+    },
+    {
+      "path": "raw/cdc-wonder-ucd-expanded-landing.html",
+      "bytes": 174913,
+      "sha256": "07c59ce8d279c8eb2a1533ffc66fb0507e10665c642c2b1436913d882a784ee5"
+    },
+    {
+      "path": "raw/census-2025-county-gazetteer.zip",
+      "bytes": 138993,
+      "sha256": "4c90d0f805779923b5958ab13d0c1e9b99fe4932b786bfcf75dd739bb2dcb4ea"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-01.csv",
+      "bytes": 2200882,
+      "sha256": "6c3b0c8a20a97dfe54863c41a22cfd5644d3b19c4885b19b4baff24dc8feccb4"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-02.csv",
+      "bytes": 1078736,
+      "sha256": "35092613f56e8069f3c00d04a5ae013d792594245ec61d0baf848a7f6df223b9"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-04.csv",
+      "bytes": 501594,
+      "sha256": "e1fabea2393f29194394cb196c2f80181b3b697a721f57ae7e2d4dc287d03a45"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-05.csv",
+      "bytes": 2477035,
+      "sha256": "064700c86fdac396dcc5edb1f4cea94ede478387a4d7daac8a5ae7e3043a7d9e"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-06.csv",
+      "bytes": 2099844,
+      "sha256": "818ac90967c5bcafa9ae00b74ca33fd1bf9722c719c5b9291cb5e04c1471d55c"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-08.csv",
+      "bytes": 2102961,
+      "sha256": "a3ec4c32744720c5bf688c8363cec26cc3e836bb2f4fda33a5d03b9a5a9b2027"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-09.csv",
+      "bytes": 450379,
+      "sha256": "e6ba058e0e62571552dc407cb9b7d01d84212df1ac2bd73bbfdf793707539c17"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-10.csv",
+      "bytes": 105464,
+      "sha256": "cf0977c042856d2dcf450744f98f1defcfcdd3ee32848350943ac765048fef30"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-11.csv",
+      "bytes": 46502,
+      "sha256": "9e4a49625f6e07644dbc74198913536a4a70b23bb4aa06ea476ff00b0b1d470d"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-12.csv",
+      "bytes": 2265038,
+      "sha256": "a7b1209a4bfd4589692f1cd673d1310526f60a57c90ee3e554ef893bd490b8b2"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-13.csv",
+      "bytes": 5149756,
+      "sha256": "6a3634034b2fbd053afec30ee59ab7bfd7bcbd6d83a7cc36100445b7729d7403"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-15.csv",
+      "bytes": 160802,
+      "sha256": "13bfb0e4d49159e96157c3650b7002d874f8f22ab41bb6e0df54090a1f83d61e"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-16.csv",
+      "bytes": 1356409,
+      "sha256": "c651e48603ec7c86cffa13f33cb5146b4f1154f2892ee1611857dcd804848b10"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-17.csv",
+      "bytes": 3382291,
+      "sha256": "0155071ba9cc33cd13f835a6a4cd61b276f51938ae81f4636ee5442ddc40ccce"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-18.csv",
+      "bytes": 3014723,
+      "sha256": "23ae4d9ab1b9308700f0f75eab0cd8d444acb28aa8847f1ae3866c223299adbb"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-19.csv",
+      "bytes": 3004091,
+      "sha256": "9dca6bb6afbe88c5629af4fc6ac1f56245aa75ef03b80cc9281a000e0910cc59"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-20.csv",
+      "bytes": 3245365,
+      "sha256": "905c29eee250704e6663bdc3b1460490ae96fae1e30c8a82c75071b69b9da354"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-21.csv",
+      "bytes": 3939402,
+      "sha256": "07ddbc8167b01ae1419241314fc595a749f5a9917777e1e41565f6e9a8a7b0fd"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-22.csv",
+      "bytes": 2267999,
+      "sha256": "fc3160c02df5d288f54193ed5f48dc2207cfe63bac3cab275299de8e6c3c0501"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-23.csv",
+      "bytes": 523106,
+      "sha256": "d32858cfeeff30179e620451cbfc044ce674891ff902b805d1383a113972bbda"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-24.csv",
+      "bytes": 847357,
+      "sha256": "59808f2232ad59e0ae21b43fd4deeb3b1473314dbfb46c650376ae0f8d849d4e"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-25.csv",
+      "bytes": 538135,
+      "sha256": "01459dfdccd23ce966afef2de4280220b9dc8acff24275905aae1e76f6761749"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-26.csv",
+      "bytes": 2801752,
+      "sha256": "202f6fe08151cd9c647998461c6ff5cb93f8bbed5215046817628a6fb374e020"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-27.csv",
+      "bytes": 2946382,
+      "sha256": "3e5742dc0767a7fd5cc3e094f58af4843e8b73a62f5517dfcb280d28f56980ce"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-28.csv",
+      "bytes": 2867604,
+      "sha256": "67bceaa92f5b25bdf762e114a72f90a79cd4f894a62e83a3a53e19f8751e89c0"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-29.csv",
+      "bytes": 3781890,
+      "sha256": "79cd74f18655fc511190711ecb041fc7cfe7bb3877dab51a94944d6c4a861c8d"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-30.csv",
+      "bytes": 1794729,
+      "sha256": "b0026a7277535fa170a7c3898ffb6ff3028d9f47130d607d7c7037da8549aaac"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-31.csv",
+      "bytes": 2939851,
+      "sha256": "6ff3bae0ffb996995c04b5436f497adccb1edee5cb470db83a8404273d9747d0"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-32.csv",
+      "bytes": 533988,
+      "sha256": "46dd54dc7561ebd29a5e6abbf7c7dad0e703bb66f59291dbe645cafacffa5972"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-33.csv",
+      "bytes": 378975,
+      "sha256": "a8d6548eff88be32d294f65ad7694f236c62ab0063e1c6f7f9d110e11e763c84"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-34.csv",
+      "bytes": 764296,
+      "sha256": "e61d47a1ecb5a16cc29a89fdd40862d99ca5d420d21d61aacb5c0dcd9e6ae4e7"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-35.csv",
+      "bytes": 1128755,
+      "sha256": "2fa8799300309b2106170a3c8d3bb3d497b3f0a8dec4625b18407e4de25efeb7"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-36.csv",
+      "bytes": 2144975,
+      "sha256": "867cd73f255d46b3429a4af24e337c3c86ad5b507521345b07423f9e7a5bf50a"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-37.csv",
+      "bytes": 3733973,
+      "sha256": "64ce11bbd5b0323406e44c8d46529c30e7a7e132d64d947de59dec603c166add"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-38.csv",
+      "bytes": 1811857,
+      "sha256": "a9de583026c05fd4d93973765387a84b34d169eb15be8fc13b951f5e6f8eca4c"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-39.csv",
+      "bytes": 2762776,
+      "sha256": "ada53ed71a797bdd001319b9df18ac164202063ae79b402a2afacbf8a2be42f7"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-40.csv",
+      "bytes": 2531886,
+      "sha256": "f29784ea5b2d4018c84e1ad6064f7cf89385c6c764cc224a6def286e712705c3"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-41.csv",
+      "bytes": 1159792,
+      "sha256": "70d6eb57932c6938c0eee4215ffa8f44822aba4ff5f73cbc66ba2a6919b0331d"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-42.csv",
+      "bytes": 2464679,
+      "sha256": "90db92bf25501fde6b44759bf33a6169071a52a22742c6df786f691126b6730b"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-44.csv",
+      "bytes": 186236,
+      "sha256": "de0fc7e1364f8bcd2d302f16eddcaa54432b4024dd920df1e0dd234a4b6f6c59"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-45.csv",
+      "bytes": 1752268,
+      "sha256": "b6c01d1300b34b26f79d8989343bdfc2aeef213c03e3ba9b3cf75406e6061bf8"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-46.csv",
+      "bytes": 2260720,
+      "sha256": "39680e2b38ee99fe1b03952d998fdd7b6f0da9dd553a36a48a5b8ab5d92dc4f1"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-47.csv",
+      "bytes": 3225272,
+      "sha256": "25c5ea1363f74b419dd91b56c4860f0fd6e407fa3cb4bbae91e7f6414bd73deb"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-48.csv",
+      "bytes": 7874226,
+      "sha256": "5c9a39e288252ade81ea6215565c37dd29dc1ce7bcf4ea48e540a1f06fc88960"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-49.csv",
+      "bytes": 877293,
+      "sha256": "9ef06194b8c8478b48bc5e7189aa4c3622039b377beb8bfd28390b32933d29e5"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-50.csv",
+      "bytes": 467882,
+      "sha256": "18b56738c5a10163d7f7645e857ace37385e7b0f09dabdf488f3367f89c1b6f4"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-51.csv",
+      "bytes": 4516507,
+      "sha256": "7fb8d6eb5a7e7a426b5a5997adb143d2f30452fd00f8966827ac772fdf75318f"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-53.csv",
+      "bytes": 1373519,
+      "sha256": "1841a529d664927bf879f503003d04958fa611a40e7f3e014e0cdd305f7457b5"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-54.csv",
+      "bytes": 1974103,
+      "sha256": "016d435c521edf10a8acfe286b43b2befb4e6c46964b59446bd6584cb90fa48a"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-55.csv",
+      "bytes": 2460845,
+      "sha256": "a80ff7c42cb3e4764f56aa6e02d839a524f1ba7b6f5ef41d5c6610c049485379"
+    },
+    {
+      "path": "raw/census-pep-v2025-syasex/cc-est2025-syasex-56.csv",
+      "bytes": 741725,
+      "sha256": "3e3e1ee7d6f036be26640a6cb249a98bb13f434d3233d5f1d34a1cfff707a454"
+    },
+    {
+      "path": "raw/infant-mortality-source-page.html",
+      "bytes": 43070,
+      "sha256": "1d92e4b8543d74b077febdf8ce751d06a01cafb1dc0d03e08585130f20f36e82"
+    },
+    {
+      "path": "raw/infant-visualization-config.json",
+      "bytes": 62733,
+      "sha256": "c8e6ba1c198b2836a225b7af451f6d812653d846b9cdceb29433610c4af0d3a2"
+    },
+    {
+      "path": "raw/nci-incidence-all_sites-county-2026-10-05-live-audit.csv",
+      "bytes": 331475,
+      "sha256": "98abf0ad4b88da7af9636c59d92789736d6a1259969f82f323cfe019d6c80643"
+    },
+    {
+      "path": "raw/nci-incidence-all_sites-county.csv",
+      "bytes": 331475,
+      "sha256": "dec7100b0aa19fe7d71e6df3d6410f8f84af89e0af3da9f970cf576031ef72a2"
+    },
+    {
+      "path": "raw/nci-incidence-all_sites-state-2026-10-05-live-audit.csv",
+      "bytes": 8306,
+      "sha256": "753bfc03e5df2f0436e8ec580519f25fbcd3bad61a876561390160f210eab716"
+    },
+    {
+      "path": "raw/nci-incidence-all_sites-state.csv",
+      "bytes": 8306,
+      "sha256": "ae3b5169e1f9f095b65cf70deae4cdf61411fe08a4914578038679c14ca0810a"
+    },
+    {
+      "path": "raw/nci-incidence-breast_female-county.csv",
+      "bytes": 319172,
+      "sha256": "bf3fd0c9b9c8be75bc866e650936d3a3ddedb0b93dbc533da5f522c3ce12f1c3"
+    },
+    {
+      "path": "raw/nci-incidence-breast_female-state.csv",
+      "bytes": 8131,
+      "sha256": "4bf590f3a8f750486051d63fe66552ea211620eece049d1137efb0dc50e1d634"
+    },
+    {
+      "path": "raw/nci-incidence-colorectal-county.csv",
+      "bytes": 312558,
+      "sha256": "fd6cb14a5127c2dc34a2e8b1ea8a3891aecd31c4e77e9b7ddff6664aee500b25"
+    },
+    {
+      "path": "raw/nci-incidence-colorectal-state.csv",
+      "bytes": 8074,
+      "sha256": "ccedba37f32d115249d9d51fb88b84db550c6c9fbe572b1b298297b39b0f88d3"
+    },
+    {
+      "path": "raw/nci-incidence-liver_intrahepatic_bile_duct-county.csv",
+      "bytes": 273817,
+      "sha256": "a2b987add9ab6ec41bbd00478a8c3b19f5f808e04ba41490db8bf648b90be772"
+    },
+    {
+      "path": "raw/nci-incidence-liver_intrahepatic_bile_duct-state.csv",
+      "bytes": 7882,
+      "sha256": "7ab725d69a1b85e45ebe4a6d4e045143aef74805ac0bcc94af6f0c25ab26c8b9"
+    },
+    {
+      "path": "raw/nci-incidence-lung-county.csv",
+      "bytes": 316427,
+      "sha256": "7997e68ee7bb1a84e80d3c1f82da35f2ffbabd9292d00ede12b423ce2c8df41e"
+    },
+    {
+      "path": "raw/nci-incidence-lung-state.csv",
+      "bytes": 8171,
+      "sha256": "1ac878ea0855e12ab8b6e5e5e9721dba730fdf0ee13544117b8e8da4e0067f2c"
+    },
+    {
+      "path": "raw/nci-incidence-melanoma-county.csv",
+      "bytes": 294861,
+      "sha256": "2ebb3e2fadee0e80486b6a4ad25f96815b2def06d9389b23a366845d3d97bfc8"
+    },
+    {
+      "path": "raw/nci-incidence-melanoma-state.csv",
+      "bytes": 7997,
+      "sha256": "adc68e650b99dbe1e64ac459d0136b81dc806dd2e515211727cc16da43a7ed37"
+    },
+    {
+      "path": "raw/nci-incidence-pancreas-county.csv",
+      "bytes": 287817,
+      "sha256": "634fee240504f7c982d4fa3363f2ba83bfbf8fff4e9d1e5b922082ded8c86822"
+    },
+    {
+      "path": "raw/nci-incidence-pancreas-state.csv",
+      "bytes": 7956,
+      "sha256": "fa7a98c40addf40295740f0a22964dda7596dcb0b4858beadcc2aeba1267cb88"
+    },
+    {
+      "path": "raw/nci-incidence-prostate_male-county.csv",
+      "bytes": 321376,
+      "sha256": "673c74e3912c31a9449b19a71df2f06ad77f9743c6b2bcda88671e8d52ee5bbc"
+    },
+    {
+      "path": "raw/nci-incidence-prostate_male-state.csv",
+      "bytes": 8141,
+      "sha256": "b7829bc6ef745e58622c28c635ac6ae0b90d956dac2ae89b4ebb09a51f1c6ae3"
+    },
+    {
+      "path": "raw/nci-mortality-all_sites-county.csv",
+      "bytes": 321061,
+      "sha256": "3691e72216aeaa5483295f89055aa51a8222d2b451616af4d3669d01883b7758"
+    },
+    {
+      "path": "raw/nci-mortality-all_sites-state.csv",
+      "bytes": 7093,
+      "sha256": "fb7472cac489292ec564e3a1072f2e3c8cbbdc52e659a97c315b8d94790e7af5"
+    },
+    {
+      "path": "raw/nci-mortality-breast_female-county.csv",
+      "bytes": 278190,
+      "sha256": "93a6d31bae0ad91684a911c40a4107cc7f25b5bc8db9580a9664969f29e2d48c"
+    },
+    {
+      "path": "raw/nci-mortality-breast_female-state.csv",
+      "bytes": 6811,
+      "sha256": "c3a7501890055f313357ce1443dde4c8d8c75508f0b8a8636452cc435c12ffa8"
+    },
+    {
+      "path": "raw/nci-mortality-colorectal-county.csv",
+      "bytes": 286079,
+      "sha256": "8fa9b2ba1113079e1feb58a3a1fc9be79b5b19f830ee443f9ea561a2aa79ce2f"
+    },
+    {
+      "path": "raw/nci-mortality-colorectal-state.csv",
+      "bytes": 6818,
+      "sha256": "821009e72c38ef13e36131e3292e62fd7844da5be91aef5973b8666aa500f393"
+    },
+    {
+      "path": "raw/nci-mortality-lung-county.csv",
+      "bytes": 303732,
+      "sha256": "0f579fff512f5bf3393985f11232152b0649a4a08235f457e7fb5f662922b6bf"
+    },
+    {
+      "path": "raw/nci-mortality-lung-state.csv",
+      "bytes": 6911,
+      "sha256": "58de5a8a97a506429da820a94f2607e05a08d345abc3bb5deffaef7a7c0b31f4"
+    },
+    {
+      "path": "raw/nci-mortality-melanoma-county.csv",
+      "bytes": 256794,
+      "sha256": "7c8a8c78a89f626ff6c0121d56d226a6eb504298f064ff6fabcb3f67de354584"
+    },
+    {
+      "path": "raw/nci-mortality-melanoma-state.csv",
+      "bytes": 7036,
+      "sha256": "92fb2a90432c8d8c33d2adc34f8d5c724cb4817712011517c9b93f8434cec25c"
+    },
+    {
+      "path": "raw/nci-mortality-prostate_male-county.csv",
+      "bytes": 274833,
+      "sha256": "03a81137c07e771a07b5554850cc40e67508f8ade9576247422aa52baae7a9af"
+    },
+    {
+      "path": "raw/nci-mortality-prostate_male-state.csv",
+      "bytes": 6770,
+      "sha256": "d59486161cefd759d2581c5d8f6acac001154aadf9c6a44c617614c35585aa33"
+    },
+    {
+      "path": "research-overview.json",
+      "bytes": 4187,
+      "sha256": "23e6b44c2940390d7b8579f36dcc4c74b28e4d63f1e733e01486c91919f46676"
+    },
+    {
+      "path": "sessions/2026-10-04/SESSION.md",
+      "bytes": 6118,
+      "sha256": "91ebb570d8efdfe681b306b715103ed7babd5d27cd666ec3de4206edce0d2322"
+    },
+    {
+      "path": "sessions/2026-10-05/SESSION.md",
+      "bytes": 8400,
+      "sha256": "9bedb9791aa16034d398b5858849bc4756c400d239dc74c4b5f30c630242a7cc"
+    },
+    {
+      "path": "source-register.json",
+      "bytes": 590851,
+      "sha256": "0735fce22567e693f55b2a655a8b8929067b9abb30ad0afc7542537ae7e535a5"
+    },
+    {
+      "path": "state-coverage.csv",
+      "bytes": 207072,
+      "sha256": "a05e0d77d7e45281750ae45f11b385f5aba17905ef9c7e018e453e2d121bbc30"
+    },
+    {
+      "path": "state-coverage.json",
+      "bytes": 794127,
+      "sha256": "f6ac7ad0cb75dc460dabb9862e70f3b786652260c8947a8e1ce56874ca130358"
+    }
+  ]
+}

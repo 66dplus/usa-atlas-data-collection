@@ -1,0 +1,76 @@
+{
+  "observed_at": "2026-10-06T06:08:20.093313+00:00",
+  "phase": "continuous_cycle_and_30_minute_monitor_enabled",
+  "codex_version": "0.157.0",
+  "login_status": "Existing Codex CLI login used during setup; secrets and session identifiers are not stored here.",
+  "model_override": false,
+  "scheduled_mechanism": "systemd -> runner.py -> codex exec --search --json",
+  "timezone": "Europe/Berlin",
+  "calendar_days": "daily recurring from 2026-10-03; no end date",
+  "deadline_local": null,
+  "checks": {
+    "python_compile": "passed",
+    "runner_fixture_tests": "11 passed; no real Codex inference",
+    "systemd_unit_verify": "passed",
+    "calendar_expansion": "daily recurring expressions verified; no end date",
+    "dry_runs": "both first_session_not_registered, no launch"
+  },
+  "units_installed": true,
+  "units_enabled": true,
+  "existing_units_modified": true,
+  "sources": [
+    "https://learn.chatgpt.com/docs/non-interactive-mode",
+    "https://learn.chatgpt.com/docs/developer-commands"
+  ],
+  "first_substantive_scheduled_continuation": "daily from 2026-10-04",
+  "main_ui_modified": false,
+  "prototype_url": "https://quantum-pcs-tonight-therapy.trycloudflare.com/",
+  "timer_states": {
+    "usa-atlas-research-wealth.timer": "active",
+    "usa-atlas-research-facts.timer": "active",
+    "usa-atlas-research-medical.timer": "active",
+    "usa-atlas-continuous-monitor.timer": "active"
+  },
+  "state_facts_scope_expanded_at": "2026-10-03T08:02:17.857132+00:00",
+  "state_facts_scope": [
+    "many_media_led_stories",
+    "thematic_collections",
+    "typed_place_comparisons",
+    "source_monitoring_and_refresh"
+  ],
+  "medical_data": {
+    "seed_phase": "completed_initial_research_with_documented_gaps",
+    "seed_receipt": "research/2026-10-03/medical-data/.first-session.json",
+    "timer_prepared": true,
+    "timer_installed": true,
+    "timer_enabled": true,
+    "daily_time": "13:00 Europe/Berlin",
+    "first_substantive_scheduled_continuation": "2026-10-04",
+    "shared_cli_access_previously_proven": true,
+    "new_topic_execution_claimed": false,
+    "core_numeric_observations": 58355,
+    "child_county_numeric_observations": 11966,
+    "combined_metric_ids": 39
+  },
+  "health_monitor": {
+    "unit": "usa-atlas-continuous-monitor.timer",
+    "interval": "30 minutes",
+    "scope": [
+      "three research timers",
+      "bounded retry of failed daily research",
+      "mobile-lab containers and HTTP tunnel"
+    ],
+    "last_check": "healthy",
+    "next_check": "30 minutes after the previous check"
+  },
+  "existing_collection_watchdog": {
+    "unit": "usa-atlas-scraper-watchdog.timer",
+    "interval": "2 minutes",
+    "state": "active; existing bounded worker recovery"
+  },
+  "smoke_capability_summary": {
+    "wealth_datacenters": "completed a real web-search smoke session",
+    "state_facts": "completed a real web-search smoke session with partial research result",
+    "medical_data": "uses the proven shared runner; no separate topic smoke is claimed"
+  }
+}

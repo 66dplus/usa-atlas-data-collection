@@ -1,0 +1,151 @@
+{
+  "run_id": "20261005T093103095104Z",
+  "status": "completed",
+  "started_at": "2026-10-05T09:31:03.095488+00:00",
+  "completed_at": "2026-10-05T09:31:07.392626+00:00",
+  "selected_sources": [
+    "bls-latest",
+    "npr-business",
+    "texas-tribune",
+    "calmatters",
+    "npr-technology",
+    "colorado-sun",
+    "the-city-ny",
+    "census-news"
+  ],
+  "source_results": [
+    {
+      "source_id": "bls-latest",
+      "feed_url": "https://www.bls.gov/feed/bls_latest.rss",
+      "started_at": "2026-10-05T09:31:03.095549+00:00",
+      "status": "collected",
+      "channel_title": "Major Economic Indicators Latest Numbers",
+      "records": 1,
+      "feed_items_available": 1,
+      "items_truncated": false,
+      "bytes": 5330,
+      "sha256": "4283688e5e2d3d5c93893cd8f739fb83f1558f3976d404e3d77a62cbe7bb5e1e",
+      "http_status": 200,
+      "completed_at": "2026-10-05T09:31:03.204094+00:00"
+    },
+    {
+      "source_id": "npr-business",
+      "feed_url": "https://feeds.npr.org/1006/rss.xml",
+      "started_at": "2026-10-05T09:31:03.206548+00:00",
+      "status": "collected",
+      "channel_title": "NPR Topics: Business",
+      "records": 10,
+      "feed_items_available": 10,
+      "items_truncated": false,
+      "bytes": 13941,
+      "sha256": "5a5f401d2d9af615617bd487f2fbb74c013d205beae7658feb2562a0eee73a05",
+      "http_status": 200,
+      "completed_at": "2026-10-05T09:31:04.324433+00:00"
+    },
+    {
+      "source_id": "texas-tribune",
+      "feed_url": "https://www.texastribune.org/feed/",
+      "started_at": "2026-10-05T09:31:04.327095+00:00",
+      "status": "collected",
+      "channel_title": "The Texas Tribune",
+      "records": 20,
+      "feed_items_available": 20,
+      "items_truncated": false,
+      "bytes": 41474,
+      "sha256": "09eb8836b29d8575f4fa75ce5b19b18080ffe6626155ae5b36b41d2862710c2a",
+      "http_status": 200,
+      "completed_at": "2026-10-05T09:31:04.569252+00:00"
+    },
+    {
+      "source_id": "calmatters",
+      "feed_url": "https://calmatters.org/feed/",
+      "started_at": "2026-10-05T09:31:04.579574+00:00",
+      "status": "collected",
+      "channel_title": "CalMatters",
+      "records": 10,
+      "feed_items_available": 10,
+      "items_truncated": false,
+      "bytes": 139172,
+      "sha256": "adb090df8bb2621568ef333750a393ffa84128fa498214c66a666e08803defcd",
+      "http_status": 200,
+      "completed_at": "2026-10-05T09:31:04.902534+00:00"
+    },
+    {
+      "source_id": "npr-technology",
+      "feed_url": "https://feeds.npr.org/1019/rss.xml",
+      "started_at": "2026-10-05T09:31:04.956596+00:00",
+      "status": "collected",
+      "channel_title": "NPR Topics: Technology",
+      "records": 10,
+      "feed_items_available": 10,
+      "items_truncated": false,
+      "bytes": 12568,
+      "sha256": "b7daab9ede4127ed2f402f3e5a4b7ec0786a63e5936dff281a7a9ad258906ccd",
+      "http_status": 200,
+      "completed_at": "2026-10-05T09:31:05.205488+00:00"
+    },
+    {
+      "source_id": "colorado-sun",
+      "feed_url": "https://coloradosun.com/feed/",
+      "started_at": "2026-10-05T09:31:05.227556+00:00",
+      "status": "collected",
+      "channel_title": "The Colorado Sun",
+      "records": 10,
+      "feed_items_available": 10,
+      "items_truncated": false,
+      "bytes": 38923,
+      "sha256": "66a97895b807821b22467dc9be586eb6ed2fa6487f7739d2a811109a2910a04e",
+      "http_status": 200,
+      "completed_at": "2026-10-05T09:31:05.328812+00:00"
+    },
+    {
+      "source_id": "the-city-ny",
+      "feed_url": "https://www.thecity.nyc/feed/",
+      "started_at": "2026-10-05T09:31:05.335048+00:00",
+      "status": "collected",
+      "channel_title": "The City Reporter",
+      "records": 10,
+      "feed_items_available": 10,
+      "items_truncated": false,
+      "bytes": 187996,
+      "sha256": "8839c67e08f874eb7c5da869514dced8accc5993abf9a527cad0d921daed77dd",
+      "http_status": 200,
+      "completed_at": "2026-10-05T09:31:06.391839+00:00"
+    },
+    {
+      "source_id": "census-news",
+      "feed_url": "https://www.census.gov/content/census/en/newsroom/press-releases.xml",
+      "started_at": "2026-10-05T09:31:06.396695+00:00",
+      "status": "parse_or_budget_error",
+      "error": "no usable title/link records in feed",
+      "records": 0,
+      "completed_at": "2026-10-05T09:31:07.307891+00:00"
+    }
+  ],
+  "unique_leads_this_run": 70,
+  "topic_matched_candidates_this_run": 7,
+  "cumulative_unique_leads": 88,
+  "failed_or_blocked_sources": [
+    "census-news"
+  ],
+  "raw_article_or_feed_archive": false,
+  "run_directory": "snapshots/20261005T093103095104Z",
+  "artifacts": {
+    "receipts.json": {
+      "bytes": 9862,
+      "sha256": "139480a1a78bdc2a3359b13eadacfcfc019f91f10ef805e5d7f3185f0f456e43"
+    },
+    "source-results.json": {
+      "bytes": 3727,
+      "sha256": "26d8f65ca26af41d8dc8b2a9331251657e3ad05a8770f1d008503a03c305b3df"
+    },
+    "leads.json": {
+      "bytes": 97054,
+      "sha256": "c24f8df63a818dc5b97a35e20447696736aa492a57436a91ee614d6f7cedad3f"
+    },
+    "story-candidates.json": {
+      "bytes": 9928,
+      "sha256": "84d764d7ceb7e8c3ea11549aa5501ba1608ba650c2da9d7ab384aa323226a995"
+    }
+  }
+}

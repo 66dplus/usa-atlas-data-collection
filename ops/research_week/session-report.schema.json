@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "topic": {"type": "string"},
+    "run_status": {"type": "string", "enum": ["completed", "partial", "blocked"]},
+    "summary": {"type": "string"},
+    "artifacts": {"type": "array", "items": {"type": "string"}},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {"url": {"type": "string"}, "title": {"type": "string"}},
+        "required": ["url", "title"],
+        "additionalProperties": false
+      }
+    },
+    "blockers": {"type": "array", "items": {"type": "string"}},
+    "next_actions": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["topic", "run_status", "summary", "artifacts", "sources", "blockers", "next_actions"],
+  "additionalProperties": false
+}

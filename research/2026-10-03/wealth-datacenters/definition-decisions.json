@@ -1,0 +1,74 @@
+{
+  "decision_date": "2026-10-03",
+  "desired_primary_metrics": [
+    {
+      "metric_id": "resident_individuals_net_worth_ge_1m_usd",
+      "threshold_usd": 1000000,
+      "unit": "individual_residents",
+      "wealth": "Total personal assets minus liabilities; include housing equity if the source does",
+      "geography": "Single primary residence assigned per individual at a dated snapshot",
+      "state_numeric_observations_admitted_this_session": 0,
+      "status": "source_or_license_needed"
+    },
+    {
+      "metric_id": "resident_individuals_net_worth_ge_1bn_usd",
+      "threshold_usd": 1000000000,
+      "unit": "individual_residents",
+      "wealth": "Total net worth estimate in USD, with price/FX valuation date",
+      "geography": "Single primary residence; business headquarters and citizenship are separate attributes",
+      "state_numeric_observations_admitted_this_session": 0,
+      "status": "source_or_license_needed"
+    },
+    {
+      "metric_id": "operating_physical_data_center_facilities",
+      "unit": "physical_facilities",
+      "geography": "Facility physical location; Census geography requires verified coordinates and boundary vintage",
+      "operation": "A source must explicitly support currently operating status and its date",
+      "state_complete_counts_admitted_this_session": 0,
+      "status": "national_inventory_and_status_evidence_needed"
+    }
+  ],
+  "separate_collected_metrics": [
+    "SCF families with net worth >= USD 1 million, national survey estimate",
+    "EPA listed ENERGY STAR data-center properties ever certified and by label year",
+    "Texas listed tax registry project rows by program",
+    "Minnesota designated tax-exemption project rows by published city and New/Refurbishment type",
+    "Loudoun distinct existing parcel IDs by raw source status",
+    "Loudoun pipeline polygon records by raw source status",
+    "Loudoun building footprint records, August 2024 reference",
+    "Oregon DEQ Cleaner Air Oregon Data Processing, Hosting, and Related Services map rows by CAO process status (32 distinct Source # permit-map listings; not a physical facility total)",
+    "Dated DEQ operation-evidence subset: one current page-confirmed Source # record and two historical Source # records in an August 2025 order (not statewide operating totals)",
+    "Alabama Commerce/Google: one named current Jackson County operator site (county 01071); site/campus unit, building count not disclosed",
+    "City of Huntsville 2021: two Meta data-center buildings reported operating; separate third CO and three construction buildings excluded; current status unknown and county withheld",
+    "AUBix Auburn: one physical site opened 2022; Core Scientific operator-transition announcement 2025 and current listing are retained as one site; current operation not independently dated",
+    "Alaska OIT Enterprise Service Catalog v1.16 (2026-07-20): two named colocation sites (Juneau State Office Building and GCI South Anchorage); OIT source subset only",
+    "University of Alaska: one named Butrovich Data Center (Fairbanks) with 2023 back-in-service report and 2026 operations staffing evidence",
+    "UAA: current page says several Anchorage data centers but gives no exact count or stable facility IDs; no numeric count admitted",
+    "Alaska Railroad: two Anchorage operator data-center locations in 2024 board packet; 2025 Fairbanks unit is a plan, not an operating count"
+  ],
+  "prohibited_substitutions": [
+    "AGI >= USD 1 million tax returns are annual-income returns, not millionaire persons",
+    "Joint returns and households are not individual people",
+    "Liquid investable assets exclude items included in total net worth",
+    "Primary work/business location does not establish primary residence",
+    "Citizenship or a second home does not establish state residence",
+    "IRS wealth >= USD 11.4 million does not enumerate all >= USD 1 million adults",
+    "Forbes 400 does not enumerate all >= USD 1 billion persons",
+    "Property, parcel, building, campus, company and tax project counts are separate",
+    "BUILT/Completed, approved plans and permits do not independently establish current operation",
+    "A national or state value must not be copied into counties",
+    "No matching record or a blocked source is not a zero population count"
+  ],
+  "deduplication_rules": [
+    "People require a stable provider person ID and one location snapshot; relatives/family fortunes must follow the source treatment",
+    "Retain facility source IDs, dated status and unit; names alone never justify a cross-source merge",
+    "EPA: row descriptive fingerprints are temporary snapshot identifiers, not persistent facility identities",
+    "Texas: owner/operator/occupant registration suffixes are roles; multiple stems, reused stems, program conversions and malformed dates go to review",
+    "Minnesota: hash-pinned manual PDF transcription; a changed PDF requires a newly dated reviewed transcription",
+    "Loudoun existing parcels: one PA_MCPI if component statuses agree; retain floor-area conflicts",
+    "Loudoun building footprints: FID is snapshot identity, not a globally stable building ID",
+    "Loudoun GIS layers have different units and vintages and must not be summed",
+    "Label-year certifications cannot be added into unique facility totals",
+    "Raw values, flags, URL, source date, retrieval time and SHA-256 remain attached to all observations"
+  ]
+}

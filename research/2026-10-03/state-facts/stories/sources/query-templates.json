@@ -1,0 +1,767 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-10-03",
+  "templates": [
+    {
+      "id": "interstate-move-pair",
+      "topic_tag": "migration",
+      "query_template": "people moving from {origin} to {destination} {year}",
+      "required_variables": [
+        "origin",
+        "destination",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "census-state-flows",
+        "irs-migration"
+      ],
+      "candidate_indicator_ids": [
+        "02.01",
+        "02.03",
+        "02.04",
+        "03.06"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "compare_states",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "02.01",
+          "02.03",
+          "02.04",
+          "03.06"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "interstate-outflow",
+      "topic_tag": "migration",
+      "query_template": "{state} residents leaving moving other states Census IRS {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "census-state-flows",
+        "irs-migration"
+      ],
+      "candidate_indicator_ids": [
+        "02.01",
+        "02.03",
+        "02.10"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "02.01",
+          "02.03",
+          "02.10"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "interstate-inflow",
+      "topic_tag": "migration",
+      "query_template": "{state} newcomers migration from other states Census {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "census-state-flows",
+        "irs-migration"
+      ],
+      "candidate_indicator_ids": [
+        "02.01",
+        "02.03",
+        "02.04"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "02.01",
+          "02.03",
+          "02.04"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "high-income-tax-return-movers",
+      "topic_tag": "wealth_moves",
+      "query_template": "{state} wealthy high income taxpayers migration IRS AGI {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "irs-migration",
+        "cnbc-wealth"
+      ],
+      "candidate_indicator_ids": [
+        "07.01",
+        "07.03",
+        "07.04"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "07.01",
+          "07.03",
+          "07.04"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "millionaire-household-report",
+      "topic_tag": "wealth_moves",
+      "query_template": "{state} millionaires households investable assets report methodology {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "forbes-wealth",
+        "cnbc-wealth"
+      ],
+      "candidate_indicator_ids": [
+        "07.06"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "07.06"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "billionaire-residence-move",
+      "topic_tag": "wealth_moves",
+      "query_template": "billionaire moved from {origin} to {destination} residence announcement {year}",
+      "required_variables": [
+        "origin",
+        "destination",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "forbes-wealth",
+        "cnbc-wealth"
+      ],
+      "candidate_indicator_ids": [
+        "07.07",
+        "07.01"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "compare_states",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "07.07",
+          "07.01"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "founder-residence",
+      "topic_tag": "wealth_moves",
+      "query_template": "{person} moved {state} residence statement tax {year}",
+      "required_variables": [
+        "person",
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "cnbc-wealth"
+      ],
+      "candidate_indicator_ids": [
+        "07.07"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "07.07"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "company-hq-move",
+      "topic_tag": "jobs",
+      "query_template": "{company} headquarters relocation {origin} {destination} press release {year}",
+      "required_variables": [
+        "company",
+        "origin",
+        "destination",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "bls-latest",
+        "bea-regional"
+      ],
+      "candidate_indicator_ids": [
+        "03.06",
+        "03.07"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "compare_states",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "03.06",
+          "03.07"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "state-tax-move-story",
+      "topic_tag": "taxes",
+      "query_template": "{state} income capital gains tax migration moving evidence {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "irs-migration",
+        "washington-standard"
+      ],
+      "candidate_indicator_ids": [
+        "07.01",
+        "07.03",
+        "07.05"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "07.01",
+          "07.03",
+          "07.05"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "housing-cost-move",
+      "topic_tag": "housing",
+      "query_template": "{state} housing rent prices moving residents {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "census-news",
+        "calmatters",
+        "texas-tribune"
+      ],
+      "candidate_indicator_ids": [
+        "02.03",
+        "02.04",
+        "02.06"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "02.03",
+          "02.04",
+          "02.06"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "housing-state-comparison",
+      "topic_tag": "housing",
+      "query_template": "{origin} {destination} housing affordability home rent moving {year}",
+      "required_variables": [
+        "origin",
+        "destination",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "census-news",
+        "bea-regional"
+      ],
+      "candidate_indicator_ids": [
+        "02.03",
+        "02.04",
+        "02.10"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "compare_states",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "02.03",
+          "02.04",
+          "02.10"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "jobs-growth-move",
+      "topic_tag": "jobs",
+      "query_template": "{state} jobs employers relocation unemployment {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "bls-latest",
+        "bea-regional"
+      ],
+      "candidate_indicator_ids": [
+        "03.06",
+        "03.07",
+        "03.08"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "03.06",
+          "03.07",
+          "03.08"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "datacenter-announcement",
+      "topic_tag": "datacenters",
+      "query_template": "{state} data center campus announced proposed operational {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "npr-technology",
+        "loudoun-government"
+      ],
+      "candidate_indicator_ids": [
+        "08.05"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "08.05"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "datacenter-local-tax",
+      "topic_tag": "datacenters",
+      "query_template": "{county} data centers local tax revenue jobs permitting {year}",
+      "required_variables": [
+        "county",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "loudoun-government",
+        "eia-news"
+      ],
+      "candidate_indicator_ids": [
+        "08.05",
+        "03.06"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "08.05",
+          "03.06"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "datacenter-power-demand",
+      "topic_tag": "datacenters",
+      "query_template": "{state} data centers electricity utility load public filing {year}",
+      "required_variables": [
+        "state",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [
+        "eia-news",
+        "npr-technology"
+      ],
+      "candidate_indicator_ids": [
+        "08.05"
+      ],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": [
+          "08.05"
+        ]
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    },
+    {
+      "id": "publisher-state-topic",
+      "topic_tag": "editorial",
+      "query_template": "site:{publisher_domain} {state} {topic} {year}",
+      "required_variables": [
+        "publisher_domain",
+        "state",
+        "topic",
+        "year"
+      ],
+      "access_method": "live_web_search",
+      "collector_status": "search_required_not_scrape_ready",
+      "primary_reference_source_ids": [],
+      "candidate_indicator_ids": [],
+      "indicator_note": "Catalog IDs are contextual suggestions; inspect definition, period and numeric coverage before linking. Missing/blocked values must not be supplied as observations.",
+      "geography": "ALL_50_STATES; DC separately; state/county/person geography verified per result",
+      "status": "unexecuted_template",
+      "save_from_results": [
+        "publisher",
+        "title",
+        "normalized_url",
+        "published_at",
+        "checked_at",
+        "original_source_url",
+        "claim_under_review",
+        "geography",
+        "verification_status"
+      ],
+      "proposed_link_payload": {
+        "kind": "state_collection",
+        "state_codes": "resolve names to US state codes after verification",
+        "indicator_ids": []
+      },
+      "claim_rules": [
+        "Media statement and primary numeric evidence remain separate.",
+        "Tax causation requires evidence beyond a move and a different tax rate.",
+        "IRS returns/AGI are not net-worth millionaires.",
+        "Planned/construction data-center sites are distinct from operating sites."
+      ]
+    }
+  ]
+}

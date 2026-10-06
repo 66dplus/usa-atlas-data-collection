@@ -1,0 +1,1732 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-05",
+  "production_admitted": false,
+  "stories": [
+    {
+      "id": "irs-palm-beach-ny-origins-2022-2023",
+      "headline_ru": "У Palm Beach County вырос приток налогового дохода, хотя прибывших деклараций было меньше",
+      "summary_ru": "В IRS county migration tables за filing years 2022–2023 внутренний приток в Palm Beach County составил 39 704 сопоставленные декларации и $7,070,679,000 AGI в декларациях второго года; отток — 40 922 декларации и $4,031,929,000. Разность AGI — +$3,038,750,000, хотя деклараций на въезд было на 1 218 меньше. Среди показанных MIAMI REALTORS источников из штата New York: Nassau County — 959 деклараций, New York County (Manhattan) — 734, Suffolk County — 732. Это потоки налоговых деклараций между округами, а не подсчёт всех людей, миллионеров или общего изменения населения.",
+      "themes": [
+        "county-migration",
+        "domestic-migration",
+        "migration",
+        "agi",
+        "income",
+        "finance",
+        "county-comparison"
+      ],
+      "states": [
+        "FL",
+        "NY"
+      ],
+      "places": [
+        {
+          "name": "Palm Beach County, Florida",
+          "kind": "county",
+          "state_code": "FL",
+          "geoid": "12099"
+        },
+        {
+          "name": "Florida",
+          "kind": "state",
+          "state_code": "FL",
+          "geoid": "12"
+        },
+        {
+          "name": "Nassau County, New York",
+          "kind": "county",
+          "state_code": "NY",
+          "geoid": "36059"
+        },
+        {
+          "name": "New York County (Manhattan), New York",
+          "kind": "county",
+          "state_code": "NY",
+          "geoid": "36061"
+        },
+        {
+          "name": "Suffolk County, New York",
+          "kind": "county",
+          "state_code": "NY",
+          "geoid": "36103"
+        },
+        {
+          "name": "New York State",
+          "kind": "state",
+          "state_code": "NY",
+          "geoid": "36"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "Nassau County, New York",
+            "kind": "county",
+            "state_code": "NY",
+            "geoid": "36059"
+          },
+          "to": {
+            "name": "Palm Beach County, Florida",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12099"
+          },
+          "metric_id": "median-household-income",
+          "reason_ru": "Сопоставить медианный доход домохозяйств в названном округе происхождения и округе назначения как отдельный местный контекст. Показатель не является AGI переехавших налогоплательщиков и не объясняет поток."
+        },
+        {
+          "from": {
+            "name": "New York County (Manhattan), New York",
+            "kind": "county",
+            "state_code": "NY",
+            "geoid": "36061"
+          },
+          "to": {
+            "name": "Palm Beach County, Florida",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12099"
+          },
+          "metric_id": "median-household-income",
+          "reason_ru": "Сопоставить медианный доход домохозяйств в Manhattan и Palm Beach County как отдельный местный контекст. Это не величина или мотив потока IRS."
+        },
+        {
+          "from": {
+            "name": "Suffolk County, New York",
+            "kind": "county",
+            "state_code": "NY",
+            "geoid": "36103"
+          },
+          "to": {
+            "name": "Palm Beach County, Florida",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12099"
+          },
+          "metric_id": "median-household-income",
+          "reason_ru": "Сопоставить медианный доход домохозяйств в Suffolk County и Palm Beach County как отдельный местный контекст. Это не величина или мотив потока IRS."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Nassau County, New York",
+            "kind": "county",
+            "state_code": "NY",
+            "geoid": "36059"
+          },
+          "to": {
+            "name": "Palm Beach County, Florida",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12099"
+          },
+          "reason_ru": "Сравнить округа происхождения и назначения в отдельных потоках IRS; медианные доходы лишь местный фон, не характеристика переехавших."
+        },
+        {
+          "from": {
+            "name": "New York County (Manhattan), New York",
+            "kind": "county",
+            "state_code": "NY",
+            "geoid": "36061"
+          },
+          "to": {
+            "name": "Palm Beach County, Florida",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12099"
+          },
+          "reason_ru": "Сравнить Manhattan и Palm Beach County, сохраняя New York County и не подменяя его всем New York City или штатом."
+        },
+        {
+          "from": {
+            "name": "Suffolk County, New York",
+            "kind": "county",
+            "state_code": "NY",
+            "geoid": "36103"
+          },
+          "to": {
+            "name": "Palm Beach County, Florida",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12099"
+          },
+          "reason_ru": "Сравнить округ происхождения с Palm Beach County; сам ряд остаётся потоком деклараций, не общим числом жителей."
+        }
+      ],
+      "period": {
+        "kind": "matched_tax_return_address_comparison",
+        "filing_year_1": 2022,
+        "filing_year_2": 2023,
+        "irs_release_last_modified": "2026-03-19",
+        "move_timing_note": "Различие адресов между сопоставленными декларациями годов 1 и 2; это не точная дата переезда и не календарный подсчёт всех мигрантов."
+      },
+      "value": 3038750000,
+      "unit": "USD_net_year2_adjusted_gross_income_derived",
+      "universe": "Domestic county-to-county migration of matched individual income-tax returns in IRS filing years 2022 and 2023; n1 is returns, n2 is individuals on year-two returns, and AGI is year-two AGI reported in thousands of dollars.",
+      "measurements": [
+        {
+          "measure": "Palm Beach County domestic total inflow",
+          "n1_returns": 39704,
+          "n2_year2_individuals": 64010,
+          "agi_thousand_usd": 7070679,
+          "direction": "inflow"
+        },
+        {
+          "measure": "Palm Beach County domestic total outflow",
+          "n1_returns": 40922,
+          "n2_year2_individuals": 65206,
+          "agi_thousand_usd": 4031929,
+          "direction": "outflow"
+        },
+        {
+          "measure": "derived net AGI",
+          "value_usd": 3038750000,
+          "formula": "(7,070,679 − 4,031,929) thousand USD"
+        },
+        {
+          "measure": "Nassau County to Palm Beach County",
+          "n1_returns": 959,
+          "n2_year2_individuals": 1556,
+          "agi_thousand_usd": 225005
+        },
+        {
+          "measure": "New York County to Palm Beach County",
+          "n1_returns": 734,
+          "n2_year2_individuals": 1127,
+          "agi_thousand_usd": 424361
+        },
+        {
+          "measure": "Suffolk County to Palm Beach County",
+          "n1_returns": 732,
+          "n2_year2_individuals": 1145,
+          "agi_thousand_usd": 221607
+        }
+      ],
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.miamirealtors.com/2026/03/24/palm-beach-county-1-in-the-nation-in-net-inflow-of-income-from-domestic-migration-per-latest-irs-tax-data/",
+          "title": "Palm Beach County: #1 in the Nation in Net Inflow of Income from Domestic Migration Per Latest IRS Tax Data",
+          "publisher": "MIAMI REALTORS® + RWorld, Economic Insights",
+          "role": "media",
+          "published_date": "2026-03-24",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Опубликованный анализ называет 2022–2023 источником IRS, приводит для Palm Beach County domestic inflow $7.07 млрд, outflow $4.03 млрд, net $3.04 млрд и указывает Nassau, New York и Suffolk counties как три крупнейших out-of-state источника; эти сводные значения сверены отдельно по таблицам IRS."
+        },
+        {
+          "url": "https://www.irs.gov/pub/irs-soi/countyinflow2223.csv",
+          "title": "County-to-County Inflow Migration Data, 2022–2023",
+          "publisher": "Internal Revenue Service, Statistics of Income",
+          "role": "primary",
+          "published_date": "2026-03-19",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "В таблице county inflow для назначения Palm Beach County (12/099) и domestic total (origin summary 97/000) записаны 39,704 returns, 64,010 individuals и AGI 7,070,679 в тысячах USD; прямые строки NY counties сохранены в primary-evidence.json.",
+          "response_sha256": "813ba2ef550c6a598a5121ccf98edcc79f61f1af69eb495bf44cd830b1586745"
+        },
+        {
+          "url": "https://www.irs.gov/pub/irs-soi/countyoutflow2223.csv",
+          "title": "County-to-County Outflow Migration Data, 2022–2023",
+          "publisher": "Internal Revenue Service, Statistics of Income",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Для origin Palm Beach County (12/099), domestic total (destination summary 97/000) IRS публикует 40,922 returns, 65,206 individuals и AGI 4,031,929 тысяч USD; для расчёта использована полная domestic total outflow row, а не сумма видимых потоков.",
+          "response_sha256": "364dba518f0db092515ccde03dda987815f6e54bcc8859640001e9185d4c106e",
+          "local_path": "stories/migration/raw/irs-countyoutflow2223.csv"
+        },
+        {
+          "url": "https://www.irs.gov/pub/irs-soi/2223inpublicmigdoc.pdf",
+          "title": "2022–2023 Migration Data Users Guide",
+          "publisher": "Internal Revenue Service, Statistics of Income",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Record layout говорит, что county outflow задаёт origin год 1 и destination год 2; county inflow — destination год 2 и origin год 1; n1 — returns, n2 и AGI основаны на return года 2, AGI записывается в тысячах USD. Малые потоки менее 20 деклараций группируются в Other flows."
+        }
+      ],
+      "caveats": [
+        "Разность $3,038,750,000 — net adjusted gross income, вычисленный из двух domestic gross flows; это не net migration людей, net population change или net returns.",
+        "39,704 входящих returns меньше 40,922 исходящих returns; эта разница не отменяет положительную разность AGI и не является точным количеством людей.",
+        "IRS сравнивает адреса сопоставленных индивидуальных income-tax returns годов подачи 2022 и 2023; не представлены все жители, non-filers, несопоставленные returns или точный день переезда.",
+        "IRS сообщает n1 как число returns, n2 как число year-two individuals; не складывать эти величины или AGI как один и тот же тип наблюдения.",
+        "Три строки NY-origin приведены как отдельные gross county-to-county flows. Их сумма не заявляется как весь поток из штата New York; Palm Beach County не является Miami-Dade County или городом Miami.",
+        "IRS группирует county flows менее чем с 20 returns в специальные Other flows; suppressed или regrouped cells не означают нулевого потока."
+      ],
+      "refresh": {
+        "method": "После нового IRS migration release загрузить только требуемые county inflow/outflow tables, зафиксировать release date, HTTP metadata и SHA-256, выбрать Palm Beach domestic totals и отдельно обе стороны потоков, сверить record layout, затем проверить три NY-origin routes и медийный пересказ.",
+        "frequency": "Ежегодно после публикации следующего IRS migration file; source index проверять ежеквартально.",
+        "source_urls": [
+          "https://www.irs.gov/statistics/soi-tax-stats-migration-data-2022-2023",
+          "https://www.irs.gov/pub/irs-soi/countyinflow2223.csv",
+          "https://www.irs.gov/pub/irs-soi/countyoutflow2223.csv",
+          "https://www.irs.gov/pub/irs-soi/2223inpublicmigdoc.pdf",
+          "https://www.miamirealtors.com/2026/03/24/palm-beach-county-1-in-the-nation-in-net-inflow-of-income-from-domestic-migration-per-latest-irs-tax-data/"
+        ]
+      },
+      "comparison_navigation_note_ru": "Кнопки сравнения открывают окружные показатели median household income для исходных NY counties и Palm Beach County. Они не открывают поток IRS и не связывают доходы местных домохозяйств с людьми из миграционных строк.",
+      "production_admitted": false
+    },
+    {
+      "id": "public-storage-glendale-frisco-2026",
+      "headline_ru": "Public Storage перенесла главный офис из Glendale во Frisco",
+      "summary_ru": "Компания объявила в феврале 2026 года перенос корпоративной штаб-квартиры в Frisco, Texas; её Form 8-K указывает, что principal office сменился с Glendale, California, на Frisco 10 февраля. Компания объяснила выбор рынка глубиной кадров и инновациями и сообщила, что сохранит долгосрочное присутствие в Glendale. Перенос главного офиса не доказывает переезд всех операций или сотрудников и не означает ухода из California.",
+      "themes": [
+        "corporate-moves",
+        "corporate-headquarters",
+        "corporate-relocation",
+        "employment",
+        "workforce",
+        "business"
+      ],
+      "states": [
+        "CA",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "Glendale, California",
+          "kind": "city",
+          "state_code": "CA"
+        },
+        {
+          "name": "Frisco, Texas",
+          "kind": "city",
+          "state_code": "TX"
+        },
+        {
+          "name": "California",
+          "kind": "state",
+          "state_code": "CA",
+          "geoid": "06"
+        },
+        {
+          "name": "Texas",
+          "kind": "state",
+          "state_code": "TX",
+          "geoid": "48"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "Glendale, California",
+            "kind": "city",
+            "state_code": "CA"
+          },
+          "to": {
+            "name": "Frisco, Texas",
+            "kind": "city",
+            "state_code": "TX"
+          },
+          "metric_id": "median-household-income",
+          "reason_ru": "Сравнить штатный контекст медианного дохода для двух городов, сохраняя Glendale и Frisco как исходные места истории. Это не сравнение расходов компании и не доказательство причин переноса."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Glendale, California",
+            "kind": "city",
+            "state_code": "CA"
+          },
+          "to": {
+            "name": "Frisco, Texas",
+            "kind": "city",
+            "state_code": "TX"
+          },
+          "reason_ru": "Сопоставить контекст штатов, связанных фактическим изменением principal office; это не подсчёт перемещённых работников."
+        }
+      ],
+      "period": {
+        "kind": "dated_corporate_event",
+        "event_date": "2026-02-10",
+        "announcement_date": "2026-02-12",
+        "announcement_year": 2026
+      },
+      "value": 1,
+      "unit": "company_principal_office_relocation",
+      "universe": "One company's principal corporate office address; not its facilities, total operations, or employee headcount.",
+      "measurements": [
+        {
+          "measure": "principal office",
+          "from": "Glendale, California",
+          "to": "Frisco, Texas",
+          "effective_date": "2026-02-10",
+          "employment_count": null
+        }
+      ],
+      "entity_name": "Public Storage",
+      "implementation_status": "principal_office_change_reported_effective_2026-02-10",
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.houstonchronicle.com/business/article/public-storage-headquarters-california-texas-21938751.php",
+          "title": "Public Storage, largest self-storage company in US, to move headquarters from California to Texas",
+          "publisher": "Houston Chronicle",
+          "role": "media",
+          "published_date": "2026-02-25",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Издание сообщает о переезде корпоративной штаб-квартиры из района Los Angeles во Frisco, приводит объяснение компании о talent/innovation и подтверждает сохранение долгосрочного присутствия в Glendale."
+        },
+        {
+          "url": "https://investors.publicstorage.com/news-events/press-releases/news-details/2026/Public-Storage-Announces-PS4-0--A-New-Era-of-Leadership-Growth-and-Value-Creation/default.aspx",
+          "title": "Public Storage Announces PS4.0™ — A New Era of Leadership, Growth and Value Creation",
+          "publisher": "Public Storage",
+          "role": "primary",
+          "published_date": "2026-02-12",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "В релизе компания говорит о переносе headquarters в North Dallas (Frisco), ссылается на talent/innovation и обещает сохранить долгосрочное присутствие в Glendale."
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1393311/000119312526048660/d793613d8k.htm",
+          "title": "Form 8-K, Public Storage",
+          "publisher": "U.S. Securities and Exchange Commission",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "В Form 8-K датой события названа 10 февраля 2026 года; в текущем отчёте указан адрес principal executive offices во Frisco, Texas, и бывший адрес в Glendale, California."
+        }
+      ],
+      "caveats": [
+        "SEC filing verifies a principal-office address change. It does not report how many employees moved between the cities.",
+        "The company announced a long-term Glendale presence; this is not an exit from California or a relocation of its roughly 3,500 facilities in 40 states.",
+        "The company attributed the decision to talent and innovation in the North Dallas market. Contextual Atlas comparisons do not establish a causal explanation or measure employer costs."
+      ],
+      "refresh": {
+        "method": "Check later SEC filings for principal-office address and company releases for any updated footprint or employee count; retain this dated headquarters change separately from later milestones.",
+        "frequency": "Annually and when the company files a new principal-office notice.",
+        "source_urls": [
+          "https://www.sec.gov/Archives/edgar/data/1393311/000119312526048660/d793613d8k.htm",
+          "https://investors.publicstorage.com/news-events/press-releases/news-details/2026/Public-Storage-Announces-PS4-0--A-New-Era-of-Leadership-Growth-and-Value-Creation/default.aspx",
+          "https://www.houstonchronicle.com/business/article/public-storage-headquarters-california-texas-21938751.php"
+        ]
+      },
+      "comparison_navigation_note_ru": "История описывает адрес главного офиса; action сравнивает parent states из-за отсутствия городских метрик и явно сохраняет Glendale/Frisco как исходные географии.",
+      "production_admitted": false
+    },
+    {
+      "id": "texas-tceq-data-center-permit-pause-2026",
+      "headline_ru": "Губернатор Texas распорядился приостановить выдачу разрешений дата-центрам",
+      "summary_ru": "21 сентября 2026 года губернатор Greg Abbott письмом поручил TCEQ приостановить выдачу разрешений для проектов дата-центров до завершения проверки ERCOT; в письме также сказано, что другие ведомства не должны продвигать связанные разрешения, пока не собрана запрошенная информация. Texas Tribune сообщает о директиве и её связи с проверками энергопотребления, воды, воздействия на сообщества, владельцев и налоговых льгот. По состоянию на 5 октября это подтверждает распоряжение, но не независимую проверку полного исполнения TCEQ или изменение счетов за электричество.",
+      "themes": [
+        "datacenters",
+        "energy",
+        "electricity",
+        "power-grid",
+        "water-use",
+        "policy",
+        "environment",
+        "planned-projects"
+      ],
+      "states": [
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "Texas",
+          "kind": "state",
+          "state_code": "TX",
+          "geoid": "48"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX",
+            "geoid": "48"
+          },
+          "to": {
+            "name": "California",
+            "kind": "state",
+            "state_code": "CA",
+            "geoid": "06"
+          },
+          "metric_id": "electricity-price",
+          "reason_ru": "Сравнить штатные цены на электричество как фон энергетической политики. Atlas price series не измеряет data-center load, тарифный эффект распоряжения или residential bill savings."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX",
+            "geoid": "48"
+          },
+          "to": {
+            "name": "California",
+            "kind": "state",
+            "state_code": "CA",
+            "geoid": "06"
+          },
+          "reason_ru": "Сопоставить состояние энергетической системы в штатах с недавними разными новостями об управлении дата-центрами; метрика цены — отдельный фон, не оценка причин или результата."
+        }
+      ],
+      "period": {
+        "kind": "dated_government_directive",
+        "event_date": "2026-09-21",
+        "implementation_check_due": "2026-10-19",
+        "status_checked_as_of": "2026-10-05"
+      },
+      "value": null,
+      "unit": "statewide_governor_directive",
+      "universe": "State directive addressed to the Texas Commission on Environmental Quality for permits sought by data-center projects; no count of paused permits was published in the cited letter.",
+      "measurements": [
+        {
+          "measure": "directive",
+          "agency": "Texas Commission on Environmental Quality",
+          "action": "pause issuance of permits related to data center projects until ERCOT completes its review",
+          "signed_date": "2026-09-21",
+          "compliance_update_due": "2026-10-19"
+        }
+      ],
+      "implementation_status": "directive_issued; implementation_and_household_effect_not_verified_as_of_2026-10-05",
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/",
+          "title": "Gov. Greg Abbott broadens moratorium on data center approvals to include environmental permits",
+          "publisher": "The Texas Tribune",
+          "role": "media",
+          "published_date": "2026-09-21",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "The Texas Tribune reports that Abbott directed TCEQ to halt new permits pending state audits and describes the requested information on power, water, community effects, ownership, and tax breaks."
+        },
+        {
+          "url": "https://gov.texas.gov/uploads/files/press/TCEQ_Data_Center.pdf",
+          "title": "Letter to TCEQ Executive Director Kelly Keel on Data-Center Permits",
+          "publisher": "Office of the Texas Governor",
+          "role": "primary",
+          "published_date": "2026-09-21",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "The governor's signed letter directs TCEQ to pause all permits related to data-center projects until ERCOT completes its review, lists grid and water concerns, and requests a compliance update by October 19, 2026."
+        }
+      ],
+      "caveats": [
+        "This record verifies a dated governor's directive and press coverage. No cited source here independently confirms that every agency implemented the directive or identifies how many permits were paused.",
+        "The letter's goal that projects should result in lower residential electrical bills is an asserted policy objective, not a measured bill reduction or causal finding.",
+        "ERCOT's grid area does not encompass all of Texas; the order and audits involve state agencies with different jurisdictions.",
+        "This state policy story is separate from proposed or announced individual facilities; it does not state that construction or operation stopped statewide."
+      ],
+      "refresh": {
+        "method": "Check the governor's office response deadline, TCEQ notices and permit records, ERCOT and TWDB audit documents, and later Texas Tribune reporting; keep order date separate from implementation date and measured electricity outcomes.",
+        "frequency": "Weekly through the October 19, 2026 compliance-update deadline, then quarterly while the directive or audits remain active.",
+        "source_urls": [
+          "https://gov.texas.gov/uploads/files/press/TCEQ_Data_Center.pdf",
+          "https://www.texastribune.org/2026/09/21/texas-data-center-moratorium-water-energy/"
+        ]
+      },
+      "comparison_navigation_note_ru": "Сравнение CA–TX показывает только Atlas electricity-price context. Оно не превращает штатную цену в счет household, wholesale price или оценку эффекта дата-центров.",
+      "production_admitted": false
+    },
+    {
+      "id": "california-datacenter-load-forecast-and-pipeline-2026",
+      "headline_ru": "Прогноз CEC: нагрузка дата-центров в California может вырасти с 1 до 4,5 ГВт",
+      "summary_ru": "California Energy Commission оценивает нагрузку дата-центров примерно в 1 000 MW, или 2% пикового спроса California ISO в начале 2026 года; её forecast к 2040 году — 4 500 MW, или 9%. CEC строит спросовой прогноз по заявкам коммунальных компаний и корректирует вероятность проектов по стадии. Axios отдельно опубликовал карту будущих дата-центров в California со ссылкой на Cleanview, но числовые оценки этой карты не объединены с нагрузкой CEC: это другие рамки учёта, период и величина.",
+      "themes": [
+        "datacenters",
+        "energy",
+        "electricity",
+        "power-grid",
+        "planned-projects",
+        "forecast"
+      ],
+      "states": [
+        "CA"
+      ],
+      "places": [
+        {
+          "name": "California",
+          "kind": "state",
+          "state_code": "CA",
+          "geoid": "06"
+        },
+        {
+          "name": "California Independent System Operator service area",
+          "kind": "grid_region",
+          "state_code": "CA"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "California",
+            "kind": "state",
+            "state_code": "CA",
+            "geoid": "06"
+          },
+          "to": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX",
+            "geoid": "48"
+          },
+          "metric_id": "electricity-price",
+          "reason_ru": "Сопоставить штатные цены на электричество как отдельный энергетический фон рядом с прогнозом California. Этот показатель не измеряет нагрузку или установленную мощность дата-центров и не прогнозирует счета домохозяйств."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "California",
+            "kind": "state",
+            "state_code": "CA",
+            "geoid": "06"
+          },
+          "to": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX",
+            "geoid": "48"
+          },
+          "reason_ru": "Сопоставить California с Texas как два выбранных пользователем рынка дата-центров, сохраняя исходный прогноз CEC только для California; Atlas action показывает отдельный контекст штатных цен."
+        }
+      ],
+      "period": {
+        "kind": "observed_estimate_and_forecast",
+        "cec_reference_period": "early 2026",
+        "cec_forecast_year": 2040,
+        "axios_published_date": "2026-09-28",
+        "cleanview_data_date": "2026-08"
+      },
+      "value": 1000,
+      "unit": "MW_estimated_data_center_load_early_2026",
+      "universe": "CEC Planning Forecast estimate of California data-center load as a share of California ISO peak electricity demand; utility applications are weighted by assessed likelihood of project completion.",
+      "related_values": [
+        {
+          "value": 2,
+          "unit": "percent_of_California_ISO_peak_demand_early_2026",
+          "source_id": "California Energy Commission"
+        },
+        {
+          "value": 4500,
+          "unit": "MW_CEC_forecast_2040",
+          "source_id": "California Energy Commission"
+        },
+        {
+          "value": 9,
+          "unit": "percent_of_California_ISO_peak_demand_forecast_2040",
+          "source_id": "California Energy Commission"
+        }
+      ],
+      "measurements": [
+        {
+          "publisher": "California Energy Commission",
+          "estimate_early_2026_mw": 1000,
+          "share_of_california_iso_peak_percent": 2,
+          "forecast_2040_mw": 4500,
+          "forecast_2040_share_of_peak_percent": 9,
+          "method_note": "Energy-demand forecast uses utility applications and adjusts likelihood by project stage; CEC page does not provide a comprehensive facility inventory."
+        }
+      ],
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.axios.com/local/san-diego/2026/09/28/data-centers-how-much-power-california",
+          "title": "Mapped: California's next data centers — and the power they'll need",
+          "publisher": "Axios San Diego",
+          "role": "media",
+          "published_date": "2026-09-28",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Axios опубликовал 28 сентября карту будущих дата-центров California на основе Cleanview data August 2026. Числа карты не использованы как подтверждённые измерения этого сюжета: открытая Cleanview tracker страница уже показывает другой October 2026 snapshot."
+        },
+        {
+          "url": "https://www.energy.ca.gov/programs-and-topics/topics/data-centers",
+          "title": "Data Centers",
+          "publisher": "California Energy Commission",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "CEC says the Planning Forecast estimates about 1,000 MW or 2% of California ISO peak demand in early 2026 and projects 4,500 MW or 9% by 2040; forecast inputs include utility applications adjusted for likelihood by project stage."
+        }
+      ],
+      "caveats": [
+        "CEC forecast MW is expected electric load; Cleanview's 1,057 MW is reported capacity. They are not interchangeable measurements and are not used to verify one another.",
+        "CEC's page says it does not keep a comprehensive tally of California data centers and does not permit data centers themselves; its role here is energy demand forecasting and some related power-plant permitting.",
+        "Planned capacity and projected electricity demand are estimates, not delivered construction, observed future load, wholesale price, household bill, or demonstrated data-center effect on electricity prices.",
+        "The CEC forecast is California-specific. The contextual CA–TX price comparison does not create a directly comparable Texas data-center load estimate.",
+        "Axios map relies on Cleanview data dated August 2026, while the directly opened Cleanview national tracker now says updated October 2026. The older map counts are retained as an unverified lead, not merged with CEC figures or presented as primary-verified values."
+      ],
+      "refresh": {
+        "method": "Check the next CEC Integrated Energy Policy Report or demand-forecast update for revised baseline, forecast horizon, and methodology; then review a dated Cleanview dataset snapshot and a new media analysis without merging facility counts, nameplate capacity, and modeled electric load.",
+        "frequency": "Annually after the CEC forecast release; review Cleanview quarterly for changed project statuses.",
+        "source_urls": [
+          "https://www.energy.ca.gov/programs-and-topics/topics/data-centers",
+          "https://www.axios.com/local/san-diego/2026/09/28/data-centers-how-much-power-california",
+          "https://cleanview.co/data-centers/us"
+        ]
+      },
+      "comparison_navigation_note_ru": "Оригинальная география — California и California ISO area. Штатная CA–TX action добавлена только как контекст; значение нагрузки или мощности не переносится в Texas.",
+      "production_admitted": false
+    },
+    {
+      "id": "migration-midwest-domestic-balance-2020-2025",
+      "headline_ru": "Миссури прибавил внутренних мигрантов, тогда как соседние штаты Среднего Запада теряли жителей",
+      "summary_ru": "Nebraska Public Media рассказывает об одной семье, переехавшей из Portland, Oregon, в Kansas City, Missouri, в начале июня 2026 года; участники называли расходы на жильё и уход за детьми в Portland, а также семейные и дружеские связи. В переписи населения Census PEP за 1 июля 2020 — 1 июля 2025 Missouri получил оценочный чистый внутренний миграционный прирост 57 454 человека; Iowa, Kansas и Nebraska показали чистый отток. Это сопоставление отдельного интервью с оценками чистых потоков на уровне штатов, не подсчёт всех переездов или доказательство причин.",
+      "themes": [
+        "migration",
+        "domestic-migration",
+        "interstate-migration",
+        "housing",
+        "affordability",
+        "state-comparison"
+      ],
+      "states": [
+        "MO",
+        "IA",
+        "KS",
+        "NE",
+        "OR"
+      ],
+      "places": [
+        {
+          "name": "Missouri",
+          "kind": "state",
+          "state_code": "MO",
+          "geoid": "29"
+        },
+        {
+          "name": "Iowa",
+          "kind": "state",
+          "state_code": "IA",
+          "geoid": "19"
+        },
+        {
+          "name": "Kansas",
+          "kind": "state",
+          "state_code": "KS",
+          "geoid": "20"
+        },
+        {
+          "name": "Nebraska",
+          "kind": "state",
+          "state_code": "NE",
+          "geoid": "31"
+        },
+        {
+          "name": "Portland, Oregon",
+          "kind": "city",
+          "state_code": "OR"
+        },
+        {
+          "name": "Kansas City, Missouri",
+          "kind": "city",
+          "state_code": "MO"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "Missouri",
+            "kind": "state",
+            "state_code": "MO",
+            "geoid": "29"
+          },
+          "to": {
+            "name": "Iowa",
+            "kind": "state",
+            "state_code": "IA",
+            "geoid": "19"
+          },
+          "metric_id": "median-home-value",
+          "reason_ru": "Сопоставить медианную стоимость жилья штатов, где PEP оценил противоположные направления чистой внутренней миграции. Это только контекст жилья, не мера потока и не объяснение изменения."
+        },
+        {
+          "from": {
+            "name": "Missouri",
+            "kind": "state",
+            "state_code": "MO",
+            "geoid": "29"
+          },
+          "to": {
+            "name": "Kansas",
+            "kind": "state",
+            "state_code": "KS",
+            "geoid": "20"
+          },
+          "metric_id": "median-home-value",
+          "reason_ru": "Сопоставить медианную стоимость жилья Missouri и Kansas отдельно от оценки чистой миграции PEP; показатель не измеряет мотивы переездов."
+        },
+        {
+          "from": {
+            "name": "Missouri",
+            "kind": "state",
+            "state_code": "MO",
+            "geoid": "29"
+          },
+          "to": {
+            "name": "Nebraska",
+            "kind": "state",
+            "state_code": "NE",
+            "geoid": "31"
+          },
+          "metric_id": "median-home-value",
+          "reason_ru": "Сопоставить медианную стоимость жилья Missouri и Nebraska как местный контекст, не как объяснение чистой миграции."
+        },
+        {
+          "from": {
+            "name": "Portland, Oregon",
+            "kind": "city",
+            "state_code": "OR"
+          },
+          "to": {
+            "name": "Kansas City, Missouri",
+            "kind": "city",
+            "state_code": "MO"
+          },
+          "metric_id": "median-home-value",
+          "reason_ru": "История интервью относится к Portland и Kansas City. Ссылка Atlas сравнит только родительские штаты Oregon и Missouri по медианной стоимости жилья; она не объясняет решение этой семьи."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Missouri",
+            "kind": "state",
+            "state_code": "MO"
+          },
+          "to": {
+            "name": "Iowa",
+            "kind": "state",
+            "state_code": "IA"
+          },
+          "reason_ru": "Сравнить Missouri и Iowa по оценке чистой внутренней миграции и отдельно по контексту стоимости жилья."
+        },
+        {
+          "from": {
+            "name": "Missouri",
+            "kind": "state",
+            "state_code": "MO"
+          },
+          "to": {
+            "name": "Kansas",
+            "kind": "state",
+            "state_code": "KS"
+          },
+          "reason_ru": "Сравнить соседние штаты с различным оценочным чистым миграционным балансом; стоимость жилья не устанавливает причину."
+        },
+        {
+          "from": {
+            "name": "Missouri",
+            "kind": "state",
+            "state_code": "MO"
+          },
+          "to": {
+            "name": "Nebraska",
+            "kind": "state",
+            "state_code": "NE"
+          },
+          "reason_ru": "Сравнить соседние штаты и отдельно прочитать семейное интервью из Portland в Kansas City."
+        },
+        {
+          "from": {
+            "name": "Portland, Oregon",
+            "kind": "city",
+            "state_code": "OR"
+          },
+          "to": {
+            "name": "Kansas City, Missouri",
+            "kind": "city",
+            "state_code": "MO"
+          },
+          "reason_ru": "Точное направление одного интервью; не представлять его как общий поток между городами или штатами."
+        }
+      ],
+      "comparison_navigation_note_ru": "Ряды Census — чистая внутренняя миграция на уровне штата за пять лет; Atlas действия показывают только контекстные показатели стоимости жилья. Ни тот ни другой ряд не устанавливает мотив мигрантов.",
+      "period": {
+        "observation_start": "2020-07-01",
+        "observation_end": "2025-07-01",
+        "kind": "Census Population Estimates Program annual components summed over Vintage 2025",
+        "media_interview_event": "early June 2026"
+      },
+      "value": 57454,
+      "unit": "estimated_net_domestic_migration_people",
+      "universe": "Census Population Estimates Program state-level estimated domestic migration component summed for July 1, 2020 through July 1, 2025; net balance, not gross moves, ACS people age 1+, IRS matched returns, or total population change.",
+      "related_values": [
+        {
+          "place": "Iowa",
+          "state_code": "IA",
+          "value": -8906,
+          "unit": "estimated_net_domestic_migration_people"
+        },
+        {
+          "place": "Kansas",
+          "state_code": "KS",
+          "value": -22373,
+          "unit": "estimated_net_domestic_migration_people"
+        },
+        {
+          "place": "Nebraska",
+          "state_code": "NE",
+          "value": -13330,
+          "unit": "estimated_net_domestic_migration_people"
+        }
+      ],
+      "measurements": [
+        {
+          "measure": "PEP domestic migration component summed from annual estimates 2021–2025",
+          "geography": "Missouri",
+          "value": 57454,
+          "unit": "people estimated net",
+          "formula": "DOMESTICMIG2021 + DOMESTICMIG2022 + DOMESTICMIG2023 + DOMESTICMIG2024 + DOMESTICMIG2025"
+        }
+      ],
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://nebraskapublicmedia.org/en/news/news-articles/seeking-affordability-domestic-migrants-are-moving-to-the-midwest-just-not-to-nebraska/",
+          "title": "Seeking affordability, ‘domestic migrants’ are moving to the Midwest. Just not to Nebraska",
+          "publisher": "Nebraska Public Media / Midwest Newsroom",
+          "role": "media",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "publication_date_note": "The accessible article page did not expose a publication date; the family move is reported as early June 2026.",
+          "evidence_ru": "Статья приводит интервью семьи, переехавшей из Portland в Kansas City в начале июня 2026 года. В пересказе семьи упомянуты стоимость жилья и childcare в Portland, а также друзья и родственники; текст отдельно отмечает рост net domestic migration Missouri примерно на 56 000 за 2020–2025 годы и снижение в Iowa, Kansas и Nebraska."
+        },
+        {
+          "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv",
+          "title": "Vintage 2025 State Population Estimates: Annual Population Estimates and Components of Change",
+          "publisher": "U.S. Census Bureau, Population Estimates Program",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Сумма столбцов DOMESTICMIG2021–DOMESTICMIG2025 даёт Missouri +57 454, Iowa −8 906, Kansas −22 373 и Nebraska −13 330 оценочных чистых внутренних мигрантов за 1 июля 2020 — 1 июля 2025. Это компонент PEP, а не gross moves или полное изменение численности населения.",
+          "local_path": "stories/migration/raw/popest-state2025.csv",
+          "sha256": "92188e29cb0a67dcf95afa7d6c47359409782f086478b70ea4128eb70e223ca9"
+        },
+        {
+          "url": "https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2020-2025/methods-statement-v2025.pdf",
+          "title": "Methods Statement: 2020–2025 Population Estimates",
+          "publisher": "U.S. Census Bureau, Population Estimates Program",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Официальный methods statement describes the Vintage 2025 state and county population estimates and component methodology. It provides methodological context for the period, while values here are summed from the separate state totals CSV."
+        }
+      ],
+      "caveats": [
+        "Индивидуальное интервью не является репрезентативной выборкой и не объясняет причины миграции на уровне всего населения.",
+        "PEP figures are net domestic-migration components, not gross one-way moves, reverse flows, ACS respondents age one or older, IRS tax returns, or total population change; no ACS margin of error applies to this PEP estimate.",
+        "Причины, названные семьёй, включают расходы и социальные связи; нельзя приписать её переезд только стоимости жилья.",
+        "В статье у даты публикации нет доступного значения; дата переезда, период Census и дата доступа записаны отдельно."
+      ],
+      "refresh": {
+        "method": "При выходе Vintage 2026 сверить таблицу state totals Census и сложить только документированные годовые компоненты DOMESTICMIG за следующий период; повторно открыть исходную статью и проверить дату/контекст интервью без превращения его в population claim.",
+        "frequency": "Ежегодно после выпуска Census PEP; медиа-историю проверять при найденной редакции/исправлении.",
+        "source_urls": [
+          "https://nebraskapublicmedia.org/en/news/news-articles/seeking-affordability-domestic-migrants-are-moving-to-the-midwest-just-not-to-nebraska/",
+          "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/state/totals/NST-EST2025-ALLDATA.csv",
+          "https://www2.census.gov/programs-surveys/popest/technical-documentation/methodology/2020-2025/methods-statement-v2025.pdf"
+        ]
+      },
+      "production_admitted": false
+    },
+    {
+      "id": "meta-lebanon-indiana-data-center-groundbreaking-2026",
+      "headline_ru": "Meta начала проект дата-центра стоимостью свыше $10 млрд в Ливане, штат Индиана",
+      "summary_ru": "11 февраля 2026 года Indiana Economic Development Corporation сообщила о церемонии начала строительства проекта Meta в Lebanon: запланированы 13 зданий, включая 10 зданий дата-центров, более $10 млрд инвестиций по этапам, около 4 000 рабочих мест на пике строительства и примерно 300 постоянных должностей после завершения. Местные обещания и целевые рабочие места относятся к плану; ввод комплекса в эксплуатацию этим сообщением не подтверждается.",
+      "themes": [
+        "data-centers",
+        "ai-infrastructure",
+        "energy",
+        "jobs",
+        "workforce",
+        "economic-development"
+      ],
+      "states": [
+        "IN",
+        "OH"
+      ],
+      "places": [
+        {
+          "name": "Lebanon, Indiana",
+          "kind": "city",
+          "state_code": "IN"
+        },
+        {
+          "name": "Boone County, Indiana",
+          "kind": "county",
+          "state_code": "IN",
+          "geoid": "18011"
+        },
+        {
+          "name": "Indiana",
+          "kind": "state",
+          "state_code": "IN",
+          "geoid": "18"
+        },
+        {
+          "name": "Ohio",
+          "kind": "state",
+          "state_code": "OH",
+          "geoid": "39"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "Indiana",
+            "kind": "state",
+            "state_code": "IN",
+            "geoid": "18"
+          },
+          "to": {
+            "name": "Ohio",
+            "kind": "state",
+            "state_code": "OH",
+            "geoid": "39"
+          },
+          "metric_id": "electricity-price",
+          "reason_ru": "Соседние штаты с крупными объявленными инфраструктурными проектами. State-level retail electricity prices are background only; they do not measure Meta's project load, a local tariff, delivered jobs, or household-bill effects."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Lebanon, Indiana",
+            "kind": "city",
+            "state_code": "IN"
+          },
+          "to": {
+            "name": "Pike County, Ohio",
+            "kind": "county",
+            "state_code": "OH",
+            "geoid": "39131"
+          },
+          "reason_ru": "Сопоставить два объявленных проекта дата-центров в Indiana и Ohio по стадии реализации и заявленным рабочим местам; сохранять различия площадок и планов."
+        }
+      ],
+      "comparison_navigation_note_ru": "Площадка Meta — в Lebanon, Boone County. Контекстный Atlas link переводит сравнение к штатам Indiana и Ohio; электрическая цена не равна цене подключения, нагрузке дата-центра или эффекту на счета.",
+      "period": {
+        "announcement_and_groundbreaking": "2026-02-11",
+        "target_first_phase": "late 2027 or early 2028 (media report)"
+      },
+      "value": 10000000000,
+      "unit": "USD_announced_investment_floor",
+      "value_qualifier": "more_than",
+      "universe": "Meta multi-phase data-center campus announced for Lebanon / Boone County, Indiana; investment amount is an announced plan, not verified delivered expenditure.",
+      "related_values": [
+        {
+          "measure": "peak construction jobs",
+          "value": 4000,
+          "unit": "jobs_planned_peak",
+          "source_role": "media_and_IEDC_announcement"
+        },
+        {
+          "measure": "ongoing operational jobs after completion",
+          "value": 300,
+          "unit": "jobs_planned",
+          "source_role": "IEDC_announcement"
+        }
+      ],
+      "implementation_status": "Indiana Economic Development Corporation described a groundbreaking ceremony on 2026-02-11. The cited announcement's planned investment, job counts, building count, and phase schedule are not evidence that spending, permanent hiring, or operation has been delivered. Operational status was not verified for this record.",
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://indianacapitalchronicle.com/2026/02/11/details-on-long-expected-meta-data-center-campus-unveiled/",
+          "title": "Details on long-expected Meta data center campus unveiled",
+          "publisher": "Indiana Capital Chronicle",
+          "role": "media",
+          "published_date": "2026-02-11",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Издание описало проект из 13 зданий, в том числе 10 дата-центров, на площадке в Lebanon; план превышает $10 млрд, предусматривает до 4 000 строительных работников на пике и около 300 постоянных рабочих мест. Компания ожидала первую фазу в конце 2027 или начале 2028 года; это срок плана."
+        },
+        {
+          "url": "https://iedc.in.gov/events/news/details/2026/02/11/gov.-braun-breaks-ground-on-10b-meta-data-center-campus-at-leap-district",
+          "title": "Gov. Braun Breaks Ground on $10B Meta Data Center Campus at LEAP District",
+          "publisher": "Indiana Economic Development Corporation",
+          "role": "primary",
+          "published_date": "2026-02-11",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Официальное сообщение о церемонии groundbreaking на LEAP District в Boone County перечисляет 13 planned buildings / 10 data-center buildings, over $10 billion across phases, approximately 300 jobs once complete and more than 4,000 construction jobs at peak; incentive eligibility is tied to performance."
+        }
+      ],
+      "caveats": [
+        "Объявленный объём инвестиций, предполагаемые рабочие места и построенные здания — разные статусы; источники не доказывают, что все средства потрачены или рабочие места созданы.",
+        "Церемония groundbreaking не означает, что весь кампус или первая фаза уже работает.",
+        "План энергетических и водных мер, пересказанный СМИ, является обещанием компании, а не измеренным результатом.",
+        "Цена электроэнергии на уровне штата не подтверждает стоимость питания этого объекта или изменение бытовых счетов."
+      ],
+      "refresh": {
+        "method": "Проверять следующие релизы Meta и IEDC, разрешения Boone County и utility/interconnection filings; записывать по отдельности финансирование, фактическое строительство, нанятые работники, подключение и эксплуатацию.",
+        "frequency": "Ежеквартально до ввода комплекса и при каждом официальном milestone.",
+        "source_urls": [
+          "https://indianacapitalchronicle.com/2026/02/11/details-on-long-expected-meta-data-center-campus-unveiled/",
+          "https://iedc.in.gov/events/news/details/2026/02/11/gov.-braun-breaks-ground-on-10b-meta-data-center-campus-at-leap-district",
+          "https://datacenters.atmeta.com/2026/02/hello-lebanon/"
+        ]
+      },
+      "production_admitted": false
+    },
+    {
+      "id": "ports-pike-ohio-ai-campus-2026",
+      "headline_ru": "На площадке PORTS в Огайо объявили кампус ИИ на 10 ГВт и новую генерацию, но мощность ещё не работает",
+      "summary_ru": "20 марта 2026 года федеральные чиновники провели церемонию начала проекта AI campus на бывшей площадке обогащения урана Portsmouth Site в Pike County, Ohio. Министерство энергетики описывает план дата-центра на 10 ГВт и партнёрское обязательство построить до 10 ГВт генерации; Associated Press отдельно передаёт план новой генерации до 10 ГВт, в том числе 9,2 ГВт газа, и $4,2 млрд сетевых улучшений. Это заявленные параметры проекта, не действующая мощность и не доказательство влияния на счета потребителей.",
+      "themes": [
+        "data-centers",
+        "ai-infrastructure",
+        "energy",
+        "natural-gas",
+        "infrastructure",
+        "jobs"
+      ],
+      "states": [
+        "OH",
+        "PA"
+      ],
+      "places": [
+        {
+          "name": "Pike County, Ohio (Portsmouth Site)",
+          "kind": "county",
+          "state_code": "OH",
+          "geoid": "39131"
+        },
+        {
+          "name": "Ohio",
+          "kind": "state",
+          "state_code": "OH",
+          "geoid": "39"
+        },
+        {
+          "name": "Pennsylvania",
+          "kind": "state",
+          "state_code": "PA",
+          "geoid": "42"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "Ohio",
+            "kind": "state",
+            "state_code": "OH",
+            "geoid": "39"
+          },
+          "to": {
+            "name": "Pennsylvania",
+            "kind": "state",
+            "state_code": "PA",
+            "geoid": "42"
+          },
+          "metric_id": "electricity-price",
+          "reason_ru": "Сравнить широкий штатный контекст электрических цен вокруг разных инфраструктурных историй, сохраняя площадку PORTS в Pike County. EIA retail-price data do not measure project generation plans, wholesale capacity, or household effects."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Pike County, Ohio (PORTS)",
+            "kind": "county",
+            "state_code": "OH",
+            "geoid": "39131"
+          },
+          "to": {
+            "name": "Pennsylvania, Three Mile Island site",
+            "kind": "region",
+            "state_code": "PA"
+          },
+          "reason_ru": "Сравнить две широко освещённые заявки на крупную вычислительную инфраструктуру и энергоснабжение, не смешивая реальные площадки, сроки, виды генерации и стадии проекта."
+        }
+      ],
+      "comparison_navigation_note_ru": "Atlas comparison link uses Ohio and Pennsylvania state electricity-price indicators; source geography remains the PORTS site in Pike County and this metric does not measure announced project capacity or consumer impacts.",
+      "period": {
+        "public_groundbreaking_ceremony": "2026-03-20",
+        "DOE_release": "2026-03-24"
+      },
+      "value": 10,
+      "unit": "GW_announced_data_center_capacity",
+      "value_qualifier": "planned",
+      "universe": "Announced AI data-center campus at the Portsmouth Site in Pike County, Ohio; planned capacity, not installed or operating capacity.",
+      "related_values": [
+        {
+          "measure": "generation commitment in DOE release",
+          "value": 10,
+          "unit": "GW_announced_generation_commitment"
+        },
+        {
+          "measure": "natural gas component reported by AP",
+          "value": 9.2,
+          "unit": "GW_planned_generation",
+          "source_role": "media_report"
+        },
+        {
+          "measure": "grid upgrades reported by AP",
+          "value": 4200000000,
+          "unit": "USD_announced_grid_upgrades"
+        }
+      ],
+      "implementation_status": "DOE says a groundbreaking ceremony occurred on 2026-03-20. The sources preserve different descriptions of the energy plan: DOE describes a 10 GW generation commitment; AP reports up to 10 GW of new generation including 9.2 GW gas. Neither source establishes completed plants, permits, financing close, an operating campus, or delivered jobs.",
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/ai-data-center-ohio-uranium-enrichment-4667fa1442ec1c652228337ab4eb68ee",
+          "title": "DOE unveils 10-gigawatt Ohio data center, gas-powered energy plan",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2026-03-20",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "AP сообщает об объявлении публично-частного проекта в Pike County: ожидаемый кампус 10 ГВт, до 10 ГВт новой генерации с 9,2 ГВт газа и $4,2 млрд объявленных сетевых улучшений. Заявление компании, что счета не вырастут, остаётся атрибутированным обещанием."
+        },
+        {
+          "url": "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site",
+          "title": "Partnership Ensures Affordable Energy Powers AI Future at Portsmouth Site",
+          "publisher": "U.S. Department of Energy",
+          "role": "primary",
+          "published_date": "2026-03-24",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "DOE описывает церемонию начала проекта на площадке Portsmouth Site 20 марта, план кампуса ИИ мощностью 10 ГВт и партнёрское обещание построить 10 ГВт генерации, а также прогнозируемые 10 000 строительных и более 2 000 постоянных рабочих мест в регионе. Это параметры и прогнозы анонса, не состоявшиеся результаты."
+        }
+      ],
+      "caveats": [
+        "10 ГВт кампуса и показатели генерации объявлены/запланированы; источники не подтверждают, что эти мощности разрешены, построены, подключены или работают.",
+        "AP и DOE описывают структуру генерации по-разному. Показатели сохранены с атрибуцией и не объединяются в один окончательный портфель.",
+        "Объявленные инвестиции, сетевые улучшения и projected jobs не равны потраченным средствам или найму.",
+        "Обещание не повышать счета — заявление участников проекта, а не наблюдавшийся тарифный эффект."
+      ],
+      "refresh": {
+        "method": "Проверять разрешения EPA/OEPA, FERC, PUCO, DOE, site-owner and utility filings; фиксировать по отдельности объявленные планы, разрешённую/финансируемую мощность, начатое строительство и operation.",
+        "frequency": "Ежеквартально; сразу после agency permit decisions or financing/construction milestones.",
+        "source_urls": [
+          "https://apnews.com/article/ai-data-center-ohio-uranium-enrichment-4667fa1442ec1c652228337ab4eb68ee",
+          "https://www.energy.gov/em/articles/partnership-ensures-affordable-energy-powers-ai-future-portsmouth-site",
+          "https://www.puco.ohio.gov/"
+        ]
+      }
+    },
+    {
+      "id": "va-dominion-gs5-rate-class-2025",
+      "headline_ru": "Регулятор Вирджинии утвердил новую группу тарифов для очень крупных потребителей Dominion",
+      "summary_ru": "В финальном приказе от 25 ноября 2025 года Virginia State Corporation Commission одобрила отдельный класс GS-5 для больших нагрузок, включая дата-центры, с началом действия с 1 января 2027 года. Регулятор оценил базовый счёт типичного бытового клиента Dominion Energy Virginia при потреблении 1 000 кВт·ч как увеличение на $11,24 в 2026 году и ещё на $2,36 в 2027 году. Это исторический прогноз по базовым ставкам для территории одной компании, а не измеренный счёт всех жителей штата и не доказательство, что изменения вызваны дата-центрами.",
+      "themes": [
+        "energy",
+        "electricity",
+        "data-centers",
+        "utility-rates",
+        "public-utilities",
+        "consumer-costs"
+      ],
+      "states": [
+        "VA",
+        "TX"
+      ],
+      "places": [
+        {
+          "name": "Dominion Energy Virginia service territory",
+          "kind": "region",
+          "state_code": "VA"
+        },
+        {
+          "name": "Virginia",
+          "kind": "state",
+          "state_code": "VA",
+          "geoid": "51"
+        },
+        {
+          "name": "Texas",
+          "kind": "state",
+          "state_code": "TX",
+          "geoid": "48"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "Virginia",
+            "kind": "state",
+            "state_code": "VA",
+            "geoid": "51"
+          },
+          "to": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX",
+            "geoid": "48"
+          },
+          "metric_id": "electricity-price",
+          "reason_ru": "Сравнить штатные розничные цены электроэнергии как общий фон рядом с историями тарифного регулирования и роста нагрузки. Метрика не является Dominion base bill, тарифом GS-5 или причинной оценкой влияния дата-центров."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Dominion Energy Virginia territory",
+            "kind": "region",
+            "state_code": "VA"
+          },
+          "to": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX"
+          },
+          "reason_ru": "Сопоставить конкретное регулирование Dominion с отдельной историей политики Texas по дата-центрам, сохраняя территорию обслуживания и периоды."
+        }
+      ],
+      "comparison_navigation_note_ru": "Исходная география — клиенты Dominion Energy Virginia, а не все клиенты штата. Atlas action ведёт к штатным EIA retail-price indicators, не к тарифному приказу или счетам клиентов.",
+      "period": {
+        "SCC_final_order_date": "2025-11-25",
+        "estimated_base_bill_increases": {
+          "2026": 11.24,
+          "2027": 2.36
+        },
+        "GS5_effective_date": "2027-01-01"
+      },
+      "value": 11.24,
+      "unit": "USD_monthly_base_bill_increase_estimate_1000_kWh_residential_customer_2026",
+      "universe": "SCC estimate for a typical Dominion Energy Virginia residential customer using 1,000 kWh per month; base bill only, within Dominion's service territory.",
+      "related_values": [
+        {
+          "measure": "additional estimated monthly base-bill increase",
+          "value": 2.36,
+          "unit": "USD_2027_for_typical_1000_kWh_customer"
+        }
+      ],
+      "implementation_status": "The SCC final order was issued in November 2025. The 2026 and 2027 bill amounts are estimates in that order, not a current measurement of customer bills. GS-5 new large-load class is scheduled to take effect 2027-01-01.",
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.wvva.com/2025/11/26/dominion-customers-face-higher-bills-despite-reduced-rate-request/?outputType=amp",
+          "title": "Dominion customers face higher bills despite reduced rate request",
+          "publisher": "WVVA / Gray Media",
+          "role": "media",
+          "published_date": "2025-11-26",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "WVVA сообщает об оценке SCC: базовый счёт Dominion для типичного потребителя 1 000 кВт·ч увеличивался на $11,24 в 2026 году и ещё на $2,36 в 2027 году; приказ вводил отдельный тарифный класс для крупных нагрузок и откладывал часть распределения затрат дата-центров."
+        },
+        {
+          "url": "https://www.scc.virginia.gov/docketsearch/DOCS/89g601%21.PDF",
+          "title": "Final Order, PUR-2025-00058",
+          "publisher": "Virginia State Corporation Commission",
+          "role": "primary",
+          "published_date": "2025-11-25",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Финальный приказ SCC в PUR-2025-00058 фиксирует утверждённые изменения базовых тарифов и новый GS-5 large-load class; опубликованная таблица/расчёт использует типичный бытовой уровень 1 000 kWh и оценки +$11.24 в 2026 и +$2.36 в 2027."
+        },
+        {
+          "url": "https://apps.dlas.virginia.gov/User_db/frmView.aspx?ViewId=7037&s=7",
+          "title": "SCC public meeting record and residential bill estimate",
+          "publisher": "Commonwealth of Virginia, public meeting record",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Официальная публичная запись перечисляет оценки роста базового счёта на $11.24 в 2026 году и $2.36 в 2027 году для клиента с потреблением 1 000 kWh в месяц и ввод нового класса GS-5 с 1 января 2027 года."
+        }
+      ],
+      "caveats": [
+        "SCC estimate — исторический прогноз из приказа 2025 года; он не является измерением фактического household bill в 2026 году.",
+        "Изменение базовой ставки не включает всякий возможный компонент счета, rider, налог или индивидуальный тариф.",
+        "Сфера — территория Dominion Energy Virginia, не вся Virginia и не все бытовые потребители.",
+        "Появление GS-5 и дата-центров в том же приказе не доказывает, что конкретная величина увеличения базового счёта вызвана дата-центрами.",
+        "State electricity-price context is not a utility rate-class comparison."
+      ],
+      "refresh": {
+        "method": "Открыть полный docket PUR-2025-00058 и последующие SCC orders/rate schedules; отдельно сверить вступление GS-5 в действие, фактические base rates and riders, Dominion filings and later customer bill examples.",
+        "frequency": "Раз в полгода и после новых приказов SCC или annual rate updates.",
+        "source_urls": [
+          "https://www.scc.virginia.gov/docketsearch/DOCS/89g601%21.PDF",
+          "https://apps.dlas.virginia.gov/User_db/frmView.aspx?ViewId=7037&s=7",
+          "https://www.scc.virginia.gov/about-the-scc/scc-facts/",
+          "https://www.wvva.com/2025/11/26/dominion-customers-face-higher-bills-despite-reduced-rate-request/?outputType=amp"
+        ]
+      },
+      "production_admitted": false
+    },
+    {
+      "id": "nextera-dominion-virginia-coheadquarters-jobs-proposal-2026",
+      "headline_ru": "Предложение NextEra и Dominion предусматривает 600 рабочих мест и башню-со-штаб-квартиру в Ричмонде",
+      "summary_ru": "14 сентября 2026 года NextEra Energy и Dominion Energy представили пакет выгод для Virginia в рамках предложенного объединения. Компания заявила о 600 новых прямых рабочих местах NextEra в штате и новой башне в Richmond, где разместится co-headquarters; AP сообщает, что также ожидаются 400 рабочих мест у поставщиков. Дело о смене контроля остаётся на рассмотрении SCC по состоянию на 5 октября 2026 года. Заявление не означает переезд существующей штаб-квартиры NextEra из Juno Beach, закрытое объединение или уже созданные должности.",
+      "themes": [
+        "corporate-headquarters",
+        "corporate-moves",
+        "business",
+        "jobs",
+        "employment",
+        "energy",
+        "data-centers",
+        "merger-proposal"
+      ],
+      "states": [
+        "FL",
+        "VA"
+      ],
+      "places": [
+        {
+          "name": "Juno Beach, Florida (NextEra Energy headquarters)",
+          "kind": "city",
+          "state_code": "FL"
+        },
+        {
+          "name": "Richmond, Virginia (Dominion headquarters and proposed co-headquarters tower)",
+          "kind": "city",
+          "state_code": "VA"
+        },
+        {
+          "name": "Florida",
+          "kind": "state",
+          "state_code": "FL",
+          "geoid": "12"
+        },
+        {
+          "name": "Virginia",
+          "kind": "state",
+          "state_code": "VA",
+          "geoid": "51"
+        }
+      ],
+      "comparisons": [
+        {
+          "from": {
+            "name": "Florida",
+            "kind": "state",
+            "state_code": "FL",
+            "geoid": "12"
+          },
+          "to": {
+            "name": "Virginia",
+            "kind": "state",
+            "state_code": "VA",
+            "geoid": "51"
+          },
+          "metric_id": "employment-growth",
+          "reason_ru": "Сравнить широкие штатные условия рынка труда около нынешнего Juno Beach HQ и предлагаемой башни в Richmond. Atlas employment-growth не измеряет 600 объявленных должностей, переезд компании или результат merger."
+        }
+      ],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Juno Beach, Florida",
+            "kind": "city",
+            "state_code": "FL"
+          },
+          "to": {
+            "name": "Richmond, Virginia",
+            "kind": "city",
+            "state_code": "VA"
+          },
+          "reason_ru": "Сравнить нынешнее место NextEra headquarters и предложенную Richmond co-headquarters площадку, не называя объявление переездом существующей штаб-квартиры."
+        }
+      ],
+      "comparison_navigation_note_ru": "Точные штаб-квартирные локации — Juno Beach и Richmond. Atlas action сравнивает лишь штатные показатели employment-growth, не рабочие места из предложения и не исход merger.",
+      "period": {
+        "benefits_package_announced": "2026-09-14",
+        "SCC_case": "PUR-2026-00112",
+        "status_checked": "2026-10-05"
+      },
+      "value": 600,
+      "unit": "planned_direct_jobs",
+      "value_qualifier": "company_announced_conditional_package",
+      "universe": "NextEra jobs announced for Virginia as part of a proposed NextEra–Dominion combination benefits package; creation and timing are not yet verified.",
+      "related_values": [
+        {
+          "measure": "supplier jobs",
+          "value": 400,
+          "unit": "expected_supplier_jobs",
+          "source_role": "company_projection"
+        },
+        {
+          "measure": "residential bill credit",
+          "value": 10,
+          "unit": "USD_monthly_credit_extension_for_four_years",
+          "source_role": "company_proposal"
+        }
+      ],
+      "implementation_status": "On 2026-10-05 the merger remains a proposed acquisition-of-control case before Virginia SCC, docket PUR-2026-00112. The September 14 package is conditional; no completed merger or delivered jobs are asserted. The proposal announces a Richmond co-headquarters tower but does not say NextEra will move its existing Juno Beach headquarters.",
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/2d3d5551a522618f94669fbcde1aa180",
+          "title": "Energy giants seeking to merge say they’ll extend Virginia residents’ bill credits and add jobs",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2026-09-14",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "AP описывает изменённый пакет выгод, запрошенный компаниями для предлагаемого объединения: башня совместной штаб-квартиры в Richmond, 600 рабочих мест и продление bill credits. Объединение на дату статьи требовало регуляторного одобрения; цифры описывают предложение."
+        },
+        {
+          "url": "https://newsroom.nexteraenergy.com/2026-09-14-NextEra-Energy-and-Dominion-Energy-announce-transformational-Virginia-benefits-package-that-puts-customers-first-and-positions-the-Commonwealth-as-a-global-energy-leader",
+          "title": "NextEra Energy and Dominion Energy announce Virginia benefits package",
+          "publisher": "NextEra Energy",
+          "role": "primary",
+          "published_date": "2026-09-14",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Компания объявила 600 новых рабочих мест NextEra в Virginia, около 400 ожидаемых supplier jobs, сохранение текущего штата сотрудников Dominion в течение пяти лет и shareholder-funded башню в Richmond рядом с существующим штабом Dominion; это её описание условного пакета."
+        },
+        {
+          "url": "https://www.scc.virginia.gov/about-the-scc/dominion-nextera-merger-updates/",
+          "title": "Dominion–NextEra merger updates",
+          "publisher": "Virginia State Corporation Commission",
+          "role": "primary",
+          "published_date": "2026-09-22",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Страница SCC описывает заявление/петицию о приобретении контроля PUR-2026-00112, поданную 15 июля 2026 года, и ongoing regulatory review; по состоянию на проверку 5 октября это предложенная сделка, а не одобренный merger."
+        }
+      ],
+      "caveats": [
+        "Владение компанией, расположение её штаб-квартиры, новая офисная башня и перевод работников — разные факты. Этот пакет не подтверждает перенос существующей штаб-квартиры NextEra из Florida.",
+        "600 direct jobs и 400 supplier jobs — company-announced / expected counts; фактический найм и сроки не подтверждены.",
+        "SCC approval, closing, construction of tower and delivery of incentives are distinct implementation steps.",
+        "Employment-growth comparison is background only; it cannot confirm or measure this project-specific hiring."
+      ],
+      "refresh": {
+        "method": "Проверить следующие обновления SCC case PUR-2026-00112 и последующие совместные filing/release; отдельно отслеживать merger approval/closing, башню, созданные должности, удержание работников, supplier estimates and customer credits.",
+        "frequency": "Ежемесячно до решения SCC и после каждого regulatory, financing, construction or hiring milestone.",
+        "source_urls": [
+          "https://www.scc.virginia.gov/about-the-scc/dominion-nextera-merger-updates/",
+          "https://apnews.com/article/2d3d5551a522618f94669fbcde1aa180",
+          "https://newsroom.nexteraenergy.com/2026-09-14-NextEra-Energy-and-Dominion-Energy-announce-transformational-Virginia-benefits-package-that-puts-customers-first-and-positions-the-Commonwealth-as-a-global-energy-leader"
+        ]
+      },
+      "production_admitted": false
+    },
+    {
+      "id": "dc-geneva-office-to-housing-groundbreaking-2026",
+      "headline_ru": "В Dupont Circle начали преобразование бывших офисов в 532 квартиры",
+      "summary_ru": "22 января 2026 года мэрия Washington, DC сообщила о groundbreaking проекта The Geneva: два офисных здания по адресу 1825–1875 Connecticut Avenue NW планируют превратить в 532 жилые квартиры, включая 60 постоянно доступных по программе affordable housing. Город указывает на 20-летнее снижение налогов и финансирование проекта стоимостью около $575 млн. Начало работ не означает, что квартиры уже готовы, сданы или заселены.",
+      "themes": [
+        "housing",
+        "housing-costs",
+        "housing-conversion",
+        "affordable-housing",
+        "urban-development",
+        "commercial-real-estate"
+      ],
+      "states": [
+        "DC"
+      ],
+      "places": [
+        {
+          "name": "Washington, District of Columbia",
+          "kind": "district",
+          "state_code": "DC",
+          "geoid": "11"
+        },
+        {
+          "name": "Dupont Circle, Washington, DC",
+          "kind": "region",
+          "state_code": "DC"
+        },
+        {
+          "name": "The Geneva, 1825–1875 Connecticut Avenue NW",
+          "kind": "region",
+          "state_code": "DC"
+        }
+      ],
+      "comparisons": [],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "Dupont Circle / The Geneva, Washington, DC",
+            "kind": "region",
+            "state_code": "DC"
+          },
+          "to": {
+            "name": "New York City, New York",
+            "kind": "city",
+            "state_code": "NY"
+          },
+          "reason_ru": "Сопоставить два местных подхода к расширению жилья в существующей застройке; для данного конкретного DC-проекта нет подходящей подтверждённой Atlas city-level completion metric, поэтому не создаётся кнопка со штатным заместителем."
+        }
+      ],
+      "comparison_navigation_note_ru": "DC остаётся отдельным округом. Сохранена проектная география Dupont Circle; намеренно не создаётся сравнение через неэквивалентный statewide rent или population indicator.",
+      "period": {
+        "groundbreaking": "2026-01-22",
+        "planned_housing_units": 532,
+        "planned_permanently_affordable_units": 60
+      },
+      "value": 532,
+      "unit": "planned_housing_units_at_groundbreaking",
+      "universe": "Two former office buildings at 1825–1875 Connecticut Avenue NW in Dupont Circle; counts are planned homes at project groundbreaking, not delivered units.",
+      "related_values": [
+        {
+          "measure": "permanently affordable homes",
+          "value": 60,
+          "unit": "planned_units"
+        },
+        {
+          "measure": "tax abatement term",
+          "value": 20,
+          "unit": "years"
+        },
+        {
+          "measure": "planned project financing",
+          "value": 575000000,
+          "unit": "USD"
+        }
+      ],
+      "implementation_status": "DMPED reported a groundbreaking on 2026-01-22. The 532 homes and 60 permanently affordable units are planned; completed construction, occupancy and affordability delivery were not verified.",
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://www.washingtonpost.com/dc-md-va/2026/01/23/dc-office-residential-conversion-the-geneva/",
+          "title": "D.C.’s largest office-to-residential conversion is officially underway",
+          "publisher": "The Washington Post",
+          "role": "media",
+          "published_date": "2026-01-23",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "The Washington Post reports that two Dupont Circle office buildings are being converted to 532 apartments, including 60 affordable homes, with a 20-year tax abatement. Article headline describes it as the District's largest office-to-residential conversion."
+        },
+        {
+          "url": "https://dmped.dc.gov/release/mayor-bowser-breaks-ground-geneva-dc%E2%80%99s-largest-ever-office-residential-conversion",
+          "title": "Mayor Bowser Breaks Ground on The Geneva, DC’s Largest-Ever Office-to-Residential Conversion",
+          "publisher": "DC Office of the Deputy Mayor for Planning and Economic Development",
+          "role": "primary",
+          "published_date": "2026-01-22",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Официальное сообщение DC о groundbreaking 22 января перечисляет 532 запланированные квартиры, 60 permanently affordable homes, 20-летнюю льготу и проектное финансирование $575 млн для зданий по адресу 1825–1875 Connecticut Avenue NW."
+        }
+      ],
+      "caveats": [
+        "Количество квартир — план на дату ceremony, не завершённое строительство или заселение.",
+        "60 permanently affordable homes — обещанное проектом количество, не подтверждённый на сегодня доступный жилой фонд.",
+        "Суперлатив largest-ever относится к конкретному виду конверсии и атрибутирован местной публикации/мэрии.",
+        "Двадцатилетняя tax abatement и финансирование описаны как элементы проекта, не вычисленная чистая бюджетная стоимость."
+      ],
+      "refresh": {
+        "method": "Проверить DMPED, DC permit/inspection records и последующие проектные отчёты: construction milestones, certificates of occupancy, фактически сданные квартиры, affordable set-asides and abatement terms.",
+        "frequency": "Ежеквартально до завершения; затем проверить окончательную сдачу и фактическое число affordable units.",
+        "source_urls": [
+          "https://dmped.dc.gov/release/mayor-bowser-breaks-ground-geneva-dc%E2%80%99s-largest-ever-office-residential-conversion",
+          "https://www.washingtonpost.com/dc-md-va/2026/01/23/dc-office-residential-conversion-the-geneva/",
+          "https://dcra.dc.gov/"
+        ]
+      },
+      "production_admitted": false
+    },
+    {
+      "id": "california-proposition-40-covered-assets-tax-proposal-2026",
+      "headline_ru": "Калифорнийская инициатива предлагает разовый налог до 5% на покрываемые активы свыше $1 млрд",
+      "summary_ru": "17 июня 2026 года инициатива стала eligible для включения в бюллетень; 25 июня Секретарь штата объявил её квалифицированной для выборов 3 ноября. Законопроект предлагает разовый налог до 5% для налогоплательщиков и трастов с covered assets свыше $1 млрд; охват включает определённые бизнес-активы, ценные бумаги, предметы искусства, коллекции и интеллектуальную собственность, но исключает недвижимость и некоторые пенсионные активы. На 5 октября мера ещё не была принятым законом. Это описание налогового предложения, не оценка числа миллиардеров, миграции или отъезда богатых жителей.",
+      "themes": [
+        "tax",
+        "tax-debate",
+        "public-finance",
+        "billionaire-tax-proposal",
+        "wealth-policy"
+      ],
+      "states": [
+        "CA",
+        "TX",
+        "FL"
+      ],
+      "places": [
+        {
+          "name": "California",
+          "kind": "state",
+          "state_code": "CA",
+          "geoid": "06"
+        },
+        {
+          "name": "Texas",
+          "kind": "state",
+          "state_code": "TX",
+          "geoid": "48"
+        },
+        {
+          "name": "Florida",
+          "kind": "state",
+          "state_code": "FL",
+          "geoid": "12"
+        }
+      ],
+      "comparisons": [],
+      "comparison_pairs": [
+        {
+          "from": {
+            "name": "California",
+            "kind": "state",
+            "state_code": "CA"
+          },
+          "to": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX"
+          },
+          "reason_ru": "Сравнить California tax proposal с Texas policy and relocation coverage as a research prompt only. Не выводить из предложения налогового закона фактические миграционные потоки или мотив переезда."
+        },
+        {
+          "from": {
+            "name": "California",
+            "kind": "state",
+            "state_code": "CA"
+          },
+          "to": {
+            "name": "Florida",
+            "kind": "state",
+            "state_code": "FL"
+          },
+          "reason_ru": "Сопоставить налоговые дебаты California с отдельными историями Florida о миграции и налоговых декларациях; они не являются ответом на поведение конкретных владельцев активов."
+        }
+      ],
+      "comparison_navigation_note_ru": "Для категории covered assets нет текущей метрики Atlas. Здесь оставлены тематические приглашения CA–TX и CA–FL, без кнопки, способной создать ложное измерение миграции или состояния.",
+      "period": {
+        "initiative_became_ballot_eligible": "2026-06-17",
+        "election_date": "2026-11-03",
+        "status_as_of": "2026-10-05"
+      },
+      "value": 5,
+      "unit": "percent_maximum_one_time_proposed_tax_on_covered_assets",
+      "value_qualifier": "up_to",
+      "universe": "Initiative-defined covered assets exceeding $1 billion for qualifying taxpayers and trusts; covered assets differ from ordinary net worth, with exclusions specified in the measure.",
+      "implementation_status": "Qualified for the November 3, 2026 ballot. As of October 5, 2026 it remained a proposal for voter consideration, not enacted law.",
+      "verification_status": "verified",
+      "sources": [
+        {
+          "url": "https://apnews.com/article/california-billionaire-tax-ballot-healthcare-measure-9edd9fb1cb2e7f0717b5b1b620fd0e05",
+          "title": "California voters will consider a measure in November to raise taxes on billionaires",
+          "publisher": "Associated Press",
+          "role": "media",
+          "published_date": "2026-06-26",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "AP сообщает 26 июня, что избиратели California будут рассматривать в ноябре предложение о разовом 5% налоге для людей с net worth свыше $1 млрд, проживавших в штате 1 января 2026 года. Это пересказ предложения, а не подсчёт реально облагаемых лиц или показатель миграции."
+        },
+        {
+          "url": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/california-secretary-state-shirley-n-weber-phd-announces-new-measure-eligible-november-2026-general-election-ballot-imposes-one",
+          "title": "Secretary of State announces measure eligible for November 2026 ballot",
+          "publisher": "California Secretary of State",
+          "role": "primary",
+          "published_date": "2026-06-17",
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Secretary of State сообщает, что мера стала eligible для общего голосования 3 ноября; инициатива устанавливает до 5% one-time tax на covered assets свыше $1 млрд у определённых taxpayers/trusts, перечисляя облагаемые категории и исключения."
+        },
+        {
+          "url": "https://www.lao.ca.gov/BallotAnalysis/Proposition?number=40&year=2026",
+          "title": "Proposition 40 [Ballot]",
+          "publisher": "California Legislative Analyst’s Office",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Nonpartisan LAO analysis says the proposal would tax billionaires who were California residents on January 1, 2026, at 5% of net worth, with real estate, pensions and retirement accounts generally excluded; it states the tax would be due in 2027 and identifies possible interactions with Propositions 41 and 42."
+        },
+        {
+          "url": "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/40",
+          "title": "Proposition 40: Billionaire Tax Act (November 3, 2026)",
+          "publisher": "California Secretary of State, Official Voter Information Guide",
+          "role": "primary",
+          "published_date": null,
+          "accessed_at": "2026-10-05",
+          "evidence_ru": "Официальный guide называет Proposition 40 разовым налоговым предложением в 5% и показывает дату выборов 3 ноября 2026 года; guide — сведения о предстоящем голосовании, не свидетельство принятия закона."
+        }
+      ],
+      "caveats": [
+        "Covered assets as defined by the initiative are not interchangeable with ordinary net worth, liquid wealth, annual income, tax AGI, property values or number of billionaires.",
+        "The measure's eligibility date, exclusions, trust rules and apportionment are defined by the initiative; a media shorthand about 'billionaires' does not replace that formula.",
+        "As of 2026-10-05 voters had not yet voted; proposal is not current law.",
+        "This tax proposal does not show that any person moved, plans to move, or will change residence or tax domicile; county/state migration series measure different populations."
+      ],
+      "refresh": {
+        "method": "After the 2026-11-03 election, verify official certified vote results and initiative status with the Secretary of State; if approved, consult the enacted text and Franchise Tax Board implementation materials for covered-asset definitions, effective dates and actual administration.",
+        "frequency": "After election certification, then annually during any implementation period.",
+        "source_urls": [
+          "https://quickguidetoprops.sos.ca.gov/propositions/2026-11-03/40",
+          "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/california-secretary-state-shirley-n-weber-phd-announces-new-measure-eligible-november-2026-general-election-ballot-imposes-one",
+          "https://www.lao.ca.gov/BallotAnalysis/Proposition?number=40&year=2026",
+          "https://apnews.com/article/california-billionaire-tax-ballot-healthcare-measure-9edd9fb1cb2e7f0717b5b1b620fd0e05"
+        ]
+      },
+      "production_admitted": false
+    }
+  ]
+}

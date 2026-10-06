@@ -1,0 +1,424 @@
+{
+  "prepared_at": "2026-10-03",
+  "scheduled_collector": false,
+  "publishers": [
+    {
+      "publisher": "Associated Press",
+      "role": "media",
+      "discovery_url": "https://apnews.com/",
+      "seed_urls": [
+        "https://apnews.com/article/0f04558aa909f1f5b56735e82a0a2011",
+        "https://apnews.com/article/cf74172176f6c90210e8ac96e1ff6f52",
+        "https://apnews.com/article/1cf320ad4d50bff8d3fac4d0535a0004",
+        "https://apnews.com/article/ccdad82728a72025f37383e3811f13f6",
+        "https://apnews.com/article/a143ba6970a4e1ff401f5463f2cd80a8",
+        "https://apnews.com/article/ec3501d041d7b8b563563b22fcc23db5",
+        "https://apnews.com/article/8f47ba63a7aab8831a7805dfde0e2c39"
+      ],
+      "story_ids": [
+        "aws-indiana-new-carlisle-2024",
+        "aws-mississippi-madison-2024",
+        "bezos-seattle-miami-2023",
+        "meta-richland-announcement-2024",
+        "microsoft-mount-pleasant-2024",
+        "oracle-nashville-plan-2024",
+        "three-mile-island-microsoft-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Axios",
+      "role": "media",
+      "discovery_url": "https://www.axios.com/",
+      "seed_urls": [
+        "https://www.axios.com/2023/11/03/jeff-bezos-moves-miami-blue-origin",
+        "https://www.axios.com/2020/12/08/elon-musk-texas-california-silicon-valley",
+        "https://www.axios.com/local/chicago/2022/06/28/corporate-headquarters-leaving-chicago",
+        "https://www.axios.com/2022/05/06/boeing-relocates-virginia",
+        "https://www.axios.com/2020/12/02/hp-silicon-valley-texas"
+      ],
+      "story_ids": [
+        "bezos-seattle-miami-2023",
+        "boeing-chicago-arlington-2022",
+        "citadel-chicago-miami-2022",
+        "hpe-san-jose-spring-2022",
+        "musk-california-texas-2020"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Houston Chronicle",
+      "role": "media",
+      "discovery_url": "https://www.houstonchronicle.com/",
+      "seed_urls": [
+        "https://www.houstonchronicle.com/news/houston-texas/space/article/Elon-Musk-confirms-that-he-has-moved-to-Texas-15784985.php"
+      ],
+      "story_ids": [
+        "musk-california-texas-2020"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Citadel Securities",
+      "role": "primary",
+      "discovery_url": "https://www.citadelsecurities.com/",
+      "seed_urls": [
+        "https://www.citadelsecurities.com/news-and-insights/citadel-to-relocate-hq-from-chicago-to-miami/"
+      ],
+      "story_ids": [
+        "citadel-chicago-miami-2022"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Citadel",
+      "role": "primary",
+      "discovery_url": "https://www.citadel.com/",
+      "seed_urls": [
+        "https://www.citadel.com/who-we-are/"
+      ],
+      "story_ids": [
+        "citadel-chicago-miami-2022"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Reuters via Investing.com",
+      "role": "media",
+      "discovery_url": "https://www.investing.com/",
+      "seed_urls": [
+        "https://www.investing.com/news/stock-market-news/austin-cheers-teslas-headquarters-move-but-local-home-buyers-left-on-edge-2640008",
+        "https://www.investing.com/news/stock-market-news/tesla-set-to-make-announcement-at-california-engineering-headquarters-3010958",
+        "https://www.investing.com/news/stock-market-news/caterpillar-to-move-global-headquarters-to-texas-2836944",
+        "https://www.investing.com/news/stock-market-news/oracle-moves-headquarters-to-texas-from-silicon-valley-2367237",
+        "https://www.investing.com/news/stock-market-news/amazon-to-invest-15-billion-in-indiana-to-boost-data-center-infrastructure-4375851"
+      ],
+      "story_ids": [
+        "aws-indiana-additional-investment-2025",
+        "caterpillar-deerfield-irving-2022",
+        "oracle-redwood-austin-2020",
+        "tesla-corporate-hq-2021",
+        "tesla-engineering-palo-alto-2023"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Tesla",
+      "role": "primary",
+      "discovery_url": "https://ir.tesla.com/",
+      "seed_urls": [
+        "https://ir.tesla.com/_flysystem/s3/sec/000110465924048040/tm2326076d13_pre14a-gen.pdf"
+      ],
+      "story_ids": [
+        "tesla-corporate-hq-2021"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Governor of California",
+      "role": "primary",
+      "discovery_url": "https://www.gov.ca.gov/",
+      "seed_urls": [
+        "https://www.gov.ca.gov/2023/02/22/governor-newsom-welcomes-new-tesla-global-engineering-and-ai-hq-in-california/"
+      ],
+      "story_ids": [
+        "tesla-engineering-palo-alto-2023"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Chevron",
+      "role": "primary",
+      "discovery_url": "https://chevroncorp.gcs-web.com/",
+      "seed_urls": [
+        "https://chevroncorp.gcs-web.com/news-releases/news-release-details/chevron-announces-headquarters-relocation-and-senior-leadership"
+      ],
+      "story_ids": [
+        "chevron-san-ramon-houston-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "The Texas Tribune",
+      "role": "media",
+      "discovery_url": "https://www.texastribune.org/",
+      "seed_urls": [
+        "https://www.texastribune.org/2024/08/02/chevron-houston-texas-california/"
+      ],
+      "story_ids": [
+        "chevron-san-ramon-houston-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Caterpillar",
+      "role": "primary",
+      "discovery_url": "https://investors.caterpillar.com/",
+      "seed_urls": [
+        "https://investors.caterpillar.com/news/news-details/2022/Caterpillar-to-Relocate-Global-Headquarters-to-Dallas-Fort-Worth-Area/default.aspx"
+      ],
+      "story_ids": [
+        "caterpillar-deerfield-irving-2022"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Boeing",
+      "role": "primary",
+      "discovery_url": "https://investors.boeing.com/",
+      "seed_urls": [
+        "https://investors.boeing.com/investors/news/press-release-details/2022/Boeing-Names-Northern-Virginia-Office-Its-Global-Headquarters-Establishes-Research--Technology-Hub/default.aspx/1000/"
+      ],
+      "story_ids": [
+        "boeing-chicago-arlington-2022"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "HPE",
+      "role": "primary",
+      "discovery_url": "https://www.hpe.com/",
+      "seed_urls": [
+        "https://www.hpe.com/us/en/newsroom/blog-post/2022/04/hpe-celebrates-grand-opening-of-houston-headquarters.html",
+        "https://www.hpe.com/us/en/about/enterprise-technology-us.html"
+      ],
+      "story_ids": [
+        "hpe-san-jose-spring-2022"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Oracle",
+      "role": "primary",
+      "discovery_url": "https://www.oracle.com/",
+      "seed_urls": [
+        "https://www.oracle.com/corporate/contact/field-offices/"
+      ],
+      "story_ids": [
+        "oracle-nashville-plan-2024",
+        "oracle-redwood-austin-2020"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Meta",
+      "role": "primary",
+      "discovery_url": "https://datacenters.atmeta.com/",
+      "seed_urls": [
+        "https://datacenters.atmeta.com/2024/12/hello-louisiana/",
+        "https://about.fb.com/news/2026/07/teachers-local-businesses-win-as-meta-expands-louisiana-data-center/"
+      ],
+      "story_ids": [
+        "meta-hyperion-expansion-2026",
+        "meta-richland-announcement-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "SiliconANGLE",
+      "role": "media",
+      "discovery_url": "https://siliconangle.com/",
+      "seed_urls": [
+        "https://siliconangle.com/2026/07/13/meta-boosts-investment-hyperion-data-center-campus-50b/"
+      ],
+      "story_ids": [
+        "meta-hyperion-expansion-2026"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Amazon",
+      "role": "primary",
+      "discovery_url": "https://www.aboutamazon.com/",
+      "seed_urls": [
+        "https://www.aboutamazon.com/news/aws/aws-indiana-investment-11-billion",
+        "https://www.aboutamazon.com/news/aws/aws-10-billion-investment-mississippi",
+        "https://www.aboutamazon.com/news/company-news/amazon-15-billion-indiana-data-centers"
+      ],
+      "story_ids": [
+        "aws-indiana-additional-investment-2025",
+        "aws-indiana-new-carlisle-2024",
+        "aws-mississippi-madison-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Microsoft",
+      "role": "primary",
+      "discovery_url": "https://news.microsoft.com/",
+      "seed_urls": [
+        "https://news.microsoft.com/source/2024/05/08/microsoft-announces-3-3-billion-investment-in-wisconsin-to-spur-artificial-intelligence-innovation-and-economic-growth/"
+      ],
+      "story_ids": [
+        "microsoft-mount-pleasant-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Google",
+      "role": "primary",
+      "discovery_url": "https://blog.google/",
+      "seed_urls": [
+        "https://blog.google/feed/new-7-billion-investment-iowa/"
+      ],
+      "story_ids": [
+        "google-iowa-expansion-2025"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "KCRG",
+      "role": "media",
+      "discovery_url": "https://www.kcrg.com/",
+      "seed_urls": [
+        "https://www.kcrg.com/2025/05/30/google-holds-celebration-new-data-center-cedar-rapids/",
+        "https://www.kcrg.com/2026/05/27/cedar-rapids-mayor-deliver-state-city-address/"
+      ],
+      "story_ids": [
+        "google-iowa-expansion-2025"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Constellation Energy",
+      "role": "primary",
+      "discovery_url": "https://investors.constellationenergy.com/",
+      "seed_urls": [
+        "https://investors.constellationenergy.com/news-releases/news-release-details/constellation-launch-crane-clean-energy-center-restoring-jobs"
+      ],
+      "story_ids": [
+        "three-mile-island-microsoft-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "NextEra Energy",
+      "role": "primary",
+      "discovery_url": "https://www.investor.nexteraenergy.com/",
+      "seed_urls": [
+        "https://www.investor.nexteraenergy.com/~/media/Files/N/NEE-IR/news-and-events/news-releases/2025/NextEra%20Energy%20and%20Google%20Announce%20New%20Collaboration%20to%20Accelerate%20Nuclear%20Energy%20Deployment%20in%20the%20US.pdf"
+      ],
+      "story_ids": [
+        "duane-arnold-google-2025"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Reuters via MarketScreener",
+      "role": "media",
+      "discovery_url": "https://www.marketscreener.com/",
+      "seed_urls": [
+        "https://www.marketscreener.com/news/nextera-energy-partners-with-google-to-restart-iowa-nuclear-plant-ce7d5ddfdc88ff23"
+      ],
+      "story_ids": [
+        "duane-arnold-google-2025"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "Virginia JLARC",
+      "role": "primary",
+      "discovery_url": "https://jlarc.virginia.gov/",
+      "seed_urls": [
+        "https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp"
+      ],
+      "story_ids": [
+        "northern-virginia-global-capacity-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    },
+    {
+      "publisher": "American Public Power Association",
+      "role": "media",
+      "discovery_url": "https://www.publicpower.org/",
+      "seed_urls": [
+        "https://www.publicpower.org/periodical/article/report-details-challenges-virginia-power-grid-tied-growth-data-centers"
+      ],
+      "story_ids": [
+        "northern-virginia-global-capacity-2024"
+      ],
+      "feed_status": "not_discovered_or_verified",
+      "automation_status": "manual_review_only_until_terms_API_RSS_checked",
+      "storage_policy": "URL_metadata_and_short_authored_factual_paraphrases; do_not_mirror_articles_or_images",
+      "refresh_frequency": "quarterly_and_before_publication"
+    }
+  ],
+  "license_sensitive_leads": [
+    "Forbes",
+    "Henley & Partners",
+    "Altrata"
+  ],
+  "note_ru": "Discovery URLs — домены прочитанных публикаций, не проверенные RSS. Перед скрейпингом необходима проверка условий и разрешённого метода получения."
+}

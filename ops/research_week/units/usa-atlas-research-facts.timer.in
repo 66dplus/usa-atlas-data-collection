@@ -1,0 +1,11 @@
+[Unit]
+Description=Ongoing daily sourced stories, collections and state-facts research, Berlin time
+
+[Timer]
+OnCalendar=*-*-* 11:30:00 Europe/Berlin
+AccuracySec=60
+Persistent=true
+Unit=usa-atlas-research@state-facts.service
+
+[Install]
+WantedBy=timers.target
