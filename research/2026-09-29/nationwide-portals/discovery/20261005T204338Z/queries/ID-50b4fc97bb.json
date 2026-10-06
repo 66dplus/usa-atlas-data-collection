@@ -1,0 +1,710 @@
+{
+  "jurisdiction_code": "ID",
+  "query": "physical activity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T20:44:36.152237+00:00",
+  "candidates": [
+    {
+      "id": "1aa6902a7f964a16bbe279bdc4031b58",
+      "title": "Hydric Soils",
+      "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Wetland_CM_Hydric_Soils/FeatureServer",
+      "publisher": "idahofishandgame",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Hydric soils are soils formed under conditions of saturation, flooding, and/or ponding for long enough during the growing season to develop anaerobic conditions in the upper layers. Specific criteria must be present for a soil to be classified as hydric. This dataset represents existing hydric soil spatial and tabular data for the state of Idaho compiled from the USDA Natural Resources Conservation Service Soil Survey Geographic Database (SSURGO) (the layer does not represent any recent updates made to this database). This dataset is useful for estimating where wetlands are, have been, or could be present regardless of current land use and known presence of hydrophytic vegetation or wetland hydrology. It is intended for wetland conservation and restoration planning, including siting of potential wetland mitigation sites and restoration areas. An area that meets the hydric soil definition must also meet the hydrophytic vegetation and wetland hydrology criteria in order for it to be classified as a jurisdictional wetland under the Clean Water Act.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.21223030413303,
+                49.00061724312753
+              ],
+              [
+                -110.80333271202235,
+                49.00061724312753
+              ],
+              [
+                -110.80333271202235,
+                41.83573245754736
+              ],
+              [
+                -117.21223030413303,
+                41.83573245754736
+              ],
+              [
+                -117.21223030413303,
+                49.00061724312753
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><p><span>Hydric Soils of Idaho. SSURGO, NRCS April 14, 2011. This was downloaded by map survey area and then merged together into one statewide layer. Only HYDRIC soils were merged. Topology was created and fixed for 'areas must not overlap'. There were other mapped areas that 'didn't touch' when they appeared to be coincident arcs, these areas were not modified. This dataset was merged for a project within the Wildlife Bureau of IDFG, 2011. This data is for display purposes and the general location of soils that may contain wetlands. PLEASE note: Most, but not all the state has been mapped. Also, within a map survey area it is likely that only part of the area is mapped. Areas of private agricultural land are more likely to be mapped than public lands.Hydric soils are soils formed under conditions of saturation, flooding, and/or ponding for long enough during the growing season to develop anaerobic conditions in the upper layers. Hydric soils saturated due to human activity (e.g., irrigation) are included, as well as soils with hydric indicators where wetland hydrology is no longer present (e.g., drained wetlands). Specific observable field indicators (e.g., morphologic properties) must be present for a soil to be classified as hydric. These observable properties indicate that the processes associated with hydric soil formation processes are or were present. These indicators persist during both wet and dry periods. (for more information, see https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/use/hydric/?cid=nrcs142p2_053957). This dataset represents existing hydric soil spatial and tabular data for the state of Idaho compiled from the USDA Natural Resources Conservation Service Soil Survey Geographic Database (SSURGO) (the layer does not represent any recent updates made to this database). The SSURGO database contains information about soil collected by the National Cooperative Soil Survey. It includes soil map units describing components including soil taxonomy, physical and chemical properties, ecology and hydrology, productivity, limitations to land use, and classifications such as hydric soil classification.</span></p><p><span>This dataset includes the following attributes:</span></p><p><span>• map unit</span></p><p><span>• soil taxonomy component</span></p><p><span>• percent of the map unit likely containing soils meeting hydric criteria (i.e., hydric soils may not form in portions of the map unit where flooding and ponding are lacking due to topography or where water table depths are too deep)</span></p><p><span>• dominant landform in the map unit</span></p><p><span>• hydric soil criteria met</span></p></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><P><SPAN>Idaho Fish and Game offers free, unrestricted access and use of this data. The data represented in this file is true and accurate to the best of our knowledge but is considered a best representation only and does not map the boundaries of jurisdictional wetlands. It represents USDA NRCS SSURGO data at the time of compilation and does not reflect any subsequent updates to the SSURGO database. Users should consult https://websoilsurvey.nrcs.usda.gov/ for any updates. Users must assume responsibility in determining the usability of this data for their purposes. Idaho Fish and Game does not assume liability. No warranty expressed or implied is made by Idaho Fish and Game regarding the utility of the data on any other system, nor shall the act of distribution constitute such warranty.</SPAN></P></DIV></DIV>",
+        "title": "Hydric Soils",
+        "type": "Feature Service",
+        "orgId": "FjJI5xHF2dUPVrgK",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1759513818000,
+        "avgRating": 0,
+        "id": "1aa6902a7f964a16bbe279bdc4031b58",
+        "categories": [
+          "/Categories/Wetland"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "idahofishandgame",
+        "accessInformation": "This dataset was compiled by Angie Schmidt, GIS analyst, with Idaho Department of Fish and Game, from USDA Natural Resources Conservation Service Soil Survey Geographic Database (SSURGO)\n\nUSDA NRCS. 2017. Soil Survey Geographic Database (SSURGO). United States Department of Agriculture, Natural Resources Conservation Service, Soil Survey Staff. Available online at https://websoilsurvey.nrcs.usda.gov/\n",
+        "largeThumbnail": null,
+        "lastViewed": 1773064800000,
+        "thumbnail": "thumbnail/thumbnail1634221867060.png",
+        "languages": [],
+        "created": 1513112010000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Wetland_CM_Hydric_Soils/FeatureServer",
+        "tags": [
+          "hydric soil",
+          "wetland",
+          "soil",
+          "SSURGO",
+          "restoration",
+          "mitigation"
+        ],
+        "numViews": 13712,
+        "numComments": 0,
+        "size": 101818368,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Wetland_CM_Hydric_Soils",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Fish and Game",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/1aa6902a7f964a16bbe279bdc4031b58"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "7daf5f21747b40dea97659738e649f9f",
+      "title": "Road Mode",
+      "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Other/FeatureServer/2",
+      "publisher": "ITDGISdata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the Roads and Highways Road Network Linear Referencing System (LRS) road mode event polyline feature class that identifies all road segments mode of travel, which can be one-way or two-way, with a direction of ascending or descending.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.5262,
+                49.0344
+              ],
+              [
+                -110.6578,
+                49.0344
+              ],
+              [
+                -110.6578,
+                41.946
+              ],
+              [
+                -117.5262,
+                41.946
+              ],
+              [
+                -117.5262,
+                49.0344
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>The Idaho Transportation Department's (ITD) Roads and Highways Linear Referencing System (LRS) road mode event polyline feature class identifies all road segments mode of travel.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>One-way roads carry traffic in only one direction. Interstates are divided roads with each direction of travel separated by a divider or median. The ascending direction of an interstate (in relation to the geometric measures) will have an ascending direction and the descending direction of a interstate (in relation to the geometric measures) will have a descending direction.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>Two-way roads carry traffic in two opposite directions, separated by a center line. Many state highways are undivided roads with no physical separation of travel. All two-way roads should have an ascending direction.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>This layer is an export from Roads and Highways that represents only the active records within the LRS.</span></span></p><p style='background-color:rgb(255, 255, 255); border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>This content item is a sub-layer of the <a style='border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://iplan.maps.arcgis.com/home/item.html?id=974007a79f484279b4fed6159a0c1515' rel='nofollow ugc noopener noreferrer'><u>Road Network - Other</u></a> authoritative feature layer.</p><p style='background-color:rgb(255, 255, 255); border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><a style='border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Other/FeatureServer/2/metadata?format=default&amp;f=html' rel='nofollow ugc noopener noreferrer'><u>Metadata</u></a></p>",
+        "licenseInfo": "<p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Spatial Data Disclaimer - The Idaho Transportation Department (ITD) provides this geographic data and any associated metadata \"as is\" without warranty of any kind, including but not limited to its completeness, fitness for a particular use, or accuracy of its content, positional or otherwise. It is the sole responsibility of the user to determine the usability of the data for their purposes. In no event shall ITD have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind arising out of the use of or reliance on the geographic data or metadata. In providing this data or access to it, ITD assumes no obligation to assist the user in the use of such data or in the development, use, or maintenance of any applications applied to or associated with the data or metadata.</span></span></p>",
+        "ownerId": "9932aa8ef41b79c7e7082928246aced2",
+        "title": "Road Mode",
+        "type": "Feature Service",
+        "orgId": "Qqv4dYPC8Vv8e3c3",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782766297000,
+        "avgRating": 0,
+        "id": "7daf5f21747b40dea97659738e649f9f",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "ITDGISdata",
+        "accessInformation": "This dataset was developed and provided by the Idaho Transportation Department (ITD). Users should credit ITD as the original source when utilizing or referencing this information in maps, reports, or applications.",
+        "largeThumbnail": null,
+        "lastViewed": 1782763200000,
+        "thumbnail": "thumbnail/thumbnail1782766293184.png",
+        "languages": [],
+        "created": 1780406306000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Other/FeatureServer/2",
+        "tags": [
+          "Idaho",
+          "Idaho Transportation Department",
+          "ITD",
+          "Road Network"
+        ],
+        "numViews": 69,
+        "numComments": 0,
+        "size": 93,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Transportation Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/7daf5f21747b40dea97659738e649f9f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6ace4e9137064635914cae914863ef81",
+      "title": "State Highway System (SHS) Primary",
+      "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Primary/FeatureServer/6",
+      "publisher": "ITDGISdata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the Roads and Highways Road Network Linear Referencing System (LRS) SHS primary event polyline feature class that includes only State Highway System (SHS) road segments that are the primary routes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.3581,
+                49.027
+              ],
+              [
+                -110.6688,
+                49.027
+              ],
+              [
+                -110.6688,
+                41.9605
+              ],
+              [
+                -117.3581,
+                41.9605
+              ],
+              [
+                -117.3581,
+                49.027
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>The Idaho Transportation Department's (ITD) Roads and Highways Road Network Linear Referencing System (LRS) SHS primary event polyline feature class includes only State Highway System (SHS) road segments that are the primary routes. A state highway system is a network of roads maintained by a state's government, connecting cities and smaller communities and serving as a state level transportation infrastructure. These roads, often numbered with unique shields, can range from high speed, multi-lane freeways to smaller, lower capacity roads, and their maintenance is funded through state taxes. This layer is predominately used for easily showcasing the SHS on web or physical maps.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>This layer is an export from Roads and Highways that represents only the active records within the LRS.</span></span></p><p>This content item is sub-layer of the <a target='_blank' href='https://iplan.maps.arcgis.com/home/item.html?id=70076b78f1304fb7a0ac20fc45297a2b' rel='nofollow ugc noopener noreferrer'><u>Road Network - Primary</u></a> authoritative feature layer.</p><p><a target='_blank' href='https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Primary/FeatureServer/6/metadata?format=default&amp;f=html' rel='nofollow ugc noopener noreferrer'><u>Metadata</u></a></p>",
+        "licenseInfo": "<p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Spatial Data Disclaimer - The Idaho Transportation Department (ITD) provides this geographic data and any associated metadata \"as is\" without warranty of any kind, including but not limited to its completeness, fitness for a particular use, or accuracy of its content, positional or otherwise. It is the sole responsibility of the user to determine the usability of the data for their purposes. In no event shall ITD have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind arising out of the use of or reliance on the geographic data or metadata. In providing this data or access to it, ITD assumes no obligation to assist the user in the use of such data or in the development, use, or maintenance of any applications applied to or associated with the data or metadata.</span></span></p>",
+        "ownerId": "9932aa8ef41b79c7e7082928246aced2",
+        "title": "State Highway System (SHS) Primary",
+        "type": "Feature Service",
+        "orgId": "Qqv4dYPC8Vv8e3c3",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782768143000,
+        "avgRating": 0,
+        "id": "6ace4e9137064635914cae914863ef81",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "ITDGISdata",
+        "accessInformation": "This dataset was developed and provided by the Idaho Transportation Department (ITD). Users should credit ITD as the original source when utilizing or referencing this information in maps, reports, or applications.",
+        "largeThumbnail": null,
+        "lastViewed": 1782766800000,
+        "thumbnail": "thumbnail/thumbnail1782768139021.png",
+        "languages": [],
+        "created": 1780419171000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/RoadNetwork_Primary/FeatureServer/6",
+        "tags": [
+          "Idaho",
+          "Idaho Transportation Department",
+          "ITD",
+          "Road Network"
+        ],
+        "numViews": 80,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Transportation Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/6ace4e9137064635914cae914863ef81"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "37fc0d5fef464353af9adbcf3a4505ca",
+      "title": "HPMS Shoulders",
+      "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/19",
+      "publisher": "ITDGISdata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the Roads and Highways Road Network Linear Referencing System (LRS) HPMS shoulders event polyline feature class which describes the presence, surface type, and usable width of roadway shoulders along Idaho’s public roadway segments as reported through the Highway Performance Monitoring System (HPMS). The data supports roadway design, safety analysis, and asset management activities.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.3581,
+                49.027
+              ],
+              [
+                -110.6688,
+                49.027
+              ],
+              [
+                -110.6688,
+                41.9605
+              ],
+              [
+                -117.3581,
+                41.9605
+              ],
+              [
+                -117.3581,
+                49.027
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>The Idaho Transportation Department's (ITD) Roads and Highways Road Network Linear Referencing System (LRS) HPMS shoulders event polyline feature class represents the physical and functional characteristics of roadway shoulders, including surface type and width for both the left and right sides of the roadway. Shoulder data provides important context for roadway cross-section design, vehicle recovery areas, maintenance needs, and overall safety performance.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>Data are collected from field inventories, roadway design plans, and pavement management systems to ensure consistency with HPMS reporting requirements. The dataset is reviewed and updated annually as part of ITD’s Highway Performance Monitoring System (HPMS) submittal to the Federal Highway Administration (FHWA).</span></span></p><p style='background-color:rgb(255, 255, 255); border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>This layer is an export from Roads and Highways that represents only the active records within the LRS.</span></span></p><p style='background-color:rgb(255, 255, 255); border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'><strong>These are current “working” records. For the static, published data, please see the records stored at:</strong> </span></span><a style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://www.fhwa.dot.gov/policyinformation/hpms.cfm' rel='nofollow ugc noopener noreferrer'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'><u>https://www.fhwa.dot.gov/policyinformation/hpms.cfm</u></span></span></a></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>This content item is a sub-layer of the <a style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://iplan.maps.arcgis.com/home/item.html?id=93876478b87c4e3d9805288ec6df66d8' rel='nofollow ugc noopener noreferrer'><u>Highway Performance Monitoring System (HPMS)</u></a> authoritative feature layer.</p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><a style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/19/metadata?format=default&amp;f=html' rel='nofollow ugc noopener noreferrer'><u>Metadata</u></a></p>",
+        "licenseInfo": "<p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Spatial Data Disclaimer - The Idaho Transportation Department (ITD) provides this geographic data and any associated metadata \"as is\" without warranty of any kind, including but not limited to its completeness, fitness for a particular use, or accuracy of its content, positional or otherwise. It is the sole responsibility of the user to determine the usability of the data for their purposes. In no event shall ITD have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind arising out of the use of or reliance on the geographic data or metadata. In providing this data or access to it, ITD assumes no obligation to assist the user in the use of such data or in the development, use, or maintenance of any applications applied to or associated with the data or metadata.</span></span></p>",
+        "ownerId": "9932aa8ef41b79c7e7082928246aced2",
+        "title": "HPMS Shoulders",
+        "type": "Feature Service",
+        "orgId": "Qqv4dYPC8Vv8e3c3",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782764951000,
+        "avgRating": 0,
+        "id": "37fc0d5fef464353af9adbcf3a4505ca",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "ITDGISdata",
+        "accessInformation": "This dataset was developed and provided by the Idaho Transportation Department (ITD). Users should credit ITD as the original source when utilizing or referencing this information in maps, reports, or applications.",
+        "largeThumbnail": null,
+        "lastViewed": 1782763200000,
+        "thumbnail": "thumbnail/thumbnail1782764946457.png",
+        "languages": [],
+        "created": 1780494204000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/19",
+        "tags": [
+          "Idaho",
+          "Idaho Transportation Department",
+          "ITD",
+          "Pavement"
+        ],
+        "numViews": 46,
+        "numComments": 0,
+        "size": 81,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Transportation Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/37fc0d5fef464353af9adbcf3a4505ca"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "131f28eb78794bc9be05e7751298b0b1",
+      "title": "HPMS Pavement",
+      "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/15",
+      "publisher": "ITDGISdata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the Roads and Highways Road Network Linear Referencing System (LRS) HPMS pavement event polyline feature class which provides measured pavement condition values, including International Roughness Index (IRI), rutting, cracking percentage, and faulting for Idaho’s public roadway segments as reported through the Highway Performance Monitoring System (HPMS). The data supports pavement performance monitoring, lifecycle cost analysis, and federal performance reporting.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.3581,
+                49.027
+              ],
+              [
+                -110.6688,
+                49.027
+              ],
+              [
+                -110.6688,
+                41.9605
+              ],
+              [
+                -117.3581,
+                41.9605
+              ],
+              [
+                -117.3581,
+                49.027
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>The Idaho Transportation Department's (ITD) Roads and Highways Road Network Linear Referencing System (LRS) HPMS pavement event polyline feature class represents physical condition indicators collected along Idaho’s state and local federal-aid roadway network. It includes surface roughness, rut depth, cracking, and joint faulting measurements used to evaluate pavement ride quality and structural health.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>Condition data are collected through automated pavement survey vehicles and processed in accordance with FHWA HPMS data item definitions. These indicators help assess pavement performance trends, support State of Good Repair analysis, and inform resurfacing and reconstruction programming. The dataset is maintained and updated annually as part of ITD’s Highway Performance Monitoring System (HPMS) submittal to the Federal Highway Administration (FHWA).</span></span></p><p style='background-color:rgb(255, 255, 255); border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>This layer is an export from Roads and Highways that represents only the active records within the LRS.</span></span></p><p style='background-color:rgb(255, 255, 255); border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'><strong>These are current “working” records. For the static, published data, please see the records stored at:</strong> </span></span><a style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://www.fhwa.dot.gov/policyinformation/hpms.cfm' rel='nofollow ugc noopener noreferrer'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'><u>https://www.fhwa.dot.gov/policyinformation/hpms.cfm</u></span></span></a></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>This content item is a sub-layer of the <a style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://iplan.maps.arcgis.com/home/item.html?id=93876478b87c4e3d9805288ec6df66d8' rel='nofollow ugc noopener noreferrer'><u>Highway Performance Monitoring System (HPMS)</u></a> authoritative feature layer.</p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><a style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/15/metadata?format=default&amp;f=html' rel='nofollow ugc noopener noreferrer'><u>Metadata</u></a></p>",
+        "licenseInfo": "<p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Spatial Data Disclaimer - The Idaho Transportation Department (ITD) provides this geographic data and any associated metadata \"as is\" without warranty of any kind, including but not limited to its completeness, fitness for a particular use, or accuracy of its content, positional or otherwise. It is the sole responsibility of the user to determine the usability of the data for their purposes. In no event shall ITD have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind arising out of the use of or reliance on the geographic data or metadata. In providing this data or access to it, ITD assumes no obligation to assist the user in the use of such data or in the development, use, or maintenance of any applications applied to or associated with the data or metadata.</span></span></p>",
+        "ownerId": "9932aa8ef41b79c7e7082928246aced2",
+        "title": "HPMS Pavement",
+        "type": "Feature Service",
+        "orgId": "Qqv4dYPC8Vv8e3c3",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782764817000,
+        "avgRating": 0,
+        "id": "131f28eb78794bc9be05e7751298b0b1",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "ITDGISdata",
+        "accessInformation": "This dataset was developed and provided by the Idaho Transportation Department (ITD). Users should credit ITD as the original source when utilizing or referencing this information in maps, reports, or applications.",
+        "largeThumbnail": null,
+        "lastViewed": 1782763200000,
+        "thumbnail": "thumbnail/thumbnail1782764812551.png",
+        "languages": [],
+        "created": 1780492406000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/15",
+        "tags": [
+          "Idaho",
+          "Idaho Transportation Department",
+          "ITD",
+          "Pavement"
+        ],
+        "numViews": 51,
+        "numComments": 0,
+        "size": 81,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Transportation Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/131f28eb78794bc9be05e7751298b0b1"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6dbe00eee1cc4a34b510864005eb4318",
+      "title": "HPMS Median",
+      "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/10",
+      "publisher": "ITDGISdata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains the Roads and Highways Road Network Linear Referencing System (LRS) HPMS median event polyline feature class which provides information on the presence and type of medians for Idaho’s public roadway segments as reported through the Highway Performance Monitoring System (HPMS). The data supports roadway design, access control, and safety analysis by identifying the physical features that separate opposing traffic flows.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.3581,
+                49.027
+              ],
+              [
+                -110.6688,
+                49.027
+              ],
+              [
+                -110.6688,
+                41.9605
+              ],
+              [
+                -117.3581,
+                41.9605
+              ],
+              [
+                -117.3581,
+                49.027
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>The Idaho Transportation Department's (ITD) Roads and Highways Road Network Linear Referencing System (LRS) HPMS median event polyline feature class identifies the type of median separating opposing lanes of traffic along divided highways. Medians improve safety and operations by reducing head-on collisions, minimizing interference from opposing traffic, and providing space for recovery, emergency stops, and potential future lanes.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>This information is collected from roadway design plans, construction as-built documents, and ITD’s roadway inventory systems in accordance with FHWA HPMS Field Manual coding guidance. Each median is classified by physical type and barrier characteristics.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>Medians may include unprotected areas, curbed separators, or positive barriers that prevent vehicle crossover. Optional sub-codes describe the rigidity of barrier types (flexible, semi-rigid, or rigid) when that level of detail is available.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>The dataset supports roadway safety evaluation, network inventory, and performance reporting. It is maintained and updated annually as part of ITD’s Highway Performance Monitoring System (HPMS) submission to the Federal Highway Administration (FHWA).</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>This layer is an export from Roads and Highways that represents only the active records within the LRS.</span></span></p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'><strong>These are current “working” records. For the static, published data, please see the records stored at:</strong> </span></span><a style='border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://www.fhwa.dot.gov/policyinformation/hpms.cfm' rel='nofollow ugc noopener noreferrer'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'><u>https://www.fhwa.dot.gov/policyinformation/hpms.cfm</u></span></span></a></p><p style='background-color:rgb(255, 255, 255); border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>This content item is a sub-layer of the <a style='border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://iplan.maps.arcgis.com/home/item.html?id=93876478b87c4e3d9805288ec6df66d8' rel='nofollow ugc noopener noreferrer'><u>Highway Performance Monitoring System (HPMS)</u></a> authoritative feature layer.</p><p style='background-color:rgb(255, 255, 255); border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><a style='border-style:solid; border-width:0px; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/10/metadata?format=default&amp;f=html' rel='nofollow ugc noopener noreferrer'><u>Metadata</u></a></p>",
+        "licenseInfo": "<p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Spatial Data Disclaimer - The Idaho Transportation Department (ITD) provides this geographic data and any associated metadata \"as is\" without warranty of any kind, including but not limited to its completeness, fitness for a particular use, or accuracy of its content, positional or otherwise. It is the sole responsibility of the user to determine the usability of the data for their purposes. In no event shall ITD have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind arising out of the use of or reliance on the geographic data or metadata. In providing this data or access to it, ITD assumes no obligation to assist the user in the use of such data or in the development, use, or maintenance of any applications applied to or associated with the data or metadata.</span></span></p>",
+        "ownerId": "9932aa8ef41b79c7e7082928246aced2",
+        "title": "HPMS Median",
+        "type": "Feature Service",
+        "orgId": "Qqv4dYPC8Vv8e3c3",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782764680000,
+        "avgRating": 0,
+        "id": "6dbe00eee1cc4a34b510864005eb4318",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "ITDGISdata",
+        "accessInformation": "This dataset was developed and provided by the Idaho Transportation Department (ITD). Users should credit ITD as the original source when utilizing or referencing this information in maps, reports, or applications.",
+        "largeThumbnail": null,
+        "lastViewed": 1782763200000,
+        "thumbnail": "thumbnail/thumbnail1782764675606.png",
+        "languages": [],
+        "created": 1780491186000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/HPMS/FeatureServer/10",
+        "tags": [
+          "Idaho",
+          "Idaho Transportation Department",
+          "ITD",
+          "Pavement"
+        ],
+        "numViews": 45,
+        "numComments": 0,
+        "size": 81,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Transportation Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/6dbe00eee1cc4a34b510864005eb4318"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    241
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 6,
+  "next_offset": 6,
+  "response_sha256": "cc5044b38e4902933a64239f7cd9d53a23be45a27c67e9ad7f01046fce4797e5",
+  "search_complete": true
+}

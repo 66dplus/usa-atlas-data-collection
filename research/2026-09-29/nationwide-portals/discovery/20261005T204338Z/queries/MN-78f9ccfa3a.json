@@ -1,0 +1,886 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "income tax",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T20:44:00.176636+00:00",
+  "candidates": [
+    {
+      "id": "47070881e8614187bfc5d98d2f9094a5",
+      "title": "Income Tax, Minnesota, 2003-2008",
+      "url": "https://gis.data.mn.gov/api/search/v1/collections/all/items/47070881e8614187bfc5d98d2f9094a5",
+      "publisher": "karl.hahn_mdor",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset details income information across the state.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.5,
+                49.5
+              ],
+              [
+                -89,
+                49.5
+              ],
+              [
+                -89,
+                43
+              ],
+              [
+                -97.5,
+                43
+              ],
+              [
+                -97.5,
+                49.5
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document",
+          "Metadata",
+          "Microsoft Excel",
+          "xls"
+        ],
+        "description": "<p>This spreadsheet includes Minnesota Income Tax information for the years 2003-2008. Data includes number of tax returns and the median, mean and sum of Minnesota Taxable Income (MTI).<br /><br />Data are unduplicated and reported in one of four general categories:<br />1. Records outside of Minnesota are reported at the state level and include territories, APO's, foreign and unassigned.<br />Within Minnesota, records are assigned to one of three geographic levels (blockgroup, city or county):<br />2. Within the 7-county Twin Cities metro area, records are assigned to blockgroups.<br />3. Outside of the 7-county Twin Cities metro area, records are assigned to cities with populations greater than 2,000 residents.<br />4. All other unassigned Minnesota records are tabulated by county.<br /><br />For additional information and statistical reports, please visit:<br /><a target='_blank' href='https://www.revenue.state.mn.us/reports-and-studies' rel='nofollow ugc noopener noreferrer'>Reports and Studies | Minnesota Department of Revenue</a></p>",
+        "licenseInfo": "By acceptance of this data, the user agrees to include a copy of this metadata record, including the liability disclaimer, whenever the user transmits or provides the GIS Data (or any portion of it) to another user. We recommend that other interested parties download this dataset from the Minnesota Geospatial Commons to ensure that the most current data is obtained (see Ordering Instructions).",
+        "ownerId": "6ab3746f6e254de4bacc69f2be936fcd",
+        "title": "Income Tax, Minnesota, 2003-2008",
+        "type": "Microsoft Excel",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1778509822000,
+        "avgRating": 0,
+        "id": "47070881e8614187bfc5d98d2f9094a5",
+        "categories": [
+          "/Categories/Economy"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "karl.hahn_mdor",
+        "accessInformation": "Minnesota Department of Revenue",
+        "largeThumbnail": null,
+        "lastViewed": 1790182800000,
+        "thumbnail": null,
+        "languages": [],
+        "created": 1778509622000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "Minnesota",
+          "MN",
+          "Revenue",
+          "MDOR",
+          "income tax",
+          "economy",
+          "Minnesota Taxable Income",
+          "MTI",
+          "tax returns",
+          "tax data",
+          "spreadsheet",
+          "2003",
+          "2004",
+          "2005",
+          "2006",
+          "2007",
+          "2008"
+        ],
+        "numViews": 23,
+        "numComments": 0,
+        "size": 799744,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "econ_mdor_income_tax.xls",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Revenue",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/47070881e8614187bfc5d98d2f9094a5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a835453cdcd54316a3680246e8461ca9",
+      "title": "Sales Tax, Minnesota, 2003-2009",
+      "url": "https://gis.data.mn.gov/api/search/v1/collections/all/items/a835453cdcd54316a3680246e8461ca9",
+      "publisher": "karl.hahn_mdor",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset details sales tax information and the number of businesses in each geographic area across the state.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.5,
+                49.5
+              ],
+              [
+                -89,
+                49.5
+              ],
+              [
+                -89,
+                43
+              ],
+              [
+                -97.5,
+                43
+              ],
+              [
+                -97.5,
+                49.5
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document",
+          "Metadata",
+          "Microsoft Excel",
+          "xls"
+        ],
+        "description": "<p>This spreadsheet includes Minnesota sales tax information for the years 2003-2009. Data includes total amount of sales tax collected (state, county, city, and special purpose levies) and the number of businesses in the geographic area.&nbsp;<br /><br />Data are unduplicated and reported in one of four general categories:<br />1. Records outside of Minnesota are reported at the state level and include territories, APO's, foreign and unassigned.<br />Within Minnesota, records are assigned to one of three geographic levels (blockgroup, city or county):<br />2. Within the 7-county Twin Cities metro area, records are assigned to blockgroups.<br />3. Outside of the 7-county Twin Cities metro area, records are assigned to cities with populations greater than 2,000 residents.<br />4. All other unassigned Minnesota records are tabulated by county.<br /><br />For additional information and statistical reports, please visit :<br /><a target='_blank' href='https://www.revenue.state.mn.us/reports-and-studies' rel='nofollow ugc noopener noreferrer'>https://www.revenue.state.mn.us/reports-and-studies</a><br /><br />Note: The positional accuracy of many locations for years 2003-08 has been improved in this version, therefore, anyone using this data should download and replace any previous version.</p>",
+        "licenseInfo": "By acceptance of this data, the user agrees to include a copy of this metadata record, including the liability disclaimer, whenever the user transmits or provides the GIS Data (or any portion of it) to another user. We recommend that other interested parties download this dataset from the Minnesota Geospatial Commons to ensure that the most current data is obtained (see Ordering Instructions).",
+        "ownerId": "6ab3746f6e254de4bacc69f2be936fcd",
+        "title": "Sales Tax, Minnesota, 2003-2009",
+        "type": "Microsoft Excel",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1778509439000,
+        "avgRating": 0,
+        "id": "a835453cdcd54316a3680246e8461ca9",
+        "categories": [
+          "/Categories/Economy"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "karl.hahn_mdor",
+        "accessInformation": "Minnesota Department of Revenue",
+        "largeThumbnail": null,
+        "lastViewed": 1789660800000,
+        "thumbnail": null,
+        "languages": [],
+        "created": 1778464726000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "Minnesota",
+          "MN",
+          "Revenue",
+          "MDOR",
+          "sales tax",
+          "economy",
+          "businesses",
+          "tax data",
+          "spreadsheet",
+          "2003",
+          "2004",
+          "2005",
+          "2006",
+          "2007",
+          "2008",
+          "2009"
+        ],
+        "numViews": 25,
+        "numComments": 0,
+        "size": 704512,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "econ_mdor_sales_tax.xls",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Revenue",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/a835453cdcd54316a3680246e8461ca9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "eadf2fab3cc14d30a68f3d74d9b5c20a",
+      "title": "Archived Minnesota Local General Sales and Use Tax Area Boundaries",
+      "url": "https://services9.arcgis.com/LLh6i97mwBitl1k5/arcgis/rest/services/bdry_salestax_areas_archive_2026Q4_gdb/FeatureServer",
+      "publisher": "karl.hahn_mdor",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This hosted feature layer contains archived Minnesota local general sales and use tax area boundary layers published by the Minnesota Department of Revenue. It supports historical reference, comparison, and access to prior quarterly boundary datasets.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Hosted Service"
+        ],
+        "description": "<p>This hosted feature layer contains archived boundaries for local general sales and use tax areas in Minnesota, along with rates and descriptions for each area. This data was developed as a geographical representation of the boundaries of local general sales and use tax rates in Minnesota.&nbsp;<br><br>A new dataset is created each quarter as boundaries change and local jurisdictional units add or discontinue the implementation of local general sales and use taxes. Past quarters are included here. Current data is available in the current Minnesota Local General Sales and Use Tax Area Boundaries resource.&nbsp;<br><br>This dataset DOES NOT include special local taxes that may exist, including lodging, entertainment, liquor, admissions, restaurant, and food and beverage taxes.&nbsp;<br><br>To learn more about sales and use tax collected by the Minnesota Department of Revenue, visit https://www.revenue.state.mn.us.</p>",
+        "licenseInfo": "<p>Data included in this resource are for previous reporting periods. Please check the layer name and quarter suffix to ensure you are using the correct dataset for the time period of interest. For data for the current period, use the current Minnesota Local General Sales and Use Tax Area Boundaries resource.</p>",
+        "ownerId": "6ab3746f6e254de4bacc69f2be936fcd",
+        "title": "Archived Minnesota Local General Sales and Use Tax Area Boundaries",
+        "type": "Feature Service",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789596283000,
+        "avgRating": 0,
+        "id": "eadf2fab3cc14d30a68f3d74d9b5c20a",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Economy"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "karl.hahn_mdor",
+        "accessInformation": "Minnesota Department of Revenue, Tax Research Division",
+        "largeThumbnail": null,
+        "lastViewed": 1790607600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1789587147000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services9.arcgis.com/LLh6i97mwBitl1k5/arcgis/rest/services/bdry_salestax_areas_archive_2026Q4_gdb/FeatureServer",
+        "tags": [
+          "Minnesota",
+          "MN",
+          "Revenue",
+          "MDOR",
+          "local sales and use tax",
+          "SSUTA",
+          "archive"
+        ],
+        "numViews": 1214,
+        "numComments": 0,
+        "size": 110641152,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "bdry_salestax_areas_archive_2026Q4_gdb",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Department of Revenue, Tax Research Division",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/eadf2fab3cc14d30a68f3d74d9b5c20a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b2319a19c2674be4acee55dec0dc6b3f",
+      "title": "CAD_TaxParcel",
+      "url": "https://gis.ramseycountymn.gov/server/rest/services/Cadastral/CAD_TaxParcel_ViewOnly/FeatureServer/66",
+      "publisher": "christina.ulrich@co.ramsey.mn.us_RamseyGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Tax Parcel boundaries support many functions including automated half and quarter section map production, thematic mapping, land records and property assessment, and surveying and engineering projects.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.2294,
+                45.1247
+              ],
+              [
+                -92.9827,
+                45.1247
+              ],
+              [
+                -92.9827,
+                44.887
+              ],
+              [
+                -93.2294,
+                44.887
+              ],
+              [
+                -93.2294,
+                45.1247
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p>Tax Parcel boundaries represent property descriptions (legal descriptions) and land ownership boundaries. A twelve character property identification number (PIN) is assigned to these parcels. The ParcelID is used as a primary link to county tax and assessment data. An attributed version of Tax Parcels is called AttributedParcelPoly.</p>",
+        "licenseInfo": "<p><span style=\"color:rgb(0,0,0);font-family:calibri;font-size:medium;\"><span style=\"-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;\">None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata. Acknowledgment of the publisher would be appreciated.</span></span></p>",
+        "ownerId": "5255621b39e617844a9f259e4456d526",
+        "title": "CAD_TaxParcel",
+        "type": "Feature Service",
+        "orgId": "527XtFVf9JKOTqu5",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788186335000,
+        "avgRating": 0,
+        "id": "b2319a19c2674be4acee55dec0dc6b3f",
+        "categories": [
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "christina.ulrich@co.ramsey.mn.us_RamseyGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790560800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1777318239000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ramseycountymn.gov/server/rest/services/Cadastral/CAD_TaxParcel_ViewOnly/FeatureServer/66",
+        "tags": [
+          "planningCadastre",
+          "Parcels",
+          "parcel boundary",
+          "tax",
+          "tax parcels",
+          "Ramsey County",
+          "Cadastral"
+        ],
+        "numViews": 523,
+        "numComments": 0,
+        "size": 101,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Ramsey County",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/b2319a19c2674be4acee55dec0dc6b3f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bf8ef9d0b3f1455c9af61ef6b60329e2",
+      "title": "Tax Parcels, Wabasha County, Minnesota",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_co_wabasha/plan_parcelspolygon/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Tax parcel boundaries are useful for a variety of tasks, such as creating maps, managing property records, assessing property taxes, and supporting surveying and engineering work. This standardized dataset facilitates data sharing and interoperability across organizations by following the MNGAC Parcel Data Standard attribute specifications.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.55,
+                44.47
+              ],
+              [
+                -91.87,
+                44.47
+              ],
+              [
+                -91.87,
+                44.11
+              ],
+              [
+                -92.55,
+                44.11
+              ],
+              [
+                -92.55,
+                44.47
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This layer contains polygons depicting tax parcels in Wabasha County, Minnesota. These parcels are based upon property descriptions (legal descriptions) and aligned to the public land survey system. The dataset complies with the Minnesota Geospatial Advisory Council (MNGAC) Parcel Data Standard Version 1.1.3, providing standardized attribute specifications for data exchange and aggregation purposes across Minnesota.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/939/plan_parcelspolygon.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/939/plan_parcelspolygon.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/939/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata. Acknowledgement of the publisher would be appreciated.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Tax Parcels, Wabasha County, Minnesota",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789675875000,
+        "avgRating": 0,
+        "id": "bf8ef9d0b3f1455c9af61ef6b60329e2",
+        "categories": [
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "3745",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790604000000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778614209000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_co_wabasha/plan_parcelspolygon/FeatureServer",
+        "tags": [
+          "planningCadastre",
+          "parcels",
+          "parcel boundary",
+          "tax",
+          "tax parcels",
+          "property boundary",
+          "land ownership",
+          "ownership",
+          "property owner",
+          "GAC compliant",
+          "standardized parcels",
+          "tax capacity",
+          "estimated market value",
+          "homestead exemption",
+          "use classification",
+          "PLSS",
+          "County PIN",
+          "State PIN",
+          "Wabasha County",
+          "Lake City",
+          "Wabasha",
+          "Plainview",
+          "Mazeppa",
+          "Elgin",
+          "Zumbro Falls"
+        ],
+        "numViews": 3173,
+        "numComments": 0,
+        "size": 105,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wabasha County",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/bf8ef9d0b3f1455c9af61ef6b60329e2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "dce4c0c13853491090bffe6998c5181d",
+      "title": "Transit Taxing District",
+      "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/Transit_Areas_1/FeatureServer/4",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This Metropolitan Council dataset depicts Metro Transit taxing district extents established in the 2001 state legislation for general mapping and analysis purposes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.69737003549807,
+                45.24185564756963
+              ],
+              [
+                -92.76069202748577,
+                45.24185564756963
+              ],
+              [
+                -92.76069202748577,
+                44.68729118220044
+              ],
+              [
+                -93.69737003549807,
+                44.68729118220044
+              ],
+              [
+                -93.69737003549807,
+                45.24185564756963
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Data"
+        ],
+        "description": "<p style='margin:0in;'>____________________________________________________________</p><p style='margin:0in;'><b><i><font size='3'>NOTE - although it's recommended to use the feature layer web service, the file geodatabase is available for download.</font></i></b></p><p style='margin:0in;'><b><i><br /></i></b></p>\n<p><a href='https://gisdata.metc.state.mn.us/gisdata/Transportation/transit_taxingdistrict.zip' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>Download FGDB</b></a></p><p>____________________________________________________________</p>\n\nNOTE:  As part of the Omnibus Tax Bill which was listed as 2001 Special Session, Chapter 5, the transit taxing district is no longer used for tax assessment purposes. <div><br /></div><div>NOTE: As of November 6, 2012 this boundary has changed due to boundary adjustment between Prior Lake and Spring Lake Township.</div><div><br /></div><div>The transit taxing district was the area in which all taxable property was assessed a tax to be used for payment of transit and paratransit services per Minn. Stat. 473.446.  This area was comprised of whole cities, townships and unorganized territories. </div><div><br /></div><div>While the Transit Taxing District has not changed since 2001, additional communities have agreed to levy for transit capital, beginning in 2009.  For this reason, a new dataset was created and  is referred to as the Transit Capital Levy Communities.  For the most accurate list of communities that participate in the transit capital levy, please consult this dataset since the legislatively defined boundary has not changed but the communities that participate in transit capital levy have changed.</div>",
+        "licenseInfo": "None. This dataset is public domain under the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13).",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Transit Taxing District",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1781711670000,
+        "avgRating": 0,
+        "id": "dce4c0c13853491090bffe6998c5181d",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1791190800000,
+        "thumbnail": "thumbnail/thumbnail1777641992389.png",
+        "languages": [],
+        "created": 1777643946000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/Transit_Areas_1/FeatureServer/4",
+        "tags": [
+          "Twin Cities",
+          "Transportation",
+          "Tax",
+          "Legislation"
+        ],
+        "numViews": 714,
+        "numComments": 0,
+        "size": 96,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/dce4c0c13853491090bffe6998c5181d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "56b0bbf6cfb3491f8aeca72eb6442216",
+      "title": "Transit Capital Levy Communities",
+      "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/Transit_Areas_1/FeatureServer/2",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This Metropolitan Council dataset depicts community extent where there are Metro Transit capital levies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.69840752253715,
+                45.326480977050984
+              ],
+              [
+                -92.76033597513508,
+                45.326480977050984
+              ],
+              [
+                -92.76033597513508,
+                44.62159350047951
+              ],
+              [
+                -93.69840752253715,
+                44.62159350047951
+              ],
+              [
+                -93.69840752253715,
+                45.326480977050984
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Data"
+        ],
+        "description": "<p style='margin:0in;'>____________________________________________________________</p><p style='margin:0in;'><b><i><font size='3'>NOTE - although it's recommended to use the feature layer web service, the file geodatabase is available for download.</font></i></b></p><p style='margin:0in;'><b><i><br /></i></b></p>\n<p><a href='https://gisdata.metc.state.mn.us/gisdata/Transportation/capital_levy_communities.zip' style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' rel='nofollow ugc noopener noreferrer'><strong>Download FGDB</strong></a></p><p>____________________________________________________________</p><p><b><font size='4'>More Details</font></b></p>NOTE:  As part of the Omnibus Tax Bill which was listed as 2001 Special Session, Chapter 5, the transit taxing district is no longer used for tax assessment purposes. <div><br /></div><div>The Transit Capital Levy Communities dataset includes all the communities in the transit taxing district on 1/1/2001 AND communities that have come to an agreement with the Metropolitan Council to levy in their community for transit capital.  The transit taxing district was the area in which all taxable property was assessed a tax to be used for payment of transit and paratransit services per Minn. Stat. 473.446.  This area was comprised of whole cities, townships and unorganized territories.<div><br /></div><div>This dataset is for general planning purposes.</div></div>",
+        "licenseInfo": "None. This dataset is public domain under the Minnesota Government Data Practices Act (Minnesota Statutes Chapter 13).",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Transit Capital Levy Communities",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784725700000,
+        "avgRating": 0,
+        "id": "56b0bbf6cfb3491f8aeca72eb6442216",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1791190800000,
+        "thumbnail": "thumbnail/thumbnail1777641959665.png",
+        "languages": [],
+        "created": 1777643898000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://arcgis.metc.state.mn.us/data2/rest/services/transportation/Transit_Areas_1/FeatureServer/2",
+        "tags": [
+          "Metro Transit",
+          "Twin Cities",
+          "Transportation",
+          "Legislation",
+          "Administrative Boundaries",
+          "Tax"
+        ],
+        "numViews": 750,
+        "numComments": 0,
+        "size": 96,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Metropolitan Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/56b0bbf6cfb3491f8aeca72eb6442216"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    106
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 7,
+  "next_offset": 7,
+  "response_sha256": "744d2cf802f9249006eb4ab7a3ca304b269dab7d730b642840f5c821ea747420",
+  "search_complete": true
+}

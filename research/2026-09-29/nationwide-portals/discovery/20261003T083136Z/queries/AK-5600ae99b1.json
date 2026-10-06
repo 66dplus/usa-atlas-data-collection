@@ -1,0 +1,421 @@
+{
+  "jurisdiction_code": "AK",
+  "query": "cancer",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T08:32:16.855054+00:00",
+  "candidates": [
+    {
+      "id": "35a634df9b044a398934554cf9bc53c3",
+      "title": "Alaska DEC Fish Tissue Sample Sites",
+      "url": "https://dec.alaska.gov/arcgis/rest/services/EH/Fish_Tissue_Sample_Sites/FeatureServer",
+      "publisher": "adecadmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Map of collection sites of fish and shellfish, both marine and freshwater, sampled for contaminant analysis by the State of Alaska Department of Environmental Conservation Fish Tissue Monitoring Program.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                90
+              ],
+              [
+                180,
+                90
+              ],
+              [
+                180,
+                16.4012
+              ],
+              [
+                -180,
+                16.4012
+              ],
+              [
+                -180,
+                90
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Multilayer",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This layer displays laboratory sampling data of levels of mercury (HG) found in both red and chinook salmon.  The samples are taken at specific sites and mercury levels are averaged within the geographic region of the state.",
+        "licenseInfo": null,
+        "ownerId": "957660bbe04c14628790ba777d2fcc4c",
+        "title": "Alaska DEC Fish Tissue Sample Sites",
+        "type": "Feature Service",
+        "orgId": "8MMg7skvEbOESlSM",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1744232670000,
+        "avgRating": 0,
+        "id": "35a634df9b044a398934554cf9bc53c3",
+        "categories": [
+          "/Categories/Environmental Health"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "adecadmin",
+        "accessInformation": "State of Alaska ADEC - Division of Environmental Health",
+        "largeThumbnail": null,
+        "lastViewed": 1787666400000,
+        "thumbnail": "thumbnail/thumbnail1744232609088.png",
+        "languages": [],
+        "created": 1744232573000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dec.alaska.gov/arcgis/rest/services/EH/Fish_Tissue_Sample_Sites/FeatureServer",
+        "tags": [
+          "Alaska",
+          "Salmon",
+          "Contaminants",
+          "Mercury",
+          "Selenium",
+          "Fish Contamination",
+          "Red Salmon",
+          "Chinook Salmon",
+          "Halibut",
+          "Lingcod",
+          "Marine",
+          "Freshwater",
+          "Cod",
+          "Sablefish",
+          "Whitefish",
+          "Northern Pike",
+          "Trout",
+          "Pollock",
+          "Char",
+          "Bivalves",
+          "Crab",
+          "Rockfish",
+          "Burbot"
+        ],
+        "numViews": 3273,
+        "numComments": 0,
+        "size": 85,
+        "listed": false,
+        "scoreCompleteness": 78,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "AK Department of Environmental Conservation AGO",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/35a634df9b044a398934554cf9bc53c3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9bd0adfecdd346f29260eaca00be3e71",
+      "title": "Alaska Forest Health Aerial Survey",
+      "url": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/Alaska_Forest_Health_Aerial_Survey/FeatureServer",
+      "publisher": "for_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Alaska Aerial Detection Survey shows insect and disease damage and aerial survey flightlines for 2015 - 2024.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -165.4416279651905,
+                68.29679226503387
+              ],
+              [
+                -121.21285592619513,
+                68.29679226503387
+              ],
+              [
+                -121.21285592619513,
+                54.32010168219638
+              ],
+              [
+                -165.4416279651905,
+                54.32010168219638
+              ],
+              [
+                -165.4416279651905,
+                68.29679226503387
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left; font-size:12pt;'><div><div><p><span>This dataset represents all forest health damage polygons documented by Alaska Division of Forestry and USDA Forest Service - Forest Health Protection staff during the 2015 - 2024 aerial surveys. Surveyors document insect, disease, and abiotic damage in the forest and cover about 15% of the forests statewide each year. Note that much of the forest damage documented during these surveys does not typically result in tree or shrub mortality. Aerial Detection Survey (ADS) data disclaimer: USDA Forest Service - Forest Health Protection and the Alaska Division of Forestry &amp; Fire Protection make every attempt to accurately identify and locate forest damage from the air. A very small percentage of the mapped data can be ground-checked and it is possible that errors in the data exist. These data are offered As Is.</span></p><p><span>These data are also available through the USFS Region 10 Forest Health Protection: </span><a href='https://www.fs.usda.gov/r10/natural-resources/forest-health/aerial-detection-survey' style='font-size:12pt;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.fs.usda.gov/r10/natural-resources/forest-health/aerial-detection-survey</a></p></div></div></div>",
+        "licenseInfo": "<p style='margin-bottom:8px;'>The Alaska Division of Forestry &amp; Fire Protection does not guarantee the accuracy of the data. This dataset is an approximation and for display purposes only. Every reasonable effort has been made to ensure that data is current and accurate. The representations depicted and information retrieved are only as accurate as the source, which may be from other agencies and organizations.</p><p style='margin-bottom:8px;'>Any hard copies or published datasets utilizing these datasets shall clearly indicate their source; State of Alaska, Department of Natural Resources, Division of Forestry &amp; Fire Protection. If the user has modified the data in any way, the user is obligated to describe the types of modifications that the user has made. The user specifically agrees to not misrepresent these datasets, nor to imply that the changes made by the user were approved by the State of Alaska, Department of Natural Resources, Division of Forestry &amp; Fire Protection.</p><p style='margin-bottom:8px;'>The State of Alaska makes no express or implied warranties with respect to the character, functions, or capabilities of the electronic data or products or their appropriateness for any users purposes. In no event will the State of Alaska be liable for any incidental, indirect, special, consequential, or other damages suffered by the user or any other person or entity whether from the use of the electronic services or products or any failure thereof or otherwise.</p><p><span></span></p><p style='margin-bottom:8px;'>Questions regarding the data can be directed to the Division of Forestry &amp; Fire Protection GIS Unit <a href='mailto:dof.gis@alaska.gov' target='_blank' rel='nofollow ugc noopener noreferrer'><u>dof.gis@alaska.gov</u></a> .</p>",
+        "ownerId": "c1706aafd83b41af08ba72df2a6488c8",
+        "title": "Alaska Forest Health Aerial Survey",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788996107000,
+        "avgRating": 0,
+        "id": "9bd0adfecdd346f29260eaca00be3e71",
+        "categories": [
+          "/Categories/Natural Resources/Forestry/Forestry Health"
+        ],
+        "spatialReference": "102006",
+        "numRatings": 0,
+        "owner": "for_admin",
+        "accessInformation": "Alaska Division of Forestry and USDA Forest Service - Forest Health Protection",
+        "largeThumbnail": null,
+        "lastViewed": 1790920800000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1741304972000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/Alaska_Forest_Health_Aerial_Survey/FeatureServer",
+        "tags": [
+          "Alaska",
+          "insect",
+          "damage",
+          "disease",
+          "leaf miner",
+          "Forest Health",
+          "DOF",
+          "Department of Natural Resources",
+          "AKDNR",
+          "DNR",
+          "Forestry",
+          "BUMO",
+          "Alaska Division of Forestry & Fire Protection",
+          "ADS"
+        ],
+        "numViews": 25057,
+        "numComments": 0,
+        "size": 145514496,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Alaska_Forest_Health_Aerial_Survey",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources ArcGIS Online",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/9bd0adfecdd346f29260eaca00be3e71"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "25e237748f6849a797146a13f35f3182",
+      "title": "Insect and Disease Survey",
+      "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InsectandDiseaseSurvey_01/MapServer",
+      "publisher": "USFSEnterpriseContent",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "US Forest Service Insect and Disease Survey",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -163.1343,
+                67.9546
+              ],
+              [
+                -67.5421,
+                67.9546
+              ],
+              [
+                -67.5421,
+                19.0802
+              ],
+              [
+                -163.1343,
+                19.0802
+              ],
+              [
+                -163.1343,
+                67.9546
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Dynamic",
+          "Map Service",
+          "Metadata",
+          "Multilayer",
+          "Service"
+        ],
+        "description": "A map service depicting the locations of damage caused by insect, disease and other abiotic agents.<div><br /></div><div>To provide a single, consistent source for all aerially detected insect, disease, and abiotic forest damage data to facilitate national and multi-regional reporting of damage for both Forest Health Monitoring and Forest Health Protection. Point data will show up when zoomed into a scale of 1:250,000. Polygon data is visible at all scales.</div><div><br /></div><div>This data is updated annually. To find the date of a particular survey data collection you can open the data in an AGOL web map and click on a feature. The Created Date and Modified Date fields contain the date of creation and modification. The Survey Year field indicates which year the survey was conducted.<br /></div>",
+        "licenseInfo": "Users need to exercise caution regarding the spatial accuracy of these data due to the subjective nature of aerial sketchmapping and the varying scales of source materials. Comparison with other datasets for the same area from other time periods may be inaccurate due to inconsistencies resulting from rounding of decimal coordinates during conversion, changes in mapping conventions over time, change in assignment of damage casual agent, and type of data collection. Any products (hardcopy or electronic) using these data sets shall clearly indicate their source. If the user has modified the data in any way, they are obligated to describe the modifications on all products. The user specifically agrees not to misrepresent these data sets, nor to imply that changes made were approved by the USDA Forest Service. ***Related to TPA: The aerial survey community has recognized there is a tree mortality underestimate occurring in high mortality areas. There have been efforts to improve the accuracy in these cases in the last couple of years, and the 2010 (and beyond) estimates are likely to be closer to the truth. Some of the contributing factors appear to be a) the inter-mixing of several year's worth of mortality, which makes it hard to see the newly killed trees in among the previous years' dead; b) the need to draw very large polygons, which tend to be more heterogeneous (more inclusions of non-host and non-forest areas), which make it necessary to not only estimate the number of dead trees in a forest context, but also to make mental adjustment of how much of these large polygons is non-type; c) the recent bark beetle events were at an unprecedented scale and intensity beyond the experience of most any of our observers. ****Related to Polygon Issues During Outbreaks: ADS polygons during outbreaks (such as the mountain pine beetle outbreak in the west) are larger both because the areas of contiguous mortality are larger and also because the observers are only able to record a limited number of polygons given the flight speed. When there are a large number of mortality groups being observed, the observers must include multiple groups of mortality in a single polygon to keep up. This tends to include more areas of non-mortality host, non-host types, and non-forested areas(the areas between the individual groups of red trees). The USDA Forest Service makes no warranty, expressed or implied, including the warranties of merchantability and fitness for a particular purpose, nor assumes any legal liability or responsibility for the accuracy, reliability, completeness or utility of these geospatial data, or for the improper or incorrect use of these geospatial data. These geospatial data and related maps or graphics are not legal documents and are not intended to be used as such. The data and maps may not be used to determine title, ownership, legal descriptions or boundaries, legal jurisdiction, or restrictions that may be in place on either public or private land. Natural hazards may or may not be depicted on the data and maps, and land users should exercise due caution. The data are dynamic and may change over time. The user is responsible to verify the limitations of the geospatial data and to use the data accordingly.",
+        "ownerId": "7f31d72586192dfddaa2dd5d04fa081e",
+        "title": "Insect and Disease Survey",
+        "type": "Map Service",
+        "orgId": "gGHDlz6USftL5Pau",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [
+          "null"
+        ],
+        "modified": 1661808082000,
+        "avgRating": 0,
+        "id": "25e237748f6849a797146a13f35f3182",
+        "categories": [
+          "null"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "USFSEnterpriseContent",
+        "accessInformation": "USDA Forest Service, Forest Health Protection and its partners",
+        "largeThumbnail": null,
+        "lastViewed": 1787680800000,
+        "thumbnail": "thumbnail/null.png",
+        "languages": [
+          "null"
+        ],
+        "created": 1540941362000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_InsectandDiseaseSurvey_01/MapServer",
+        "tags": [
+          "Damage",
+          "Health",
+          "Defoliation",
+          "health",
+          "Disease",
+          "Aerial survey",
+          "Forest health",
+          "Insect",
+          "Condition",
+          "Forest condition",
+          "National Forest",
+          "Tree mortality",
+          "Topkill",
+          "Dieback",
+          "Sketch map",
+          "Insect outbreaks",
+          "Insect populations",
+          "Tree stress"
+        ],
+        "numViews": 23033,
+        "numComments": 2,
+        "size": 87,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [
+          "null"
+        ],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "U.S. Forest Service",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/25e237748f6849a797146a13f35f3182"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    127
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 3,
+  "next_offset": 3,
+  "response_sha256": "2b9bbe772df36b8087d5bb897979106ce1a9642aa2b6fb94f28350335409d6fb",
+  "search_complete": true
+}

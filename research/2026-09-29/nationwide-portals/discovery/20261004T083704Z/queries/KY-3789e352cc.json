@@ -1,0 +1,1274 @@
+{
+  "jurisdiction_code": "KY",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-04T08:37:33.424309+00:00",
+  "candidates": [
+    {
+      "id": "2c2731ce6b7442eeb0cdfa6cd522375d",
+      "title": "Federal Campgrounds in Kentucky",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Structures_Recreation_v1/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Geological Survey, displays recreation structures in the U.S.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.647055,
+                39.39273
+              ],
+              [
+                -81.275768,
+                39.39273
+              ],
+              [
+                -81.275768,
+                36.092389
+              ],
+              [
+                -90.647055,
+                36.092389
+              ],
+              [
+                -90.647055,
+                39.39273
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p><span style='background-color:rgb(255,255,255); color:rgb(20,20,20); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;'>This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Geological Survey, displays recreation structures in the U.S.</span></span></p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Federal Campgrounds in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789657993000,
+        "avgRating": 0,
+        "id": "2c2731ce6b7442eeb0cdfa6cd522375d",
+        "categories": [
+          "/Categories/Location",
+          "/Categories/Economy",
+          "/Categories/Structure"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "USGS",
+        "largeThumbnail": null,
+        "lastViewed": 1789642800000,
+        "thumbnail": "thumbnail/thumbnail1752506957853.png",
+        "languages": [],
+        "created": 1752505710000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Structures_Recreation_v1/FeatureServer",
+        "tags": [
+          "NGDA",
+          "National Geospatial Data Asset",
+          "FGDC",
+          "Federal Geospatial Data Committee",
+          "structures",
+          "federal",
+          "USGS",
+          "U.S. Geological Survey",
+          "USDOI",
+          "DOI",
+          "U.S. Department of the Interior",
+          "Department of the Interior",
+          "The National Map",
+          "campgrounds",
+          "trailheads",
+          "visitor information centers",
+          "Recreation",
+          "cabins",
+          "shelters",
+          "picnic areas",
+          "headquarters",
+          "ranger stations"
+        ],
+        "numViews": 7972,
+        "numComments": 0,
+        "size": 105,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-gb",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/2c2731ce6b7442eeb0cdfa6cd522375d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5cd2d316fdba4aefbc66da807de7ab17",
+      "title": "State Natural Areas in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_StateNaturalAreas_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This hosted feature service provides locations and boundaries of Kentucky's State Natural Areas that are open to the public for outdoor recreation.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -85.91373199200704,
+                37.31267227669666
+              ],
+              [
+                -83.13299563493142,
+                37.31267227669666
+              ],
+              [
+                -83.13299563493142,
+                36.65360828017058
+              ],
+              [
+                -85.91373199200704,
+                36.65360828017058
+              ],
+              [
+                -85.91373199200704,
+                37.31267227669666
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "State Natural Areas are owned and managed by the Office of Kentucky Nature Preserves. State Natural Areas available in this layer are open to the public for outdoor recreation.",
+        "licenseInfo": "LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.<br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "State Natural Areas in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658522000,
+        "avgRating": 0,
+        "id": "5cd2d316fdba4aefbc66da807de7ab17",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Boundaries",
+          "/Categories/Economy"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Office of Kentucky Nature Preserves",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail1783102516186.png",
+        "languages": [],
+        "created": 1741888203000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_StateNaturalAreas_WM_gdb/FeatureServer",
+        "tags": [
+          "boundaries",
+          "natural area",
+          "recreation",
+          "ksnpc",
+          "oknp",
+          "knp",
+          "fishing",
+          "wildlife",
+          "outdoor",
+          "paddling"
+        ],
+        "numViews": 35378,
+        "numComments": 0,
+        "size": 131072,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Office of Kentucky Nature Preserves (OKNP)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/5cd2d316fdba4aefbc66da807de7ab17"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0ee53057269b4b169dfe2900cb3c3cdd",
+      "title": "Restricted Hunting Areas within Elk Zones in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_ElkRestrictedHuntingAreas_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Combined layer of restricted hunting areas in the Elk Zone.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Combination of Elk Regulated No Hunting Areas, Unit 1 of Elk Zones, Boone's Ridge Viewing Area and Map_Polygons (TYPE in ('Foot Traffic Only', 'Mobility Impaired Hunting Area', 'No Hunting Area', 'Off Limits Area', 'Primitive Hunting only', 'Recreation Area', 'Seasonally Restricted Area', 'Waterfowl Refuge') within Elk Zone.</span></p></div></div></div>",
+        "licenseInfo": "Available to the public, But the current hunting guide should be referred to.<div><br /></div><div>LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.<br /></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Restricted Hunting Areas within Elk Zones in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658501000,
+        "avgRating": 0,
+        "id": "0ee53057269b4b169dfe2900cb3c3cdd",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Location",
+          "/Categories/Economy"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Department of Fish and Wildlife Resources",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail1783002039652.png",
+        "languages": [],
+        "created": 1724884829000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_ElkRestrictedHuntingAreas_WM_gdb/FeatureServer",
+        "tags": [
+          "wildlife",
+          "Wildlife management area",
+          "Kentucky Department of Fish and Wildlife Resources",
+          "Wildlife Management Area",
+          "Kentucky",
+          "Hunting",
+          "KDFWR",
+          "boundaries",
+          "recreation",
+          "outdoors"
+        ],
+        "numViews": 33010,
+        "numComments": 0,
+        "size": 630784,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Department of Fish and Wildlife Resources (KDFWR)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/0ee53057269b4b169dfe2900cb3c3cdd"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f7f827fa857e4c73bc7f12e943c3e1e5",
+      "title": "Kentucky's Public Hunting Areas - Restricted Access",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_PublicHuntingAreasRestrictedAccess_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To map the polygon features for Public Hunting Areas map when an appropriated feature class from another more standard source is not available.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.1545278052933,
+                38.77689918837378
+              ],
+              [
+                -82.09395718464964,
+                38.77689918837378
+              ],
+              [
+                -82.09395718464964,
+                36.59312536137224
+              ],
+              [
+                -89.1545278052933,
+                36.59312536137224
+              ],
+              [
+                -89.1545278052933,
+                38.77689918837378
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Polygon features such as Recreation Areas, no hunting area, or ponds for Public Hunting Area mapping in Kentucky. There is a layer file available that standardizes symbolization. The polygons often refer to restrictions or regulations in the area (\"Foot Traffic Only, \"Mobility Impaired Hunting Area\", \"Off Limits Area\", No Hunting Area\", \"Primitive Hunting Area\"), some habitat that we want to show on the maps (Wetland</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Restictted access areas are provided on ArcIGIS online interactive maps as well as DGI hunting and fishing interactive map. Areas not marked [PUBDISPLAY] = 'Yes' should not be made available. </span></p></div></div></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky's Public Hunting Areas - Restricted Access",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658247000,
+        "avgRating": 0,
+        "id": "f7f827fa857e4c73bc7f12e943c3e1e5",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Location",
+          "/Categories/Economy"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Department of Fish and Wildlife Resources",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail1785441261437.png",
+        "languages": [],
+        "created": 1724967946000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_PublicHuntingAreasRestrictedAccess_WM_gdb/FeatureServer",
+        "tags": [
+          "Kentucky Department of Fish and Wildlife Resources",
+          "boundaries",
+          "Hunting",
+          "Wildlife management area",
+          "Wildlife Management Area",
+          "boundaries",
+          "KDFWR",
+          "wildlife",
+          "Kentucky"
+        ],
+        "numViews": 33727,
+        "numComments": 0,
+        "size": 2097152,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Department of Fish and Wildlife Resources (KDFWR)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/f7f827fa857e4c73bc7f12e943c3e1e5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0981e8e18e924068b1eb3d31542e3ef9",
+      "title": "Kentucky's Recreational Trails",
+      "url": "https://kygeonet.ky.gov/kytrails/",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Explore recreational trails in Kentucky with this web mapping application. Search for State Parks, State Park Trailheads, find trails by activity, and look at a trail's elevation profile.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Other",
+          "Ready To Use",
+          "Web Map"
+        ],
+        "description": "<p>Explore recreational trails in Kentucky with this web mapping application. Search for State Parks, State Park Trailheads, find trails by activity, and look at a trail\"s elevation profile.</p><p>The Kentucky recreational trails dataset currently includes information provided by Kentucky State Parks, Kentucky Department of Fish and &amp; Wildlife Resources, and Kentucky Nature Preserves.</p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><p>https://creativecommons.org/licenses/by/4.0/</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky's Recreational Trails",
+        "type": "Web Mapping Application",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658637000,
+        "avgRating": 0,
+        "id": "0981e8e18e924068b1eb3d31542e3ef9",
+        "categories": [
+          "/Categories/Location",
+          "/Categories/Society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1789300800000,
+        "thumbnail": "thumbnail/thumbnail1751053819836.png",
+        "languages": [],
+        "created": 1751053718000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://kygeonet.ky.gov/kytrails/",
+        "tags": [
+          "application",
+          "web mapping application",
+          "trails",
+          "blue water trails",
+          "trailheads",
+          "trail",
+          "State Park",
+          "State Forest",
+          "Wildlife",
+          "hiking",
+          "biking",
+          "recreational",
+          "recreation",
+          "forest",
+          "forests",
+          "equine",
+          "horse trails",
+          "wildlife viewing"
+        ],
+        "numViews": 440,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/0981e8e18e924068b1eb3d31542e3ef9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "92347af3843f4723a58d2326c225643d",
+      "title": "Kentucky's Recreational Trails",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Recreational_Trails/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Recreational Trails from around the Commonwealth of Kentucky",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.11175110823359,
+                38.886763327306284
+              ],
+              [
+                -82.28312717716906,
+                38.886763327306284
+              ],
+              [
+                -82.28312717716906,
+                36.62446078226708
+              ],
+              [
+                -89.11175110823359,
+                36.62446078226708
+              ],
+              [
+                -89.11175110823359,
+                38.886763327306284
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div>This dataset contains recreational trails from around the Commonwealth of Kentucky. Contributions from the Kentucky Department of Fish and Wildlife Resources, Kentucky's Office of Nature Preserves, and Kentucky State Parks were included in the dataset. Updates will occur by request from these agencies. Additional data will be aggregated as it becomes available from other state and local agencies.</div>",
+        "licenseInfo": "LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.<br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky's Recreational Trails",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658249000,
+        "avgRating": 0,
+        "id": "92347af3843f4723a58d2326c225643d",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Location",
+          "/Categories/Society"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky State Parks, Office of Kentucky Nature Preserves, Kentucky Department of Fish and Wildlife Resources",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail1782481604717.png",
+        "languages": [],
+        "created": 1710509642000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Recreational_Trails/FeatureServer",
+        "tags": [
+          "Recreation",
+          "recreational",
+          "trail",
+          "trails",
+          "hiking",
+          "biking",
+          "equine",
+          "hike",
+          "bike",
+          "parks",
+          "park"
+        ],
+        "numViews": 17103,
+        "numComments": 0,
+        "size": 5234688,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/92347af3843f4723a58d2326c225643d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "883bfb18be694508ad45b4d8001be114",
+      "title": "Public Hunting Areas in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_PublicHuntingAreas_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Used to delineate boundaries for each public hunting area within Kentucky.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.34935648754336,
+                38.99958620590627
+              ],
+              [
+                -82.0674642248006,
+                38.99958620590627
+              ],
+              [
+                -82.0674642248006,
+                36.497489096352695
+              ],
+              [
+                -89.34935648754336,
+                36.497489096352695
+              ],
+              [
+                -89.34935648754336,
+                38.99958620590627
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Boundaries of Kentucky Department of Fish and Wildlife Resources Public Hunting Areas. These are both Wildlife Management Areas (WMA), Hunting Access Areas, Outdoor Recreation Area, and areas for which there is some kind of public hunting allowed (liek state forests and state parks). The current hunting and trapping guide should be referred to for specific regulations. Tracts of different ownership are merged into a single polygon for each of the public hunting areas. Not all WMAs are in public ownership. Some are privately owned and have short term agreements to allow public hunting access. There are two other feature classes, \" Wildlife Management Areas\" and \"Non_WMA_Hunting_Area_tracts\" that are broken down by tract. That Wildlife Management Area feature class includes the ownership for each tract of the WMA.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><div style='font-size:12pt;'><p><span>LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.</span></p></div></div></div></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Public Hunting Areas in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658485000,
+        "avgRating": 0,
+        "id": "883bfb18be694508ad45b4d8001be114",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Economy"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Managed Lands boundaries coverage that was provided by the Natural Resource and Enviromental Protection Cabinet. Extensive edits have been made to this feature class since then.  For non WMA state lands, the 2013 edition of the Protected Area Database for Kentucky was used as a source.",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail1785441354145.png",
+        "languages": [],
+        "created": 1724937581000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KDFWR_PublicHuntingAreas_WM_gdb/FeatureServer",
+        "tags": [
+          "KDFWR",
+          "Kentucky",
+          "Public Hunting Area",
+          "Wildlife Management Area",
+          "Hunting Access Area",
+          "Outdoor Recreation Area",
+          "Hunting",
+          "Fishing"
+        ],
+        "numViews": 35770,
+        "numComments": 0,
+        "size": 9453568,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Department of Fish and Wildlife Resources (KDFWR)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/883bfb18be694508ad45b4d8001be114"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3b2baa2a81374c6687421a8d12c57417",
+      "title": "Kentucky Heritage Land Conservation Fund Areas",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KyHeritageLandConservationFund_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this layer is to show tracts that have been purchased with Kentucky Heritage Land Conservation Funds. These funds can contribute to the state's nature preserves, state parks, state forests, wildlife management areas, environmental education areas, wild rivers or wetlands. KHLCF tracts may not represent the full boundary of a specific natural area. For a complete boundary of an area including non-KHLCF funded tracts, please refer to map services provided by the area owner.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.704434,
+                39.151921
+              ],
+              [
+                -81.884235,
+                39.151921
+              ],
+              [
+                -81.884235,
+                36.456976
+              ],
+              [
+                -89.704434,
+                36.456976
+              ],
+              [
+                -89.704434,
+                39.151921
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Established in 1990, the Kentucky Heritage Land Conservation Fund (KHLCF) is the primary source of state funding for the purchase and management of natural areas. It is used to purchase land from willing sellers for nature preserves, state parks, state forests, wildlife management areas, environmental education areas, wild rivers and wetlands. The KHLCF Board protects each site in perpetuity with a conservation easement or deed restriction. Legislation established four priorities for land conservation: areas that are a habitat for rare and endangered species, areas important to migratory birds, areas that perform important natural functions that are subject to alteration or loss, or areas to be preserved in their natural state for public use, outdoor recreation and education.",
+        "licenseInfo": "LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.<br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky Heritage Land Conservation Fund Areas",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658156000,
+        "avgRating": 0,
+        "id": "3b2baa2a81374c6687421a8d12c57417",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Boundaries",
+          "/Categories/Economy"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Office of Nature Preserves",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1741887295000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KyHeritageLandConservationFund_WM_gdb/FeatureServer",
+        "tags": [
+          "onkp",
+          "boundaries",
+          "preserve",
+          "park",
+          "forest",
+          "recreation",
+          "hiking",
+          "HLCF",
+          "knp",
+          "environment"
+        ],
+        "numViews": 33223,
+        "numComments": 0,
+        "size": 819200,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Office of Kentucky Nature Preserves (OKNP)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/3b2baa2a81374c6687421a8d12c57417"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9901f5e35a17468b9b7bb7735f7e6fea",
+      "title": "Wildlife Management Areas in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Wildlife_Management_Areas_in_Kentucky/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Wildlife Management Areas (WMA) boundaries across Kentucky. WMAs are a subset of the Commonwealth's Public Hunting Areas.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.465741,
+                38.926092
+              ],
+              [
+                -82.171458,
+                38.926092
+              ],
+              [
+                -82.171458,
+                36.46452
+              ],
+              [
+                -89.465741,
+                36.46452
+              ],
+              [
+                -89.465741,
+                38.926092
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "Boundaries of Kentucky Department of Fish and Wildlife Resources Public Hunting Areas. These are both Wildlife Management Areas (WMA), Hunting Access Areas, Outdoor Recreation Area, and areas for which there is some kind of public hunting allowed (liek state forests and state parks). The current hunting and trapping guide should be referred to for specific regulations. Tracts of different ownership are merged into a single polygon for each of the public hunting areas. Not all WMAs are in public ownership. Some are privately owned and have short term agreements to allow public hunting access. There are two other feature classes, \" Wildlife Management Areas\" and \"Non_WMA_Hunting_Area_tracts\" that are broken down by tract. That Wildlife Management Area feature class includes the ownership for each tract of the WMA.",
+        "licenseInfo": "<p>No limitations, but KDFWR should be credited.</p><p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><p>https://creativecommons.org/publicdomain/zero/1.0/</p>",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Wildlife Management Areas in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1786304753000,
+        "avgRating": 0,
+        "id": "9901f5e35a17468b9b7bb7735f7e6fea",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Economy"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Managed Lands boundaries coverage that was provided by the Natural Resource and Enviromental Protection Cabinet. Extensive edits have been made to this feature class since then. For non WMA state lands, the 2013 edition of the Protected Area Database for Kentucky was used as a source.",
+        "largeThumbnail": null,
+        "lastViewed": 1787601600000,
+        "thumbnail": "thumbnail/thumbnail1786304750611.png",
+        "languages": [],
+        "created": 1786303965000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Wildlife_Management_Areas_in_Kentucky/FeatureServer",
+        "tags": [
+          "KDFWR",
+          "Kentucky",
+          "Public Hunting Area",
+          "Wildlife Management Area",
+          "Hunting Access Area",
+          "Outdoor Recreation Area",
+          "Hunting",
+          "Fishing"
+        ],
+        "numViews": 137,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Wildlife_Management_Areas_in_Kentucky",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Department of Fish and Wildlife Resources (KDFWR)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/9901f5e35a17468b9b7bb7735f7e6fea"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "39457382f5c44d04897d9b18765b212f",
+      "title": "Recreational Trailheads in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Recreational_Trailheads/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Recreational Trailheads within the Commonwealth of Kentucky.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.11094639771204,
+                38.88447587804459
+              ],
+              [
+                -82.29109285912692,
+                38.88447587804459
+              ],
+              [
+                -82.29109285912692,
+                36.64425980866937
+              ],
+              [
+                -89.11094639771204,
+                36.64425980866937
+              ],
+              [
+                -89.11094639771204,
+                38.88447587804459
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This service provides access to an aggregated set of recreational trailheads in the Commonwealth of Kentucky. State agencies such as Kentucky State Parks (KYPARKS), Department of Fish &amp; Wildlife (KDFWR), Kentucky Nature Preserves (KNP), and the Kentucky Transportation Cabinet (KYTC) will contribute to this dataset. </span><div><font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif' size='3'><br /></font></div><div><font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif' size='3'>The data structure is based on the Kentucky Trails Mapping Standard adopted by the Kentucky Geographic Information Advisory (GIAC) in 2023. <br /></font><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Updates will align with agency data update schedules. </span></div></div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.</span><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Recreational Trailheads in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658495000,
+        "avgRating": 0,
+        "id": "39457382f5c44d04897d9b18765b212f",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Society",
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky State Parks",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail1782330888984.png",
+        "languages": [],
+        "created": 1713283206000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Recreational_Trailheads/FeatureServer",
+        "tags": [
+          "trailheads",
+          "recreational",
+          "trails",
+          "kentucky",
+          "state parks",
+          "kentucky state parks",
+          "parks",
+          "recreation",
+          "hiking"
+        ],
+        "numViews": 11093,
+        "numComments": 0,
+        "size": 499712,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/39457382f5c44d04897d9b18765b212f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    137
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 61,
+  "next_offset": 10,
+  "response_sha256": "250f99de8eabbc58677c69cf508af19301aa0f0e2d3b6e9578036b2f58b9644c",
+  "search_complete": false
+}

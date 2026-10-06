@@ -1,0 +1,24 @@
+{
+  "jurisdiction_code": "MT",
+  "catalog_id": "mt-primary",
+  "catalog_url": "https://data.mt.gov/",
+  "started_at": "2026-10-04T20:39:29.902456+00:00",
+  "attempts": [
+    {
+      "adapter": "hub",
+      "endpoint": "https://data.mt.gov/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 406: Not Acceptable"
+    },
+    {
+      "adapter": "ckan",
+      "endpoint": "https://data.mt.gov/api/3/action/package_search",
+      "error": "HTTPError: HTTP Error 406: Not Acceptable"
+    }
+  ],
+  "status": "html_catalog_only",
+  "adapter": "html_catalog_scan",
+  "endpoint": "https://data.mt.gov/",
+  "validation_receipt": 51,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_page_links_only_geography_unverified"
+}

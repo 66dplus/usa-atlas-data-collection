@@ -1,0 +1,1219 @@
+{
+  "jurisdiction_code": "ID",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-06T02:45:18.321848+00:00",
+  "candidates": [
+    {
+      "id": "5a08280a853b41b69115a3fc0abbd2bc",
+      "title": "Idaho Recreation Trails",
+      "url": "https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer",
+      "publisher": "aernst_idpr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Geographic data service underlying Idaho Trails Experience web app, & consumable REST endpoint service. Comprehensive, unified presentation of geodata for trail opportunities throughout the State of Idaho irrespective of land manager jurisdiction and authoritative data source. Core layer of this Feature Service is the Idaho Routes layer of roads and trails, plus other supporting layers such as route and area emergency closures to enhance the usefulness of route data in the core layer Idaho Routes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.24311913389229,
+                49.00098827523249
+              ],
+              [
+                -110.76920748675471,
+                49.00098827523249
+              ],
+              [
+                -110.76920748675471,
+                41.815422831526185
+              ],
+              [
+                -117.24311913389229,
+                41.815422831526185
+              ],
+              [
+                -117.24311913389229,
+                49.00098827523249
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.414rem; font-weight:400; margin-bottom:0in; margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'><strong>Hosted Feature Service</strong></span></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.414rem; font-weight:400; margin-bottom:0in; margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'>The heart of the <i>Idaho Trails </i>Experience web app is the geographic data served by the <i>Idaho Recreation Trails </i>collection of Hosted Feature Layers. The Hosted service can be updated more frequently and on-the-fly than the previous technology used to maintain <i>Idaho Trails</i>-- changes now appear on the App and through the Feature Service in real time. The newest web presentation technology under AGOL, <i>Experience Builder</i>, served by this dataset, will make possible several extended features in the Web App.</span></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.414rem; font-weight:400; margin-bottom:0in; margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'><i><strong>Under the hood&nbsp;</strong></i></span></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.414rem; font-weight:400; margin-bottom:0in; margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'>Linear routes, closure routes and areas, and boundary area Hosted Feature Layers can be directly consumed from the Service via REST endpoint and are the source of features displayed in the <i>Idaho Trails </i>web app. In addition to View settings for attributes popups set in the associated Web Map, additional visibility option not managed directly in the Hosted Feature data or controllable in the Web Map are further processed in the <i>Idaho Trails </i>Experience App presentation.</span></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.414rem; font-weight:400; margin-bottom:0in; margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'><strong>Underlying Classes in the </strong><i><strong>Idaho Recreation Trails</strong></i><strong> dataset:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></span></p><ul><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>One single linear class \"Idaho Routes\" contains all road and trail features (57,000+ route segment features):&nbsp;&nbsp;</span></p></li></ul><ol><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>Routes characterized as recreational in nature include: High-clearance (previously \"Jeep\" treated as a road type, now treated as a full-width \"trail\" type), Special Vehicle Designation (mostly OHVs &gt;50\"), OHVs 50\" and under, and single-track motorized (each width class separated by open year-long and motorized-seasonal); E-Bike (Class noted in Narrative); and, non-motorized and non-mechanized trails.</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>Routes where vehicles either must be highway-legal (i.e., OHVs prohibited, typically paved roads), or routes requiring Restricted plate for legal OHV travel (mostly JURISDICTION = County): Highway-legal, Automobile, Other Roads (each with subcategories for seasonal access restrictions).&nbsp;</span></p></li></ol><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.414rem; font-weight:400; margin-bottom:0in; margin-left:80px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'>(Note: Route symbology, and selectable visibility is filtered based on the value in the SYMBOL attribute from the above linear class within the Web Map and Experience App. If dynamically consuming the Feature Service (REST), provisions will need to be made to filter to select visibility by road and trail types based on the value in the attribute field SYMBOL.)</span></p><ul><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>\"Points of Interest\" (point type data) includes lat/lon point-based information such as links to external maps and \"attractions\" information such as site-seeing destinations.&nbsp;&nbsp;</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>\"Emergency Route Closures\" contains linear route Closures (overlays any route where a Closure Order applies in web map)</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>\"Area Restrictions\" containes defined closure or exclusion areas (polygon; usually planned annual human or vehicle exclusion areas, or temporary emergency closure such as for wildfires)</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>Multiple \"Boundary\" polygon classes contain boundary outlines and attributes information for IDPR Regions (3), Counties (44), Wildernesses (42), National Forests and Ranger Districts (39), and BLM District and Field Offices (12), and BLM land units (700+). These separate classes reduce the data footprint of the Routes data and are joined for lookup by name indexing or spatial intersect.&nbsp;</span></p></li></ul><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.414rem; font-weight:400; margin-bottom:0in; margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'><strong>Bonus Material:</strong></span></p><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:1.414rem; font-weight:400; margin-bottom:0in; margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'>Added through the Web Map and visible in the ExB web app, not included in the enpoint Service, are several optional, dynamic layers via publicly-available services, selectable for visibility in the Web app:</span></p><ul><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>NIFC Current and Historic Fire primeters</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>Idaho Department of Lands- Lands Available for Recreational Use (visible by-default)</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>Idaho Department of Fish &amp; Game Hunting Units boundaries and numbers&nbsp;</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>BLM Surface Management Agency layer for all local, state, and federal agencies which manage public lands (accessible, and not)&nbsp; &nbsp;</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>US Forest Service Motor Vehicle Use Map, National Dataset (mirrors local MVUM paper and GeoPDF maps, where data available, lags local data when changes are made)</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>National Park Service (NPS) Parks and Monuments areas and boundaries</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>NOHRSC Snow Depth (layer exposed only during snow season)</span></p></li><li><p style='margin-left:0px;'><span style='font-family:&quot;Avenir Next LT Pro&quot;,sans-serif; font-size:12.0pt;'>Other REST Services to be added based on utility in researching recreational access</span></p></li></ul><p style='background-attachment:initial; background-clip:initial; background-image:initial; background-origin:initial; background-position:initial; background-repeat:initial; background-size:initial; margin-bottom:0in; margin-left:0px;'><span style='font-family:Avenir Next LT Pro, sans-serif; font-size:12pt;'><span style='font-weight:400;'>This dataset is published for the use of the individuals who fund this Program. Organizations wishing to consume this Feature Service into their own application should inquire to IDPR to discuss requirements for use and schema information to aid in development.</span></span><br /><br /><span style='font-family:Avenir Next LT Pro, sans-serif; font-size:12pt;'><span style='font-weight:400;'>AGOL Experience App here:&nbsp;</span></span><a target='_blank' href='https://experience.arcgis.com/experience/97a42a2a73c944ba918042faf518c689' rel='nofollow ugc noopener noreferrer'>https://experience.arcgis.com/experience/97a42a2a73c944ba918042faf518c689</a><br />&nbsp;</p><h4 style='margin:0.375rem 0px 0.75rem;'><span style='font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'><span style='font-weight:400;'>Inquire to </span></span><a href='mailto:maps@idpr.idaho.gov' target='_blank' rel='nofollow ugc noopener noreferrer'><span style='color:#00619B; font-family:&quot;Avenir Next LT Pro&quot;, sans-serif; font-size:12pt;'><span style='font-weight:400;'>maps@idpr.idaho.gov</span></span></a><br /><br />&nbsp;</h4>",
+        "licenseInfo": "<div>Not for commercial use and may not be used in 3rd party apps without source attribution. Contact IDPR for Schema information.</div><div>The Idaho Department of Parks and Recreation assumes no liability for any loss that may result from the use of this data. The Idaho Department of Parks and Recreation, as a general rule, may modify or delete any of the information that is included in this data without advance notice. The Idaho Department of Parks and Recreation may also interrupt or halt access to this data when deemed necessary. The Idaho Department of Parks and Recreation shall assume no liability for any damages resulting from modification or deletion of this dataset or interruption or halting access to this data.</div><div>Inquire to <a href='mailto:maps@idpr.idaho.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>maps@idpr.idaho.gov</a></div><div><br /></div>",
+        "ownerId": "2a8e3e9acf5b4e52a410f241c8d27aa7",
+        "title": "Idaho Recreation Trails",
+        "type": "Feature Service",
+        "orgId": "CNPdEkvnGl65jCX8",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1791230481000,
+        "avgRating": 0,
+        "id": "5a08280a853b41b69115a3fc0abbd2bc",
+        "categories": [
+          "/Categories/Idaho State Government/Idaho Department of Parks and Recreation",
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "aernst_idpr",
+        "accessInformation": "Idaho Parks and Recreation Department, United States Forest Service, Bureau of Land Management.",
+        "largeThumbnail": null,
+        "lastViewed": 1791230400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1710576488000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/CNPdEkvnGl65jCX8/arcgis/rest/services/Idaho_Recreation_Trails/FeatureServer",
+        "tags": [
+          "Trails",
+          "Motorized Trails",
+          "ATV Trails",
+          "Equestrian Trails",
+          "Non-Motorized Trails",
+          "Dirt Bike Trails",
+          "Motorcycle Trails",
+          "Recreation",
+          "UTV Trails",
+          "Idaho Department of Parks and Recreation (IDPR)",
+          "The Idaho Map (TIM)"
+        ],
+        "numViews": 448731,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Idaho_Recreation_Trails",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Office of Information Technology Services",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/5a08280a853b41b69115a3fc0abbd2bc"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6d30d6f7839c4ae3ab14e7dd9c8bdd9b",
+      "title": "Idaho Department of Parks Recreation Open Data",
+      "url": "https://idpr-data-idaho.hub.arcgis.com",
+      "publisher": "aernst_idpr",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Explore our open data and tools, and use it to build insights of your own.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.53199999995431,
+                49.315999999980725
+              ],
+              [
+                -110.41299999995718,
+                49.315999999980725
+              ],
+              [
+                -110.41299999995718,
+                41.5309999999838
+              ],
+              [
+                -117.53199999995431,
+                41.5309999999838
+              ],
+              [
+                -117.53199999995431,
+                49.315999999980725
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubSite",
+          "hubSolution",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "OpenData",
+          "Ready To Use",
+          "selfConfigured",
+          "Web Map",
+          "Registered App"
+        ],
+        "description": "Open data is the first step to an informed, transparent, and engaged community. Explore our data and tools, provide feedback on what you would like to see next, and find out about opportunities to get involved. ",
+        "licenseInfo": "null",
+        "title": "Idaho Department of Parks Recreation Open Data",
+        "type": "Hub Site Application",
+        "orgId": "CNPdEkvnGl65jCX8",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725037786000,
+        "avgRating": 0,
+        "id": "6d30d6f7839c4ae3ab14e7dd9c8bdd9b",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "aernst_idpr",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1725224400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1596474120000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://idpr-data-idaho.hub.arcgis.com",
+        "tags": [
+          "Hub Site"
+        ],
+        "numViews": 249021,
+        "numComments": 0,
+        "size": 4401992,
+        "listed": false,
+        "scoreCompleteness": 78,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "collaborationGroupId": "fd92f430419f4e22892120e3192954bf",
+          "schemaVersion": 1.8,
+          "children": [],
+          "globalNavViewCount": 7,
+          "contentGroupId": "a582760bf6904f719b2b361d814e4c7d",
+          "source": "a9920828b2d3419584f65bbdb5278105",
+          "parentId": "a9920828b2d3419584f65bbdb5278105"
+        },
+        "source": "State of Idaho",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/6d30d6f7839c4ae3ab14e7dd9c8bdd9b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "29a4d57821b44829a1f1dc1e7414cf38",
+      "title": "Wild and Scenic Watersheds",
+      "url": "https://experience.arcgis.com/experience/29a4d57821b44829a1f1dc1e7414cf38",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "View watersheds of National Wild & Scenic Rivers.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Copy Item",
+          "EXB Experience",
+          "JavaScript",
+          "lastEditor:mcase_IDWR",
+          "modified: 1787339748698",
+          "publishVersion:1.21.0",
+          "Ready To Use",
+          "status: Published",
+          "template:f5057151f34a4a8bb8e280e1f67f4f31",
+          "version:1.21.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<p style='line-height:1;'><span style='font-family:Calibri; font-size:16px;'><span style='display:inline; letter-spacing:normal;'>Web experience hosted by the Idaho Department of Water Resources to view Wild &amp; Scenic Watersheds in Idaho.</span></span></p><p style='line-height:1;'><span style='font-family:Calibri; font-size:16px;'><span style='display:inline; letter-spacing:normal;'>The National Wild and Scenic Rivers System Act (1968) preserves certain rivers, in their free flowing forms, that have \"outstandingly remarkable\" scenic views, recreation, geologic features, fish and wildlife, or historical and cultural significance. Wild &amp; Scenic Watersheds are hydraulically connected water sources within drainages of Wild &amp; Scenic Rivers. Learn more at </span></span><a style='display:inline; font-family:Calibri; font-size:16px; letter-spacing:normal;' target='_blank' href='https://idwr.idaho.gov/wr-administration/wild-and-scenic-rivers/' rel='nofollow ugc noopener noreferrer'>Wild &amp; Scenic Rivers</a>.</p>",
+        "licenseInfo": "<p><span style='font-family:Calibri, sans-serif, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:center; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>The Idaho Department of Water Resources (IDWR) maintains this data as a public service. IDWR strives to ensure that all technical data and other information made available to the public is accurate, complete, and in conformance with the Idaho Public Records Act. Neither IDWR nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained in this map. Persons using the information from these datasets for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with other primary sources from which the information was obtained.</span></span></p>",
+        "ownerId": "3e5e53cdbaf780e1b3c609acedce03ab",
+        "title": "Wild and Scenic Watersheds",
+        "type": "Web Experience",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1787339751000,
+        "avgRating": 0,
+        "id": "29a4d57821b44829a1f1dc1e7414cf38",
+        "categories": [
+          "/Categories/Regulatory Areas"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources",
+        "largeThumbnail": "largethumbnail/29a4d57821b44829a1f1dc1e7414cf38.png",
+        "lastViewed": 1787338800000,
+        "thumbnail": "thumbnail/Wild_and_Scenic_Watersheds.png",
+        "languages": [],
+        "created": 1757975327000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/29a4d57821b44829a1f1dc1e7414cf38",
+        "tags": [
+          "IDWR",
+          "Idaho Department of Water Resources",
+          "Idaho"
+        ],
+        "numViews": 532,
+        "numComments": 0,
+        "size": 541494,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/29a4d57821b44829a1f1dc1e7414cf38"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2f7ee4393e3a4c4c87a5bfabcb36a042",
+      "title": "Wetland Prioritization SCORTP 1998",
+      "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Wetland_Prioritization_SCORTP_1998/FeatureServer",
+      "publisher": "idahofishandgame",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset created for the State Comprehensive Outdoor Recreation and Tourism Plan includes 192 wetlands of high priority for conservation in Idaho",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.03281837673673,
+                48.99994281904234
+              ],
+              [
+                -111.00059218332893,
+                48.99994281904234
+              ],
+              [
+                -111.00059218332893,
+                41.99444791552165
+              ],
+              [
+                -117.03281837673673,
+                41.99444791552165
+              ],
+              [
+                -117.03281837673673,
+                48.99994281904234
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;font-size:12pt\"><P><SPAN>In 1992, IDFG created the Idaho Wetlands Information System database to house information on wetlands of conservation significance. Wetlands were identified by IDFG staff, partners, and public input. These wetland sites were prioritized based on criteria including wetland type classification, size, ownership, potential partners for conservation, conservation status, recreation values, unique features (e.g., rare plants, animals, ecosystems), potential threats, and access. The database was updated in 1998 and includes information on 192 wetland sites.</SPAN></P></DIV>",
+        "licenseInfo": "<div style='text-align:Left; font-size:12pt;'><p><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 12pt;'>Idaho Fish and Game offers free, unrestricted access and use of this data. </span><span>The data represented in this file is true and accurate to the best of our knowledge but is considered a best representation only and does not map the boundaries of jurisdictional wetlands. Users must assume responsibility in determining the usability of this data for their purposes. Idaho Fish and Game does not assume liability. No warranty expressed or implied is made by Idaho Fish and Game regarding the utility of the data on any other system, nor shall the act of distribution constitute such warranty.</span></p></div>",
+        "title": "Wetland Prioritization SCORTP 1998",
+        "type": "Feature Service",
+        "orgId": "FjJI5xHF2dUPVrgK",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1759513818000,
+        "avgRating": 0,
+        "id": "2f7ee4393e3a4c4c87a5bfabcb36a042",
+        "categories": [
+          "/Categories/Wetland"
+        ],
+        "spatialReference": "NAD_1983_Transverse_Mercator",
+        "numRatings": 0,
+        "owner": "idahofishandgame",
+        "accessInformation": "Idaho Department of Fish and Game",
+        "largeThumbnail": null,
+        "lastViewed": 1773075600000,
+        "thumbnail": "thumbnail/thumbnail1546537187456.png",
+        "languages": [],
+        "created": 1506709984000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Wetland_Prioritization_SCORTP_1998/FeatureServer",
+        "tags": [
+          "State Comprehensive Outdoor Recreation and Tourism Plan (SCORTP)",
+          "wetland",
+          "conservation",
+          "prioritization",
+          "recreational opportunity",
+          "landscape context",
+          "threats",
+          "condition",
+          "habitat function",
+          "ArcGIS"
+        ],
+        "numViews": 7343,
+        "numComments": 0,
+        "size": 1409024,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Wetland_Prioritization_SCORTP_1998",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Fish and Game - AGOL",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/2f7ee4393e3a4c4c87a5bfabcb36a042"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1b17dad7876046c49cf3eab421becdcf",
+      "title": "Rest Areas",
+      "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/Assets/FeatureServer/5",
+      "publisher": "ITDGISdata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset provides the Idaho Transportation Department's rest area locations across the state of Idaho. These locations offer a stopping place for travelers to take a short break from driving, relaxing, have a snack, or use the restroom.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.1382,
+                47.7459
+              ],
+              [
+                -111.4416,
+                47.7459
+              ],
+              [
+                -111.4416,
+                42.0425
+              ],
+              [
+                -117.1382,
+                42.0425
+              ],
+              [
+                -117.1382,
+                47.7459
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p>The Idaho Transportation Department's (ITD) rest area point feature class encompasses all locations maintained by ITD across the state of Idaho. Rest area facilities vary across the state, but all are ADA accessible with features that include picnic tables (with or without) shelters, trash receptacles, drinking water, trees and shade, traveler information and vending machines. Some of the larger facilities offer walking and paved biking trails, larger parking areas for recreation vehicles and semi-trucks, and Visitor Information Centers.</p><p>This content item is a sub-layer of the <a target='_blank' href='https://iplan.maps.arcgis.com/home/item.html?id=c153841d251f40d9ac5b6ddb5e2f7435' rel='nofollow ugc noopener noreferrer'><u>Assets</u></a> authoritative feature layer.</p><p><a target='_blank' href='https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/Assets/FeatureServer/5/metadata?format=default&amp;f=html' rel='nofollow ugc noopener noreferrer'><u>Metadata</u></a></p>",
+        "licenseInfo": "<p>Spatial Data Disclaimer - The Idaho Transportation Department (ITD) provides this geographic data and any associated metadata \"as is\" without warranty of any kind, including but not limited to its completeness, fitness for a particular use, or accuracy of its content, positional or otherwise. It is the sole responsibility of the user to determine the usability of the data for their purposes. In no event shall ITD have any liability whatsoever for payment of any consequential, incidental, indirect, special, or tort damages of any kind arising out of the use of or reliance on the geographic data or metadata. In providing this data or access to it, ITD assumes no obligation to assist the user in the use of such data or in the development, use, or maintenance of any applications applied to or associated with the data or metadata.</p>",
+        "ownerId": "9932aa8ef41b79c7e7082928246aced2",
+        "title": "Rest Areas",
+        "type": "Feature Service",
+        "orgId": "Qqv4dYPC8Vv8e3c3",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782763941000,
+        "avgRating": 0,
+        "id": "1b17dad7876046c49cf3eab421becdcf",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "ITDGISdata",
+        "accessInformation": "This dataset was developed and provided by the Idaho Transportation Department (ITD). Users should credit ITD as the original source when utilizing or referencing this information in maps, reports, or applications.",
+        "largeThumbnail": null,
+        "lastViewed": 1782716400000,
+        "thumbnail": "thumbnail/thumbnail1782763936710.png",
+        "languages": [],
+        "created": 1780090187000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gisp.itd.idaho.gov/server/rest/services/GDWarehouse/Assets/FeatureServer/5",
+        "tags": [
+          "Idaho",
+          "Idaho Transportation Department",
+          "ITD",
+          "Assets"
+        ],
+        "numViews": 44,
+        "numComments": 0,
+        "size": 82,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Transportation Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/1b17dad7876046c49cf3eab421becdcf"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "73b6d4ea7bc14543ac29eb1da622db65",
+      "title": "Minimum Stream Flow Points",
+      "url": "https://gis.idwr.idaho.gov/hosting/rest/services/Regulatory/MinimumStreamFlowPoints/MapServer",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Portion of reaches that are protected by the State of Idaho & are shorter than 1 mile in length.  Longer segments are represented as lines. The complete GIS representation includes the datasets:  Minimum Stream Flow (Lines) &Minimum Lake Levels.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.237325333877,
+                48.7767586698368
+              ],
+              [
+                -111.082622744604,
+                48.7767586698368
+              ],
+              [
+                -111.082622744604,
+                42.0410553996494
+              ],
+              [
+                -117.237325333877,
+                42.0410553996494
+              ],
+              [
+                -117.237325333877,
+                48.7767586698368
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div style='text-align:Left;font-size:12pt'><p><span>The complete GIS representation of state-protected waters includes three datasets:  Minimum Lake Level, Minimum Stream Flow (Lines) &amp; Minimum Stream Flow Points.  Idaho's Minimum Stream Flow Program was approved by the Legislature in 1978 to preserve stream flows and lake elevations for public health, safety, and welfare. The minimum stream flow is the amount of flow necessary to preserve desired stream values, including fish and wildlife habitat, aquatic life, navigation and transportation, recreation, water quality, and aesthetic beauty. Minimum stream flow water rights are held by the Idaho Water Resource Board in trust for Idaho citizens (Idaho Code, Title 42, Chapter 15). Any person or entity can make a request to the Idaho Water Resource Board to file an application for stream flow on any water body within the state. To be approved, a minimum stream flow water right must be in the public interest, must not adversely affect senior water rights, must represent the minimum flow and not the desirable flow, and must show the flow is capable of being maintained.</span></p></div>",
+        "licenseInfo": "<div style='text-align:Left;font-size:12pt'><p><span>The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete and in conformance with the Idaho Public Records Act.</span></p><p><span>Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site.</span></p><p><span>Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</span></p></div>",
+        "title": "Minimum Stream Flow Points",
+        "type": "Map Service",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1750889309000,
+        "avgRating": 0,
+        "id": "73b6d4ea7bc14543ac29eb1da622db65",
+        "categories": [
+          "/Categories/Rivers and Lakes"
+        ],
+        "spatialReference": "NAD_1983_Idaho_TM",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "IDWR",
+        "largeThumbnail": "",
+        "lastViewed": 1774274400000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1655996124000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gis.idwr.idaho.gov/hosting/rest/services/Regulatory/MinimumStreamFlowPoints/MapServer",
+        "tags": [
+          "Idaho Water Resource Board",
+          "IWRB",
+          "water",
+          "resources",
+          "planning",
+          "protected streams",
+          "minimum stream flows"
+        ],
+        "numViews": 1596,
+        "numComments": 0,
+        "size": 93,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/73b6d4ea7bc14543ac29eb1da622db65"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "067d8bd6a94b4386a453e4df280f5d32",
+      "title": "Minimum Lake Level",
+      "url": "https://gis.idwr.idaho.gov/hosting/rest/services/Regulatory/MinimumLakeLevel/MapServer",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset represents lakes in Idaho's Minimum Stream Flow Program.  The complete GIS representation of state-protected water levels includes two additional datasets:  Minimum Stream Flow (Lines) & Minimum Stream Flow Points.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -116.644851859767,
+                48.2538893336582
+              ],
+              [
+                -110.93995555423,
+                48.2538893336582
+              ],
+              [
+                -110.93995555423,
+                41.9963994248375
+              ],
+              [
+                -116.644851859767,
+                41.9963994248375
+              ],
+              [
+                -116.644851859767,
+                48.2538893336582
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div style='text-align:Left;font-size:12pt'><div><p><span>The complete GIS representation of state-protected waters includes three datasets:  Minimum Lake Level, Minimum Stream Flow (Lines) &amp; Minimum Stream Flow Points.  Idaho's Minimum Stream Flow Program was approved by the Legislature in 1978 to preserve stream flows and lake elevations for public health, safety, and welfare. The minimum stream flow is the amount of flow necessary to preserve desired stream values, including fish and wildlife habitat, aquatic life, navigation and transportation, recreation, water quality, and aesthetic beauty. Minimum stream flow water rights are held by the Idaho Water Resource Board in trust for Idaho citizens (Idaho Code, Title 42, Chapter 15). Any person or entity can make a request to the Idaho Water Resource Board to file an application for stream flow on any water body within the state. To be approved, a minimum stream flow water right must be in the public interest, must not adversely affect senior water rights, must represent the minimum flow and not the desirable flow, and must show the flow is capable of being maintained.</span></p></div></div>",
+        "licenseInfo": "<div style='text-align:Left;font-size:12pt'><p><span>The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete and in conformance with the Idaho Public Records Act.</span></p><p><span>Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site.</span></p><p><span>Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</span></p></div>",
+        "title": "Minimum Lake Level",
+        "type": "Map Service",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1750888996000,
+        "avgRating": 0,
+        "id": "067d8bd6a94b4386a453e4df280f5d32",
+        "categories": [
+          "/Categories/Rivers and Lakes"
+        ],
+        "spatialReference": "NAD_1983_Idaho_TM",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "IDWR",
+        "largeThumbnail": "",
+        "lastViewed": 1774242000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1655996158000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gis.idwr.idaho.gov/hosting/rest/services/Regulatory/MinimumLakeLevel/MapServer",
+        "tags": [
+          "Idaho Water Resource Board",
+          "IWRB",
+          "water",
+          "resources",
+          "planning",
+          "protected streams",
+          "minimum stream flows"
+        ],
+        "numViews": 1320,
+        "numComments": 0,
+        "size": 86,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/067d8bd6a94b4386a453e4df280f5d32"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "28d7ff1b24744ea79630a70a017b4aaa",
+      "title": "Minimum Stream Flow",
+      "url": "https://gis.idwr.idaho.gov/hosting/rest/services/Regulatory/MinimumStreamFlow/MapServer",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Portion of reaches that are protected by the State of Idaho & are longer than 1 mile in length.  Shorter segments are represented as points. The complete GIS representation includes the datasets:  Minimum Stream Flow Points & Minimum Lake Levels.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.17961248127,
+                48.8408578998375
+              ],
+              [
+                -110.9169946153,
+                48.8408578998375
+              ],
+              [
+                -110.9169946153,
+                41.9611847251229
+              ],
+              [
+                -117.17961248127,
+                41.9611847251229
+              ],
+              [
+                -117.17961248127,
+                48.8408578998375
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div style='text-align:Left;font-size:12pt'><p><span>The complete GIS representation of state-protected waters includes three datasets:  Minimum Lake Level, Minimum Stream Flow (Lines) &amp; Minimum Stream Flow Points.  Idaho's Minimum Stream Flow Program was approved by the Legislature in 1978 to preserve stream flows and lake elevations for public health, safety, and welfare. The minimum stream flow is the amount of flow necessary to preserve desired stream values, including fish and wildlife habitat, aquatic life, navigation and transportation, recreation, water quality, and aesthetic beauty. Minimum stream flow water rights are held by the Idaho Water Resource Board in trust for Idaho citizens (Idaho Code, Title 42, Chapter 15). Any person or entity can make a request to the Idaho Water Resource Board to file an application for stream flow on any water body within the state. To be approved, a minimum stream flow water right must be in the public interest, must not adversely affect senior water rights, must represent the minimum flow and not the desirable flow, and must show the flow is capable of being maintained.</span></p></div>",
+        "licenseInfo": "<div style='text-align:Left;font-size:12pt'><p><span>The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete and in conformance with the Idaho Public Records Act.</span></p><p><span>Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site.</span></p><p><span>Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</span></p></div>",
+        "title": "Minimum Stream Flow",
+        "type": "Map Service",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1750889186000,
+        "avgRating": 0,
+        "id": "28d7ff1b24744ea79630a70a017b4aaa",
+        "categories": [
+          "/Categories/Rivers and Lakes"
+        ],
+        "spatialReference": "NAD_1983_Idaho_TM",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "IDWR",
+        "largeThumbnail": "",
+        "lastViewed": 1774274400000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1655996142000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gis.idwr.idaho.gov/hosting/rest/services/Regulatory/MinimumStreamFlow/MapServer",
+        "tags": [
+          "Idaho Water Resource Board",
+          "IWRB",
+          "water",
+          "resources",
+          "planning",
+          "protected streams",
+          "minimum stream flows"
+        ],
+        "numViews": 1733,
+        "numComments": 0,
+        "size": 87,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/28d7ff1b24744ea79630a70a017b4aaa"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bcf2ed8a62ff493f9116de2054c16989",
+      "title": "Idaho DEQ Water Quality Beneficial Uses / Standards (NHD 100K)",
+      "url": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/bcf2ed8a62ff493f9116de2054c16989",
+      "publisher": "IdahoDEQ_ADMIN",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Idaho DEQ §305B Water Quality Standards (Lakes & Streams - Beneficial Uses--NHD-100K)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.32624218747964,
+                49.06431873219225
+              ],
+              [
+                -110.73419531247923,
+                49.06431873219225
+              ],
+              [
+                -110.73419531247923,
+                41.7192378364158
+              ],
+              [
+                -117.32624218747964,
+                41.7192378364158
+              ],
+              [
+                -117.32624218747964,
+                49.06431873219225
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "2D",
+          "ArcMap",
+          "File Geodatabase Feature Class",
+          "Map",
+          "Map Package",
+          "mpk",
+          "SDE Feature Class"
+        ],
+        "description": "<font size='6'><span style='font-weight:normal;'>Beneficial Uses</span></font><div>   </div>\n\n \n\n \n\n \n\n \n\n \n\n <p><span style='font-weight:bold;'>A water quality standard</span> defines the water quality goals for a water body or portion thereof, in part by designating the use or uses to be made of the water. The beneficial use of a water body must consider its actual use, the ability of the water to support in the future a use that is not currently supported, and the basic goal of the Clean Water Act that all waters support aquatic life and recreation where attainable. Idaho must designate its uses accordingly.</p><p>A <b>designated use</b> is a beneficial use assigned to a specific water body in Idaho water quality rules. The Clean Water Act requires Idaho to recognize <b>existing uses</b>, which are uses that are/were actually attained in a water body on or after November 28, 1975, whether or not they are designated uses. In some cases, a water body does not have uses designated. For these water bodies, Idaho applies a <b>presumed use protection</b>, meaning the water body will be protected for cold water aquatic life and contact recreation. Often this presumed use protection is referred to as a presumed use.</p><p>In designating uses, Idaho considers the use and value of the water body for public water supply; for protection of fish, shellfish, and wildlife; and for recreational, agricultural, industrial, and navigational purposes. While a water body may have competing beneficial uses, federal law requires DEQ to protect the most sensitive of the beneficial uses.</p><ul><li><a href='https://www.deq.idaho.gov/water-quality/surface-water/water-quality-standards/' target='_blank' rel='nofollow ugc noopener noreferrer'>Beneficial Uses Home Page</a><br /></li><li><a href='https://adminrules.idaho.gov/rules/current/58/580102.pdf' target='_blank' rel='nofollow ugc noopener noreferrer'>Idaho's Water Quality Standards (PDF)</a></li><li><a href='https://www.deq.idaho.gov/water-quality/surface-water/water-quality-standards/' target='_blank' rel='nofollow ugc noopener noreferrer'>Water Quality Standards Home Page</a><br /></li><li>I<a href='https://mapcase.deq.idaho.gov/wq2022' target='_blank' rel='nofollow ugc noopener noreferrer'>daho DEQ  2022 Integrated Report Mapping Application</a></li><li><a href='https://www.deq.idaho.gov/water-quality/surface-water/epa-actions-on-proposed-standards/' target='_blank' rel='nofollow ugc noopener noreferrer'>EPA Actions on Proposed Standards</a><br /></li><li>I<a href='https://opengisdata-idahodeq.opendata.arcgis.com/' target='_blank' rel='nofollow ugc noopener noreferrer'>daho DEQ Open Data, GIS HUB</a></li></ul>",
+        "licenseInfo": "<div><span style='font-weight:bold;'>Restriction of Liability</span>: Neither the State of Idaho nor the Idaho Department of Environmental Quality, nor any of their employees make any warranty, express or implied, or assume any legal liability or responsibility for the accuracy, completeness or usefulness of any information or data provided.  Metadata is provided for all data sets, and no data should be used without first reading and understanding its limitations. The data could include technical inaccuracies or typographical errors. The Department of Environmental Quality may update, modify, or revise the data used at any time, without notice. 4/1/2015</div><div><br /></div><div><img alt='' src='https://mapcase.deq.idaho.gov/gwq/images/deqlogo.gif' /></div><div><br /></div>",
+        "title": "Idaho DEQ Water Quality Beneficial Uses / Standards (NHD 100K)",
+        "type": "Map Package",
+        "orgId": "Kr5oFycwwDsdTyVH",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1749505515000,
+        "avgRating": 0,
+        "id": "bcf2ed8a62ff493f9116de2054c16989",
+        "categories": [
+          "/Categories/Water Quality/Surface Water",
+          "/Categories/Surface Water Quality"
+        ],
+        "spatialReference": "NAD_1983_Idaho_TM",
+        "numRatings": 0,
+        "owner": "IdahoDEQ_ADMIN",
+        "accessInformation": "Idaho DEQ",
+        "largeThumbnail": null,
+        "lastViewed": 1746050400000,
+        "thumbnail": "thumbnail/thumbnail1601056294118.png",
+        "languages": [],
+        "created": 1401995660000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          "Idaho",
+          "DEQ",
+          "Beneficial Uses",
+          "Water Quality Standards",
+          "305b",
+          "TMDL",
+          "Streams",
+          "Clean Water Act",
+          "EPA",
+          "Idaho DEQ",
+          "Water Quality",
+          "Idaho GIS",
+          "303D",
+          "Lakes",
+          "Waterbodies",
+          "BURP",
+          "Idaho Water Quality Standards",
+          "Idaho Beneficial Uses",
+          "DEQ GIS",
+          "NHDPLUS",
+          "NHD",
+          "Surface Water",
+          "Surface Water Qualiy",
+          "State Government",
+          "305B",
+          "Integrated Report",
+          "Environment",
+          "Environmental Quality",
+          "Idaho Dept of Environmental Quality",
+          "Health"
+        ],
+        "numViews": 418,
+        "numComments": 0,
+        "size": 84710889,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Idaho_DEQ_Water_Quality_Standards_28Streams29.mpk",
+        "guid": "5178A73A-4742-40F5-8495-5DEEE594E45D",
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Environmental Quality GIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/bcf2ed8a62ff493f9116de2054c16989"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "97271a56f1874707878edc4944406933",
+      "title": "Wetland Prioritization SCORTP 2012 (Top 60)",
+      "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Wetland_Prioritization_Top_60_SCORTP_2012/FeatureServer",
+      "publisher": "idahofishandgame",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset created for the 2012 State Comprehensive Outdoor Recreation and Tourism Plan includes 60 wetlands that are the highest priorities for conservation...",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -117.04226148407137,
+                48.99858262001336
+              ],
+              [
+                -111.0469835489667,
+                48.99858262001336
+              ],
+              [
+                -111.0469835489667,
+                42.000653674348726
+              ],
+              [
+                -117.04226148407137,
+                42.000653674348726
+              ],
+              [
+                -117.04226148407137,
+                48.99858262001336
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><a href='https://www.recpro.org/assets/Library/SCORPs/id_scorp_2012-wetland_consv_plan.pdf' target='_blank'><font color='#6495ed' size='4'>Idaho Wetland Conservation Prioritization Plan - 2012</font></a><span><br /></span></p><p><span>Idaho Department of Fish and Game used GIS to prioritize wetlands for acquisition, long-term conservation, and restoration. Three broad criteria were considered: 1) wetland types; 2) wetland functions and values; and 3) wetland threats and impairments. Ecological systems known to be rare, reduced in extent, sensitive to disturbance, difficult to restore, and/or declining in Idaho were included in the wetland type criteria. The extent of these ecological systems (mapped in a 30 m2 pixel raster layer) was estimated using existing maps and vegetation plot data. Habitat function was assessed by analyzing the capacity of wetlands to support wildlife Species of Greatest Conservation Need and special status plants. Recreational values of wetlands were estimated by creating a statewide GIS model of recreational opportunity. Spatial layers mapping the extent of recreation sites were used. Idaho’s landscape-scale wetland assessment tool was used to estimate the relative condition of wetland habitats. A series of filters were used to identify wetlands of high conservation priority. The resulting layer was then reduced to clusters of pixels that were &gt; 80 ac. This threshold was used to target larger wetland blocks whose conservation or restoration would have the largest positive impact on the health of a watershed, ecological connectivity, and local communities. Sixty large wetland complexes meeting the prioritization criteria and passing all filters were identified and included in this dataset.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>Idaho Fish and Game offers free, unrestricted access and use of this data. The data represented in this file is true and accurate to the best of our knowledge but is considered a best representation only and does not map the boundaries of jurisdictional wetlands. Users must assume responsibility in determining the usability of this data for their purposes. Idaho Fish and Game does not assume liability. No warranty expressed or implied is made by Idaho Fish and Game regarding the utility of the data on any other system, nor shall the act of distribution constitute such warranty.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Wetland Prioritization SCORTP 2012 (Top 60)",
+        "type": "Feature Service",
+        "orgId": "FjJI5xHF2dUPVrgK",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1759513818000,
+        "avgRating": 0,
+        "id": "97271a56f1874707878edc4944406933",
+        "categories": [
+          "/Categories/Wetland"
+        ],
+        "spatialReference": "NAD_1983_Transverse_Mercator",
+        "numRatings": 0,
+        "owner": "idahofishandgame",
+        "accessInformation": "This dataset was created by Chris Murphy, wetland ecologist, and Angie Schmidt, GIS analyst, with Idaho Department of Fish and Game.",
+        "largeThumbnail": null,
+        "lastViewed": 1773079200000,
+        "thumbnail": "thumbnail/thumbnail1546537109546.png",
+        "languages": [],
+        "created": 1506709951000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/FjJI5xHF2dUPVrgK/arcgis/rest/services/Wetland_Prioritization_Top_60_SCORTP_2012/FeatureServer",
+        "tags": [
+          "State Comprehensive Outdoor Recreation and Tourism Plan (SCORTP)",
+          "wetland",
+          "conservation",
+          "prioritization",
+          "ecological system",
+          "Species of Greatest Conservation Need",
+          "rare plants",
+          "recreational opportunity",
+          "landscape integrity",
+          "condition",
+          "ArcGIS"
+        ],
+        "numViews": 10145,
+        "numComments": 0,
+        "size": 933888,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Wetland_Prioritization_Top_60_SCORTP_2012",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Fish and Game - AGOL",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/97271a56f1874707878edc4944406933"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    101
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 30,
+  "next_offset": 10,
+  "response_sha256": "66774e81f2e3d2819a9428ee4f7882d00ec8380fb72292df3616bd72934286d6",
+  "search_complete": false
+}

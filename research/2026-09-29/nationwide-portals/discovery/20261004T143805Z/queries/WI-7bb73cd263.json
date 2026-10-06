@@ -1,0 +1,616 @@
+{
+  "jurisdiction_code": "WI",
+  "query": "data center",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-04T14:38:55.002893+00:00",
+  "candidates": [
+    {
+      "id": "1f3cc65383c34abbae56434e4edb06f3",
+      "title": "PLSS Centroids",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/plss_centroids/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Centroid points of Public Land Survey System (PLSS) units ranging from Townships to Quarter-Quarter-Sections.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9640600726623,
+                47.08155703421144
+              ],
+              [
+                -86.71051028949344,
+                47.08155703421144
+              ],
+              [
+                -86.71051028949344,
+                42.45984311293255
+              ],
+              [
+                -92.9640600726623,
+                42.45984311293255
+              ],
+              [
+                -92.9640600726623,
+                47.08155703421144
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<font color='#000000' size='3'>\n\n</font><p style='margin: 0in 0in 0pt;'><font color='#000000' face='Calibri' size='3'>This data set provides a means of identifying an x-y\ncoordinate for the approximate center (centroid) of landnet units based on the\ncorresponding standardized PLSS description (e.g., for PLSS Section this is\nDTRS -- Direction, Township, Range, and Section codes).<span style='mso-spacerun: yes;'>  </span>This process is sometimes referred to as\n&quot;protraction&quot;.<span style='mso-spacerun: yes;'>  </span>The Landnet\ncentroid shapefile includes coordinates in WTM83/91 and latitude/longitude\nexpressed as decimal degrees or degrees, minutes and seconds.</font></p><font color='#000000' size='3'>\n\n</font>",
+        "licenseInfo": "<font color='#000000' size='3'>  </font><p style='margin:12pt 0in;'><span style='color:rgb(76, 76, 76); font-family:&quot;Helvetica&quot;,sans-serif; font-size:11.5pt;'><span style='font-family:Helvetica, sans-serif; font-size:15.33px;'>The features in the 24K </span><font face='Times New Roman' size='3'>Landnet database are presented for cartographic reference only and are not intended to be official or authoritative. Survey by a registered land surveyor is the only legal basis for determining actual land boundaries or locating PLSS corners.</font></span></p><p style='margin:12pt 0in;'><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p><font color='#000000' size='3'>  </font>",
+        "title": "PLSS Centroids",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711659545000,
+        "avgRating": 0,
+        "id": "1f3cc65383c34abbae56434e4edb06f3",
+        "categories": [],
+        "spatialReference": "NAD_1983_HARN_Transverse_Mercator",
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1565630657334.png",
+        "languages": [],
+        "created": 1565629639000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/plss_centroids/FeatureServer",
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "PLSS",
+          "township",
+          "range",
+          "section",
+          "quarter",
+          "centroid",
+          "landnet",
+          "index",
+          "ArcGIS",
+          "Service Definition",
+          ".sd"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 477274112,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "plss_centroids",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/1f3cc65383c34abbae56434e4edb06f3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4058b9ea87f647ebbdf4c32b3c3d69e9",
+      "title": "EM PFAS - Municipal System PFAS Sampling",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/DG_Groundwater_Retrieval_Network/DG_Municipal_System_PFAS_Sampling_Ext/MapServer/0",
+      "publisher": "Wi_DNR",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "PFAS results in Wisconsin DNR's Drinking Water System (DWS) Portal are presented on this layer.  The results have been generalized by water system and are classified based on the levels of PFAS detected.  Point locations are generalized to Public Land Survey System (PLSS) section centroids.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.8949,
+                46.8155
+              ],
+              [
+                -87.0368,
+                46.8155
+              ],
+              [
+                -87.0368,
+                42.4743
+              ],
+              [
+                -92.8949,
+                42.4743
+              ],
+              [
+                -92.8949,
+                46.8155
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><p>This layer is intended for use in the&nbsp;<a target='_blank' href='https://experience.arcgis.com/experience/d4d131e169ba428384c5ac85c858bd0c/' rel='nofollow ugc noopener noreferrer'><strong>Wisconsin PFAS Interactive Data Viewer</strong></a>&nbsp;GIS mapping application, use for any other purpose should be done with caution to avoid misuse or misinterpretation of information contained in this layer.&nbsp; Please seek appropriate DNR staff support.</p><p>PFAS results in Wisconsin DNR's Drinking Water System (DWS) Portal are presented on this layer.&nbsp; The results have been generalized by water system and are classified based on the levels of PFAS detected.&nbsp; <strong>Point locations are generalized to PLSS centroids and do not represent well or specific water supply system feature locations.</strong></p><p style='box-sizing:border-box; margin-bottom:0px; margin-top:0px; padding:0px;'><span style='box-sizing:border-box;'>Municipal Water System Sampling</span></p><ul><li><span style='box-sizing:border-box;'>Results from municipal or public water supply systems that have sampled drinking water for PFAS. Sampling completed prior to 2022 may not be included on this map. More details about sampling results are on the</span> <a style='box-sizing:border-box;' target='_blank' href='https://apps.dnr.wi.gov/dwsportalpub/' rel='nofollow ugc noopener noreferrer'><span style='box-sizing:border-box;'>Drinking Water System Portal</span></a>.</li><li>Map locations are shown at the Public Land Survey System section center point for each municipal water system rather than the exact location of the well.</li><li><span style='box-sizing:border-box;'>PFAS health advisory levels (HALs) and the hazard index (HI) approach are defined by the </span><a style='box-sizing:border-box;' target='_blank' href='https://www.dhs.wisconsin.gov/chemical/pfas.htm' rel='nofollow ugc noopener noreferrer'><span style='box-sizing:border-box;'>Wisconsin Department of Health Services (DHS)</span></a><span style='box-sizing:border-box;'>.</span></li></ul><div>For more information contact the DNR&nbsp;<a target='_blank' href='https://dnr.wisconsin.gov/topic/Groundwater' rel='nofollow ugc noopener noreferrer'>Drinking and Groundwater Program</a>.</div></div>",
+        "licenseInfo": "<p><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p>",
+        "title": "EM PFAS - Municipal System PFAS Sampling",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1776203672000,
+        "avgRating": 0,
+        "id": "4058b9ea87f647ebbdf4c32b3c3d69e9",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR",
+        "accessInformation": "Wisconsin Department of Natural Resources, Environmental Management Division - Drinking Water and Groundwater Program - Office of Emerging Contaminants",
+        "largeThumbnail": null,
+        "lastViewed": 1778871600000,
+        "thumbnail": "thumbnail/thumbnail1665753136555.png",
+        "languages": [],
+        "created": 1665000723000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/DG_Groundwater_Retrieval_Network/DG_Municipal_System_PFAS_Sampling_Ext/MapServer/0",
+        "tags": [
+          "DNR",
+          "PFAS",
+          "Municipal",
+          "Well",
+          "Sampling",
+          "System"
+        ],
+        "numViews": 3492,
+        "numComments": 0,
+        "size": 127,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/4058b9ea87f647ebbdf4c32b3c3d69e9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "7d08fb77e4de4624a74eee0c097549ca",
+      "title": "Wisconsin Tax Law Points",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/X13661_FR_GIS_TAXLAW_PT_SV/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Generalized point representations of lands enrolled in Managed Forest and Forest Crop Law Programs. Be aware: points do not identify specific enrollment location (see description). Data last updated 3/18/2026 to reflect conditions as of 1/1/2026.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.94379687095288,
+                46.93925940855034
+              ],
+              [
+                -86.76780536277805,
+                46.93925940855034
+              ],
+              [
+                -86.76780536277805,
+                42.461836601506135
+              ],
+              [
+                -92.94379687095288,
+                42.461836601506135
+              ],
+              [
+                -92.94379687095288,
+                46.93925940855034
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span><strong>DEFINITION:</strong></span><br /><span>Tax Law POINT is a generalized point representation of lands enrolled in the Managed Forest and Forest Crop Law Programs, collectively referred to as Tax Law Layers. Points are located at the center point of each 40-acre quarter-quarter section in which land is enrolled. Points do not identify specific enrollment location. Acreage enrolled from fractional or government lots are located either to the most approximate QQ, Q or S as possible. (Enrolled parcels are represented by the PLSS shape they lie within; however, the actual size of the enrolled property may be as small as 0.1 acres). </span><span style='background-color:#ffff00;'><span><strong>The GIS layer was last updated March 18, 2026 to reflect conditions as of January 1, 2026</strong></span></span><span>. Corrections are made to the data throughout the year that may not be reflected in this snapshot.</span></p><p><span><strong>FEATURE TYPE(S):</strong></span><br /><span>Point</span></p><p><span><strong>GEOGRAPHIC EXTENT:</strong></span><br /><span>Statewide</span></p><p><span><strong>SOURCE SCALE:</strong></span><br /><span>Varied</span></p><p><span><strong>PROJECTION:</strong></span><br /><span>WGS 1984 Web Mercator Auxiliary Sphere</span><br /><span>WKID: 3857</span></p><p><span><strong>PURPOSE/BACKGROUND:</strong></span><br /><span>Wisconsin’s forest tax laws encourage sustainable forest management on private lands by providing a property tax incentive to landowners. Both the Managed Forest Law (MFL) and Forest Crop Law (FCL) encourage proper management of woodlands not only in their purposes and policies, but through a written management plan for a landowner’s property. The management plan incorporates landowner objectives, timber management, wildlife management, water quality and the environment as a whole to create healthy and productive forest. In exchange for following a written management plan and program rules, landowners pay forest tax law program rates in lieu of regular property taxes.</span></p><p><span>FCL lands are open to the public for the following activities: hunting and fishing.</span></p><p><span>MFL lands enrolled as open are open to the public for the following activities: hunting, fishing, hiking, sight-seeing, and cross-country skiing.</span></p><p><span>Additional rules regarding public access may be reviewed here:</span> <a target='_blank' href='https://dnr.wisconsin.gov/topic/forestlandowners/mfl' rel='nofollow ugc noopener noreferrer'><span>https://dnr.wisconsin.gov/topic/forestlandowners/mfl</span></a></p><p><span><strong>Update Frequency:</strong></span><br /><span>Annual (Spring). Edits to Tax Law entries can occur throughout the year, but most changes are not effective until January 1 except for landowner information. Landowner information edits are updated in the spatial views on a weekly basis. In addition, Forestry will re-generate taxlaw shapes as significant improvements to the data are completed. In the Spring of each year, the feature class is re-generated to reflect new entries, changes to access, etc. effective January 1.</span></p><p><span style='background-color:#ffff00;'><span><strong>The GIS layer was last updated March 18, 2026 to reflect conditions as of January 1, 2026</strong></span></span><span>. Corrections are made to the data throughout the year that may not be reflected in this snapshot.</span></p><p><span><strong>ATTRIBUTES:</strong></span><br /><span><strong>Field Descriptions:</strong></span><br /><span><strong>ORDER_NO: </strong>(c, 12) The Forestry property code of the feature.</span><br /><span>Format: 2-digit cnty – 3 digit seq no – 4 digit year of entry</span><br /><span>Ex. 11-234-2013</span></p><p><span><strong>DNR_CTY_NO: </strong>(n, 2) The 2-digit DNR county code representing the predominant county in which the DTRSQQ falls.</span><br /><span>Format: Numbers, No commas</span><br /><span>Ex: 37 (Marathon County)</span></p><p><span><strong>CNTY_NAME: </strong>(T, 11) County name of the predominant county in which the DTRSQQ falls.</span><br /><span>Ex: Marathon</span></p><p><span><strong>ENTRY_YEAR: </strong>(t, 4) The year in which the order number was entered into the taxlaw program.</span><br /><span>Format: YYYY</span><br /><span>Ex: 1999</span></p><p><span><strong>TAX_TYPE: </strong>(t, 3) Indicates whether the polygon is enrolled in MFL or FCL.</span><br /><span>Format: ALL CAPS</span><br /><i><span><strong>Possible Values:</strong></span></i><br /><span>MFL: Managed Forest Law</span><br /><span>FCL: Forest Crop Law</span></p><p><span><strong>AC_OP_PLS: </strong>(double) Acres, associated to the identified order number, that are enrolled in the identified PLSS as open. Additional polygons (DTRSQQ records) may contain additional acreage for the associated order number.</span></p><p><span><strong>AC_OP_ORD: </strong>(double) Total open acreage associated with this order number. NOTE: This is not the total number of acres open with this DTRSQQ record. Any other order numbers with acreage in this DTRSQQ are identified in separate records by order number.</span></p><p><span><strong>AC_CL_PLS: </strong>(double) Acres, associated to the identified order number, that are enrolled in the identified PLSS as closed. Additional polygons (DTRSQQ records) may contain additional acreage for the associated order number.</span></p><p><span><strong>AC_CL_ORD:</strong> (double) Total closed acreage associated with this order number. NOTE: This is not the total number of acres closed with this DTRSQQ record. Any other order numbers with acreage in this DTRSQQ are identified in separate records by order number.</span></p><p><span><strong>AC_TOT_PLS:</strong> (double) Total acres, associated to the identified order number, that are enrolled in the identified PLSS. Additional polygons (DTRSQQ records) may contain additional acreage for the associated order number.</span></p><p><span><strong>AC_TOT_ORD: </strong>(double) Total acreage associated with this order number. NOTE: This is not the total number of acres enrolled within this DTRSQQ record. Any other order numbers with acreage in this DTRSQQ are identified in separate records by order number.</span></p><p><span><strong>ORDER_YRS:</strong> (t, 2) Total number of years the order will be enrolled in the program (under the associated order number).</span><br /><span>Format: Plan or order lengths are either 25 or 50 years</span><br /><span>Ex: 50</span></p><p><span><strong>ORDER_EXP: </strong>(t, 20) Date that order number expires. All orders end on December 31.</span><br /><span>Format: December 31, YYYY</span><br /><span>Ex: December 31, 2015</span></p><p><span><strong>OWNER_TEXT: </strong>(t, 30) Type of ownership. Ownership could be: Individual, Joint, Corporation, LLC, Partnership, LLP, Trust, etc.</span></p><p><span><strong>ACCNT_TYPE: </strong>(t, 1) Type of account.</span><br /><i><span><strong>Possible Values:</strong></span></i><br /><span>S: Small Account – landowners generally have less than 1,000 acres of forest land and the accounts are managed by DNR field foresters.</span><br /><span>L: Large Account – landowners generally have 1,000 acres or more of forest land and the accounts are managed by DNR Forest Tax Law staff.</span></p><p><span><strong>DTRSQQ_CO: </strong>(long) A concatenation of direction, township, range, section, quarter section, and quarter-quarter section used to approximate the location of the order number (or part of the order number). Each order number has separate records for each DTRSQQ where the order number resides. (Data source: 24K Landnet Spatial Database Technical Documentation)</span><br /><span>Format:</span><br /><span>1st Digit = Direction</span><br /><span>2nd &amp; 3rd Digits = Township</span><br /><span>4th &amp; 5th Digits = Range</span><br /><span>6th &amp; 7th Digits = Section</span><br /><span>8th Digit = Quarter</span><br /><span>9th Digit = Quarter-Quarter</span><br /><span>Ex: 441012812</span></p><p><span><strong>LEGAL_D_CO: </strong>(t, 5) Code describing legal description identified by order number.</span><br /><span>Format:</span><br /><span><u>1st character:</u></span><br /><span>Blank = Entire (Govt Lot)</span><br /><span>D = Entire (PLSS)</span><br /><span>P = Part of</span><br /><span>E = Entire Excluding ROW</span></p><p><span><u>2nd character:</u></span><br /><span>L = Govt Lot</span><br /><span>Blank = PLSS</span></p><p><span><u>Characters 3-5:</u></span><br /><span>If PLSS, 001-016 are Standard</span><br /><span>If PLSS, 017-060 are Fractional</span><br /><span>If Govt Lot, this is the Govt Lot #</span><br /><span>Ex: PL003</span></p><p><span><strong>LEGAL_DESC:</strong> (t, 100) Translated legal description code.</span><br /><span>Ex: GOV LOT 3, PART OF</span></p><p><span><strong>DTRSLD_TXT: </strong>(t, 2380) Field generated to convert DTRSQQ and legal description codes to a text description of the PLSS where the enrollment is located. Includes a note indicating if a record includes a fractional correction.</span><br /><span>Ex: T02-R01W-S05, Part of the NE of the NW (fractional correction)</span></p><p><span><strong>PARCEL_NO:</strong> (t, 255) County created parcel number. (Parcel level information not yet available for all records.)</span><br /><span>Format: Varies by county</span><br /><span>Ex: 07-04-59</span></p><p><span><strong>MCD_NAME: </strong>(t, 50) Municipal Civil Division (MCD) name.</span><br /><span>Ex: Solon Springs</span></p><p><span><strong>MCD_TYPE_C: </strong>(t, 1) Type of Municipal Civil Division (MCD).</span><br /><span>Format: ALL CAPS</span><br /><i><span><strong>Possible Values:</strong></span></i><br /><span>T: Town</span><br /><span>V: Village</span><br /><span>C: City</span></p><p><span><strong>PLSS_LEVEL:</strong> (t, 2) PLSS level to which the record is located.</span><br /><span>Format: ALL CAPS</span><br /><i><span><strong>Possible Values:</strong></span></i><br /><span>QQ: Quarter-quarter</span><br /><span>Q: Quarter</span><br /><span>S: Section</span></p><p><span><strong>CHNG_BY: </strong>(c, 30) The user who last updated the record.</span><br /><span>Ex: klausc</span></p><p><span><strong>CHNG_DATE: </strong>(date) Date the record was last changed.</span><br /><span>Format: MM/DD/YYYY</span><br /><span>Ex: 10/23/2012</span></p><p><span><strong>ACCESS:</strong> (t, 1) Indicates whether the quarter-quarter contains areas which are open to the public, closed to the public, or both.</span><br /><span>Format: ALL CAPS</span><br /><i><span><strong>Possible Values:</strong></span></i><br /><span>O: QQ contains areas that are Open to the public.</span><br /><span>C: QQ contains areas that are Closed to the public.</span><br /><span>B: QQ contains Both open and closed areas.</span></p><p><span><strong>ADDITIONAL INFORMATION:</strong></span><br /><span>Tax law programs: </span><a target='_blank' href='https://dnr.wisconsin.gov/topic/forestlandowners/mfl' rel='nofollow ugc noopener noreferrer'><span>https://dnr.wisconsin.gov/topic/forestlandowners/mfl</span></a></p><p><span><strong>CONTACT PERSON(S):</strong></span><br /><span>GIS contact: Laura Waddle - GIS Specialist, (608) 320-4648, </span><a href='mailto:Laura.Waddle@wisconsin.gov' rel='nofollow ugc'><span>Laura.Waddle@wisconsin.gov</span></a><br /><span>Resource contact: R.J. Wickham - Tax Law Section Chief, (920) 369-6248, </span><a href='mailto:Richard.Wickham@wisconsin.gov' rel='nofollow ugc'><span>Richard.Wickham@wisconsin.gov</span></a></p><p><span><strong>COPYRIGHT:</strong></span><br /><span>The material is for the noncommercial use of the general public. The fair use guidelines of the U.S. copyright statutes apply to all material on the Department of Natural Resources Webpages and linked agency Webpages. The Department of Natural Resources shall remain the sole and exclusive owner of all rights, title and interest in and to all specifically copyrighted information created and posted for inclusion in this system. Photographs and graphics on the Department website are either the property of the state department or the state agency that holds a license to use and display the material. For copy or use of information on the Department website that is outside of the fair use provisions of copyright law, please seek permission from the individual listed as responsible for the page. If you have any questions on using material on the Department web pages please e-mail the specific page webmaster for permission requests. If you cannot identify the web page contact, please direct inquiries to Department by using the feedback form.</span></p><p><span><strong>USER ADVISORY:</strong></span><br /><a target='_blank' href='https://dnr.wi.gov/legal/acceptableuse/' rel='nofollow ugc noopener noreferrer'><span>https://dnr.wi.gov/legal/acceptableuse/</span></a><br /><a target='_blank' href='https://dnr.wi.gov/legal/' rel='nofollow ugc noopener noreferrer'><span>https://dnr.wi.gov/legal/</span></a></p><p><span>This is a generalized spatial representation of lands enrolled by landowners in the Managed Forest Law and Forest Crop Law programs. Enrolled parcels are represented by the 40-acre quarter-quarter they lie within; however, the actual size of the enrolled property may be as small as 10 acres.</span></p><p><span>Certain government lots or fractional lots, which cannot be represented by a PLSS quarter-quarter number, may be included in this GIS layer at the QQ, Q, or Section level. An estimated 1% of the MFL lands are represented in this manner. Look to the “PLSS_LEVEL” field for the PLSS level to which records are located.</span></p><p><span><strong>Disclaimer:</strong></span><br /><span>The Department has made reasonable efforts to provide you with accurate information, but cannot exclude the possibility of errors or omissions in sources or of changes in actual conditions. The Department makes no warranties of any kind, either express or implied. Changes may be periodically made to the information herein – contact the originator of the data with any questions regarding appropriate use.</span></p></div></div></div>",
+        "licenseInfo": "<p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>This dataset is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose.</p><p style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin:0px 0px 1rem; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>By using this product for any purpose user agrees to be bound by all disclaimers found here: <a style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:inherit; line-height:1.5; text-decoration:none;' target='_blank' href='https://dnr.wisconsin.gov/legal' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a>.</p>",
+        "ownerId": "189b49a2e6f073c1d10af27bd5bc1715",
+        "title": "Wisconsin Tax Law Points",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784658435000,
+        "avgRating": 0,
+        "id": "7d08fb77e4de4624a74eee0c097549ca",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "WI DNR",
+        "largeThumbnail": null,
+        "lastViewed": 1784656800000,
+        "thumbnail": "thumbnail/thumbnail1776710449078.png",
+        "languages": [],
+        "created": 1712951184000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/X13661_FR_GIS_TAXLAW_PT_SV/FeatureServer",
+        "tags": [
+          "Tax Law",
+          "Wisconsin Department of Natural Resources",
+          "Wisconsin DNR",
+          "MFL",
+          "FCL",
+          "forestry"
+        ],
+        "numViews": 144117,
+        "numComments": 0,
+        "size": 66961408,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "indexJobId": ""
+        },
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/7d08fb77e4de4624a74eee0c097549ca"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a7adda0cae89496ab3a6134a324ab7ee",
+      "title": "Health Insurance Coverage Variables - Tracts",
+      "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Health_Insurance_Boundaries/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Layer referencing Esri's feature layer, Health Insurance Coverage Variables - Tracts from ACS 2015-2019, with its default extent centered on Wisconsin.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.04299999999529,
+                47.13799999999761
+              ],
+              [
+                -86.75799999999562,
+                47.13799999999761
+              ],
+              [
+                -86.75799999999562,
+                42.43199999999784
+              ],
+              [
+                -93.04299999999529,
+                42.43199999999784
+              ],
+              [
+                -93.04299999999529,
+                47.13799999999761
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Layer referencing Esri's feature layer, Health Insurance Coverage Variables - Tracts from ACS 2015-2019, with its default extent centered on Wisconsin</span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div>This layer contains the most current release of data from the American Community Survey (ACS) about health insurance coverage by type and by age group. These are 5-year estimates shown by tract centroids.</span><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><div>Please see <a href='https://www.arcgis.com/home/item.html?id=a1574f4bb84f4da78b60fa0c8616eaa1' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.arcgis.com/home/item.html?id=a1574f4bb84f4da78b60fa0c8616eaa1</a> for more information, terms of use, and to access the data by county and state.<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div>",
+        "licenseInfo": null,
+        "title": "Health Insurance Coverage Variables - Tracts",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1637081556000,
+        "avgRating": 0,
+        "id": "a7adda0cae89496ab3a6134a324ab7ee",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "U.S. Census Bureau's American Community Survey (ACS) 2015-2019 5-year estimates, Table(s) B27010 , Environmental Systems Research Institute (Esri)",
+        "largeThumbnail": null,
+        "lastViewed": 1774242000000,
+        "thumbnail": "thumbnail/thumbnail1637081024757.png",
+        "languages": [],
+        "created": 1636745973000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Health_Insurance_Boundaries/FeatureServer",
+        "tags": [
+          "Climate",
+          "Health Insurance Coverage",
+          "Health Insurance"
+        ],
+        "numViews": 5666,
+        "numComments": 0,
+        "size": 112,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/a7adda0cae89496ab3a6134a324ab7ee"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "41a43611176d42bca97e3a2c8bc8b8ae",
+      "title": "Low Birth Weight by County 2010-2014",
+      "url": "https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/Low_birth_weight_by_county_2010_2014/FeatureServer/0",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Layer referencing Esri's Low Birth Weight by county 2010-2014, with its default extent centered on Wisconsin.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.04299999999529,
+                47.13799999999761
+              ],
+              [
+                -86.75799999999562,
+                47.13799999999761
+              ],
+              [
+                -86.75799999999562,
+                42.43199999999784
+              ],
+              [
+                -93.04299999999529,
+                42.43199999999784
+              ],
+              [
+                -93.04299999999529,
+                47.13799999999761
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Layer referencing Esri's Low Birth Weight by county 2010-2014.   This </span><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>layer contains data on Low Birth Weight Prevalence by county, 2010-2014.  Data is represented as a percentage of total births.  Data come from Centers for Disease Control and Prevention's Health Indicators Warehouse, <span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'>formerly healthindicators.gov, which was taken down April 15th, 2017</span><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'><span style='font-family:inherit;'>.  Data will eventually be available on </span></font></font><a href='https://www.healthypeople.gov/2020/leading-health-indicators/2020-lhi-topics/Maternal-Infant-and-Child-Health' style='color:rgb(0, 121, 193); text-decoration-line:none; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;' target='_blank' rel='nofollow ugc noopener noreferrer'>HealthyPeople.gov</a><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>.</span><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'><span style='font-family:inherit;'> </span></font><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'> This layer uses county-level data with 5-year averages from 2010-2014.</font></font><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><font size='3' style='font-family:inherit;'><font style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'><br /></font></font></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:medium;'>For more information on low birth weight, preterm births, and policy, see the Esri's </span><a href='https://urbanobservatory.maps.arcgis.com/apps/Cascade/index.html?appid=7a480778063549e19360b3fe5a615aa6' target='_blank' rel='nofollow ugc noopener noreferrer'>Low Birth Weight story map</a><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:medium;'>. </span></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:medium;'><br /></span></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:medium;'>For terms of use, see </span><a href='https://www.arcgis.com/home/item.html?id=cd75f87489db412ba0a03ba965f2dc38' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.arcgis.com/home/item.html?id=cd75f87489db412ba0a03ba965f2dc38</a></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div>",
+        "licenseInfo": null,
+        "title": "Low Birth Weight by County 2010-2014",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1636749096000,
+        "avgRating": 0,
+        "id": "41a43611176d42bca97e3a2c8bc8b8ae",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Centers for Disease Control and Prevention (CDC), Environmental Systems Research Institute (Esri)",
+        "largeThumbnail": null,
+        "lastViewed": 1738832400000,
+        "thumbnail": "thumbnail/thumbnail1636749094945.png",
+        "languages": [],
+        "created": 1636130173000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services1.arcgis.com/4yjifSiIG17X0gW4/arcgis/rest/services/Low_birth_weight_by_county_2010_2014/FeatureServer/0",
+        "tags": [
+          "low birth weight",
+          "demographics",
+          "public health",
+          "infants",
+          "newborns",
+          "babies",
+          "child well-being",
+          "Women",
+          "People and Society",
+          "Health and Human Services",
+          "people",
+          "urban",
+          "maternal and child health",
+          "environmental justice",
+          "Wisconsin",
+          "Wisconsin Department of Natural Resources",
+          "WI DNR"
+        ],
+        "numViews": 1317,
+        "numComments": 0,
+        "size": 119,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/41a43611176d42bca97e3a2c8bc8b8ae"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    196
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "b3d5211c13b91a1014a811c8508f1147ee3ce6a239cdab0410a158799f9b3680",
+  "search_complete": true
+}

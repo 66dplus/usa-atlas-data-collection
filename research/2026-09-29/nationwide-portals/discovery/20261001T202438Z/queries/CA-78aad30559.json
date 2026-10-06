@@ -1,0 +1,372 @@
+{
+  "jurisdiction_code": "CA",
+  "query": "cost of living",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-01T20:25:07.514350+00:00",
+  "candidates": [
+    {
+      "id": "fa64fe43-c81e-429e-977d-0d87b2772f01",
+      "title": "Living Wage",
+      "url": "https://data.ca.gov/dataset/living-wage",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/6c9485da-cf3e-40af-b939-eae953b81685/download/hcilivingwage770narrativeandexamples9-30-13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/f5a57e7a-e0fe-4d80-b0f6-92d66ecb907f/download/hci_living_wage_770_pl_co_re_ca_9-29-13-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/f6ae935b-d0ba-4be2-be35-717fe42ecc6c/download/livingwage-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/8420fdbf-8492-4740-8e92-e8cdfd41b659/download/living-wage-idvop5ms.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the living wage and the percent of families with incomes below the living wage for California, its counties, regions and cities/towns.  Living wage is the wage needed to cover basic family expenses (basic needs budget) plus all relevant taxes; it does not include publicly provided income or housing assistance.  The percent of families below the living wage was calculated using data from the [Living Wage Calculator](http://livingwage.mit.edu/) and the U.S. Census Bureau, American Community Survey. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity. The living wage is the wage or annual income that covers the cost of the bare necessities of life for a worker and his/her family. These necessities include housing, transportation, food, childcare, health care, and payment of taxes.  Low income populations and non-white race/ethnic have disproportionately lower wages, poorer housing, and higher levels of food insecurity.  More information about the data table and a data dictionary can be found in the About/Attachments section."
+    },
+    {
+      "id": "92ba3741-8df5-461c-a555-acb238bf227e",
+      "title": "ALW Assisted Living Facilities",
+      "url": "https://data.ca.gov/dataset/alw-assisted-living-facilities",
+      "publisher": "California Department of Health Care Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://gis.dhcs.ca.gov/datasets/CADHCS::alw-assisted-living-facilities",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services7.arcgis.com/7MUwsS9z05YumJRZ/arcgis/rest/services/ALW_Assisted_Living_Facilities/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/api/download/v1/items/c9b6f8ecdd194f46be0ea41d46b875c3/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/api/download/v1/items/c9b6f8ecdd194f46be0ea41d46b875c3/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/api/download/v1/items/c9b6f8ecdd194f46be0ea41d46b875c3/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/api/download/v1/items/c9b6f8ecdd194f46be0ea41d46b875c3/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.dhcs.ca.gov/datasets/c9b6f8ecdd194f46be0ea41d46b875c3_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/8149f0fb-fb24-467e-bb97-889fbcec9c97/resource/69dddffc-dc35-4abc-918f-123a574ea004/download/alw-assisted-living-facilities-qz7mlvza.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "<p>Assisted Living Waiver (ALW) eligible individuals are those who are enrolled in Medi-Cal and meet the level of care provided in a nursing facility due to their medical needs. Individuals with Medi-Cal benefits that include a share of cost may not enroll in the ALW. This dataset contains the provider number, provider legal name, provider business name, capacity per provider enrollment, provider physical location, provider counties and provider phone number&nbsp; of facilities enrolled in the ALW program. Date as of 1/1/2026.</p>"
+    },
+    {
+      "id": "9a48b5d1-8385-43fd-91ca-2165e30e45d0",
+      "title": "Total Construction Cost of Healthcare Projects",
+      "url": "https://data.ca.gov/dataset/total-construction-cost-of-healthcare-projects",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a396cdc6-0cd2-4faf-beea-f158e8581460/resource/cb040707-4ced-4f69-8867-53bba4513bee/download/ca-hcai-total-construction-cost-09172026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a396cdc6-0cd2-4faf-beea-f158e8581460/resource/d64ea389-3cf7-42a1-9e31-ac1d589bc9ba/download/datadictionary-hospital-building-data.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a396cdc6-0cd2-4faf-beea-f158e8581460/resource/4fc9d8ee-8326-47ee-bf97-3efc2eb41410/download/total-construction-cost-of-healthcare-projects-q9_mlzxo.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "Total dollar value and number of projects either in review, pending construction, in construction, or in closure aggregated into California counties, once every two weeks since September 2013.  A construction project moves through the Department of Health Care Access and Information (HCAI) in four stages - In Review; Pending Construction Start; Under Construction; and In Closure. A project can only be in one of these four stages at any time. Additional data when available will be added to this dataset approximately once every two weeks."
+    },
+    {
+      "id": "22187897-5df3-437b-91a5-8f3778de8f0a",
+      "title": "Statewide Live Birth Profiles",
+      "url": "https://data.ca.gov/dataset/statewide-live-birth-profiles",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/6e2b5bcd-5670-4ab8-bb0a-ba19383ac6e5/download/test-cdph-statewide-live-birth-profiles-84dveb47.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/cad870a3-1576-4fb4-b21c-c75ceed5d60d/download/2026-09_births_provisional_state_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/b990913a-d2a1-4b28-a740-45b7967dc610/download/20251121_births_final_state_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/9ac9a3a1-a6f4-4683-af1e-89b6b220ed57/download/20251121_births_final_state_year_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dc2004a4-eedb-4d35-ba22-dd9b6d427e78/resource/fb31db18-b363-4204-b0a6-446b53d1375e/download/data-dictionary-births-statewide.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "This dataset contains counts of live births for California as a whole based on information entered on birth certificates. Final counts are derived from static data and include out of state births to California residents, whereas provisional counts are derived from incomplete and dynamic data. Provisional counts are based on the records available when the data was retrieved and may not represent all births that occurred during the time period.\r\n\r\nThe final data tables include both births that occurred in California regardless of the place of residence (by occurrence) and births to California residents (by residence), whereas the provisional data table only includes births that occurred in California regardless of the place of residence (by occurrence). The data are reported as totals, as well as stratified by parent giving birth's age, parent giving birth's race-ethnicity, and birth place type. See temporal coverage for more information on which strata are available for which years."
+    },
+    {
+      "id": "da6d1bbe-c542-400f-adad-a03608c2d5e9",
+      "title": "Housing Cost Burden",
+      "url": "https://data.ca.gov/dataset/housing-cost-burden",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4ea8fbae-0d14-4e4a-952e-acb4c813c84c/resource/c697aac1-3bee-47b1-bb46-d7f887d65880/download/hcihousingcostburdenchasandacs106narrative7-11-14.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4ea8fbae-0d14-4e4a-952e-acb4c813c84c/resource/5c7ad34f-f14b-4056-81c5-3df113a6e14b/download/hci_acs_chas_raceincome_housingcostburden_ct_pl_co_re_st_7-30-14-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4ea8fbae-0d14-4e4a-952e-acb4c813c84c/resource/fdac78bb-a06b-42d4-b0f0-1458202b244f/download/housingcostburdendd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/4ea8fbae-0d14-4e4a-952e-acb4c813c84c/resource/b6d4d405-cf39-4f10-b5bd-202ba7b06fdc/download/housing-cost-burden-2006-2010-yckf7vfq.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the percent of households paying more than 30% (or 50%) of monthly household income towards housing costs for California, its regions, counties, cities/towns, and census tracts.  Data is from the U.S. Department of Housing and Urban Development (HUD), Consolidated Planning Comprehensive Housing Affordability Strategy (CHAS) and the U.S. Census Bureau, American Community Survey (ACS). The table is part of a series of indicators in the [Healthy Communities Data and Indicators Project of the Office of Health Equity]  Affordable, quality housing is central to health, conferring protection from the environment and supporting family life. Housing costs—typically the largest, single expense in a family's budget—also impact decisions that affect health. As housing consumes larger proportions of household income, families have less income for nutrition, health care, transportation, education, etc.  Severe cost burdens may induce poverty—which is associated with developmental and behavioral problems in children and accelerated cognitive and physical decline in adults.  Low-income families and minority communities are disproportionately affected by the lack of affordable, quality housing.  More information about the data table and a data dictionary can be found in the Attachments."
+    },
+    {
+      "id": "52f12ee7-d006-4dbd-82bc-536bf0cf097e",
+      "title": "Live Birth Profiles by County",
+      "url": "https://data.ca.gov/dataset/live-birth-profiles-by-county",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/d2413aed-324d-4591-8486-1d114df0ea17/download/live-birth-profiles-by-county-5z0mxruj.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/94a186da-7184-427b-b0b5-224bb0a05cd8/download/2026-09_births_provisional_county_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/d6c30e46-8618-407a-ba5a-bae308f86a1c/download/20260319_births_final_county_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/260fbfb0-e386-465d-85a4-6f28868dd51a/download/20260319_births_final_county_year_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bc59b3db-3936-4c9b-9275-c5f4b3dc9023/resource/49b07eb5-1312-4b9d-bd0e-ea2a89b852d1/download/data-dictionary-births-by-county.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "This dataset contains counts of live births for California counties based on information entered on birth certificates. Final counts are derived from static data and include out of state births to California residents, whereas provisional counts are derived from incomplete and dynamic data. Provisional counts are based on the records available when the data was retrieved and may not represent all births that occurred during the time period.\r\n\r\nThe final data tables include both births that occurred in California regardless of the place of residence (by occurrence) and births to California residents (by residence), whereas the provisional data table only includes births that occurred in California regardless of the place of residence (by occurrence). The data are reported as totals, as well as stratified by parent giving birth's age, parent giving birth's race-ethnicity, and birth place type. See temporal coverage for more information on which strata are available for which years."
+    },
+    {
+      "id": "76530cc2-a912-4cee-8f8d-b2d6ff85aca6",
+      "title": "California's Groundwater Live Supporting Data",
+      "url": "https://data.ca.gov/dataset/californias-groundwater-live-supporting-data",
+      "publisher": "California Department of Water Resources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://calgwlive.water.ca.gov/",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/c000cb9f-2fe3-4871-b9df-fcc974128a49/download/calgw-live_gwl-percentiles-layout.jpg",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/fb3e0d93-7b3e-4bd1-aba7-195554a3d7eb/download/calge-live_insar-layout.jpg",
+          "format": "JPEG"
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/GWL_Recently_Measured_v3/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/GroundwaterLevelPercentileClass_gdb/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/SeasonalChangeCalGWLive_gdb/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/MannKendallGWLTrendCalGWLive_gdb/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/i07_WellCompletionReports_Exported_v2_gdb/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/PSW_2026_Q2/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/HouseholdWaterSupplyShortageReports_2025v2_1/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/tre-altamira-insar-subsidence",
+          "format": ""
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/105ec423-1999-42b4-b6b7-c8c8961ba5a3/download/calgw_live_data_dictionary.xlsx",
+          "format": "excel (xlsx)"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/9c58b42b-dc7d-438c-8225-3d5dbf9bc20d/download/dry-well-reporting-fact-sheet.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://services.arcgis.com/aa38u6OgfNoCkTJ6/arcgis/rest/services/Dry_Domestic_Well_Susceptibility_by_PLSS_Section/FeatureServer",
+          "format": ""
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/e0bf3d2b-ceca-41ca-876f-d3e378503583/download/drywellsusceptibilitymethodsandassumptions_v2.docx",
+          "format": "DOCX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9f4df921-4c84-4ccf-9a0e-4ec7d5e7f93f/resource/c1c30d5f-c4bf-43fa-94d3-e7c9d5037df9/download/drydomesticwellsusceptibilityanalysispythonnotebook_v1.2.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset contains files and materials in support of the California's Groundwater Live website. California's Groundwater Live is a user-friendly platform that allows users to view and interact with the latest information on groundwater in California. California's Groundwater Live website can be found at: https://calgwlive.water.ca.gov/.\r\n\r\nFor additional data, please see the [SGMA Data Viewer](https://sgma.water.ca.gov/webgis/?appid=SGMADataViewer#currentconditions). More information on Statewide Groundwater Management can be found on the [Data and Tools](https://water.ca.gov/programs/groundwater-management/data-and-tools) website."
+    },
+    {
+      "id": "c4c8e91a-ef06-4b08-bbce-fe12eb6d8abb",
+      "title": "Live Birth Profiles by ZIP Code",
+      "url": "https://data.ca.gov/dataset/live-birth-profiles-by-zip-code",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/511174dc-04ae-45e5-83ed-e5e0ecd76e2f/download/cdph_live-birth-by-zip-code-5i0ek458.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/35f92111-e883-4c0b-b4e7-546482a47748/download/20251117_births_final_zip_year_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/1813fbc9-456c-403f-83be-9280cde98873/download/data-dictionary-births-by-zip-code.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/8e832f07-56b4-435c-9536-ed2fc81ceb3c/download/20251117_births_final_zip_month_sup.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/e302d346-bd59-4138-b0e9-49c7696a5aff/resource/2a60bef1-9536-4d47-9cd1-1dc6d5a182f7/download/20250402_births_final_2011-2020__zip_month_sup.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "This dataset contains counts of live births to California residents by ZIP Code based on information entered on birth certificates. Final counts are derived from static data and include out-of-state births to California residents. The data tables include births to residents of California by ZIP Code of residence (by residence).\r\n\r\nNote that ZIP Codes are intended for mail delivery routing and do not represent geographic regions. ZIP Codes are subject to change over time and may not represent the same locations between different time periods. All ZIP Codes in the list of California ZIP Codes used for validation are included for all years, but this does not mean that the ZIP Code was in use at that time."
+    },
+    {
+      "id": "80d5301a-cee8-4081-9831-7d2a9417a884",
+      "title": "California Income Tax Expenditures - Taxable Year 2012 - Actual Cost And Estimated Costs",
+      "url": "https://data.ca.gov/dataset/california-income-tax-expenditures-taxable-year-2012-actual-cost-and-estimated-costs",
+      "publisher": "California Franchise Tax Board",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/80d5301a-cee8-4081-9831-7d2a9417a884/resource/925baac4-2a1c-466d-ad54-ac6b7ac73fd4/download/california_income_tax_expenditures_-_taxable_year_2012_-_actual_cost_and_estimated_costs.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "This dataset presents the taxable year 2012 actual cost, along with the estimated cost for the subsequent five years, for many of the tax expenditures found in California income tax law. Revenue is reported in millions."
+    },
+    {
+      "id": "cfe246b5-95c1-4f00-9139-a008cf661563",
+      "title": "Healthcare Payments Data (HPD) Medical Out-of-Pocket Costs and Chronic Conditions",
+      "url": "https://data.ca.gov/dataset/healthcare-payments-data-hpd-medical-out-of-pocket-costs-and-chronic-conditions",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/becda735-95a1-4efb-b3d5-7af4a6c75fbb/resource/e7794d13-4134-4230-b2d5-8698d438fd34/download/hpd_oop_chronic_2022_masked.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/becda735-95a1-4efb-b3d5-7af4a6c75fbb/resource/d69a5b5f-ab94-490a-8583-d56d5b0d4e19/download/data-dictionary-oop-cost-final.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/becda735-95a1-4efb-b3d5-7af4a6c75fbb/resource/8f868d74-788c-4f13-a041-837411c36ab1/download/tech_note_for_hpd_medical_oop_and_chronic_condition_2022_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/becda735-95a1-4efb-b3d5-7af4a6c75fbb/resource/5bfe370b-dcef-4085-a82f-c48a2c22a47a/download/healthcare-payments-data-hpd-medical-out-of-pocket-costs-and-chronic-conditions-96hzjei6.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset contains data for the Healthcare Payments Data (HPD): Medical Out-of-Pocket Costs and Chronic Conditions report. The data covers three measurement categories: annual member count, annual median out-of-pocket count, annual median claim count. The annual member count quantify the number of unique individuals who received at least one medical service in the reporting year. Annual median out-of-pocket measurements quantifies the sum of copay, coinsurance, and deductible incurred by members. Annual median claim count measurements quantifies the number of distinct claims or encounters associated with members. Both 25th and 75th percentiles for out-of-pocket cost and claim count are also included. Measures are grouped by payer types, chronic conditions flag, chronic condition types, and chronic condition numbers."
+    }
+  ],
+  "page_receipts": [
+    127
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 184,
+  "next_offset": 10,
+  "response_sha256": "4ed2a9aea2122a8acc03c09feb2720eafebfdb7a0ac20bbe6f3f9f6058dde550",
+  "search_complete": false
+}

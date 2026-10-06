@@ -6,13 +6,13 @@
     "topics": "income poverty",
     "food_excluded": true
   },
-  "checked_at": "2026-10-01T04:49:51.557753+00:00",
-  "status": "source_matched",
+  "checked_at": "2026-10-05T22:57:36.392717+00:00",
+  "status": "needs_review",
   "total_catalog_matches": 38,
-  "page_offset": 0,
-  "next_cursor": 20,
+  "page_offset": 20,
+  "next_cursor": 0,
   "max_search_results_per_cycle": 100,
-  "search_complete": false,
+  "search_complete": true,
   "candidates": [
     {
       "id": "65cfc951-39ec-4097-bb15-be2abc936f1b",
@@ -566,19 +566,792 @@
       "status": "needs_review"
     },
     {
-      "id": "74b655ae-6158-41ab-81ef-a02984a17cc1",
-      "title": "Local Area Unemployment Statistics (LAUS), Annual Average",
-      "url": "https://data.ca.gov/dataset/local-area-unemployment-statistics-laus-annual-average",
+      "id": "77aff480-4b23-4d01-b932-3641c53e645b",
+      "title": "Voter Registration",
+      "url": "https://data.ca.gov/dataset/voter-registration",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/40fd0792-2bfd-4303-a848-fc5cb4338295/resource/fe57363f-07fa-42bc-aabc-4291e6b3babb/download/hci-registeredvoters-653-narrative-9-22-2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/40fd0792-2bfd-4303-a848-fc5cb4338295/resource/c384c86a-49d2-4128-8389-b2701ff0bc35/download/hci-registeredvoters-653-ca-re-co-pl-ct-2016-and-2018.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/40fd0792-2bfd-4303-a848-fc5cb4338295/resource/a1135373-1619-49ee-bef5-5c3725ee335f/download/voter-registration-2002-2010-b4ekh3y1.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/40fd0792-2bfd-4303-a848-fc5cb4338295/resource/712c3c48-9cf9-4121-bda4-38ab6cb60c5b/download/mpo_region_to_county_crosswalk-2010.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "487faf81-b723-4770-8b85-d12943770afd",
+      "title": "SB 1000 Populations",
+      "url": "https://data.ca.gov/dataset/sb-1000-populations",
+      "publisher": "California Energy Commission",
+      "resources": [
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/datasets/CAEnergy::sb-1000-populations-",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/sb1000_2025_populations/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/5c2c6f3999e84ae7bd5056714f73993a/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/5c2c6f3999e84ae7bd5056714f73993a/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/5c2c6f3999e84ae7bd5056714f73993a/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/5c2c6f3999e84ae7bd5056714f73993a/kml?layers=0",
+          "format": "KML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "59218446-5760-4683-b52e-f6210021840a",
+      "title": "Local Area Unemployment Statistics (LAUS)",
+      "url": "https://data.ca.gov/dataset/local-area-unemployment-statistics-laus",
       "publisher": "California Employment Development Department",
       "resources": [
         {
-          "url": "https://data.ca.gov/dataset/74b655ae-6158-41ab-81ef-a02984a17cc1/resource/0d49b0b6-a012-4041-82cb-acebd0d3e8b4/download/laborforceandunemployment_annual_202668.csv",
+          "url": "https://data.ca.gov/dataset/59218446-5760-4683-b52e-f6210021840a/resource/b4bc4656-7866-420f-8d87-4eda4c9996ed/download/laborforceandunemployment_monthly_20260918.csv",
           "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/59218446-5760-4683-b52e-f6210021840a/resource/6d4a9892-a8e2-4df9-b364-59056e0f38cd/download/ca-msa-sa-labor-force-2608.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "075cfcf3-f848-49fb-bafa-ab95f515890e",
+      "title": "California US Congressional Districts Map 2020",
+      "url": "https://data.ca.gov/dataset/california-us-congressional-districts-map-2020",
+      "publisher": "California Citizens Redistricting Commission",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/California::california-us-congressional-districts-map-2020",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_US_Congressional_Districts_Map_2020/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/5bdbecba7641495ba6c7a6939c684105/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/5bdbecba7641495ba6c7a6939c684105/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/5bdbecba7641495ba6c7a6939c684105/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/5bdbecba7641495ba6c7a6939c684105/kml?layers=0",
+          "format": "KML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "eec5ecae-24cf-400d-b337-c142e5b5c1c9",
+      "title": "California State Senate Districts Map 2020",
+      "url": "https://data.ca.gov/dataset/california-state-senate-districts-map-2020",
+      "publisher": "California Citizens Redistricting Commission",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/California::california-state-senate-districts-map-2020",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_State_Senate_Districts_Map_2020/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/91fdf7ce85bc4eecaba13058b3bfa09a/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/91fdf7ce85bc4eecaba13058b3bfa09a/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/91fdf7ce85bc4eecaba13058b3bfa09a/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/91fdf7ce85bc4eecaba13058b3bfa09a/kml?layers=0",
+          "format": "KML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0847a6fe-c07b-46c9-9386-a57f343d95f6",
+      "title": "Health Workforce Race & Ethnicity Data",
+      "url": "https://data.ca.gov/dataset/health-workforce-race-ethnicity-data",
+      "publisher": "Department of Health Care Access and Information",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/74d14068-44c3-4dec-885d-c662d7a6ab6c/resource/4cad77dc-db1d-4b58-9cb8-86c4e7d261c9/download/health-workforce-race-ethnicity-data-rfq1y98k.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/74d14068-44c3-4dec-885d-c662d7a6ab6c/resource/0418c411-bfb1-4bfb-a46e-754c0df77184/download/2023-dashboard-data.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/74d14068-44c3-4dec-885d-c662d7a6ab6c/resource/7001b981-3177-408c-a869-3350af0912ce/download/2024-health-workforce-race-ethnicity-age-data.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/74d14068-44c3-4dec-885d-c662d7a6ab6c/resource/8785affc-010f-4eee-81fa-ca307bfb172d/download/2024-health-workforce-race-ethnicity-concordance-data.xlsx",
+          "format": ".xlsx"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/74d14068-44c3-4dec-885d-c662d7a6ab6c/resource/750b77fb-1ee5-4379-b5ba-193616e8bd1c/download/2024-health-workforce-race-ethnicity-detail-data.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/74d14068-44c3-4dec-885d-c662d7a6ab6c/resource/cdc57643-16e0-4a44-a65f-a1f7e7ec8206/download/2024-response-rate-data.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/74d14068-44c3-4dec-885d-c662d7a6ab6c/resource/8a5eabe3-7b03-4069-9e72-6a6638eb02c4/download/dp05-2023-acs-5-yr-census-race-ethnicity-data.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/74d14068-44c3-4dec-885d-c662d7a6ab6c/resource/a34d80f8-6ba0-4c17-84a0-22e16f2fe06a/download/health-workforce-race-ethnicity-data-dictionaries.xlsx",
+          "format": "XLSX"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0a8b09ed-3580-46ba-a471-c86fb34a7aa5",
+      "title": "California Population Estimates by Age/Race_Ethnicity/Sex at local health jurisdiction level",
+      "url": "https://data.ca.gov/dataset/california-population-estimates-by-age-race_ethnicity-sex-at-local-health-jurisdiction-level",
+      "publisher": "California Department of Public Health",
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6c462502-68e4-4918-9783-b674973f0740/resource/88433daa-9abf-4ebc-bc26-a44c85c4031d/download/lhj-pop-ars.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6c462502-68e4-4918-9783-b674973f0740/resource/fd19719d-6933-43c1-aba5-5cfd8249392a/download/data-dictionary.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6c462502-68e4-4918-9783-b674973f0740/resource/2e0f312b-8611-4d29-8313-82335d45c029/download/cdph-california-population-estimates-by-age-race_ethnicity-sex-at-local-health-jurisdiction-leve.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6c462502-68e4-4918-9783-b674973f0740/resource/4e052a2e-7e4d-4336-afa7-a1055e082027/download/lhj-pop-ars-archive.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "986692e2-a45c-47b9-9694-b5b547b28aba",
+      "title": "Fisheries Restoration Grant Program (FRGP) Projects [ds168]",
+      "url": "https://data.ca.gov/dataset/fisheries-restoration-grant-program-frgp-projects-ds1682",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-3",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds168_fmu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/de922575bf314b4995b85d315ed28d28/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/de922575bf314b4995b85d315ed28d28/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/de922575bf314b4995b85d315ed28d28/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/de922575bf314b4995b85d315ed28d28/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/100_199/ds168.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "b6172836-50bf-46f2-b357-1f46b071fd94",
+      "title": "Fisheries Restoration Grant Program (FRGP) Projects [ds168] Extended Table",
+      "url": "https://data.ca.gov/dataset/fisheries-restoration-grant-program-frgp-projects-ds168-extended-table",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/maps/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-extended-table",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds168_fmu/FeatureServer/1",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-extended-table.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-extended-table.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+          "format": "GeoJSON"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "a931ad3b-060b-4d62-a70c-d82e79523e89",
+      "title": "Fisheries Restoration Grant Program (FRGP) Projects [ds168]",
+      "url": "https://data.ca.gov/dataset/fisheries-restoration-grant-program-frgp-projects-ds1681",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/maps/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-3",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds168_fmu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-3.csv?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-3.geojson?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-3.zip?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::fisheries-restoration-grant-program-frgp-projects-ds168-3.kml?outSR=%7B%22latestWkid%22%3A3857%2C%22wkid%22%3A102100%7D",
+          "format": "KML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "7afd3ed3-9a74-44a8-aa27-c8801c0db80f",
+      "title": "California County Boundaries and Identifiers",
+      "url": "https://data.ca.gov/dataset/california-county-boundaries-and-identifiers",
+      "publisher": "California Department of Technology",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/California::california-county-boundaries-and-identifiers",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_County_Boundaries_and_Identifiers_Blue_Version_view/FeatureServer/1",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/csv?layers=1",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/shapefile?layers=1",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/geojson?layers=1",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/kml?layers=1",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/filegdb?layers=1",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/featureCollection?layers=1",
+          "format": "TXT"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/excel?layers=1",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/geoPackage?layers=1",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/60b7e0f3d33b4064a4b43bf14589bfe3/sqlite?layers=1",
+          "format": "GDB"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0ac7750b-a5a7-44cb-8a56-2b95cd264795",
+      "title": "California County Boundaries and Identifiers with Coastal Buffers",
+      "url": "https://data.ca.gov/dataset/california-county-boundaries-and-identifiers-with-coastal-buffers",
+      "publisher": "California Department of Technology",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/California::california-county-boundaries-and-identifiers-with-coastal-buffers",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_County_Boundaries_and_Identifiers_with_Coastal_Buffers/FeatureServer/1",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/csv?layers=1",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/shapefile?layers=1",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/geojson?layers=1",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/kml?layers=1",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/filegdb?layers=1",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/featureCollection?layers=1",
+          "format": "TXT"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/excel?layers=1",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/geoPackage?layers=1",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/28c9f9dd8c3d4eb5a534cb30ddb3ce39/sqlite?layers=1",
+          "format": "GDB"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "1124daff-562f-4b96-b369-fe248f744507",
+      "title": "California City Boundaries and Identifiers with Coastal Buffers",
+      "url": "https://data.ca.gov/dataset/california-city-boundaries-and-identifiers-with-coastal-buffers",
+      "publisher": "California Department of Technology",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/California::california-city-boundaries-and-identifiers-with-coastal-buffers",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_City_Boundaries_and_Identifiers_with_Coastal_Buffers/FeatureServer/2",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/csv?layers=2",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/shapefile?layers=2",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/geojson?layers=2",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/kml?layers=2",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/filegdb?layers=2",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/featureCollection?layers=2",
+          "format": "TXT"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/excel?layers=2",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/geoPackage?layers=2",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/be8a1cd8eff242b0a25feb54e5a2f5a6/sqlite?layers=2",
+          "format": "GDB"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "2e9b9b53-be75-4d56-8f15-38e2368ac950",
+      "title": "California City Boundaries and Identifiers",
+      "url": "https://data.ca.gov/dataset/california-city-boundaries-and-identifiers",
+      "publisher": "California Department of Technology",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/California::california-city-boundaries-and-identifiers",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_Cities_and_Identifiers_Blue_Version_view/FeatureServer/2",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/csv?layers=2",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/shapefile?layers=2",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/geojson?layers=2",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/kml?layers=2",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/filegdb?layers=2",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/featureCollection?layers=2",
+          "format": "TXT"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/excel?layers=2",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/geoPackage?layers=2",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/8cd5d2038c5547ba911eea7bec48e28b/sqlite?layers=2",
+          "format": "GDB"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "8f7cf6cd-5761-46c1-b738-77a6c2b9c8a2",
+      "title": "California Overlapping Cities and Counties and Identifiers with Coastal Buffers",
+      "url": "https://data.ca.gov/dataset/california-overlapping-cities-and-counties-and-identifiers-with-coastal-buffers",
+      "publisher": "California Department of Technology",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/California::california-overlapping-cities-and-counties-and-identifiers-with-coastal-buffers",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_Overlapping_Cities_and_Counties_and_Identifiers_with_Coastal_Buffers/FeatureServer/3",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/csv?layers=3",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/shapefile?layers=3",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/geojson?layers=3",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/kml?layers=3",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/filegdb?layers=3",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/featureCollection?layers=3",
+          "format": "TXT"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/excel?layers=3",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/geoPackage?layers=3",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/14ff938d4a3045aea74fe18cbf954aa5/sqlite?layers=3",
+          "format": "GDB"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "00933774-1b54-47ee-ac4d-c56d7ee85acf",
+      "title": "California Overlapping Cities and Counties and Identifiers",
+      "url": "https://data.ca.gov/dataset/california-overlapping-cities-and-counties-and-identifiers",
+      "publisher": "California Department of Technology",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/California::california-overlapping-cities-and-counties-and-identifiers",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_Overlapping_Cities_and_Counties_and_Identifiers_view/FeatureServer/3",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/csv?layers=3",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/shapefile?layers=3",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/geojson?layers=3",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/kml?layers=3",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/filegdb?layers=3",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/featureCollection?layers=3",
+          "format": "TXT"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/excel?layers=3",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/geoPackage?layers=3",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/894e9cda46bb45c2a0c7b5534b9a6b4a/sqlite?layers=3",
+          "format": "GDB"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "ef20c688-98b6-4243-81b1-0aa42e940433",
+      "title": "Drinking Water - SAFER Dashboard Failing and At-Risk Drinking Water Systems",
+      "url": "https://data.ca.gov/dataset/safer-failing-and-at-risk-drinking-water-systems",
+      "publisher": "California State Water Resources Control Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/ef20c688-98b6-4243-81b1-0aa42e940433/resource/cbab3d71-6a3c-4ec1-8346-11a8a6fbef99/download/risk-assessment-data-dictionary.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ef20c688-98b6-4243-81b1-0aa42e940433/resource/07a0ea8c-9c6f-4bbd-83c4-7716716c352c/download/risk-assessment-data-dictionary.xlsx",
+          "format": "excel (xlsx)"
+        },
+        {
+          "url": "https://jupfn3sfcb1stg.blob.core.windows.net/stageszz92eb1e54-dd2b-46a1-9d76-385d18b2968c/SAFER_RA.csv?se=2026-10-12T14%3A01%3A16Z&ske=2026-10-12T14%3A00%3A16Z&skoid=fa897059-30c1-4bd5-9150-819afe34cefe&sks=b&skt=2026-10-05T14%3A01%3A16Z&sktid=46194f53-f74f-4d04-b434-d8d2233e1b79&skv=2026-02-06&sp=r&spr=https&sr=b&sv=2019-10-10&sig=zYRAVElsu2PUR%2FiFmRuYXQW3miQK0G6fUU4FBj6pH%2Fw%3D",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ef20c688-98b6-4243-81b1-0aa42e940433/resource/05f23e58-820c-4f86-abc4-f873192c99d4/download/2026-drinking-water-needs-assessment.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "d7193835-8161-4ff6-bcc3-da894965d53c",
+      "title": "Drinking Water - Open Environmental Data Project - March 23, 2023 Workshop",
+      "url": "https://data.ca.gov/dataset/drinking-water-open-environmental-data-project-march-23-2023-workshop",
+      "publisher": "California State Water Resources Control Board",
+      "resources": [
+        {
+          "url": "https://www.openenvironmentaldata.org/convening/caswb-workshop-drinking-water",
+          "format": ""
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/5ca9c993-35d2-4898-901a-a5e006d0f214/download/drinking-water-datasets-recommendations-42504.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/drinking-water-public-water-system-information",
+          "format": ""
+        },
+        {
+          "url": "https://data.ca.gov/dataset/drinking-water-public-water-system-information/resource/52419458-eb9a-4460-8483-0695e1940453",
+          "format": ""
+        },
+        {
+          "url": "https://sdwis.waterboards.ca.gov/PDWW/",
+          "format": ""
+        },
+        {
+          "url": "https://sdwis.waterboards.ca.gov/PDWW/Help/html_Water_System_Facilities.htm",
+          "format": "HTML"
+        },
+        {
+          "url": "https://sdwis.waterboards.ca.gov/PDWW/Help/html_Violation_Detail.htm",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/3a37d065-ef56-4730-a0fa-d3af436e11df/download/drinking-water-risk-assessment-public-flat-file-1.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/a9fe604e-67ce-4855-8fe8-5fa96048af75/download/risk-assessment-data-dictionary-not-final.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/918f76a9-e9f0-4bf3-8761-4999a869fb9d/download/sabl_public_230322.zip",
+          "format": "SHP"
+        },
+        {
+          "url": "https://gispublic.waterboards.ca.gov/portalserver/rest/services/Drinking_Water/California_Drinking_Water_System_Area_Boundaries/MapServer",
+          "format": "SHP"
+        },
+        {
+          "url": "https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/documents/edtlibrary/data_dictionary.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/e0216eb3-cc19-4ea5-8c40-7d80b6a8aefd/download/drinking-water-quality-data-clip-sql-all-2.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/84de0856-5b00-421f-83de-bd78d57c4b08/download/clip-sql-2025.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/3bce5a17-41e4-4db4-9310-14b74b066308/download/clip-sql-2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/134ab09c-2632-4b09-947f-195832a0ddc7/download/clip-sql-2023.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/e8f33cad-546a-4a99-b5b1-3b5e5b632856/download/clip-sql-2022.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/79a3c6a4-6034-4637-9de6-aa4fca0f7798/download/clip-sql-2021.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/9f6dc19b-ab64-4aa2-bf20-30e8ae4394f6/download/clip-sql-2020.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/6d113312-dd71-45c2-95d9-2fb4c04fb030/download/clip-sql-2019.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/2d0aca32-68fa-474e-90d5-2528c8804836/download/clip-sql-2018.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/86a13f43-2ddc-4c76-844d-3c4bf550cacb/download/clip-sql-2017.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/8f19e0a7-2e6f-477e-83d0-0de8e6acfb1e/download/clip-sql-2016.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/c72cc3f4-ca55-4f37-ac00-8c8a0ca95e16/download/clip-sql-2015.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/2e2c0a07-a477-4887-af18-b0345767e7f8/download/clip-sql-2014.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/d2235b6c-b156-44a9-9127-e01614d8c25b/download/clip-sql-2013.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/6ab48d4a-b4a2-4d30-9302-9bc6f1442cdf/download/clip-sql-2012.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/39fab6c1-105a-493f-b88a-02a00e68d62e/download/clip-sql-2011.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/EDTlibrary.html",
+          "format": "HTML"
+        },
+        {
+          "url": "https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/needs.html",
+          "format": "HTML"
+        },
+        {
+          "url": "https://www.waterboards.ca.gov/drinking_water/certlic/drinkingwater/prelim2023.html",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/d7193835-8161-4ff6-bcc3-da894965d53c/resource/e601bb7f-ebcc-4a8e-915d-314288dd50fd/download/oedp-workshop-greg-and-rafa1-1.pptx",
+          "format": "PPTX"
         }
       ],
       "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "b5dd3e06d76b2a5e027e7df21bc744c1fec26ae5b01ded3aaef67d190af8502f"
+  "response_sha256": "ecffb77e3b4c173cf175bbd15554d3a6a65c7df1069767f9cb18a2f030d416bd"
 }

@@ -1,0 +1,1228 @@
+{
+  "jurisdiction_code": "KY",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T02:26:55.729272+00:00",
+  "candidates": [
+    {
+      "id": "7faa99efaa0240e59211d108a223cf0e",
+      "title": "Groundwater Wells in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_DOW_Groundwater_Wells_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Location of all the inventoried water wells in the Commonwealth of Kentucky...active, inactive and decomissioned. Data collected by submission from certified drillers, Department of Environmental Protection personnel (DEP) and Kentucky Geological Survey (KGS) personnel.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.52730600077626,
+                39.13849999956357
+              ],
+              [
+                -82.01817900025544,
+                39.13849999956357
+              ],
+              [
+                -82.01817900025544,
+                36.498179000144134
+              ],
+              [
+                -89.52730600077626,
+                36.498179000144134
+              ],
+              [
+                -89.52730600077626,
+                39.13849999956357
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span style=\"background-color:rgb(255,255,255); color:rgb(20,20,20); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;\"><span style=\"display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;\">Location of all the inventoried water wells in the Commonwealth of Kentucky...active, inactive and decomissioned. Data collected by submission from certified drillers, Department of Environmental Protection personnel (DEP) and Kentucky Geological Survey (KGS) personnel.</span></span></p></div></div></div>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Groundwater Wells in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658037000,
+        "avgRating": 0,
+        "id": "7faa99efaa0240e59211d108a223cf0e",
+        "categories": [
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Division of Water",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1784662621000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_DOW_Groundwater_Wells_WM_gdb/FeatureServer",
+        "tags": [
+          "water wells",
+          "KY",
+          "environment",
+          "KDOW",
+          "Kentucky",
+          "Ground water",
+          "groundwater",
+          "water resources",
+          "DOW"
+        ],
+        "numViews": 368,
+        "numComments": 0,
+        "size": 16711680,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Division of Water (DOW)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/7faa99efaa0240e59211d108a223cf0e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "dad6814fd0ad4fe1b92f1c34247cac6f",
+      "title": "Groundwater Springs in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_DOW_Groundwater_Springs_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Location of all the inventoried water wells in the Commonwealth of Kentucky...active, inactive and decomissioned.  Data collected by submission from certified drillers, Department of Environmental Protection personnel (DEP) and Kentucky Geological Survey (KGS) personnel.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.967778,
+                39.087694
+              ],
+              [
+                -82.243556,
+                39.087694
+              ],
+              [
+                -82.243556,
+                36.620578
+              ],
+              [
+                -88.967778,
+                36.620578
+              ],
+              [
+                -88.967778,
+                39.087694
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p><span style=\"background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;\"><span style=\"display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;\">Location of all the inventoried water wells in the Commonwealth of Kentucky...active, inactive and decomissioned. Data collected by submission from certified drillers, Department of Environmental Protection personnel (DEP) and Kentucky Geological Survey (KGS) personnel.</span></span></p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Groundwater Springs in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658035000,
+        "avgRating": 0,
+        "id": "dad6814fd0ad4fe1b92f1c34247cac6f",
+        "categories": [
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Division of Water",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1784659469000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_DOW_Groundwater_Springs_WM_gdb/FeatureServer",
+        "tags": [
+          "water wells",
+          "KY",
+          "environment",
+          "KDOW",
+          "Kentucky",
+          "Ground water",
+          "springs",
+          "water resources"
+        ],
+        "numViews": 822,
+        "numComments": 0,
+        "size": 1187840,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Division of Water (DOW)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/dad6814fd0ad4fe1b92f1c34247cac6f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "dbe9e290c19e47a1939c805977bad4a7",
+      "title": "Kentucky Groundwater Karst Basins",
+      "url": "https://kgs.uky.edu/arcgis/rest/services/KYWater/KYGWKarstBasins/MapServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Geographical locations of karst groundwater basins, groundwater flowpaths, and dye injection/recovery points in Kentucky",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Service",
+          "Metadata"
+        ],
+        "description": "Geographical locations of karst groundwater basins, groundwater \nflowpaths, and dye injection/recovery points in Kentucky. Dye tracing is\n a common method used for understanding groundwater movement. Dye is \npoured (or injected) into a sinking stream, well, sinkhole, or body of \nwater, where it is carried down-gradient by flowing water. The locations\n at which dye is recovered (typically at artesian springs) indicates a \nconnection from injection to recovery site. This connection is refered \nto as a groundwater flowpath. Conducting multiple dye traces across an \narea allows for the interpretation of regional groundwater flow by \nassessing where flowpaths either converge or remain distinct. \nGroundwater basin boundaries can then be delineated, however unlike \nsurficial watersheds, karst groundwater basins may differ significantly \ndue to variations in subsurface hydrogeologic configurations and conduit\n geometries. During periods of increased flow, flowpaths may shift or \nhybridize with other flowpaths, creating overlapping basins. This \ndataset can be used for understanding the general flow of karst \ngroundwater but does not guarantee the absolute accuracy of groundwater \nflow or basin boundaries.",
+        "licenseInfo": "LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information  (DGI) has no indication or reason to believe that there are any  inaccuracies or defects of information incorporated in this work and  make no representations of any kind, including, but not limited to, the  warranties of merchantability or fitness for a particular use, nor are  any such warranties to be implied, with respect to the information or  data, furnished herein",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky Groundwater Karst Basins",
+        "type": "Map Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784746107000,
+        "avgRating": 0,
+        "id": "dbe9e290c19e47a1939c805977bad4a7",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Geological Survey (KGS)",
+        "largeThumbnail": null,
+        "lastViewed": 1787594400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1703036377000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://kgs.uky.edu/arcgis/rest/services/KYWater/KYGWKarstBasins/MapServer",
+        "tags": [
+          "Karst",
+          "Groundwater",
+          "Flow",
+          "Basin",
+          "Kentucky",
+          "basins",
+          "geophysical"
+        ],
+        "numViews": 3519,
+        "numComments": 0,
+        "size": 74,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "english (united states)",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Geological Survey (KGS)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/dbe9e290c19e47a1939c805977bad4a7"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4d098722695f46a59f7f49799cffe933",
+      "title": "Groundwater Monitoring Wells in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_DOW_Groundwater_Monitoring_Wells_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Data collected by submissions from certified drillers and inspections from Department of Environmental Protection (DEP) personnel.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.397022,
+                39.123015
+              ],
+              [
+                -82.01119,
+                39.123015
+              ],
+              [
+                -82.01119,
+                36.488293
+              ],
+              [
+                -89.397022,
+                36.488293
+              ],
+              [
+                -89.397022,
+                39.123015
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Locations of all the inventoried monitoring wells in the Commonwealth of Kentucky...active, inactive, and decomissioned.</span></p></div></div></div>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Groundwater Monitoring Wells in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790346121000,
+        "avgRating": 0,
+        "id": "4d098722695f46a59f7f49799cffe933",
+        "categories": [
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Division of Water",
+        "largeThumbnail": null,
+        "lastViewed": 1790344800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1784656667000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_DOW_Groundwater_Monitoring_Wells_WM_gdb/FeatureServer",
+        "tags": [
+          "environment",
+          "ground water",
+          "KDOW",
+          "monitoring wells",
+          "KY",
+          "Kentucky",
+          "wells",
+          "water resources",
+          "DOW"
+        ],
+        "numViews": 496,
+        "numComments": 0,
+        "size": 23805952,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Division of Water (DOW)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/4d098722695f46a59f7f49799cffe933"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bb4a99f9fd364c0e9ea2597996e9071f",
+      "title": "Groundwater Sensitivity Regions of Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Groundwater_Sensitivity_Regions_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater Sensitivity Regions of Kentucky. Planning, groundwater protection, water quality.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.556685,
+                39.144619
+              ],
+              [
+                -81.96497,
+                39.144619
+              ],
+              [
+                -81.96497,
+                36.496459
+              ],
+              [
+                -89.556685,
+                36.496459
+              ],
+              [
+                -89.556685,
+                39.144619
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Groundwater Sensitivity Regions of Kentucky. Sensitivity regions based on the report by the same name in 1994 by Joseph A. Ray, James S. Webb, and Phillip W. O'dell, Groundwater Branch, Division of Water, Kentucky Department for Environmental Protection.&nbsp;</p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><p>https://creativecommons.org/publicdomain/zero/1.0/</p>",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Groundwater Sensitivity Regions of Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1786717662000,
+        "avgRating": 0,
+        "id": "bb4a99f9fd364c0e9ea2597996e9071f",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Division of Water (DOW)",
+        "largeThumbnail": null,
+        "lastViewed": 1787598000000,
+        "thumbnail": "thumbnail/thumbnail1785258071583.png",
+        "languages": [],
+        "created": 1785257177000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Groundwater_Sensitivity_Regions_WM_gdb/FeatureServer",
+        "tags": [
+          "geoscientificInformation",
+          "groundwater",
+          "land use",
+          "planning",
+          "pollution",
+          "sensitivity",
+          "KGS",
+          "Kentucky",
+          "water resources"
+        ],
+        "numViews": 210,
+        "numComments": 0,
+        "size": 1163264,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Division of Water (DOW)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/bb4a99f9fd364c0e9ea2597996e9071f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4f491e4c17824a39a8c5806f1a08004a",
+      "title": "Karst Dye Trace Sites in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Karst_Dye_Trace_Sites_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Dye trace sites in karst areas of Kentucky. Associated layers include injection and recovery points, flow paths, inferred ground-water basins, sinking streams, and intermittent lakes. Created at a scale of 1:100,000. Should only be used for general guidance at larger scales.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -86.98261,
+                38.288063
+              ],
+              [
+                -84.102075,
+                38.288063
+              ],
+              [
+                -84.102075,
+                36.629093
+              ],
+              [
+                -86.98261,
+                36.629093
+              ],
+              [
+                -86.98261,
+                38.288063
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Dye trace sites in karst areas of Kentucky. Associated layers include injection and recovery points, flow paths, inferred ground-water basins, sinking streams, and intermittent lakes. Created at a scale of 1:100,000. Should only be used for general guidance at larger scales.</p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Karst Dye Trace Sites in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658057000,
+        "avgRating": 0,
+        "id": "4f491e4c17824a39a8c5806f1a08004a",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Geological Survey (KGS)",
+        "largeThumbnail": null,
+        "lastViewed": 1789646400000,
+        "thumbnail": "thumbnail/thumbnail1785350012501.png",
+        "languages": [],
+        "created": 1782752376000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Karst_Dye_Trace_Sites_WM_gdb/FeatureServer",
+        "tags": [
+          "geoscientificInformation",
+          "karst",
+          "hydrogeology",
+          "water resources",
+          "geology",
+          "hydrology",
+          "pollution",
+          "groundwater",
+          "KGS",
+          "Kentucky",
+          "Kentucky Geological Survey"
+        ],
+        "numViews": 377,
+        "numComments": 0,
+        "size": 557056,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Geological Survey (KGS)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/4f491e4c17824a39a8c5806f1a08004a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9f40ae1f41b645eaa9d7fb96d9b5d392",
+      "title": "Karst Dye Trace Basins in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Karst_Dye_Trace_Basins_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Dye traces in karst areas of Kentucky. Associated layers include injection and recovery points, flow paths, inferred ground-water basins, sinking streams, and intermittent lakes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -86.983518,
+                38.278527
+              ],
+              [
+                -84.252888,
+                38.278527
+              ],
+              [
+                -84.252888,
+                36.637233
+              ],
+              [
+                -86.983518,
+                36.637233
+              ],
+              [
+                -86.983518,
+                38.278527
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Dye traces in karst areas of Kentucky. Associated layers include injection and recovery points, flow paths, inferred ground-water basins, sinking streams, and intermittent lakes.&nbsp;</p><p>Created at a scale of 1:100,000.&nbsp;</p><p>Should only be used for general guidance at larger scales.</p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Karst Dye Trace Basins in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658054000,
+        "avgRating": 0,
+        "id": "9f40ae1f41b645eaa9d7fb96d9b5d392",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Geological Survey (KGS)",
+        "largeThumbnail": null,
+        "lastViewed": 1789642800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1782757253000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Karst_Dye_Trace_Basins_WM_gdb/FeatureServer",
+        "tags": [
+          "geoscientificInformation",
+          "karst",
+          "hydrogeology",
+          "water resources",
+          "geology",
+          "hydrology",
+          "pollution",
+          "groundwater",
+          "KGS",
+          "Kentucky"
+        ],
+        "numViews": 306,
+        "numComments": 0,
+        "size": 835584,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Geological Survey (KGS)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/9f40ae1f41b645eaa9d7fb96d9b5d392"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d8230f6c9e234132a27e125c06981f72",
+      "title": "Karst Dye Trace Flows in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Karst_Dye_Trace_Flows_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Dye trace flows in karst areas of Kentucky. Associated layers include injection and recovery points, flow paths, inferred ground-water basins, sinking streams, and intermittent lakes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -86.982609,
+                38.288159
+              ],
+              [
+                -84.101856,
+                38.288159
+              ],
+              [
+                -84.101856,
+                36.629093
+              ],
+              [
+                -86.982609,
+                36.629093
+              ],
+              [
+                -86.982609,
+                38.288159
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Dye trace flows in karst areas of Kentucky. Associated layers include injection and recovery points, flow paths, inferred ground-water basins, sinking streams, and intermittent lakes.&nbsp;</p><p>Created at a scale of 1:100,000.&nbsp;</p><p>Should only be used for general guidance at larger scales.</p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Karst Dye Trace Flows in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658055000,
+        "avgRating": 0,
+        "id": "d8230f6c9e234132a27e125c06981f72",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Geological Survey (KGS)",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1782756004000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Karst_Dye_Trace_Flows_WM_gdb/FeatureServer",
+        "tags": [
+          "geoscientificInformation",
+          "karst",
+          "hydrogeology",
+          "water resources",
+          "geology",
+          "hydrology",
+          "pollution",
+          "groundwater",
+          "KGS",
+          "Kentucky"
+        ],
+        "numViews": 340,
+        "numComments": 0,
+        "size": 1302528,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Geological Survey (KGS)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/d8230f6c9e234132a27e125c06981f72"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "fc1fd13fc4274d1e8118976c118be31c",
+      "title": "Kentucky's Physiopgraphic Regions (Simplified)",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Physiopgraphic_Regions_Simplified/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "A compilation of Kentucky’s physiographic regions that have been reorganized based on general characteristics, specifically as they relate to groundwater occurrence.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.704434,
+                39.151921
+              ],
+              [
+                -81.884235,
+                39.151921
+              ],
+              [
+                -81.884235,
+                36.456976
+              ],
+              [
+                -89.704434,
+                36.456976
+              ],
+              [
+                -89.704434,
+                39.151921
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p style=\"margin:0 0 11;\"><span>Standard physiography is based on the landforms that are characteristic of a region, which are strongly influenced by the underlying rock units. This also strongly influences groundwater occurrence. This shapefile has taken the original physiographic regions of Kentucky and modified them to better designate hydrogeologic characteristics. The Inner Bluegrass, Outer Bluegrass and Knobs regions have been consolidated into a single “Bluegrass Region” due to the similarity of rock units and aquifers. Likewise, the Eastern and Western Pennyroyal have been combined into a single “Mississippian Plateau” Region to denote the similarities across that area. Due to the unique nature of the deposits and wide use of the aquifer, the “Ohio River Alluvium” has been added as its own separate region.</span></p></div></div></div>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY:  The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky's Physiopgraphic Regions (Simplified)",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658243000,
+        "avgRating": 0,
+        "id": "fc1fd13fc4274d1e8118976c118be31c",
+        "categories": [
+          "/Categories/Geoscientific information",
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Lobeck, A.K., 1930, The Midland Trail in Kentucky, KGS Report Series 6, pamphlet 23; Kentucky Geological Survey-GQ Formations 24k, digitized geological maps shapefile; KY Division of Water (2014) – compilation/combination.",
+        "largeThumbnail": null,
+        "lastViewed": 1789642800000,
+        "thumbnail": "thumbnail/thumbnail1785437331245.png",
+        "languages": [],
+        "created": 1744028598000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_Physiopgraphic_Regions_Simplified/FeatureServer",
+        "tags": [
+          "Physiography",
+          "hydrogeology",
+          "groundwater"
+        ],
+        "numViews": 3363,
+        "numComments": 0,
+        "size": 434176,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Division of Water (DOW)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/fc1fd13fc4274d1e8118976c118be31c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6c16368dc8a1442ba1247bc4ffc85fae",
+      "title": "Karst Occurrences in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KGS_KarstOccurrences_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To provide a coverage of karst occurrence at a scale of 1:500,000",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.475532,
+                38.759424
+              ],
+              [
+                -82.275516,
+                38.759424
+              ],
+              [
+                -82.275516,
+                36.470616
+              ],
+              [
+                -88.475532,
+                36.470616
+              ],
+              [
+                -88.475532,
+                38.759424
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Karst Occurrence GIS dataset, compiled from 1:500,000-scale geologic map of Kentucky</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>The Karst Occurrence GIS polygon coverages for Kentucky were compiled from a digital version of the 1:500:000-scale geologic map of Kentucky (Noger, M.C., 1988). Because of the 1:500,000 scale of the source map, these coverages should NOT be used for evaluating karst geologic hazards or hydrogeology at scales larger than 1:500,000. The classification of the potential for karst development was based on the field experience of the authors and other data. A number of isolated carbonate units were newly digitized for these coverages.</span></p></div></div></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Karst Occurrences in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658059000,
+        "avgRating": 0,
+        "id": "6c16368dc8a1442ba1247bc4ffc85fae",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Geological Survey (KGS)",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1733415610000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KGS_KarstOccurrences_WM_gdb/FeatureServer",
+        "tags": [
+          "karst",
+          "geology",
+          "water resources",
+          "caves",
+          "groundwater",
+          "hydrogeology",
+          "cave",
+          "geoscientificInformation",
+          "KGS",
+          "geophysical"
+        ],
+        "numViews": 9148,
+        "numComments": 0,
+        "size": 3162112,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Geological Survey (KGS)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/6c16368dc8a1442ba1247bc4ffc85fae"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    140
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 11,
+  "next_offset": 10,
+  "response_sha256": "762f2455fc4e7f154e1bcc5352a3a7d5dc4f4009e9f6f82c0189b90a25910ec6",
+  "search_complete": false
+}

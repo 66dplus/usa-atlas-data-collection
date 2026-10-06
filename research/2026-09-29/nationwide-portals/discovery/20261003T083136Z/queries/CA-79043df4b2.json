@@ -1,0 +1,43 @@
+{
+  "jurisdiction_code": "CA",
+  "query": "company revenue",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-03T08:32:37.492397+00:00",
+  "candidates": [
+    {
+      "id": "c71eec54-d8bf-4650-ba42-9092a2a3cf10",
+      "title": "Drinking Water - Public Water Systems Rates Information",
+      "url": "https://data.ca.gov/dataset/drinking-water-public-water-systems-rates-information",
+      "publisher": "California State Water Resources Control Board",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/c71eec54-d8bf-4650-ba42-9092a2a3cf10/resource/469dae87-52cc-4c82-831c-9fe520a0f6c0/download/drinking-water-pws-water-rates-2014-15.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/c71eec54-d8bf-4650-ba42-9092a2a3cf10/resource/3a5cbf56-bc1c-4787-bcc4-66f5edb73b62/download/drinking-water-water-rates-data-dictionary-ear-2014-15.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "<p>Public Water Systems (PWS) submit their annual reports with rate information using the Electronic Annual Report (EAR) submission process on the Drinking Water Information Clearinghouse (DRINC) portal, which is reviewed, and manually updated into the Safe Drinking Water Information System (SDWIS). This includes the water rates reported by PWS in the EAR for years 2014 and 2015.</p>\n"
+    }
+  ],
+  "page_receipts": [
+    213
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "74c2fbf5045d4ae06467dc37908a6755bbb4d042f5e788321d741e3f8c30787c",
+  "search_complete": true
+}

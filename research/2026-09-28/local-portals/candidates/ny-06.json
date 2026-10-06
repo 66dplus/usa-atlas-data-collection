@@ -6,13 +6,13 @@
     "topics": "07.02 07.05",
     "food_excluded": true
   },
-  "checked_at": "2026-10-01T04:49:56.490815+00:00",
-  "status": "source_matched",
+  "checked_at": "2026-10-05T22:57:40.899382+00:00",
+  "status": "needs_review",
   "total_catalog_matches": 21,
-  "page_offset": 0,
-  "next_cursor": 20,
+  "page_offset": 20,
+  "next_cursor": 0,
   "max_search_results_per_cycle": 100,
-  "search_complete": false,
+  "search_complete": true,
   "candidates": [
     {
       "id": "5bb2-yb85",
@@ -31,14 +31,6 @@
       "status": "source_matched"
     },
     {
-      "id": "psb3-5dxg",
-      "title": "Income Tax Components of Part-Year Residents by Size of Income (All Returns) - Table 10",
-      "url": "https://data.ny.gov/Government-Finance/Income-Tax-Components-of-Part-Year-Residents-by-Si/psb3-5dxg",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/psb3-5dxg.json",
-      "status": "needs_review"
-    },
-    {
       "id": "etik-ck6b",
       "title": "Income Tax Components of Full-Year Residents by Size of Income (All Returns) - Table 2",
       "url": "https://data.ny.gov/Government-Finance/Income-Tax-Components-of-Full-Year-Residents-by-Si/etik-ck6b",
@@ -55,35 +47,19 @@
       "status": "needs_review"
     },
     {
+      "id": "psb3-5dxg",
+      "title": "Income Tax Components of Part-Year Residents by Size of Income (All Returns) - Table 10",
+      "url": "https://data.ny.gov/Government-Finance/Income-Tax-Components-of-Part-Year-Residents-by-Si/psb3-5dxg",
+      "publisher": "NY Open Data",
+      "data_url": "https://data.ny.gov/resource/psb3-5dxg.json",
+      "status": "needs_review"
+    },
+    {
       "id": "6ez4-x9ke",
       "title": "Income Tax Components of Full-Year Nonresidents by Size of Income and Residence (All Returns) - Table 8",
       "url": "https://data.ny.gov/Government-Finance/Income-Tax-Components-of-Full-Year-Nonresidents-by/6ez4-x9ke",
       "publisher": "NY Open Data",
       "data_url": "https://data.ny.gov/resource/6ez4-x9ke.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "2w9v-ejxd",
-      "title": "Average Income and Tax Liability of Full-Year Residents by County - Table 5",
-      "url": "https://data.ny.gov/Government-Finance/Average-Income-and-Tax-Liability-of-Full-Year-Resi/2w9v-ejxd",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/2w9v-ejxd.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "73iw-kuxv",
-      "title": "Personal Income Tax Filers, Summary Dataset 1 - Major Items by Liability Status and Place of Residence: Beginning Tax Year 2015",
-      "url": "https://data.ny.gov/Government-Finance/Personal-Income-Tax-Filers-Summary-Dataset-1-Major/73iw-kuxv",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/73iw-kuxv.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "gsty-kw6t",
-      "title": "Total Income and Tax Liability of Part-Year Residents - Table 9",
-      "url": "https://data.ny.gov/Government-Finance/Total-Income-and-Tax-Liability-of-Part-Year-Reside/gsty-kw6t",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/gsty-kw6t.json",
       "status": "needs_review"
     },
     {
@@ -95,6 +71,14 @@
       "status": "needs_review"
     },
     {
+      "id": "2w9v-ejxd",
+      "title": "Average Income and Tax Liability of Full-Year Residents by County - Table 5",
+      "url": "https://data.ny.gov/Government-Finance/Average-Income-and-Tax-Liability-of-Full-Year-Resi/2w9v-ejxd",
+      "publisher": "NY Open Data",
+      "data_url": "https://data.ny.gov/resource/2w9v-ejxd.json",
+      "status": "needs_review"
+    },
+    {
       "id": "nacg-rg66",
       "title": "Total Income And Tax Liability By Place Of Residence: Beginning Tax Year 1999",
       "url": "https://data.ny.gov/Government-Finance/Total-Income-And-Tax-Liability-By-Place-Of-Residen/nacg-rg66",
@@ -103,11 +87,11 @@
       "status": "needs_review"
     },
     {
-      "id": "f3t7-zvbx",
-      "title": "Personal Income Tax Filers, Summary Dataset 2 - Major Items and Income & Deduction Components by Place of Residence and Broad Income Range: Beginning Tax Year 2015",
-      "url": "https://data.ny.gov/Government-Finance/Personal-Income-Tax-Filers-Summary-Dataset-2-Major/f3t7-zvbx",
+      "id": "gsty-kw6t",
+      "title": "Total Income and Tax Liability of Part-Year Residents - Table 9",
+      "url": "https://data.ny.gov/Government-Finance/Total-Income-and-Tax-Liability-of-Part-Year-Reside/gsty-kw6t",
       "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/f3t7-zvbx.json",
+      "data_url": "https://data.ny.gov/resource/gsty-kw6t.json",
       "status": "needs_review"
     },
     {
@@ -116,6 +100,22 @@
       "url": "https://data.ny.gov/Government-Finance/Total-Income-and-Tax-Liability-of-Full-Year-Nonres/xvhh-k79u",
       "publisher": "NY Open Data",
       "data_url": "https://data.ny.gov/resource/xvhh-k79u.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "73iw-kuxv",
+      "title": "Personal Income Tax Filers, Summary Dataset 1 - Major Items by Liability Status and Place of Residence: Beginning Tax Year 2015",
+      "url": "https://data.ny.gov/Government-Finance/Personal-Income-Tax-Filers-Summary-Dataset-1-Major/73iw-kuxv",
+      "publisher": "NY Open Data",
+      "data_url": "https://data.ny.gov/resource/73iw-kuxv.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "f3t7-zvbx",
+      "title": "Personal Income Tax Filers, Summary Dataset 2 - Major Items and Income & Deduction Components by Place of Residence and Broad Income Range: Beginning Tax Year 2015",
+      "url": "https://data.ny.gov/Government-Finance/Personal-Income-Tax-Filers-Summary-Dataset-2-Major/f3t7-zvbx",
+      "publisher": "NY Open Data",
+      "data_url": "https://data.ny.gov/resource/f3t7-zvbx.json",
       "status": "needs_review"
     },
     {
@@ -159,6 +159,14 @@
       "status": "needs_review"
     },
     {
+      "id": "p376-79iu",
+      "title": "New York State Corporate Tax Credits by Size of Credit Used: Beginning Tax Year 2001",
+      "url": "https://data.ny.gov/Government-Finance/New-York-State-Corporate-Tax-Credits-by-Size-of-Cr/p376-79iu",
+      "publisher": "NY Open Data",
+      "data_url": "https://data.ny.gov/resource/p376-79iu.json",
+      "status": "needs_review"
+    },
+    {
       "id": "6axi-iwd2",
       "title": "New York State Corporate Tax Credit Utilization: Beginning Tax Year 2001",
       "url": "https://data.ny.gov/Government-Finance/New-York-State-Corporate-Tax-Credit-Utilization-Be/6axi-iwd2",
@@ -167,14 +175,14 @@
       "status": "needs_review"
     },
     {
-      "id": "p376-79iu",
-      "title": "New York State Corporate Tax Credits by Size of Credit Used: Beginning Tax Year 2001",
-      "url": "https://data.ny.gov/Government-Finance/New-York-State-Corporate-Tax-Credits-by-Size-of-Cr/p376-79iu",
+      "id": "84qh-f5nv",
+      "title": "New York State Corporate Tax Credits by Major Industry Group: Beginning Tax Year 2001",
+      "url": "https://data.ny.gov/Government-Finance/New-York-State-Corporate-Tax-Credits-by-Major-Indu/84qh-f5nv",
       "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/p376-79iu.json",
+      "data_url": "https://data.ny.gov/resource/84qh-f5nv.json",
       "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "20bfe264f59c9032ae8bbd3b9c1ab0e9c0db4cb83a9a062ba0094e4d689b5e1e"
+  "response_sha256": "b2903ce82e317e9d09c73458968f1eecefb5bcc33ce61b9b177f4dbe7d676070"
 }

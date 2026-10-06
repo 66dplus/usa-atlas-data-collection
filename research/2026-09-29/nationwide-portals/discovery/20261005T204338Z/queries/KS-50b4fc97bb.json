@@ -1,0 +1,259 @@
+{
+  "jurisdiction_code": "KS",
+  "query": "physical activity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T20:44:36.305301+00:00",
+  "candidates": [
+    {
+      "id": "eb7580022a964488baa51e5aea3fc524",
+      "title": "Physiographic Regions",
+      "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Physiographic_Regions/FeatureServer",
+      "publisher": "KS_Geological_Survey",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data layer shows Kansas physiographic regions. These regions represent physical geography based on common landscape features and geological history. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.05183367923723,
+                40.00318735673261
+              ],
+              [
+                -94.58873089492124,
+                40.00318735673261
+              ],
+              [
+                -94.58873089492124,
+                36.993098375599025
+              ],
+              [
+                -102.05183367923723,
+                36.993098375599025
+              ],
+              [
+                -102.05183367923723,
+                40.00318735673261
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>This data layer shows the physiographic regions of Kansas. These eleven regions represent physical geography as formed by past geologic processes and human activity. The regions have distinctive geological history and landscape features. The data were digitized by the <a target='_blank' href='https://kgs.ku.edu' rel='nofollow ugc noopener noreferrer'>Kansas Geological Survey</a> - Cartographic Services and its predecessors, and the <a target='_blank' href='https://kansasgis.org' rel='nofollow ugc noopener noreferrer'>Kansas Data Access and Support Center</a>.&nbsp;</p>",
+        "licenseInfo": "None. Users can decide if this data fits their purposes.",
+        "ownerId": "da3431fe42d746d2bd9faeee26c79b8a",
+        "title": "Physiographic Regions",
+        "type": "Feature Service",
+        "orgId": "ZOdjAzAQ2B0f85zi",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788387477000,
+        "avgRating": 0,
+        "id": "eb7580022a964488baa51e5aea3fc524",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "KS_Geological_Survey",
+        "accessInformation": "KGS",
+        "largeThumbnail": null,
+        "lastViewed": 1788386400000,
+        "thumbnail": "thumbnail/thumbnail1646251692936.png",
+        "languages": [],
+        "created": 1601040997000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/ZOdjAzAQ2B0f85zi/arcgis/rest/services/Physiographic_Regions/FeatureServer",
+        "tags": [
+          "KGS",
+          "geology",
+          "physiography",
+          "regions",
+          "physiographic"
+        ],
+        "numViews": 13644,
+        "numComments": 0,
+        "size": 237568,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": " The University of Kansas",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/eb7580022a964488baa51e5aea3fc524"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "956d7d89443d440daa1103c9fe213ee9",
+      "title": "KDHE Regulated Storage Tank",
+      "url": "https://maps.kdhe.ks.gov/kdhe_doe/rest/services/BER/Tanks_DASC/FeatureServer/0",
+      "publisher": "kdhe.gis",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The data is updated nightly. \nThe Kansas Department of Health and Environment (KDHE), Bureau of Remediation (BER) Storage Tank Section enforces federal (EPA) and state storage tank regulations and provides oversight and direction of investigations and remedial activities at sites where storage tank releases have taken place.\nThe KDHE Storage Tank Facility, Tank Details and Leaking Underground Storage Tank datasets are provided as a KDHE public service and is intended to provide general environmental open records (KORA requests) information on Storage Tank data that KDHE collects. Service shared with DASC.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.04099999999826,
+                40.002099999999324
+              ],
+              [
+                -94.39999999999843,
+                40.002099999999324
+              ],
+              [
+                -94.39999999999843,
+                36.99329999999936
+              ],
+              [
+                -102.04099999999826,
+                36.99329999999936
+              ],
+              [
+                -102.04099999999826,
+                40.002099999999324
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><b><font color='#ff0000' style='text-decoration-line:underline;'>The data is updated nightly using ArcGIS scripting.</font> <font color='#ff0000'>Scripting will not update the ArcGIS Online &quot;item updated&quot; date, which only reflects the last time the ArcGIS Online item page was last updated. </font></b></p><p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><b><u><span style='color:black;'>PROHIBITED USES:</span></u></b><span style='color:black;'> KSA 45-230 prohibits the use of\nnames and addresses contained in public records for certain commercial\npurposes. By submitting this request, you are signing the following written\ncertification that you will not use the information in the records for any\npurpose prohibited by law.</span></p>\n\n<p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><b><u><span style='color:black;'>DATA LIMITATIONS:</span></u></b></p>\n\n<p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><b><span style='color:black;'>&gt; This data set is not\ndesigned for use as a regulatory tool in permitting or citing decisions; it may\nbe used as a reference source. Carefully consider the provisional or incomplete\nnature of these data before using them for decisions that concern personal\nsafety or involves substantial monetary consequences.</span></b></p>\n\n<p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='color:black;'>&gt; A new facility point is added\nwhen a new facility is added to the origination database. </span></p>\n\n<p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='color:black;'>&gt; </span><font color='#ff0000'>Data is replicated on a nightly\nbasis for public consumption.</font><span style='color:black;'> KDHE is not responsible for database integrity\nfollowing download. </span></p>\n\n<p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='color:black;'>&gt; This dataset contains </span><b>One point</b> represents <b>one facility</b>. A facility may have more than one physical tank\nor may have no tanks depending on &quot;Tank Facility Status&quot;. Review tank\ncount field.</p><p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='color:black;'>&gt; For the <b>details</b> of the\nTanks at that facility, see the &quot;<b>Storage Tank Details</b>&quot; Feature\nLayer. This will provide more information about the tank, such as materials\nstored and capacity. For Storage Tanks that are under remediation, see the &quot;<b>Leaking\nUnderground Storage Tank</b>&quot; Feature Layer.</span><br /></p>\n\n<p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='color:black;'>&gt; The facility point is not the\nexact location of the tank, but a general representative somewhere in the\nproperty of the Storage Tank Facility.</span></p>\n\n<p style='margin-bottom:0in; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='color:black;'>&gt; KDHE makes no assurances of\nthe accuracy or validity of information presented in the Spatial Data. KDHE\nTanks have been located using a variety of locational methods. More recent\npoints are geocoded and validated with accuracy of 3-10 meters. Many\ninactive/old facilities only had a Legal description to calculate point\nplacement on a map, with an accuracy of 250 – 2000 meters.</span></p><div><div><br /></div><div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:inherit;'>For users who wish to interact with the data in a finished product, KDHE recommends using our </span></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><a href='https://maps.kdhe.ks.gov/keif/' style='font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px;' target='_blank' rel='nofollow ugc noopener noreferrer'>Kansas Environmental Interest Finder</a><span style='font-family:inherit;'> </span><img alt='opens in new tab' src='https://maps.kdhe.ks.gov/_Gallery/openinnewtabicon.png' /><span style='font-family:inherit;'>. </span></div><div style='font-family:inherit; font-size:16px;'>More information about KDHE can be found on the <a href='https://www.kdhe.ks.gov/' style='color:rgb(0, 121, 193); text-decoration-line:none; font-family:inherit;' target='_blank' rel='nofollow ugc noopener noreferrer'>Kansas Department of Health and Environment website</a> <img alt='opens in new tab' src='https://maps.kdhe.ks.gov/_Gallery/openinnewtabicon.png' />.<br /></div><div style='font-family:inherit; font-size:16px;'>More information about KDHE Storage Tanks can be found on the <a href='https://www.kdhe.ks.gov/990/Storage-Tanks' target='_blank' rel='nofollow ugc noopener noreferrer'>Kansas Department of Health and Environment website Storage Tanks Division</a> <img alt='opens in new tab' src='https://maps.kdhe.ks.gov/_Gallery/openinnewtabicon.png' />.</div></div><div><br /></div><div>Attributes: </div><div>FAC_STATUS: Facility Status - the highest operational status of any of the tanks on the facility. Some facilities may currently have all the tanks inactive, but could have the potential to hold material.</div><div>ENTITY_STATUS: The status of the ENTIRE facility. This dataset only includes facilities with active KDHE regulations. If it closes with contamination, the facility would transfer to the Identified Sites Listing (see ISL Layer).</div><div>PERMIT_UST*: Count of Permitted &quot;Underground Storage Tanks&quot;</div><div>PERMIT_AST:* Count of Permitted &quot;Above Ground Storage Tanks&quot;</div><div>EXPIRE_AST*: Count of Above Ground Storage Tank Permit has expired. Could potentially be activated at any time.</div><div>UNPERMIT_AST*:  Above Ground Storage Tank is Unpermitted.</div><div>EXPIRE_UST*: Count of Underground Storage Tank Permit has expired. Could potentially be activated at any time.</div><div>INSPECT_DATE: last date of an in person inspection of the tanks</div><div>OWN_NAME: Name of the Owner of the facility.</div><div>PUBLINK: Link to a web reporting page</div><div>LUST_COUNT: Count of Leaking Underground Storage Tank. See the &quot;LUST data layer&quot; for more information.</div><div>*Refer to the &quot;Tanks Detail&quot; Layer for more information on an individual tank.</div><div><br /></div><div><br /></div></div>",
+        "licenseInfo": "This web app is provided as a public service through KDHE and is intended to provide general information. Free and open for public use. The use of names or addresses derived from public records for commercial purposes is expressly prohibited under Kansas law (K.S.A. 45-230).",
+        "title": "KDHE Regulated Storage Tank",
+        "type": "Feature Service",
+        "orgId": "Q6wTdPdCh608iNrJ",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1746110105000,
+        "avgRating": 0,
+        "id": "956d7d89443d440daa1103c9fe213ee9",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "kdhe.gis",
+        "accessInformation": "KDHE",
+        "largeThumbnail": null,
+        "lastViewed": 1752688800000,
+        "thumbnail": "thumbnail/thumbnail1653490656028.png",
+        "languages": [],
+        "created": 1653073317000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps.kdhe.ks.gov/kdhe_doe/rest/services/BER/Tanks_DASC/FeatureServer/0",
+        "tags": [
+          "KDHE",
+          "BER",
+          "Tank",
+          "TRUST",
+          "LUST",
+          "Leaking Underground Storage Tank",
+          "Environment",
+          "Kansas Department of Health and Environment",
+          "environment",
+          "DASC"
+        ],
+        "numViews": 2190,
+        "numComments": 0,
+        "size": 82,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KDHE Public ArcGIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/956d7d89443d440daa1103c9fe213ee9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    243
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "71b8eea9282354e175e81dc429fd3fb3318b26abb58909a9c56cb788c623bbba",
+  "search_complete": true
+}

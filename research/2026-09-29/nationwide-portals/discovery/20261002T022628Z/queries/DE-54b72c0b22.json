@@ -1,0 +1,46 @@
+{
+  "jurisdiction_code": "DE",
+  "query": "groundwater",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-02T02:26:54.349536+00:00",
+  "candidates": [
+    {
+      "id": "mv7j-tx3u",
+      "title": "Permitted Septic Systems",
+      "url": "https://data.delaware.gov/Energy-and-Environment/Permitted-Septic-Systems/mv7j-tx3u",
+      "publisher": "Delaware Open Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.delaware.gov/resource/mv7j-tx3u.json",
+      "description": "A listing of permits for the installation of small (individual structure) and large (multi-structure) septic systems.  This dataset includes information such as location (tax parcel), size and capacity, date, and permit number."
+    },
+    {
+      "id": "2655-qn8j",
+      "title": "Well Permits",
+      "url": "https://data.delaware.gov/Energy-and-Environment/Well-Permits/2655-qn8j",
+      "publisher": "Delaware Open Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.delaware.gov/resource/2655-qn8j.json",
+      "description": "A listing of permits for water wells. The dataset includes information such as location (tax parcel), capacity, date and permit number. Specific location data, for some well types, is redacted per state law."
+    }
+  ],
+  "page_receipts": [
+    133
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "91562e7e77a9ae85340202dbce7a9e5fc01ee1f40ed1b0418260a8794103655f",
+  "search_complete": true
+}

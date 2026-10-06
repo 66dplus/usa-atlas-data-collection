@@ -11,11 +11,11 @@
     "source": "live-coverage gap intake",
     "food_excluded": true
   },
-  "checked_at": "2026-10-01T04:49:47.852396+00:00",
+  "checked_at": "2026-10-05T22:57:31.987470+00:00",
   "status": "needs_review",
   "total_catalog_matches": 295,
-  "page_offset": 20,
-  "next_cursor": 40,
+  "page_offset": 80,
+  "next_cursor": 0,
   "max_search_results_per_cycle": 100,
   "search_complete": false,
   "candidates": [
@@ -330,8 +330,456 @@
       "publisher": "NYC Parks Open Data Team",
       "data_url": "https://data.cityofnewyork.us/resource/fc69-ufed.json",
       "status": "needs_review"
+    },
+    {
+      "id": "ipbu-mtcs",
+      "title": "Directory of Dog Runs and Off-Leash Areas",
+      "url": "https://data.cityofnewyork.us/Recreation/Directory-of-Dog-Runs-and-Off-Leash-Areas/ipbu-mtcs",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/ipbu-mtcs.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "5n4h-km5r",
+      "title": "Medical Non-production for Clinic Appointments",
+      "url": "https://data.cityofnewyork.us/Public-Safety/Medical-Non-production-for-Clinic-Appointments/5n4h-km5r",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/5n4h-km5r.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "i8f4-bu5r",
+      "title": "Directory of Hiking Trails",
+      "url": "https://data.cityofnewyork.us/Recreation/Directory-of-Hiking-Trails/i8f4-bu5r",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/i8f4-bu5r.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "bzby-7sfr",
+      "title": "Aquatics Programming: 2021 to current",
+      "url": "https://data.cityofnewyork.us/Recreation/Aquatics-Programming-2021-to-current/bzby-7sfr",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/bzby-7sfr.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "enfh-gkve",
+      "title": "Parks Properties",
+      "url": "https://data.cityofnewyork.us/Recreation/Parks-Properties/enfh-gkve",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/enfh-gkve.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "k2ya-ucmv",
+      "title": "ARCHIVED - Parks Properties",
+      "url": "https://data.cityofnewyork.us/City-Government/ARCHIVED-Parks-Properties/k2ya-ucmv",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/k2ya-ucmv.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "622h-mkfu",
+      "title": "NYC Parks Drinking Fountains Map",
+      "url": "https://data.cityofnewyork.us/Recreation/NYC-Parks-Drinking-Fountains-Map/622h-mkfu",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/622h-mkfu.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "5vb5-y6cv",
+      "title": "Walk-to-a-Park Service area",
+      "url": "https://data.cityofnewyork.us/Recreation/Walk-to-a-Park-Service-area/5vb5-y6cv",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/5vb5-y6cv.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "br7w-st33",
+      "title": "NYC Parks Forever Wild Map",
+      "url": "https://data.cityofnewyork.us/Environment/NYC-Parks-Forever-Wild-Map/br7w-st33",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/br7w-st33.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "zhrf-jnt6",
+      "title": "Directory of Temporary Public Art",
+      "url": "https://data.cityofnewyork.us/Recreation/Directory-of-Temporary-Public-Art/zhrf-jnt6",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/zhrf-jnt6.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "c5vm-g2dk",
+      "title": "Parks Permit Areas",
+      "url": "https://data.cityofnewyork.us/Recreation/Parks-Permit-Areas/c5vm-g2dk",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/c5vm-g2dk.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "4hcv-tc5r",
+      "title": "Capital Project Tracker",
+      "url": "https://data.cityofnewyork.us/Recreation/Capital-Project-Tracker/4hcv-tc5r",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/4hcv-tc5r.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "bug9-xeqp",
+      "title": "Waterfront Public Access Areas (WPAAs) - Footprints",
+      "url": "https://data.cityofnewyork.us/Recreation/Waterfront-Public-Access-Areas-WPAAs-Footprints/bug9-xeqp",
+      "publisher": "DCP Open Data",
+      "data_url": "https://data.cityofnewyork.us/resource/bug9-xeqp.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "yann-8etk",
+      "title": "ARCHIVE - Athletic Facilities",
+      "url": "https://data.cityofnewyork.us/City-Government/ARCHIVE-Athletic-Facilities/yann-8etk",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/yann-8etk.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "at6q-ktig",
+      "title": "DPR_PlayAreas_001",
+      "url": "https://data.cityofnewyork.us/City-Government/DPR_PlayAreas_001/at6q-ktig",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/at6q-ktig.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "2cd9-59fr",
+      "title": "2015 Street Tree Census - Blockface Data",
+      "url": "https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Blockface-Data/2cd9-59fr",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/2cd9-59fr.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "e2f7-cs7i",
+      "title": "Parking Lots",
+      "url": "https://data.cityofnewyork.us/City-Government/Parking-Lots/e2f7-cs7i",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/e2f7-cs7i.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "9ned-hmak",
+      "title": "Directory of Running Tracks",
+      "url": "https://data.cityofnewyork.us/Environment/Directory-of-Running-Tracks/9ned-hmak",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/9ned-hmak.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "8nac-uner",
+      "title": "NYC Parks Dog Runs",
+      "url": "https://data.cityofnewyork.us/Recreation/NYC-Parks-Dog-Runs/8nac-uner",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/8nac-uner.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "48va-85tp",
+      "title": "NYC Parks Forever Wild",
+      "url": "https://data.cityofnewyork.us/Environment/NYC-Parks-Forever-Wild/48va-85tp",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/48va-85tp.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "un72-4nix",
+      "title": "Directory of Historic Houses",
+      "url": "https://data.cityofnewyork.us/Recreation/Directory-of-Historic-Houses/un72-4nix",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/un72-4nix.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "pbi9-jd5i",
+      "title": "NYC Street Tree Map - Favorite Trees",
+      "url": "https://data.cityofnewyork.us/Environment/NYC-Street-Tree-Map-Favorite-Trees/pbi9-jd5i",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/pbi9-jd5i.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "7yhi-h8kc",
+      "title": "Directory of Nature Preserves",
+      "url": "https://data.cityofnewyork.us/Recreation/Directory-of-Nature-Preserves/7yhi-h8kc",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/7yhi-h8kc.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "ac9y-je94",
+      "title": "Directory of Concessions",
+      "url": "https://data.cityofnewyork.us/Housing-Development/Directory-of-Concessions/ac9y-je94",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/ac9y-je94.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "efsz-uj8v",
+      "title": "Park Closure Notifications",
+      "url": "https://data.cityofnewyork.us/Recreation/Park-Closure-Notifications/efsz-uj8v",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/efsz-uj8v.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "fx7a-24mf",
+      "title": "Directory of Outdoor Swimming Pools",
+      "url": "https://data.cityofnewyork.us/Recreation/Directory-of-Outdoor-Swimming-Pools/fx7a-24mf",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/fx7a-24mf.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "e3uq-vht9",
+      "title": "ARCHIVED - Functional Parkland",
+      "url": "https://data.cityofnewyork.us/City-Government/ARCHIVED-Functional-Parkland/e3uq-vht9",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/e3uq-vht9.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "jvwx-xnsr",
+      "title": "Outdoor Swimming Pool Attendance",
+      "url": "https://data.cityofnewyork.us/City-Government/Outdoor-Swimming-Pool-Attendance/jvwx-xnsr",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/jvwx-xnsr.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "v3zf-nci8",
+      "title": "Directory of Barbecuing Areas",
+      "url": "https://data.cityofnewyork.us/Recreation/Directory-of-Barbecuing-Areas/v3zf-nci8",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/v3zf-nci8.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "y8tr-23bj",
+      "title": "Press Releases",
+      "url": "https://data.cityofnewyork.us/Recreation/Press-Releases/y8tr-23bj",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/y8tr-23bj.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "iidj-gxys",
+      "title": "Parks Trails Map",
+      "url": "https://data.cityofnewyork.us/Environment/Parks-Trails-Map/iidj-gxys",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/iidj-gxys.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "gzk5-mux8",
+      "title": "Directory of Zoos and Aquariums",
+      "url": "https://data.cityofnewyork.us/Housing-Development/Directory-of-Zoos-and-Aquariums/gzk5-mux8",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/gzk5-mux8.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "asdj-rj9b",
+      "title": "Playgrounds with Dedicated Children's Areas (DCAs)",
+      "url": "https://data.cityofnewyork.us/Recreation/Playgrounds-with-Dedicated-Children-s-Areas-DCAs-/asdj-rj9b",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/asdj-rj9b.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "qvtg-k2hn",
+      "title": "ARCHIVE - Beaches",
+      "url": "https://data.cityofnewyork.us/City-Government/ARCHIVE-Beaches/qvtg-k2hn",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/qvtg-k2hn.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "xdkk-pvdv",
+      "title": "Directory Historical Signs",
+      "url": "https://data.cityofnewyork.us/Recreation/Directory-Historical-Signs/xdkk-pvdv",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/xdkk-pvdv.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "6gvx-hydd",
+      "title": "Landfills",
+      "url": "https://data.cityofnewyork.us/City-Government/Landfills/6gvx-hydd",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/6gvx-hydd.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "kjtf-e6kp",
+      "title": "Skateparks",
+      "url": "https://data.cityofnewyork.us/City-Government/Skateparks/kjtf-e6kp",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/kjtf-e6kp.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "hxay-3qcw",
+      "title": "New York City Water Trail (Kayak and Canoe Launch Sites)",
+      "url": "https://data.cityofnewyork.us/Recreation/New-York-City-Water-Trail-Kayak-and-Canoe-Launch-S/hxay-3qcw",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/hxay-3qcw.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "pxkn-awzt",
+      "title": "NYC Human Powered Boat Launches",
+      "url": "https://data.cityofnewyork.us/Recreation/NYC-Human-Powered-Boat-Launches/pxkn-awzt",
+      "publisher": "DCP Open Data",
+      "data_url": "https://data.cityofnewyork.us/resource/pxkn-awzt.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "vvdx-b56i",
+      "title": "Community Parks Initiative Zone Boundaries",
+      "url": "https://data.cityofnewyork.us/City-Government/Community-Parks-Initiative-Zone-Boundaries/vvdx-b56i",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/vvdx-b56i.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "urxm-vzzk",
+      "title": "ARCHIVE - Schoolyards To Playgrounds",
+      "url": "https://data.cityofnewyork.us/City-Government/ARCHIVE-Schoolyards-To-Playgrounds/urxm-vzzk",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/urxm-vzzk.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "djyq-adqm",
+      "title": "NYC Parks Ice Skating Rinks",
+      "url": "https://data.cityofnewyork.us/Recreation/NYC-Parks-Ice-Skating-Rinks/djyq-adqm",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/djyq-adqm.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "3as9-uee8",
+      "title": "layer_1",
+      "url": "https://data.cityofnewyork.us/Environment/layer_1/3as9-uee8",
+      "publisher": "ohyacsrs",
+      "data_url": "https://data.cityofnewyork.us/resource/3as9-uee8.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "5v6p-rtfu",
+      "title": "NYC Parks Water Features",
+      "url": "https://data.cityofnewyork.us/Environment/NYC-Parks-Water-Features/5v6p-rtfu",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/5v6p-rtfu.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "fxgv-ba35",
+      "title": "Swimming Beach Attendance",
+      "url": "https://data.cityofnewyork.us/City-Government/Swimming-Beach-Attendance/fxgv-ba35",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/fxgv-ba35.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "yne3-pqfu",
+      "title": "NYC Street Tree Map - Eco Benefits",
+      "url": "https://data.cityofnewyork.us/Environment/NYC-Street-Tree-Map-Eco-Benefits/yne3-pqfu",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/yne3-pqfu.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "vr8g-vfny",
+      "title": "MillionTreesNYC Block Planting Locations",
+      "url": "https://data.cityofnewyork.us/Environment/MillionTreesNYC-Block-Planting-Locations/vr8g-vfny",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/vr8g-vfny.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "hr2s-xdcw",
+      "title": "Directory of Public Computer Resource Centers",
+      "url": "https://data.cityofnewyork.us/Education/Directory-of-Public-Computer-Resource-Centers/hr2s-xdcw",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/hr2s-xdcw.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "sxe3-hucm",
+      "title": "Directory of Horseback Riding Trails",
+      "url": "https://data.cityofnewyork.us/Housing-Development/Directory-of-Horseback-Riding-Trails/sxe3-hucm",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/sxe3-hucm.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "7fuk-i2af",
+      "title": "ARCHIVE - Greenstreets",
+      "url": "https://data.cityofnewyork.us/Environment/ARCHIVE-Greenstreets/7fuk-i2af",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/7fuk-i2af.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "pn7c-bqri",
+      "title": "MillionTreesNYC Forest Restoration Planting Sites",
+      "url": "https://data.cityofnewyork.us/Environment/MillionTreesNYC-Forest-Restoration-Planting-Sites/pn7c-bqri",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/pn7c-bqri.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "vjbm-hsyr",
+      "title": "Parks Trails",
+      "url": "https://data.cityofnewyork.us/Environment/Parks-Trails/vjbm-hsyr",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/vjbm-hsyr.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "4j29-i5ry",
+      "title": "Parks Zones",
+      "url": "https://data.cityofnewyork.us/City-Government/Parks-Zones/4j29-i5ry",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/4j29-i5ry.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "ju3b-rwpy",
+      "title": "2015 Street Tree Census - Blockface Data",
+      "url": "https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Blockface-Data/ju3b-rwpy",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/ju3b-rwpy.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "im58-6hb9",
+      "title": "NYC Parks Spray Showers Map",
+      "url": "https://data.cityofnewyork.us/Recreation/NYC-Parks-Spray-Showers-Map/im58-6hb9",
+      "publisher": "NYC Parks Open Data Team",
+      "data_url": "https://data.cityofnewyork.us/resource/im58-6hb9.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "gysc-yn4h",
+      "title": "NYC City Hall Library Catalog",
+      "url": "https://data.cityofnewyork.us/Recreation/NYC-City-Hall-Library-Catalog/gysc-yn4h",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/gysc-yn4h.json",
+      "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "d6d72bac34d56c870458f5f1202b269ec324bd1124ba2d2f3e18a0dd43eadc3d"
+  "response_sha256": "e5e1a7d21049c1a99d2f665519f0662384f6088cb866a7b72967fa78986edf23"
 }

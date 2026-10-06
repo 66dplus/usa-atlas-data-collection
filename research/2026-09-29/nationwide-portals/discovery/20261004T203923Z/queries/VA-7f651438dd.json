@@ -1,0 +1,211 @@
+{
+  "jurisdiction_code": "VA",
+  "query": "alcohol deaths",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-04T20:40:12.350941+00:00",
+  "candidates": [
+    {
+      "id": "a8bf24e7-1059-423b-bc94-250d7db35d57",
+      "title": "Occupant and Alcohol-Impaired Driving Deaths in States, 2005-2014",
+      "url": "https://data.virginia.gov/dataset/occupant-and-alcohol-impaired-driving-deaths-in-states-2005-2014",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/haed-k2ka/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/haed-k2ka/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/haed-k2ka/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/haed-k2ka/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/haed-k2ka/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/haed-k2ka/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "Alcohol-Impaired Driving Fatalities 2005-2014; All persons killed in crashes involving a driver with BAC >= .08 g/dL. Occupant Fatalities 2005-2014; All occupants killed where body type = 1-79. Source: National Highway Traffic Safety Administration's (NHTSA) Fatality Analysis Reporting System (FARS), 2005-2013 Final Reports and 2014 Annual Report File"
+    },
+    {
+      "id": "776be1cd-accc-4e25-9a25-40872394cc5c",
+      "title": "CDC WONDER: Mortality - Multiple Cause of Death",
+      "url": "https://data.virginia.gov/dataset/cdc-wonder-mortality-multiple-cause-of-death1",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "http://wonder.cdc.gov/mcd.html",
+          "format": "API"
+        }
+      ],
+      "description": "<p>The Mortality - Multiple Cause of Death data on CDC WONDER are county-level national mortality and population data spanning the years 1999-2009. Data are based on death certificates for U.S. residents. Each death certificate contains a single underlying cause of death, up to twenty additional multiple causes (Boolean set analysis), and demographic data. The number of deaths, crude death rates, age-adjusted death rates, standard errors and 95% confidence intervals for death rates can be obtained by place of residence (total U.S., region, state, and county), age group (including infants and single-year-of-age cohorts), race (4 groups), Hispanic ethnicity, sex, year of death, and cause-of-death (4-digit ICD-10 code or group of codes, injury intent and mechanism categories, or drug and alcohol related causes), year, month and week day of death, place of death and whether an autopsy was performed. The data are produced by the National Center for Health Statistics.</p>"
+    },
+    {
+      "id": "60280360-3481-42b9-8028-359883eaecf6",
+      "title": "CDC WONDER: Detailed Mortality - Underlying Cause of Death",
+      "url": "https://data.virginia.gov/dataset/cdc-wonder-detailed-mortality-underlying-cause-of-death",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "http://wonder.cdc.gov/ucd-icd10.html",
+          "format": "HTML"
+        }
+      ],
+      "description": "<p>The Detailed Mortality - Underlying Cause of Death data on CDC WONDER are county-level national mortality and population data spanning the years 1999-2009. Data are based on death certificates for U.S. residents. Each death certificate contains a single underlying cause of death, and demographic data. The number of deaths, crude death rates, age-adjusted death rates, standard errors and 95% confidence intervals for death rates can be obtained by place of residence (total U.S., region, state, and county), age group (including infants and single-year-of-age cohorts), race (4 groups), Hispanic ethnicity, sex, year of death, and cause-of-death (4-digit ICD-10 code or group of codes, injury intent and mechanism categories, or drug and alcohol related causes), year, month and week day of death, place of death and whether an autopsy was performed. The data are produced by the National Center for Health Statistics.</p>"
+    },
+    {
+      "id": "fbe9788f-7cb7-461d-9fd0-aa2166ae1660",
+      "title": "Benzodiazepines in Combination with Opioid Pain Relievers or Alcohol: Greater Risk of More Serious ED Visit Outcomes",
+      "url": "https://data.virginia.gov/dataset/benzodiazepines-in-combination-with-opioid-pain-relievers-or-alcohol-greater-risk-of-more-serio",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.samhsa.gov/data/report/benzodiazepines-combination-opioid-pain-relievers-or-alcohol-greater-risk-more-serious-ed",
+          "format": "HTML"
+        }
+      ],
+      "description": "This short report examines emergency department (ED) visits involving benzodiazepines, which are medications prescribed to relieve symptoms of anxiety, panic attacks and seizures.  It looks at the effect of combining benzodiazepines with opioid pain relievers or alcohol, both substances that also depress the central nervous system.  The report quantifies the increased risk of more serious outcomes such as hospitalization or, rarely, death in the ED, when benzodiazepines are combined with alcohol or opioid pain relievers.  The relationship between the patient’s age and the risk of more serious outcomes  between the risk of more serious outcomes and the age of the patient is also described."
+    },
+    {
+      "id": "10caaa8d-84ee-4f21-99f7-3693f2189934",
+      "title": "Surviving Drivers Involved in Fatal Crashes,  and their Blood Alcohol Concentration (BAC) - National Center for Statistics and Analysis (NCSA)",
+      "url": "https://data.virginia.gov/dataset/surviving-drivers-involved-in-fatal-crashes",
+      "publisher": "Datathon 2025",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/10caaa8d-84ee-4f21-99f7-3693f2189934/resource/dc64ca78-9a30-45d2-adbd-a308732d4572/download/surviving-drivers-involved-in-fatal-crashes-and-their-blood-alcohol-concentration-bac.xlsx",
+          "format": "XLSX"
+        }
+      ],
+      "description": "This dataset focuses on analyzing the relationship between driver survival and alcohol consumption in fatal motor vehicle crashes in the state of Virginia.\n\n<!-- SIMILAR_DATASETS_START -->\n---\n### 🔗 Related Datasets\n\n- [Driver Data - Virginia Department of Motor Vehicles](https://odgavaprod.ogopendata.com//dataset/a45b8602-6b54-407c-bd34-7b7f97e4fd8e) — *Datathon 2025*\n- [Occupant and Alcohol-Impaired Driving Deaths in States, 2005-2014](https://odgavaprod.ogopendata.com//dataset/a8bf24e7-1059-423b-bc94-250d7db35d57) — *HealthData.Gov*\n- [Vehicles Involved in Fatal Crashes_1994 _2022_Virginia- National Center for Statistics and Analysis (NCSA)](https://odgavaprod.ogopendata.com//dataset/97a98f44-51cf-4a78-bb25-08f5894ebfa4) — *Datathon 2025*\n\n---"
+    },
+    {
+      "id": "53b81526-7f98-45fd-9f7e-360cd7d97f2c",
+      "title": "Drug Reference Vocabulary",
+      "url": "https://data.virginia.gov/dataset/drug-reference-vocabulary",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.samhsa.gov/data/report/drug-reference-vocabulary",
+          "format": "HTML"
+        }
+      ],
+      "description": "The Drug Reference Vocabulary (DRV) is a classification system for all the substances collected by DAWN (drug-related emergency department visits and drug-related deaths investigated by partcipating medical examiners/coroners).  This Excel file includes brand, drug, and category names and codes for  illicit drugs, prescription and over-the-counter pharmaceuticals, inhalants and alcohol.  It is derived from the Multum Lexicon, © 2012 Lexi-Comp, Inc. and/or Cerner Multum, Inc. The classification was modified to meet DAWN\\'s unique requirements.The Multum Licensing Agreement governing use of the Lexicon can be found on the SAMHSA site athttps://www.samhsa.gov/data/sites/default/files/MultumLicenseAgreement/…."
+    },
+    {
+      "id": "319bf524-48f9-43f3-89ba-92b3d7fdce8b",
+      "title": "Youth Risk Behavior Surveillance System (YRBSS)",
+      "url": "https://data.virginia.gov/dataset/youth-risk-behavior-surveillance-system-yrbss",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "http://www.cdc.gov/healthyyouth/yrbs/cdcreports.htm",
+          "format": "HTML"
+        }
+      ],
+      "description": "<p>The Youth Risk Behavior Surveillance System (YRBSS) monitors 6 types of health-risk behaviors that contribute to the leading causes of death and disability among youth and adults, including: behaviors that contribute to unintentional injuries and violence; sexual behaviors that contribute to unintended pregnancy and sexually transmitted diseases (STDs), including HIV infection; alcohol and other drug use; tobacco use; unhealthy dietary behaviors; inadequate physical activity. YRBSS also measures the prevalence of obesity and asthma among youth and young adults. YRBSS includes a national school-based survey conducted by CDC and state, territorial, tribal, and local surveys conducted by state, territorial, and local education and health agencies and tribal governments.</p>"
+    },
+    {
+      "id": "038743ed-829c-47ca-ac70-5435fda4429f",
+      "title": "Acetaminophen toxicity: suicidal vs accidental",
+      "url": "https://data.virginia.gov/dataset/acetaminophen-toxicity-suicidal-vs-accidental",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC111182/",
+          "format": "HTML"
+        }
+      ],
+      "description": "Introduction\n          Acetaminophen toxicity, which can lead to hepatotoxicity, is a burden on our health care system and contributes significantly to intensive care unit admissions and cost of hospitalization. The aim of our study was to determine the epidemiology of various types of acetaminophen poisoning and analyze their outcome compared with their admission characteristics.\n        \n        \n          Methods\n          We identified 93 consecutive patients, hospitalized for acetaminophen toxicity over a 52-month period from 1996 to 1999 in our urban county hospital. Retrospective case-control analysis was carried out using the data obtained from the medical records.\n        \n        \n          Results\n          Acetaminophen accounted for 7.5% of all cases of poisoning admitted during this period. Of the 93 patients, 80 were classified as suicidal and 13 had accidentally poisoned themselves in an attempt to relieve pain. The ratio of females to males was found to be 2:1. Of the 93 patients studied, 88 were admitted to the intensive care unit for initial 24–48 hours of monitoring. Peak acetaminophen levels were higher in the suicidal overdose group (mean 121.7 ± 97.0 mg/l vs 64.5 ± 61.8 mg/l, P < 0.05) than in the accidental group. In spite of this, peak aminotransferase levels >1000 IU/l were more often seen in the latter (39% vs 12%, P < 0.05). Hepatic coma and death were seen more often in the accidental overdose group (15% vs 0%, P < 0.05). Interestingly chronic alc"
+    },
+    {
+      "id": "328ab6b8-1b73-42d6-89b1-d7ed9726b221",
+      "title": "VDH Drug Overdose Needs Assessment Tool",
+      "url": "https://data.virginia.gov/dataset/vdh-drug-overdose-needs-assessment-tool",
+      "publisher": "Virginia Department of Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/328ab6b8-1b73-42d6-89b1-d7ed9726b221/resource/e6f8a85b-e0e5-4132-8d5d-fe06ab9a55aa/download/vdh-onat-scores-by-locality_2024.xlsx",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/328ab6b8-1b73-42d6-89b1-d7ed9726b221/resource/8d9537d5-2772-4a67-862c-a742ca61cd85/download/vdh-overdose-needs-assessment-tool-scores-by-locality_2021.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/328ab6b8-1b73-42d6-89b1-d7ed9726b221/resource/6d38136e-a35f-46e3-ba08-05d0d4e08517/download/vdh-overdose-needs-assessment-tool-scores-by-locality_2022.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/328ab6b8-1b73-42d6-89b1-d7ed9726b221/resource/ecc5c224-535b-4562-af19-908455a12af4/download/vdh-overdose-needs-assessment-tool-scores-by-locality_2023.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/328ab6b8-1b73-42d6-89b1-d7ed9726b221/resource/e16e3fac-5b6e-45d5-8380-a4623d87389c/download/overdose-assessment-tool-scoring-methodology.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "The Virginia Department of Health (VDH) developed a needs assessment tool using drug overdose-related data to help identify which Virginia communities may need extra support from focused drug overdose-related prevention and intervention strategies.   \r\n\r\nVDH uses the tool, along with other information, to carry out public health programs to reduce the harms connected with drug use, including:   \r\n\r\nNaloxone distribution to local health districts and community partners. \r\nComprehensive Harm Reduction programs, which are public health services to reduce the negative impact of drug use.\r\n\r\nAn assessment score for each Virginia locality (counties and independent cities) is compared to the state score. If a locality received a score higher than the state score, it is considered at higher need for drug overdose-related outcomes and substance use. Localities with higher need may require more resources and support for prevention and intervention services.  \r\n\r\nThese data can be used to inform public health action to reduce and prevent drug overdose. This tool does not assess a locality’s capacity or ability to implement drug overdose prevention and intervention strategies. Communities may also want to work with other local data, existing programs and partnerships, and known areas of increased need when deciding on prevention approaches that best fit their communities. No matter the assessment score, drug overdose and substance use affect all communities. Together with local and state"
+    }
+  ],
+  "page_receipts": [
+    266
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 9,
+  "next_offset": 9,
+  "response_sha256": "0b33621972367979d38a28d20b841a85e791e4b44e04a40a618606bdb6b7c959",
+  "search_complete": true
+}

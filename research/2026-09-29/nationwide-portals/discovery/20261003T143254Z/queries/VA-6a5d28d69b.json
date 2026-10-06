@@ -1,0 +1,268 @@
+{
+  "jurisdiction_code": "VA",
+  "query": "diabetes",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-03T14:33:29.863819+00:00",
+  "candidates": [
+    {
+      "id": "62f7e2cf-76fe-4b52-97c4-e0271cb43562",
+      "title": "Diabetes State Burden Toolkit - Diabetes Mortality and Health-related Quality of Life",
+      "url": "https://data.virginia.gov/dataset/diabetes-state-burden-toolkit-diabetes-mortality-and-health-related-quality-of-life",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/e6et-eg6c/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/e6et-eg6c/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/e6et-eg6c/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/e6et-eg6c/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/e6et-eg6c/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/e6et-eg6c/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "This section of the Burden Toolkit reports estimated diabetes mortality statistics in your state for people aged 15 years or older. This data consists of the number of deaths, rate of deaths per 100,000 people, years of potential life lost, and quality-adjusted life years.\n\nData sources: Centers for Disease Control and Prevention (CDC), National Center for Health Statistics (NCHS). Multiple Cause of Death 2021 from CDC WONDER Online Database. Multiple Cause of Death 1999-2013 from CDC WONDER Online Database. 2013 United States Renal Data System (USRDS). 2013-2017 National Health Interview Survey (NHIS), 2021 Behavioral Risk Factor Surveillance System (BRFSS). For detail, see the Technical Report: https://www.cdc.gov/diabetes/burden-toolkit/docs/technical_documentation.pdf"
+    },
+    {
+      "id": "0bc1c016-9f5e-42a5-96e5-e07e232cf425",
+      "title": "Medicare Diabetes Prevention Program",
+      "url": "https://data.virginia.gov/dataset/medicare-diabetes-prevention-program",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cms.gov/data-api/v1/dataset/a15c198e-4cf3-46ab-a30e-15c69bd13edd/data",
+          "format": "HTML"
+        },
+        {
+          "url": "https://data.cms.gov/sites/default/files/2026-06/9e8bc0b5-e28f-4f5d-b586-24a1687e4f4f/MDPP_Supplier_Mapping_06.01.26.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cms.gov/data-api/v1/dataset/84f9514b-815e-4bda-9323-e65cff0ed5c3/data",
+          "format": "HTML"
+        }
+      ],
+      "description": "The Medicare Diabetes Prevention Program dataset contains information about suppliers from which eligible Medicare beneficiaries may be furnished associated services. The information in this dataset can include organization name, location, contact information, National Provider Identifier (NPI) among other data points. Location data populates the \"Map of MDPP Suppliers furnishing MDPP Services\" map."
+    },
+    {
+      "id": "5b2b120a-ef6d-4e50-903a-f9ba17056f95",
+      "title": "Diabetes State Burden Toolkit - Health Burden",
+      "url": "https://data.virginia.gov/dataset/diabetes-state-burden-toolkit-health-burden",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ircd-wk4g/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ircd-wk4g/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ircd-wk4g/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ircd-wk4g/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ircd-wk4g/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ircd-wk4g/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "This section of the Burden Toolkit reports the health burden of diabetes in your state and consists of diabetes prevalence, diabetes incidence, and diabetes-associated conditions. The statistics for diabetes-associated conditions are based on self-reported data, hospitalization data, and Medicare data. For each condition, the toolkit reports the rate of the condition among people with diabetes and the number of cases attributable to diabetes.\n\nData sources: 2020-2021 Behavioral Risk Factor Surveillance System (BRFSS). Agency for Healthcare Research and Quality (AHRQ), Healthcare Cost and Utilization Project (HCUP), State Inpatient Databases (SID). 2021 Medicare Master Beneficiary Summary (MBS) File. For detail, see the Technical Report: https://www.cdc.gov/diabetes/burden-toolkit/docs/technical_documentation.pdf"
+    },
+    {
+      "id": "3070dfb6-a7f1-4730-8bbc-8b48887e6d59",
+      "title": "Diabetes State Burden Toolkit - Economic Burden",
+      "url": "https://data.virginia.gov/dataset/diabetes-state-burden-toolkit-economic-burden",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/58s6-s24x/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/58s6-s24x/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/58s6-s24x/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/58s6-s24x/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/58s6-s24x/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/58s6-s24x/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "This section of the Burden Toolkit reports the economic burden of diabetes in your state and consists of medical (direct) costs, indirect costs, and costs from the perspective of State Medicaid Programs, private insurers, and employers.\n\nData Sources: 2014 and 2021 National Health Expenditure Accounts (NHEA) from CMS. 2014 State Health Expenditure Accounts (SHEA) from CMS. 2022 Current Population Survey. 2021 Behavioral Risk Factor Surveillance Survey (BRFSS). 2015-2019 Medical Expenditure Panel Survey (MEPS). 2013-2021 National Health Interview Survey (NHIS), 2022. 2021 CDC Wonder. For detail, see the Technical Report: https://www.cdc.gov/diabetes/burden-toolkit/docs/technical_documentation.pdf"
+    },
+    {
+      "id": "148f26ad-faed-4d69-987f-3bde6902b9a4",
+      "title": "AH Provisional Diabetes Death Counts for 2020",
+      "url": "https://data.virginia.gov/dataset/ah-provisional-diabetes-death-counts-for-2020",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/qdcb-uzft/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/qdcb-uzft/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/qdcb-uzft/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "Provisional death counts of diabetes, coronavirus disease 2019 (COVID-19) and other select causes of death, by month, sex, and age."
+    },
+    {
+      "id": "f6e267d7-15a7-4411-9a80-1c8408649bd5",
+      "title": "Anti-atherogenic effects of fibrates in type 2 diabetes",
+      "url": "https://data.virginia.gov/dataset/anti-atherogenic-effects-of-fibrates-in-type-2-diabetes",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC59525/",
+          "format": "HTML"
+        }
+      ],
+      "description": "Type 2 diabetes is an increasing cause of premature coronary heart disease. Several trials with lipid-modifying therapy have included sufficient numbers of diabetics to indicate that treatment of diabetic dyslipidaemia with either fibrates or statins reduces the risk of future coronary events in such patients. However, until recently no reported study had been designed specifically to investigate the effects of intervening in patients with type 2 diabetes. The Diabetes Atherosclerosis Intervention Study (DAIS) is an angiographic study in which 418 diabetic subjects were randomized to micronised fenofibrate or placebo groups. After 3 years of treatment, the fenofibrate group had a significantly reduced rate of progression of coronary atherosclerosis. This study, when considered with the results of other studies that have included diabetics, has important implications for the treatment of diabetic dyslipidaemia. The evidence that is currently available supports a place for both fibrates and statins, either as monotherapy or in combination, in the treatment of diabetic dyslipidaemia."
+    },
+    {
+      "id": "d26eda7b-11d6-4433-838c-03a4f9155459",
+      "title": "Centers for Disease Control and Prevention (CDC) Diabetes Atlas",
+      "url": "https://data.virginia.gov/dataset/centers-for-disease-control-and-prevention-cdc-diabetes-atlas",
+      "publisher": "Other",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://gis.cdc.gov/grasp/diabetes/DiabetesAtlas.html#",
+          "format": "HTML"
+        }
+      ],
+      "description": "Visualizations and data related to diagnosed Diabetes among various age groups, genders, race and ethnicity, education and stratifications.\n\n<!-- SIMILAR_DATASETS_START -->\n---\n### 🔗 Related Datasets\n\n- [Centers for Disease Control and Prevention (CDC) COVID-19 Data Tracker sets](https://odgavaprod.ogopendata.com//dataset/e9225eb5-ff78-485c-b19b-b4f406ccf580) — *Other*\n- [Selected Trend Table from Health, United States, 2011. Diabetes prevalence and glycemic control among adults 20 years of age and over, by sex, age, and race and Hispanic origin: United States, selected years 1988 - 1994 through 2003 - 2006](https://odgavaprod.ogopendata.com//dataset/47cbfcc0-b817-4b9d-9ff1-738c574454da) — *HealthData.Gov*\n\n---"
+    },
+    {
+      "id": "1c57d4d1-6522-434c-9663-eb8a3cc440cf",
+      "title": "Losartan and diabetic nephropathy: commentaries on the RENAAL study",
+      "url": "https://data.virginia.gov/dataset/losartan-and-diabetic-nephropathy-commentaries-on-the-renaal-study",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC116616/",
+          "format": "HTML"
+        }
+      ],
+      "description": "The RENAAL (Reduction of Endpoints in NIDDM with the Angiotensin II Antagonist Losartan) study is a multinational, double-blind, randomized, placebo controlled trial which was recently published. It was aimed to evaluate the effect of the angiotensin receptor blocker losartan in patients with diabetic nephropathy. The primary efficacy measure was the time to the first event of the composite end point of a doubling of serum creatinine, end-stage renal disease, or death. The conclusion was that losartan led to significant improvement in renal outcomes, that was beyond that attributable to blood pressure control in patients with type 2 diabetes and nephropathy.\n        The perusal of the report raises concern, regarding to both the patient population as well as the outcome measures. At randomization, the placebo group included more patients with angina, myocardial infarction and lipid disorders than the losartan group. Information on glucose metabolism was disregarded, and data on antihyperglycemic therapy – which may have undesirable influences on cardiac performance – were not included in a multivariate analysis. In addition, only data on first hospitalization were reported, whilst information on total specific-cause hospitalizations was disregarded, thus potentially masking further unfavorable events. Furthermore, creatinine seems not to be a reliable surrogate end point. Based on its mechanism of action, losartan may possess favorable renoprotective properties. However, due "
+    },
+    {
+      "id": "908d25ce-55e2-49d9-9322-f332a8961fb3",
+      "title": "Apolipoprotein E gene polymorphism is not a strong risk factor for diabetic nephropathy and retinopathy in Type I diabetes: case-control study",
+      "url": "https://data.virginia.gov/dataset/apolipoprotein-e-gene-polymorphism-is-not-a-strong-risk-factor-for-diabetic-nephropathy-and-ret",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC37310/",
+          "format": "HTML"
+        }
+      ],
+      "description": "Background\n          The gene encoding apolipoprotein E (APOE) has been proposed as a candidate gene for vascular complications in Type I diabetes. This study aimed to investigate the influence of three-allelic variations in the APOE gene for the development of diabetic retinopathy and nephropathy.\n        \n        \n          Results\n          Neither APOE alleles frequencies or APOE genotypes frequencies differed between Type I diabetic groups either with or without nephropathy. Similar results were found for patients with and without diabetic retinopathy.\n        \n        \n          Conclusions\n          APOE gene polymorphism does not determine genetic susceptibility for the development of diabetic retinopathy in Type I diabetes patients. Association between APOE gene polymorphism and diabetic nephropathy may be weak or moderate, but not strong."
+    },
+    {
+      "id": "c178be99-aa77-487f-b36c-5d8ecae5b529",
+      "title": "Diagnostic criteria for diabetes revisited: making use of combined criteria",
+      "url": "https://data.virginia.gov/dataset/diagnostic-criteria-for-diabetes-revisited-making-use-of-combined-criteria",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC65682/",
+          "format": "HTML"
+        }
+      ],
+      "description": "Background\n          Existing cut-offs for fasting plasma glucose (FPG) and post-load glucose (2hPG) criteria are not equivalent in the diagnosis of diabetes and glucose intolerance. Adjusting cut-offs of single measurements have not helped so we undertook this project to see if they could be complementary.\n        \n        \n          Methods\n          We performed oral glucose tolerance tests and mean levels of hemoglobin A1c (HbA1c) measurements on 43 patients referred to a diabetes clinic for possible diabetes. Results of single and combined use of the FPG and 2hPG criteria were evaluated against the levels of HbA1c and results re-interpreted in the light of existing reports in the literature.\n        \n        \n          Results\n          Our results confirm that the FPG and the 2hPG, being specific and sensitive respectively for the presence of glucose intolerance or diabetes, are not equivalent. They are shown to be indeed complementary and a re-definition of diagnostic criteria based on their combined use is proposed.\n        \n        \n          Conclusions\n          We conclude that altering single measurement cut-offs for the diagnosis of diabetes and altered glucose tolerance will not result in better outcomes. We present the case for a combined criteria in the diagnosis and definition of diabetes with a FPG≥7 mmol/L AND 2-hour glucose ≥7.8 mmol/L being used to define diabetes while a FPG<7 mmol/L AND 2-hour glucose <7.8 mmol/L being used to define normality. Discord"
+    }
+  ],
+  "page_receipts": [
+    158
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 126,
+  "next_offset": 10,
+  "response_sha256": "57227a367c98be5dd28739da5c6cabf1b8b0e4e520652c59e734e4fd0806514c",
+  "search_complete": false
+}

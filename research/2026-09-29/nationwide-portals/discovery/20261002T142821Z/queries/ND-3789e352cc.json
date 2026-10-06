@@ -1,0 +1,957 @@
+{
+  "jurisdiction_code": "ND",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T14:29:04.790002+00:00",
+  "candidates": [
+    {
+      "id": "1559f698420942b08e06138ccecd5a74",
+      "title": "NDGISHUB State Parks",
+      "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_State_Parks/FeatureServer",
+      "publisher": "NDGISHDP-GNF",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this data layer is to provide a geographic representation of the state parks.  Other properties owned and/or managed by the ND Parks and Recreation Department are included in this layer.  This dataset is primarily used as a framework layer for use in GIS and other mapping applications and does not represent a land survey of the boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -103.62538584804335,
+                48.99934748151806
+              ],
+              [
+                -97.437428380995,
+                48.99934748151806
+              ],
+              [
+                -97.437428380995,
+                45.96510463406303
+              ],
+              [
+                -103.62538584804335,
+                45.96510463406303
+              ],
+              [
+                -103.62538584804335,
+                48.99934748151806
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p style='margin:0 0 11 0;'><span>6/1/2026 - Update.  Pembina Gorge State Recreation Area was renamed to Pembina Gorge State Park.</span></p><p style='margin:0 0 11 0;'><span>11/25/2024 - Update.  Sully Creek State Park was renamed to Rough Rider State Park.  The Missouri River State Natural Area boundary was removed due to changes in management.  </span></p><p style='margin:0 0 11 0;'><span>4/27/2023 - Update.  Changes were made to the boundary of Lake Metigoshe State Park, Little Missouri State Park, and Fort Stevenson State Park.</span></p><p style='margin:0 0 11 0;'><span><span>8/12/2021 – Update. Lewis and Clark Interpretive Center, Fahlgren Park, and Fort Mandan were removed from this layer as they are no longer owned or managed by NDPRD.</span></span></p><p style='margin:0 0 11 0;'><span>This data layer depicts state parks, recreation areas, nature preserve, and natural areas owned and/or managed by the North Dakota Parks and Recreation Department. This may not be a complete representation of lands owned and/or managed by NDPRD.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This data is for reference purposes only. The North Dakota Parks and Recreation Department does not guarantee this map is free from errors and disclaims any legal responsibility or liability for interpretations made from this data. The State of North Dakota has compiled this data according to conventional cartographic standards, using what is thought to be the most reliable information available. This data is intended to make results of research available at the earliest possible date, but is not intended to constitute final or formal publication. The State of North Dakota makes every effort to provide virus-free files but does not guarantee uncorrupted files. The State of North Dakota does not guarantee this data to be free from errors, inaccuracies, or viruses, and disclaims any responsibility or liability for interpretations or decisions based on this data.</span></p><p><span /></p><p><span /></p></div></div></div>",
+        "title": "NDGISHUB State Parks",
+        "type": "Feature Service",
+        "orgId": "GOcSXpzwBHyk2nog",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782146026000,
+        "avgRating": 0,
+        "id": "1559f698420942b08e06138ccecd5a74",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "NDGISHDP-GNF",
+        "accessInformation": "North Dakota Parks and Recreation Department.",
+        "largeThumbnail": null,
+        "lastViewed": 1782144000000,
+        "thumbnail": "thumbnail/thumbnail1782146024004.png",
+        "languages": [],
+        "created": 1637766333000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_State_Parks/FeatureServer",
+        "tags": [
+          "NDPRD",
+          "North Dakota Parks & Recreation Department",
+          "boundaries",
+          "state parks"
+        ],
+        "numViews": 224281,
+        "numComments": 0,
+        "size": 155648,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NDGISHUB_State_Parks",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "North Dakota Parks & Recreation Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/1559f698420942b08e06138ccecd5a74"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "90250e0ee4ba4c96aa5f25e3b3fe35b1",
+      "title": "NDGF PLOTS Guide",
+      "url": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/90250e0ee4ba4c96aa5f25e3b3fe35b1",
+      "publisher": "bhosek@nd.gov_ndgf",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "North Dakota Game and Fish Department PLOTS Guide",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -103.57842922630178,
+                48.17146152193784
+              ],
+              [
+                -98.59612942161452,
+                48.17146152193784
+              ],
+              [
+                -98.59612942161452,
+                46.24242782802677
+              ],
+              [
+                -103.57842922630178,
+                46.24242782802677
+              ],
+              [
+                -103.57842922630178,
+                48.17146152193784
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Online",
+          "Explorer Web Map",
+          "Map",
+          "Online Map",
+          "useOnly",
+          "Web Map"
+        ],
+        "description": "<p>The North Dakota Game and Fish Departments PLOTS Guide web map provides users access to the digital version of the Departments annual publication. This service includes state and federal lands as well as the Private Lands Open To Sportsmen (PLOTS) tracts that may assist sportsmen with hunting access. Additionally, this service is frequently updated and may reflect changes inconsistent with the annual guide. As with the published hard copy please refer to Department website for information concerning public use, access or regulations or contact the North Dakota Game and Fish Department directly at 701-328-6300.</p>",
+        "licenseInfo": "<p>North Dakota Game and Fish Department (NDGF) web services are constructed for Department map applications. Commercial use of these services without consent form the NDGF is prohibited. Occasional or limited use of these services is acceptable as Department resources or applications are not impacted. The NDGF reserves the right to limit, restrict or discontinue services at any time.</p><p>The North Dakota Game and Fish Department has compiled this data according to conventional cartographic standards using the most reliable information available. The spatial accuracy of this data may vary depending on the source data used and may be inappropriate to use for legal purposes and/or navigation. Where applicable, improvements may be incorporated as more reliable source data become available. </p><p>The State of North Dakota makes every effort to provide virus-free files but does not guarantee uncorrupted files.  The North Dakota Game and Fish Department does not guarantee this data to be free from errors, inaccuracies, or viruses, and disclaims any responsibility or liability for interpretations or decisions based on this data.</p>",
+        "ownerId": "2023157b8a8244f3ae2e459853ce3f2c",
+        "title": "NDGF PLOTS Guide",
+        "type": "Web Map",
+        "orgId": "XxjEOrgRRZ0iEKL7",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785270625000,
+        "avgRating": 0,
+        "id": "90250e0ee4ba4c96aa5f25e3b3fe35b1",
+        "categories": [],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "bhosek@nd.gov_ndgf",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1785268800000,
+        "thumbnail": "thumbnail/D_3A_MyFolders_GIS_DEVELOPMENT_NDGF_MAPSERVICES_GRAPHICS_ArcGISOnline_plots.jpg",
+        "languages": [],
+        "created": 1363320098000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          "NDGF",
+          "game",
+          "PLOTS",
+          "hunting",
+          "lands",
+          "PLI"
+        ],
+        "numViews": 743450,
+        "numComments": 0,
+        "size": 13866,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "North Dakota Game and Fish Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/90250e0ee4ba4c96aa5f25e3b3fe35b1"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5ea9b3ac292a41e7bc1d8e4ce295e479",
+      "title": "Species Range-Nongame",
+      "url": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/5ea9b3ac292a41e7bc1d8e4ce295e479",
+      "publisher": "NDGameFish",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "ND Game and Fish Nongame Species Range",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -105.94386992187192,
+                49.280165704051434
+              ],
+              [
+                -95.77053007812464,
+                49.280165704051434
+              ],
+              [
+                -95.77053007812464,
+                45.41946369446142
+              ],
+              [
+                -105.94386992187192,
+                45.41946369446142
+              ],
+              [
+                -105.94386992187192,
+                49.280165704051434
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Online",
+          "Explorer Web Map",
+          "Map",
+          "Online Map",
+          "useOnly",
+          "Web Map"
+        ],
+        "description": "<font color='#000000' face='Calibri' size='3'>The ND Game and Fish Department Nongame Species Range web map includes various species range information for black tailed prairie dog, golden eagle, plover and tern. These species ranges represent broad or generalized range information that may be applicable to various or multiple life cycle aspects of each species. Additional range information may be available that identifies specific life cycle aspects of each species where data is available. Please contact the Department for specific inquiries. </font>",
+        "licenseInfo": "<p>North Dakota Game and Fish Department (NDGF) web services are constructed for Department map applications. Commercial use of these services without consent form the NDGF is prohibited. Occasional or limited use of these services is acceptable as Department resources or applications are not impacted. The NDGF reserves the right to limit, restrict or discontinue services at any time.</p><p>The North Dakota Game and Fish Department has compiled this data according to conventional cartographic standards using the most reliable information available. The spatial accuracy of this data may vary depending on the source data used and may be inappropriate to use for legal purposes and/or navigation. Where applicable, improvements may be incorporated as more reliable source data become available. </p><p>The State of North Dakota makes every effort to provide virus-free files but does not guarantee uncorrupted files.  The North Dakota Game and Fish Department does not guarantee this data to be free from errors, inaccuracies, or viruses, and disclaims any responsibility or liability for interpretations or decisions based on this data.</p>",
+        "title": "Species Range-Nongame",
+        "type": "Web Map",
+        "orgId": "XxjEOrgRRZ0iEKL7",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1644631180000,
+        "avgRating": 0,
+        "id": "5ea9b3ac292a41e7bc1d8e4ce295e479",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "NDGameFish",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1756256400000,
+        "thumbnail": "thumbnail/m-nongame-range.jpg",
+        "languages": [],
+        "created": 1396632170000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          "NDGF",
+          "game",
+          "species",
+          "wildlife",
+          "range",
+          "nongame"
+        ],
+        "numViews": 1645,
+        "numComments": 0,
+        "size": 5182,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "North Dakota Game and Fish Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/5ea9b3ac292a41e7bc1d8e4ce295e479"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3e6100a0369a4c23ab1a58fb39699d77",
+      "title": "NDGISHUB Wildlife Management Areas",
+      "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer",
+      "publisher": "NDGISHDP-GNF",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -104.02379554651355,
+                49.00026818530135
+              ],
+              [
+                -96.9184523909138,
+                49.00026818530135
+              ],
+              [
+                -96.9184523909138,
+                45.9360208784307
+              ],
+              [
+                -104.02379554651355,
+                45.9360208784307
+              ],
+              [
+                -104.02379554651355,
+                49.00026818530135
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>The State of North Dakota has compiled this data according to conventional cartographic standards, using what is thought to be the most reliable information available. This data is intended to make results of research available at the earliest possible date, but is not intended to constitute final or formal publication. The State of North Dakota makes every effort to provide virus-free files but does not guarantee uncorrupted files. The State of North Dakota does not guarantee this data to be free from errors, inaccuracies, or viruses, and disclaims any responsibility or liability for interpretations or decisions based on this data.</span></p></div></div></div>",
+        "title": "NDGISHUB Wildlife Management Areas",
+        "type": "Feature Service",
+        "orgId": "GOcSXpzwBHyk2nog",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1757697300000,
+        "avgRating": 0,
+        "id": "3e6100a0369a4c23ab1a58fb39699d77",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "NDGISHDP-GNF",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1765814400000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1637766471000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wildlife_Management_Areas/FeatureServer",
+        "tags": [
+          "Wildlife",
+          "Boundary",
+          "Game",
+          "Management",
+          "WMA",
+          "Wildlife Management Area",
+          "North Dakota Game and Fish Department"
+        ],
+        "numViews": 178191,
+        "numComments": 0,
+        "size": 1933312,
+        "listed": false,
+        "scoreCompleteness": 66,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NDGISHUB_Wildlife_Management_Areas",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of North Dakota",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/3e6100a0369a4c23ab1a58fb39699d77"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c9dd4ee9f04c4c1cb9b0569876c95e5c",
+      "title": "NDGISHUB Bighorn Sheep Critical Range",
+      "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Bighorn_Sheep_Critical_Range/FeatureServer",
+      "publisher": "NDGISHDP-GNF",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data layer depicts North Dakota Game and Fish Department bighorn sheep critical range. The species range represents broad or generalized range information that may be applicable to various or multiple life cycle aspects of a species.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -103.702462,
+                47.701119
+              ],
+              [
+                -102.83204,
+                47.701119
+              ],
+              [
+                -102.83204,
+                46.599262
+              ],
+              [
+                -103.702462,
+                46.599262
+              ],
+              [
+                -103.702462,
+                47.701119
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "",
+        "licenseInfo": "The North Dakota Game and Fish Department has compiled this data according to conventional cartographic standards, using what is thought to be the most reliable information available. This data is intended to make results of research available at the earliest possible date, but is not intended to constitute final or formal publication. The State of North Dakota makes every effort to provide virus-free files but does not guarantee uncorrupted files. The State of North Dakota does not guarantee this data to be free from errors, inaccuracies, or viruses, and disclaims any responsibility or liability for interpretations or decisions based on this data.",
+        "title": "NDGISHUB Bighorn Sheep Critical Range",
+        "type": "Feature Service",
+        "orgId": "GOcSXpzwBHyk2nog",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1641324392000,
+        "avgRating": 0,
+        "id": "c9dd4ee9f04c4c1cb9b0569876c95e5c",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "NDGISHDP-GNF",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1756922400000,
+        "thumbnail": "thumbnail/thumbnail1641324391576.png",
+        "languages": [],
+        "created": 1641323532000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Bighorn_Sheep_Critical_Range/FeatureServer",
+        "tags": [
+          "wildlife",
+          "bighorn",
+          "sheep",
+          "range",
+          "game"
+        ],
+        "numViews": 2695,
+        "numComments": 0,
+        "size": 172032,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NDGISHUB_Bighorn_Sheep_Critical_Range",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "North Dakota Game and Fish Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/c9dd4ee9f04c4c1cb9b0569876c95e5c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "960f116a4b834dd78951743ab0037b86",
+      "title": "NDGISHUB Pronghorn High Use Fawning and Foraging Areas",
+      "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Pronghorn_High_Use_Fawning_and_Foraging_Areas/FeatureServer",
+      "publisher": "NDGISHDP-GNF",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of the data is to provide a comprehensive list and spatial location of North Dakota Pronghorn Antelope Range Map. This dataset is primarily used as a framework data layer for use in GIS and other mapping applications and does not represent a land survey of the range.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -104.22789686004737,
+                48.56477056196837
+              ],
+              [
+                -101.4375861021451,
+                48.56477056196837
+              ],
+              [
+                -101.4375861021451,
+                45.91042590112152
+              ],
+              [
+                -104.22789686004737,
+                45.91042590112152
+              ],
+              [
+                -104.22789686004737,
+                48.56477056196837
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "This data layer depicts North Dakota Game and Fish Department Pronghorn Antelope Fawning\\foraging Areas Map.",
+        "licenseInfo": "The North Dakota Game and Fish Department has compiled this data according to conventional cartographic standards, using what is thought to be the most reliable information available. This data is intended to make results of research available at the earliest possible date, but is not intended to constitute final or formal publication. The State of North Dakota makes every effort to provide virus-free files but does not guarantee uncorrupted files. The State of North Dakota does not guarantee this data to be free from errors, inaccuracies, or viruses, and disclaims any responsibility or liability for interpretations or decisions based on this data.",
+        "title": "NDGISHUB Pronghorn High Use Fawning and Foraging Areas",
+        "type": "Feature Service",
+        "orgId": "GOcSXpzwBHyk2nog",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1642544441000,
+        "avgRating": 0,
+        "id": "960f116a4b834dd78951743ab0037b86",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "NDGISHDP-GNF",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1756911600000,
+        "thumbnail": "thumbnail/thumbnail1642544440444.png",
+        "languages": [],
+        "created": 1642539809000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Pronghorn_High_Use_Fawning_and_Foraging_Areas/FeatureServer",
+        "tags": [
+          "pronghorn",
+          "range",
+          "antelope",
+          "fawning",
+          "foraging",
+          "game",
+          "wildlife",
+          "North Dakota"
+        ],
+        "numViews": 1849,
+        "numComments": 0,
+        "size": 62226432,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NDGISHUB_Pronghorn_High_Use_Fawning_and_Foraging_Areas",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "North Dakota Game and Fish Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/960f116a4b834dd78951743ab0037b86"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "8e14ea5445404b9191b36e1dc5c2e5cd",
+      "title": "NDGISHUB Lake Contours",
+      "url": "https://ndgishub.nd.gov/arcgis/rest/services/Applications/GNF_LakeContoursCached/MapServer",
+      "publisher": "NDGISHDP-GNF",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data layer depicts North Dakota Game and Fish Department lake contours/ bathymetry for North Dakota fishing waters. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -11582671.2145,
+                6274962.284
+              ],
+              [
+                -10748396.8439,
+                6274962.284
+              ],
+              [
+                -10748396.8439,
+                5769936.3854
+              ],
+              [
+                -11582671.2145,
+                5769936.3854
+              ],
+              [
+                -11582671.2145,
+                6274962.284
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Multilayer",
+          "Service",
+          "Tiled"
+        ],
+        "description": "This data is used for the interpretation of North Dakota Game and Fish Department fishing waters bathymetry. This dataset is primarily used as a framework data layer for use in GIS and other mapping applications. Additional information including lake statistics and bathymetric maps are available at https://gf.nd.gov/fishing/fishing-waters.",
+        "licenseInfo": "The North Dakota Game and Fish Department has compiled this data according to conventional cartographic standards, using what is thought to be the most reliable information available. This data is intended to make results of research available at the earliest possible date, but is not intended to constitute final or formal publication. The State of North Dakota makes every effort to provide virus-free files but does not guarantee uncorrupted files. The State of North Dakota does not guarantee this data to be free from errors, inaccuracies, or viruses, and disclaims any responsibility or liability for interpretations or decisions based on this data.",
+        "title": "NDGISHUB Lake Contours",
+        "type": "Map Service",
+        "orgId": "GOcSXpzwBHyk2nog",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1750253028000,
+        "avgRating": 0,
+        "id": "8e14ea5445404b9191b36e1dc5c2e5cd",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "NDGISHDP-GNF",
+        "accessInformation": "North Dakota Game and Fish Department and the ND GIS Hub",
+        "largeThumbnail": null,
+        "lastViewed": 1756908000000,
+        "thumbnail": "thumbnail/thumbnail1750252427397.png",
+        "languages": [],
+        "created": 1750252285000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://ndgishub.nd.gov/arcgis/rest/services/Applications/GNF_LakeContoursCached/MapServer",
+        "tags": [
+          "game",
+          "fish",
+          "fishing",
+          "fisheries",
+          "lake",
+          "contours",
+          "bathymetry"
+        ],
+        "numViews": 527,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of North Dakota",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/8e14ea5445404b9191b36e1dc5c2e5cd"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b725662abf824feeb82ddf8c139255ac",
+      "title": "NDGISHUB Wild Turkey Range",
+      "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wild_Turkey_Range/FeatureServer",
+      "publisher": "NDGISHDP-GNF",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of the data is to provide a comprehensive list and spatial location of North Dakota Sharptailed Grouse Units. This dataset is primarily used as a framework data layer for use in GIS and other mapping applications and does not represent a land survey of the hunting units.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -104.25682190529363,
+                49.05320604048835
+              ],
+              [
+                -96.32766356252463,
+                49.05320604048835
+              ],
+              [
+                -96.32766356252463,
+                45.87331524244927
+              ],
+              [
+                -104.25682190529363,
+                45.87331524244927
+              ],
+              [
+                -104.25682190529363,
+                49.05320604048835
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "This data layer depicts North Dakota Game and Fish Department Turkey Range.",
+        "licenseInfo": "The North Dakota Game and Fish Department has compiled this data according to conventional cartographic standards, using what is thought to be the most reliable information available. This data is intended to make results of research available at the earliest possible date, but is not intended to constitute final or formal publication. The State of North Dakota makes every effort to provide virus-free files but does not guarantee uncorrupted files. The State of North Dakota does not guarantee this data to be free from errors, inaccuracies, or viruses, and disclaims any responsibility or liability for interpretations or decisions based on this data.",
+        "title": "NDGISHUB Wild Turkey Range",
+        "type": "Feature Service",
+        "orgId": "GOcSXpzwBHyk2nog",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1642711777000,
+        "avgRating": 0,
+        "id": "b725662abf824feeb82ddf8c139255ac",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "NDGISHDP-GNF",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1756911600000,
+        "thumbnail": "thumbnail/thumbnail1642711776667.png",
+        "languages": [],
+        "created": 1642694182000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/GOcSXpzwBHyk2nog/arcgis/rest/services/NDGISHUB_Wild_Turkey_Range/FeatureServer",
+        "tags": [
+          "fish",
+          "range",
+          "units",
+          "turkey",
+          "hunting",
+          "game",
+          "wildlife",
+          "North Dakota",
+          "species"
+        ],
+        "numViews": 1503,
+        "numComments": 0,
+        "size": 843776,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NDGISHUB_Wild_Turkey_Range",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "North Dakota Game and Fish Department",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items/b725662abf824feeb82ddf8c139255ac"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    185
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 8,
+  "next_offset": 8,
+  "response_sha256": "f865707e0f9214623900315db2f350779528491c911564404a5bdcaf374c0b0b",
+  "search_complete": true
+}

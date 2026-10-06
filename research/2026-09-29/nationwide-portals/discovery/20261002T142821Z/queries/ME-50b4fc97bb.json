@@ -1,0 +1,392 @@
+{
+  "jurisdiction_code": "ME",
+  "query": "physical activity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T14:28:55.327733+00:00",
+  "candidates": [
+    {
+      "id": "ca6954e4d6544005be305118128f2b03",
+      "title": "MaineDEP_Head of Tide",
+      "url": "https://gis.maine.gov/mapservices/rest/services/dep/MaineHeadOfTide/MapServer/0",
+      "publisher": "John.Lynam@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Head of Tide data has been screen digitized with reference to Bill Hinkley's 1974 River Sampling Station description guide, USGS zero contour data, as well as salinty sampling results from the Maine DEP and Maine DMR.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.8722999999976,
+                45.19779999999847
+              ],
+              [
+                -67.13459999999775,
+                45.19779999999847
+              ],
+              [
+                -67.13459999999775,
+                43.092299999998545
+              ],
+              [
+                -70.8722999999976,
+                43.092299999998545
+              ],
+              [
+                -70.8722999999976,
+                45.19779999999847
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "Head of Tide data has been screen digitized with reference to Bill Hinkley's 1974 River Sampling Station description guide, USGS zero contour data, as well as salinty sampling results from the Maine Department of Environmental Protection and the Maine Department of Marine Resources. Data points may represent known or approximate Head of Tide location based on hydraulic activity, environmental sampling data, and/or zero contour data. Data is considered to be dynamic in a small degree due to land use, natural evolution, and human activities. Data is also subject to changes, updates, and revisons. Field Data Attribute info:HTtypeHS = based on sality and hydrological dataSAL = based on salinty samplingHYD = based on hydraulic information or dataEL = Enforcement Location Head of Tide for DMR & IF&WHTnotesSWQ = Staute Water Quality (can be arbritrary)RSS Hinckley 1974 = excerpt from Hinckley's 1974 River Sampling Station descriptionsZC = based on USGS zero contour data* note that an individual point may have one or more notes associated with itHTLocation:Completed where there is a noteable physical attribute associated with the point locationMisc Informaiton - Enforcement Location DescriptionsDMR and IFW are in agreement as to the location of head of tide on the Kennebec for enforcement purposes.DMR references head of tide as this:Due to the removal of Edwards dam, the “head of tide” in the Kennebec River is now at the downstream side of the power line located approximately 4,200 feet upstream of the Calumet Bridge at Old Fort Western in Augusta (formerly the Father Curran Bridge) for enforcement purposes.IFW references head of tide as this:From the downstream side of the Lockwood Dam to the downstream side of the power lines located about 4,200 feet above the Calumet Bridge in Augusta (head of tidewater):",
+        "licenseInfo": "<p><font color='#000000' size='3' style=''><font style='font-family: &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);'>This data is created for display and reference purposes only.  The data is considered to be dynamic in a small degree due to land use, natural evolution, and human activities. The data is also subject to changes, updates, and </font><font face='Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif'>revisions</font><font style='font-family: &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);'>.</font></font></p>",
+        "title": "MaineDEP_Head of Tide",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1761041807000,
+        "avgRating": 0,
+        "id": "ca6954e4d6544005be305118128f2b03",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "John.Lynam@maine.gov_maine",
+        "accessInformation": "Vicki Schmidt, GIS Environmental Specialist II\nMaine Department of Environmental Protection\nBureau of Land & Water Quality\nAugusta ME\n207-485-1482\nvicki.l.schmidt@maine.gov\n\nFMI\n\nhttp://www.maine.gov/dep/water/monitoring/index.html",
+        "largeThumbnail": null,
+        "lastViewed": 1772161200000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1563386284000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/mapservices/rest/services/dep/MaineHeadOfTide/MapServer/0",
+        "tags": [
+          "MaineDEP",
+          "MaineDMR",
+          "MEDEP BWQ",
+          "Water",
+          "Water Quality",
+          "Maine Water Quality",
+          "maine coastal waters",
+          "coastal",
+          "environment",
+          "oceans",
+          "MaineGeoLibrary"
+        ],
+        "numViews": 5010,
+        "numComments": 0,
+        "size": 74,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine Department of Environmental Protection",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/ca6954e4d6544005be305118128f2b03"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "584f6b86265042fd89edb2999834fd76",
+      "title": "Piping Plover and Least Tern Essential Habitat",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/EHPLVTRN/FeatureServer",
+      "publisher": "Jason.Czapiga@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Piping Plover and Least Tern nesting, feeding, and brood-rearing areas identified and mapped as Essential Habitat by the Maine Department of Inland Fisheries and Wildlife (MDIFW).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.61159311132964,
+                43.79877571370786
+              ],
+              [
+                -69.71430302781769,
+                43.79877571370786
+              ],
+              [
+                -69.71430302781769,
+                43.24392377345248
+              ],
+              [
+                -70.61159311132964,
+                43.24392377345248
+              ],
+              [
+                -70.61159311132964,
+                43.79877571370786
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<font color='#000000' size='3'>\n\n</font><p style='margin:0in 0in 0pt;'><span style='color:rgb(0, 0, 0); font-family:Calibri; font-size:medium;'>Piping plover (PIPL) and least tern (LETE) essential habitat\n(EH) focuses on coastal wetlands and sand dune systems to maintain nesting,\nfeeding, and brood-rearing habitats essential to conserving these species and\nto minimize human-related disturbance that can cause nest failure.\n&quot;Nesting&quot; means the presence of at least one PIPL/LETE nest, egg, or\nchick. A &quot;Nesting, feeding and brood-rearing area&quot; is a locality\nencompassing portions of coastal wetlands and coastal sand dune systems\n(including subtidal, intertidal, beach, and associated salt marshes and\nwetlands) and is used by at least one pair of nesting PIPL/LETE. Areas\nidentified and mapped as essential habitat must have a record of nesting by at\nleast one pair of piping plovers or least terns during the most recent 10 years\nand the lack of occupancy is not related to predation or competition from other\nspecies, or to any human-related activity. The area must be considered\nessential to the achievement of the Maine Department of Inland Fisheries and\nWildlife (MDIFW) management goals and objectives for piping plovers or least\nterns. This dataset contains locations for 15 PIPL/LETE nesting, feeding, and\nbrood-rearing areas identified and mapped as essential habitat by the MDIFW.</span><br /></p><p style='margin:0in 0in 0pt;'><span style='color:rgb(0, 0, 0); font-family:Calibri; font-size:medium;'><br /></span></p><p style='margin:0in 0in 0pt;'><font face='Calibri'><font color='#000000' size='3'>Essential Wildlife Habitats are areas currently or historically providing physical or biological features essential to the conservation of an endangered or threatened species in Maine and which may require special management considerations.</font>  <font color='#000000' size='3'>As required under the Maine Endangered Species Act, a state agency or municipal government shall not permit, license, fund or carry out projects that will significantly alter an Essential Habitat or violate protection guidelines adopted for the habitat.</font><font color='#000000' size='3'>  </font><font color='#000000' size='3'>Landowners, project planners, municipalities or state agencies considering activities in or near an Essential Habitat should immediately contact an MDIFW Regional Wildlife Biologist for assistance.</font></font></p><p style='margin:0in 0in 0pt;'><font color='#000000' size='3'></font><font color='#000000' size='3'></font></p><p style='margin:0in 0in 0pt; color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; font-style:normal; font-variant-ligatures:normal; font-variant-caps:normal; font-weight:400; letter-spacing:normal; text-align:start; text-indent:0px; text-transform:none; word-spacing:0px; background-color:rgb(255, 255, 255); text-decoration-style:initial; text-decoration-color:initial;'><font color='#000000' face='Calibri' size='3'> </font></p><font color='#000000' size='3'>\n\n</font><p style='margin:0in 0in 0pt;'><font color='#000000' face='Calibri' size='3'>In support of Maine's Endangered Species Act (MESA), this\ndataset was developed to designate essential habitat for piping plovers and\nleast terns. This designation provides special protection essential to the\nconservation of these species by maintaining nesting, feeding, and brood-rearing\nhabitats and minimizing human-related disturbance that can cause nesting\nfailure. Protection is focused on the coastal wetlands and coastal sand dune\nsystems used by nesting piping plovers or least terns.</font></p><font color='#000000' size='3'>\n\n</font>",
+        "licenseInfo": "<font color='#000000' size='3'>  </font><div><div><font color='#000000' size='3' style='font-family:Calibri;'>Essential Wildlife Habitat pertains only to definitions under Maine's endangered species laws (12 MRSA, Chapter 713, Subchapter V, Sections 7754 and 7755-A) and regulations (MDIFW Rules, Chapter 8.05).</font><span style='font-family:Calibri;'>  </span><font color='#000000' size='3' style='font-family:Calibri;'>Information about and mapped locations of other endangered and threatened species habitats, &quot;Significant Wildlife Habitat&quot; (38 MRSA, Chapter 3, Subchapter 1, Section 480-B).</font><font face='Arial' size='3'><br /></font></div><ul><li><span style='font-family:Arial;'><font size='3'>These data may not be distributed or sold to other users. </font></span></li><li><span style='font-family:Arial;'><font size='3'>Use of these data for any purpose other than its intended one as described above is unauthorized. </font></span></li><li><span style='font-family:Arial;'><font size='3'>MDIFW strongly recommends a follow-up consultation with Department staff for more information and site-specific assistance. </font></span></li></ul></div><p><font size='3'><font face='Arial'>For more information visit our </font><a href='https://www.maine.gov/ifw/programs-resources/environmental-review/index.html' target='_blank' rel='nofollow ugc noopener noreferrer'>environmental-review website</a><font face='Arial'> or </font><a href='mailto:IFWEnvironmentalReview@maine.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>email</a><font face='Arial'>.</font></font></p><font color='#000000' size='3'>  </font>",
+        "title": "Piping Plover and Least Tern Essential Habitat",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1682445013000,
+        "avgRating": 0,
+        "id": "584f6b86265042fd89edb2999834fd76",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Biota"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Jason.Czapiga@maine.gov_maine",
+        "accessInformation": "Maine Department of Inland Fisheries and Wildlife",
+        "largeThumbnail": null,
+        "lastViewed": 1754420400000,
+        "thumbnail": "thumbnail/thumbnail1595522839500.png",
+        "languages": [],
+        "created": 1538144002000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/EHPLVTRN/FeatureServer",
+        "tags": [
+          "Maine",
+          "MaineIFW",
+          "MDIFW",
+          "Maine Department of Inland Fisheries and Wildlife",
+          "biota",
+          "environment",
+          "Piping Plover",
+          "Least Tern",
+          "Essential Habitat",
+          "geolibrary"
+        ],
+        "numViews": 41238,
+        "numComments": 0,
+        "size": 663552,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "EHPLVTRN",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine Department of Inland Fisheries and Wildlife",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/584f6b86265042fd89edb2999834fd76"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "627b1ed27ea24299afdb13d8346f8a6c",
+      "title": "Maine Coastal Program: Tidal Restriction Atlas ",
+      "url": "https://experience.arcgis.com/experience/627b1ed27ea24299afdb13d8346f8a6c",
+      "publisher": "Stacia.Reynolds@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "In collaboration with partners, Maine Coastal Program created this online tool to help communities, road owners, conservation groups, and others identify tidal restrictions including culverts, bridges, and dams, in their region. This Atlas is intended to facilitate efforts of community resilience and habitat restoration throughout Maine. The Atlas also maps structures that are not currently in the tidal zone, but may become influenced by tidal waters given any of the sea level rise scenarios developed by Maine Geological Survey.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "Metadata",
+          "modified: 1764966218639",
+          "publishVersion:1.19.0",
+          "Ready To Use",
+          "status: Published",
+          "version:1.19.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<figure style='width:1074pt;'>Attribute Table Data Field Alias Key<br /><br /><table border='0' cellpadding='0' cellspacing='0' style='border-collapse:collapse;' width='1432'><tbody><tr height='52' style='height:39.0pt;'><td height='52' style='height:39.0pt; width:84pt;' width='112'>Data Field Name</td><td style='width:218pt;' width='290'>Field Alias</td><td style='width:629pt;' width='839'>Description<span></span></td><td style='width:143pt;' width='191'>Source of data</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>AbutHt_FT</td><td style='width:218pt;' width='290'>Abutment Height (ft) (USFWS)</td><td style='width:629pt;' width='839'>Abutment height in feet (USFWS).</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='80' style='height:60.0pt;'><td height='80' style='height:60.0pt;'>Alewife</td><td style='width:218pt;' width='290'>Alewife Habitat</td><td style='width:629pt;' width='839'>The stream provides alewife habitat and critical access between spawning habitat and the marine environment. Data sources include Department of Marine Resources, Downeast Salmon Federation, and Wells National Estuarine Research Reserve.</td><td style='width:143pt;' width='191'>MCP, Maine Stream Habitat Viewer, DMR, Wells NERR, Downeast Salmon Federation</td></tr><tr height='90' style='height:67.5pt;'><td height='90' style='height:67.5pt;'>Atl_Salmon</td><td style='width:218pt;' width='290'>Atlantic Salmon Habitat</td><td style='width:629pt;' width='839'>The stream provides Atlantic salmon habitat and critical access between spawning habitat and the marine environment. Data sources include Department of Marine Resources and Maine Stream Habitat Viewer.</td><td style='width:143pt;' width='191'>MCP, DMR, USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>AtlSal_Mod</td><td style='width:218pt;' width='290'>Atlantic Salmon Modeled Rearing Habitat</td><td style='width:629pt;' width='839'>The stream is part of Atlantic salmon modeled rearing habitat according to USFWS.</td><td style='width:143pt;' width='191'>MCP, USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>BLOCK</td><td style='width:218pt;' width='290'>Percentage Blocked<span></span></td><td style='width:629pt;' width='839'>Percentage of structure that is blocked by debris at time of USFWS survey.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='60' style='height:45.0pt;'><td height='60' style='height:45.0pt;'>BrookTrout</td><td style='width:218pt;' width='290'>Eastern Brook Trout Habitat</td><td style='width:629pt;' width='839'>The stream provides Eastern Brook Trout habitat and critical access between spawning habitat and the marine environment. Data sources include Department of Marine Resources and Eastern Brook Trout Joint Venture.</td><td style='width:143pt;' width='191'>MCP, Eastern Brook Trout Joint Venture Ecosheds viewer</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>BwH_Focus</td><td style='width:218pt;' width='290'>BwH Focus Area<span></span></td><td style='width:629pt;' width='839'>Crossing is located in Beginning with Habitat (BwH) Focus area.</td><td style='width:143pt;' width='191'>MCP, Beginning with Habitat Program</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>CHANRATI_1</td><td style='width:218pt;' width='290'>Channel Rating (Bridge)</td><td style='width:629pt;' width='839'>Physical conditions associated with the flow of water through the bridge such as stream stability and the condition of the channel, riprap, slope protection, or stream control devices including spur dikes. Source is DOT.</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>CHW_DN_FT</td><td style='width:218pt;' width='290'>Downstream Channel Width (ft)</td><td style='width:629pt;' width='839'>Downstream measured channel width in ft at a point beyond any erosion that may be due to increased current speed through the crossing. For channels greater than 10 ft wide, this distance is generally fity feet from the crossing. Source is RTT.</td><td style='width:143pt;' width='191'>RTT</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>CHW_UP_FT</td><td style='width:218pt;' width='290'>Upstream Channel Width (ft)<span></span></td><td style='width:629pt;' width='839'>Upstream measured channel width in ft at a point beyond any erosion that may be due to increased current speed through the crossing. For channels greater than 10 ft wide, this distance is generally fity feet from the crossing. Source is RTT.</td><td style='width:143pt;' width='191'>RTT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>COMM</td><td style='width:218pt;' width='290'>USFWS Observer Comments</td><td style='width:629pt;' width='839'>Comments from survey observer with USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>Condition</td><td style='width:218pt;' width='290'>Condition of Structure</td><td style='width:629pt;' width='839'>Condition of the structure field combines USFWS field &quot;Condition of Structure&quot; and DOT field &quot;Barrel Condition&quot;, where the lowest rating is used. Values include critical, fair, fair to good, and good.</td><td style='width:143pt;' width='191'>MCP, USFWS, DOT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>COUNTY</td><td style='width:218pt;' width='290'>County</td><td style='width:629pt;' width='839'>County name</td><td style='width:143pt;' width='191'>ALL</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>CROSSING_T</td><td style='width:218pt;' width='290'>Crossing Type</td><td style='width:629pt;' width='839'>Crossing structure type<span></span></td><td style='width:143pt;' width='191'>MCP, USFWS, DOT, RTT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>CULVRATI_1</td><td style='width:218pt;' width='290'>Culvert (within Bridge) Rating<span></span></td><td style='width:629pt;' width='839'>Culvert rating, if applicable, within bridge, that notes any cracks, deterioration, or other deficiencies</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>DamHt_Ft</td><td style='width:218pt;' width='290'>Dam Height (ft)</td><td style='width:629pt;' width='839'>Dam structure height (ft)</td><td style='width:143pt;' width='191'>Dams</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>DamLength</td><td style='width:218pt;' width='290'>Length of Dam Structure (ft)</td><td style='width:629pt;' width='839'>Measured length of dam structure in ft</td><td style='width:143pt;' width='191'>Dams</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>DamName</td><td style='width:218pt;' width='290'>Dam Name</td><td style='width:629pt;' width='839'>Dam name</td><td style='width:143pt;' width='191'>Dams</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Dams_ID</td><td style='width:218pt;' width='290'>Dam Identification Code</td><td style='width:629pt;' width='839'>Identification code from the dams database</td><td style='width:143pt;' width='191'>Dams</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>DamSpillH</td><td style='width:218pt;' width='290'>Dam Spillway Height (ft)</td><td style='width:629pt;' width='839'>Spillway height of dam in ft</td><td style='width:143pt;' width='191'>Dams</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>DamSpillL</td><td style='width:218pt;' width='290'>Dam Spillway Length (ft)</td><td style='width:629pt;' width='839'>Spillway length of dam in ft</td><td style='width:143pt;' width='191'>Dams</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Date_asd</td><td style='width:218pt;' width='290'>Date Analyzed</td><td style='width:629pt;' width='839'>Date analyzed by MCP analyst</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='68' style='height:51.0pt;'><td height='68' style='height:51.0pt;'>DiffUpDwn</td><td style='width:218pt;' width='290'>Habitat Discontinuity</td><td style='width:629pt;' width='839'>Observed, abrupt discountinuity in upstream and downstream channel, hydrology, water quality, and/or plant community characteristics were the most conclusive form of evidence that the crossing is a tidal restriction. Data sources used by MCP analyst include aerial and satellite imagery.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='80' style='height:60.0pt;'><td height='80' style='height:60.0pt;'>DKRATING_D</td><td style='width:218pt;' width='290'>Bridge Deck Rating<span></span></td><td style='width:629pt;' width='839'>The overall condition rating of the deck provided by DOT. Concrete decks were inspected for cracking, scaling, spalling, leaching, chloride contamination, potholing, delamination, and full or partial depth failures. Steel grid decks were inspected for broken welds, broken grids, section loss, and growth of filled grids from corrosion. Timber decks were inspected for splitting, crushing, fastener failure, and deterioration from rot.<span></span></td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>DOT_ID</td><td style='width:218pt;' width='290'>Maine DOT Identification Code</td><td style='width:629pt;' width='839'>DOT fields &quot;Bridge Number&quot; and &quot;Element ID&quot; were combined to create a single field containing a unique DOT identifier.</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>DS_SubType</td><td style='width:218pt;' width='290'>Downstream Substrate<span></span></td><td style='width:629pt;' width='839'>Downstream type of substrate outside of the influence of the crossing, generally 100-200ft from the site. Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>FILL_HT</td><td style='width:218pt;' width='290'>Fill Height (ft)</td><td style='width:629pt;' width='839'>Height of fill at the crossing measured in ft. Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>FreshMshU</td><td style='width:218pt;' width='290'>Freshwater Tidal Marsh Upstream Area (acres)</td><td style='width:629pt;' width='839'>Upstream calculated freshwater tidal marsh acreage. MNAP freshwater tidal marsh acreages were used where available; if MNAP data was not provided for marshes, NWI data was used to calculate totals.<span></span></td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='80' style='height:60.0pt;'><td height='80' style='height:60.0pt;'>InletHt_Ft</td><td style='width:218pt;' width='290'>Inlet Height (ft)</td><td style='width:629pt;' width='839'>Inlet height of structure, measured to the nearest tenth of a foot.<span> </span>This may be the full height of a culvert pipe if there is no substrate inside, or if there is substrate, it will be the height from the top surface of the substrate up to the inside top of the structure. This field is a combination of USFWS &quot;Inlet Height&quot; and RTT &quot;Opening Height&quot; fields. RTT data was only used where USFWS data was lacking.</td><td style='width:143pt;' width='191'>MCP, USFWS, RTT</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>InletWi_Ft</td><td style='width:218pt;' width='290'>Inlet Width (ft)</td><td style='width:629pt;' width='839'>Inlet width, measured to the nearest tenth of a foot. Measurement taken inside the structure. This field is a combination of USFWS &quot;Inlet Width&quot; and RTT &quot;Opening Width&quot; fields. RTT data was only used where USFWS data was lacking.</td><td style='width:143pt;' width='191'>MCP, USFWS, RTT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>INTRNL</td><td style='width:218pt;' width='290'>Internal Structures<span></span></td><td style='width:629pt;' width='839'>Internal structures are present within the crossing, such as baffles, weirs, or supports. Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>IWWH_75m</td><td style='width:218pt;' width='290'>Inland Waterfowl and Wading Bird Habitat within 75m</td><td style='width:629pt;' width='839'>Inland Waterfowl and Wading Bird Habitat of any value mapped by Maine Department<span> </span>of Inland Fisheries and Wildlife is within 75m of crossing.</td><td style='width:143pt;' width='191'>MDIFW</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>LENGTH</td><td style='width:218pt;' width='290'>Length of Structure (ft)</td><td style='width:629pt;' width='839'>Length of structure (ft). Source is DOT.</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>Marshdwn_only</td><td style='width:218pt;' width='290'>Marsh Habitat Discontinuity Immediately Upstream</td><td style='width:629pt;' width='839'>Marsh habitat is discontinuous on the upstream side of the crossing. Salt marsh or freshwater tidal could be downstream but a different habitat type exists upstream. Source is MCP.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Material</td><td style='width:218pt;' width='290'>Structure Materials</td><td style='width:629pt;' width='839'>Primary documented materials that make up the structure. Source is DOT and USFWS.</td><td style='width:143pt;' width='191'>DOT, USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>MAXSPAN</td><td style='width:218pt;' width='290'>Bridge Span (ft)<span></span></td><td style='width:629pt;' width='839'>Maximum span of bridge (ft). Source is DOT.</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>MCP_ID</td><td style='width:218pt;' width='290'>MCP Database Crossing ID</td><td style='width:629pt;' width='839'>MCP-created ID system</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>name1</td><td style='width:218pt;' width='290'>Photo Caption</td><td style='width:629pt;' width='839'>Photo Caption</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>name2</td><td style='width:218pt;' width='290'>Photo Caption</td><td style='width:629pt;' width='839'>Photo Caption</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>name3</td><td style='width:218pt;' width='290'>Photo Caption</td><td style='width:629pt;' width='839'>Photo Caption</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>name4</td><td style='width:218pt;' width='290'>Photo Caption</td><td style='width:629pt;' width='839'>Photo Caption</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>name5</td><td style='width:218pt;' width='290'>Photo Caption</td><td style='width:629pt;' width='839'>Photo Caption</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>name6</td><td style='width:218pt;' width='290'>Photo Caption</td><td style='width:629pt;' width='839'>Photo Caption</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>name7</td><td style='width:218pt;' width='290'>Photo Caption</td><td style='width:629pt;' width='839'>Photo Caption</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>NOTES_DOT</td><td style='width:218pt;' width='290'>DOT Notes</td><td style='width:629pt;' width='839'>DOT survey crew notes</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Num_Culvs</td><td style='width:218pt;' width='290'>Number of Culverts</td><td style='width:629pt;' width='839'>Number of culverts that make up the entire span on the crossing. Source is USFWS</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>OutHtFT</td><td style='width:218pt;' width='290'>Outlet Height in ft</td><td style='width:629pt;' width='839'>Outlet height measured in ft from the inside bottom of the structure to the top. Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>OutWidthFT</td><td style='width:218pt;' width='290'>Outlet Width in ft<span></span></td><td style='width:629pt;' width='839'>Outlet width measured in ft from the inside sides of the structure. Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>OWNER</td><td style='width:218pt;' width='290'>Structure Owner</td><td style='width:629pt;' width='839'>Structure owner according to DOT database.</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>Perched</td><td style='width:218pt;' width='290'>Perched Structure</td><td style='width:629pt;' width='839'>Bottom of the structure is elevated above the stream channel (perched) as determined by MCP analyst using previous crossing survey data and photos.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Photos</td><td style='width:218pt;' width='290'>Crossing Photos Available</td><td style='width:629pt;' width='839'>Crossing photos available from USFWS.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='60' style='height:45.0pt;'><td height='60' style='height:45.0pt;'>PRES_USMSH</td><td style='width:218pt;' width='290'>Presence of Upstream Marsh<span></span></td><td style='width:629pt;' width='839'>This field indicates the existence and type of upstream marsh present, if any. Results include &quot;Salt or brackish&quot;, &quot;Salt or brackish, fresh&quot;, &quot;Fresh&quot;, or &quot;No&quot;. MCP analyst determined presence of marsh based on mapped MNAP and NWI salt and freshwater tidal mapped marsh.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>Projected_MM</td><td style='width:218pt;' width='290'>Projected New Tidal Marsh Upstream under SLR Scenario</td><td style='width:629pt;' width='839'>The upstream marsh has the potential to experience marsh migration under 1.2, 1.6, or 3.9 ft of sea level rise based on 2020 MNAP marsh migration scenarios.</td><td style='width:143pt;' width='191'>MCP, MNAP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>RDCLASS</td><td style='width:218pt;' width='290'>Road Owner</td><td style='width:629pt;' width='839'>The owner of the road as determined by available GIS data from State of Maine. Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>RDTYP</td><td style='width:218pt;' width='290'>Road Type</td><td style='width:629pt;' width='839'>Type of road, such as paved or unpaved. Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>ROAD</td><td style='width:218pt;' width='290'>Road</td><td style='width:629pt;' width='839'>Road name</td><td style='width:143pt;' width='191'>ALL</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>SaltMshU</td><td style='width:218pt;' width='290'>Upstream Salt and Brackish Marsh Area (acres)</td><td style='width:629pt;' width='839'>Upstream calculated salt marsh acreage. MNAP salt marsh acreages were used where available; if MNAP data was not provided for marshes, NWI data was used to calculate totals.<span></span></td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Scour</td><td style='width:218pt;' width='290'>Presence of Scour<span></span></td><td style='width:629pt;' width='839'>Presence of scour at crossing site as determined by MCP analyst using aerial and satellite imagery and onsite photos.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>SLR_Status</td><td style='width:218pt;' width='290'>SLR Status</td><td style='width:629pt;' width='839'>SLR Scenario from Maine Geological Survey under which crossing becomes tidal, if not currently tidal.</td><td style='width:143pt;' width='191'>MCP, MGS</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>Smelt_Act</td><td style='width:218pt;' width='290'>Active Smelt Habitat</td><td style='width:629pt;' width='839'>The stream provides smelt habitat and critical access between spawning habitat and the marine environment. Data sources include Department of Marine Resources, Wells NERR, and Downeast Salmon Federation.</td><td style='width:143pt;' width='191'>MCP, Wells NERR, DSF</td></tr><tr height='60' style='height:45.0pt;'><td height='60' style='height:45.0pt;'>Smelt_Inac</td><td style='width:218pt;' width='290'>Inactive Smelt Habitat</td><td style='width:629pt;' width='839'>The stream has provided smelt habitat and critical access between spawning habitat and the marine environment in the past, but may not be active smelt habitat. Data sources include Department of Marine Resources, Wells NERR, and Downeast Salmon Federation.</td><td style='width:143pt;' width='191'>MCP, Wells NERR, DSF</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Source</td><td style='width:218pt;' width='290'>Data Source</td><td style='width:629pt;' width='839'>Name of the crossing location and information data source.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Status</td><td style='width:218pt;' width='290'>Restriction Status</td><td style='width:629pt;' width='839'>Results of the assessment of restriction criteria for the crossing. Source is MCP.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>StrHeightFT</td><td style='width:218pt;' width='290'>Height of Structure</td><td style='width:629pt;' width='839'>Measured height of structure (ft). Source is DOT.</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='60' style='height:45.0pt;'><td height='60' style='height:45.0pt;'>StrWidthFT</td><td style='width:218pt;' width='290'>Structure Width (ft)</td><td style='width:629pt;' width='839'>Structure width (ft). This field contains data from USFWS &quot;Length&quot; and DOT &quot;Structure Width&quot; fields. The width is the horizontal distance between supports in rectangular culverts; and the diameter of round ones. If the width varies, the greatest distance found was recorded.<span></span></td><td style='width:143pt;' width='191'>DOT, USFWS, RTT</td></tr><tr height='60' style='height:45.0pt;'><td height='60' style='height:45.0pt;'>SUBRATING_</td><td style='width:218pt;' width='290'>Substructure Element Condition</td><td style='width:629pt;' width='839'>The physical condition of piers, abutments, piles, fenders, footings, or other components. All substructure elements were inspected for visible signs of distress including evidence of cracking, section loss, settlement, misalignment, scour, collision damage, and corrosion. Source is DOT.</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>SUPRATING_</td><td style='width:218pt;' width='290'>Superstructure Element Condition<span></span></td><td style='width:629pt;' width='839'>The physical condition of all structural members. The structural members should be inspected for signs of distress which may include cracking, deterioration, section loss, and malfunction and misalignment of bearings. Source is DOT.</td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='110' style='height:82.5pt;'><td height='110' style='height:82.5pt;'>TotalSpnFt</td><td style='width:218pt;' width='290'>Total Span of Structures (ft)</td><td style='width:629pt;' width='839'>Total measured span of structure (ft). Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>TOWN</td><td style='width:218pt;' width='290'>Town</td><td style='width:629pt;' width='839'>Town name</td><td style='width:143pt;' width='191'>MCP, USFWS, DOT</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>TWWH_75m</td><td style='width:218pt;' width='290'>Tidal Waterfowl and Wading Bird Habitat within 75m</td><td style='width:629pt;' width='839'>Tidal Waterfowl and Wading Bird Habitat of any value mapped by Maine Department<span> </span>of Inland Fisheries and Wildlife is within 75m of crossing.</td><td style='width:143pt;' width='191'>MDIFW</td></tr><tr height='60' style='height:45.0pt;'><td height='60' style='height:45.0pt;'>Undersized</td><td style='width:218pt;' width='290'>Undersized Structure<span></span></td><td style='width:629pt;' width='839'>Where channel or wetland condition adjacent to a crossing did not show obvious signs of tidal restriction, the bridge or culvert span was compared to channel width by the MCP analyst. If smaller than the channel, the structure was considered undersized, predisposed to causing tidally-restrictive conditions, and labeled a restriction.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>UndevBlcks</td><td style='width:218pt;' width='290'>Undeveloped Land Blocks</td><td style='width:629pt;' width='839'>Crossing is immediately adjacent to or located on undeveloped blocks.</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>UP_SUB</td><td style='width:218pt;' width='290'>Upstream Substrate</td><td style='width:629pt;' width='839'>Upstream type of substrate outside of the influence of the crossing, generally 100-200ft from the site. Source is USFWS.</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>url1</td><td style='width:218pt;' width='290'>Photo Link</td><td style='width:629pt;' width='839'>Photo Link</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>url2</td><td style='width:218pt;' width='290'>Photo Link</td><td style='width:629pt;' width='839'>Photo Link</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>url3</td><td style='width:218pt;' width='290'>Photo Link</td><td style='width:629pt;' width='839'>Photo Link</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>url4</td><td style='width:218pt;' width='290'>Photo Link</td><td style='width:629pt;' width='839'>Photo Link</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>url5</td><td style='width:218pt;' width='290'>Photo Link</td><td style='width:629pt;' width='839'>Photo Link</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>url6</td><td style='width:218pt;' width='290'>Photo Link</td><td style='width:629pt;' width='839'>Photo Link</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>url7</td><td style='width:218pt;' width='290'>Photo Link</td><td style='width:629pt;' width='839'>Photo Link</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>USFWS_ID</td><td style='width:218pt;' width='290'>USFWS ID</td><td style='width:629pt;' width='839'>USFWS site identification number</td><td style='width:143pt;' width='191'>USFWS</td></tr><tr height='40' style='height:30.0pt;'><td height='40' style='height:30.0pt;'>WATERBODY</td><td style='width:218pt;' width='290'>Waterbody</td><td style='width:629pt;' width='839'>Waterbody that the structure crosses or abuts.</td><td style='width:143pt;' width='191'>MCP, USFWS, DOT, RTT, Dams</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>X_LON</td><td style='width:218pt;' width='290'>Longitude (DD)</td><td style='width:629pt;' width='839'>Longitude in decimal degrees</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Xcoor2019</td><td style='width:218pt;' width='290'>X Coordinate (UTM)</td><td style='width:629pt;' width='839'>X coordinates in meters</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Y_LAT</td><td style='width:218pt;' width='290'>Latitude (DD)</td><td style='width:629pt;' width='839'>Latitude in decimal degrees</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>Ycoor2019</td><td style='width:218pt;' width='290'>Y Coordinate (UTM)</td><td style='width:629pt;' width='839'>Y coodinates in meters</td><td style='width:143pt;' width='191'>MCP</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>YEARBUILT</td><td style='width:218pt;' width='290'>Year Built<span></span></td><td style='width:629pt;' width='839'>Year that the structure was built, if available. This field combines DOT fields &quot;Year Built&quot; and &quot;Install Date&quot;.<span></span></td><td style='width:143pt;' width='191'>DOT</td></tr><tr height='20' style='height:15.0pt;'><td height='20' style='height:15.0pt;'>YEARRECON</td><td style='width:218pt;' width='290'>Year Reconstructed<span></span></td><td style='width:629pt;' width='839'>Year of reconstruction of the structure from DOT records.</td><td style='width:143pt;' width='191'>DOT</td></tr></tbody></table></figure>",
+        "licenseInfo": "<p><span style='background-color:rgb(255,255,255);color:rgb(76,76,76);font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;'><span style='-webkit-text-stroke-width:0px;display:inline !important;float:none;font-style:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-weight:400;letter-spacing:normal;orphans:2;text-align:start;text-decoration-color:initial;text-decoration-style:initial;text-decoration-thickness:initial;text-indent:0px;text-transform:none;white-space:normal;widows:2;word-spacing:0px;'>Maine Coastal Program's Tidal Restriction Atlas is not intended to serve as a regulatory tool, nor can the accuracy of its data be guaranteed. Data are updated as they become available based on new field surveys.</span></span></p>",
+        "title": "Maine Coastal Program: Tidal Restriction Atlas ",
+        "type": "Web Experience",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1764966221000,
+        "avgRating": 0,
+        "id": "627b1ed27ea24299afdb13d8346f8a6c",
+        "categories": [
+          "/Categories/Inland waters",
+          "/Categories/Oceans",
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Stacia.Reynolds@maine.gov_maine",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1764950400000,
+        "thumbnail": "thumbnail/blob.png",
+        "languages": [],
+        "created": 1750094117000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/627b1ed27ea24299afdb13d8346f8a6c",
+        "tags": [
+          "Coastal",
+          "Maine",
+          "Tidal Restrictions"
+        ],
+        "numViews": 974,
+        "numComments": 0,
+        "size": 1745754,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine Coastal Program",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/627b1ed27ea24299afdb13d8346f8a6c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    139
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 3,
+  "next_offset": 3,
+  "response_sha256": "808d5691be8196d0473a60b8608acb37b7ac8979992ed567e1c27f3951ac935e",
+  "search_complete": true
+}

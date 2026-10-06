@@ -1,0 +1,226 @@
+{
+  "jurisdiction_code": "HI",
+  "catalog_id": "hi-primary",
+  "catalog_url": "https://geoportal.hawaii.gov/",
+  "started_at": "2026-10-05T08:41:10.808799+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://geoportal.hawaii.gov/api/search/v1/collections/all/items",
+  "domain": "geoportal.hawaii.gov",
+  "validation_receipt": 14,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 19,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": {
+                  "any": [
+                    "948bcc325ba04a2cb1c0ac899b2acb05",
+                    "a247b90d2fd14f60a64c0c75db5d5731",
+                    "717c1103fe9541bdaf7f33ecf0315b5e",
+                    "278c3b15f1d1430c9fb88d1603f09abd",
+                    "5a481b8640964a0696b507b697a6b6c6",
+                    "f148faacad8c40ffa348ae5be29a56d9",
+                    "d6c0ad62af9a415eb4596d9274297844",
+                    "213fdda4ca4741b8905045c828f9f584",
+                    "4c2c00a1e9604959a00bf1648475d384",
+                    "ab97e826ca9440d68ceb2d3f62603bfc",
+                    "687d93f1b6d842cbb9e582d5b40043fe",
+                    "c5aa5016decd432d99fdaf965a872069",
+                    "4ef473112ddd427d844394e44b62dba2",
+                    "b0cee3e7d7374976989d4af0537df641",
+                    "acacaa7b39704d1d9c65737b7221220f",
+                    "e49a8afab1f24304b65ba7cfb55ae3ff",
+                    "6b1ac51af6d34b2f92502c1a8f9bd9e5",
+                    "76aae963e49a4dc0ae81bc1a4f0e453f",
+                    "77ed1fe17b2f4628b47b4c6b026cb093",
+                    "f1bfcc0236a142108a0ba18f67e37e40",
+                    "6dbdce06bc0947fc8b98c25381cd109a"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "948bcc325ba04a2cb1c0ac899b2acb05",
+                  "a247b90d2fd14f60a64c0c75db5d5731",
+                  "717c1103fe9541bdaf7f33ecf0315b5e",
+                  "278c3b15f1d1430c9fb88d1603f09abd",
+                  "5a481b8640964a0696b507b697a6b6c6",
+                  "f148faacad8c40ffa348ae5be29a56d9",
+                  "d6c0ad62af9a415eb4596d9274297844",
+                  "28057a84c89e4d8c900d4147b0d31a9a",
+                  "213fdda4ca4741b8905045c828f9f584",
+                  "4c2c00a1e9604959a00bf1648475d384",
+                  "ab97e826ca9440d68ceb2d3f62603bfc",
+                  "687d93f1b6d842cbb9e582d5b40043fe",
+                  "c5aa5016decd432d99fdaf965a872069",
+                  "4ef473112ddd427d844394e44b62dba2",
+                  "b0cee3e7d7374976989d4af0537df641",
+                  "acacaa7b39704d1d9c65737b7221220f",
+                  "e49a8afab1f24304b65ba7cfb55ae3ff",
+                  "6b1ac51af6d34b2f92502c1a8f9bd9e5",
+                  "76aae963e49a4dc0ae81bc1a4f0e453f",
+                  "77ed1fe17b2f4628b47b4c6b026cb093",
+                  "f1bfcc0236a142108a0ba18f67e37e40",
+                  "6dbdce06bc0947fc8b98c25381cd109a",
+                  "9b60308cf1a240cc88cdd8e0a1741a68"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Documents",
+        "key": "document",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

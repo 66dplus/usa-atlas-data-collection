@@ -1,0 +1,148 @@
+{
+  "jurisdiction_code": "TN",
+  "query": "air quality",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T02:31:22.070798+00:00",
+  "candidates": [
+    {
+      "id": "ff09a8eacd354a2999ffe03a42f5f640",
+      "title": "Water Quality Assessment 2026",
+      "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Water_Quality_Assessment_2026/FeatureServer",
+      "publisher": "TDEC_Bureau_of_Environment",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Tennessee water quality assessment results for the 2026 cycle, including polygon and polyline water resources and a supporting table of potential pollution sources. The service tracks attainment status, assessment rationale, and watershed context for statewide reporting.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.40029159258647,
+                36.71967558760272
+              ],
+              [
+                -81.67697957528489,
+                36.71967558760272
+              ],
+              [
+                -81.67697957528489,
+                34.90611138709671
+              ],
+              [
+                -90.40029159258647,
+                34.90611138709671
+              ],
+              [
+                -90.40029159258647,
+                36.71967558760272
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Hosted Service"
+        ],
+        "description": "<p><strong>Overview</strong></p><p>This feature service compiles Tennessee water quality assessment results for the 2026 cycle. It supports statewide tracking of assessed water resources and their status relative to water quality standards, including waters identified as impaired or threatened due to pollution concerns. &nbsp;The 2026 assessment includes updates for Group 1 and 2 watersheds within the Division of Water Resources watershed planning process. &nbsp;These feature layers are intended to provide the spatial visualization of the Tennessee 2026 List of Impaired and Threatened Steams. &nbsp;The Tennessee 2026 List of Impaired and Threatened Streams is the official EPA approved document for water quality impairment.</p><p><strong>Feature Layers</strong></p><ul><li><strong>Water Quality Assessment Streams (2026)</strong> — Polyline features representing assessed linear water resources such as streams or river segments. Records include assessment unit name, location description, water type, length, attainment status, watershed context, and rationale for the assessment decision.</li><li><strong>Water Quality Assessment Waterbodies (2026)</strong> — Polygon features representing assessed water bodies and water resource areas. Records include assessment unit name, location description, water type, size, attainment status, watershed context, and rationale for the assessment decision.</li><li><strong>Water Quality Assessment Potential Sources (2026)</strong> — Supporting table listing assessment units with associated rationale, parameter codes, source types for potential pollution sources linked to water quality assessment findings.</li></ul><p><strong>Geographic Coverage</strong></p><p>The service covers Tennessee and supports statewide water quality assessment and reporting.</p><p><strong>Use Cases</strong></p><ul><li>Reviewing water quality attainment status for individual water bodies and stream segments</li><li>Supporting Tennessee water quality planning and Section 303(d) reporting</li><li>Identifying assessment units associated with parameters (causes) of pollution</li><li>Providing public access to compiled water quality assessment results</li></ul>",
+        "licenseInfo": "",
+        "ownerId": "a3b84729284e4e3c85d0b0ab457d1914",
+        "title": "Water Quality Assessment 2026",
+        "type": "Feature Service",
+        "orgId": "bPacKTm9cauMXVfn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1787161920000,
+        "avgRating": 0,
+        "id": "ff09a8eacd354a2999ffe03a42f5f640",
+        "categories": [],
+        "spatialReference": "102736",
+        "numRatings": 0,
+        "owner": "TDEC_Bureau_of_Environment",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1787158800000,
+        "thumbnail": "thumbnail/thumbnail1787161918241.png",
+        "languages": [],
+        "created": 1785985680000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/Water_Quality_Assessment_2026/FeatureServer",
+        "tags": [
+          "Tennessee",
+          "water quality",
+          "water quality assessment",
+          "impaired waters",
+          "threatened waters",
+          "Clean Water Act",
+          "303(d)",
+          "streams",
+          "rivers",
+          "lakes",
+          "watersheds",
+          "DWR",
+          "TDEC",
+          "2026"
+        ],
+        "numViews": 461,
+        "numComments": 0,
+        "size": 44449252,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Water_Quality_Assessment_2026",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "TN Dept of Environment and Conservation",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/ff09a8eacd354a2999ffe03a42f5f640"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    267
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "b63e8d2cbfeb4530e49683f17f054b7479683c86e4fd555e7125274f0da9be91",
+  "search_complete": true
+}

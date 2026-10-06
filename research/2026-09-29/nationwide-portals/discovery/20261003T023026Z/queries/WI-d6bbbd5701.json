@@ -1,0 +1,1261 @@
+{
+  "jurisdiction_code": "WI",
+  "query": "air quality",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T02:31:22.690647+00:00",
+  "candidates": [
+    {
+      "id": "1fa76b9469d941978bb20644d3c35b4e",
+      "title": "305(b) Assessed Rivers and Streams",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_Condition_Viewer/WY_ASSESSMENT_UNITS/MapServer/2",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Wisconsin rivers and streams assessed under Section 305(b) of the Clean Water Act",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9578,
+                46.966
+              ],
+              [
+                -86.7288,
+                46.966
+              ],
+              [
+                -86.7288,
+                42.411
+              ],
+              [
+                -92.9578,
+                42.411
+              ],
+              [
+                -92.9578,
+                46.966
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "This dataset represents the location of assessed waterbodies and related data statewide, last revised January 8th, 2019.  This data is stored and managed in the Water Assessment, Tracking and Electronic Reporting System.",
+        "licenseInfo": "<p><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p>",
+        "title": "305(b) Assessed Rivers and Streams",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725652484000,
+        "avgRating": 0,
+        "id": "1fa76b9469d941978bb20644d3c35b4e",
+        "categories": [
+          "/Categories/Environment/Fresh water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "WI Dept. of Natural Resources, Water Quality",
+        "largeThumbnail": null,
+        "lastViewed": 1738854000000,
+        "thumbnail": "thumbnail/Clean_Water_Act_Assessed_Streams.png",
+        "languages": [],
+        "created": 1483651161000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_Condition_Viewer/WY_ASSESSMENT_UNITS/MapServer/2",
+        "tags": [
+          "Water",
+          "Water Quality",
+          "305(b)",
+          "Clean Water Act",
+          "Assessment",
+          "305b",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "natural resources",
+          "environmental",
+          "WDNR",
+          "WI DNR",
+          "clean water act"
+        ],
+        "numViews": 2370,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/1fa76b9469d941978bb20644d3c35b4e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "977cddfb29824d2b80e85d97e5b4c25a",
+      "title": "305(b) Assessed Lakes",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_Condition_Viewer/WY_ASSESSMENT_UNITS/MapServer/1",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Wisconsin lakes assessed under Section 305(b) of the Clean Water Act",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9468,
+                47.0875
+              ],
+              [
+                -86.7566,
+                47.0875
+              ],
+              [
+                -86.7566,
+                42.4624
+              ],
+              [
+                -92.9468,
+                42.4624
+              ],
+              [
+                -92.9468,
+                47.0875
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "This dataset represents the location of assessed waterbodies and related data statewide, last revised January 29th, 2020.   This data is stored and managed in the Water Assessment, Tracking and Electronic Reporting System.",
+        "licenseInfo": "<p><font color='#000000' size='3'></font><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p>",
+        "title": "305(b) Assessed Lakes",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725652455000,
+        "avgRating": 0,
+        "id": "977cddfb29824d2b80e85d97e5b4c25a",
+        "categories": [
+          "/Categories/Environment/Fresh water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Bureau of Water Quality",
+        "largeThumbnail": null,
+        "lastViewed": 1738854000000,
+        "thumbnail": "thumbnail/Clean_Water_Act_Assessed_Lakes.png",
+        "languages": [],
+        "created": 1483651265000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_Condition_Viewer/WY_ASSESSMENT_UNITS/MapServer/1",
+        "tags": [
+          "Water",
+          "Water Quality",
+          "305(b)",
+          "Clean Water Act",
+          "Assessment",
+          "305b",
+          "Lakes",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "natural resources",
+          "environmental",
+          "WDNR",
+          "WI DNR",
+          "clean water act"
+        ],
+        "numViews": 1853,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "WDNR Bureau of Water Quality",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/977cddfb29824d2b80e85d97e5b4c25a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2fb99957cdb24c17b0c7c18ac6cae2e6",
+      "title": "303(d) Impaired Lakes - Delisted",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_CONDITION_ASSESSMENTS/MapServer/20",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Lakes taken off of Wisconsin's 303(d) Impaired Waters list.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9468,
+                47.0875
+              ],
+              [
+                -86.7566,
+                47.0875
+              ],
+              [
+                -86.7566,
+                42.4624
+              ],
+              [
+                -92.9468,
+                42.4624
+              ],
+              [
+                -92.9468,
+                47.0875
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "The waters in this data layer are those which have been listed and subsequently removed from Wisconsin's list of Impaired Waters. The condition of these waters has been restored so that water quality standards are now met. Each water has its own story of degradation, discovery, restoration, monitoring, and removal from the list.",
+        "licenseInfo": "<p><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p><p style='margin:0in 0in 10pt;'><span style='color:rgb(76, 76, 76); font-family:&quot;Helvetica&quot;,&quot;sans-serif&quot;; font-size:11.5pt;'></span></p>",
+        "title": "303(d) Impaired Lakes - Delisted",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725652298000,
+        "avgRating": 0,
+        "id": "2fb99957cdb24c17b0c7c18ac6cae2e6",
+        "categories": [
+          "/Categories/Environment/Fresh water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Bureau of Water Quality",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/Impaired_Lakes_Delisted.png",
+        "languages": [],
+        "created": 1483640480000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_CONDITION_ASSESSMENTS/MapServer/20",
+        "tags": [
+          "Water",
+          "Water Quality",
+          "303D",
+          "Impaired",
+          "Lakes",
+          "Delisted",
+          "Clean Water Act",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "Natural Resources",
+          "environmental",
+          "WDNR",
+          "WI DNR"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 96,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "WDNR Bureau of Water Quality",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/2fb99957cdb24c17b0c7c18ac6cae2e6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2c0c2ceb6830426aaea43a6141c67a07",
+      "title": "303(d) Impaired Rivers and Streams - Delisted",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_CONDITION_ASSESSMENTS/MapServer/19",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Rivers and streams taken off of Wisconsin's 303D Impaired Waters list.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9578,
+                46.966
+              ],
+              [
+                -86.7288,
+                46.966
+              ],
+              [
+                -86.7288,
+                42.411
+              ],
+              [
+                -92.9578,
+                42.411
+              ],
+              [
+                -92.9578,
+                46.966
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "The waters in this datalayer are those which have been listed and subsequently removed from the Wisconsin's List of Impaired Waters. The condition of these waters has been restored so that water quality standards are now met. Each water has its own story -- of degradation, discovery, restoration, monitoring, and removal from the list.",
+        "licenseInfo": "<p><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p>",
+        "title": "303(d) Impaired Rivers and Streams - Delisted",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725652380000,
+        "avgRating": 0,
+        "id": "2c0c2ceb6830426aaea43a6141c67a07",
+        "categories": [
+          "/Categories/Environment/Fresh water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Bureau of Water Quality",
+        "largeThumbnail": null,
+        "lastViewed": 1738854000000,
+        "thumbnail": "thumbnail/Impaired_Streams_Delisted.png",
+        "languages": [],
+        "created": 1483640428000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_CONDITION_ASSESSMENTS/MapServer/19",
+        "tags": [
+          "Water",
+          "Water Quality",
+          "303D",
+          "Impaired",
+          "Delisted",
+          "Clean Water Act",
+          "Rivers",
+          "Streams",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "Natural Resources",
+          "environmental",
+          "WDNR",
+          "WI DNR"
+        ],
+        "numViews": 4550,
+        "numComments": 0,
+        "size": 96,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "WDNR Bureau of Water Quality",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/2c0c2ceb6830426aaea43a6141c67a07"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d61b92a431ed4903bfe8e0f98a6ee82d",
+      "title": "Outstanding and Exceptional Lakes",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_DESIGNATED_WATERS/MapServer/7",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Wisconsin's Outstanding and Exceptional Lakes",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9468,
+                47.0875
+              ],
+              [
+                -86.7566,
+                47.0875
+              ],
+              [
+                -86.7566,
+                42.4624
+              ],
+              [
+                -92.9468,
+                42.4624
+              ],
+              [
+                -92.9468,
+                47.0875
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<p><span style='background: white; font-size: 12pt;'>Waters designated as </span><a href='https://dnr.wi.gov/topic/SurfaceWater/datasets/OERW/index.html' rel='nofollow ugc'><span style='background: white; font-size: 12pt;'>Outstanding or Exceptional Resource Waters</span></a><span style='background: white; font-size: 12pt;'> (ORW or ERW) are surface waters which provide outstanding recreational opportunities, support valuable fisheries and wildlife habitat, have good water quality, and are not significantly impacted by human activities. </span><span style='font-size: 12pt;'>An <span>outstanding resource water</span> is a lake, stream or flowage having excellent water quality, high recreational and aesthetic value and high-quality fishing. ORW waters are free from point source or nonpoint source pollution. </span><span style='font-size: 12pt;'>An <span>exceptional resource water</span> is a lake, stream, or flowage exhibiting the same high-quality resource values as outstanding waters but may be affected by point source pollution or have the potential for future discharge from a small sewer community.</span><span style='font-size: 12pt;'> <span style='background: white;'>These designations are intended to meet federal Clean Water Act obligations requiring Wisconsin to adopt an “antidegradation” policy that is designed to prevent any lowering of water quality – especially in those waters having significant ecological or cultural value. This layer contains information on ORW and ERW lakes but not streams.</span></span></p>",
+        "licenseInfo": "<p><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p>",
+        "ownerId": "189b49a2e6f073c1d10af27bd5bc1715",
+        "title": "Outstanding and Exceptional Lakes",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725652893000,
+        "avgRating": 0,
+        "id": "d61b92a431ed4903bfe8e0f98a6ee82d",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Bureau of Water Quality",
+        "largeThumbnail": null,
+        "lastViewed": 1790010000000,
+        "thumbnail": "thumbnail/WT_OER_Lakes_thumb.png",
+        "languages": [],
+        "created": 1483634656000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_DESIGNATED_WATERS/MapServer/7",
+        "tags": [
+          "Water",
+          "OERW",
+          "Water Quality",
+          "Lakes",
+          "Outstanding",
+          "Exceptional",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "natural resources",
+          "environmental",
+          "WDNR",
+          "WI DNR",
+          "Areas of Special Natural Resources Interest",
+          "Priority Navigable Waters",
+          "PNW",
+          "ASNRI",
+          "water"
+        ],
+        "numViews": 26493,
+        "numComments": 0,
+        "size": 110,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "WDNR Bureau of Water Quality",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/d61b92a431ed4903bfe8e0f98a6ee82d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "57a7851149e44a049b05cdb6d4ee5a68",
+      "title": "Water Management Units",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_INLAND_WATER_RESOURCES/MapServer/6",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Wisconsin's Water Management Units represent a delineation of basins in the state.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9642,
+                47.0831
+              ],
+              [
+                -86.7088,
+                47.0831
+              ],
+              [
+                -86.7088,
+                42.458
+              ],
+              [
+                -92.9642,
+                42.458
+              ],
+              [
+                -92.9642,
+                47.0831
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<font color='#000000' size='3'>\n\n</font><ul><font color='#000000' size='3'>\n </font></ul><p style='margin: 0in 0in 0pt; font-family: &quot;Calibri&quot;,sans-serif; font-style: normal; font-weight: normal; mso-list: l0 level1 lfo1;'><font color='#000000' size='4'>Wisconsin's\n     Water Management Units data layer contains 24 delineated basins created\n     initially for the Priority Watershed Program. Basins <font color='#000000'>and watersheds are\n     interconnected areas of land draining from surrounding ridge tops to a\n     common point such as a lake or confluence with a neighboring land area.</font></font></p><ul><font color='#000000' size='4'>\n</font></ul><font color='#000000' size='4'>\n\n</font><p style='margin: 0in 0in 0pt 0.5in;'><font color='#000000' face='Calibri' size='4'> </font></p><font size='4'><font color='#000000'>\n<font color='#000000' face='Calibri'>These<span style='color: rgb(31, 73, 125);'> <font color='#000000'>basins, delineated\nby DNR, generally indicate areas that drain into a common river system or lake,\nbut may also be based on DNR basin management criteria.</font></span></font></font><span style='color: rgb(31, 73, 125);'></span></font><font color='#000000'><font size='4'>\n</font>\n</font>",
+        "licenseInfo": "<span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span>",
+        "title": "Water Management Units",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725653249000,
+        "avgRating": 0,
+        "id": "57a7851149e44a049b05cdb6d4ee5a68",
+        "categories": [
+          "/Categories/Environment/Fresh water",
+          "/Categories/Boundaries/Environmental"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Bureau of Watershed Management",
+        "largeThumbnail": null,
+        "lastViewed": 1758276000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1501700299000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_INLAND_WATER_RESOURCES/MapServer/6",
+        "tags": [
+          "water",
+          "hydrology",
+          "water quality",
+          "hydro",
+          "watershed",
+          "Wisconsin DNR",
+          "Wisconsin",
+          "WI DNR",
+          "WDNR",
+          "boundaries"
+        ],
+        "numViews": 19761,
+        "numComments": 0,
+        "size": 99,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/57a7851149e44a049b05cdb6d4ee5a68"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9ee471d5f4ff4cc2b3381b1a40a2c9d0",
+      "title": "Outstanding and Exceptional Rivers and Streams",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_DESIGNATED_WATERS/MapServer/4",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Wisconsin's Outstanding and Exceptional Rivers and Streams",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9578,
+                46.966
+              ],
+              [
+                -86.7288,
+                46.966
+              ],
+              [
+                -86.7288,
+                42.411
+              ],
+              [
+                -92.9578,
+                42.411
+              ],
+              [
+                -92.9578,
+                46.966
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "Wisconsin's Outstanding and Exceptional Resource Water (OERW) designations are designed to include Wisconsin's cleanest waters. The OERW dataset was first developed in the 1990s using narrative descriptions from the state’s OERW designations described in NR102 and the state’s 1:24,000 scale hydrography dataset using 7.5 minute USGS topographic quadrangle maps. The OERW spatial data quality has been reviewed by GIS specialists working with biological field staff and using more detailed landmarks and data over time. The accuracy of the delineations continue to improve with the use of improved technologies and tools. Year 2006 designations were derived by selecting and copying applicable features from the 1:24,000 scale hydrography dataset.",
+        "licenseInfo": "<font size='3'><p><span style='color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p></font>",
+        "ownerId": "189b49a2e6f073c1d10af27bd5bc1715",
+        "title": "Outstanding and Exceptional Rivers and Streams",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725652931000,
+        "avgRating": 0,
+        "id": "9ee471d5f4ff4cc2b3381b1a40a2c9d0",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Bureau of Water Quality",
+        "largeThumbnail": null,
+        "lastViewed": 1790010000000,
+        "thumbnail": "thumbnail/WT_OER_Rivers_thumb.png",
+        "languages": [],
+        "created": 1483632924000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_SWDV/WY_DESIGNATED_WATERS/MapServer/4",
+        "tags": [
+          "Water",
+          "OERW",
+          "Water Quality",
+          "Rivers",
+          "Streams",
+          "Outstanding",
+          "Exceptional",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "natural resources",
+          "environmental",
+          "WDNR",
+          "WI DNR",
+          "water",
+          "ASNRI",
+          "PNW"
+        ],
+        "numViews": 45158,
+        "numComments": 0,
+        "size": 110,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "WDNR Bureau of Water Quality",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/9ee471d5f4ff4cc2b3381b1a40a2c9d0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "8d07e27f588f4ec8be27bce73100cdaf",
+      "title": "Silurian Thickness of Unconsolidated Materials",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Silurian_Thickness_of_Unconsolidated_Materials/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The approximate thickness of unconsolidated materials as well as the approximate distribution of the Silurian bedrock in eastern Wisconsin.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.627116,
+                45.463486
+              ],
+              [
+                -86.803872,
+                45.463486
+              ],
+              [
+                -86.803872,
+                42.594604
+              ],
+              [
+                -88.627116,
+                42.594604
+              ],
+              [
+                -88.627116,
+                45.463486
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div>This layer represents the approximate thickness of unconsolidated materials as well as the approximate distribution of the Silurian bedrock in eastern Wisconsin. It a composite of 8 WGNHS published maps which range in having a scale of 1:100,000 to 1:1,000,000. This layer was developed in 2017 and updated in 2022, however the sources used to develop it were published in 1978, 1979, 1982, 2004, 2011, 2013, 2019 and 2021.</div><div><br /></div><div>This layer is part of the 2016-2018 <a href='https://dnr.wisconsin.gov/topic/Nonpoint/nr151Strategy.html' target='_blank' rel='nofollow ugc noopener noreferrer'>NR 151 target performance standard rule revision</a>. This layer was developed to assist the agricultural community in Wisconsin in maintain compliance with the NR 151 targeted performance standard. It is not recommended to be used for well installation, placement of utility lines, or any other construction or siting practice.</div>",
+        "licenseInfo": "<p style='margin:12pt 0in;'>This layer was developed to assist the agricultural community in Wisconsin in maintain compliance with the NR 151 targeted performance standard. It is not recommended to be used for well installation, placement of utility lines, or any other construction or siting practice.<br /></p><p style='margin:12pt 0in;'><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p>",
+        "title": "Silurian Thickness of Unconsolidated Materials",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711659915000,
+        "avgRating": 0,
+        "id": "8d07e27f588f4ec8be27bce73100cdaf",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "The compilation of data sources into a single layer was completed by the Wisconsin Department of Natural Resource’s Runoff Management Program.  GIS data was provided by Peter Schoephoester (Wisconsin Geologic and Natural History Survey) and John Luczaj (UW-Green Bay).  The final layer is based on the following publications:\n•\tSherrill, M. G., 1978, ‘Geology and Ground Water in Door County, Wisconsin, with Emphasis on Contamination Potential in the Silurian Dolomite’, Plate 2, page 26, Surficial Geology, Infiltration and Runoff Potential, and Thickness of Unconsolidated Deposits, Door County, Wisconsin\n•\tSherrill, M. G., 1979, ‘Contamination Potential in the Silurian Dolomite Aquifer, Eastern Wisconsin’, Thickness of Unconsolidated Materials\n•\tMudrey, Jr., M. G., Brown, B. A., and Greenberg, J. K., 1982 ‘Bedrock Geologic Map of Wisconsin’, \n•\tEvans, T. J., Massie-Ferch, K. M., and Peters, R. M., 2004, ‘Preliminary bedrock geologic map of Walworth, Racine, Kenosha, Milwaukee, Waukesha, Ozaukee, and Washington Counties’ Open-File Report 2004-18\n•\tLuczaj, John A., 2011, ‘Preliminary Geologic Map of the Buried Bedrock Surface, Brown County, Wisconsin’ Open-File Report 2011-02\n•\tMcLaughlin, Patrick I., 2013, ‘Preliminary bedrock geology of Sheboygan County, Wisconsin’ Open-File Report 2013-03",
+        "largeThumbnail": null,
+        "lastViewed": 1738864800000,
+        "thumbnail": "thumbnail/thumbnail1669238122242.png",
+        "languages": [],
+        "created": 1669237938000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Silurian_Thickness_of_Unconsolidated_Materials/FeatureServer",
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "natural resources",
+          "bedrock",
+          "depth to bedrock",
+          "soil thickness",
+          "silurian",
+          "unconsolidated material",
+          "NR 151",
+          "Michigan Basin",
+          "geology",
+          "aquifer",
+          "Groundwater",
+          "water quality"
+        ],
+        "numViews": 1196,
+        "numComments": 0,
+        "size": 12615680,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/8d07e27f588f4ec8be27bce73100cdaf"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "cc4e5d2437eb4e30bf8bc8781627804f",
+      "title": "Landsat Summer Water Clarity Data – 2017 - Path Date Index",
+      "url": "https://www.arcgis.com/home/item.html?id=a3c1fa4965f346b0b30eb658666de370",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Link to path date index shapefile for the Landsat Summer Water Clarity Data – 2017 raster dataset.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.04299999999843,
+                47.1379999999992
+              ],
+              [
+                -86.75799999999853,
+                47.1379999999992
+              ],
+              [
+                -86.75799999999853,
+                42.43199999999928
+              ],
+              [
+                -93.04299999999843,
+                42.43199999999928
+              ],
+              [
+                -93.04299999999843,
+                47.1379999999992
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "Data",
+          "Document"
+        ],
+        "description": "<p><font color='#000000' size='3'>Path date index shapefile for the </font><a href='https://www.arcgis.com/home/item.html?id=5f29aaa01a674935b186477dc85c9e20' rel='nofollow ugc' target='_blank'>Landsat Summer Water Clarity Data - 2017 raster dataset</a><font size='3'>.   <span style='font-family:&quot;Calibri&quot;,sans-serif;'><font color='#000000'><font color='#000000'>The State of Wisconsin is represented by four different paths of the Landsat reference system and the images for these paths are acquired 2, 7, and 9 days apart. This means the combined summer water clarity maps take four different dates to produce an annual summer water clarity composite for Wisconsin. Therefore, the water clarity dataset represents the combined water clarity maps for four different dates mosaicked from Lake Michigan in the eastern part of the state to the Mississippi River in the western part of the state. There are some areas where two paths overlap and a single lake might include data from two different dates. The Summer Water Clarity Path Date Index shapefile </font>represents a list of these dates.</font></span></font></p><font color='#000000'><span style='font-family:&quot;Calibri&quot;,sans-serif;'><p><span><font size='3'>For more information, please visit the Wisconsin DNR's </font></span><a href='https://dnr.wi.gov/lakes/clmn/remotesensing/' rel='nofollow ugc' target='_blank'>Remote sensing of water quality</a> <font size='3'><span>web page.   </span></font><font size='3'>Please contact the WI DNR Water Quality Program </font><font style='font-size:10.5pt;'>(</font><font size='3' style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;'><font color='#0000ee'><u>dnrlakeb@wisconsin.gov</u></font><font color='#000000'><span style='font-size:10.5pt;'>) to request additional datasets.</span></font></font></p></span></font>",
+        "licenseInfo": "<p style='margin: 12pt 0in;'><span style='font-family: Helvetica, sans-serif; font-size: 11.5pt;'>Access to and use of data obtained from the Department of Natural Resources (&quot;Department&quot;) is provided subject to these terms and conditions. PLEASE READ THESE TERMS CAREFULLY AS USE OF THIS DATA CONSTITUTES ACCEPTANCE OF THESE TERMS AND CONDITIONS.</span></p><p style='margin: 12pt 0in;'><span style='font-family: Helvetica, sans-serif; font-size: 11.5pt;'>DISCLAIMER OF LIABILITY<br />Neither the Department of Natural Resources, nor any of its programs nor any of its employees shall be held liable for any improper or incorrect use of the information described and/or contained herein and assumes no responsibility for anyone's use of the information. In no event shall the Department or its employees be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement or substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this system, even if advised of the possibility of such damage. This disclaimer of liability applies to any damages or injury, including but not limited to those caused by any failure of performance, error, omission, interruption, deletion, defect, delay in operation or transmission, computer virus, communication line failure, theft or destruction or unauthorized access to, alteration of, or use of record, whether for breach of contract, tortious behavior, negligence or under any other cause of action.</span></p><p style='margin: 12pt 0in;'><span style='font-family: Helvetica, sans-serif; font-size: 11.5pt;'>DISCLAIMER OF WARRANTIES AND ACCURACY OF DATA<br />Although the data found using the Department's access systems have been produced and processed from sources believed to be reliable, no warranty, expressed or implied, is made regarding accuracy, adequacy, completeness, legality, reliability or usefulness of any information, unless otherwise indicated. This disclaimer applies to both isolated and aggregate uses of the information. The State provides this information on an &quot;as is&quot; basis. All warranties of any kind, express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, freedom from contamination by computer viruses and non-infringement of proprietary rights are disclaimed. Changes may be periodically made to the information herein; these changes may or may not be incorporated in any new version of the publication. Data can also quickly become out of date. It is recommended that careful attention be paid to the contents of any data associated with a file, and that the originator of the data or information be contacted with any questions regarding appropriate use. If you find any errors or omissions, we encourage you to report them to the Department.</span></p><p style='margin: 12pt 0in;'><span style='font-family: Helvetica, sans-serif; font-size: 11.5pt;'>DISCLAIMER OF ENDORSEMENT<br />The Department is a distributor of content sometimes supplied by third parties and users. Any opinions, advice, statements, services, offers, or other information or content expressed or made available by third parties, including information providers, users, or others, are those of the respective author(s) or distributor(s) and do not necessarily state or reflect those of the Department or the state of Wisconsin and shall not be used for advertising or product endorsement purposes. Reference herein to any specific commercial products, process, or service by trade name, trademark, manufacturer, or otherwise, does not constitute or imply its endorsement, recommendation, or favoring by the Department or the State.</span></p><p style='margin: 12pt 0in;'><span style='font-family: Helvetica, sans-serif; font-size: 11.5pt;'>CHOICE OF LAW<br />Construction of the disclaimers above and resolution of disputes thereof are governed by the laws of the State of Wisconsin. The laws of the state of Wisconsin, U.S.A., shall apply to all uses of this data and this system. By use of this system and any data contained therein, the user agrees that use shall conform to all applicable laws and regulations and user shall not violate the rights of any third parties.</span></p>",
+        "title": "Landsat Summer Water Clarity Data – 2017 - Path Date Index",
+        "type": "Document Link",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1625249237000,
+        "avgRating": 0,
+        "id": "cc4e5d2437eb4e30bf8bc8781627804f",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources",
+        "largeThumbnail": null,
+        "thumbnail": "thumbnail/thumbnail1556201001352.png",
+        "languages": [],
+        "created": 1556200887000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://www.arcgis.com/home/item.html?id=a3c1fa4965f346b0b30eb658666de370",
+        "tags": [
+          "remote sensing",
+          "water quality",
+          "Landsat",
+          "summer water clarity",
+          "Secchi depth",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "natural resources"
+        ],
+        "numViews": 31,
+        "numComments": 0,
+        "size": 73,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/cc4e5d2437eb4e30bf8bc8781627804f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3a027eeb87224144be6c4a4c9bd9aa84",
+      "title": "303(d) Impaired Rivers and Streams -  Listed",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_Condition_Viewer/WY_ASSESSMENT_UNITS/MapServer/13",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Wisconsin rivers and streams listed as impaired under Section 303(d) of the Clean Water Act",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9578,
+                46.966
+              ],
+              [
+                -86.7288,
+                46.966
+              ],
+              [
+                -86.7288,
+                42.411
+              ],
+              [
+                -92.9578,
+                42.411
+              ],
+              [
+                -92.9578,
+                46.966
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "Impaired Waters listings reflect those waters that have been evaluated and determined that they are not meeting state water quality standards. This data is stored and managed in the Water Assessment, Tracking and Electronic Reporting System.",
+        "licenseInfo": "<p><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></p>",
+        "title": "303(d) Impaired Rivers and Streams -  Listed",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725652345000,
+        "avgRating": 0,
+        "id": "3a027eeb87224144be6c4a4c9bd9aa84",
+        "categories": [
+          "/Categories/Environment/Fresh water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Bureau of Water Quality",
+        "largeThumbnail": null,
+        "lastViewed": 1758294000000,
+        "thumbnail": "thumbnail/Impaired_Streams_Listed.png",
+        "languages": [],
+        "created": 1483635870000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/WT_Condition_Viewer/WY_ASSESSMENT_UNITS/MapServer/13",
+        "tags": [
+          "Water",
+          "Water Quality",
+          "Rivers",
+          "Streams",
+          "Impaired",
+          "303D",
+          "Clean Water Act",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "Natural Resources",
+          "environmental",
+          "WDNR",
+          "WI DNR",
+          "climate",
+          "Environmental Justice"
+        ],
+        "numViews": 46411,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "WDNR Bureau of Water Quality",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/3a027eeb87224144be6c4a4c9bd9aa84"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    271
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 22,
+  "next_offset": 10,
+  "response_sha256": "6c08fd8ec57637447da88822e2e9a86aff5bf6e0024ec2538b197403fce68a07",
+  "search_complete": false
+}

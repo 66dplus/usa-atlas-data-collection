@@ -1,0 +1,1659 @@
+{
+  "jurisdiction_code": "RI",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-04T08:37:37.155483+00:00",
+  "candidates": [
+    {
+      "id": "6e6cae3df9e04cc1bd8069afb046f084",
+      "title": "State Comprehensive Outdoor Recreation Plan (SCORP) Inventory of Facilities",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/SCORP_Inventory_2024/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Point locations depicting ballfields, playgrounds, basketball & tennis courts, beaches, swimming pools, etc with attribution for facility name, location, ownership, and availability and number of recreational resources on site.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.84434027185787,
+                42.01555389129981
+              ],
+              [
+                -71.12552579727473,
+                42.01555389129981
+              ],
+              [
+                -71.12552579727473,
+                41.151847430609536
+              ],
+              [
+                -71.84434027185787,
+                41.151847430609536
+              ],
+              [
+                -71.84434027185787,
+                42.01555389129981
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><p><span>Point locations depicting ballfields, playgrounds, basketball &amp; tennis courts, beaches, swimming pools, etc with attribution for facility name, location, ownership, and availability and number of recreational resources on site.</span></p><p><span>These vector point data are collected and maintained to track the availability of outdoor recreational facilities maintained by State &amp; Local Government for public use. These data were originally put together to comply with federal rules that required states to submit a State Comprehensive Outdoor Recreation Plan (SCORP) update every 5 years (formerly every ten years) so that state governments would remain eligible for federal funds for facility acquisition and development.</span></p></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><p><span style='font-weight:bold;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></p><p><span>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</span></p><p><span>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/pages/logos/</span></p></div>",
+        "title": "State Comprehensive Outdoor Recreation Plan (SCORP) Inventory of Facilities",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1765559733000,
+        "avgRating": 0,
+        "id": "6e6cae3df9e04cc1bd8069afb046f084",
+        "categories": [
+          "/Categories/Structures and facilities"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept. of Environmental Management.",
+        "largeThumbnail": "largethumbnail/6e6cae3df9e04cc1bd8069afb046f084.png",
+        "lastViewed": 1765558800000,
+        "thumbnail": "thumbnail/6e6cae3df9e04cc1bd8069afb046f084.png",
+        "languages": [],
+        "created": 1733336219000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/SCORP_Inventory_2024/FeatureServer",
+        "tags": [
+          "FACILITY",
+          "RIGIS",
+          "Rhode Island",
+          "recreation",
+          "planning",
+          "beach"
+        ],
+        "numViews": 1294,
+        "numComments": 0,
+        "size": 499712,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SCORP_Inventory_2024",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              },
+              {
+                "hidden": true,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -71.84434027185787,
+                41.151847430609536
+              ],
+              [
+                -71.12552579727473,
+                42.01555389129981
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 41.151847430609536,
+                "xmin": -71.84434027185787,
+                "ymax": 42.01555389129981,
+                "xmax": -71.12552579727473,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/6e6cae3df9e04cc1bd8069afb046f084"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "25e8c5b45ddb4a4e8aa75b370c4c5858",
+      "title": "State Conservation Lands",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Approximate edges of Conservation Lands protected by the State of Rhode Island through Fee Title Ownership, Conservation Easement, or Deed Restriction.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.85899999994288,
+                42.03399999996648
+              ],
+              [
+                -71.0849999999435,
+                42.03399999996648
+              ],
+              [
+                -71.0849999999435,
+                41.11799999996724
+              ],
+              [
+                -71.85899999994288,
+                41.11799999996724
+              ],
+              [
+                -71.85899999994288,
+                42.03399999996648
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p><strong>Overview</strong></p><p>This feature service provides detailed geographic information on conservation lands protected by the State of Rhode Island. It includes various protected areas such as Wildlife Management Areas, Drinking Water Supply Watersheds, State Parks, Beaches, Fishing Access Areas, and Local Parks and Recreation Facilities. These lands are conserved through mechanisms like Fee Title Ownership, Conservation Easements, or Deed Restrictions.</p><p><span style='font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-size:12pt;'><span style='font-variant-alternates:normal; font-variant-east-asian:normal; font-variant-numeric:normal; font-variant-position:normal; margin:0px; padding:0px; text-indent:48px;'><strong>This hosted feature layer has been published in RI State Plane Feet NAD 83.</strong></span></span></p><p><strong>Feature Layer Details</strong></p><ul><li><strong>State Conservation Lands</strong>: This layer maps the approximate boundaries of conservation lands managed or owned by the Rhode Island Department of Environmental Management (DEM). It includes attributes about acquisition type, hunting and fishing permissions, primary land use, management areas, and funding source indicators.&nbsp;</li></ul><p><strong>Geographic Coverage</strong></p><p>The data focuses on the state of Rhode Island, specifically covering conservation lands within its boundaries. The spatial reference is Rhode Island State Plane Feet NAD 83.</p><p><strong>Data Use and Applications</strong></p><ul><li>Land conservation planning and management</li><li>Public access and recreational resource management including hunting, fishing, and hiking</li><li>Environmental protection and habitat preservation</li><li>Supporting grant funding validation and property deed verifications</li><li>Informing local and regional land use planning</li></ul><p><strong>Credits and Licensing</strong></p><p>This dataset is maintained by the Rhode Island Department of Environmental Management in partnership with the Rhode Island Geographic Information System (RIGIS). It is provided as-is for informational and planning use and is not a legally authoritative source for land boundaries. Users should acknowledge RIGIS and the data producers in derived products and consult professional survey services for precise property locations.</p>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/logos.</span></p><p><b>The following disclaimer must appear on all map produced with this dataset</b>: These data were created by RIDEM for informational, planning and guidance use only. They are meant for use as a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of these data may requre the assistance of appropriate professional services. Locations have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. RIDEM makes no warranty, express or implied, related to the accuracy, reliability, completeness, or currentness of this map.</p></div></div></div>",
+        "title": "State Conservation Lands",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1779464972000,
+        "avgRating": 0,
+        "id": "25e8c5b45ddb4a4e8aa75b370c4c5858",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Boundaries",
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS, Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/25e8c5b45ddb4a4e8aa75b370c4c5858.png",
+        "lastViewed": 1779462000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1713456767000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/ENV_Conservation_Lands_State_spf/FeatureServer",
+        "tags": [
+          "ENV",
+          "RIGIS",
+          "open space",
+          "park",
+          "wildlife",
+          "land cover",
+          "land use",
+          "Rhode Island"
+        ],
+        "numViews": 20781,
+        "numComments": 0,
+        "size": 3363735,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "ENV_Conservation_Lands_State_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "boundary": "item",
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -71.85899999994288,
+                41.11799999996724
+              ],
+              [
+                -71.0849999999435,
+                42.03399999996648
+              ]
+            ],
+            "geometries": [
+              {
+                "rings": [
+                  [
+                    [
+                      -71.85899999994288,
+                      41.11799999996724
+                    ],
+                    [
+                      -71.85899999994288,
+                      42.03399999996648
+                    ],
+                    [
+                      -71.0849999999435,
+                      42.03399999996648
+                    ],
+                    [
+                      -71.0849999999435,
+                      41.11799999996724
+                    ],
+                    [
+                      -71.85899999994288,
+                      41.11799999996724
+                    ]
+                  ]
+                ],
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "polygon"
+              }
+            ],
+            "type": "org",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/25e8c5b45ddb4a4e8aa75b370c4c5858"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b876bcc2cd3c4e3eb3df391444811774",
+      "title": "Local Conservation Areas",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/ENV_Conservation_Lands_Local_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Non-State Conservation lands permanently protected from future development or deed restrictions held or enforceable by recognized land protection organizations other than the State of Rhode Island",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.85899999994288,
+                42.03399999996648
+              ],
+              [
+                -71.0849999999435,
+                42.03399999996648
+              ],
+              [
+                -71.0849999999435,
+                41.11799999996724
+              ],
+              [
+                -71.85899999994288,
+                41.11799999996724
+              ],
+              [
+                -71.85899999994288,
+                42.03399999996648
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p><strong>Overview</strong></p><p>This feature service provides detailed spatial information on local conservation lands within Rhode Island that are protected from future development by various legal and informal mechanisms. These conservation lands are managed by diverse entities, including municipal governments, private land trusts, non-governmental organizations, and federal agencies, reflecting a broad spectrum of stewardship outside direct state ownership.</p><p><span style='font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-size:12pt;'><span style='font-variant-alternates:normal; font-variant-east-asian:normal; font-variant-numeric:normal; font-variant-position:normal; margin:0px; padding:0px; text-indent:48px;'><strong>This hosted feature layer has been published in RI State Plane Feet NAD 83.</strong></span><span style='margin:0px; padding:0px; text-indent:48px;'>&nbsp;</span></span></p><p><strong>Feature Layer Description</strong></p><ul><li><strong>Local Conservation Lands 2026</strong>: This layer identifies parcels of land that are permanently conserved through fee simple ownership, conservation easements, deed restrictions, or other legal instruments. It also includes areas classified as having conservation intent, such as local parks and cluster subdivision open space. The dataset incorporates attributes describing the type of protection, purpose of conservation (e.g., habitat protection, recreation, agricultural preservation), public access conditions, ownership categories, and data source reliability.</li></ul><p><strong>Geographic Coverage</strong></p><p>The service covers conservation lands specifically within the state of Rhode Island, encompassing multiple towns and communities to represent a comprehensive inventory of non-state protected areas across the state.</p><p><strong>Data Sources and Quality</strong></p><p>The information is compiled from various sources including town GIS parcel data, survey maps, CAD files, and other georeferenced survey data. The data is intended for informational, planning, and guidance use and should be referenced accordingly, acknowledging its non-authoritative status for legal boundary determination.</p><p><strong>Use Cases</strong></p><ul><li>Environmental planning and land use management to support conservation efforts.</li><li>Public access and recreation planning for local government and community groups.</li><li>Supporting habitat protection and natural resource management initiatives.</li><li>Informing decision-making for land acquisition and preservation strategies by land trusts and non-governmental organizations.</li></ul>",
+        "licenseInfo": "<div style='text-align:Left;'><div><p><span>This dataset is provided 'as is' The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/logos. </span></p><p><b>The following disclaimer must appear on all map produced with this dataset:</b> These data were created by RIDEM for informational, planning and guidance use only. They are meant for use as a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of these data may require the assistance of appropriate professional services. Facility locations have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. RIDEM makes no warranty, express or implied, related to the accuracy, reliability, completeness, or currentness of this map.</p></div></div>",
+        "title": "Local Conservation Areas",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1779465079000,
+        "avgRating": 0,
+        "id": "b876bcc2cd3c4e3eb3df391444811774",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Boundaries",
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS, Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/b876bcc2cd3c4e3eb3df391444811774.png",
+        "lastViewed": 1779462000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1713455962000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/ENV_Conservation_Lands_Local_spf/FeatureServer",
+        "tags": [
+          "ENV",
+          "RIGIS",
+          "Rhode Island",
+          "park",
+          "habitat",
+          "wildlife",
+          "open space"
+        ],
+        "numViews": 27291,
+        "numComments": 0,
+        "size": 6111543,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "ENV_Conservation_Lands_Local_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -71.85899999994288,
+                41.11799999996724
+              ],
+              [
+                -71.0849999999435,
+                42.03399999996648
+              ]
+            ],
+            "geometries": [
+              {
+                "rings": [
+                  [
+                    [
+                      -71.85899999994288,
+                      41.11799999996724
+                    ],
+                    [
+                      -71.85899999994288,
+                      42.03399999996648
+                    ],
+                    [
+                      -71.0849999999435,
+                      42.03399999996648
+                    ],
+                    [
+                      -71.0849999999435,
+                      41.11799999996724
+                    ],
+                    [
+                      -71.85899999994288,
+                      41.11799999996724
+                    ]
+                  ]
+                ],
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "polygon"
+              }
+            ],
+            "type": "org",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/b876bcc2cd3c4e3eb3df391444811774"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0f5d45cee9c3469296d5cc070e162f42",
+      "title": "Wood / Pawcatuck National Wild and Scenic Rivers System",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_WoodPaw_WildScenic_Rivers_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Wood-Pawcatuck National and Wild Scenic Rivers System was established by Congress in March of 2019.  Sec 1302 of US Senate Bill - S 47, John D. Dingell, Jr. Conservation, Management, and Recreation Act, establishes the river segments and tributaries included in the sytem.  River and tributary segments as described in the bill were selected from RIDEM's 1:24,000 scale mapping of RI rivers to create this geospatial data.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.861445,
+                41.660474
+              ],
+              [
+                -71.493208,
+                41.660474
+              ],
+              [
+                -71.493208,
+                41.320034
+              ],
+              [
+                -71.861445,
+                41.320034
+              ],
+              [
+                -71.861445,
+                41.660474
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b><span></span></p><p><span>Excerpt from US Senate Bill - S 47, John D. Dingell, Jr. Conservation, Management, and Recreation Act:Sec. 1302.Wood-Pawcatuck watershed wild and scenic river segments(a)DesignationSection 3(a) of the Wild and Scenic Rivers Act (16 U.S.C. 1274(a)) (as amended by section 1301(b)) is amended by adding at the end the following:(226)Wood-pawcatuck watershed, Rhode Island and ConnecticutThe following river segments within the Wood-Pawcatuck watershed, to be administered by the Secretary of the Interior, in cooperation with the Wood-Pawcatuck Wild and Scenic Rivers Stewardship Council:(A)The approximately 11-mile segment of the Beaver River from its headwaters in Exeter and West Greenwich, Rhode Island, to its confluence with the Pawcatuck River in Richmond, Rhode Island, as a scenic river.(B)The approximately 3-mile segment of the Chipuxet River from the Kingstown Road Bridge, South Kingstown, Rhode Island, to its outlet in Worden Pond, as a wild river.(C)The approximately 9-mile segment of the Green Fall River from its headwaters in Voluntown, Connecticut, to its confluence with the Ashaway River in Hopkinton, Rhode Island, as a scenic river.(D)The approximately 3-mile segment of the Ashaway River from its confluence with the Green Fall River to its confluence with the Pawcatuck River in Hopkinton, Rhode Island, as a recreational river.(E)The approximately 3-mile segment of the Pawcatuck River from the Worden Pond outlet in South Kingstown, Rhode Island, to the South County Trail Bridge, Charlestown and South Kingstown, Rhode Island, as a wild river.(F)The approximately 4-mile segment of the Pawcatuck River from South County Trail Bridge, Charlestown and South Kingstown, Rhode Island, to the Carolina Back Road Bridge in Richmond and Charlestown, Rhode Island, as a recreational river.(G)The approximately 21-mile segment of the Pawcatuck River from Carolina Back Road Bridge in Richmond and Charlestown, Rhode Island, to the confluence with Shunock River in Stonington, Connecticut, as a scenic river.(H)The approximately 8-mile segment of the Pawcatuck River from the confluence with Shunock River in Stonington, Connecticut, to the mouth of the river between Pawcatuck Point in Stonington, Connecticut, and Rhodes Point in Westerly, Rhode Island, as a recreational river.(I)The approximately 11-mile segment of the Queen River from its headwaters in Exeter and West Greenwich, Rhode Island, to the Kingstown Road Bridge in South Kingstown, Rhode Island, as a scenic river.(J)The approximately 5-mile segment of the Usquepaugh River from the Kingstown Road Bridge to its confluence with the Pawcatuck River in South Kingstown, Rhode Island, as a wild river.(K)The approximately 8-mile segment of the Shunock River from its headwaters in North Stonington, Connecticut, to its confluence with the Pawcatuck River as a recreational river.(L)The approximately 13-mile segment of the Wood River from its headwaters in Sterling and Voluntown, Connecticut, and Exeter and West Greenwich, Rhode Island, to the Arcadia Road Bridge in Hopkinton and Richmond, Rhode Island, as a wild river.(M)The approximately 11-mile segment of the Wood River from the Arcadia Road Bridge in Hopkinton and Richmond, Rhode Island, to the confluence with the Pawcatuck River in Charlestown, Hopkinton, and Richmond, Rhode Island, as a recreational river.(b)Management of river segments(1)DefinitionsIn this subsection:(A)Covered tributaryThe term covered tributary means—(i)each of Assekonk Brook, Breakheart Brook, Brushy Brook, Canochet Brook, Chickasheen Brook, Cedar Swamp Brook, Fisherville Brook, Glade Brook, Glen Rock Brook, Kelly Brook, Locke Brook, Meadow Brook, Pendleton Brook, Parris Brook, Passquisett Brook, Phillips Brook, Poquiant Brook, Queens Fort Brook, Roaring Brook, Sherman Brook, Taney Brook, Tomaquag Brook, White Brook, and Wyassup Brook within the Wood-Pawcatuck watershed; and(ii)any other perennial stream within the Wood-Pawcatuck watershed.(B)River segmentThe term river segment means a river segment designated by paragraph (226) of section 3(a) of the Wild and Scenic Rivers Act (16 U.S.C. 1274(a)) (as added by subsection (a)).</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>These data are shared under the RIGIS license agreement, which can be viewed below: This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however, and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products is available at https://info.rigis.org/logos. </SPAN></P></DIV></DIV></DIV>",
+        "title": "Wood / Pawcatuck National Wild and Scenic Rivers System",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1762363308000,
+        "avgRating": 0,
+        "id": "0f5d45cee9c3469296d5cc070e162f42",
+        "categories": [
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/0f5d45cee9c3469296d5cc070e162f42.png",
+        "lastViewed": 1762362000000,
+        "thumbnail": "thumbnail/0f5d45cee9c3469296d5cc070e162f42.png",
+        "languages": [],
+        "created": 1731604584000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_WoodPaw_WildScenic_Rivers_spf/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "scenic",
+          "watershed"
+        ],
+        "numViews": 940,
+        "numComments": 0,
+        "size": 663552,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_WoodPaw_WildScenic_Rivers_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/0f5d45cee9c3469296d5cc070e162f42"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "af22130a825e4299822e67480cf0aa10",
+      "title": "Land Use and Land Cover (2020)",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/PLAN_Land_Cover_Use_2020_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "A detailed statewide vector dataset depicting Rhode Island's 2020 land use and land cover conditions developed through orthoimagery interpretation and employing an updated Anderson Level III classification. Created under the direction of the RI Department of Administration, RI Division of Statewide Planning ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.85899999994288,
+                42.03399999996648
+              ],
+              [
+                -71.0849999999435,
+                42.03399999996648
+              ],
+              [
+                -71.0849999999435,
+                41.11799999996724
+              ],
+              [
+                -71.85899999994288,
+                41.11799999996724
+              ],
+              [
+                -71.85899999994288,
+                42.03399999996648
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p><strong>Overview</strong></p><p>This feature service provides a comprehensive, statewide geospatial dataset representing the land use and land cover conditions as of 2020 for Rhode Island and its immediate surrounding areas. The dataset extends slightly into neighboring states Connecticut and Massachusetts to the extent of available aerial orthoimagery.</p><p><strong>This hosted feature layer has been published in RI State Plane Feet NAD 83.</strong></p><p><strong>Dataset Origin and Methodology</strong></p><p>The dataset was developed through a combination of automated and manual photointerpretation methods, comparing high-resolution 2020 leaf-off aerial orthoimagery against 2011 imagery to detect and delineate changes over the nine-year interval. The derived data represents a seamless vector map with a minimum mapping unit of 0.5 acres.</p><p><strong>Classification System</strong></p><p>The land use and land cover classes are based on the Rhode Island modified Anderson Level III classification scheme, consistent with previous datasets from 1988 through 2011, but updated with the addition of two new categories for renewable energy infrastructure: ground-mounted solar energy systems and wind energy systems. Notably, marinas were reclassified from transportation and developed recreation categories to commercial to enhance classification accuracy.</p><p><strong>Layer Description</strong></p><ul><li><strong>Land Cover and Use 2020</strong>: This primary feature layer details land use and land cover polygons with attributes including classification codes, descriptive categories, acreage, and symbology categories. It includes varied land cover types ranging from forest, wetlands, developed areas, and agricultural fields, to specialized classes reflecting recent energy developments.</li></ul><p><strong>Geographic and Thematic Coverage</strong></p><p>While focused on Rhode Island, this dataset also covers adjacent regions. The dataset is vital for urban planning, environmental management, resource conservation, and infrastructure development projects.</p><p><strong>Data Use Considerations</strong></p><p>The dataset should be used with awareness of its preliminary planning purpose, as it does not encompass all wetlands known from other RIGIS sources. &nbsp;Wetland areas previously classified as forested wetlands are depicted as forest areas in this dataset. Users are advised to consider spatial and attribute accuracy, along with classification nuances, when integrating this data into analytical workflows. Statistical comparisons with RIGIS land use and land cover data prior to 2003 should be treated with caution since some differences in the methodologies used to delineate features were employed.</p><p><strong>Licensing and Attribution</strong></p><p>The data is shared under the Rhode Island Geographic Information System (RIGIS) license agreement. Users must acknowledge RIGIS and primary data contributors in derivative products and comply with the usage terms detailed in the licensing agreement.</p>",
+        "licenseInfo": "<div style='text-align:Left;'><p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-weight:700;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. </p><p>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at https://info.rigis.org/logos/ </p><p><b>Additional access and use constraints imposed by the data originator:</b> </p><p>Please consider the source, spatial accuracy, attribute accuracy, currentness, and scale of these data before incorporating them into your project. These data were derived from automated and manual photointerpretation processes and should be used for preliminary planning purposes only. The wetland areas contained in this dataset do not include all wetlands previously identified in other RIGIS land use and land cover datasets or in other separate GIS wetlands datasets and interpretation of wetland areas should lean toward the side of caution. Wetland areas previously classified as forested wetlands are shown as forested areas in this dataset. Statistical comparisons with RIGIS land use and land cover data prior to 2003 should be treated with caution since significant differences in the methodologies used to delineate features were employed. If data are used for change detection using the 2003/2004 edition be aware that marinas were coded from other transportation and developed recreation to commercial in the 2011 data to more accurately fit the classification system</p></div>",
+        "title": "Land Use and Land Cover (2020)",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780588406000,
+        "avgRating": 0,
+        "id": "af22130a825e4299822e67480cf0aa10",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Imagery",
+          "basemaps",
+          "and Earth cover",
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Department of Administration, Division of Statewide Planning; Rhode Island Department of Environmental Management; University of Rhode Island Department of Natural Resources Science, Environmental Data Center; United States Geological Survey Commercial Partnership Team, Geospatial Products and Services Contracts, National Map Liaison NetworkThe development of updated 2020 Land Use and Land Cover was made possible through funds provided through RI Division of Statewide Planning and Volkswagen settlement funds awarded by the R.I. Office of the Attorney General in 2019.",
+        "largeThumbnail": "largethumbnail/af22130a825e4299822e67480cf0aa10.png",
+        "lastViewed": 1780585200000,
+        "thumbnail": "thumbnail/af22130a825e4299822e67480cf0aa10.png",
+        "languages": [],
+        "created": 1734970645000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/PLAN_Land_Cover_Use_2020_spf/FeatureServer",
+        "tags": [
+          "PLAN",
+          "RIGIS",
+          "Rhode Island",
+          "Anderson Classification",
+          "Renewable Energy",
+          "Solar Energy"
+        ],
+        "numViews": 15123,
+        "numComments": 0,
+        "size": 182973832,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "PLAN_Land_Cover_Use_2020_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "view": {
+            "mapSettings": {
+              "featureLayerStyle": "item"
+            }
+          },
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -71.85899999994288,
+                41.11799999996724
+              ],
+              [
+                -71.0849999999435,
+                42.03399999996648
+              ]
+            ],
+            "geometries": [
+              {
+                "rings": [
+                  [
+                    [
+                      -71.85899999994288,
+                      41.11799999996724
+                    ],
+                    [
+                      -71.85899999994288,
+                      42.03399999996648
+                    ],
+                    [
+                      -71.0849999999435,
+                      42.03399999996648
+                    ],
+                    [
+                      -71.0849999999435,
+                      41.11799999996724
+                    ],
+                    [
+                      -71.85899999994288,
+                      41.11799999996724
+                    ]
+                  ]
+                ],
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "polygon"
+              }
+            ],
+            "type": "org",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "RI Department of Administration, Division of Statewide Planning",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/af22130a825e4299822e67480cf0aa10"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "59e1f3b322b34d80ab6a413529b333b4",
+      "title": "Rivers and Streams (24K)",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Rivers_and_Streams_24K/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Rivers and Streams originally derived through manual digitizing of USGS 1:24000 Topographic Maps.  Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy. RIDEM Integrated Water Quality Monitoring and Assessment Reporting Rhode Island's Section 305(b) State of the State's Waters Report and Section 303(d) List of Impaired Waters.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.8466935641602,
+                42.01880136194365
+              ],
+              [
+                -71.12167034800626,
+                42.01880136194365
+              ],
+              [
+                -71.12167034800626,
+                41.33307860563652
+              ],
+              [
+                -71.8466935641602,
+                41.33307860563652
+              ],
+              [
+                -71.8466935641602,
+                42.01880136194365
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b><font size='3'><br /></font></p><p><font size='3'>Rivers and Streams originally derived through manual digitizing of USGS 1:24000 Topographic Maps.  Features have subsequently been reviewed and corrected over 2020 ortho photos and 2011 LIDAR digital terrain model for spatial accuracy.</font></p><p><font size='3'>WQS_1 - Water Quality Standard</font></p><p><font size='3'>The federal Clean Water Act under Section 305(b) requires states to assess and report on the overall quality of waters in their state. Historically, the Department has summarized the overall water quality of the state in a biennial (every even year) report &quot;State of the State's Waters&quot; (also known as the 305(b) Report). The attainment of the CWA goals is measured by determining how well waters support their designated uses. For the purposes of the 305(b) water quality assessments, seven designated uses are evaluated: fish and wildlife habitat (aquatic life use); drinking water supply; shellfish consumption; shellfish controlled relay and depuration; fish consumption; primary contact recreation; secondary contact recreation. In the assessments, use support status is determined by comparing available water quality information to the water quality standards established in the Rhode Island Water Quality Regulations. The methodology for this assessment process is outlined in Rhode Island's Consolidated Assessment and Listing Methodology (CALM). The results of this comparison are then used to assess each waterbody's specific designated uses as &quot;Fully Supporting&quot; or &quot;Not Supporting&quot;. If data is not available to evaluate a designated use, it is considered &quot;Not Assessed&quot;. Waterbodies that are not meeting their criteria or designated uses as determined during the 305(b) assessment process, are placed on the state's List of Impaired Waters which is developed in accordance with Section 303(d) of the CWA. This List is prioritized and schedules are set for developing Water Quality Restoration Plans, also known as Total Maximum Daily Loads (TMDLs).1. Class AA - These waters are designated as a source of public drinking water supply (PDWS) or as tributary waters within a public drinking water supply watershed (the terminal reservoir of the PDWS are identified in § 1.25 of this Part), for primary and secondary contact recreational activities and for fish and wildlife habitat. These waters shall have excellent aesthetic value.a. </font></p><p><font size='3'>Class AA - Waters used for public drinking water supply may be subject to restricted recreational use by State and local authorities.2. </font></p><p><font size='3'>Class A - These waters are designated for primary and secondary contact recreational activities and for fish and wildlife habitat. They shall be suitable for compatible industrial processes and cooling, hydropower, aquacultural uses, navigation, and irrigation and other agricultural uses. These waters shall have excellent aesthetic value.3. </font></p><p><font size='3'>Class B - These waters are designated for fish and wildlife habitat and primary and secondary contact recreational activities. They shall be suitable for compatible industrial processes and cooling, hydropower, aquacultural uses, navigation, and irrigation and other agricultural uses. These waters shall have good aesthetic value.a. Certain waterbody segments may have partial use designations assigned to them as noted in § 1.9(D) of this Part.4. </font></p><p><font size='3'>Class B1 - These waters are designated for primary and secondary contact recreational activities and fish and wildlife habitat. They shall be suitable for compatible industrial processes and cooling, hydropower, aquacultural uses, navigation, and irrigation and other agricultural uses. These waters shall have good aesthetic value. Primary contact recreational activities may be impacted due to pathogens from approved wastewater discharges. However all Class B criteria must be met.a. Certain waterbody segments may have partial use designations assigned to them as noted in § 1.9(D) of this Part.5. </font></p><p><font size='3'>Class C - These waters are designated for secondary contact recreational activities and fish and wildlife habitat. They shall be suitable for compatible industrial processes and cooling, hydropower, aquacultural uses, navigation, and irrigation and other agricultural uses. These water shall have good aesthetic value.</font></p><p><font size='3'>CAT_1  Integrated Report Category (formerly 303d)</font></p><p><font size='3'>Category 1 - Attaining all designated uses. Waterbodies will be placed into this Category if, in accordance with the requirements of the CALM, the assessment results indicated that the waterbody is attaining all water quality standards for all designated uses.</font></p><p><font size='3'>Category 2 - Attaining some of the designated uses; and insufficient or no data and information is available to determine if the remaining uses are attained. Waterbodies will be placed in this Category if there are data and information which, in accordance with the CALM, support a determination that some, but not all, uses are attained and attainment status of the remaining uses is unknown because there is insufficient or no data or information.</font></p><p><font size='3'>Category 3 - Insufficient or no data and information are available to determine if any designated use is attained or impaired. Waterbodies will be placed in this Category where the data or information to support an attainment determination for any use are not sufficient, consistent with the requirements of the CALM. In general, these uses and waterbodies are considered Not Assessed.</font></p><p><font size='3'>Category 4 - Impaired or threatened for one or more designated uses but does not require development of a TMDL. (Three subcategories):4A TMDL has been completed. Waterbodies will be placed in this subcategory once all TMDLs for the waterbody have been developed and approved by EPA.</font></p><p style='margin:1 1 1 20;'><font size='3'>4B Other pollution control requirements are reasonably expected to result in attainment of the water quality standard in the near future. Waterbodies will be placed in this subcategory where other pollution control requirements are stringent enough to implement any water quality standard applicable to the water.</font></p><p style='margin:1 1 1 20;'><font size='3'>4C Impairment is not caused by a pollutant. Waterbodies will be placed in this subcategory if pollution (e.g., flow) rather than a pollutant causes the impairment.</font></p><p><font size='3'>Category 5 - Impaired or threatened for one or more designated uses by a pollutant(s), and requires a TMDL. This Category constitutes the 303(d) List of waters impaired or threatened by a pollutant(s) for which one or more TMDL(s) are needed.</font></p><p><font size='3'>The new format provides an Integrated List consisting of 5 categories of water quality assessment information, with the fifth category being the list of impaired waters needing a TMDL. Assessments may result in different use support attainment status for the different designated uses for individual waterbodies. For example, a waterbody may be Fully Supporting swimming use, but there may be insufficient data to develop an aquatic life use support status. The Integrated Report Categories are presented below with a description of how the results of the individual assessments for each designated use on a waterbody are integrated to determine the final Integrated Report Category for each waterbody. In general, the integration of assessment determinations follows a hierarchical approach where a determination of impairment for any cause for any of the waterbody's designated uses will result in placement of the waterbody in Category 5. Similarly, there is a hierarchical approach to placement of a waterbody into Category 4A over 4B over 4C. While each waterbody is placed into only one of the 5 reporting categories, the attainment status of each designated use for each waterbody is documented on the Integrated Lists to facilitate tracking of information and to assist in addressing data gaps and directing water quality monitoring efforts.</font></p><p><font size='3'>Cold/Warm - An assessment by Division of Fish &amp;amp; Wildlife identifying cold or warm water fish habitat. </font></p><p><font size='3'>SRPW_1 - Identifies Special Resource Protection Waters as identified in the DEM Water Quality Regulations</font></p><p><font size='3'>SW_Pot - Waters potentially impaired by stormwater runoffSW_Con - Waters confirmed impaired by stormwater runoff</font></p><p><font size='3'>URL_1 - Link to USEPA Waterbody ReportIWQMA_AsmntType - Integrated Water Quality Monitoring and Assessment TypeSome lakes, especially some run-of-river impoundments, are assessed as linear river centerlines.</font></p><p><font size='3'>Length_Mi - Feature length in statute miles</font></p><p><font size='3'>FType - Features found on USGS 1:24,000 Topographic Maps are rivers, those not found on the topos are identified as streams.  A small number of features depict flows that have been directed into underground culverts.</font></p><p></p></div></div></div>",
+        "licenseInfo": "<span style='margin:0px; padding:0px; color:rgb(0, 0, 0); font-size:11pt; line-height:16px; font-family:Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif; font-variant-ligatures:none !important;'><span style='margin:0px; padding:0px;'>This dataset is provided 'as is.’ The producer(s) o</span><span style='margin:0px; padding:0px;'>f this dataset, contributors to this dataset, the Rhode Island Geographic Information </span><span style='margin:0px; padding:0px;'>System (</span><span style='margin:0px; padding:0px;'>RIGIS) consortium</span><span style='margin:0px; padding:0px;'>, the State of Rhode Island, and the University of Rhode </span><span style='margin:0px; padding:0px;'>Island do not make any warranties of any kind for this </span><span style='margin:0px; padding:0px;'>dataset and</span><span style='margin:0px; padding:0px;'> are not liable for any </span><span style='margin:0px; padding:0px;'>loss or damage however and whenever caused by any use of this dataset. Please </span><span style='margin:0px; padding:0px;'>acknowledge both RIGIS and the primary producer(s) of this dataset in any derived </span><span style='margin:0px; padding:0px;'>products</span><span style='margin:0px; padding:0px;'>.  </span><span style='margin:0px; padding:0px;'>Versions of the RIGIS logo suitable for both printed and web-based products </span><span style='margin:0px; padding:0px;'>are available a</span><span style='margin:0px; padding:0px;'>t https://info.rigis.org/pages/logos</span></span><span style='margin:0px; padding:0px; color:rgb(0, 0, 0); font-size:11pt; line-height:16px; font-family:Arial, Arial_EmbeddedFont, Arial_MSFontService, sans-serif;'> </span>",
+        "title": "Rivers and Streams (24K)",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1734360943000,
+        "avgRating": 0,
+        "id": "59e1f3b322b34d80ab6a413529b333b4",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/59e1f3b322b34d80ab6a413529b333b4.png",
+        "lastViewed": 1734357600000,
+        "thumbnail": "thumbnail/59e1f3b322b34d80ab6a413529b333b4.png",
+        "languages": [],
+        "created": 1700577316000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Rivers_and_Streams_24K/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "water quality",
+          "impairments"
+        ],
+        "numViews": 4089,
+        "numComments": 0,
+        "size": 4382720,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Rivers_and_Streams_24K",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "hosted": true
+          },
+          "indexJobId": ""
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/59e1f3b322b34d80ab6a413529b333b4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5df7bbeaa28a43ec9f6c426982978fe0",
+      "title": "Water Use Categories",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Water_Use_Categories/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Vector polygon representations of al RI Water Subject to CRMC Regulation as described in the Publication.\"State of Rhode Island, Coastal Resources Management Program, As Amended\" (aka, The Redbook) Section 200 Tidal and Coastal Pond Waters A.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.91244016906361,
+                42.0189438339247
+              ],
+              [
+                -71.09216947084535,
+                42.0189438339247
+              ],
+              [
+                -71.09216947084535,
+                41.095283894712445
+              ],
+              [
+                -71.91244016906361,
+                41.095283894712445
+              ],
+              [
+                -71.91244016906361,
+                42.0189438339247
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><span style='font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-size:12pt;'><strong>This hosted feature layer has been published in RI State Plane Feet NAD 83.</strong></span><br /></div><div><br /></div><p>RI CRMC Water Use Category Mapping -- Vector polygon representations of all RI Water Subject to CRMC Regulation as described in the Publication &quot;The State of Rhode Island, Coastal Resources Management Program, As Amended&quot; (aka, The Redbook) Section 200 Tidal and Coastal Pond Waters A. The six categories of waters defined in this Program are directly linked to the characteristics of the shoreline, since the activities on the adjacent mainland are the primary determinant of the uses and qualities of any specific water site.</p><div></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The six categories of waters defined in this Program are directly linked to the characteristics of the shoreline, since the activities on the adjacent mainland are the primary determinant of the uses and qualities of any specific water site.</span></div><div><ul><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Type 1 waters abut shorelines in a natural undisturbed condition, where alterations, including the construction of docks and any dredging, are considered by the Council as unsuitable.</span></li><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Type 2 waters are adjacent to predominantly residential areas, where docks are acceptable, but more intense forms of development, including more marinas and new dredging projects (but not maintenance dredging), would change the area's character and alter the established balance among uses. Alterations such as these would bring more intensive uses and are therefore prohibited in Type 2 waters. The waters along some 70 percent of the state's 420 miles of shoreline have been assigned to Type 1 and Type 2, and should be expected to retain their high scenic values and established patterns of low-intensity use.</span></li></ul></div><div><ul><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Type 3 waters are dominated by commercial facilities that support recreational boating. Here, marinas, boatyards, and associated businesses take priority over other uses, and dredging and shoreline alterations are to be expected.</span></li><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Type 4 areas include the open waters of the Bay and the Sounds, where a balance must be maintained among fishing, recreational boating, and commercial traffic. Here high water quality and a healthy ecosystem are primary concerns. The last two water use categories are assigned to areas adjacent to ports and industrial waterfronts. In these waters, maintenance of adequate water depths is essential, high water quality is seldom achievable, and some filling may be desirable.</span></li><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Within Type 5 ports, a mix of commercial and recreational activities must co-exist,</span></li><li><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>while in Type 6 waters, water-dependent industrial and commercial activities take precedence over all other activities.</span></li></ul><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The water categories described in this section are complemented by policies for shoreline types (Section 210), and the two must be combined to identify the Program's policies for a specific coastal site. More than 90 percent of Rhode Island's tidal waters are classified by the R.I. Department of Environmental Management as SA, the highest water quality rating. Water pollution, however, is a major concern, with eutrophication and bacterial contamination a growing concern in the salt ponds and with all major indicators of pollution showing strong gradients down the Bay from the Providence metropolitan area. Despite the pollutants and intense fishing pressure, Rhode Island's tidal waters support large seasonal populations of a variety of finfish. In the Bay, the quahog supports a large and important commercial fishery. Recreational fishing for flounder, bluefish, and striped bass is important nearshore. Rhode Island has a rich history of maritime commerce and industry. In this century, however, the once-booming urban waterfronts of the upper Bay have stagnated and declined despite major infusions of public funds to deepen the access channel to Providence to 40 feet and build new terminal facilities. During the postwar decades, oil imports have dominated waterborne commerce, but this sector has declined sharply since the mid-seventies. In 1973, the U.S. Navy announced a major pullout from its extensive facilities in the lower Bay, and by 1980 hundreds of acres of port facilities at Quonset, Davisville, Melville, and Coddington Cove had been turned over to the state. The State of Rhode Island now owns a large inventory of unutilized or underutilized port facilities. As commercial shipping has declined, recreational boating has increased. Facilities for the in-water storage of boats are in short supply, but with very few exceptions expansion of marinas into new areas could only be accomplished if remaining salt marshes and other important natural features were sacrificed. Since this is considered unacceptable by the Council, the emphasis must be on the more efficient use of existing facilities, recycling of underutilized but already disturbed sites, and improvements to public launching facilities. Activities that are dependent on Rhode Island's tidal waters generate substantial economic benefits to the state. Nearly one billion dollars are generated each year by such water-related activities as marine industry, transportation and education, commercial fishing and marine recreation (Farrell and Rorholm, 1981). Substantial additional economic benefits are generated by water-enhanced residential development, tourism, and the importance of an attractive marine environment in drawing high-quality businesses to Rhode Island. Coastal Resources Management Council approved changes to Water Types adopted 2010: Portion of the Seekonk River along the Providence shoreline from Type 4 to Type 1 Portion of the Providence River at Bold Point from Type 6 to Type 4 Portion of the Providence River south of the Providence and Worcester Railroad quay from Type 6 to Type 5 Portion of the Providence River along the East Providence shoreline from Type 6 to Type 2 Coastal Resource Management Council Approved Changes to Water Types adopted June 2011: 1. Portion of Ninigret Pond adjacent to the Ninigret National Wildlife Refuge (former Charlestown NAS) changed from Type 2 - Low Intensity Use to Type 1 - Conservation Area 2. Portion of Bissel Cove, North Kingstown adjacent to John H. Chafee Rome Point Conservation area changed from Type 2 toType 1 3. Portion of Dutch Harbor, Jamestown adjacent to Watson Farm &amp; Great Creek changed from Type 2 to Type 1 4. Portion of Warren River at Jacobs Point, adjacent to ASRI Claire D. McIntosh Refuge changed from Type 2 to Type 1 5. Type 1 Waters along the Providence shoreline of the Seekonk River from a point starting 250 feet north of the Narragansett Boat Club property (parcel 41-258) north to the Pawtucket city line and out to within approximately 50 feet of the existing federal channel(Adopted by the Council on January 27, 2010). 6. A straight line running WNW from the Union Oil property boundary with Bold Point Park in East Providence to the easterly boundary of the State of Rhode Island property (parcel 18-344) at India Point (Adopted by the Council on January 27, 2010). 7. A straight line starting approximately 120 feet south of the existing Providence &amp; Worcester quay (parcel 7-1-3) running WSW and more or less perpendicular to the federal channel out into the river ending approximately 120 from the federal channel (Adopted by the Council on January 27, 2010). 8. A straight line starting at the boundary of parcels 109-1-1 and 109-1-3 running WSW and more or less perpendicular to the federal channel out into the river ending approximately 120 from the federal channel (Adopted by the Council on January 27, 2010). 9. A straight line starting at the boundary of parcels 210-3-6 and 210-3-8 running West out into the river stopping approximately 120 from the federal channel (Adopted by the Council on January 27, 2010). Coastal Resources Management Council approved changes to Water Types adopted 2013: Portion of Mt Hope Bay at Roger Williams University from Type 1 to Type 2 Additional Information: RI Coastal Resources Management Council Website: https://www.crmc.ri.gov/index.html CRMC Redbook: https://www.crmc.ri.gov/pubs/programs/redbook.pdf Delineation of water use classifications is based on descriptions in Appendix 1 of the Redbook. The Rhode Island offshore 3 mile limit was taken from NOAA Office of Coast Survey GIS data 2004.</span><font face='Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif'><span style='font-size:16px;'><br /></span></font></div></div>",
+        "licenseInfo": "While every attempt has been made to ensure the accuracy of this data, users are cautioned that use of this data or derived products does not relieve them of the responsibility to consult with CRMC Staff on matters covered by RI General Law and CRMC Regulatory Authority. Please consider the source, spatial accuracy, attribute accuracy, currentness, and scale of these data before incorporating them into your project. <div><br /></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><strong>These data are shared under the RIGIS license agreement, which can be viewed below:</strong></span><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at</span><a href='https://info.rigis.org/pages/logos/' style='color:rgb(0, 97, 155); text-decoration-line:none; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://info.rigis.org/pages/logos/</a><br /></div>",
+        "title": "Water Use Categories",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1760541183000,
+        "avgRating": 0,
+        "id": "5df7bbeaa28a43ec9f6c426982978fe0",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Coastal Resources Management Council; RI Dept. of Environmental Management",
+        "largeThumbnail": "largethumbnail/5df7bbeaa28a43ec9f6c426982978fe0.png",
+        "lastViewed": 1760540400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1712947315000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Water_Use_Categories/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "marine",
+          "estuarine",
+          "coastal",
+          "regulation",
+          "water use"
+        ],
+        "numViews": 4044,
+        "numComments": 0,
+        "size": 7405568,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Water_Use_Categories",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Coastal Resources Management Council",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/5df7bbeaa28a43ec9f6c426982978fe0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "50b9c30984d64195870ad50a6d12585c",
+      "title": "Marinas",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/Marinas/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Locations of recreational boating facilities in Rhode Island.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.83810442855525,
+                41.81766328551242
+              ],
+              [
+                -71.21067366458361,
+                41.81766328551242
+              ],
+              [
+                -71.21067366458361,
+                41.18270777595764
+              ],
+              [
+                -71.83810442855525,
+                41.18270777595764
+              ],
+              [
+                -71.83810442855525,
+                41.81766328551242
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Public and private yacht clubs marinas and recreational boating facilities in Narragansett Bay and Southern Coastal RI.",
+        "licenseInfo": "<span style='font-weight: bold;'><span style='text-decoration: underline;'>These data are shared under the RIGIS license agreement, which can be viewed below: </span></span><br />This  dataset is provided 'as is.’ The producer(s) of this dataset,  contributors to this dataset, the Rhode Island Geographic Information  System (RIGIS) consortium, the State of Rhode Island, and the University  of Rhode Island do not make any warranties of any kind for this  dataset, and are not liable for any loss or damage however and whenever  caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS  and the primary producer(s) of this dataset in any derived products.   Versions of the RIGIS logo suitable for both printed and web-based  products are available at <a href='http://www.rigis.org/logos'>http://www.rigis.org/logos</a>.",
+        "ownerId": "ff02cfbd7b33dd1bfdd4da8bc1ae3900",
+        "title": "Marinas",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1690908257000,
+        "avgRating": 0,
+        "id": "50b9c30984d64195870ad50a6d12585c",
+        "categories": [
+          "/Categories/Structures and facilities"
+        ],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept. of Administration, Division of Planning; Bates and McDonough Realty. Icon Credit: Creative Stall via The Noun Project",
+        "largeThumbnail": null,
+        "lastViewed": 1786028400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1469630131000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/Marinas/FeatureServer",
+        "tags": [
+          "FACILITY",
+          "RIGIS",
+          "Rhode Island",
+          "marina",
+          "yacht",
+          "boat",
+          "ocean",
+          "bay",
+          "salt water"
+        ],
+        "numViews": 6004,
+        "numComments": 0,
+        "size": 49152,
+        "listed": false,
+        "scoreCompleteness": 73,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Marinas",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Division of Planning",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/50b9c30984d64195870ad50a6d12585c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3a0cf65fc66e4c008a55c0e041670f44",
+      "title": "Hiking Trails on State Lands",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/TRANS_State_Hiking_Trails/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Locations of recreational trails in State Parks and Management Areas mapped for informational and planning purposes.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.810268,
+                42.012409
+              ],
+              [
+                -71.134506,
+                42.012409
+              ],
+              [
+                -71.134506,
+                41.146776
+              ],
+              [
+                -71.810268,
+                41.146776
+              ],
+              [
+                -71.810268,
+                42.012409
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><p><span><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b></span></p><p><span>Locations of recreational trails in State Parks and Management Areas mapped for informational and planning purposes. </span>It is important for users to note that this may not be a complete picture of all trails on state-owned land.</p><p><span>Only trails occurring within State of Rhode Island properties are included in these data. All trails on properties owned by land trusts, towns, private organizations, or organizations such as The Nature Conservancy are not included. </span></p><p><span>There are portions of the North South trail included in these data that do not occur on state lands, however for the full North South Trail, please reference the NSTrail15 dataset also on RIGIS.</span></p></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><p><span>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. </span></p><p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-weight:700;'>Additional access and use constraints imposed by the data originator:</span><span></span></p><p><span>The following disclaimer must appear on all map produced with this dataset: These data were created by RIDEM for informational, planning and guidance use only. They are meant for use as a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of these data may require the assistance of appropriate professional services. Locations have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. RIDEM makes no warranty, express or implied, related to the accuracy, reliability, completeness, or currentness of this map.</span></p></div></div>",
+        "title": "Hiking Trails on State Lands",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1762373014000,
+        "avgRating": 0,
+        "id": "3a0cf65fc66e4c008a55c0e041670f44",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDc, RIGIS, Rhode Island Department of Environmental Management",
+        "largeThumbnail": "largethumbnail/3a0cf65fc66e4c008a55c0e041670f44.png",
+        "lastViewed": 1762372800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1744638094000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/TRANS_State_Hiking_Trails/FeatureServer",
+        "tags": [
+          "TRANS",
+          "RIGIS",
+          "Rhode Island",
+          "hiking",
+          "park",
+          "management area"
+        ],
+        "numViews": 1054,
+        "numComments": 0,
+        "size": 2326528,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "TRANS_State_Hiking_Trails",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              },
+              {
+                "hidden": true,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -71.810268,
+                41.146776
+              ],
+              [
+                -71.134506,
+                42.012409
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 41.146776,
+                "xmin": -71.810268,
+                "ymax": 42.012409,
+                "xmax": -71.134506,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/3a0cf65fc66e4c008a55c0e041670f44"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6f47a406d6814653864c539d7f0d4e25",
+      "title": "North South Trail",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/TRANS_NorthSouth_Hiking_Trail_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "General reference for planning purposes and small scale cartographic output.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.804848,
+                42.022487
+              ],
+              [
+                -71.65816,
+                42.022487
+              ],
+              [
+                -71.65816,
+                41.341864
+              ],
+              [
+                -71.804848,
+                41.341864
+              ],
+              [
+                -71.804848,
+                42.022487
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><b>This hosted feature layer has been published in RI State Plane Feet NAD 83</b></div><div><b><br /></b></div>Location of the North South hiking trail that runs through the state of RI. This trail is 77 miles long and covers a variety of land ownership, including State of Rhode Island parks and management areas, as well as private and residential areas.",
+        "licenseInfo": "This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. <div><br /></div><div>The following disclaimer must appear on all map produced with this dataset: These data were created by RIDEM for informational, planning and guidance use only. They are meant for use as a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of these data may require the assistance of appropriate professional services. Locations have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. RIDEM makes no warranty, express or implied, related to the accuracy, reliability, completeness, or currentness of this map.</div>",
+        "title": "North South Trail",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1732125787000,
+        "avgRating": 0,
+        "id": "6f47a406d6814653864c539d7f0d4e25",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept of Environmental Management",
+        "largeThumbnail": "largethumbnail/6f47a406d6814653864c539d7f0d4e25.png",
+        "lastViewed": 1756476000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1730742317000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/TRANS_NorthSouth_Hiking_Trail_spf/FeatureServer",
+        "tags": [
+          "TRANS",
+          "RIGIS",
+          "Rhode Island",
+          "hiking",
+          "open space",
+          "park",
+          "management area"
+        ],
+        "numViews": 5339,
+        "numComments": 0,
+        "size": 204800,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "TRANS_NorthSouth_Hiking_Trail_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/6f47a406d6814653864c539d7f0d4e25"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    153
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 15,
+  "next_offset": 10,
+  "response_sha256": "ad8f202204fe43bb7089a107b3b4c4c016d6abacfd72f69408b395ab111b1b45",
+  "search_complete": false
+}

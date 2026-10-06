@@ -1,0 +1,265 @@
+{
+  "jurisdiction_code": "KS",
+  "query": "life expectancy",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T08:28:04.598962+00:00",
+  "candidates": [
+    {
+      "id": "84b695d9afaa446795b381257bd369e6",
+      "title": "KDHE Surface Water Register - Streams",
+      "url": "https://maps.kdhe.ks.gov/kdhe_oits/rest/services/Reference/Hydro_KSWR/FeatureServer/0",
+      "publisher": "kdhe.gis",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map service contains the Streams listed on the Kansas Surface Water Register (KSWR). Part of the Clean Water Act, a classified surface water is any surface water or segment that supports (or, in the absence of artificial sources of pollution, would support) one or more designated uses of surface water defined in K.A.R 28-16-28d.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.1697,
+                40.0809
+              ],
+              [
+                -94.433,
+                40.0809
+              ],
+              [
+                -94.433,
+                36.9187
+              ],
+              [
+                -102.1697,
+                36.9187
+              ],
+              [
+                -102.1697,
+                40.0809
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This map service contains the streams listed on the Kansas Surface Water Register (KSWR) as of February 2021. Originally adopted in 1994 as a part of the state's water quality standards, the KSWR lists the major classified waters of the state along with their use designations. (A classified surface water is any surface water or segment that supports (or, in the absence of artificial sources of pollution, would support) one or more designated uses of surface water defined in K.A.R. 28-16-28d. More information can be found in K.A.R. 28-16-28b through 28-16-28g and K.S.A. 2017 Supp. 82a-2001, and amendments thereto.) <div><br /></div><div>At the time of adoption, not all water bodies had their uses declared. Subsequent revisions to the register have expanded on this dataset. This dataset is only updated on a yearly basis.<div><br /></div><div>Please note that the register defines stream segments by upstream and downstream coordinates. The geometry contained in this service was derived from the National Hydrography Dataset, so it should be used as a representation only. </div><div><br /></div><div>For the official Kansas Surface Water Register Document:  <a href='https://www.kdhe.ks.gov/DocumentCenter/View/13293/Kansas-Surface-Water-Register-PDF' target='_blank' rel='nofollow ugc noopener noreferrer'>Kansas Surface Water Register</a></div><div>For further information, please contact the <a href='https://www.kdhe.ks.gov/1381/Kansas-Surface-Water-Quality-Standards' target='_blank' rel='nofollow ugc noopener noreferrer'>Bureau of Water</a> <img alt='opens in new tab' src='https://maps.kdhe.ks.gov/_Gallery/openinnewtabicon.png' />. More information about KDHE can be found on the <a href='https://www.kdhe.ks.gov/' target='_blank' rel='nofollow ugc noopener noreferrer'>Kansas Department of Health and Environment website</a> <img alt='opens in new tab' src='https://maps.kdhe.ks.gov/_Gallery/openinnewtabicon.png' />.<br /></div><div><br /></div><div>Abbreviations</div><div><ul><li>HUC = hydrologic unit code</li><li>SEG = stream segment</li><li>CLASS = antidegradation category</li><li>GP = general purpose waters</li><li>EX = exceptional state waters</li><li>ON = outstanding national resource waters</li><li>AL = designated for aquatic life use</li><li>S = special aquatic life use water</li><li>E = expected aquatic life use water</li><li>R = restricted aquatic life use water</li><li>CR = designated for contact recreational use</li><li>A = Primary contact recreation stream segment is a designated public swimming area</li><li>B = Primary contact recreation stream segment is by law or written permission of the\nlandowner open to and accessible by the public</li><li>C = Primary contact recreation stream segment is not open to and accessible by the public\nunder Kansas law</li><li>a = Secondary contact recreation stream segment is by law or written permission of the\nlandowner open to and accessible by the public</li><li>b = Secondary contact recreation stream segment is not open to and accessible by the public\nunder Kansas law </li><li>DS = designated for domestic water supply use </li><li>FP = designated for food procurement use </li><li>GR = designated for ground water recharge</li><li>IW = designated for industrial water supply use</li><li>IR = designated for irrigation use</li><li>LW = designated for livestock watering use</li><li>X = referenced stream segment is assigned the indicated designated use</li><li>O = referenced stream segment does not support the indicated designated use</li><li>blank = capacity of the referenced stream segment to support the indicated designated use has\nnot been determined by use attainability analysis</li><li>Br = branch</li><li>Cr = creek </li><li>Fk = fork </li><li>M = middle </li><li>R = river  </li></ul></div></div>",
+        "licenseInfo": "This map service is provided as a public service through KDHE and is intended to provide general information. Free and open for public use. The use of names or addresses derived from public records for commercial purposes is expressly prohibited under Kansas law (K.S.A. 45-230).",
+        "title": "KDHE Surface Water Register - Streams",
+        "type": "Feature Service",
+        "orgId": "Q6wTdPdCh608iNrJ",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1727265124000,
+        "avgRating": 0,
+        "id": "84b695d9afaa446795b381257bd369e6",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "kdhe.gis",
+        "accessInformation": "KDHE",
+        "largeThumbnail": null,
+        "lastViewed": 1752757200000,
+        "thumbnail": "thumbnail/thumbnail1630699658346.png",
+        "languages": [],
+        "created": 1630699047000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps.kdhe.ks.gov/kdhe_oits/rest/services/Reference/Hydro_KSWR/FeatureServer/0",
+        "tags": [
+          "KDHE",
+          "environment",
+          "Surface Water Register",
+          "water",
+          "streams",
+          "hydro",
+          "Bureau of Water",
+          "BOW",
+          "Environment",
+          "Kansas Department of Health and Environment",
+          "Water",
+          "Hydro",
+          "DASC"
+        ],
+        "numViews": 4765,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KDHE Public ArcGIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/84b695d9afaa446795b381257bd369e6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "710c380e2e794d64a097ca73ddb3099b",
+      "title": "KDHE Surface Water Register - Lakes",
+      "url": "https://maps.kdhe.ks.gov/kdhe_oits/rest/services/Reference/Hydro_KSWR/FeatureServer/11",
+      "publisher": "kdhe.gis",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This map service contains the Lakes, Waterbodies and Wildlife Areas listed on the Kansas Surface Water Register (KSWR). Part of the Clean Water Act, a classified surface water is any surface water or segment that supports (or, in the absence of artificial sources of pollution, would support) one or more designated uses of surface water defined in K.A.R 28-16-28d.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -102.0292,
+                39.9931
+              ],
+              [
+                -94.4653,
+                39.9931
+              ],
+              [
+                -94.4653,
+                36.9382
+              ],
+              [
+                -102.0292,
+                36.9382
+              ],
+              [
+                -102.0292,
+                39.9931
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This map service contains the lakes listed on the Kansas Surface Water Register (KSWR) as of February 2021. Originally adopted in 1994 as a part of the state's water quality standards, the KSWR lists the major classified waters of the state along with their use designations. (A classified surface water is any surface water or segment that supports (or, in the absence of artificial sources of pollution, would support) one or more designated uses of surface water defined in K.A.R 28-16-28d. More information can be found in K.A.R 28-16-28b through 28-16-28g and K.S.A. 2017 Supp. 82a-2001, and amendments thereto.) <div><br /></div><div><span style='color:rgb(68, 68, 68); font-family:Nunito; font-size:14.4px;'>Written to meet the requirements of Section 303(d) of the Clean Water Act (CWA) and the interpreting regulations at 40 CFR §130.5, the Kanas Continuing Planning Process (CPP) document describes the processes undertaken by the Kansas Department of Health and Environment (KDHE) in its aim to prevent, reduce, and eliminate pollution in Kansas waters in order to restore and maintain their chemical, physical, and biological integrity.    </span><br /></div><div><span style='color:rgb(68, 68, 68); font-family:Nunito; font-size:14.4px;'><br /></span></div><div>At the time of adoption, not all water bodies had their uses declared. Subsequent revisions to the register have expanded on this dataset. The KSWR utilizes the spatial data based on the USGS NHD Waterbody.<div><br /></div><div>For the complete Kansas Surface Water Register.  <a href='https://www.kdhe.ks.gov/DocumentCenter/View/13293/Kansas-Surface-Water-Register-PDF' target='_blank' rel='nofollow ugc noopener noreferrer'>Kansas Surface Water Register</a></div><div>For an Archive of all Kansas Surface Water Registers: <a href='https://www.kdhe.ks.gov/Archive/84' target='_blank' rel='nofollow ugc noopener noreferrer'>KSWR Archive</a></div><div>For further information, please contact the <a href='https://www.kdhe.ks.gov/1381/Kansas-Surface-Water-Quality-Standards' target='_blank' rel='nofollow ugc noopener noreferrer'>Bureau of Water</a> <img alt='opens in new tab' src='https://maps.kdhe.ks.gov/_Gallery/openinnewtabicon.png' />. More information about KDHE can be found on the <a href='https://www.kdhe.ks.gov/' target='_blank' rel='nofollow ugc noopener noreferrer'>Kansas Department of Health and Environment website</a> <img alt='opens in new tab' src='https://maps.kdhe.ks.gov/_Gallery/openinnewtabicon.png' />.<br /></div><div><div><br /></div><div><div>Abbreviations</div><div><ul><li>HUC = hydrologic unit code</li><li>CLASS = antidegradation category</li><li>GP = general purpose waters</li><li>EX = exceptional state waters</li><li>ON = outstanding national resource waters</li><li>AL = designated for aquatic life use</li><li>S = special aquatic life use water</li><li>E = expected aquatic life use water</li><li>R = restricted aquatic life use water</li><li>CR = designated for contact recreational use</li><li>A = Primary contact recreation lakes that have a posted public swimming area</li><li>B = Primary contact recreation lakes that are by law or written permission of the landowner open to and accessible by the public</li><li>C = Primary contact recreation lakes that are not open to and accessible by the public under Kansas law</li><li>a = Secondary contact recreation lakes that are by law or written permission of the landowner open to and accessible by the public</li><li>b = Secondary contact recreation lakes that are not open to and accessible by the public under Kansas law</li><li>DS = designated for domestic water supply use</li><li>FP = designated for food procurement use</li><li>GR = designated for ground water recharge</li><li>IW = designated for industrial water supply use</li><li>IR = designated for irrigation use</li><li>LW = designated for livestock watering use</li><li>X = referenced lake is assigned the indicated designated use</li><li>O = referenced lake does not support the indicated designated use</li><li>blank = capacity of the referenced lake to support the indicated designated use has not been determined by use attainability analysis</li><li>KWP = Kansas Wildlife and Parks</li><li>LK/ L = lake</li><li>NWR = National Wildlife Refuge</li><li>RES = reservoir</li><li>SFL = State Fishing Lake</li><li>W = wetland</li><li>W.A. = Wildlife Area</li></ul></div></div></div></div>",
+        "licenseInfo": "This map service is provided as a public service through KDHE and is intended to provide general information. Free and open for public use. The use of names or addresses derived from public records for commercial purposes is expressly prohibited under Kansas law (K.S.A. 45-230).",
+        "title": "KDHE Surface Water Register - Lakes",
+        "type": "Feature Service",
+        "orgId": "Q6wTdPdCh608iNrJ",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1727268043000,
+        "avgRating": 0,
+        "id": "710c380e2e794d64a097ca73ddb3099b",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "kdhe.gis",
+        "accessInformation": "KDHE",
+        "largeThumbnail": null,
+        "lastViewed": 1752750000000,
+        "thumbnail": "thumbnail/thumbnail1630699633930.png",
+        "languages": [],
+        "created": 1630699441000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps.kdhe.ks.gov/kdhe_oits/rest/services/Reference/Hydro_KSWR/FeatureServer/11",
+        "tags": [
+          "KDHE",
+          "Surface Water Register",
+          "water",
+          "lakes",
+          "hydro",
+          "Bureau of Water",
+          "BOW",
+          "Environment",
+          "Kansas Department of Health and Environment",
+          "Water",
+          "Hydro",
+          "environment"
+        ],
+        "numViews": 2775,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KDHE Public ArcGIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all/items/710c380e2e794d64a097ca73ddb3099b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://hub.kansasgis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    208
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "3ff7c03daf81571a19db3c0a52d8a9bada3100d34ec862badc4ca7081495a171",
+  "search_complete": true
+}

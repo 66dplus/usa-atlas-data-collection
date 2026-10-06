@@ -1,0 +1,392 @@
+{
+  "jurisdiction_code": "VA",
+  "query": "recreation",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-02T14:29:06.973823+00:00",
+  "candidates": [
+    {
+      "id": "58bd9267-1609-41b0-8211-b1e2329a7064",
+      "title": "Recreation",
+      "url": "https://data.virginia.gov/dataset/recreation",
+      "publisher": "City of Lynchburg - GIS Portal ",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/datasets/CityofLynchburg::recreation",
+          "format": "HTML"
+        },
+        {
+          "url": "https://mapviewer.lynchburgva.gov/arcgis/rest/services/OpenData/ODPDynamic/MapServer/50",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/57b81553528e4705ae533a8908d60e9c/csv?layers=50",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/57b81553528e4705ae533a8908d60e9c/shapefile?layers=50",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/57b81553528e4705ae533a8908d60e9c/geojson?layers=50",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/57b81553528e4705ae533a8908d60e9c/kml?layers=50",
+          "format": "KML"
+        }
+      ],
+      "description": "Recreation planimetric features derived from the Impervious Surface dataset. This data should not be used for inventory purposes."
+    },
+    {
+      "id": "477e8a67-01a0-4652-8c66-2a649993c49e",
+      "title": "Recreational Features",
+      "url": "https://data.virginia.gov/dataset/recreational-features",
+      "publisher": "Fairfax County",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::recreational-features",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services1.arcgis.com/ioennV6PpG5Xodq0/arcgis/rest/services/Recreational_Features/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/filegdb?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/featureCollection?layers=0",
+          "format": "TXT"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/excel?layers=0",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/geoPackage?layers=0",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://data-fairfaxcountygis.opendata.arcgis.com/api/download/v1/items/04ef42e1ab2f4656ad95bed4a9f51d2d/sqlite?layers=0",
+          "format": "GDB"
+        }
+      ],
+      "description": "Recreational features contains the areas of features that are used for recreation as well as potentially being impervious surfaces. The original data capture of the data in this layer was completed in 2014 using stereo models from the 2009 Virginia State imagery. Subsequent to that an update capture was completed in 2022 using stereo models from the 2017 Virginia State imagery. The most recent planimetric update was completed in 2024 using orthoimagery from the 2023 and 2022 Eagleview Orthophotos.This layer contains various recreational features that have been captured through the planimetric update project. These data sets are used to further identify areas of impervious surfaces as well as identifying types of recreational features. The types of features include basketball courts, tennis courts, bleachers, pathways, tracks, playgrounds, diamond fields, rectangle fields, and volleyball courts.Contact: Fairfax County Department of Information Technology GIS DivisionData Accessibility: Publicly available Update frequency: As NeededLast Revision Date: 3/1/2024Creation date: 1/1/2013Layer name: GISMGR.RECREATIONAL_FEATURES "
+    },
+    {
+      "id": "8e282c17-1a83-4636-a4f9-ef288dfef9b5",
+      "title": "Recreation Centers",
+      "url": "https://data.virginia.gov/dataset/recreation-centers",
+      "publisher": "City of Roanoke",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://open-data-portal-roanokeva.hub.arcgis.com/datasets/roanokeva::recreation-centers",
+          "format": "HTML"
+        },
+        {
+          "url": "https://gis03.roanokeva.gov/arcgis/rest/services/Public/Recreation_Centers/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://open-data-portal-roanokeva.hub.arcgis.com/api/download/v1/items/786861d5f3984de9b1a6e5938fc19f07/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://open-data-portal-roanokeva.hub.arcgis.com/api/download/v1/items/786861d5f3984de9b1a6e5938fc19f07/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://open-data-portal-roanokeva.hub.arcgis.com/api/download/v1/items/786861d5f3984de9b1a6e5938fc19f07/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://open-data-portal-roanokeva.hub.arcgis.com/api/download/v1/items/786861d5f3984de9b1a6e5938fc19f07/kml?layers=0",
+          "format": "KML"
+        }
+      ],
+      "description": "{{description}}"
+    },
+    {
+      "id": "eebd43ac-2690-4956-80ea-099df7abdeb4",
+      "title": "Recreation Centers",
+      "url": "https://data.virginia.gov/dataset/recreation-centers1",
+      "publisher": "City of Alexandria - GIS Portal",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/datasets/AlexGIS::recreation-centers",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/ChYV69FhfjwkvRmy/arcgis/rest/services/Recreation_Centers/FeatureServer/47",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/a2c6bc544a214b8f94c2ad6db1b98d0f/csv?layers=47",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/a2c6bc544a214b8f94c2ad6db1b98d0f/shapefile?layers=47",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/a2c6bc544a214b8f94c2ad6db1b98d0f/geojson?layers=47",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/a2c6bc544a214b8f94c2ad6db1b98d0f/kml?layers=47",
+          "format": "KML"
+        }
+      ],
+      "description": "<div style='text-align:Left;'><div><p><span style='font-size:12pt'>Used in ParkLink.</span></p></div></div>"
+    },
+    {
+      "id": "03e554d3-1719-40b7-a01d-ec1858d60d33",
+      "title": "Recreational Amenities Points",
+      "url": "https://data.virginia.gov/dataset/recreational-amenities-points1",
+      "publisher": "City of Alexandria - GIS Portal",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/datasets/AlexGIS::recreational-amenities-points",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/ChYV69FhfjwkvRmy/arcgis/rest/services/Recreational_Amenities__Points/FeatureServer/75",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/77685d96890743c5a409e172766d113c/csv?layers=75",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/77685d96890743c5a409e172766d113c/shapefile?layers=75",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/77685d96890743c5a409e172766d113c/geojson?layers=75",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/77685d96890743c5a409e172766d113c/kml?layers=75",
+          "format": "KML"
+        }
+      ],
+      "description": "<div style='text-align:Left;'><p style='font-size:16ptmargin:7 0 7 0;'><span>A POINT feature representing recreational amenities within the City of Alexandria, Virginia. Used in ParkLink.</span></p><div><p><span /></p></div></div>"
+    },
+    {
+      "id": "e4f9938d-5a99-4ff8-bf96-cabcbb761a8c",
+      "title": "Recreation Park Trails",
+      "url": "https://data.virginia.gov/dataset/recreation-park-trails",
+      "publisher": "City of Alexandria - GIS Portal",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/datasets/AlexGIS::recreation-park-trails",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/ChYV69FhfjwkvRmy/arcgis/rest/services/Rec_Park_Trails/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/7965d5a87f1a4aaf9f7ec3ed474369f9/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/7965d5a87f1a4aaf9f7ec3ed474369f9/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/7965d5a87f1a4aaf9f7ec3ed474369f9/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://cityofalexandria-alexgis.opendata.arcgis.com/api/download/v1/items/7965d5a87f1a4aaf9f7ec3ed474369f9/kml?layers=0",
+          "format": "KML"
+        }
+      ],
+      "description": "<div style='text-align:Left;'><div><div><p><span>This is a line feature class that displays the trails within the parks or community centers in the City of Alexandria. Attributes include Trail Name, Primary Park and Surface type, This was developed in partnership with RPCA and GIS. &nbsp;Last updated 4/7/2026</span></p></div></div></div>"
+    },
+    {
+      "id": "5ee9ca4b-e63e-45fa-affb-d7abe22bdd14",
+      "title": "Recreation Access Points",
+      "url": "https://data.virginia.gov/dataset/recreation-access-points",
+      "publisher": "City of Lynchburg - GIS Portal ",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/datasets/CityofLynchburg::recreation-access-points",
+          "format": "HTML"
+        },
+        {
+          "url": "https://mapviewer.lynchburgva.gov/arcgis/rest/services/OpenData/ODPStatic/MapServer/40",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/b2a3fd74177e45f6b3cfbf72d7e1ee0c/csv?layers=40",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/b2a3fd74177e45f6b3cfbf72d7e1ee0c/shapefile?layers=40",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/b2a3fd74177e45f6b3cfbf72d7e1ee0c/geojson?layers=40",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cityoflynchburg.opendata.arcgis.com/api/download/v1/items/b2a3fd74177e45f6b3cfbf72d7e1ee0c/kml?layers=40",
+          "format": "KML"
+        }
+      ],
+      "description": "Locations of access points to City of Lynchburg parks and trails."
+    },
+    {
+      "id": "d8d33fec-fb89-4bd2-a0bf-ee4c8b97b906",
+      "title": "Hampton Roads Recreational Trails",
+      "url": "https://data.virginia.gov/dataset/hampton-roads-recreational-trails",
+      "publisher": "Hampton Roads PDC & Hampton Roads TPO",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.hrgeo.org/datasets/HRPDC-GIS::hampton-roads-recreational-trails",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/IFfZzsUkSirJaEqg/arcgis/rest/services/HR_Regional_Trails/FeatureServer/31",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://www.hrgeo.org/api/download/v1/items/36e229edce0b4c2b922d7894e4b40826/csv?layers=31",
+          "format": "CSV"
+        },
+        {
+          "url": "https://www.hrgeo.org/api/download/v1/items/36e229edce0b4c2b922d7894e4b40826/shapefile?layers=31",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.hrgeo.org/api/download/v1/items/36e229edce0b4c2b922d7894e4b40826/geojson?layers=31",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://www.hrgeo.org/api/download/v1/items/36e229edce0b4c2b922d7894e4b40826/kml?layers=31",
+          "format": "KML"
+        }
+      ],
+      "description": "This layer represents existing regional recreational trails in Hampton Roads, including hiking/walking, paddling/boating, biking/mountain biking, and equestrian. Trail locations are provided with the best information available but may not reflect ground conditions accurately. The trail locations are for planning purposes only - please verify routes, status, etc. with trail authority or on-premise signage.<div><br /></div><div>This data can be viewed at <a href='https://experience.arcgis.com/experience/1364741349de4eec9ef5692143c4c8d4' target='_blank' rel='nofollow ugc noopener noreferrer'>Fish, Swim, Play</a>.</div>"
+    },
+    {
+      "id": "f3537048-c6c8-4908-95b7-dbb95c799ad8",
+      "title": "Parks and Recreation Amenities",
+      "url": "https://data.virginia.gov/dataset/parks-and-recreation-amenities1",
+      "publisher": "City of Norfolk",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/46ui-daq6/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/46ui-daq6/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/46ui-daq6/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/46ui-daq6/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/46ui-daq6/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.norfolk.gov/api/v3/views/46ui-daq6/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "This dataset provides information about Norfolk's parks, open spaces, community centers and other city properties.  The data details both active and passive recreational opportunities including playgrounds, dog parks, ball fields, basketball courts and many others.    This data will be updated twice a year, in January and July."
+    },
+    {
+      "id": "55e846d1-5530-4250-9a4c-d09f7596dbf0",
+      "title": "Parks and Recreation Amenities",
+      "url": "https://data.virginia.gov/dataset/parks-and-recreation-amenities",
+      "publisher": "City of Norfolk",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.norfolk.gov/Recreation/Parks-and-Recreation-Amenities/46ui-daq6/about_data",
+          "format": "URL"
+        }
+      ],
+      "description": "This dataset provides information about Norfolk's parks, open spaces, community centers and other city properties. The data details both active and passive recreational opportunities including playgrounds, dog parks, ball fields, basketball courts and many others. This data will be updated twice a year, in January and July.\r\n\r\nFor data about this dataset, please click on the below link:\r\nhttps://data.norfolk.gov/Recreation/Parks-and-Recreation-Amenities/46ui-daq6/about_data\n\n<!-- SIMILAR_DATASETS_START -->\n---\n### 🔗 Related Datasets\n\n- [Parks and Recreation Amenities](https://odgavaprod.ogopendata.com//dataset/f3537048-c6c8-4908-95b7-dbb95c799ad8) — *City of Norfolk*\n- [Parks - City of Norfolk](https://odgavaprod.ogopendata.com//dataset/07049080-2898-4d0b-8b45-325f769778d4) — *City of Norfolk - GIS Portal*\n\n---"
+    }
+  ],
+  "page_receipts": [
+    196
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 207,
+  "next_offset": 10,
+  "response_sha256": "0b5011c66359077e072132d25813d814921fdff7d0208dcee26547d11deacf3d",
+  "search_complete": false
+}

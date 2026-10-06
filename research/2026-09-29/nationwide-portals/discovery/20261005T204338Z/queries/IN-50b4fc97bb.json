@@ -1,0 +1,337 @@
+{
+  "jurisdiction_code": "IN",
+  "query": "physical activity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T20:44:36.269208+00:00",
+  "candidates": [
+    {
+      "id": "5d8ecdf6957c427989eb3bd806a8d854",
+      "title": "About",
+      "url": "https://www.indianamap.org/api/search/v1/collections/all/items/5d8ecdf6957c427989eb3bd806a8d854",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This page features descriptions of enhancements made to IndianaMap when transitioning from the legacy application managed by IGWS to the current platform managed by IGIO.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubPage",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "OpenData",
+          "selfConfigured",
+          "Web Map"
+        ],
+        "description": "DO NOT DELETE OR MODIFY THIS ITEM. This item is managed by the ArcGIS Hub application. To make changes to this page, please visit https://INMap.hub.arcgis.com:/overview/edit.",
+        "licenseInfo": null,
+        "title": "About",
+        "type": "Hub Page",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1745599139000,
+        "avgRating": 0,
+        "id": "5d8ecdf6957c427989eb3bd806a8d854",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1780336800000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1683287316000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          ""
+        ],
+        "numViews": 4383,
+        "numComments": 0,
+        "size": 115480,
+        "listed": false,
+        "scoreCompleteness": 43,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/5d8ecdf6957c427989eb3bd806a8d854"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b16b33958e1c4bd0bc81c4167d00d307",
+      "title": "Aviation Facilities 2023",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Aviation_Facilities_2023/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains point features representing the location of aviation facilities (including airports, heliports, and ultralight facilities) in Indiana. This data was obtained from the NTAD on 11/9/2023 (https://geodata.bts.gov/datasets/usdot::aviation-facilities/about).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.98547499999995,
+                41.750125000000025
+              ],
+              [
+                -84.80496026999998,
+                41.750125000000025
+              ],
+              [
+                -84.80496026999998,
+                37.902590270000076
+              ],
+              [
+                -87.98547499999995,
+                37.902590270000076
+              ],
+              [
+                -87.98547499999995,
+                41.750125000000025
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>The dataset provides users with information about airport locations and attributes and can be used for national and regional analysis applications.</div><div><br /></div><div>The Aviation Facilities dataset is updated every 28 days from the Federal Aviation Administration (FAA) and is part of the U.S. Department of Transportation (USDOT)/Bureau of Transportation Statistics (BTS) National Transportation Atlas Database (NTAD). The Aviation Facilities dataset is a geographic point database of all official and operational aerodromes in the United States and U.S. Territories. Attribute data is provided on the physical and operational characteristics of the aerodrome, current usage including enplanements and aircraft operations, congestion levels and usage categories. This geospatial data is derived from the FAA's National Airspace System Resource Aeronautical Data Product. For more information about these data, please visit: <a href='https://www.faa.gov/air_traffic/flight_info/aeronav/Aero_Data/NASR_Subscription' rel='nofollow ugc' target='_blank'>https://www.faa.gov/air_traffic/flight_info/aeronav/Aero_Data/NASR_Subscription</a>.</div><div><br /></div><div>For more information on the coded values in this dataset, please visit: <a href='https://nfdc.faa.gov/webContent/28DaySub/extra/30_Nov_2023_APT_CSV.zip' rel='nofollow ugc' target='_blank'>https://nfdc.faa.gov/webContent/28DaySub/extra/30_Nov_2023_APT_CSV.zip</a></div>",
+        "licenseInfo": "LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.",
+        "title": "Aviation Facilities 2023",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335778000,
+        "avgRating": 0,
+        "id": "b16b33958e1c4bd0bc81c4167d00d307",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "National Transportation Atlas Database (NTAD), Federal Aviation Administration (FAA)",
+        "largeThumbnail": "",
+        "lastViewed": 1780369200000,
+        "thumbnail": "thumbnail/thumbnail1699544979084.png",
+        "languages": [],
+        "created": 1780335777000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Aviation_Facilities_2023/FeatureServer",
+        "tags": [
+          "Aviation",
+          "Aviation Facilities",
+          "Airport",
+          "Heliport",
+          "Ultralight Aircraft Facility"
+        ],
+        "numViews": 1998,
+        "numComments": 0,
+        "size": 337272,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Aviation_Facilities_2023",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/b16b33958e1c4bd0bc81c4167d00d307"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "cb75ce6de0f34021aadccd7548717fb8",
+      "title": "Indiana 3DEP Lidar Acquisition Block Dates",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Indiana3DEPLidarAcquisitionBlockDates/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "In December 2020 an initiative to acquire statewide Quality-Level-2 (QL2) Topographic Lidar* covering all of Indiana as part of the USGS 3D Elevation Program (3DEP) was completed.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.11550866699349,
+                41.781294412924666
+              ],
+              [
+                -84.76398128538834,
+                41.781294412924666
+              ],
+              [
+                -84.76398128538834,
+                37.756410790476785
+              ],
+              [
+                -88.11550866699349,
+                37.756410790476785
+              ],
+              [
+                -88.11550866699349,
+                41.781294412924666
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<h2>Applications of Lidar Data</h2>\n<p>The State of Indiana has a variety of requirements for high quality \nelevation data. QL2 Lidar is utilized for mission critical activities at\n all levels of government, academia and private organizations and \nprovides significant cost savings related to utilizing Lidar as a \nresource. Some of the major use cases identified include:</p>\n<ul><li>Floodplain Mapping, Modeling and Management</li><li>Surface and Ground Water Quality Assessments and Management</li><li>Environmental and Disaster Informatics</li><li>Surveying, Engineering, Transportation and Construction projects</li><li>Homeland Security and Disaster Response</li><li>Geologic Mapping</li><li>Renewable Energy</li><li>Coastal Zone and Maritime Management, Navigation and Safety</li><li>Aviation Navigation and Safety</li><li>Military applications</li></ul>\n<h2>Acquisition of 3DEP QL2 Lidar in Indiana</h2>\n<p>3DEP acquisition of QL2 Lidar for the State of Indiana began in \nspring of 2016 and was completed in the spring of 2020, with the final \ndata delivered in December 2020. This acquisition was accomplished \nthrough the following USGS 3DEP BAA initiatives:</p>\n<p>In 2015 the Indiana Geographic Information Council (IGIC) submitted a\n 3DEP BAA proposal to the USGS in partnership with 3 Indiana Counties \n(Marion, Hamilton and Wayne) to support the acquisition of new Quality \nLevel 2 Lidar data products. This grant was awarded in 2016 and this \nproject was completed in 2019.</p>\n<p>In 2016 the Indiana Geographic Information Council (IGIC) submitted a\n 3DEP BAA proposal to the USGS in partnership with the Indiana office of\n the USDA – Natural Resource Conservation Service (NRCS) to acquire new \nQuality Level 2 Lidar data products for 12 Indiana Counties in northeast\n Indiana. This proposal was selected by the USGS, but before this \nagreement was finalized the Indiana NRCS office was able to allocate \nadditional funds (totaling $6.625 million), and along with additional \n3DEP Federal Funds from the USGS, the original BAA proposal was expanded\n to collect new 3DEP Lidar data products for all remaining 89 counties \nin Indiana. This USGS grant was awarded to NRCS in 2017 and this project\n was completed in December 2020.</p>\n<h2>Indiana 3DEP Lidar Base Products Include</h2>\n<ol><li>Lidar Tiles – individual tiles in LAS 1.4 Format (QL2 Lidar data consists of 2 laser pulses per meter spacing)</li><li>DEM Tiles – individual tiles in IMG Format (Bare-Earth Hydro-Flattened Digital Elevation Model)</li><li>Breaklines – GIS hydrography features (rivers and lake polygons) used to create Bare-Earth Hydro-Flattened DEM</li><li>Intensity Data Tiles – individual tiles in TIF Format (2.5-foot \npixel intensity image generated from the First Return Lidar Pulse \nrecording of surface reflectance)</li><li>DEM Mosaic – Merged countywide DEM mosaic file in IMG Format generated from #2 above</li><li>County Delivery Tile Grid – GIS Shapefile showing all delivery tiles and their file names</li><li>FGDC Metadata</li></ol>\n<p>This new Lidar data is providing valuable and exciting new elevation \nproducts for Indiana that are twice as detailed and twice as accurate as\n Indiana’s previous 2011 – 2013 statewide Lidar.</p>\n<p>With this accomplished, Indiana’s statewide GIS elevation data \nefforts are now focused on enhanced distribution of this new data, the \ndevelopment of derivative products, and the collection of new bathymetry\n Lidar data for inland river and stream channels. Read below to learn \nmore about Lidar and for more information on the status of Indiana’s \n3DEP Lidar initiatives.</p>\n<h2>Mapping Indiana’s 3DEP Lidar Collection Dates</h2>\n<p>Indiana’s Statewide 3DEP QL2 Lidar was collected in the spring over a\n five-year period (2016 – 2020) on a total of sixty-eight (68) different\n days. End-users of Indiana’s Lidar data can read the FGDC metadata \npublished for the Lidar data set you are using [here] to see the general\n collection date information, but reporting the detailed Lidar date \ninformation stored in the Lidar point cloud files* provides important \nmore detailed date information. Also, by publishing a detailed map \nshowing these statewide Lidar collection dates, this important \ninformation shares and conveys more easily.</p>\n<p><em>* The method used was adapted from the original work - Mapping \nLidar Collection Dates from LAS/LAZ Points (wordpress.com) published on \nFebruary 3, 2014 by Kirk Waters, physical scientist at the NOAA Office \nfor Coastal Management.</em></p>\n<p>For Indiana we used a point thinning method to select and reformat \nthe GPSTime information from each Lidar file and then map the results.</p>\n<p style='text-align:center;'><img src='https://igic.memberclicks.net/assets/images/Picture1.png' style='margin:0px; width:200px;' width='33' /> <img height='192' src='https://igic.memberclicks.net/assets/images/Picture2.png' style='margin:0px; width:233px;' width='300' /><br /><span style='font-size:10px;'>Indiana Example: Returning a thinned sampling on Lidar Ground Points per Lidar file</span></p>\n<p>The GPSTime results for each file were combined, summarized and then \nmapped to show Lidar dates by collection year (for all 92 Indiana \ncounties – see map above), and also by specific file collection dates \n(for all 41,648 individual files - see example below).  An interactive \nEsri ArcGIS Online Story Map / App was then published to share this \ndetailed date information [<a href='https://indianamap.maps.arcgis.com/apps/StoryMapBasic/index.html?appid=faa70c8a9d7749ebb16705cf4ece948f&amp;extent=-94.8783,37.1727,-78.0034,42.3213' target='_blank' rel='nofollow ugc noopener noreferrer'>here</a>] with all end-users.</p>",
+        "licenseInfo": "<div><div><p>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS  IS&quot;, without any other warranties or conditions, expressed or implied,  including, but not limited to, warranties for product quality, or  suitability to a particular purpose or use. The risk or liability  resulting from the use of this product is assumed by the user. The  Indiana Geographic Information Office, Indiana University, and The Polis  Center at IUPUI share no liability with product users indirect,  incidental, special, or consequential damages whatsoever, including, but  not limited to, loss of revenue or profit, lost or damaged data or  other commercial or economic loss. The Indiana Geographic Information  Office, Indiana University, and The Polis Center at IUPUI are not  responsible for claims by a third party. The maximum aggregate liability  to the original purchaser shall not exceed the amount paid by you for  the product.</p></div></div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Indiana 3DEP Lidar Acquisition Block Dates",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335586000,
+        "avgRating": 0,
+        "id": "cb75ce6de0f34021aadccd7548717fb8",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geographic Information Office (IGIO)",
+        "largeThumbnail": "",
+        "lastViewed": 1782784800000,
+        "thumbnail": "thumbnail/thumbnail1755102112749.png",
+        "languages": [],
+        "created": 1780335585000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Indiana3DEPLidarAcquisitionBlockDates/FeatureServer",
+        "tags": [
+          "LiDAR",
+          "3DEP",
+          "Elevation derived hydrography",
+          "hydrography"
+        ],
+        "numViews": 137,
+        "numComments": 0,
+        "size": 289537,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Indiana3DEPLidarAcquisitionBlockDates",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/cb75ce6de0f34021aadccd7548717fb8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    242
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 3,
+  "next_offset": 3,
+  "response_sha256": "43281d3478bd15161b16c1d82d96bd383f7c9c74b83fae649057f6797ff38868",
+  "search_complete": true
+}

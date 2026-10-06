@@ -1,0 +1,1174 @@
+{
+  "jurisdiction_code": "ME",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T20:34:20.541598+00:00",
+  "candidates": [
+    {
+      "id": "c2cce8f954824106ad6e2ff255cf2769",
+      "title": "Maine Groundwater Transmissivity 24K Maps",
+      "url": "https://tiles.arcgis.com/tiles/RbMX0mRVOFNTdLzd/arcgis/rest/services/MGS_Groundwater_Transmissivity_24K_Maps/MapServer",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": null,
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -69.88,
+                44.1273
+              ],
+              [
+                -69.4964,
+                44.1273
+              ],
+              [
+                -69.4964,
+                43.7478
+              ],
+              [
+                -69.88,
+                43.7478
+              ],
+              [
+                -69.88,
+                44.1273
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Multilayer",
+          "Service",
+          "Tiled"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This dataset contains the scanned maps for the currently published High Groundwater Transmissivity maps at 1:24,000 scale. </span></p></div></div></div>",
+        "licenseInfo": null,
+        "title": "Maine Groundwater Transmissivity 24K Maps",
+        "type": "Map Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1629888414000,
+        "avgRating": 0,
+        "id": "c2cce8f954824106ad6e2ff255cf2769",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "Maine Geological Survey",
+        "largeThumbnail": null,
+        "thumbnail": "thumbnail/thumbnail1543843754772.png",
+        "languages": [],
+        "created": 1543843722000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://tiles.arcgis.com/tiles/RbMX0mRVOFNTdLzd/arcgis/rest/services/MGS_Groundwater_Transmissivity_24K_Maps/MapServer",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Surficial",
+          "Transmissivity",
+          "Maine Geological Survey",
+          "MaineGS"
+        ],
+        "numViews": 595,
+        "numComments": 0,
+        "size": 118,
+        "listed": false,
+        "scoreCompleteness": 60,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/c2cce8f954824106ad6e2ff255cf2769"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0c782cbec0f54e0fac868890db876d7c",
+      "title": "Maine Aquifers Contacts",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Aquifer_24K_Map_Data/FeatureServer/7",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Significant Sand and Gravel Aquifer contact lines.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.159,
+                47.4586
+              ],
+              [
+                -66.8965,
+                47.4586
+              ],
+              [
+                -66.8965,
+                43.1223
+              ],
+              [
+                -71.159,
+                43.1223
+              ],
+              [
+                -71.159,
+                47.4586
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service"
+        ],
+        "description": "Dataset contains contact lines of significant aquifers (glacial deposits that are a significant ground water resource) for Maine mapped at a scale 1:24,000, from the Maine Geological Survey. Printed maps published by the Maine Geological Survey on USGS 7.5' quadrangle bases. Aquifer boundaries delineated and digitized by the Maine Geological Survey from data compiled on USGS 7.5' quadrangle bases.",
+        "licenseInfo": "Public use. User assumes risk.",
+        "title": "Maine Aquifers Contacts",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "appCategories": [],
+        "modified": 1570113334000,
+        "avgRating": 0,
+        "id": "0c782cbec0f54e0fac868890db876d7c",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "Maine Geological Survey",
+        "largeThumbnail": null,
+        "thumbnail": "thumbnail/thumbnail1528823154996.png",
+        "languages": [],
+        "created": 1528822817000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Aquifer_24K_Map_Data/FeatureServer/7",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Surficial",
+          "Materials",
+          "Aquifers",
+          "Transmissivity",
+          "Seismic Refraction",
+          "Maine Geological Survey",
+          "MaineGS",
+          "geoscientificInformation"
+        ],
+        "numViews": 385,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/0c782cbec0f54e0fac868890db876d7c"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b973847bdf0f4522914598c8677a5ec2",
+      "title": "Maine Aquifers",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Aquifer_24K_Map_Data/FeatureServer/8",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Significant Sand and Gravel Aquifer polygons.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.159,
+                47.4586
+              ],
+              [
+                -66.8965,
+                47.4586
+              ],
+              [
+                -66.8965,
+                43.1223
+              ],
+              [
+                -71.159,
+                43.1223
+              ],
+              [
+                -71.159,
+                47.4586
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service"
+        ],
+        "description": "Dataset contains polygons of significant aquifers (glacial deposits that are a significant ground water resource) for Maine mapped at a scale 1:24,000, from the Maine Geological Survey. Printed maps published by the Maine Geological Survey on USGS 7.5' quadrangle bases. Aquifer boundaries delineated and digitized by the Maine Geological Survey from data compiled on USGS 7.5' quadrangle bases. Aquifer polygons coded by yield expected from a properly constructed well (using the AQUIFERTYPE field or the field ATYPE = 0 area not mapped as aquifer; ATYPE = 1 10-50 gallons-per-minute; ATYPE = 2 greater than 50 gallons-per-minute; ATYPE = 3 island of non-aquifer material within an area mapped as aquifer).",
+        "licenseInfo": "Public use. User assumes risk.",
+        "ownerId": "11d37f71b702faba8febac4d644ef2cd",
+        "title": "Maine Aquifers",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1570112986000,
+        "avgRating": 0,
+        "id": "b973847bdf0f4522914598c8677a5ec2",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "Maine Geological Survey",
+        "largeThumbnail": null,
+        "lastViewed": 1787425200000,
+        "thumbnail": "thumbnail/thumbnail1528822574329.png",
+        "languages": [],
+        "created": 1528822559000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Aquifer_24K_Map_Data/FeatureServer/8",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Surficial",
+          "Materials",
+          "Aquifers",
+          "Transmissivity",
+          "Seismic Refraction",
+          "Maine Geological Survey",
+          "MaineGS",
+          "geoscientificInformation"
+        ],
+        "numViews": 83172,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/b973847bdf0f4522914598c8677a5ec2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "370ab193b4504e63a19cf6e9077a0501",
+      "title": "Maine Well Database - Well Yield",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Wells_Database/FeatureServer/0",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Bedrock Well Database locations categorized by Well Yield.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1394,
+                47.3594
+              ],
+              [
+                -66.8639,
+                47.3594
+              ],
+              [
+                -66.8639,
+                43.0659
+              ],
+              [
+                -71.1394,
+                43.0659
+              ],
+              [
+                -71.1394,
+                47.3594
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Metadata"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset consists of point locations of domestic wells reported to the Maine Geological Survey. This dataset is based on an original survey of well drillers in the 1970s, a voluntary well driller reporting program in the mid-1980s, and the present mandatory reporting program which relies on the submission of well information by drillers. Wells have been located using GPS coordinates submitted by the drillers, e911 address information submitted by the drillers and/or ownership data and tax records. Roughly 40% of the wells reported to MGS have location data so there are many that aren't located.</span></p><div>Data updated 1/26/2026</div></div></div></div>",
+        "licenseInfo": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>Public use. User assumes risk.</span>",
+        "title": "Maine Well Database - Well Yield",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1769457625000,
+        "avgRating": 0,
+        "id": "370ab193b4504e63a19cf6e9077a0501",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "Maine Geological Survey",
+        "largeThumbnail": null,
+        "lastViewed": 1769454000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1586191219000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Wells_Database/FeatureServer/0",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Bedrock",
+          "Groundwater",
+          "Hydrogeology",
+          "Surficial",
+          "Overburden",
+          "Wells",
+          "geoscientificInformation",
+          "Maine Geological Survey",
+          "MaineGS"
+        ],
+        "numViews": 210753,
+        "numComments": 0,
+        "size": 101,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/370ab193b4504e63a19cf6e9077a0501"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "be7c42bf2f6e47658bb4694ed1549d38",
+      "title": "Maine Well Database",
+      "url": "https://experience.arcgis.com/experience/be7c42bf2f6e47658bb4694ed1549d38",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Displays all wells reported to the Maine Geological Survey by well drillers.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Copy Item",
+          "EXB Experience",
+          "JavaScript",
+          "publishVersion:1.17.0",
+          "Ready To Use",
+          "status: Published",
+          "version:1.18.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "Displays all wells reported to the Maine Geological Survey by well drillers.",
+        "licenseInfo": "Public use.  User assumes risk.",
+        "title": "Maine Well Database",
+        "type": "Web Experience",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1753906520000,
+        "avgRating": 0,
+        "id": "be7c42bf2f6e47658bb4694ed1549d38",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "Maine Geological Survey",
+        "largeThumbnail": null,
+        "lastViewed": 1753905600000,
+        "thumbnail": "thumbnail/thumbnail1737376755834.png",
+        "languages": [],
+        "created": 1737376591000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/be7c42bf2f6e47658bb4694ed1549d38",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Mapping",
+          "Bedrock",
+          "Wells",
+          "Overburden",
+          "Groundwater",
+          "Hydrogeology",
+          "Maine Geological Survey",
+          "geoscientificInformation",
+          "MaineGS"
+        ],
+        "numViews": 21721,
+        "numComments": 0,
+        "size": 290292,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/be7c42bf2f6e47658bb4694ed1549d38"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3d2c55224fa642fb9bf3fe4deb52a3d9",
+      "title": "MaineDEP EGAD Site Types",
+      "url": "https://gis.maine.gov/mapservices/rest/services/dep/MaineDEP_EGAD_Site_Types/MapServer/54",
+      "publisher": "John.Lynam@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "EGAD Site Types contains locational data from a number of different sites  which are potential and/or actual sources of contamination. Some of these are sites where groundwater, biological, and surface water sampling is or has been conducted. Definitions of all current EGAD Site Types are provided in the EGAD Lookup Tables.  Go to the Maine DEP's EGAD web site for more information: https://www.maine.gov/dep/maps-data/egad/index.html",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -73.8896,
+                47.5557
+              ],
+              [
+                -66.0673,
+                47.5557
+              ],
+              [
+                -66.0673,
+                41.3536
+              ],
+              [
+                -73.8896,
+                41.3536
+              ],
+              [
+                -73.8896,
+                47.5557
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "EGAD contains data from a number of different sites including sites with land use activities which are potential and/or actual sources of contamination and sites where biological, groundwater, and surface water sampling is conducted. Definitions of all current EGAD Site Types are provided in <a href='https://www.maine.gov/dep/maps-data/egad/documents/EGAD_Lookup_Tables.xlsx' target='_blank' rel='nofollow ugc noopener noreferrer'>the EGAD Lookup Tables</a> .  <span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Go to the Maine DEP's EGAD web site for more information: </span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><a href='https://www.maine.gov/dep/maps-data/egad/index.html' style='color:rgb(0, 97, 155); text-decoration-line:none;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.maine.gov/dep/maps-data/egad/index.html</a></span><div><div>EGAD (Environmental and Geographic Analysis Database) is a public information resource provided by the Maine DEP. The State of Maine and InforME make every effort to ensure that published information is accurate and current. Neither the State of Maine, nor any agency, officer, or employee of the State of Maine warrants the accuracy, reliability or timeliness of any information published on the Maine.gov website, nor endorses any products or services linked from this system, and shall not be held liable for any losses caused by reliance on the accuracy, reliability or timeliness of such information. Portions of the information are subject to revisions, corrections, and updates. Any person or entity that relies on any information obtained from this system does so at their own risk.</div><div><br /></div><div>Data in the EGAD system data go through various levels of quality assurance/quality control procedures before being accepted by the DEP to meet project requirements. However, the DEP makes no guarantee as to the accuracy, reliability, timeliness or completeness of the data. To ensure data authenticity, original laboratory analytical reports and field sheets should be consulted. As an aid to data interpretation, EGAD supplemental materials such as the data dictionary and LUP tables should be consulted. The DEP does not assume any responsibility for the nature in which EGAD data are used, either in their raw form or in the form of derived products. When using EGAD data, the following citation should be provided: Maine Department of Environmental Protection, EGAD (Environmental and Geographic Analysis Database), https://www.maine.gov/dep/maps-data/egad/, (date accessed).</div></div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>When using EGAD data, the following citation should be provided: Maine Department of Environmental Protection, EGAD (Environmental and Geographic Analysis Database), https://www.maine.gov/dep/maps-data/egad/, (date accessed).</span>",
+        "title": "MaineDEP EGAD Site Types",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1745954390000,
+        "avgRating": 0,
+        "id": "3d2c55224fa642fb9bf3fe4deb52a3d9",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Geoscientific information",
+          "/Categories/Inland waters",
+          "/Categories/Biota"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "John.Lynam@maine.gov_maine",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1763114400000,
+        "thumbnail": "thumbnail/thumbnail1692280457568.png",
+        "languages": [],
+        "created": 1692205432000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/mapservices/rest/services/dep/MaineDEP_EGAD_Site_Types/MapServer/54",
+        "tags": [
+          "MaineDEP",
+          "Maine Department of Environmental Protection",
+          "groundwater",
+          "inlandwaters",
+          "streams",
+          "MEDEP BWQ",
+          "Water Quality",
+          "Water",
+          "BIOLOGY",
+          "biota",
+          "Clean Water Act",
+          "EGAD",
+          "environment",
+          "Environmental Geographic Analysis Database",
+          "gravel pit",
+          "lakes",
+          "Land Resources",
+          "landfills",
+          "MaineGeoLibrary",
+          "oil spills",
+          "protection",
+          "Remediation"
+        ],
+        "numViews": 7539,
+        "numComments": 0,
+        "size": 84,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine Department of Environmental Protection",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/3d2c55224fa642fb9bf3fe4deb52a3d9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "fa91313497b84a0d88c866f1b3ac1a6e",
+      "title": "Maine Well Database - Unlocated Wells",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Wells_Database/FeatureServer/1",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this table is to list the domestic wells in Maine that have been reported to the Maine Geological Survey but have not been spatially located.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Table"
+        ],
+        "description": "<p>The table contains the domestic wells reported to the Maine Geological Survey that don't have spatial coordinates. This dataset is based on an original survey of well drillers in the 1970s, a voluntary well driller reporting program in the mid-1980s, and the present mandatory reporting program which relies on the submission of well information by drillers.</p><div>Data updated 1/26/2026</div>",
+        "licenseInfo": "Public use. User assumes risk.",
+        "title": "Maine Well Database - Unlocated Wells",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1769457730000,
+        "avgRating": 0,
+        "id": "fa91313497b84a0d88c866f1b3ac1a6e",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1769457600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1528900649000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Wells_Database/FeatureServer/1",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Bedrock",
+          "Groundwater",
+          "Hydrogeology",
+          "Surficial",
+          "Overburden",
+          "Wells",
+          "Maine Geological Survey",
+          "MaineGS",
+          "geoscientificInformation"
+        ],
+        "numViews": 7275,
+        "numComments": 0,
+        "size": 72,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/fa91313497b84a0d88c866f1b3ac1a6e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f8e4f084001e418bb61f5c3e19bf7d24",
+      "title": "Maine Well Database - Overburden Thickness",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Wells_Database/FeatureServer/0",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Bedrock Well Database locations categorized by Overburden Thickness.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1316,
+                47.3594
+              ],
+              [
+                -66.8639,
+                47.3594
+              ],
+              [
+                -66.8639,
+                43.0659
+              ],
+              [
+                -71.1316,
+                43.0659
+              ],
+              [
+                -71.1316,
+                47.3594
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Metadata"
+        ],
+        "description": "<div>Point locations of domestic wells reported to the Maine Geological Survey. This dataset is based on an original survey of well drillers in the 1970s, a voluntary well driller reporting program in the mid-1980s, and the present mandatory reporting program which relies on the submission of well information by drillers. Wells have been located using GPS coordinates submitted by the drillers, e911 address information submitted by the drillers and/or ownership data and tax records.</div><div>&nbsp;</div><div>Data updated 1/26/2026</div>",
+        "licenseInfo": "Public use. User assumes risk.",
+        "title": "Maine Well Database - Overburden Thickness",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1769457679000,
+        "avgRating": 0,
+        "id": "f8e4f084001e418bb61f5c3e19bf7d24",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "Maine Geological Survey",
+        "largeThumbnail": "largethumbnail/f8e4f084001e418bb61f5c3e19bf7d24.png",
+        "lastViewed": 1769457600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1508347290000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Wells_Database/FeatureServer/0",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Bedrock",
+          "Groundwater",
+          "Hydrogeology",
+          "Surficial",
+          "Overburden",
+          "Wells",
+          "Maine Geological Survey",
+          "geoscientificInformation",
+          "MaineGS"
+        ],
+        "numViews": 291091,
+        "numComments": 0,
+        "size": 73,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/f8e4f084001e418bb61f5c3e19bf7d24"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "de0dedb748fd4e52a508ee28ab051953",
+      "title": "Maine Well Database - Well Depth",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Wells_Database/FeatureServer/0",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Bedrock Well Database locations categorized by Well Depth.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1316,
+                47.3594
+              ],
+              [
+                -66.8639,
+                47.3594
+              ],
+              [
+                -66.8639,
+                43.0659
+              ],
+              [
+                -71.1316,
+                43.0659
+              ],
+              [
+                -71.1316,
+                47.3594
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div>Point locations of domestic wells reported to the Maine Geological Survey. This dataset is based on an original survey of well drillers in the 1970s, a voluntary well driller reporting program in the mid-1980s, and the present mandatory reporting program which relies on the submission of well information by drillers. Wells have been located using GPS coordinates submitted by the drillers, e911 address information submitted by the drillers and/or ownership data and tax records.</div><div>&nbsp;</div><div>Data updated 1/26/2026</div>",
+        "licenseInfo": "Public use. User assumes risk.",
+        "title": "Maine Well Database - Well Depth",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1769457553000,
+        "avgRating": 0,
+        "id": "de0dedb748fd4e52a508ee28ab051953",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "Maine Geological Survey",
+        "largeThumbnail": "largethumbnail/de0dedb748fd4e52a508ee28ab051953.png",
+        "lastViewed": 1769454000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1508347016000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Wells_Database/FeatureServer/0",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Bedrock",
+          "Groundwater",
+          "Hydrogeology",
+          "Surficial",
+          "Overburden",
+          "Wells",
+          "Maine Geological Survey",
+          "geoscientificInformation",
+          "MaineGS"
+        ],
+        "numViews": 350660,
+        "numComments": 0,
+        "size": 73,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/de0dedb748fd4e52a508ee28ab051953"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "50283cd215f24d1cbb85e23079c0da20",
+      "title": "Maine Snow Survey Data",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MGS_Snow_Survey_view/FeatureServer/2",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Snow survey data for the State of Maine.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.6169,
+                48.5245
+              ],
+              [
+                -64.82,
+                48.5245
+              ],
+              [
+                -64.82,
+                42.9047
+              ],
+              [
+                -71.6169,
+                42.9047
+              ],
+              [
+                -71.6169,
+                48.5245
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service"
+        ],
+        "description": "The Maine Geological Survey and the USGS coordinate the colletction of snow measurements each winter for the Maine River Flow Advisory Commission's flood prediction report. These measurements are sent to MGS monthly in January and February and weekly in March, April and May as long as there is snow on the ground. The dataset contains all the raw snow survey measurements (depth (inches), water content (inches), and density), their locations, data quality, and other qualitative comments or observations. These measurements are used to create the snow survey statewide maps.",
+        "licenseInfo": "Access: Public Use: User assumes risk",
+        "title": "Maine Snow Survey Data",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773877262000,
+        "avgRating": 0,
+        "id": "50283cd215f24d1cbb85e23079c0da20",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "Maine Geological Survey",
+        "largeThumbnail": "largethumbnail/50283cd215f24d1cbb85e23079c0da20.png",
+        "lastViewed": 1773874800000,
+        "thumbnail": "thumbnail/50283cd215f24d1cbb85e23079c0da20.png",
+        "languages": [],
+        "created": 1515160690000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MGS_Snow_Survey_view/FeatureServer/2",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Groundwater",
+          "Hydrogeology",
+          "Surficial",
+          "Snow Survey",
+          "Maine Geological Survey",
+          "geoscientificInformation",
+          "MaineGS"
+        ],
+        "numViews": 31894,
+        "numComments": 0,
+        "size": 73,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/50283cd215f24d1cbb85e23079c0da20"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    104
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 12,
+  "next_offset": 10,
+  "response_sha256": "49bab93e8b52031836bfae301d411f3f2191e1ac39062ce45ad1079e0ad2218d",
+  "search_complete": false
+}

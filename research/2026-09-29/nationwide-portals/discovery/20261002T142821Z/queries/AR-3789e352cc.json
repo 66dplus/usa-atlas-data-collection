@@ -1,0 +1,930 @@
+{
+  "jurisdiction_code": "AR",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T14:29:00.419601+00:00",
+  "candidates": [
+    {
+      "id": "b9ea60e24fe343f2bf4db01c6069964d",
+      "title": "Outdoor Recreation Access",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/25",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Data includes State, County and AGFC roads within the boundaries of a Wildlife Management Area (WMA).\nData includes Firelanes; Mobility Impaired Trails, boat lanes and trails.\nData reflects restrictions, surface type, owner, associated WMA, info hyperlink, length, etc..",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.9773,
+                36.487
+              ],
+              [
+                -90.0385,
+                36.487
+              ],
+              [
+                -90.0385,
+                32.9846
+              ],
+              [
+                -94.9773,
+                32.9846
+              ],
+              [
+                -94.9773,
+                36.487
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Data includes State, County and AGFC roads within the boundaries of a Wildlife Management Area (WMA).\nData includes Firelanes; Mobility Impaired Trails, boat lanes and trails.\nData reflects restrictions, surface type, owner, associated WMA, info hyperlink, length, etc..",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Outdoor Recreation Access",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784726890000,
+        "avgRating": 0,
+        "id": "b9ea60e24fe343f2bf4db01c6069964d",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784682000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776882465000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/25",
+        "tags": [
+          "transportation",
+          "AGFC",
+          "outdoor",
+          "boat lanes",
+          "WMA"
+        ],
+        "numViews": 114,
+        "numComments": 0,
+        "size": 93,
+        "listed": false,
+        "scoreCompleteness": 78,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.9773,
+                32.9846
+              ],
+              [
+                -90.0385,
+                36.487
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9846,
+                "xmin": -94.9773,
+                "ymax": 36.487,
+                "xmax": -90.0385,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/b9ea60e24fe343f2bf4db01c6069964d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5baecc8baba1486bb5ae77bcc5e8ebd7",
+      "title": "Ozark National Forest Service Recreation Site (point)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Location/FeatureServer/12",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Represents recreation sites so small they are displayed as points Recreation sites are grouped hierarchically. For example, a campground may be composed of many loops, which may be composed of many campsites. The campground may also include other facilities such as boating areas and picnic grounds. Campgrounds may be grouped into complexes. There are four levels to this hierarchy but not all levels are necessarily used for any given site and some recreation subtypes may occur at more than one level of the hierarchy, depending on which other recreation sites they are associated with on the ground. Although this hierarchy is not described in the GIS Core Data, it is described in the associated INFRA ORACLE tables. Associated National Application: INFRA Recreation",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.4021,
+                36.2162
+              ],
+              [
+                -90.566,
+                36.2162
+              ],
+              [
+                -90.566,
+                34.5912
+              ],
+              [
+                -94.4021,
+                34.5912
+              ],
+              [
+                -94.4021,
+                36.2162
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": null,
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Ozark National Forest Service Recreation Site (point)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667465000,
+        "avgRating": 0,
+        "id": "5baecc8baba1486bb5ae77bcc5e8ebd7",
+        "categories": [
+          "/Categories/Location"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780334420090.png",
+        "languages": [],
+        "created": 1777321622000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Location/FeatureServer/12",
+        "tags": [
+          "recreation",
+          "location",
+          "NFS"
+        ],
+        "numViews": 104,
+        "numComments": 0,
+        "size": 87,
+        "listed": false,
+        "scoreCompleteness": 66,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.4021,
+                34.5912
+              ],
+              [
+                -90.566,
+                36.2162
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 34.5912,
+                "xmin": -94.4021,
+                "ymax": 36.2162,
+                "xmax": -90.566,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/5baecc8baba1486bb5ae77bcc5e8ebd7"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "25a16bda18284743aca9165b2723c738",
+      "title": "Ozark National Forest Service Scenic Byway (line)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/13",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Ozark – St. Francis National Forests have nine scenic byways, approximately 222 miles. Scenic byway corridors are managed to offer visitors the opportunity to enjoy viewing outstanding natural and cultural landscapes along a well-maintained road. These areas may contain recreational and interpretive trails. These visible area during dormant seasons defines the byway corridors, unless other criteria are established in the specific scenic byway management plan. These areas privide exceptional opportunities for motorized recreation, especially scenic driving.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.1274,
+                36.2192
+              ],
+              [
+                -90.5618,
+                36.2192
+              ],
+              [
+                -90.5618,
+                34.5678
+              ],
+              [
+                -94.1274,
+                34.5678
+              ],
+              [
+                -94.1274,
+                36.2192
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "The Ozark - St. Francis National Forests have nine scenic byways, approximately 222 miles. Scenic byway corridors are managed to offer visitors the opportunity to enjoy viewing outstanding natural and cultural landscapes along a well-maintained road. These areas may contain recreational and interpretive trails. These visible area during dormant seasons defines the byway corridors, unless other criteria are established in the specific scenic byway management plan. These areas privide exceptional opportunities for motorized recreation, especially scenic driving.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Ozark National Forest Service Scenic Byway (line)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667543000,
+        "avgRating": 0,
+        "id": "25a16bda18284743aca9165b2723c738",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776883344000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/13",
+        "tags": [
+          "transportation",
+          "Ozarks",
+          "NFS"
+        ],
+        "numViews": 120,
+        "numComments": 0,
+        "size": 93,
+        "listed": false,
+        "scoreCompleteness": 81,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.1274,
+                34.5678
+              ],
+              [
+                -90.5618,
+                36.2192
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 34.5678,
+                "xmin": -94.1274,
+                "ymax": 36.2192,
+                "xmax": -90.5618,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/25a16bda18284743aca9165b2723c738"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "7eecf0cc68da477c900fbf51d274e636",
+      "title": "Outdoor Recreational Facilities",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Location/FeatureServer/24",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "A point feature that represents facilities that have been built on AGFC properties. i.e. Archery Range, Bank Fishing, Boating Access, Check Station, Courtesy Dock, Deer Stand, Duck Hole, Firing Range, Fish Cleaning Station, Fish Weigh-In Station, Fishing Jetty, Fishing Pier, Foot Bridge, MIA Facility, Marina, Observation Blind, Observation Platform, Observation Terrace, Overlook Arbor, Park, Parking Area, Pavillion, Pincnic Area, Playground, RVs, Hookups, Dump, Restroom, Showers, Swimming, Swimming Area, Tents, Walk-in, Walk-in Access",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5454,
+                36.5062
+              ],
+              [
+                -89.8943,
+                36.5062
+              ],
+              [
+                -89.8943,
+                32.9817
+              ],
+              [
+                -94.5454,
+                32.9817
+              ],
+              [
+                -94.5454,
+                36.5062
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>Digitized off of Arieal photos or collected with GPS by field staff. Points are verified by field staff in those areas.</span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Outdoor Recreational Facilities",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667447000,
+        "avgRating": 0,
+        "id": "7eecf0cc68da477c900fbf51d274e636",
+        "categories": [
+          "/Categories/Location"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Scott Lane, Tracy Moy, Mike Jezierski, AGFC Field staff",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780334397330.png",
+        "languages": [],
+        "created": 1777321150000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Location/FeatureServer/24",
+        "tags": [
+          "location",
+          "recreation",
+          "Access",
+          "AGFC"
+        ],
+        "numViews": 107,
+        "numComments": 0,
+        "size": 87,
+        "listed": false,
+        "scoreCompleteness": 76,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5454,
+                32.9817
+              ],
+              [
+                -89.8943,
+                36.5062
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9817,
+                "xmin": -94.5454,
+                "ymax": 36.5062,
+                "xmax": -89.8943,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/7eecf0cc68da477c900fbf51d274e636"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "8572e67be460429d8ab8ac0747ba709b",
+      "title": "Ozark National Forest Special Intrest Area (polygon)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/16",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer is the Ozark-St. Francis National Forest Special Interest Area polygons. The Ozark – St. Francis National Forests have 21 Special Interest Areas (SIA) totaling approximately 23,243 acres. SIAs are managed for their unique goelogical, botanical, biological, zoological, scenic, or cultural features. These features are unique enough that they ae not found in loarge areas anywhere on the Forests, or they provide the best representation of similar areas on the Forests. These areas are designated as SIAs because of their unique features, complexity, and degree of interest. They are managed for their unique recreational and educational values, and are intended for public use and interpretation.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.389,
+                36.1832
+              ],
+              [
+                -92.1643,
+                36.1832
+              ],
+              [
+                -92.1643,
+                35.142
+              ],
+              [
+                -94.389,
+                35.142
+              ],
+              [
+                -94.389,
+                36.1832
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This layer is the Ozark-St. Francis National Forest Special Interest Area polygons. The Ozark - St. Francis National Forests have 21 Special Interest Areas (SIA) totaling approximately 23,243 acres. SIAs are managed for their unique goelogical, botanical, biological, zoological, scenic, or cultural features. These features are unique enough that they ae not found in loarge areas anywhere on the Forests, or they provide the best representation of similar areas on the Forests. These areas are designated as SIAs because of their unique features, complexity, and degree of interest. They are managed for their unique recreational and educational values, and are intended for public use and interpretation.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Ozark National Forest Special Intrest Area (polygon)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667351000,
+        "avgRating": 0,
+        "id": "8572e67be460429d8ab8ac0747ba709b",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780331962780.png",
+        "languages": [],
+        "created": 1777643093000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/16",
+        "tags": [
+          "environment",
+          "boundaries",
+          "Planning Cadastre"
+        ],
+        "numViews": 98,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.389,
+                35.142
+              ],
+              [
+                -92.1643,
+                36.1832
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 35.142,
+                "xmin": -94.389,
+                "ymax": 36.1832,
+                "xmax": -92.1643,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/8572e67be460429d8ab8ac0747ba709b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    162
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "028da3dfb827b96c76b866a544e09ca74c394a073bb118facd96bcfec6579320",
+  "search_complete": true
+}

@@ -1,61 +1,61 @@
 {
-  "updated_at": "2026-10-01T10:50:15.045878+00:00",
+  "updated_at": "2026-10-06T04:58:03.928278+00:00",
   "pid": 3479692,
   "mode": "daemon",
   "runtime_state": "runtime/state.json",
   "collections": {
     "ca-dwr-bg-income-2023": {
       "status": "source_collected",
-      "started_at": "2026-09-28T18:50:32.766157+00:00",
-      "last_attempt_epoch": 1790621432.7661638,
+      "started_at": "2026-10-05T22:56:55.447871+00:00",
+      "last_attempt_epoch": 1791241015.4478924,
       "error": null,
       "failed_at": "2026-09-28T18:47:07.435408+00:00",
-      "completed_at": "2026-09-28T18:50:40.333745+00:00",
-      "last_success_epoch": 1790621440.3337781,
+      "completed_at": "2026-10-05T22:57:02.063449+00:00",
+      "last_success_epoch": 1791241022.0634694,
       "rows": 25607,
       "manifest": "manifests/ca-dwr-bg-income-2023.json"
     },
     "ca-dwr-bg-water-vulnerability-2024": {
       "status": "source_collected",
-      "started_at": "2026-09-28T18:53:09.645914+00:00",
-      "last_attempt_epoch": 1790621589.6459272,
+      "started_at": "2026-10-05T22:57:02.099990+00:00",
+      "last_attempt_epoch": 1791241022.100017,
       "error": null,
       "failed_at": "2026-09-28T18:50:44.890838+00:00",
-      "completed_at": "2026-09-28T18:53:15.679479+00:00",
-      "last_success_epoch": 1790621595.6794977,
+      "completed_at": "2026-10-05T22:57:10.362359+00:00",
+      "last_success_epoch": 1791241030.362438,
       "rows": 25607,
       "manifest": "manifests/ca-dwr-bg-water-vulnerability-2024.json"
     },
     "loudoun-dc-building-records": {
       "status": "source_collected",
-      "started_at": "2026-09-30T22:49:09.006990+00:00",
-      "last_attempt_epoch": 1790808549.0070176,
-      "completed_at": "2026-09-30T22:49:12.093567+00:00",
-      "last_success_epoch": 1790808552.0935876,
+      "started_at": "2026-10-05T22:57:10.411652+00:00",
+      "last_attempt_epoch": 1791241030.4116833,
+      "completed_at": "2026-10-05T22:57:14.935796+00:00",
+      "last_success_epoch": 1791241034.9358175,
       "rows": 239,
       "manifest": "manifests/loudoun-dc-building-records.json",
       "error": null
     },
     "dc-mpd-crime-bg-2025": {
       "status": "source_collected",
-      "started_at": "2026-09-30T22:49:12.096660+00:00",
-      "last_attempt_epoch": 1790808552.0966814,
+      "started_at": "2026-10-05T22:57:14.942235+00:00",
+      "last_attempt_epoch": 1791241034.9422612,
       "error": null,
       "failed_at": "2026-09-28T18:47:33.006353+00:00",
-      "completed_at": "2026-09-30T22:49:22.857927+00:00",
-      "last_success_epoch": 1790808562.8579433,
+      "completed_at": "2026-10-05T22:57:23.549117+00:00",
+      "last_success_epoch": 1791241043.5491405,
       "rows": 2840,
       "manifest": "manifests/dc-mpd-crime-bg-2025.json"
     },
     "dc-mpd-crime-bg-2026": {
       "status": "source_collected",
-      "started_at": "2026-09-30T22:49:22.861638+00:00",
-      "last_attempt_epoch": 1790808562.8616564,
+      "started_at": "2026-10-05T22:57:23.553536+00:00",
+      "last_attempt_epoch": 1791241043.553568,
       "error": null,
       "failed_at": "2026-09-28T18:47:40.531635+00:00",
-      "completed_at": "2026-09-30T22:49:30.531210+00:00",
-      "last_success_epoch": 1790808570.5312295,
-      "rows": 2638,
+      "completed_at": "2026-10-05T22:57:31.166219+00:00",
+      "last_success_epoch": 1791241051.1662416,
+      "rows": 2657,
       "manifest": "manifests/dc-mpd-crime-bg-2026.json"
     },
     "ny-county-income-tax-1999-2014": {
@@ -71,165 +71,165 @@
   },
   "discovery": {
     "ca-01": {
-      "status": "source_matched",
-      "next_cursor": 20,
+      "status": "needs_review",
+      "next_cursor": 0,
       "total_catalog_matches": 38,
-      "response_sha256": "b5dd3e06d76b2a5e027e7df21bc744c1fec26ae5b01ded3aaef67d190af8502f",
-      "last_attempt_epoch": 1790830191.5607746
+      "response_sha256": "ecffb77e3b4c173cf175bbd15554d3a6a65c7df1069767f9cb18a2f030d416bd",
+      "last_attempt_epoch": 1791241056.395007
     },
     "ca-02": {
       "status": "needs_review",
-      "next_cursor": 60,
+      "next_cursor": 20,
       "total_catalog_matches": 140,
-      "response_sha256": "19b4ac27ac3edcebd6324261f74003f20c8250d085c16319968e97ce5b7d97fd",
-      "last_attempt_epoch": 1790830192.6963413
+      "response_sha256": "087d9f583be0132a8e1f2c0a1c6133f5e66a42a07e888cb181f25165bcde0a06",
+      "last_attempt_epoch": 1791241057.3188233
     },
     "ca-03": {
-      "status": "not_available",
+      "status": "needs_review",
       "next_cursor": 0,
-      "total_catalog_matches": 0,
-      "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
-      "last_attempt_epoch": 1790830193.2903714
+      "total_catalog_matches": 1,
+      "response_sha256": "3f8ee72ce0981b6b40fc795656910b04c5ff6a7831578b36b4e0706f61d3fbfd",
+      "last_attempt_epoch": 1791241057.9521954
     },
     "ca-04": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 11,
-      "response_sha256": "edfc8439eb444ad3a2f74418b8020aedcab3411dd5fd6f6b902ed2a3ab8c5dea",
-      "last_attempt_epoch": 1790830194.1573858
+      "response_sha256": "7f2b4b23a46d1cfc4510cc61034ffbc52bbc975e2d3f0ff7dfd5a0461b2964b6",
+      "last_attempt_epoch": 1791241058.4239984
     },
     "cnra-05": {
       "status": "needs_review",
-      "next_cursor": 20,
+      "next_cursor": 0,
       "total_catalog_matches": 39,
-      "response_sha256": "f72ff0debe357bf3b6b38d6d52be517744d5992ae3168e9a1b52851ab2d37f46",
-      "last_attempt_epoch": 1790830195.5133092
+      "response_sha256": "4c32f1cc15774dc2d744f1037d289c6ca5591ae7a3601f614f143fba6223ff17",
+      "last_attempt_epoch": 1791241059.4293714
     },
     "ny-06": {
-      "status": "source_matched",
-      "next_cursor": 20,
+      "status": "needs_review",
+      "next_cursor": 0,
       "total_catalog_matches": 21,
-      "response_sha256": "20bfe264f59c9032ae8bbd3b9c1ab0e9c0db4cb83a9a062ba0094e4d689b5e1e",
-      "last_attempt_epoch": 1790830196.492442
+      "response_sha256": "b2903ce82e317e9d09c73458968f1eecefb5bcc33ce61b9b177f4dbe7d676070",
+      "last_attempt_epoch": 1791241060.9006255
     },
     "ny-07": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "7437488cc7212d9bd13257b26bcdd085adf6b33a0fb74cdfcb8ea39469bdf3e6",
-      "last_attempt_epoch": 1790830197.0670166
+      "response_sha256": "ba0411f6733ad9b1f5bc9b74f0877cfb31f7fe70eea0405c197b871ed8666508",
+      "last_attempt_epoch": 1791241061.853823
     },
     "nyc-08": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 45,
-      "response_sha256": "f227fb9df681842b0d7077e7c2a9ca2281a32ed4e57e2713cc3e6284c0e7dd22",
-      "last_attempt_epoch": 1790830198.0737069
+      "response_sha256": "7ba2d5bf1f745cc1a8945be31794674cb7defccf2ac09a5504e6bf61d1b70e96",
+      "last_attempt_epoch": 1791241063.3793216
     },
     "nyc-09": {
       "status": "needs_review",
-      "next_cursor": 60,
+      "next_cursor": 20,
       "total_catalog_matches": 134,
-      "response_sha256": "6ecb7cc0aba30736137049ffb39ec4955fc96c19c70a5b119a65f67fd9d6bcb0",
-      "last_attempt_epoch": 1790830199.0976913
+      "response_sha256": "48d150a72bf104da6f65fae0944d3cbf59f1d38e3b3eac0131fab5a2fca1634b",
+      "last_attempt_epoch": 1791241066.8229148
     },
     "loudoun-10": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 59,
-      "response_sha256": "a3b5143baaec1ab273ba901106b483c1f6794f94b2a78007d15426fa473480e0",
-      "last_attempt_epoch": 1790830199.3971455
+      "response_sha256": "b6b6ec89be317893f9a8abc90d7cb5338490e8a4eb4a75b3f93067dfc76f1bf7",
+      "last_attempt_epoch": 1791241067.2143316
     },
     "dc-11": {
-      "status": "source_matched",
-      "next_cursor": 20,
+      "status": "needs_review",
+      "next_cursor": 0,
       "total_catalog_matches": 33,
-      "response_sha256": "e8b60a20647679adf236121f771a615613110fbd64fd3a43b918bc91109dfc10",
-      "last_attempt_epoch": 1790830200.0202937
+      "response_sha256": "e8e0c583c6867bcb3522aa3a2c7111c1a8262b2a7233932c1a89e3bf5c1f408f",
+      "last_attempt_epoch": 1791241067.7123697
     },
     "dc-12": {
       "status": "needs_review",
-      "next_cursor": 20,
+      "next_cursor": 0,
       "total_catalog_matches": 30,
-      "response_sha256": "4e704da4a4b2c816c884a9fe3379e96bcf674a26952906e88d6f3099077ababd",
-      "last_attempt_epoch": 1790851801.3404949
+      "response_sha256": "d6a5ce16d42f10f38628f2b6663097c88dde46f3164a88474b740f927e458df3",
+      "last_attempt_epoch": 1791241068.2643135
     },
     "va-13": {
       "status": "needs_review",
-      "next_cursor": 60,
-      "total_catalog_matches": 11227,
-      "response_sha256": "8d794882a2f023fa69e027d9dfe97eb368d4d81768f023035f1c8a6b504fcb71",
-      "last_attempt_epoch": 1790851802.5794423
+      "next_cursor": 20,
+      "total_catalog_matches": 11232,
+      "response_sha256": "b8bfe1a0b63a38f7a0723768da9e5fbfcbf41c11b387facf0ce8602a561d8e49",
+      "last_attempt_epoch": 1791262669.7531736
     },
     "va-14": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 16,
-      "response_sha256": "b1c70abaf8a29d72987b4814f10bc57f2fee63aba73be3fa7e14046c774ab7a5",
-      "last_attempt_epoch": 1790851803.8086798
+      "response_sha256": "ac4114e9fec62b2c3b1c51386aac112244348d48a5aad262b3ca0fdeea06bc93",
+      "last_attempt_epoch": 1791262670.6923127
     },
     "gap-ca-2ca2cd1e89": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 2,
       "response_sha256": "df378f43ab797fe2ce0bdbffae608d62f96037085a296c34b1c69ce3193f7f5e",
-      "last_attempt_epoch": 1790851804.5436277
+      "last_attempt_epoch": 1791262671.3211427
     },
     "gap-ny-2ca2cd1e89": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "91d1772e2aef803172767842600ddeb5b032981dcd0417f145b7e50480f47897",
-      "last_attempt_epoch": 1790851805.1309025
+      "response_sha256": "b727631069fa163b31ead675ea197084a5e8d6bae6a9f474081239f941094629",
+      "last_attempt_epoch": 1791262671.9172053
     },
     "gap-nyc-2ca2cd1e89": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 5,
-      "response_sha256": "63e0ff5a5ee25202271f000386d4ff51094df69508a7596a595a7a9458b5f2ab",
-      "last_attempt_epoch": 1790851806.0867376
+      "response_sha256": "ec3bc82e4f27fe2cf77c1afb172f8bfb6c2a3a0cf1b22fe553f2f8588fc0da00",
+      "last_attempt_epoch": 1791262672.811851
     },
     "gap-ca-1757d2fb96": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
       "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
-      "last_attempt_epoch": 1790851806.7081494
+      "last_attempt_epoch": 1791262673.390611
     },
     "gap-ny-1757d2fb96": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "908360d9c3c31d44b1e1a5d7323467909ead1c88a9c788961fed62caf6f9a0ab",
-      "last_attempt_epoch": 1790851807.3851845
+      "response_sha256": "8d31c352043ae3cc0c970dbd40afb482718b4d6ee6efca4befd114c0a162cc7f",
+      "last_attempt_epoch": 1791262673.9612107
     },
     "gap-nyc-1757d2fb96": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 6,
-      "response_sha256": "f400c4749795993aabb4acd4a5580cc80a2b8d3e71396c058bb48a8b7874e9a1",
-      "last_attempt_epoch": 1790851808.3819938
+      "response_sha256": "ae1b14b3b1b413518eecc892566d919514e3ec0ea16ee3ca08756edc4cb1938a",
+      "last_attempt_epoch": 1791262675.0899518
     },
     "gap-ca-9ecfc652f6": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 8,
-      "response_sha256": "95eaa03cd4e413b8ac112fc7fbb9eab91a1387994815032be018f7f2b574ebbf",
-      "last_attempt_epoch": 1790851809.284552
+      "response_sha256": "ce84c792267a23f5d3fd246e267441761f8266615a6b448f91f886fa1b0da156",
+      "last_attempt_epoch": 1791262675.9300442
     },
     "gap-ny-9ecfc652f6": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 1,
-      "response_sha256": "e2ce872ce988e7ec64831b7fddc011a735f09d9cf17b8699a2be91f4eda4463f",
-      "last_attempt_epoch": 1790851809.957283
+      "response_sha256": "c08bb8f4d97190d40a797e357d786223ef96bba24416a78ada1cffd9f79c6dc1",
+      "last_attempt_epoch": 1791262676.5376477
     },
     "gap-nyc-9ecfc652f6": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 9,
-      "response_sha256": "5aa55851224efca50599690a2d8d888bcd78584a260f6250276f48d84cf54bb9",
-      "last_attempt_epoch": 1790851810.9644768
+      "response_sha256": "59ef521f120c591bab8d1cd9c926b766bc762a046f12005e49aa535799f00569",
+      "last_attempt_epoch": 1791262677.5053608
     },
     "gap-ca-d84afde29c": {
       "status": "needs_review",
@@ -254,549 +254,549 @@
     },
     "gap-ca-78aad30559": {
       "status": "needs_review",
-      "next_cursor": 60,
+      "next_cursor": 20,
       "total_catalog_matches": 184,
-      "response_sha256": "94fff77d5d3674f62519460e1480da1baa6b58ef41982c7f6dced1c03f1ea6ef",
-      "last_attempt_epoch": 1790851812.179771
+      "response_sha256": "f5d822ebe9d18eab72aacf24e54948aca024a4e2f5dd53a516e7b96304166523",
+      "last_attempt_epoch": 1791262678.4362094
     },
     "gap-ny-78aad30559": {
       "status": "needs_review",
-      "next_cursor": 20,
+      "next_cursor": 0,
       "total_catalog_matches": 26,
-      "response_sha256": "8f93eeba985fdc26b8ff852096a91352f811674b8d18f7082f8e77c0fcc82e2e",
-      "last_attempt_epoch": 1790851813.3664446
+      "response_sha256": "74dab7d6a66be4473ea8827c6416edb84072cfebd66c8bf1f19270e66f1b3a52",
+      "last_attempt_epoch": 1791262679.4224536
     },
     "gap-nyc-78aad30559": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 6,
-      "response_sha256": "d8866d123f4fd055eab17267d45b0a7a7beaad481599f35bbd30f86b5d587706",
-      "last_attempt_epoch": 1790851814.6265962
+      "response_sha256": "24639168d13b287c07431ec1351d862287365fe43ddd21f0ac07d064e58e7894",
+      "last_attempt_epoch": 1791262680.9266477
     },
     "gap-ca-0ab37c8e4a": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 15,
-      "response_sha256": "76a3f09ee8364a31393d46acce5ff1ee04d31434f02ffa72affd01222aec834d",
-      "last_attempt_epoch": 1790851815.0323718
+      "response_sha256": "9cc1bd200c11ec5a5f8f70fcffb64851e7dad93cb5a360a4539c727f17713b69",
+      "last_attempt_epoch": 1791262682.2245908
     },
     "gap-ny-0ab37c8e4a": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 25,
-      "response_sha256": "191fae16af08c837b1f6b51f8c8385d5629cf8b30230de07b68010e4766346f2",
-      "last_attempt_epoch": 1790730138.3256743
+      "response_sha256": "9b692c74700d0bf014781d735c34b45963c48e6abe8519a9664c9a600a7d0f25",
+      "last_attempt_epoch": 1791262683.8557749
     },
     "gap-nyc-0ab37c8e4a": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 4,
-      "response_sha256": "df0406ba0a12d641f33f74e16c3b6226ca96228080b529876d9553fcf7e265b6",
-      "last_attempt_epoch": 1790730139.0982869
+      "response_sha256": "8d42455fcf730b9dc02cd870287ec407437d55ca8e87e4ce4953a921d24ef2b4",
+      "last_attempt_epoch": 1791132923.6348252
     },
     "gap-ca-678db3bc7b": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 13,
-      "response_sha256": "f3d24e0ffbfbca58b2c3650dd5268fb31225dad8fc2a55da2f29e23fc534fed9",
-      "last_attempt_epoch": 1790730139.3848765
+      "response_sha256": "0ae4401122df12f67fe402293a3ff24413b3ad687fb3a72c64738fa68268dec4",
+      "last_attempt_epoch": 1791132924.5429945
     },
     "gap-ny-678db3bc7b": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 32,
-      "response_sha256": "abffca5e2635a5045f34b52560dc513504e1b642f3a9eedc11d65c6196181472",
-      "last_attempt_epoch": 1790730140.4719503
+      "response_sha256": "b94d1fb94b1bfacdcedd93bd52fa1a34910efba4bccfc7e9fa284602846a0ee9",
+      "last_attempt_epoch": 1791132925.5954463
     },
     "gap-nyc-678db3bc7b": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 23,
-      "response_sha256": "2d8e79d9ab3cda44f495671e40f7283d77b32269ff1e4c905462e522b5306d32",
-      "last_attempt_epoch": 1790730141.1361444
+      "response_sha256": "ba4e8f6c22677887b4c365a6c8e9e06b33cf38a60eb7d74944259914dd4af10b",
+      "last_attempt_epoch": 1791132926.477122
     },
     "gap-ca-0b22f40bb7": {
       "status": "needs_review",
       "next_cursor": 40,
       "total_catalog_matches": 59,
-      "response_sha256": "19b9f37c3da086679f6c586984662c775c9cb29aa1140db4377e267b9ab9914b",
-      "last_attempt_epoch": 1790743700.7293863
+      "response_sha256": "4534c67eecca9fbf4efdff37ba9b383802ec41ccf5f3a5500e83f472f74f6cfa",
+      "last_attempt_epoch": 1791132927.6492112
     },
     "gap-ny-0b22f40bb7": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 152,
-      "response_sha256": "da1d8b7b09de28590eaa021da1b56a7542c554478b1b3699687541ea72afa521",
-      "last_attempt_epoch": 1790743701.639286
+      "response_sha256": "3ccc5fe34dd1972d5577d85250e36044add9f6bf517297593482c9cced75b968",
+      "last_attempt_epoch": 1791154552.0563548
     },
     "gap-nyc-0b22f40bb7": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 20,
       "total_catalog_matches": 66,
-      "response_sha256": "3ec20eb9e9964cc620bb38840e8bdf5fccc75d4962c17dd20805a644c195124c",
-      "last_attempt_epoch": 1790743702.4905002
+      "response_sha256": "84acd2834a687815aea578d8cbe3d3e710589d69adb132f6b028605e65a0f264",
+      "last_attempt_epoch": 1791154553.3366766
     },
     "gap-dc-54bd8ea967": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 81,
-      "response_sha256": "c0bc70b089a8008d51634a30c99249f8ed8184ccd12f0ce0f8244b9485b88a32",
-      "last_attempt_epoch": 1790743702.9583492
+      "response_sha256": "6c9f62de2095a52a6f640d794a19e1ef6970a19d4dd0dd0f7e8018373f137433",
+      "last_attempt_epoch": 1791154553.819698
     },
     "gap-nyc-54bd8ea967": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 31,
-      "response_sha256": "2e6d9ee05f9170fd53473524ca4561758c6560f9c7b2e3ae261d67d415845f02",
-      "last_attempt_epoch": 1790743703.8341367
+      "response_sha256": "29bd3a3d559884cfa56c2f1f22a40098e0f3e4ee5b5f975de5a1a93dfe823491",
+      "last_attempt_epoch": 1791154554.9506044
     },
     "gap-ca-54bd8ea967": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 1,
-      "response_sha256": "ca92cf0811f6e3f9cf290dfbc5fafff834e328e768905efa3afc309d7916b2f9",
-      "last_attempt_epoch": 1790743704.332794
+      "response_sha256": "28d0037191ca59f237fcbfc27ade8b2b1087d9aa939224c1eacf6fa9511308bc",
+      "last_attempt_epoch": 1791154555.7857764
     },
     "gap-dc-ed8f9f77aa": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 30,
-      "response_sha256": "5d856f70c2ac8a23decc089c170403614bf7f3441e90c1c1fa37cdc149eea245",
-      "last_attempt_epoch": 1790743704.6093974
+      "response_sha256": "cc725e4d007c615209fe39403ec6e6a990ca6aefc0a7c3d5352a090900685c48",
+      "last_attempt_epoch": 1791154556.3897939
     },
     "gap-ca-ed8f9f77aa": {
-      "status": "not_available",
+      "status": "needs_review",
       "next_cursor": 0,
-      "total_catalog_matches": 0,
-      "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
-      "last_attempt_epoch": 1790743705.1784
+      "total_catalog_matches": 1,
+      "response_sha256": "4ccec555acf997bae7d9cd7914b8457eecda6b9765a946ac23016f33f71de97f",
+      "last_attempt_epoch": 1791154557.1155984
     },
     "gap-ny-ed8f9f77aa": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "cbb05a77809ea324f76e5bbfc021946eebfcc90fdd5fe1124fa576441c817aa8",
-      "last_attempt_epoch": 1790743705.735751
+      "response_sha256": "d5184acae98546b25335c1fd6c5a2562a34aeba56a52387601faa572e763859a",
+      "last_attempt_epoch": 1791154557.8391528
     },
     "gap-ca-7f651438dd": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 4,
-      "response_sha256": "ad82350ac8c4428dcc799f126d08b65935402e9635598dd5c6c50140ab3c64a5",
-      "last_attempt_epoch": 1790743706.1314406
+      "response_sha256": "a72158d3e87409248b6ca3d612de70aafa596c857198bf739931c3e4eb227e3c",
+      "last_attempt_epoch": 1791154558.9697652
     },
     "gap-ny-7f651438dd": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "134a11cffd945a9a8c4ed2fb1d46c83a3d78e24b50f6c2245723dbad60f6b56c",
-      "last_attempt_epoch": 1790743706.7208471
+      "response_sha256": "4e5b53d90398225fbb238029a322b758686627f48262e0ca7c60891271543d2c",
+      "last_attempt_epoch": 1791154559.6163461
     },
     "gap-nyc-7f651438dd": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "938a75c18714326d025a348589155ea03397af176c694b16a22bdf3d8724a435",
-      "last_attempt_epoch": 1790743707.277734
+      "response_sha256": "b727631069fa163b31ead675ea197084a5e8d6bae6a9f474081239f941094629",
+      "last_attempt_epoch": 1791154560.3977664
     },
     "gap-ca-5304378d00": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 3,
-      "response_sha256": "c2dc49c9e142947356866374d636d52592f9931fe72d316c57bd4975b0a425e9",
-      "last_attempt_epoch": 1790743708.1215296
+      "response_sha256": "6b76f3cb0c800eca8e40bac1e88b7b8e283efad56551e0c006c086206f1331d7",
+      "last_attempt_epoch": 1791154561.309782
     },
     "gap-ny-5304378d00": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 3,
-      "response_sha256": "435f7d46cbe44bacb1249ba1a4cda25c02c83a91f71110f66b2a5fd1c2164cfc",
-      "last_attempt_epoch": 1790743708.913431
+      "response_sha256": "b98a3a81d5e4a22fe932ceddb3cb9a305e2ac1a93397ef55abedca799af7035f",
+      "last_attempt_epoch": 1791154562.1397026
     },
     "gap-nyc-5304378d00": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 1,
-      "response_sha256": "bd2527a20f18900a98d1da16a18a4a38fe1a978cf8f3276212b1e81828602446",
-      "last_attempt_epoch": 1790743709.4697354
+      "response_sha256": "8f7bbdb646cc812c65d0725dd79493d5ece6160d4fce94b4e20d93d5f5bb3ada",
+      "last_attempt_epoch": 1791154563.1794546
     },
     "gap-ca-aec0429f74": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 3,
-      "response_sha256": "fa9e9d9da1ce5ad0f14c60fa85f3b1c9e5569711e3bb1a1c35cd828d494b3413",
-      "last_attempt_epoch": 1790743710.3191445
+      "response_sha256": "cba4445342fab427a1e27bacbaaaf0ad170b84261382b72758e3c45e5e8330ed",
+      "last_attempt_epoch": 1791154564.3391473
     },
     "gap-ny-aec0429f74": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 13,
-      "response_sha256": "d9601e39b84cad58a9ef970d1ed21f216ae43b3d63aa388bb51c0500a5a668aa",
-      "last_attempt_epoch": 1790765314.2107756
+      "response_sha256": "82e48f354a0558f603a7106147604161df9dcbb42536da411c8c05e704e2c1a5",
+      "last_attempt_epoch": 1791154565.7061155
     },
     "gap-nyc-aec0429f74": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 10,
-      "response_sha256": "824287017ff99909eeff2466ab66e98e92aad20755be396f72ac75bf0816f6b8",
-      "last_attempt_epoch": 1790765315.0169494
+      "response_sha256": "246241351380b6447988e5087d3c2960f0b160059a97f7d8f5d10acdcb63650b",
+      "last_attempt_epoch": 1791176167.375326
     },
     "gap-ca-1678109dd1": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 13,
-      "response_sha256": "54d681597cff84ec9ff87418e8712c31b0f1e83854ceb1f4a9a50bcb3073d5ce",
-      "last_attempt_epoch": 1790765315.9783263
+      "response_sha256": "7de7f81b250442cbafa2b6a3d6216d00d74092607b0a7d657e6bdbf37073389f",
+      "last_attempt_epoch": 1791176168.356712
     },
     "gap-ny-1678109dd1": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 5,
-      "response_sha256": "9fafd0ebfc057cd7e0294d736c21960f7d9b90f28a6ac00158962977370602e2",
-      "last_attempt_epoch": 1790765318.0227664
+      "response_sha256": "57ec7ace9941b1d4692ba90f1e602d65052c426528d9d476e257fe01e375d253",
+      "last_attempt_epoch": 1791176169.24554
     },
     "gap-nyc-1678109dd1": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "0cd2df84e4c64526441db93d207011bb655c54d07094e7aa73b14fba78c12af6",
-      "last_attempt_epoch": 1790765318.694685
+      "response_sha256": "7d1a1050ba718f5edc520682b496340214f37c5ca17d5610f8e84109fc21584d",
+      "last_attempt_epoch": 1791176169.8004348
     },
     "gap-ca-5600ae99b1": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 19,
-      "response_sha256": "d3eab60b9f5d5a16709df63283a09fc94d9928e3f2b838f06e75cecf86241cdd",
-      "last_attempt_epoch": 1790765319.6073108
+      "response_sha256": "8a4ae7caaba228f8212c87a033b157d3f6207940cb30f9905ab3462327fc79ab",
+      "last_attempt_epoch": 1791176170.9344757
     },
     "gap-ny-5600ae99b1": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 12,
-      "response_sha256": "a8d7de3daeb7616aa74d7061b00b1b97df85d93e79e5044bb3bebb3548eeb76d",
-      "last_attempt_epoch": 1790765320.7625299
+      "response_sha256": "c5e285093daf8c92d76501e5df6dd4ea5ff85d793c046f017a1e64c2343775c5",
+      "last_attempt_epoch": 1791176171.9135652
     },
     "gap-nyc-5600ae99b1": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 2,
-      "response_sha256": "442d132bb0fe3f0cefb2d7537a8d5d1998f8843791cf5bdf1fa6c7c09b3c6f10",
-      "last_attempt_epoch": 1790765321.324019
+      "response_sha256": "2dbfe28723677727c07a8c3b5d29c99dcecf2e7b069052486962f16f5925a0ea",
+      "last_attempt_epoch": 1791176172.5983362
     },
     "gap-ca-1073d3e680": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 2,
       "response_sha256": "fcedfca806b68351d9e71ba146610b4c27f464648919880e815c7cbcb77fdd36",
-      "last_attempt_epoch": 1790765321.6009045
+      "last_attempt_epoch": 1791176173.23585
     },
     "gap-ny-1073d3e680": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
       "response_sha256": "ba0411f6733ad9b1f5bc9b74f0877cfb31f7fe70eea0405c197b871ed8666508",
-      "last_attempt_epoch": 1790765322.1554768
+      "last_attempt_epoch": 1791176173.8022544
     },
     "gap-nyc-1073d3e680": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "ba0411f6733ad9b1f5bc9b74f0877cfb31f7fe70eea0405c197b871ed8666508",
-      "last_attempt_epoch": 1790765322.7393558
+      "response_sha256": "3f011f35ba5cd701af0a0c7ede976fd2925a8049c3d0842cf6407e971702c4d3",
+      "last_attempt_epoch": 1791176174.423341
     },
     "gap-ca-5a1bef18cd": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 89,
-      "response_sha256": "ed4f935fa58ff69689b2afc28a71911b72700f52dab51cb752bb0eaf0f342b86",
-      "last_attempt_epoch": 1790765323.7481558
+      "response_sha256": "b2c9e74d117ed28c18112dc32eae7e246fe80b2a579276f0a3b431f5d3878964",
+      "last_attempt_epoch": 1791176175.2406864
     },
     "gap-ny-5a1bef18cd": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 9,
-      "response_sha256": "9e956f3bfe8842d105a39896714634c233b8ec15200ca0c8f392488135e5dd86",
-      "last_attempt_epoch": 1790765324.7263749
+      "response_sha256": "c192bd22b4eaf8eb60cc37b2ffcd65cbc7078a771a48d8c4c49d38ea31c0e2a3",
+      "last_attempt_epoch": 1791176176.248999
     },
     "gap-nyc-5a1bef18cd": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 3,
-      "response_sha256": "b252a94b1a0429d383a8e91fbccd700578a98f2b4657200e9f0ebba0c881e020",
-      "last_attempt_epoch": 1790765325.6178405
+      "response_sha256": "d38a332a6a5a8c69c9fdf6f0446b9a57faf9b89cfb37820aa6911c8871b5faf0",
+      "last_attempt_epoch": 1791176177.3718553
     },
     "gap-ca-a3cca0ced5": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 12,
-      "response_sha256": "2fc8d544d33204d941500c138ac5d164abe58faf84e46d65b3d12b76e80cbb30",
-      "last_attempt_epoch": 1790765325.939252
+      "response_sha256": "6c2151f7161711ee6cd05ad428efa7e442e51aa32db031334733e0140b464412",
+      "last_attempt_epoch": 1791176177.6763365
     },
     "gap-ny-a3cca0ced5": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 5,
-      "response_sha256": "76802cb5753846b7933b536d72b18861765e7d4de48bd425a21b2ac8a7a103a0",
-      "last_attempt_epoch": 1790765326.8622375
+      "response_sha256": "fea039cc5d53bedd3c1e13ca95c85aa6032b739a4346be9336ec59df2a99eaa1",
+      "last_attempt_epoch": 1791176178.5179343
     },
     "gap-nyc-a3cca0ced5": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 2,
-      "response_sha256": "8e570e5e61b38a3adb252c53b22271880007596b67dfd6ef14bc02040543e032",
-      "last_attempt_epoch": 1790786928.3589342
+      "response_sha256": "ad93b4e742cc9c01eb5bd1365ec51cad7b1d82c8ea4839cff46ffa09b9853b6e",
+      "last_attempt_epoch": 1791176179.090831
     },
     "gap-ca-6a5d28d69b": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 22,
-      "response_sha256": "5dc84276116f9233107e633e8fe56946ce2ce677fba975f8bded77435aabd744",
-      "last_attempt_epoch": 1790786929.1104035
+      "response_sha256": "e484832473308c62d4622a84f088e35ba0493979e937a9988c18d088f35a884c",
+      "last_attempt_epoch": 1791197780.6515808
     },
     "gap-ny-6a5d28d69b": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 5,
-      "response_sha256": "ba03de4afc736b0e954e7b9c0452ef31ee5560476e7e969c16f180bef3ad7c7f",
-      "last_attempt_epoch": 1790786931.6450176
+      "response_sha256": "b7f49adfb3fb06b6058ac44f0a95c2ee04f9ca3b08768944db8b7b2979396230",
+      "last_attempt_epoch": 1791197781.576877
     },
     "gap-nyc-6a5d28d69b": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 1,
-      "response_sha256": "71e86e6a7c5eaa77cafe4a079d26ac18bb6c1d18453dffff11c2fcb552f715ab",
-      "last_attempt_epoch": 1790786932.236431
+      "response_sha256": "e34e75e2cb1619da7d7b9f9d6f667f8d654c7b0b85bba3a6f1928a97b5e0a11d",
+      "last_attempt_epoch": 1791197782.4733758
     },
     "gap-ca-50b4fc97bb": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 27,
-      "response_sha256": "0b93c97f9309fdd4c324b7a41ba8595daecb3da4e9885595ca711fc70ed0eaaf",
-      "last_attempt_epoch": 1790786933.2657313
+      "response_sha256": "e51a88263b847783e0450bacdcddbc1081f7998d14976269a79e967d248b692e",
+      "last_attempt_epoch": 1791197783.4706137
     },
     "gap-ny-50b4fc97bb": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 29,
-      "response_sha256": "4985237182d194088fc4afc7fcab8f34cc48ab64bf43ff19d48468b0eac5df10",
-      "last_attempt_epoch": 1790786934.2790852
+      "response_sha256": "a02ea17192ce7b8444cda9a781d2e0c52efb856a664f9481d073073515b4f5d1",
+      "last_attempt_epoch": 1791197784.513977
     },
     "gap-nyc-50b4fc97bb": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 29,
-      "response_sha256": "5d8e96a81eee4b6c848de952ab9a06ba7f255c5b7710949a1058c4d23cce77b8",
-      "last_attempt_epoch": 1790786936.2627664
+      "response_sha256": "7f7b0ee72b1a55c2f015b61ed4348e09e12acb2062749742c5c4b46407928637",
+      "last_attempt_epoch": 1791197785.6360128
     },
     "gap-ca-70d2357016": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 11,
-      "response_sha256": "4eb116e9b0af4ce22775309f7f52b2f00411bd6bc3c72d6a1418cd8edeff22bf",
-      "last_attempt_epoch": 1790786937.442417
+      "response_sha256": "7674aea587e19db9317d777abeee7e959e8ccf0b6f1237c291bbb461b3b7f938",
+      "last_attempt_epoch": 1791197786.4865372
     },
     "gap-ny-70d2357016": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 11,
-      "response_sha256": "e9ecbc2442a54c316838aaad7533a56889c3a2ddc78a6da52172ebd010ffaf61",
-      "last_attempt_epoch": 1790786938.3928757
+      "response_sha256": "0ea9501c1c57cc6fbb3a4ab90eb4e4cbf671a86a6e9e63df7c44466e815b8430",
+      "last_attempt_epoch": 1791197787.438797
     },
     "gap-nyc-70d2357016": {
       "status": "needs_review",
       "next_cursor": 40,
       "total_catalog_matches": 45,
-      "response_sha256": "6387650e80d4b8d31a1ab09e4bf0fc5409e393c4058a8e16ae3dae2265cce426",
-      "last_attempt_epoch": 1790786939.4694777
+      "response_sha256": "d7c027b8a779073cfb2fcbb2f7d123b9e9c182d0395b1e6f10222372f340b049",
+      "last_attempt_epoch": 1791197788.434276
     },
     "gap-ca-78f9ccfa3a": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 122,
-      "response_sha256": "cbff8120cf78cf52ab3bd399a3e83f35920099fb84014b8d5cbec7287b3977b0",
-      "last_attempt_epoch": 1790786940.4093492
+      "response_sha256": "4b7e596cdd864ed707ba887e92645babf21552048aa41e004eb089d5e21b2b68",
+      "last_attempt_epoch": 1791197789.3073685
     },
     "gap-ny-78f9ccfa3a": {
       "status": "needs_review",
       "next_cursor": 40,
       "total_catalog_matches": 58,
-      "response_sha256": "7e4992cb5fb736d1e76c9c7047dcd38c48a419cd0928c1ec246b271c2c846cf5",
-      "last_attempt_epoch": 1790786942.1963027
+      "response_sha256": "8db60a1d691fa75fdd41821d8da5177ba58cdafb5e23742677f07230693f2b0f",
+      "last_attempt_epoch": 1791197790.6798563
     },
     "gap-nyc-78f9ccfa3a": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 28,
-      "response_sha256": "873a47d0e4622e9d77ab36e7f64dfef5307b772a624559d748ae41a8cc652535",
-      "last_attempt_epoch": 1790786944.6343045
+      "response_sha256": "04769f7f6e870f311666439718c2d182832cddb2909e60d6915c8a1797c0f253",
+      "last_attempt_epoch": 1791197791.9171503
     },
     "gap-ca-739bf484f7": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 9,
-      "response_sha256": "953e69344a4407d05d1f6e3f58055fee3618629ad71a1807a054bcabf822faeb",
-      "last_attempt_epoch": 1790786945.9399006
+      "response_sha256": "4a596c630cc06e412a6d502a304426ac2714d126319e487ec52d7d4423b339a1",
+      "last_attempt_epoch": 1791197792.8677087
     },
     "gap-ny-739bf484f7": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "116876fc30f315c42cd081d24a895d951abfda6827f67ee22df62e99655aa73c",
-      "last_attempt_epoch": 1790786946.9183865
+      "response_sha256": "ba0411f6733ad9b1f5bc9b74f0877cfb31f7fe70eea0405c197b871ed8666508",
+      "last_attempt_epoch": 1791197793.465216
     },
     "gap-nyc-739bf484f7": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 1,
-      "response_sha256": "64fefc4f813ca0f46c0761c46e183dfd39376e34dff94e76d31ff89d7b911b04",
-      "last_attempt_epoch": 1790786947.9965143
+      "response_sha256": "5caef31cb653e07b86b6981a70aa0a9898b6fe94a53c6c6a7607341af65470f5",
+      "last_attempt_epoch": 1791197794.0686777
     },
     "gap-ca-4325ed4bef": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 7,
-      "response_sha256": "1ab261bf564a513cd15fd6dd4c6edc2b44a383fb31713d84dc363f3ceb20f4b1",
-      "last_attempt_epoch": 1790808571.350698
+      "response_sha256": "7a76183ac9ce8a55c975317365597709b5c53c908092b5de31b220e27ae2ad1e",
+      "last_attempt_epoch": 1791197794.8581166
     },
     "gap-ny-4325ed4bef": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 19,
-      "response_sha256": "b65b96e0206b3f7393598225ca01b3500a749db06295323a5aaa651b3aafd599",
-      "last_attempt_epoch": 1790808572.4456742
+      "response_sha256": "08d1976692c261ba15ddaef3b453a9042be0dd8a9cb268bf1cd5cd40efb891c5",
+      "last_attempt_epoch": 1791219396.5733814
     },
     "gap-nyc-4325ed4bef": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 1,
-      "response_sha256": "9a1d65403a3a27330355ec087a70cbf1933e68b3d1b1d0504d22e2a265ec3555",
-      "last_attempt_epoch": 1790808572.980892
+      "response_sha256": "ac90dd21237e7a641cedb149fdc9b7cd75280c655e4bf3f5f2d2fb9e2a4ad1f9",
+      "last_attempt_epoch": 1791219397.3121297
     },
     "gap-ca-ae80c18496": {
       "status": "needs_review",
-      "next_cursor": 40,
-      "total_catalog_matches": 135,
-      "response_sha256": "343f2fb9f17fbfe79b9f43e05e35a96efbff9f48e96c39d4c561409735d3aa81",
-      "last_attempt_epoch": 1790808573.980631
+      "next_cursor": 0,
+      "total_catalog_matches": 136,
+      "response_sha256": "725b80591b3510a2bf6a9962bb3dad92eaf3b687b5a8f557cf2e10579c6516b7",
+      "last_attempt_epoch": 1791219398.5704703
     },
     "gap-ny-ae80c18496": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 155,
-      "response_sha256": "7e4ea8b1fcee679ebc53ada41bed0a3a92ea0c3f4e3a76b01cb51081be787027",
-      "last_attempt_epoch": 1790808576.373289
+      "response_sha256": "30cfae8e51e2b875d45833a19a372cfb81fff972fe172ac17f8fed3b35b3460c",
+      "last_attempt_epoch": 1791219400.1667778
     },
     "gap-va-ae80c18496": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 234,
-      "response_sha256": "41c54c39553fc0b5a2c43279485fa89568bdda3bc9a1cf6885cc8f8c4e937cae",
-      "last_attempt_epoch": 1790808577.2667615
+      "response_sha256": "5ad753790b7ba2b90939055e54122f436a6a033c3f61bee8de620fbe2f6ce461",
+      "last_attempt_epoch": 1791219401.2579374
     },
     "gap-ca-31fc0cef9b": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
       "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
-      "last_attempt_epoch": 1790808577.8020167
+      "last_attempt_epoch": 1791219402.0040467
     },
     "gap-ny-31fc0cef9b": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 1,
-      "response_sha256": "a907d9ad711f87ca3b04c9442ee355e9959d682d9c5b71a3566ace6dd3efe818",
-      "last_attempt_epoch": 1790808578.6438942
+      "response_sha256": "d375d76455eabe0103f62c9c0645a242d767a6c0a1fa761c0676604525c42df8",
+      "last_attempt_epoch": 1791219403.260904
     },
     "gap-nyc-31fc0cef9b": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 4,
-      "response_sha256": "85defb267e0947db36e8348408e69154eaf0be3c5d4580741d46be36c8766cdb",
-      "last_attempt_epoch": 1790808579.4365752
+      "response_sha256": "22d88e675e737fdae75dfd0219056eadb45338823fc6f1ba0e3292c415b800f2",
+      "last_attempt_epoch": 1791219404.3372636
     },
     "gap-ca-efa1807505": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
       "response_sha256": "0ba7723d25ae577eaeb68fdace31602dcffa32d49d32c217d5f79a094f01190e",
-      "last_attempt_epoch": 1790808580.5478692
+      "last_attempt_epoch": 1791219404.9377189
     },
     "gap-ny-efa1807505": {
       "status": "not_available",
       "next_cursor": 0,
       "total_catalog_matches": 0,
-      "response_sha256": "ba0411f6733ad9b1f5bc9b74f0877cfb31f7fe70eea0405c197b871ed8666508",
-      "last_attempt_epoch": 1790808581.193873
+      "response_sha256": "91d1772e2aef803172767842600ddeb5b032981dcd0417f145b7e50480f47897",
+      "last_attempt_epoch": 1791219405.5321677
     },
     "gap-nyc-efa1807505": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 3,
-      "response_sha256": "d6d48751d9eb5c3ede6267e4d6a015f337aff2727e0f8f53ad3bd42accfa9a41",
-      "last_attempt_epoch": 1790808581.9337044
+      "response_sha256": "7b142dc2b7af8263c1bc3b118b2e592cb086284637f38dc8663864909ed16c0b",
+      "last_attempt_epoch": 1791219407.544305
     },
     "gap-ca-6010edd27b": {
       "status": "needs_review",
       "next_cursor": 40,
       "total_catalog_matches": 51,
-      "response_sha256": "f17744e024c3e23d707042d6367fbf8b0ffb2d849c00e4f00b25b908e548905d",
-      "last_attempt_epoch": 1790808582.8429563
+      "response_sha256": "edd68995a73e3a8134d6fa80277034370e2bbb363b7b2bc2b0bafb882379e4e0",
+      "last_attempt_epoch": 1791219408.464716
     },
     "gap-ny-6010edd27b": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 23,
-      "response_sha256": "906ad050cf2260b44819f7f5d40bd824008a8439d1af462b46cf0d114343366e",
-      "last_attempt_epoch": 1790808583.7451622
+      "response_sha256": "5e76b4c156d07172f1c44f17c48004815e35e4e1f74969c3f4ac17d09082c809",
+      "last_attempt_epoch": 1791219409.6675332
     },
     "gap-nyc-6010edd27b": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 11,
-      "response_sha256": "76f9f34693c8c0061baeee960a02965ae67c18ca0884bb9a236ca6dce56bdf8f",
-      "last_attempt_epoch": 1790808584.9719293
+      "response_sha256": "6c81796157f54a73de6919f13fcad8c0fa3789101aa5e495e7569366cc8cce03",
+      "last_attempt_epoch": 1791219412.0538745
     },
     "gap-ca-3789e352cc": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 219,
-      "response_sha256": "ba109ffaa2653788d59a7b7ec060ba2a5e0e3e37ef1d3bac81d462c097da5003",
-      "last_attempt_epoch": 1790808585.3168912
+      "response_sha256": "680f0ca00e75590429939ebd7e03b02cbad7c6478a65ceada33f1cff93e2c657",
+      "last_attempt_epoch": 1791219413.1491501
     },
     "gap-ny-3789e352cc": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 128,
-      "response_sha256": "24b8a5f40949aa0cf26de0d4bffa299831fe5eaa5e43edf554d3caa585337f2a",
-      "last_attempt_epoch": 1790830187.0804436
+      "response_sha256": "d0e7fd00340b3f54f393c92bf8474819d59dc6f8f6d6f1317a7fbdb5e6d72f2a",
+      "last_attempt_epoch": 1791219415.1022646
     },
     "gap-nyc-3789e352cc": {
       "status": "needs_review",
-      "next_cursor": 40,
+      "next_cursor": 0,
       "total_catalog_matches": 295,
-      "response_sha256": "d6d72bac34d56c870458f5f1202b269ec324bd1124ba2d2f3e18a0dd43eadc3d",
-      "last_attempt_epoch": 1790830187.8548775
+      "response_sha256": "e5e1a7d21049c1a99d2f665519f0662384f6088cb866a7b72967fa78986edf23",
+      "last_attempt_epoch": 1791241051.9892743
     },
     "gap-ca-d6bbbd5701": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 12,
-      "response_sha256": "f02cf4e54f2cfd3d9511d7794a0e512b23fac8456e1990900f8be565d6487d59",
-      "last_attempt_epoch": 1790830188.7755208
+      "response_sha256": "e1b32b943bb10b3796b96347f693c70cba4d987d59e0c0e54a004c02128d63dc",
+      "last_attempt_epoch": 1791241052.4794924
     },
     "gap-ny-d6bbbd5701": {
       "status": "needs_review",
-      "next_cursor": 0,
+      "next_cursor": 20,
       "total_catalog_matches": 22,
-      "response_sha256": "95cdb54ed241d40a99f4dfb11cac9abe42dc052be801fca03452170b61e197e6",
-      "last_attempt_epoch": 1790830189.5657089
+      "response_sha256": "f2c3b39ae5b0f3a523f0b57371dfa4c84322e00d3e759e4c047ca229acbd5fc9",
+      "last_attempt_epoch": 1791241053.634332
     },
     "gap-nyc-d6bbbd5701": {
       "status": "needs_review",
       "next_cursor": 0,
       "total_catalog_matches": 12,
-      "response_sha256": "195e5ddf79cc95b158d40d15961cef0d68d1e49a425510deb87b452f3cc1e9be",
-      "last_attempt_epoch": 1790830190.555585
+      "response_sha256": "61c2b5d5b9f18af816ae0b9a5a4648a7ed0a4ab2034de5bde24cd4dad72f2a4b",
+      "last_attempt_epoch": 1791241055.4368343
     }
   }
 }

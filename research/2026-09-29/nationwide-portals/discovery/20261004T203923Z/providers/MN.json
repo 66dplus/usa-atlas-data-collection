@@ -1,0 +1,190 @@
+{
+  "jurisdiction_code": "MN",
+  "catalog_id": "mn-primary",
+  "catalog_url": "https://gis.data.mn.gov/",
+  "started_at": "2026-10-04T20:39:29.393806+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://gis.data.mn.gov/api/search/v1/collections/all/items",
+  "domain": "gis.data.mn.gov",
+  "validation_receipt": 35,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 41,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": {
+                  "any": [
+                    "6134aff7ed594c01892d70e61900a247",
+                    "c587333e18a74d7986a5b7da8449f78c"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "aaade9e709b846ca9f4151c60f45f9ef",
+                  "525c3c03de7c41f4b009c9358c1cb1f4",
+                  "0618d95c0ba6459eaae39caae541f89a",
+                  "a0ac04ddac5747e786a88689cce753a5",
+                  "b095733da1b847719fd7f59e03ccd193",
+                  "20b22747f30043f0b977e4a970ec0fba"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Document",
+        "key": "document",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

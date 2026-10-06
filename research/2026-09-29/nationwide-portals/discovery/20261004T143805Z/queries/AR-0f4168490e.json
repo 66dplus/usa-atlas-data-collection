@@ -1,0 +1,1837 @@
+{
+  "jurisdiction_code": "AR",
+  "query": "water",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-04T14:39:05.074910+00:00",
+  "candidates": [
+    {
+      "id": "ef55b709a1f74a45aea6672d511af655",
+      "title": "Water Districts (polygon)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/13",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Bounding polygons representing the scope of individual inspection districts for Water Division within the Arkansas Division of Environmental Quality.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.6183,
+                36.532
+              ],
+              [
+                -89.6169,
+                36.532
+              ],
+              [
+                -89.6169,
+                32.9693
+              ],
+              [
+                -94.6183,
+                32.9693
+              ],
+              [
+                -94.6183,
+                36.532
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Metadata"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Data available online through GeoStor at http://www.geostor.arkansas.gov. AHTD County Boundaries for year end 2000 information. This file contains location information for County Boundaries in the state of Arkansas. These locations were extracted from the Arkansas Highway and Transportation Department county mapping files for the year 2000.</span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Water Districts (polygon)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784728146000,
+        "avgRating": 0,
+        "id": "ef55b709a1f74a45aea6672d511af655",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Arkansas Highway and Transportation Department",
+        "largeThumbnail": null,
+        "lastViewed": 1784725200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1777645709000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/13",
+        "tags": [
+          "inland waters",
+          "boundaries",
+          "enivronment",
+          "water",
+          "ADEQ"
+        ],
+        "numViews": 110,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.6183,
+                32.9693
+              ],
+              [
+                -89.6169,
+                36.532
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9693,
+                "xmin": -94.6183,
+                "ymax": 36.532,
+                "xmax": -89.6169,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/ef55b709a1f74a45aea6672d511af655"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bb03d54d0e09453fb4b9bc5b09399a3a",
+      "title": "Public Water Systems (polygon)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/15",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains polygons which represent public water system boundaries in the State of Arkansas. The compilation of this data is an effort of the Engineering Division of the Arkansas Department of Health (ADH) to build a comprehensive geographic database of water utilities and services in the public water system. A visual aid of water system boundaries overlaid on current digital aerial photography, associated road names, and landmarks, were verified by representatives of ADH to confirm the accuracy of the boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.6094,
+                36.5303
+              ],
+              [
+                -89.6781,
+                36.5303
+              ],
+              [
+                -89.6781,
+                32.9734
+              ],
+              [
+                -94.6094,
+                32.9734
+              ],
+              [
+                -94.6094,
+                36.5303
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": null,
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Public Water Systems (polygon)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667668000,
+        "avgRating": 0,
+        "id": "bb03d54d0e09453fb4b9bc5b09399a3a",
+        "categories": [
+          "/Categories/Utilities"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1776804715000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/15",
+        "tags": [
+          "water",
+          "Utilites",
+          "health",
+          "ADH"
+        ],
+        "numViews": 141,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 66,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.6094,
+                32.9734
+              ],
+              [
+                -89.6781,
+                36.5303
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9734,
+                "xmin": -94.6094,
+                "ymax": 36.5303,
+                "xmax": -89.6781,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/bb03d54d0e09453fb4b9bc5b09399a3a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5ff9e8f9636b40dc8e9da8a66ef1660a",
+      "title": "DEQ Water Base Layer Streams",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/32",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset is derived from the High Resolution (1:24,000-scale) National Hydrography Dataset (NHD). The Arkansas Department of Energy and Environment, Division of Environmental Quality uses this layer as their base water layer and shares this data with the public upon request. The purpose of this dataset is to provide a cartographic representation of some of the waters of the state. It is not a full representation of all of the waters of the state. The lack of inclusion in this gis polyline does not suggest or imply anything about the status of a waterways status.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.6759,
+                36.5962
+              ],
+              [
+                -89.6217,
+                36.5962
+              ],
+              [
+                -89.6217,
+                32.9315
+              ],
+              [
+                -94.6759,
+                32.9315
+              ],
+              [
+                -94.6759,
+                36.5962
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><p><span>The National Hydrography Dataset (NHD) is a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. This high-resolution NHD, generally developed at 1:24,000/1:12,000 scale, adds detail to the original 1:100,000-scale NHD. (Data for Alaska, Puerto Rico and the Virgin Islands was developed at high-resolution, not 1:100,000 scale.) Local resolution NHD is being developed where partners and data exist. The NHD contains reach codes for networked features, flow direction, names, and centerline representations for areal water bodies. Reaches are also defined on waterbodies and the approximate shorelines of the Great Lakes, the Atlantic and Pacific Oceans and the Gulf of Mexico. The NHD also incorporates the National Spatial Data Infrastructure framework criteria established by the Federal Geographic Data Committee.</span></p></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "DEQ Water Base Layer Streams",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667344000,
+        "avgRating": 0,
+        "id": "5ff9e8f9636b40dc8e9da8a66ef1660a",
+        "categories": [
+          "/Categories/Water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "See dataset specific metadata.",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776196209000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/32",
+        "tags": [
+          "inlandWaters",
+          "NHD",
+          "base water"
+        ],
+        "numViews": 139,
+        "numComments": 0,
+        "size": 84,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.6759,
+                32.9315
+              ],
+              [
+                -89.6217,
+                36.5962
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9315,
+                "xmin": -94.6759,
+                "ymax": 36.5962,
+                "xmax": -89.6217,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/5ff9e8f9636b40dc8e9da8a66ef1660a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "83843dbffbd74d35abb3bd7a93e2319a",
+      "title": "DEQ Water Base Layer Lakes",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/59",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset is derived from the High Resolution (1:24,000-scale) National Hydrography Dataset (NHD). The Arkansas Department of Energy and Environemnt, Division of Environmental Quality uses this layer as their base water layer and shares this data with the public upon request.The purpose of this dataset is to provide a cartographic representation of some of the waters of the state. It is not a full representaion of all of the waters of the state. The lack of inclusion in this gis polyline does not suggest or imply anyting about the status of a waterways status.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5509,
+                36.5004
+              ],
+              [
+                -90.0619,
+                36.5004
+              ],
+              [
+                -90.0619,
+                33.0044
+              ],
+              [
+                -94.5509,
+                33.0044
+              ],
+              [
+                -94.5509,
+                36.5004
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span><span>The National Hydrography Dataset (NHD) is a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. This high-resolution NHD, generally developed at 1:24,000/1:12,000 scale, adds detail to the original 1:100,000-scale NHD. (Data for Alaska, Puerto Rico and the Virgin Islands was developed at high-resolution, not 1:100,000 scale.) Local resolution NHD is being developed where partners and data exist. The NHD contains reach codes for networked features, flow direction, names, and centerline representations for areal water bodies. Reaches are also defined on waterbodies and the approximate shorelines of the Great Lakes, the Atlantic and Pacific Oceans and the Gulf of Mexico. The NHD also incorporates the National Spatial Data Infrastructure framework criteria established by the Federal Geographic Data Committee.</span></span></p><p><span /></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "DEQ Water Base Layer Lakes",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667414000,
+        "avgRating": 0,
+        "id": "83843dbffbd74d35abb3bd7a93e2319a",
+        "categories": [
+          "/Categories/Water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776272930000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/59",
+        "tags": [
+          "inlandWaters",
+          "NHD",
+          "water",
+          "base water",
+          "environment"
+        ],
+        "numViews": 135,
+        "numComments": 0,
+        "size": 84,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5509,
+                33.0044
+              ],
+              [
+                -90.0619,
+                36.5004
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 33.0044,
+                "xmin": -94.5509,
+                "ymax": 36.5004,
+                "xmax": -90.0619,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/83843dbffbd74d35abb3bd7a93e2319a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "fdf5cc779707488ebe2b4058f2417c45",
+      "title": "2020 Impaired Streams 303 d list in Category 5 Alt",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/47",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data includes lakes of Arkansas that have been assessed as Impaired Waterbodies for the listed pollutant pair(s) (Category 5 alt ). It consists of a subset of the lakes from the Water Hydrography Tiger 2005V1 National Hydrography Dataset (NHD) High Resolution (1:24,000) Waterbody.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.4264,
+                36.3587
+              ],
+              [
+                -94.2586,
+                36.3587
+              ],
+              [
+                -94.2586,
+                35.9551
+              ],
+              [
+                -94.4264,
+                35.9551
+              ],
+              [
+                -94.4264,
+                36.3587
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This data includes lakes of Arkansas that have been assessed as Impaired Waterbodies for the listed pollutant pair(s) (Category 5 alt ). It consists of a subset of the lakes from the Water Hydrography Tiger 2005V1 National Hydrography Dataset (NHD) High Resolution (1:24,000) Waterbody.</span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "2020 Impaired Streams 303 d list in Category 5 Alt",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784728941000,
+        "avgRating": 0,
+        "id": "fdf5cc779707488ebe2b4058f2417c45",
+        "categories": [
+          "/Categories/Water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784696400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776259203000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/47",
+        "tags": [
+          "NHD",
+          "inlandWaters",
+          "water",
+          "FWHYDROGRAPHY"
+        ],
+        "numViews": 117,
+        "numComments": 0,
+        "size": 84,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.4264,
+                35.9551
+              ],
+              [
+                -94.2586,
+                36.3587
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 35.9551,
+                "xmin": -94.4264,
+                "ymax": 36.3587,
+                "xmax": -94.2586,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/fdf5cc779707488ebe2b4058f2417c45"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ec87113183a34adcaf9582a78f684705",
+      "title": "2022 Impaired Lakes 303 d list in Category 5 Alt",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/54",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data includes lakes of Arkansas that have been assessed as Impaired Waterbodies for the listed pollutant pair(s) (Category 5 alt ). It consists of a subset of the lakes from the Water Hydrography Tiger 2005V1 National Hydrography Dataset (NHD) High Resolution (1:24,000) Waterbody",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.0697,
+                36.2681
+              ],
+              [
+                -93.9388,
+                36.2681
+              ],
+              [
+                -93.9388,
+                36.1709
+              ],
+              [
+                -94.0697,
+                36.1709
+              ],
+              [
+                -94.0697,
+                36.2681
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This data includes lakes of Arkansas that have been assessed as Impaired Waterbodies for the listed pollutant pair(s) (Category 5 alt ). It consists of a subset of the lakes from the Water Hydrography Tiger 2005V1 National Hydrography Dataset (NHD) High Resolution (1:24,000) Waterbody.</span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "2022 Impaired Lakes 303 d list in Category 5 Alt",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667595000,
+        "avgRating": 0,
+        "id": "ec87113183a34adcaf9582a78f684705",
+        "categories": [
+          "/Categories/Water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776270500000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/54",
+        "tags": [
+          "FWHYDROGRAPHY",
+          "inlandWaters",
+          "NHD",
+          "water"
+        ],
+        "numViews": 119,
+        "numComments": 0,
+        "size": 84,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.0697,
+                36.1709
+              ],
+              [
+                -93.9388,
+                36.2681
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 36.1709,
+                "xmin": -94.0697,
+                "ymax": 36.2681,
+                "xmax": -93.9388,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/ec87113183a34adcaf9582a78f684705"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b0c00b2f0c52485c8db8b666a4b210ae",
+      "title": "2020 Impaired Lakes 303 d list in Category 5 Alt",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/46",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data includes lakes of Arkansas that have been assessed as Impaired Waterbodies for the listed pollutant pair(s) (Category 5 alt ). It consists of a subset of the lakes from the Water Hydrography Tiger 2005V1 National Hydrography Dataset (NHD) High Resolution (1:24,000) Waterbody.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.0634,
+                36.2441
+              ],
+              [
+                -93.9382,
+                36.2441
+              ],
+              [
+                -93.9382,
+                36.1226
+              ],
+              [
+                -94.0634,
+                36.1226
+              ],
+              [
+                -94.0634,
+                36.2441
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This data includes lakes of Arkansas that have been assessed as Impaired Waterbodies for the listed pollutant pair(s) (Category 5 alt ). It consists of a subset of the lakes from the Water Hydrography Tiger 2005V1 National Hydrography Dataset (NHD) High Resolution (1:24,000) Waterbody.</span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "2020 Impaired Lakes 303 d list in Category 5 Alt",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667635000,
+        "avgRating": 0,
+        "id": "b0c00b2f0c52485c8db8b666a4b210ae",
+        "categories": [
+          "/Categories/Water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776258982000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/46",
+        "tags": [
+          "FWHYDROGRAPHY",
+          "NHD",
+          "inlandWaters",
+          "water"
+        ],
+        "numViews": 119,
+        "numComments": 0,
+        "size": 84,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.0634,
+                36.1226
+              ],
+              [
+                -93.9382,
+                36.2441
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 36.1226,
+                "xmin": -94.0634,
+                "ymax": 36.2441,
+                "xmax": -93.9382,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/b0c00b2f0c52485c8db8b666a4b210ae"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "111ef0f3d8b345629c5385f8448a699f",
+      "title": "2022 Impaired Streams 303 d list in Category 5 Alt",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/55",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data includes lakes of Arkansas that have been assessed as Impaired Waterbodies for the listed pollutant pair(s) (Category 5 alt ). It consists of a subset of the streams from the Water Hydrography Tiger 2005V1 National Hydrography Dataset (NHD) High Resolution (1:24,000).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5964,
+                36.3587
+              ],
+              [
+                -94.2586,
+                36.3587
+              ],
+              [
+                -94.2586,
+                35.953
+              ],
+              [
+                -94.5964,
+                35.953
+              ],
+              [
+                -94.5964,
+                36.3587
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This data includes lakes of Arkansas that have been assessed as Impaired Waterbodies for the listed pollutant pair(s) (Category 5 alt ). It consists of a subset of the lakes from the Water Hydrography Tiger 2005V1 National Hydrography Dataset (NHD) High Resolution (1:24,000) Waterbody.</span></p></div></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "2022 Impaired Streams 303 d list in Category 5 Alt",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667473000,
+        "avgRating": 0,
+        "id": "111ef0f3d8b345629c5385f8448a699f",
+        "categories": [
+          "/Categories/Water"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776270687000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Water/FeatureServer/55",
+        "tags": [
+          "FWHYDROGRAPHY",
+          "inlandWaters",
+          "water",
+          "NHD"
+        ],
+        "numViews": 120,
+        "numComments": 0,
+        "size": 84,
+        "listed": false,
+        "scoreCompleteness": 80,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5964,
+                35.953
+              ],
+              [
+                -94.2586,
+                36.3587
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 35.953,
+                "xmin": -94.5964,
+                "ymax": 36.3587,
+                "xmax": -94.2586,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/111ef0f3d8b345629c5385f8448a699f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "127dd914f34c49f9bb058f9eca67733d",
+      "title": "Extraordinary Resource Waters Lakes (polygon)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/17",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data includes lakes of Arkansas that have been designated as Extraordinary Resource Waters, as indicated by Regulation No. 2 of the Arkansas Pollution Control And Ecology Commission. It consists of a subset of the stream segments from the National Hydrography Dataset (NHD) Medium Resolution (1:100,000) Flowline.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.5789,
+                36.499
+              ],
+              [
+                -92.4924,
+                36.499
+              ],
+              [
+                -92.4924,
+                34.2129
+              ],
+              [
+                -93.5789,
+                34.2129
+              ],
+              [
+                -93.5789,
+                36.499
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": null,
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Extraordinary Resource Waters Lakes (polygon)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667337000,
+        "avgRating": 0,
+        "id": "127dd914f34c49f9bb058f9eca67733d",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780331800076.png",
+        "languages": [],
+        "created": 1777579090000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/17",
+        "tags": [
+          "environment",
+          "Rule 2",
+          "ORW",
+          "inland waters",
+          "ERW"
+        ],
+        "numViews": 110,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 66,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -93.5789,
+                34.2129
+              ],
+              [
+                -92.4924,
+                36.499
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 34.2129,
+                "xmin": -93.5789,
+                "ymax": 36.499,
+                "xmax": -92.4924,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/127dd914f34c49f9bb058f9eca67733d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1e28142586074653a7099d8ce8e6fdd9",
+      "title": "Extraordinary Resource Waters Streams (line)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/2",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This data includes segments of Arkansas streams that have been designated as Extraordinary Resource Waters, as indicated by Regulation No. 2 of the Arkansas Pollution Control And Ecology Commission. It consists of waterbodies from the National Hydrography Dataset (NHD) Medium Resolution (1:100,000) Flowline.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.5077,
+                36.5423
+              ],
+              [
+                -90.7532,
+                36.5423
+              ],
+              [
+                -90.7532,
+                33.1519
+              ],
+              [
+                -94.5077,
+                33.1519
+              ],
+              [
+                -94.5077,
+                36.5423
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><p><span>The National Hydrography Dataset (NHD) is a feature-based database that interconnects and uniquely identifies the stream segments or reaches that make up the nation's surface water drainage system. NHD data was originally developed at 1:100,000-scale and exists at that scale for the whole country. This high-resolution NHD, generally developed at 1:24,000/1:12,000 scale, adds detail to the original 1:100,000-scale NHD. (Data for Alaska, Puerto Rico and the Virgin Islands was developed at high-resolution, not 1:100,000 scale.) Local resolution NHD is being developed where partners and data exist. The NHD contains reach codes for networked features, flow direction, names, and centerline representations for areal water bodies. Reaches are also defined on waterbodies and the approximate shorelines of the Great Lakes, the Atlantic and Pacific Oceans and the Gulf of Mexico. The NHD also incorporates the National Spatial Data Infrastructure framework criteria established by the Federal Geographic Data Committee.</span></p></div></div>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Extraordinary Resource Waters Streams (line)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667395000,
+        "avgRating": 0,
+        "id": "1e28142586074653a7099d8ce8e6fdd9",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "See dataset specific metadata.",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail1780331838548.png",
+        "languages": [],
+        "created": 1777579460000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/2",
+        "tags": [
+          "inland waters",
+          "environment",
+          "ERW",
+          "ORW",
+          "ADEQ"
+        ],
+        "numViews": 105,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.5077,
+                33.1519
+              ],
+              [
+                -90.7532,
+                36.5423
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 33.1519,
+                "xmin": -94.5077,
+                "ymax": 36.5423,
+                "xmax": -90.7532,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/1e28142586074653a7099d8ce8e6fdd9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    235
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 102,
+  "next_offset": 10,
+  "response_sha256": "b44f82e2a89c95b95203bcb2900ac8af20f51c1c756aa0a48fc9010daff4316e",
+  "search_complete": false
+}

@@ -1,0 +1,1102 @@
+{
+  "jurisdiction_code": "AK",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T14:29:00.420868+00:00",
+  "candidates": [
+    {
+      "id": "ac53b83aaae941d198045d0c185eb569",
+      "title": "TNF Outfitter/Guide Use Areas sync enabled",
+      "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/TNF_Use_Areas_sync_enabled/FeatureServer",
+      "publisher": "TongassNF",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "These layers are used in conjunction with information provided by guides about their actual use of National Forest System use authorized in a special use permit.\n\nUpdated 20210823 Michael Hill\nMetadata 20210823 Michael Hill",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -180,
+                90
+              ],
+              [
+                180,
+                90
+              ],
+              [
+                180,
+                -90
+              ],
+              [
+                -180,
+                -90
+              ],
+              [
+                -180,
+                90
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Area Units are geographic areas established by Districts to manage outfitter/guide activities developed by each district. Geographic areas are identified by similar features, Land Use Designation, and recreation experience.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><DIV STYLE=\"font-size:15pt\"><P><SPAN STYLE=\"font-size:12pt\">Any hardcopy or electronic products utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way, they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that the US Forest Service, Tongass National Forest approved the changes.</SPAN></P></DIV></DIV></DIV></DIV>",
+        "ownerId": "ea6a43cd58714f1090a32c2dc79cdf6f",
+        "title": "TNF Outfitter/Guide Use Areas sync enabled",
+        "type": "Feature Service",
+        "orgId": "gGHDlz6USftL5Pau",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731982221000,
+        "avgRating": 0,
+        "id": "ac53b83aaae941d198045d0c185eb569",
+        "categories": [],
+        "spatialReference": "26931",
+        "numRatings": 0,
+        "owner": "TongassNF",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1787670000000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1640024895000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/TNF_Use_Areas_sync_enabled/FeatureServer",
+        "tags": [
+          "Southeast",
+          "Tongass National Forest",
+          "Alaska",
+          "Recreation",
+          "United States",
+          "Guides",
+          "Outfitters"
+        ],
+        "numViews": 7704,
+        "numComments": 0,
+        "size": 7446528,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "TNF_Use_Areas_sync_enabled",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "USFS, Tongass National Forest",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/ac53b83aaae941d198045d0c185eb569"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1c37c952ebe74a529d1daa155e8c3161",
+      "title": "Recreation Structures (Alaska)",
+      "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Structures_Recreation_v1/FeatureServer/0",
+      "publisher": "AlaskaGeospatialOffice",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Geological Survey, displays recreation structures in the U.S. This layer is checked weekly for updates.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "This layer is derived from the Recreation Structures dataset hosted by <a href='https://www.arcgis.com/home/user.html?user=Esri_US_Federal_Data' rel='nofollow ugc'>Esri Federal Data</a> and displays only Alaska features.<br /><br /><div style='text-align:center;'><span style='font-size:x-large;'>Recreation Structures</span></div><div style='text-align:center;'>&nbsp;</div><div style='text-align:left;'><span style='color:#000000; font-size:large;'>This feature layer, utilizing National Geospatial Data Asset (NGDA) data from the U.S. Geological Survey (USGS), displays recreation structures in the U.S.&nbsp;</span><span style='color:#000000; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:large;'>Per the</span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:large;'>&nbsp;</span><a target='_blank' href='https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>USGS</span></a><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:large;'>, </span><span style='color:#000000; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:large;'>“</span><span style='color:#000000; font-family:Avenir Next W01, Avenir Next W00, Avenir Next, Avenir, Helvetica Neue, sans-serif; font-size:large;'>Structures data are designed to be used in general mapping and in the analysis of structure related activities using geographic information system technology. The National Map structures data is commonly combined with other data themes, such as boundaries, elevation, hydrography, and transportation, to produce general reference base maps.</span><span style='color:rgb(0,0,0); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:large;'>”</span><br />&nbsp;</div><div style='text-align:center;'><img src='https://fedmaps.maps.arcgis.com/sharing/rest/content/items/6085070f99024e1db066704771cd2183/data' alt='NGDA _ Recreation Structures _ 800x400 _ Screen Capture' /></div><div style='text-align:center;'><span style='font-size:large;'><i>Headquarters &amp; Picnic Areas (Core Banks, NC)</i></span><br />&nbsp;</div><div style='text-align:left;'><div><div><span style='color:#000000; font-size:large;'><font style='font-family:inherit;'><strong>Data currency:</strong> This cached Esri federal service is checked weekly for updates from its enterprise federal source (</font></span><a target='_blank' href='https://carto.nationalmap.gov/arcgis/rest/services/structures/MapServer/59' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'><font>Recreation</font></span></a><span style='color:#000000; font-size:large;'><font>) and will support mapping, analysis, data exports and OGC API – Feature access</font></span></div></div><div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><div><div style='font-family:inherit;'><div style='font-family:inherit;'><div style='font-family:inherit;'><div style='font-family:inherit;'><div style='font-family:inherit;'><div style='font-family:inherit;'><div style='font-family:inherit;'><span style='color:#000000; font-size:large;'><font style='color:rgb(0, 0, 0); font-family:inherit;'><strong>NGDAID:</strong>&nbsp;</font></span><a style='color:rgb(0, 97, 155); font-family:inherit; text-decoration-line:none;' target='_blank' href='https://ngda-portfolio-community-geoplatform.hub.arcgis.com/pages/portfolio' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'><font style='font-family:inherit;'>135 (USGS National Structures Dataset - USGS National Map Downloadable Data Collection)</font></span></a></div></div></div></div></div></div></div></div></div></div><div><span style='color:#000000; font-size:large;'><font><strong>OGC API Features Link:</strong> (</font></span><a target='_blank' href='https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/structures_recreation_ogc/OGCFeatureServer' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Recreation Structures&nbsp;- OGC Features</span></a><span style='color:#000000; font-size:large;'><font>) copy this link to embed it in OGC Compliant viewers</font></span></div><div><span style='color:#000000; font-size:large;'><font style='font-family:inherit;'><strong>For more information, please visit:</strong>&nbsp;</font></span><a style='color:rgb(0, 121, 193); font-family:inherit; text-decoration-line:none;' target='_blank' href='https://www.usgs.gov/core-science-systems/national-geospatial-program/national-map' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'><font style='font-family:inherit;'>The National Map</font></span></a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'><p><span style='color:#000000; font-size:large;'><font style='font-family:inherit;'><strong>For feedback please contact: </strong></font></span><a href='mailto:Esri_US_Federal_Data@esri.com' target='_blank' rel='nofollow ugc noopener noreferrer'><span style='font-size:large;'>Esri_US_Federal_Data@esri.com</span></a></p><div style='font-family:inherit;'><div style='color:rgb(76, 76, 76);'><div style='font-family:inherit;'><div style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif !important; text-align:center;'><span style='color:rgb(0,0,0); font-size:x-large;'><font style='font-family:inherit;'>NGDA Data Set</font></span><br />&nbsp;</div><div style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif !important; font-size:large;'><div style='font-family:inherit;'><div style='font-family:inherit;'><span style='color:#000000;'><font style='font-family:inherit;'>This data set is part of the&nbsp;</font></span><a style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; line-height:1.5; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' href='https://ngda-real-property-geoplatform.hub.arcgis.com/' rel='nofollow ugc noopener noreferrer'><span style='font-family:inherit; font-size:large;'><font style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>NGDA Real Property Theme Community</span></font></span></a><span style='color:#000000;'><font style='font-family:inherit;'>. Per the Federal Geospatial Data Committee (FGDC),&nbsp;</font></span><a style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; line-height:1.5; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' href='https://www.fgdc.gov/policyandplanning/a-16/appendixe/20170324-ngda-themes-fgdc-sc-revised-appendixe.pdf' rel='nofollow ugc noopener noreferrer'><span style='font-family:inherit; font-size:large;'><font style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>Real Property</span></font></span></a><span style='color:#000000;'><font style='font-family:inherit;'>&nbsp;is defined as \"the spatial representation (location) of real property entities, typically consisting of one or more of the following: unimproved land, a building, a structure, site improvements and the underlying land. Complex real property entities (that is \"facilities\") are used for a broad spectrum of functions or missions. This theme focuses on spatial representation of real property assets only and does not seek to describe special purpose functions of real property such as those found in the Cultural Resources, Transportation, or Utilities themes.\"</font></span></div><div style='font-family:inherit;'>&nbsp;</div></div></div><div style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif !important; font-size:large;'><span style='color:#000000; font-family:inherit;'><font style='font-family:inherit;'>For other NGDA Content: </font></span><a style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; line-height:1.5; text-align:left; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' href='https://fedmaps.maps.arcgis.com/home/group.html?id=8c90888d825d440a9e4754fda9e4e92e' rel='nofollow ugc noopener noreferrer'><span style='font-family:inherit; font-size:large;'><font style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>Esri Federal Datasets</span></font></span></a></div></div></div></div></div></div>",
+        "licenseInfo": null,
+        "ownerId": "ba0ef05da736439ca59859ee4068190f",
+        "title": "Recreation Structures (Alaska)",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782777261000,
+        "avgRating": 0,
+        "id": "1c37c952ebe74a529d1daa155e8c3161",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "AlaskaGeospatialOffice",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1790838000000,
+        "thumbnail": "thumbnail/thumbnail1768421714211.png",
+        "languages": [],
+        "created": 1781803335000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/Structures_Recreation_v1/FeatureServer/0",
+        "tags": [
+          "NGDA",
+          "National Geospatial Data Asset",
+          "FGDC",
+          "Federal Geospatial Data Committee",
+          "structures",
+          "federal",
+          "USGS",
+          "U.S. Geological Survey",
+          "USDOI",
+          "DOI",
+          "U.S. Department of the Interior",
+          "Department of the Interior",
+          "The National Map",
+          "campgrounds",
+          "trailheads",
+          "visitor information centers",
+          "Recreation",
+          "cabins",
+          "shelters",
+          "picnic areas",
+          "headquarters",
+          "ranger stations",
+          "Infrastructure & Facilities",
+          "Land Records & Ownership"
+        ],
+        "numViews": 273,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "english",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources ArcGIS Online",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/1c37c952ebe74a529d1daa155e8c3161"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "466c5b7adafe4468aebcc29347e8c84e",
+      "title": "Park_Land_Hosted",
+      "url": "https://services2.arcgis.com/Ce3DhLRthdwbHlfF/arcgis/rest/services/Park_Land_Hosted/FeatureServer",
+      "publisher": "MOA_HostedServices",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Municipality of Anchorage Park Land",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -150.07393762155723,
+                61.441999180743835
+              ],
+              [
+                -149.0857119042116,
+                61.441999180743835
+              ],
+              [
+                -149.0857119042116,
+                60.952334766766114
+              ],
+              [
+                -150.07393762155723,
+                60.952334766766114
+              ],
+              [
+                -150.07393762155723,
+                61.441999180743835
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "MOA Parks & Recreation Land and Facilities",
+        "licenseInfo": "",
+        "ownerId": "547df3885bd5487dbf1216a34ed274e7",
+        "title": "Park_Land_Hosted",
+        "type": "Feature Service",
+        "orgId": "Ce3DhLRthdwbHlfF",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1767990240000,
+        "avgRating": 0,
+        "id": "466c5b7adafe4468aebcc29347e8c84e",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "MOA_HostedServices",
+        "accessInformation": "MOA GDIC, Parks and Recreation ",
+        "largeThumbnail": null,
+        "lastViewed": 1787684400000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1571075906000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/Ce3DhLRthdwbHlfF/arcgis/rest/services/Park_Land_Hosted/FeatureServer",
+        "tags": [
+          "Parks and Recreation",
+          "MOAGIS",
+          "Anchorage",
+          "Alaska",
+          "Parks",
+          "Public Land"
+        ],
+        "numViews": 1096106,
+        "numComments": 0,
+        "size": 1146880,
+        "listed": false,
+        "scoreCompleteness": 65,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Park_Land_Hosted",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Municipality of Anchorage",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/466c5b7adafe4468aebcc29347e8c84e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5af9eaa929f8452fbc6c0d344ee717d3",
+      "title": "Mat-Su Borough Recreation",
+      "url": "https://experience.arcgis.com/experience/5af9eaa929f8452fbc6c0d344ee717d3",
+      "publisher": "MatSuBorough",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Explore an interactive map showing recreation opportunities in the Mat-Su Borough, including trails, winter grooming updates, and public waterbody access.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "lastEditor:MatSuBorough",
+          "modified: 1785180442771",
+          "publishVersion:1.21.0",
+          "Ready To Use",
+          "status: Published",
+          "template:blankfullscreen",
+          "version:1.21.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Waterbody Access: This data represents verified public access to waterbodies in the Mat-Su Borough, with associated amenities and known conditions.&nbsp;</span></div><div><br />&nbsp;</div><p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Trails: This data represents trail locations within the Matanuska - Susitna Borough. Some of the trails are on Borough lands and under Borough management authority, however many of the trails are not maintained by the Borough. These trails are a compilation of data from a variety of sources and contain detailed attributes such as development level, accessibility, seasonal availability, typical activities (e.g., hiking, biking, skiing, equestrian access, motorized use, etc). This trail layer supports planning, public access, emergency response, and recreational development and will promote regional trail connectivity, stewardship, and informed decision-making for residents, visitors, and land managers.</span></p><p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Winter Grooming: This data represents winter grooming updates for trails maintained by Mat-Su Borough staff or organizations in a Trail Partner Agreement with the Borough. Grooming may be optimized for cross-country skiing, dog mushing, snow-machining, or other activities depending on the area. Check area signage for any usage designations.&nbsp;</span></p>",
+        "licenseInfo": "<p style='margin:0in; font-family:Calibri; font-size:12.0pt; color:#4C4C4C;'>The Matanuska-Susitna Borough (&quot;Borough&quot;) makes published geographic electronic data available to the data recipient (&quot;Recipient&quot;) as a public service. To protect the Borough and the population the Borough serves, the data provided to the Recipient is designated as copyrighted material. The Borough grants the Recipient the right to duplicate the electronic data for their personal or business' internal use and to use this digital data as a source for which to create other electronic data, electronic maps, or paper maps. Any transfer, sale, lease, or transmittal of the original data to any third party without value added or without the written authorization of the Borough Office of Information Technology may be considered a violation of this copyright and subject the Recipient to civil liability. Any hardcopy maps or published datasets utilizing this data shall clearly indicate their source with the following citation: &quot;________ (title of dataset), current as of _______ (published currency date), was originally obtained from the Matanuska-Susitna Borough Office of Information Technology, and was used to create this product. The Matanuska-Susitna Borough assumes no responsibility for the completeness or accuracy of the data contained within.&quot; If the Recipient has modified the data in any way, the Recipient is obligated to note the types of modifications that have been performed. The Recipient specifically agrees not to misrepresent the data, nor to imply that the Borough has approved any changes made by the Recipient.</p>",
+        "ownerId": "1817a97618da34a9edfe006733ce7322",
+        "title": "Mat-Su Borough Recreation",
+        "type": "Web Experience",
+        "orgId": "fX5IGselyy1TirdY",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785180445000,
+        "avgRating": 3.75,
+        "id": "5af9eaa929f8452fbc6c0d344ee717d3",
+        "categories": [
+          "/Categories/Recreational"
+        ],
+        "spatialReference": null,
+        "numRatings": 1,
+        "owner": "MatSuBorough",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/Mat-Su_Borough_Recreation.png",
+        "languages": [],
+        "created": 1725989308000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/5af9eaa929f8452fbc6c0d344ee717d3",
+        "tags": [
+          "Matanuska-Susitna Borough",
+          "Matanuska Susitna Borough",
+          "Matanuska",
+          "Susitna",
+          "Borough",
+          "MatSu",
+          "Mat-Su",
+          "Mat-Su Borough",
+          "MatSu Borough",
+          "MSB",
+          "Lake",
+          "Access",
+          "Public Access",
+          "Recreation",
+          "Park"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 880675,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Matanuska-Susitna Borough",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/5af9eaa929f8452fbc6c0d344ee717d3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b4c05a8ee42d4d44b8c6eb27b5d0158f",
+      "title": "Parks and Recreation Gallery",
+      "url": "https://muniorg.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=b4c05a8ee42d4d44b8c6eb27b5d0158f",
+      "publisher": "MOAParksAndRec",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Park facilities, park lands, facility rentals, projects and additional information from Anchorage Parks and Recreation",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "configurableApp",
+          "Copy Item",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Ready To Use",
+          "Web Map"
+        ],
+        "description": "<p>The Anchorage Parks and Recreation Department is responsible for beautifying, operating and maintaining Park and Recreation assets (parks, trails, community recreation centers and community pools) as well as implementing year-round recreation programs for all ages and caring for our natural resource areas.  The Department is also responsible for horticulture and park maintenance.  The Department provides support for community gardens, dog parks and Youth Employment in Parks (YEP). Additionally, one of the most important and exciting jobs for Parks and Recreation staff is working with Anchorage’s impressive numbers of volunteers. In 2013, over 6,000 volunteers contributed over 125,000 hours of service to the Parks and Recreation Department.</p><p> </p><font face='Calibri, sans-serif'><span style='font-size:11pt;'>Please visit our website for more information at </span></font><a href='https://www.muni.org/Departments/parks/Pages/default.aspx' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.muni.org/Departments/parks/Pages/default.aspx</a><font face='Calibri, sans-serif'><span style='font-size:11pt;'> or contact our office if you have any questions or comments at 907-343-4355.</span></font>",
+        "licenseInfo": "<p style='margin-top:0px; margin-bottom:1.55rem; color:rgb(81, 81, 81); font-family:Lato, sans-serif; font-size:small;'><span style='font-size:17px; color:black; font-family:Arial, sans-serif;'>All users of this product must agree to the</span><span style='color:black; font-family:Arial, sans-serif; font-size:8pt;'> </span><a href='https://cdn.ancgis.com/documents/GIS_Data_Terms_and_Conditions.pdf' style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:17px;' target='_blank' rel='nofollow ugc noopener noreferrer'>Terms of Use and Disclaimer</a><span style='font-size:17px; color:black; font-family:Arial, sans-serif;'>.</span><font size='3' style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'><span style='color:black; font-family:Arial, sans-serif; font-size:8pt;'> </span><span style='color:black; font-family:Arial, sans-serif;'>B</span><span style='color:black; font-family:Arial, sans-serif;'>y selecting this product you agree to the <i>Terms of Use and Disclaimer.</i></span></font><br /></p>",
+        "title": "Parks and Recreation Gallery",
+        "type": "Web Mapping Application",
+        "orgId": "Ce3DhLRthdwbHlfF",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1726608958000,
+        "avgRating": 0,
+        "id": "b4c05a8ee42d4d44b8c6eb27b5d0158f",
+        "categories": [],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "MOAParksAndRec",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1781272800000,
+        "thumbnail": "thumbnail/thumbnail1726606000177.png",
+        "languages": [],
+        "created": 1726605947000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://muniorg.maps.arcgis.com/apps/instant/filtergallery/index.html?appid=b4c05a8ee42d4d44b8c6eb27b5d0158f",
+        "tags": [
+          "MOAGIS",
+          "Gallery",
+          "Anchorage Parks and Recreation"
+        ],
+        "numViews": 7536,
+        "numComments": 0,
+        "size": 1931,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Municipality of Anchorage",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/b4c05a8ee42d4d44b8c6eb27b5d0158f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3d725f2e340f40559fb6d099b41240ee",
+      "title": "KPB Recreation Service Areas",
+      "url": "https://services.arcgis.com/ba4DH9pIcqkXJVfl/arcgis/rest/services/KPB_Recreation_Service_Areas/FeatureServer",
+      "publisher": "KPBAdmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Depicts the boundaries of the Kenai Peninsula Borough Recreation Service Areas, as described in Chapter 16 of the Kenai Peninsula Borough Code of Ordinances.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -153.5145197490016,
+                61.47074240971156
+              ],
+              [
+                -150.06572037627507,
+                61.47074240971156
+              ],
+              [
+                -150.06572037627507,
+                59.31594689800333
+              ],
+              [
+                -153.5145197490016,
+                59.31594689800333
+              ],
+              [
+                -153.5145197490016,
+                61.47074240971156
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "There are currently two Recreation Service Areas within the Kenai Peninsula Borough, as identified within Chapter 16 of the Kenai Peninsula Borough Code of Ordinances - <a href='https://library.municode.com/ak/kenai_peninsula_borough/codes/code_of_ordinances?nodeId=TIT16SEAR_CH16.16NOPERESEAR' target='_blank' rel='nofollow ugc noopener noreferrer'>North Peninsula Recreation Service Area</a>, and <a href='https://library.municode.com/ak/kenai_peninsula_borough/codes/code_of_ordinances?nodeId=TIT16SEAR_CH16.55SERESEAR' target='_blank' rel='nofollow ugc noopener noreferrer'>Seldovia Recreational Service Area</a>. The board of directors of each service area supervise recreation services, facilities, and programs within each service area, including but not limited to senior citizen and youth programs, facility rentals, and other activities.",
+        "licenseInfo": "<span style='font-family:Calibri, sans-serif;'><font size='3'>Every reasonable effort has been made to ensure the accuracy of these data. However, by accepting this material, you agree that the Kenai Peninsula Borough assumes no liability of any kind arising from the use of this data. The data are provided without warranty of any kind, either expressed or implied, including but not limited to time, money or goodwill arising from the use, operation or modification of the data. In using these data, you further agree to indemnify, defend, and hold harmless Kenai Peninsula Borough for any and all liability of any nature arising from the lack of accuracy or correctness of the data, or use of the data.</font></span>",
+        "ownerId": "c08742db5d3f4c6eadf1596c4bdb61d3",
+        "title": "KPB Recreation Service Areas",
+        "type": "Feature Service",
+        "orgId": "ba4DH9pIcqkXJVfl",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782922892000,
+        "avgRating": 0,
+        "id": "3d725f2e340f40559fb6d099b41240ee",
+        "categories": [
+          "/Categories/Recreation",
+          "/Categories/Administrative"
+        ],
+        "spatialReference": "102634",
+        "numRatings": 0,
+        "owner": "KPBAdmin",
+        "accessInformation": "Kenai Peninsula Borough",
+        "largeThumbnail": null,
+        "lastViewed": 1787673600000,
+        "thumbnail": "thumbnail/thumbnail1638765180453.png",
+        "languages": [],
+        "created": 1638765113000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/ba4DH9pIcqkXJVfl/arcgis/rest/services/KPB_Recreation_Service_Areas/FeatureServer",
+        "tags": [
+          "Recreation",
+          "Service Areas",
+          "Kenai Peninsula Borough",
+          "Boundaries"
+        ],
+        "numViews": 6083,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "KPB_Recreation_Service_Areas",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kenai Peninsula Borough",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/3d725f2e340f40559fb6d099b41240ee"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f1c00bde1e314612b9676195c70e643b",
+      "title": "FNSB Parks Recreation Facilities",
+      "url": "https://services.arcgis.com/f4rR7WnIfGBdVYFd/arcgis/rest/services/FNSB_Parks_Recreation_Facilities/FeatureServer",
+      "publisher": "internet_gis_FNSB",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Fairbanks North Star Borough parks and park facilities",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -148.0750534400143,
+                64.90023260108497
+              ],
+              [
+                -146.99318837452412,
+                64.90023260108497
+              ],
+              [
+                -146.99318837452412,
+                64.74083724547012
+              ],
+              [
+                -148.0750534400143,
+                64.74083724547012
+              ],
+              [
+                -148.0750534400143,
+                64.90023260108497
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p><span style='background-color:rgb(255,255,255); color:rgb(20,20,20); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Fairbanks North Star Borough parks and park facilities</span></span></p>",
+        "licenseInfo": "<p><span style='color:black; font-family:&quot;Aptos Narrow&quot;, sans-serif;'><i><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'><strong>Data Accuracy &amp; Disclaimer:</strong></span></i></span><br /><br /><span style='color:black; font-family:&quot;Aptos Narrow&quot;, sans-serif;'><i><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'><strong>Please note that while the information provided by the Fairbanks North Star Borough websites is believed to be generally reliable, it is not guaranteed to be completely accurate or up-to-date. The maps and data contained herein are compilations from several different sources, some unrelated to the Fairbanks North Star Borough, with varying levels of precision, prepared over a period of several years. The data represents a snapshot at a specific point in time of information that is constantly changing, and so it may not be completely up-to-date or accurate. Therefore, all of the information provided herein should be used for informational purposes only, and none of it constitutes legal documentation for the description of any properties.</strong></span></i></span></p>",
+        "ownerId": "e67a24d014d68cf10b31ae151b5fa3f3",
+        "title": "FNSB Parks Recreation Facilities",
+        "type": "Feature Service",
+        "orgId": "f4rR7WnIfGBdVYFd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785960020000,
+        "avgRating": 0,
+        "id": "f1c00bde1e314612b9676195c70e643b",
+        "categories": [],
+        "spatialReference": "102633",
+        "numRatings": 0,
+        "owner": "internet_gis_FNSB",
+        "accessInformation": "FNSB Parks and Recreation Department",
+        "largeThumbnail": null,
+        "lastViewed": 1787684400000,
+        "thumbnail": "thumbnail/thumbnail1785960018491.png",
+        "languages": [],
+        "created": 1785959726000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/f4rR7WnIfGBdVYFd/arcgis/rest/services/FNSB_Parks_Recreation_Facilities/FeatureServer",
+        "tags": [
+          "gis-data-hub parks",
+          "Community",
+          "recreation",
+          "Alaska",
+          "FNSB",
+          "Fairbanks North Star Borough",
+          "parks & recreation",
+          "parks",
+          "park facilities"
+        ],
+        "numViews": 63,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "FNSB_Parks_Recreation_Facilities",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Fairbanks North Star Borough",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/f1c00bde1e314612b9676195c70e643b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "38861ef59f8f40eb8019d31c0d75900a",
+      "title": "Nikiski Community Trails",
+      "url": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/38861ef59f8f40eb8019d31c0d75900a",
+      "publisher": "KPBAdmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Nikiski Community Trails, with imagery.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document",
+          "PDF"
+        ],
+        "description": "Nikiski Community Maps. Data provided by the North Peninsula Recreation Service Area. Letter size printable map, PDF format.",
+        "licenseInfo": "<span style='font-size:11.0pt; font-family:&quot;Helvetica&quot;,sans-serif;'>Every reasonable effort has been made to ensure the accuracy of these data. However, by accepting this material, you agree that the Kenai Peninsula Borough assumes no liability of any kind arising from the use of this data. The data are provided without warranty of any kind, either expressed or implied, including but not limited to time, money or goodwill arising from the use, operation or modification of the data. In using these data, you further agree to indemnify, defend, and hold harmless Kenai Peninsula Borough for any and all liability of any nature arising from the lack of accuracy or correctness of the data, or use of the data.</span>",
+        "title": "Nikiski Community Trails",
+        "type": "PDF",
+        "orgId": "ba4DH9pIcqkXJVfl",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1737754139000,
+        "avgRating": 0,
+        "id": "38861ef59f8f40eb8019d31c0d75900a",
+        "categories": [
+          "/Categories/Print Maps; Trails"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "KPBAdmin",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1781240400000,
+        "thumbnail": "thumbnail/thumbnail1641013581358.png",
+        "languages": [],
+        "created": 1641013553000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "Kenai Peninsula Borough",
+          "Trails"
+        ],
+        "numViews": 807,
+        "numComments": 0,
+        "size": 1697394,
+        "listed": false,
+        "scoreCompleteness": 76,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NikiskiCommTrails.pdf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kenai Peninsula Borough",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/38861ef59f8f40eb8019d31c0d75900a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "dd9ee77d405e444d85c5ac287b52a3ee",
+      "title": "North Peninsula Recreation Service Area",
+      "url": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/dd9ee77d405e444d85c5ac287b52a3ee",
+      "publisher": "KPBAdmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "North Peninsula Recreation Service Area",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document",
+          "PDF"
+        ],
+        "description": "North Peninsula Recreation Service Area, as described in the <a href='https://library.municode.com/ak/kenai_peninsula_borough/codes/code_of_ordinances?nodeId=TIT16SEAR_CH16.16NOPERESEAR' target='_blank' rel='nofollow ugc noopener noreferrer'>Kenai Peninsula Borough Code of Ordinances Chapter 16.16</a>. Letter size printable map, PDF format.",
+        "licenseInfo": "<span style='font-size:11.0pt; font-family:&quot;Helvetica&quot;,sans-serif;'>Every reasonable effort has been made to ensure the accuracy of these data. However, by accepting this material, you agree that the Kenai Peninsula Borough assumes no liability of any kind arising from the use of this data. The data are provided without warranty of any kind, either expressed or implied, including but not limited to time, money or goodwill arising from the use, operation or modification of the data. In using these data, you further agree to indemnify, defend, and hold harmless Kenai Peninsula Borough for any and all liability of any nature arising from the lack of accuracy or correctness of the data, or use of the data.</span>",
+        "title": "North Peninsula Recreation Service Area",
+        "type": "PDF",
+        "orgId": "ba4DH9pIcqkXJVfl",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1720209280000,
+        "avgRating": 0,
+        "id": "dd9ee77d405e444d85c5ac287b52a3ee",
+        "categories": [
+          "/Categories/Print Maps; Service Areas"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "KPBAdmin",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1781103600000,
+        "thumbnail": "thumbnail/thumbnail1639446895088.png",
+        "languages": [],
+        "created": 1639442376000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "Kenai Peninsula Borough",
+          "Service Areas"
+        ],
+        "numViews": 602,
+        "numComments": 0,
+        "size": 769317,
+        "listed": false,
+        "scoreCompleteness": 78,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NorthPenRec.pdf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kenai Peninsula Borough",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/dd9ee77d405e444d85c5ac287b52a3ee"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "83bd9717139d4c26aeb016e624ea23fd",
+      "title": "State Park Roads",
+      "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/3",
+      "publisher": "irm_admin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset is for mapping and for identifying areas available for public recreation.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -169.62890624995575,
+                71.85622888184673
+              ],
+              [
+                -129.19921874996652,
+                71.85622888184673
+              ],
+              [
+                -129.19921874996652,
+                53.54030739149046
+              ],
+              [
+                -169.62890624995575,
+                53.54030739149046
+              ],
+              [
+                -169.62890624995575,
+                71.85622888184673
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "Roads within or leading to Alaska State Parks, especially roads which are not part of the state highway system or maintained by local governments. Most, but not all, of these roads are maintained by the Division of Parks and Outdoor Recreation. Many of these roads are closed in the winter.",
+        "licenseInfo": "Any hardcopies or published datasets utilizing these data sets shall clearly indicate their source. If the user has modified the data in any way they are obligated to describe the types of modifications they have performed. User specifically agrees not to misrepresent these data sets, nor to imply that changes they made were approved by the Alaska Department of Natural Resources.",
+        "ownerId": "8dcee2b27b12082376e3b104e4bcb9fe",
+        "title": "State Park Roads",
+        "type": "Feature Service",
+        "orgId": "7HDiw78fcUiM2BWn",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1695164463000,
+        "avgRating": 0,
+        "id": "83bd9717139d4c26aeb016e624ea23fd",
+        "categories": [
+          "/Categories/Recreation"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "irm_admin",
+        "accessInformation": "Alaska Department of Natural Resources",
+        "largeThumbnail": "largethumbnail/83bd9717139d4c26aeb016e624ea23fd.png",
+        "lastViewed": 1790899200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1614033373000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Recreational_ParkBoundary/MapServer/3",
+        "tags": [
+          "ASP",
+          "Alaska State Parks",
+          "ADNR",
+          "Alaska DNR",
+          "Alaska",
+          "DNR",
+          "Roads",
+          "Parks",
+          "DPOR",
+          "State Marine Parks",
+          "State Park",
+          "State Recreation Site",
+          "State Recreation Park",
+          "State Historical Park",
+          "State Historical Site",
+          "State Trails",
+          "Special Management Area",
+          "State Wilderness Preserve",
+          "Trail System",
+          "Alaska"
+        ],
+        "numViews": 8526,
+        "numComments": 0,
+        "size": 97,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Alaska Department of Natural Resources - Division of Parks and Outdoor Recreation",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all/items/83bd9717139d4c26aeb016e624ea23fd"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://akgeoportal.alaska.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    163
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 85,
+  "next_offset": 10,
+  "response_sha256": "68db6f452138ffd688ef98cd00023986904481736f6232b188408302e9f7439f",
+  "search_complete": false
+}

@@ -1,0 +1,1222 @@
+{
+  "jurisdiction_code": "ME",
+  "query": "air quality",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T02:31:18.634448+00:00",
+  "candidates": [
+    {
+      "id": "17c8a86e30f04ea39ac5281a622a051d",
+      "title": "MaineDMR Public Health - 2022 P90 Scores",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/P90_Scores_2022_view/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Geometric mean and 90th percentile of fecal coliform bacterial monitoring data for active and investigative water quality stations based on last 30 samples inclusive to December 31, 2022.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.8331976839153,
+                45.10748142546328
+              ],
+              [
+                -66.96745759848075,
+                45.10748142546328
+              ],
+              [
+                -66.96745759848075,
+                43.06289144687097
+              ],
+              [
+                -70.8331976839153,
+                43.06289144687097
+              ],
+              [
+                -70.8331976839153,
+                45.10748142546328
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p>The Department of Marine Resources (DMR) Bureau of Public Health collects surface water grab samples at approximately 1,200 water quality monitoring stations along the Maine coast year-round. Samples are processed in the lab via membrane filtration and enumerated for fecal coliform bacteria. Fecal coliform results are reported as the number of colony forming units (individual bacterium capable of forming colonies) per 100mL of water. DMR scientists analyze data from each station and calculate annual summary statistics using at least 30 of the most recent samples collected under a systematic-random sampling strategy. These values, along with sanitary surveys of the area, help determine whether the water quality is acceptable for harvesting molluscan shellfish.</p><p>DMR's Shellfish Growing Area Classification Program classifies shellfish areas as Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. For more information about the classification of shellfish flats, visit https://www.maine.gov/dmr/fisheries/shellfish/shellfish-growing-area-classification.</p><p>All classifications are based on two factors: the results of a shoreline survey which looks for the presence of pollution sources, and fecal coliform monitoring results. Two statistical values are calculated from the most recent 30 fecal coliform scores: the geometric mean (geomean) and the 90th percentile (P90). The standards for Approved classification are 14 CFU or less (geomean) and 31 CFU or less (P90). The standards for Restricted are 88 CFU or less (geomean) and 163 CFU or less (P90). The standards for Prohibited are greater than 88 CFU (geomean) and greater than 163 CFU (P90).</p><p>End of year 2022 P90 data for all Maine active and investigative water quality stations based on the most recent 30 samples. Conditional Area stations are based on last 30 samples in the open status. Data projection is NAD 1983 UTM Zone 19N.</p>",
+        "licenseInfo": "<p>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2022.</p><p>To download P90 and other publicly available data from the DMR Bureau of Public Health, please visit https://dmr-maine.opendata.arcgis.com/ and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</p><p>For questions regarding DMR Bureau of Public Health data, please email benjamin.wahle@maine.gov.</p>",
+        "title": "MaineDMR Public Health - 2022 P90 Scores",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755283076000,
+        "avgRating": 0,
+        "id": "17c8a86e30f04ea39ac5281a622a051d",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health",
+        "largeThumbnail": null,
+        "lastViewed": 1763132400000,
+        "thumbnail": "thumbnail/ago_downloaded.gif",
+        "languages": [],
+        "created": 1678136767000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/P90_Scores_2022_view/FeatureServer",
+        "tags": [
+          "P90",
+          "Maine NSSP",
+          "DMR",
+          "Water Quality",
+          "shellfish"
+        ],
+        "numViews": 105635,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "P90_Scores_2022_view",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/17c8a86e30f04ea39ac5281a622a051d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ca6954e4d6544005be305118128f2b03",
+      "title": "MaineDEP_Head of Tide",
+      "url": "https://gis.maine.gov/mapservices/rest/services/dep/MaineHeadOfTide/MapServer/0",
+      "publisher": "John.Lynam@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Head of Tide data has been screen digitized with reference to Bill Hinkley's 1974 River Sampling Station description guide, USGS zero contour data, as well as salinty sampling results from the Maine DEP and Maine DMR.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.8722999999976,
+                45.19779999999847
+              ],
+              [
+                -67.13459999999775,
+                45.19779999999847
+              ],
+              [
+                -67.13459999999775,
+                43.092299999998545
+              ],
+              [
+                -70.8722999999976,
+                43.092299999998545
+              ],
+              [
+                -70.8722999999976,
+                45.19779999999847
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "Head of Tide data has been screen digitized with reference to Bill Hinkley's 1974 River Sampling Station description guide, USGS zero contour data, as well as salinty sampling results from the Maine Department of Environmental Protection and the Maine Department of Marine Resources. Data points may represent known or approximate Head of Tide location based on hydraulic activity, environmental sampling data, and/or zero contour data. Data is considered to be dynamic in a small degree due to land use, natural evolution, and human activities. Data is also subject to changes, updates, and revisons. Field Data Attribute info:HTtypeHS = based on sality and hydrological dataSAL = based on salinty samplingHYD = based on hydraulic information or dataEL = Enforcement Location Head of Tide for DMR & IF&WHTnotesSWQ = Staute Water Quality (can be arbritrary)RSS Hinckley 1974 = excerpt from Hinckley's 1974 River Sampling Station descriptionsZC = based on USGS zero contour data* note that an individual point may have one or more notes associated with itHTLocation:Completed where there is a noteable physical attribute associated with the point locationMisc Informaiton - Enforcement Location DescriptionsDMR and IFW are in agreement as to the location of head of tide on the Kennebec for enforcement purposes.DMR references head of tide as this:Due to the removal of Edwards dam, the “head of tide” in the Kennebec River is now at the downstream side of the power line located approximately 4,200 feet upstream of the Calumet Bridge at Old Fort Western in Augusta (formerly the Father Curran Bridge) for enforcement purposes.IFW references head of tide as this:From the downstream side of the Lockwood Dam to the downstream side of the power lines located about 4,200 feet above the Calumet Bridge in Augusta (head of tidewater):",
+        "licenseInfo": "<p><font color='#000000' size='3' style=''><font style='font-family: &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);'>This data is created for display and reference purposes only.  The data is considered to be dynamic in a small degree due to land use, natural evolution, and human activities. The data is also subject to changes, updates, and </font><font face='Avenir Next, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif'>revisions</font><font style='font-family: &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; background-color: rgb(255, 255, 255);'>.</font></font></p>",
+        "title": "MaineDEP_Head of Tide",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1761041807000,
+        "avgRating": 0,
+        "id": "ca6954e4d6544005be305118128f2b03",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "John.Lynam@maine.gov_maine",
+        "accessInformation": "Vicki Schmidt, GIS Environmental Specialist II\nMaine Department of Environmental Protection\nBureau of Land & Water Quality\nAugusta ME\n207-485-1482\nvicki.l.schmidt@maine.gov\n\nFMI\n\nhttp://www.maine.gov/dep/water/monitoring/index.html",
+        "largeThumbnail": null,
+        "lastViewed": 1772161200000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1563386284000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/mapservices/rest/services/dep/MaineHeadOfTide/MapServer/0",
+        "tags": [
+          "MaineDEP",
+          "MaineDMR",
+          "MEDEP BWQ",
+          "Water",
+          "Water Quality",
+          "Maine Water Quality",
+          "maine coastal waters",
+          "coastal",
+          "environment",
+          "oceans",
+          "MaineGeoLibrary"
+        ],
+        "numViews": 5010,
+        "numComments": 0,
+        "size": 74,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine Department of Environmental Protection",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/ca6954e4d6544005be305118128f2b03"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "03adcb2ec72a455b90a96d9c3983683b",
+      "title": "MaineDMR Public Health - P90 Scores 2024",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_P90_Scores_2024/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Geometric mean and 90th percentile of fecal coliform bacterial monitoring data for active and investigative water quality stations based on last 30 samples inclusive to December 31, 2024.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.8331976839153,
+                45.10748142546328
+              ],
+              [
+                -66.96745759848075,
+                45.10748142546328
+              ],
+              [
+                -66.96745759848075,
+                43.06289144687097
+              ],
+              [
+                -70.8331976839153,
+                43.06289144687097
+              ],
+              [
+                -70.8331976839153,
+                45.10748142546328
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The Department of Marine Resources (DMR) Bureau of Public Health collects surface water grab samples at approximately 1,200 water quality monitoring stations along the Maine coast year-round. Samples are processed in the lab via membrane filtration and enumerated for fecal coliform bacteria. Fecal coliform results are reported as the number of colony forming units (individual bacterium capable of forming colonies) per 100mL of water. DMR scientists analyze data from each station and calculate annual summary statistics using at least 30 of the most recent samples collected under a systematic-random sampling strategy. These values, along with sanitary surveys of the area, help determine whether the water quality is acceptable for harvesting molluscan shellfish.</p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>DMR's Shellfish Growing Area Classification Program classifies shellfish areas as Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. For more information about the classification of shellfish flats, visit https://www.maine.gov/dmr/fisheries/shellfish/shellfish-growing-area-classification.</p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>All classifications are based on two factors: the results of a shoreline survey that investigates the presence of pollution sources, and fecal coliform monitoring results. Two statistical values are calculated from the most recent 30 fecal coliform scores: the geometric mean (geomean) and the 90th percentile (P90). The standards for Approved classification are 14 CFU or less (geomean) and 31 CFU or less (P90). The standards for Restricted are 88 CFU or less (geomean) and 163 CFU or less (P90). The standards for Prohibited are greater than 88 CFU (geomean) and greater than 163 CFU (P90).</p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>End of year 2024 P90 data for all Maine active and investigative water quality stations based on the most recent 30 samples. Conditional Area stations are based on last 30 samples in the open status. Data projection is NAD 1983 UTM Zone 19N.</p>",
+        "licenseInfo": "<p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2024.</p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>To download P90 and other publicly available data from the DMR Bureau of Public Health, please visit https://dmr-maine.opendata.arcgis.com/ and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</p><p style='margin-top:0px; margin-bottom:1.5rem; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>For questions regarding DMR Bureau of Public Health spatial data, please email benjamin.wahle@maine.gov.</p>",
+        "title": "MaineDMR Public Health - P90 Scores 2024",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755282934000,
+        "avgRating": 0,
+        "id": "03adcb2ec72a455b90a96d9c3983683b",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health & Aquaculture",
+        "largeThumbnail": null,
+        "lastViewed": 1763132400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1738857793000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_P90_Scores_2024/FeatureServer",
+        "tags": [
+          "P90",
+          "Maine NSSP",
+          "DMR",
+          "Water Quality",
+          "spatial",
+          "Open Data"
+        ],
+        "numViews": 33080,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "MaineDMR_Public_Health_P90_Scores_2024",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/03adcb2ec72a455b90a96d9c3983683b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2612ca8a7442424e8ad0f49fc1477062",
+      "title": "MaineDMR Public Health - 2017 P90 Scores",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_DMR_Public_Health_2017_P90_Scores/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "90th percentile of bacterial score distribution for active water quality stations based on last 30 samples inclusive to December 31, 2017.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.83360661505793,
+                45.12025248147452
+              ],
+              [
+                -66.96700428256828,
+                45.12025248147452
+              ],
+              [
+                -66.96700428256828,
+                43.062900263120596
+              ],
+              [
+                -70.83360661505793,
+                43.062900263120596
+              ],
+              [
+                -70.83360661505793,
+                45.12025248147452
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>The Department of Marine Resources (DMR) Bureau of Public Health collects water samples at approximately 1,400 water quality stations along the Maine coast. At each station, after at least 30 samples have been collected under systematic random sampling and analyzed for fecal coliforms, DMR scientists calculate final scores which, along with sanitary surveys of the area, help determine whether the water quality is acceptable for harvesting shellfish. Fecal coliform results are reported as the number of colony forming units (individual bacterium capable of forming colonies) per 100mL of water. Most sample sites show a range of scores, and some sites may have high as well as low scores. The DMR Shellfish Growing Area Classification Program classifies shellfish areas as Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. </span><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>All classifications are based on two factors: the results of a shoreline survey which looks for the presence of pollution sources and fecal coliform test results. </span><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For more information about the classification of shellfish flats, visit </span><a href='https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html' rel='nofollow ugc' style='color: rgb(0, 121, 193); text-decoration-line: none; font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html</a><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>.</span><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For each water quality station, two statistical values are calculated from the most recent 30 fecal scores: the geometric mean (geomean) and the 90th percentile (P90). The standards for Approved are 14 or less (geomean) and 31 or less (P90). The standards for Restricted are 88 or less (geomean) and 163 or less (P90). The standards for Prohibited are greater than 88 (geomean) and greater than 163 (P90). End of year 2017 P90 data for all Maine active water quality stations are based on the most recent 30 samples. Conditional Area stations are based on last 30 samples in the open status. Data projection is NAD 1983 UTM Zone 19N.</div>",
+        "licenseInfo": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2017.</span><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>To download P90 and other publicly available data from the DMR Bureau of Public Health, please visit <a href='https://dmr-maine.opendata.arcgis.com/' rel='nofollow ugc' style='color: rgb(0, 121, 193); text-decoration-line: none;'>https://dmr-maine.opendata.arcgis.com/</a> and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For questions regarding DMR Bureau of Public Health data, please email benjamin.wahle@maine.gov.</div>",
+        "title": "MaineDMR Public Health - 2017 P90 Scores",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755283219000,
+        "avgRating": 0,
+        "id": "2612ca8a7442424e8ad0f49fc1477062",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health",
+        "largeThumbnail": null,
+        "lastViewed": 1763132400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1588261152000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_DMR_Public_Health_2017_P90_Scores/FeatureServer",
+        "tags": [
+          "P90",
+          "Maine NSSP",
+          "DMR",
+          "Water Quality",
+          "spatial",
+          "shellfish"
+        ],
+        "numViews": 69131,
+        "numComments": 0,
+        "size": 1023,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Maine_DMR_Public_Health_2017_P90_Scores",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/2612ca8a7442424e8ad0f49fc1477062"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a99d3f1aa820461682a7727667ccaa5e",
+      "title": "MaineDMR Public Health - 2015 P90 Scores",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2015_P90_Scores/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "90th percentile of bacterial score distribution for active water quality stations based on last 30 samples inclusive to December 31, 2015.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.83346844577794,
+                45.11593525421779
+              ],
+              [
+                -66.96715745206076,
+                45.11593525421779
+              ],
+              [
+                -66.96715745206076,
+                43.062900263120596
+              ],
+              [
+                -70.83346844577794,
+                43.062900263120596
+              ],
+              [
+                -70.83346844577794,
+                45.11593525421779
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>The Department of Marine Resources (DMR) Bureau of Public Health collects water samples at approximately 1,400 water quality stations along the Maine coast. At each station, after at least 30 samples have been collected under systematic random sampling and analyzed for fecal coliforms, DMR scientists calculate final scores which, along with sanitary surveys of the area, help determine whether the water quality is acceptable for harvesting shellfish. Fecal coliform results are reported as the number of colony forming units (individual bacterium capable of forming colonies) per 100mL of water. Most sample sites show a range of scores, and some sites may have high as well as low scores. The DMR Shellfish Growing Area Classification Program classifies shellfish areas as Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. </span><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>All classifications are based on two factors: the results of a shoreline survey which looks for the presence of pollution sources and fecal coliform test results. </span><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For more information about the classification of shellfish flats, visit </span><a href='https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html' rel='nofollow ugc' style='color: rgb(0, 121, 193); text-decoration-line: none; font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html</a><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>.</span><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For each water quality station, two statistical values are calculated from the most recent 30 fecal scores: the geometric mean (geomean) and the 90th percentile (P90). The standards for Approved are 14 or less (geomean) and 31 or less (P90). The standards for Restricted are 88 or less (geomean) and 163 or less (P90). The standards for Prohibited are greater than 88 (geomean) and greater than 163 (P90). End of year 2015 P90 data for all Maine active water quality stations are based on the most recent 30 samples. Conditional Area stations are based on last 30 samples in the open status. Data projection is NAD 1983 UTM Zone 19N.</div>",
+        "licenseInfo": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2015.</span><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>To download P90 and other publicly available data from the DMR Bureau of Public Health, please visit <a href='https://dmr-maine.opendata.arcgis.com/' rel='nofollow ugc' style='color: rgb(0, 121, 193); text-decoration-line: none;'>https://dmr-maine.opendata.arcgis.com/</a> and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For questions regarding DMR Bureau of Public Health data, please email benjamin.wahle@maine.gov.</div>",
+        "title": "MaineDMR Public Health - 2015 P90 Scores",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755283144000,
+        "avgRating": 0,
+        "id": "a99d3f1aa820461682a7727667ccaa5e",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health",
+        "largeThumbnail": null,
+        "lastViewed": 1763132400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1588336120000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2015_P90_Scores/FeatureServer",
+        "tags": [
+          "P90",
+          "Maine NSSP",
+          "DMR",
+          "Water Quality",
+          "spatial",
+          "shellfish"
+        ],
+        "numViews": 37679,
+        "numComments": 0,
+        "size": 1023,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "MaineDMR_Public_Health_2015_P90_Scores",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/a99d3f1aa820461682a7727667ccaa5e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "092c0b82db2941eea73ae6b93a1a3a67",
+      "title": "MaineDMR Public Health - 2019 NSSP Classifications",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2019_NSSP_Classifications/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "National Shellfish Sanitation Program (NSSP) Classification of shellfish growing areas within the State of Maine as of December 31, 2019.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.89803641352495,
+                45.20486327809398
+              ],
+              [
+                -66.9568708867495,
+                45.20486327809398
+              ],
+              [
+                -66.9568708867495,
+                42.97001842845805
+              ],
+              [
+                -70.89803641352495,
+                42.97001842845805
+              ],
+              [
+                -70.89803641352495,
+                45.20486327809398
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The Department of Marine Resources (DMR) Bureau of Public Health </span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>classifies shellfish growing areas for harvest suitability based on the results of a shoreline survey and fecal coliform monitoring in coastal waters. During a shoreline survey, DMR staff document the presence of wastewater pollution sources along Maine's coast. Based on this information, each growing is classified as either Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. For more information about the classification of shellfish flats, visit </span><a href='https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html' rel='nofollow ugc'><font size='3'>https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html</font></a><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>.</span><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset contains the classification for all shellfish growing areas in Maine through 2019. </span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Data projection is NAD 1983 UTM Zone 19N.</span></div>",
+        "licenseInfo": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2019.</span><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>To download publicly available data from the DMR Bureau of Public Health, please visit <a href='https://dmr-maine.opendata.arcgis.com/' rel='nofollow ugc' style='color: rgb(0, 121, 193); text-decoration-line: none;'>https://dmr-maine.opendata.arcgis.com/</a> and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For questions regarding DMR Bureau of Public Health data, please email benjamin.wahle@maine.gov.</div>",
+        "title": "MaineDMR Public Health - 2019 NSSP Classifications",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755283148000,
+        "avgRating": 0,
+        "id": "092c0b82db2941eea73ae6b93a1a3a67",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans",
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health",
+        "largeThumbnail": null,
+        "lastViewed": 1763118000000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1588344065000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2019_NSSP_Classifications/FeatureServer",
+        "tags": [
+          "shellfish",
+          "DMR",
+          "Maine NSSP",
+          "Water Quality",
+          "spatial"
+        ],
+        "numViews": 5022,
+        "numComments": 0,
+        "size": 1023,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "MaineDMR_Public_Health_2019_NSSP_Classifications",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/092c0b82db2941eea73ae6b93a1a3a67"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e6c9f7dc4dea443593c3e004bb8ddbf1",
+      "title": "MaineDMR Public Health - 2016 P90 Scores",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2016_P90_Scores/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "90th percentile of bacterial score distribution for active water quality stations based on last 30 samples inclusive to December 31, 2016.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.83319827614999,
+                45.107490727880545
+              ],
+              [
+                -66.9674569524053,
+                45.107490727880545
+              ],
+              [
+                -66.9674569524053,
+                43.062900263120596
+              ],
+              [
+                -70.83319827614999,
+                43.062900263120596
+              ],
+              [
+                -70.83319827614999,
+                45.107490727880545
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>The Department of Marine Resources (DMR) Bureau of Public Health collects water samples at approximately 1,400 water quality stations along the Maine coast. At each station, after at least 30 samples have been collected under systematic random sampling and analyzed for fecal coliforms, DMR scientists calculate final scores which, along with sanitary surveys of the area, help determine whether the water quality is acceptable for harvesting shellfish. Fecal coliform results are reported as the number of colony forming units (individual bacterium capable of forming colonies) per 100mL of water. Most sample sites show a range of scores, and some sites may have high as well as low scores. The DMR Shellfish Growing Area Classification Program classifies shellfish areas as Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. </span><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>All classifications are based on two factors: the results of a shoreline survey which looks for the presence of pollution sources and fecal coliform test results. </span><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For more information about the classification of shellfish flats, visit </span><a href='https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html' rel='nofollow ugc' style='color: rgb(0, 121, 193); text-decoration-line: none; font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html</a><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>.</span><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For each water quality station, two statistical values are calculated from the most recent 30 fecal scores: the geometric mean (geomean) and the 90th percentile (P90). The standards for Approved are 14 or less (geomean) and 31 or less (P90). The standards for Restricted are 88 or less (geomean) and 163 or less (P90). The standards for Prohibited are greater than 88 (geomean) and greater than 163 (P90). End of year 2016 P90 data for all Maine active water quality stations are based on the most recent 30 samples. Conditional Area stations are based on last 30 samples in the open status. Data projection is NAD 1983 UTM Zone 19N.</div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2016.</span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>To download P90 and other publicly available data from the DMR Bureau of Public Health, please visit <a href='https://dmr-maine.opendata.arcgis.com/' rel='nofollow ugc' style='color:rgb(0, 121, 193); text-decoration-line:none;'>https://dmr-maine.opendata.arcgis.com/</a> and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>For questions regarding DMR Bureau of Public Health data, please email benjamin.wahle@maine.gov.</div>",
+        "title": "MaineDMR Public Health - 2016 P90 Scores",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755283146000,
+        "avgRating": 0,
+        "id": "e6c9f7dc4dea443593c3e004bb8ddbf1",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health",
+        "largeThumbnail": null,
+        "lastViewed": 1763132400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1588276000000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2016_P90_Scores/FeatureServer",
+        "tags": [
+          "P90",
+          "Maine NSSP",
+          "DMR",
+          "Water Quality",
+          "spatial",
+          "shellfish"
+        ],
+        "numViews": 38170,
+        "numComments": 0,
+        "size": 1023,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "MaineDMR_Public_Health_2016_P90_Scores",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/e6c9f7dc4dea443593c3e004bb8ddbf1"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f22b52ded06440c6aaa9354cb06c7b6a",
+      "title": "MaineDMR Public Health - 2020 P90 Scores",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMRPublicHealth2020P90Scores/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Geometric 90th percentile of fecal coliform bacterial score distribution for active DMR Public Health water quality stations based on last 30 samples inclusive to December 31, 2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.83319827614999,
+                45.107490727880545
+              ],
+              [
+                -66.9674569524053,
+                45.107490727880545
+              ],
+              [
+                -66.9674569524053,
+                43.062900263120596
+              ],
+              [
+                -70.83319827614999,
+                43.062900263120596
+              ],
+              [
+                -70.83319827614999,
+                45.107490727880545
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Mosaic Dataset",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The Maine Department of Marine Resources Bureau of Public Health (DMR) collects surface water grab samples </span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>year-round </span><font><span style='font-size:16px;'>at approximately 1,400 water quality stations along the Maine coast. Samples are analyzed for fecal coliform bacteria concentrations, and r</span></font><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>esults are reported as the number of colony forming units (individual bacterium capable of forming colonies) per 100mL of water (CFU). Fecal coliform values exhibit wide variability at most water quality stations. For each station, summary statistics are calculated </span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>after at least 30 samples have been collected under a systematic random sampling strategy. This information, along with sanitary surveys of the area, help determine whether the water quality is acceptable for harvesting shellfish. </span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The DMR Shellfish Growing Area Classification Program classifies state waters as Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. For more information about the classification of shellfish harvesting areas, please visit:</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html.</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>All classifications are based on two factors: the results of a shoreline survey which looks for the presence of pollution sources, and fecal coliform test results. Two statistical values are calculated from the most recent 30 fecal coliform scores: the geometric mean (geomean) and the geometric 90th percentile (P90). The standards for Approved classification are 14 CFU or less (geomean) and 31 CFU or less (P90). The standards for Restricted are 88 CFU or less (geomean) and 163 CFU or less (P90). The standards for Prohibited are greater than 88 CFU (geomean) and greater than 163 CFU (P90).</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>End of year 2020 P90 data for all active water quality stations are based on the most recent 30 samples from each station. Conditional Area stations are based on last 30 samples in the open status. Data projection is NAD 1983 UTM Zone 19N.</div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2020.</span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>To download P90 and other publicly available data from the DMR Bureau of Public Health, please visit <a href='https://dmr-maine.opendata.arcgis.com/' rel='nofollow ugc' style='color:rgb(0, 121, 193); text-decoration-line:none;'>https://dmr-maine.opendata.arcgis.com/</a> and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>For questions regarding DMR Bureau of Public Health data, please email benjamin.wahle@maine.gov.</div>",
+        "title": "MaineDMR Public Health - 2020 P90 Scores",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755283090000,
+        "avgRating": 0,
+        "id": "f22b52ded06440c6aaa9354cb06c7b6a",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health",
+        "largeThumbnail": null,
+        "lastViewed": 1763132400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1613078121000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMRPublicHealth2020P90Scores/FeatureServer",
+        "tags": [
+          "P90",
+          "Maine NSSP",
+          "DMR",
+          "Water Quality",
+          "spatial",
+          "shellfish",
+          "MaineDMR",
+          "OpenData"
+        ],
+        "numViews": 164192,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "MaineDMRPublicHealth2020P90Scores",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/f22b52ded06440c6aaa9354cb06c7b6a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3a24cb4b451941899b9e7b96c25002c0",
+      "title": "MaineDMR Public Health - 2020 NSSP Classifications",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2020_NSSP_Classifications/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "National Shellfish Sanitation Program (NSSP) Classification of shellfish growing areas in the State of Maine as of December 31, 2020.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.89803641352495,
+                45.20486327809398
+              ],
+              [
+                -66.9568708867495,
+                45.20486327809398
+              ],
+              [
+                -66.9568708867495,
+                42.97001842845805
+              ],
+              [
+                -70.89803641352495,
+                42.97001842845805
+              ],
+              [
+                -70.89803641352495,
+                45.20486327809398
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The Maine Department of Marine Resources (DMR) Bureau of Public Health </span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>classifies shellfish growing areas for harvest suitability based on the results of a shoreline survey and fecal coliform bacteria monitoring in coastal waters. During a shoreline survey, DMR staff document the presence of wastewater pollution sources along Maine's coast. Based on this information, each growing area is classified as either Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. For more information about the classification of shellfish flats, visit </span><a href='https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html' rel='nofollow ugc' style='color:rgb(0, 121, 193); text-decoration-line:none; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><font size='3' style='font-family:inherit;'>https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html</font></a><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>.</span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset contains the classification for all shellfish growing areas in Maine through 2020. Data projection is NAD 1983 UTM Zone 19N.</div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2020.</span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>To download publicly available data from the DMR Bureau of Public Health, please visit <a href='https://dmr-maine.opendata.arcgis.com/' rel='nofollow ugc' style='color:rgb(0, 121, 193); text-decoration-line:none;'>https://dmr-maine.opendata.arcgis.com/</a> and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>For questions regarding DMR Bureau of Public Health data, please email benjamin.wahle@maine.gov.</div>",
+        "title": "MaineDMR Public Health - 2020 NSSP Classifications",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755283086000,
+        "avgRating": 0,
+        "id": "3a24cb4b451941899b9e7b96c25002c0",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans",
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health",
+        "largeThumbnail": null,
+        "lastViewed": 1763121600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1630072076000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2020_NSSP_Classifications/FeatureServer",
+        "tags": [
+          "shellfish",
+          "DMR",
+          "Maine NSSP",
+          "NSSP",
+          "Water Quality",
+          "spatial"
+        ],
+        "numViews": 3704,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "MaineDMR_Public_Health_2020_NSSP_Classifications",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/3a24cb4b451941899b9e7b96c25002c0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5ce6ff0df2ba40bfaed0b9cfc488baaa",
+      "title": "MaineDMR Public Health - 2014 P90 Scores",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2014_P90_Scores/FeatureServer",
+      "publisher": "Kelsey.Peterson@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "90th percentile of bacterial score distribution for active water quality stations based on last 30 samples inclusive to December 31, 2014.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.83319827614999,
+                45.107490727880545
+              ],
+              [
+                -66.9674569524053,
+                45.107490727880545
+              ],
+              [
+                -66.9674569524053,
+                43.062900263120596
+              ],
+              [
+                -70.83319827614999,
+                43.062900263120596
+              ],
+              [
+                -70.83319827614999,
+                45.107490727880545
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>The Department of Marine Resources (DMR) Bureau of Public Health collects water samples at approximately 1,400 water quality stations along the Maine coast. At each station, after at least 30 samples have been collected under systematic random sampling and analyzed for fecal coliforms, DMR scientists calculate final scores which, along with sanitary surveys of the area, help determine whether the water quality is acceptable for harvesting shellfish. Fecal coliform results are reported as the number of colony forming units (individual bacterium capable of forming colonies) per 100mL of water. Most sample sites show a range of scores, and some sites may have high as well as low scores. The DMR Shellfish Growing Area Classification Program classifies shellfish areas as Approved, Conditionally Approved, Restricted, Conditionally Restricted or Prohibited using standards set by the National Shellfish Sanitation Program (NSSP), a federal/state cooperative program that sets the requirements for all states involved in interstate shellfish harvest and sale. </span><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>All classifications are based on two factors: the results of a shoreline survey which looks for the presence of pollution sources and fecal coliform test results. </span><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For more information about the classification of shellfish flats, visit </span><a href='https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html' rel='nofollow ugc' style='color: rgb(0, 121, 193); text-decoration-line: none; font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>https://www.maine.gov/dmr/shellfish-sanitation-management/programs/growingareas/index.html</a><span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>.</span><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For each water quality station, two statistical values are calculated from the most recent 30 fecal scores: the geometric mean (geomean) and the 90th percentile (P90). The standards for Approved are 14 or less (geomean) and 31 or less (P90). The standards for Restricted are 88 or less (geomean) and 163 or less (P90). The standards for Prohibited are greater than 88 (geomean) and greater than 163 (P90). End of year 2014 P90 data for all Maine active water quality stations are based on the most recent 30 samples. Conditional Area stations are based on last 30 samples in the open status. Data projection is NAD 1983 UTM Zone 19N.</div>",
+        "licenseInfo": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>Not to be used to determine current shellfish harvest areas in Maine. Data valid through the end of year 2014.</span><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>To download P90 and other publicly available data from the DMR Bureau of Public Health, please visit <a href='https://dmr-maine.opendata.arcgis.com/' rel='nofollow ugc' style='color: rgb(0, 121, 193); text-decoration-line: none;'>https://dmr-maine.opendata.arcgis.com/</a> and enter the terms &quot;P90&quot; or NSSP&quot; in the search bar.</div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'><br /></div><div style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>For questions regarding DMR Bureau of Public Health data, please email benjamin.wahle@maine.gov.</div>",
+        "title": "MaineDMR Public Health - 2014 P90 Scores",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755283143000,
+        "avgRating": 0,
+        "id": "5ce6ff0df2ba40bfaed0b9cfc488baaa",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Oceans"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Kelsey.Peterson@maine.gov_maine",
+        "accessInformation": "Maine Department of Marine Resources, Bureau of Public Health",
+        "largeThumbnail": null,
+        "lastViewed": 1763132400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1588339393000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDMR_Public_Health_2014_P90_Scores/FeatureServer",
+        "tags": [
+          "P90",
+          "Maine NSSP",
+          "DMR",
+          "Water Quality",
+          "spatial",
+          "shellfish"
+        ],
+        "numViews": 37977,
+        "numComments": 0,
+        "size": 1023,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "MaineDMR_Public_Health_2014_P90_Scores",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/5ce6ff0df2ba40bfaed0b9cfc488baaa"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    250
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 31,
+  "next_offset": 10,
+  "response_sha256": "e264e6735154475dedfdb556b715566a3fc23a882a4b3dde94bfe3574eb75a83",
+  "search_complete": false
+}

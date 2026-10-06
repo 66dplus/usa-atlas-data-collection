@@ -1,0 +1,46 @@
+{
+  "jurisdiction_code": "MI",
+  "query": "cost of living",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-03T14:33:18.371320+00:00",
+  "candidates": [
+    {
+      "id": "94ud-zws8",
+      "title": "Neonatal Abstinence Syndrome by Year",
+      "url": "https://data.michigan.gov/Health/Neonatal-Abstinence-Syndrome-by-Year/94ud-zws8",
+      "publisher": "hharoon",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.michigan.gov/resource/94ud-zws8.json",
+      "description": "[About the dataset]\n\nData includes NAS cases (numerator), all live births (denominator) and NAS rate (cases per 1,000 live births) in Michigan, as well as by Prosperity Region, by year.\n\n[About NAS]\n\nNAS is a constellation of signs of withdrawal in neonates less than 28 days following in utero exposure to substances or prescribed medications, most commonly opioids, benzodiazepines, and barbiturates.\n\nNAS may be underreported, given increased use of non-pharmacological interventions. NAS surveillance does not distinguish between exposure due to an untreated substance use disorder, medication assisted therapy, or long-term treatment for a chronic disease.\n\n[Methods]\n\nCase Definition. Unique NAS cases are currently identified based on the International Classification of Disease (ICD), 10th Revision, Clinical Modification (ICD-10-CM diagnosis code (P96.1), limited to neonates (<28 days of age) residing in Michigan. This inpatient/outpatient diagnosis code is for 'neonatal withdrawal symptoms from maternal use of drugs of addiction'. \n\nDuring 2010-2015, NAS cases were identified based on ICD-9-CM diagnosis code 779.5 (drug withdrawal syndrome in newborn). \n\nRate calculation. All rates presented are crude rates. Counts and rates are suppressed when the numerator is between 1-5 for privacy and statistical stability purposes. The denominator in rates is the number of live births in the corresponding birth year. \n\nRates are calculated per 1,000 live births to be consistent with the CS"
+    },
+    {
+      "id": "8rrq-dqzn",
+      "title": "Neonatal Abstinence Syndrome by County",
+      "url": "https://data.michigan.gov/Health/Neonatal-Abstinence-Syndrome-by-County/8rrq-dqzn",
+      "publisher": "hharoon",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.michigan.gov/resource/8rrq-dqzn.json",
+      "description": "[About the dataset]\n\nData includes NAS cases (numerator), all live births (denominator) and NAS rate (cases per 1,000 live births) by county of residence in Michigan over a 5 year period. \n\n[About NAS]\n\nNAS is a constellation of signs of withdrawal in neonates less than 28 days following in utero exposure to substances or prescribed medications, most commonly opioids, benzodiazepines, and barbiturates.\n\nNAS may be underreported, given increased use of non-pharmacological interventions. NAS surveillance does not distinguish between exposure due to an untreated substance use disorder, medication assisted therapy, or long-term treatment for a chronic disease.\n\n[Methods]\n\nCase Definition. Unique NAS cases are currently identified based on the International Classification of Disease (ICD), 10th Revision, Clinical Modification (ICD-10-CM diagnosis code (P96.1), limited to neonates (<28 days of age) residing in Michigan. This inpatient/outpatient diagnosis code is for 'neonatal withdrawal symptoms from maternal use of drugs of addiction'. \n\nDuring 2010-2015, NAS cases were identified based on ICD-9-CM diagnosis code 779.5 (drug withdrawal syndrome in newborn). \n\nRate calculation. All rates presented are crude rates. Counts and rates are suppressed when the numerator is between 1-5 for privacy and statistical stability purposes. This is indicated by DNS (Data Not Sufficient). The denominator used to calculate rates is the number of live births in the corresponding birth year. \n\nRates"
+    }
+  ],
+  "page_receipts": [
+    104
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "d5079e699360ec057e3bd40dbe768c9c4d75f27cf7ef54c6793f3fb0af884309",
+  "search_complete": true
+}

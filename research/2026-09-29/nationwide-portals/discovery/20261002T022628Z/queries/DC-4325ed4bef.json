@@ -1,0 +1,360 @@
+{
+  "jurisdiction_code": "DC",
+  "query": "gasoline",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T02:26:48.363476+00:00",
+  "candidates": [
+    {
+      "id": "c9f92ff687b645559b62694c00d512ae",
+      "title": "Emissions Inventory",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/79",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Emissions Inventory for District of Columbia pulled from EPA's National Emissions Inventory (NEI). The NEI is a comprehensive and detailed estimate of air emissions of criteria pollutants, criteria precursors, and hazardous air pollutants from air emissions sources. The NEI is released every three years based primarily upon data provided by State, Local, and Tribal air agencies for sources in their jurisdictions and supplemented by data developed by the US EPA.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.12032174599996,
+                39.008771192000054
+              ],
+              [
+                -76.91232174599995,
+                39.008771192000054
+              ],
+              [
+                -76.91232174599995,
+                38.80077119200005
+              ],
+              [
+                -77.12032174599996,
+                38.80077119200005
+              ],
+              [
+                -77.12032174599996,
+                39.008771192000054
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Table"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>NEI point sources include emissions estimates for larger sources that are located at a fixed, stationary location. Point sources in the NEI include large industrial facilities and electric power plants, airports, and smaller industrial, non-industrial and commercial facilities. A small number of portable sources such as some asphalt or rock crushing operations are also included. Some states voluntarily also provide facilities such as dry cleaners, gas stations, and livestock facilities, which are otherwise included in the NEI as nonpoint sources. The emissions potential of each facility determines whether that facility should be reported as a point source, according to emissions thresholds set in the Air Emissions Reporting Rule (AERR).</span></p><p><span>NEI nonpoint sources include emissions estimates for sources which individually are too small in magnitude to report as point sources. These emissions sources are included in the NEI as a county total or tribal total (for participating tribes).Examples include residential heating, commercial combustion, asphalt paving, and commercial and consumer solvent use.</span></p><p><span>NEI onroad sources include emissions from onroad vehicles that use gasoline, diesel, and other fuels. These sources include light duty and heavy duty vehicle emissions from operation on roads, highway ramps, and during idling. The US EPA uses the MOVES model to compute onroad source emissions based on model inputs provided by State, Local, and Tribal air agencies. The MOVES model also computes refueling emissions, which are included in the EIS Nonpoint Data Category.</span></p><p><span>NEI nonroad sources include off-road mobile sources that use gasoline, diesel, and other fuels. Source types include construction equipment, lawn and garden equipment, aircraft ground support equipment, locomotives, and commercial marine vessels. For many nonroad sources, the EPA uses the MOVES-NONROAD model and these sources are included in the EIS nonroad Data Category. Starting with the 2008 NEI, some nonpoint sources are included in other EIS Data Categories. Aircraft engine emissions (occurring during landing and takeoff operations) and the ground support and power unit equipment are included in the EIS Point Data Category at airport locations. Locomotive emissions at rail yards are also included in the EIS Point Data Category. Emissions of other locomotive emissions and of commercial marine vessel emissions (both underway and port emissions) are included in the EIS Nonpoint Data Category.</span></p><p><span>NEI \"event\" sources include fires that are reported in a day-specific format: wildfires and prescribed burns. Generally, the US EPA calculates these emissions using a satellite detection approach combined with fire models and activity data provide by State, Local, and Tribal air agencies or forestry agencies. Starting in the 2008 NEI, Wildfires and prescribed burning sources are included in the EIS Event Data Category. Agricultural fires are reported in the “Nonpoint” data category as an annual sum for a county. Taken as a sum, agricultural fires, prescribed fires, and wild fires make up the total emissions that comprise the “National Fire Emissions Inventory” (NFEI).</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org:443/licenses/by/4.0/' target='_blank' style='text-decoration:underline;' rel='nofollow ugc noopener noreferrer'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "Emissions Inventory",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1726864585000,
+        "avgRating": 0,
+        "id": "c9f92ff687b645559b62694c00d512ae",
+        "categories": [
+          "/Categories/Environment/Air Quality"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "District Department of Energy and Environment",
+        "largeThumbnail": null,
+        "lastViewed": 1788681600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1648570129000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Air_Quality_WebMercator/MapServer/79",
+        "tags": [
+          "NEI",
+          "national emissions inventory",
+          "air quality",
+          "environment",
+          "pollution",
+          "district of columbia",
+          "washington dc",
+          "doee"
+        ],
+        "numViews": 7427,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.12032174599996,
+                38.80077119200005
+              ],
+              [
+                -76.91232174599995,
+                39.008771192000054
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.80077119200005,
+                "xmin": -77.12032174599996,
+                "ymax": 39.008771192000054,
+                "xmax": -76.91232174599995,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/c9f92ff687b645559b62694c00d512ae"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d5f6fbd97d244e1c9dbc42f6440ca09b",
+      "title": "Gas Stations",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/3",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The dataset contains locations and attributes of gas stations provided by the Department of Energy and Environment and the Department of Licensing and Consumer Protection.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.13,
+                39.01
+              ],
+              [
+                -76.9,
+                39.01
+              ],
+              [
+                -76.9,
+                38.78
+              ],
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -77.13,
+                39.01
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>The dataset contains locations and attributes of gas stations provided by the Department of Energy and Environment and the Department of Licensing and Consumer Protection.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "Gas Stations",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1725556420000,
+        "avgRating": 0,
+        "id": "d5f6fbd97d244e1c9dbc42f6440ca09b",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Department of Energy and Environment",
+        "largeThumbnail": null,
+        "lastViewed": 1788674400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1425069368000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/3",
+        "tags": [
+          "District of Columbia",
+          "DLCP",
+          "DOEE",
+          "gas",
+          "stations",
+          "Washington DC"
+        ],
+        "numViews": 24416,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "english (united states)",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "City of Washington, DC",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/d5f6fbd97d244e1c9dbc42f6440ca09b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    98
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "a449f1f07b733c73160228b77ff2aeb163f875972395de1f852c849a47e755b4",
+  "search_complete": true
+}

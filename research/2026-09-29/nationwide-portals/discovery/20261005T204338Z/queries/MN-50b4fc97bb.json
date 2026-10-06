@@ -1,0 +1,908 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "physical activity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T20:44:39.487962+00:00",
+  "candidates": [
+    {
+      "id": "1607fef990fe4040ac33d40a51362a26",
+      "title": "Mississippi River Corridor Critical Area (MRCCA) Shore Impact Zones (SIZ)",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/env_mrcca_shore_impact/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The OHWL setback and SIZ applicable to each river and district are:\n\nMississippi River:\n   - CA-ROS: 200 foot setback, 100 foot SIZ\n   - CA-RN: 100 foot setback, 50 foot SIZ\n   - CA-RTC: 75 foot setback, 37.5 foot SIZ\n   - CA-UM: 50 foot setback, 25 foot SIZ\n\n\nVermillion River:\n   - CA-ROS: 150 foot setback, 75 foot SIZ\n   - CA-RN: 75 foot setback, 37.5 foot SIZ\n   - CA-SR: 75 foot setback, 37.5 foot SIZ\n\nMinnesota River:\n   - CA-ROS: 150 foot setback, 75 foot SIZ\n\nRum River:\n   - CA:RN: 75 foot setback, 37.5 foot SIZ\n   - CA-RTC: 75 foot setback, 37.5 foot SIZ\n\nCrow River:\n   - CA-RTC: 75 foot setback, 37.5 foot SIZ\n\nThis shapefile is intended to be a generalized depiction of the SIZ.  Delineation of the SIZ on any parcel for development purposes must be undertaken by surveying from the OHWL.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.521889,
+                45.247025
+              ],
+              [
+                -92.732425,
+                45.247025
+              ],
+              [
+                -92.732425,
+                44.664059
+              ],
+              [
+                -93.521889,
+                44.664059
+              ],
+              [
+                -93.521889,
+                45.247025
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This data delineates the Shore Impact Zones (SIZ) of the Mississippi River Corridor Critical Area (MRCCA) as defined in Minnesota Rules, part 6106.0050, subp. 68.\n\nThe MRCCA is a land corridor along the Mississippi River in the seven-county Twin Cities metro area in which special land use regulations guide development activity. The corridor extends 72 miles along the Mississippi River from the cities of Ramsey and Dayton in the north to the City of Hastings and Ravenna Township in the south. It includes 54,000 acres of land along both sides of the river. The State of Minnesota created the corridor and land use regulations in 1976. Local governments administer the regulations through their local plans and zoning ordinances.\n\nRules regulating the MRCCA were published on December 27, 2016 and became effective January 4, 2017.  The rules establish six districts, each with dimensional standards for river setbacks (among other things). The SIZ is defined as the land located between the ordinary high water level (OHWL) of public waters and a line parallel to it at a setback of 50 percent of the required structure setback. The structure setback and SIZ varies by district and river.  This shapefile delineates the physical boundaries of the SIZ in the six districts.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/750/env_mrcca_shore_impact.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/750/env_mrcca_shore_impact.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/750/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "The SIZ boundaries for the Mississippi delineated in this map are based on the approximate Ordinary High Water Level (OHWL) established at various points along the Mississippi River. OHWL measurements were matched to identifiable landmarks where possible, and OHWLs between these landmarks were linearly extrapolated.  The SIZ boundaries for the other rivers were based upon the river's edge as delineated in the National Hydrography Dataset, generated by the US Geological Survey, the USEPA, and state partners.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Mississippi River Corridor Critical Area (MRCCA) Shore Impact Zones (SIZ)",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789538130000,
+        "avgRating": 0,
+        "id": "1607fef990fe4040ac33d40a51362a26",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790575200000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613844000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/env_mrcca_shore_impact/FeatureServer",
+        "tags": [
+          "Hydrography",
+          "Mississippi River Corridor Critical Area",
+          "Shore Impact Zone",
+          "SIZ",
+          "Mississippi River",
+          "Twin Cities Metro Area",
+          "Shore Impact Zone",
+          "SIZ"
+        ],
+        "numViews": 289,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Ecological and Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/1607fef990fe4040ac33d40a51362a26"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "34897636a9d74a80b3b6823f421fd4c7",
+      "title": "Historic Mississippi River Corridor Critical Area (MRCCA) Executive Order 79-19 Districts",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_mrcca_eo_79_19/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this map is to delineate the physical boundaries of each of the four MRCCA districts identified in EO 79-19, which include the following:\n- Rural Open Space District\n- Urban Developed District\n- Urban Diversified District\n- Urban Open Space District\n\nThis map served as the \"authoritative source\" for the historic MRCCA districts under EO 79-19.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.516996,
+                45.249475
+              ],
+              [
+                -92.729862,
+                45.249475
+              ],
+              [
+                -92.729862,
+                44.657284
+              ],
+              [
+                -93.516996,
+                44.657284
+              ],
+              [
+                -93.516996,
+                45.249475
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This map delineates the boundary of the Mississippi River Corridor Critical Area (MRCCA) and its four land use districts as designated under Executive Order 79-19 (EO 79-19). These districts were in place from 1976 until 2017, when EO 79-19 was superseded by Minnesota Rules, chapter 6106. \n\nThe MRCCA is a land corridor along the Mississippi River in the seven-county metro area in which special land use regulations guide development activity. The corridor extends 72 miles along the Mississippi River from the cities of Ramsey and Dayton in the north to the City of Hastings and Ravenna Township in the south. It includes 54,000 acres of land along both sides of the river. The State of Minnesota created the corridor and land use regulations in 1976. Local governments administer the regulations through their local plans and zoning ordinances. \n\nThe MRCCA is home to a full range of residential neighborhoods and parks, as well as river-related commerce, industry, and transportation. Though the MRCCA has been extensively developed, many intact and remnant natural areas remain, including bluffs, islands, floodplains, wetlands, riparian zones, and native aquatic and terrestrial flora and fauna. \n\nEO-79-19 established four districts, each with dimensional standards for river and bluff setbacks, and building height. The purpose of this map is to delineate the physical boundaries for each of these four historic districts.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/642/bdry_mrcca_eo_79_19.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/642/bdry_mrcca_eo_79_19.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/642/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "The district boundary lines delineated in this map are based on the legal descriptions contained in Executive Order 79-19 as published in the State Register, volume 3, pages 1681 to 1692.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Historic Mississippi River Corridor Critical Area (MRCCA) Executive Order 79-19 Districts",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789505562000,
+        "avgRating": 0,
+        "id": "34897636a9d74a80b3b6823f421fd4c7",
+        "categories": [
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790578800000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613684000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/bdry_mrcca_eo_79_19/FeatureServer",
+        "tags": [
+          "Hydrography",
+          "Mississippi River Corridor Critical Area",
+          "Executive Order 79-19",
+          "River",
+          "critical area",
+          "scenic resources",
+          "water resources",
+          "executive order",
+          "Mississippi River",
+          "Twin Cities Metro Area",
+          "MNRRA"
+        ],
+        "numViews": 318,
+        "numComments": 0,
+        "size": 104,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Division of Waters",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/34897636a9d74a80b3b6823f421fd4c7"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a2244a38d9f34dc1a3f4cbcb0901af40",
+      "title": "State Trails of Minnesota",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_state_trails_minnesota/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "To support trail maintenance, recreation planning, and public access information, with emphasis on cartographic map rendering.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset represents State Trails that have been legislatively authorized and physically constructed and that are maintained by the MNDNR Division of Parks and Trails.\n These trails, which pass through a combination of state-owned lands and acquired easements, have multiple use status with specific activities supported in designated sections.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/835/trans_state_trails_minnesota.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/835/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Use of the data are constrained only by the DNR GIS Data License Agreement. See the Distribution Liability section below for a link.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "State Trails of Minnesota",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790141150000,
+        "avgRating": 0,
+        "id": "a2244a38d9f34dc1a3f4cbcb0901af40",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790607600000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778614145000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/trans_state_trails_minnesota/FeatureServer",
+        "tags": [
+          "transportation",
+          "biking",
+          "hiking",
+          "state trails",
+          "surface type",
+          "width",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 1076,
+        "numComments": 0,
+        "size": 113,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Parks and Trails, Information Systems Team",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/a2244a38d9f34dc1a3f4cbcb0901af40"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "53bfdc20c89a4aff863706b8cc0a8d0a",
+      "title": "MPCA Remediation Sites",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_remediation_sites/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The attributes and locations of remediation sites provide information and context to support decisions on environmental cleanup, emergency management, and maintaining environmental quality.  These data are intended to inform environmental research and public inquiries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset represents the locations, classifications, and physical characteristics of remediation activities carried out by the Minnesota Pollution Control Agency. The locations represent leak clean up, emergency response, petroleum brownfields, non-petroleum brownfields (Voluntary Investigation and Cleanup), Superfund, RCRA, integrated remediation and site assessment sites.\n<br /><br />\nThe geodatabase, env_remediation_sites.gdb, contains two related datasets: (1) the remediation_sites point feature class, which has one record for each remediation site, and (2) the spatial_rem_activity table, which contains one record for each MPCA effort to investigate contamination at a site. The two datasets can be related using the ITEM_ID. In most cases, there will be one record in spatial_rem_activity for each record in remediation_sites. However, reopened leak sites may have multiple records in spatial_rem_activity for a single site, and CERCLIS/SEMS sites where the EPA was the lead agency may have zero records in spatial_rem_activity. The spatial_rem_activity table only exists in the file geodatabase format of this dataset.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>remediation_sites.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/remediation_sites.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>spatial_rem_activity.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/spatial_rem_activity.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>schema.ini</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/schema.ini' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/env_remediation_sites.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/env_remediation_sites.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/329/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "The publisher of this resource has not provided a use license. Please refer to the item metadata for complete details.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "MPCA Remediation Sites",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790409781000,
+        "avgRating": 0,
+        "id": "53bfdc20c89a4aff863706b8cc0a8d0a",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Health"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790611200000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613898000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/env_remediation_sites/FeatureServer",
+        "tags": [
+          "Minnesota Pollution Control Agency",
+          "Pollution Control Agency",
+          "environment",
+          "health",
+          "brownfield",
+          "superfund",
+          "RCRA",
+          "clean up",
+          "leak",
+          "emergency response",
+          "spill",
+          "site assessment",
+          "PLP",
+          "NPL",
+          "institutional control",
+          "unpermitted dump",
+          "petroleum",
+          "VIC",
+          "state assessment",
+          "Minnesota"
+        ],
+        "numViews": 2119,
+        "numComments": 0,
+        "size": 106,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/53bfdc20c89a4aff863706b8cc0a8d0a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "1d6f531e85f347ea8ec8d14c1e0bf9e0",
+      "title": "Forestry ECS Worksheet Geodatabase",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/biota_dnr_forestry_npc_obs/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The ECS Worksheet database was developed to provide a statewide repository for vegetation data and the boundaries between native plant communities. The immediate purpose is to help foresters make maps of native plant communities. The ultimate purpose is to monitor vegetation change due to management or external factors such as climate change.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -96.810633,
+                49.015581
+              ],
+              [
+                -89.787973,
+                49.015581
+              ],
+              [
+                -89.787973,
+                43.436939
+              ],
+              [
+                -96.810633,
+                43.436939
+              ],
+              [
+                -96.810633,
+                49.015581
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This data layer contains soil and vegetation data collected by DNR foresters, summer interns, and Ecologcial Classification System (ECS) program staff. The data support native plant community (NPC) mapping and facilitates use of NPC information to prescribe forest management activities. Data in this layer comprise NPC code, date collected, observer name, growth stage, equipment operability rating, soil surface texture and drainage, soil survey map unit and landtype association map unit. Additional data in a related database include: physical site characteristics, soil layer characteristics, vegetation cover and abundance of five life-form strata, lists of plants present in each strata, and cover and abundance of every woody species in two strata. Vegetation data is collected along transects about 80 meters long and 10 meters wide. Soil data and GPS coordinates are collected near the transect midpoint. Transects are placed where features are uniform and representative of the target NPC or stand, rather than in transition zones. After collecting data, the site is classified to NPC using \"Field Guides to the Native Plant Communities of Minnesota\" version 2.0.\n\nIn NPC Points there are links to worksheets. For now, these point to the DNR intranet, so please contact Michelle Martin to request a worksheet.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/673/biota_dnr_forestry_npc_obs.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/673/biota_dnr_forestry_npc_obs.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/673/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Users must include in any product derived from this GIS data set an acknowledgment of the Minnesota DNR Division of Forestry, ECS Program as the source of information. In addition, in order to protect DNR's copyright interest in these data, the user must also include an appropriate copyright notice in the name of the DNR or the user.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Forestry ECS Worksheet Geodatabase",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789508698000,
+        "avgRating": 0,
+        "id": "1d6f531e85f347ea8ec8d14c1e0bf9e0",
+        "categories": [
+          "/Categories/Biota"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790578800000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613673000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/biota_dnr_forestry_npc_obs/FeatureServer",
+        "tags": [
+          "Native Plant Communities",
+          "Ecological Classification System",
+          "ECS",
+          "NPC",
+          "Minnesota"
+        ],
+        "numViews": 341,
+        "numComments": 0,
+        "size": 111,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Division of Forestry",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/1d6f531e85f347ea8ec8d14c1e0bf9e0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "11235b11bdf4406a8ad1cc85b2add694",
+      "title": "Comprehensive Stream WIDs",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/water_comprehensive_stream_wids/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Linework to represent watercourses in Minnesota, to support Water Quality programs at the Pollution Control Agency.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "A two-dimensional representation of stream linework within the State of Minnesota, with associated attributes. This dataset contains both current and past Water Unit IDs. This data set is built primarily on the 24K scale National Hydrography Dataset. Some segments may be from the 100K version NHD, and some created by MPCA or DNR hydrography. Streams are segmented into reaches based on hydrological, physical, and political boundaries. Each identified reach has a unique ID consisting of the HUC8+three digits. These are Water Unit IDs, or WIDs (formerly known as Assessment Unit IDs (AUIDs)). These WIDs are the reference the MN Pollution Control Agency uses to support monitoring, assessment, permitting, and restoration work.\n<br /><br />\nThis “Comprehensive” version of the dataset depicts the changes in WID assignment and extent over the span of the program. WIDs are not permanent IDs, and the extent of a reach is subject to change over time, influenced by factors such as water quality standards, channelization or restoration work, hydrological influence, and other reasons that influence how MPCA conducts water quality work. When extent of a reach is changed, the WID number also changes. This Comprehensive dataset includes the current 'Active' WIDs and previous 'Retired' WIDs. This is not intended to capture changes to stream path over time.\n<br /><br />\nHistorical associations are maintained by MPCA. Streams without a specific agency interest associated have an ID of '*HUC8*-999'. As the MPCA programs associate stations or attributes with these unspecified waters, new WIDs are assigned.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/351/water_comprehensive_stream_wids.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/351/water_comprehensive_stream_wids.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/351/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "None",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Comprehensive Stream WIDs",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789672300000,
+        "avgRating": 0,
+        "id": "11235b11bdf4406a8ad1cc85b2add694",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Inland waters"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790571600000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613589000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_pca/water_comprehensive_stream_wids/FeatureServer",
+        "tags": [
+          "Environment",
+          "Inland Waters",
+          "stream",
+          "wid",
+          "river",
+          "water quality",
+          "hydrography",
+          "water",
+          "WID",
+          "Water Units",
+          "Assessment Units",
+          "Minnesota"
+        ],
+        "numViews": 1492,
+        "numComments": 0,
+        "size": 116,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Pollution Control Agency (MPCA)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/11235b11bdf4406a8ad1cc85b2add694"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "05cd4c5cbdb8413a9258cc24f5d19224",
+      "title": "Hennepin GIS ",
+      "url": "https://gis-hennepin.hub.arcgis.com",
+      "publisher": "hennepin.county.maps",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Hennepin GIS develops data and creates maps that support Hennepin County's mission to enhance the health, safety and quality of life of our residents and communities in a respectful, efficient and fiscally responsible way.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.01,
+                45.386
+              ],
+              [
+                -92.478,
+                45.386
+              ],
+              [
+                -92.478,
+                44.555
+              ],
+              [
+                -94.01,
+                44.555
+              ],
+              [
+                -94.01,
+                45.386
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubSite",
+          "hubSolution",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Metadata",
+          "Online Map",
+          "OpenData",
+          "Ready To Use",
+          "selfConfigured",
+          "source-undefined",
+          "Web Map",
+          "Registered App"
+        ],
+        "description": "Hub site application used for the public-facing Hennepin GIS website. A site is used as the platform to share content with others (aka. the shell of the website).<div><br /></div><div>DO NOT DELETE</div>",
+        "licenseInfo": "<p><span style='line-height:1.3846;'>This data (i) is furnished \"AS IS\" with no representation as to completeness or accuracy; (ii) is furnished with no warranty of any kind; and (iii) is not suitable for legal, engineering or surveying purposes. Hennepin County shall not be liable for any damage, injury or loss resulting from this data.</span></p>",
+        "ownerId": "34fe3338ceacf760ecb6b1ca8a8dc1e5",
+        "title": "Hennepin GIS ",
+        "type": "Hub Site Application",
+        "orgId": "ziLNoRgqnICUM0q1",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1790876685000,
+        "avgRating": 0,
+        "id": "05cd4c5cbdb8413a9258cc24f5d19224",
+        "categories": [
+          "/Categories/Hennepin GIS Website",
+          "/Categories/Environment",
+          "/Categories/Boundaries",
+          "/Categories/Geoscientific information",
+          "meteorology",
+          "/Categories/Society",
+          "/Categories/Transportation",
+          "and atmosphere",
+          "/Categories/Climatology",
+          "/Categories/Health",
+          "/Categories/Location"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "hennepin.county.maps",
+        "accessInformation": "Hennepin County GIS",
+        "largeThumbnail": null,
+        "lastViewed": 1790874000000,
+        "thumbnail": "thumbnail/thumbnail_thumbnail_ago_downloaded.png",
+        "languages": [],
+        "created": 1626117704000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis-hennepin.hub.arcgis.com",
+        "tags": [
+          "Hub Site"
+        ],
+        "numViews": 839981,
+        "numComments": 0,
+        "size": 16844320,
+        "listed": false,
+        "scoreCompleteness": 78,
+        "culture": "en",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "collaborationGroupId": "56a5bd6902a5460ba16e60a9f22f335e",
+          "schemaVersion": 1.9,
+          "children": [
+            "44ce1e692f2a4ce48d4a0fd5c8fd13d0",
+            "a44b85d683d346e68cd9cf1583856f77",
+            "64bbe30c5e024f149a0c42b31e4af03f"
+          ],
+          "globalNavViewCount": 1,
+          "parentInitiativeId": "d75d081319dc4765bc7b961776607151",
+          "followersGroupId": "62a388d5d2714b6da6503391d280c803",
+          "contentGroupId": "1b0a12aecd544e32b1364e6292467cdb"
+        },
+        "source": "Hennepin County GIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/05cd4c5cbdb8413a9258cc24f5d19224"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    250
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 7,
+  "next_offset": 7,
+  "response_sha256": "382ea7bb8c03e734f509503f6f92e958e0ddf3a97f58a0fb045329afa277c929",
+  "search_complete": true
+}

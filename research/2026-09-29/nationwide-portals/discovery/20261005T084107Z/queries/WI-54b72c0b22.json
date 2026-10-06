@@ -1,0 +1,1233 @@
+{
+  "jurisdiction_code": "WI",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T08:42:11.205844+00:00",
+  "candidates": [
+    {
+      "id": "e1e89ae505594459a46407f1daf4ad5d",
+      "title": "GCSM Usage Documentation",
+      "url": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/e1e89ae505594459a46407f1daf4ad5d",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Informal documentation for usage of the Groundwater Contamination Susceptibility Model (GCSM)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.04299999999843,
+                47.1379999999992
+              ],
+              [
+                -86.75799999999853,
+                47.1379999999992
+              ],
+              [
+                -86.75799999999853,
+                42.43199999999928
+              ],
+              [
+                -93.04299999999843,
+                42.43199999999928
+              ],
+              [
+                -93.04299999999843,
+                47.1379999999992
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "Data",
+          "Document",
+          "PDF"
+        ],
+        "description": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 17px;'>Informal documentation for usage of the Groundwater Contamination Susceptibility Model (GCSM)</span>",
+        "licenseInfo": "none",
+        "title": "GCSM Usage Documentation",
+        "type": "PDF",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1564409618000,
+        "avgRating": 0,
+        "id": "e1e89ae505594459a46407f1daf4ad5d",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources",
+        "largeThumbnail": null,
+        "thumbnail": "thumbnail/Document.png",
+        "languages": [],
+        "created": 1497368704000,
+        "documentation": null,
+        "banner": null,
+        "url": null,
+        "tags": [
+          "geology",
+          "bedrock",
+          "water table",
+          "soil",
+          "surficial deposits",
+          "groundwater",
+          "contamination",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "natural resources",
+          "environmental",
+          "WDNR",
+          "WI DNR"
+        ],
+        "numViews": 1025,
+        "numComments": 0,
+        "size": 130109,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "name": "GCSM_data.pdf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/e1e89ae505594459a46407f1daf4ad5d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b695a885d94e459ea69b9282b63693de",
+      "title": "Groundwater Contamination Susceptibility Model",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Groundwater_Contamination_Susceptibility_Model/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater Contamination Susceptibility Model (GCSM) for Wisconsin",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9624381939056,
+                47.05857077249721
+              ],
+              [
+                -86.71104584232033,
+                47.05857077249721
+              ],
+              [
+                -86.71104584232033,
+                42.458041772318424
+              ],
+              [
+                -92.9624381939056,
+                42.458041772318424
+              ],
+              [
+                -92.9624381939056,
+                47.05857077249721
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Groundwater Contamination Susceptibility Model.   The GCSM was developed by the DNR, the US Geological Survey (USGS), the Wisconsin Geological &amp; Natural History Survey (WGNHS), and the University of Wisconsin – Madison in the mid-1980s. The results of the GCSM are illustrated in a map published in 1989 at a scale of 1:1,000,000 (available from the Wisconsin Geological &amp; Natural History Survey: <a href='https://wgnhs.uwex.edu/pubs/000420/' target='_blank' rel='nofollow ugc noopener noreferrer'>https://wgnhs.uwex.edu/pubs/000420/</a>.<div><br /></div><div><p><span style='font-size:13pt; font-family:Helvetica, sans-serif;'>See the usage documentation (</span><a href='https://www.arcgis.com/home/item.html?id=e1e89ae505594459a46407f1daf4ad5d' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.arcgis.com/home/item.html?id=e1e89ae505594459a46407f1daf4ad5d</a><span style='font-size:13pt; font-family:Helvetica, sans-serif;'>) and the Full\nreport (</span><a href='https://www.arcgis.com/home/item.html?id=fd4d0c43abc04b4ab915586d9a0e89dd' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.arcgis.com/home/item.html?id=fd4d0c43abc04b4ab915586d9a0e89dd</a><span style='font-size:13pt; font-family:Helvetica, sans-serif;'>) for more\ninformation.</span></p></div>",
+        "licenseInfo": "The GCSM is derived from generalized statewide information at small scales and cannot be used for any site-specific purposes. For example, siting waste disposal facilities or locating an industry requires site-specific, geologic and hydrogeologic information, and cannot be made based on the composite groundwater contamination susceptibility map. The GCSM does not consider the individual characteristics of individual contaminants or the subsurface release of contaminants. That is, it only considers the ability of water to move from the land surface to the water table. The model is intended for use by state agencies and others when deciding where they should more closely study impacts on groundwater. Local officials can also use the GCSM in determining whether their region needs to be studied in more detail for potential groundwater problems.<div><br /></div><div><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></div>",
+        "title": "Groundwater Contamination Susceptibility Model",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "token2ExpirationDate": -1,
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711658694000,
+        "avgRating": 0,
+        "id": "b695a885d94e459ea69b9282b63693de",
+        "categories": [],
+        "spatialReference": "NAD_1983_HARN_Transverse_Mercator",
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, US Geological Survey (USGS), the Wisconsin Geological & Natural History Survey (WGNHS), and the University of Wisconsin – Madison",
+        "largeThumbnail": null,
+        "lastViewed": 1711656000000,
+        "thumbnail": "thumbnail/thumbnail1565210793495.png",
+        "languages": [],
+        "created": 1565210590000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Groundwater_Contamination_Susceptibility_Model/FeatureServer",
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "natural resources",
+          "environmental",
+          "bedrock",
+          "geology",
+          "soil",
+          "water table",
+          "GCSM",
+          "surficial deposits"
+        ],
+        "numViews": 2884,
+        "numComments": 0,
+        "size": 86466560,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "name": "Groundwater Contamination Susceptibility Model",
+        "guid": null,
+        "token1ExpirationDate": -1,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/b695a885d94e459ea69b9282b63693de"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4263fb5c55b742578542561e2589d03f",
+      "title": "Private Well PFAS Shallow Groundwater Study Results",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Private_Well_PFAS_Shallow_Groundwater_Study_Results/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Feature layer displaying sample results from Wisconsin DNR’s Private Well PFAS Study",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.81101585053709,
+                46.89443846970474
+              ],
+              [
+                -87.00541925493998,
+                46.89443846970474
+              ],
+              [
+                -87.00541925493998,
+                42.479626314002026
+              ],
+              [
+                -92.81101585053709,
+                42.479626314002026
+              ],
+              [
+                -92.81101585053709,
+                46.89443846970474
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service",
+          "Hosted Service"
+        ],
+        "description": "Sample results from Wisconsin DNR’s Private Well PFAS Study: “Prevalence and Source Tracing of PFAS in Shallow Groundwater Used for Drinking Water in Wisconsin”, Environmental Science &amp; Technology.<div><br /></div><div>Per- and polyfluoroalkyl substances (PFAS) and other water quality parameter results from samples collected from 450 homes with shallow private wells throughout Wisconsin. The samples were analyzed for 44 PFAS, major ions, metals, total organic carbon, and indicators of human waste as well as agricultural influence. <div><br /></div><div>More information about the study can be found at <span style='font-family:Calibri, sans-serif;'><a href='https://dnr.wisconsin.gov/topic/Groundwater/PFASStudy.html' rel='nofollow ugc'><font size='3'>https://dnr.wisconsin.gov/topic/Groundwater/PFASStudy.html</font></a>.</span><br /><b><font size='4'><br /></font></b></div><div><b><font size='4'>About the GIS dataset</font></b></div><div>This feature layer contains a polygon (PW_PFAS_Study_Well_Sections) for each feature which represents the section in which the private well sample was taken along with the table (PW_PFAS_Study_Sample_Data) with the sample results for each private well.   <br /></div><div><br /></div><div><b><font size='4'>Viewing the data using ArcGIS Online</font></b><br /></div><div>To view the data using ArcGIS Online it is best to view using <font color='#0000cd'><b>Map Viewer Classic</b></font> due to the relationship class between the section and the sample results.  The relationship class is based on the Wisconsin Unique Well Number (WUWN).  </div><div><br /></div><div><b><font size='4'>Alternate GIS format</font></b></div><div>Download the File Geodatabase, located <a href='https://wi-dnr.maps.arcgis.com/home/item.html?id=13b44bae9c51446abe84cd3467259a8d' target='_blank' rel='nofollow ugc noopener noreferrer'>here</a>.<br /></div></div>",
+        "licenseInfo": "<span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span>",
+        "title": "Private Well PFAS Shallow Groundwater Study Results",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711659640000,
+        "avgRating": 0,
+        "id": "4263fb5c55b742578542561e2589d03f",
+        "categories": [
+          "/Categories/DNR Division of Environmental Management",
+          "/Categories/Environment/Drinking Water",
+          "/Categories/Boundaries/Environmental",
+          "/Categories/Environment/Groundwater"
+        ],
+        "spatialReference": "3071",
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources (DNR), United States Environmental Protection Agency (EPA), Wisconsin State Laboratory of Hygiene (WSLH), University of Wisconsin-Stevens Point (UWSP), Wisconsin Department of Health Services (DHS).",
+        "largeThumbnail": null,
+        "lastViewed": 1732640400000,
+        "thumbnail": "thumbnail/thumbnail1693409945034.png",
+        "languages": [],
+        "created": 1691076229000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/Private_Well_PFAS_Shallow_Groundwater_Study_Results/FeatureServer",
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "wells",
+          "water",
+          "groundwater",
+          "GW",
+          "PFAS",
+          "private well",
+          "study"
+        ],
+        "numViews": 3022,
+        "numComments": 0,
+        "size": 10731520,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Private_Well_PFAS_Shallow_Groundwater_Study_Results",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/4263fb5c55b742578542561e2589d03f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2563424b5d71477c948b439048c28a48",
+      "title": "Active GEMS Monitoring Points",
+      "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/WA_Waste/WA_Monitoring_Points/FeatureServer/0",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Locations of active sampling points like groundwater monitoring wells, soil gas probes, landfill leachate head wells, etc. that are tracked in the Wisconsin DNR's Groundwater and Environmental Monitoring System (GEMS) database.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.8357,
+                46.8239
+              ],
+              [
+                -86.8043,
+                46.8239
+              ],
+              [
+                -86.8043,
+                42.4824
+              ],
+              [
+                -92.8357,
+                42.4824
+              ],
+              [
+                -92.8357,
+                46.8239
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Locations of active sampling points like groundwater monitoring wells, soil gas probes, landfill leachate head wells, etc. that are tracked in the Groundwater and Environmental Monitoring System (GEMS) database.\n\nThis data is updated nightly with the latest GEMS data, and only includes records that have WTM coordinate values populated in GEMS.   This layer excludes the locations of public water supply wells.   See <a href='https://dnr.wisconsin.gov/topic/Landfills/gems.html' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/topic/Landfills/gems.html</a> for more information about the GEMS database.",
+        "licenseInfo": "<span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span>",
+        "title": "Active GEMS Monitoring Points",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711657768000,
+        "avgRating": 0,
+        "id": "2563424b5d71477c948b439048c28a48",
+        "categories": [
+          "/Categories/Infrastructure",
+          "/Categories/Environment/Groundwater"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Bureau of Waste and Materials Management",
+        "largeThumbnail": null,
+        "lastViewed": 1738846800000,
+        "thumbnail": "thumbnail/thumbnail1676298141957.png",
+        "languages": [],
+        "created": 1675972771000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://dnrmaps.wi.gov/arcgis2/rest/services/WA_Waste/WA_Monitoring_Points/FeatureServer/0",
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "natural resources",
+          "GEMS",
+          "hydrogeology"
+        ],
+        "numViews": 2457,
+        "numComments": 0,
+        "size": 90,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/2563424b5d71477c948b439048c28a48"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0c2bd5802ada404d812a8d7141581258",
+      "title": "GCSM - Water Table Depth",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/GCSM_Water_Table_Depth/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "A polygon shapefile at 1:250,000 scale containing depth-to-water table estimates used in preparing the Groundwater Contamination Susceptibility Model (GCSM) for Wisconsin.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.9635641771187,
+                47.08131162724197
+              ],
+              [
+                -86.70559576880348,
+                47.08131162724197
+              ],
+              [
+                -86.70559576880348,
+                42.45599994578775
+              ],
+              [
+                -92.9635641771187,
+                42.45599994578775
+              ],
+              [
+                -92.9635641771187,
+                47.08131162724197
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "This layer consists of a polygon shapefile at 1:250,000 scale containing depth-to-water table estimates used in preparing the GCSM for Wisconsin. The depth to water table is the distance from the land surface to the water table. The distance water must flow to reach the groundwater, combined with the ease with which movement occurs, play a significant role indetermining the susceptibility of an area to contamination.  <div><br /></div><div><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>See the usage documentation (</span><a href='https://www.arcgis.com/home/item.html?id=e1e89ae505594459a46407f1daf4ad5d' target='_blank'>https://www.arcgis.com/home/item.html?id=e1e89ae505594459a46407f1daf4ad5d</a><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>) and the Full report (</span><a href='https://www.arcgis.com/home/item.html?id=fd4d0c43abc04b4ab915586d9a0e89dd' target='_blank'>https://www.arcgis.com/home/item.html?id=fd4d0c43abc04b4ab915586d9a0e89dd</a><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>) for more information.</span><br /></div>",
+        "licenseInfo": "The GCSM is derived from generalized statewide information at small scales and cannot be used for any site-specific purposes. For example, siting waste disposal facilities or locating an industry requires site-specific, geologic and hydrogeologic information, and cannot be made based on the composite groundwater contamination susceptibility map. The GCSM does not consider the individual characteristics of individual contaminants or the subsurface release of contaminants. That is, it only considers the ability of water to move from the land surface to the water table. The model is intended for use by state agencies and others when deciding where they should more closely study impacts on groundwater. Local officials can also use the GCSM in determining whether their region needs to be studied in more detail for potential groundwater problems.<div><span style='font-family:Helvetica, sans-serif; font-size:11.5pt;'><br /></span></div><div><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></div>",
+        "title": "GCSM - Water Table Depth",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711658533000,
+        "avgRating": 0,
+        "id": "0c2bd5802ada404d812a8d7141581258",
+        "categories": [],
+        "spatialReference": "NAD_1983_HARN_Transverse_Mercator",
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, US Geological Survey (USGS), the Wisconsin Geological & Natural History Survey (WGNHS), and the University of Wisconsin – Madison",
+        "largeThumbnail": null,
+        "lastViewed": 1758294000000,
+        "thumbnail": "thumbnail/thumbnail1565202802656.png",
+        "languages": [],
+        "created": 1565202681000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/GCSM_Water_Table_Depth/FeatureServer",
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "natural resources",
+          "environmental",
+          "bedrock",
+          "geology",
+          "soil",
+          "water table",
+          "GCSM",
+          "surficial deposits"
+        ],
+        "numViews": 20424,
+        "numComments": 0,
+        "size": 8511488,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "GCSMWater Table Depth",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/0c2bd5802ada404d812a8d7141581258"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "13b44bae9c51446abe84cd3467259a8d",
+      "title": "Private Well PFAS Shallow Groundwater Study Results (File Geodatabase)",
+      "url": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/13b44bae9c51446abe84cd3467259a8d",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Sample results from Wisconsin DNR’s Private Well PFAS Study (file geodatabase for download)",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "File Geodatabase",
+          "Metadata",
+          "zip"
+        ],
+        "description": "<div>File geodatabase containing sample results from Wisconsin DNR’s Private Well PFAS Study: “Prevalence and Source Tracing of PFAS in Shallow Groundwater Used for Drinking Water in Wisconsin”, Environmental Science &amp; Technology.</div><div><br /></div><div>Per- and polyfluoroalkyl substances (PFAS) and other water quality parameter results from samples collected from 450 homes with shallow private wells throughout Wisconsin. The samples were analyzed for 44 PFAS, major ions, metals, total organic carbon, and indicators of human waste as well as agricultural influence. </div><div><br /></div><div>More information about the study can be found at <a href='https://dnr.wisconsin.gov/topic/Groundwater/PFASStudy.html' style='font-family:Calibri, sans-serif;' rel='nofollow ugc'><font size='3'>https://dnr.wisconsin.gov/topic/Groundwater/PFASStudy.html</font></a><span style='font-family:Calibri, sans-serif;'>.</span></div><div><br /></div><div><div><b><font size='4'>About the GIS Dataset</font></b></div><div>Zip file that contains a file geodatabase containing a relationship class between the polygon (PW_PFAS_Study_Well_Sections) feature which represents the section in which the private well sample was taken along with the table (PW_PFAS_Study_Sample_Data) with the sample results for each private well.  In order to view this data in a web map, a feature layer is available <a href='https://wi-dnr.maps.arcgis.com/home/item.html?id=4263fb5c55b742578542561e2589d03f' target='_blank' rel='nofollow ugc noopener noreferrer'>here</a>.</div></div>",
+        "licenseInfo": "<span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span>",
+        "title": "Private Well PFAS Shallow Groundwater Study Results (File Geodatabase)",
+        "type": "File Geodatabase",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711659762000,
+        "avgRating": 0,
+        "id": "13b44bae9c51446abe84cd3467259a8d",
+        "categories": [
+          "/Categories/DNR Division of Environmental Management",
+          "/Categories/Environment/Drinking Water",
+          "/Categories/Boundaries/Environmental",
+          "/Categories/Environment/Groundwater"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources (DNR), United States Environmental Protection Agency (EPA), Wisconsin State Laboratory of Hygiene (WSLH), University of Wisconsin-Stevens Point (UWSP), Wisconsin Department of Health Services (DHS)",
+        "largeThumbnail": null,
+        "lastViewed": 1755090000000,
+        "thumbnail": "thumbnail/thumbnail1691611693450.png",
+        "languages": [],
+        "created": 1691084664000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": null,
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI",
+          "wells",
+          "water",
+          "groundwater",
+          "GW",
+          "PFAS",
+          "private well",
+          "WI DNR",
+          "study"
+        ],
+        "numViews": 162,
+        "numComments": 0,
+        "size": 672697,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Private_Well_-_PFAS_Shallow_Groundwater_Study_Results.zip",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/13b44bae9c51446abe84cd3467259a8d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "78e4a7348d7849cd9e2b00ef6117df04",
+      "title": "GCSM - Surficial Deposits",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/GCSM_Surficial_Deposits/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Polygon shapefile with information about surficial deposits at 1:500,000 scale used in preparing the Groundwater Contamination Susceptibility Model (GCSM) for Wisconsin.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.96398910570215,
+                47.07512479682226
+              ],
+              [
+                -86.6667322265696,
+                47.07512479682226
+              ],
+              [
+                -86.6667322265696,
+                42.456931412011926
+              ],
+              [
+                -92.96398910570215,
+                42.456931412011926
+              ],
+              [
+                -92.96398910570215,
+                47.07512479682226
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "This layer includes a polygon shapefile with information about surficial deposits at 1:500,000 scale used in preparing the GCSM for Wisconsin. Surficial deposits are defined as the unconsolidated materials above the bedrock. Because the &quot;soils&quot; layer used in the GCSM includes only the material in the first 5 feet below the land surface, the surficial deposits layer is intended to account for the unconsolidated material between the soil and the top of the bedrock.The texture and permeability of the surficial deposits affect the rate at which infiltrating water will reach the water table. In Wisconsin, these surficial deposits are often the most important factor indetermining groundwater contamination susceptibility.<div><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'><br /></span></div><div><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>See the usage documentation (</span><a href='https://www.arcgis.com/home/item.html?id=e1e89ae505594459a46407f1daf4ad5d' target='_blank'>https://www.arcgis.com/home/item.html?id=e1e89ae505594459a46407f1daf4ad5d</a><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>) and the Full report (</span><a href='https://www.arcgis.com/home/item.html?id=fd4d0c43abc04b4ab915586d9a0e89dd' target='_blank'>https://www.arcgis.com/home/item.html?id=fd4d0c43abc04b4ab915586d9a0e89dd</a><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>) for more information.</span><br /></div><div><p></p></div>",
+        "licenseInfo": "The GCSM is derived from generalized statewide information at small scales and cannot be used for any site-specific purposes. For example, siting waste disposal facilities or locating an industry requires site-specific, geologic and hydrogeologic information, and cannot be made based on the composite groundwater contamination susceptibility map. The GCSM does not consider the individual characteristics of individual contaminants or the subsurface release of contaminants. That is, it only considers the ability of water to move from the land surface to the water table. The model is intended for use by state agencies and others when deciding where they should more closely study impacts on groundwater. Local officials can also use the GCSM in determining whether their region needs to be studied in more detail for potential groundwater problems.<div><br /></div><div><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></div>",
+        "title": "GCSM - Surficial Deposits",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711658519000,
+        "avgRating": 0,
+        "id": "78e4a7348d7849cd9e2b00ef6117df04",
+        "categories": [],
+        "spatialReference": "NAD_1983_HARN_Transverse_Mercator",
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, US Geological Survey (USGS), the Wisconsin Geological & Natural History Survey (WGNHS), and the University of Wisconsin – Madison",
+        "largeThumbnail": null,
+        "lastViewed": 1779213600000,
+        "thumbnail": "thumbnail/thumbnail1565209461041.png",
+        "languages": [],
+        "created": 1565209256000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/GCSM_Surficial_Deposits/FeatureServer",
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "natural resources",
+          "environmental",
+          "bedrock",
+          "geology",
+          "soil",
+          "water table",
+          "GCSM",
+          "surficial deposits"
+        ],
+        "numViews": 12809,
+        "numComments": 0,
+        "size": 4055040,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "GSCMSurficial Deposits",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/78e4a7348d7849cd9e2b00ef6117df04"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4f7eb8dd94da45c9a1fa0a4b4b6fe6f4",
+      "title": "GCSM - Bedrock Type",
+      "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/GCSMBedrock_Type/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "1:500,000 scale shapefile used Bedrock  type used in the Groundwater Contamination Susceptibility Model (GCSM), and contain information on Wisconsin bedrock type.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.96380611020426,
+                47.085670325700484
+              ],
+              [
+                -86.7089611806311,
+                47.085670325700484
+              ],
+              [
+                -86.7089611806311,
+                42.45608922531397
+              ],
+              [
+                -92.96380611020426,
+                42.45608922531397
+              ],
+              [
+                -92.96380611020426,
+                47.085670325700484
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "This layer consists of a polygon coverage at 1:500,000 scale with information about bedrock type used in the GCSM. Bedrock is the consolidated material that underlies the soils and surficial deposits; &quot;bedrock type&quot; is defined as type of the uppermost rock layer. Bedrock type is important in assessing an area's susceptibility to groundwater contamination, especially if the bedrock is located close to the land surface. The source for this layer is the set of 1:500,000-scale compilation sheets for a 1981 map of bedrock geology of Wisconsin published by the WGNHS. Because of the generalized nature of the GCSM project, bedrock types were grouped into 4 categories during automation of this data layer.<div><br /></div><div><p><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>See the usage documentation (</span><a href='https://www.arcgis.com/home/item.html?id=e1e89ae505594459a46407f1daf4ad5d' target='_blank'>https://www.arcgis.com/home/item.html?id=e1e89ae505594459a46407f1daf4ad5d</a><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>) and the Full report (</span><a href='https://www.arcgis.com/home/item.html?id=fd4d0c43abc04b4ab915586d9a0e89dd' target='_blank'>https://www.arcgis.com/home/item.html?id=fd4d0c43abc04b4ab915586d9a0e89dd</a><span style='font-size: 13pt; font-family: Helvetica, sans-serif;'>) for more information.</span><br /></p></div>",
+        "licenseInfo": "The GCSM is derived from generalized statewide information at small scales and cannot be used for any site-specific purposes. For example, siting waste disposal facilities or locating an industry requires site-specific, geologic and hydrogeologic information, and cannot be made based on the composite groundwater contamination susceptibility map. The GCSM does not consider the individual characteristics of individual contaminants or the subsurface release of contaminants. That is, it only considers the ability of water to move from the land surface to the water table. The model is intended for use by state agencies and others when deciding where they should more closely study impacts on groundwater. Local officials can also use the GCSM in determining whether their region needs to be studied in more detail for potential groundwater problems.<div><br /></div><div><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>This data is for informational purposes only and may not have been prepared for or be suitable for legal, engineering or surveying purposes. The user is solely responsible for verifying the accuracy of information before using for any purpose. By using this product for any purpose user agrees to be bound by all disclaimers found here:</span><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'> </span><a href='https://dnr.wisconsin.gov/legal' style='font-size:medium;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://dnr.wisconsin.gov/legal</a><span style='font-size:medium; color:rgb(50, 49, 48); font-family:&quot;Segoe UI&quot;, &quot;Segoe UI Web (West European)&quot;, &quot;Segoe UI&quot;, -apple-system, BlinkMacSystemFont, Roboto, &quot;Helvetica Neue&quot;, sans-serif;'>.</span><br /></div>",
+        "title": "GCSM - Bedrock Type",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1711658450000,
+        "avgRating": 0,
+        "id": "4f7eb8dd94da45c9a1fa0a4b4b6fe6f4",
+        "categories": [],
+        "spatialReference": "NAD_1983_HARN_Transverse_Mercator",
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, US Geological Survey (USGS), the Wisconsin Geological & Natural History Survey (WGNHS), and the University of Wisconsin – Madison",
+        "largeThumbnail": null,
+        "lastViewed": 1779217200000,
+        "thumbnail": "thumbnail/thumbnail1565195223536.png",
+        "languages": [],
+        "created": 1565194918000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/Ul9AyFFeFTjf08DW/arcgis/rest/services/GCSMBedrock_Type/FeatureServer",
+        "tags": [
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "WDNR",
+          "WI DNR",
+          "natural resources",
+          "environmental",
+          "bedrock",
+          "geology",
+          "soil",
+          "water table",
+          "GCSM",
+          "surficial deposits"
+        ],
+        "numViews": 13784,
+        "numComments": 0,
+        "size": 2449408,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "GCSMBedrock Type",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/4f7eb8dd94da45c9a1fa0a4b4b6fe6f4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a7af03bd656c4a469e66c4b40eb6ac35",
+      "title": "Remediation and Redevelopment - Open Activity Points",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/RR_Sites_Map/RR_PUBLIC_MAPSERVICES_CORE_EXT/MapServer/101",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Point representation of open Environmental Repair Program (ERP) and Leaking Underground Storage Tank (LUST) locations in Wisconsin.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -92.92039999999844,
+                47.0817999999992
+              ],
+              [
+                -86.73279999999852,
+                47.0817999999992
+              ],
+              [
+                -86.73279999999852,
+                42.460599999999275
+              ],
+              [
+                -92.92039999999844,
+                42.460599999999275
+              ],
+              [
+                -92.92039999999844,
+                47.0817999999992
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div><p style='font-size:12pt;'>Includes Environmental Repair Program (ERP) and Leaking Underground Storage Tank (LUST) activity types where contamination has affected soil, groundwater or other media and the environmental investigation and/or cleanup needs to begin or is underway. This includes activities where cleanup of environmental contamination is ongoing. An \"activity\" is a contamination incident, not a property. An activity may be smaller than a property or may include more than one property.</p><p style='font-size:12pt;'>Does <strong>not</strong> include:</p><ul><li>Spills (immediate cleanup);</li><li>Activities where DNR required no action;</li><li>Activities not yet mapped;</li><li>Activities never reported to DNR;</li><li><span style='color:inherit; font-family:var(--fontsBaseFamily),Avenir Next;'>Voluntary Party Liability Exemption (VPLE) activities; or</span></li><li><span style='color:inherit; font-family:var(--fontsBaseFamily),Avenir Next;'>Locations affected by contamination from another property</span></li></ul><p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>To view&nbsp;more contamination data layers, see the RR Sites Map at </span></span><a style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; line-height:1.5; text-align:start; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' href='https://dnr.wi.gov/topic/Brownfields/rrsm.html' rel='nofollow ugc noopener noreferrer'>https://dnr.wi.gov/topic/Brownfields/rrsm.html</a><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>, or for specific site information search BRRTS on the Web at </span></span><a style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; line-height:1.5; text-align:start; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' href='https://apps.dnr.wi.gov/rrbotw/botw-search' rel='nofollow ugc noopener noreferrer'>https://apps.dnr.wi.gov/rrbotw/botw-search</a></p></div>",
+        "licenseInfo": "<p>More information on conditions for using Wisconsin DNR’s data and services can be found at <a target='_blank' href='https://dnr.wisconsin.gov/legal' rel='nofollow ugc noopener noreferrer'>DNR Legal Notices</a>.</p>",
+        "title": "Remediation and Redevelopment - Open Activity Points",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1756305596000,
+        "avgRating": 0,
+        "id": "a7af03bd656c4a469e66c4b40eb6ac35",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Environment/Remediation and Redevelopment"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Environmental Management Division, Bureau of Remediation and Redevelopment",
+        "largeThumbnail": null,
+        "lastViewed": 1756303200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1533310381000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/RR_Sites_Map/RR_PUBLIC_MAPSERVICES_CORE_EXT/MapServer/101",
+        "tags": [
+          "remediation",
+          "redevelopment",
+          "open site",
+          "contamination",
+          "brownfield",
+          "soil",
+          "groundwater",
+          "cleanup",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "natural resources",
+          "environmental",
+          "WDNR",
+          "WI DNR",
+          "RR"
+        ],
+        "numViews": 10603,
+        "numComments": 0,
+        "size": 93,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "boundary": "item"
+        },
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/a7af03bd656c4a469e66c4b40eb6ac35"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "08909edcbf0948529b0a27749753d52b",
+      "title": "Remediation and Redevelopment - Closed Activity Points",
+      "url": "https://dnrmaps.wi.gov/arcgis/rest/services/RR_Sites_Map/RR_PUBLIC_MAPSERVICES_CORE_EXT/MapServer/103",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Point representation of closed Environmental Repair Program (ERP) and Leaking Underground Storage Tank (LUST) locations in Wisconsin.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.007051,
+                47.022012
+              ],
+              [
+                -86.822057,
+                47.022012
+              ],
+              [
+                -86.822057,
+                42.460601
+              ],
+              [
+                -93.007051,
+                42.460601
+              ],
+              [
+                -93.007051,
+                47.022012
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<p style='font-size:12pt;'>Includes Environmental Repair Program (ERP) and Leaking Underground Storage Tank (LUST) activity types where contamination affected soil, groundwater or other media, but the department determined, based on information at the time, that no further remedial action is required. An \"activity\" is a contamination incident, not a property. An activity may be smaller than a property or may include more than one property.</p><p style='font-size:12pt;'>Does&nbsp;<strong>not</strong>&nbsp;include:</p><ul><li>Spills (immediate cleanup);</li><li>Activities where DNR required no action;</li><li>Activities not yet mapped;</li><li>Activities never reported to DNR;</li><li><span style='color:inherit; font-family:var(--fontsBaseFamily),Avenir Next;'>Voluntary Party Liability Exemption (VPLE) activities; or</span></li><li><span style='color:inherit; font-family:var(--fontsBaseFamily),Avenir Next;'>Locations affected by contamination from another property</span></li></ul><p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>To view&nbsp;more contamination data layers, see the RR Sites Map at </span></span><a style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; line-height:1.5; text-align:start; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' href='https://dnr.wi.gov/topic/Brownfields/rrsm.html' rel='nofollow ugc noopener noreferrer'>https://dnr.wi.gov/topic/Brownfields/rrsm.html</a><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>, or for specific site information search BRRTS on the Web at </span></span><a style='background-color:rgb(255, 255, 255); border:0px solid currentcolor; box-sizing:border-box; color:rgb(0, 97, 155); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; line-height:1.5; text-align:start; text-decoration:none; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' href='https://apps.dnr.wi.gov/rrbotw/botw-search' rel='nofollow ugc noopener noreferrer'>https://apps.dnr.wi.gov/rrbotw/botw-search</a></p>",
+        "licenseInfo": "<p>More information on conditions for using Wisconsin DNR’s data and services can be found at <a target='_blank' href='https://dnr.wisconsin.gov/legal' rel='nofollow ugc noopener noreferrer'>DNR Legal Notices</a>.</p>",
+        "title": "Remediation and Redevelopment - Closed Activity Points",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1756305570000,
+        "avgRating": 0,
+        "id": "08909edcbf0948529b0a27749753d52b",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Environment/Remediation and Redevelopment"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "Wisconsin Department of Natural Resources, Environmental Management Division, Bureau of Remediation and Redevelopment",
+        "largeThumbnail": null,
+        "lastViewed": 1756303200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1533308579000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dnrmaps.wi.gov/arcgis/rest/services/RR_Sites_Map/RR_PUBLIC_MAPSERVICES_CORE_EXT/MapServer/103",
+        "tags": [
+          "remediation",
+          "contamination",
+          "redevelopment",
+          "closed site",
+          "brownfield",
+          "soil",
+          "groundwater",
+          "cleanup",
+          "Wisconsin",
+          "DNR",
+          "Department of Natural Resources",
+          "natural resources",
+          "environmental",
+          "WDNR",
+          "WI DNR",
+          "RR"
+        ],
+        "numViews": 8959,
+        "numComments": 0,
+        "size": 93,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "boundary": "item"
+        },
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/08909edcbf0948529b0a27749753d52b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    268
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 24,
+  "next_offset": 10,
+  "response_sha256": "ae7810245cae4d46a11170133f3da18e984144decf634db9cc8bededb307ce71",
+  "search_complete": false
+}

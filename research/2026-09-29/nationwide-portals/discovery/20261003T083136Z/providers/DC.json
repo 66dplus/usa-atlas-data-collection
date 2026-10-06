@@ -1,0 +1,315 @@
+{
+  "jurisdiction_code": "DC",
+  "catalog_id": "dc-primary",
+  "catalog_url": "https://opendata.dc.gov/",
+  "started_at": "2026-10-03T08:31:38.904140+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://opendata.dc.gov/api/search/v1/collections/all/items",
+  "domain": "opendata.dc.gov",
+  "validation_receipt": 11,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 13,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": {
+                  "any": [
+                    "6dc06587ef9a4569b2574e92665e515d",
+                    "489e982ea160416bb62a8247175ad9c0",
+                    "6eba62e38f094906974b0b87956b7a31",
+                    "ee2a1b12c6b24c2ea0f39ec5023508ba",
+                    "4c106214b9ba46aeb028a16134fa71cc",
+                    "e6c5e47b278342b9baf21632ea2f3b34",
+                    "0204ece8c0344982a8923e43e93bbd13",
+                    "a7749d01300f4f87a8769d26a5df2181",
+                    "6f754c5a004542bb9f1f8830258aa794",
+                    "586b466e82834506b1754a3b94bc5d3a",
+                    "685c2780f30644e3992194a454c2db50",
+                    "95b53f8cb48c418d8e8a2f5827c5944b",
+                    "7e97b9f459934994a37300b2be196ba2",
+                    "0fd6c262970c4442a66e57e3deb270d2",
+                    "3f8def9a54d948d4bee9a72c62a14d42",
+                    "f5eb4bac6ed544d5be1dd7e5e69652d1",
+                    "38f272d281d348ddad8dbbcfed515e05",
+                    "821474b35eb74c1b899f3b0f75e42ab8",
+                    "f397df808a7d48b59c7417f370413e6b",
+                    "d37febcec5094c719eb244d59d3ae08d",
+                    "df93506fd2b2441e8773845f213d4086",
+                    "d89dd1d76bc647089128129b2507b734",
+                    "7d187f81f7594617b8d496aefedc0478",
+                    "7d332794e2e54004995c5c50aaad6059",
+                    "499467eb06a546968283905708e7c05e",
+                    "d9592387328c447c89fa07e8f4d5f2ff",
+                    "9f70eb9a4f2048b3920a476427467eea",
+                    "1202470439f14a199d8029a92fdb5dad",
+                    "fd8b3227eee74d509d93fa127b255fac",
+                    "49b26f3e86e74654a632be7adf9eca3d",
+                    "5510cf34d80d4d0c976bdfbcc5a9b370",
+                    "b7d32c689e044f0997a1fbd5c9462249",
+                    "08cada661e7c41748df5a7042d3375d7",
+                    "e60a958b3e8340b7ac3549ced5ec5157",
+                    "f3de8399eb0f493b84c8bbe076079ead",
+                    "95c59d84749742b7ad1e135c6e685009",
+                    "3cfdba546f1e40b0b430127c7cefd384",
+                    "e5eae38d52fa46248918d57a91b511a0",
+                    "42f1e95acd8845da8c7426a414aefb33",
+                    "5ff18aacf97f4008a277fa6c81cdb5df",
+                    "73fa9cc1ce8e488b8c822c1c017887d6",
+                    "ec224dd0c2294755a0e232d784eb1172",
+                    "62be2f179f674941b393f1c9bc8ca73e",
+                    "1886eed80b81426bb87336170ebfa2b1",
+                    "0ef7f4b207e245b28b235a896be1c0f3",
+                    "e4ea8f08ec834a53bd067676fc09274a",
+                    "9f22ca286c814193bc0f87106df548fb",
+                    "72c19e0ed89641ac83045a4597a6c9dc",
+                    "35d3981a82874e01b1c1df0aef7227c8",
+                    "d3ad991e7c9447bf81c3ef4fac5f6696",
+                    "696e1f4cb4f4464fa3ae72370f1d1eeb",
+                    "3d738aca3d274f6c8748256738e83f14",
+                    "28bf1aaf126b4ed2ba6f220224374249"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "6dc06587ef9a4569b2574e92665e515d",
+                  "489e982ea160416bb62a8247175ad9c0",
+                  "6eba62e38f094906974b0b87956b7a31",
+                  "ee2a1b12c6b24c2ea0f39ec5023508ba",
+                  "4c106214b9ba46aeb028a16134fa71cc",
+                  "e24f6a47d94c493d99d6d99a8d77b3db",
+                  "e6c5e47b278342b9baf21632ea2f3b34",
+                  "0204ece8c0344982a8923e43e93bbd13",
+                  "a7749d01300f4f87a8769d26a5df2181",
+                  "6f754c5a004542bb9f1f8830258aa794",
+                  "586b466e82834506b1754a3b94bc5d3a",
+                  "685c2780f30644e3992194a454c2db50",
+                  "95b53f8cb48c418d8e8a2f5827c5944b",
+                  "7e97b9f459934994a37300b2be196ba2",
+                  "6664e0b92948483ab633b3080d466122",
+                  "0fd6c262970c4442a66e57e3deb270d2",
+                  "d03638459011457f9a7152011ad0ff82",
+                  "3f8def9a54d948d4bee9a72c62a14d42",
+                  "f5eb4bac6ed544d5be1dd7e5e69652d1",
+                  "38f272d281d348ddad8dbbcfed515e05",
+                  "821474b35eb74c1b899f3b0f75e42ab8",
+                  "f397df808a7d48b59c7417f370413e6b",
+                  "d37febcec5094c719eb244d59d3ae08d",
+                  "df93506fd2b2441e8773845f213d4086",
+                  "d89dd1d76bc647089128129b2507b734",
+                  "7d187f81f7594617b8d496aefedc0478",
+                  "7d332794e2e54004995c5c50aaad6059",
+                  "499467eb06a546968283905708e7c05e",
+                  "d9592387328c447c89fa07e8f4d5f2ff",
+                  "9f70eb9a4f2048b3920a476427467eea",
+                  "1202470439f14a199d8029a92fdb5dad",
+                  "fd8b3227eee74d509d93fa127b255fac",
+                  "49b26f3e86e74654a632be7adf9eca3d",
+                  "5510cf34d80d4d0c976bdfbcc5a9b370",
+                  "b7d32c689e044f0997a1fbd5c9462249",
+                  "08cada661e7c41748df5a7042d3375d7",
+                  "e60a958b3e8340b7ac3549ced5ec5157",
+                  "f3de8399eb0f493b84c8bbe076079ead",
+                  "95c59d84749742b7ad1e135c6e685009",
+                  "3cfdba546f1e40b0b430127c7cefd384",
+                  "e5eae38d52fa46248918d57a91b511a0",
+                  "42f1e95acd8845da8c7426a414aefb33",
+                  "5ff18aacf97f4008a277fa6c81cdb5df",
+                  "73fa9cc1ce8e488b8c822c1c017887d6",
+                  "ec224dd0c2294755a0e232d784eb1172",
+                  "62be2f179f674941b393f1c9bc8ca73e",
+                  "1886eed80b81426bb87336170ebfa2b1",
+                  "0ef7f4b207e245b28b235a896be1c0f3",
+                  "e4ea8f08ec834a53bd067676fc09274a",
+                  "9f22ca286c814193bc0f87106df548fb",
+                  "72c19e0ed89641ac83045a4597a6c9dc",
+                  "35d3981a82874e01b1c1df0aef7227c8",
+                  "d3ad991e7c9447bf81c3ef4fac5f6696",
+                  "696e1f4cb4f4464fa3ae72370f1d1eeb",
+                  "3d738aca3d274f6c8748256738e83f14"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Initiatives",
+        "key": "site",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Hub Site Application",
+                      "Site Application"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Data",
+        "key": "dataset",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Documents",
+        "key": "document",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

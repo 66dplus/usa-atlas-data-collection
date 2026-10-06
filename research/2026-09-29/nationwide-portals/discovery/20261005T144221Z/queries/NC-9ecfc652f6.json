@@ -1,0 +1,331 @@
+{
+  "jurisdiction_code": "NC",
+  "query": "immigration",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T14:43:33.058310+00:00",
+  "candidates": [
+    {
+      "id": "99618bd65ab04dd2b0a6b0cd896e7113",
+      "title": "Law Enforcement Locations",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Emergency_Law_Enforcement/MapServer/1",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nHomeland Security\n\nUse Cases: Use cases describe how the data may be used and help to define and clarify requirements.\n\n1. An assessment of whether or not the total police capability in a given area is adequate.\n\n2. A list of resources to draw upon in surrounding areas when local resources have temporarily been overwhelmed by a disaster - route analysis can help to determine those entities who are able to respond the quickest.\n\n3. A resource for emergency management planning purposes.\n\n4. A resource for catastrophe response to aid in the retrieval of equipment by outside responders in order to deal with the disaster.\n\n5. A resource for situational awareness planning and response for federal government events.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.1801,
+                36.5396
+              ],
+              [
+                -75.4791,
+                36.5396
+              ],
+              [
+                -75.4791,
+                33.7569
+              ],
+              [
+                -84.1801,
+                33.7569
+              ],
+              [
+                -84.1801,
+                36.5396
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>Law Enforcement Locations    Any location where sworn officers of a law enforcement agency are regularly based or stationed. Law Enforcement agencies \"are publicly funded and employ at least one full-time or part-time sworn officer with general arrest powers\". This is the definition used by the US Department of Justice - Bureau of Justice Statistics (DOJ-BJS) for their Law Enforcement Management and Administrative Statistics (LEMAS) survey. Although LEMAS only includes non Federal Agencies, this dataset includes locations for federal, state, local, and special jurisdiction law enforcement agencies.    Law enforcement agencies include, but are not limited to, municipal police, county sheriffs, state police, school police, park police, railroad police, federal law enforcement agencies, departments within non law enforcement federal agencies charged with law enforcement (e.g., US Postal Inspectors), and cross jurisdictional authorities (e.g., Port Authority Police).    In general, the requirements and training for becoming a sworn law enforcement officer are set by each state. Law Enforcement agencies themselves are not chartered or licensed by their state. County, city, and other government authorities within each state are usually empowered by their state law to setup or disband Law Enforcement agencies. Generally, sworn Law Enforcement officers must report which agency they are employed by to the state.    Although TGS's intention is to only include locations associated with agencies that meet the above definition, TGS has discovered a few locations that are associated with agencies that are not publicly funded. TGS deleted these locations as we became aware of them, but some may still exist in this dataset.    Personal homes, administrative offices, and temporary locations are intended to be excluded from this dataset; however, some personal homes of constables are included due to the fact that many constables work out of their homes.    TGS has made a concerted effort to include all local police; county sheriffs; state police and/or highway patrol; Bureau of Indian Affairs; Bureau of Land Management; Bureau of Reclamation; U.S. Park Police; Bureau of Alcohol, Tobacco, Firearms, and Explosives; U.S. Marshals Service; U.S. Fish and Wildlife Service; National Park Service; U.S. Immigration and Customs Enforcement; and U.S. Customs and Border Protection.    This dataset is comprised completely of license free data.    FBI entities are intended to be excluded from this dataset, but a few may be included.    The Law Enforcement dataset and the Correctional Institutions dataset were merged into one working file. TGS processed as one file and then separated for delivery purposes.    With the merge of the Law Enforcement and the Correctional Institutions datasets, the NAICS Codes &amp; Descriptions were assigned based on the facility's main function which was determined by the entity's name, facility type, web research, and state supplied data. In instances where the entity's primary function is both law enforcement and corrections, the NAICS Codes and Descriptions are assigned based on the dataset in which the record is located (i.e., a facility that serves as both a Sheriff's Office and as a jail is designated as [NAICSDESCR]=\"SHERIFFS' OFFICES (EXCEPT COURT FUNCTIONS ONLY)\" in the Law Enforcement layer and as [NAICSDESCR]=\"JAILS (EXCEPT PRIVATE OPERATION OF)\" in the Correctional Institutions layer).    Records with \"-DOD\" appended to the end of the [NAME] value are located on a military base, as defined by the Defense Installation Spatial Data Infrastructure (DISDI) military installations and military range boundaries.    \"#\" and \"*\" characters were automatically removed from standard fields that TGS populated. Double spaces were replaced by single spaces in these same fields.    Text fields in this dataset have been set to all upper case to facilitate consistent database engine search results.    All diacritics (e.g., the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics.    The currentness of this dataset is indicated by the [CONTDATE] field. Based on the values in this field, the oldest record dates from 08/10/2006 and the newest record dates from 10/22/2009</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "Law Enforcement Locations",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499870000,
+        "avgRating": 0,
+        "id": "99618bd65ab04dd2b0a6b0cd896e7113",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1767981600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484249650000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Emergency_Law_Enforcement/MapServer/1",
+        "tags": [
+          "Airport police",
+          "Border patrols.",
+          "Campus police",
+          "Community policing.",
+          "Constables",
+          "Correctional institutions.",
+          "Criminal investigation.",
+          "Drug enforcement agents",
+          "Fire marshals",
+          "Indian reservation police",
+          "Jails",
+          "Juvenile detention",
+          "Law enforcement.",
+          "Military police",
+          "Peace officers",
+          "Police stations",
+          "Police",
+          "State.",
+          "Police.",
+          "Prisons.",
+          "Railroad police",
+          "School police",
+          "Secret service.",
+          "Sheriffs",
+          "Traffic police.",
+          "Transit police",
+          "U.S. Customs and Border Protection.",
+          "U.S. Fish and Wildlife Service.",
+          "U.S. Immigration and Customs Enforcement.",
+          "United States marshals.",
+          "United States. Bureau of Alcohol",
+          "Tobacco",
+          "Firearms",
+          "and Explosives",
+          "United States. Bureau of Indian Affairs.",
+          "United States. Bureau of Reclamation.",
+          "United States. National Park Service.",
+          "Work camps",
+          "structure",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap"
+        ],
+        "numViews": 19908,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "TechniGraphics, Inc.",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/99618bd65ab04dd2b0a6b0cd896e7113"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9228018218564e70b45c385b34ca36d8",
+      "title": "Correctional Institutions",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Emergency_Law_Enforcement/MapServer/0",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nHomeland Security\n\nUse Cases: Use cases describe how the data may be used and help to define and clarify requirements.\n\n1. A threat to cause the mass release of prisoners by an outside terrorist group has been identified. Steps need to be taken to provide extra security at the targeted prisons.\n\n2. Massive civil unrest has resulted in a large number of arrests. Appropriate space is needed outside of the immediate area to house the arrested individuals.\n\n3. Massive civil unrest has resulted in a large number of arrests. A \"holding camp\" has been established to hold those arrested. Trained security guards are needed to staff the holding camp.\n\n4. A disaster has caused the need for an emergency labor force (e.g., sandbagging during a flood) and prisoners may fill that need.\n\n5. Inmates may need to be evacuated, or appropriate steps may need to be taken at a prison to protect the inmates and to ensure that a disaster does not present an opportunity for escape.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.1164,
+                36.525
+              ],
+              [
+                -75.6446,
+                36.525
+              ],
+              [
+                -75.6446,
+                33.9469
+              ],
+              [
+                -84.1164,
+                33.9469
+              ],
+              [
+                -84.1164,
+                36.525
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>Jails and Prisons (Correctional Institutions).    The Jails and Prisons sub-layer is part of the Emergency Law Enforcement Sector and the Critical Infrastructure Category. A Jail or Prison consists of any facility or location where individuals are regularly and lawfully detained against their will. This includes Federal and State prisons, local jails, and juvenile detention facilities, as well as law enforcement temporary holding facilities. Work camps, including camps operated seasonally, are included if they otherwise meet the definition. A Federal Prison is a facility operated by the Federal Bureau of Prisons for the incarceration of individuals. A State Prison is a facility operated by a state, commonwealth, or territory of the US for the incarceration of individuals for a term usually longer than 1 year. A Juvenile Detention Facility is a facility for the incarceration of those who have not yet reached the age of majority (usually 18 years). A Local Jail is a locally administered facility that holds inmates beyond arraignment (usually 72 hours) and is staffed by municipal or county employees. A temporary holding facility, sometimes referred to as a \"police lock up\" or \"drunk tank\", is a facility used to detain people prior to arraignment. Locations that are administrative offices only are excluded from the dataset. This definition of Jails is consistent with that used by the Department of Justice (DOJ) in their \"National Jail Census\", with the exception of \"temporary holding facilities\", which the DOJ excludes.    Locations which function primarily as law enforcement offices are included in this dataset if they have holding cells.    If the facility is enclosed with a fence, wall, or structure with a gate around the buildings only, the locations were depicted as \"on entity\" at the center of the facility. If the facility's buildings are not enclosed, the locations were depicted as \"on entity\" on the main building or \"block face\" on the correct street segment.    Personal homes, administrative offices, and temporary locations are intended to be excluded from this dataset; however, some personal homes of constables are included due to the fact that many constables work out of their homes.    TGS has made a concerted effort to include all correctional institutions.    This dataset includes non license restricted data from the following federal agencies: Bureau of Indian Affairs; Bureau of Reclamation; U.S. Park Police; Federal Bureau of Prisons; Bureau of Alcohol, Tobacco, Firearms and Explosives; U.S. Marshals Service; U.S. Fish and Wildlife Service; National Park Service; U.S. Immigration and Customs Enforcement; and U.S. Customs and Border Protection.    This dataset is comprised completely of license free data.    The Law Enforcement dataset and the Correctional Institutions dataset were merged into one working file. TGS processed as one file and then separated for delivery purposes.    With the merge of the Law Enforcement and the Correctional Institutions datasets, NAICS Codes &amp; Descriptions were assigned based on the facility's main function which was determined by the entity's name, facility type, web research, and state supplied data. In instances where the entity's primary function is both law enforcement and corrections, the NAICS Codes and Descriptions are assigned based on the dataset in which the record is located (i.e., a facility that serves as both a Sheriff's Office and as a jail is designated as [NAICSDESCR]=\"SHERIFFS' OFFICES (EXCEPT COURT FUNCTIONS ONLY)\" in the Law Enforcement layer and as [NAICSDESCR]=\"JAILS (EXCEPT PRIVATE OPERATION OF)\" in the Correctional Institutions layer).    Records with \"-DOD\" appended to the end of the [NAME] value are located on a military base, as defined by the Defense Installation Spatial Data Infrastructure (DISDI) military installations and military range boundaries.    \"#\" and \"*\" characters were automatically removed from standard fields that TGS populated. Double spaces were replaced by single spaces in these same fields.    Text fields in this dataset have been set to all upper case to facilitate consistent database engine search results.    All diacritics (e.g., the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics.    The currentness of this dataset is indicated by the [CONTDATE] field. Based on the values in this field, the oldest record dates from 12/07/2004 and the newest record dates from 10/22/2009</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "ownerId": "61e2c58376587257c5006c5909d21e1a",
+        "title": "Correctional Institutions",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499870000,
+        "avgRating": 0,
+        "id": "9228018218564e70b45c385b34ca36d8",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1789002000000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484248865000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Emergency_Law_Enforcement/MapServer/0",
+        "tags": [
+          "Airport police",
+          "Border patrols.",
+          "Campus police",
+          "Community policing.",
+          "Constables",
+          "Correctional institutions.",
+          "Criminal investigation.",
+          "Drug enforcement agents",
+          "Fire marshals",
+          "Indian reservation police",
+          "Jails",
+          "Juvenile detention",
+          "Law enforcement.",
+          "Military police",
+          "Peace officers",
+          "Police stations",
+          "Police",
+          "State.",
+          "Police.",
+          "Prisons.",
+          "Railroad police",
+          "School police",
+          "Secret service.",
+          "Sheriffs",
+          "Traffic police.",
+          "Transit police",
+          "U.S. Customs and Border Protection.",
+          "U.S. Fish and Wildlife Service.",
+          "U.S. Immigration and Customs Enforcement.",
+          "United States marshals.",
+          "United States. Bureau of Alcohol",
+          "Tobacco",
+          "Firearms",
+          "and Explosives",
+          "United States. Bureau of Indian Affairs.",
+          "United States. Bureau of Reclamation.",
+          "United States. National Park Service.",
+          "Work camps",
+          "structure",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap"
+        ],
+        "numViews": 11046,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "TechniGraphics, Inc.",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/9228018218564e70b45c385b34ca36d8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    256
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "d1c5322151a4654ee068af2610725c888fcd5c036476ae4f0a476a06ef42bef1",
+  "search_complete": true
+}

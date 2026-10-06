@@ -1,0 +1,700 @@
+{
+  "jurisdiction_code": "CA",
+  "query": "diabetes",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-03T14:33:23.771357+00:00",
+  "candidates": [
+    {
+      "id": "0077baf3-9365-4228-b6e0-b37b3c1220ac",
+      "title": "Adults with Diabetes Per 100 (LGHC Indicator) (ARCHIVED)",
+      "url": "https://data.ca.gov/dataset/adults-with-diabetes-per-100-lghc-indicator-archived",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f9feb1b8-16de-41fc-a983-084bcf80db11/resource/49f4e583-da0d-4a2e-819a-4a0ebcc130f1/download/adults-with-diabetes-per-100-lghc-indicator-23.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://letsgethealthy.ca.gov/goals/living-well/decreasing-diabetes-prevalence/#_data-snapshot",
+          "format": "Chart"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f9feb1b8-16de-41fc-a983-084bcf80db11/resource/efdd6138-c50f-4644-94e5-737237f47b71/download/adults-with-diabetes-per-100-lghc-indicator-23-6w5nuhzh.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This is a source dataset for a Let's Get Healthy California indicator at \"https://letsgethealthy.ca.gov/. This table displays the prevalence of diabetes in California. It contains data for California only. The data are from the California Behavioral Risk Factor Surveillance Survey (BRFSS). The California BRFSS is an annual cross-sectional health-related telephone survey that collects data about California residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services.  The BRFSS is conducted by Public Health Survey Research Program of California State University, Sacramento under contract from CDPH. This prevalence rate does not include pre-diabetes, or gestational diabetes. This is based on the question: \"Has a doctor, or nurse or other health professional ever told you that you have diabetes?\" The sample size for 2014 was 8,832. NOTE: Denominator data and weighting was taken from the California Department of Finance, not U.S. Census. Values may therefore differ from what has been published in the national BRFSS data tables by the Centers for Disease Control and Prevention (CDC) or other federal agencies."
+    },
+    {
+      "id": "f5896734-5bef-48fe-a3cf-7c8f67e02fd1",
+      "title": "Rates of Preventable Hospitalizations for Selected Medical Conditions by County (LGHC Indicator)",
+      "url": "https://data.ca.gov/dataset/rates-of-preventable-hospitalizations-for-selected-medical-conditions-by-county-lghc-indicator",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/7c7aed93-3643-43b8-92fc-324bf8fc13f2/download/ca-hcai-preventablehospitalizations-county_2005-2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://letsgethealthy.ca.gov/goals/redesigning-the-health-system/reducing-preventable-hospitalizations/",
+          "format": "Chart"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/1f699c45-f52f-408e-a8f2-87e537aea82d/download/data-dictionary-preventable-hospitalizations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/a7274675-df99-4b60-b8d2-4150a378ffdf/download/pqi_readme_v2025_2024_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/3636a286-240e-4bd0-9876-ab02e6841069/download/pqi_summary_v2025_2024-masked_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/afc16d34-b0c5-4722-b796-2a21b6783e71/download/pqi_readme_v2024_2023-ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/f014233f-723f-45d5-a46a-caa9ded87097/download/pqi_summary_v2024_2023-masked-ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/29fd31e9-a90b-4d6a-b9c3-bb788e3e4299/download/pqi_readme_v2023_2016-2022.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/0413332a-5689-40d9-a5ca-d76b67dbdf5a/download/pqi_summary_v2023_2022.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/b8f83487-abe0-4714-a33f-3b7ad3b6071a/download/pqi_summary_v2023_2021.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/ac3518d4-8842-447d-b557-151ffa4104f1/download/pqi_summary_v2023_2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/1f5dfc3e-ab44-482b-98fa-4bcdeb5ea169/download/pqi_summary_v2023_2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/4c4d3ce9-2ea4-4496-86a1-349e2ec8402e/download/pqi_summary_v2023_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/48a52889-ace4-46c6-8cda-0d7518bf586a/download/pqi_summary_v2023_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/690bbb4c-4c26-4fb7-8ee4-648a0353e5d8/download/pqi_summary_v2023_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/7aee1433-ae66-4d76-8394-ffff52dc12b0/download/pqi_readme_v2022_2016-2021.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/82b2d7ab-fd95-40fd-84c7-d4d0ed042096/download/pqi_summary_v2022_2021.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/0e2d441d-8faf-437f-b51d-48b9e67bff37/download/pqi_summary_v2022_2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/c2f1a876-6ddf-4667-86ca-92f2c63ebae2/download/pqi_summary_v2022_2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/f769d12a-2ebc-48b2-a78e-823cacbabca6/download/pqi_summary_v2022_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/32f58cdd-b165-43cf-947d-ab2dec84d024/download/pqi_summary_v2022_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/10a24f52-d9d5-4abb-ad82-7991814313b6/download/pqi_summary_v2022_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/a04f6f92-0e0a-4ae1-b92b-aaafcffffa1e/download/pqi_readme_v2021_2016-2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/7d781af2-0235-4477-b206-07ee5d3ab025/download/pqi_summary_v2021_2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/b78900e4-5f4d-4872-a2da-5deab3eb76fe/download/pqi_summary_v2021_2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/5f6edf95-e4c2-41a2-af47-2505a490b235/download/pqi_summary_v2021_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/6a6ade7f-7083-42b8-8df6-c559233518e8/download/pqi_summary_v2021_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/d1a95621-8c1e-4b4b-8cb1-151a0dd3e88a/download/pqi_summary_v2021_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/c86adba6-1ef4-48e3-9027-d1b751da9cd6/download/pqi_readme_v2020_2016-2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/c6175fd8-a391-421e-89cf-aac5d0860699/download/pqi_summary_v2020_2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/066dadf4-e324-4d5b-96ea-8865fe4a3b6c/download/pqi_summary_v2020_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/5c32a79d-a0c0-449c-a77b-73b30a5bf0fc/download/pqi_summary_v2020_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/bf05a062-8213-4df8-9bf2-b1f44d58a473/download/pqi_summary_v2020_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/bf49c995-b540-4b47-9631-b9b9e444ceaa/download/pqi_technotes_v2019_2016-2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/fb0158f2-547e-4c37-b5c6-7255c42a7307/download/pqi_summary_v2019_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/41e48c94-773c-4691-9957-df280368f50d/download/pqi_summary_v2019_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/4843b79d-9f99-46a8-8e40-6dba1796ce9f/download/pqi_summary_v2019_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/a40367aa-809b-4a4f-9116-cc4eca5ab9f9/download/pqitechnotesv502005-2015q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/74b468df-7d56-43ae-b42f-40037fcc6be2/download/pqisummaryv502015-q1-q3-masked.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/5d2057e7-45df-4aa4-a578-2ed90c18c260/download/pqisummaryv502005-2014-masked.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f2b33545-db0a-4a53-a611-41de532e7c53/resource/1b11a9db-c757-4895-9447-73170db40b93/download/rates-of-preventable-hospitalizations-for-selected-medical-conditions-by-county-sbsf5sfn.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "The dataset contains hospitalization counts and rates, statewide and by county, for 10 ambulatory care sensitive conditions plus 4 composite measures.  Hospitalizations due to these medical conditions are potentially preventable through access to high-quality outpatient care.  The conditions include: diabetes short-term complications; diabetes long-term complications; chronic obstructive pulmonary disease (COPD) or asthma in older adults (age 40 and over); hypertension; heart failure; community-acquired pneumonia; urinary tract infection; uncontrolled diabetes; asthma in younger adults (age 18-39); and lower-extremity amputation among patients with diabetes.  The composite measures include overall, acute conditions, chronic conditions, and diabetes (new, 2016).  The data provides a good starting point for assessing quality of health services in the community.  The data does not measure hospital quality.  Note: In 2015, HCAI (formerly OSHPD) only released the first three quarters of data due to a change in the reporting of diagnoses from ICD-9-CM to ICD-10-CM codes, effective October 1, 2015.  Due to the significant differences resulting from the code change, the ICD-9-CM data is distinguished from the ICD-10-CM data in the data file beginning in 2016."
+    },
+    {
+      "id": "81bd263b-67b4-4585-bbc6-19df8187e206",
+      "title": "Rates of Preventable Hospitalizations (Age<18) for Selected Medical Conditions by County",
+      "url": "https://data.ca.gov/dataset/rates-of-preventable-hospitalizations-age18-for-selected-medical-conditions-by-county",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/c441b087-ed26-4652-bde1-174aa0fd5760/download/ca-oshpd-preventablehospitalizationsunder18pdi-county-final_2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/a0deefc6-3bae-43f7-ac74-1fe9ae861ba1/download/data-dictionary-pediatric-quality-indicators_2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/5dbd2db6-2ee5-466e-9bd7-ea8a2efda711/download/pdi_readme_v2025_2024_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/7b4faaea-8f0e-42a2-a666-cd6db8f34315/download/pdi_summary_v2025_2024-masked_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/0b97eab5-9f9a-49ab-9723-d7fd3c5c719e/download/pdi_readme_v2024_2023-ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/a64aa9ad-afbf-488d-96f9-17df21d8a37e/download/pdi_summary_v2024_2023-masked-ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/ee17890c-f7bf-4313-b1a5-ff18a2cba41d/download/pdi_readme_v2023_2016-2022.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/13cd8ecb-1eb2-4f64-b1a4-947bcdc8fc58/download/pdi_summary_v2023_2022.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/37725605-ec89-4d45-bbc2-8b2c37967f3c/download/pdi_summary_v2023_2021.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/71f36888-a9ea-455c-ae66-3bf928b68ac4/download/pdi_summary_v2023_2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/2fe8d7f8-e34c-47d1-8726-082084066cb6/download/pdi_summary_v2023_2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/b98eae0f-4be6-4ac7-bf98-c0b15d1027d2/download/pdi_summary_v2023_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/cde2c395-49f2-4d8e-940e-cfbe4b864b8c/download/pdi_summary_v2023_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/469b6126-e4fd-47c8-8e80-f7b847530dde/download/pdi_summary_v2023_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/052afb7f-aab8-4f1e-bef1-b5d07060c19c/download/pdi_readme_v2022_2016-2021.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/3d2cfdd9-550a-4d0c-9256-53a6a56c0dfe/download/pdi_summary_v2022_2021.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/eeb7ce5e-449e-46fd-b1f3-f9108f45e091/download/pdi_summary_v2022_2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/6704d10f-4c73-41bc-a201-f2494bd957e7/download/pdi_summary_v2022_2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/fe9a5380-ffa2-4203-bd63-45df3f76b6a6/download/pdi_summary_v2022_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/0c35d9a6-dfa0-403e-ad0c-4b39ecf11dcf/download/pdi_summary_v2022_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/059bc87c-1409-4d26-a4cc-8b0cb74d346b/download/pdi_summary_v2022_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/5157af83-e5c1-485c-9ae3-b2f0e0b08686/download/pdi_readme_v2021_2016-2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/fa28cf7e-680c-45f9-ba2f-252119a87e59/download/pdi_summary_v2021_2020.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/b17bb331-8317-4e6c-ae86-7000b828cfce/download/pdi_summary_v2021_2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/59a0c7f2-077a-4d46-b48e-56941bf25e44/download/pdi_summary_v2021_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/aa7946d7-166b-4666-a84d-d2eaf0237cd5/download/pdi_summary_v2021_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/c0f6c2ef-834c-46b6-86cd-710a6ab79811/download/pdi_summary_v2021_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/2bcc4bd4-7ac3-42c3-9a9c-57322b4e9e2a/download/pdi_readme_v2020_2016-2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/21371afc-e4d4-4b0d-9419-308501e1e892/download/pdi_summary_v2020_2019.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/a2cf913c-e153-4e82-ada2-09909cf280ef/download/pdi_summary_v2020_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/641c54b5-f9ce-4780-ac5a-0e7ef8474e31/download/pdi_summary_v2020_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/0b673807-f24d-41f3-81fb-7ecc725eb45f/download/pdi_summary_v2020_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/65cf6f0b-4cf2-4936-8dfc-727cbe01d421/download/pdi_technotes_v2019_2016-2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/5c365496-2bbf-4dab-b439-dbc35e945f7b/download/pdi_summary_v2019_2018.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/3771f56e-381c-401f-a436-755164cbc0a4/download/pdi_summary_v2019_2017.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/5254d8a2-3c7c-428f-806b-15b61b284b0c/download/pdi_summary_v2019_2016.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/826404ca-a91c-479d-a63a-e4e570f63a96/download/pditechnotesv5022005-2015q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/10d0f5d8-8cfd-4d04-9514-61b653dcd58f/download/pdisummaryv5022015-q1-q3-masked.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/4f656227-2c2c-45e8-87e8-5ba8940a330b/download/pdisummaryv5022005-2014-masked.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f36f29a0-3ad3-4b56-b954-c82766ed5a4a/resource/0f98de5f-e5f9-416d-b432-bd29216c4e31/download/rates-of-preventable-hospitalizations-age-18-for-selected-medical-conditions-by-county-9_p5koy2.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "The dataset currently contains hospitalization counts and rates, statewide and by county, for 4 conditions plus 3 composite measures.  Hospitalizations for these conditions are potentially preventable through access to high-quality outpatient care.  The conditions include: asthma (age 2-17), diabetes short-term complications (age 6-17), gastroenteritis (age 3 months-17 years), perforated appendix (retired, 2016), urinary tract infections (age 3 months-17 years), and low birth weight (<2500 grams; retired, 2016).  The composite measures (age 6-17) include overall, acute conditions, and chronic conditions.  The data provides a good starting point for assessing quality of health services in the community.  The data does not measure hospital quality.  Note: In 2015, HCAI only released the first three quarters of data due to a change in the reporting of diagnoses from ICD-9-CM to ICD-10-CM codes, effective October 1, 2015.  Due to the significant differences resulting from the code change, the ICD-9-CM data is distinguished from the ICD-10-CM data in the data file beginning in 2016."
+    },
+    {
+      "id": "9b285889-546b-4304-9212-9dc7243f6779",
+      "title": "Physician Supply and Preventable Hospitalizations by County - Anticipated Retirement of Practicing Physicians",
+      "url": "https://data.ca.gov/dataset/physician-supply-and-preventable-hospitalizations-by-county-anticipated-retirement-of-practicin",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c0d55328-c409-4fbb-ac34-7bbb2e322c16/resource/ca487abe-a1bf-4dc2-9ce7-898a4d0d2738/download/pqiphysicians.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c0d55328-c409-4fbb-ac34-7bbb2e322c16/resource/00483875-fba9-4189-9109-aee0393a4a6e/download/physicianretirement.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c0d55328-c409-4fbb-ac34-7bbb2e322c16/resource/a65ec68a-f459-4775-bfc1-4c46e12e1c7a/download/data-dictionary-pqi-physicians.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c0d55328-c409-4fbb-ac34-7bbb2e322c16/resource/f974c666-af82-40ff-a628-6d61b69c1fda/download/data-dictionary-physicianretirement.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c0d55328-c409-4fbb-ac34-7bbb2e322c16/resource/e37375d9-3d35-41ec-9e8d-1de9bcd4f883/download/pqi-physician-specialities-list.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c0d55328-c409-4fbb-ac34-7bbb2e322c16/resource/7adb1fd8-e5c8-4ecf-a6e5-10df78987eb0/download/physician-supply-anticipated-retirement-of-practicing-physicians-94chap5n.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "These datasets contain hospitalization rates for seven prevention quality indicators (PQIs) and supply rates for physicians who treat these conditions per county. The conditions include: chronic obstructive pulmonary disease (COPD); hypertension; heart failure; community-acquired pneumonia; urinary tract infection (UTI); asthma in younger adults; and diabetes. Hospitalizations due to these medical conditions are potentially preventable through access to high-quality outpatient care. Rates are displayed per 100,000 population. Anticipated retirement of practicing physician specialists who provide direct patient care is also shown by county. See the PQI to physician area of practice list below to see which specialists would be needed to prevent and/or treat each PQI."
+    },
+    {
+      "id": "fad57ffb-502b-47bb-8df0-6e20a635a09b",
+      "title": "Social Drivers of Health (SDoH) and Preventable Hospitalization Rates",
+      "url": "https://data.ca.gov/dataset/social-drivers-of-health-sdoh-and-preventable-hospitalization-rates",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cb0dc592-36b6-45fe-90ce-6db57eb42a0a/resource/f5afd10e-cd45-43b2-a78b-6ea43cff9f7a/download/social-drivers-of-health-sdoh-and-preventable-hospitalization-rates-_le9lu30.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cb0dc592-36b6-45fe-90ce-6db57eb42a0a/resource/754c4bd6-5647-4c94-bf2a-9872803e753c/download/sdoh_2021.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cb0dc592-36b6-45fe-90ce-6db57eb42a0a/resource/993d9f97-b7e8-4cba-af44-6dc87230af86/download/sdoh-2017-to-2021-over-time.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cb0dc592-36b6-45fe-90ce-6db57eb42a0a/resource/4e2e0945-ef21-4540-9f64-b320867b9679/download/data-dictionary-sdoh_2021.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cb0dc592-36b6-45fe-90ce-6db57eb42a0a/resource/9b0dc182-2b45-4d65-b7d1-5ab239b6ca92/download/data-dictionary-sdoh-2017-to-2021-overtime.xlsx",
+          "format": "XLSX"
+        }
+      ],
+      "description": "The first Social Drivers of Health (SDoH) dataset contains percentages of preventable hospitalizations (i.e., discharges) by Race/Ethnicity, preferred language spoken, expected payer, percent of employment, percent of home ownership, percent of park access and percent of access to basic kitchen facilities by the stated year. Preventable hospitalizations rates were created by dividing the number of patients who are 18 years and older and were admitted to a hospital for at least one of the preventable hospitalization diagnoses (see list below) by the total number of hospitalizations. List of preventable hospitalization diagnoses: diabetes with short-term complications, diabetes with long-term complications, uncontrolled diabetes without complications, diabetes with lower-extremity amputation, chronic obstructive pulmonary disease, asthma, hypertension, heart failure, angina without a cardiac procedure, dehydration, bacterial pneumonia, or urinary tract infection were counted as a preventable hospitalization.  These conditions correspond with the conditions used in the Agency for Healthcare Research and Quality’s (AHRQ), Prevention Quality Indicator - Overall Composite Measure (PQI #90). The SDoH \"overtime\" dataset contains percentages of preventable hospitalizations (i.e., discharges) by Race/Ethnicity, preferred language spoken and expected payer overtime in the stated year range."
+    },
+    {
+      "id": "df92eda2-8763-44aa-8d17-d493032367fe",
+      "title": "Prescription Drug Wholesale Acquisition Cost (WAC) Increases",
+      "url": "https://data.ca.gov/dataset/prescription-drug-wholesale-acquisition-cost-wac-increases",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/3a133d3f-da34-43ae-8171-14cdab782b1d/download/prescription-drug-wac-increase-data-dictionary.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/5c0ca772-6c65-428a-a5b7-8c1ab35dbf57/download/prescription-drug-5-year-history-wac-increase-data-dictionary.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/b4554543-fec7-46c7-a518-b7d07bd1c1f3/download/wac-increase-data-jan-aug-2026.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/dda8a083-bc81-4f6d-b02f-935a2df70328/download/wac-increase-data-jan-aug-2026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/2fe618fd-b03d-4453-aa32-de5b4a470e00/download/5-year-wac-increase-history-jan-aug-2026.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/d754c567-c3c3-4ecf-a236-8144578549dd/download/5-year-wac-increase-history-jan-aug-2026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/46b78eef-5952-4fff-84c7-1fa758990ce8/download/q1-q4-2025-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/e2c970a8-a2ab-436c-a47e-10986572df1c/download/2025-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/882bb30d-44ed-48c9-b722-beb5aedc2c1b/download/q1-q4-2024-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/225c5d83-d8cd-4aea-aa55-faca99501def/download/2024-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/aca55cd5-a1a7-49cb-a490-997df1e27480/download/q1-q4-2023-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/91dbf176-8349-4d65-a7ca-d2f3ffb8d726/download/2023-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/dbed46b3-e823-487a-8a96-c0b2381af2c9/download/q1-q4-2022-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/252a735f-e49d-4d73-9955-e79de8adabb1/download/2022-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/34c373bb-cf9a-463e-93bf-6ae4ff3afad8/download/q1-q4-2021-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/ccc65919-378c-408e-85fb-164e4975de58/download/2021-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/f3e4ba62-3df4-40dd-9876-f7aea7384c1b/download/q1-q4-2020-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/b57d3435-a56c-4f74-83b3-d54775a005a2/download/2020-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/9b8e12dc-1b3c-4c36-9ba9-adba6b921a6c/download/q1-q4-2019-prescription-drug-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/568dc2b7-c493-431a-8113-49c6bcad0457/download/2019-prescription-drug-5-year-history-data-q1-q2-q3-q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/69a98f92-ce08-46de-a719-1743744a761e/download/diabetes-ndcs-wac-increases.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0c693b50-6d23-46a0-a1ae-7c320fe23dff/resource/0b6b35ce-a642-426a-9bca-e6905a1bfa33/download/prescription-drug-wholesale-acquisition-cost-wac-increases-o2a3rjlf.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset is comprised of data submitted to HCAI by prescription drug manufacturers for wholesale acquisition cost (WAC) increases that exceed the statutorily-mandated WAC increase threshold of an increase of more than 16% above the WAC of the drug product on December 31 of the calendar year three years prior to the current calendar year. This threshold applies to prescription drug products with a WAC greater than $40 for a course of therapy. Required WAC increase reports are to be submitted to HCAI within a month after the end of the quarter in which the WAC increase went into effect. Please see the statute and regulations for additional information regarding reporting thresholds and report due dates.\r\n\r\nKey data elements in this dataset include the National Drug Code (NDC) maintained by the FDA, narrative descriptions of the reasons for the increase in WAC, and the five-year history of WAC increases for the NDC. A WAC Increase Report consists of 27 data elements that have been divided into two separate Excel data sets: Prescription Drug WAC Increase and Prescription Drug WAC Increase – 5 Year History. The datasets include manufacturer WAC Increase Reports received since January 1, 2019. The Prescription Drugs WAC Increase dataset consists of the information submitted by prescription drug manufacturers that pertains to the current WAC increase of a given report, including the amount of the current increase, the WAC after increase, and the effective date of the increase. T"
+    },
+    {
+      "id": "04a2db3c-68e4-4ad7-b22c-40a6d9677065",
+      "title": "Food Affordability",
+      "url": "https://data.ca.gov/dataset/food-affordability",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/3ccd7a4b-890c-4db6-9811-8472dda2af4b/download/foodaffordabilitynarrativeexamples4-14-13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/916e2a2e-383b-4af5-9f5b-310500961cb5/download/food_afford_cdp_co_region_ca4-14-13-ada.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/da6d5b83-bbde-4192-92cb-e575fc6417ca/download/foodaffordabilitydd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/bdafb620-7bf9-478c-9ec6-47c4b0f13736/download/food-affordability-2006-2010-qutxlugv.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the average cost of a market basket of nutritious food items relative to income for female-headed households with children, for California, its regions, counties, and cities/towns.  The ratio uses data from the U.S. Department of Agriculture and the U.S. Census Bureau. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity. \r\nAn adequate, nutritious diet is a necessity at all stages of life. Inadequate diets can impair intellectual performance and have been linked to more frequent school absence and poorer educational achievement in children. Nutrition also plays a significant role in causing or preventing a number of illnesses, such as cardiovascular disease, some cancers, obesity, type 2 diabetes, and anemia.\r\nAt least two factors influence the affordability of food and the dietary choices of families – the cost of food and family income. The inability to afford food is a major factor in food insecurity, which has a spectrum of effects including anxiety over food sufficiency or food shortages; reduced quality or desirability of diet; and disrupted eating patterns and reduced food intake.  More information about the data table and a data dictionary can be found in the Attachments."
+    },
+    {
+      "id": "29fd0845-3dfe-4bd5-b534-2665e52f17a3",
+      "title": "Time Walk Bike to Work",
+      "url": "https://data.ca.gov/dataset/time-walk-bike-to-work",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/f20b8ec7-fdfc-45c2-8e16-8a83e441f0c7/download/hciwalkbicycle778narrativeandexamples3-26-14.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/e152f540-9d63-4619-84e1-735c0ebb558f/download/hci_walk_bicycle_778_ct_pl_co_re_st_10-23-13-ada.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/fdcdf77d-52bb-4518-a8f8-be47c8f12d23/download/time-walk-bike-to-work-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/2c3be3bf-5555-410c-bbff-03bd8c701896/download/time-walk-bike-to-work-2001-2011-gzvrzls_.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the percent of population aged 16 years or older whose commute to work is 10 or more minutes/day by walking or biking for California, its regions, counties, and cities/towns.  Data is from the U.S. Census Bureau, American Community Survey, and from the U.S. Department of Transportation, Federal Highway Administration, and National Household Travel Survey. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity.  Active modes of transport, bicycling and walking alone and in combination with public transit, offer opportunities to incorporate physical activity into the daily routine.  Physical activity is associated with lowering rates of heart disease and stroke, diabetes, colon and breast cancer, dementia and depression.  Automobile commuting is associated with health hazards, such as air pollution, motor vehicle crashes, pedestrian injuries and fatalities, and sedentary lifestyles. Consequently the transition from automobile-focused transport to public and active transport offers environmental health benefits, including reductions in air pollution, greenhouse gases and noise pollution, and may lead to greater overall safety in transportation.  More information about the data table and a data dictionary can be found in the About/Attachments section."
+    },
+    {
+      "id": "47aff2f7-076c-41cf-b606-99bf6ef218f3",
+      "title": "Healthcare Payments Data (HPD) Healthcare Measures",
+      "url": "https://data.ca.gov/dataset/healthcare-payments-data-hpd-healthcare-measures",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/10358adb-6b56-40ad-abf0-413a833eef92/resource/68ca6576-6270-4cd4-b10a-258f529d7673/download/hpd_measures_data_2018-2023_refresh.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/10358adb-6b56-40ad-abf0-413a833eef92/resource/6888c338-eda6-4e1f-a66d-69271437a409/download/measures-data-refresh2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/10358adb-6b56-40ad-abf0-413a833eef92/resource/06929b6e-f8ff-4281-808b-97b75fb0e701/download/data-dictionary-measures-july2025-update.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/10358adb-6b56-40ad-abf0-413a833eef92/resource/6a8a0f99-7579-4813-8e8b-3bbcb41a31e4/download/measure-descriptions-july2025.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/10358adb-6b56-40ad-abf0-413a833eef92/resource/6b470283-bd93-4e2d-9b4c-e659b8422dbc/download/measures-tech-note-august-2025-refresh-final-completed_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/10358adb-6b56-40ad-abf0-413a833eef92/resource/df3ffeeb-4abb-4729-9d8e-df2c72905ff7/download/measures-tech-note-october-2024-refresh-final_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/10358adb-6b56-40ad-abf0-413a833eef92/resource/6478d665-07a6-4460-b818-74f48ac0f431/download/hpd_measures_technical_note_2018-2021data_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/10358adb-6b56-40ad-abf0-413a833eef92/resource/690cfc8f-e3e1-4fe7-8b05-07429717b8fa/download/healthcare-payments-data-hpd-healthcare-measures-ewu_ov7p.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset contains data for the Healthcare Payments Data (HPD) Healthcare Measures report. The data cover three measurement categories: Health conditions, Utilization, and Demographics. The health condition measurements quantify the prevalence of long-term illnesses and major medical events prominent in California’s communities like diabetes and heart failure. Utilization measures convey rates of healthcare system use through visits to the emergency department and different categories of inpatient stays, such as maternity or surgical stays. The demographic measures describe the health coverage and other characteristics (e.g., age) of the Californians included in the data and represented in the other measures. The data include both a count or sum of each measure and a count of the base population so that data users can calculate the percentages, rates, and averages in the visualization.\r\nMeasures are grouped by year, age band, sex (assigned sex at birth), payer type, Covered California Region, and county."
+    },
+    {
+      "id": "cf692321-adbb-4938-9f66-9d594b2d3453",
+      "title": "Transportation to Work",
+      "url": "https://data.ca.gov/dataset/transportation-to-work",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/27c488a0-d618-407a-b77f-2e10c6f31881/download/hcitransportationtowork42narrativeandexamples3-20-15.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/fc5eafc8-0648-4a30-9bf5-e06f09e8320d/download/hci_transportation2work_42_ct_pl_co_re_st_12-12-13-revised-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/87fa0619-708a-4d92-ba5d-879df338b46e/download/transportation-to-work-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/68aef3ac-debf-4fba-999c-42b88fefa759/download/transportation-to-work-2000-2006-2010-fkozme0_.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the percent of residents aged 16 years and older mode of transportation to work for California, its regions, counties, cities/towns, and census tracts. Data is from the U.S. Census Bureau, Decennial Census and American Community Survey. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity.  Commute trips to work represent 19% of travel miles in the United States. The predominant mode – the automobile - offers extraordinary personal mobility and independence, but it is also associated with health hazards, such as air pollution, motor vehicle crashes, pedestrian injuries and fatalities, and sedentary lifestyles. Automobile commuting has been linked to stress-related health problems. Active modes of transport – bicycling and walking alone and in combination with public transit – offer opportunities for physical activity, which is associated with lowering rates of heart disease and stroke, diabetes, colon and breast cancer, dementia and depression. Risk of injury and death in collisions are higher in urban areas with more concentrated vehicle and pedestrian activity.  Bus and rail passengers have a lower risk of injury in collisions than motorcyclists, pedestrians, and bicyclists. Minority communities bear a disproportionate share of pedestrian-car fatalities; Native American male pedestrians experience four times the death rate Whites or Asian pedestrians, and African-America"
+    }
+  ],
+  "page_receipts": [
+    128
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 22,
+  "next_offset": 10,
+  "response_sha256": "39e71700c387ea9eb4b1b38f59dfabeb47e6bed2e5551995b939dbc2d387d62a",
+  "search_complete": false
+}

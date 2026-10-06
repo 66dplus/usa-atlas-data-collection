@@ -1,0 +1,819 @@
+{
+  "jurisdiction_code": "RI",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T20:34:23.048646+00:00",
+  "candidates": [
+    {
+      "id": "45c9590c5c1841198e8895026ba3d108",
+      "title": "Groundwater Reservoirs",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_GroundwaterReservois/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater aquifers reservoirs defined by RIDEM as significant sub-surface water sources.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.8540794284709,
+                42.019082269696554
+              ],
+              [
+                -71.30243006904638,
+                42.019082269696554
+              ],
+              [
+                -71.30243006904638,
+                41.375123543630686
+              ],
+              [
+                -71.8540794284709,
+                41.375123543630686
+              ],
+              [
+                -71.8540794284709,
+                42.019082269696554
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><span style='margin:0px; padding:0px; font-variant-numeric:normal; font-variant-east-asian:normal; font-variant-alternates:normal; font-variant-position:normal; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-weight:bold;'>This hosted feature layer has been published in RI State Plane Feet NAD 83.</span><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'> </span><br /></div><div><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'><br /></span></div>Groundwater aquifers reservoirs defined by Rhode Island Department of Environmental Management as significant sub-surface water sources.",
+        "licenseInfo": "<span style='font-weight:bold;'><span style='text-decoration-line:underline;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></span><br />This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at <a href='https://info.rigis.org/pages/logos/' target='_blank' rel='nofollow ugc noopener noreferrer'>https://info.rigis.org/pages/logos/</a>",
+        "title": "Groundwater Reservoirs",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731607610000,
+        "avgRating": 0,
+        "id": "45c9590c5c1841198e8895026ba3d108",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URIEDC, RIGIS, RI Dept. of Environmental Management",
+        "largeThumbnail": "largethumbnail/45c9590c5c1841198e8895026ba3d108.png",
+        "lastViewed": 1731607200000,
+        "thumbnail": "thumbnail/45c9590c5c1841198e8895026ba3d108.png",
+        "languages": [],
+        "created": 1712861480000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_GroundwaterReservois/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "sub-surface",
+          "groundwater",
+          "aquifer",
+          "reservoirs"
+        ],
+        "numViews": 928,
+        "numComments": 0,
+        "size": 286720,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_GroundwaterReservois",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/45c9590c5c1841198e8895026ba3d108"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "687bc8051fce49c98ca982a36693e6bf",
+      "title": "Groundwater Quality Standard",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Groundwater_Quality_Standard_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater Quality Standards as determined by the RI Dept. of Environmental Management.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.90161028156912,
+                42.01894384373176
+              ],
+              [
+                -71.11743818624043,
+                42.01894384373176
+              ],
+              [
+                -71.11743818624043,
+                41.14591871176814
+              ],
+              [
+                -71.90161028156912,
+                41.14591871176814
+              ],
+              [
+                -71.90161028156912,
+                42.01894384373176
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><b>This hosted feature layer has been published in RI State Plane Feet NAD 83</b></div><div><b><br /></b></div>Groundwater Quality Rules (250-RICR-150-05-3). The Rhode Island Department of Environmental Management (DEM) Groundwater Quality Rules classify all of the state's groundwater resources and establish groundwater quality standards for each class. The four classes are designated GAA, GA, GB, and GC. Groundwater classified GAA and GA is to be protected to maintain drinking water quality, whereas groundwater classified GB and GC is known or presumed to be unsuitable for drinking water use without treatment. The groundwater classes were delineated on 1:24,000 scale US Geological Survey quadrangle maps. These maps, which represent the official delineations, are available for review at the Office of Water Resources and on the DEM website at www.dem.ri.gov. Class GAA Groundwater classified GAA are those groundwater resources that are known or presumed to be suitable for drinking water use without treatment and are located in one of the three areas described below. Groundwater classified GAA includes the following: The state's major stratified drift aquifers that are capable of serving as a significant source for a public water supply (&quot;groundwater reservoirs&quot;) and the critical portion of their recharge area as delineated by DEM; The DEM delineated wellhead protection area for each community water supply well or another delineation accepted by DEM; and Groundwater dependent areas that are physically isolated from reasonable alternative water supplies and where the existing groundwater warrants the highest level of protection. At present, only Block Island has been designated as meeting this criterion.",
+        "licenseInfo": "Please consider the source, spatial accuracy, attribute accuracy, currentness, and scale of these data before incorporating them into your project. This dataset is provided 'as is' The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at http://info.rigis.org/logos.",
+        "title": "Groundwater Quality Standard",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1732125952000,
+        "avgRating": 0,
+        "id": "687bc8051fce49c98ca982a36693e6bf",
+        "categories": [
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept. of Environmental Management",
+        "largeThumbnail": "largethumbnail/687bc8051fce49c98ca982a36693e6bf.png",
+        "lastViewed": 1756918800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1730745136000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Groundwater_Quality_Standard_spf/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "regulation",
+          "classification",
+          "quality",
+          "standard",
+          "305(b)",
+          "groundwater",
+          "inland water resources"
+        ],
+        "numViews": 2559,
+        "numComments": 0,
+        "size": 4055040,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Groundwater_Quality_Standard_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management, Office of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/687bc8051fce49c98ca982a36693e6bf"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "42d874ed03b248ce8ea8354be7954cad",
+      "title": "Groundwater Recharge Areas",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Groundwater_Recharge_Areas_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater recharge areas in Rhode Island.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -72.00104,
+                42.05824
+              ],
+              [
+                -71.048098,
+                42.05824
+              ],
+              [
+                -71.048098,
+                41.075468
+              ],
+              [
+                -72.00104,
+                41.075468
+              ],
+              [
+                -72.00104,
+                42.05824
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><span style='margin:0px; padding:0px; font-variant-numeric:normal; font-variant-east-asian:normal; font-variant-alternates:normal; font-variant-position:normal; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-weight:bold;'>This hosted feature layer has been published in RI State Plane Feet NAD 83.</span><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'> </span><br /></div><div><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'><br /></span></div>&quot;Recharge area&quot; means the land surface from which water is added to the zone of saturation. The recharge area for a particular well or aquifer, for instance, is that land surface from which water moves to the well or aquifer or may move to the well or aquifer under certain hydraulic conditions.<div><br /></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Drinking water protection AUTHORITY: These Rules and Regulations are adopted in accordance with Chapter 42-35 pursuant to Chapters 46-12, 46-13.1, 23-18.9, 23-19.1, 42-17.6 and 42-17.1 of the Rhode Island General Laws of 1956, as amended. The intention of this dataset was to provide an overview of areas intended to be protected drinking water sources in Rhode Island</span><br /></div>",
+        "licenseInfo": "<span style='font-weight:bold;'><span style='text-decoration-line:underline;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></span><br />This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at<a href='https://www.rigis.org/logos' target='_blank' rel='nofollow ugc noopener noreferrer'> https://www.rigis.org/logos.</a>",
+        "title": "Groundwater Recharge Areas",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1731607690000,
+        "avgRating": 0,
+        "id": "42d874ed03b248ce8ea8354be7954cad",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Hydrography"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS, RI Dept of Environmental Management",
+        "largeThumbnail": "largethumbnail/42d874ed03b248ce8ea8354be7954cad.png",
+        "lastViewed": 1731607200000,
+        "thumbnail": "thumbnail/42d874ed03b248ce8ea8354be7954cad.png",
+        "languages": [],
+        "created": 1712860527000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Groundwater_Recharge_Areas_spf/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "drinking",
+          "regulation",
+          "protection",
+          "aquifer",
+          "groundwater"
+        ],
+        "numViews": 902,
+        "numComments": 0,
+        "size": 458752,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Groundwater_Recharge_Areas_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/42d874ed03b248ce8ea8354be7954cad"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f0c82668092240e0abc0128a89b07137",
+      "title": "Glacial Deposits",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/GEO_Glacial_Deposits_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset shows Rhode Island glacial deposits, such as outwash and till deposits, and some but not all bedrock outcrops.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.87864706035465,
+                42.01894470535781
+              ],
+              [
+                -71.11740000092847,
+                42.01894470535781
+              ],
+              [
+                -71.11740000092847,
+                41.145586544688165
+              ],
+              [
+                -71.87864706035465,
+                41.145586544688165
+              ],
+              [
+                -71.87864706035465,
+                42.01894470535781
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><p><b>This hosted feature layer has been published in RI State Plane Feet NAD 83.</b></p><p><span>This dataset shows Rhode Island glacial deposits, such as outwash and till deposits, and some but not all bedrock outcrops. </span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Glacial deposits of RI from 1960's USGS maps. The intended use of these data are for groundwater resource inventory and management.</span></p></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset. Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products. Versions of the RIGIS logo suitable for both printed and web-based products are available at http://www.rigis.org/logos.</span></p></div></div></div>",
+        "title": "Glacial Deposits",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1762357256000,
+        "avgRating": 0,
+        "id": "f0c82668092240e0abc0128a89b07137",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; URI Dept of Geosciences.",
+        "largeThumbnail": "largethumbnail/f0c82668092240e0abc0128a89b07137.png",
+        "lastViewed": 1762354800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1732638078000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/GEO_Glacial_Deposits_spf/FeatureServer",
+        "tags": [
+          "GEO",
+          "RIGIS",
+          "Rhode Island",
+          "glacial deposits",
+          "surficial geology",
+          "outwash",
+          "till"
+        ],
+        "numViews": 2007,
+        "numComments": 0,
+        "size": 13148160,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "GEO_Glacial_Deposits_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "view": {
+            "mapSettings": {
+              "featureLayerStyle": "item"
+            }
+          },
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": false,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              },
+              {
+                "hidden": true,
+                "key": "additionalResource::0"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -71.87864706035465,
+                41.145586544688165
+              ],
+              [
+                -71.11740000092847,
+                42.01894470535781
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 41.145586544688165,
+                "xmin": -71.87864706035465,
+                "ymax": 42.01894470535781,
+                "xmax": -71.11740000092847,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "University of Rhode Island, Department of Geosciences",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/f0c82668092240e0abc0128a89b07137"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a1808e126f11412bbcf407b692509c19",
+      "title": "Community Wellhead Protection Areas",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Wellhead_Protection_Areas_Community/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Locations of community wellhead protection areas in Rhode Island",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.86508496823711,
+                41.99243939839143
+              ],
+              [
+                -71.15730507176663,
+                41.99243939839143
+              ],
+              [
+                -71.15730507176663,
+                41.15209243259379
+              ],
+              [
+                -71.86508496823711,
+                41.15209243259379
+              ],
+              [
+                -71.86508496823711,
+                41.99243939839143
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><p><span style='margin:0px; padding:0px; font-variant-numeric:normal; font-variant-east-asian:normal; font-variant-alternates:normal; font-variant-position:normal; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-weight:bold;'>This hosted feature layer has been published in RI State Plane Feet NAD 83.</span><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'> </span><span><br /></span></p><p><span>A wellhead protection area (WHPA) is the portion of an aquifer through which groundwater moves to a well. Under the Rhode Island Department of Environmental Management (DEM) Wellhead Protection (WHP) Program approved by the US Environmental Protection Agency in 1990, DEM is responsible for delineating a WHPA for each of the public wells in the state. DEM contracted with the United States Geological Survey, Dufresne-Henry Inc., and the United States Environmental Protection Agency to delineate select community stratified drift wells using analytical modeling and hydrogeologic mapping. </span></p><p><span>As of August 2013, the Rhode Island Department of Health Office of Drinking Water Quality (HEALTH) is responsible for delineating the Calculated Fixed Radius WHPA's for bedrock wells, based on the pump rate of the well. Community Well - serves year-round residents; at least 15 service connections or at least 25 individuals. Examples include municipal wells and wells serving nursing homes, condominiums, and mobile home parks. DEM relied on technical input from the Wellhead Protection Program Advisory Committee in developing the delineation methodology. A mapping approach was required that was scientifically defensible, could be applied consistently across the state, and could be applied with the resources available to DEM. The delineations are based on reasonably available information regarding the hydrogeologic environment and the well characteristics. </span></p><p><span>The WHPAs were delineated using the US Geological Survey quadrangle maps at a scale of 1:24000. WHPA maps are available for review at the DEM Office of Water Resources, on the DEM web page at www.dem.ri.gov/maps, and on the Rhode Island Geographic Information System webpage at www.rigis.org.</span></p></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-weight:bold;'><span style='text-decoration-line:underline;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></span><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at </span><a href='https://www.rigis.org/logos' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.rigis.org/logos</a><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; text-decoration-line:underline;'><span style='font-weight:bold;'>Additional Use Constraints from Originator:</span></span><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>These data were created by RIDEM, HEALTH, USGS and other consultants for informational, planning and guidance use only. Due to the limitations of the scale and accuracy of source information this data should be used with caution. They are meant for use as a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of these data may require the assistance of appropriate professional services. Facility locations have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. RIDEM and HEALTH make no warranty, express or implied, related to the accuracy, reliability, completeness, or currentness of this map.</span><br /></p></div>",
+        "title": "Community Wellhead Protection Areas",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1732126036000,
+        "avgRating": 0,
+        "id": "a1808e126f11412bbcf407b692509c19",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Boundaries",
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept. of Environmental Management; RI Dept. of Health",
+        "largeThumbnail": "largethumbnail/a1808e126f11412bbcf407b692509c19.png",
+        "lastViewed": 1732125600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1713201880000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Wellhead_Protection_Areas_Community/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "regulation",
+          "groundwater",
+          "drinking"
+        ],
+        "numViews": 1308,
+        "numComments": 0,
+        "size": 606208,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Wellhead_Protection_Areas_Community",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management, Office of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/a1808e126f11412bbcf407b692509c19"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "7fa785d5e8e247f7a8cd8386b363c806",
+      "title": "Non-Community Wellhead Protection Areas",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Wellhead_Protection_Areas_NonCommunity_spf/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Non-community wellhead protection areas in Rhode Island.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.80622643034087,
+                42.01797332226615
+              ],
+              [
+                -71.11903983030263,
+                42.01797332226615
+              ],
+              [
+                -71.11903983030263,
+                41.15995894810434
+              ],
+              [
+                -71.80622643034087,
+                41.15995894810434
+              ],
+              [
+                -71.80622643034087,
+                42.01797332226615
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div><span style='margin:0px; padding:0px; color:rgb(0, 0, 0); text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-weight:bold; font-variant-ligatures:none !important;'> </span><span style='margin:0px; padding:0px; font-variant-numeric:normal; font-variant-east-asian:normal; font-variant-alternates:normal; font-variant-position:normal; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif; font-weight:bold;'>This hosted feature layer has been published in RI State Plane Feet NAD 83.</span><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'> </span><br /></div><div><span style='margin:0px; padding:0px; text-indent:48px; font-size:12pt; font-family:Aptos, Aptos_EmbeddedFont, Aptos_MSFontService, sans-serif;'><br /></span></div>A wellhead protection area (WHPA) is the portion of an aquifer through which groundwater moves to a well. Under the Rhode Island Department of Environmental Management (DEM) Wellhead Protection (WHP) Program approved by the US Environmental Protection Agency in 1990, DEM is responsible for delineating a WHPA for each of the public wells in the state. DEM contracted with the GZA Consulting to delineate select non-community stratified drift wells using analytical modeling and hydrogeologic mapping.<div><br /></div><div>As of August 2013, the Rhode Island Department of Health Office of Drinking Water Quality (HEALTH) is responsible for delineating the Calculated Fixed Radius WHPA's for bedrock wells, based on the pump rate of the well. Non-Transient Non-Community Well - regularly serves at least 25 of the same persons (not residents) over 6 months of the year. Examples include wells serving schools and places of employment. Transient Non-Community Well - does not regularly serve the same persons, but does serve at least 25 people at least 60 days of hte year. DEM relied on technical input from the Wellhead Protection Program Advisory Committee in developing the delineation methodology. A mapping approach was required that was scientifically defensible, could be applied consistently across the state, and could be applied with the resources available to DEM. The delineations are based on reasonably available information regarding the hydrogeologic environment and the well characteristics. The WHPAs were delineated using the US Geological Survey quadrangle maps at a scale of 1:24000. </div><div><br /></div><div>WHPA maps are available for review at the DEM Office of Water Resources, on the DEM web page at www.dem.ri.gov/maps, and on the Rhode Island Geographic Information System webpage at www.rigis.org.</div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-weight:bold;'><span style='text-decoration-line:underline;'>These data are shared under the RIGIS license agreement, which can be viewed below:</span></span><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset is provided 'as is.’ The producer(s) of this dataset, contributors to this dataset, the Rhode Island Geographic Information System (RIGIS) consortium, the State of Rhode Island, and the University of Rhode Island do not make any warranties of any kind for this dataset, and are not liable for any loss or damage however and whenever caused by any use of this dataset.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Please acknowledge both RIGIS and the primary producer(s) of this dataset in any derived products.  Versions of the RIGIS logo suitable for both printed and web-based products are available at </span><a href='https://www.rigis.org/logos' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.rigis.org/logos</a><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>.</span><br /><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; text-decoration-line:underline;'><span style='font-weight:bold;'>Additional Use Constraints from Originator:</span></span><br /><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>These data were created by RIDEM, HEALTH, USGS and other consultants for informational, planning and guidance use only. Due to the limitations of the scale and accuracy of source information this data should be used with caution. They are meant for use as a general reference, not a legally authoritative source for the location of natural or manmade features. Proper interpretation of these data may require the assistance of appropriate professional services. Facility locations have not been verified by a RI Registered Professional Land Surveyor and are not intended to be used in place of a survey. RIDEM and HEALTH make no warranty, express or implied, related to the accuracy, reliability, completeness, or currentness of this map.</span>",
+        "title": "Non-Community Wellhead Protection Areas",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1733757121000,
+        "avgRating": 0,
+        "id": "7fa785d5e8e247f7a8cd8386b363c806",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "102730",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; RI Dept. of Environmental Management; RI Dept. of Health",
+        "largeThumbnail": "largethumbnail/7fa785d5e8e247f7a8cd8386b363c806.png",
+        "lastViewed": 1733756400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1713203794000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/HYDRO_Wellhead_Protection_Areas_NonCommunity_spf/FeatureServer",
+        "tags": [
+          "HYDRO",
+          "RIGIS",
+          "Rhode Island",
+          "groundwater",
+          "drinking",
+          "regulation"
+        ],
+        "numViews": 1649,
+        "numComments": 0,
+        "size": 1122304,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "HYDRO_Wellhead_Protection_Areas_NonCommunity_spf",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Rhode Island Department of Environmental Management, Office of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/7fa785d5e8e247f7a8cd8386b363c806"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    117
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 6,
+  "next_offset": 6,
+  "response_sha256": "eb508b8cb41510762ca739d6802cb025edbba0af6f4763b60e168310d6b9f5ef",
+  "search_complete": true
+}

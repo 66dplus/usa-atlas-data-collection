@@ -1,0 +1,1215 @@
+{
+  "jurisdiction_code": "ME",
+  "query": "employment",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-01T20:25:51.105833+00:00",
+  "candidates": [
+    {
+      "id": "34ff9da9fa4746f18a25a76819ff1884",
+      "title": "Maine Labor Market Areas 2005 GeoLibrary",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Economy_Geolib_AGO/FeatureServer/2",
+      "publisher": "bob.bistrais@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Provides a digital map layer of Labor Market Areas in Maine for spatial analysis of labor market area information.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.1812,
+                47.4999
+              ],
+              [
+                -66.7866,
+                47.4999
+              ],
+              [
+                -66.7866,
+                42.9537
+              ],
+              [
+                -71.1812,
+                42.9537
+              ],
+              [
+                -71.1812,
+                47.4999
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;font-size:12pt'><p style='font-size:16ptmargin:7 0 7 0;'><span><span>LMA contains polygon attribution identifying 31 Labor Market Areas for Maine. The dataset, provided by the Maine Department of Labor, contains LMAs numbers and LMA names by TOWN, GEOCODE, COUNTY and CNTYCODE. A Labor Market Area is a geographically integrated economic area within which workers reside and find employment within a reasonable distance, or can change employment without changing their place of residence (Maine Department of Labor, Labor Market Information Services (LMIS). Acton, Durham, Monmouth, Newfield, Saint George, Criehaven Twp, Isle Au Haut, and Matinicus Isle Plt are each associated with a nearby LMA the extension required indicated by a suffix \"E\" on the affiliate LMA number.</span></span></p></div>",
+        "licenseInfo": "Users must assume responsibility in determining the usability of this data for their purposes. Digital maps retain the accuracy of their source materials. The best use of data mapped at scales of 1:500,000 and 1:250,000 is in statewide planning and studies; at 1:100,000 in regional planning and studies; at 1:62,500 and 1:24,000 in detailed studies and local planning; and at 1:12,000 and 1:5,000 or larger scales in parcel level studies and detailed local planning. In the use of Maine GIS data, please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the correct copy of both data and metadata from the Maine GIS Data Catalog. Updates, corrections, and feedback, incorporated in the Maine GIS database are made in accordance with &quot;Data Standards for Maine Geographic Information Systems&quot;, 2002 and coordinated by MEGIS",
+        "title": "Maine Labor Market Areas 2005 GeoLibrary",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1621451763000,
+        "avgRating": 0,
+        "id": "34ff9da9fa4746f18a25a76819ff1884",
+        "categories": [
+          "/Categories/Economy"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "bob.bistrais@maine.gov_maine",
+        "accessInformation": "Maine Department of Labor, Maine GeoLibrary",
+        "largeThumbnail": null,
+        "thumbnail": "thumbnail/thumbnail1621451380517.png",
+        "languages": [],
+        "created": 1621451351000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Economy_Geolib_AGO/FeatureServer/2",
+        "tags": [
+          "Maine",
+          "GeoLibrary",
+          "labor",
+          "economy",
+          "MaineGIS"
+        ],
+        "numViews": 14,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine GeoLibrary",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/34ff9da9fa4746f18a25a76819ff1884"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "94cfd7e96fe347dfa4d582726a759936",
+      "title": "Maine Regional Service Centers 2012 GeoLibrary",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Economy_Geolib_AGO/FeatureServer/0",
+      "publisher": "bob.bistrais@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Regional Service Centers was created to show the regional service centers in Maine at 1:24,000 scale. Data at this scale is suitable for detailed studies and local planning",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.3467,
+                47.5716
+              ],
+              [
+                -66.6006,
+                47.5716
+              ],
+              [
+                -66.6006,
+                42.9028
+              ],
+              [
+                -71.3467,
+                42.9028
+              ],
+              [
+                -71.3467,
+                47.5716
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;font-size:12pt'><p style='font-size:16ptmargin:7 0 7 0;'><span><span>Regional Service Centers depicts regional service centers in Maine at 1:24,000 scale. There are three types of regional service centers: 1) entire municipality, 2) a census designated place adjacent to a full municipality that has been defined as a service center, and 3) an urban compact area adjacent to a full municipality that has been defined as a service center. Each regional service center, regardless of which of the three types, is defined as such based on a calculation using employment, retail sales, service sector jobs, and housing services. The full calculation and explanation can be found at the website for the Municipal Planning Assistance Program at the Department of Agriculture, Conservation and Forestry for the state of Maine. The boundaries for Regional Service Centers were created using the Maine GIS layer METWP24. For those service centers in category 1) above, the METWP24 boundary was used. For those service centers falling in either category 2) or 3) above, the METWP24 boundary was modified by hand to approximate the census designated place or urban compact area. </span></span></p></div>",
+        "licenseInfo": "Users must assume responsibility in determining the usability of this data for their purposes. Digital maps retain the accuracy of their source materials. The best use of data mapped at scales of 1:500,000 and 1:250,000 is in statewide planning and studies; at 1:100,000 in regional planning and studies; at 1:62,500 and 1:24,000 in detailed studies and local planning; and at 1:12,000 and 1:5,000 or larger scales in parcel level studies and detailed local planning.",
+        "title": "Maine Regional Service Centers 2012 GeoLibrary",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1621442554000,
+        "avgRating": 0,
+        "id": "94cfd7e96fe347dfa4d582726a759936",
+        "categories": [
+          "/Categories/Economy"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "bob.bistrais@maine.gov_maine",
+        "accessInformation": "Maine GeoLibrary,Maine Department of Agriculture, Conservation and Forestry,National Institute of Standards and Technology (NIST)",
+        "largeThumbnail": null,
+        "thumbnail": "thumbnail/thumbnail1621442553123.png",
+        "languages": [],
+        "created": 1621441324000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Economy_Geolib_AGO/FeatureServer/0",
+        "tags": [
+          "maine",
+          "geolibrary",
+          "service centers",
+          "towns",
+          "regional service centers",
+          "economy",
+          "census designated place",
+          "urban compact area",
+          "employment center",
+          "trade center",
+          "service sector",
+          "housing services index"
+        ],
+        "numViews": 15,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine GeoLibrary",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/94cfd7e96fe347dfa4d582726a759936"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c132649b2fff4d1c8ced1c3447795270",
+      "title": "Maine Orthoimagery Municipal Kittery 2006 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Municipal/orthoMunicipalKittery2006/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Orthoimagery Municipal Kittery 2006 (Imagery Layer)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.8297,
+                43.1499
+              ],
+              [
+                -70.6504,
+                43.1499
+              ],
+              [
+                -70.6504,
+                43.0609
+              ],
+              [
+                -70.8297,
+                43.0609
+              ],
+              [
+                -70.8297,
+                43.1499
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=''><div><div><p><font size='2'><span><font size='3'><a href='https://www.maine.gov/geolib/imgdiscovery/site/landing.html' target='_blank'>Tile Download Link</a></font> 2006 aerial orthophotos at a resolution of 6 inches for Kittery, Maine. Bradstreet Consultants, Inc. used the aerial photography flown in one session on April 21, 2006, at a resolution of 0.5' pixel (similar to 1&quot;=600'). Bradstreet Consultants, Inc. gathered control points to support full analytical aerotriangulation. The aerotriangulation solution was used to set up each stereopair of photos for orthorectification and DTM compilation. The ortho imagery was rectified from the natural color digial imagery employing a digital terrain model (DTM) and supplemented from updating some town's original DTM and some town's from scratch using the imagery in softcopy (digital) stereoplotter in the Kork KDMS and DAT/EM AutoCAD DWG format.</span></font></p></div></div></div>",
+        "licenseInfo": "Access: Public Use: User assumes risk.",
+        "title": "Maine Orthoimagery Municipal Kittery 2006 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763472049000,
+        "avgRating": 0,
+        "id": "c132649b2fff4d1c8ced1c3447795270",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26984",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763470800000,
+        "thumbnail": "thumbnail/thumbnail1538489140042.png",
+        "languages": [],
+        "created": 1538483932000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Municipal/orthoMunicipalKittery2006/ImageServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "ortho",
+          "orthoimagery",
+          "orthophotography",
+          "GeoLibrary",
+          "Maine",
+          "MaineGeoLibrary",
+          "MaineGIS",
+          "municipal",
+          "Kittery",
+          "2006",
+          "raster"
+        ],
+        "numViews": 276,
+        "numComments": 0,
+        "size": 106,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/c132649b2fff4d1c8ced1c3447795270"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5a5726b3fd8747a8b8d95231b703d8b1",
+      "title": "Maine Orthoimagery Municipal York 2005 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Municipal/orthoMunicipalYork2005/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Orthoimagery Municipal York 2005 (Imagery Layer)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.7683,
+                43.2651
+              ],
+              [
+                -70.4716,
+                43.2651
+              ],
+              [
+                -70.4716,
+                43.096
+              ],
+              [
+                -70.7683,
+                43.096
+              ],
+              [
+                -70.7683,
+                43.2651
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=''><div><div><p><font size='2'><span><font size='3'><a href='https://www.maine.gov/geolib/imgdiscovery/site/landing.html' target='_blank'>Tile Download Link</a></font> 2005 aerial orthophotos at a resolution of 6 inches for York, Maine. Bradstreet Consultants, Inc. used the aerial photography flown in one session on April 18, 2005, at a resolution of 0.5' pixel (similar to 1&quot;=600'). Bradstreet Consultants, Inc. gathered control points to support full analytical aerotriangulation. The aerotriangulation solution was used to set up each stereopair of photos for orthorectification and DTM compilation. The ortho imagery was rectified from the natural color digial imagery employing a digital terrain model (DTM) and supplemented from updating some town's original DTM and some town's from scratch using the imagery in softcopy (digital) stereoplotter in the Kork KDMS and DAT/EM AutoCAD DWG format.</span></font></p></div></div></div>",
+        "licenseInfo": "Access: Public Use: User assumes risk.",
+        "title": "Maine Orthoimagery Municipal York 2005 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763474493000,
+        "avgRating": 0,
+        "id": "5a5726b3fd8747a8b8d95231b703d8b1",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26984",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763391600000,
+        "thumbnail": "thumbnail/thumbnail1538488960410.png",
+        "languages": [],
+        "created": 1538487524000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Municipal/orthoMunicipalYork2005/ImageServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "ortho",
+          "orthoimagery",
+          "orthophotography",
+          "GeoLibrary",
+          "Maine",
+          "MaineGeoLibrary",
+          "MaineGIS",
+          "municipal",
+          "York",
+          "2005",
+          "raster"
+        ],
+        "numViews": 308,
+        "numComments": 0,
+        "size": 103,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/5a5726b3fd8747a8b8d95231b703d8b1"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "21d11f2ee2cd429ab842179902e00c8b",
+      "title": "Maine Orthoimagery Regional York County 2007 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Regional/orthoRegionalYorkCounty2007/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Aerial orthophotos at a resolution of 6 inches for most of York County, Maine, 2007",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.0807,
+                44.0606
+              ],
+              [
+                -70.3172,
+                44.0606
+              ],
+              [
+                -70.3172,
+                43.0053
+              ],
+              [
+                -71.0807,
+                43.0053
+              ],
+              [
+                -71.0807,
+                44.0606
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p><span style='font-size:small;'>Ortho Imagery - As the prime contractor, Bradstreet Consultants, Inc. used the aerial photography flown in one session on April 23-26, 2007, by The Sanborn Map Compay, Inc. of Charlotte, NC who acquired approximately 4,000 photos @ a resolution of 0.5' pixel (similar to 1\"=600') with airborne GPS using a Z/I Digital Mapping Aerial Camera. Bradstreet Consultants, Inc. painted and repainted ground targets for photo survey control points (~400) to support full analytical aerotriangulation. The aerotriangulation solution was used to set up each stereopair of photos for orthorectification and DTM compilation. The ortho imagery was rectified from the natural color digial imagery employing a digital terrain model (DTM) collected from the 2007 imagery and supplemented from updating some town's original DTM and some town's from scratch using the imagery in softcopy (digital) stereoplotter in the Kork KDMS and DAT/EM AutoCAD DWG format.</span></p>",
+        "licenseInfo": "Data should not be used beyond the scale of 1:1200.  User assumes any risk associated with use of this data.",
+        "title": "Maine Orthoimagery Regional York County 2007 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1768250571000,
+        "avgRating": 0,
+        "id": "21d11f2ee2cd429ab842179902e00c8b",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Bradstreet Consultants, Inc, Southern Maine Regional Planning Commission, USGS, State of Maine, Maine GeoLibrary Board.",
+        "largeThumbnail": null,
+        "lastViewed": 1768248000000,
+        "thumbnail": "thumbnail/thumbnail1540407992126.png",
+        "languages": [],
+        "created": 1539710385000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Regional/orthoRegionalYorkCounty2007/ImageServer",
+        "tags": [
+          "MaineGeolibrary",
+          "MaineGIS",
+          "ImageryBasMapsEarthCover",
+          "orthoimagery",
+          "MaineGeoLibrary"
+        ],
+        "numViews": 1440,
+        "numComments": 0,
+        "size": 108,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine GeoLibrary",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/21d11f2ee2cd429ab842179902e00c8b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "81a5a87a45df4cfd899b33442b284045",
+      "title": "Maine Orthoimagery Coastal Central Coast 2006 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Coastal/orthoCoastalCentralCoast2006/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Orthoimagery Coastal Central Coast 2006 (Imagery Layer)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.5534,
+                44.0088
+              ],
+              [
+                -69.8096,
+                44.0088
+              ],
+              [
+                -69.8096,
+                43.4583
+              ],
+              [
+                -70.5534,
+                43.4583
+              ],
+              [
+                -70.5534,
+                44.0088
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<font size='2'><font size='3'><a href='https://www.maine.gov/geolib/imgdiscovery/site/landing.html' target='_blank'>Tile Download Link</a></font> 6&quot; pixel resolution orthoimagery of the central coastal Maine towns from Saco to Bath. This WMS is provided by the Maine Office of GIS and the Maine GeoLibrary Board. As the prime contractor, Bradstreet Consultants, Inc. used the aerial photography flown in two sessions on April 21st and 26th, 2006, by Richard Crouse &amp; Associates, Inc. of Frederick, MD who acquired approximately 1335 photos @ 1&quot;=600' with airborne GPS using a Wild RC-30 (#13261) aerial camera. Bradstreet Consultants, Inc. painted and repainted ground targets for photo survey control points (~200) to support full analytical aerotriangulation. The aerotriangulation solution was used to set up each stereopair of photos for orthorectification and DTM compilation. The ortho imagery was created by scanning (14 microns (um) per pixel or 1815 dpi) the original 1&quot;=600' scale film and employing a digital terrain model (DTM) from updating some town's original DTM and some town's from scratch using the 1&quot;=600' scale negatives or diapositives using both analytical and softcopy (digital) stereoplotter in the Kork KDMS format.</font>",
+        "licenseInfo": "Access: Public Use: User assumes risk.",
+        "title": "Maine Orthoimagery Coastal Central Coast 2006 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763410260000,
+        "avgRating": 0,
+        "id": "81a5a87a45df4cfd899b33442b284045",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26984",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763409600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1538663460000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Coastal/orthoCoastalCentralCoast2006/ImageServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "ortho",
+          "orthoimagery",
+          "orthophotography",
+          "GeoLibrary",
+          "Maine",
+          "MaineGeoLibrary",
+          "MaineGIS",
+          "coastal",
+          "Central Coast",
+          "2006",
+          "raster"
+        ],
+        "numViews": 831,
+        "numComments": 0,
+        "size": 109,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/81a5a87a45df4cfd899b33442b284045"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c4e9aae2bd0548b58f83aa0555936752",
+      "title": "Maine Orthoimagery Municipal South Portland 2005 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Municipal/orthoMunicipalSouthPortland2005/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Orthoimagery Municipal South Portland 2005 (Imagery Layer)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.3724,
+                43.6564
+              ],
+              [
+                -70.2207,
+                43.6564
+              ],
+              [
+                -70.2207,
+                43.596
+              ],
+              [
+                -70.3724,
+                43.596
+              ],
+              [
+                -70.3724,
+                43.6564
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=''><div><div><p><font size='2'><span><font size='3'><a href='https://www.maine.gov/geolib/imgdiscovery/site/landing.html' target='_blank'>Tile Download Link</a></font> 2005 6&quot; pixel resolution orthoimagery of South Portland from May 6, 2005. Provided by the Maine Office of GIS and the Maine GeoLibrary Board. As the prime contractor, Bradstreet Consultants, Inc. used the aerial photography flown in one session on May 6, 2005, by Richard Crouse &amp; Associates, Inc. of Frederick, MD who acquired approximately 1335 photos @ 1&quot;=600' with airborne GPS using a Wild RC-30 (#13261) aerial camera. Bradstreet Consultants, Inc. painted and repainted ground targets for photo survey control points (~200) to support full analytical aerotriangulation. The aerotriangulation solution was used to set up each stereopair of photos for orthorectification and DTM compilation. The ortho imagery was created by scanning (14 microns (um) per pixel or 1815 dpi) the original 1&quot;=600' scale film and employing a digital terrain model (DTM) from updating some town's original DTM and some town's from scratch using the 1&quot;=600' scale negatives or diapositives using both analytical and softcopy (digital) stereoplotter in the Kork KDMS format.</span></font></p></div></div></div>",
+        "licenseInfo": "Access: Public Use: User assumes risk.",
+        "title": "Maine Orthoimagery Municipal South Portland 2005 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763473752000,
+        "avgRating": 0,
+        "id": "c4e9aae2bd0548b58f83aa0555936752",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26984",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763391600000,
+        "thumbnail": "thumbnail/thumbnail1538488917724.png",
+        "languages": [],
+        "created": 1538487203000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Municipal/orthoMunicipalSouthPortland2005/ImageServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "ortho",
+          "orthoimagery",
+          "orthophotography",
+          "GeoLibrary",
+          "Maine",
+          "MaineGeoLibrary",
+          "MaineGIS",
+          "municipal",
+          "South Portland",
+          "2005",
+          "raster"
+        ],
+        "numViews": 336,
+        "numComments": 0,
+        "size": 112,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/c4e9aae2bd0548b58f83aa0555936752"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "035a18ca2d7a41598564e71a54d0b767",
+      "title": "Maine Orthoimagery Municipal Portland 2006 (Imagery Layer)",
+      "url": "https://gis.maine.gov/image/rest/services/Municipal/orthoMunicipalPoland2018/ImageServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Maine Orthoimagery Municipal Portland 2006 (Imagery Layer)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.3587,
+                43.7332
+              ],
+              [
+                -70.0863,
+                43.7332
+              ],
+              [
+                -70.0863,
+                43.6288
+              ],
+              [
+                -70.3587,
+                43.6288
+              ],
+              [
+                -70.3587,
+                43.7332
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Image Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=''><div><div><p><font size='2'><span><font size='3'><a href='https://www.maine.gov/geolib/imgdiscovery/site/landing.html' target='_blank'>Tile Download Link</a></font> 2006 3&quot; pixel resolution orthoimagery of the city of Portland ME. Provided by the Maine Office of GIS and the Maine  GeoLibrary Board. Portland 2006 3&quot; orthoimagery - As the prime contractor, Bradstreet Consultants, Inc. used the aerial photography flown in one session on April 26th, 2006, by Richard Crouse &amp; Associates, Inc. of Frederick, MD who acquired approximately 1335 photos @ 1&quot;=600' with airborne GPS using a Wild RC-30 (#13261) aerial camera. Bradstreet Consultants, Inc. painted and repainted ground targets for photo survey control points (~200) to support full analytical aerotriangulation. The aerotriangulation solution was used to set up each stereopair of photos for orthorectification and DTM compilation. The ortho imagery was created by scanning (14 microns (um) per pixel or 1815 dpi) the original 1&quot;=600' scale film and employing a digital terrain model (DTM) from updating some town's original DTM and some town's from scratch using the 1&quot;=600' scale negatives or diapositives using both analytical and softcopy (digital) stereoplotter in the Kork KDMS format.</span></font></p></div></div></div>",
+        "licenseInfo": "Access: Public Use: User assumes risk.",
+        "title": "Maine Orthoimagery Municipal Portland 2006 (Imagery Layer)",
+        "type": "Image Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1763472676000,
+        "avgRating": 0,
+        "id": "035a18ca2d7a41598564e71a54d0b767",
+        "categories": [
+          "/Categories/Imagery, basemaps, and Earth cover"
+        ],
+        "spatialReference": "26984",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "Maine GeoLibrary",
+        "largeThumbnail": null,
+        "lastViewed": 1763470800000,
+        "thumbnail": "thumbnail/thumbnail1538489023914.png",
+        "languages": [],
+        "created": 1538485453000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.maine.gov/image/rest/services/Municipal/orthoMunicipalPoland2018/ImageServer",
+        "tags": [
+          "imageryBaseMapsEarthCover",
+          "ortho",
+          "orthoimagery",
+          "orthophotography",
+          "GeoLibrary",
+          "Maine",
+          "MaineGeoLibrary",
+          "MaineGIS",
+          "municipal",
+          "Portland",
+          "2006",
+          "raster"
+        ],
+        "numViews": 502,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/035a18ca2d7a41598564e71a54d0b767"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c03b6aa5f81b492f8deedbcd21accc10",
+      "title": "Maine Beach Mapping DSAS Dry Beach Width",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Beach_Mapping/FeatureServer/3",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer includes transects that represent dry beach width statistics calculated from shoreline positions (Beach_Mapping_Shorelines) through the current year using a MGS developed database version of the USGS Digital Shoreline Analysis System.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.6875,
+                43.8725
+              ],
+              [
+                -69.5118,
+                43.8725
+              ],
+              [
+                -69.5118,
+                43.0834
+              ],
+              [
+                -70.6875,
+                43.0834
+              ],
+              [
+                -70.6875,
+                43.8725
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service"
+        ],
+        "description": "<font color='#000000' face='Verdana, Arial, Helvetica, sans-serif'><span style='font-size: 14.4px;'>As part of the Maine Beach Mapping Program (MBMAP), MGS surveys annual alongshore shoreline positions (see Beach_Mapping_Shorelines). Using these shoreline positions and guidance from the USGS Digital Shoreline Analysis System (DSAS). DSAS is referenced as Thieler, E.R., Himmelstoss, E.A., Zichichi, J.L., and Ergul, Ayhan, 2009, Digital Shoreline Analysis System (DSAS) version 4.0— An ArcGIS extension for calculating shoreline change: U.S. Geological Survey Open-File Report 2008-1278. For more information on DSAS and the methodology DSAS employs, please see: https://woodshole.er.usgs.gov/project-pages/DSAS/.  The supporting DSAS User Guide which describes how DSAS works and how statistics are calculated is available here: http://www.maine.gov/dacf/mgs/hazards/beach_mapping/DSAS_manual.pdf.  MGS wrote a database procedure following protocols outlined in DSAS that allows for the calculation of different shoreline change rates and supporting statistics. This was done so that MGS no longer needed to depend on USGS updates to the DSAS software to keep current with ArcGIS software updates.  The script casts shoreline-perpendicular transects at a set spacing (in this case, 10-m intervals along the shoreline), from a preset baseline (located landward of the monitored shorelines), and calculates a range of shoreline change statistics, including: Process Time: The time when the statistics were calculated. TransectID: The ID of the transect (including the group or line section ID; for example, 1-1, is line 1, transect 1) SCE: Shoreline Change Envelope. The distance, in meters, between the shoreline farthest from and closests to the baseline at each transect. NSM: Net Shoreline Movement. The distance, in meters, between the oldest and youngest shorelines for each tranect. EPR: End Point Rate. A shoreline change rate, in meters/year, calculated by dividing the NSM by the time elapsed between the oldest and youngest shorelines at each transect. LRR: Linear Regression Rate. A shoreline change rate, in meters/year, calculated by fitting a least-squares regression line to all of the shoreline points for a particular transect. The distance from the baseline, in meters, is plotted against the shoreline date, and slope of the line that provides the best fit is the LRR. LR2: The R-squared statistic, or coefficient of determination. The percentage of variance in the data that is explained by a regression, or in this case, the LRR value. It is a dimensionless index that ranges from 1.0 (a perfect fit, with the best fit line explaining all variation) to 0.0 (a bad fit, with the best fit line explaining little to no variation) and measures how successfully the best fit line (LRR) accounts for variation in the data. LCI95: Standard error of the slope at the 95% confidence interval. Calculated by muliplying the standard error, or standard deviation, of the slope by the two-tailed test statistic at the user-specified confidence percentage. For example if a reported LRR is 1.34 m/yr and a calculated LCI95 is 0.50, the band of confidence around the LRR is +/- 0.50. In other words, you can be 95% confidence that the true rate of change is between 0.84 and 1.84 m/yr. LRR_ft: The Linear Regression Rate, converted to feet/year. LCI95_ft: The LCI95, converted to feet. EPR_ft: The End Point Rate converted to feet.</span></font>",
+        "licenseInfo": "Access: Public Use: User assumes risk",
+        "title": "Maine Beach Mapping DSAS Dry Beach Width",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "appCategories": [],
+        "modified": 1567017321000,
+        "avgRating": 0,
+        "id": "c03b6aa5f81b492f8deedbcd21accc10",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "The Maine Geological Survey developed this data. It should be referenced as: Slovinsky, P.A., and Halsted, C.H., 2017, Shoreline change calculations for Maine beaches monitored as part of the Maine Beach Mapping Program (MBMAP), Maine Geological Survey, Department of Agriculture, Conservation and Forestry, Augusta, ME. Credit should also be given to USGS for development of the DSAS techniques: Thieler, E.R., Himmelstoss, E.A., Zichichi, J.L., and Ergul, Ayhan, 2009, Digital Shoreline Analysis System (DSAS) version 4.0— An ArcGIS extension for calculating shoreline change: U.S. Geological Survey Open-File Report 2008-1278 ",
+        "largeThumbnail": "largethumbnail/c03b6aa5f81b492f8deedbcd21accc10.png",
+        "thumbnail": "thumbnail/c03b6aa5f81b492f8deedbcd21accc10.png",
+        "languages": [],
+        "created": 1508781792000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Beach_Mapping/FeatureServer/3",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Marine",
+          "Coastal",
+          "Sea-level rise",
+          "Storm surge",
+          "Inundation",
+          "Flooding",
+          "Hazards",
+          "Hurricane",
+          "SLOSH",
+          "Tides",
+          "Prediction",
+          "NOAA",
+          "Maine Geological Survey",
+          "geoscientificInformation",
+          "MaineGS"
+        ],
+        "numViews": 1330,
+        "numComments": 0,
+        "size": 97,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/c03b6aa5f81b492f8deedbcd21accc10"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "95e706b003b347b997bee5947fd07b5a",
+      "title": "Maine Beach Mapping DSAS Dune Change",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Beach_Mapping/FeatureServer/1",
+      "publisher": "Christian.H.Halsted@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer includes transects that represent dune change rate statistics calculated from shoreline positions (Beach_Mapping_Shorelines) through the current year using a MGS developed database version of the USGS Digital Shoreline Analysis System.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.683,
+                43.7826
+              ],
+              [
+                -69.7143,
+                43.7826
+              ],
+              [
+                -69.7143,
+                43.0842
+              ],
+              [
+                -70.683,
+                43.0842
+              ],
+              [
+                -70.683,
+                43.7826
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service"
+        ],
+        "description": "As part of the Maine Beach Mapping Program (MBMAP), MGS surveys annual alongshore shoreline positions (see Beach_Mapping_Shorelines). Using these shoreline positions and guidance from the USGS Digital Shoreline Analysis System (DSAS). DSAS is referenced as Thieler, E.R., Himmelstoss, E.A., Zichichi, J.L., and Ergul, Ayhan, 2009, Digital Shoreline Analysis System (DSAS) version 4.0— An ArcGIS extension for calculating shoreline change: U.S. Geological Survey Open-File Report 2008-1278. For more information on DSAS and the methodology DSAS employs, please see: https://woodshole.er.usgs.gov/project-pages/DSAS/.  The supporting DSAS User Guide which describes how DSAS works and how statistics are calculated is available here: http://www.maine.gov/dacf/mgs/hazards/beach_mapping/DSAS_manual.pdf.  MGS wrote a database procedure following protocols outlined in DSAS that allows for the calculation of different shoreline change rates and supporting statistics. This was done so that MGS no longer needed to depend on USGS updates to the DSAS software to keep current with ArcGIS software updates.  The script casts shoreline-perpendicular transects at a set spacing (in this case, 10-m intervals along the shoreline), from a preset baseline (located landward of the monitored shorelines), and calculates a range of shoreline change statistics, including: Process Time: The time when the statistics were calculated. TransectID: The ID of the transect (including the group or line section ID; for example, 1-1, is line 1, transect 1) SCE: Shoreline Change Envelope. The distance, in meters, between the shoreline farthest from and closests to the baseline at each transect. NSM: Net Shoreline Movement. The distance, in meters, between the oldest and youngest shorelines for each tranect. EPR: End Point Rate. A shoreline change rate, in meters/year, calculated by dividing the NSM by the time elapsed between the oldest and youngest shorelines at each transect. LRR: Linear Regression Rate. A shoreline change rate, in meters/year, calculated by fitting a least-squares regression line to all of the shoreline points for a particular transect. The distance from the baseline, in meters, is plotted against the shoreline date, and slope of the line that provides the best fit is the LRR. LR2: The R-squared statistic, or coefficient of determination. The percentage of variance in the data that is explained by a regression, or in this case, the LRR value. It is a dimensionless index that ranges from 1.0 (a perfect fit, with the best fit line explaining all variation) to 0.0 (a bad fit, with the best fit line explaining little to no variation) and measures how successfully the best fit line (LRR) accounts for variation in the data. LCI95: Standard error of the slope at the 95% confidence interval. Calculated by muliplying the standard error, or standard deviation, of the slope by the two-tailed test statistic at the user-specified confidence percentage. For example if a reported LRR is 1.34 m/yr and a calculated LCI95 is 0.50, the band of confidence around the LRR is +/- 0.50. In other words, you can be 95% confidence that the true rate of change is between 0.84 and 1.84 m/yr. LRR_ft: The Linear Regression Rate, converted to feet/year. LCI95_ft: The LCI95, converted to feet. EPR_ft: The End Point Rate converted to feet.",
+        "licenseInfo": "Access: Public Use: User assumes risk",
+        "title": "Maine Beach Mapping DSAS Dune Change",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "appCategories": [],
+        "modified": 1567017141000,
+        "avgRating": 0,
+        "id": "95e706b003b347b997bee5947fd07b5a",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Christian.H.Halsted@maine.gov_maine",
+        "accessInformation": "The Maine Geological Survey developed this data.  It should be referenced as:\n\nSlovinsky, P.A., and Halsted, C.H., 2017, Shoreline change calculations for Maine beaches monitored as part of the Maine Beach Mapping Program (MBMAP), Maine Geological Survey, Department of Agriculture, Conservation and Forestry, Augusta, ME.\n\nCredit should also be given to USGS for development of the DSAS techniques:\nThieler, E.R., Himmelstoss, E.A., Zichichi, J.L., and Ergul, Ayhan, 2009, Digital Shoreline Analysis System (DSAS) version 4.0— An ArcGIS extension for calculating shoreline change: U.S. Geological Survey Open-File Report 2008-1278",
+        "largeThumbnail": "largethumbnail/95e706b003b347b997bee5947fd07b5a.png",
+        "thumbnail": "thumbnail/95e706b003b347b997bee5947fd07b5a.png",
+        "languages": [],
+        "created": 1508425941000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/MGS_Beach_Mapping/FeatureServer/1",
+        "tags": [
+          "Maine",
+          "Geology",
+          "Marine",
+          "Coastal",
+          "Sea-level rise",
+          "Storm surge",
+          "Inundation",
+          "Flooding",
+          "Hazards",
+          "Hurricane",
+          "SLOSH",
+          "Tides",
+          "Prediction",
+          "NOAA",
+          "Maine Geological Survey",
+          "geoscientificInformation",
+          "MaineGS"
+        ],
+        "numViews": 1634,
+        "numComments": 0,
+        "size": 97,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/95e706b003b347b997bee5947fd07b5a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    210
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 11,
+  "next_offset": 10,
+  "response_sha256": "39af0170725222cb3b257842fe5a786764e060efade9e6ed47a628114377e7bd",
+  "search_complete": false
+}

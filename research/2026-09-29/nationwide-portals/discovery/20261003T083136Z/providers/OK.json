@@ -1,0 +1,20 @@
+{
+  "jurisdiction_code": "OK",
+  "catalog_id": "ok-primary",
+  "catalog_url": "https://data.ok.gov/",
+  "started_at": "2026-10-03T08:32:00.061176+00:00",
+  "attempts": [
+    {
+      "adapter": "hub",
+      "endpoint": "https://data.ok.gov/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "status": "validated_metadata_adapter",
+  "adapter": "ckan",
+  "endpoint": "https://data.ok.gov/api/3/action/package_search",
+  "domain": "data.ok.gov",
+  "validation_receipt": 63,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified"
+}

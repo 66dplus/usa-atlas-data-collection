@@ -1,0 +1,573 @@
+{
+  "jurisdiction_code": "IN",
+  "query": "employment",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T14:33:32.992731+00:00",
+  "candidates": [
+    {
+      "id": "5d8ecdf6957c427989eb3bd806a8d854",
+      "title": "About",
+      "url": "https://www.indianamap.org/api/search/v1/collections/all/items/5d8ecdf6957c427989eb3bd806a8d854",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This page features descriptions of enhancements made to IndianaMap when transitioning from the legacy application managed by IGWS to the current platform managed by IGIO.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubPage",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "OpenData",
+          "selfConfigured",
+          "Web Map"
+        ],
+        "description": "DO NOT DELETE OR MODIFY THIS ITEM. This item is managed by the ArcGIS Hub application. To make changes to this page, please visit https://INMap.hub.arcgis.com:/overview/edit.",
+        "licenseInfo": null,
+        "title": "About",
+        "type": "Hub Page",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1745599139000,
+        "avgRating": 0,
+        "id": "5d8ecdf6957c427989eb3bd806a8d854",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1780336800000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1683287316000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          ""
+        ],
+        "numViews": 4383,
+        "numComments": 0,
+        "size": 115480,
+        "listed": false,
+        "scoreCompleteness": 43,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/5d8ecdf6957c427989eb3bd806a8d854"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f26611ce9bab4ed49dea0834b57ac4ec",
+      "title": "Bureau of Labor Statistics Monthly Unemployment (latest 14 months) of Indiana",
+      "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/BLS_Monthly_Unemployment_Current_14_Months/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer shows Bureau of Labor Statistics (BLS) unemployment figures for the latest available 14 months of data available. The pattern is shown by states, counties, and nationally.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -179.1489242673129,
+                71.36516173919995
+              ],
+              [
+                179.77847237160796,
+                71.36516173919995
+              ],
+              [
+                179.77847237160796,
+                17.88328273507996
+              ],
+              [
+                -179.1489242673129,
+                17.88328273507996
+              ],
+              [
+                -179.1489242673129,
+                71.36516173919995
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Multilayer",
+          "Service"
+        ],
+        "description": "<div>This layer contains the latest 14 months of unemployment statistics from the U.S. Bureau of Labor Statistics (BLS). The data is offered at the nationwide, state, and county geography levels. Puerto Rico is included. These are not seasonally adjusted values.</div><div></div><div>The layer is updated monthly with the newest unemployment statistics available from BLS. There are attributes in the layer that specify which month is associated to each statistic.</div><div></div><div>Most current month: October 2024 (preliminary values at the county level)<br /></div><div></div><div>The attributes included for each month are:</div><div><ul><li>Unemployment rate (%)</li><li>Count of unemployed population</li><li>Count of employed population in the labor force</li><li>Count of people in the labor force</li></ul></div><div>Data obtained from the<a target='_blank' href='https://www.bls.gov/' rel='nofollow ugc noopener noreferrer'>U.S. Bureau of Labor Statistics</a>.</div><div>Data downloaded: December 20, 2024</div><div>Local Area Unemployment Statistics table download:<a target='_blank' href='https://www.bls.gov/lau/#tables' rel='nofollow ugc noopener noreferrer'>https://www.bls.gov/lau/#tables</a></div><div>Local Area Unemployment FTP downloads:</div><div><ul><li><a target='_blank' href='https://download.bls.gov/pub/time.series/la' rel='nofollow ugc noopener noreferrer'>State and County</a><br /></li><li><a target='_blank' href='https://download.bls.gov/pub/time.series/ln/ln.data.1.AllData' rel='nofollow ugc noopener noreferrer'>Nation</a></li></ul><div>Data Notes:</div><div><ul><li>This layer is updated automatically when the BLS releases their most current monthly statistics. The layer always contains the most recent estimates. It is updated within days of the BLS's county release schedule. BLS releases their county statistics roughly 2 months after-the-fact.</li><li>The data is joined to 2021<a target='_blank' href='https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-geodatabase-file.html' rel='nofollow ugc noopener noreferrer'>TIGER boundaries</a>from the<a target='_blank' href='https://www.census.gov/en.html' rel='nofollow ugc noopener noreferrer'>U.S. Census Bureau</a>.</li><li>Monthly values are subject to revision over time.</li><li>For national values, employed plus unemployed may not sum to total labor force due to rounding.</li><li>As of the January 2022 estimates released on March 18th, 2022, BLS is reporting new data for the two new census areas in Alaska - Copper River and Chugach - and historical data for the previous census area - Valdez Cordova.<br /></li></ul></div></div><div></div><div>To better understand the different labor force statistics included in this map, see the diagram below<a target='_blank' href='https://www.bls.gov/cps/definitions.htm' rel='nofollow ugc noopener noreferrer'>from BLS</a>:</div><div><img src='https://esri.maps.arcgis.com/sharing/rest/content/items/727bb620a76b474f82b1718d92822418/data' /><br /></div>",
+        "licenseInfo": "<p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This work is licensed under the Esri Master License Agreement.</span><br /></p><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><a href='https://goto.arcgis.com/termsofuse/viewsummary' style='color:rgb(0, 121, 193); text-decoration-line:none;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>View Summary</b></a>|<a href='https://goto.arcgis.com/termsofuse/viewtermsofuse' style='color:rgb(0, 121, 193); text-decoration-line:none;' target='_blank' rel='nofollow ugc noopener noreferrer'><b>View Terms of Use</b></a></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS  IS&quot;, without any other warranties or conditions, expressed or implied,  including, but not limited to, warranties for product quality, or  suitability to a particular purpose or use. The risk or liability  resulting from the use of this product is assumed by the user. The  Indiana Geographic Information Office shares no liability with product  users indirect, incidental, special, or consequential damages  whatsoever, including, but not limited to, loss of revenue or profit,  lost or damaged data or other commercial or economic loss. The Indiana  Geographic Information Office is not responsible for claims by a third  party.</div>",
+        "title": "Bureau of Labor Statistics Monthly Unemployment (latest 14 months) of Indiana",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1736540766000,
+        "avgRating": 0,
+        "id": "f26611ce9bab4ed49dea0834b57ac4ec",
+        "categories": [
+          "/Categories/Economy",
+          "/Categories/Society"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "U.S. Bureau of Labor Statistics (BLS), Local Area Unemployment Statistics (LAUS)",
+        "largeThumbnail": null,
+        "lastViewed": 1780333200000,
+        "thumbnail": "thumbnail/thumbnail1736540461502.png",
+        "languages": [],
+        "created": 1734555642000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/BLS_Monthly_Unemployment_Current_14_Months/FeatureServer",
+        "tags": [
+          "BLS",
+          "Bureau of Labor Statistics",
+          "unemployment",
+          "labor force",
+          "unemployment rate",
+          "Policy",
+          "current",
+          "employed"
+        ],
+        "numViews": 3481,
+        "numComments": 0,
+        "size": 122,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/f26611ce9bab4ed49dea0834b57ac4ec"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "aa6e37cde24e45f38f26e6484601d800",
+      "title": "Local Law Enforcement Stations 2023",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Local_Law_Enforcement_Stations_2023/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This feature class/ shapefile contains law enforcement agencies as defined by the US Department of Justice - Bureau of Justice Statistics for the Homeland Infrastructure Foundation-Level Data (HIFLD) database. (https://hifld-geoplatform.opendata.arcgis.com). Data downloaded from the HIFLD open geospatial data portal on 4/27/2023.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.93396419999993,
+                41.74591445400006
+              ],
+              [
+                -84.80939693399995,
+                41.74591445400006
+              ],
+              [
+                -84.80939693399995,
+                37.883019707000074
+              ],
+              [
+                -87.93396419999993,
+                37.883019707000074
+              ],
+              [
+                -87.93396419999993,
+                41.74591445400006
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<font face='Avenir Next, Avenir Next'><span style='font-size:16px; background-color:rgb(248, 248, 248);'>The local law enforcement locations feature class/ shapefile contains point location and tabular information pertaining to a wide range of law enforcement entities in the United States. Law Enforcement agencies &quot;are publicly funded and employ at least one full-time or part-time sworn officer with general arrest powers&quot;. This is the definition used by the US Department of Justice - Bureau of Justice Statistics (DOJ-BJS) for their Census of State and Local Law Enforcement Agencies (CSLLEA). Unlike the previous version of this dataset, published in 2009, federal level law enforcement agencies are excluded from this effort. Data fusion techniques are utilized to synchronize overlapping yet disparate source data. The primary sources for this effort are the DOJ-BJS CSLLEA from 2008 and the previously mentioned 2009 feature class from Homeland Security Infrastructure Foundation-Level Data (HIFLD). This feature class contains data for agencies across all 50 U.S. states, Washington D.C. and Puerto Rico.</span></font>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.</span>",
+        "title": "Local Law Enforcement Stations 2023",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335771000,
+        "avgRating": 0,
+        "id": "aa6e37cde24e45f38f26e6484601d800",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
+        "largeThumbnail": "",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1682605591618.png",
+        "languages": [],
+        "created": 1780335770000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Local_Law_Enforcement_Stations_2023/FeatureServer",
+        "tags": [
+          "Police",
+          "Law Enforcement",
+          "Stations",
+          "Police Stations",
+          "Locations"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 187869,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Local_Law_Enforcement_Stations_2023",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/aa6e37cde24e45f38f26e6484601d800"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "796311f01bd0452896282d19cc4238f6",
+      "title": "Alternative Fuel Corridors 2023",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Alternative_Fuel_Corridors_2023/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains line features representing the locations of alternative fuel corridors in Indiana in 2023. Alternative fuel corridors are designated by the Federal Highway Administration to support installation of alternative fueling infrastructure along major highways. This data was obtained from the NTAD open data portal on 7/7/23.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.98487652899996,
+                41.76088345000005
+              ],
+              [
+                -84.81045576499997,
+                41.76088345000005
+              ],
+              [
+                -84.81045576499997,
+                37.93570647100006
+              ],
+              [
+                -87.98487652899996,
+                37.93570647100006
+              ],
+              [
+                -87.98487652899996,
+                41.76088345000005
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div>In accordance with 23 U.S.C. 151, FHWA has designated alternative fuel corridors to support installation of EV charging, hydrogen, propane, and natural gas fueling infrastructure at strategic locations along major national highways. This supports needed changes in the transportation sector that assists in reducing greenhouse gas emissions and improves the mobility of passenger and commercial vehicles that employ these technologies across the United States. The FHWA has updated and redesignated the corridors on an annual basis by soliciting nominations from State and local officials. This recurring process responds to the rapidly evolving state of vehicle technology, increased market adoption, and installation of infrastructure related to the use of alternative fuels.</div><div><br /></div><div>The designation of Alternative Fuel Corridors has grown in importance because it is now tied to funding provisions under the Bipartisan Infrastructure Law (BIL). The Bipartisan Infrastructure Law (BIL), was enacted as the Infrastructure Investment and Jobs Act (IIJA), (Public Law 117-58) on November 15, 2021. The BIL established the National Electric Vehicle Infrastructure Formula Program and the Charging and Fueling Infrastructure Discretionary Grant Program, both of which provide eligibility based on Alternative Fuel Corridor designations.</div>",
+        "licenseInfo": "LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.",
+        "title": "Alternative Fuel Corridors 2023",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335352000,
+        "avgRating": 0,
+        "id": "796311f01bd0452896282d19cc4238f6",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1692123441418.png",
+        "languages": [],
+        "created": 1780335351000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Alternative_Fuel_Corridors_2023/FeatureServer",
+        "tags": [
+          "Transportation",
+          "Alternative Fuels",
+          "Highways",
+          "EVs",
+          "Infrastructure"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 281042,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Alternative_Fuel_Corridors_2023",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/796311f01bd0452896282d19cc4238f6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bf171af17dc240fda33314746eb4e7a9",
+      "title": "General Manufacturing Facilities 2009",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/General_Manufacturing_Facilities_2009/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset represents the entire Industrial PinPointer database of manufacturing companies. Only those locations primarily engaged in manufacturing (SIC Codes 2000-3999) or those that are headquarters of manufacturing companies are included. This dataset covers manufacturing locations in the 50 states, the District of Columbia, and US territories. Data for Indiana was downloaded from the HIFLD open geospatial portal on 5/1/2023 (https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::general-manufacturing-facilities/about).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.94701829999997,
+                41.76008710000008
+              ],
+              [
+                -84.80737739999995,
+                41.76008710000008
+              ],
+              [
+                -84.80737739999995,
+                37.88725000000005
+              ],
+              [
+                -87.94701829999997,
+                37.88725000000005
+              ],
+              [
+                -87.94701829999997,
+                41.76008710000008
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset includes the entire Industrial PinPointer database of manufacturing companies, which includes the 2009 D2 of 2 update. Eighteen (18) states have been updated in this delivery: Alaska, Arizona, Hawaii, Idaho, Massachusetts, Missouri, Nevada, New Hampshire, New York, Ohio, Oklahoma, Oregon, South Carolina, South Dakota, Tennessee, Utah, Wisconsin, and Wyoming. In addition to American Samoa, Guam, and the Commonwealth of the Northern Mariana Islands, two (2) US territories have been added to the dataset from the 2009 D1 of 2 update: Puerto Rico, and US Virgin Islands. This totals 48,930 companies. The database decreased by 65 companies from the 2009 D1 of 2 update. This dataset covers manufacturing locations in the 50 states, the District of Columbia, and US territories. Only those locations primarily engaged in manufacturing (SIC Codes 2000-3999) or those that are headquarters of manufacturing companies are included. SIC codes are not provided for 125 companies in the US territories. Where an employee count is available, only locations employing fifteen (15) or more people are included. Employee count is not available for the US territories; therefore, all locations primarily engaged in manufacturing are included for these territories. All text fields were set to upper case, leading and trailing spaces were trimmed from all text fields, and non-printable and diacritic characters were removed from all text fields per NGA's request.",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.</span>",
+        "title": "General Manufacturing Facilities 2009",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335365000,
+        "avgRating": 0,
+        "id": "bf171af17dc240fda33314746eb4e7a9",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1780369200000,
+        "thumbnail": "thumbnail/thumbnail1682946268158.png",
+        "languages": [],
+        "created": 1780335365000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/General_Manufacturing_Facilities_2009/FeatureServer",
+        "tags": [
+          "Economy",
+          "Buildings",
+          "Manufacturing",
+          "Industry",
+          "Industrial",
+          "Facility",
+          "Facilities"
+        ],
+        "numViews": 94,
+        "numComments": 0,
+        "size": 785828,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "General_Manufacturing_Facilities_2009",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/bf171af17dc240fda33314746eb4e7a9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    171
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "50321b7d40510efb2fcf2b2ff7315e4707d23ca5fdd45c6d23a285678371e4e0",
+  "search_complete": true
+}

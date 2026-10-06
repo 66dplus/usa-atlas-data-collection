@@ -1,0 +1,1012 @@
+{
+  "jurisdiction_code": "AR",
+  "query": "data center",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T20:30:07.724489+00:00",
+  "candidates": [
+    {
+      "id": "69b701e736dd4809bfba612a9664631e",
+      "title": "Intermodal Terminal (point)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/1",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Data available online through GeoStor at http://www.geostor.arkansas.gov. The subject file represents the Arkansas portion of the Intermodal Terminal Facilities data set contains geographic data for trailer-on-flatcar (TOFC) and container-on-flatcar (COFC) highway-rail and/or rail-water transfer facilities in Arkansas. The locations of TOFC/COFC facilities were determined using available facility address information and MapExpert, a commercial nationwide digital map database and software package, and recording the longitude/latitude of the approximate center of the facility. Facility locations are not bound to any current or previous highway, railway, or waterway network models. After completing topological and attribute verification using ARC/INFO, the data was extracted and reformatted into the BTS ACSII format. The scale and resolution of this data set and source data are unknown.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.447,
+                36.191
+              ],
+              [
+                -89.6808,
+                36.191
+              ],
+              [
+                -89.6808,
+                33.2599
+              ],
+              [
+                -94.447,
+                33.2599
+              ],
+              [
+                -94.447,
+                36.191
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Data available online through the Arkansas Spatial Data Infrastructure (ASDI) at http://gis.arkansas.gov. The subject file represents the Arkansas portion of the Intermodal Terminal Facilities data set contains geographic data for trailer-on-flatcar (TOFC) and container-on-flatcar (COFC) highway-rail and/or rail-water transfer facilities in Arkansas. The locations of TOFC/COFC facilities were determined using available facility address information and MapExpert, a commercial nationwide digital map database and software package, and recording the longitude/latitude of the approximate center of the facility. Facility locations are not bound to any current or previous highway, railway, or waterway network models. After completing topological and attribute verification using ARC/INFO, the data was extracted and reformatted into the BTS ACSII format. The scale and resolution of this data set and source data are unknown.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Intermodal Terminal (point)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667693000,
+        "avgRating": 0,
+        "id": "69b701e736dd4809bfba612a9664631e",
+        "categories": [
+          "/Categories/Transportation"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776881681000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Transportation/FeatureServer/1",
+        "tags": [
+          "transportation"
+        ],
+        "numViews": 108,
+        "numComments": 0,
+        "size": 92,
+        "listed": false,
+        "scoreCompleteness": 66,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.447,
+                33.2599
+              ],
+              [
+                -89.6808,
+                36.191
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 33.2599,
+                "xmin": -94.447,
+                "ymax": 36.191,
+                "xmax": -89.6808,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/69b701e736dd4809bfba612a9664631e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d7fcbc3645d64fdc80501933fc680af8",
+      "title": "Fire Stations TGS (Historical)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Structure/FeatureServer/21",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Fire Stations in Arkansas Any location where fire fighters are stationed at, or based out of, or where equipment that such personnel use in carrying out their jobs is stored for ready use. Fire Departments not having a permanent location are included, in which case their location has been depicted in the approximate center of the area served. This dataset includes those locations primarily engaged in forest or grasslands fire fighting, including fire lookout towers, provided the towers are in current use for fire protection purposes. This dataset includes both private and governmental entities. Text fields in this dataset have been set to all upper case to facilitate consistent database engine search results. All diacritics (e.g. the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.6041,
+                36.504
+              ],
+              [
+                -89.7758,
+                36.504
+              ],
+              [
+                -89.7758,
+                32.978
+              ],
+              [
+                -94.6041,
+                32.978
+              ],
+              [
+                -94.6041,
+                36.504
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Fire Stations in Arkansas Any location where fire fighters are stationed or based out of, or where equipment that such personnel use in carrying out their jobs is stored for ready use. Fire Departments not having a permanent location are included, in which case their location has been depicted at the city/town hall or at the center of their service area if a city/town hall does not exist. This dataset includes those locations primarily engaged in forest or grasslands fire fighting, including fire lookout towers if the towers are in current use for fire protection purposes. This dataset includes both private and governmental entities. Fire fighting training academies are also included. This dataset is comprised completely of license free data. The Fire Station dataset and the EMS dataset were merged into one working file. TGS processed as one file and then separated for delivery purposes. Records with \"-DOD\" appended to the end of the [NAME] value are located on a military base, as defined by the Defense Installation Spatial Data Infrastructure (DISDI) military installations and military range boundaries. Text fields in this dataset have been set to all upper case to facilitate consistent database engine search results. All diacritics (e.g., the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics. The currentness of this dataset is indicated by the [CONTDATE] field. Based upon this field, the oldest record dates from 09/06/2005 and the newest record dates from 08/27/2008.",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Fire Stations TGS (Historical)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667485000,
+        "avgRating": 0,
+        "id": "d7fcbc3645d64fdc80501933fc680af8",
+        "categories": [
+          "/Categories/Structure"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776955252000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Structure/FeatureServer/21",
+        "tags": [
+          "fire stations",
+          "structures",
+          "Fire Departments"
+        ],
+        "numViews": 108,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.6041,
+                32.978
+              ],
+              [
+                -89.7758,
+                36.504
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.978,
+                "xmin": -94.6041,
+                "ymax": 36.504,
+                "xmax": -89.7758,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/d7fcbc3645d64fdc80501933fc680af8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4a33df181a48430bb3d0e25baf265ed2",
+      "title": "Ecoregions Level III and IV (polygon)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/8",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Ecoregions denote areas of general similarity in ecosystems and in the type, quality, and quantity of environmental resources. They are designed to serve as a spatial framework for the research, assessment, management, and monitoring of ecosystems and ecosystem components.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.618,
+                36.5268
+              ],
+              [
+                -89.6183,
+                36.5268
+              ],
+              [
+                -89.6183,
+                32.9715
+              ],
+              [
+                -94.618,
+                32.9715
+              ],
+              [
+                -94.618,
+                36.5268
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Ecoregions denote areas of general similarity in ecosystems and in the type, quality, and quantity of environmental resources. They are designed to serve as a spatial framework for the research, assessment, management, and monitoring of ecosystems and ecosystem components. By recognizing the spatial differences in the capacities and potentials of ecosystems, ecoregions stratify the environment by its probable response to disturbance (Bryce, Omernik, and Larsen, 1999). Ecoregions are general purpose regions that are critical for structuring and implementing ecosystem management strategies across federal agencies, state agencies, and nongovernment organizations that are responsible for different types of resources in the same geographical areas (Omernik and others, 2000). A Roman numeral hierarchical scheme has been adopted for different levels of ecological regions. Level I is the coarsest level, dividing North America into 15 ecological regions. Level II divides the continent into 52 regions (Commission for Environmental Cooperation Working Group, 1997). At level III, the continental United States contains 104 ecoregions and the conterminous United States has 84 ecoregions (U.S. Environmental Protection Agency [USEPA], 2003). Level IV ecoregions are further subdivisions of level III ecoregions. Methods used to define the USEPA's ecoregions are explained in Omernik (1995), Omernik and others (2000), and Gallant and others (1989). The approach used to compile the ecoregions of Arkansas is based on the premise that ecological regions can be identified through the analysis of the spatial patterns and the composition of biotic and abiotic characteristics that affect or reflect differences in ecosystem quality and integrity (Wiken, 1986; Omernik, 1987, 1995). These characteristics include geology, physiography, climate, soils, land use, wildlife, fish, hydrology, and vegetation (including \"potential natural vegetation\" defined by Küchler (p. 2, 1964) as \"vegetation that would exist today\" if human influence ended and \"the resulting plant succession\" was \"telescoped into a single moment\"). The relative importance of each characteristic varies from one ecological region to another regardless of ecoregion hierarchical level. In Arkansas, there are 7 level III ecoregions and 32 level IV ecoregions; all but four of these level IV ecoregions are also found in ecologically similar parts of adjacent states (Chapman and others, 2002, 2004a, 2004b; Griffith, Omernik, and Azevedo, 1998). Arkansas' ecological diversity is strongly related to regional physiography, geology, soil, climate, and land use. Elevated karst plateaus, folded mountains, agricultural valleys, forested uplands, and bottomland forests occur. Fire-maintained prairie was once extensive in several parts of the state. The ecoregion were compiled at a scale of 1:250,000, and depict revisions and subdivisions of earlier level III ecoregions that were originally compiled at a smaller scale (U.S. Environmental Protection Agency, 2003; Omernik, 1987). It is part of a collaborative project primarily between USEPA Region 6, USEPA-National Health and Environmental Effects Research Laboratory (Corvallis, Oregon), and the Multi-Agency Wetland Planning Team (MAWPT), which comprises representatives of six Arkansas state agencies (Arkansas Natural Heritage Commission, Arkansas Soil and Water Conservation Commission, Arkansas Game and Fish Commission, Arkansas Department of Environmental Quality, Arkansas Forestry Commission, and University of Arkansas Cooperative Extension Service). Collaboration and consultation also occurred with the U.S. Army Corps of Engineers (USACE), U.S. Department of Agriculture-Natural Resources Conservation Service (NRCS), U.S. Geological Survey (USGS), U.S. Fish and Wildlife Service, USGS-Earth Resources Observation Systems Data Center, and University of Arkansas-Center for Advanced Spatial Technologies. This project is associated with an interagency effort to develop a common framework of ecological regions (McMahon and others, 2001). Reaching that objective requires recognition of the differences in the conceptual approaches and mapping methodologies applied to develop the most common ecoregion-type frameworks, including those developed by the U.S. Department of Agriculture-Forest Service (Bailey and others, 1994), the USEPA (Omernik 1987, 1995), and the U.S. Department of Agriculture-Soil Conservation Service (1981). As each of these frameworks is further refined, their differences are becoming less discernible. Each collaborative ecoregion project, such as this one in Arkansas, is a step toward attaining consensus and consistency in ecoregion frameworks for the entire nation. Comments and questions regarding the Level III and IV Ecoregions of Arkansas should be addressed to Alan Woods, Oregon State University, c/o US EPA., 200 SW 35th Street, Corvallis, OR 97333, (541) 754-4469, email: woods.alan@epa.gov, or to James Omernik, USGS, c/o US EPA, 200 SW 35th Street, Corvallis, OR 97333, (541) 754-4458, email: omernik.james@epa.gov",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Ecoregions Level III and IV (polygon)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667350000,
+        "avgRating": 0,
+        "id": "4a33df181a48430bb3d0e25baf265ed2",
+        "categories": [
+          "/Categories/Environment"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": "Environmental Protection Agency",
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1777575186000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Environment/FeatureServer/8",
+        "tags": [
+          "ADEQ",
+          "ADEE",
+          "Ecoregions",
+          "ecology",
+          "boundaries"
+        ],
+        "numViews": 184,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.618,
+                32.9715
+              ],
+              [
+                -89.6183,
+                36.5268
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 32.9715,
+                "xmin": -94.618,
+                "ymax": 36.5268,
+                "xmax": -89.6183,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/4a33df181a48430bb3d0e25baf265ed2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "e1e1264db26e44238d722a160717dd29",
+      "title": "Jewish Synagogue (point)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Structure/FeatureServer/27",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Jewish Synagogues in Arkansas The Jewish Synagogues dataset is composed of Jewish places of worship and other Jewish religious institutions such as Jewish Community Centers. Some Jewish Synagogues were processed using information found through internet research and locations were determined based upon available sources of ortho imagery (USGS DOQQ’s, NAIP, and state and local imagery). These records are indicated by a [CONTHOW] of “ALT REF”. All data is non license restricted data. The text fields in this dataset have been set to all upper case to facilitate consistent database engine search results. All diacritics (e.g. the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics. The currentness of this dataset is indicated by the [CONTDATE] attribute. Based upon this attribute, the oldest record dates from 2007/07/20 and the newest record dates from 2007/07/31",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.3966,
+                36.3765
+              ],
+              [
+                -90.6912,
+                36.3765
+              ],
+              [
+                -90.6912,
+                33.6187
+              ],
+              [
+                -94.3966,
+                33.6187
+              ],
+              [
+                -94.3966,
+                36.3765
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Jewish Synagogues in Arkansas The Jewish Synagogues dataset is composed of Jewish places of worship and other Jewish religious institutions such as Jewish Community Centers. Some Jewish Synagogues were processed using information found through internet research and locations were determined based upon available sources of ortho imagery (USGS DOQQ's, NAIP, and state and local imagery). These records are indicated by a [CONTHOW] of \"ALT REF\". All data is non license restricted data. The text fields in this dataset have been set to all upper case to facilitate consistent database engine search results. All diacritics (e.g. the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics. The currentness of this dataset is indicated by the [CONTDATE] attribute. Based upon this attribute, the oldest record dates from 2007/07/20 and the newest record dates from 2007/07/31",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Jewish Synagogue (point)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667624000,
+        "avgRating": 0,
+        "id": "e1e1264db26e44238d722a160717dd29",
+        "categories": [
+          "/Categories/Structure"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776956069000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Structure/FeatureServer/27",
+        "tags": [
+          "Structures",
+          "Religious buildings",
+          "community centers"
+        ],
+        "numViews": 116,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.3966,
+                33.6187
+              ],
+              [
+                -90.6912,
+                36.3765
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 33.6187,
+                "xmin": -94.3966,
+                "ymax": 36.3765,
+                "xmax": -90.6912,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/e1e1264db26e44238d722a160717dd29"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2a2ca1546f404a8395dd1a5f619090b4",
+      "title": "Large Roman Catholic Church (point)",
+      "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Structure/FeatureServer/42",
+      "publisher": "andrew.feltmann",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Roman Catholic Churches In Large Cities in Arkansas This dataset includes buildings where Roman Catholics gather for organized worship in cities with a population of 50,000 people or more.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -94.4311,
+                36.0891
+              ],
+              [
+                -90.6971,
+                36.0891
+              ],
+              [
+                -90.6971,
+                34.1971
+              ],
+              [
+                -94.4311,
+                34.1971
+              ],
+              [
+                -94.4311,
+                36.0891
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<p>Roman Catholic Churches are Christian Churches that are subject to the papal authority in Rome. In addition to what are commonly thought of as Roman Catholic Churches, this data set also includes Newman (or Neumann) Centers and Chaldean Churches. Newman Centers are Roman Catholic Churches setup specifically to serve college or university populations. The Chaldean Church (also known as the Chaldean Church of Babylon) reunited with the Catholic Church in the 15th century. It originated in the Middle East. If a group of Roman Catholics gather for organized worship at a location that also serves another function, such as a school, these locations are included in this dataset if they otherwise meet the criteria for inclusion. Roman Catholic Shrines are included if they hold regularly scheduled mass. If a congregation celebrates mass at multiple locations, we have tried to include all such locations. This dataset excludes churches that are not subject to papal authority in Rome. Some churches may refer to themselves as “Catholic”, and yet not be part of the “Roman” Catholic Church and these Churches are excluded from this dataset. Specifically Protestant Churches and their descendants which separated from the Roman Catholic Church beginning in 1517, Eastern Orthodox Churches (e.g. Russian, Greek) which separated from the Roman Catholic Church in 1054, and Episcopalian (Church of England in America) which separated from the Roman Catholic Church in 1534 are excluded. The 22 “Eastern Catholic autonomous particular churches”, with the exception of the Chaldean Church, are also excluded. These are Churches which are in full communion with the Pope in Rome, but which practice their own rites which are different from the Western or Latin Roman Catholic Church. This dataset excludes rectories. Private homes, even if they are used for formal worship, are excluded from this dataset. Locations that are only used for administrative purposes are also excluded. This dataset also includes original TGS research. All data is non license restricted data. TGS has ceased making phone calls to verify information about religious locations. Therefore all entities in this dataset were “verified” using alternative reference sources, such as topo maps, parcel maps, various sources of imagery, and internet research. The [CONTHOW] (contact how) attribute for these entities has been set to “ALT REF”. Text fields in this dataset have been set to all upper case to facilitate consistent database engine search results. All diacritics (e.g. the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics. The currentness of this dataset is indicated by the [CONTDATE] attribute. Based upon this attribute, the oldest record dates from 2007/09/05 and the newest record dates from 2007/09/05</p>",
+        "licenseInfo": "",
+        "ownerId": "01fe7caadf7049038dfe3ce421cdb58a",
+        "title": "Large Roman Catholic Church (point)",
+        "type": "Feature Service",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784667555000,
+        "avgRating": 0,
+        "id": "2a2ca1546f404a8395dd1a5f619090b4",
+        "categories": [
+          "/Categories/Structure"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "andrew.feltmann",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1784664000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1776956760000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Structure/FeatureServer/42",
+        "tags": [
+          "Structures",
+          "Religious buildings"
+        ],
+        "numViews": 116,
+        "numComments": 0,
+        "size": 88,
+        "listed": false,
+        "scoreCompleteness": 75,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "additionalResource::0"
+              },
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": true,
+                "key": "geojson"
+              },
+              {
+                "hidden": true,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::1"
+              },
+              {
+                "hidden": false,
+                "key": "additionalResource::2"
+              }
+            ],
+            "flowType": "fgdb"
+          },
+          "location": {
+            "extent": [
+              [
+                -94.4311,
+                34.1971
+              ],
+              [
+                -90.6971,
+                36.0891
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 34.1971,
+                "xmin": -94.4311,
+                "ymax": 36.0891,
+                "xmax": -90.6971,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/2a2ca1546f404a8395dd1a5f619090b4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "814b4bc821c84d82b848b4003b5c5cc8",
+      "title": "County Assessors Mapping Program (CAMP)",
+      "url": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/814b4bc821c84d82b848b4003b5c5cc8",
+      "publisher": "matthew.delong",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": null,
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubPage",
+          "OpenData",
+          "slug|agio|county-assessors-mapping-program-camp"
+        ],
+        "description": null,
+        "licenseInfo": null,
+        "ownerId": "7afceafc413b4ab36166161450feff9c",
+        "title": "County Assessors Mapping Program (CAMP)",
+        "type": "Hub Page",
+        "orgId": "PwY9ZuZRDiI5nXUB",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789049891000,
+        "avgRating": 0,
+        "id": "814b4bc821c84d82b848b4003b5c5cc8",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "matthew.delong",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1789048800000,
+        "thumbnail": null,
+        "languages": [],
+        "created": 1757616478000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          ""
+        ],
+        "numViews": 595,
+        "numComments": 0,
+        "size": 33587,
+        "listed": false,
+        "scoreCompleteness": 16,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "schemaVersion": 1.1,
+          "orgUrlKey": "agio",
+          "slug": "agio|county-assessors-mapping-program-camp"
+        },
+        "source": "Arkansas GIS Office",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all/items/814b4bc821c84d82b848b4003b5c5cc8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.gis.arkansas.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    198
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 6,
+  "next_offset": 6,
+  "response_sha256": "828590775d2b76aff84309b3bf7c904699615984ba3d160e49caefefdbd52749",
+  "search_complete": true
+}

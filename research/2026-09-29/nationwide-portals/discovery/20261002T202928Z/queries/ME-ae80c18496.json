@@ -1,0 +1,264 @@
+{
+  "jurisdiction_code": "ME",
+  "query": "electricity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T20:30:18.911638+00:00",
+  "candidates": [
+    {
+      "id": "05043c7d1564468f8011403346b7c469",
+      "title": "NECEC Centerline WFS",
+      "url": "https://dservices1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/services/NECEC_Centerline/WFSServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "New England Clean Energy Connect Power Transmission Center Line WFS",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.72073951148776,
+                45.527147298561864
+              ],
+              [
+                -69.55260387512675,
+                45.527147298561864
+              ],
+              [
+                -69.55260387512675,
+                43.92537710096998
+              ],
+              [
+                -70.72073951148776,
+                43.92537710096998
+              ],
+              [
+                -70.72073951148776,
+                45.527147298561864
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Metadata",
+          "Multilayer",
+          "OGC",
+          "Service",
+          "Web Feature Service",
+          "WFS",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>New England Clean Energy Connect Power Transmission Center Line.  Source: </span><a href='https://www.maine.gov:443/dep/gis/datamaps/lawb_necec_project/NECEC%20Revision%201%20December%2030,%202020.kmz' rel='nofollow ugc' style='text-decoration:underline;'><span>https://www.maine.gov/dep/gis/datamaps/lawb_necec_project/NECEC%20Revision%201%20December%2030,%202020.kmz</span></a><span>.  Accessed 2021-02-02.  Source data re-projected from geographic coordinate reference system EPSG 4326 to projected coordinate reference system EPSG 6348.</span></p></div></div></div>",
+        "licenseInfo": "Access: Public.  Use: User assumes risk.",
+        "title": "NECEC Centerline WFS",
+        "type": "WFS",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1637514819000,
+        "avgRating": 0,
+        "id": "05043c7d1564468f8011403346b7c469",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102388",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "MaineDEP, MaineGIS",
+        "largeThumbnail": null,
+        "lastViewed": 1722693600000,
+        "thumbnail": "thumbnail/thumbnail1612346052711.png",
+        "languages": [],
+        "created": 1612281679000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://dservices1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/services/NECEC_Centerline/WFSServer",
+        "tags": [
+          "utilitiesCommunication",
+          "electricity",
+          "electric",
+          "power transmission",
+          "New England Clean Energy Connect",
+          "NECEC",
+          "MaineDEP",
+          "MaineGIS",
+          "Maine"
+        ],
+        "numViews": 52,
+        "numComments": 0,
+        "size": 131072,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NECEC_Centerline",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/05043c7d1564468f8011403346b7c469"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "8152b34d02174d5f8463c8d8ed7d2048",
+      "title": "NECEC Centerline Layer",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/NECEC_Centerline/FeatureServer",
+      "publisher": "MaineGIS_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "New England Clean Energy Connect Power Transmission Center Line",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -70.72073951148776,
+                45.527147298561864
+              ],
+              [
+                -69.55260387512675,
+                45.527147298561864
+              ],
+              [
+                -69.55260387512675,
+                43.92537710096998
+              ],
+              [
+                -70.72073951148776,
+                43.92537710096998
+              ],
+              [
+                -70.72073951148776,
+                45.527147298561864
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>New England Clean Energy Connect Power Transmission Center Line.  Source: </span><a href='https://www.maine.gov:443/dep/gis/datamaps/lawb_necec_project/NECEC%20Revision%201%20December%2030,%202020.kmz' rel='nofollow ugc' style='text-decoration:underline;'><span>https://www.maine.gov/dep/gis/datamaps/lawb_necec_project/NECEC%20Revision%201%20December%2030,%202020.kmz</span></a><span>.  Accessed 2021-02-02.  Source data re-projected from geographic coordinate reference system EPSG 4326 to projected coordinate reference system EPSG 6348.</span></p></div></div></div>",
+        "licenseInfo": "Access: Public.  Use: User accepts risk.",
+        "title": "NECEC Centerline Layer",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1612346104000,
+        "avgRating": 0,
+        "id": "8152b34d02174d5f8463c8d8ed7d2048",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102388",
+        "numRatings": 0,
+        "owner": "MaineGIS_maine",
+        "accessInformation": "MaineDEP, MaineGIS",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1612346087952.png",
+        "languages": [],
+        "created": 1612281655000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/NECEC_Centerline/FeatureServer",
+        "tags": [
+          "utilitiesCommunication",
+          "electricity",
+          "electric",
+          "power transmission",
+          "New England Clean Energy Connect",
+          "NECEC",
+          "MaineDEP",
+          "MaineGIS",
+          "Maine"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 131072,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NECEC_Centerline",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/8152b34d02174d5f8463c8d8ed7d2048"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    247
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "11cde3a26937254a9920cd0effbbd0611d6ef8f9f7a8e62a1901eec824f56930",
+  "search_complete": true
+}

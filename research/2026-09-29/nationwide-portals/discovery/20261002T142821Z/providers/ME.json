@@ -1,0 +1,201 @@
+{
+  "jurisdiction_code": "ME",
+  "catalog_id": "me-primary",
+  "catalog_url": "https://mainegeolibrary-maine.hub.arcgis.com/",
+  "started_at": "2026-10-02T14:28:26.502836+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items",
+  "domain": "mainegeolibrary-maine.hub.arcgis.com",
+  "validation_receipt": 29,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 33,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": {
+                  "any": [
+                    "e0cfcc034bae4704aaf0c3acf860cb77",
+                    "5a9dc9d1751d4faba2a9c75a073e04f5",
+                    "c887ab57be6d402bb372109f00b7cf4e",
+                    "041e7164ec554fc188996ba391b11cae",
+                    "d08c2468ae4e494e868dc220b08c2bfa",
+                    "6c87f73c813244a4b6c610bfdcfedfcf",
+                    "700c3e9083db41d1a619f8a3eaf40a50",
+                    "ffdbfbe726364a598af766b81282a8a4",
+                    "756456f798ab4e06b973817f82107078"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "e0cfcc034bae4704aaf0c3acf860cb77",
+                  "ffdbfbe726364a598af766b81282a8a4",
+                  "700c3e9083db41d1a619f8a3eaf40a50",
+                  "756456f798ab4e06b973817f82107078",
+                  "5a9dc9d1751d4faba2a9c75a073e04f5",
+                  "c887ab57be6d402bb372109f00b7cf4e",
+                  "6c87f73c813244a4b6c610bfdcfedfcf",
+                  "a6bb762833ec48b7abf337d6b74ae8ef",
+                  "041e7164ec554fc188996ba391b11cae",
+                  "d08c2468ae4e494e868dc220b08c2bfa"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Document",
+        "key": "document",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

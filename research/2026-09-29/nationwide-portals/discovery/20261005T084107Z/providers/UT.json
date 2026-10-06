@@ -1,0 +1,24 @@
+{
+  "jurisdiction_code": "UT",
+  "catalog_id": "ut-primary",
+  "catalog_url": "https://gis.utah.gov/products/sgid/sgid-index/",
+  "started_at": "2026-10-05T08:41:22.164508+00:00",
+  "attempts": [
+    {
+      "adapter": "hub",
+      "endpoint": "https://gis.utah.gov/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "adapter": "ckan",
+      "endpoint": "https://gis.utah.gov/api/3/action/package_search",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "status": "html_catalog_only",
+  "adapter": "html_catalog_scan",
+  "endpoint": "https://gis.utah.gov/products/sgid/sgid-index/",
+  "validation_receipt": 74,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_page_links_only_geography_unverified"
+}

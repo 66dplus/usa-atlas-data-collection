@@ -10,13 +10,13 @@
     "source": "live-coverage gap intake",
     "food_excluded": true
   },
-  "checked_at": "2026-09-30T01:02:21.135335+00:00",
+  "checked_at": "2026-10-04T16:55:26.447384+00:00",
   "status": "needs_review",
   "total_catalog_matches": 23,
-  "page_offset": 20,
-  "next_cursor": 0,
+  "page_offset": 0,
+  "next_cursor": 20,
   "max_search_results_per_cycle": 100,
-  "search_complete": true,
+  "search_complete": false,
   "candidates": [
     {
       "id": "34zf-iv73",
@@ -59,19 +59,19 @@
       "status": "needs_review"
     },
     {
-      "id": "ucdy-byxd",
-      "title": "Local Law 44 - Projects",
-      "url": "https://data.cityofnewyork.us/Housing-Development/Local-Law-44-Projects/ucdy-byxd",
-      "publisher": "NYC OpenData",
-      "data_url": "https://data.cityofnewyork.us/resource/ucdy-byxd.json",
-      "status": "needs_review"
-    },
-    {
       "id": "snck-inhz",
       "title": "Resident Economic Empowerment and Sustainability (REES) for NYCHA Residents - Borough - Local Law 163",
       "url": "https://data.cityofnewyork.us/Social-Services/Resident-Economic-Empowerment-and-Sustainability-R/snck-inhz",
       "publisher": "NYC OpenData",
       "data_url": "https://data.cityofnewyork.us/resource/snck-inhz.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "ucdy-byxd",
+      "title": "Local Law 44 - Projects",
+      "url": "https://data.cityofnewyork.us/Housing-Development/Local-Law-44-Projects/ucdy-byxd",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/ucdy-byxd.json",
       "status": "needs_review"
     },
     {
@@ -131,6 +131,14 @@
       "status": "needs_review"
     },
     {
+      "id": "x4x8-m3ds",
+      "title": "Summer Youth Employment Program (SYEP) for NYCHA Residents by Borough- Local Law 163",
+      "url": "https://data.cityofnewyork.us/Social-Services/Summer-Youth-Employment-Program-SYEP-for-NYCHA-Res/x4x8-m3ds",
+      "publisher": "NYC OpenData",
+      "data_url": "https://data.cityofnewyork.us/resource/x4x8-m3ds.json",
+      "status": "needs_review"
+    },
+    {
       "id": "acek-a5z6",
       "title": "Summer Youth Employment Program (SYEP) for NYCHA Residents by NYCHA development- Local Law 163",
       "url": "https://data.cityofnewyork.us/Social-Services/Summer-Youth-Employment-Program-SYEP-for-NYCHA-Res/acek-a5z6",
@@ -147,27 +155,11 @@
       "status": "needs_review"
     },
     {
-      "id": "x4x8-m3ds",
-      "title": "Summer Youth Employment Program (SYEP) for NYCHA Residents by Borough- Local Law 163",
-      "url": "https://data.cityofnewyork.us/Social-Services/Summer-Youth-Employment-Program-SYEP-for-NYCHA-Res/x4x8-m3ds",
-      "publisher": "NYC OpenData",
-      "data_url": "https://data.cityofnewyork.us/resource/x4x8-m3ds.json",
-      "status": "needs_review"
-    },
-    {
       "id": "4kkh-qhtc",
       "title": "Jobs Plus for NYCHA Residents - Local Law 163",
       "url": "https://data.cityofnewyork.us/Social-Services/Jobs-Plus-for-NYCHA-Residents-Local-Law-163/4kkh-qhtc",
       "publisher": "NYC OpenData",
       "data_url": "https://data.cityofnewyork.us/resource/4kkh-qhtc.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "y3hw-z6bm",
-      "title": "OATH Trials Division Case Status",
-      "url": "https://data.cityofnewyork.us/City-Government/OATH-Trials-Division-Case-Status/y3hw-z6bm",
-      "publisher": "NYC OpenData",
-      "data_url": "https://data.cityofnewyork.us/resource/y3hw-z6bm.json",
       "status": "needs_review"
     },
     {
@@ -179,30 +171,14 @@
       "status": "needs_review"
     },
     {
-      "id": "9s68-zggy",
-      "title": "Local Law 44 Disqualified List",
-      "url": "https://data.cityofnewyork.us/Housing-Development/Local-Law-44-Disqualified-List/9s68-zggy",
+      "id": "y3hw-z6bm",
+      "title": "OATH Trials Division Case Status",
+      "url": "https://data.cityofnewyork.us/City-Government/OATH-Trials-Division-Case-Status/y3hw-z6bm",
       "publisher": "NYC OpenData",
-      "data_url": "https://data.cityofnewyork.us/resource/9s68-zggy.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "qxzj-vkn2",
-      "title": "Campaign Expenditures",
-      "url": "https://data.cityofnewyork.us/City-Government/Campaign-Expenditures/qxzj-vkn2",
-      "publisher": "NYC OpenData",
-      "data_url": "https://data.cityofnewyork.us/resource/qxzj-vkn2.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "rjkp-yttg",
-      "title": "Campaign Contributions",
-      "url": "https://data.cityofnewyork.us/City-Government/Campaign-Contributions/rjkp-yttg",
-      "publisher": "NYC OpenData",
-      "data_url": "https://data.cityofnewyork.us/resource/rjkp-yttg.json",
+      "data_url": "https://data.cityofnewyork.us/resource/y3hw-z6bm.json",
       "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "2d8e79d9ab3cda44f495671e40f7283d77b32269ff1e4c905462e522b5306d32"
+  "response_sha256": "ba4e8f6c22677887b4c365a6c8e9e06b33cf38a60eb7d74944259914dd4af10b"
 }

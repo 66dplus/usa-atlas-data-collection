@@ -1,0 +1,154 @@
+{
+  "jurisdiction_code": "KY",
+  "query": "physical activity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T20:44:36.925446+00:00",
+  "candidates": [
+    {
+      "id": "ecc306d0b7034f199175d8d3e56623b5",
+      "title": "Public Port Facilities in Kentucky",
+      "url": "https://services2.arcgis.com/CcI36Pduqd0OR4W9/arcgis/rest/services/KYTC_Public_Port_Facilities/FeatureServer",
+      "publisher": "KYTCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Depicts point feature locations of publicly operated riverports in Kentucky. Most of the ports are actively operating, but some are still developing; this is noted in the Op_Status field. Actively operating port locations are depicted at the physical site where operations occur. The mailing address is different than the physical location of the Greenup-Boyd County Riverport. Developing port locations are depicted at their office since they do not have a physical, operational site adjacent to a waterway.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.3200699796586,
+                39.04939988259034
+              ],
+              [
+                -82.74882106872933,
+                39.04939988259034
+              ],
+              [
+                -82.74882106872933,
+                36.56790411815806
+              ],
+              [
+                -89.3200699796586,
+                36.56790411815806
+              ],
+              [
+                -89.3200699796586,
+                39.04939988259034
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>This feature layer displays the locations of publicly operated riverports in Kentucky. Most ports are actively operating, while some are still in development. The operational status is indicated in the Op_Status field. Active ports are mapped at their physical operational sites, while developing ports are shown at their office locations if they lack a functional site near a waterway. This dataset supports transportation planning, logistics, and economic development.</p><p>Data Download: <a target='_blank' href='https://ky.app.box.com/s/x19a1nt03fmeihifoqmob46udmnpauiu' rel='nofollow ugc noopener noreferrer'>https://ky.app.box.com/s/x19a1nt03fmeihifoqmob46udmnpauiu</a></p>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p>KYTC publishes this data under the Creative Commons Zero (CC0) license. The data is public domain and KYTC does not warrant the data. It is the users\" responsibility to determine if it is appropriate for their purposes. For further details about the CC0 license, please refer to <a target='_blank' href='https://creativecommons.org/publicdomain/zero/1.0/' rel='nofollow ugc noopener noreferrer'>https://creativecommons.org/publicdomain/zero/1.0/</a></p></div></div></div>",
+        "ownerId": "24515d9a6afb9184fcb7d56f3c126dfe",
+        "title": "Public Port Facilities in Kentucky",
+        "type": "Feature Service",
+        "orgId": "CcI36Pduqd0OR4W9",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773167736000,
+        "avgRating": 0,
+        "id": "ecc306d0b7034f199175d8d3e56623b5",
+        "categories": [
+          "/Categories/Environment/Production",
+          "/Categories/Administrative/Owner/KYTC GIS",
+          "/Categories/Business Unit/Department of Highways/Planning"
+        ],
+        "spatialReference": "102763",
+        "numRatings": 0,
+        "owner": "KYTCGIS",
+        "accessInformation": "Kentucky Transportation Cabinet, Division of Planning - Multi-Modal group",
+        "largeThumbnail": null,
+        "lastViewed": 1787601600000,
+        "thumbnail": "thumbnail/thumbnail1770399582431.png",
+        "languages": [],
+        "created": 1733757215000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services2.arcgis.com/CcI36Pduqd0OR4W9/arcgis/rest/services/KYTC_Public_Port_Facilities/FeatureServer",
+        "tags": [
+          "Riverports",
+          "river",
+          "ports",
+          "public",
+          "kentucky",
+          "waterways",
+          "freight",
+          "facility",
+          "KYTC",
+          "KY DOT",
+          "US DOT",
+          "Transportation",
+          "AASHTO",
+          "Kentucky Transportation Cabinet",
+          "CC0",
+          "FHWA"
+        ],
+        "numViews": 2243,
+        "numComments": 0,
+        "size": 114688,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "KYTC_Public_Port_Facilities",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Transportation Cabinet",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/ecc306d0b7034f199175d8d3e56623b5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    244
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "234f9779c1619c165cbe56876b20913e283f64d3c1daa18dc8357875e3d0eccf",
+  "search_complete": true
+}

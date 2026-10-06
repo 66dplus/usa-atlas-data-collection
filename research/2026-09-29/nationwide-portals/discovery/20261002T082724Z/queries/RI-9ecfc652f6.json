@@ -1,0 +1,140 @@
+{
+  "jurisdiction_code": "RI",
+  "query": "immigration",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T08:27:53.871841+00:00",
+  "candidates": [
+    {
+      "id": "aa94f7ab0ea74f63bbc8dbfe372ca546",
+      "title": "Correctional Institutions",
+      "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/Correctional_Institutions/FeatureServer",
+      "publisher": "URIEDC_RIGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Locations of correctional institutions in Rhode Island.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.81257126643219,
+                42.00584937624914
+              ],
+              [
+                -71.16598503700605,
+                42.00584937624914
+              ],
+              [
+                -71.16598503700605,
+                41.17635754635844
+              ],
+              [
+                -71.81257126643219,
+                41.17635754635844
+              ],
+              [
+                -71.81257126643219,
+                42.00584937624914
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "The Jails and Prisons sub-layer is part of the Emergency Law Enforcement Sector and the Critical Infrastructure Category. A Jail or Prison consists of any facility or location where individuals are regularly and lawfully detained against their will. This includes Federal and State prisons, local jails, and juvenile detention facilities, as well as law enforcement temporary holding facilities. Work camps, including camps operated seasonally, are included if they otherwise meet the definition. A Federal Prison is a facility operated by the Federal Bureau of Prisons for the incarceration of individuals. A State Prison is a facility operated by a state, commonwealth, or territory of the US for the incarceration of individuals for a term usually longer than 1 year. A Juvenile Detention Facility is a facility for the incarceration of those who have not yet reached the age of majority (usually 18 years). A Local Jail is a locally administered facility that holds inmates beyond arraignment (usually 72 hours) and is staffed by municipal or county employees. A temporary holding facility, sometimes referred to as a &quot;police lock up&quot; or &quot;drunk tank&quot;, is a facility used to detain people prior to arraignment. Locations that are administrative offices only are excluded from the dataset. This definition of Jails is consistent with that used by the Department of Justice (DOJ) in their &quot;National Jail Census&quot;, with the exception of &quot;temporary holding facilities&quot;, which the DOJ excludes. <br /><br />Locations which function primarily as law enforcement offices are included in this dataset if they have holding cells. If the facility is enclosed with a fence, wall, or structure with a gate around the buildings only, the locations were depicted as &quot;on entity&quot; at the center of the facility. If the facility's buildings are not enclosed, the locations were depicted as &quot;on entity&quot; on the main building or &quot;block face&quot; on the correct street segment. Personal homes, administrative offices, and temporary locations are intended to be excluded from this dataset; however, some personal homes of constables are included due to the fact that many constables work out of their homes. TGS has made a concerted effort to include all correctional institutions. <br /><br />This dataset includes non license restricted data from the following federal agencies: Bureau of Indian Affairs; Bureau of Reclamation; U.S. Park Police; Federal Bureau of Prisons; Bureau of Alcohol, Tobacco, Firearms and Explosives; U.S. Marshals Service; U.S. Fish and Wildlife Service; National Park Service; U.S. Immigration and Customs Enforcement; and U.S. Customs and Border Protection. The Law Enforcement dataset and the Correctional Institutions dataset were merged into one working file. TGS processed as one file and then separated for delivery purposes. With the merge of the Law Enforcement and the Correctional Institutions datasets, NAICS Codes &amp; Descriptions were assigned based on the facility's main function which was determined by the entity's name, facility type, web research, and state supplied data. In instances where the entity's primary function is both law enforcement and corrections, the NAICS Codes and Descriptions are assigned based on the dataset in which the record is located (i.e., a facility that serves as both a Sheriff's Office and as a jail is designated as [NAICSDESCR]=&quot;SHERIFFS' OFFICES (EXCEPT COURT FUNCTIONS ONLY)&quot; in the Law Enforcement layer and as [NAICSDESCR]=&quot;JAILS (EXCEPT PRIVATE OPERATION OF)&quot; in the Correctional Institutions layer). Records with &quot;-DOD&quot; appended to the end of the [NAME] value are located on a military base, as defined by the Defense Installation Spatial Data Infrastructure (DISDI) military installations and military range boundaries. &quot;#&quot; and &quot;*&quot; characters were automatically removed from standard fields that TGS populated. Double spaces were replaced by single spaces in these same fields. Text fields in this dataset have been set to all upper case to facilitate consistent database engine search results. All diacritics (e.g., the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics. The currentness of this dataset is indicated by the [CONTDATE] field. Based on the values in this field, the oldest record dates from 05/03/2006 and the newest record dates from 10/19/2009.\n\n<br /><br />Homeland Security Use Cases: Use cases describe how the data may be used and help to define and clarify requirements. 1. A threat to cause the mass release of prisoners by an outside terrorist group has been identified. Steps need to be taken to provide extra security at the targeted prisons. 2. Massive civil unrest has resulted in a large number of arrests. Appropriate space is needed outside of the immediate area to house the arrested individuals. 3. Massive civil unrest has resulted in a large number of arrests. A &quot;holding camp&quot; has been established to hold those arrested. Trained security guards are needed to staff the holding camp. 4. A disaster has caused the need for an emergency labor force (e.g., sandbagging during a flood) and prisoners may fill that need. 5. Inmates may need to be evacuated, or appropriate steps may need to be taken at a prison to protect the inmates and to ensure that a disaster does not present an opportunity for escape.",
+        "licenseInfo": "<span style='font-weight: bold;'><span style='text-decoration: underline;'>These data are shared under the RIGIS license agreement, which can be viewed below: </span></span><br />This  dataset is provided 'as is.’ The producer(s) of this dataset,  contributors to this dataset, the Rhode Island Geographic Information  System (RIGIS) consortium, the State of Rhode Island, and the University  of Rhode Island do not make any warranties of any kind for this  dataset, and are not liable for any loss or damage however and whenever  caused by any use of this dataset.<br /><br />Please acknowledge both RIGIS  and the primary producer(s) of this dataset in any derived products.   Versions of the RIGIS logo suitable for both printed and web-based  products are available at <a href='http://www.rigis.org/logos'>http://www.rigis.org/logos</a>.",
+        "title": "Correctional Institutions",
+        "type": "Feature Service",
+        "orgId": "S8zZg9pg23JUEexQ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1690911526000,
+        "avgRating": 0,
+        "id": "aa94f7ab0ea74f63bbc8dbfe372ca546",
+        "categories": [
+          "/Categories/Structures and facilities"
+        ],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "URIEDC_RIGIS",
+        "accessInformation": "URI EDC, RIGIS; TechniGraphics Inc. Icon Credit: Creative Stall via The Noun Project",
+        "largeThumbnail": null,
+        "lastViewed": 1690909200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "tokenExpirationDate": -1,
+        "created": 1469463400000,
+        "documentation": null,
+        "banner": null,
+        "url": "https://services2.arcgis.com/S8zZg9pg23JUEexQ/arcgis/rest/services/Correctional_Institutions/FeatureServer",
+        "tags": [
+          "FACILITY",
+          "RIGIS",
+          "Rhode Island",
+          "prison",
+          "jail",
+          "police station",
+          "law enforcement",
+          "detention facility"
+        ],
+        "numViews": 1148,
+        "numComments": 0,
+        "size": 65536,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "name": "Correctional_Institutions",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "TechniGraphics, Inc.",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.rigis.org/api/search/v1/collections/all/items/aa94f7ab0ea74f63bbc8dbfe372ca546"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.rigis.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    153
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "5ef995e4752b1f0c23b2010ca533c45062f047557d32c8b58942f8ea69fc4da5",
+  "search_complete": true
+}

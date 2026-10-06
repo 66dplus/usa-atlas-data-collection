@@ -1,0 +1,1529 @@
+{
+  "jurisdiction_code": "IN",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T08:42:04.956469+00:00",
+  "candidates": [
+    {
+      "id": "dfc5a94c04c04dc3940378886991d6f1",
+      "title": "USGS Groundwater Monitoring Well Locations 2023",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/USGS_Groundwater_Monitoring_Well_Locations_2023/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset contains point features representing U.S. Geological Survey groundwater monitoring wells in Indiana. These points contains attributes about each site including a URL to waterdata.usgs.gov which shows real-time monitoring information for the well. Data downloaded from the USGS National Water Information System (NWIS) web application on 3/20/2023.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.91975729199999,
+                41.72172501000006
+              ],
+              [
+                -85.11302999599997,
+                41.72172501000006
+              ],
+              [
+                -85.11302999599997,
+                38.10727257700006
+              ],
+              [
+                -87.91975729199999,
+                38.10727257700006
+              ],
+              [
+                -87.91975729199999,
+                41.72172501000006
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<p style='color:rgb(0, 0, 0); font-family:&quot;Times New Roman&quot;; font-size:medium;'>From the USGS: &quot;As part of the U.S. Geological Survey's (USGS) program for disseminating water data within USGS, to USGS cooperators, and to the general public, the USGS maintains a distributed network of computers and fileservers for the acquisition, processing, review, and long-term storage of water data. This water data is collected at over 1.5 million sites around the country and at some border and territorial sites. This distributed network of computers is called the National Water Information System (NWIS). Many types of data are stored in NWIS, including comprehensive information for site characteristics, well-construction details, time-series data for gage height, streamflow, ground-water level, precipitation, and physical and chemical properties of water. Additionally, peak flows, chemical analyses for discrete samples of water, sediment, and biological media are accessible within NWIS.</p><p style='color:rgb(0, 0, 0); font-family:&quot;Times New Roman&quot;; font-size:medium;'>&quot;NWISWeb is the USGS public web interface to much of the data stored and managed within NWIS. Data provided by NWISWeb are updated from NWIS on a regularly scheduled basis, and real-time data are generally updated upon receipt at local Water Science Centers. NWISWeb provides several output options including: graphs of real-time streamflow, water levels, and water quality; tabular output in HTML and ASCII tab-delimited files; and summary lists for selected sites that can be used as a basis for reselection to acquire refined details.</p><p style='color:rgb(0, 0, 0); font-family:&quot;Times New Roman&quot;; font-size:medium;'>&quot;NWISWeb provides a framework to obtain data on the basis of category, such as surface water, ground water, or water quality, and by geographic area. Further refinement is possible by choosing specific site-selection criteria and by defining the output desired. In addition, there are nearly 70 million water-quality results from nearly 4.5 million water samples collected at hundreds of thousands of sites.&quot;</p>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. The Indiana Geographic Information Office shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. The Indiana Geographic Information Office is not responsible for claims by a third party.</span>",
+        "title": "USGS Groundwater Monitoring Well Locations 2023",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335448000,
+        "avgRating": 0,
+        "id": "dfc5a94c04c04dc3940378886991d6f1",
+        "categories": [],
+        "spatialReference": "4326",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "United States Geological Survey (USGS)",
+        "largeThumbnail": "",
+        "lastViewed": 1780372800000,
+        "thumbnail": "thumbnail/thumbnail1679337698415.png",
+        "languages": [],
+        "created": 1780335447000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/USGS_Groundwater_Monitoring_Well_Locations_2023/FeatureServer",
+        "tags": [
+          "USGS",
+          "Groundwater",
+          "Groundwater Monitoring",
+          "Monitoring Wells"
+        ],
+        "numViews": 323,
+        "numComments": 0,
+        "size": 105321,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "USGS_Groundwater_Monitoring_Well_Locations_2023",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/dfc5a94c04c04dc3940378886991d6f1"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4804c25881034b898a95893e2798808e",
+      "title": "Unconsolidated Potentiometric Surface Elevations",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Unconsolidated/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "LINE: Display and/or analyses requiring spatial distribution of Unconsolidated potentiometric surface elevations in Indiana. POLYGON: Display and/or analyses requiring spatial distribution of Unconsolidated potentiometric surface elevations where contours were not mapped, due to no/insufficient data or limited or no groundwater resources in the unconsolidated deposits in Indiana.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.1606473399197,
+                41.780368918007476
+              ],
+              [
+                -84.69085786927107,
+                41.780368918007476
+              ],
+              [
+                -84.69085786927107,
+                37.75546291702588
+              ],
+              [
+                -88.1606473399197,
+                37.75546291702588
+              ],
+              [
+                -88.1606473399197,
+                41.780368918007476
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>LINE: </span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>This file is a digital geospatial polyline </span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>feature class </span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>of the unconsolidated potentiometric surface elevations mapped for Indiana by County </span><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'><br /></span></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>POLYGON: </span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>This file is a digital geospatial polygon </span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>feature class </span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>of the areas where the there was no/insufficient data; or limited or no unconsolidated deposits so no potentiometric surface elevations were mapped for these areas in Indiana.</span></div>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This service, including its underlying data, is distributed “AS-IS” without warranties of any kind, either expressed or implied, including but not limited to warranties of suitability of a particular purpose or use. The data are graphical representations and are for reference purposes only. They are not to be construed as a legal document or survey instrument. The Indiana Department of Natural Resources assumes no liability. A detailed on-the-ground survey and historical analysis of individual features may differ from these data. Credit should be given to the Indiana Department of Natural Resources. </span>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Unconsolidated Potentiometric Surface Elevations",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335541000,
+        "avgRating": 0,
+        "id": "4804c25881034b898a95893e2798808e",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "IDNR-Division of Water, Resource Assessment Section",
+        "largeThumbnail": "",
+        "lastViewed": 1782810000000,
+        "thumbnail": "thumbnail/thumbnail1773940652770.png",
+        "languages": [],
+        "created": 1780335540000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Unconsolidated/FeatureServer",
+        "tags": [
+          "Potentiometric surface",
+          "static water level",
+          "groundwater",
+          "water wells",
+          "water tables",
+          "Indiana",
+          "USA",
+          "No data",
+          "Limited or no Unconsolidated resources"
+        ],
+        "numViews": 147,
+        "numComments": 0,
+        "size": 13537579,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Unconsolidated",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/4804c25881034b898a95893e2798808e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "710d5d30f3274947a358548a339cc06a",
+      "title": "Bedrock Potentiometric Surface Elevations",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Bedrock/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "LINE: Display and/or analyses requiring spatial distribution of Bedrock potentiometric surface elevations in Indiana.\nPOLYGON: Display and/or analyses requiring spatial distribution of Unconsolidated potentiometric surface elevations where contours were not mapped, due to no/insufficient data or limited or no groundwater resources in the bedrock deposits in Indiana.\n\nThis is a State wide feature class of the areas not mapped.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.16066206017112,
+                41.78118543943293
+              ],
+              [
+                -84.68820604490453,
+                41.78118543943293
+              ],
+              [
+                -84.68820604490453,
+                37.75541710388003
+              ],
+              [
+                -88.16066206017112,
+                37.75541710388003
+              ],
+              [
+                -88.16066206017112,
+                41.78118543943293
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>LINE: This file is a digital geospatial polyline feature class of the bedrock potentiometric surface elevations mapped for Indiana by County</span><div><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'><br /></span></div><div><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>POLYGON: This file is a digital geospatial polygon </span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>feature class </span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>of the areas where the there was no/insufficient data; or limited or no bedrock deposits so no potentiometric surface elevations were mapped for these areas in Indiana.</span><span style='font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'></span></div>",
+        "licenseInfo": "<div>This service, including its underlying data, is distributed “AS-IS” without warranties of any kind, either expressed or implied, including but not limited to warranties of suitability of a particular purpose or use. The data are graphical representations and are for reference purposes only. They are not to be construed as a legal document or survey instrument. The Indiana Department of Natural Resources assumes no liability. A detailed on-the-ground survey and historical analysis of individual features may differ from these data. Credit should be given to the Indiana Department of Natural Resources. </div><div><br /></div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Bedrock Potentiometric Surface Elevations",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335516000,
+        "avgRating": 0,
+        "id": "710d5d30f3274947a358548a339cc06a",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "IDNR-Division of Water, Resource Assessment Section",
+        "largeThumbnail": "",
+        "lastViewed": 1782817200000,
+        "thumbnail": "thumbnail/thumbnail1773940626196.png",
+        "languages": [],
+        "created": 1780335515000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Bedrock/FeatureServer",
+        "tags": [
+          "Potentiometric surface",
+          "static water level",
+          "groundwater",
+          "water wells",
+          "water tables",
+          "Indiana",
+          "USA",
+          "No data",
+          "Limited or no Bedrock resources"
+        ],
+        "numViews": 9274,
+        "numComments": 0,
+        "size": 17752917,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Bedrock",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/710d5d30f3274947a358548a339cc06a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "02f6eb45e79149f9b91b04a78653059a",
+      "title": "Water Wells and Boreholes 1998",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Water_Wells_and_Boreholes_1998/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Water Wells and Boreholes - iLITH Database, 1998 - Shows data points that represent water wells and boreholes contained in the iLITH database, which is derived from the water-well database of the Indiana Department of Natural Resources (IDNR). The following description of the iLITH database is taken from Indiana Geological Survey Open-File Study 00-08: 'iLITH differs from the IDNR database in that lithologic descriptions and drilling contractor names have been standardized, locational information for ~104,000 water-well logs has been verified, and the spatial information in the database has been standardized for use with U.S. Geological Survey digital elevation data and U.S. Census Bureau Tiger data.' \n\nThe iLITH shapefile was developed as a tool for display of the iLITH version of the IDNR water-well record database in a GIS environment. The shapefile provides a display of the entire database and can be used with ESRI ArcView 3.2 extensions that are written in Avenue and were authored by IGS personnel. Use of the extensions allows immediate display of the water well records in map form and can be used to create and display lithologic cross sections or 3-D Scenes using ESRI ArcView 3D Analyst.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.11776449694699,
+                41.779176008200324
+              ],
+              [
+                -84.69210771516981,
+                41.779176008200324
+              ],
+              [
+                -84.69210771516981,
+                37.77855246865498
+              ],
+              [
+                -88.11776449694699,
+                37.77855246865498
+              ],
+              [
+                -88.11776449694699,
+                41.779176008200324
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This point shapefile was created to display in a Geographic Information Systems (GIS) environment the data points that represent water wells and boreholes contained in the iLITH database. The following description of the iLITH database contains the information contained in the shapefile, taken from Open-File Study 00-08 -- \"iLITH is a Microsoft Access database containing GIS capabilities that allows users to interact with a portion of the Indiana Department of Natural Resources (IDNR) Water-Well Record Database. iLITH differs from the IDNR database in that lithologic descriptions and drilling contractor names have been standardized, locational information for ~104,000 water-well logs has been verified, and the spatial information in the database has been standardized for use with USGS digital elevation data and U.S. Census Bureau Tiger data. The iLITH graphical interface facilitates efficient interaction between the user and the database.\" </SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Water Wells and Boreholes 1998",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335303000,
+        "avgRating": 0,
+        "id": "02f6eb45e79149f9b91b04a78653059a",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological and Water Survey (IGWS), Indiana Geographic Information Office (IGIO)",
+        "largeThumbnail": "",
+        "lastViewed": 1782813600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335302000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Water_Wells_and_Boreholes_1998/FeatureServer",
+        "tags": [
+          "water wells",
+          "boreholes",
+          "iLITH",
+          "iLITH database",
+          "lithology",
+          "lithologic",
+          "geology",
+          "hydrogeology",
+          "groundwater",
+          "water levels"
+        ],
+        "numViews": 434,
+        "numComments": 0,
+        "size": 5256802,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Water_Wells_and_Boreholes_1998",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geological Survey",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/02f6eb45e79149f9b91b04a78653059a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "710c4caf44c542c580a10eac87cbda8b",
+      "title": " Aquifer Recharge Near Surface",
+      "url": "https://portal.igs.indiana.edu/arcgis/rest/services/AQUIFER_RECHARGE_NEAR_SURFACE_IN/MapServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Groundwater recharge rates to shallow aquifers, Indiana.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.1607,
+                41.7753
+              ],
+              [
+                -84.6882,
+                41.7753
+              ],
+              [
+                -84.6882,
+                37.7554
+              ],
+              [
+                -88.1607,
+                37.7554
+              ],
+              [
+                -88.1607,
+                41.7753
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "Aquifer_Recharge_Near_Surface_IN is a raster data layer that displays the results of a regression analysis to determine the estimated rate of diffuse groundwater recharge to the water table in shallow aquifers in Indiana based on numerous landscape-level variables as predictors. The goal of this project was to use an objective, reproducible methodology to estimate groundwater recharge rates in both glaciated and driftless environments. This groundwater-recharge raster layer was developed by combining a multiple regression analysis of groundwater recharge with characteristics of near-surface geologic materials. The groundwater recharge data used in the multiple regression analysis was derived from calculations of groundwater baseflow and surface-water runoff for 279 streams in Indiana. Estimates of groundwater base flow were determined using hydrograph separation analysis (Institute of Hydrology, 1980) determined using a local-minimums approach with a recession slope test, and were converted to recharge by multiplying by using estimates of runoff following Wolock (2003). The baseflow index (BFI) provides the proportion of runoff that is assumed to be groundwater contribution, so recharge was estimated as BFI * interpolated statewide runoff (not runoff per basin). The average annual rate of groundwater recharge (in/year) was used as the dependent variable in a multiple regression analysis using ordinary least squares with several landscape and morphometric independent variables representing geologic, terrain, climate, and hydrogeologic characteristics. The regression model developed for Indiana had a global R2 value of 0.50, and the most influential variables at the 95% confidence level were:\n\n- Cumulative percent area of upstream impervious surfaces\n- Surface clay thickness\n- Percent of clay in soil\n- Average annual air temperature\n- Presence/absence of unconsolidated aquifers\n- Slope of ground surface\n- Cumulative percent area of upstream water bodies\n- Sand composition of water well boreholes\n- Cumulative percent area of upstream medium-height vegetation\n- Hydrologic group classification of soil (A,B,C,D - SSURGO)\n\nThe regression model was used as a mapping tool to spatially distribute estimates of recharge across Indiana, incorporating details of the important landscape variables.\n",
+        "licenseInfo": "<font size='2'>DATA DISCLAIMER: This data set was compiled by Indiana University, Indiana Geological Survey, using data believed to be accurate; however, a degree of error is inherent in all data. This product is distributed &quot;AS-IS&quot; without warranties of any kind, either expressed or implied, including but not limited to warranties of suitability to a particular purpose or use. No attempt has been made in either the design or production of these data to define the limits or jurisdiction of any federal, state, or local government. These data are intended for use only at the published scale or smaller and are for reference purposes only. They are not to be construed as a legal document or survey instrument. A detailed on-the- ground survey and historical analysis of a single site may differ from these data.</font><div><font size='2'><br /></font></div><div><font size='2'>COPYRIGHT 2015, THE TRUSTEES OF INDIANA UNIVERSITY, INDIANA GEOLOGICAL SURVEY, ALL RIGHTS RESERVED  CREDIT It is requested that the Indiana Geological Survey be cited in any products generated from this data. The following source citation should be included: Indiana Geological and Water Survey (IGWS). 2015. Aquifer_Recharge_Near_Surface_IN: Groundwater recharge rates to shallow aquifers, Indiana. Bloomington, IN: IGWS. https://portal.igs.indiana.edu/arcgis/rest/services/AQUIFER_RECHARGE_NEAR_SURFACE_IN/MapServer. Digital compilation by Sally L. Letsinger, 2015.</font></div><div><font size='2'><br /></font></div><div><font size='2'>WARRANTY: Indiana University, Indiana Geological Survey warrants that the media on which this product is stored will be free from defect in materials and workmanship for ninety (90) days from the date of acquisition. If such a defect is found, return the media to Publication Sales, Indiana Geological Survey, 611 North Walnut Grove Avenue, Bloomington, Indiana 47405 2208, and it will be replaced free of charge.</font></div><div><font size='2'><br /></font></div><div><font size='2'>LIMITATION OF WARRANTIES AND LIABILITY: Except for the expressed warranty above, the product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. Indiana University, Indiana Geological Survey shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other commercial or economic loss. Indiana University, Indiana Geological Survey is not responsible for claims by a third party. The maximum aggregate liability to the original purchaser shall not exceed the amount paid by you for the product.</font></div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": " Aquifer Recharge Near Surface",
+        "type": "Map Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788537846000,
+        "avgRating": 0,
+        "id": "710c4caf44c542c580a10eac87cbda8b",
+        "categories": [],
+        "spatialReference": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological and Water Survey (IGWS), 2015, \"Aquifer_Recharge_Near_Surface_IN:  Aquifer Recharge Near Surface\" [Map Service]: downloaded from Indiana Geological and Water Survey Geospatial Portal, https://portal.igs.indiana.edu/arcgis/rest/services/AQUIFER_RECHARGE_NEAR_SURFACE_IN/MapServer",
+        "largeThumbnail": "",
+        "lastViewed": 1789560000000,
+        "thumbnail": "thumbnail/thumbnail1785591352369.png",
+        "languages": [],
+        "created": 1788537846000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://portal.igs.indiana.edu/arcgis/rest/services/AQUIFER_RECHARGE_NEAR_SURFACE_IN/MapServer",
+        "tags": [
+          "geoscientificinformation",
+          "Indiana Geological Survey (IGS)",
+          "groundwater",
+          "recharge",
+          "aquifer",
+          "regression",
+          "probability",
+          "landscape variables",
+          "aquifer sensitivity",
+          "contamination",
+          "Indiana",
+          "Adams County",
+          "Allen County",
+          "Bartholomew County",
+          "Benton County",
+          "Blackford County",
+          "Boone County",
+          "Brown County",
+          "Carroll County",
+          "Cass County",
+          "Clark County",
+          "Clay County",
+          "Clinton County",
+          "Crawford County",
+          "Daviess County",
+          "Dearborn County",
+          "Decatur County",
+          "Dekalb County",
+          "Delaware County",
+          "Dubois County",
+          "Elkhart County",
+          "Fayette County",
+          "Floyd County",
+          "Fountain County",
+          "Franklin County",
+          "Fulton County",
+          "Gibson County",
+          "Grant County",
+          "Greene County",
+          "Hamilton County",
+          "Hancock County",
+          "Harrison County",
+          "Hendricks County",
+          "Henry County",
+          "Howard County",
+          "Huntington County",
+          "Jackson County",
+          "Jasper County",
+          "Jay County",
+          "Jefferson County",
+          "Jennings County",
+          "Johnson County",
+          "Knox County",
+          "Kosciusko County",
+          "Lagrange County",
+          "Lake County",
+          "LaPorte County",
+          "Lawrence County",
+          "Madison County",
+          "Marion County",
+          "Marshall County",
+          "Martin County",
+          "Miami County",
+          "Monroe County",
+          "Montgomery County",
+          "Morgan County",
+          "Newton County",
+          "Noble County",
+          "Ohio County",
+          "Orange County",
+          "Owen County",
+          "Parke County",
+          "Perry County",
+          "Pike County",
+          "Porter County",
+          "Posey County",
+          "Pulaski County",
+          "Putnam County",
+          "Randolph County",
+          "Ripley County",
+          "Rush County",
+          "Scott County",
+          "Shelby County",
+          "Spencer County",
+          "Starke County",
+          "Steuben County",
+          "St Joseph County",
+          "Sullivan County",
+          "Switzerland County",
+          "Tippecanoe County",
+          "Tipton County",
+          "Union County",
+          "Vanderburgh County",
+          "Vermillion County",
+          "Vigo County",
+          "Wabash County",
+          "Warren County",
+          "Warrick County",
+          "Washington County",
+          "Wayne County",
+          "Wells County",
+          "White County",
+          "Whitley County"
+        ],
+        "numViews": 54,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geological Survey",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/710c4caf44c542c580a10eac87cbda8b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "9fbf46a4e88e4b6ebd1b95a2b3f991f9",
+      "title": "Hydrogeologic Terrains 1995",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Hydrogeologic_Terrains_1995/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "HYDROGEOL_SETTINGS_IN was derived from a coverage named \"HGS.\" HGS was created to provide a coverage showing generalized interpretations of regional hydrostratigraphic and hydraulic relationships in Indiana, as mapped at a scale of 1:100,000. The coverage was created by the Indiana Geological Survey as a product deliverable for an investigation funded by the Office of the Indiana State Chemist. \n\nHydrogeologic Terrains and Settings, 1995 (1:100,000) - Shows generalized interpretations of regional hydrostratigraphic and hydraulic relationships. The coverage was created by the Indiana Geological Survey as a product deliverable for an investigation funded by the Office of the Indiana State Chemist. The methodology of the investigation and definitions of terms are described in Indiana Geological Survey Open-File Report 95-7.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.16066203879535,
+                41.78118458736932
+              ],
+              [
+                -84.68820607547507,
+                41.78118458736932
+              ],
+              [
+                -84.68820607547507,
+                37.75541710117801
+              ],
+              [
+                -88.16066203879535,
+                37.75541710117801
+              ],
+              [
+                -88.16066203879535,
+                41.78118458736932
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>HYDROGEOL_SETTINGS_IN is a polygon shapefile that shows hydrogeologic terrains and settings of Indiana. The methodology of the investigation and definitions of terms are described in an associated report (Indiana Geological Survey, Open-File Report 95-7). </SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "LIMITATION OF WARRANTIES AND LIABILITY - This product is provided &quot;AS  IS&quot;, without any other warranties or conditions, expressed or implied,  including, but not limited to, warranties for product quality, or  suitability to a particular purpose or use. The risk or liability  resulting from the use of this product is assumed by the user. The  Indiana Geographic Information Office, Indiana University, and The Polis  Center at IUPUI share no liability with product users indirect,  incidental, special, or consequential damages whatsoever, including, but  not limited to, loss of revenue or profit, lost or damaged data or  other commercial or economic loss. The Indiana Geographic Information  Office, Indiana University, and The Polis Center at IUPUI are not  responsible for claims by a third party. The maximum aggregate liability  to the original purchaser shall not exceed the amount paid by you for  the product.",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Hydrogeologic Terrains 1995",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335798000,
+        "avgRating": 0,
+        "id": "9fbf46a4e88e4b6ebd1b95a2b3f991f9",
+        "categories": [],
+        "spatialReference": "26916",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological Survey, Fleming, A.H. et al, Indiana Geographic Information Office (IGIO)",
+        "largeThumbnail": "",
+        "lastViewed": 1782806400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335797000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Hydrogeologic_Terrains_1995/FeatureServer",
+        "tags": [
+          "geology",
+          "hydrogeologic",
+          "hydrogeology",
+          "hydrology",
+          "terrain",
+          "groundwater"
+        ],
+        "numViews": 45,
+        "numComments": 0,
+        "size": 2513915,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Hydrogeologic_Terrains_1995",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geographic Information Office",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/9fbf46a4e88e4b6ebd1b95a2b3f991f9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3c99992a02aa4b42823a6f2f3dff06f9",
+      "title": "Tire Sites",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Tire_Sites/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Waste Tire Sites shows waste tire site locations. Tire Sites contain tires either for processing, for storage, or transport, as well as some illegal tire dumps, as defined by IC 13-11-2-251, IC 13-11-2-252, and IC 13-11-250.5 of the Indiana Code. The layer generally shows the locations of access points to managed sites, along with a unique identifier for each location. Provided by personnel of Indiana Department of Environmental Management, Office of Land Quality.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.1709,
+                41.9164
+              ],
+              [
+                -84.5674,
+                41.9164
+              ],
+              [
+                -84.5674,
+                37.664
+              ],
+              [
+                -88.1709,
+                37.664
+              ],
+              [
+                -88.1709,
+                41.9164
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<span style='font-size:medium; background-color:rgb(255, 255, 255);'><font color='#000000'>Locations of Waste Tire Program sites within Indiana, and is provided by personnel of Indiana Department of Environmental Management, Office of Land Quality (IDEM, OLQ). Attributes include site names, regulatory identification numbers (IDEM), and address information.</font></span><p style='font-size:medium;'><font color='#000000' style='background-color:rgb(255, 255, 255);'>Shows waste tire site locations. Tire Sites contain tires either for processing, for storage, or transport, as well as some illegal tire dumps, as defined by IC 13-11-2-251, IC 13-11-2-252, and IC 13-11-250.5 of the Indiana Code. The layer generally shows the locations of access points to managed sites, along with a unique identifier for each location.<br /></font></p><p style='font-size:medium;'><font color='#000000' style='background-color:rgb(255, 255, 255);'>When waste tires are improperly stockpiled or illegally dumped, they trap rainwater and become breeding grounds for disease-carrying mosquitoes and rodents. Tire piles can also be a fire hazard. Tire fires are very difficult to extinguish, they release toxic gases into the air and leave behind an oily residue that can pollute streams and ground water. Waste tires need to be transported, processed and stored properly to prevent these problems.</font></p>",
+        "licenseInfo": "<div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>THE INDIANA DEPARTMENT OF ENVIRONMENTAL MANAGEMENT (IDEM), ITS EMPLOYEES, SUCCESSORS OR ASSIGNS MAKE NO REPRESENTATIONS OR WARRANTIES ABOUT THE COMPLETENESS, SUITABILITY, RELIABILITY, AVAILABILITY AND ACCURACY OF DATA, SOFTWARE, INFORMATION OR SERVICES PROVIDED.</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ANY INFORMATION RETRIEVED FROM OR DELIVERED TO AN INDIVIDUAL OR ENTITY THROUGH THE AUSPICES OF IDEM ARE PROVIDED &quot;AS IS&quot; AND INCLUDES ALL FAULTS WITHOUT ANY EXPRESS OR IMPLIED WARRANTY OF ANY KIND. THE RECIPIENT, OF THE DATA, SOFTWARE, INFORMATION OR SERVICES, ACKNOWLEDGES AND AGREES THAT IT HAS RECEIVED ADEQUATE NOTICE THAT USE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES IS AT RECIPIENTS OWN RISK.</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>IDEM AND OR ITS RESPECTIVE SUPPLIERS HEREBY DISCLAIM ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE AFOREMENTIONED MATERIAL, INCLUDING WARRANTIES OF MERCHANTABILITY, TITLE, NONINFRINGEMENT, FITNESS FOR A PARTICULAR PURPOSE, LACK OF VIRUSES, ACCURACY OR COMPLETENESS OF RESPONSES, RESULTS, LACK OF NEGLIGENCE OR LACK OF WORKMANLIKE EFFORT, QUIET ENJOYMENT, QUIET POSSESSION, AND CORRESPONDENCE TO DESCRIPTION. FURTHER THE ABOVE LIST OF DISCLAIMED WARRANTIES IS NOT EXHAUSTIVE AS ANY AND ALL WARRANTIES AND CONDITIONS ARE DISCLAIMED. THE ENTIRE RISK ARISING OUT OF THE USE OF OR PERFORMANCE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES IS BORNE BY THE RECIPIENT.</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>EXCLUSION OF INCIDENTAL, CONSEQUENTIAL AND CERTAIN OTHER DAMAGES.</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL IDEM OR ITS SUPPLIERS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, BUT NOT LIMITED TO, DAMAGES FOR: LOSS OF PROFITS, LOSS OF CONFIDENTIAL OR OTHER INFORMATION, BUSINESS INTERRUPTION, PERSONAL INJURY, LOSS OF PRIVACY, FAILURE TO MEET ANY DUTY (INCLUDING GOOD FAITH AND REASONABLE CARE), NEGLIGENCE, AND ANY OTHER PECUNIARY OR OTHER LOSS WHATSOEVER, ARISING OUT OF OR IN ANY WAY RELATED TO THE USE OR INABILITY TO USE, THE DATA, SOFTWARE, INFORMATION OR SERVICES, EVEN IF THE RECIPIENT IS ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. RECIPIENT'S SOLE REMEDY IS TO DISCONTINUE THE USE OF THE DATA, SOFTWARE, INFORMATION OR SERVICES.</div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Tire Sites",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335373000,
+        "avgRating": 0,
+        "id": "3c99992a02aa4b42823a6f2f3dff06f9",
+        "categories": [],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Department of Environmental Management, Office of Land Quality",
+        "largeThumbnail": "",
+        "lastViewed": 1782824400000,
+        "thumbnail": "thumbnail/thumbnail1685027408220.png",
+        "languages": [],
+        "created": 1780335372000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Tire_Sites/FeatureServer",
+        "tags": [
+          "Tires",
+          "dump",
+          "disposal",
+          "waste",
+          "solid waste",
+          "contamination",
+          "water quality",
+          "hazard",
+          "tire processing",
+          "tire storage",
+          "tire transport",
+          "tire dump",
+          "environment",
+          "IDEM"
+        ],
+        "numViews": 1664,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Tire_Sites",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "IndianaMap",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/3c99992a02aa4b42823a6f2f3dff06f9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "46a5bd8386734f12b6792744173f3af4",
+      "title": "Indiana Water Balance Network 2017",
+      "url": "https://gisdata.in.gov/server/rest/services/Hosted/Indiana_Water_Balance_Network_2017/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The layer was created to provide locations of the Indiana Water Balance Network monitoring stations in Indiana, suitable for use in GIS.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -87.271880351566,
+                41.5833715798683
+              ],
+              [
+                -85.1089826398033,
+                41.5833715798683
+              ],
+              [
+                -85.1089826398033,
+                39.1786718680312
+              ],
+              [
+                -87.271880351566,
+                39.1786718680312
+              ],
+              [
+                -87.271880351566,
+                41.5833715798683
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "providerSDS",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>WATER_BALANCE_NETWORK_IN.SHP is a point shapefile that shows the locations of thirteen meteorological, soil-water, and groundwater monitoring stations  maintained by personnel of the Center for Geospatial Data Analysis, Indiana Geological &amp; Water Survey (IGS). Each of the monitoring stations has been located  in a unique hydrogeologic setting in Indiana. Meteorological sensors include tipping bucket rain gages, air temperature and relative humidity sensors,  pyranometers and net radiometers (used to measure natural solar radiation fluxes), and anemometers. Unsaturated-zone instrumentation is installed at nine  of the glaciated terrain sites and includes soil-moisture and temperature sensors (at most sites, located at depths of one foot to six feet below the ground  surface). Monitoring wells are also installed with pressure transducers to track shallow water-table fluctuations at stations where soil-moisture sensors  are installed. The data that are collected provide essential information for expanding the understanding of soil moisture and climate interactions. Attributes  include station names, soil texture, soil parent material, landscape description, vegetation, and a Website URL that allows users to access real-time  water-balance data for each individual monitoring station.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>DATA DISCLAIMER    This data set was compiled by Indiana University, Indiana Geological &amp; Water Survey, using data believed to be accurate; however, a degree of error is inherent in  all data. This product is distributed \"AS-IS\" without warranties of any kind, either expressed or implied, including but not limited to warranties  of suitability to a particular purpose or use. No attempt has been made in either the design or production of these data to define the limits or jurisdiction of  any federal, state, or local government. These data are intended for use only at the published scale or smaller and are for reference purposes only. They are  not to be construed as a legal document or survey instrument. A detailed on-the-ground survey and historical analysis of a single site may differ from these data.    CREDIT    It is requested that the Indiana Geological &amp; Water Survey be cited in any products generated from this data. The following source citation should be included:  [WATER_BALANCE_NETWORK_IN.SHP: Meteorological, Soil-Water, and Groundwater Monitoring Stations in Indiana (Indiana Geological &amp; Water Survey, Point Shapefile), 20170912].    LIMITATION OF WARRANTIES AND LIABILITY    This product is provided \"AS IS\", without any other warranties or conditions, expressed or implied, including, but not limited to, warranties for product quality,  or suitability to a particular purpose or use. The risk or liability resulting from the use of this product is assumed by the user. Indiana University, Indiana  Geological &amp; Water Survey shares no liability with product users indirect, incidental, special, or consequential damages whatsoever, including, but not limited to,  loss of revenue or profit, lost or damaged data or other commercial or economic loss. Indiana University, Indiana Geological &amp; Water Survey is not responsible for claims  by a third party. The maximum aggregate liability to the original purchaser shall not exceed the amount paid by you for the product.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Indiana Water Balance Network 2017",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1780335731000,
+        "avgRating": 0,
+        "id": "46a5bd8386734f12b6792744173f3af4",
+        "categories": [],
+        "spatialReference": "NAD_1983_UTM_Zone_16N",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological and Water Survey (IGWS), Indiana Geographic Information Office (IGIO)",
+        "largeThumbnail": "",
+        "lastViewed": 1782831600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1780335730000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gisdata.in.gov/server/rest/services/Hosted/Indiana_Water_Balance_Network_2017/FeatureServer",
+        "tags": [
+          "climatology",
+          "Meteorology",
+          "Atmosphere",
+          "geoscientific Information",
+          "environment",
+          "streamflow",
+          "Indiana Geological & Water Survey (IGS)",
+          "Center for Geospatial Data Analysis (CGDA)",
+          "Indiana Water Balance Network (IWBN)",
+          "real-time weather data",
+          "rain gauge",
+          "air temperature",
+          "soil temperature",
+          "relative humidity",
+          "pyranometer",
+          "net radiometer",
+          "anemometer",
+          "soil-moisture sensor",
+          "water table",
+          "unsaturated-zone",
+          "Indiana",
+          "Allen County",
+          "Delaware County",
+          "Fayette County",
+          "Hendricks County",
+          "Henry County",
+          "Lake County",
+          "Marion County",
+          "Monroe County",
+          "Morgan County",
+          "Rush County"
+        ],
+        "numViews": 415,
+        "numComments": 0,
+        "size": 865362,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Indiana_Water_Balance_Network_2017",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geographic Information Office",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/46a5bd8386734f12b6792744173f3af4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2a2c735aee4e4bf8bfd87cacb71db51b",
+      "title": "Surficial Gamma Ray Logs",
+      "url": "https://portal.igs.indiana.edu/arcgis/rest/services/Surficial_Gamma_Ray_Logs_IGS_IN/FeatureServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nThis shapefile was created to show the locations in Indiana where gamma-ray log records have been collected, as well as some locations where only samples\n(rotary cuttings or cores) were collected to describe the detail of subsurface geology of Indiana. Some verification have been done on location\ninformation in the database.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.0185,
+                41.7689
+              ],
+              [
+                -84.7543,
+                41.7689
+              ],
+              [
+                -84.7543,
+                37.8943
+              ],
+              [
+                -88.0185,
+                37.8943
+              ],
+              [
+                -88.0185,
+                41.7689
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div style='text-align:Left;'><div><p><span>GAMMA_RAY_LOGS_IGS_IN.shp shows the locations of the Indiana Geological Survey's natural gamma-ray logs that were collected from 1978 to 2012.  It was updated by Indiana Geological Survey (IGS) personnel on May 9, 2012 to add new data and to include existing locations of wells with \"sample  only\" designations (rotary cuttings or cores) that were formerly excluded. Additionally, the dataset now contains an attribute field named  \"SAMPLE_ID\" for referencing physical samples in the IGS Archives. Data were updated in the attribute field named \"Type\" to differentiate between wells  which have only gamma-ray logs (value of \"GL\"), wells with gamma-ray logs and physical samples (value of \"LS\"), or wells where only samples (value of  \"SO\") were collected. This shapefile also includes information concerning coordinate locations, surface elevation, and vertical depths of gamma-logs.</span></p></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><p><font size='2'><span>DATA DISCLAIMER    This data set was compiled by Indiana University, Indiana Geological Survey, using data believed to be accurate; however, a degree of error is  inherent in all data. This product is distributed &quot;AS-IS&quot; without warranties of any kind, either expressed or implied, including but not  limited to warranties of suitability to a particular purpose or use. No attempt has been made in either the design or production of these data to  define the limits or jurisdiction of any federal, state, or local government. These data are intended for use only at the published scale or  smaller and are for reference purposes only. They are not to be construed as a legal document or survey instrument. A detailed on-the-ground survey  and historical analysis of a single site may differ from these data. </span></font></p><p><font size='2'><span>CREDIT    It is required that the Indiana Geological Survey be cited in any products generated from this data. The following source citation must be included: Indiana Geological and Water Survey (IGWS), 2012, &quot;Gamma_RAY_Logs_IGS_IN: Surficial Gamma Ray Logs&quot; [Feature Service]: downloaded from Indiana Geological and Water Survey Geospatial Portal, https://portal.igs.indiana.edu/arcgis/rest/services/Surficial_Gamma_Ray_Logs_IGS_IN/FeatureServer, compiled by Ned Bleuer (data compiler), Steve Brown (data compiler, digital compiler), Jennifer Olejnik (data compiler,  digital compiler), Marni Karaffa (data compiler) Jack Haddan, (data compiler, digital compiler), 2012. </span></font></p><p><font size='2'><span>WARRANTY    Indiana University, Indiana Geological Survey warrants that the media on which this product is stored will be free from defect in materials and  workmanship for ninety (90) days from the date of acquisition. If such a defect is found, return the media to Publication Sales, Indiana Geological  Survey, 1001 E 10th St, Bloomington, Indiana 47405-1405, and it will be replaced free of charge. </span></font></p><p><font size='2'><span>LIMITATION OF WARRANTIES AND LIABILITY    Except for the expressed warranty above, the product is provided &quot;AS IS&quot;, without any other warranties or conditions, expressed or implied,  including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting  from the use of this product is assumed by the user. Indiana University,  Indiana Geological Survey shares no liability with product users indirect,  incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other  commercial or economic loss. Indiana University, Indiana Geological Survey is not responsible for claims by a third party. The maximum aggregate  liability to the original purchaser shall not exceed the amount paid by you for the product.</span></font></p></div></div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Surficial Gamma Ray Logs",
+        "type": "Feature Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788537724000,
+        "avgRating": 0,
+        "id": "2a2c735aee4e4bf8bfd87cacb71db51b",
+        "categories": [],
+        "spatialReference": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological and Water Survey (IGWS), 2012, \"Gamma_RAY_Logs_IGS_IN: Surficial Gamma Ray Logs\" [Feature Service]: downloaded from Indiana Geological and Water Survey Geospatial Portal, https://portal.igs.indiana.edu/arcgis/rest/services/Surficial_Gamma_Ray_Logs_IGS_IN/FeatureServer",
+        "largeThumbnail": "",
+        "lastViewed": 1789545600000,
+        "thumbnail": "thumbnail/thumbnail1787843813299.png",
+        "languages": [],
+        "created": 1788537724000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://portal.igs.indiana.edu/arcgis/rest/services/Surficial_Gamma_Ray_Logs_IGS_IN/FeatureServer",
+        "tags": [
+          "geoscientificInformation",
+          "Indiana Geological Survey (IGS)",
+          "aquifer",
+          "borehole",
+          "boring",
+          "domestic water supply",
+          "gamma-ray log",
+          "global positioning system (GPS)",
+          "ground water",
+          "hydrogeology",
+          "Indiana Department of Natural Resources (IDNR)",
+          "Indiana Division of Water (IDNR DOW)",
+          "organization",
+          "public water supply",
+          "rural water supply",
+          "tools and techniques",
+          "water",
+          "water supply",
+          "water well",
+          "well",
+          "well drilling",
+          "well log",
+          "well logging",
+          "rock sample",
+          "rock cutting",
+          "rock core",
+          "Indiana",
+          "Adams County",
+          "Allen County",
+          "Bartholomew County",
+          "Benton County",
+          "Blackford County",
+          "Boone County",
+          "Brown County",
+          "Carroll County",
+          "Cass County",
+          "Clark County",
+          "Clay County",
+          "Clinton County",
+          "Crawford County",
+          "Daviess County",
+          "Dearborn County",
+          "Decatur County",
+          "Dekalb County",
+          "Delaware County",
+          "Dubois County",
+          "Elkhart County",
+          "Fayette County",
+          "Floyd County",
+          "Fountain County",
+          "Fulton County",
+          "Gibson County",
+          "Grant County",
+          "Greene County",
+          "Hamilton County",
+          "Hancock County",
+          "Hendricks County",
+          "Henry County",
+          "Howard County",
+          "Huntington County",
+          "Jackson County",
+          "Jasper County",
+          "Jay County",
+          "Johnson County",
+          "Knox County",
+          "Kosciusko County",
+          "LaGrange County",
+          "Lake County",
+          "LaPorte County",
+          "Lawrence County",
+          "Madison County",
+          "Marion County",
+          "Marshall County",
+          "Martin County",
+          "Miami County",
+          "Monroe County",
+          "Montgomery County",
+          "Morgan County",
+          "Newton County",
+          "Noble County",
+          "Orange County",
+          "Parke County",
+          "Pike County",
+          "Porter County",
+          "Posey County",
+          "Pulaski County",
+          "Putnam County",
+          "Randolph County",
+          "Ripley County",
+          "Rush County",
+          "St Joseph County",
+          "Shelby County",
+          "Starke County",
+          "Steuben County",
+          "Sullivan County",
+          "Tippecanoe County",
+          "Tipton County",
+          "Vanderburgh County",
+          "Vermillion County",
+          "Vigo County",
+          "Wabash County",
+          "Warren County",
+          "Warrick County",
+          "Wayne County",
+          "Wells County",
+          "White County",
+          "Whitley County"
+        ],
+        "numViews": 50,
+        "numComments": 0,
+        "size": 97,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geological Survey",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/2a2c735aee4e4bf8bfd87cacb71db51b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4e1079352a8145cdb85ef204ee15bea3",
+      "title": "Surficial Gamma Ray Logs",
+      "url": "https://portal.igs.indiana.edu/arcgis/rest/services/Surficial_Gamma_Ray_Logs_IGS_IN/MapServer",
+      "publisher": "IndianaMap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nThis shapefile was created to show the locations in Indiana where gamma-ray log records have been collected, as well as some locations where only samples\n(rotary cuttings or cores) were collected to describe the detail of subsurface geology of Indiana. Some verification have been done on location\ninformation in the database.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.0185,
+                41.7689
+              ],
+              [
+                -84.7543,
+                41.7689
+              ],
+              [
+                -84.7543,
+                37.8943
+              ],
+              [
+                -88.0185,
+                37.8943
+              ],
+              [
+                -88.0185,
+                41.7689
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "<div style='text-align:Left;'><div><p><span>GAMMA_RAY_LOGS_IGS_IN.shp shows the locations of the Indiana Geological Survey's natural gamma-ray logs that were collected from 1978 to 2012.  It was updated by Indiana Geological Survey (IGS) personnel on May 9, 2012 to add new data and to include existing locations of wells with \"sample  only\" designations (rotary cuttings or cores) that were formerly excluded. Additionally, the dataset now contains an attribute field named  \"SAMPLE_ID\" for referencing physical samples in the IGS Archives. Data were updated in the attribute field named \"Type\" to differentiate between wells  which have only gamma-ray logs (value of \"GL\"), wells with gamma-ray logs and physical samples (value of \"LS\"), or wells where only samples (value of  \"SO\") were collected. This shapefile also includes information concerning coordinate locations, surface elevation, and vertical depths of gamma-logs.</span></p></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><p><span>DATA DISCLAIMER    This data set was compiled by Indiana University, Indiana Geological Survey, using data believed to be accurate; however, a degree of error is  inherent in all data. This product is distributed \"AS-IS\" without warranties of any kind, either expressed or implied, including but not  limited to warranties of suitability to a particular purpose or use. No attempt has been made in either the design or production of these data to  define the limits or jurisdiction of any federal, state, or local government. These data are intended for use only at the published scale or  smaller and are for reference purposes only. They are not to be construed as a legal document or survey instrument. A detailed on-the-ground survey  and historical analysis of a single site may differ from these data.    CREDIT    It is required that the Indiana Geological Survey be cited in any products generated from this data. The following source citation must be included:  GAMMA_RAY_LOGS_IGS_IN: Wells with Natural Gamma-Ray Logs or Physical Samples in Unconsolidated Sediments in Indiana (Indiana Geological Survey,  1:100,000, Point Shapefile), compiled by Ned Bleuer (data compiler), Steve Brown (data compiler, digital compiler), Jennifer Olejnik (data compiler,  digital compiler), Marni Karaffa (data compiler) Jack Haddan, (data compiler, digital compiler), 2012.    WARRANTY    Indiana University, Indiana Geological Survey warrants that the media on which this product is stored will be free from defect in materials and  workmanship for ninety (90) days from the date of acquisition. If such a defect is found, return the media to Publication Sales, Indiana Geological  Survey, 1001 E 10th St, Bloomington, Indiana 47405-1405, and it will be replaced free of charge.    LIMITATION OF WARRANTIES AND LIABILITY    Except for the expressed warranty above, the product is provided \"AS IS\", without any other warranties or conditions, expressed or implied,  including, but not limited to, warranties for product quality, or suitability to a particular purpose or use. The risk or liability resulting  from the use of this product is assumed by the user. Indiana University,  Indiana Geological Survey shares no liability with product users indirect,  incidental, special, or consequential damages whatsoever, including, but not limited to, loss of revenue or profit, lost or damaged data or other  commercial or economic loss. Indiana University, Indiana Geological Survey is not responsible for claims by a third party. The maximum aggregate  liability to the original purchaser shall not exceed the amount paid by you for the product.</span></p></div></div>",
+        "ownerId": "fae8b0ec9e064b8e81a3f3cb9595cb91",
+        "title": "Surficial Gamma Ray Logs",
+        "type": "Map Service",
+        "orgId": "fAJUAyCk5qmGxuxo",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788537903000,
+        "avgRating": 0,
+        "id": "4e1079352a8145cdb85ef204ee15bea3",
+        "categories": [],
+        "spatialReference": "WGS_1984_Web_Mercator_Auxiliary_Sphere",
+        "numRatings": 0,
+        "owner": "IndianaMap",
+        "accessInformation": "Indiana Geological and Water Survey (IGWS), 2012, \"Gamma_RAY_Logs_IGS_IN: Surficial Gamma Ray Logs\" [Map Service]: downloaded from Indiana Geological and Water Survey Geospatial Portal, https://portal.igs.indiana.edu/arcgis/rest/services/Surficial_Gamma_Ray_Logs_IGS_IN/MapServer",
+        "largeThumbnail": "",
+        "lastViewed": 1789556400000,
+        "thumbnail": "thumbnail/thumbnail1788193786561.png",
+        "languages": [],
+        "created": 1788537902000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://portal.igs.indiana.edu/arcgis/rest/services/Surficial_Gamma_Ray_Logs_IGS_IN/MapServer",
+        "tags": [
+          "geoscientificInformation",
+          "Indiana Geological Survey (IGS)",
+          "aquifer",
+          "borehole",
+          "boring",
+          "domestic water supply",
+          "gamma-ray log",
+          "global positioning system (GPS)",
+          "ground water",
+          "hydrogeology",
+          "Indiana Department of Natural Resources (IDNR)",
+          "Indiana Division of Water (IDNR DOW)",
+          "organization",
+          "public water supply",
+          "rural water supply",
+          "tools and techniques",
+          "water",
+          "water supply",
+          "water well",
+          "well",
+          "well drilling",
+          "well log",
+          "well logging",
+          "rock sample",
+          "rock cutting",
+          "rock core",
+          "Indiana",
+          "Adams County",
+          "Allen County",
+          "Bartholomew County",
+          "Benton County",
+          "Blackford County",
+          "Boone County",
+          "Brown County",
+          "Carroll County",
+          "Cass County",
+          "Clark County",
+          "Clay County",
+          "Clinton County",
+          "Crawford County",
+          "Daviess County",
+          "Dearborn County",
+          "Decatur County",
+          "Dekalb County",
+          "Delaware County",
+          "Dubois County",
+          "Elkhart County",
+          "Fayette County",
+          "Floyd County",
+          "Fountain County",
+          "Fulton County",
+          "Gibson County",
+          "Grant County",
+          "Greene County",
+          "Hamilton County",
+          "Hancock County",
+          "Hendricks County",
+          "Henry County",
+          "Howard County",
+          "Huntington County",
+          "Jackson County",
+          "Jasper County",
+          "Jay County",
+          "Johnson County",
+          "Knox County",
+          "Kosciusko County",
+          "LaGrange County",
+          "Lake County",
+          "LaPorte County",
+          "Lawrence County",
+          "Madison County",
+          "Marion County",
+          "Marshall County",
+          "Martin County",
+          "Miami County",
+          "Monroe County",
+          "Montgomery County",
+          "Morgan County",
+          "Newton County",
+          "Noble County",
+          "Orange County",
+          "Parke County",
+          "Pike County",
+          "Porter County",
+          "Posey County",
+          "Pulaski County",
+          "Putnam County",
+          "Randolph County",
+          "Ripley County",
+          "Rush County",
+          "St Joseph County",
+          "Shelby County",
+          "Starke County",
+          "Steuben County",
+          "Sullivan County",
+          "Tippecanoe County",
+          "Tipton County",
+          "Vanderburgh County",
+          "Vermillion County",
+          "Vigo County",
+          "Wabash County",
+          "Warren County",
+          "Warrick County",
+          "Wayne County",
+          "Wells County",
+          "White County",
+          "Whitley County"
+        ],
+        "numViews": 19,
+        "numComments": 0,
+        "size": 93,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Indiana Geological Survey",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all/items/4e1079352a8145cdb85ef204ee15bea3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.indianamap.org/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    243
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 12,
+  "next_offset": 10,
+  "response_sha256": "e3ee97ecefce536ea9cdd369f1f8bf1c710d36ae1969d66469557549aa3ad872",
+  "search_complete": false
+}

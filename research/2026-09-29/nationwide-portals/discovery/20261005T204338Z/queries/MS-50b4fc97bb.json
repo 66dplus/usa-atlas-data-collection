@@ -1,0 +1,130 @@
+{
+  "jurisdiction_code": "MS",
+  "query": "physical activity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T20:44:39.542774+00:00",
+  "candidates": [
+    {
+      "id": "8b2873cd59744f9caf573e5321241f04",
+      "title": "MDEM Photo Control Points",
+      "url": "https://www.gisonline.ms.gov/arcgis/rest/services/MDEQ/OpenData/MapServer/58",
+      "publisher": "itsgisadmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Mississippi Aerial Imagery Ground Control Point Development",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -91.3813,
+                32.0549
+              ],
+              [
+                -89.1843,
+                32.0549
+              ],
+              [
+                -89.1843,
+                30.9768
+              ],
+              [
+                -91.3813,
+                30.9768
+              ],
+              [
+                -91.3813,
+                32.0549
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service"
+        ],
+        "description": "<span style='color: rgb(0, 0, 0); font-family: Verdana, sans-serif; font-size: 12px; background-color: rgb(255, 255, 255);'>The control points are points of known location with a monument, they can be PLSS corners or parcel control points or geodetic control or photo control. This feature class is the information on the physical location and the currently active coordinate value for the control point.</span>",
+        "licenseInfo": "Mississippi Geospatial Clearinghouse (MGC)",
+        "title": "MDEM Photo Control Points",
+        "type": "Feature Service",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1483486620000,
+        "avgRating": 0,
+        "id": "8b2873cd59744f9caf573e5321241f04",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "itsgisadmin",
+        "accessInformation": "Mississippi Geospatial Clearinghouse (MGC)",
+        "largeThumbnail": null,
+        "lastViewed": 1720670400000,
+        "thumbnail": "thumbnail/ITS-logo.png",
+        "languages": [],
+        "created": 1483486543000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://www.gisonline.ms.gov/arcgis/rest/services/MDEQ/OpenData/MapServer/58",
+        "tags": [
+          "Survey Control",
+          "Mississippi",
+          "MGC"
+        ],
+        "numViews": 1336,
+        "numComments": 0,
+        "size": 75,
+        "listed": false,
+        "scoreCompleteness": 91,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.gis.ms.gov/api/search/v1/collections/all/items/8b2873cd59744f9caf573e5321241f04"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.gis.ms.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    251
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "d6ffd35a00c2b4dfff045bdbbc783f9e249317f325713c36b163d9669c0c7c52",
+  "search_complete": true
+}

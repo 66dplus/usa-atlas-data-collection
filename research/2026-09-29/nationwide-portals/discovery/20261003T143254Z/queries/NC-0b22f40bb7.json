@@ -1,0 +1,844 @@
+{
+  "jurisdiction_code": "NC",
+  "query": "employment",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T14:33:35.291570+00:00",
+  "candidates": [
+    {
+      "id": "99618bd65ab04dd2b0a6b0cd896e7113",
+      "title": "Law Enforcement Locations",
+      "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Emergency_Law_Enforcement/MapServer/1",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nHomeland Security\n\nUse Cases: Use cases describe how the data may be used and help to define and clarify requirements.\n\n1. An assessment of whether or not the total police capability in a given area is adequate.\n\n2. A list of resources to draw upon in surrounding areas when local resources have temporarily been overwhelmed by a disaster - route analysis can help to determine those entities who are able to respond the quickest.\n\n3. A resource for emergency management planning purposes.\n\n4. A resource for catastrophe response to aid in the retrieval of equipment by outside responders in order to deal with the disaster.\n\n5. A resource for situational awareness planning and response for federal government events.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -84.1801,
+                36.5396
+              ],
+              [
+                -75.4791,
+                36.5396
+              ],
+              [
+                -75.4791,
+                33.7569
+              ],
+              [
+                -84.1801,
+                33.7569
+              ],
+              [
+                -84.1801,
+                36.5396
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>Law Enforcement Locations    Any location where sworn officers of a law enforcement agency are regularly based or stationed. Law Enforcement agencies \"are publicly funded and employ at least one full-time or part-time sworn officer with general arrest powers\". This is the definition used by the US Department of Justice - Bureau of Justice Statistics (DOJ-BJS) for their Law Enforcement Management and Administrative Statistics (LEMAS) survey. Although LEMAS only includes non Federal Agencies, this dataset includes locations for federal, state, local, and special jurisdiction law enforcement agencies.    Law enforcement agencies include, but are not limited to, municipal police, county sheriffs, state police, school police, park police, railroad police, federal law enforcement agencies, departments within non law enforcement federal agencies charged with law enforcement (e.g., US Postal Inspectors), and cross jurisdictional authorities (e.g., Port Authority Police).    In general, the requirements and training for becoming a sworn law enforcement officer are set by each state. Law Enforcement agencies themselves are not chartered or licensed by their state. County, city, and other government authorities within each state are usually empowered by their state law to setup or disband Law Enforcement agencies. Generally, sworn Law Enforcement officers must report which agency they are employed by to the state.    Although TGS's intention is to only include locations associated with agencies that meet the above definition, TGS has discovered a few locations that are associated with agencies that are not publicly funded. TGS deleted these locations as we became aware of them, but some may still exist in this dataset.    Personal homes, administrative offices, and temporary locations are intended to be excluded from this dataset; however, some personal homes of constables are included due to the fact that many constables work out of their homes.    TGS has made a concerted effort to include all local police; county sheriffs; state police and/or highway patrol; Bureau of Indian Affairs; Bureau of Land Management; Bureau of Reclamation; U.S. Park Police; Bureau of Alcohol, Tobacco, Firearms, and Explosives; U.S. Marshals Service; U.S. Fish and Wildlife Service; National Park Service; U.S. Immigration and Customs Enforcement; and U.S. Customs and Border Protection.    This dataset is comprised completely of license free data.    FBI entities are intended to be excluded from this dataset, but a few may be included.    The Law Enforcement dataset and the Correctional Institutions dataset were merged into one working file. TGS processed as one file and then separated for delivery purposes.    With the merge of the Law Enforcement and the Correctional Institutions datasets, the NAICS Codes &amp; Descriptions were assigned based on the facility's main function which was determined by the entity's name, facility type, web research, and state supplied data. In instances where the entity's primary function is both law enforcement and corrections, the NAICS Codes and Descriptions are assigned based on the dataset in which the record is located (i.e., a facility that serves as both a Sheriff's Office and as a jail is designated as [NAICSDESCR]=\"SHERIFFS' OFFICES (EXCEPT COURT FUNCTIONS ONLY)\" in the Law Enforcement layer and as [NAICSDESCR]=\"JAILS (EXCEPT PRIVATE OPERATION OF)\" in the Correctional Institutions layer).    Records with \"-DOD\" appended to the end of the [NAME] value are located on a military base, as defined by the Defense Installation Spatial Data Infrastructure (DISDI) military installations and military range boundaries.    \"#\" and \"*\" characters were automatically removed from standard fields that TGS populated. Double spaces were replaced by single spaces in these same fields.    Text fields in this dataset have been set to all upper case to facilitate consistent database engine search results.    All diacritics (e.g., the German umlaut or the Spanish tilde) have been replaced with their closest equivalent English character to facilitate use with database systems that may not support diacritics.    The currentness of this dataset is indicated by the [CONTDATE] field. Based on the values in this field, the oldest record dates from 08/10/2006 and the newest record dates from 10/22/2009</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "https://www.nconemap.gov/pages/terms",
+        "title": "Law Enforcement Locations",
+        "type": "Feature Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1679499870000,
+        "avgRating": 0,
+        "id": "99618bd65ab04dd2b0a6b0cd896e7113",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1767981600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1484249650000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.nconemap.gov/secure/rest/services/NC1Map_Emergency_Law_Enforcement/MapServer/1",
+        "tags": [
+          "Airport police",
+          "Border patrols.",
+          "Campus police",
+          "Community policing.",
+          "Constables",
+          "Correctional institutions.",
+          "Criminal investigation.",
+          "Drug enforcement agents",
+          "Fire marshals",
+          "Indian reservation police",
+          "Jails",
+          "Juvenile detention",
+          "Law enforcement.",
+          "Military police",
+          "Peace officers",
+          "Police stations",
+          "Police",
+          "State.",
+          "Police.",
+          "Prisons.",
+          "Railroad police",
+          "School police",
+          "Secret service.",
+          "Sheriffs",
+          "Traffic police.",
+          "Transit police",
+          "U.S. Customs and Border Protection.",
+          "U.S. Fish and Wildlife Service.",
+          "U.S. Immigration and Customs Enforcement.",
+          "United States marshals.",
+          "United States. Bureau of Alcohol",
+          "Tobacco",
+          "Firearms",
+          "and Explosives",
+          "United States. Bureau of Indian Affairs.",
+          "United States. Bureau of Reclamation.",
+          "United States. National Park Service.",
+          "Work camps",
+          "structure",
+          "NC",
+          "North Carolina",
+          "Department of Information Technology",
+          "DIT",
+          "Center for Geographic Information and Analysis",
+          "CGIA",
+          "NC OneMap"
+        ],
+        "numViews": 19908,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "TechniGraphics, Inc.",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/99618bd65ab04dd2b0a6b0cd896e7113"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "51687eeaf4d14d009abf13d4b80c6643",
+      "title": "Category 3 Hurricane Storm Surge Risk Maps - Tile Layer",
+      "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category3_v3/MapServer",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nThis tile layer displays near worst case storm surge flooding (inundation) scenarios using the National Weather Service (NWS) SLOSH model Maximum of MEOWs (MOMs) product for hurricane wind Category 3 storms at a high tide.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -20782406.2927,
+                13075423.1594
+              ],
+              [
+                17894577.1455,
+                13075423.1594
+              ],
+              [
+                17894577.1455,
+                -8854446.2473
+              ],
+              [
+                -20782406.2927,
+                -8854446.2473
+              ],
+              [
+                -20782406.2927,
+                13075423.1594
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Service",
+          "Singlelayer",
+          "Tiled"
+        ],
+        "description": "<div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>National Hurricane Center - National Storm Surge Hazard Maps - </font><a href='https://www.nhc.noaa.gov/nationalsurge/' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.nhc.noaa.gov/nationalsurge/</a></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The SLOSH (Sea, Lake, and Overland Surges from Hurricanes) model is a numerical model used by NWS to compute storm surge. Storm surge is defined as the abnormal rise of water generated by a storm, over and above the predicted astronomical tides. Flooding from storm surge depends on many factors, such as the track, intensity, size, and forward speed of the hurricane and the characteristics of the coastline where it comes ashore or passes nearby. For planning purposes, the NHC uses a representative sample of hypothetical storms to estimate the near worst-case scenario of flooding for each hurricane category.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This is version 3 of the NHC National Storm Surge Risk Maps.  The updates in this version include data mapped to 10m DEMs for the US Gulf and East Coast. The following new regions have been added: Southern California (hurricane wind category 1 and 2 storms), Guam, American Samoa, and the Yucatan Peninsula for parts of Mexico, Belize, and Honduras.  For simplicity, the tiled map services are published by hurricane wind category and all available mapped regions for that category are provided in that web map.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The following areas are mapped in the hurricane wind Category 3 Maps:</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>US Gulf and East Coast</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Puerto Rico and US Virgin Islands</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hawaii</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Guam</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>American Samoa</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hispaniola</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><span style='color:rgb(0, 0, 0);'>Yucatan Peninsula- parts of Mexico, Belize, Guatemala, and western Honduras</span><br /></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>SLOSH employs curvilinear polar, elliptical, and hyperbolic telescoping mesh grids to simulate the storm surge hazard. The spatial coverage for each SLOSH grid ranges from an area the size of a few counties to a few states. The resolution of individual grid cells within each basin ranges from tens to hundreds of meters to a kilometer or more. Sub-grid scale water features and topographic obstructions such as channels, rivers, and cuts and levees, barriers, and roads, respectively, are parameterized to improve the modeled water levels.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The NHC provides two products based on hypothetical hurricanes: MEOWs and MOMs. MEOWs are created by computing the maximum storm surge resulting from up to 100,000 hypothetical storms simulated through each SLOSH grid of varying forward speed, radius of maximum wind, intensity (Categories 1-5), landfall location, tide level, and storm direction. A MEOW product is created for each combination of category, forward speed, storm direction, and tide level. SLOSH products exclude Category 5 storms north of the NC/VA border.  SLOSH products only include hurricane wind Category 1-4 scenarios for Hawaii and hurricane wind category 1-2 scenarios for Southern California. For each storm combination, parallel storms make landfall in 5 to 10 mile increments along the coast within the SLOSH grid, and the maximum storm surge footprint from each simulation is composited, retaining the maximum height of storm surge in a given basin grid cell. These are called MEOWs and no single hurricane will produce the regional flooding depicted in the MEOWs. SLOSH model MOMs are an ensemble product of maximum storm surge heights. SLOSH MOMs are created for each storm category by retaining the maximum storm surge value in each grid cell for all the MEOWs, regardless of the forward speed, storm trajectory, or landfall location. SLOSH MOMs are available for mean tide and high tide scenarios and represent the near worst-case scenario of flooding under ideal storm conditions. A high tide initial water level was used for the storm surge hazard maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This product uses the expertise of the NHC Storm Surge Unit to merge the operational SLOSH grids to build a seamless map of storm surge hazard scenarios using the MOM product. Each individual SLOSH grid for the Category 1-5 MOMs are merged into a single, seamless grid. The seamless grid is then resampled, interpolated, and processed with a DEM (Digital Elevation Model, i.e. topography) to compute the storm surge hazard above ground for each hurricane wind category.  The SLOSH MOM storm surge hazard data used to create these maps are constrained by the extent of the SLOSH grids and users should be aware that risk due to storm surge flooding could extend beyond the areas depicted in these maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Users of this hazard map should be aware that potential storm surge flooding is not depicted within some levee areas, such as the Hurricane &amp; Storm Damage Risk Reduction System in Louisiana. These areas are highly complex and water levels resulting from overtopping are difficult to predict. Users are urged to consult local officials for flood risk inside these leveed areas. If applicable to the region displayed by the map, these leveed areas will be depicted with a black and white diagonal hatch pattern. Not all levee areas are included in this analysis - in particular, local features such as construction walls, levees, berms, pumping systems, or other mitigation systems found at the local level may not be included in this analysis.  Additionally, some marshy or low lying areas are not mapped in this analysis.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>In locations that have a steep and narrow continental shelf, wave setup can be a substantial contributor to the total water level rise observed during a tropical cyclone. Wave setup is defined as the increase in mean water level due to momentum transfer to the water column by waves that are breaking or otherwise dissipating their energy. The following locations use SLOSH+Wave Setup simulations to create MEOW and MOM products that account for the increase in the mean water level due to wave setup: Puerto Rico, US Virgin Islands, Hawaii, Hispaniola, Guam, American Samoa, and Southern California. Through the USAID/WMO Coastal Inundation and Flooding Demonstration Project, these SLOSH storm surge risk products were created for the Island of Hispaniola.</font></div>",
+        "licenseInfo": null,
+        "title": "Category 3 Hurricane Storm Surge Risk Maps - Tile Layer",
+        "type": "Map Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1722945978000,
+        "avgRating": 0,
+        "id": "51687eeaf4d14d009abf13d4b80c6643",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": "NOAA/NWS/NHC/Storm Surge Unit",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1722945522000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category3_v3/MapServer",
+        "tags": [
+          "storm surge",
+          "inundation",
+          "SLOSH",
+          "hurricanes",
+          "tropical cyclones",
+          "National Hurricane Center",
+          "NWS",
+          "NOAA"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC OneMap / State of North Carolina",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/51687eeaf4d14d009abf13d4b80c6643"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "581694d4077d4a14842a2a4795ad06a8",
+      "title": "NHC Storm Surge Risk Maps",
+      "url": "https://experience.arcgis.com/experience/203f772571cb48b1b8b50fdcc3272e2c/",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nThis web viewer displays near worst case storm surge flooding (inundation) scenarios using the National Weather Service (NWS) SLOSH model Maximum of MEOWs (MOMs) product for hurricane wind Category 1-5 storms at a high tide.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Web Map"
+        ],
+        "description": "<h4 style='font-weight:400; margin:0.375rem 0px 0.75rem; font-size:1.414rem; line-height:1.5; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;'>Description</h4><div style='overflow:auto; padding-bottom:0.375rem; max-width:100%; display:inherit; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>National Hurricane Center - National Storm Surge Hazard Maps - </font><a href='https://www.nhc.noaa.gov/nationalsurge/' style='text-decoration-line:none; font-family:inherit; color:blue !important;' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.nhc.noaa.gov/nationalsurge/</a></div><font color='#000000' style='font-family:inherit;'><br /></font><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>The SLOSH (Sea, Lake, and Overland Surges from Hurricanes) model is a numerical model used by NWS to compute storm surge. Storm surge is defined as the abnormal rise of water generated by a storm, over and above the predicted astronomical tides. Flooding from storm surge depends on many factors, such as the track, intensity, size, and forward speed of the hurricane and the characteristics of the coastline where it comes ashore or passes nearby. For planning purposes, the NHC uses a representative sample of hypothetical storms to estimate the near worst-case scenario of flooding for each hurricane category.</font></div><font color='#000000' style='font-family:inherit;'><br /></font><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>This is version 3 of the NHC National Storm Surge Risk Maps.  The updates in this version include data mapped to 10m DEMs for the US Gulf and East Coast. The following new regions have been added: Southern California (hurricane wind category 1 and 2 storms), Guam, American Samoa, and the Yucatan Peninsula for parts of Mexico, Belize, and Honduras.  For simplicity, the tiled map services are published by hurricane wind category and all available mapped regions for that category are provided in that web map.</font></div><font color='#000000' style='font-family:inherit;'><br /></font><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>The following areas are mapped:</font></div><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>US Gulf and East Coast (Category 5 south of NC/VA border only)</font></div><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>Puerto Rico and US Virgin Islands</font></div><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>Southern California (Category 1-2 only)</font></div><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>Hawaii (Category 1-4 only)</font></div><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>Guam</font></div><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>American Samoa</font></div><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>Hispaniola</font></div><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>Yucatan Peninsula- parts of Mexico, Belize, Guatemala, and western Honduras</font></div><font color='#000000' style='font-family:inherit;'><br /></font><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>SLOSH employs curvilinear polar, elliptical, and hyperbolic telescoping mesh grids to simulate the storm surge hazard. The spatial coverage for each SLOSH grid ranges from an area the size of a few counties to a few states. The resolution of individual grid cells within each basin ranges from tens to hundreds of meters to a kilometer or more. Sub-grid scale water features and topographic obstructions such as channels, rivers, and cuts and levees, barriers, and roads, respectively, are parameterized to improve the modeled water levels.</font></div><font color='#000000' style='font-family:inherit;'><br /></font><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>The NHC provides two products based on hypothetical hurricanes: MEOWs and MOMs. MEOWs are created by computing the maximum storm surge resulting from up to 100,000 hypothetical storms simulated through each SLOSH grid of varying forward speed, radius of maximum wind, intensity (Categories 1-5), landfall location, tide level, and storm direction. A MEOW product is created for each combination of category, forward speed, storm direction, and tide level. SLOSH products exclude Category 5 storms north of the NC/VA border.  SLOSH products only include hurricane wind Category 1-4 scenarios for Hawaii and hurricane wind category 1-2 scenarios for Southern California. For each storm combination, parallel storms make landfall in 5 to 10 mile increments along the coast within the SLOSH grid, and the maximum storm surge footprint from each simulation is composited, retaining the maximum height of storm surge in a given basin grid cell. These are called MEOWs and no single hurricane will produce the regional flooding depicted in the MEOWs. SLOSH model MOMs are an ensemble product of maximum storm surge heights. SLOSH MOMs are created for each storm category by retaining the maximum storm surge value in each grid cell for all the MEOWs, regardless of the forward speed, storm trajectory, or landfall location. SLOSH MOMs are available for mean tide and high tide scenarios and represent the near worst-case scenario of flooding under ideal storm conditions. A high tide initial water level was used for the storm surge hazard maps.</font></div><font color='#000000' style='font-family:inherit;'><br /></font><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>This product uses the expertise of the NHC Storm Surge Unit to merge the operational SLOSH grids to build a seamless map of storm surge hazard scenarios using the MOM product. Each individual SLOSH grid for the Category 1-5 MOMs are merged into a single, seamless grid. The seamless grid is then resampled, interpolated, and processed with a DEM (Digital Elevation Model, i.e. topography) to compute the storm surge hazard above ground for each hurricane wind category.  The SLOSH MOM storm surge hazard data used to create these maps are constrained by the extent of the SLOSH grids and users should be aware that risk due to storm surge flooding could extend beyond the areas depicted in these maps.</font></div><font color='#000000' style='font-family:inherit;'><br /></font><div style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>Users of this hazard map should be aware that potential storm surge flooding is not depicted within some levee areas, such as the Hurricane &amp; Storm Damage Risk Reduction System in Louisiana. These areas are highly complex and water levels resulting from overtopping are difficult to predict. Users are urged to consult local officials for flood risk inside these leveed areas. If applicable to the region displayed by the map, these leveed areas will be depicted with a black and white diagonal hatch pattern. Not all levee areas are included in this analysis - in particular, local features such as construction walls, levees, berms, pumping systems, or other mitigation systems found at the local level may not be included in this analysis.  Additionally, some marshy or low lying areas are not mapped in this analysis.</font></div><font color='#000000' style='font-family:inherit;'><br /></font><div style='font-family:inherit;'><span style='font-family:inherit;'><font color='#000000' style='font-family:inherit;'>In locations that have a steep and narrow continental shelf, wave setup can be a substantial contributor to the total water level rise observed during a tropical cyclone. Wave setup is defined as the increase in mean water level due to momentum transfer to the water column by waves that are breaking or otherwise dissipating their energy. The following locations use SLOSH+Wave Setup simulations to create MEOW and MOM products that account for the increase in the mean water level due to wave setup: Puerto Rico, US Virgin Islands, Hawaii, Hispaniola, Guam, American Samoa, and Southern California. Through the USAID/WMO Coastal Inundation and Flooding Demonstration Project, these SLOSH storm surge risk products were created for the Island of Hispaniola.</font></span></div></div></div>",
+        "licenseInfo": "<span style='color:rgb(0, 0, 0); font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'>The data and maps in this tool illustrate the extent and height of possible storm surge flooding under certain scenarios, and do not account for erosion, subsidence, sea-level change, or future construction. Water levels are based on storm surge scenarios in the referenced SLOSH MOM tide scenario. The data, maps, and information provided should only be used as a tool for general education/awareness of the storm surge hazard at a city/community level (not for a parcel level/grid cell assessment). This map should not be used to replace the maps used for hurricane evacuation zones. Hurricane evacuation zones are drawn at a local and state level and consider additional information and specific criteria for a particular region in addition to the storm surge hazard.  Users are urged to consult local officials for flood risk inside the hatched areas marked as leveed areas in the map. The data and maps in this tool are provided &quot;as is&quot;, without warranty to their performance, merchantable state, or fitness for any particular purpose.   The entire risk associated with the results and performance of these data is assumed by the user. This tool should be used strictly as a planning reference and storm surge risk awareness tool and not for navigation, permitting, legal, or regulatory purposes. Any conclusions drawn from the analysis of this information are not the responsibility of the National Weather Service, National Hurricane Center, or its partners.</span>",
+        "title": "NHC Storm Surge Risk Maps",
+        "type": "Web Mapping Application",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1722945863000,
+        "avgRating": 0,
+        "id": "581694d4077d4a14842a2a4795ad06a8",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1722945600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1722945816000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/203f772571cb48b1b8b50fdcc3272e2c/",
+        "tags": [
+          "storm surge",
+          "inundation",
+          "SLOSH",
+          "hurricanes",
+          "tropical cyclones",
+          "National Hurricane Center",
+          "NWS",
+          "NOAA"
+        ],
+        "numViews": 1,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC OneMap / State of North Carolina",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/581694d4077d4a14842a2a4795ad06a8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d1044dc425f5413692847766ac9a6723",
+      "title": "Category 5 Hurricane Storm Surge Risk Maps - Tile Layer",
+      "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category5_v3/MapServer",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This tile layer displays near worst case storm surge flooding (inundation) scenarios using the National Weather Service (NWS) SLOSH model Maximum of MEOWs (MOMs) product for hurricane wind Category 5 storms at a high tide.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -20782406.2927,
+                12356141.1686
+              ],
+              [
+                17894577.1455,
+                12356141.1686
+              ],
+              [
+                17894577.1455,
+                -9573728.2381
+              ],
+              [
+                -20782406.2927,
+                -9573728.2381
+              ],
+              [
+                -20782406.2927,
+                12356141.1686
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Service",
+          "Singlelayer",
+          "Tiled"
+        ],
+        "description": "<div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>National Hurricane Center - National Storm Surge Hazard Maps - </font><a href='https://www.nhc.noaa.gov/nationalsurge/' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.nhc.noaa.gov/nationalsurge/</a></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The SLOSH (Sea, Lake, and Overland Surges from Hurricanes) model is a numerical model used by NWS to compute storm surge. Storm surge is defined as the abnormal rise of water generated by a storm, over and above the predicted astronomical tides. Flooding from storm surge depends on many factors, such as the track, intensity, size, and forward speed of the hurricane and the characteristics of the coastline where it comes ashore or passes nearby. For planning purposes, the NHC uses a representative sample of hypothetical storms to estimate the near worst-case scenario of flooding for each hurricane category.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This is version 3 of the NHC National Storm Surge Risk Maps.  The updates in this version include data mapped to 10m DEMs for the US Gulf and East Coast. The following new regions have been added: Southern California (hurricane wind category 1 and 2 storms), Guam, American Samoa, and the Yucatan Peninsula for parts of Mexico, Belize, and Honduras.  For simplicity, the tiled map services are published by hurricane wind category and all available mapped regions for that category are provided in that web map.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The following areas are mapped in the hurricane wind Category 5 Maps:</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>US Gulf and East Coast (South of NC/VA border)</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Puerto Rico and US Virgin Islands</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Guam</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>American Samoa</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hispaniola</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><span style='color:rgb(0, 0, 0);'>Yucatan Peninsula- parts of Mexico, Belize, Guatemala, and western Honduras</span><br /></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>SLOSH employs curvilinear polar, elliptical, and hyperbolic telescoping mesh grids to simulate the storm surge hazard. The spatial coverage for each SLOSH grid ranges from an area the size of a few counties to a few states. The resolution of individual grid cells within each basin ranges from tens to hundreds of meters to a kilometer or more. Sub-grid scale water features and topographic obstructions such as channels, rivers, and cuts and levees, barriers, and roads, respectively, are parameterized to improve the modeled water levels.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The NHC provides two products based on hypothetical hurricanes: MEOWs and MOMs. MEOWs are created by computing the maximum storm surge resulting from up to 100,000 hypothetical storms simulated through each SLOSH grid of varying forward speed, radius of maximum wind, intensity (Categories 1-5), landfall location, tide level, and storm direction. A MEOW product is created for each combination of category, forward speed, storm direction, and tide level. SLOSH products exclude Category 5 storms north of the NC/VA border.  SLOSH products only include hurricane wind Category 1-4 scenarios for Hawaii and hurricane wind category 1-2 scenarios for Southern California. For each storm combination, parallel storms make landfall in 5 to 10 mile increments along the coast within the SLOSH grid, and the maximum storm surge footprint from each simulation is composited, retaining the maximum height of storm surge in a given basin grid cell. These are called MEOWs and no single hurricane will produce the regional flooding depicted in the MEOWs. SLOSH model MOMs are an ensemble product of maximum storm surge heights. SLOSH MOMs are created for each storm category by retaining the maximum storm surge value in each grid cell for all the MEOWs, regardless of the forward speed, storm trajectory, or landfall location. SLOSH MOMs are available for mean tide and high tide scenarios and represent the near worst-case scenario of flooding under ideal storm conditions. A high tide initial water level was used for the storm surge hazard maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This product uses the expertise of the NHC Storm Surge Unit to merge the operational SLOSH grids to build a seamless map of storm surge hazard scenarios using the MOM product. Each individual SLOSH grid for the Category 1-5 MOMs are merged into a single, seamless grid. The seamless grid is then resampled, interpolated, and processed with a DEM (Digital Elevation Model, i.e. topography) to compute the storm surge hazard above ground for each hurricane wind category.  The SLOSH MOM storm surge hazard data used to create these maps are constrained by the extent of the SLOSH grids and users should be aware that risk due to storm surge flooding could extend beyond the areas depicted in these maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Users of this hazard map should be aware that potential storm surge flooding is not depicted within some levee areas, such as the Hurricane &amp; Storm Damage Risk Reduction System in Louisiana. These areas are highly complex and water levels resulting from overtopping are difficult to predict. Users are urged to consult local officials for flood risk inside these leveed areas. If applicable to the region displayed by the map, these leveed areas will be depicted with a black and white diagonal hatch pattern. Not all levee areas are included in this analysis - in particular, local features such as construction walls, levees, berms, pumping systems, or other mitigation systems found at the local level may not be included in this analysis.  Additionally, some marshy or low lying areas are not mapped in this analysis.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>In locations that have a steep and narrow continental shelf, wave setup can be a substantial contributor to the total water level rise observed during a tropical cyclone. Wave setup is defined as the increase in mean water level due to momentum transfer to the water column by waves that are breaking or otherwise dissipating their energy. The following locations use SLOSH+Wave Setup simulations to create MEOW and MOM products that account for the increase in the mean water level due to wave setup: Puerto Rico, US Virgin Islands, Hawaii, Hispaniola, Guam, American Samoa, and Southern California. Through the USAID/WMO Coastal Inundation and Flooding Demonstration Project, these SLOSH storm surge risk products were created for the Island of Hispaniola.</font></div>",
+        "licenseInfo": null,
+        "title": "Category 5 Hurricane Storm Surge Risk Maps - Tile Layer",
+        "type": "Map Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1722945908000,
+        "avgRating": 0,
+        "id": "d1044dc425f5413692847766ac9a6723",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": "NOAA/NWS/NHC/Storm Surge Unit",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1722945710000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category5_v3/MapServer",
+        "tags": [
+          "storm surge",
+          "inundation",
+          "SLOSH",
+          "hurricanes",
+          "tropical cyclones",
+          "National Hurricane Center",
+          "NWS",
+          "NOAA"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC OneMap / State of North Carolina",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/d1044dc425f5413692847766ac9a6723"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "d2e80c12d7234428b18ace3df61a6ef6",
+      "title": "Category 2 Hurricane Storm Surge Risk Maps - TIle Layer",
+      "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category2_v3/MapServer",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nThis tile layer displays near worst case storm surge flooding (inundation) scenarios using the National Weather Service (NWS) SLOSH model Maximum of MEOWs (MOMs) product for hurricane wind Category 2 storms at a high tide.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -20782406.2927,
+                13075423.1594
+              ],
+              [
+                17894577.1455,
+                13075423.1594
+              ],
+              [
+                17894577.1455,
+                -8854446.2473
+              ],
+              [
+                -20782406.2927,
+                -8854446.2473
+              ],
+              [
+                -20782406.2927,
+                13075423.1594
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Service",
+          "Singlelayer",
+          "Tiled"
+        ],
+        "description": "<div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>National Hurricane Center - National Storm Surge Hazard Maps - </font><a href='https://www.nhc.noaa.gov/nationalsurge/' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.nhc.noaa.gov/nationalsurge/</a></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The SLOSH (Sea, Lake, and Overland Surges from Hurricanes) model is a numerical model used by NWS to compute storm surge. Storm surge is defined as the abnormal rise of water generated by a storm, over and above the predicted astronomical tides. Flooding from storm surge depends on many factors, such as the track, intensity, size, and forward speed of the hurricane and the characteristics of the coastline where it comes ashore or passes nearby. For planning purposes, the NHC uses a representative sample of hypothetical storms to estimate the near worst-case scenario of flooding for each hurricane category.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This is version 3 of the NHC National Storm Surge Risk Maps.  The updates in this version include data mapped to 10m DEMs for the US Gulf and East Coast. The following new regions have been added: Southern California (hurricane wind category 1 and 2 storms), Guam, American Samoa, and the Yucatan Peninsula for parts of Mexico, Belize, and Honduras.  For simplicity, the tiled map services are published by hurricane wind category and all available mapped regions for that category are provided in that web map.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The following areas are mapped in the hurricane wind Category 2 Maps:</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>US Gulf and East Coast</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Puerto Rico and US Virgin Islands</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Southern California</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hawaii</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Guam</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>American Samoa</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hispaniola</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><span style='color:rgb(0, 0, 0);'>Yucatan Peninsula- parts of Mexico, Belize, Guatemala, and western Honduras</span><br /></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>SLOSH employs curvilinear polar, elliptical, and hyperbolic telescoping mesh grids to simulate the storm surge hazard. The spatial coverage for each SLOSH grid ranges from an area the size of a few counties to a few states. The resolution of individual grid cells within each basin ranges from tens to hundreds of meters to a kilometer or more. Sub-grid scale water features and topographic obstructions such as channels, rivers, and cuts and levees, barriers, and roads, respectively, are parameterized to improve the modeled water levels.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The NHC provides two products based on hypothetical hurricanes: MEOWs and MOMs. MEOWs are created by computing the maximum storm surge resulting from up to 100,000 hypothetical storms simulated through each SLOSH grid of varying forward speed, radius of maximum wind, intensity (Categories 1-5), landfall location, tide level, and storm direction. A MEOW product is created for each combination of category, forward speed, storm direction, and tide level. SLOSH products exclude Category 5 storms north of the NC/VA border.  SLOSH products only include hurricane wind Category 1-4 scenarios for Hawaii and hurricane wind category 1-2 scenarios for Southern California. For each storm combination, parallel storms make landfall in 5 to 10 mile increments along the coast within the SLOSH grid, and the maximum storm surge footprint from each simulation is composited, retaining the maximum height of storm surge in a given basin grid cell. These are called MEOWs and no single hurricane will produce the regional flooding depicted in the MEOWs. SLOSH model MOMs are an ensemble product of maximum storm surge heights. SLOSH MOMs are created for each storm category by retaining the maximum storm surge value in each grid cell for all the MEOWs, regardless of the forward speed, storm trajectory, or landfall location. SLOSH MOMs are available for mean tide and high tide scenarios and represent the near worst-case scenario of flooding under ideal storm conditions. A high tide initial water level was used for the storm surge hazard maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This product uses the expertise of the NHC Storm Surge Unit to merge the operational SLOSH grids to build a seamless map of storm surge hazard scenarios using the MOM product. Each individual SLOSH grid for the Category 1-5 MOMs are merged into a single, seamless grid. The seamless grid is then resampled, interpolated, and processed with a DEM (Digital Elevation Model, i.e. topography) to compute the storm surge hazard above ground for each hurricane wind category.  The SLOSH MOM storm surge hazard data used to create these maps are constrained by the extent of the SLOSH grids and users should be aware that risk due to storm surge flooding could extend beyond the areas depicted in these maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Users of this hazard map should be aware that potential storm surge flooding is not depicted within some levee areas, such as the Hurricane &amp; Storm Damage Risk Reduction System in Louisiana. These areas are highly complex and water levels resulting from overtopping are difficult to predict. Users are urged to consult local officials for flood risk inside these leveed areas. If applicable to the region displayed by the map, these leveed areas will be depicted with a black and white diagonal hatch pattern. Not all levee areas are included in this analysis - in particular, local features such as construction walls, levees, berms, pumping systems, or other mitigation systems found at the local level may not be included in this analysis.  Additionally, some marshy or low lying areas are not mapped in this analysis.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>In locations that have a steep and narrow continental shelf, wave setup can be a substantial contributor to the total water level rise observed during a tropical cyclone. Wave setup is defined as the increase in mean water level due to momentum transfer to the water column by waves that are breaking or otherwise dissipating their energy. The following locations use SLOSH+Wave Setup simulations to create MEOW and MOM products that account for the increase in the mean water level due to wave setup: Puerto Rico, US Virgin Islands, Hawaii, Hispaniola, Guam, American Samoa, and Southern California. Through the USAID/WMO Coastal Inundation and Flooding Demonstration Project, these SLOSH storm surge risk products were created for the Island of Hispaniola.</font></div>",
+        "licenseInfo": null,
+        "title": "Category 2 Hurricane Storm Surge Risk Maps - TIle Layer",
+        "type": "Map Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1722945957000,
+        "avgRating": 0,
+        "id": "d2e80c12d7234428b18ace3df61a6ef6",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": "NOAA/NWS/NHC/Storm Surge Unit",
+        "largeThumbnail": null,
+        "lastViewed": 1722942000000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1722945396000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category2_v3/MapServer",
+        "tags": [
+          "storm surge",
+          "inundation",
+          "SLOSH",
+          "hurricanes",
+          "tropical cyclones",
+          "National Hurricane Center",
+          "NWS",
+          "NOAA"
+        ],
+        "numViews": 2,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC OneMap / State of North Carolina",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/d2e80c12d7234428b18ace3df61a6ef6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "dc2a360fb5ce43fa820fdbd9eb3cc52e",
+      "title": "Category 1 Hurricane Storm Surge Risk Maps - Tile Layer",
+      "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category1_v3/MapServer",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This tile layer displays near worst case storm surge flooding (inundation) scenarios using the National Weather Service (NWS) SLOSH model Maximum of MEOWs (MOMs) product for hurricane wind Category 1 storms at a high tide.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -20782406.2927,
+                13075423.1594
+              ],
+              [
+                17894577.1455,
+                13075423.1594
+              ],
+              [
+                17894577.1455,
+                -8854446.2473
+              ],
+              [
+                -20782406.2927,
+                -8854446.2473
+              ],
+              [
+                -20782406.2927,
+                13075423.1594
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Service",
+          "Singlelayer",
+          "Tiled"
+        ],
+        "description": "<div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>National Hurricane Center - National Storm Surge Hazard Maps - </font><a href='https://www.nhc.noaa.gov/nationalsurge/' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.nhc.noaa.gov/nationalsurge/</a></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The SLOSH (Sea, Lake, and Overland Surges from Hurricanes) model is a numerical model used by NWS to compute storm surge. Storm surge is defined as the abnormal rise of water generated by a storm, over and above the predicted astronomical tides. Flooding from storm surge depends on many factors, such as the track, intensity, size, and forward speed of the hurricane and the characteristics of the coastline where it comes ashore or passes nearby. For planning purposes, the NHC uses a representative sample of hypothetical storms to estimate the near worst-case scenario of flooding for each hurricane category.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This is version 3 of the NHC National Storm Surge Risk Maps.  The updates in this version include data mapped to 10m DEMs for the US Gulf and East Coast. The following new regions have been added: Southern California (hurricane wind category 1 and 2 storms), Guam, American Samoa, and the Yucatan Peninsula for parts of Mexico, Belize, and Honduras.  For simplicity, the tiled map services are published by hurricane wind category and all available mapped regions for that category are provided in that web map.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The following areas are mapped in the hurricane wind Category 1 Maps:</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>US Gulf and East Coast</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Puerto Rico and US Virgin Islands</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Southern California</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hawaii</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Guam</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>American Samoa</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hispaniola</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><span style='color:rgb(0, 0, 0);'>Yucatan Peninsula- parts of Mexico, Belize, Guatemala, and western Honduras</span><br /></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>SLOSH employs curvilinear polar, elliptical, and hyperbolic telescoping mesh grids to simulate the storm surge hazard. The spatial coverage for each SLOSH grid ranges from an area the size of a few counties to a few states. The resolution of individual grid cells within each basin ranges from tens to hundreds of meters to a kilometer or more. Sub-grid scale water features and topographic obstructions such as channels, rivers, and cuts and levees, barriers, and roads, respectively, are parameterized to improve the modeled water levels.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The NHC provides two products based on hypothetical hurricanes: MEOWs and MOMs. MEOWs are created by computing the maximum storm surge resulting from up to 100,000 hypothetical storms simulated through each SLOSH grid of varying forward speed, radius of maximum wind, intensity (Categories 1-5), landfall location, tide level, and storm direction. A MEOW product is created for each combination of category, forward speed, storm direction, and tide level. SLOSH products exclude Category 5 storms north of the NC/VA border.  SLOSH products only include hurricane wind Category 1-4 scenarios for Hawaii and hurricane wind category 1-2 scenarios for Southern California. For each storm combination, parallel storms make landfall in 5 to 10 mile increments along the coast within the SLOSH grid, and the maximum storm surge footprint from each simulation is composited, retaining the maximum height of storm surge in a given basin grid cell. These are called MEOWs and no single hurricane will produce the regional flooding depicted in the MEOWs. SLOSH model MOMs are an ensemble product of maximum storm surge heights. SLOSH MOMs are created for each storm category by retaining the maximum storm surge value in each grid cell for all the MEOWs, regardless of the forward speed, storm trajectory, or landfall location. SLOSH MOMs are available for mean tide and high tide scenarios and represent the near worst-case scenario of flooding under ideal storm conditions. A high tide initial water level was used for the storm surge hazard maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This product uses the expertise of the NHC Storm Surge Unit to merge the operational SLOSH grids to build a seamless map of storm surge hazard scenarios using the MOM product. Each individual SLOSH grid for the Category 1-5 MOMs are merged into a single, seamless grid. The seamless grid is then resampled, interpolated, and processed with a DEM (Digital Elevation Model, i.e. topography) to compute the storm surge hazard above ground for each hurricane wind category.  The SLOSH MOM storm surge hazard data used to create these maps are constrained by the extent of the SLOSH grids and users should be aware that risk due to storm surge flooding could extend beyond the areas depicted in these maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Users of this hazard map should be aware that potential storm surge flooding is not depicted within some levee areas, such as the Hurricane &amp; Storm Damage Risk Reduction System in Louisiana. These areas are highly complex and water levels resulting from overtopping are difficult to predict. Users are urged to consult local officials for flood risk inside these leveed areas. If applicable to the region displayed by the map, these leveed areas will be depicted with a black and white diagonal hatch pattern. Not all levee areas are included in this analysis - in particular, local features such as construction walls, levees, berms, pumping systems, or other mitigation systems found at the local level may not be included in this analysis.  Additionally, some marshy or low lying areas are not mapped in this analysis.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>In locations that have a steep and narrow continental shelf, wave setup can be a substantial contributor to the total water level rise observed during a tropical cyclone. Wave setup is defined as the increase in mean water level due to momentum transfer to the water column by waves that are breaking or otherwise dissipating their energy. The following locations use SLOSH+Wave Setup simulations to create MEOW and MOM products that account for the increase in the mean water level due to wave setup: Puerto Rico, US Virgin Islands, Hawaii, Hispaniola, Guam, American Samoa, and Southern California. Through the USAID/WMO Coastal Inundation and Flooding Demonstration Project, these SLOSH storm surge risk products were created for the Island of Hispaniola.</font></div>",
+        "licenseInfo": null,
+        "title": "Category 1 Hurricane Storm Surge Risk Maps - Tile Layer",
+        "type": "Map Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1722945944000,
+        "avgRating": 0,
+        "id": "dc2a360fb5ce43fa820fdbd9eb3cc52e",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": "NOAA/NWS/NHC/Storm Surge Unit",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1722945016000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category1_v3/MapServer",
+        "tags": [
+          "storm surge",
+          "inundation",
+          "SLOSH",
+          "hurricanes",
+          "tropical cyclones",
+          "National Hurricane Center",
+          "NWS",
+          "NOAA"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC OneMap / State of North Carolina",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/dc2a360fb5ce43fa820fdbd9eb3cc52e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a3ecd471179543c2810c66028480a2f5",
+      "title": "Category 4 Hurricane Storm Surge Risk Maps - Tile Layer",
+      "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category4_v3/MapServer",
+      "publisher": "nconemap",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "\nThis tile layer displays near worst case storm surge flooding (inundation) scenarios using the National Weather Service (NWS) SLOSH model Maximum of MEOWs (MOMs) product for hurricane wind Category 4 storms at a high tide.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -20782406.2927,
+                13075423.1594
+              ],
+              [
+                17894577.1455,
+                13075423.1594
+              ],
+              [
+                17894577.1455,
+                -8854446.2473
+              ],
+              [
+                -20782406.2927,
+                -8854446.2473
+              ],
+              [
+                -20782406.2927,
+                13075423.1594
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Service",
+          "Singlelayer",
+          "Tiled"
+        ],
+        "description": "<div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>National Hurricane Center - National Storm Surge Hazard Maps - </font><a href='https://www.nhc.noaa.gov/nationalsurge/' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.nhc.noaa.gov/nationalsurge/</a></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The SLOSH (Sea, Lake, and Overland Surges from Hurricanes) model is a numerical model used by NWS to compute storm surge. Storm surge is defined as the abnormal rise of water generated by a storm, over and above the predicted astronomical tides. Flooding from storm surge depends on many factors, such as the track, intensity, size, and forward speed of the hurricane and the characteristics of the coastline where it comes ashore or passes nearby. For planning purposes, the NHC uses a representative sample of hypothetical storms to estimate the near worst-case scenario of flooding for each hurricane category.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This is version 3 of the NHC National Storm Surge Risk Maps.  The updates in this version include data mapped to 10m DEMs for the US Gulf and East Coast. The following new regions have been added: Southern California (hurricane wind category 1 and 2 storms), Guam, American Samoa, and the Yucatan Peninsula for parts of Mexico, Belize, and Honduras.  For simplicity, the tiled map services are published by hurricane wind category and all available mapped regions for that category are provided in that web map.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The following areas are mapped in the hurricane wind Category 4 Maps:</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>US Gulf and East Coast</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Puerto Rico and US Virgin Islands</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hawaii</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Guam</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>American Samoa</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Hispaniola</font></div><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><span style='color:rgb(0, 0, 0);'>Yucatan Peninsula- parts of Mexico, Belize, Guatemala, and western Honduras</span><br /></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>SLOSH employs curvilinear polar, elliptical, and hyperbolic telescoping mesh grids to simulate the storm surge hazard. The spatial coverage for each SLOSH grid ranges from an area the size of a few counties to a few states. The resolution of individual grid cells within each basin ranges from tens to hundreds of meters to a kilometer or more. Sub-grid scale water features and topographic obstructions such as channels, rivers, and cuts and levees, barriers, and roads, respectively, are parameterized to improve the modeled water levels.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>The NHC provides two products based on hypothetical hurricanes: MEOWs and MOMs. MEOWs are created by computing the maximum storm surge resulting from up to 100,000 hypothetical storms simulated through each SLOSH grid of varying forward speed, radius of maximum wind, intensity (Categories 1-5), landfall location, tide level, and storm direction. A MEOW product is created for each combination of category, forward speed, storm direction, and tide level. SLOSH products exclude Category 5 storms north of the NC/VA border.  SLOSH products only include hurricane wind Category 1-4 scenarios for Hawaii and hurricane wind category 1-2 scenarios for Southern California. For each storm combination, parallel storms make landfall in 5 to 10 mile increments along the coast within the SLOSH grid, and the maximum storm surge footprint from each simulation is composited, retaining the maximum height of storm surge in a given basin grid cell. These are called MEOWs and no single hurricane will produce the regional flooding depicted in the MEOWs. SLOSH model MOMs are an ensemble product of maximum storm surge heights. SLOSH MOMs are created for each storm category by retaining the maximum storm surge value in each grid cell for all the MEOWs, regardless of the forward speed, storm trajectory, or landfall location. SLOSH MOMs are available for mean tide and high tide scenarios and represent the near worst-case scenario of flooding under ideal storm conditions. A high tide initial water level was used for the storm surge hazard maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>This product uses the expertise of the NHC Storm Surge Unit to merge the operational SLOSH grids to build a seamless map of storm surge hazard scenarios using the MOM product. Each individual SLOSH grid for the Category 1-5 MOMs are merged into a single, seamless grid. The seamless grid is then resampled, interpolated, and processed with a DEM (Digital Elevation Model, i.e. topography) to compute the storm surge hazard above ground for each hurricane wind category.  The SLOSH MOM storm surge hazard data used to create these maps are constrained by the extent of the SLOSH grids and users should be aware that risk due to storm surge flooding could extend beyond the areas depicted in these maps.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>Users of this hazard map should be aware that potential storm surge flooding is not depicted within some levee areas, such as the Hurricane &amp; Storm Damage Risk Reduction System in Louisiana. These areas are highly complex and water levels resulting from overtopping are difficult to predict. Users are urged to consult local officials for flood risk inside these leveed areas. If applicable to the region displayed by the map, these leveed areas will be depicted with a black and white diagonal hatch pattern. Not all levee areas are included in this analysis - in particular, local features such as construction walls, levees, berms, pumping systems, or other mitigation systems found at the local level may not be included in this analysis.  Additionally, some marshy or low lying areas are not mapped in this analysis.</font></div><font color='#000000' style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><br /></font><div style='font-family:Consolas, &quot;Courier New&quot;, monospace; font-size:14px;'><font color='#000000'>In locations that have a steep and narrow continental shelf, wave setup can be a substantial contributor to the total water level rise observed during a tropical cyclone. Wave setup is defined as the increase in mean water level due to momentum transfer to the water column by waves that are breaking or otherwise dissipating their energy. The following locations use SLOSH+Wave Setup simulations to create MEOW and MOM products that account for the increase in the mean water level due to wave setup: Puerto Rico, US Virgin Islands, Hawaii, Hispaniola, Guam, American Samoa, and Southern California. Through the USAID/WMO Coastal Inundation and Flooding Demonstration Project, these SLOSH storm surge risk products were created for the Island of Hispaniola.</font></div>",
+        "licenseInfo": null,
+        "title": "Category 4 Hurricane Storm Surge Risk Maps - Tile Layer",
+        "type": "Map Service",
+        "orgId": "mSDBiLWaIfH92NqI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1722945927000,
+        "avgRating": 0,
+        "id": "a3ecd471179543c2810c66028480a2f5",
+        "categories": [],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "nconemap",
+        "accessInformation": "NOAA/NWS/NHC/Storm Surge Unit",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1722945619000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://tiles.arcgis.com/tiles/C8EMgrsFcRFL6LrL/arcgis/rest/services/Storm_Surge_HazardMaps_Category4_v3/MapServer",
+        "tags": [
+          "storm surge",
+          "inundation",
+          "SLOSH",
+          "hurricanes",
+          "tropical cyclones",
+          "National Hurricane Center",
+          "NWS",
+          "NOAA"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 114,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "NC OneMap / State of North Carolina",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all/items/a3ecd471179543c2810c66028480a2f5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nconemap.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    184
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 7,
+  "next_offset": 7,
+  "response_sha256": "7ea45376604dd356726f8bd7c8e83a2845c2fcbfe467dbd5c3563ed827618f60",
+  "search_complete": true
+}

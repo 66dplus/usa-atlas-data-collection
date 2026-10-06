@@ -1,0 +1,965 @@
+{
+  "jurisdiction_code": "ID",
+  "query": "employment",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-05T08:41:36.401391+00:00",
+  "candidates": [
+    {
+      "id": "b5c6474cb4ae459480bb804127c4831e",
+      "title": "2023 Irrigated Lands for the Mountain Home Plateau: Machine Learning Generated",
+      "url": "https://research.idwr.idaho.gov/GIS/Spatial/LandCover_Vegetation/MountainHome/RF_IrrigatedLands_2023_MH.zip",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset was generated for use in water budget studies for the Mountain Home Plateau. A revised Mountain Home study boundary was provided to Idaho Department of Water Resources (IDWR) staff in February 2024, which now incorporates parts of east Ada and additional area west of the previous boundary used for 2010 Irrigated Lands. For additional information not listed in the metadata, please contact IDWR at gisinfo@idwr.idaho.gov.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document"
+        ],
+        "description": "This raster file represents land within the Mountain Home study boundary classified as either “irrigated” with a cell value of 1 or “non-irrigated” with a cell value of 0 at a 10-meter spatial resolution. These classifications were determined at the pixel level by use of Random Forest, a supervised machine learning algorithm. Classification models often employ Random Forest due to its accuracy and efficiency at labeling large spatial datasets. To build a Random Forest model and supervise the learning process, IDWR staff create pre-labeled data, or training points, which are used by the algorithm to construct decision trees that will be later used on unseen data. Model accuracy is determined using a subset of the training points, otherwise known as a validation dataset. <div><br /></div><div>Several satellite-based input datasets are made available to the Random Forest model, which aid in distinguishing characteristics of irrigated lands. These characteristics allow patterns to be established by the model, e.g., high NDVI during summer months for cultivated crops, or consistently low ET for dryland areas. Mountain Home Irrigated Lands 2023 employed the following input datasets: US Geological Survey (USGS) products, including Landsat 8/9 and 10-meter 3DEP DEM, and European Space Agency (ESA) Copernicus products, including Harmonized Sentinel-2 and Global 30m Height Above Nearest Drainage (HAND). For the creation of manually labeled training points, IDWR staff accessed the following datasets: NDVI derived from Landsat 8/9, Sentinel-2 CIR imagery, US Department of Agriculture National Agricultural Statistics Service (USDA NASS) Cropland Data Layer, Active Water Rights Place of Use data from IDWR, and USDA’s National Agriculture Imagery Program (NAIP) imagery. All datasets were available for the current year of interest (2023). </div><div><br /></div><div>The published Mountain Home Irrigated Lands 2023 land classification raster was generated after four model runs, where at each iteration, IDWR staff added or removed training points to help improve results. Early model runs showed poor results in riparian areas near the Snake River, concentrated animal feeding operations (CAFOs), and non-irrigated areas at higher elevations. These issues were resolved after several model runs in combination with post-processing masks. Masks used include Fish and Wildlife Service’s National Wetlands Inventory (FWS NWI) data. These data were amended to exclude polygons overlying irrigated areas, and to expand riparian area in specific locations. A manually created mask was primarily used to fill in areas around the Snake River that the model did not uniformly designate as irrigated. Ground-truthing and a thorough review of IDWR’s water rights database provided further insight for class assignments near the town of Mayfield. Lastly, the Majority Filter tool in ArcGIS was applied using a kernel of 8 nearest neighbors to smooth out “speckling” within irrigated fields. The masking datasets and the final iteration of training points are available on request. </div><div><br /></div><div>Information regarding Sentinel and Landsat imagery:</div><div>All satellite data products used within the Random Forest model were accessed via the Google Earth Engine API. To find more information on Sentinel data used, query the Earth Engine Data Catalog https://developers.google.com/earth-engine/datasets) using “COPERNICUS/S2_SR_HARMONIZED.” Information on Landsat datasets used can be found by querying “LANDSAT/LC08/C02/T1_L2” (for Landsat 8) and “LANDSAT/LC09/C02/T1_L2” (for Landsat 9).Each satellite product has several bands of available data. For our purposes, shortwave infrared 2 (SWIR2), blue, Normalized Difference Vegetation Index (NDVI), and near infrared (NIR) were extracted from both Sentinel and Landsat images. These images were later interpolated to the following dates: 2023-04-15, 2023-05-15, 2023-06-14, 2023-07-14, 2023-08-13, 2023-09-12. Interpolated values were taken from up to 45 days before and after each interpolated date. April-June interpolated Landsat images, as well as the April interpolated Sentinel image, were not used in the model given the extent of cloud cover overlying irrigated area. For more information on the pre-processing of satellite data used in the Random Forest model, please reach out to IDWR at gisinfo@idwr.idaho.gov.</div>",
+        "licenseInfo": "Access and Use Constraint: The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete and in conformance with the Idaho Public Records Act. Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site. Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained. Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata. Acknowledgement of IDWR in any products derived from this dataset is appreciated.",
+        "title": "2023 Irrigated Lands for the Mountain Home Plateau: Machine Learning Generated",
+        "type": "Document Link",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755119055000,
+        "avgRating": 0,
+        "id": "b5c6474cb4ae459480bb804127c4831e",
+        "categories": [
+          "/Categories/Irrigated Lands"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR)",
+        "largeThumbnail": "",
+        "lastViewed": 1754348400000,
+        "thumbnail": "thumbnail/thumbnail1727974153180.png",
+        "languages": [],
+        "created": 1715789367000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://research.idwr.idaho.gov/GIS/Spatial/LandCover_Vegetation/MountainHome/RF_IrrigatedLands_2023_MH.zip",
+        "tags": [
+          "Zipped File",
+          "Groundwater",
+          "Hydrology",
+          "IDWR GIS Department",
+          "Irrigated",
+          "Irrigated Lands",
+          "Irrigation",
+          "Machine Learning",
+          "Monitoring",
+          "Non-Irrigated",
+          "Random Forest",
+          "Regulatory",
+          "Supervised Land Classification",
+          "Surface Water",
+          "Water",
+          "Water Budget",
+          "Water Use"
+        ],
+        "numViews": 53,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/b5c6474cb4ae459480bb804127c4831e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ede5b2f90590451a958130574a6ceda5",
+      "title": "ET-IDWR Station Finder",
+      "url": "https://experience.arcgis.com/experience/ede5b2f90590451a958130574a6ceda5",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Search for ET-IDWR stations by proximity.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Copy Item",
+          "EXB Experience",
+          "JavaScript",
+          "lastEditor:mmadden_IDWR",
+          "modified: 1787593016555",
+          "publishVersion:1.21.0",
+          "Ready To Use",
+          "status: Published",
+          "template:f5057151f34a4a8bb8e280e1f67f4f31",
+          "version:1.21.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='background-color:rgb(255,255,255); color:rgb(76,76,76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>This map application reflects weather station locations in and surrounding the state of Idaho that are available on the </span></span><a target='_blank' href='https://et-idwr.idaho.gov/' rel='nofollow ugc noopener noreferrer'><span style='background-color:rgb(255,255,255); color:#0000ff; font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>ET-IDWR website</span></span></a><span style='background-color:rgb(255,255,255); color:rgb(76,76,76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>.</span></span></p><p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'>The ET-IDWR website provides estimates of evapotranspiration (ET), net irrigation requirements (NIR), and effective precipitation supporting ET (PEff). These data and this web site were produced in 2007 and were updated in 2009, 2012, 2017, 2023, and 2025. ET calculation procedures employ a modern reference equation (ASCE standardized Penman-Monteith method) and a modern procedure to calculate crop coefficients that considers the impact of surface wetting by irrigation and precipitation on total evaporation from the soil surface. ET is provided for daily, monthly, and annual timesteps for 200+ weather station locations across Idaho and adjoining states. In addition to ET and NIR estimates for agricultural crops grown in Idaho, ET estimates are available for a number of native plant systems (wetlands, rangelands, and riparian areas) and open water surfaces. The ET and NIR estimates are intended for use in design and management of irrigation systems, for water rights management and consumptive water right transfers, and for hydrologic studies. ET estimates are available for all times during the calendar year to provide information for land application design, operation, and management of waste streams from agriculture, food processing and other sources during the nongrowing periods.</span></p><p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'>Data provided by the ET-IDWR website are based on 200+ stations associated with five meterological networks. Each station in the list of stations below ends with an abreviation that indicates the meterological network. The five networks are:</span></p><p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'>NWS -- National Weather Service Cooperative Observer Network</span></p><p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'>PN-AM -- USBR Pacific Northwest Region AgriMet Network</span></p><p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'>GP-AM -- USBR Great Plains Region AgriMet Network</span></p><p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'>AM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center</span></p><p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span style='font-family:inherit;'>RAWS -- National Interagency Fire Center Remote Automatice Weather Station Network</span></p>",
+        "licenseInfo": "<p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span>Access and Use Constraint: The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete, and in conformance with the Idaho Public Records Act. Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site. Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</span></p><p style='background-color:rgb(255, 255, 255); color:rgb(76, 76, 76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; margin-bottom:1.5rem; margin-top:0px; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'><span>For reference only. The latitude/longitude coordinates are only in degrees-minutes and not in degrees-minutes-seconds. Therefore, the spatial distribution of the points is thought to be correct on a large scale.</span></p>",
+        "ownerId": "3e5e53cdbaf780e1b3c609acedce03ab",
+        "title": "ET-IDWR Station Finder",
+        "type": "Web Experience",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1787593021000,
+        "avgRating": 0,
+        "id": "ede5b2f90590451a958130574a6ceda5",
+        "categories": [
+          "/Categories/Evapotranspiration"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR) Clarence Robison, University of Idaho Richard Allen, University of Idaho NWS -- National Weather Service Cooperative Observer Network PN-AM -- USBR Pacific Northwest Region AgriMet Network GP-AM -- USBR Great Plains Region AgriMet Network AM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center RAWS -- National Interagency Fire Center Remote Automatic Weather Station Network",
+        "largeThumbnail": null,
+        "lastViewed": 1787590800000,
+        "thumbnail": "thumbnail/ET-IDWR_Station_Finder.png",
+        "languages": [],
+        "created": 1767109612000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/ede5b2f90590451a958130574a6ceda5",
+        "tags": [
+          "Climate",
+          "ET Stations",
+          "ET-IDWR",
+          "Evapotranspiration",
+          "Idaho",
+          "ID",
+          "Precipitation Deficits",
+          "Irrigation"
+        ],
+        "numViews": 481,
+        "numComments": 0,
+        "size": 520834,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/ede5b2f90590451a958130574a6ceda5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0bdd967c5a254656a6b3879b9042b723",
+      "title": "ET-IDWR Station Polygons",
+      "url": "https://gis.idwr.idaho.gov/hosting/rest/services/ScientificRasters/EtIdwrStationsPoly/FeatureServer",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset reflects weather station locations in and surrounding the state of Idaho that are available on the ET-IDWR website (https://et-idwr.idaho.gov/).  The data set can be used to find the ET-IDWR station nearest a location of interest. Polygons indicating the nearest station were created using the Create Theissen Polygon tool in ArcGIS.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -118.371873,
+                49.026472
+              ],
+              [
+                -110.461177,
+                49.026472
+              ],
+              [
+                -110.461177,
+                39.642189
+              ],
+              [
+                -118.371873,
+                39.642189
+              ],
+              [
+                -118.371873,
+                49.026472
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Map Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This dataset reflects weather station locations in and surrounding the state of Idaho that are available on the ET-IDWR website (https://et-idwr.idaho.gov/). The ET-IDWR website provides estimates of evapotranspiration (ET), net irrigation requirements (NIR), and effective precipitation supporting ET (PEff). These data and this web site were produced in 2007 and were updated in 2009, 2012, 2017, 2023, and 2025. ET calculation procedures employ a modern reference equation (ASCE standardized Penman-Monteith method) and a modern procedure to calculate crop coefficients that considers the impact of surface wetting by irrigation and precipitation on total evaporation from the soil surface. ET is provided for daily, monthly, and annual timesteps for 212 weather station locations across Idaho and adjoining states. In addition to ET and NIR estimates for agricultural crops grown in Idaho, ET estimates are available for a number of native plant systems (wetlands, rangelands, and riparian areas) and open water surfaces. The ET and NIR estimates are intended for use in design and management of irrigation systems, for water rights management and consumptive water right transfers, and for hydrologic studies. ET estimates are available for all times during the calendar year to provide information for land application design, operation, and management of waste streams from agriculture, food processing and other sources during the nongrowing periods.These web pages allow you to access historical ET data for Idaho and adjoining states at various locations. Currently, the data are based on 212 stations associated with five meterological networks. Each station in the list of stations below ends with an abreviation that indicates the meterological network. The five networks are:</span></p><p><span>NWS -- National Weather Service Cooperative Observer Network</span></p><p><span>PN-AM -- USBR Pacific Northwest Region AgriMet Network</span></p><p><span>GP-AM -- USBR Great Plains Region AgriMet Network</span></p><p><span>AM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center </span></p><p><span>RAWS -- National Interagency Fire Center Remote Automatice Weather Station Network</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Access and Use Constraint: The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete and in conformance with the Idaho Public Records Act. Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site. Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</span></p><p><span>For reference only. The latitude/longitude coordinates are only in degrees-minutes and not in degrees-minutes-seconds. Therefore, the spatial distribution of the points is thought to be correct on a large scale. </span></p></div></div></div>",
+        "ownerId": "3e5e53cdbaf780e1b3c609acedce03ab",
+        "title": "ET-IDWR Station Polygons",
+        "type": "Feature Service",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782492476000,
+        "avgRating": 0,
+        "id": "0bdd967c5a254656a6b3879b9042b723",
+        "categories": [
+          "/Categories/Evapotranspiration"
+        ],
+        "spatialReference": "NAD_1983_Idaho_TM",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR)\nClarence Robison, University of Idaho\nRichard Allen, University of Idaho\nNWS -- National Weather Service Cooperative Observer Network\nPN-AM -- USBR Pacific Northwest Region AgriMet Network\nGP-AM -- USBR Great Plains Region AgriMet Network\nAM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center\nRAWS -- National Interagency Fire Center Remote Automatice Weather Station Network",
+        "largeThumbnail": "",
+        "lastViewed": 1782453600000,
+        "thumbnail": "thumbnail/thumbnail1781726075357.png",
+        "languages": [],
+        "created": 1764974618000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gis.idwr.idaho.gov/hosting/rest/services/ScientificRasters/EtIdwrStationsPoly/FeatureServer",
+        "tags": [
+          "Climate",
+          "ET Stations",
+          "ETIdaho",
+          "Evapotranspiration",
+          "Idaho",
+          "ID",
+          "Precipitation Deficits"
+        ],
+        "numViews": 371,
+        "numComments": 0,
+        "size": 99,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/0bdd967c5a254656a6b3879b9042b723"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "41bbf9eb360840a38ccaf958b21105d6",
+      "title": "ET-IDWR Stations",
+      "url": "https://gis.idwr.idaho.gov/hosting/rest/services/ScientificRasters/EtIdwrStations/MapServer",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset reflects weather station locations in and surrounding the state of Idaho that are available on the ET-IDWR website (https://et-idwr.idaho.gov/).  The data set can be used to find the ET-IDWR station nearest a location of interest.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -118.371873,
+                49.026472
+              ],
+              [
+                -110.461177,
+                49.026472
+              ],
+              [
+                -110.461177,
+                39.642189
+              ],
+              [
+                -118.371873,
+                39.642189
+              ],
+              [
+                -118.371873,
+                49.026472
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This dataset reflects weather station locations in and surrounding the state of Idaho that are available on the ET-IDWR website (https://et-idwr.idaho.gov/).</span></p><p><span>The ET-IDWR website provides estimates of evapotranspiration (ET), net irrigation requirements (NIR), and effective precipitation supporting ET (PEff). These data and this web site were produced in 2007 and were updated in 2009, 2012, 2017, 2023, and 2025. ET calculation procedures employ a modern reference equation (ASCE standardized Penman-Monteith method) and a modern procedure to calculate crop coefficients that considers the impact of surface wetting by irrigation and precipitation on total evaporation from the soil surface. ET is provided for daily, monthly, and annual timesteps for 212 weather station locations across Idaho and adjoining states. In addition to ET and NIR estimates for agricultural crops grown in Idaho, ET estimates are available for a number of native plant systems (wetlands, rangelands, and riparian areas) and open water surfaces. The ET and NIR estimates are intended for use in design and management of irrigation systems, for water rights management and consumptive water right transfers, and for hydrologic studies. ET estimates are available for all times during the calendar year to provide information for land application design, operation, and management of waste streams from agriculture, food processing and other sources during the nongrowing periods.</span></p><p><span>These web pages allow you to access historical ET data for Idaho and adjoining states at various locations. Currently, the data are based on 212 stations associated with five meterological networks. Each station in the list of stations below ends with an abreviation that indicates the meterological network. The five networks are:</span></p><p><span>NWS -- National Weather Service Cooperative Observer Network</span></p><p><span>PN-AM -- USBR Pacific Northwest Region AgriMet Network</span></p><p><span>GP-AM -- USBR Great Plains Region AgriMet Network</span></p><p><span>AM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center </span></p><p><span>RAWS -- National Interagency Fire Center Remote Automatice Weather Station Network</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Access and Use Constraint: The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete, and in conformance with the Idaho Public Records Act. Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site. Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</span></p><p><span>For reference only. The latitude/longitude coordinates are only in degrees-minutes and not in degrees-minutes-seconds. Therefore, the spatial distribution of the points is thought to be correct on a large scale. </span></p></div></div></div>",
+        "ownerId": "3e5e53cdbaf780e1b3c609acedce03ab",
+        "title": "ET-IDWR Stations",
+        "type": "Map Service",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782492476000,
+        "avgRating": 0,
+        "id": "41bbf9eb360840a38ccaf958b21105d6",
+        "categories": [
+          "/Categories/Evapotranspiration"
+        ],
+        "spatialReference": "NAD_1983_Idaho_TM",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR)\nClarence Robison, University of Idaho\nRichard Allen, University of Idaho\nNWS -- National Weather Service Cooperative Observer Network\nPN-AM -- USBR Pacific Northwest Region AgriMet Network\nGP-AM -- USBR Great Plains Region AgriMet Network\nAM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center\nRAWS -- National Interagency Fire Center Remote Automatic Weather Station Network",
+        "largeThumbnail": "",
+        "lastViewed": 1782406800000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1764974625000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gis.idwr.idaho.gov/hosting/rest/services/ScientificRasters/EtIdwrStations/MapServer",
+        "tags": [
+          "Climate",
+          "ET Stations",
+          "ET-IDWR",
+          "Evapotranspiration",
+          "Idaho",
+          "ID",
+          "Precipitation Deficits"
+        ],
+        "numViews": 359,
+        "numComments": 0,
+        "size": 91,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/41bbf9eb360840a38ccaf958b21105d6"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4cea92b7c5614ab4a5c252dfca060d65",
+      "title": "ET-IDWR Stations",
+      "url": "https://gis.idwr.idaho.gov/hosting/rest/services/ScientificRasters/EtIdwrStations/FeatureServer",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset reflects weather station locations in and surrounding the state of Idaho that are available on the ET-IDWR website (https://et-idwr.idaho.gov/).  The data set can be used to find the ET-IDWR station nearest a location of interest.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -118.371873,
+                49.026472
+              ],
+              [
+                -110.461177,
+                49.026472
+              ],
+              [
+                -110.461177,
+                39.642189
+              ],
+              [
+                -118.371873,
+                39.642189
+              ],
+              [
+                -118.371873,
+                49.026472
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Map Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This dataset reflects weather station locations in and surrounding the state of Idaho that are available on the ET-IDWR website (https://et-idwr.idaho.gov/).</span></p><p><span>The ET-IDWR website provides estimates of evapotranspiration (ET), net irrigation requirements (NIR), and effective precipitation supporting ET (PEff). These data and this web site were produced in 2007 and were updated in 2009, 2012, 2017, 2023, and 2025. ET calculation procedures employ a modern reference equation (ASCE standardized Penman-Monteith method) and a modern procedure to calculate crop coefficients that considers the impact of surface wetting by irrigation and precipitation on total evaporation from the soil surface. ET is provided for daily, monthly, and annual timesteps for 212 weather station locations across Idaho and adjoining states. In addition to ET and NIR estimates for agricultural crops grown in Idaho, ET estimates are available for a number of native plant systems (wetlands, rangelands, and riparian areas) and open water surfaces. The ET and NIR estimates are intended for use in design and management of irrigation systems, for water rights management and consumptive water right transfers, and for hydrologic studies. ET estimates are available for all times during the calendar year to provide information for land application design, operation, and management of waste streams from agriculture, food processing and other sources during the nongrowing periods.</span></p><p><span>These web pages allow you to access historical ET data for Idaho and adjoining states at various locations. Currently, the data are based on 212 stations associated with five meterological networks. Each station in the list of stations below ends with an abreviation that indicates the meterological network. The five networks are:</span></p><p><span>NWS -- National Weather Service Cooperative Observer Network</span></p><p><span>PN-AM -- USBR Pacific Northwest Region AgriMet Network</span></p><p><span>GP-AM -- USBR Great Plains Region AgriMet Network</span></p><p><span>AM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center </span></p><p><span>RAWS -- National Interagency Fire Center Remote Automatice Weather Station Network</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Access and Use Constraint: The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete, and in conformance with the Idaho Public Records Act. Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site. Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</span></p><p><span>For reference only. The latitude/longitude coordinates are only in degrees-minutes and not in degrees-minutes-seconds. Therefore, the spatial distribution of the points is thought to be correct on a large scale. </span></p></div></div></div>",
+        "ownerId": "3e5e53cdbaf780e1b3c609acedce03ab",
+        "title": "ET-IDWR Stations",
+        "type": "Feature Service",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782492476000,
+        "avgRating": 0,
+        "id": "4cea92b7c5614ab4a5c252dfca060d65",
+        "categories": [
+          "/Categories/Evapotranspiration"
+        ],
+        "spatialReference": "NAD_1983_Idaho_TM",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR)\nClarence Robison, University of Idaho\nRichard Allen, University of Idaho\nNWS -- National Weather Service Cooperative Observer Network\nPN-AM -- USBR Pacific Northwest Region AgriMet Network\nGP-AM -- USBR Great Plains Region AgriMet Network\nAM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center\nRAWS -- National Interagency Fire Center Remote Automatic Weather Station Network",
+        "largeThumbnail": "",
+        "lastViewed": 1782439200000,
+        "thumbnail": "thumbnail/thumbnail1781729246139.png",
+        "languages": [],
+        "created": 1764974636000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gis.idwr.idaho.gov/hosting/rest/services/ScientificRasters/EtIdwrStations/FeatureServer",
+        "tags": [
+          "Climate",
+          "ET Stations",
+          "ET-IDWR",
+          "Evapotranspiration",
+          "Idaho",
+          "ID",
+          "Precipitation Deficits"
+        ],
+        "numViews": 795,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/4cea92b7c5614ab4a5c252dfca060d65"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "19689568fd8546d3b996ec1201b05fcb",
+      "title": "ET-IDWR Station Polygons",
+      "url": "https://gis.idwr.idaho.gov/hosting/rest/services/ScientificRasters/EtIdwrStationsPoly/MapServer",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset reflects weather station locations in and surrounding the state of Idaho that are available on the ET-IDWR website (https://et-idwr.idaho.gov/).  The data set can be used to find the ET-IDWR station nearest a location of interest. Polygons indicating the nearest station were created using the Create Theissen Polygon tool in ArcGIS.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -118.371873,
+                49.026472
+              ],
+              [
+                -110.461177,
+                49.026472
+              ],
+              [
+                -110.461177,
+                39.642189
+              ],
+              [
+                -118.371873,
+                39.642189
+              ],
+              [
+                -118.371873,
+                49.026472
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>This dataset reflects weather station locations in and surrounding the state of Idaho that are available on the ET-IDWR website (https://et-idwr.idaho.gov/). The ET-IDWR website provides estimates of evapotranspiration (ET), net irrigation requirements (NIR), and effective precipitation supporting ET (PEff). These data and this web site were produced in 2007 and were updated in 2009, 2012, 2017, 2023, and 2025. ET calculation procedures employ a modern reference equation (ASCE standardized Penman-Monteith method) and a modern procedure to calculate crop coefficients that considers the impact of surface wetting by irrigation and precipitation on total evaporation from the soil surface. ET is provided for daily, monthly, and annual timesteps for 212 weather station locations across Idaho and adjoining states. In addition to ET and NIR estimates for agricultural crops grown in Idaho, ET estimates are available for a number of native plant systems (wetlands, rangelands, and riparian areas) and open water surfaces. The ET and NIR estimates are intended for use in design and management of irrigation systems, for water rights management and consumptive water right transfers, and for hydrologic studies. ET estimates are available for all times during the calendar year to provide information for land application design, operation, and management of waste streams from agriculture, food processing and other sources during the nongrowing periods.These web pages allow you to access historical ET data for Idaho and adjoining states at various locations. Currently, the data are based on 212 stations associated with five meterological networks. Each station in the list of stations below ends with an abreviation that indicates the meterological network. The five networks are:</span></p><p><span>NWS -- National Weather Service Cooperative Observer Network</span></p><p><span>PN-AM -- USBR Pacific Northwest Region AgriMet Network</span></p><p><span>GP-AM -- USBR Great Plains Region AgriMet Network</span></p><p><span>AM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center </span></p><p><span>RAWS -- National Interagency Fire Center Remote Automatice Weather Station Network</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>Access and Use Constraint: The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete and in conformance with the Idaho Public Records Act. Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site. Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</span></p><p><span>For reference only. The latitude/longitude coordinates are only in degrees-minutes and not in degrees-minutes-seconds. Therefore, the spatial distribution of the points is thought to be correct on a large scale. </span></p></div></div></div>",
+        "ownerId": "3e5e53cdbaf780e1b3c609acedce03ab",
+        "title": "ET-IDWR Station Polygons",
+        "type": "Map Service",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782492476000,
+        "avgRating": 0,
+        "id": "19689568fd8546d3b996ec1201b05fcb",
+        "categories": [
+          "/Categories/Evapotranspiration"
+        ],
+        "spatialReference": "NAD_1983_Idaho_TM",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR)\nClarence Robison, University of Idaho\nRichard Allen, University of Idaho\nNWS -- National Weather Service Cooperative Observer Network\nPN-AM -- USBR Pacific Northwest Region AgriMet Network\nGP-AM -- USBR Great Plains Region AgriMet Network\nAM/INL -- USBR Columbia-Pacific Northwest Region AgriMet Network and NOAA INL Center\nRAWS -- National Interagency Fire Center Remote Automatice Weather Station Network",
+        "largeThumbnail": "",
+        "lastViewed": 1782457200000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1764974604000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://gis.idwr.idaho.gov/hosting/rest/services/ScientificRasters/EtIdwrStationsPoly/MapServer",
+        "tags": [
+          "Climate",
+          "ET Stations",
+          "ETIdaho",
+          "Evapotranspiration",
+          "Idaho",
+          "ID",
+          "Precipitation Deficits"
+        ],
+        "numViews": 295,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/19689568fd8546d3b996ec1201b05fcb"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0fcd255d436d4d5ebe5ac36948639614",
+      "title": "2022 Irrigated Lands for the Eastern Snake Plain Aquifer: Machine Learning Generated",
+      "url": "https://research.idwr.idaho.gov/GIS/Spatial/LandCover_Vegetation/SnakePlain/RF_IrrigatedLands_2022_ESPA.zip",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset was generated for use in water budget studies for the Eastern Snake Plain Aquifer (ESPA) region. A revised ESPA study boundary was provided to Idaho Department of Resources (IDWR) GIS staff in 2023, which removed the Stanley/Challis area as well as Swan Valley. The previous study boundary is visible in the ESPA Irrigated Lands 2021 raster. For additional information, please contact IDWR at gisinfo@idwr.idaho.gov.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document"
+        ],
+        "description": "This raster file represents land within the ESPA study boundary classified as either “irrigated” with a cell value of 1 or “non-irrigated” with a cell value of 0 at a 10-meter spatial resolution. These classifications were determined at the pixel level by use of Random Forest, a supervised machine learning algorithm. To build a Random Forest model and supervise the learning process, IDWR staff create pre-labeled data, or training points, which are used by the algorithm to construct decision trees that will be later used on unseen data. Model accuracy is determined using a subset of the training points, otherwise known as a validation dataset. <div><br /></div><div>Several satellite-based input datasets are made available to the Random Forest model, which aid in distinguishing characteristics of irrigated lands. ESPA Irrigated Lands 2022 employed the following input datasets: US Geological Survey (USGS) products, including Landsat 8/9 and 10-meter 3DEP DEM; European Space Agency (ESA) Copernicus products, including Harmonized Sentinel-2; and Global 30m Height Above Nearest Drainage (HAND) (Donchyts et al., 2016). Evapotranspiration data from the METRIC model (Mapping Evapotranspiration at high Resolution with Internalized Calibration) was provided by IDWR and used as an input. IDWR staff used the following datasets to aid in the labeling of training data: NDVI derived from Landsat 8/9, Sentinel-2 CIR imagery, US Department of Agriculture National Agricultural Statistics Service (USDA NASS) Cropland Data Layer, Active Water Rights Place of Use and METRIC data from IDWR, and USDA’s National Agriculture Imagery Program (NAIP) imagery. NAIP imagery from 2021 and 2023 was used as a reference; all other datasets were available for 2022.</div><div><br /></div><div>ESPA Irrigated Lands 2022 model runs were processed on six separate subregions covering the study boundary. This was done to reduce processing time and better train the model on specific climatic regions. Each subregion was run over about 3 model iterations, where at each iteration IDWR staff added or removed training points to help improve results. The northeast section of the study boundary, spanning from Kilgore to Henry’s Lake and Island Park, was manually delineated due to a lack of quality training data and model results. Post-processing of model output included a wetland mask derived from the Fish and Wildlife Service’s National Wetlands Inventory wetlands dataset, as well as a manually created mask specific to issues found in the ESPA 2022 model results. The masking datasets and final iteration of training points are available on request.<div><br /></div><div>References:Donchyts, G., Winsemius, H., Schellekens, J., Erickson, T., Gao, H., Savenije, H., &amp;amp; van de Giesen, N. (2016). Global 30m height above the nearest drainage (HAND). Geophysical Research Abstracts, 18, EGU2016-17445-3. EGU General Assembly 2016.</div></div>",
+        "licenseInfo": "The Idaho Department of Water Resources makes this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete, and in compliance with the Idaho Public Records Act. Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site. Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.",
+        "title": "2022 Irrigated Lands for the Eastern Snake Plain Aquifer: Machine Learning Generated",
+        "type": "Document Link",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755119055000,
+        "avgRating": 0,
+        "id": "0fcd255d436d4d5ebe5ac36948639614",
+        "categories": [
+          "/Categories/Irrigated Lands"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR)",
+        "largeThumbnail": "",
+        "lastViewed": 1754496000000,
+        "thumbnail": "thumbnail/thumbnail1727974131658.png",
+        "languages": [],
+        "created": 1727974782000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://research.idwr.idaho.gov/GIS/Spatial/LandCover_Vegetation/SnakePlain/RF_IrrigatedLands_2022_ESPA.zip",
+        "tags": [
+          "Hydrology",
+          "Regulatory",
+          "Monitoring",
+          "Supervised Land Classification",
+          "Agriculture"
+        ],
+        "numViews": 65,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/0fcd255d436d4d5ebe5ac36948639614"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4324d70f8c404991abef3c3350e6a4e0",
+      "title": "2020 Irrigated Lands for the Eastern Snake Plain Aquifer: Machine Learning Generated",
+      "url": "https://research.idwr.idaho.gov/GIS/Spatial/LandCover_Vegetation/SnakePlain/RF_IrrigatedLands_2020_ESPA.zip",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset was generated for use in water budget studies for the Eastern Snake Plain Aquifer (ESPA) region. The raster dataset is produced using a random forest classifier trained by GIS staff. The modeled output is clipped to an ESPA study boundary provided by Idaho Department of Resources (IDWR) Hydrology staff. For additional information not provided below, please contact IDWR at gisinfo@idwr.idaho.gov.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document"
+        ],
+        "description": "This raster file represents land within the ESPA study boundary classified as either “irrigated” with a cell value of 1 or “non-irrigated” with a cell value of 0 at a 10-meter spatial resolution. These classifications were determined at the pixel level by using random forest, a supervised machine learning algorithm. To build a random forest model and supervise the learning process, IDWR staff create pre-labeled data, or training points, which are used by the algorithm to construct decision trees that will be later used on unseen data. Model accuracy is determined using a subset of the training points, otherwise known as a validation dataset. <div><br /></div><div>Several satellite-based input datasets are made available to the random forest model, which aid in distinguishing characteristics of irrigated lands. ESPA Irrigated Lands 2020 employed the following input datasets: US Geological Survey (USGS) products, including Landsat 8/9 and 10-meter 3DEP DEM, European Space Agency (ESA) Copernicus products, including Harmonized Sentinel-2, and Global 30m Height Above Nearest Drainage (HAND) (Donchyts et al., 2016). Evapotranspiration data from the METRIC model (Mapping Evapotranspiration at high Resolution with Internalized Calibration) was provided by IDWR and used as an input. IDWR staff used the following datasets to aid in the labeling of training data: NDVI derived from Landsat 8/9, Sentinel-2 CIR imagery, US Department of Agriculture National Agricultural Statistics Service (USDA NASS) Cropland Data Layer, Active Water Rights Place of Use and METRIC data from IDWR, and USDA’s National Agriculture Imagery Program (NAIP) imagery. NAIP imagery from 2019 was used as a reference; all other datasets were available for 2020.</div><div><br /></div><div>ESPA Irrigated Lands 2020 model runs were processed on six separate subregions covering the study boundary. This was done to reduce processing time and better train the model on specific climatic regions. Each subregion may undergo 1-4 model iterations, where at each iteration IDWR staff added or removed training points to help improve results. The northeast section of the study boundary, spanning from Kilgore, Island Park, and Ashton, was largely hand-delineated due to a lack of quality training data or inaccuracy of modeled results. Post-processing of model output included a wetland mask derived from the Fish and Wildlife Service’s National Wetlands Inventory wetlands dataset, as well as a manually created mask specific to issues found in the ESPA 2020 model results. The masking datasets and pre-labeled training points are available on request.</div><div><br /></div><div>References:Donchyts, G., Winsemius, H., Schellekens, J., Erickson, T., Gao, H., Savenije, H., &amp; van de Giesen, N. (2016). Global 30m height above the nearest drainage (HAND). Geophysical Research Abstracts, 18, EGU2016-17445-3. EGU General Assembly 2016.</div>",
+        "licenseInfo": "The Idaho Department of Water Resources makes this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete, and in compliance with the Idaho Public Records Act. Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site. Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.",
+        "title": "2020 Irrigated Lands for the Eastern Snake Plain Aquifer: Machine Learning Generated",
+        "type": "Document Link",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755119055000,
+        "avgRating": 0,
+        "id": "4324d70f8c404991abef3c3350e6a4e0",
+        "categories": [
+          "/Categories/Irrigated Lands"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR)",
+        "largeThumbnail": "",
+        "lastViewed": 1752944400000,
+        "thumbnail": "thumbnail/thumbnail1739236339857.png",
+        "languages": [],
+        "created": 1739236609000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://research.idwr.idaho.gov/GIS/Spatial/LandCover_Vegetation/SnakePlain/RF_IrrigatedLands_2020_ESPA.zip",
+        "tags": [
+          "Hydrology",
+          "Regulatory",
+          "Monitoring",
+          "Supervised Land Classification",
+          "Agriculture"
+        ],
+        "numViews": 29,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/4324d70f8c404991abef3c3350e6a4e0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c06aeaf9cdd54e6280aedb1c5e482f37",
+      "title": "2024 Irrigated Lands for the Eastern Snake Plain Aquifer (ESPA): Machine Learning Generated",
+      "url": "https://research.idwr.idaho.gov/GIS/Spatial/LandCover_Vegetation/SnakePlain/RF_IrrigatedLands_2024_ESPA.zip",
+      "publisher": "IdahoDeptWaterResources",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset was generated for use in water budget studies for the Eastern Snake Plain Aquifer (ESPA) region. It was created using Google Earth Engine imagery and machine learning algorithms and reviewed for accuracy by IDWR remote sensing staff. For additional information, please contact IDWR at gisinfo@idwr.idaho.gov.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Data",
+          "Document"
+        ],
+        "description": "<p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>This raster file represents land within the ESPA study boundary classified as either “irrigated” with a cell value of 1 or “non-irrigated” with a cell value of 0 at a 10-meter spatial resolution. These classifications were determined at the pixel level by using random forest, a supervised machine learning algorithm. To build a random forest model and supervise the learning process, IDWR staff create pre-labeled data, or training points, which are used by the algorithm to construct decision trees. A validation dataset was not used to evaluate model performance/accuracy, but the resulting classification was reviewed and post-processed by IDWR staff. </p><p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>Several satellite-based input datasets are made available to the random forest model, which aid in distinguishing characteristics of irrigated lands. ESPA Irrigated Lands 2024 employed the following input datasets: US Geological Survey (USGS) products, including Landsat 8/9 and 10-meter 3DEP DEM, European Space Agency (ESA) Copernicus products, including Harmonized Sentinel-2, and Global 30m Height Above Nearest Drainage (HAND) (Donchyts et al., 2016), period averaged PRISM (Daly et al., 2008) variables, and OpenET eeMETRIC Monthly Evapotranspiration v2.0 provided by OpenET on Earth Engine.  All temporal datasets were confined to March 1- November 1. IDWR staff used the following datasets to label training data and review model output: Landsat 8/9, Sentinel-2 SWIR visualizations and NDVI (Normalized Difference Vegetation Index), US Department of Agriculture National Agricultural Statistics Service (USDA NASS) Cropland Data Layer, IDWR’s Active Water Rights Place of Use, and USDA’s National Agriculture Imagery Program (NAIP) imagery. NAIP imagery from 2023 and 2025 were used as a reference; all other datasets were available for 2024.</p><p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>Post-processing of model output included a manually adjusted wetland mask from the Fish and Wildlife Service’s National Wetlands Inventory wetlands dataset, as well as a manually created mask specific to issues found in the ESPA 2024 model results. The masks and final iteration of training points area available on request.</p><p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>References:</p><p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>Daly, C., Halbleib, M., Smith, J.I., Gibson, W.P., Doggett, M.K., Taylor, G.H., Curtis, J. &amp; Pasteris, P.A. (2008). Physiographically sensitive mapping of climatological temperature and precipitation across the conterminous United States. International Journal of Climatology, 28, 2031-2064. [doi:10.1002/joc.1688](https://doi.org/10.1002/joc.1688)</p><p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>Donchyts, G., Winsemius, H., Schellekens, J., Erickson, T., Gao, H., Savenije, H., &amp; van de Giesen, N. (2016). Global 30m height above the nearest drainage (HAND). Geophysical Research Abstracts, 18, EGU2016-17445-3. EGU General Assembly 2016.</p>",
+        "licenseInfo": "<p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>Access and Use Constraint: The Idaho Department of Water Resources is making this data available as a public service. The Idaho Department of Water Resources strives to ensure that all technical data and other information made available to the public is accurate, complete and in conformance with the Idaho Public Records Act.</p><p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>Neither the Department of Water Resources nor the State of Idaho, however, assumes any legal responsibility for the accuracy or completeness of the information contained on this site.</p><p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>Persons using information from this site for official purposes, or other purposes, for which accuracy and completeness are required, are hereby notified that they should first verify the information with the public records or other primary sources from which the information was obtained.</p><p style='margin:0px 0px 6px; padding-bottom:1em; font-family:&quot;Segoe UI&quot;, Arial, sans-serif; font-size:13.3333px;'>Please check sources, scale, accuracy, currentness and other available information. Please confirm that you are using the most recent copy of both data and metadata. Acknowledgement of IDWR in any products derived from this dataset is appreciated.</p>",
+        "ownerId": "3e5e53cdbaf780e1b3c609acedce03ab",
+        "title": "2024 Irrigated Lands for the Eastern Snake Plain Aquifer (ESPA): Machine Learning Generated",
+        "type": "Document Link",
+        "orgId": "iRCkLgFRU45VAYn3",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785425310000,
+        "avgRating": 0,
+        "id": "c06aeaf9cdd54e6280aedb1c5e482f37",
+        "categories": [
+          "/Categories/Irrigated Lands"
+        ],
+        "spatialReference": "",
+        "numRatings": 0,
+        "owner": "IdahoDeptWaterResources",
+        "accessInformation": "Idaho Department of Water Resources (IDWR)",
+        "largeThumbnail": "",
+        "lastViewed": 1785423600000,
+        "thumbnail": "thumbnail/thumbnail1785422509372.png",
+        "languages": [],
+        "created": 1785422781000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://research.idwr.idaho.gov/GIS/Spatial/LandCover_Vegetation/SnakePlain/RF_IrrigatedLands_2024_ESPA.zip",
+        "tags": [
+          "Zipped File",
+          "Groundwater",
+          "Hydrology",
+          "IDWR GIS Department",
+          "Irrigated",
+          "Non-Irrigated",
+          "Irrigated Lands",
+          "Irrigation",
+          "Machine Learning",
+          "Random Forest",
+          "Regulatory",
+          "Surface Water",
+          "Supervised Land Classification",
+          "Water Budget",
+          "Water Use",
+          "Monitoring",
+          "Eastern Snake Plain Aquifer"
+        ],
+        "numViews": 1,
+        "numComments": 0,
+        "size": 107,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Idaho Department of Water Resources",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all/items/c06aeaf9cdd54e6280aedb1c5e482f37"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis-idaho.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    134
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 9,
+  "next_offset": 9,
+  "response_sha256": "2f7ae2e25c4fd67ea8da0d1f7acc9bf38ce1dc83ce8dad16825e9105b6e7f60d",
+  "search_complete": true
+}

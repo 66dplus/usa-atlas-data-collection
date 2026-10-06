@@ -1,0 +1,874 @@
+{
+  "jurisdiction_code": "KY",
+  "query": "gasoline",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T02:26:49.503553+00:00",
+  "candidates": [
+    {
+      "id": "ef9f23d4a052483bb30f9a14623b3d76",
+      "title": "Kentucky Deviated Oil and Gas Well Traces",
+      "url": "https://kgs.uky.edu/arcgis/rest/services/KYOilGas/KYDeviatedWells_public/MapServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Open in Map Viewer Classic\n\nLine traces of non-vertical oil and gas wells in Kentucky that have been approved for permits since 2006.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Map Service",
+          "Service",
+          "Metadata"
+        ],
+        "description": "Line traces of non-vertical oil and gas wells in Kentucky that have been\n approved for permits since 2006. The layers in this service include \nboth the line traces (&quot;deviated well traces&quot;) and the inflection points \n(&quot;deviated well points&quot;) along the traces. The label of the line is the \nKGS record number and target formation of the permitted well. Note that \nthese are only deviated wells that were reviewed by KGS. KGS is in the \nprocess of updating the database to rectify the link between drilled and\n permitted wells.",
+        "licenseInfo": "LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information  (DGI) has no indication or reason to believe that there are any  inaccuracies or defects of information incorporated in this work and  make no representations of any kind, including, but not limited to, the  warranties of merchantability or fitness for a particular use, nor are  any such warranties to be implied, with respect to the information or  data, furnished herein.",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky Deviated Oil and Gas Well Traces",
+        "type": "Map Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784746184000,
+        "avgRating": 0,
+        "id": "ef9f23d4a052483bb30f9a14623b3d76",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Geological Survey (KGS)",
+        "largeThumbnail": null,
+        "lastViewed": 1787547600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1703036374000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://kgs.uky.edu/arcgis/rest/services/KYOilGas/KYDeviatedWells_public/MapServer",
+        "tags": [
+          "Oil and gas",
+          "deviated wells",
+          "geophysical",
+          "oil",
+          "gas",
+          "wells"
+        ],
+        "numViews": 204,
+        "numComments": 0,
+        "size": 82,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "english (united states)",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Geological Survey (KGS)",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/ef9f23d4a052483bb30f9a14623b3d76"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "70bdfab48e1a4cd4bab2711516f4f0a3",
+      "title": "Ky KGS Oil and Gas Wells",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/KGS_Oil_Gas_Wells/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Oil and Gas Wells in Kentucky maintained by Kentucky Geological Survey (KGS).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.337489,
+                39.089983
+              ],
+              [
+                -81.985764,
+                39.089983
+              ],
+              [
+                -81.985764,
+                36.502254
+              ],
+              [
+                -89.337489,
+                36.502254
+              ],
+              [
+                -89.337489,
+                39.089983
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Data from the Kentucky Geological Survey Oil and Gas Repository (KYOG): <a target=\"_blank\" href=\"https://kgs.uky.edu/kygeode/services/oilgas/\">KY Geode: KGS Oil and Gas Wells Search</a>. First published in 1997 and encompasses wells drilled between 1900 - 2016 (Feb 4). Popups include links to detailed well reports and site maps.</p><p>Download File Geodatabase: <a target=\"_blank\" href=\"https://ky.box.com/s/q0y5pj6jlj0ps99wbn20ztzt4a7wttzj\">https://ky.box.com/s/q0y5pj6jlj0ps99wbn20ztzt4a7wttzj</a></p><p>&nbsp;</p>",
+        "licenseInfo": "<p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.</span></span></p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Ky KGS Oil and Gas Wells",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658328000,
+        "avgRating": 0,
+        "id": "70bdfab48e1a4cd4bab2711516f4f0a3",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1768341044000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/KGS_Oil_Gas_Wells/FeatureServer",
+        "tags": [
+          "KGS",
+          "drill holes",
+          "geoscientific Information",
+          "database",
+          "oil",
+          "gas",
+          "petroleum",
+          "historic data"
+        ],
+        "numViews": 8236,
+        "numComments": 0,
+        "size": 90587136,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky Geological Survey (KGS)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/70bdfab48e1a4cd4bab2711516f4f0a3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "bbbcda170fd3499bba7ed2f0fe64460f",
+      "title": "Natural Gas Distribution Utilities in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Gas_Distribution_Utilities/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The primary purpose is to provide general reference information for the Kentucky Public Service Commission, illustrating the service areas for natural gas distribution utilities, which the Commission regulates for safety.   This database does not include natural gas transmission utilities, gathering companies, or farm taps on gathering systems.  Centralized underground propane systems with more than 10 customers are included.  Gas distribution service areas do not have legal boundaries, or legally designated service territories.  Service areas may overlap.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.704434,
+                39.151921
+              ],
+              [
+                -81.884235,
+                39.151921
+              ],
+              [
+                -81.884235,
+                36.456976
+              ],
+              [
+                -89.704434,
+                36.456976
+              ],
+              [
+                -89.704434,
+                39.151921
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>The purpose of this project was to create for the Public Service Commission a better geographic definition of the areas with natural gas distribution utilities beyond descriptions based upon county and municipal boundaries. In accordance with 807 KAR 5:006, Section 23, each utlity is required to maintain and file upon request with the Commission a map or maps of suitable scale of the territory in which it serves or could serve by ordinary extensions of its existing system in the usual course of business. In most cases, the gas distribution utilities supplied polygon data for their service area. For those that submitted pipeline data areas were created with a buffer on the pipeline. Given that the utilities defined their service areas differently and at various map scales, overlapping areas are inevitable in this map product. The issue of providing natural gas to a particular area is governed by KRS 96.5375 \"Rights of city owning or operating natural gas system to sell natural gas within and without city boundaries\" and by KRS 278.020 \"Certificate of convenience and necessity required for construction provision of utility service or of utility\". </span></p></div></div></div>",
+        "licenseInfo": "LIMITATION OF LIABILITY: The Kentucky Infrastructure Authority (KIA) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.<br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Natural Gas Distribution Utilities in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658432000,
+        "avgRating": 0,
+        "id": "bbbcda170fd3499bba7ed2f0fe64460f",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "The user should give credit to the Kentucky Public Service Commission (PSC). The user must abide by the following data disclaimer:  All information within the product is believed accurate but is not guaranteed without error. While attempts have been made to insure the correctness of the information presented, neither the Kentucky Public Service Commission nor any party involved in the creation and compilation of the data guarantees their accuracy, completeness, or suitability for a particular use. All critical information should be independently verified.",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail1785349435995.png",
+        "languages": [],
+        "created": 1768425906000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Gas_Distribution_Utilities/FeatureServer",
+        "tags": [
+          "Public Service Commission",
+          "PSC",
+          "utilities",
+          "Kentucky",
+          "utility",
+          "natural gas",
+          "gas",
+          "propane",
+          "gas distribution utility",
+          "gas distribution utilities",
+          "gas distribution"
+        ],
+        "numViews": 1957,
+        "numComments": 0,
+        "size": 11993088,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Public Service Commission (PSC)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/bbbcda170fd3499bba7ed2f0fe64460f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3570f28d15dd46eab3af7dd49d79dd6b",
+      "title": "Kentucky One-Minute Carter Coordinate Grid",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_OneMinute_Carter_CoordinateGrid_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Coordinate grid (1-minute) for oil and gas industry as maintained by the Kentucky Geological Survey (KGS)",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.58341804598496,
+                39.16673270210867
+              ],
+              [
+                -81.91651520967075,
+                39.16673270210867
+              ],
+              [
+                -81.91651520967075,
+                36.500060233554045
+              ],
+              [
+                -89.58341804598496,
+                36.500060233554045
+              ],
+              [
+                -89.58341804598496,
+                39.16673270210867
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "One-minute Carter Coordinate Grid. The Carter coordinate system is a grid, based on latitude and longitude, used to locate oil and gas wells in Kentucky. The system was developed by the Carter Oil Company to mimic the township and range location system in areas that had not been surveyed. The State is divided into a regular grid with each cell (or quad) being five minutes of latitude by five minutes of longitude. These quads are assigned letters (equivalent of the township) beginning with A in the south and increasing through Z and AA to GG northward. The quads are assigned numbers (equivalent of the range) beginning with zero (0) in the west and increasing to 92 in the east. Each five-minute by five-minute quad is further subdivided into 25 one-minute by one-minute sections. Within the one-minute section, the location is pinpointed by specifying the distance from an adacent pair of one-minute section boundaries to the well. The Carter coordinate is written by specifying a pair of footages from the one-minute section boundaries and the reference boundary (north, south, east, or west) for each, the one-minute section number, the five-minutes quad letter, and the five-minute quad number. A Carter coordinate and topographic index map of Kentucky is available from Publication Sales at the Kentucky Geological Survey.<div><br /></div><div>Data Download:  <a href='https://kgs.uky.edu/kgsweb/download/state/CARTER1.ZIP' target='_blank' rel='nofollow ugc noopener noreferrer'>https://kgs.uky.edu/kgsweb/download/state/CARTER1.ZIP</a></div>",
+        "licenseInfo": "Acknowledgement of the Kentucky Geological Survey would be expected in products derived from this data.<div><br /></div><div>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky One-Minute Carter Coordinate Grid",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658168000,
+        "avgRating": 0,
+        "id": "3570f28d15dd46eab3af7dd49d79dd6b",
+        "categories": [
+          "/Categories/Geoscientific information",
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Geological Survey",
+        "largeThumbnail": null,
+        "lastViewed": 1789646400000,
+        "thumbnail": "thumbnail/thumbnail1739367195842.png",
+        "languages": [],
+        "created": 1739366746000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_OneMinute_Carter_CoordinateGrid_WM_gdb/FeatureServer",
+        "tags": [
+          "grid",
+          "gas",
+          "KGS",
+          "oil",
+          "Kentucky",
+          "geoscientificInformation",
+          "coordinate system",
+          "geophysical",
+          "boundaries"
+        ],
+        "numViews": 3683,
+        "numComments": 0,
+        "size": 25632768,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/3570f28d15dd46eab3af7dd49d79dd6b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "565d9c4216024e85a86ac4e4b18dea35",
+      "title": "Kentucky Five-Minute Carter Coordinate Grid",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KGS_5MinuteCarterCoordinateGrid_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Coordinate grid (5-minute) for oil and gas industry as created and maintained by the Kentucky Geological Survey (KGS).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.58341802981528,
+                39.16673270210868
+              ],
+              [
+                -81.91651522673877,
+                39.16673270210868
+              ],
+              [
+                -81.91651522673877,
+                36.50006025666177
+              ],
+              [
+                -89.58341802981528,
+                36.50006025666177
+              ],
+              [
+                -89.58341802981528,
+                39.16673270210868
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Five-minute Carter Coordinate Grid. The Carter coordinate system is a grid, based on latitude and longitude, used to locate oil and gas wells in Kentucky. The system was developed by the Carter Oil Company to mimic the township and range location system in areas that had not been surveyed. The State is divided into a regular grid with each cell (or quad) being five minutes of latitude by five minutes of longitude. These quads are assigned letters (equivalent of the township) beginning with A in the south and increasing through Z and AA to GG northward. The quads are assigned numbers (equivalent of the range) beginning with zero (0) in the west and increasing to 92 in the east. Each five-minute by five-minute quad is further subdivided into 25 one-minute by one-minute sections. Within the one-minute section, the location is pinpointed by specifying the distance from an adjacent pair of one-minute section boundaries to the well. The Carter coordinate is written by specifying a pair of footages from the one-minute section boundaries and the reference boundary (north, south, east, or west) for each, the one-minute section number, the five-minutes quad letter, and the five-minute quad number. A Carter coordinate and topographic index map of Kentucky is available from Publication Sales at the Kentucky Geological Survey.</p><p>Data Download:  <a href='https://kgs.uky.edu/kgsweb/download/state/CARTER5.ZIP' target='_blank' rel='nofollow ugc noopener noreferrer'>https://kgs.uky.edu/kgsweb/download/state/CARTER5.ZIP</a></p>",
+        "licenseInfo": "<p>Acknowledgement of the Kentucky Geological Survey would be expected in products derived from this data.</p><p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.<br /></p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky Five-Minute Carter Coordinate Grid",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658139000,
+        "avgRating": 0,
+        "id": "565d9c4216024e85a86ac4e4b18dea35",
+        "categories": [
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Geological Survey",
+        "largeThumbnail": null,
+        "lastViewed": 1789646400000,
+        "thumbnail": "thumbnail/thumbnail1739367315909.png",
+        "languages": [],
+        "created": 1731016528000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_KGS_5MinuteCarterCoordinateGrid_WM_gdb/FeatureServer",
+        "tags": [
+          "grid",
+          "gas",
+          "KGS",
+          "oil",
+          "geoscientificInformation",
+          "Kentucky",
+          "geoscientificInformation",
+          "coordinate system"
+        ],
+        "numViews": 2882,
+        "numComments": 0,
+        "size": 1064960,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/565d9c4216024e85a86ac4e4b18dea35"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "720ac12a300e48879558e08298af95e0",
+      "title": "Ky EEC KDOG Oil & Gas Wells",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_EEC_Oil_Gas_Wells_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Regulated oil and gas wells in Kentucky maintained by the Energy and Environment Cabinet (EEC), Kentucky Division of Oil and Gas Conservation (KDOG).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.33749460522075,
+                38.98697367416267
+              ],
+              [
+                -81.98576793122982,
+                38.98697367416267
+              ],
+              [
+                -81.98576793122982,
+                36.531671511566245
+              ],
+              [
+                -89.33749460522075,
+                36.531671511566245
+              ],
+              [
+                -89.33749460522075,
+                38.98697367416267
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Regulated Oil and Gas Wells in Kentucky. Data from the Kentucky Division of Oil and Gas Conservation. Data encompasses wells between 1950s and 2010s.</p>",
+        "licenseInfo": "LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.<br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Ky EEC KDOG Oil & Gas Wells",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658326000,
+        "avgRating": 0,
+        "id": "720ac12a300e48879558e08298af95e0",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail1734466478471.png",
+        "languages": [],
+        "created": 1734465033000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_EEC_Oil_Gas_Wells_WM_gdb/FeatureServer",
+        "tags": [
+          "economy",
+          "wells",
+          "energy",
+          "hydrocarbons",
+          "oil",
+          "Kentucky Division of Oil and Gas Conservation",
+          "geoscientific information",
+          "Kentucky",
+          "gas",
+          "historic data"
+        ],
+        "numViews": 12385,
+        "numComments": 0,
+        "size": 30392320,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "indexJobId": ""
+        },
+        "source": "Kentucky Division of Oil and Gas Conservation",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/720ac12a300e48879558e08298af95e0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c3865713d4224b299fee7763a7b0f093",
+      "title": "Alternative Fuel Stations In Kentucky",
+      "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Alternate_Fuel/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer filters the location of alternative fueling stations for Kentucky. Data is from the US Department of Energy's National Renewable Energy Laboratory (NREL) and is updated daily.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.82571,
+                39.10058
+              ],
+              [
+                -82.520361,
+                39.10058
+              ],
+              [
+                -82.520361,
+                36.610234
+              ],
+              [
+                -88.82571,
+                36.610234
+              ],
+              [
+                -88.82571,
+                39.10058
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div><div><div><span>This layer displays the location of alternative fuel stations across the U.S. and Canada <strong><u>filtered for Kentucky</u>.</strong>. Alternative fuel sources include biodiesel, compressed natural gas, electric, ethanol, hydrogen, liquefied natural gas, propane and renewable diesel. Attributes include the station name, location, access, hours and more. Zoom into the map for more detail.</span></div><div><span><img src='https://livefeedsdev.s3.amazonaws.com/Images/AlternateFuelStations.png' width='1025' height='326' /></span></div><div>This data is maintained by an Aggregated Live Feed routine that accesses the US Department of Energy's <a target='_blank' href='https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/' rel='nofollow ugc noopener noreferrer'><strong>National Renewable Energy Laboratory</strong></a> (<a target='_blank' href='https://www.nrel.gov/' rel='nofollow ugc noopener noreferrer'><strong>NREL</strong></a>) API website.</div><div>&nbsp;</div><div><strong>Source</strong>: NREL <a target='_blank' href='https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/all' rel='nofollow ugc noopener noreferrer'><strong>Alternate Fuel Stations (ALL)</strong></a><br />&nbsp;</div><div>&nbsp;</div><div><strong>Update Frequency</strong>: The service data is refreshed once Daily</div><div>&nbsp;</div><div><strong>Area Coverage</strong>: Contiguous US, Alaska, Hawaii, Puerto Rico, and Canada.</div><div>&nbsp;</div><div><strong>Coordinate System</strong>: Web Mercator Auxiliary Sphere (3857)</div><div>&nbsp;</div><div><strong>Layer Summary</strong>:</div><div><ul><li><i>Stations</i>: Point layer containing locations of all Alternate Fueling Stations</li></ul><div><span style='font-size:x-large;'>Reporting station changes</span></div><div><ol><li>Leverage the NREL <a target='_blank' href='https://afdc.energy.gov/stations#/analyze?tab=location&amp;access=public&amp;access=private' rel='nofollow ugc noopener noreferrer'><strong>Alternate Fueling Station Locator</strong></a> to narrow your search and Map Results. Next, click on a station and hit 'Report a change' to start the request process. It may take some time for the source to apply the update!</li><li>Add a comment to this item with the Station ID plus required changes and we will update our service content as quickly as possible once reviewed.</li></ol></div><div><span style='font-size:x-large;'>Revisions</span></div><div><ul><li><strong>May 9, 2025</strong>: Added guidance for reporting station changes.</li><li><strong>Dec 27, 2024</strong>: Enabled Time Series capability using 'Date Fuel Available' field. Default state is inactive, you must turn property on in map layer to use.<br />&nbsp;</li><li><strong>Mar 17, 2023</strong>: Released to the public!<br />&nbsp;</li></ul></div><div><p><span style='color:#696969;'><i>This layer is provided for informational purposes and is not monitored 24/7 for accuracy and currency.</i></span></p><div>&nbsp;</div><p>If you would like to be alerted to potential issues or simply see when this Service will update next, please visit our <a target='_blank' href='https://livingatlas.arcgis.com/livefeeds-status/' rel='nofollow ugc noopener noreferrer'><strong>Live Feed Status</strong></a> Page</p></div></div></div></div>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Alternative Fuel Stations In Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789657120000,
+        "avgRating": 0,
+        "id": "c3865713d4224b299fee7763a7b0f093",
+        "categories": [
+          "/Categories/Location",
+          "/Categories/Economy",
+          "/Categories/Transportation"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Living Atlas, DGI",
+        "largeThumbnail": null,
+        "lastViewed": 1789603200000,
+        "thumbnail": "thumbnail/thumbnail1752599746945.png",
+        "languages": [],
+        "created": 1752599381000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Alternate_Fuel/FeatureServer",
+        "tags": [
+          "Live Feed",
+          "NREL",
+          "Aggregated Live Feeds",
+          "Renewable Energy",
+          "Alternative Fuel Stations",
+          "USDOE",
+          "biodiesel",
+          "compressed natural gas",
+          "electric",
+          "ethanol",
+          "hydrogen",
+          "liquefied natural gas",
+          "propane",
+          "renewable diesel",
+          "EV charging",
+          "EV Charging Stations",
+          "EV chargers",
+          "EVSE",
+          "Electric Vehicle Charging Stations",
+          "fuel",
+          "location"
+        ],
+        "numViews": 2376,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-gb",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/c3865713d4224b299fee7763a7b0f093"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    104
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 7,
+  "next_offset": 7,
+  "response_sha256": "7362a9375f9459f45c6a9043e6794b572d348b3e17936e0689747a6f5f76ae7a",
+  "search_complete": true
+}

@@ -1,0 +1,316 @@
+{
+  "jurisdiction_code": "CA",
+  "query": "physical activity",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-05T20:44:34.635716+00:00",
+  "candidates": [
+    {
+      "id": "5b1ab4b2-5243-4fb0-9f6c-44209521de67",
+      "title": "Adults Meeting Physical Activity Guidelines (LGHC Indicator) (ARCHIVED)",
+      "url": "https://data.ca.gov/dataset/adults-meeting-physical-activity-guidelines-lghc-indicator-archived",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6214db5a-1953-4acd-90eb-08673d3598c4/resource/d824b0e4-b325-4935-82be-1936b0546128/download/adults-meeting-physical-activity-guidelines-lghc-indicator-16.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://letsgethealthy.ca.gov/goals/living-well/increasing-adult-physical-activity/",
+          "format": "Chart"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/6214db5a-1953-4acd-90eb-08673d3598c4/resource/893ec799-a8f1-4e44-ad81-c8abc0dd7181/download/adults-meeting-physical-activity-guidelines-lghc-indicator-16-35fert93.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This is a source dataset for a Let's Get Healthy California indicator at https://letsgethealthy.ca.gov/. This table displays the percentage of adults meeting Aerobic Physical Activity guidelines in California. It contains data for California only. The data are from the California Behavioral Risk Factor Surveillance Survey (BRFSS). The California BRFSS is an annual cross-sectional health-related telephone survey that collects data about California residents regarding their health-related risk behaviors, chronic health conditions, and use of preventive services. The BRFSS is conducted by the Public Health Survey Research Program of California State University, Sacramento under contract from CDPH.\r\nThe column percentages are weighted to the 2010 California Department of Finance (DOF) population statistics. Population estimates were obtained from the CA DOF for age, race/ethnicity, and sex.  Values may therefore differ from what has been published in the national BRFSS data tables by the Centers for Disease Control and Prevention (CDC) or other federal agencies."
+    },
+    {
+      "id": "a6328169-40c5-4c44-9fce-4aeefde3fbbb",
+      "title": "Active Transportation Count Dataset",
+      "url": "https://data.ca.gov/dataset/at-count-dataset",
+      "publisher": "Caltrans",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/3417c811-faaa-4362-9382-6a32883b1972/download/naming-convention-and-schema.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/46711a10-5b30-4c49-adff-3eced5ba3fe6/download/ddp-6-caltrans-atd-dataset-metadata.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/49726432-99f5-423e-ae85-52a59847dfbb/download/ddp-8-caltrans-atd-data-dictionary.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/03073234-b9ca-43d6-af98-aead31066bd4/download/ddp-10-caltrans-atd-dqmp-v1.1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/e4348369-536e-4325-8ad5-23fcb9cc8d18/download/caltrans_pedestrian_hourly_count_2023.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/d48f0c05-1141-4164-9d40-b5907fd6a3ef/download/caltrans_bicycle_hourly_count_2023.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/8196d82b-b3f8-46bd-b16c-ab20a4f6169d/download/caltrans_pedestrian_hourly_count_2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/0a62d605-d864-4a41-9789-c2d6b7d6d86b/download/caltrans_bicycle_hourly_count_2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/19c7234f-3a76-4e39-89ea-0801cd71c0d4/download/caltrans_pedestrian_hourly_count_2025.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/a6328169-40c5-4c44-9fce-4aeefde3fbbb/resource/9fe8657b-e7db-4b3b-9437-f0c22a30492d/download/caltrans_bicycle_hourly_count_2025.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "The Pedestrian and Bicycle Count Dataset documents non motorized traffic on state highways, originating from Caltrans district pilots initiated in 2023 to monitor active transportation. Data is vendor-collected using technologies like video analytics, then shared with HQ via APIs or files for statewide standardization in CSV format. Core variables include Loc_id (site identifier), Date/Hour (timestamp), Direction, Count (integer volumes), and geospatial (latitude/longitude). Limitations include potential undercounts in adverse weather and incomplete coverage. This supports equity-focused planning under Complete Streets policies, with updates as pilots expand.\r\nWe are conducting a short survey to better understand how bicycle and pedestrian data are currently used for planning, design, operations, maintenance, safety, and other transportation-related activities. Please take a few minutes to complete the survey using the link below:\r\nhttps://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=ZAobYkAXzEONiEVA00h1Vtq2vJWnrQBElUmYuGGvtBRUMUlGUDBWWkpFUjE1Rk5WNkxQRkRDRzdJWi4u"
+    },
+    {
+      "id": "e5575fd3-789b-4cd9-b949-fe31c7a38669",
+      "title": "California Adults Who Met Physical Activity Guidelines for Americans, 2013 (ARCHIVED)",
+      "url": "https://data.ca.gov/dataset/california-adults-who-met-physical-activity-guidelines-for-americans-2013-archived",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/af545417-38ac-4a6c-baa4-67789ac1d53b/resource/c0a08ebe-9aad-4501-a51e-49da0d18dc0f/download/california-adults-who-met-physical-activity-guidelines-for-americans-2013.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/af545417-38ac-4a6c-baa4-67789ac1d53b/resource/1d5c379d-8e05-4e89-a1d1-7da06e8dc560/download/physicalactivityofcaliforniaadultsdd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/af545417-38ac-4a6c-baa4-67789ac1d53b/resource/2a50a049-334d-4aed-9f5a-30c300c896d8/download/california-adults-who-met-physical-activity-guidelines-for-americans-2013-vgmx0_yg.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset is from the 2013 California Dietary Practices Survey of Adults. This survey has been discontinued. Adults were asked a series of eight questions about their physical activity practices in the last month. These questions were borrowed from the Behavior Risk Factor Surveillance System. Data displayed in this table represent California adults who met the aerobic recommendation for physical activity, as defined by the 2008 U.S. Department of Health and Human Services Physical Activity Guidelines for Americans and Objectives 2.1 and 2.2 of Healthy People 2020.\r\n\r\nThe California Dietary Practices Surveys (CDPS) (now discontinued) was the most extensive dietary and physical activity assessment of adults 18 years and older in the state of California. CDPS was designed in 1989 and was administered biennially in odd years up through 2013.  The CDPS was designed to monitor dietary trends, especially fruit and vegetable consumption, among California adults for evaluating their progress toward meeting the 2010 Dietary Guidelines for Americans and the Healthy People 2020 Objectives. For the data in this table, adults were asked a series of eight questions about their physical activity practices in the last month. Questions included: 1) During the past month, other than your regular job, did you participate in any physical activities or exercise such as running, calisthenics, golf, gardening or walking for exercise?  2) What type of physical activity or exercise did you spend t"
+    },
+    {
+      "id": "60e96f0b-4074-49d1-a90a-6b950bfecce4",
+      "title": "Percentage of Physically-fit Students (LGHC Indicator)",
+      "url": "https://data.ca.gov/dataset/percentage-of-physically-fit-students-lghc-indicator",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f9d3a703-481c-4e1e-9f02-f47a43dbc888/resource/d3234ded-55ac-4ff9-9dee-7dde87e078e3/download/percentage-of-physically-fit-students-lghc-indicator-8.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://letsgethealthy.ca.gov/goals/healthy-beginnings/increasing-childhood-fitness/",
+          "format": "Chart"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/f9d3a703-481c-4e1e-9f02-f47a43dbc888/resource/61d94faa-0c7f-4978-a77e-e87b91f3b7a0/download/percentage-of-physically-fit-students-lghc-indicator-8-mqi56unm.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This is a source dataset for a Let's Get Healthy California indicator at https://letsgethealthy.ca.gov/. \r\nData originally from the California Department of Education Fitnessgram website at http://www.cde.ca.gov/ta/tg/pf/."
+    },
+    {
+      "id": "29fd0845-3dfe-4bd5-b534-2665e52f17a3",
+      "title": "Time Walk Bike to Work",
+      "url": "https://data.ca.gov/dataset/time-walk-bike-to-work",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/f20b8ec7-fdfc-45c2-8e16-8a83e441f0c7/download/hciwalkbicycle778narrativeandexamples3-26-14.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/e152f540-9d63-4619-84e1-735c0ebb558f/download/hci_walk_bicycle_778_ct_pl_co_re_st_10-23-13-ada.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/fdcdf77d-52bb-4518-a8f8-be47c8f12d23/download/time-walk-bike-to-work-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/2c3be3bf-5555-410c-bbff-03bd8c701896/download/time-walk-bike-to-work-2001-2011-gzvrzls_.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the percent of population aged 16 years or older whose commute to work is 10 or more minutes/day by walking or biking for California, its regions, counties, and cities/towns.  Data is from the U.S. Census Bureau, American Community Survey, and from the U.S. Department of Transportation, Federal Highway Administration, and National Household Travel Survey. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity.  Active modes of transport, bicycling and walking alone and in combination with public transit, offer opportunities to incorporate physical activity into the daily routine.  Physical activity is associated with lowering rates of heart disease and stroke, diabetes, colon and breast cancer, dementia and depression.  Automobile commuting is associated with health hazards, such as air pollution, motor vehicle crashes, pedestrian injuries and fatalities, and sedentary lifestyles. Consequently the transition from automobile-focused transport to public and active transport offers environmental health benefits, including reductions in air pollution, greenhouse gases and noise pollution, and may lead to greater overall safety in transportation.  More information about the data table and a data dictionary can be found in the About/Attachments section."
+    },
+    {
+      "id": "c492e60a-1379-48dd-8610-b88275745cee",
+      "title": "Fruit and Vegetable Consumption in California Residents, 2012/2013 (ARCHIVED)",
+      "url": "https://data.ca.gov/dataset/fruit-and-vegetable-consumption-in-california-residents-2012-2013-archived",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cfdf572b-d7b0-4cb9-8036-47068f98298c/resource/43637c83-49ae-4625-9628-947766e324d3/download/fruit-and-vegetable-consumption-in-california-residents-20122013.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cfdf572b-d7b0-4cb9-8036-47068f98298c/resource/1352e43c-0f21-4c7e-8943-15d0a37dbdc1/download/fruit-and-vegetable-consumption-in-california-residents-2012-2013.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cfdf572b-d7b0-4cb9-8036-47068f98298c/resource/3f2c2fec-286e-4e40-8251-30e920a477b4/download/fvincaliforniaresidentsdd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cfdf572b-d7b0-4cb9-8036-47068f98298c/resource/b4aadd7e-dfc7-44e3-8b96-ab27af698a02/download/fruit-and-vegetable-consumption-in-california-residents-2012-2013-xueqguqm.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "Percentage of California residents who consumed five or more servings of fruits and vegetables a day. These data are from the 2013 California Dietary Practices Surveys (CDPS), 2012 California Teen Eating, Exercise and Nutrition Survey (CalTEENS), and 2013 California Children’s Healthy Eating and Exercise Practices Survey (CalCHEEPS). These surveys have been discontinued. Adults, adolescents, and children (with parental assistance) were asked about the serving sizes and types of fruits and vegetables they ate over the previous 24 hour period. Child/Adolescent: Fruit and vegetable, beverage, and junk food consumption, along with physical activity, sedentary time, active transport, sport participation, school environment, home neighborhood environment, fruit and vegetable access and availability, household/family rules, weight status, school breakfast/lunch participation, attitudes, and beliefs. Adult: Fruit and vegetable, beverage, and junk food consumption, along with physical activity, sedentary time, worksite environment, school environment, home neighborhood environment, fruit and vegetable access and availability, household/family rules, weight status and weight loss practices, and food security."
+    },
+    {
+      "id": "9a0c9afe-41f5-40b4-840f-030b8ab85d77",
+      "title": "Sugar-Sweetened Beverage Consumption in California Residents (ARCHIVED)",
+      "url": "https://data.ca.gov/dataset/sugar-sweetened-beverage-consumption-in-california-residents-archived",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bb703230-1f5f-44b5-8a90-55e45e08c452/resource/4a8dde27-c4e1-4ca3-860b-447d813b2ce6/download/sugar-sweetened-beverage-consumption-in-california-residents-20122013.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bb703230-1f5f-44b5-8a90-55e45e08c452/resource/3936eb87-9ffb-4e73-b9dd-54536259c586/download/sugar-sweetenedbeverageconsumptionincaliforniaresidents2012-2013.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/bb703230-1f5f-44b5-8a90-55e45e08c452/resource/8be299e0-8fa2-4489-a67e-863eb061cece/download/sugar-sweetened-beverage-consumption-in-california-residents-2012-2013-fdpkrpjy.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "The mean servings/times sugar-sweetened beverages consumed daily by California residents. These data are from the 2013 California Dietary Practices Surveys (CDPS), 2012 California Teen Eating, Exercise and Nutrition Survey (CalTEENS), and 2013 California Children’s Healthy Eating and Exercise Practices Survey (CalCHEEPS). These surveys are now discontinued. Adults, adolescents, and children (with parental assistance) were asked about the sugar-sweetened beverages they drank over the previous 24 hour period. Child/Adolescent: Fruit and vegetable, beverage, and junk food consumption, along with physical activity, sedentary time, active transport, sport participation, school environment, home neighborhood environment, fruit and vegetable access and availability, household/family rules, weight status, school breakfast/lunch participation, attitudes, and beliefs. Adult: Fruit and vegetable, beverage, and junk food consumption, along with physical activity, sedentary time, worksite environment, school environment, home neighborhood environment, fruit and vegetable access and availability, household/family rules, weight status and weight loss practices, and food security. According to the Dietary Guidelines for Americans, 2010, sugar-sweetened beverages provide excess calories and few essential nutrients to the diet and should only be consumed when nutrient needs have been met and without exceeding daily calorie limits."
+    },
+    {
+      "id": "cf692321-adbb-4938-9f66-9d594b2d3453",
+      "title": "Transportation to Work",
+      "url": "https://data.ca.gov/dataset/transportation-to-work",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/27c488a0-d618-407a-b77f-2e10c6f31881/download/hcitransportationtowork42narrativeandexamples3-20-15.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/fc5eafc8-0648-4a30-9bf5-e06f09e8320d/download/hci_transportation2work_42_ct_pl_co_re_st_12-12-13-revised-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/87fa0619-708a-4d92-ba5d-879df338b46e/download/transportation-to-work-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/68aef3ac-debf-4fba-999c-42b88fefa759/download/transportation-to-work-2000-2006-2010-fkozme0_.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the percent of residents aged 16 years and older mode of transportation to work for California, its regions, counties, cities/towns, and census tracts. Data is from the U.S. Census Bureau, Decennial Census and American Community Survey. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity.  Commute trips to work represent 19% of travel miles in the United States. The predominant mode – the automobile - offers extraordinary personal mobility and independence, but it is also associated with health hazards, such as air pollution, motor vehicle crashes, pedestrian injuries and fatalities, and sedentary lifestyles. Automobile commuting has been linked to stress-related health problems. Active modes of transport – bicycling and walking alone and in combination with public transit – offer opportunities for physical activity, which is associated with lowering rates of heart disease and stroke, diabetes, colon and breast cancer, dementia and depression. Risk of injury and death in collisions are higher in urban areas with more concentrated vehicle and pedestrian activity.  Bus and rail passengers have a lower risk of injury in collisions than motorcyclists, pedestrians, and bicyclists. Minority communities bear a disproportionate share of pedestrian-car fatalities; Native American male pedestrians experience four times the death rate Whites or Asian pedestrians, and African-America"
+    },
+    {
+      "id": "4264d1fe-ba28-456b-bbf0-feb6b6bdc851",
+      "title": "Walkable Distance to Public Transit",
+      "url": "https://data.ca.gov/dataset/walkable-distance-to-public-transit",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5e391154-f07d-4e0c-ab1b-687a0c4c5d06/resource/7e488742-8ad9-4d02-921c-8ba74edb0f9a/download/hcirailferrybus51narrativeandexamples11-26-13socalmtcsac.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5e391154-f07d-4e0c-ab1b-687a0c4c5d06/resource/d8d7d188-fbf8-413e-9a7f-639d3828c17e/download/walkable_distance_to_public_transportation.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5e391154-f07d-4e0c-ab1b-687a0c4c5d06/resource/a13e575e-abb8-47f6-bdc1-15bceb17befc/download/walkabledistancepublictransitdd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5e391154-f07d-4e0c-ab1b-687a0c4c5d06/resource/89c9d507-8835-4b56-b400-b2add817d4a3/download/walkable-distance-public-transit-2008-2012-gy46llgc.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the percent of population residing within ½ mile of a major transit stop for four California regions and the counties, cities/towns, and census tracts within the regions.  The percent was calculated using data from four metropolitan planning organizations (San Diego Association of Governments, Southern California Association of Governments, Metropolitan Transportation Commission, and Sacramento Council of Governments) and the U.S. Census Bureau. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity. A strong and sustainable transportation system supports safe, reliable, and affordable transportation opportunities for walking, bicycling, and public transit, and helps reduce health inequities by providing more opportunities for access to healthy food, jobs, health care, education, and other essential services. Active and public transportation promote health by enabling individuals to increase their level of physical activity, potentially reducing the risk of heart disease and obesity, improving mental health, and lowering blood pressure.  More information about the data table and a data dictionary can be found in the About/Attachments section."
+    },
+    {
+      "id": "bac67469-d26b-4199-bad6-5ec44102981c",
+      "title": "Annual Miles Traveled",
+      "url": "https://data.ca.gov/dataset/annual-miles-traveled",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/02fd6171-daf5-4a06-88b2-cbfbe9b62867/resource/1f89f31a-0dce-4a82-ba33-0b01f51cb593/download/hcimilesbyoccurrence39narrativeandexamples10-3-13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/02fd6171-daf5-4a06-88b2-cbfbe9b62867/resource/73bc2574-a9e0-4d6f-9070-5f20f03ce47e/download/hci_milesbyoccurrence_39_ca_co_pl_re_10-3-13-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/02fd6171-daf5-4a06-88b2-cbfbe9b62867/resource/f84a8b3d-f482-4003-baf8-960383e89d44/download/annual-miles-traveled-2002-2010-8td3f6tu.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the annual miles traveled by place of occurrence and by mode of transportation (vehicle, pedestrian, bicycle), for California, its regions, counties, and cities/towns.  The ratio uses data from the California Department of Transportation, the U.S. Department of Transportation, and the U.S. Census Bureau. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity. \r\nMiles traveled by individuals and their choice of mode – car, truck, public transit, walking or bicycling – have a major impact on mobility and population health. Miles traveled by automobile offers extraordinary personal mobility and independence, but it is also associated with air pollution, greenhouse gas emissions linked to global warming, road traffic injuries, and sedentary lifestyles. Active modes of transport – bicycling and walking alone and in combination with public transit – offer opportunities for physical activity, which has many documented health benefits.  More information about the data table and a data dictionary can be found in the About/Attachments section."
+    }
+  ],
+  "page_receipts": [
+    233
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 27,
+  "next_offset": 10,
+  "response_sha256": "a6619762425b3bc1b0c8bd1ea385c90962643689db5b9ad98e70d3d7da237419",
+  "search_complete": false
+}

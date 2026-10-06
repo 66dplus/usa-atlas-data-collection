@@ -1,0 +1,508 @@
+{
+  "jurisdiction_code": "VA",
+  "query": "company revenue",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-05T02:40:52.912098+00:00",
+  "candidates": [
+    {
+      "id": "f598887d-eb93-4934-ab1a-6baec2d23c7b",
+      "title": "NAAG Tobacco Settlement Payments",
+      "url": "https://data.virginia.gov/dataset/naag-tobacco-settlement-payments",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ffbi-is3j/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ffbi-is3j/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ffbi-is3j/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ffbi-is3j/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ffbi-is3j/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/ffbi-is3j/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "1999-2024. National Association of Attorneys General (NAAG). Policy—Tobacco Settlement Payments. The National Association of Attorneys General (NAAG) provides Tobacco Settlement Revenue data for 46 states participating in the Master Settlement Agreement (MSA) with the four largest tobacco companies in the United States.  Data are reported on an annual basis.  Four states (Florida, Minnesota, Mississippi, and Texas) provide the STATE System their Tobacco Settlement Revenue data independently."
+    },
+    {
+      "id": "0ca359ee-6b7e-41f0-9951-997d6595f219",
+      "title": "Complete Monthly Ridership (with Adjustments and Estimates)",
+      "url": "https://data.virginia.gov/dataset/complete-monthly-ridership-with-adjustments-and-estimates",
+      "publisher": "U.S Department of Transportation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.transportation.gov/api/v3/views/8bui-9xvu/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.transportation.gov/api/v3/views/8bui-9xvu/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.transportation.gov/api/v3/views/8bui-9xvu/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "The Monthly module includes a limited set of key indicators reported by transit properties. Data is reported on a monthly basis, by mode and type of service, for a fiscal year.\n\nThe four data items included are:\n\n1.        Unlinked Passenger Trips \n2.        Vehicle Revenue Miles\n3.        Vehicle Revenue Hours\n4.        Vehicles Operated in Maximum Service (Peak Vehicles)\n\nThis dataset presents these values in their own column in a long format (each row of the file is an individual Agency/Mode/TOS/Date). The data source is shared with the static Excel file hosted on the FTA website here: https://www.transit.dot.gov/ntd/data-product/monthly-module-adjusted-data-release. This dataset differs from the static Excel file in its formatting as well as being updated weekly, to capture data as it is reported and validated for a given publication month.\n\nMode Codes:\nAlaska Railroad (AR)\nCable Car (CC)\nCommuter Rail (CR)\nHeavy Rail (HR)\nHybrid Rail (YR)\nInclined Plane (IP)\nLight Rail (LR)\nMonorail/Automated Guideway (MG)\nStreetcar Rail (SR)\nAerial Tramway (TR)\nCommuter Bus (CB)\nBus (MB)\nBus Rapid Transit (RB)\nDemand Response (DR)\nFerryboat (FB)\nJitney (JT)\nPúblico (PB)\nTrolleybus (TB)\nVanpool (VP)\n\n\nMode and Type of Service Changes and Impacts on this Time Series:\n\n\"Monthly data are reported by mode and type of service. From 2002 through 2011, there were 16 modes in the NTD. NTD monthly ridership data is now reported according to refined modal classifications. Service previously report"
+    },
+    {
+      "id": "be12f3e4-d3af-447b-8fb8-44cd369c89ec",
+      "title": "Taxable Sales Data by Locality year 2020",
+      "url": "https://data.virginia.gov/dataset/taxable-sales-data-by-locality-year-2020",
+      "publisher": "Department of Taxation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/f8d65f59-efdc-4a32-a6fa-43cd5d3b58e7/download/annualtaxablesalesreport_2020.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/dd08b1c1-5dc5-47d1-987a-a0661cb3f2fa/download/quarterlytaxablesalesreport_2020_q1.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/c7af3594-e738-4482-84eb-12458ede199e/download/quarterlytaxablesalesreport_2020_q2.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/4d614c95-38c0-4283-946c-09f2649ae9dc/download/quarterlytaxablesalesreport_2020_q3.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/112b2cce-2741-404a-b8f2-a6db032d0590/download/quarterlytaxablesalesreport_2020_q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/285c9118-419b-4501-a9d6-3e19b26423f4/download/quarterlytaxablesalesreport_2020_q1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/d1438844-d6d7-4287-af4e-4500f9797108/download/quarterlytaxablesalesreport_2020_q2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/f80ee19e-c014-424d-af90-576b2d5e12fe/download/quarterlytaxablesalesreport_2020_q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/fbcc7952-420f-4766-a270-65b8de3d3e9b/download/quarterlytaxablesalesreport_2020_q4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec/resource/8a758171-20c9-4598-b823-5c940ccbcc26/download/annualtaxablesalesreport_2020.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "Taxable sales information for all counties and cities in the Commonwealth of Virginia is based on all sales tax receipts received by the Department of Taxation. Taxable sales for a locality reflect payments for sales made during the current period, tax payments based on audit settlements for sales occurring in previous periods, and any transfers of revenue from one locality to another to correct errors in filing of tax returns. Deposit, refund, and bad check adjustments are not reflected in the taxable sales report.\r\n\r\nThe Department of Taxation releases taxable sales information for each quarter as well as a separate computation of taxable sales figures for the calendar year. Combining the quarterly reports will not yield a complete annual sales total.\n\n<!-- SIMILAR_DATASETS_START -->\n---\n### 🔗 Related Datasets\n\n- [Taxable Sales Data by Locality year 2021](https://odgavaprod.ogopendata.com//dataset/8b714f54-e408-4991-a5e9-98d400f68228) — *Department of Taxation*\n- [Taxable Sales Data by Locality year 2022](https://odgavaprod.ogopendata.com//dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e) — *Department of Taxation*\n\n---"
+    },
+    {
+      "id": "8b714f54-e408-4991-a5e9-98d400f68228",
+      "title": "Taxable Sales Data by Locality year 2021",
+      "url": "https://data.virginia.gov/dataset/taxable-sales-data-by-locality-year-2021",
+      "publisher": "Department of Taxation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/ee6cd376-f041-4483-9892-ac215477d9bc/download/annualtaxablesalesreport_2021.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/ebe07dad-7f29-4f37-a9b6-0c367223e662/download/quarterlytaxablesalesreport_2021_q1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/edcc4d68-89c3-4064-8a91-4fd0b99709be/download/quarterlytaxablesalesreport_2021_q2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/656c8273-c2cd-4ff7-a03d-8c5e64bb2c1a/download/quarterlytaxablesalesreport_2021_q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/1061c621-c866-4ab3-9e85-853e6094f984/download/quarterlytaxablesalesreport_2021_q4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/63b945d7-7b84-4e63-b24c-6293bf6d4272/download/quarterlytaxablesalesreport_2021_q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/5c8058da-758c-4537-8802-e7b612b9f892/download/quarterlytaxablesalesreport_2021_q3.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/b53411b5-6574-4c19-9104-844193c13b13/download/quarterlytaxablesalesreport_2021_q2.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/d2e47d78-51ce-4346-a826-8893ec0ba4f9/download/quarterlytaxablesalesreport_2021_q1.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/8b714f54-e408-4991-a5e9-98d400f68228/resource/56b77e11-00d3-4394-bb4d-557702ee6676/download/annualtaxablesalesreport_2021.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "Taxable sales information for all counties and cities in the Commonwealth of Virginia is based on all sales tax receipts received by the Department of Taxation. Taxable sales for a locality reflect payments for sales made during the current period, tax payments based on audit settlements for sales occurring in previous periods, and any transfers of revenue from one locality to another to correct errors in filing of tax returns. Deposit, refund, and bad check adjustments are not reflected in the taxable sales report.\r\n\r\nThe Department of Taxation releases taxable sales information for each quarter as well as a separate computation of taxable sales figures for the calendar year. Combining the quarterly reports will not yield a complete annual sales total.\n\n<!-- SIMILAR_DATASETS_START -->\n---\n### 🔗 Related Datasets\n\n- [Taxable Sales Data by Locality year 2022](https://odgavaprod.ogopendata.com//dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e) — *Department of Taxation*\n- [Taxable Sales Data by Locality year 2020](https://odgavaprod.ogopendata.com//dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec) — *Department of Taxation*\n\n---"
+    },
+    {
+      "id": "f0d37ff5-a192-4e05-be7a-72d1632b79bd",
+      "title": "Taxable Sales Data by Locality year 2023",
+      "url": "https://data.virginia.gov/dataset/taxable-sales-data-by-locality-year-2023",
+      "publisher": "Department of Taxation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/3d3197d5-cf55-4a1e-b2c5-837c04f20902/download/annualtaxablesalesreport_2023.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/7d7aae99-23c8-45cc-8022-853f812f36fc/download/annualtaxablesalesreport_2023.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/32865a91-07f2-45aa-86bf-8449991146fd/download/quarterlytaxablesalesreport_2023_q1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/66a72d88-5e10-462d-afd0-665696ef382b/download/quarterlytaxablesalesreport_2023_q2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/c8043482-9dbd-4f9e-8f01-6fe2ec138023/download/quarterlytaxablesalesreport_2023_q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/1d4660ee-793b-47f9-8514-12074fdf746c/download/quarterlytaxablesalesreport_2023_q4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/a746300e-1f4d-4ee2-8f36-39e635a27930/download/quarterlytaxablesalesreport_2023_q1.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/c572660f-639b-49dd-b8dc-c1cacd83aec9/download/quarterlytaxablesalesreport_2023_q2.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/fe9e21c6-6523-47d9-8a5e-06c3e588ad28/download/quarterlytaxablesalesreport_2023_q3.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd/resource/86720978-5da2-44b6-a3f8-7cca5005becd/download/quarterlytaxablesalesreport_2023_q4.xlsx",
+          "format": "XLSX"
+        }
+      ],
+      "description": "Taxable sales information for all counties and cities in the Commonwealth of Virginia is based on all sales tax receipts received by the Department of Taxation. Taxable sales for a locality reflect payments for sales made during the current period, tax payments based on audit settlements for sales occurring in previous periods, and any transfers of revenue from one locality to another to correct errors in filing of tax returns. Deposit, refund, and bad check adjustments are not reflected in the taxable sales report.\r\n\r\nThe Department of Taxation releases taxable sales information for each quarter as well as a separate computation of taxable sales figures for the calendar year. Combining the quarterly reports will not yield a complete annual sales total.\n\n<!-- SIMILAR_DATASETS_START -->\n---\n### 🔗 Related Datasets\n\n- [National Head Start/Public School Early Childhood Transition Demonstration Study, 1991-1999](https://odgavaprod.ogopendata.com//dataset/6cc64449-63ca-49be-8bc4-2f8568d7faa3) — *HealthData.Gov*\n\n---"
+    },
+    {
+      "id": "cddc5b03-19e1-4406-9edf-a6c4000c886e",
+      "title": "Taxable Sales Data by Locality year 2022",
+      "url": "https://data.virginia.gov/dataset/taxable-sales-data-by-locality-year-2022",
+      "publisher": "Department of Taxation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/4ab755ec-9efc-4c07-9736-cabed465ff83/download/annualtaxablesalesreport_2022.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/dad6a267-fad5-4df3-a79f-f831c800918d/download/quarterlytaxablesalesreport_2022_q1.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/038dad2b-0547-4e76-9c0d-d16f395f55aa/download/quarterlytaxablesalesreport_2022_q2.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/d52e88b2-3fef-4607-8801-75c04eee540e/download/quarterlytaxablesalesreport_2022_q3.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/089d4a68-b6f3-47e2-b592-68c845620c77/download/quarterlytaxablesalesreport_2022_q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/788c3ca7-378c-4821-835d-4a0579243972/download/quarterlytaxablesalesreport_2022_q1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/10962ee0-892a-40c5-83a8-ca052a9e9242/download/quarterlytaxablesalesreport_2022_q2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/694a817a-0a30-453d-93be-c994f747c099/download/quarterlytaxablesalesreport_2022_q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/5f48d9f8-2c99-40eb-9b73-ac4623d5ceae/download/quarterlytaxablesalesreport_2022_q4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e/resource/eacca0c5-f869-4c3a-90d1-ff05840e48dd/download/annualtaxablesalesreport_2022.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "Taxable sales information for all counties and cities in the Commonwealth of Virginia is based on all sales tax receipts received by the Department of Taxation. Taxable sales for a locality reflect payments for sales made during the current period, tax payments based on audit settlements for sales occurring in previous periods, and any transfers of revenue from one locality to another to correct errors in filing of tax returns. Deposit, refund, and bad check adjustments are not reflected in the taxable sales report.\r\n\r\nThe Department of Taxation releases taxable sales information for each quarter as well as a separate computation of taxable sales figures for the calendar year. Combining the quarterly reports will not yield a complete annual sales total.\n\n<!-- SIMILAR_DATASETS_START -->\n---\n### 🔗 Related Datasets\n\n- [Taxable Sales Data by Locality year 2023](https://odgavaprod.ogopendata.com//dataset/f0d37ff5-a192-4e05-be7a-72d1632b79bd) — *Department of Taxation*\n- [Taxable Sales Data by Locality year 2021](https://odgavaprod.ogopendata.com//dataset/8b714f54-e408-4991-a5e9-98d400f68228) — *Department of Taxation*\n- [National Head Start/Public School Early Childhood Transition Demonstration Study, 1991-1999](https://odgavaprod.ogopendata.com//dataset/6cc64449-63ca-49be-8bc4-2f8568d7faa3) — *HealthData.Gov*\n\n---"
+    },
+    {
+      "id": "74142163-16d1-4374-8d13-630473f4cfef",
+      "title": "Taxable Sales Data by Locality year 2011",
+      "url": "https://data.virginia.gov/dataset/taxable-sales-data-by-locality-year-2011",
+      "publisher": "Department of Taxation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/dcc9c20d-d5dd-400a-a411-0af4e0c5f684/download/annualtaxablesalesreport_2011.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/5e7be26e-38c7-43bb-a780-f9b13ab9cf34/download/quarterlytaxablesalesreport_2011_q1.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/8017304b-5e7b-4071-90be-1dc39c18f009/download/quarterlytaxablesalesreport_2011_q2.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/50a20be3-aa8b-4701-8528-6266721b14d7/download/quarterlytaxablesalesreport_2011_q3.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/7276ad28-f86b-4d33-ac7f-bef850ee479d/download/quarterlytaxablesalesreport_2011_q4.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/56bf2e91-959e-4eec-929f-8872834c41d4/download/quarterlytaxablesalesreport_2011_q1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/31018d26-5516-4dfa-81c4-a214c3de1203/download/quarterlytaxablesalesreport_2011_q2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/1fd4abc5-2618-4bab-81ab-5f7371c42be5/download/quarterlytaxablesalesreport_2011_q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/12c52058-ff4d-4846-8758-c763c5bad46f/download/quarterlytaxablesalesreport_2011_q4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/74142163-16d1-4374-8d13-630473f4cfef/resource/dc7e08c4-e8bf-4996-b226-94ade84651ed/download/annualtaxablesalesreport_2011.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "Taxable sales information for all counties and cities in the Commonwealth of Virginia is based on all sales tax receipts received by the Department of Taxation. Taxable sales for a locality reflect payments for sales made during the current period, tax payments based on audit settlements for sales occurring in previous periods, and any transfers of revenue from one locality to another to correct errors in filing of tax returns. Deposit, refund, and bad check adjustments are not reflected in the taxable sales report.\r\n\r\nThe Department of Taxation releases taxable sales information for each quarter as well as a separate computation of taxable sales figures for the calendar year. Combining the quarterly reports will not yield a complete annual sales total.\r\n\r\n\r\n<!-- SIMILAR_DATASETS_START -->\r\n---\r\n### 🔗 Related Datasets\r\n\r\n- [Taxable Sales Data by Locality year 2001](https://odgavaprod.ogopendata.com//dataset/0bcb48a5-2b80-4e9a-9b0b-95d5fc7e2521) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2012](https://odgavaprod.ogopendata.com//dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2021](https://odgavaprod.ogopendata.com//dataset/8b714f54-e408-4991-a5e9-98d400f68228) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2010](https://odgavaprod.ogopendata.com//dataset/b61380b3-f560-4516-8add-91e3a1e81c7c) — *Department of Taxation*\r\n\r\n---"
+    },
+    {
+      "id": "6177643f-fd5c-459e-8aa0-d2d1383dbf60",
+      "title": "Taxable Sales Data by Locality year 2019",
+      "url": "https://data.virginia.gov/dataset/taxable-sales-data-by-locality-year-2019",
+      "publisher": "Department of Taxation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/0ea456a8-31a2-464e-a984-a69a42085fac/download/annualtaxablesalesreport_2019.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/9653b18f-bfca-41fa-b104-43ba1c473e0e/download/quarterlytaxablesalesreport_2019_q1.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/f6018ea1-8aed-44b1-a856-5157790d9812/download/quarterlytaxablesalesreport_2019_q2.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/2a55bb92-5871-421d-8e60-3a557a81711a/download/quarterlytaxablesalesreport_2019_q3.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/41a1b27c-44fc-4bb8-a10e-7b0c2387473f/download/quarterlytaxablesalesreport_2019_q4.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/2fada6c3-0e19-4634-9600-9746b0ee3fb1/download/quarterlytaxablesalesreport_2019_q1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/fd6c4981-48ce-4c59-a1fb-d9c676235faa/download/quarterlytaxablesalesreport_2019_q2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/253cea6c-6480-488c-bc8f-2f9c4a57fbcb/download/quarterlytaxablesalesreport_2019_q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/6d75ff62-7ad3-4de9-86a3-e9bdf85cc13e/download/quarterlytaxablesalesreport_2019_q4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6177643f-fd5c-459e-8aa0-d2d1383dbf60/resource/b1b08837-86e1-4fa3-965c-ef77c27f7ad4/download/annualtaxablesalesreport_2019.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "Taxable sales information for all counties and cities in the Commonwealth of Virginia is based on all sales tax receipts received by the Department of Taxation. Taxable sales for a locality reflect payments for sales made during the current period, tax payments based on audit settlements for sales occurring in previous periods, and any transfers of revenue from one locality to another to correct errors in filing of tax returns. Deposit, refund, and bad check adjustments are not reflected in the taxable sales report.\r\n\r\nThe Department of Taxation releases taxable sales information for each quarter as well as a separate computation of taxable sales figures for the calendar year. Combining the quarterly reports will not yield a complete annual sales total.\r\n\r\n\r\n<!-- SIMILAR_DATASETS_START -->\r\n---\r\n### 🔗 Related Datasets\r\n\r\n- [Taxable Sales Data by Locality year 2018](https://odgavaprod.ogopendata.com//dataset/9900472f-92ee-40be-96a1-51637bdc8d6c) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2020](https://odgavaprod.ogopendata.com//dataset/be12f3e4-d3af-447b-8fb8-44cd369c89ec) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2021](https://odgavaprod.ogopendata.com//dataset/8b714f54-e408-4991-a5e9-98d400f68228) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2022](https://odgavaprod.ogopendata.com//dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e) — *Department of Taxation*\r\n\r\n---"
+    },
+    {
+      "id": "6438ee7e-4222-4cde-b050-ffd406eb2bc1",
+      "title": "Taxable Sales Data by Locality year 2007",
+      "url": "https://data.virginia.gov/dataset/taxable-sales-data-by-locality-year-2007",
+      "publisher": "Department of Taxation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/544624df-e76d-4fe9-925c-8313c623ed05/download/annualtaxablesalesreport_2007.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/02f1efaf-f348-4c04-9cb0-3931e7e3fda4/download/quarterlytaxablesalesreport_2007_q1.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/22a8c1fc-3eb6-4c33-b182-bd836078b2aa/download/quarterlytaxablesalesreport_2007_q2.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/38c968ca-bfc7-4f41-beaf-9c0bde69177b/download/quarterlytaxablesalesreport_2007_q3.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/1891f17b-f7ef-45bc-8c49-5b85c15e66d2/download/quarterlytaxablesalesreport_2007_q4.xls",
+          "format": "XLS"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/3dcad3d1-699d-4b49-9769-c15596cc8959/download/quarterlytaxablesalesreport_2007_q1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/016ac301-5132-4dea-967b-e4920e9b93de/download/quarterlytaxablesalesreport_2007_q2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/ad00fb87-43f3-4bb5-bef5-46a356a87d99/download/quarterlytaxablesalesreport_2007_q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/9ba7cbbd-e397-43fb-953e-cd5e1bf2b4dd/download/quarterlytaxablesalesreport_2007_q4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/6438ee7e-4222-4cde-b050-ffd406eb2bc1/resource/384a78cd-02ef-4214-a653-2516c9db48f1/download/annualtaxablesalesreport_2007.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "Taxable sales information for all counties and cities in the Commonwealth of Virginia is based on all sales tax receipts received by the Department of Taxation. Taxable sales for a locality reflect payments for sales made during the current period, tax payments based on audit settlements for sales occurring in previous periods, and any transfers of revenue from one locality to another to correct errors in filing of tax returns. Deposit, refund, and bad check adjustments are not reflected in the taxable sales report.\r\n\r\nThe Department of Taxation releases taxable sales information for each quarter as well as a separate computation of taxable sales figures for the calendar year. Combining the quarterly reports will not yield a complete annual sales total.\r\n\r\n\r\n<!-- SIMILAR_DATASETS_START -->\r\n---\r\n### 🔗 Related Datasets\r\n\r\n- [Taxable Sales Data by Locality year 1997](https://odgavaprod.ogopendata.com//dataset/e64152e7-356f-4ee5-9727-ffd28f1735db) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2006](https://odgavaprod.ogopendata.com//dataset/935903bf-d1b6-4229-bc73-b44b6f9d47a6) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2008](https://odgavaprod.ogopendata.com//dataset/9a589de5-34fa-4eaa-b3f9-1a3c1d77744b) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2009](https://odgavaprod.ogopendata.com//dataset/b14e736f-9e8c-4f80-8438-022e3f4d437c) — *Department of Taxation*\r\n\r\n---"
+    },
+    {
+      "id": "30719ad9-de22-4161-a57c-7193c2ecbf4e",
+      "title": "Taxable Sales Data by Locality year 2012",
+      "url": "https://data.virginia.gov/dataset/taxable-sales-data-by-locality-year-2012",
+      "publisher": "Department of Taxation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/7bf2ce9c-46dc-4bd1-86be-9b2d331307bf/download/annualtaxablesalesreport_2012.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/d23889d2-ce64-4a2f-ad04-e5c9da1b9a0e/download/quarterlytaxablesalesreport_2012_q1.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/3183d2be-f52b-410c-b49d-b4bfe89211d0/download/quarterlytaxablesalesreport_2012_q2.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/a3cb77ed-0251-4573-9f9d-2c9eb1f271f4/download/quarterlytaxablesalesreport_2012_q3.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/00087667-fe39-47de-9350-55510b9468d1/download/quarterlytaxablesalesreport_2012_q4.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/908ce3c0-534e-4258-9dbd-c473dd460078/download/quarterlytaxablesalesreport_2012_q1.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/4aadbe23-8555-4575-a4ec-ee5c46ae4b78/download/quarterlytaxablesalesreport_2012_q2.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/cbe472c6-29b0-45df-8382-7d1bac3286ad/download/quarterlytaxablesalesreport_2012_q3.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/a7ce4aa4-e7d4-433b-ab13-e68052f37710/download/quarterlytaxablesalesreport_2012_q4.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.virginia.gov/dataset/30719ad9-de22-4161-a57c-7193c2ecbf4e/resource/b7cb5bd0-ec37-4e9e-b5f1-5a8b611ee13c/download/annualtaxablesalesreport_2012.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "Taxable sales information for all counties and cities in the Commonwealth of Virginia is based on all sales tax receipts received by the Department of Taxation. Taxable sales for a locality reflect payments for sales made during the current period, tax payments based on audit settlements for sales occurring in previous periods, and any transfers of revenue from one locality to another to correct errors in filing of tax returns. Deposit, refund, and bad check adjustments are not reflected in the taxable sales report.\r\n\r\nThe Department of Taxation releases taxable sales information for each quarter as well as a separate computation of taxable sales figures for the calendar year. Combining the quarterly reports will not yield a complete annual sales total.\r\n\r\n\r\n<!-- SIMILAR_DATASETS_START -->\r\n---\r\n### 🔗 Related Datasets\r\n\r\n- [Taxable Sales Data by Locality year 2011](https://odgavaprod.ogopendata.com//dataset/74142163-16d1-4374-8d13-630473f4cfef) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2022](https://odgavaprod.ogopendata.com//dataset/cddc5b03-19e1-4406-9edf-a6c4000c886e) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2014](https://odgavaprod.ogopendata.com//dataset/59894e34-2da1-480c-b90b-80a0935c4861) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2013](https://odgavaprod.ogopendata.com//dataset/23d607df-0663-4f60-98d4-73fe0ff76068) — *Department of Taxation*\r\n- [Taxable Sales Data by Locality year 2016](https:"
+    }
+  ],
+  "page_receipts": [
+    193
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 15,
+  "next_offset": 10,
+  "response_sha256": "39d18e51e75916d03a96dbf54fd4332290362da84a02d71792c3b253197e9243",
+  "search_complete": false
+}

@@ -1,0 +1,256 @@
+{
+  "jurisdiction_code": "VA",
+  "query": "homicide",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-03T20:34:50.253216+00:00",
+  "candidates": [
+    {
+      "id": "cf2a4685-14fb-405b-8595-8d32d3e06b2a",
+      "title": "Monthly Counts of Deaths by Select Causes, 2014-2019",
+      "url": "https://data.virginia.gov/dataset/monthly-counts-of-deaths-by-select-causes-2014-2019",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/bxq8-mugm/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/bxq8-mugm/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/bxq8-mugm/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "Final counts of deaths by the month the deaths occurred and by select causes of death for 2014-2019."
+    },
+    {
+      "id": "f185cfd2-f368-480f-82c6-61bc3643d447",
+      "title": "Monthly Provisional Counts of Deaths by Select Causes, 2020-2023",
+      "url": "https://data.virginia.gov/dataset/monthly-provisional-counts-of-deaths-by-select-causes-2020-2023",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/9dzk-mvmi/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/9dzk-mvmi/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/9dzk-mvmi/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "Effective September 27, 2023, this dataset will no longer be updated. Similar data are accessible from wonder.cdc.gov.\n\nProvisional counts of deaths by the month the death occurred and by select causes of death for 2020-2023."
+    },
+    {
+      "id": "1df06f03-6961-43b5-9e5b-991e93418e59",
+      "title": "Virginia State Police Cold Case Data",
+      "url": "https://data.virginia.gov/dataset/virginia-state-police-cold-case-data",
+      "publisher": "Department of State Police",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/1df06f03-6961-43b5-9e5b-991e93418e59/resource/f942cfe4-4434-4b73-aae7-c91a07d513ae/download/ccdb-4-30-2026.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "This data is a compilation of information from Virginia State Police investigators and local law enforcement used for soliciting tips on unsolved cases throughout the Commonwealth on the Virginia Cold Case Database (https://coldcase.vsp.virginia.gov/). The site displays unsolved homicides, missing persons cases, and unidentified remains."
+    },
+    {
+      "id": "024cbc7a-9ec4-4ac2-a7b6-eebf9f2e9c4d",
+      "title": "Safety and Security Agency Profiles",
+      "url": "https://data.virginia.gov/dataset/safety-and-security-agency-profiles",
+      "publisher": "U.S Department of Transportation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.transportation.gov/api/v3/views/pgwk-wjqa/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.transportation.gov/api/v3/views/pgwk-wjqa/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.transportation.gov/api/v3/views/pgwk-wjqa/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "This dataset details raw totals and rates per 1 million unlinked passenger trips/vehicle revenue miles (UPT/VRM) for 5 different metrics: Major Passenger Assaults and Homicides, Major Worker Assaults and Homicides, Fatalities (safety), Fatalities (security), Fatalities (trespasser/suicide). It breaks the metrics out by mode (bus or rail) for each month going back to January 2023 for transit agencies that operate at least 100 vehicles in maximum service or a rail mode.\n\nIt is a summarized version of the data found here: https://data.transportation.gov/Public-Transit/Major-Safety-and-Security-Events/9ivb-8ae9/about_data\n\nMonthly Safety and Security data are released to this dataset within three months of being submitted to the NTD. Generally, there will be at least 90-day lag between when the event occurs and when it is included in this data set."
+    },
+    {
+      "id": "bf9ef801-042c-4700-b6fe-07299717db79",
+      "title": "National Violent Death Reporting System (NVDRS)",
+      "url": "https://data.virginia.gov/dataset/national-violent-death-reporting-system-nvdrs",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "http://www.cdc.gov/injury/wisqars/",
+          "format": "HTML"
+        }
+      ],
+      "description": "<p>The National Violent Death Reporting System (NVDRS) provides states and communities with a clearer understanding of violent deaths to guide local decisions about efforts to prevent violence and helps them track progress over time.</p>\n<p>To stop violent deaths, we must first understand all the facts. Created in 2002, the NVDRS is a surveillance system that pulls together data on violent deaths in 18 states (see map below), including information about homicides, such as homicides perpetrated by a intimate partner (e.g., boyfriend, girlfriend, wife, husband), child maltreatment (or child abuse) fatalities, suicides, deaths where individuals are killed by law enforcement in the line of duty, unintentional firearm injury deaths, and deaths of undetermined intent.</p>\n<p>These data are supported by WISQARS, an interactive query system that provides data on injury deaths, violent deaths, and nonfatal injuries.</p>"
+    },
+    {
+      "id": "ddd7404f-a63c-419b-9566-f3b834ac56c8",
+      "title": "Security Event Rates, Top 25 UZAs",
+      "url": "https://data.virginia.gov/dataset/security-event-rates-top-25-uzas",
+      "publisher": "U.S Department of Transportation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.transportation.gov/api/v3/views/k22y-bc83/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.transportation.gov/api/v3/views/k22y-bc83/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.transportation.gov/api/v3/views/k22y-bc83/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "This dataset details safety and security events per unlinked passenger trips/vehicle revenue miles (UPT/VRM) for 5 different metrics: Major Passenger Assaults and Homicides, Major Worker Assaults and Homicides, Fatalities (safety), Fatalities (security), Fatalities (trespasser/suicide). It breaks the metrics out by mode (bus or rail) for each month going back to January 2023 in the top 25 largest urbanized areas (UZAs) (based on population). It also has a national-level for each metric, so individual UZAs or groups of UZAs can be compared against the national trend.\n\nThe data is based on https://data.transportation.gov/Public-Transit/Major-Safety-and-Security-Events/9ivb-8ae9/about_data\n\nMonthly Safety and Security data are released to this dataset within three months of being submitted to the NTD. Generally, there will be at least 90-day lag between when the event occurs and when it is included in this data set."
+    },
+    {
+      "id": "1555833e-6b38-4403-a1f8-a3d6eedd1c2c",
+      "title": "NCHS - Injury Mortality: United States",
+      "url": "https://data.virginia.gov/dataset/nchs-injury-mortality-united-states1",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vc9m-u7tv/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vc9m-u7tv/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vc9m-u7tv/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "This dataset describes injury mortality in the United States beginning in 1999. Two concepts are included in the circumstances of an injury death: intent of injury and mechanism of injury. Intent of injury describes whether the injury was inflicted purposefully (intentional injury) and, if purposeful, whether the injury was self-inflicted (suicide or self-harm) or inflicted by another person (homicide). Injuries that were not purposefully inflicted are considered unintentional (accidental) injuries. Mechanism of injury describes the source of the energy transfer that resulted in physical or physiological harm to the body."
+    },
+    {
+      "id": "0c01563b-f94c-46ec-b375-b898ac0558d5",
+      "title": "Provisional Drug Overdose Deaths by Urban/Rural Classification Scheme for 12 month-ending December 2018-December 2020",
+      "url": "https://data.virginia.gov/dataset/provisional-drug-overdose-deaths-by-urban-rural-classification-scheme-for-12-month-ending-2020",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/dtm2-meqi/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/dtm2-meqi/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/dtm2-meqi/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "National provisional drug overdose deaths by month and 2013 NCHS Urban–Rural Classification Scheme for Counties. Drug overdose deaths are identified using underlying cause-of-death codes from the Tenth Revision of ICD (ICD–10): X40–X44 (unintentional), X60–X64 (suicide), X85 (homicide), and Y10–Y14 (undetermined). Deaths are based on the county of residence in the United States. Death counts provided are for “12-month ending periods,” defined as the number of deaths occurring in the 12-month period ending in the month indicated. Estimates for 2020 are based on provisional data. Estimates for 2018 and 2019 are based on final data.\n\nFor more information on NCHS urban-rural classification, see: https://www.cdc.gov/nchs/data/series/sr_02/sr02_166.pdf"
+    },
+    {
+      "id": "053e3d1b-8861-4f9b-824e-e4e92908e5fc",
+      "title": "NCHS - Drug Poisoning Mortality by County: United States",
+      "url": "https://data.virginia.gov/dataset/nchs-drug-poisoning-mortality-by-county-united-states1",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/rpvx-m2md/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/rpvx-m2md/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/rpvx-m2md/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "This dataset describes drug poisoning deaths at the U.S. and state level by selected demographic characteristics, and includes age-adjusted death rates for drug poisoning. \n\nDeaths are classified using the International Classification of Diseases, Tenth Revision (ICD–10). Drug-poisoning deaths are defined as having ICD–10 underlying cause-of-death codes X40–X44 (unintentional), X60–X64 (suicide), X85 (homicide), or Y10–Y14 (undetermined intent).\n\nEstimates are based on the National Vital Statistics System multiple cause-of-death mortality files (1). Age-adjusted death rates (deaths per 100,000 U.S. standard population for 2000) are calculated using the direct method. Populations used for computing death rates for 2011–2017 are postcensal estimates based on the 2010 U.S. census. Rates for census years are based on populations enumerated in the corresponding censuses. Rates for noncensus years before 2010 are revised using updated intercensal population estimates and may differ from rates previously published.\n\nDeath rates for some states and years may be low due to a high number of unresolved pending cases or misclassification of ICD–10 codes for unintentional poisoning as R99, “Other ill-defined and unspecified causes of mortality” (2). For example, this issue is known to affect New Jersey in 2009 and West Virginia in 2005 and 2009 but also may affect other years and other states. Drug poisoning death rates may be underestimated in those instances.\n\nREFERENCES\n1. National Cen"
+    },
+    {
+      "id": "7617af0f-b855-4a1d-b57e-398811d696dd",
+      "title": "NCHS - Drug Poisoning Mortality by State: United States",
+      "url": "https://data.virginia.gov/dataset/nchs-drug-poisoning-mortality-by-state-united-states1",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/xbxb-epbu/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/xbxb-epbu/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/xbxb-epbu/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "This dataset describes drug poisoning deaths at the U.S. and state level by selected demographic characteristics, and includes age-adjusted death rates for drug poisoning. \r\n\r\nDeaths are classified using the International Classification of Diseases, Tenth Revision (ICD–10). Drug-poisoning deaths are defined as having ICD–10 underlying cause-of-death codes X40–X44 (unintentional), X60–X64 (suicide), X85 (homicide), or Y10–Y14 (undetermined intent).\r\n\r\nEstimates are based on the National Vital Statistics System multiple cause-of-death mortality files (1). Age-adjusted death rates (deaths per 100,000 U.S. standard population for 2000) are calculated using the direct method. Populations used for computing death rates for 2011–2016 are postcensal estimates based on the 2010 U.S. census. Rates for census years are based on populations enumerated in the corresponding censuses. Rates for noncensus years before 2010 are revised using updated intercensal population estimates and may differ from rates previously published.\r\n\r\nDeath rates for some states and years may be low due to a high number of unresolved pending cases or misclassification of ICD–10 codes for unintentional poisoning as R99, “Other ill-defined and unspecified causes of mortality” (2). For example, this issue is known to affect New Jersey in 2009 and West Virginia in 2005 and 2009 but also may affect other years and other states. Drug poisoning death rates may be underestimated in those instances.\r\n\r\nREFERENCES\r\n1. Nat"
+    }
+  ],
+  "page_receipts": [
+    266
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 17,
+  "next_offset": 10,
+  "response_sha256": "27100887d90d4921eaee0f56fa2d2d80fcb03e67711c9e9566117684cdef3e5f",
+  "search_complete": false
+}

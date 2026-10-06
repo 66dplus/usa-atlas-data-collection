@@ -1,0 +1,24 @@
+{
+  "jurisdiction_code": "IA",
+  "catalog_id": "ia-primary",
+  "catalog_url": "https://data.iowa.gov/",
+  "started_at": "2026-10-05T14:42:25.797613+00:00",
+  "attempts": [
+    {
+      "adapter": "socrata",
+      "endpoint": "https://api.us.socrata.com/api/catalog/v1",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "adapter": "hub",
+      "endpoint": "https://data.iowa.gov/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "status": "html_catalog_only",
+  "adapter": "html_catalog_scan",
+  "endpoint": "https://data.iowa.gov/",
+  "validation_receipt": 44,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_page_links_only_geography_unverified"
+}

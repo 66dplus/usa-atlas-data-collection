@@ -1,0 +1,260 @@
+{
+  "jurisdiction_code": "VA",
+  "query": "physical activity",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-04T08:37:28.870436+00:00",
+  "candidates": [
+    {
+      "id": "d4754eef-94e7-41d0-9c0c-da08ae900168",
+      "title": "Nutrition, Physical Activity, and Obesity - American Community Survey",
+      "url": "https://data.virginia.gov/dataset/nutrition-physical-activity-and-obesity-american-community-survey",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8mrp-rmkw/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8mrp-rmkw/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8mrp-rmkw/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8mrp-rmkw/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8mrp-rmkw/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8mrp-rmkw/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "This dataset includes select data from the U.S. Census Bureau's American Community Survey (ACS) on the percent of adults who bike or walk to work. This data is used for DNPAO's Data, Trends, and Maps database, which provides national and state specific data on obesity, nutrition, physical activity, and breastfeeding. For more information about ACS visit https://www.census.gov/programs-surveys/acs/."
+    },
+    {
+      "id": "80c46dbc-3981-459a-b57d-2bc4490b454b",
+      "title": "USDA FoodEnvironmentAtlas - Health and Physical Activity",
+      "url": "https://data.virginia.gov/dataset/usda-foodenvironmentatlas-health-and-physical-activity",
+      "publisher": "Other",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.virginia.gov/dataset/80c46dbc-3981-459a-b57d-2bc4490b454b/resource/21e92050-beae-44a5-bc59-4b1826841104/download/rows.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "This dataset contains Health and Physical Activity metrics displayed in the <a href=\"https://www.ers.usda.gov/data-products/food-environment-atlas/\" target=\"_blank\">U.S. Department of Agriculture (USDA) Food Environment Atlas website</a>, including physical activity among high schoolers and prevalence of recreation & fitness facilities.\n\nData was last updated on the USDA website in September 2020.\n\nAny data elements with numerical values reflect figures at the locality-level unless otherwise specified with an asterisk (*).  See column descriptions for details.  For more information on all metrics in this dataset, see the <a href=\"https://www.ers.usda.gov/data-products/food-environment-atlas/documentation/#health\" target=\"_blank\">Food Environment Atlas Heath and Physical Activity documentation</a>.\n\n<!-- SIMILAR_DATASETS_START -->\n---\n### 🔗 Related Datasets\n\n- [USDA FoodEnvironmentAtlas - Socioeconomic Characteristics](https://odgavaprod.ogopendata.com//dataset/6e9d7af9-e97e-450a-8d40-d0631fce4b9e) — *Other*\n- [USDA FoodEnvironmentAtlas - Access and Proximity to Grocery Store](https://odgavaprod.ogopendata.com//dataset/f5adf775-0319-4480-96d3-b96e5a2f425e) — *Other*\n- [USDA FoodEnvironmentAtlas - Restaurant Availability and Expenditures](https://odgavaprod.ogopendata.com//dataset/21637c7e-75ef-40ed-a1b6-0d000dcaf044) — *Other*\n- [USDA FoodEnvironmentAtlas - Food Assistance](https://odgavaprod.ogopendata.com//dataset/d956bb9a-ecde-4a60-bbe1-dfce6988961c) — *Other*\n- [USDA FoodE"
+    },
+    {
+      "id": "67bee1db-677e-40cd-9849-922cfe795895",
+      "title": "Nutrition, Physical Activity, and Obesity - Women, Infant, and Child",
+      "url": "https://data.virginia.gov/dataset/nutrition-physical-activity-and-obesity-women-infant-and-child",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/735e-byxc/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/735e-byxc/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/735e-byxc/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/735e-byxc/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/735e-byxc/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/735e-byxc/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "This dataset includes data on weight status for children aged 3 months to 4 years old from Women, Infant, and Children Participant and Program Characteristics (WIC-PC). This data is used for DNPAO's Data, Trends, and Maps database, which provides national and state specific data on obesity, nutrition, physical activity, and breastfeeding. For more information about WIC-PC visit https://www.fns.usda.gov/wic/national-survey-wic-participants."
+    },
+    {
+      "id": "ad25544b-f95e-4674-916a-5e61c86042f1",
+      "title": "Nutrition, Physical Activity, and Obesity - Youth Risk Behavior Surveillance System",
+      "url": "https://data.virginia.gov/dataset/nutrition-physical-activity-and-obesity-youth-risk-behavior-surveillance-system",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vba9-s8jp/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vba9-s8jp/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vba9-s8jp/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vba9-s8jp/query.geojson?accessType=DOWNLOAD",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vba9-s8jp/export.kml?accessType=DOWNLOAD",
+          "format": ""
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/vba9-s8jp/export.kmz?accessType=DOWNLOAD",
+          "format": ""
+        }
+      ],
+      "description": "This dataset includes data on adolescent's diet, physical activity, and weight status from Youth Risk Behavior Surveillance System (YRBSS). This data is used for DNPAO's Data, Trends, and Maps database, which provides national and state specific data on obesity, nutrition, physical activity, and breastfeeding. For more information about YRBSS visit https://www.cdc.gov/healthyyouth/data/yrbs/index.htm."
+    },
+    {
+      "id": "83060b21-a4a1-460e-ab42-bd6349a8ba51",
+      "title": "National Community Based Survey of Supports for Healthy Eating and Active Living  (CBS HEAL)",
+      "url": "https://data.virginia.gov/dataset/national-community-based-survey-of-supports-for-healthy-eating-and-active-living-cbs-heal",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8hus-y5nc/export.csv?accessType=DOWNLOAD",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8hus-y5nc/query.json?accessType=DOWNLOAD",
+          "format": "JSON"
+        },
+        {
+          "url": "https://data.cdc.gov/api/v3/views/8hus-y5nc/query.xml?accessType=DOWNLOAD",
+          "format": "xsl"
+        }
+      ],
+      "description": "Community-Based Survey of Supports for Healthy Eating and Active Living (CBS HEAL) is a CDC survey of a nationally representative sample of U.S. municipalities to better understand existing community-level policies and practices that support healthy eating and active living. The survey collects information about policies such as nutrition standards, incentives for healthy food retail, bike/pedestrian-friendly design, and Complete Streets. About 2,000 municipalities respond to the survey. Participating municipalities receive a report that allows them to compare their policies and practices with other municipalities of similar geography, population size, and urban status.\n\nThe CBS HEAL survey was first administered in 2014 and was administered again in 2021. Data is provided in multiple formats for download including as a SAS file. A methods report and a SAS program for formatting the data are also provided."
+    },
+    {
+      "id": "9876767b-e234-4ae4-bdaf-727e1f4a25c9",
+      "title": "Shoulder-Assist Exoskeleton Effects on Balance and Muscle Activity During a Block-laying Task on a Simulated Mast Climber",
+      "url": "https://data.virginia.gov/dataset/shoulder-assist-exoskeleton-effects-on-balance-and-muscle-activity-during-a-block-laying-task-o",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/download/d29v-yfc2/application/x-zip-compressed",
+          "format": ""
+        }
+      ],
+      "description": "Masonry work, a sub-specialty of the construction industry, consists of brick and block-laying. Masonry workers often perform these tasks daily using an elevated work platform (e.g., mast climbers). Mast climbers are elevating equipment used to replace traditional scaffolds. They have been available in the United States since the 1980s.  Mast climbers are capable of handling much greater loads of workers and materials than traditional scaffolding. They also make reaching greater heights much easier, thereby improving efficiency on construction projects. However, working on an unstable work platform at elevation can increase the risks of slips, trips and falls, including falls to a lower level. From 1990 to 2017, there were a total of 35 recorded fatalities associated with the use of mast climbers. Of the 35 fatalities, 13 were masonry workers (OSHA report).  Additionally, working on a mast climber can also create awkward working postures due to the confined nature of the workspace. Masonry work can be physically demanding. Concrete block can weigh between 9-27 kg. The rate of overexertion among masonry workers was 33.4 per 10,000 FTEs compared to the average rate of 21.5 per 10,000 FTEs in all industries (BLS data). Shoulder-assist exoskeletons present an attractive possibility to reduce MSD risks in masonry workers if the exoskeletons do not cause adverse effects to the workers’ stability and balance. \n\nIn this study, we evaluated effects of three models of passive shoulder-"
+    },
+    {
+      "id": "ec38fce1-8354-4a69-8a8e-18d70d27eceb",
+      "title": "Physical Access Control Database -",
+      "url": "https://data.virginia.gov/dataset/physical-access-control-database",
+      "publisher": "U.S Department of Transportation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.transportation.gov/mission/data-inventory-not-available",
+          "format": "HTML"
+        }
+      ],
+      "description": "This data set contains the personnel access card data (photo, name, activation/expiration dates, card number, and access level) as well as data about turnstiles and security panels at the DOT headquarters building. It tracks which personnel have been provided what type of access and swipes at access card readers."
+    },
+    {
+      "id": "d9f8e9b9-65ff-4fd7-a4ca-5ebb769889c8",
+      "title": "Correlation of the score for subjective pain with physical disability, clinical and radiographic scores in recent onset rheumatoid arthritis",
+      "url": "https://data.virginia.gov/dataset/correlation-of-the-score-for-subjective-pain-with-physical-disability-clinical-and-radiographic",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC117789/",
+          "format": "HTML"
+        }
+      ],
+      "description": "Background\n          To analyse the relationship between subjective pain score and other measures of clinical, radiographic and functional status; in particular Larsen radiographic scores and Health Assessment Questionnaire (HAQ); in patients with severe rheumatoid arthritis (RA) with a disease duration of less than 3 years.\n        \n        \n          Methods\n          In this cross sectional study of 105 patients with RA (76 women, 29 men: mean age 50.93; mean disease duration 15.86 months; 71% rheumatoid factor positive) subjective pain was assessed according to the Visual Analog Scale (VAS). Correlation coefficients between pain score and disease activity measures (patients' global assessment of disease by VAS, number of tender and swollen joints, morning stiffness, erythrocyte sedimentation rate [ESR], C-reactive protein [CRP] and titre of rheumatoid factor, radiographic evaluations (Larsen-Dale scores for radiographic damage of the small joints of the hands, wrist and feet), disability measures (health assessment questionnaire [HAQ]), and demographic variables were calculated; hierarchical regression analysis was done with subjective pain score as the dependent variable.\n        \n        \n          Results\n          The Spearman's correlation coefficient comparing subjective pain and HAQ was 0.421 (p < 0.001), between subjective pain and global assessment of disease and morning stiffness was 0.573 (p < 0.001) and 0.427 (p < 0.001) respectively, and between pain and numb"
+    },
+    {
+      "id": "be9e7219-da09-4c80-baae-caac83eb1dce",
+      "title": "Physico-chemical characterisation and biological evaluation of 188-Rhenium colloids for radiosynovectomy",
+      "url": "https://data.virginia.gov/dataset/physico-chemical-characterisation-and-biological-evaluation-of-188-rhenium-colloids-for-radiosy",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC134460/",
+          "format": "HTML"
+        }
+      ],
+      "description": "Background\n          Radiosynovectomy is a type of radiotherapy used to relieve pain and inflammation from rheumatoid arthritis. In this study, 188-Rhenium (188Re) colloids were characterized by physical and biological methodologies. This was used to assess which parameters of the kit formulation would be the basis in the development of a more effective radiopharmaceutical for synovectomy. Intraarticular injection in knees of rabbits assessed cavity leakage of activity.\n        \n        \n          Methods\n          The physical characteristics of tin (Sn) and sulphur (S) colloids were determined to assess the formulation with suitable properties. Particles were grouped in three ranges for analyzing their distribution according to their number, volume and surface. The ideal particle size range was considered to be from 2 to 10 microns. Membrane filtration and laser diffraction characterization methodologies were used.\n        \n        \n          Results\n          While membrane filtration could give misleading data, laser diffraction proportions more reliable results. The Sn colloid showed a better distribution of particle volume and surface than S colloid, in the 2 to 10 microns range. The 188Re-Sn colloid was obtained with a radiochemical purity higher than 95% after 30 minutes of autoclaving. While Sn colloid kit stability was verified for 60 days, the 188Re-Sn preparation was stable in the first 24 hrs. No significant intrabatch variability (n = 3) was detected. Biodistrib"
+    },
+    {
+      "id": "48268c9a-5a49-45c1-89a9-35fb1d45bd41",
+      "title": "Evaluation of A Passive Back-Support Exoskeleton in Bed-to-Chair Patient Handling Tasks",
+      "url": "https://data.virginia.gov/dataset/evaluation-of-a-passive-back-support-exoskeleton-in-bed-to-chair-patient-handling-tasks",
+      "publisher": "HealthData.Gov",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.cdc.gov/download/3g9b-sxea/application/x-zip-compressed",
+          "format": ""
+        }
+      ],
+      "description": "The objective of this study was to evaluate the effect of a passive back-support exoskeleton on the physical demands of caregivers during bed-to-chair patient handling tasks. Eight participants (5 males and 3 females) performed 4 different patient handling tasks, including 1) lying to sitting, 2) sitting to standing, 3) standing to sitting, and 4) bed to wheelchair transfer with and without the exoskeleton. In certain bed-to-chair patient handling tasks, the exoskeleton (Laevo V2.5) was found to significantly reduce the peak and median values of the hip flexion angles and muscle activities of erector spinae compared to no exoskeleton. The effect of the exoskeleton was task-dependent. The exoskeleton caused a greater reduction of the erector spinae muscle activities of symmetric exertions than the asymmetric exertions. With the exoskeleton, participants adjusted their patient handling strategies by decreasing the hip flexion but increasing the trunk extension. There was a lack of significant changes in the heart rate with the exoskeleton.  The results suggest that back-support exoskeletons could play a role in reducing the muscular demand of the low back during certain bed-to-chair patient handling tasks. However, further research would be needed to fully assess its effectiveness and practicality in improving patient-handling techniques."
+    }
+  ],
+  "page_receipts": [
+    122
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 6995,
+  "next_offset": 10,
+  "response_sha256": "2754b8a5ff51669c758f9d52923fc2aabee41edb51c69d9c519b44f62f1b83a2",
+  "search_complete": false
+}

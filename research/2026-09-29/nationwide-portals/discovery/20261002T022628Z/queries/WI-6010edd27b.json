@@ -1,0 +1,133 @@
+{
+  "jurisdiction_code": "WI",
+  "query": "health insurance",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T02:27:06.594388+00:00",
+  "candidates": [
+    {
+      "id": "a7adda0cae89496ab3a6134a324ab7ee",
+      "title": "Health Insurance Coverage Variables - Tracts",
+      "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Health_Insurance_Boundaries/FeatureServer",
+      "publisher": "Wi_DNR_Data",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Layer referencing Esri's feature layer, Health Insurance Coverage Variables - Tracts from ACS 2015-2019, with its default extent centered on Wisconsin.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -93.04299999999529,
+                47.13799999999761
+              ],
+              [
+                -86.75799999999562,
+                47.13799999999761
+              ],
+              [
+                -86.75799999999562,
+                42.43199999999784
+              ],
+              [
+                -93.04299999999529,
+                42.43199999999784
+              ],
+              [
+                -93.04299999999529,
+                47.13799999999761
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Layer referencing Esri's feature layer, Health Insurance Coverage Variables - Tracts from ACS 2015-2019, with its default extent centered on Wisconsin</span><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div>This layer contains the most current release of data from the American Community Survey (ACS) about health insurance coverage by type and by age group. These are 5-year estimates shown by tract centroids.</span><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div><div>Please see <a href='https://www.arcgis.com/home/item.html?id=a1574f4bb84f4da78b60fa0c8616eaa1' target='_blank' rel='nofollow ugc noopener noreferrer'>https://www.arcgis.com/home/item.html?id=a1574f4bb84f4da78b60fa0c8616eaa1</a> for more information, terms of use, and to access the data by county and state.<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><br /></span></div>",
+        "licenseInfo": null,
+        "title": "Health Insurance Coverage Variables - Tracts",
+        "type": "Feature Service",
+        "orgId": "Ul9AyFFeFTjf08DW",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1637081556000,
+        "avgRating": 0,
+        "id": "a7adda0cae89496ab3a6134a324ab7ee",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Wi_DNR_Data",
+        "accessInformation": "U.S. Census Bureau's American Community Survey (ACS) 2015-2019 5-year estimates, Table(s) B27010 , Environmental Systems Research Institute (Esri)",
+        "largeThumbnail": null,
+        "lastViewed": 1774242000000,
+        "thumbnail": "thumbnail/thumbnail1637081024757.png",
+        "languages": [],
+        "created": 1636745973000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/ACS_Health_Insurance_Boundaries/FeatureServer",
+        "tags": [
+          "Climate",
+          "Health Insurance Coverage",
+          "Health Insurance"
+        ],
+        "numViews": 5666,
+        "numComments": 0,
+        "size": 112,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Wisconsin Department of Natural Resources",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all/items/a7adda0cae89496ab3a6134a324ab7ee"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://data-wi-dnr.opendata.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    199
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "ce0c70ff86c9c96322dd1028c3bad8679afbedf8179917131295f38873aaf48b",
+  "search_complete": true
+}

@@ -1,0 +1,602 @@
+{
+  "jurisdiction_code": "ME",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T14:29:03.025948+00:00",
+  "candidates": [
+    {
+      "id": "102d42001c5e4335a2dd67487f39ba6b",
+      "title": "Wildlife Management Areas",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDIFW_WildlifeManagementAreas/FeatureServer",
+      "publisher": "Jason.Czapiga@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Property boundaries of Maine Department of Inland Fisheries and Wildlife's Wildlife Management Areas derived from Maine Conserved Lands",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.07908566759195,
+                47.10366772980531
+              ],
+              [
+                -66.89984808878782,
+                47.10366772980531
+              ],
+              [
+                -66.89984808878782,
+                43.18304551922743
+              ],
+              [
+                -71.07908566759195,
+                43.18304551922743
+              ],
+              [
+                -71.07908566759195,
+                47.10366772980531
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Hosted Service"
+        ],
+        "description": "<div style='font-size:12pt;text-align:Left;'><p><a style='font-size:15px;' target='_blank' href='https://www.maine.gov/ifw/fish-wildlife/wildlife/lands/wildlife-management-areas/index.html' rel='nofollow ugc noopener noreferrer'>Wildlife Management Areas (WMAs)</a><br /></p><p>The mission and purpose of the State owned WMAs is to provide a statewide, ecologically based system of land holdings for the protection and enhancement of important wildlife habitats that also provide opportunities for all types of public recreation, where those forms of recreation do not unduly impact the wildlife resources.</p><p></p><p>Wildlife Management Areas are a subset of the Conserved Lands feature layer:</p><p>Conserved Lands contains conservation lands ownership boundaries at 1:24,000 scale for Maine land in federal, state, municipal and non-profit ownership with easements. State, county, town, and coast boundary data were obtained from MEGIS town boundary dataset METWP24. 1:24,000 US Geological Survey (USGS) digital line graph data was used for hydrography and transportation features. Where state, county, and town boundaries were coincident with property boundaries, the coincident features were taken from METWP24. Where hydrography, roads, railroads and power-lines were coincident with property boundaries, the coincident features were taken from 1:24,000 digital line graph data. The ownership lines do not represent legal boundaries nor are the ownership lines a survey. Conserved Lands is an inventory of approximate property boundaries.</p><p>Original Source Data: <a style='font-size:12pt;' target='_blank' href='https://maine.hub.arcgis.com/datasets/a6797f12a07b4229bc2501d3741c98d4' rel='nofollow ugc noopener noreferrer'>Maine Conserved Lands</a></p></div>",
+        "licenseInfo": "<p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif;font-size:16px;'>These data are provided by the Maine Department of Inland Fisheries and Wildlife solely for individual use or the use of a company for the purpose stated in your request for the data. These data may not be distributed or sold to other users without the written permission of the Commissioner of the Department of Inland Fisheries and Wildlife. Boundary lines should not be used for legal purposes.</span></p>",
+        "title": "Wildlife Management Areas",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1752861101000,
+        "avgRating": 0,
+        "id": "102d42001c5e4335a2dd67487f39ba6b",
+        "categories": [
+          "/Categories/Boundaries"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Jason.Czapiga@maine.gov_maine",
+        "accessInformation": "Maine Department of Inland Fisheries and Wildlife, Department of Agriculture, Conservation and Forestry",
+        "largeThumbnail": null,
+        "lastViewed": 1759939200000,
+        "thumbnail": "thumbnail/thumbnail.png",
+        "languages": [],
+        "created": 1708617954000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/MaineDIFW_WildlifeManagementAreas/FeatureServer",
+        "tags": [
+          "Maine",
+          "boundaries",
+          "Maine Department of Inland Fisheries and Wildlife",
+          "MDIFW",
+          "geolibrary",
+          "MaineIFW",
+          "Wildlife Management",
+          "WMA"
+        ],
+        "numViews": 179251,
+        "numComments": 0,
+        "size": 6070272,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "MaineDIFW_WildlifeManagementAreas",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/102d42001c5e4335a2dd67487f39ba6b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "cd972a435f8644eb94ad89e582f6a4f8",
+      "title": "Maine Boat Launches GeoLibrary",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/Maine_GeoLibrary_Structure/FeatureServer/1",
+      "publisher": "bob.bistrais@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Digital mapping of Maine boating facilities on both coastal and inland waters, and locations of state-managed and state-assisted boat launches in Maine.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.2925,
+                47.5212
+              ],
+              [
+                -66.6782,
+                47.5212
+              ],
+              [
+                -66.6782,
+                42.9285
+              ],
+              [
+                -71.2925,
+                42.9285
+              ],
+              [
+                -71.2925,
+                47.5212
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "BOATLNCH depicts state-managed and state-assisted boating facility locations throughout Maine at 1:24000 scale or better recorded by the Boating Facilities Division of the Bureau of Parks & Lands. Maine's Bureau of Parks and Lands, Maine's Department of Inland Fisheries & Wildlife and land owners provide access to lakes, ponds, rivers, and the coast at 456 locations. Sites may have gravel or hard-surfaced ramps and may include boarding floats, rest rooms and picnic tables. A few sites have canoe or carry-in access only. Some ramps on tidal waters may be useable only at high tides and are designated \"part-tide\" facilities. A brochure listing all the boat launches is available by calling (207) 287-4952 or you can view an online version at http://www.state.me.us/doc/parks/programs/boating/index.html .",
+        "licenseInfo": "Public use.  Users assume any risks associated with use of this data.",
+        "title": "Maine Boat Launches GeoLibrary",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1619627602000,
+        "avgRating": 0,
+        "id": "cd972a435f8644eb94ad89e582f6a4f8",
+        "categories": [
+          "/Categories/Structure"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "bob.bistrais@maine.gov_maine",
+        "accessInformation": "Maine Bureau of Parks and Lands, Maine's Department of Inland Fisheries & Wildlife",
+        "largeThumbnail": null,
+        "lastViewed": 1763132400000,
+        "thumbnail": "thumbnail/thumbnail1576092287580.png",
+        "languages": [],
+        "created": 1576092243000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/ArcGIS/rest/services/Maine_GeoLibrary_Structure/FeatureServer/1",
+        "tags": [
+          "boat launch",
+          "transportation",
+          "public access",
+          "inlandWaters",
+          "recreation",
+          "emergency preparedness",
+          "infrastructure",
+          "society",
+          "structure",
+          "oceans",
+          "maine",
+          "geolibrary"
+        ],
+        "numViews": 240673,
+        "numComments": 0,
+        "size": 91,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine GeoLibrary",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/cd972a435f8644eb94ad89e582f6a4f8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a854af5e8e694f90acb4a3bcece6dee8",
+      "title": "Maine Conserved Lands WebApp",
+      "url": "https://maine.maps.arcgis.com/apps/webappviewer/index.html?id=a854af5e8e694f90acb4a3bcece6dee8",
+      "publisher": "Tracy.Scopel@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Conserved Lands was created to provide GIS coverage for the conservation lands database. The ownership lines do not represent legal boundaries nor are the ownership lines a survey. The data contained in Conserved Lands is an inventory only.",
+        "extent": null,
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Other",
+          "Ready To Use",
+          "Web AppBuilder",
+          "Web Map"
+        ],
+        "description": "<p style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; margin-bottom:1.5rem; margin-top:0px;'>The conserved lands layer is an inventory of Maine’s terrestrial protected areas that are dedicated to the preservation of biological diversity and to other natural, recreation and cultural uses, and which are managed for these purposes through legal or other effective means.&nbsp; Conserved Lands contains conservation lands ownership boundaries at 1:24,000 scale for Maine land in federal, state, municipal and non-profit ownership with easements. State, county, town, and coast boundary data were obtained from MEGIS town boundary dataset METWP24. 1:24,000 US Geological Survey (USGS) digital line graph data was used for hydrography and transportation features. Where state, county, and town boundaries were coincident with property boundaries, the coincident features were taken from METWP24. Where hydrography, roads, railroads and power-lines were coincident with property boundaries, the coincident features were taken from 1:24,000 digital line graph data. The ownership lines do not represent legal boundaries nor are the ownership lines a survey. Conserved Lands is an inventory of approximate property boundaries.</p><p style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; margin-bottom:1.5rem; margin-top:0px;'>Conserved Lands was created to provide GIS coverage for the conservation lands database. The ownership lines do not represent legal boundaries nor are the ownership lines a survey. The data contained in Conserved Lands is an inventory only. Users must assume responsibility in determining the usability of this data for their purposes. Data at this scale is suitable for local and regional planning. Original mapping was produced in 1989, updated in 1993 by R.D. Kelly Jr. of the State Planning Office.&nbsp;</p><p style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; margin-bottom:1.5rem; margin-top:0px;'>Data is continually updated.</p><p style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px; margin-bottom:1.5rem; margin-top:0px;'>Conservation organizations, land trusts, and municipalities can submit new or updated fee ownership or easement parcels to the statewide Conserved Lands layer by emailing a shapefile to Amy Dowley, <a href='mailto:Amy.Dowley@maine.gov' rel='nofollow ugc'>Amy.Dowley@maine.gov</a>. &nbsp;Please use the same attribute fields in the shapefile and follow the guidance for populating the data in the&nbsp;<a style='color:rgb(0, 97, 155); font-family:inherit; text-decoration-line:none;' target='_blank' href='https://maine.maps.arcgis.com/sharing/rest/content/items/1be2addd649b46529d23acb45558ee74/data' rel='nofollow ugc noopener noreferrer'>Conserved Lands Layer Attributes Handout</a>.&nbsp; Please indicate for each parcel polygon whether it is a new addition or an edit of an existing feature. If editing a feature please make sure the CL_UNIQUEID value from the existing feature in Conserved Lands is included.</p>",
+        "licenseInfo": "Public use. User assumes risk.<div><br /></div><div><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The ownership lines do not represent legal boundaries nor are the ownership lines a survey. Conserved Lands is an inventory of approximate property boundaries. Access to these lands is not implied. Permissions should always be granted by the landowner.</span><br /></div>",
+        "title": "Maine Conserved Lands WebApp",
+        "type": "Web Mapping Application",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1771006735000,
+        "avgRating": 0,
+        "id": "a854af5e8e694f90acb4a3bcece6dee8",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Tracy.Scopel@maine.gov_maine",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1771005600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1429298828000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maine.maps.arcgis.com/apps/webappviewer/index.html?id=a854af5e8e694f90acb4a3bcece6dee8",
+        "tags": [
+          "Maine",
+          "Conserved Lands",
+          "Easement",
+          "Conservation",
+          "Ownership",
+          "Public Access",
+          "State"
+        ],
+        "numViews": 22951,
+        "numComments": 0,
+        "size": 74631,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "lastUpdatedThumbnailUrlByWab": "https://maine.maps.arcgis.com/sharing/rest/content/items/50d92c11db594bb095363478b4f05ca9/info/thumbnail/ago_downloaded.png"
+        },
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/a854af5e8e694f90acb4a3bcece6dee8"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ad59f27a21f24f19bb005868a04b65a3",
+      "title": "Maine Conserved Lands",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_All/FeatureServer",
+      "publisher": "Tracy.Scopel@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Conserved Lands was created to provide GIS coverage for the conservation lands database. The ownership lines do not represent legal boundaries nor are the ownership lines a survey. The data contained in Conserved Lands is an inventory only. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.14444412248625,
+                47.45583459277801
+              ],
+              [
+                -66.8454336005277,
+                47.45583459277801
+              ],
+              [
+                -66.8454336005277,
+                42.97485559886929
+              ],
+              [
+                -71.14444412248625,
+                42.97485559886929
+              ],
+              [
+                -71.14444412248625,
+                47.45583459277801
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p>The conserved lands layer is an inventory of Maine’s terrestrial protected areas that are dedicated to the preservation of biological diversity and to other natural, recreation and cultural uses, and which are managed for these purposes through legal or other effective means. Conserved Lands contains conservation lands ownership boundaries at 1:24,000 scale for Maine land in federal, state, municipal and non-profit ownership with easements. State, county, town, and coast boundary data were obtained from MEGIS town boundary dataset METWP24. 1:24,000 US Geological Survey (USGS) digital line graph data was used for hydrography and transportation features. Where state, county, and town boundaries were coincident with property boundaries, the coincident features were taken from METWP24. Where hydrography, roads, railroads and power-lines were coincident with property boundaries, the coincident features were taken from 1:24,000 digital line graph data. The ownership lines do not represent legal boundaries nor are the ownership lines a survey. Conserved Lands is an inventory of approximate property boundaries.</p><p>Users must assume responsibility in determining the usability of this data for their purposes. Data at this scale is suitable for local and regional planning. Original mapping was produced in 1989, updated in 1993 by R.D. Kelly Jr. of the State Planning Office.&nbsp;</p><p><strong><u>Conserved Lands data submittal</u></strong></p><p>Conservation organizations, land trusts, and municipalities can submit new or updated fee ownership or easement parcels to the statewide Conserved Lands layer <a href='mailto:using' rel='nofollow ugc'>using</a> one of two online interfaces developed by Maine Coast Heritage Trust and the Beginning with Habitat program (Department of Inland Fisheries and Wildlife):</p><ul><li><a target='_blank' href='https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.mcht.org%2Fr%2FasZv%2F%3F__vbtrk%3DMjg5OTEwOjY5MDI5Nzc5Om5ld3NsZXR0ZXI%26_uax%3DMjg5OTEwOjY5MDI5Nzc5%26ct&amp;data=05%7C02%7CTracy.Scopel%40maine.gov%7Cacc734b2715241eddc8e08ddc39fb9f7%7C413fa8ab207d4b629bcdea1a8f2f864e%7C0%7C0%7C638881812967524471%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=mqsLWRVkXgUuJcd9dnk%2F3JEsI2iP8N8AJjB3289b7ec%3D&amp;reserved=0' rel='nofollow ugc noopener noreferrer'>Individual parcel tool</a>&nbsp;- a simplified process designed for easy&nbsp;submission, without the need for GIS</li><li><a target='_blank' href='https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.mcht.org%2Fr%2FasZw%2F%3F__vbtrk%3DMjg5OTEwOjY5MDI5Nzc5Om5ld3NsZXR0ZXI%26_uax%3DMjg5OTEwOjY5MDI5Nzc5%26ct&amp;data=05%7C02%7CTracy.Scopel%40maine.gov%7Cacc734b2715241eddc8e08ddc39fb9f7%7C413fa8ab207d4b629bcdea1a8f2f864e%7C0%7C0%7C638881812967538431%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=CnUTPsOzRavNgx3JHadYllCZ4CeHpPXUpvG7Rvy6Iyk%3D&amp;reserved=0' rel='nofollow ugc noopener noreferrer'>Shapefile upload</a>&nbsp;- a web form ideal for uploading multiple features at a time (add your data as a zip file)<ul><li><i>For batch&nbsp;submissions, please ensure that the shapefiles adhere to the&nbsp;conserved&nbsp;lands </i><a target='_blank' href='https://gcc02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmaine.maps.arcgis.com%2Fhome%2Fitem.html%3Fid%3D7bd26b8974eb470092460c14d7ed0341&amp;data=05%7C02%7CTracy.Scopel%40maine.gov%7Cacc734b2715241eddc8e08ddc39fb9f7%7C413fa8ab207d4b629bcdea1a8f2f864e%7C0%7C0%7C638881812967551850%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=sxHR01N%2B2%2BTAikQk1wo8rMJ0dUtPKawyr0RAhXejAgM%3D&amp;reserved=0' rel='nofollow ugc noopener noreferrer'><i>template &nbsp;</i></a><i>schema. If you have questions about using the template or the submittal process, contact </i><a href='mailto:Amy.Dowley@maine.gov' rel='nofollow ugc'><i>Amy.Dowley@maine.gov</i></a><i>.</i></li></ul></li></ul><p>Information about the fields in the Conserved Lands dataset is <a target='_blank' href='https://maine.maps.arcgis.com/home/item.html?id=1be2addd649b46529d23acb45558ee74' rel='nofollow ugc noopener noreferrer'>here</a>.&nbsp;</p><p>Updates are processed annually.</p>",
+        "licenseInfo": "<span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>The ownership lines do not represent legal boundaries nor are the ownership lines a survey. Conserved Lands is an inventory of approximate property boundaries. Access to these lands is not implied. Permissions should always be granted by the landowner.</span>",
+        "ownerId": "098f6e7123704615b0020c7b0c159ef8",
+        "title": "Maine Conserved Lands",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782915832000,
+        "avgRating": 0,
+        "id": "ad59f27a21f24f19bb005868a04b65a3",
+        "categories": [
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Tracy.Scopel@maine.gov_maine",
+        "accessInformation": "Department of Agriculture, Conservation and Forestry, Bureau of Parks and Lands, Land Use Planning Commission, Department of Inland Fisheries and Wildlife, State Planning Office, The Nature Conservancy, New England Forestry Foundation, Maine private land trusts, US Park Service, US Fish and Wildlife, Maine municipal towns, Appalachian Mountain Club",
+        "largeThumbnail": null,
+        "lastViewed": 1782914400000,
+        "thumbnail": "thumbnail/thumbnail1699381780056.png",
+        "languages": [],
+        "created": 1699381022000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/Maine_Conserved_Lands_All/FeatureServer",
+        "tags": [
+          "Maine",
+          "Conserved Lands",
+          "Easement",
+          "Conservation",
+          "Ownership",
+          "Public Access",
+          "MaineDACF",
+          "MaineIFW",
+          "planningCadastre"
+        ],
+        "numViews": 145300,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Maine_Conserved_Lands_All",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Maine",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/ad59f27a21f24f19bb005868a04b65a3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4885d9da3289434bb8d3244448be22c4",
+      "title": "Wildlife Management Area Access Points",
+      "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/WMA_AccessPoints/FeatureServer",
+      "publisher": "Dacey.Mercer@maine.gov_maine",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Wildlife Management Area access points are intersections between roads, or entrances, and Wildlife Management Area boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.00063081873475,
+                89.43870364460355
+              ],
+              [
+                -33.99996957910606,
+                89.43870364460355
+              ],
+              [
+                -33.99996957910606,
+                42.54308659878056
+              ],
+              [
+                -99.00063081873475,
+                42.54308659878056
+              ],
+              [
+                -99.00063081873475,
+                89.43870364460355
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "Wildlife Management Area access points are where roads or entrances meet WMA boundaries. In some instances these are parking areas, in other cases a merely a point along the access road.  These are the locations determined as the best access to the properties, in most instances due to improved roads, parking areas, etc. These data were developed based on staff knowledge of the Wildlife Management Areas and generated using aerial imagery.",
+        "licenseInfo": "These data are provided by the Maine Department of Inland Fisheries and Wildlife solely for individual use or the use of a company. These data may not be distributed or sold to other users without the written permission of the Commissioner of the Department of Inland Fisheries and Wildlife.",
+        "title": "Wildlife Management Area Access Points",
+        "type": "Feature Service",
+        "orgId": "RbMX0mRVOFNTdLzd",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1753386630000,
+        "avgRating": 0,
+        "id": "4885d9da3289434bb8d3244448be22c4",
+        "categories": [],
+        "spatialReference": "26919",
+        "numRatings": 0,
+        "owner": "Dacey.Mercer@maine.gov_maine",
+        "accessInformation": "Maine Department of Inland Fisheries and Wildlife",
+        "largeThumbnail": null,
+        "lastViewed": 1777392000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1547756711000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/RbMX0mRVOFNTdLzd/arcgis/rest/services/WMA_AccessPoints/FeatureServer",
+        "tags": [
+          "Maine",
+          "MaineIFW",
+          "MDIFW",
+          "Maine Department of Inland Fisheries and Wildlife",
+          "Wildlife Management Areas",
+          "geolibrary",
+          "WMA",
+          "access points",
+          "geolibrary"
+        ],
+        "numViews": 1249102,
+        "numComments": 0,
+        "size": 3391488,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "WMA_AccessPoints",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Maine Department of Inland Fisheries and Wildlife",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all/items/4885d9da3289434bb8d3244448be22c4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://mainegeolibrary-maine.hub.arcgis.com/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    175
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "676643e73c4e8aa9f141c59f08a9f7ac8669f471f000a31b1cae12767daf058f",
+  "search_complete": true
+}

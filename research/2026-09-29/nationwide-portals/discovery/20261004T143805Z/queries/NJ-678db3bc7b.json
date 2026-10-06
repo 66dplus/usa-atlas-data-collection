@@ -1,0 +1,46 @@
+{
+  "jurisdiction_code": "NJ",
+  "query": "wages",
+  "adapter": "socrata",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-04T14:38:34.385093+00:00",
+  "candidates": [
+    {
+      "id": "iqwc-r2w7",
+      "title": "YourMoney Agency Payroll",
+      "url": "https://data.nj.gov/Government-Finance/YourMoney-Agency-Payroll/iqwc-r2w7",
+      "publisher": "OIT-DATANJAdmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.nj.gov/resource/iqwc-r2w7.json",
+      "description": "This dataset contains data for State employees paid through the Centralized Payroll System. The data reflects payroll payments made to the employee for the calendar year through the date indicated. There are two types of records: MASTER and DETAIL. There is at least one MASTER and one DETAIL record per employee. Multiple DETAIL records for an employee will appear in the file for a specific year if the employee is paid by more than one department/agency or by more than one section during that calendar year. The sums for all of the departments/agencies appear in the columns with prefix “MASTER”. Additional information is in the attached dataset summary PDF (available on the [About] tab under \"Attachments\")."
+    },
+    {
+      "id": "kiki-imre",
+      "title": "YourMoney Authority Payroll",
+      "url": "https://data.nj.gov/Government-Finance/YourMoney-Authority-Payroll/kiki-imre",
+      "publisher": "OIT-DATANJAdmin",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "data_url": "https://data.nj.gov/resource/kiki-imre.json",
+      "description": "This file contains data for employees of independent authorities (NOT paid through the Centralized Payroll System). The data reflects payroll payments made to the employee for the calendar year through the date indicated. Multiple records for an employee will appear in the file for a specific year if the employee is paid by more than one authority during that calendar year. Please scroll down and click on attachment for full file description. Additional information is in the attached dataset summary PDF (available on the [About] tab under \"Attachments\".)."
+    }
+  ],
+  "page_receipts": [
+    109
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 2,
+  "next_offset": 2,
+  "response_sha256": "6e883beec354c2655e0db62a411eb52567f8539e8bdef747fb64c57e7ec975cb",
+  "search_complete": true
+}

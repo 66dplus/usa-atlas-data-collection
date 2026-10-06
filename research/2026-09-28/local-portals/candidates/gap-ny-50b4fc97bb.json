@@ -10,13 +10,13 @@
     "source": "live-coverage gap intake",
     "food_excluded": true
   },
-  "checked_at": "2026-09-30T16:48:54.275430+00:00",
+  "checked_at": "2026-10-05T10:56:24.513038+00:00",
   "status": "needs_review",
   "total_catalog_matches": 29,
-  "page_offset": 20,
-  "next_cursor": 0,
+  "page_offset": 0,
+  "next_cursor": 20,
   "max_search_results_per_cycle": 100,
-  "search_complete": true,
+  "search_complete": false,
   "candidates": [
     {
       "id": "n9v6-gdp6",
@@ -43,14 +43,6 @@
       "status": "needs_review"
     },
     {
-      "id": "7sw8-sdsd",
-      "title": "Office for the Aging Service Expenditures: Beginning Fiscal Year 2009",
-      "url": "https://data.ny.gov/Human-Services/Office-for-the-Aging-Service-Expenditures-Beginnin/7sw8-sdsd",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/7sw8-sdsd.json",
-      "status": "needs_review"
-    },
-    {
       "id": "nsde-gcv2",
       "title": "Active Real Estate Offices",
       "url": "https://data.ny.gov/Economic-Development/Active-Real-Estate-Offices/nsde-gcv2",
@@ -59,11 +51,19 @@
       "status": "needs_review"
     },
     {
-      "id": "i8hd-gucs",
-      "title": "Active Real Estate Salespersons",
-      "url": "https://data.ny.gov/Economic-Development/Active-Real-Estate-Salespersons/i8hd-gucs",
+      "id": "7sw8-sdsd",
+      "title": "Office for the Aging Service Expenditures: Beginning Fiscal Year 2009",
+      "url": "https://data.ny.gov/Human-Services/Office-for-the-Aging-Service-Expenditures-Beginnin/7sw8-sdsd",
       "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/i8hd-gucs.json",
+      "data_url": "https://data.ny.gov/resource/7sw8-sdsd.json",
+      "status": "needs_review"
+    },
+    {
+      "id": "9twf-9yig",
+      "title": "Active Real Estate Brokers",
+      "url": "https://data.ny.gov/Economic-Development/Active-Real-Estate-Brokers/9twf-9yig",
+      "publisher": "NY Open Data",
+      "data_url": "https://data.ny.gov/resource/9twf-9yig.json",
       "status": "needs_review"
     },
     {
@@ -75,11 +75,11 @@
       "status": "needs_review"
     },
     {
-      "id": "9twf-9yig",
-      "title": "Active Real Estate Brokers",
-      "url": "https://data.ny.gov/Economic-Development/Active-Real-Estate-Brokers/9twf-9yig",
+      "id": "i8hd-gucs",
+      "title": "Active Real Estate Salespersons",
+      "url": "https://data.ny.gov/Economic-Development/Active-Real-Estate-Salespersons/i8hd-gucs",
       "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/9twf-9yig.json",
+      "data_url": "https://data.ny.gov/resource/i8hd-gucs.json",
       "status": "needs_review"
     },
     {
@@ -131,11 +131,11 @@
       "status": "needs_review"
     },
     {
-      "id": "9hk7-xgkb",
-      "title": "Draft State Facility Permits",
-      "url": "https://data.ny.gov/Energy-Environment/Draft-State-Facility-Permits/9hk7-xgkb",
+      "id": "6xda-q7ev",
+      "title": "Hate Crimes by County and Bias Type: Beginning 2010",
+      "url": "https://data.ny.gov/Public-Safety/Hate-Crimes-by-County-and-Bias-Type-Beginning-2010/6xda-q7ev",
       "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/9hk7-xgkb.json",
+      "data_url": "https://data.ny.gov/resource/6xda-q7ev.json",
       "status": "needs_review"
     },
     {
@@ -147,19 +147,19 @@
       "status": "needs_review"
     },
     {
+      "id": "9hk7-xgkb",
+      "title": "Draft State Facility Permits",
+      "url": "https://data.ny.gov/Energy-Environment/Draft-State-Facility-Permits/9hk7-xgkb",
+      "publisher": "NY Open Data",
+      "data_url": "https://data.ny.gov/resource/9hk7-xgkb.json",
+      "status": "needs_review"
+    },
+    {
       "id": "p3p6-xqr5",
       "title": "Procurement Report for Industrial Development Agencies",
       "url": "https://data.ny.gov/Transparency/Procurement-Report-for-Industrial-Development-Agen/p3p6-xqr5",
       "publisher": "NY Open Data",
       "data_url": "https://data.ny.gov/resource/p3p6-xqr5.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "6xda-q7ev",
-      "title": "Hate Crimes by County and Bias Type: Beginning 2010",
-      "url": "https://data.ny.gov/Public-Safety/Hate-Crimes-by-County-and-Bias-Type-Beginning-2010/6xda-q7ev",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/6xda-q7ev.json",
       "status": "needs_review"
     },
     {
@@ -177,80 +177,8 @@
       "publisher": "NY Open Data",
       "data_url": "https://data.ny.gov/resource/ehig-g5x3.json",
       "status": "needs_review"
-    },
-    {
-      "id": "u44d-k5fk",
-      "title": "Spill Incidents",
-      "url": "https://data.ny.gov/Energy-Environment/Spill-Incidents/u44d-k5fk",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/u44d-k5fk.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "utqh-cw9c",
-      "title": "Learning and Enrichment After-School Program Supports (LEAPS) Data: 2025-2026       ",
-      "url": "https://data.ny.gov/Human-Services/Learning-and-Enrichment-After-School-Program-Suppo/utqh-cw9c",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/utqh-cw9c.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "mbk7-f2r2",
-      "title": "DART (Department Application Review and Tracking) on the Web: Beginning 1988",
-      "url": "https://data.ny.gov/Energy-Environment/DART-Department-Application-Review-and-Tracking-on/mbk7-f2r2",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/mbk7-f2r2.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "pteg-c78n",
-      "title": "Bulk Storage Facilities in New York State",
-      "url": "https://data.ny.gov/Energy-Environment/Bulk-Storage-Facilities-in-New-York-State/pteg-c78n",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/pteg-c78n.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "94fv-bak7",
-      "title": "MTA Subway Elevator and Escalator Asset Inventory",
-      "url": "https://data.ny.gov/Transportation/MTA-Subway-Elevator-and-Escalator-Asset-Inventory/94fv-bak7",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/94fv-bak7.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "c6ci-rzpg",
-      "title": "Environmental Remediation Sites",
-      "url": "https://data.ny.gov/Energy-Environment/Environmental-Remediation-Sites/c6ci-rzpg",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/c6ci-rzpg.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "3pjx-bgty",
-      "title": "US SBA COVID-19 Relief to NYS Business – Restaurant Revitalization Fund",
-      "url": "https://data.ny.gov/Economic-Development/US-SBA-COVID-19-Relief-to-NYS-Business-Restaurant-/3pjx-bgty",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/3pjx-bgty.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "gfhm-wz4s",
-      "title": "Statewide Multifamily Building Study (SMBS): 2022 General Survey",
-      "url": "https://data.ny.gov/Energy-Environment/Statewide-Multifamily-Building-Study-SMBS-2022-Gen/gfhm-wz4s",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/gfhm-wz4s.json",
-      "status": "needs_review"
-    },
-    {
-      "id": "jshw-gkgu",
-      "title": "Assembled Workers' Compensation Claims:  Beginning 2000",
-      "url": "https://data.ny.gov/Government-Finance/Assembled-Workers-Compensation-Claims-Beginning-20/jshw-gkgu",
-      "publisher": "NY Open Data",
-      "data_url": "https://data.ny.gov/resource/jshw-gkgu.json",
-      "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "4985237182d194088fc4afc7fcab8f34cc48ab64bf43ff19d48468b0eac5df10"
+  "response_sha256": "a02ea17192ce7b8444cda9a781d2e0c52efb856a664f9481d073073515b4f5d1"
 }

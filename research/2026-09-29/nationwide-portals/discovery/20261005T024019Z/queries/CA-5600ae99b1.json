@@ -1,0 +1,360 @@
+{
+  "jurisdiction_code": "CA",
+  "query": "cancer",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-05T02:40:36.087286+00:00",
+  "candidates": [
+    {
+      "id": "b96016bc-debd-45a6-8d8f-59ed48ae7c47",
+      "title": "Number of Cancer Surgeries (Volume) Performed in California Hospitals",
+      "url": "https://data.ca.gov/dataset/number-of-cancer-surgeries-volume-performed-in-california-hospitals",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/f3d8578f-a9bf-4f6a-a224-7e5b522cbd76/download/ca-oshpd-cancer-surgeries-gachospitals-1325_odp.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/0165b232-a59c-4a3e-a384-2f525a773860/download/california-hospital-cancer-surgery-volume-data-dictionary_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/f6f8555d-7ffc-4cb5-8043-50c0c5efb4ff/download/technicalnotes_cancersurgeries.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/a7db071d-c957-4e49-ba4e-9f5d400c9257/download/cancersurgeryvolume-methodologyicd10-codesjune2018final.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/79b62919-fa85-495d-9d26-3279ac0e9104/download/california-cancer-procedure-hospital-volume-2023b.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/5f50cd09-28c8-49d3-9eec-329cecb1ed4b/download/california-cancer-procedure-hospital-volume-2022.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/08164855-3f35-4089-8dce-c32132303e63/download/california-cancer-procedure-hospital-volume-2021_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/1ca5e0c8-fbf3-4ccb-aefa-bdfa3f063019/download/california-cancer-procedure-hospital-volume-2020_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/23109789-8e9a-4df5-abf0-337c3aa37f65/download/california-cancer-procedure-hospital-volume-2019_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/170ad7a7-1b9d-471a-a4a7-f608570f687e/download/california-cancer-procedure-hospital-volume-2018_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/fc11f8b1-1026-4230-8613-9141e27031f3/download/california-cancer-procedure-hospital-volume-2017_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/c427327e-dbe8-4dd0-9c22-8e1da338e342/download/california-cancer-procedure-hospital-volume-2016_ada.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/b742d6f6-6e24-4357-aa01-36d419390a11/download/california-cancer-procedure-hospital-volume-2015.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/eb089cf1-defb-42df-8f84-58169d68f31a/download/california-cancer-procedure-hospital-volume-2014.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/8ffc0d01-4778-4bd7-9136-4a0dabab6f96/download/california-cancer-procedure-hospital-volume-2013.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/dace89fc-69ec-4fe8-a8f4-ddfbdb053020/resource/a7bb99d3-4222-45b6-ba0a-e42afffd2aed/download/number-of-cancer-surgeries-volume-performed-in-california-hospitals-_vf6ki5i.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "The dataset contains the number (volume) for 11 types of cancer (bladder, breast, brain, colon, esophagus, liver, lung, pancreas, prostate, rectum, and stomach) surgeries performed in California hospitals.  Data are reported for January – September 2015 due to coding changes from ICD-9-CM to ICD-10-CM/PCS for procedures, which began 10/1/2015. Comparisons across years should be made with caution since previous years’ results are based on 12 months of data, while this analysis is based on 9 months of data. The 2015 data may differ from previous years due to the coding change.  For all types of cancer surgeries, except breast cancer, the dataset contains surgeries performed in the inpatient hospital setting.  For breast cancer surgeries, this dataset includes procedures performed in inpatient and outpatient settings."
+    },
+    {
+      "id": "7b2b5d26-9407-4368-8744-d5b659024dd7",
+      "title": "Toxicity Criteria Database",
+      "url": "https://data.ca.gov/dataset/toxicity-criteria-database",
+      "publisher": "California Office of Environmental Health Hazard Assessment",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/7b2b5d26-9407-4368-8744-d5b659024dd7/resource/0d417a2b-6559-4725-820f-add7c57a8bc9/download/oehha-toxicity-criteria-database-20260818.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/7b2b5d26-9407-4368-8744-d5b659024dd7/resource/1d05aa04-f2e5-4a60-bc69-20940a677a56/download/toxicity-criteria-database-data-dictionary.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "<p>Toxicity data for Air (Acute and Chronic Reference Exposure Levels (RELs)), Water (Public Health Goals (PHGs)), Soils (California Human Health Screening Levels (CHHSLs)) and Proposition 65 No Significant Risk Levels (NSRLs) and Maximum Allowable Daily Levels (MADLs).</p>\r\n"
+    },
+    {
+      "id": "8d48f2d1-bbf0-4845-b17c-644908e13c17",
+      "title": "Chemicals in Cosmetics",
+      "url": "https://data.ca.gov/dataset/chemicals-in-cosmetics",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/596b5eed-31de-4fd8-a645-249f3f9b19c4/resource/57da6c9a-41a7-44b0-ab8d-815ff2cd5913/download/cscpopendata.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/596b5eed-31de-4fd8-a645-249f3f9b19c4/resource/8587c728-9b5e-4e69-81d6-393260a84ee9/download/chemicalsincosmetics-dd-subcategories.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/596b5eed-31de-4fd8-a645-249f3f9b19c4/resource/3fdc8616-b31e-4a0a-bf04-43ccde2cab9f/download/chemicalsincosmetics-description.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/596b5eed-31de-4fd8-a645-249f3f9b19c4/resource/28c5c460-8cf5-4f26-8c73-0372dfa6d532/download/chemicalsincosmetics-data-collection-tool.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/596b5eed-31de-4fd8-a645-249f3f9b19c4/resource/1e38ed6a-e46d-44a3-844b-f130efdacff1/download/chemicals-in-cosmetics-ysn2e8uz.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "These data reflect information that has been reported to the California Safe Cosmetics Program (CSCP) in the California Department of Public Health (CDPH). The primary purpose of the CSCP is to collect information on hazardous and potentially hazardous ingredients in cosmetic products sold in California and to make this information available to the public.   \r\n\r\nFor all cosmetic products sold in California, the California Safe Cosmetics Act (“the Act”) requires the manufacturer, packer, and/or distributor named on the product label to provide to the CSCP a list of all cosmetic products that contain any ingredients known or suspected to cause cancer, birth defects, or other developmental or reproductive harm.     \r\n\r\nTo assist companies with reporting, CDPH has compiled a list of reportable ingredients based on lists and reports available from the authoritative scientific bodies cited in the Act to cause cancer or reproductive harm; it is meant to serve as guidance and is not all-inclusive. Companies with reportable ingredients in their products must submit information to the California Safe Cosmetics Program if the company:   \r\n\r\n*\tHas annual aggregate sales of cosmetic products of one million dollars or more, and \r\n*\tHas sold cosmetic products in California on or after January 1, 2007.   \r\n\r\nThe data table consists of: label names of cosmetic/personal care products, company/manufacturer names, product brand names, product categories, Chemical Abstracts Service registry numbe"
+    },
+    {
+      "id": "29fd0845-3dfe-4bd5-b534-2665e52f17a3",
+      "title": "Time Walk Bike to Work",
+      "url": "https://data.ca.gov/dataset/time-walk-bike-to-work",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/f20b8ec7-fdfc-45c2-8e16-8a83e441f0c7/download/hciwalkbicycle778narrativeandexamples3-26-14.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/e152f540-9d63-4619-84e1-735c0ebb558f/download/hci_walk_bicycle_778_ct_pl_co_re_st_10-23-13-ada.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/fdcdf77d-52bb-4518-a8f8-be47c8f12d23/download/time-walk-bike-to-work-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/775b88dc-4d37-42f9-9873-be0eb9b55dd4/resource/2c3be3bf-5555-410c-bbff-03bd8c701896/download/time-walk-bike-to-work-2001-2011-gzvrzls_.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the percent of population aged 16 years or older whose commute to work is 10 or more minutes/day by walking or biking for California, its regions, counties, and cities/towns.  Data is from the U.S. Census Bureau, American Community Survey, and from the U.S. Department of Transportation, Federal Highway Administration, and National Household Travel Survey. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity.  Active modes of transport, bicycling and walking alone and in combination with public transit, offer opportunities to incorporate physical activity into the daily routine.  Physical activity is associated with lowering rates of heart disease and stroke, diabetes, colon and breast cancer, dementia and depression.  Automobile commuting is associated with health hazards, such as air pollution, motor vehicle crashes, pedestrian injuries and fatalities, and sedentary lifestyles. Consequently the transition from automobile-focused transport to public and active transport offers environmental health benefits, including reductions in air pollution, greenhouse gases and noise pollution, and may lead to greater overall safety in transportation.  More information about the data table and a data dictionary can be found in the About/Attachments section."
+    },
+    {
+      "id": "04a2db3c-68e4-4ad7-b22c-40a6d9677065",
+      "title": "Food Affordability",
+      "url": "https://data.ca.gov/dataset/food-affordability",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/3ccd7a4b-890c-4db6-9811-8472dda2af4b/download/foodaffordabilitynarrativeexamples4-14-13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/916e2a2e-383b-4af5-9f5b-310500961cb5/download/food_afford_cdp_co_region_ca4-14-13-ada.xls",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/da6d5b83-bbde-4192-92cb-e575fc6417ca/download/foodaffordabilitydd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/0114f5bb-4975-419d-95d9-5f0179a8de06/resource/bdafb620-7bf9-478c-9ec6-47c4b0f13736/download/food-affordability-2006-2010-qutxlugv.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the average cost of a market basket of nutritious food items relative to income for female-headed households with children, for California, its regions, counties, and cities/towns.  The ratio uses data from the U.S. Department of Agriculture and the U.S. Census Bureau. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity. \r\nAn adequate, nutritious diet is a necessity at all stages of life. Inadequate diets can impair intellectual performance and have been linked to more frequent school absence and poorer educational achievement in children. Nutrition also plays a significant role in causing or preventing a number of illnesses, such as cardiovascular disease, some cancers, obesity, type 2 diabetes, and anemia.\r\nAt least two factors influence the affordability of food and the dietary choices of families – the cost of food and family income. The inability to afford food is a major factor in food insecurity, which has a spectrum of effects including anxiety over food sufficiency or food shortages; reduced quality or desirability of diet; and disrupted eating patterns and reduced food intake.  More information about the data table and a data dictionary can be found in the Attachments."
+    },
+    {
+      "id": "cf692321-adbb-4938-9f66-9d594b2d3453",
+      "title": "Transportation to Work",
+      "url": "https://data.ca.gov/dataset/transportation-to-work",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/27c488a0-d618-407a-b77f-2e10c6f31881/download/hcitransportationtowork42narrativeandexamples3-20-15.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/fc5eafc8-0648-4a30-9bf5-e06f09e8320d/download/hci_transportation2work_42_ct_pl_co_re_st_12-12-13-revised-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/87fa0619-708a-4d92-ba5d-879df338b46e/download/transportation-to-work-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/b1008bb6-2f54-4b49-a0e0-c4d1bc9440ff/resource/68aef3ac-debf-4fba-999c-42b88fefa759/download/transportation-to-work-2000-2006-2010-fkozme0_.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the percent of residents aged 16 years and older mode of transportation to work for California, its regions, counties, cities/towns, and census tracts. Data is from the U.S. Census Bureau, Decennial Census and American Community Survey. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity.  Commute trips to work represent 19% of travel miles in the United States. The predominant mode – the automobile - offers extraordinary personal mobility and independence, but it is also associated with health hazards, such as air pollution, motor vehicle crashes, pedestrian injuries and fatalities, and sedentary lifestyles. Automobile commuting has been linked to stress-related health problems. Active modes of transport – bicycling and walking alone and in combination with public transit – offer opportunities for physical activity, which is associated with lowering rates of heart disease and stroke, diabetes, colon and breast cancer, dementia and depression. Risk of injury and death in collisions are higher in urban areas with more concentrated vehicle and pedestrian activity.  Bus and rail passengers have a lower risk of injury in collisions than motorcyclists, pedestrians, and bicyclists. Minority communities bear a disproportionate share of pedestrian-car fatalities; Native American male pedestrians experience four times the death rate Whites or Asian pedestrians, and African-America"
+    },
+    {
+      "id": "2685009f-267e-4abb-a5c6-466ff5b49bab",
+      "title": "Hospital Utilization Trends",
+      "url": "https://data.ca.gov/dataset/hospital-utilization-trends",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/abfdba95-b1ba-4e39-a417-d006e2667a2c/resource/b63a72c4-f501-494a-9956-fa4ef4453389/download/hospital-utilization-trends_2020-2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/abfdba95-b1ba-4e39-a417-d006e2667a2c/resource/7996d860-0564-427a-b9c3-0914ed1b03bb/download/hospital-utilization-trends-by-demographic_2020-2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/abfdba95-b1ba-4e39-a417-d006e2667a2c/resource/1594dfbe-5cee-4174-9cb1-19e587655c8e/download/hospital-utilization-trends-by-health-category_2020-2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/abfdba95-b1ba-4e39-a417-d006e2667a2c/resource/1b69fc01-d883-42ce-b33b-2e3ff7b75425/download/hospital-utilization-trends-data-dictionary.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/abfdba95-b1ba-4e39-a417-d006e2667a2c/resource/f945e0cc-b844-476a-bbd1-129f9338fd05/download/utilization-trends-by-demographic-data-dictionary.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/abfdba95-b1ba-4e39-a417-d006e2667a2c/resource/c7a5aa70-c30d-4f45-9b22-e98b65a8d5d2/download/utilization-trends-by-health-category-data-dictionary.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/abfdba95-b1ba-4e39-a417-d006e2667a2c/resource/8a5953e7-0b52-4d9b-980e-608fc846aa68/download/hospital-utilization-trends-h6g_6e0d.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "The datasets provide medical encounter counts across three hospital settings (Inpatient Discharges, Emergency Department visits, and Ambulatory Surgery). The data is categorized by healthcare system and facility, and further grouped by common health conditions (including anxiety, asthma, behavioral syndromes, cancer, cardiac arrest, chronic obstructive pulmonary disease (COPD), COVID-19, depression, diabetes, homelessness, hypertension, mood disorders excluding depression, non-mood psychotic disorders, nonpsychotic disorders excluding anxiety, obesity, pneumonia, respiratory arrest/failure, sepsis, stroke, substance use disorders, and unspecified mental disorders), as well as demographic characteristics such as age group, race/ethnicity, assigned sex at birth, and expected payer."
+    },
+    {
+      "id": "8d7f94ec-20f5-4bc8-9f93-d79ab37865f4",
+      "title": "California Statewide Inpatient Mortality Rates",
+      "url": "https://data.ca.gov/dataset/california-statewide-inpatient-mortality-rates",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/77b9bce3-dcda-44c9-9a80-3ff317138bdd/resource/41efe60c-0434-4091-8902-766c58612c03/download/ca-oshpd-ahrq-imi-statewide-2012-2015.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/77b9bce3-dcda-44c9-9a80-3ff317138bdd/resource/baa37f42-6e24-4199-b574-f979901d6722/download/data-dictionary-inpatient-mortality-indicators-statewide.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/77b9bce3-dcda-44c9-9a80-3ff317138bdd/resource/33627cca-eee1-4afc-82fb-22679ea136f3/download/california-statewide-inpatient-mortality-rates-6mmnh750.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "The dataset contains risk-adjusted mortality rates, and number of deaths and cases for 6 medical conditions treated (Acute Stroke, Acute Myocardial Infarction, Heart Failure, Gastrointestinal Hemorrhage, Hip Fracture and Pneumonia) and 6 procedures performed (Abdominal Aortic Aneurysm Repair, Carotid Endarterectomy, Craniotomy, Esophageal Resection, Pancreatic Resection, Percutaneous Coronary Intervention) in California hospitals. The 2014 and 2015 IMIs were generated using AHRQ Version 5.0, while the 2012 and 2013 IMIs were generated using AHRQ Version 4.5.  The differences in the statistical method employed and inclusion and exclusion criteria using different versions can lead to different results. Users should not compare trends of mortality rates over time.  However, many hospitals showed consistent performance over years; “better” performing hospitals may perform better and “worse” performing hospitals may perform worse consistently across years. This dataset does not include conditions treated or procedures performed in outpatient settings. Please refer to hospital table for hospital rates: https://data.chhs.ca.gov/dataset/california-hospital-inpatient-mortality-rates-and-quality-ratings"
+    },
+    {
+      "id": "e29076e8-54e8-4a75-a58a-e2d71f30bc92",
+      "title": "Proportion of Adults Who Are Current Smokers (LGHC Indicator) (ARCHIVED)",
+      "url": "https://data.ca.gov/dataset/proportion-of-adults-who-are-current-smokers-lghc-indicator-archived",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a66328ec-2a61-401a-8af1-84fc9e2e421d/resource/71a99ce5-3e6b-4be4-8cd0-b958d92c5b7b/download/proportion-of-adults-who-are-current-smokers-lghc-indicator-19.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a66328ec-2a61-401a-8af1-84fc9e2e421d/resource/96e35f60-1284-4625-8d49-e3f60231b96c/download/proportion-of-adults-who-are-current-smokers-lghc-indicator-19-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://letsgethealthy.ca.gov/goals/living-well/reducing-adult-tobacco-use/",
+          "format": "Chart"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/a66328ec-2a61-401a-8af1-84fc9e2e421d/resource/4a865e0d-9b72-4a9a-8f6c-d72d222d76c3/download/proportion-of-adults-who-are-current-smokers-lghc-indicator-19-jka4oqtz.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This is a source dataset for a Let's Get Healthy California indicator at https://letsgethealthy.ca.gov/. Adult smoking prevalence in California, males and females aged 18+, starting in 2012. Caution must be used when comparing the percentages of smokers over time as the definition of ‘current smoker’ was broadened in 1996, and the survey methods were changed in 2012. Current cigarette smoking is defined as having smoked at least 100 cigarettes in lifetime and now smoking every day or some days. Due to the methodology change in 2012, the Centers for Disease Control and Prevention (CDC) recommend not conducting analyses where estimates from 1984 – 2011 are compared with analyses using the new methodology, beginning in 2012. This includes analyses examining trends and changes over time. (For more information, please see the narrative description.)\r\nThe California Behavioral Risk Factor Surveillance System (BRFSS) is an on-going telephone survey of randomly selected adults, which collects information on a wide variety of health-related behaviors and preventive health practices related to the leading causes of death and disability such as cardiovascular disease, cancer, diabetes and injuries. Data are collected monthly from a random sample of the California population aged 18 years and older. The BRFSS is conducted by Public Health Survey Research Program of California State University, Sacramento under contract from CDPH. The survey has been conducted since 1984 by the California"
+    },
+    {
+      "id": "9e9ce3da-64a6-431a-b1ec-a4ba001a2c53",
+      "title": "Emergency Department Volume and Capacity",
+      "url": "https://data.ca.gov/dataset/emergency-department-volume-and-capacity",
+      "publisher": "Department of Health Care Access and Information",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7fb6eb5e-0f39-4d52-a0c5-8d638b550c24/resource/929362c5-513b-4e89-8a9e-b34834a3004d/download/emergency-department-volume-and-capacity-2021-2023.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7fb6eb5e-0f39-4d52-a0c5-8d638b550c24/resource/4747be37-5db2-40a7-9858-1418a3024e1f/download/data-dictionary-ed-volume-and-capacity.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/7fb6eb5e-0f39-4d52-a0c5-8d638b550c24/resource/8fa33220-1d97-4040-951f-f66d5f9a3dde/download/emergency-department-volume-and-capacity-i5_lputj.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset provides the Emergency Department ratio of encounters and treatment stations to represent the ED Burden. Smaller ratios indicate fewer ED visits per available treatment station and less burden. Larger ratios of ED visits per available treatment station indicate greater burden. The encounters are broken down by health-related conditions: Active COVID-19, Asthma, Cancer, Cardiac, COPD, COVID-19 History, Diabetes, Homeless, Hypertension, Mental Health, Obesity, Pneumonia, Respiratory, Sepsis, Stroke, and Substance Abuse."
+    }
+  ],
+  "page_receipts": [
+    90
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 19,
+  "next_offset": 10,
+  "response_sha256": "84a5d20cf8d101e26fd2e83460741a4eb0f9096ad25c530b0e76746369a0fc09",
+  "search_complete": false
+}

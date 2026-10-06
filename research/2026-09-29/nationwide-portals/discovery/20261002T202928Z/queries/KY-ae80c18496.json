@@ -1,0 +1,790 @@
+{
+  "jurisdiction_code": "KY",
+  "query": "electricity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T20:30:18.534479+00:00",
+  "candidates": [
+    {
+      "id": "f1eff40078844aabb7319cd514aba3e9",
+      "title": "Electric Service Areas in Kentucky (PSC)",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_PSC_Electric_Service_Areas_WM/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The coverage is used to fulfill the requirement of Kentucky Revised Statute section 278.017 that the Kentucky Public Service Commission (PSC) prepare a map or maps of uniform scale to show the certified service territories of all retail electric suppliers in Kentucky. The positions of service area boundaries are estimated to be accurate within 100 feet.  These digital boundaries are for informational purposes only, and have\nno legal standing.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.704205,
+                39.151889
+              ],
+              [
+                -81.884421,
+                39.151889
+              ],
+              [
+                -81.884421,
+                36.456975
+              ],
+              [
+                -89.704205,
+                36.456975
+              ],
+              [
+                -89.704205,
+                39.151889
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>This is a coverage of the service areas of electric suppliers in the state of Kentucky. The polygon attribute table identifies the service territories; the arc attribute table gives the regulatory classification of boundary segments. The establishment of geographical service areas for retail electric suppliers, the rights of utilities operating within their own territories, and the requirement of map submission to the Kentucky Public Service Commission (PSC) are provided for in Kentucky Revised Statute (KRS) sections 278.016 to 278.020. The certified territory maps are the legal documents that define the retail electric service area of electric suppliers regulated by the Commission (Kentucky Statute 278.017). All of these maps are on file at the PSC. They have been scanned and are available as PDF documents. Most of them are USGS topographic maps from the 1980s signed by both utilities and stamped by the Public Service Commission. These were used to compile this coverage. The positions of service area boundaries on this coverage are estimated to be accurate within 100 feet. These digital boundaries are for informational purposes only, and have no legal standing.</span></p><p><span /></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>The user should give credit to the Kentucky Public Service Commission (PSC). The user must abide by the following data disclaimer. All information within the product is believed accurate but is not guaranteed without error. While attempts have been made to insure the correctness of the information presented, neither the Kentucky Public Service Commission nor any party involved in the creation and compilation of the data guarantees their accuracy, completeness, or suitability for a particular use. All critical information should be independently verified.</span></p><p><span>LIMITATION OF LIABILITY: &nbsp;The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.</span></p></div></div></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Electric Service Areas in Kentucky (PSC)",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789657161000,
+        "avgRating": 0,
+        "id": "f1eff40078844aabb7319cd514aba3e9",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Public Service Commission",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1764770689000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_PSC_Electric_Service_Areas_WM/FeatureServer",
+        "tags": [
+          "electric",
+          "electric utility",
+          "electric utilities",
+          "electric distribution",
+          "service area",
+          "territory",
+          "territories",
+          "boundaries",
+          "boundary",
+          "utility",
+          "utilities",
+          "PSC",
+          "Public Service Commission",
+          "infrastructure"
+        ],
+        "numViews": 3369,
+        "numComments": 0,
+        "size": 20709376,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Public Service Commission (PSC)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/f1eff40078844aabb7319cd514aba3e9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4b3dabc379344a39bd4a4c320a00c506",
+      "title": "Electric Service Area Boundaries in Kentucky (PSC)",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_PSC_Electric_Service_Area_Boundaries_WM/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The coverage is used to fulfill the requirement of Kentucky Revised Statute section 278.017 that the Kentucky Public Service Commission (PSC) prepare a map or maps of uniform scale to show the certified service territories of all retail electric suppliers in Kentucky.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.704211,
+                39.151896
+              ],
+              [
+                -81.884425,
+                39.151896
+              ],
+              [
+                -81.884425,
+                36.456982
+              ],
+              [
+                -89.704211,
+                36.456982
+              ],
+              [
+                -89.704211,
+                39.151896
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>This is a coverage of the service areas of electric suppliers in the state of Kentucky. The polygon attribute table identifies the service territories; the arc attribute table gives the regulatory classification of boundary segments. The establishment of geographical service areas for retail electric suppliers, the rights of utilities operating within their own territories, and the requirement of map submission to the Kentucky Public Service Commission (PSC) are provided for in Kentucky Revised Statute (KRS) sections 278.016 to 278.020.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>The user should give credit to the Kentucky Public Service Commission (PSC). The user must abide by the following data disclaimer. All information within the product is believed accurate but is not guaranteed without error. While attempts have been made to insure the correctness of the information presented, neither the Kentucky Public Service Commission nor any party involved in the creation and compilation of the data guarantees their accuracy, completeness, or suitability for a particular use. All critical information should be independently verified.</span></p><p><span>LIMITATION OF LIABILITY: &nbsp;The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.</span></p></div></div></div><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Electric Service Area Boundaries in Kentucky (PSC)",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789657159000,
+        "avgRating": 0,
+        "id": "4b3dabc379344a39bd4a4c320a00c506",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Kentucky Public Service Commission",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail1783000186244.png",
+        "languages": [],
+        "created": 1764770360000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_PSC_Electric_Service_Area_Boundaries_WM/FeatureServer",
+        "tags": [
+          "Kentucky",
+          "utilitiesCommunication",
+          "utilities",
+          "PSC",
+          "Public Service Commission",
+          "boundaries",
+          "infrastructure"
+        ],
+        "numViews": 2007,
+        "numComments": 0,
+        "size": 4104192,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Public Service Commission (PSC)",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/4b3dabc379344a39bd4a4c320a00c506"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "324eeb9d50624341a794635b1b537ac2",
+      "title": "USGS Aggregated Trails in Kentucky",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_USGS_Trails_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer includes USGS Trails Data that has been clipped it to a modified border of Kentucky to capture trails that traverse multiple states.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.691,
+                40.6713
+              ],
+              [
+                -79.8036,
+                40.6713
+              ],
+              [
+                -79.8036,
+                34.2697
+              ],
+              [
+                -90.691,
+                34.2697
+              ],
+              [
+                -90.691,
+                40.6713
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>The USGS aggregates all the trails available from other agencies into one comprehensive layer for the National Map.&nbsp;This layer includes USGS Trails Data that has been clipped it to a modified border of Kentucky to capture trails that traverse multiple states. USGS aggregates trail data from Kentucky on an annual basis.</p><p>Data Download:&nbsp;<a target=\"_blank\" href=\"https://ky.box.com/v/kymartian-usgs-agg-trails\">https://ky.box.com/v/kymartian-usgs-agg-trails</a></p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><p>https://creativecommons.org/publicdomain/zero/1.0/</p>",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "USGS Aggregated Trails in Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1787052393000,
+        "avgRating": 0,
+        "id": "324eeb9d50624341a794635b1b537ac2",
+        "categories": [
+          "/Categories/Society"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "USGS, DGI",
+        "largeThumbnail": null,
+        "lastViewed": 1787598000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1741356465000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_USGS_Trails_WM_gdb/FeatureServer",
+        "tags": [
+          "off-road",
+          "usgs",
+          "transportation",
+          "recreation",
+          "aggregated",
+          "hiking",
+          "bike",
+          "trails",
+          "imageryBaseMapsEarthCover",
+          "4x4"
+        ],
+        "numViews": 4835,
+        "numComments": 0,
+        "size": 20545536,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/324eeb9d50624341a794635b1b537ac2"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "668a851244204994938c511943e7aa87",
+      "title": "Kentucky State Park Campsites",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_State_Park_Campsites_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Access information about each individual State Park campsite in Kentucky. The dataset contains all campsites maintained by the Kentucky Department of Parks.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.109053,
+                38.883029
+              ],
+              [
+                -82.68327,
+                38.883029
+              ],
+              [
+                -82.68327,
+                36.650489
+              ],
+              [
+                -89.109053,
+                36.650489
+              ],
+              [
+                -89.109053,
+                38.883029
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Access information about each individual State Park campsite in Kentucky. The dataset contains all campsites maintained by the Kentucky Department of Parks.&nbsp;</p><p>Data Download:&nbsp;<a target=\"_blank\" href=\"https://ky.box.com/v/kymartian-state-park-campsites\"> https://ky.box.com/v/kymartian-state-park-campsites</a></p>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Kentucky State Park Campsites",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658193000,
+        "avgRating": 0,
+        "id": "668a851244204994938c511943e7aa87",
+        "categories": [
+          "/Categories/Location",
+          "/Categories/Society"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1789653600000,
+        "thumbnail": "thumbnail/thumbnail1785349349293.png",
+        "languages": [],
+        "created": 1751397766000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_State_Park_Campsites_WM_gdb/FeatureServer",
+        "tags": [
+          "location",
+          "camping",
+          "campsites",
+          "campground",
+          "KY DOP",
+          "accomadations",
+          "recreation",
+          "overnight",
+          "tent",
+          "rv",
+          "state parks"
+        ],
+        "numViews": 2835,
+        "numComments": 0,
+        "size": 1966080,
+        "listed": false,
+        "scoreCompleteness": 95,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Kentucky State Parks",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/668a851244204994938c511943e7aa87"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c3865713d4224b299fee7763a7b0f093",
+      "title": "Alternative Fuel Stations In Kentucky",
+      "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Alternate_Fuel/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer filters the location of alternative fueling stations for Kentucky. Data is from the US Department of Energy's National Renewable Energy Laboratory (NREL) and is updated daily.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -88.82571,
+                39.10058
+              ],
+              [
+                -82.520361,
+                39.10058
+              ],
+              [
+                -82.520361,
+                36.610234
+              ],
+              [
+                -88.82571,
+                36.610234
+              ],
+              [
+                -88.82571,
+                39.10058
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div><div><div><span>This layer displays the location of alternative fuel stations across the U.S. and Canada <strong><u>filtered for Kentucky</u>.</strong>. Alternative fuel sources include biodiesel, compressed natural gas, electric, ethanol, hydrogen, liquefied natural gas, propane and renewable diesel. Attributes include the station name, location, access, hours and more. Zoom into the map for more detail.</span></div><div><span><img src='https://livefeedsdev.s3.amazonaws.com/Images/AlternateFuelStations.png' width='1025' height='326' /></span></div><div>This data is maintained by an Aggregated Live Feed routine that accesses the US Department of Energy's <a target='_blank' href='https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/' rel='nofollow ugc noopener noreferrer'><strong>National Renewable Energy Laboratory</strong></a> (<a target='_blank' href='https://www.nrel.gov/' rel='nofollow ugc noopener noreferrer'><strong>NREL</strong></a>) API website.</div><div>&nbsp;</div><div><strong>Source</strong>: NREL <a target='_blank' href='https://developer.nrel.gov/docs/transportation/alt-fuel-stations-v1/all' rel='nofollow ugc noopener noreferrer'><strong>Alternate Fuel Stations (ALL)</strong></a><br />&nbsp;</div><div>&nbsp;</div><div><strong>Update Frequency</strong>: The service data is refreshed once Daily</div><div>&nbsp;</div><div><strong>Area Coverage</strong>: Contiguous US, Alaska, Hawaii, Puerto Rico, and Canada.</div><div>&nbsp;</div><div><strong>Coordinate System</strong>: Web Mercator Auxiliary Sphere (3857)</div><div>&nbsp;</div><div><strong>Layer Summary</strong>:</div><div><ul><li><i>Stations</i>: Point layer containing locations of all Alternate Fueling Stations</li></ul><div><span style='font-size:x-large;'>Reporting station changes</span></div><div><ol><li>Leverage the NREL <a target='_blank' href='https://afdc.energy.gov/stations#/analyze?tab=location&amp;access=public&amp;access=private' rel='nofollow ugc noopener noreferrer'><strong>Alternate Fueling Station Locator</strong></a> to narrow your search and Map Results. Next, click on a station and hit 'Report a change' to start the request process. It may take some time for the source to apply the update!</li><li>Add a comment to this item with the Station ID plus required changes and we will update our service content as quickly as possible once reviewed.</li></ol></div><div><span style='font-size:x-large;'>Revisions</span></div><div><ul><li><strong>May 9, 2025</strong>: Added guidance for reporting station changes.</li><li><strong>Dec 27, 2024</strong>: Enabled Time Series capability using 'Date Fuel Available' field. Default state is inactive, you must turn property on in map layer to use.<br />&nbsp;</li><li><strong>Mar 17, 2023</strong>: Released to the public!<br />&nbsp;</li></ul></div><div><p><span style='color:#696969;'><i>This layer is provided for informational purposes and is not monitored 24/7 for accuracy and currency.</i></span></p><div>&nbsp;</div><p>If you would like to be alerted to potential issues or simply see when this Service will update next, please visit our <a target='_blank' href='https://livingatlas.arcgis.com/livefeeds-status/' rel='nofollow ugc noopener noreferrer'><strong>Live Feed Status</strong></a> Page</p></div></div></div></div>",
+        "licenseInfo": "<p>LIMITATION OF LIABILITY: The Kentucky Division of Geographic Information (DGI) has no indication or reason to believe that there are any inaccuracies or defects of information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied, with respect to the information or data, furnished herein.</p><br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Alternative Fuel Stations In Kentucky",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789657120000,
+        "avgRating": 0,
+        "id": "c3865713d4224b299fee7763a7b0f093",
+        "categories": [
+          "/Categories/Location",
+          "/Categories/Economy",
+          "/Categories/Transportation"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "Living Atlas, DGI",
+        "largeThumbnail": null,
+        "lastViewed": 1789603200000,
+        "thumbnail": "thumbnail/thumbnail1752599746945.png",
+        "languages": [],
+        "created": 1752599381000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services9.arcgis.com/RHVPKKiFTONKtxq3/arcgis/rest/services/Alternate_Fuel/FeatureServer",
+        "tags": [
+          "Live Feed",
+          "NREL",
+          "Aggregated Live Feeds",
+          "Renewable Energy",
+          "Alternative Fuel Stations",
+          "USDOE",
+          "biodiesel",
+          "compressed natural gas",
+          "electric",
+          "ethanol",
+          "hydrogen",
+          "liquefied natural gas",
+          "propane",
+          "renewable diesel",
+          "EV charging",
+          "EV Charging Stations",
+          "EV chargers",
+          "EVSE",
+          "Electric Vehicle Charging Stations",
+          "fuel",
+          "location"
+        ],
+        "numViews": 2376,
+        "numComments": 0,
+        "size": 95,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-gb",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "KyGovMaps",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/c3865713d4224b299fee7763a7b0f093"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "720ac12a300e48879558e08298af95e0",
+      "title": "Ky EEC KDOG Oil & Gas Wells",
+      "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_EEC_Oil_Gas_Wells_WM_gdb/FeatureServer",
+      "publisher": "Kentucky_DGI",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Regulated oil and gas wells in Kentucky maintained by the Energy and Environment Cabinet (EEC), Kentucky Division of Oil and Gas Conservation (KDOG).",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -89.33749460522075,
+                38.98697367416267
+              ],
+              [
+                -81.98576793122982,
+                38.98697367416267
+              ],
+              [
+                -81.98576793122982,
+                36.531671511566245
+              ],
+              [
+                -89.33749460522075,
+                36.531671511566245
+              ],
+              [
+                -89.33749460522075,
+                38.98697367416267
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p>Regulated Oil and Gas Wells in Kentucky. Data from the Kentucky Division of Oil and Gas Conservation. Data encompasses wells between 1950s and 2010s.</p>",
+        "licenseInfo": "LIMITATION OF LIABILITY: The Division of Geographic Information has no reason to believe that there are any inaccuracies or defects in information incorporated in this work and make no representations of any kind, including, but not limited to, the warranties of merchantability or fitness for a particular use, nor any such warranties to be implied, with respect to the information or data furnished herein.<br /><br />https://creativecommons.org/publicdomain/zero/1.0/",
+        "ownerId": "93a18f5539c1d9e5e337edceefb04652",
+        "title": "Ky EEC KDOG Oil & Gas Wells",
+        "type": "Feature Service",
+        "orgId": "ghsX9CKghMvyYjBU",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789658326000,
+        "avgRating": 0,
+        "id": "720ac12a300e48879558e08298af95e0",
+        "categories": [
+          "/Categories/Geoscientific information"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Kentucky_DGI",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1789657200000,
+        "thumbnail": "thumbnail/thumbnail1734466478471.png",
+        "languages": [],
+        "created": 1734465033000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/ghsX9CKghMvyYjBU/arcgis/rest/services/Ky_EEC_Oil_Gas_Wells_WM_gdb/FeatureServer",
+        "tags": [
+          "economy",
+          "wells",
+          "energy",
+          "hydrocarbons",
+          "oil",
+          "Kentucky Division of Oil and Gas Conservation",
+          "geoscientific information",
+          "Kentucky",
+          "gas",
+          "historic data"
+        ],
+        "numViews": 12385,
+        "numComments": 0,
+        "size": 30392320,
+        "listed": false,
+        "scoreCompleteness": 93,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "indexJobId": ""
+        },
+        "source": "Kentucky Division of Oil and Gas Conservation",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all/items/720ac12a300e48879558e08298af95e0"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opengisdata.ky.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    246
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 6,
+  "next_offset": 6,
+  "response_sha256": "b951a54c43d88804cfe3a4e7a3c38aeddf5237c02c77c607114e43897cab5a9a",
+  "search_complete": true
+}

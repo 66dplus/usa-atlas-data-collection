@@ -1,0 +1,256 @@
+{
+  "jurisdiction_code": "CA",
+  "query": "wages",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-02T20:29:53.090149+00:00",
+  "candidates": [
+    {
+      "id": "fa64fe43-c81e-429e-977d-0d87b2772f01",
+      "title": "Living Wage",
+      "url": "https://data.ca.gov/dataset/living-wage",
+      "publisher": "California Department of Public Health",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/6c9485da-cf3e-40af-b939-eae953b81685/download/hcilivingwage770narrativeandexamples9-30-13.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/f5a57e7a-e0fe-4d80-b0f6-92d66ecb907f/download/hci_living_wage_770_pl_co_re_ca_9-29-13-ada.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/f6ae935b-d0ba-4be2-be35-717fe42ecc6c/download/livingwage-dd.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/442e7cde-6230-405c-b8a8-b7ea5489de87/resource/8420fdbf-8492-4740-8e92-e8cdfd41b659/download/living-wage-idvop5ms.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This table contains data on the living wage and the percent of families with incomes below the living wage for California, its counties, regions and cities/towns.  Living wage is the wage needed to cover basic family expenses (basic needs budget) plus all relevant taxes; it does not include publicly provided income or housing assistance.  The percent of families below the living wage was calculated using data from the [Living Wage Calculator](http://livingwage.mit.edu/) and the U.S. Census Bureau, American Community Survey. The table is part of a series of indicators in the Healthy Communities Data and Indicators Project of the Office of Health Equity. The living wage is the wage or annual income that covers the cost of the bare necessities of life for a worker and his/her family. These necessities include housing, transportation, food, childcare, health care, and payment of taxes.  Low income populations and non-white race/ethnic have disproportionately lower wages, poorer housing, and higher levels of food insecurity.  More information about the data table and a data dictionary can be found in the About/Attachments section."
+    },
+    {
+      "id": "6411456b-594b-4b73-af57-ce8dd401f2e2",
+      "title": "Occupational Employment and Wage Statistics (OEWS)",
+      "url": "https://data.ca.gov/dataset/oews",
+      "publisher": "California Employment Development Department",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/6411456b-594b-4b73-af57-ce8dd401f2e2/resource/aef4c53a-7e17-418c-acc1-d189e39b6caa/download/oews-2009-2026_original.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "The Occupational Employment and Wage Statistics (OEWS) Survey is a federal-state cooperative program between the Bureau of Labor Statistics (BLS) and State Workforce Agencies (SWAs). The BLS provides the procedures and technical support, draws the sample, and produces the survey materials, while the SWAs collect the data. SWAs from all fifty states, plus the District of Columbia, Puerto Rico, Guam, and the Virgin Islands participate in the survey. Occupational employment and wage rate estimates at the national level are produced by BLS using data from the fifty states and the District of Columbia. Employers who respond to states' requests to participate in the OEWS survey make these estimates possible.\r\n\r\nThe OEWS survey collects data from a sample of establishments and calculates employment and wage estimates by occupation, industry, and geographic area. The semiannual survey covers all non-farm industries. Data are collected by the Employment Development Department in cooperation with the Bureau of Labor Statistics, US Department of Labor. The OEWS Program estimates employment and wages for approximately 830 occupations. It also produces employment and wage estimates for statewide, Metropolitan Statistical Areas (MSAs), and Balance of State areas. Estimates are a snapshot in time and should not be used as a time series.\r\n\r\nThe OEWS estimates are published annually.\r\n\r\n__SOURCE: https://www.bls.gov/oes/oes_emp.htm__"
+    },
+    {
+      "id": "3f08b68e-1d1a-4ba4-a07d-1ec3392ed191",
+      "title": "Quarterly Census of Employment and Wages (QCEW)",
+      "url": "https://data.ca.gov/dataset/quarterly-census-of-employment-and-wages",
+      "publisher": "California Employment Development Department",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/3f08b68e-1d1a-4ba4-a07d-1ec3392ed191/resource/577beabf-3f53-4848-807f-adfd0551831c/download/qcew_2004-2007.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/3f08b68e-1d1a-4ba4-a07d-1ec3392ed191/resource/0f196f1d-4447-479b-bef5-fb16a9093be9/download/qcew_2008-2011.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/3f08b68e-1d1a-4ba4-a07d-1ec3392ed191/resource/51b27b21-bbd2-48ba-9f6d-997a282c5fce/download/qcew_2012-2015.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/3f08b68e-1d1a-4ba4-a07d-1ec3392ed191/resource/78a9d6ee-ec9a-4c25-ae34-5bac44010cb2/download/qcew_2016-2019.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/3f08b68e-1d1a-4ba4-a07d-1ec3392ed191/resource/ca165fad-4f16-48c7-808e-8b5222bc4182/download/qcew-2020-2022.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/3f08b68e-1d1a-4ba4-a07d-1ec3392ed191/resource/119eef38-3b59-499f-8f7c-9bea4768469d/download/qcew-2023-2025q4.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/3f08b68e-1d1a-4ba4-a07d-1ec3392ed191/resource/a8d3fd99-c666-4311-8902-dc95cda62ac6/download/qcew-2026-q1.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "The Quarterly Census of Employment and Wages (QCEW) Program is a Federal-State cooperative program between the U.S. Department of Labor’s Bureau of Labor Statistics (BLS) and the California EDD’s Labor Market Information Division (LMID). The QCEW program produces a comprehensive tabulation of employment and wage information for workers covered by California Unemployment Insurance (UI) laws and Federal workers covered by the Unemployment Compensation for Federal Employees (UCFE) program.\r\n\r\nThe QCEW program serves as a near census of monthly employment and quarterly wage information by 6-digit industry codes from the North American Industry Classification System (NAICS) at the national, state, and county levels. At the national level, the QCEW program publishes employment and wage data for nearly every NAICS industry. At the state and local area level, the QCEW program publishes employment and wage data down to the 6-digit NAICS industry level, if disclosure restrictions are met. In accordance with the BLS policy, data provided to the Bureau in confidence are used only for specified statistical purposes and are not published. The BLS withholds publication of Unemployment Insurance law-covered employment and wage data for any industry level when necessary to protect the identity of cooperating employers.\r\n\r\nData from the QCEW program serve as an important input to many BLS programs. The Current Employment Statistics and the Occupational Employment Statistics programs use the QC"
+    },
+    {
+      "id": "950032f5-a28b-4715-8c8f-3bd021b1ec93",
+      "title": "Vocational Rehabilitation Successful Closures Average Hourly Wage By County, SFY 2014-2024",
+      "url": "https://data.ca.gov/dataset/vocational-rehabilitation-successful-closures-average-hourly-wage-by-county-sfy-2014-2024",
+      "publisher": "California Department of Rehabilitation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cbb7e63c-e078-4b42-a922-1f7d4673efbc/resource/c34a9af3-05b8-46f0-a8c3-9707d9123a1b/download/vocational-rehabilitation-successful-closures-average-hourly-wage-by-county-sfy-2014-2024.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cbb7e63c-e078-4b42-a922-1f7d4673efbc/resource/fc20ebda-6cdf-4885-8ad9-fe72bf530541/download/data-dictionary-for-succssful-closures-by-hourly-wage.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/cbb7e63c-e078-4b42-a922-1f7d4673efbc/resource/6afcc69b-e85c-4bcf-80e7-92f681a23d53/download/vocational-rehabilitation-successful-closures-average-hourly-wage-by-county-sfy-2014-2024-o33p9p.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset represents the statewide average hourly wage of Department of Rehabilitation’s total successful closures in State Fiscal Years 2014 through 2024 by county."
+    },
+    {
+      "id": "1b5cd68e-bed6-4dc1-b504-d457b4d8b5a3",
+      "title": "Hospital Characteristics List for California Border Providers",
+      "url": "https://data.ca.gov/dataset/hospital-characteristics-list-for-california-border-providers",
+      "publisher": "California Department of Health Care Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/04c543b4-8723-487b-9ba7-c2694432a64c/resource/72bc0c49-8e58-4452-a6d8-e5b68e2758ed/download/snfd-drgborderchar19-20.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/04c543b4-8723-487b-9ba7-c2694432a64c/resource/d855b5fb-4c71-4312-82fe-d0aba2744959/download/hospital-characteristics-list-for-california-border-providers-5mum8aff.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "This dataset provides a list of 10 characteristics for California border hospitals, including: Name, City, State, Designated Neonatal Intensive Care Unit status, Remote Rural Status, Cost-to-Charge Ratio, Wage-Index Value, Wage-Index Value Adjusted for California Neutrality Factor, Unadjusted Statewide Base Rate, Wage Adjusted Statewide Base Rate. This dataset does not include psychiatric hospitals, alcohol and drug rehabilitation facilities, and designated public hospitals."
+    },
+    {
+      "id": "ec4ceeac-21a4-4ba2-be59-0ec9b8e7c4f9",
+      "title": "Hospital Characteristics List for California Providers",
+      "url": "https://data.ca.gov/dataset/hospital-characteristics-list-for-california-providers",
+      "publisher": "California Department of Health Care Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5f7ad2ce-3837-44b9-a3ff-c4d9a9a11e08/resource/108a751b-7377-4e8e-aab8-8016f55b846f/download/snfd-drgcalifornia-prov.char.19-20.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/5f7ad2ce-3837-44b9-a3ff-c4d9a9a11e08/resource/3c50a0d3-ecc9-41f5-8e4c-7f3e7a08877c/download/hospital-characteristics-list-for-california-providers-ypwzqvmm.zip",
+          "format": "ZIP"
+        }
+      ],
+      "description": "The dataset provides a list of 15 characteristics for California hospitals for State Fiscal Year 2019-20, including; Department of Health Care Access and Information (HCAI) ID, HCAI Provider Name, Designated Neonatal Intensive Care Unit status as defined by DHCS, Designated Public Hospital status, Non-designated Public Hospital, HCAI Rural Hospital status, DHCS Designated Remote Rural status, Cost–to-Charge Ratio, Wage Index Value, Wage Index Value-Adjusted for California Neutrality Factor, Unadjusted Statewide Base Rate, Wage-Adjusted Statewide Base Rate, Rehab Rate, Admin 2 190 Rate and Admin 2 199 Rate. This dataset does not include psychiatric hospitals, alcohol and drug rehabilitation facilities, or designated public hospitals."
+    },
+    {
+      "id": "074b9678-a517-4e82-a2d6-de3a93ea9dac",
+      "title": "C-4, Deductions by Type, All Corporations",
+      "url": "https://data.ca.gov/dataset/c-4-deductions-by-type-all-corporations",
+      "publisher": "California Franchise Tax Board",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/074b9678-a517-4e82-a2d6-de3a93ea9dac/resource/8c9ab521-c5a3-4181-880b-88ccb9317a85/download/2023_c-4__deductions_by_type__all_corporations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/074b9678-a517-4e82-a2d6-de3a93ea9dac/resource/75d7243c-b710-42d5-ab58-8048e7d3ed87/download/c-4_deductions_by_type_all_corporations_data_dictionary__1_.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "This dataset contains corporate tax statistics based on corporate tax returns (C and S Corporations)."
+    },
+    {
+      "id": "5ed8961e-f5c7-48f2-9c3f-e8302f9c49d1",
+      "title": "C-4A and C-4B, Deductions By Type, C and S Corporations",
+      "url": "https://data.ca.gov/dataset/c-4a-and-c-4b-deductions-by-type-c-and-s-corporations",
+      "publisher": "California Franchise Tax Board",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/5ed8961e-f5c7-48f2-9c3f-e8302f9c49d1/resource/c45bbb53-216d-470c-9f40-ad28a8d37138/download/2023_c-4a_and_c-4b__deductions_by_type__c_and_s_corporations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/5ed8961e-f5c7-48f2-9c3f-e8302f9c49d1/resource/5132ceeb-8fce-4ea6-8a07-4271048603cf/download/c-4a_and_c-4b_deductions_by_type_c_and_s_corporation_data_dictionary__1_.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "This dataset contains corporate tax statistics based on corporate tax returns."
+    },
+    {
+      "id": "f673ad7c-44ed-4c54-adc7-2f4b23eec557",
+      "title": "Regional Planning Unit Overviews",
+      "url": "https://data.ca.gov/dataset/regional-planning-unit-overviews",
+      "publisher": "California Employment Development Department",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/f673ad7c-44ed-4c54-adc7-2f4b23eec557/resource/601ba4d4-6770-4446-894b-193e1f608bdd/download/rpu_combined.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "The purpose of these reports is to provide employment data at a regional level. Regional Planning Units (RPUs) respect the existing administrative boundaries of counties and Local Workforce Development Boards while providing a foundation upon which to facilitate regional planning under the requirements of the Workforce Innovation and Opportunity Act (WIOA)."
+    },
+    {
+      "id": "e080edad-fdc4-4edb-9671-33e99698c389",
+      "title": "B-4A, Adjusted Gross Income Class Comparison, All Filing Statuses",
+      "url": "https://data.ca.gov/dataset/b-4a-adjusted-gross-income-class-comparison-all-filing-statuses",
+      "publisher": "California Franchise Tax Board",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/e080edad-fdc4-4edb-9671-33e99698c389/resource/0d9f935e-b288-465e-a778-6e5f06091873/download/2023-b-4a__adjusted_gross_income_class_comparison__all_filing_statuses.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/e080edad-fdc4-4edb-9671-33e99698c389/resource/8656005f-9bcb-4de1-b4b3-a525e963555d/download/b-4a_adjusted_gross_income_class_comparison_all_filing_statuses_data_dictionary.pdf",
+          "format": "PDF"
+        }
+      ],
+      "description": "Adjusted gross income class statistics combined for all filing statuses for California residents personal income tax return data."
+    }
+  ],
+  "page_receipts": [
+    127
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 13,
+  "next_offset": 10,
+  "response_sha256": "cfcc30c3e93e9e6b7c8969927f6ea7751c4b69069ba3691760d963d43033c8c7",
+  "search_complete": false
+}

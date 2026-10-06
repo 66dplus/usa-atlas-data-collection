@@ -1,0 +1,1236 @@
+{
+  "jurisdiction_code": "TN",
+  "query": "recreation",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-06T02:45:23.249567+00:00",
+  "candidates": [
+    {
+      "id": "f6c2e7523bee4312a9bf1c34ab4df394",
+      "title": "Tennessee Statewide Recreation Areas Public",
+      "url": "https://services1.arcgis.com/YuVBSS7Y1of2Qud1/arcgis/rest/services/Tennessee_Statewide_Recreation_Areas_Public/FeatureServer",
+      "publisher": "pdudley_sts",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Compiled from various sources, this dataset consists of publicly accessible recreation areas, parks, and forests in Tennessee. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.27096407588549,
+                37.742066051422675
+              ],
+              [
+                -79.35857607433543,
+                37.742066051422675
+              ],
+              [
+                -79.35857607433543,
+                34.81549428680208
+              ],
+              [
+                -90.27096407588549,
+                34.81549428680208
+              ],
+              [
+                -90.27096407588549,
+                37.742066051422675
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "This dataset was compiled from various sources to support the <a href='https://trec.tn.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>TREC Project</a>.  Wildlife Management Areas (WMAs) are not included in this dataset and can be accessed via the TN Wildlife Resources Management Agency (TWRA) <a href='https://www.tn.gov/twra/wildlife-management-areas.html' target='_blank' rel='nofollow ugc noopener noreferrer'>website</a>. Data is constantly being updated and improved.  Federal and State Agency data is updated annually or as-needed.  Federal Data current as of January 2025.<div><br /></div>",
+        "licenseInfo": "<span style='color:rgb(5, 5, 5); font-family:&quot;Avenir Next&quot;; font-size:10px;'>The State of Tennessee makes no representation or warranty as to the accuracy of this data and the information contained within nor to its fitness for a particular purpose or use. The user accepts this data on an “AS IS” basis and assumes all responsibilities for the use thereof. The user will assume the entire risk and agrees to hold the State of Tennessee and its staff harmless of any liability resulting from any direct, indirect, incidental, special, consequential, or other damages, including loss of profit, arising out of the use of this data. The user is responsible for independent verification of all information contained in this data.</span>",
+        "ownerId": "85c02f613578665b0f49085c7b3932ca",
+        "title": "Tennessee Statewide Recreation Areas Public",
+        "type": "Feature Service",
+        "orgId": "YuVBSS7Y1of2Qud1",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1736534641000,
+        "avgRating": 0,
+        "id": "f6c2e7523bee4312a9bf1c34ab4df394",
+        "categories": [],
+        "spatialReference": "102736",
+        "numRatings": 0,
+        "owner": "pdudley_sts",
+        "accessInformation": "USFW, USNPS, USFS, USACE, TVA, Trust for Public Land, TN Department of Environment and Conservation, TN Division of Forestry, THRIVE Partnership, TN Recreation and Parks Association, Nashville Metro Government. ",
+        "largeThumbnail": null,
+        "lastViewed": 1789228800000,
+        "thumbnail": "thumbnail/thumbnail1702061559103.png",
+        "languages": [],
+        "created": 1694719592000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/YuVBSS7Y1of2Qud1/arcgis/rest/services/Tennessee_Statewide_Recreation_Areas_Public/FeatureServer",
+        "tags": [
+          "TREC",
+          "Recreation",
+          "Parks",
+          "TN Parks",
+          "Tennessee",
+          "TN TREC",
+          "Health",
+          "Outdoor Recreation"
+        ],
+        "numViews": 37798,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Tennessee_Statewide_Recreation_Areas_Public",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Tennessee STS GIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/f6c2e7523bee4312a9bf1c34ab4df394"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "18cf8d2d2b614f46bca7ce0c8a3ae113",
+      "title": "Tennessee State Parks Public Recreation Assets",
+      "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Recreation_Assets_(Public_View)/FeatureServer",
+      "publisher": "TDEC_Bureau_of_Conservation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Point locations for visitor-facing recreation assets across Tennessee State Parks, including amenities, access points, trails, and interpretive features. This is a non-editable layer, built from the internally editable Recreation Assets layer.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.20880127587633,
+                36.63127996368517
+              ],
+              [
+                -82.02444621911864,
+                36.63127996368517
+              ],
+              [
+                -82.02444621911864,
+                34.74565830781174
+              ],
+              [
+                -90.20880127587633,
+                34.74565830781174
+              ],
+              [
+                -90.20880127587633,
+                36.63127996368517
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<b>Overview</b><p>This feature service contains recreation asset locations for Tennessee State Parks. It represents public-facing park amenities and points of interest that support visitor experiences across the state park system.</p><b>Layer</b><ul><li><b>Recreation Assets</b> — A statewide point layer of park assets and visitor-use features, including amenities, trails, access points, interpretive features, recreation facilities, and other items associated with park access and enjoyment.</li></ul><b>Use Cases</b><ul><li>Supporting park visitor information and wayfinding.</li><li>Providing reference data for recreation planning and asset management.</li><li>Supplying locations that can be used in public park web maps and mobile applications.</li><li>Helping staff maintain a consistent inventory of visitor-facing park assets.</li></ul><b>Geographic Coverage</b><p>The service covers Tennessee State Parks across the state of Tennessee.</p>",
+        "licenseInfo": null,
+        "ownerId": "982a8dc3494d45e4a2ee1b5c031301b1",
+        "title": "Tennessee State Parks Public Recreation Assets",
+        "type": "Feature Service",
+        "orgId": "bPacKTm9cauMXVfn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789153843000,
+        "avgRating": 0,
+        "id": "18cf8d2d2b614f46bca7ce0c8a3ae113",
+        "categories": [],
+        "spatialReference": "103152",
+        "numRatings": 0,
+        "owner": "TDEC_Bureau_of_Conservation",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1789214400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1785186417000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Recreation_Assets_(Public_View)/FeatureServer",
+        "tags": [
+          "Tennessee State Parks",
+          "recreation assets",
+          "state parks",
+          "park amenities",
+          "visitor facilities",
+          "park points of interest",
+          "outdoor recreation",
+          "Tennessee"
+        ],
+        "numViews": 70,
+        "numComments": 0,
+        "size": 164444,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "TN_State_Parks_Recreation_Assets_(Public_View)",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "TN Dept of Environment and Conservation",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/18cf8d2d2b614f46bca7ce0c8a3ae113"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "cbae4ca785114a1d99d99c46f0f7df91",
+      "title": "Tennessee State Forest Boundaries",
+      "url": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer",
+      "publisher": "colin.stiles_tndof",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Official boundaries for all State Forests managed by the Tennessee Division of Forestry (TDF). This is the authoritative dataset for TDF-managed forest lands.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.444386,
+                36.61608
+              ],
+              [
+                -81.428969,
+                36.61608
+              ],
+              [
+                -81.428969,
+                34.966464
+              ],
+              [
+                -90.444386,
+                34.966464
+              ],
+              [
+                -90.444386,
+                36.61608
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p style=\"text-align:center;\"><span style=\"font-size:24px;\"><strong>Tennessee State Forest Boundaries</strong></span></p><p><span style=\"font-size:14px;\"><u>Overview</u></span></p><p><span style=\"font-size:14px;\">This feature layer represents the official and authoritative boundaries of all State Forests administered by the Tennessee Division of Forestry (TDF). The polygons in this dataset delineate the properties managed by the TDF for sustainable forestry, wildlife habitat, soil and water conservation, and public recreation.</span></p><p><span style=\"font-size:14px;\">This dataset is intended for use in planning, management, analysis, and public information purposes. It serves as the primary GIS data source for all TDF-managed forest properties.</span></p><p><span style=\"font-size:14px;\"><u>Feature Layer</u></span></p><ul><li><span style=\"font-size:14px;\"><strong>Tennessee State Forest Boundaries</strong>: This polygon layer represents the official boundaries of all State Forests administered by the Tennessee Division of Forestry.&nbsp;</span></li></ul><p><span style=\"font-size:14px;\"><u>Data Attributes</u></span></p><ul><li><span style=\"font-size:14px;\"><strong>StateForestName:</strong> The common name of the State Forest.</span></li><li><span style=\"font-size:14px;\"><strong>AbbrCode:</strong> The abbreviated codes.</span></li><li><span style=\"font-size:14px;\"><strong>County:</strong> The county(ies) that the State Forest is located in.</span></li><li><span style=\"font-size:14px;\"><strong>District:</strong> The TDF Administrative District that the State Forest is located in.</span></li><li><span style=\"font-size:14px;\"><strong>Acres:</strong> The calculated acreage of the property.</span></li><li><span style=\"font-size:14px;\"><strong>Latitude:</strong> Latitude of the center point of the property, in Decimal Degrees.</span></li><li><span style=\"font-size:14px;\"><strong>Longitude:</strong> Longitude of the center point of the property, in Decimal Degrees.</span></li><li><span style=\"font-size:14px;\"><strong>YearEst:</strong> The year that the State Forest was established.</span></li><li><span style=\"font-size:14px;\"><strong>Notes:</strong> Additional notes.</span></li><li><span style=\"font-size:14px;\"><strong>CollectionMethod:</strong> The method of boundary delineation.</span></li><li><span style=\"font-size:14px;\"><strong>Hyperlink:</strong> The hyperlink to the State Forests' webpage.</span></li></ul><h3><span style=\"font-size:14px;\"><u>Data Maintenance</u></span></h3><p><span style=\"font-size:14px;\">This layer is actively maintained by the TDF Forest Data and Analysis Unit. It is updated periodically to reflect new acquisitions, boundary surveys, and other administrative changes.</span></p>",
+        "licenseInfo": "<p><span style='font-size:14px;'><u>Credits</u></span></p><p><span style='font-size:14px;'>Tennessee Division of Forestry - Forest Data and Analysis Unit</span></p><p><span style='font-size:14px;'><u>Access and Use Constraints</u></span></p><p><span style='font-size:14px;'>This dataset is intended for planning, management, analysis, and public information purposes. While the Tennessee Division of Forestry strives for a high degree of accuracy, this data is not a substitute for an official, on-the-ground legal survey. The information is provided “as is” without warranty or guarantee of any kind as to its accuracy, content, completeness, legality, or reliability. For all legal property boundary questions or transactions, please refer to the official deeds and surveys on file.</span></p>",
+        "ownerId": "7d9b678a49544c0cbd4b59afeb4df4a8",
+        "title": "Tennessee State Forest Boundaries",
+        "type": "Feature Service",
+        "orgId": "lvPBAGXeSupVUvx2",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1783973268000,
+        "avgRating": 0,
+        "id": "cbae4ca785114a1d99d99c46f0f7df91",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Imagery",
+          "/Categories/Boundaries",
+          "/Categories/and Earth cover",
+          "/Categories/basemaps",
+          "/Categories/Farming",
+          "/Categories/Planning and cadastre"
+        ],
+        "spatialReference": "103152",
+        "numRatings": 0,
+        "owner": "colin.stiles_tndof",
+        "accessInformation": "Tennessee Department of Agriculture, Division of Forestry",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1783973266815.png",
+        "languages": [],
+        "created": 1768315575000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Tennessee_State_Forest_Boundaries/FeatureServer",
+        "tags": [
+          "Authoritative",
+          "Boundaries",
+          "Official",
+          "Public",
+          "State Forests",
+          "Tennessee",
+          "Tennessee Department of Agriculture",
+          "Tennessee Division of Forestry"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 909312,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Tennessee_State_Forest_Boundaries",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Tennessee Division of Forestry",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/cbae4ca785114a1d99d99c46f0f7df91"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4f0d89964d5f4dd78dbc73c25d3aa6bb",
+      "title": "TDEC Public Trails",
+      "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TDEC_Public_Trails_(view)/FeatureServer",
+      "publisher": "TDEC_Bureau_of_Conservation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Public trail representations managed by the Tennessee Department of Environment and Conservation for all TDEC public properties, with trail attributes for route type, surface, access use, difficulty, and park or natural area association.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.20821668178209,
+                36.62307952230303
+              ],
+              [
+                -82.01708128186989,
+                36.62307952230303
+              ],
+              [
+                -82.01708128186989,
+                34.90473036229211
+              ],
+              [
+                -90.20821668178209,
+                34.90473036229211
+              ],
+              [
+                -90.20821668178209,
+                36.62307952230303
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p><strong>Overview</strong></p><p>This feature service provides public trail representations managed by the <strong>Tennessee Department of Environment and Conservation (TDEC)</strong>. It supports reference, planning, and map display workflows for trail resources across Tennessee state parks and natural areas.</p><p><strong>Content</strong></p><p>The service includes trail geometry and supporting attributes that describe trail names, trail segments, route type, trail status, surface characteristics, allowed uses, blaze color, difficulty, and park or natural area association. The information captures trail segments for hiking and other recreational uses, including paved, gravel, natural, mulch, water, and riverbed surfaces, along with access categories such as biking, mountain biking, paddling, equestrian use, climbing, wheelchair access, all-terrain wheelchair access, fitness features, and storybook trails.</p><p><strong>Coverage</strong></p><p>The data covers Tennessee conservation and recreation lands, including state parks, state historic parks, state archaeological parks, state natural areas, and related protected sites managed by TDEC.</p><p><strong>Use Cases</strong></p><ul><li>Trail browsing and recreation planning</li><li>Park and natural area reference mapping</li><li>Trail condition and route characterization</li><li>Outdoor access and accessibility mapping</li><li>Visitor information support for Tennessee state lands</li></ul><p><strong>Data Notes</strong></p><p><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:left; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Representations of trails managed by the State of Tennessee Department of Environment and Conservation (TDEC). This data is updated on an irregular basis. This information has been compiled by TDEC from a variety of sources and is subject to change without notice. TDEC makes no representations as to accuracy, completeness, timeliness, or rights to the use of such information. These data are not intended for use as a survey product. TDEC shall not be liable for any general, special, indirect, incidental or consequential damanges including but not limited to: lost revenues or lost profits resulting from the use or misuse of the information contained in this data. Any sale of this data is prohibited except by written permission of TDEC.</span></span></p><p>&nbsp;</p>",
+        "licenseInfo": "",
+        "ownerId": "982a8dc3494d45e4a2ee1b5c031301b1",
+        "title": "TDEC Public Trails",
+        "type": "Feature Service",
+        "orgId": "bPacKTm9cauMXVfn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788294327000,
+        "avgRating": 0,
+        "id": "4f0d89964d5f4dd78dbc73c25d3aa6bb",
+        "categories": [],
+        "spatialReference": "102736",
+        "numRatings": 0,
+        "owner": "TDEC_Bureau_of_Conservation",
+        "accessInformation": "",
+        "largeThumbnail": null,
+        "lastViewed": 1789232400000,
+        "thumbnail": "thumbnail/thumbnail1784848909695.png",
+        "languages": [],
+        "created": 1784847948000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TDEC_Public_Trails_(view)/FeatureServer",
+        "tags": [
+          "Tennessee",
+          "TDEC",
+          "public trails",
+          "state parks",
+          "state natural areas",
+          "recreation",
+          "hiking",
+          "biking",
+          "wheelchair access",
+          "outdoor recreation"
+        ],
+        "numViews": 792,
+        "numComments": 0,
+        "size": 36349,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "TDEC_Public_Trails_(view)",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "TN Dept of Environment and Conservation",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/4f0d89964d5f4dd78dbc73c25d3aa6bb"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "5fa96ee2ba4e40d4abe7a62dd02d3b92",
+      "title": "Marina Sites",
+      "url": "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Marina_Sites_View/FeatureServer",
+      "publisher": "TWRA_GIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This service features detailed data on Tennessee marinas, including amenities, parking, and access information for statewide recreational use.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.36624046189512,
+                40.38298724244861
+              ],
+              [
+                1.096556328445644e-06,
+                40.38298724244861
+              ],
+              [
+                1.096556328445644e-06,
+                -2.8973469199233937
+              ],
+              [
+                -90.36624046189512,
+                -2.8973469199233937
+              ],
+              [
+                -90.36624046189512,
+                40.38298724244861
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p><strong>Overview</strong></p><p>This feature service provides comprehensive data on marinas located throughout the state of Tennessee. It is designed to support recreational boating and fishing activities by offering detailed information about facilities and amenities available across various public access points to waterways.</p><p><strong>Feature Layer: Marina Sites</strong></p><p>This primary layer represents individual marina locations. It includes detailed attributes such as geographic coordinates, county, associated waterway, and site name. The layer categorizes sites with descriptors for parking availability and surface type, hours of operation, and access fees, enhancing usability for public and agency personnel.</p><p>Key features covered include:</p><ul><li>Location and type of access sites such as boat launches, marinas, and fishing sites.</li><li>Parking details including surface type and capacity, including trailer parking.</li><li>Facilities and amenities like gas availability, ice, bait, camping, restrooms, fishing piers, fish cleaning stations, and courtesy docks.</li><li>Operational considerations such as access hours, seasonal closures, and 24-hour availability.</li><li>Site ownership and management information by various government and private entities.</li><li>Accessibility features including handicap and lighted parking.</li><li>Restrictions or special conditions such as trolling-only areas or rental availability.</li></ul><p><strong>Geographic Coverage</strong></p><p>The dataset covers the entire state of Tennessee, with sites organized by county and waterway, providing statewide access to boating facilities.</p><p><strong>Use Cases</strong></p><ul><li>Planning and management of recreational boating and fishing infrastructure by state and local agencies.</li><li>Providing the public with detailed site information for trip planning and safe boating access.</li><li>Supporting emergency response and maintenance scheduling for water access points.</li></ul>",
+        "licenseInfo": "<p>Tennessee Wildlife Resources Agency (TWRA) GIS maps are a public resource of general information. TWRA makes no representation or warranty as to its accuracy of the placement and location of any map feature or data. The data may periodically change and may or may not be incorporated in any new version. Any user of this information accepts and assumes all responsibility for the use or misuse or interpretation of this data and information. The user should not rely on the data provided herein for any reason. Map information is believed to be accurate but accuracy is not guaranteed, and the information contained in these maps is not to be construed or used as a legal description of the property portrayed. These maps are not legally binding or certified documents. In no event will the TWRA be liable for any issue that might arise from the use of this mapping service or the information it contains. Any errors or omissions can be reported to the Regional Offices.</p>",
+        "ownerId": "fb858620ae3d4aa6ae9b798cd06d61f3",
+        "title": "Marina Sites",
+        "type": "Feature Service",
+        "orgId": "PWXNAH2YKmZY7lBq",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785182644000,
+        "avgRating": 0,
+        "id": "5fa96ee2ba4e40d4abe7a62dd02d3b92",
+        "categories": [
+          "/Categories/Fishing",
+          "/Categories/Boating"
+        ],
+        "spatialReference": "102736",
+        "numRatings": 0,
+        "owner": "TWRA_GIS",
+        "accessInformation": "TWRA GIS",
+        "largeThumbnail": null,
+        "lastViewed": 1785182400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1777566830000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Marina_Sites_View/FeatureServer",
+        "tags": [
+          "Tennessee",
+          "boat ramps",
+          "marinas",
+          "recreation",
+          "water access",
+          "fishing sites",
+          "public facilities",
+          "outdoor activities"
+        ],
+        "numViews": 41816,
+        "numComments": 0,
+        "size": 24475,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Marina_Sites_View",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Tennessee Wildlife Resources Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/5fa96ee2ba4e40d4abe7a62dd02d3b92"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "daf255dc45d04cefb51cf51e4f63c757",
+      "title": "Fishing Sites",
+      "url": "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Fishing_Sites/FeatureServer",
+      "publisher": "TWRA_GIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This service maps fishing access sites across Tennessee, detailing facilities and amenities at each location.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.36624046189512,
+                40.38298724244861
+              ],
+              [
+                1.096556328445644e-06,
+                40.38298724244861
+              ],
+              [
+                1.096556328445644e-06,
+                -2.8973469199233937
+              ],
+              [
+                -90.36624046189512,
+                -2.8973469199233937
+              ],
+              [
+                -90.36624046189512,
+                40.38298724244861
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p><strong>Overview</strong></p><p>This Feature Service provides comprehensive information on fishing access locations throughout Tennessee, specifically highlighting boat ramps, marinas, and fishing sites.</p><p><strong>Feature Layer</strong></p><ul><li><strong>Fishing Sites</strong>: This layer features detailed data on Tennessee Fishing Sites. It includes geographic locations, regional and county identifiers, and information about waterways. The layer offers extensive attributes related to parking facilities, ramp structures, availability of amenities like ice, bait, and camping, and the management and ownership of the sites. It also covers accessibility features such as four-wheel drive access, handicapped parking, and lighting. Operational details such as hours open, access fees, and seasonal closures are recorded, along with details about boating suitability, including launchable boat sizes and types of vessels allowed.</li></ul><p><strong>Geographic Coverage</strong></p><p>The service covers a broad area within Tennessee, encompassing multiple counties throughout the state, providing a statewide perspective on recreational boating and fishing locations.</p><p><strong>Use Cases</strong></p><ul><li>Supporting recreational boaters and anglers in locating and accessing boat ramps and fishing sites.</li><li>Assisting resource managers and local authorities with site management and facility planning.</li><li>Facilitating tourism and outdoor recreational activity planning in Tennessee.</li></ul>",
+        "licenseInfo": "<p>Tennessee Wildlife Resources Agency (TWRA) GIS maps are a public resource of general information. TWRA makes no representation or warranty as to its accuracy of the placement and location of any map feature or data. The data may periodically change and may or may not be incorporated in any new version. Any user of this information accepts and assumes all responsibility for the use or misuse or interpretation of this data and information. The user should not rely on the data provided herein for any reason. Map information is believed to be accurate but accuracy is not guaranteed, and the information contained in these maps is not to be construed or used as a legal description of the property portrayed. These maps are not legally binding or certified documents. In no event will the TWRA be liable for any issue that might arise from the use of this mapping service or the information it contains. Any errors or omissions can be reported to the Regional Offices.</p>",
+        "ownerId": "fb858620ae3d4aa6ae9b798cd06d61f3",
+        "title": "Fishing Sites",
+        "type": "Feature Service",
+        "orgId": "PWXNAH2YKmZY7lBq",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785182613000,
+        "avgRating": 0,
+        "id": "daf255dc45d04cefb51cf51e4f63c757",
+        "categories": [
+          "/Categories/Fishing",
+          "/Categories/Boating"
+        ],
+        "spatialReference": "102736",
+        "numRatings": 0,
+        "owner": "TWRA_GIS",
+        "accessInformation": "TWRA GIS",
+        "largeThumbnail": null,
+        "lastViewed": 1785182400000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1777567811000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services3.arcgis.com/PWXNAH2YKmZY7lBq/arcgis/rest/services/Fishing_Sites/FeatureServer",
+        "tags": [
+          "Tennessee",
+          "boat ramps",
+          "marinas",
+          "fishing sites",
+          "recreation",
+          "public access",
+          "waterways",
+          "outdoor activities",
+          "State of Tennessee"
+        ],
+        "numViews": 42247,
+        "numComments": 0,
+        "size": 23978,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Fishing_Sites",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Tennessee Wildlife Resources Agency",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/daf255dc45d04cefb51cf51e4f63c757"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "87d9ef12e5344055874217c73dec1aa1",
+      "title": "Tennessee Statewide Trails Points Public",
+      "url": "https://services1.arcgis.com/YuVBSS7Y1of2Qud1/arcgis/rest/services/Tennessee_Statewide_Trails_Points_Public/FeatureServer",
+      "publisher": "pdudley_sts",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Compiled from various sources, this dataset consists of publicly accessible trails and greenways in Tennessee. Trail points are where the state does not have linear data. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.12843207831183,
+                36.6729543911348
+              ],
+              [
+                -81.7210221704134,
+                36.6729543911348
+              ],
+              [
+                -81.7210221704134,
+                34.92425145207629
+              ],
+              [
+                -90.12843207831183,
+                34.92425145207629
+              ],
+              [
+                -90.12843207831183,
+                36.6729543911348
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "This dataset was compiled from various sources to support the <a href='https://trec.tn.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>TREC Project</a>. Data consists of publicly available trails in Tennessee. For more complete data please see the layer Tennessee Statewide Trails Lines.  Data is constantly being updated and improved.  Federal and State Agency data is updated annually or as-needed.<div><br /></div><div>Trails points are located in places where multiple datasets were collected, the state has no trails lines, or when a dataset contained trailheads. </div>",
+        "licenseInfo": "<span style='color:rgb(5, 5, 5); font-family:&quot;Avenir Next&quot;; font-size:10px;'>The State of Tennessee makes no representation or warranty as to the accuracy of this data and the information contained within nor to its fitness for a particular purpose or use. The user accepts this data on an “AS IS” basis and assumes all responsibilities for the use thereof. The user will assume the entire risk and agrees to hold the State of Tennessee and its staff harmless of any liability resulting from any direct, indirect, incidental, special, consequential, or other damages, including loss of profit, arising out of the use of this data. The user is responsible for independent verification of all information contained in this data.</span>",
+        "ownerId": "85c02f613578665b0f49085c7b3932ca",
+        "title": "Tennessee Statewide Trails Points Public",
+        "type": "Feature Service",
+        "orgId": "YuVBSS7Y1of2Qud1",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1749579651000,
+        "avgRating": 0,
+        "id": "87d9ef12e5344055874217c73dec1aa1",
+        "categories": [],
+        "spatialReference": "102736",
+        "numRatings": 0,
+        "owner": "pdudley_sts",
+        "accessInformation": "USFW, USNPS, USFS, USACE, TVA, Trust for Public Land, TN Department of Environment and Conservation, TN Division of Forestry, THRIVE Partnership, TN Recreation and Parks Association, Nashville Metro Government. ",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail1702062053655.png",
+        "languages": [],
+        "created": 1694719845000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/YuVBSS7Y1of2Qud1/arcgis/rest/services/Tennessee_Statewide_Trails_Points_Public/FeatureServer",
+        "tags": [
+          "TREC",
+          "Recreation",
+          "Trails",
+          "TN Trails"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Tennessee_Statewide_Trails_Points_Public",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Tennessee STS GIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/87d9ef12e5344055874217c73dec1aa1"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "3fcec13ee5a549e2be45aff38fd0e90f",
+      "title": "TN State Parks Public Trails",
+      "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Public_Trails/FeatureServer",
+      "publisher": "TDEC_Bureau_of_Conservation",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Tennessee State Park Trails that are currently open, with information such as blaze color, description and promoted mileage.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.20821668172422,
+                36.62307952220948
+              ],
+              [
+                -82.01708128187461,
+                36.62307952220948
+              ],
+              [
+                -82.01708128187461,
+                34.90473036256961
+              ],
+              [
+                -90.20821668172422,
+                34.90473036256961
+              ],
+              [
+                -90.20821668172422,
+                36.62307952220948
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": null,
+        "licenseInfo": null,
+        "ownerId": "982a8dc3494d45e4a2ee1b5c031301b1",
+        "title": "TN State Parks Public Trails",
+        "type": "Feature Service",
+        "orgId": "bPacKTm9cauMXVfn",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1784769093000,
+        "avgRating": 0,
+        "id": "3fcec13ee5a549e2be45aff38fd0e90f",
+        "categories": [],
+        "spatialReference": "102736",
+        "numRatings": 0,
+        "owner": "TDEC_Bureau_of_Conservation",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1789063200000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1775590228000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services5.arcgis.com/bPacKTm9cauMXVfn/arcgis/rest/services/TN_State_Parks_Public_Trails/FeatureServer",
+        "tags": [
+          "Tennessee",
+          "Parks",
+          "Park",
+          "Recreation",
+          "Conservation",
+          "Environment",
+          "TDEC",
+          "Trails"
+        ],
+        "numViews": 3259,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 66,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "TN_State_Parks_Public_Trails",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "TN Dept of Environment and Conservation",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/3fcec13ee5a549e2be45aff38fd0e90f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "49ef503e293348f68a91f077ca253946",
+      "title": "Tennessee Statewide Trails Lines Public",
+      "url": "https://services1.arcgis.com/YuVBSS7Y1of2Qud1/arcgis/rest/services/Tennessee_Statewide_Trails_Lines_Public/FeatureServer",
+      "publisher": "pdudley_sts",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Compiled from various sources, this dataset consists of publicly accessible trails and greenways in Tennessee.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.21190943596768,
+                36.692327458321564
+              ],
+              [
+                -81.68837475916109,
+                36.692327458321564
+              ],
+              [
+                -81.68837475916109,
+                34.9013014276301
+              ],
+              [
+                -90.21190943596768,
+                34.9013014276301
+              ],
+              [
+                -90.21190943596768,
+                36.692327458321564
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": false,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer",
+          "Hosted Service",
+          "View Service"
+        ],
+        "description": "<p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>This dataset was compiled from various sources to support the&nbsp;</span><a target='_blank' href='https://trec.tn.gov' rel='nofollow ugc noopener noreferrer'>TREC Project</a><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>. Data is constantly being updated and improved.&nbsp; Federal and State Agency data is updated annually or as-needed.&nbsp; Please visit the organizations website for the most up to date information.&nbsp; Federal data current as of January 2026.</span></p><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>&nbsp;</div>",
+        "licenseInfo": "<span style='color:rgb(5, 5, 5); font-family:&quot;Avenir Next&quot;; font-size:10px;'>The State of Tennessee makes no representation or warranty as to the accuracy of this data and the information contained within nor to its fitness for a particular purpose or use. The user accepts this data on an “AS IS” basis and assumes all responsibilities for the use thereof. The user will assume the entire risk and agrees to hold the State of Tennessee and its staff harmless of any liability resulting from any direct, indirect, incidental, special, consequential, or other damages, including loss of profit, arising out of the use of this data. The user is responsible for independent verification of all information contained in this data.</span>",
+        "ownerId": "85c02f613578665b0f49085c7b3932ca",
+        "title": "Tennessee Statewide Trails Lines Public",
+        "type": "Feature Service",
+        "orgId": "YuVBSS7Y1of2Qud1",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1778679942000,
+        "avgRating": 0,
+        "id": "49ef503e293348f68a91f077ca253946",
+        "categories": [],
+        "spatialReference": "102736",
+        "numRatings": 0,
+        "owner": "pdudley_sts",
+        "accessInformation": "USFW, USNPS, USFS, USACE, TVA, Trust for Public Land, TN Department of Environment and Conservation, TN Division of Forestry, THRIVE Partnership, TN Recreation and Parks Association, Nashville Metro Government. ",
+        "largeThumbnail": null,
+        "lastViewed": 1789225200000,
+        "thumbnail": "thumbnail/thumbnail1702062015747.png",
+        "languages": [],
+        "created": 1694719728000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services1.arcgis.com/YuVBSS7Y1of2Qud1/arcgis/rest/services/Tennessee_Statewide_Trails_Lines_Public/FeatureServer",
+        "tags": [
+          "TREC",
+          "Recreation",
+          "Trails",
+          "TN Trails",
+          "Health",
+          "Greenways",
+          "Biking",
+          "Tennessee",
+          "Transportation"
+        ],
+        "numViews": 36310,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Tennessee_Statewide_Trails_Lines_Public",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Tennessee STS GIS",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/49ef503e293348f68a91f077ca253946"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "f0e77996c7494a4288498983ea26b6c5",
+      "title": "Soils - Tennessee",
+      "url": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Soils_Tennessee/FeatureServer",
+      "publisher": "colin.stiles_tndof",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Tennessee soil units derived from gSSURGO dataset published by the USDA. This is a TDF authoritative dataset for statewide soils.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -90.40478622188898,
+                36.8060075214937
+              ],
+              [
+                -81.64038831938795,
+                36.8060075214937
+              ],
+              [
+                -81.64038831938795,
+                34.90617962120803
+              ],
+              [
+                -90.40478622188898,
+                34.90617962120803
+              ],
+              [
+                -90.40478622188898,
+                36.8060075214937
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS API for JavaScript",
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<p style='text-align:center;'><span style='font-size:24px;'><strong>Tennessee gSSURGO Soils</strong></span></p><p><span style='font-size:14px;'><u>Overview</u></span></p><p><span style='font-size:14px;'>This feature layer represents the authoritative statewide soil units derived from the U.S. Department of Agriculture's (USDA) Gridded Soil Survery Geopgraphic database (gSSURGO). The polygons in this dataset delineate the boundaries of soil units for use in assisting sustainable forestry, wildlife habitat, soil and water conservation, and public recreation.</span></p><p><span style='font-size:14px;'>This dataset is intended for use in planning, management, analysis, and public information purposes. It serves as the primary TDF GIS data source for Tennessee soils.</span></p><p><span style='font-size:14px;'><u>Data Attributes</u></span></p><ul><li><span style='font-size:14px;'><strong>AREASYMBOL:</strong> The state area symbol of the mapunit.</span></li><li><span style='font-size:14px;'><strong>SPATIALVER:</strong> The spatial version of the mapunit.</span></li><li><span style='font-size:14px;'><strong>MUSYM:</strong> The abbreviated symbol of the soil mapunit.</span></li><li><span style='font-size:14px;'><strong>MUKEY:</strong> </span><span style='background-color:rgb(255,255,255); color:rgb(74,74,74); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:14px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>The mapunit key field is found throughout SSURGO and provides a primary link between the geographic and tabular data</span></span><span style='font-size:14px;'>.</span></li><li><span style='font-size:14px;'><strong>MUNAME:</strong> The full mapunit name.</span></li><li><span style='font-size:14px;'><strong>FARM:</strong> The farmland classification of the mapunit.</span></li><li><span style='font-size:14px;'><strong>ACRES:</strong> Acreage of the mapunit.</span></li><li><span style='font-size:14px;'><strong>HYDRICRATING:</strong> The hydric rating of the mapunit.</span></li><li><span style='font-size:14px;'><strong>LCPRIMARY:</strong> The primary land cover classification of the mapunit.</span></li><li><span style='font-size:14px;'><strong>LCSECONDARY:</strong> The secondary land cover classification of the mapunit.</span></li><li><span style='font-size:14px;'><strong>DRAINAGECLASS:</strong> The drainage class of the mapunit.</span></li><li><span style='font-size:14px;'><strong>HYDROGROUP:</strong> The soil hydrologic group code of the mapunit.</span></li><li><span style='font-size:14px;'><strong>FROSTFREEDAYS:</strong> Number of frost free days in a calendar year, on average, of the mapunit.</span></li><li><span style='font-size:14px;'><strong>SOILORDER:</strong> The taxonomic soil order of the mapunit.</span></li></ul><h3><span style='font-size:14px;'><u>Data Maintenance</u></span></h3><p><span style='font-size:14px;'>This layer is actively maintained by the TDF Forest Data and Analysis Unit. It is updated periodically to reflect new data publishes from the gSSURGO dataset.</span></p>",
+        "licenseInfo": "<p><span style='font-size:14px;'><u>Credits</u></span></p><p><span style='background-color:rgb(255,255,255); font-size:14px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>Soil Survey Staff. Gridded Soil Survey Geographic (gSSURGO) Database for&nbsp;</span></span><span style='font-size:14px;'>Tennessee</span><span style='background-color:rgb(255,255,255); font-size:14px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>. United States Department of Agriculture, Natural Resources Conservation Service. Available online at </span></span><a style='background-color:rgb(255, 255, 255); box-sizing:inherit; color:rgb(25, 86, 123); font-family:&quot;Public Sans Web&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;; font-size:16px; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-indent:0px; text-transform:none; word-spacing:0px;' target='_blank' href='https://gdg.sc.egov.usda.gov/' rel='nofollow ugc noopener noreferrer'><span style='font-size:14px;'>https://gdg.sc.egov.usda.gov/</span></a><span style='background-color:rgb(255,255,255); font-size:14px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>.&nbsp;</span></span><span style='font-size:14px;'>November 17, 2025&nbsp;</span><span style='background-color:rgb(255,255,255); font-size:14px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>(FY2025 official release).</span></span></p><p><span style='font-size:14px;'><i>Maintained by the Tennessee Division of Forestry (TDF) - Forest Data and Analysis Unit.</i></span></p><p><span style='font-size:14px;'><u>Access and Use Constraints</u></span></p><p><span style='font-size:14px;'>This dataset is intended for planning, management, analysis, and public information purposes. The information is provided “as is” without warranty or guarantee of any kind as to its accuracy, content, completeness, legality, or reliability. The TDF, its employees, agents, and contractors assume no liability for the improper or incorrect use of this data.</span></p><p><span style='font-size:14px;'><u>NRCS Regulatory Limitation</u></span></p><p><span style='font-size:14px;'>This dataset is not designed for use as a primary regulatory tool in permitting or citing decisions but may be used as a reference source. Federal, State, or local regulatory bodies are not to reassign to the Natural Resources Conservation Service of the Tennessee Division of Forestry any authority for the decisions that they make.</span></p><p><span style='font-size:14px;'><u>Mapping Scale Warning</u></span></p><p><span style='font-size:14px;'>Photographic or digital enlargement of these maps to scales greater than at which they were originally mapped can cause misinterpretation of the data. If enlarged, maps do not show small areas of contrasting soils that coule have been shown at a larger scale.</span></p>",
+        "ownerId": "7d9b678a49544c0cbd4b59afeb4df4a8",
+        "title": "Soils - Tennessee",
+        "type": "Feature Service",
+        "orgId": "lvPBAGXeSupVUvx2",
+        "screenshots": [],
+        "contentStatus": "public_authoritative",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1771875515000,
+        "avgRating": 0,
+        "id": "f0e77996c7494a4288498983ea26b6c5",
+        "categories": [
+          "/Categories/Environment",
+          "/Categories/Imagery",
+          "/Categories/Farming",
+          "basemaps",
+          "and Earth cover"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "colin.stiles_tndof",
+        "accessInformation": "Soil Survey Staff. Gridded Soil Survey Geographic (gSSURGO) Database for Tennessee. United States Department of Agriculture, Natural Resources Conservation Service. Available online at https://gdg.sc.egov.usda.gov/. November 17, 2025 (FY2025 official release).",
+        "largeThumbnail": null,
+        "lastViewed": -1,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1768328708000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/lvPBAGXeSupVUvx2/arcgis/rest/services/Soils_Tennessee/FeatureServer",
+        "tags": [
+          "Agriculture",
+          "Authoritative",
+          "Environment",
+          "Forest Data & Analysis Unit",
+          "Forest Health & Sustainability Unit",
+          "Public",
+          "Soils",
+          "Tennessee Department of Agriculture",
+          "Tennessee Division of Forestry"
+        ],
+        "numViews": 0,
+        "numComments": 0,
+        "size": 3210485760,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Soils_Tennessee",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Tennessee Division of Forestry",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all/items/f0e77996c7494a4288498983ea26b6c5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://geodata.tn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    124
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 23,
+  "next_offset": 10,
+  "response_sha256": "3408ece1f2c062b0d1ae7263fb7a5d6ecd82de1eab62fdabcb944f92b18fe317",
+  "search_complete": false
+}

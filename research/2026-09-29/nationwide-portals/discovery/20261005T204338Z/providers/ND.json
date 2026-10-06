@@ -1,0 +1,251 @@
+{
+  "jurisdiction_code": "ND",
+  "catalog_id": "nd-primary",
+  "catalog_url": "https://gishubdata-ndgov.hub.arcgis.com/",
+  "started_at": "2026-10-05T20:43:50.129810+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://gishubdata-ndgov.hub.arcgis.com/api/search/v1/collections/all/items",
+  "domain": "gishubdata-ndgov.hub.arcgis.com",
+  "validation_receipt": 54,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 57,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "a22b0729386944c6bdc3fa88c2168ff5",
+                  "65946b2f20464118905c8ddc283e4a07",
+                  "556c3f0032e04662a205de3e05958c63",
+                  "7d9811646d824dd497c2ab6eb36922d1",
+                  "6122b0b588724eff85ba021426197905",
+                  "88814c32b448420b9afe8c6bbb20a018",
+                  "5486587b484241a3b437ce6fdf83d1f8",
+                  "3b16b3f8220041d5bf0351dfabe83e95",
+                  "0a734da2bd084d50aba64df96ad484d6",
+                  "76c63427215645f29e7adb0dab3e2860",
+                  "a41a061d3b514c86aaee0982823b819d",
+                  "25f449b8cc5f42e98fd4c9ed8c88bbd3",
+                  "07ff8defaa3d4988b4ccee9edaa2eeff",
+                  "1ae70a30e4964dd6a80b68d0d3f5d277",
+                  "55dae4ae1ea246a799f2eb57546ee36a",
+                  "23c3f070ea274ecf8a1fa3e7f18090e5",
+                  "dc8baa8e62b04a6ab1346eff55340ddc",
+                  "c53da8c0250f4c2cb336572434b8df39",
+                  "1be3443c7bf049fbad83c2e737464910",
+                  "9a3c112a4a684ef2bd60187fd8474fd5",
+                  "6b90430b7b53426a9b96d2c44e6c0198",
+                  "ce75dcec2b3442038279e75210c02628",
+                  "538936f21df843278000ac3e500cc8ab",
+                  "7a5b85a715624132b9ccf60626485ab7",
+                  "41b9fb5186e54ab6a9ec8b5b533f1885",
+                  "10a9b89f904644d6a3134af442216003",
+                  "3c8687ddc03448328971aa0103478158",
+                  "7be401c50a3242849b23b134faf059eb",
+                  "69627fdfa87946a3b1f35f59ad75eec6",
+                  "56c2c27484954b6f995699052a9cd39d",
+                  "bcee1d0a26da4f29b525dd18a0d9a43e",
+                  "5b60cbc2ae6d47bbab9c05162c308966",
+                  "23bc612e987a4b8a8d0f2a876e126472",
+                  "a64dbfef2bb445ae8e54647c791eefac"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "a22b0729386944c6bdc3fa88c2168ff5",
+                  "65946b2f20464118905c8ddc283e4a07",
+                  "556c3f0032e04662a205de3e05958c63",
+                  "7d9811646d824dd497c2ab6eb36922d1",
+                  "6122b0b588724eff85ba021426197905",
+                  "88814c32b448420b9afe8c6bbb20a018",
+                  "5486587b484241a3b437ce6fdf83d1f8",
+                  "3b16b3f8220041d5bf0351dfabe83e95",
+                  "0a734da2bd084d50aba64df96ad484d6",
+                  "76c63427215645f29e7adb0dab3e2860",
+                  "a41a061d3b514c86aaee0982823b819d",
+                  "25f449b8cc5f42e98fd4c9ed8c88bbd3",
+                  "07ff8defaa3d4988b4ccee9edaa2eeff",
+                  "1ae70a30e4964dd6a80b68d0d3f5d277",
+                  "55dae4ae1ea246a799f2eb57546ee36a",
+                  "23c3f070ea274ecf8a1fa3e7f18090e5",
+                  "dc8baa8e62b04a6ab1346eff55340ddc",
+                  "c53da8c0250f4c2cb336572434b8df39",
+                  "1be3443c7bf049fbad83c2e737464910",
+                  "9a3c112a4a684ef2bd60187fd8474fd5",
+                  "6b90430b7b53426a9b96d2c44e6c0198",
+                  "ce75dcec2b3442038279e75210c02628",
+                  "538936f21df843278000ac3e500cc8ab",
+                  "7a5b85a715624132b9ccf60626485ab7",
+                  "41b9fb5186e54ab6a9ec8b5b533f1885",
+                  "10a9b89f904644d6a3134af442216003",
+                  "3c8687ddc03448328971aa0103478158",
+                  "7be401c50a3242849b23b134faf059eb",
+                  "69627fdfa87946a3b1f35f59ad75eec6",
+                  "56c2c27484954b6f995699052a9cd39d",
+                  "bcee1d0a26da4f29b525dd18a0d9a43e",
+                  "5b60cbc2ae6d47bbab9c05162c308966",
+                  "23bc612e987a4b8a8d0f2a876e126472",
+                  "a64dbfef2bb445ae8e54647c791eefac"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Documents",
+        "key": "document",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

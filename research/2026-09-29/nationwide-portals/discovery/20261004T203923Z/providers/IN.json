@@ -1,0 +1,235 @@
+{
+  "jurisdiction_code": "IN",
+  "catalog_id": "in-primary",
+  "catalog_url": "https://www.indianamap.org/",
+  "started_at": "2026-10-04T20:39:26.869887+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://www.indianamap.org/api/search/v1/collections/all/items",
+  "domain": "www.indianamap.org",
+  "validation_receipt": 19,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 24,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "6f9feff26a594bf984197f067f8f2cd5",
+                  "6b20782be57449eeaf9e0aeecc744d96",
+                  "ab2cfa3e3d0f48df82f823452bd858b9",
+                  "c2f8d5c8513b478cbb3fdf06c875cc7c",
+                  "932c9c3e4d144079952b4a82946b46f3",
+                  "494ef0680feb48109bdf8c00c8e2f599",
+                  "a893278dd2f146bea605c530c209ca8c",
+                  "b25179a54dc1412aa27aa05d1e09248b",
+                  "7bfae41759d146c5bdb60a493cd144d7",
+                  "2ebfb87d65a3458e9e5f93358c1fc784",
+                  "69e5a5d8dafb407fa004bc6cc0bd99ac",
+                  "433a94d399bd464db360cba7216c823a",
+                  "74ce04740bed4a6698256bf622c26b70",
+                  "aee48917be0a4350afcd7f2b0f8510a2",
+                  "891c4ca02f1749938eb8ad7f3abbcda2",
+                  "400b9b61ff2b425698422a9b3ea3d0d7",
+                  "fa4ae0e6c4f64a65b13284083bc331f5",
+                  "9f5ec7f193dc4aa19d72c281af0435f0",
+                  "cb8ae6c5509a404d8f82215d84e8ae46",
+                  "8d998b054f1f4339996a771bbb7e2ba4",
+                  "83d7d7e3ca1348ebad4b5aa67108e784",
+                  "74e886745efd489c89697a4849212ba3",
+                  "5dd2a343db4d4861bcc670d4fb5b2df5",
+                  "8cc260dbb2234edaa1241a1516833c68",
+                  "77dfeab90a9a45ab93fc8168d5207c1c",
+                  "e90621dd649c4e178a3f3fbc99430002"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "6f9feff26a594bf984197f067f8f2cd5",
+                  "6b20782be57449eeaf9e0aeecc744d96",
+                  "ab2cfa3e3d0f48df82f823452bd858b9",
+                  "c2f8d5c8513b478cbb3fdf06c875cc7c",
+                  "932c9c3e4d144079952b4a82946b46f3",
+                  "494ef0680feb48109bdf8c00c8e2f599",
+                  "a893278dd2f146bea605c530c209ca8c",
+                  "b25179a54dc1412aa27aa05d1e09248b",
+                  "7bfae41759d146c5bdb60a493cd144d7",
+                  "2ebfb87d65a3458e9e5f93358c1fc784",
+                  "69e5a5d8dafb407fa004bc6cc0bd99ac",
+                  "433a94d399bd464db360cba7216c823a",
+                  "74ce04740bed4a6698256bf622c26b70",
+                  "aee48917be0a4350afcd7f2b0f8510a2",
+                  "891c4ca02f1749938eb8ad7f3abbcda2",
+                  "400b9b61ff2b425698422a9b3ea3d0d7",
+                  "fa4ae0e6c4f64a65b13284083bc331f5",
+                  "9f5ec7f193dc4aa19d72c281af0435f0",
+                  "cb8ae6c5509a404d8f82215d84e8ae46",
+                  "8d998b054f1f4339996a771bbb7e2ba4",
+                  "83d7d7e3ca1348ebad4b5aa67108e784",
+                  "74e886745efd489c89697a4849212ba3",
+                  "5dd2a343db4d4861bcc670d4fb5b2df5",
+                  "8cc260dbb2234edaa1241a1516833c68",
+                  "77dfeab90a9a45ab93fc8168d5207c1c",
+                  "e90621dd649c4e178a3f3fbc99430002"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Documents",
+        "key": "document",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

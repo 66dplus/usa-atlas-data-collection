@@ -1,0 +1,793 @@
+{
+  "jurisdiction_code": "DC",
+  "query": "life expectancy",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T08:28:03.668929+00:00",
+  "candidates": [
+    {
+      "id": "de63a68eb7674548ae0ac01867123f7e",
+      "title": "DC Health Planning Neighborhoods",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/13",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset is used by DC Health, partners, and researchers to facilitate analysis and statistical modeling on a variety of health, economic, social, and other topics. DC Health delineates statistical neighborhoods to facilitate small-area analyses and visualization of health, economic, social, and other indicators to display and uncover disparate outcomes among populations across the city.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119759,
+                38.995548
+              ],
+              [
+                -76.909393,
+                38.995548
+              ],
+              [
+                -76.909393,
+                38.791645
+              ],
+              [
+                -77.119759,
+                38.791645
+              ],
+              [
+                -77.119759,
+                38.995548
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p style='margin:0 0 11 0;'><span><span>This dataset contains polygons that represent the boundaries of statistical neighborhoods as defined by the DC Department of Health (DC Health). DC Health delineates statistical neighborhoods to facilitate small-area analyses and visualization of health, economic, social, and other indicators to display and uncover disparate outcomes among populations across the city. The neighborhoods are also used to determine eligibility for some health services programs and support research by various entities within and outside of government. DC Health Planning Neighborhood boundaries follow census tract 2010 lines defined by the US Census Bureau. Each neighborhood is a group of between one and seven different, contiguous census tracts. This allows for easier comparison to Census data and calculation of rates per population (including estimates from the American Community Survey and Annual Population Estimates). These do not reflect precise neighborhood locations and do not necessarily include all commonly-used neighborhood designations. There is no formal set of standards that describes which neighborhoods are included in this dataset. Note that the District of Columbia does not have official neighborhood boundaries. </span></span></p><p style='margin:0 0 11 0;'><span><span>Origin of boundaries: each neighborhood is a group of between one and seven different, contiguous census tracts. They were originally determined in 2015 as part of an analytical research project with technical assistance from the Centers for Disease Control and Prevention (CDC) and the Council for State and Territorial Epidemiologists (CSTE) to define small area estimates of life expectancy. Census tracts were grouped roughly following the Office of Planning Neighborhood Cluster boundaries, where possible, and were made just large enough to achieve standard errors of less than 2 for each neighborhood's calculation of life expectancy. The resulting neighborhoods were used in the </span></span><a href='https://dchealth.dc.gov/publication/health-equity-report-district-columbia-2018' style='text-decoration:underline;' rel='nofollow ugc'><span style='text-decoration:underline;'><span>DC Health Equity Report (2018)</span></span></a><span> with updated names. HPNs were modified slightly in 2019, incorporating one census tract that was consistently suppressed due to low numbers into a neighboring HPN (Lincoln Park incorporated into Capitol Hill). Demographic information were analyzed to identify the bordering group with the most similarities to the single census tract. A second change split a neighborhood (GWU/National Mall) into two to facilitate separate analysis.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "DC Health Planning Neighborhoods",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1655302986000,
+        "avgRating": 0,
+        "id": "de63a68eb7674548ae0ac01867123f7e",
+        "categories": [
+          "/Categories/Health and Human Services"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "https://dchealth.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1774886400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1589208939000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/13",
+        "tags": [
+          "CDC",
+          "Centers for Disease Control and Prevention",
+          "Council for State and Territorial Epidemiologists",
+          "CSTE",
+          "dc",
+          "dc health",
+          "disease",
+          "district of columbia",
+          "doh",
+          "epidemiology",
+          "health",
+          "neighborhood",
+          "washington dc"
+        ],
+        "numViews": 31250,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "City of Washington, DC",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/de63a68eb7674548ae0ac01867123f7e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "20c55739045b4fe7b7b7ade69456c109",
+      "title": "DC Health Planning Neighborhoods to Census Tracts",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/14",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This is a cross reference table to show DC Health neighborhood names for each 2010 Census Tract.  DC Health, partners, and researchers use Health Planning Neighborhoods to facilitate analysis and statistical modeling on a variety of health, economic, social, and other topics. DC Health delineates statistical neighborhoods to facilitate small-area analyses and visualization of health, economic, social, and other indicators to display and uncover disparate outcomes among populations across the city.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.13,
+                39.01
+              ],
+              [
+                -76.9,
+                39.01
+              ],
+              [
+                -76.9,
+                38.78
+              ],
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -77.13,
+                39.01
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Table"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p style='margin:0 0 11 0;'><span><span>This dataset contains polygons that represent the boundaries of statistical neighborhoods as defined by the DC Department of Health (DC Health). DC Health delineates statistical neighborhoods to facilitate small-area analyses and visualization of health, economic, social, and other indicators to display and uncover disparate outcomes among populations across the city. The neighborhoods are also used to determine eligibility for some health services programs and support research by various entities within and outside of government. DC Health Planning Neighborhood boundaries follow census tract 2010 lines defined by the US Census Bureau. Each neighborhood is a group of between one and seven different, contiguous census tracts. This allows for easier comparison to Census data and calculation of rates per population (including estimates from the American Community Survey and Annual Population Estimates). These do not reflect precise neighborhood locations and do not necessarily include all commonly-used neighborhood designations. There is no formal set of standards that describes which neighborhoods are included in this dataset. Note that the District of Columbia does not have official neighborhood boundaries. </span></span></p><p style='margin:0 0 11 0;'><span><span>Origin of boundaries: each neighborhood is a group of between one and seven different, contiguous census tracts. They were originally determined in 2015 as part of an analytical research project with technical assistance from the Centers for Disease Control and Prevention (CDC) and the Council for State and Territorial Epidemiologists (CSTE) to define small area estimates of life expectancy. Census tracts were grouped roughly following the Office of Planning Neighborhood Cluster boundaries, where possible, and were made just large enough to achieve standard errors of less than 2 for each neighborhood's calculation of life expectancy. The resulting neighborhoods were used in the </span></span><a href='https://dchealth.dc.gov/publication/health-equity-report-district-columbia-2018' style='text-decoration:underline;' rel='nofollow ugc'><span><span>DC Health Equity Report (2018)</span></span></a><span> with updated names. HPNs were modified slightly in 2019, incorporating one census tract that was consistently suppressed due to low numbers into a neighboring HPN (Lincoln Park incorporated into Capitol Hill). Demographic information were analyzed to identify the bordering group with the most similarities to the single census tract. A second change split a neighborhood (GWU/National Mall) into two to facilitate separate analysis.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span><span>This work is licensed under a </span></span><a href='https://creativecommons.org:443/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span><span>Creative Commons Attribution 4.0 International License</span></span></a><span><span>.</span></span></p></div></div></div>",
+        "title": "DC Health Planning Neighborhoods to Census Tracts",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1727379624000,
+        "avgRating": 0,
+        "id": "20c55739045b4fe7b7b7ade69456c109",
+        "categories": [
+          "/Categories/Health and Human Services"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "DC Health",
+        "largeThumbnail": null,
+        "lastViewed": 1774886400000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1716332134000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Health_WebMercator/MapServer/14",
+        "tags": [
+          "ACS",
+          "American Community Survey",
+          "CDC",
+          "census tract",
+          "Centers for Disease Control and Prevention",
+          "Council for State and Territorial Epidemiologists",
+          "CSTE",
+          "DC Health",
+          "disease",
+          "District of Columbia",
+          "DOH",
+          "epidemiology",
+          "health",
+          "HPN",
+          "neighborhood",
+          "statistic",
+          "Washington DC"
+        ],
+        "numViews": 3667,
+        "numComments": 0,
+        "size": 89,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "D.C. Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/20c55739045b4fe7b7b7ade69456c109"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "43e74d85d141495a929f4419535f7701",
+      "title": "PaveDC",
+      "url": "https://pavedc.ddot.dc.gov",
+      "publisher": "snelson@ddot.dc.gov_DCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The Paving Plan for Washington, D.C. covering repairs and resurfacing of roads, alleys, sidewalk, and road markings. ",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.22575918267448,
+                39.0008619580066
+              ],
+              [
+                -76.8125353547214,
+                39.0008619580066
+              ],
+              [
+                -76.8125353547214,
+                38.78665888899387
+              ],
+              [
+                -77.22575918267448,
+                38.78665888899387
+              ],
+              [
+                -77.22575918267448,
+                39.0008619580066
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubSite",
+          "hubSolution",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "OpenData",
+          "Ready To Use",
+          "selfConfigured",
+          "source-2c2baa70d41b4832849f3f648f96fb2c",
+          "source-3c613bb3b05b4033b6e92f8ed1763dd2",
+          "Web Map",
+          "Registered App"
+        ],
+        "description": "Create your own initiative by combining existing applications with a custom site. Use this initiative to form teams around a problem and invite your community to participate.",
+        "licenseInfo": "null",
+        "ownerId": "c0d8433396504900abc0ebf5dee9d29f",
+        "title": "PaveDC",
+        "type": "Hub Site Application",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1785443894000,
+        "avgRating": 0,
+        "id": "43e74d85d141495a929f4419535f7701",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "snelson@ddot.dc.gov_DCGIS",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1786543200000,
+        "thumbnail": "thumbnail/thumbnail1724871415852.png",
+        "languages": [],
+        "created": 1702921273000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://pavedc.ddot.dc.gov",
+        "tags": [
+          "Hub Site"
+        ],
+        "numViews": 150812,
+        "numComments": 0,
+        "size": 326973,
+        "listed": false,
+        "scoreCompleteness": 61,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "collaborationGroupId": "7623cd55755c43a08f69b66a857fbe81",
+          "schemaVersion": 1.9,
+          "children": [
+            "1abb21d735084dd586c429ae24c7ed90",
+            "b5b5d947249d4bfe89a33f963934be3b",
+            "78beebfaed704e33ba3249896e85b2f0",
+            "f514d90d3a16411eb101d01fb98a5933",
+            "8f93c04422204905a874d2f93d72d089",
+            "7ede15e17de94d518319e054dc887b0f",
+            "13f0bfcd44e64bbe9a1a53b362117fd0",
+            "64f39bc07bfd490aae88f0e7d72b4a34",
+            "1077b6a6528f4af594be0392af1bdd08"
+          ],
+          "parentInitiativeId": "9dc604a89c774cb68cf99d83ffef69d2",
+          "followersGroupId": "22630d9605824e45836dfb6ea08dd510",
+          "location": {
+            "extent": [
+              [
+                -77.22575918267448,
+                38.78665888899387
+              ],
+              [
+                -76.8125353547214,
+                39.0008619580066
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78665888899387,
+                "xmin": -77.22575918267448,
+                "ymax": 39.0008619580066,
+                "xmax": -76.8125353547214,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "org",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          },
+          "contentGroupId": "91a01a5bd67e4d3aada624cfb59ea57a",
+          "orgUrlKey": "dcgis",
+          "parentId": "4cc58d1b0f90434fad580a07bee1c3c2"
+        },
+        "source": "City of Washington, DC",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/43e74d85d141495a929f4419535f7701"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "8c9b792abfcf47b6af17cfd5bbcec1fc",
+      "title": "DC Forest Action Plan",
+      "url": "https://forestactionplan.dc.gov",
+      "publisher": "DDOThub",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "A comprehensive roadmap for investing federal, District, and private resources into the urban forest.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.22575918267708,
+                39.000861958007945
+              ],
+              [
+                -76.81253535472399,
+                39.000861958007945
+              ],
+              [
+                -76.81253535472399,
+                38.786658888995184
+              ],
+              [
+                -77.22575918267708,
+                38.786658888995184
+              ],
+              [
+                -77.22575918267708,
+                39.000861958007945
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubSite",
+          "hubSolution",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Metadata",
+          "Online Map",
+          "OpenData",
+          "Ready To Use",
+          "selfConfigured",
+          "source-2c2baa70d41b4832849f3f648f96fb2c",
+          "Web Map",
+          "Registered App"
+        ],
+        "description": "The 2008 Farm Bill amended the Cooperative Forestry Assistance Act (CFAA) to require states to complete a statewide assessment of forest resource conditions and a long-term statewide forest resource strategy. The DC State Forest Action Plan (SFAP) is a comprehensive roadmap for investing federal, District, and private resources into managing and maintaining the urban forest. The DC State Forest Action Plan (SFAP) is a comprehensive roadmap for investing federal, District, and private resources into managing and maintaining the urban forest. <div><br /></div><div>Washington DC has many tracts of continuous forested area, providing opportunities for diverse ecosystems including Rock Creek Park, Palisades Parkway, the C&amp;O Canal National Historical Park and Fort Dupont. Common DC wildlife includes bald eagles, bats, coyotes, deer, ducks, eastern box turtles, eastern cottontails, foxes, owls, woodchucks and more. </div><div><br /></div><div>Washington DC straddles two ecoregions, the Piedmont and the Southeast Plains ecoregion. The dominant native vegetation on most of the well-drained loamy soil of the Piedmont is deciduous forest, and the native vegetation for the Southeast Plains in the District is mostly hardwoods with some softwoods.</div>",
+        "licenseInfo": "This work is licensed under a <a href='https://creativecommons.org/licenses/by/4.0/' target='_blank' rel='nofollow ugc noopener noreferrer'>Creative Commons Attribution 4.0 International License</a>.",
+        "title": "DC Forest Action Plan",
+        "type": "Hub Site Application",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1775645578000,
+        "avgRating": 0,
+        "id": "8c9b792abfcf47b6af17cfd5bbcec1fc",
+        "categories": [
+          "/Categories/Environment/Urban Forestry"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DDOThub",
+        "accessInformation": "District Department of Transportation",
+        "largeThumbnail": null,
+        "lastViewed": 1775642400000,
+        "thumbnail": "thumbnail/thumbnail1637683243387.png",
+        "languages": [],
+        "created": 1625760732000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://forestactionplan.dc.gov",
+        "tags": [
+          "Hub Site",
+          "washington dc",
+          "dc",
+          "district of columbia",
+          "ddot",
+          "forest action plan"
+        ],
+        "numViews": 194733,
+        "numComments": 0,
+        "size": 280675,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "collaborationGroupId": "a745cb9586c04551b4e0dc54c90c1808",
+          "schemaVersion": 1.9,
+          "children": [
+            "748b44b9224a4ce192a1d31cc5d63d96",
+            "c30431052ea2486885df45dae2ff1c5e",
+            "fea07f6316434068a0fe50dbb96d9399",
+            "c0512c2b792f40348127f0de6aa8d15a",
+            "1894f5781db14d5eb733a5b30db294d0",
+            "6e96c49e76d344dba8d1b1a8a6d745ad",
+            "7d046a3cbaf343e5b35151f96d950e76",
+            "9a4a18db05e24ee99183e02bad5bbc25",
+            "2f330a6af69c490b97a4e8256be59805",
+            "be1b3427b1354aff907ce9fffe86f1d2",
+            "a8cf35d4a3a5477a8b48617dec88bd00",
+            "5607da3c624c4bc29ab5ba054a684ebe",
+            "74c82804ec68449a9f438f687deb493a",
+            "7a6179a306a048beb12e270f3eeb748a"
+          ],
+          "parentInitiativeId": "90e72bf81d5b4c56843c34c5142bd16b",
+          "followersGroupId": "428264a3a5ca4c5f83c33b280be3db81",
+          "telemetry": {
+            "plugins": {
+              "adobe": {
+                "disabled": true
+              },
+              "google": {
+                "disabled": false,
+                "measurementId": "G-384492150"
+              },
+              "siteImprove": {
+                "disabled": true
+              }
+            }
+          },
+          "contentGroupId": "94ae19036cfb4fee9311b24384a8f255",
+          "parentId": "e41603b4be3c44a6adc8b7fd1dc4ca5b"
+        },
+        "source": "District Department of Transportation",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/8c9b792abfcf47b6af17cfd5bbcec1fc"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b62a8c7091de42c495e04a6dbdf9f3ac",
+      "title": "Urban Forest Climate Adaptation",
+      "url": "https://climatereadyforests.dc.gov/",
+      "publisher": "DDOThub",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Understanding climate change vulnerability and developing adaptation strategies. Trees help reduce greenhouse gas emissions through their ability to absorb and store carbon dioxide. But they don’t stop there.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.22575918267448,
+                39.0008619580066
+              ],
+              [
+                -76.8125353547214,
+                39.0008619580066
+              ],
+              [
+                -76.8125353547214,
+                38.78665888899387
+              ],
+              [
+                -77.22575918267448,
+                38.78665888899387
+              ],
+              [
+                -77.22575918267448,
+                39.0008619580066
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubSite",
+          "hubSolution",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Metadata",
+          "Online Map",
+          "OpenData",
+          "Ready To Use",
+          "selfConfigured",
+          "source-2c2baa70d41b4832849f3f648f96fb2c",
+          "source-32c792c3b4c74a508602b3eeccf7299d",
+          "source-3c613bb3b05b4033b6e92f8ed1763dd2",
+          "Web Map",
+          "Registered App"
+        ],
+        "description": "Here in the District, we are relying on our urban forest to help us adapt to future climates that are projected to bring extreme heat, higher average temperatures, and changes in precipitation. But the trees themselves are vulnerable to those same changes. As stewards of the urban forest, the Urban Forestry Division has been working to better understand what is at risk, who is at risk, and how to adjust our management practices to maintain an urban forest that is healthy, safe, and growing, even within a changing climate.",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org:443/licenses/by/4.0' style='text-decoration:underline;' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "Urban Forest Climate Adaptation",
+        "type": "Hub Site Application",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1770845326000,
+        "avgRating": 0,
+        "id": "b62a8c7091de42c495e04a6dbdf9f3ac",
+        "categories": [
+          "/Categories/Environment/Urban Forestry"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DDOThub",
+        "accessInformation": "District Department of Transportation",
+        "largeThumbnail": null,
+        "lastViewed": 1770843600000,
+        "thumbnail": "thumbnail/thumbnail1692728840906.png",
+        "languages": [],
+        "created": 1685462372000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://climatereadyforests.dc.gov/",
+        "tags": [
+          "Hub Site",
+          "ward4",
+          "climate",
+          "washington dc",
+          "district of colubmia",
+          "dc",
+          "ddot",
+          "urban forestry",
+          "trees"
+        ],
+        "numViews": 56032,
+        "numComments": 0,
+        "size": 359623,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "collaborationGroupId": "99f0f9d40c1a4ebda3408ae515c16386",
+          "schemaVersion": 1.9,
+          "children": [
+            "281d670d04264903a986b75ed4005061",
+            "28cdcec0a2d84f46ae1ceb2c3df6c677",
+            "ae0043bc5ef746a0899db736d9fdf9c5",
+            "16c545d6525446358b4b07f479533076",
+            "0764f9d17cb14887b88b233e8c5fc81f"
+          ],
+          "parentInitiativeId": "322b40abec0b419392a33a32bf48b3c2",
+          "followersGroupId": "c781dff1a1fa458384b300a47bf1be90",
+          "contentGroupId": "f7eaf70351694ec9b29e5ecf841e1d2e",
+          "parentId": "68f83f11be4741ee875900c63e4e4f59"
+        },
+        "source": "District Department of Transportation",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/b62a8c7091de42c495e04a6dbdf9f3ac"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    203
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 5,
+  "next_offset": 5,
+  "response_sha256": "15ffd9bdba2e4a3d714cc54bb211afe61dd47a073d9c9face5deecf584e05671",
+  "search_complete": true
+}

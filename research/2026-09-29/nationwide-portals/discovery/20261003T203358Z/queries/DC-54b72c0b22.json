@@ -1,0 +1,1780 @@
+{
+  "jurisdiction_code": "DC",
+  "query": "groundwater",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-03T20:34:18.511467+00:00",
+  "candidates": [
+    {
+      "id": "eef0f9bc17d24f1c990332e7c2eca736",
+      "title": "Topography Northeast DC - 2024",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/NE_DC_2024_TopoLine/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown in a single lift on March 1st, 2024. This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.122373,
+                39.001746
+              ],
+              [
+                -76.900716,
+                39.001746
+              ],
+              [
+                -76.900716,
+                38.785481
+              ],
+              [
+                -77.122373,
+                38.785481
+              ],
+              [
+                -77.122373,
+                39.001746
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. Some areas have limited data. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. All data returns were removed from the dataset within the United States Secret Service redaction boundary except for classified ground points and classified water points.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>None, However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of its limitations. This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/publicdomain/zero/1.0/legalcode\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons CC0 1.0 Universal License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Topography Northeast DC - 2024",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1754322004000,
+        "avgRating": 0,
+        "id": "eef0f9bc17d24f1c990332e7c2eca736",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of the Chief Technology Officer",
+        "largeThumbnail": null,
+        "lastViewed": 1774872000000,
+        "thumbnail": "thumbnail/thumbnail1730390606668.png",
+        "languages": [],
+        "created": 1730390429000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/NE_DC_2024_TopoLine/FeatureServer",
+        "tags": [
+          "contour",
+          "breakline",
+          "elevation",
+          "topography",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 15374,
+        "numComments": 0,
+        "size": 191234048,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NE_DC_2024_TopoLine",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": true,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.00917020723092,
+                38.8897461471036
+              ],
+              [
+                -76.90909044916741,
+                38.97047668014088
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.8897461471036,
+                "xmin": -77.00917020723092,
+                "ymax": 38.97047668014088,
+                "xmax": -76.90909044916741,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/eef0f9bc17d24f1c990332e7c2eca736"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "ef35fee2240c4871ba7b04c897e84029",
+      "title": "Topography Southeast DC - 2022",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Southeast_DC/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown in a single lift on January 24, 2022, and a short re-flight on January 26, 2022. This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.00923853291634,
+                38.889819710942206
+              ],
+              [
+                -76.91332674454671,
+                38.889819710942206
+              ],
+              [
+                -76.91332674454671,
+                38.82114079478184
+              ],
+              [
+                -77.00923853291634,
+                38.82114079478184
+              ],
+              [
+                -77.00923853291634,
+                38.889819710942206
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. </span><a href='https://opendata.dc.gov:443/datasets/uss-redacted-1-meter-areas/explore' target='_blank' style='text-decoration:underline;' rel='nofollow ugc noopener noreferrer'><span>Some areas have limited data</span></a><span>. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. All data returns were removed from the dataset within the United States Secret Service redaction boundary except for classified ground points and classified water points.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>None, However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of its limitations. This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "Topography Southeast DC - 2022",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1730144778000,
+        "avgRating": 0,
+        "id": "ef35fee2240c4871ba7b04c897e84029",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of the Chief Technology Officer",
+        "largeThumbnail": null,
+        "lastViewed": 1774882800000,
+        "thumbnail": "thumbnail/thumbnail1661371052660.png",
+        "languages": [],
+        "created": 1661180242000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Southeast_DC/FeatureServer",
+        "tags": [
+          "contour",
+          "Topography",
+          "Washington DC",
+          "DC",
+          "District of Columbia",
+          "elevation"
+        ],
+        "numViews": 7653,
+        "numComments": 0,
+        "size": 235929600,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Topography_Southeast_DC",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": true,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.00923853291634,
+                38.82114079478184
+              ],
+              [
+                -76.91332674454671,
+                38.889819710942206
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.82114079478184,
+                "xmin": -77.00923853291634,
+                "ymax": 38.889819710942206,
+                "xmax": -76.91332674454671,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/ef35fee2240c4871ba7b04c897e84029"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "b28ebf22ee1b4664aacdb63432708ab3",
+      "title": "Topography Northwest DC - 2022",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Northwest_DC/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown in a single lift on January 24, 2022, and a short re-flight on January 26, 2022. This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.11989783744959,
+                38.99596602873931
+              ],
+              [
+                -77.00606951289242,
+                38.99596602873931
+              ],
+              [
+                -77.00606951289242,
+                38.889674242705446
+              ],
+              [
+                -77.11989783744959,
+                38.889674242705446
+              ],
+              [
+                -77.11989783744959,
+                38.99596602873931
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. </span><a href='https://opendata.dc.gov:443/datasets/uss-redacted-1-meter-areas/explore' target='_blank' style='text-decoration:underline;' rel='nofollow ugc noopener noreferrer'><span>Some areas have limited data</span></a><span>. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. All data returns were removed from the dataset within the United States Secret Service redaction boundary except for classified ground points and classified water points.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>None, However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of its limitations. This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "Topography Northwest DC - 2022",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1730144750000,
+        "avgRating": 0,
+        "id": "b28ebf22ee1b4664aacdb63432708ab3",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of the Chief Technology Officer",
+        "largeThumbnail": null,
+        "lastViewed": 1774886400000,
+        "thumbnail": "thumbnail/thumbnail1661371033626.png",
+        "languages": [],
+        "created": 1661179668000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Northwest_DC/FeatureServer",
+        "tags": [
+          "contour",
+          "Topography",
+          "Washington DC",
+          "DC",
+          "District of Columbia",
+          "elevation"
+        ],
+        "numViews": 9322,
+        "numComments": 0,
+        "size": 557883392,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Topography_Northwest_DC",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": true,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.11989783744959,
+                38.889674242705446
+              ],
+              [
+                -77.00606951289242,
+                38.99596602873931
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.889674242705446,
+                "xmin": -77.11989783744959,
+                "ymax": 38.99596602873931,
+                "xmax": -77.00606951289242,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/b28ebf22ee1b4664aacdb63432708ab3"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a9a645b3e946495aaca6a73851012651",
+      "title": "Topography Southeast DC - 2024",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/SE_DC_2024_TopoLine/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown in a single lift on March 1st, 2024. This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.122373,
+                39.001746
+              ],
+              [
+                -76.900716,
+                39.001746
+              ],
+              [
+                -76.900716,
+                38.785481
+              ],
+              [
+                -77.122373,
+                38.785481
+              ],
+              [
+                -77.122373,
+                39.001746
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. Some areas have limited data. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. All data returns were removed from the dataset within the United States Secret Service redaction boundary except for classified ground points and classified water points.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>None, However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of its limitations. This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/publicdomain/zero/1.0/legalcode\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons CC0 1.0 Universal License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Topography Southeast DC - 2024",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1754321469000,
+        "avgRating": 0,
+        "id": "a9a645b3e946495aaca6a73851012651",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of the Chief Technology Officer",
+        "largeThumbnail": null,
+        "lastViewed": 1774882800000,
+        "thumbnail": "thumbnail/thumbnail1730391151511.png",
+        "languages": [],
+        "created": 1730391014000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/SE_DC_2024_TopoLine/FeatureServer",
+        "tags": [
+          "contour",
+          "breakline",
+          "elevation",
+          "topography",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 5228,
+        "numComments": 0,
+        "size": 204546048,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SE_DC_2024_TopoLine",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": true,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.00923853291634,
+                38.82114079478184
+              ],
+              [
+                -76.91332674454671,
+                38.889819710942206
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.82114079478184,
+                "xmin": -77.00923853291634,
+                "ymax": 38.889819710942206,
+                "xmax": -76.91332674454671,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/a9a645b3e946495aaca6a73851012651"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c7b7b4a276e642098a627d8298c358cb",
+      "title": "Topography Northwest DC - 2024",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Northwest_DC_2024/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown in a single lift on March 1st, 2024. This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.122373,
+                39.001746
+              ],
+              [
+                -76.900716,
+                39.001746
+              ],
+              [
+                -76.900716,
+                38.785481
+              ],
+              [
+                -77.122373,
+                38.785481
+              ],
+              [
+                -77.122373,
+                39.001746
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. Some areas have limited data. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. All data returns were removed from the dataset within the United States Secret Service redaction boundary except for classified ground points and classified water points.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>None, However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of its limitations. This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/publicdomain/zero/1.0/legalcode\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons CC0 1.0 Universal License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "Topography Northwest DC - 2024",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1754316795000,
+        "avgRating": 0,
+        "id": "c7b7b4a276e642098a627d8298c358cb",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of the Chief Technology Officer",
+        "largeThumbnail": null,
+        "lastViewed": 1785848400000,
+        "thumbnail": "thumbnail/thumbnail1730390350335.png",
+        "languages": [],
+        "created": 1730389985000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Northwest_DC_2024/FeatureServer",
+        "tags": [
+          "contour",
+          "breakline",
+          "elevation",
+          "topography",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 14737,
+        "numComments": 0,
+        "size": 485924864,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Topography_Northwest_DC_2024",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": true,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.11989783744959,
+                38.889674242705446
+              ],
+              [
+                -77.00606951289242,
+                38.99596602873931
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.889674242705446,
+                "xmin": -77.11989783744959,
+                "ymax": 38.99596602873931,
+                "xmax": -77.00606951289242,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/c7b7b4a276e642098a627d8298c358cb"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "4d97cc86b6074c6a8e3ce2e5468eebc4",
+      "title": "Topography Southwest DC - 2022",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Southwest_DC/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown in a single lift on January 24, 2022, and a short re-flight on January 26, 2022. This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.06404580757187,
+                38.88981513950176
+              ],
+              [
+                -77.00126717094791,
+                38.88981513950176
+              ],
+              [
+                -77.00126717094791,
+                38.80318282638708
+              ],
+              [
+                -77.06404580757187,
+                38.80318282638708
+              ],
+              [
+                -77.06404580757187,
+                38.88981513950176
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. </span><a href='https://opendata.dc.gov:443/datasets/uss-redacted-1-meter-areas/explore' target='_blank' style='text-decoration:underline;' rel='nofollow ugc noopener noreferrer'><span>Some areas have limited data</span></a><span>. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. All data returns were removed from the dataset within the United States Secret Service redaction boundary except for classified ground points and classified water points.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>None, However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of its limitations. This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "Topography Southwest DC - 2022",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1730144807000,
+        "avgRating": 0,
+        "id": "4d97cc86b6074c6a8e3ce2e5468eebc4",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of the Chief Technology Officer",
+        "largeThumbnail": null,
+        "lastViewed": 1774882800000,
+        "thumbnail": "thumbnail/thumbnail1661370960471.png",
+        "languages": [],
+        "created": 1661180571000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Southwest_DC/FeatureServer",
+        "tags": [
+          "contour",
+          "Topography",
+          "Washington DC",
+          "DC",
+          "District of Columbia",
+          "elevation"
+        ],
+        "numViews": 8030,
+        "numComments": 0,
+        "size": 79781888,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Topography_Southwest_DC",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": true,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.06404580757187,
+                38.80318282638708
+              ],
+              [
+                -77.00126717094791,
+                38.88981513950176
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.80318282638708,
+                "xmin": -77.06404580757187,
+                "ymax": 38.88981513950176,
+                "xmax": -77.00126717094791,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/4d97cc86b6074c6a8e3ce2e5468eebc4"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c0cb40a3345c4439b980534833874d3f",
+      "title": "Topography Northeast DC - 2022",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Northeast_DC/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown in a single lift on January 24, 2022, and a short re-flight on January 26, 2022. This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.00917020723222,
+                38.97047668077027
+              ],
+              [
+                -76.90909044916872,
+                38.97047668077027
+              ],
+              [
+                -76.90909044916872,
+                38.889746147104255
+              ],
+              [
+                -77.00917020723222,
+                38.889746147104255
+              ],
+              [
+                -77.00917020723222,
+                38.97047668077027
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. </span><a href='https://opendata.dc.gov:443/datasets/uss-redacted-1-meter-areas/explore' target='_blank' style='text-decoration:underline;' rel='nofollow ugc noopener noreferrer'><span>Some areas have limited data</span></a><span>. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. All data returns were removed from the dataset within the United States Secret Service redaction boundary except for classified ground points and classified water points.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>None, However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of its limitations. This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "Topography Northeast DC - 2022",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1730144713000,
+        "avgRating": 0,
+        "id": "c0cb40a3345c4439b980534833874d3f",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of the Chief Technology Officer",
+        "largeThumbnail": null,
+        "lastViewed": 1785848400000,
+        "thumbnail": "thumbnail/thumbnail1661371014212.png",
+        "languages": [],
+        "created": 1661178896000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Topography_Northeast_DC/FeatureServer",
+        "tags": [
+          "contour",
+          "Topography",
+          "Washington DC",
+          "DC",
+          "District of Columbia",
+          "elevation"
+        ],
+        "numViews": 17706,
+        "numComments": 0,
+        "size": 223272960,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "Topography_Northeast_DC",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": true,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.00917020723222,
+                38.889746147104255
+              ],
+              [
+                -76.90909044916872,
+                38.97047668077027
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.889746147104255,
+                "xmin": -77.00917020723222,
+                "ymax": 38.97047668077027,
+                "xmax": -76.90909044916872,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/c0cb40a3345c4439b980534833874d3f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "fb620eae8e8b4f66b3204e32d8c70151",
+      "title": "Topography Southwest DC - 2024",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/SW_DC_2024_TopoLine/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown in a single lift on March 1st, 2024. This data is used for the planning and management of Washington, D.C. by local government agencies.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.122373,
+                39.001746
+              ],
+              [
+                -76.900716,
+                39.001746
+              ],
+              [
+                -76.900716,
+                38.785481
+              ],
+              [
+                -77.122373,
+                38.785481
+              ],
+              [
+                -77.122373,
+                39.001746
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. Some areas have limited data. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. All data returns were removed from the dataset within the United States Secret Service redaction boundary except for classified ground points and classified water points.</SPAN></P></DIV></DIV></DIV>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>None, However, users should be aware that temporal changes may have occurred since this dataset was collected and that some parts of these data may no longer represent actual surface conditions. Users should not use these data for critical applications without a full awareness of its limitations. This work is licensed under a </SPAN><A href=\"https://creativecommons.org:443/publicdomain/zero/1.0/legalcode\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons CC0 1.0 Universal License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Topography Southwest DC - 2024",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1754321527000,
+        "avgRating": 0,
+        "id": "fb620eae8e8b4f66b3204e32d8c70151",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of the Chief Technology Officer",
+        "largeThumbnail": null,
+        "lastViewed": 1774882800000,
+        "thumbnail": "thumbnail/thumbnail1730390947692.png",
+        "languages": [],
+        "created": 1730390831000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/SW_DC_2024_TopoLine/FeatureServer",
+        "tags": [
+          "contour",
+          "breakline",
+          "elevation",
+          "topography",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 4518,
+        "numComments": 0,
+        "size": 61186048,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SW_DC_2024_TopoLine",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": true,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              },
+              {
+                "hidden": false,
+                "key": "filegdb"
+              },
+              {
+                "hidden": false,
+                "key": "featureCollection"
+              },
+              {
+                "hidden": true,
+                "key": "excel"
+              },
+              {
+                "hidden": false,
+                "key": "geoPackage"
+              },
+              {
+                "hidden": false,
+                "key": "sqlite"
+              }
+            ],
+            "flowType": "createReplica"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.06404580757187,
+                38.80318282638708
+              ],
+              [
+                -77.00126717094791,
+                38.88981513950176
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.80318282638708,
+                "xmin": -77.06404580757187,
+                "ymax": 38.88981513950176,
+                "xmax": -77.00126717094791,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC0-1.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/fb620eae8e8b4f66b3204e32d8c70151"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "02d3370c7cee4b1d8928a7aecfacea25",
+      "title": "Topography Northeast DC - 2020",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/NE_DC_2020_TopoLine/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown on 6/26/2020, 6/29/2020, and 6/30/2020..This data is used for the planning and management of Washington, D.C. by local...",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.00917409253637,
+                38.970476077216
+              ],
+              [
+                -76.90913922199246,
+                38.970476077216
+              ],
+              [
+                -76.90913922199246,
+                38.88974405178374
+              ],
+              [
+                -77.00917409253637,
+                38.88974405178374
+              ],
+              [
+                -77.00917409253637,
+                38.970476077216
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><p><span>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. </span><a href='https://opendata.dc.gov/datasets/uss-redacted-1-meter-areas/explore' target='_blank' rel='nofollow ugc noopener noreferrer'>Some areas have limited data</a>. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. Except for classified ground points and classified water points, all lidar data returns and collected data were removed from the dataset within the United States Secret Service 1m redaction boundary generated for the 2017 orthophoto flight</p><p><span></span></p></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0/\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Topography Northeast DC - 2020",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1715358272000,
+        "avgRating": 0,
+        "id": "02d3370c7cee4b1d8928a7aecfacea25",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "https://octo.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1774864800000,
+        "thumbnail": "thumbnail/thumbnail1661179891312.png",
+        "languages": [],
+        "created": 1615991391000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/NE_DC_2020_TopoLine/FeatureServer",
+        "tags": [
+          "contour",
+          "breakline",
+          "elevation",
+          "Topography",
+          "District of Columbia",
+          "elevation",
+          "topoblock",
+          "Washington DC"
+        ],
+        "numViews": 6271,
+        "numComments": 0,
+        "size": 726122496,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "NE_DC_2020_TopoLine",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "hosted": true
+          }
+        },
+        "source": "D.C. Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/02d3370c7cee4b1d8928a7aecfacea25"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "cd392838c8dd48b287c58884b5dfea52",
+      "title": "Topography Southwest DC - 2020",
+      "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/SW_DC_2020_TopoLine/FeatureServer",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "0.6 meter contours from lidar flown on 6/26/2020, 6/29/2020, and 6/30/2020. This data is used for the planning and management of Washington, D.C. by local...",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.06442085939217,
+                38.889815125190744
+              ],
+              [
+                -77.00125773821102,
+                38.889815125190744
+              ],
+              [
+                -77.00125773821102,
+                38.80315507418725
+              ],
+              [
+                -77.06442085939217,
+                38.80315507418725
+              ],
+              [
+                -77.06442085939217,
+                38.889815125190744
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer",
+          "Hosted Service"
+        ],
+        "description": "<div style='text-align:Left;'><p><span>0.6 meter contours. This dataset contains locations and attributes of 0.6 meter interval topography data, created using bare earth points from the lidar point cloud data. </span><a href='https://opendata.dc.gov:443/datasets/uss-redacted-1-meter-areas' rel='nofollow ugc' target='_blank'>Some areas have limited data</a>. The lidar dataset redaction was conducted under the guidance of the United States Secret Service. Except for classified ground points and classified water points, all lidar data returns and collected data were removed from the dataset within the United States Secret Service 1m redaction boundary generated for the 2017 orthophoto flight</p><p><span></span></p></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' rel='nofollow ugc' style='text-decoration:underline;'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "Topography Southwest DC - 2020",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1715358175000,
+        "avgRating": 0,
+        "id": "cd392838c8dd48b287c58884b5dfea52",
+        "categories": [
+          "/Categories/Elevation"
+        ],
+        "spatialReference": "26985",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "https://octo.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1774886400000,
+        "thumbnail": "thumbnail/thumbnail1661179949486.png",
+        "languages": [],
+        "created": 1615995462000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/SW_DC_2020_TopoLine/FeatureServer",
+        "tags": [
+          "contour",
+          "breakline",
+          "elevation",
+          "Topography",
+          "District of Columbia",
+          "elevation",
+          "topoblock",
+          "Washington DC"
+        ],
+        "numViews": 4782,
+        "numComments": 0,
+        "size": 234708992,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "SW_DC_2020_TopoLine",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "hosted": true
+          }
+        },
+        "source": "D.C. Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/cd392838c8dd48b287c58884b5dfea52"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    95
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 16,
+  "next_offset": 10,
+  "response_sha256": "285c935388690ba2b4cfb81333a16b09baae109079bd9d43482ebe2a3c6c88d7",
+  "search_complete": false
+}

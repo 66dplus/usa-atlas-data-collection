@@ -1,0 +1,1338 @@
+{
+  "jurisdiction_code": "DC",
+  "query": "health insurance",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T02:27:01.322489+00:00",
+  "candidates": [
+    {
+      "id": "0e41fc574c6b428bb02f42d7f47d6c78",
+      "title": "ACS Economic Characteristics DC Experimental",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/53",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Due to the impact of the COVID-19 pandemic, instead of providing the standard 1-year data products, the Census Bureau released experimental estimates from the 1-year data. These are 1-year estimates shown by District of Columbia boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.14074011718749,
+                39.00962959609984
+              ],
+              [
+                -76.89354773437499,
+                39.00962959609984
+              ],
+              [
+                -76.89354773437499,
+                38.77479683242797
+              ],
+              [
+                -77.14074011718749,
+                38.77479683242797
+              ],
+              [
+                -77.14074011718749,
+                39.00962959609984
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style='text-align:Left;'><div><div><p><span>Experimental Employment, Commuting, Occupation, Income, Health Insurance, Poverty variables </span><span>Due to the impact of the COVID-19 pandemic, instead of providing the standard 1-year data products, the Census Bureau released experimental estimates from the 1-year data. This includes a limited number of data tables for the nation, states, and the District of Columbia. </span></p><p><span>Please visit the following webpage for details. </span><a href='https://www.census.gov:443/programs-surveys/acs/data/experimental-data.html' target='_blank' style='text-decoration:underline;' rel='nofollow ugc noopener noreferrer'><span>https://www.census.gov/programs-surveys/acs/data/experimental-data.html</span></a></p><p><span>Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: District-wide. Current Vintage: 2020. ACS Table(s): Economic - Experimental. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 18, 2022. National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org:443/licenses/by/4.0/' style='text-decoration:underline;' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "ACS Economic Characteristics DC Experimental",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1745867515000,
+        "avgRating": 0,
+        "id": "0e41fc574c6b428bb02f42d7f47d6c78",
+        "categories": [
+          "/Categories/Demographic/Economic Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1777572000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1655992413000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/53",
+        "tags": [
+          "ACS",
+          "American Community Survey",
+          "Census Bureau",
+          "commuting",
+          "coronavirus",
+          "COVID-19",
+          "District of Columbia",
+          "District-wide",
+          "economic characteristics",
+          "employment",
+          "experimental",
+          "health insurance",
+          "income",
+          "occupation",
+          "OP",
+          "poverty",
+          "Washington DC"
+        ],
+        "numViews": 4857,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of the Chief Technology Officer",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/0e41fc574c6b428bb02f42d7f47d6c78"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "43e7da983bd24f8cbaceb6e654f0da3d",
+      "title": "ACS 5-Year Economic Characteristics DC Ward",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/42",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about economic characteristics. These are 5-year estimates shown by 2022 Ward boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119862,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.995852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Employment, Commuting, Occupation, Income, Health Insurance, Poverty, and more. This service is updated annually with American Community Survey (ACS) 5-year data. Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: 2022 Wards (State Legislative Districts [Upper Chamber]). </span><span style=\"font-weight:bold;\">Current Vintage: 2020-2024. ACS Table(s): DP03. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 11, 2026. </span><span>National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data). The effect of nonsampling error is not represented in these tables. Data Processing Notes: This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. Boundaries come from the US Census TIGER geodatabases. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage as specified by the Census. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2020 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k TIGER Cartographic Boundary Shapefiles. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). Field alias names were created based on the Table Shells file available from the American Community Survey Summary File Documentation page. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS 5-Year Economic Characteristics DC Ward",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788878962000,
+        "avgRating": 0,
+        "id": "43e7da983bd24f8cbaceb6e654f0da3d",
+        "categories": [
+          "/Categories/Demographic/Economic Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1789434000000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1611601484000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/42",
+        "tags": [
+          "Economic Characteristics",
+          "Wards",
+          "acs",
+          "american community survey",
+          "district of colubmia",
+          "dc",
+          "washington dc"
+        ],
+        "numViews": 35641,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of Planning",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/43e7da983bd24f8cbaceb6e654f0da3d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "c87ca1df238c4e37be4c297d3af3adf9",
+      "title": "ACS 5-Year Economic Characteristics DC",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/40",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about economic characteristics. These are 5-year estimates shown by District of Columbia boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119862,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.995852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Employment, Commuting, Occupation, Income, Health Insurance, Poverty, and more. This service is updated annually with American Community Survey (ACS) 5-year data. Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: District-wide. </span><span style=\"font-weight:bold;\">Current Vintage: 2020-2024. ACS Table(s): DP03. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 11, 2026. </span><span>National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data). The effect of nonsampling error is not represented in these tables. Data Processing Notes: This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. Boundaries come from the US Census TIGER geodatabases. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage as specified by the Census. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2020 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k TIGER Cartographic Boundary Shapefiles. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). Field alias names were created based on the Table Shells file available from the American Community Survey Summary File Documentation page. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS 5-Year Economic Characteristics DC",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788878622000,
+        "avgRating": 0,
+        "id": "c87ca1df238c4e37be4c297d3af3adf9",
+        "categories": [
+          "/Categories/Demographic/Economic Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1789437600000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1611600964000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/40",
+        "tags": [
+          "Economic Characteristics",
+          "District-Wide",
+          "acs",
+          "american community survey",
+          "washington dc",
+          "district of columbia",
+          "dc"
+        ],
+        "numViews": 12983,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of Planning",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/c87ca1df238c4e37be4c297d3af3adf9"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "0bfa4a34d6404319996477a2d9705c56",
+      "title": "ACS 1-Year Economic Characteristics DC",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/58",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about economic characteristics. These are 1-year estimates shown by District of Columbia boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119862,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.995852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Employment, Commuting, Occupation, Income, Health Insurance, Poverty, and more. This service is updated annually with American Community Survey (ACS) 1-year data. Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: District-wide. </span><span style=\"font-weight:bold;\">Current Vintage: 2024. ACS Table(s): DP03. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 11, 2026. </span><span>National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data). The effect of nonsampling error is not represented in these tables. Data Processing Notes: This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. Boundaries come from the US Census TIGER geodatabases. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage as specified by the Census. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2020 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k TIGER Cartographic Boundary Shapefiles. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). Field alias names were created based on the Table Shells file available from the American Community Survey Summary File Documentation page. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS 1-Year Economic Characteristics DC",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788877936000,
+        "avgRating": 0,
+        "id": "0bfa4a34d6404319996477a2d9705c56",
+        "categories": [
+          "/Categories/Demographic/Economic Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1789387200000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1679073803000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/58",
+        "tags": [
+          "Economic Characteristics",
+          "District-Wide",
+          "district of columbia",
+          "washington dc",
+          "acs",
+          "american community survey"
+        ],
+        "numViews": 8948,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of Planning",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/0bfa4a34d6404319996477a2d9705c56"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a53c0f02804a484b87027ce3ef3ff38b",
+      "title": "ACS 5-Year Economic Characteristics DC Census Tract",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/41",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about economic characteristics. These are 5-year estimates shown by 2020 Census Tract boundaries.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -77.119862,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.995852
+              ],
+              [
+                -76.909262,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.79159
+              ],
+              [
+                -77.119862,
+                38.995852
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Employment, Commuting, Occupation, Income, Health Insurance, Poverty, and more. This service is updated annually with American Community Survey (ACS) 5-year data. Contact: District of Columbia, Office of Planning. Email: planning@dc.gov. Geography: Census Tracts. </span><span style=\"font-weight:bold;\">Current Vintage: 2020-2024. ACS Table(s): DP03. Data downloaded from: Census Bureau's API for American Community Survey. Date of API call: March 11, 2026. </span><span>National Figures: data.census.gov. Please cite the Census and ACS when using this data. Data Note from the Census: Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see Accuracy of the Data). The effect of nonsampling error is not represented in these tables. Data Processing Notes: This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. Boundaries come from the US Census TIGER geodatabases. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage as specified by the Census. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2020 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k TIGER Cartographic Boundary Shapefiles. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). Field alias names were created based on the Table Shells file available from the American Community Survey Summary File Documentation page. Data processed using R statistical package and ArcGIS Desktop. Margin of Error was not included in this layer but is available from the Census Bureau. Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>This work is licensed under a </SPAN><A href=\"https://creativecommons.org/licenses/by/4.0\" target=\"_blank\" STYLE=\"text-decoration:underline;\"><SPAN>Creative Commons Attribution 4.0 International License</SPAN></A><SPAN>.</SPAN></P></DIV></DIV></DIV>",
+        "ownerId": "4f3d52f996aaf85a3376f7ee520d9c35",
+        "title": "ACS 5-Year Economic Characteristics DC Census Tract",
+        "type": "Feature Service",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788878818000,
+        "avgRating": 0,
+        "id": "a53c0f02804a484b87027ce3ef3ff38b",
+        "categories": [
+          "/Categories/Demographic/Economic Characteristics"
+        ],
+        "spatialReference": "[object Object]",
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "Office of Planning",
+        "largeThumbnail": null,
+        "lastViewed": 1789426800000,
+        "thumbnail": "thumbnail/thumbnail.JPEG",
+        "languages": [],
+        "created": 1611601207000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Demographic_WebMercator/MapServer/41",
+        "tags": [
+          "Economic Characteristics",
+          "Census Tracts",
+          "washington dc",
+          "dc",
+          "district of colubmia",
+          "american community survey",
+          "acs"
+        ],
+        "numViews": 26401,
+        "numComments": 0,
+        "size": 94,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "downloads": {
+            "formats": [
+              {
+                "hidden": false,
+                "key": "csv"
+              },
+              {
+                "hidden": false,
+                "key": "shapefile"
+              },
+              {
+                "hidden": false,
+                "key": "geojson"
+              },
+              {
+                "hidden": false,
+                "key": "kml"
+              }
+            ],
+            "flowType": "paging"
+          },
+          "location": {
+            "extent": [
+              [
+                -77.13,
+                38.78
+              ],
+              [
+                -76.9,
+                39.01
+              ]
+            ],
+            "geometries": [
+              {
+                "ymin": 38.78,
+                "xmin": -77.13,
+                "ymax": 39.01,
+                "xmax": -76.9,
+                "spatialReference": {
+                  "wkid": 4326
+                },
+                "type": "extent"
+              }
+            ],
+            "type": "custom",
+            "spatialReference": {
+              "wkid": 4326
+            }
+          }
+        },
+        "source": "Office of Planning",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/a53c0f02804a484b87027ce3ef3ff38b"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "88c1bbd52fda4c569d6b0b693af0a77d",
+      "title": "Economic Characteristics of the District of Columbia 2020-2024 5-Year ACS",
+      "url": "https://experience.arcgis.com/experience/88c1bbd52fda4c569d6b0b693af0a77d",
+      "publisher": "travis.pate@dc.gov_DCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about Economic Characteristics. These are 5-year estimates shown by District of Columbia boundaries.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "lastEditor:travis.pate@dc.gov_DCGIS",
+          "modified: 1789067669262",
+          "publishVersion:1.21.0",
+          "Ready To Use",
+          "status: Published",
+          "template:6f7eedef6587416facc6c9c140cf7d43",
+          "version:1.21.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<p style='margin:12pt 0in 0.0001pt; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'>Employment, Commuting, Occupation, Income, Health Insurance, Poverty, and more.  </span>This service is updated annually with American Community Survey (ACS) 5-year data<span style='background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'>. </span></p><p style='margin:12pt 0in 0.0001pt; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><br /></span></p><p><b>Contact:</b>  District of Columbia, Office of Planning.  Email:  <a href='mailto:planning@dc.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>planning@dc.gov</a></p><p><b>Geography: </b> District of Columbia</p><p><b>Current Vintage:</b> 2019-2023</p><p><b>ACS Table(s): </b>DP03</p><p><b>Data downloaded from: </b><a href='https://www.census.gov/data/developers/data-sets.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Census Bureau's API for American Community Survey</a> </p><p><b>Date of API call:</b> January 2, 2025</p><p><b>National Figures:</b> <a href='https://data.census.gov/cedsci/table?q=B01001&amp;table=B01001&amp;tid=ACSDT5Y2018.B01001' target='_blank' rel='nofollow ugc noopener noreferrer'>data.census.gov</a></p><p> </p><p>The United States Census Bureau's American Community Survey (ACS):</p><ul><li><a href='https://www.census.gov/programs-surveys/acs/about.html' target='_blank' rel='nofollow ugc noopener noreferrer'>About the Survey</a></li><li><a href='https://www.census.gov/programs-surveys/acs/geography-acs.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Geography &amp; ACS</a></li><li><a href='https://www.census.gov/programs-surveys/acs/technical-documentation.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Technical Documentation</a></li><li><a href='https://www.census.gov/programs-surveys/acs/news.html' target='_blank' rel='nofollow ugc noopener noreferrer'>News &amp; Updates</a></li></ul><p style='margin-bottom:0.0001pt;'>This ready-to-use layer can be used within ArcGIS Pro, ArcGIS Online, its configurable apps, dashboards, Story Maps, custom apps, and mobile apps. Data can also be exported for offline workflows. Please cite the Census and ACS when using this data.</p><p> </p><p>Data Note from the Census:</p><p>Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see <a href='https://www.census.gov/programs-surveys/acs/technical-documentation/code-lists.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Accuracy of the Data</a>).  The effect of nonsampling error is not represented in these tables.</p><p> </p><p>Data Processing Notes:</p><ul><li>This layer is updated automatically when the most current vintage of ACS data is released each year, usually in September. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. <a href='https://www.census.gov/programs-surveys/acs/news/data-releases.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Click here</a> to learn more about ACS data releases.</li><li>Boundaries come from the <a href='https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-geodatabase-file.html' target='_blank' rel='nofollow ugc noopener noreferrer'>US Census TIGER geodatabases</a>. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage <a href='https://www.census.gov/programs-surveys/acs/geography-acs/geography-boundaries-by-year.html' target='_blank' rel='nofollow ugc noopener noreferrer'>as specified by the Census</a>. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2010 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k <a href='https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html' target='_blank' rel='nofollow ugc noopener noreferrer'>TIGER Cartographic Boundary Shapefiles</a>. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). </li><li>Field alias names were created based on the <a href='https://www2.census.gov/programs-surveys/acs/summary_file/2017/documentation/user_tools/ACS2017_Table_Shells.xlsx' target='_blank' rel='nofollow ugc noopener noreferrer'>Table Shells</a> file available from the <a href='https://www.census.gov/programs-surveys/acs/technical-documentation/summary-file-documentation.html' target='_blank' rel='nofollow ugc noopener noreferrer'>American Community Survey Summary File Documentation page</a>.</li><li>Data processed using R statistical package and ArcGIS Pro.</li><li>Margin of Error was not included in this layer but is available from the Census Bureau.  Contact the Office of Planning for more information about obtaining Margin of Error values.</li></ul>",
+        "licenseInfo": null,
+        "ownerId": "471b5e64c5894891880000b45ee0a9bc",
+        "title": "Economic Characteristics of the District of Columbia 2020-2024 5-Year ACS",
+        "type": "Web Experience",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789067677000,
+        "avgRating": 0,
+        "id": "88c1bbd52fda4c569d6b0b693af0a77d",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "travis.pate@dc.gov_DCGIS",
+        "accessInformation": "https://planning.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1789066800000,
+        "thumbnail": "thumbnail/Economic_Characteristics_of_the_District_of_Columbia_2020-2024_5-Year_ACS.png",
+        "languages": [],
+        "created": 1734726485000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/88c1bbd52fda4c569d6b0b693af0a77d",
+        "tags": [
+          " Economic Characteristics",
+          "Demographics",
+          "District-Wide"
+        ],
+        "numViews": 623,
+        "numComments": 0,
+        "size": 865700,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "City of Washington, DC",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/88c1bbd52fda4c569d6b0b693af0a77d"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "8ab337d9e716484c8c9562c7963041da",
+      "title": "Economic Characteristics of Census Tracts 2020-2024 5-Year ACS",
+      "url": "https://experience.arcgis.com/experience/8ab337d9e716484c8c9562c7963041da",
+      "publisher": "travis.pate@dc.gov_DCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about economic characteristics. These are 5-year estimates shown by Census Tract boundaries.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "lastEditor:travis.pate@dc.gov_DCGIS",
+          "modified: 1788877297327",
+          "publishVersion:1.16.0",
+          "Ready To Use",
+          "status: Published",
+          "template:6f7eedef6587416facc6c9c140cf7d43",
+          "version:1.21.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<p style='margin:12pt 0in 0.0001pt; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'>Employment, Commuting, Occupation, Income, Health Insurance, Poverty, and more.  This service is updated annually with American Community Survey (ACS) 5-year data<span style='background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'>.</span> </p><p> </p><p><b>Contact:</b>  District of Columbia, Office of Planning.  Email:  <a href='mailto:planning@dc.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>planning@dc.gov</a></p><p><b>Geography: </b> Census Tracts</p><p><b>Current Vintage:</b> 2019-2023</p><p><b>ACS Table(s):</b> DP03</p><p><b>Data downloaded from:</b> <a href='https://www.census.gov/data/developers/data-sets.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Census Bureau's API for American Community Survey</a> </p><p><b>Date of API call:</b> January 2, 2025</p><p><b>National Figures:</b> <a href='https://data.census.gov/cedsci/table?q=B01001&amp;table=B01001&amp;tid=ACSDT5Y2018.B01001' target='_blank' rel='nofollow ugc noopener noreferrer'>data.census.gov</a></p><p> </p><p>The United States Census Bureau's American Community Survey (ACS):</p><ul><li><a href='https://www.census.gov/programs-surveys/acs/about.html' target='_blank' rel='nofollow ugc noopener noreferrer'>About the Survey</a></li><li><a href='https://www.census.gov/programs-surveys/acs/geography-acs.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Geography &amp; ACS</a></li><li><a href='https://www.census.gov/programs-surveys/acs/technical-documentation.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Technical Documentation</a></li><li><a href='https://www.census.gov/programs-surveys/acs/news.html' target='_blank' rel='nofollow ugc noopener noreferrer'>News &amp; Updates</a></li></ul><p style='margin-bottom:0.0001pt;'>This ready-to-use layer can be used within ArcGIS Pro, ArcGIS Online, its configurable apps, dashboards, Story Maps, custom apps, and mobile apps. Data can also be exported for offline workflows. Please cite the Census and ACS when using this data.</p><p> </p><p>Data Note from the Census:</p><p>Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see <a href='https://www.census.gov/programs-surveys/acs/technical-documentation/code-lists.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Accuracy of the Data</a>).  The effect of nonsampling error is not represented in these tables.</p><p> </p><p>Data Processing Notes:</p><ul><li>This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. <a href='https://www.census.gov/programs-surveys/acs/news/data-releases.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Click here</a> to      learn more about ACS data releases.</li><li>Boundaries come from the <a href='https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-geodatabase-file.html' target='_blank' rel='nofollow ugc noopener noreferrer'>US Census TIGER geodatabases</a>. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage <a href='https://www.census.gov/programs-surveys/acs/geography-acs/geography-boundaries-by-year.html' target='_blank' rel='nofollow ugc noopener noreferrer'>as specified by the Census</a>. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2010 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k <a href='https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html' target='_blank' rel='nofollow ugc noopener noreferrer'>TIGER Cartographic Boundary Shapefiles</a>. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). </li><li>Field alias names were created based on the <a href='https://www2.census.gov/programs-surveys/acs/summary_file/2017/documentation/user_tools/ACS2017_Table_Shells.xlsx' target='_blank' rel='nofollow ugc noopener noreferrer'>Table Shells</a> file available from the <a href='https://www.census.gov/programs-surveys/acs/technical-documentation/summary-file-documentation.html' target='_blank' rel='nofollow ugc noopener noreferrer'>American Community Survey Summary File Documentation page</a>.</li><li>Data processed using R statistical package and ArcGIS Pro.</li><li>Margin of Error was not included in this layer but is available from the Census Bureau.  Contact the Office of Planning for more information about obtaining Margin of Error values.</li></ul>",
+        "licenseInfo": null,
+        "ownerId": "471b5e64c5894891880000b45ee0a9bc",
+        "title": "Economic Characteristics of Census Tracts 2020-2024 5-Year ACS",
+        "type": "Web Experience",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1788877299000,
+        "avgRating": 0,
+        "id": "8ab337d9e716484c8c9562c7963041da",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "travis.pate@dc.gov_DCGIS",
+        "accessInformation": "https://planning.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1788876000000,
+        "thumbnail": "thumbnail/Economic_Characteristics_of_Census_Tracts_2019-2023_5-Year_ACS.png",
+        "languages": [],
+        "created": 1734444991000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/8ab337d9e716484c8c9562c7963041da",
+        "tags": [
+          " Economic Characteristics",
+          "Demographics",
+          "Census Tract"
+        ],
+        "numViews": 651,
+        "numComments": 0,
+        "size": 866330,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "City of Washington, DC",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/8ab337d9e716484c8c9562c7963041da"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "2f6f21d035984e9c9438ae494022aa2a",
+      "title": "Economic Characteristics of Wards 2020-2024 5-Year ACS",
+      "url": "https://experience.arcgis.com/experience/2f6f21d035984e9c9438ae494022aa2a",
+      "publisher": "travis.pate@dc.gov_DCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about economic characteristics. These are 5-year estimates shown by Ward boundaries.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "publishVersion:1.17.0",
+          "Ready To Use",
+          "status: Published",
+          "version:1.17.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<p style='margin:12pt 0in 0.0001pt; background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'><span style='background-image:initial; background-position:initial; background-size:initial; background-repeat:initial; background-attachment:initial; background-origin:initial; background-clip:initial;'>Employment, Commuting, Occupation, Income, Health Insurance, Poverty, and more.  </span>This service is updated annually with American Community Survey (ACS) 5-year data.</p><p> </p><p><b>Contact:</b>  District of Columbia, Office of Planning.  Email:  <a href='mailto:planning@dc.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>planning@dc.gov</a></p><p><b>Geography:</b>  2022 Wards (State Legislative Districts [Upper Chamber])</p><p><b>Current Vintage:</b> 2019-2023</p><p><b>ACS Table(s):</b> DP03</p><p><b>Data downloaded from:</b> <a href='https://www.census.gov/data/developers/data-sets.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Census Bureau's API for American Community Survey</a> </p><p><b>Date of API call:</b> <span style='color:rgb(105, 105, 105); font-family:Verdana; font-size:medium;'>January 2, 2025</span></p><p><b>National Figures:</b> <a href='https://data.census.gov/cedsci/table?q=B01001&amp;table=B01001&amp;tid=ACSDT5Y2018.B01001' target='_blank' rel='nofollow ugc noopener noreferrer'>data.census.gov</a></p><p> </p><p>The United States Census Bureau's American Community Survey (ACS):</p><ul><li><a href='https://www.census.gov/programs-surveys/acs/about.html' target='_blank' rel='nofollow ugc noopener noreferrer'>About the Survey</a></li><li><a href='https://www.census.gov/programs-surveys/acs/geography-acs.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Geography &amp; ACS</a></li><li><a href='https://www.census.gov/programs-surveys/acs/technical-documentation.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Technical Documentation</a></li><li><a href='https://www.census.gov/programs-surveys/acs/news.html' target='_blank' rel='nofollow ugc noopener noreferrer'>News &amp; Updates</a></li></ul><p style='margin-bottom:0.0001pt;'>This ready-to-use layer can be used within ArcGIS Pro, ArcGIS Online, its configurable apps, dashboards, Story Maps, custom apps, and mobile apps. Data can also be exported for offline workflows. Please cite the Census and ACS when using this data.</p><p> </p><p>Data Note from the Census:</p><p>Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see <a href='https://www.census.gov/programs-surveys/acs/technical-documentation/code-lists.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Accuracy of the Data</a>).  The effect of nonsampling error is not represented in these tables.</p><p> </p><p>Data Processing Notes:</p><ul><li>This layer is updated automatically when the most current vintage of ACS data is released each year, usually in December. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. <a href='https://www.census.gov/programs-surveys/acs/news/data-releases.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Click here</a> to learn more about ACS data releases.</li><li>Boundaries come from the <a href='https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-geodatabase-file.html' target='_blank' rel='nofollow ugc noopener noreferrer'>US Census TIGER geodatabases</a>. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage <a href='https://www.census.gov/programs-surveys/acs/geography-acs/geography-boundaries-by-year.html' target='_blank' rel='nofollow ugc noopener noreferrer'>as specified by the Census</a>. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2010 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k <a href='https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html' target='_blank' rel='nofollow ugc noopener noreferrer'>TIGER Cartographic Boundary Shapefiles</a>. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). </li><li>Field alias names were created based on the <a href='https://www2.census.gov/programs-surveys/acs/summary_file/2017/documentation/user_tools/ACS2017_Table_Shells.xlsx' target='_blank' rel='nofollow ugc noopener noreferrer'>Table Shells</a> file available from the <a href='https://www.census.gov/programs-surveys/acs/technical-documentation/summary-file-documentation.html' target='_blank' rel='nofollow ugc noopener noreferrer'>American Community Survey Summary File Documentation page</a>.</li><li>Data processed using R statistical package and ArcGIS Pro.</li><li>Margin of Error was not included in this layer but is available from the Census Bureau.  Contact the Office of Planning for more information about obtaining Margin of Error values.</li></ul>",
+        "licenseInfo": null,
+        "ownerId": "471b5e64c5894891880000b45ee0a9bc",
+        "title": "Economic Characteristics of Wards 2020-2024 5-Year ACS",
+        "type": "Web Experience",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789050993000,
+        "avgRating": 0,
+        "id": "2f6f21d035984e9c9438ae494022aa2a",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "travis.pate@dc.gov_DCGIS",
+        "accessInformation": "https://planning.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1788987600000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1734722150000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/2f6f21d035984e9c9438ae494022aa2a",
+        "tags": [
+          " Economic Characteristics",
+          "Demographics",
+          "Wards"
+        ],
+        "numViews": 943,
+        "numComments": 0,
+        "size": 863827,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "City of Washington, DC",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/2f6f21d035984e9c9438ae494022aa2a"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "743bfcfe26314476a77788fb69c14d18",
+      "title": "Economic Characteristics of the District of Columbia 2024 1-Year ACS",
+      "url": "https://experience.arcgis.com/experience/743bfcfe26314476a77788fb69c14d18",
+      "publisher": "travis.pate@dc.gov_DCGIS",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This layer contains the most current release of data from the American Community Survey (ACS) about Economic Characteristics. These are 1-year estimates shown by District of Columbia boundaries.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "EXB Experience",
+          "JavaScript",
+          "lastEditor:travis.pate@dc.gov_DCGIS",
+          "modified: 1789067705169",
+          "publishVersion:1.21.0",
+          "Ready To Use",
+          "status: Published",
+          "template:6f7eedef6587416facc6c9c140cf7d43",
+          "version:1.21.0",
+          "Web Application",
+          "Web Experience",
+          "Web Mapping Application",
+          "Web Page",
+          "Web Site"
+        ],
+        "description": "<div style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; color:rgb(76, 76, 76); font-size:16px;'>Employment, Commuting, Occupation, Income, Health Insurance, Poverty variables from the 1-Year ACS.  </span></div><div style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'><br /></div><div align='center' style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'><b>Contact:</b>  District of Columbia, Office of Planning.  Email:  <a href='mailto:planning@dc.gov' target='_blank' rel='nofollow ugc noopener noreferrer'>planning@dc.gov</a></font></p><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'><b>Geography:</b>  </font><span style='color:rgb(105, 105, 105); font-family:&quot;Avenir Light&quot;, Verdana, Geneva, sans-serif; font-size:medium;'>District of Columbia</span></p><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'><b>Current Vintage:</b> 2023</font></p><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'><b>ACS Table(s):</b> DP02</font></p><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'><b>Data downloaded from:</b> <a href='https://www.census.gov/data/developers/data-sets.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Census Bureau's API for American Community Survey</a> </font></p><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'><b>Date of API call:</b> </font><span style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px;'>January 2, 2025</span></p><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'><b>National Figures:</b> <a href='https://data.census.gov/cedsci/table?q=B01001&amp;table=B01001&amp;tid=ACSDT5Y2018.B01001' target='_blank' rel='nofollow ugc noopener noreferrer'>data.census.gov</a></font></p><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'> </font></p><p style='text-align:start;'><font size='3' style='color:rgb(105, 105, 105);'></font></p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'>The United States Census Bureau's American Community Survey (ACS):</p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><a href='https://www.census.gov/programs-surveys/acs/about.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>About the Survey</a></p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><a href='https://www.census.gov/programs-surveys/acs/geography-acs.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>Geography &amp; ACS</a></p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><a href='https://www.census.gov/programs-surveys/acs/technical-documentation.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>Technical Documentation</a></p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><a href='https://www.census.gov/programs-surveys/acs/news.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>News &amp; Updates</a></p><p style='margin-bottom:0.0001pt; color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'>This ready-to-use layer can be used within ArcGIS Pro, ArcGIS Online, its configurable apps, dashboards, Story Maps, custom apps, and mobile apps. Data can also be exported for offline workflows. Please cite the Census and ACS when using this data.</p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'> </p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'>Data Note from the Census:</p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'>Data are based on a sample and are subject to sampling variability. The degree of uncertainty for an estimate arising from sampling variability is represented through the use of a margin of error. The value shown here is the 90 percent margin of error. The margin of error can be interpreted as providing a 90 percent probability that the interval defined by the estimate minus the margin of error and the estimate plus the margin of error (the lower and upper confidence bounds) contains the true value. In addition to sampling variability, the ACS estimates are subject to nonsampling error (for a discussion of nonsampling variability, see <a href='https://www.census.gov/programs-surveys/acs/technical-documentation/code-lists.html' target='_blank' rel='nofollow ugc noopener noreferrer'>Accuracy of the Data</a>).  The effect of nonsampling error is not represented in these tables.</p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'> </p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'>Data Processing Notes:</p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>This layer is updated automatically when the most current vintage of ACS data is released each year, usually in September. The layer always contains the latest available ACS 5-year estimates. It is updated annually within days of the Census Bureau's release schedule. </span><a href='https://www.census.gov/programs-surveys/acs/news/data-releases.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>Click here</a><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'> to learn more about ACS data releases.</span></p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>Boundaries come from the </span><a href='https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-geodatabase-file.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>US Census TIGER geodatabases</a><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>. Boundaries are updated at the same time as the data updates (annually), and the boundary vintage appropriately matches the data vintage </span><a href='https://www.census.gov/programs-surveys/acs/geography-acs/geography-boundaries-by-year.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>as specified by the Census</a><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>. These are Census boundaries with water and/or coastlines clipped for cartographic purposes. For census tracts, the water cutouts are derived from a subset of the 2010 AWATER (Area Water) boundaries offered by TIGER. For state and county boundaries, the water and coastlines are derived from the coastlines of the 500k </span><a href='https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>TIGER Cartographic Boundary Shapefiles</a><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>. The original AWATER and ALAND fields are still available as attributes within the data table (units are square meters). </span></p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>Field alias names were created based on the </span><a href='https://www2.census.gov/programs-surveys/acs/summary_file/2017/documentation/user_tools/ACS2017_Table_Shells.xlsx' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>Table Shells</a><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'> file available from the </span><a href='https://www.census.gov/programs-surveys/acs/technical-documentation/summary-file-documentation.html' style='font-family:Verdana; font-size:14px;' target='_blank' rel='nofollow ugc noopener noreferrer'>American Community Survey Summary File Documentation page</a><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>.</span></p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>Data processed using R statistical package and ArcGIS Pro.</span></p><p style='color:rgb(76, 76, 76); font-family:&quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size:15px; text-align:start;'><span style='color:rgb(0, 0, 0); font-family:Verdana; font-size:14px;'>Margin of Error was not included in this layer but is available from the Census Bureau.  Contact the Office of Planning for more information about obtaining Margin of Error values.</span></p></div>",
+        "licenseInfo": null,
+        "ownerId": "471b5e64c5894891880000b45ee0a9bc",
+        "title": "Economic Characteristics of the District of Columbia 2024 1-Year ACS",
+        "type": "Web Experience",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789067707000,
+        "avgRating": 0,
+        "id": "743bfcfe26314476a77788fb69c14d18",
+        "categories": [],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "travis.pate@dc.gov_DCGIS",
+        "accessInformation": "https://planning.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1789066800000,
+        "thumbnail": "thumbnail/Economic_Characteristics_of_the_District_of_Columbia_2024_1-Year_ACS.png",
+        "languages": [],
+        "created": 1734726793000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://experience.arcgis.com/experience/743bfcfe26314476a77788fb69c14d18",
+        "tags": [
+          " Economic Characteristics",
+          "Demographics",
+          "District-Wide"
+        ],
+        "numViews": 576,
+        "numComments": 0,
+        "size": 865024,
+        "listed": false,
+        "scoreCompleteness": 83,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "City of Washington, DC",
+        "license": "none"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/743bfcfe26314476a77788fb69c14d18"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "28632176534b4fbbb4b945f29660acfb",
+      "title": "Public Lands",
+      "url": "https://opendata.dc.gov/api/search/v1/collections/all/items/28632176534b4fbbb4b945f29660acfb",
+      "publisher": "DCGISopendata",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Where are government public lands in the District of Columbia? Government property is sometimes gifted by private entities, acquired, developed, and transferred in title or right of use between federal government and the District of Columbia.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Hub",
+          "hubPage",
+          "hubSolution",
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "OpenData",
+          "selfConfigured",
+          "Web Map"
+        ],
+        "description": "Where are government public lands in the District of Columbia? Government property is sometimes gifted by private entities, acquired, developed, and transferred in title or right of use between federal government and the District of Columbia.<div><br /></div><div>DO NOT DELETE OR MODIFY THIS ITEM. This item is managed by the ArcGIS Hub application. To make changes to this page, please visit https://DCGIS.hub.arcgis.com:/overview/edit.</div>",
+        "licenseInfo": "<div style='text-align:Left;'><div><div><p><span>This work is licensed under a </span><a href='https://creativecommons.org/licenses/by/4.0/' rel='nofollow ugc'><span>Creative Commons Attribution 4.0 International License</span></a><span>.</span></p></div></div></div>",
+        "title": "Public Lands",
+        "type": "Hub Page",
+        "orgId": "neT9SoYxizqTHZPH",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1773851718000,
+        "avgRating": 0,
+        "id": "28632176534b4fbbb4b945f29660acfb",
+        "categories": [
+          "/Categories/Property and Land/Parcel Fabric"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "DCGISopendata",
+        "accessInformation": "https://opendata.dc.gov",
+        "largeThumbnail": null,
+        "lastViewed": 1774897200000,
+        "thumbnail": "thumbnail/thumbnail1619702527160.png",
+        "languages": [],
+        "created": 1619622502000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "",
+        "tags": [
+          "vpmdata",
+          "public lands",
+          "opendata.dc.gov"
+        ],
+        "numViews": 22531,
+        "numComments": 0,
+        "size": 2575751,
+        "listed": false,
+        "scoreCompleteness": 96,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": {
+          "children": []
+        },
+        "source": "City of Washington, DC",
+        "license": "CC-BY-4.0"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all/items/28632176534b4fbbb4b945f29660acfb"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://opendata.dc.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    170
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 17,
+  "next_offset": 10,
+  "response_sha256": "73ee290506d186a1e5293188a2a1844688212e3d80f3184d676b99ba077ee20f",
+  "search_complete": false
+}

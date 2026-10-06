@@ -1,0 +1,24 @@
+{
+  "jurisdiction_code": "WV",
+  "catalog_id": "wv-primary",
+  "catalog_url": "https://wvgis.wvu.edu/data/data.php",
+  "started_at": "2026-10-03T02:30:44.571961+00:00",
+  "attempts": [
+    {
+      "adapter": "hub",
+      "endpoint": "https://wvgis.wvu.edu/api/search/v1/collections/all/items",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "adapter": "ckan",
+      "endpoint": "https://wvgis.wvu.edu/api/3/action/package_search",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "status": "html_catalog_only",
+  "adapter": "html_catalog_scan",
+  "endpoint": "https://wvgis.wvu.edu/data/data.php",
+  "validation_receipt": 88,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_page_links_only_geography_unverified"
+}

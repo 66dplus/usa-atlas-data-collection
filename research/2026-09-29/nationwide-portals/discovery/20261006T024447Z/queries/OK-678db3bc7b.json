@@ -1,0 +1,43 @@
+{
+  "jurisdiction_code": "OK",
+  "query": "wages",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-06T02:45:54.571253+00:00",
+  "candidates": [
+    {
+      "id": "1c0e818b-d2bb-40fb-9864-ee617dae9380",
+      "title": "Average Annual Wage",
+      "url": "https://data.ok.gov/dataset/average-annual-wage",
+      "publisher": "OKStateStat",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.ok.gov/dataset/1c0e818b-d2bb-40fb-9864-ee617dae9380/resource/3a7d3885-e5cb-4588-ac7b-2f2c4428ea24/download/c-average-annual-wage-line-chart.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ok.gov/dataset/1c0e818b-d2bb-40fb-9864-ee617dae9380/resource/06e2308f-90e5-459f-b200-17f49c06dc50/download/data-average-annual-wage.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "<p>Increase state average annual wage from $43,047 in 2013 to $48,450 by 2017.</p>\n"
+    }
+  ],
+  "page_receipts": [
+    262
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "61430c620bcc69137ec321d9a657362dc04ab18d09652849cefdff7e881d608e",
+  "search_complete": true
+}

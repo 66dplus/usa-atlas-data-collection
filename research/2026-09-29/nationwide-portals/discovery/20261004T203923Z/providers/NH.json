@@ -1,0 +1,205 @@
+{
+  "jurisdiction_code": "NH",
+  "catalog_id": "nh-primary",
+  "catalog_url": "https://www.nhgeodata.unh.edu/",
+  "started_at": "2026-10-04T20:39:30.779779+00:00",
+  "attempts": [],
+  "status": "validated_metadata_adapter",
+  "adapter": "hub",
+  "endpoint": "https://www.nhgeodata.unh.edu/api/search/v1/collections/all/items",
+  "domain": "www.nhgeodata.unh.edu",
+  "validation_receipt": 45,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "scope_metadata_receipt": 50,
+  "scope_metadata": {
+    "schemaVersion": 1,
+    "title": "Default Site Catalog",
+    "scopes": {
+      "item": {
+        "targetEntity": "item",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "a654af1cb1e14165baa60328deb2b7ae",
+                  "5a0a4db8a8c84af7b69d705a185c2f92",
+                  "f0babc5268e94aa79d93d10b9c75352b",
+                  "afb5a08bf32b489aa679b007f7d03217",
+                  "343841fbebf64d50acb517e681a76d51",
+                  "d15022ccb89c4553a01b120499efee7b",
+                  "dff4460c8e154a3f9bde68b80b00844d",
+                  "6d6fbdefa09442cb865f374947cc6b9a",
+                  "a73a696e576649a6997007ce0ced7abd",
+                  "ddcc218323494c07877d01630930319e",
+                  "fe26395a85ab42deaa6aca6214fbd808"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "event": {
+        "targetEntity": "event",
+        "filters": [
+          {
+            "predicates": [
+              {
+                "group": [
+                  "a654af1cb1e14165baa60328deb2b7ae",
+                  "5a0a4db8a8c84af7b69d705a185c2f92",
+                  "f0babc5268e94aa79d93d10b9c75352b",
+                  "afb5a08bf32b489aa679b007f7d03217",
+                  "343841fbebf64d50acb517e681a76d51",
+                  "d15022ccb89c4553a01b120499efee7b",
+                  "dff4460c8e154a3f9bde68b80b00844d",
+                  "6d6fbdefa09442cb865f374947cc6b9a",
+                  "a73a696e576649a6997007ce0ced7abd",
+                  "ddcc218323494c07877d01630930319e",
+                  "fe26395a85ab42deaa6aca6214fbd808"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "collections": [
+      {
+        "label": "Data",
+        "key": "dataset",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "CSV Collection",
+                      "CSV",
+                      "Feature Collection",
+                      "Feature Layer",
+                      "Feature Service",
+                      "File Geodatabase",
+                      "GeoJSON",
+                      "GeoJson",
+                      "KML Collection",
+                      "KML",
+                      "Shapefile",
+                      "Stream Service",
+                      "Table",
+                      "Image Service"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Documents",
+        "key": "document",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Document Link",
+                      "Hub Page",
+                      "Site Page",
+                      "Image",
+                      "iWork Keynote",
+                      "iWork Numbers",
+                      "iWork Pages",
+                      "Microsoft Powerpoint",
+                      "Microsoft Visio",
+                      "Microsoft Word",
+                      "Notebook",
+                      "PDF",
+                      "Pro Map",
+                      "Microsoft Excel"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "label": "Apps & Maps",
+        "key": "appAndMap",
+        "include": [],
+        "targetEntity": "item",
+        "scope": {
+          "targetEntity": "item",
+          "filters": [
+            {
+              "predicates": [
+                {
+                  "type": {
+                    "any": [
+                      "Application",
+                      "City Engine Web Scene",
+                      "CityEngine Web Scene",
+                      "Dashboard",
+                      "Insights Page",
+                      "Insights Workbook",
+                      "Operation View",
+                      "Web Mapping Application",
+                      "StoryMap",
+                      "Web Experience",
+                      "Urban Model",
+                      "Image Collection",
+                      "Map Service Layer",
+                      "Map Service",
+                      "Scene Service",
+                      "Scene Layer",
+                      "Vector Tile Service",
+                      "Web Map Service",
+                      "Web Map Tile Service",
+                      "Web Map",
+                      "Web Scene",
+                      "WFS",
+                      "WMS",
+                      "WMTS",
+                      "Raster Layer"
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "displayConfig": {
+          "hidden": false
+        }
+      },
+      {
+        "targetEntity": "item",
+        "key": "all",
+        "label": "All",
+        "scope": {
+          "targetEntity": "item",
+          "filters": []
+        }
+      }
+    ]
+  }
+}

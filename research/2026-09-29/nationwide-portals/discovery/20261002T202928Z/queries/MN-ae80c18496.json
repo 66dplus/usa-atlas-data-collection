@@ -1,0 +1,395 @@
+{
+  "jurisdiction_code": "MN",
+  "query": "electricity",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-02T20:30:19.653387+00:00",
+  "candidates": [
+    {
+      "id": "f1b545bcc02f42fcb9b9eada85c32494",
+      "title": "Electric Utility Service Areas, Minnesota, January 2026",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_eusa/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of the project was to convert existing electric utility service area boundaries from paper to digital format in order to provide a statewide view of the service areas. Public Utility Commission eDocket filings are now used to maintain this dataset.\n\nOther goals and objectives:\n1. Create a consistent, state-wide GIS dataset of EUSA, as vetted by the utilities\n2. Achieve a positional accuracy of 1:24,000 (+/- 60 feet)\n3. Identify (and eventually resolve) service area boundary issues\n4. Create a cost-effective process for tracking and updates\n5. Make data easily accessible",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset shows electric utility service area boundaries for the State of Minnesota. The original source data were lines hand-drawn on county highway maps. The maps were scanned and georeferenced to serve as a background for on-screen digitizing. The utilities were then given an opportunity to review and correct the service areas. Changes filed with the Public Utilities Commission (eDockets) were also reviewed to update the areas.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/518/util_eusa.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/518/util_eusa.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/518/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "See Disclaimer field for complete use conditions.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "Electric Utility Service Areas, Minnesota, January 2026",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789652422000,
+        "avgRating": 0,
+        "id": "f1b545bcc02f42fcb9b9eada85c32494",
+        "categories": [
+          "/Categories/Boundaries",
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790604000000,
+        "thumbnail": "thumbnail/preview.png",
+        "languages": [],
+        "created": 1778613637000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_eusa/FeatureServer",
+        "tags": [
+          "utilitiesCommunication",
+          "boundaries",
+          "electric utility service area",
+          "electrical utility",
+          "electric utilities",
+          "electrical utilities",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 1323,
+        "numComments": 0,
+        "size": 96,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota Public Utilities Commission",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/f1b545bcc02f42fcb9b9eada85c32494"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a6e3b14752ff4a6fa91a6b44c385ff6e",
+      "title": "DNR Parks and Trails Camping Units",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_parks_and_trails_campsites/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "This dataset serves as an authoritative GIS resource for mapping the locations and for reporting characteristics of the campsites and other camping units administered by the DNR Division of Parks and Trails. The primary intended audience for whom this dataset was created consists of the staff of MNDNR, other State of Minnesota governmental entities, and residents of the State of Minnesota.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This geodatabase contains geospatial point locations and tabular data that represent camping units administered by the MNDNR Division of Parks and Trails.  \n\nThis dataset was derived from authoritative sources in the Division of Parks and Trails' Enterprise Information System (EIS). Data included in this dataset have been validated for accuracy and deemed current and authoritative as of the date provided in the Time Period of Content Date. This dataset is updated when needed, as determined by the subject matter expert.\n\nWithin the scope of the EIS, the term camping units includes campsites, wall tents, tipis, group areas, and group camps.\n\nThis dataset serves as an authoritative GIS resource for mapping the locations and for reporting characteristics of the camping units administered by the DNR Division of Parks and Trails.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/820/struc_parks_and_trails_campsites.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/820/struc_parks_and_trails_campsites.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/820/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Disclaimer: This camping units dataset is presently a work in progress, and errors may exist. Information in this dataset is deemed reliable, but this is not guaranteed.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "DNR Parks and Trails Camping Units",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789602046000,
+        "avgRating": 0,
+        "id": "a6e3b14752ff4a6fa91a6b44c385ff6e",
+        "categories": [
+          "/Categories/Structure"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790550000000,
+        "thumbnail": "thumbnail/preview.jpg",
+        "languages": [],
+        "created": 1778613623000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_dnr/struc_parks_and_trails_campsites/FeatureServer",
+        "tags": [
+          "Campsite",
+          "Camping",
+          "Overnight",
+          "Tent",
+          "Camper",
+          "Camping Unit",
+          "Tipi",
+          "Wall Tent",
+          "Group Area",
+          "Group Camp",
+          "Minnesota",
+          "MN"
+        ],
+        "numViews": 522,
+        "numComments": 0,
+        "size": 117,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Minnesota DNR - Parks and Trails",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/a6e3b14752ff4a6fa91a6b44c385ff6e"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "a334160bc9794ac791c6c14407348738",
+      "title": "U.S. Wind Turbine Database, Minnesota and National",
+      "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_uswtdb/FeatureServer",
+      "publisher": "commons_etl_user",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "The purpose of this information is to provide a regularly updated, publicly available, spatially referenced, national dataset made up almost entirely of utility-scale wind turbine locations and their technical specifications. An appropriate use of the data would be for scientific analysis, research or for general interest for the public. Identification of turbines that have been retrofitted, repowered, decommissioned, and/or removed is a continual ongoing effort; thus, the dataset may contain turbines that were previously verified and subsequently removed.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -97.23,
+                49.37
+              ],
+              [
+                -89.53,
+                49.37
+              ],
+              [
+                -89.53,
+                43.5
+              ],
+              [
+                -97.23,
+                43.5
+              ],
+              [
+                -97.23,
+                49.37
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS",
+          "Map Service",
+          "Feature Access",
+          "Feature Service",
+          "ArcGIS Server",
+          "Metadata",
+          "Service",
+          "Data"
+        ],
+        "description": "This dataset provides locations and technical specifications of wind turbines in the United States, almost all of which are utility-scale. Utility-scale turbines are ones that generate power and feed it into the grid, supplying a utility with energy. They are usually much larger than turbines that would feed a homeowner or business.\n\n<b>The data formats downloadable from the Minnesota Geospatial Commons contain just the Minnesota turbines. Data, maps and services accessed from the USWTDB website provide nationwide turbines.</b>\n\nThe regularly updated database has wind turbine records that have been collected, digitized, and locationally verified. Turbine data were gathered from the Federal Aviation Administration's (FAA) Digital Obstacle File (DOF) and Obstruction Evaluation Airport Airspace Analysis (OE-AAA), the American Wind Energy Association (AWEA), Lawrence Berkeley National Laboratory (LBNL), and the United States Geological Survey (USGS), and were merged and collapsed into a single data set.\n\nVerification of the turbine positions was done by visual interpretation using high-resolution aerial imagery in Esri ArcGIS Desktop. A locational error of plus or minus 10 meters for turbine locations was tolerated. Technical specifications for turbines were assigned based on the wind turbine make and models as provided by manufacturers and project developers directly, and via FAA datasets, information on the wind project developer or turbine manufacturer websites, or other online sources. Some facility and turbine information on make and model did not exist or was difficult to obtain. Thus, uncertainty may exist for certain turbine specifications. Similarly, some turbines were not yet built, not built at all, or for other reasons cannot be verified visually. Location and turbine specifications data quality are rated and a confidence is recorded for both. None of the data are field verified.\n\nThe U.S. Wind Turbine Database website provides the national data in many different formats:  shapefile, CSV, GeoJSON, web services (cached and dynamic), API, and web viewer. See:  https://eerscmap.usgs.gov/uswtdb/ \n\nThe web viewer provides many options to search; filter by attribute, date and location; and customize the map display. For details and screenshots of these options, see:  https://eerscmap.usgs.gov/uswtdb/help/ \n\n------------\nThis metadata record was adapted by the Minnesota Geospatial Information Office (MnGeo) from the national version of the metadata. It describes the Minnesota extract of the shapefile data that has been projected from geographic to UTM coordinates and converted to Esri file geodatabase (fgdb) format. There may be more recent updates available on the national website. Accessing the data via the national web services or API will always provide the most recent data.<div style='display:flex; flex-direction:column; gap:10px;'><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>uswtdb_V9_0_20260626.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/522/uswtdb_V9_0_20260626.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>uswtdb_V9_0_20260626_mn.csv</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/522/uswtdb_V9_0_20260626_mn.csv' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>CHANGELOG.txt</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/522/CHANGELOG.txt' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Geopackage</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/522/util_uswtdb.gpkg' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Data Download</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/522/util_uswtdb.zip' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div><div style='align-items:center; background-color:#f7f7f7; border-radius:6px; display:flex; justify-content:space-between; padding:8px 12px;'><span><strong>Metadata PDF</strong></span><a style='background-color:#003865; border-radius:4px; color:#fff; padding:10px;' target='_blank' href='https://operations.gis.data.mn.gov/api/publicdownload/download/522/metadata.pdf' rel='nofollow ugc noopener noreferrer'><strong>Download</strong></a></div></div>",
+        "licenseInfo": "Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. Map services and data downloaded from the U.S. Wind Turbine Database are free and in the public domain. There are no restrictions; however, we request that the following acknowledgment statement be included in products and data derived from our map services when citing, copying, or reprinting: Map services and data are available from U.S. Wind Turbine Database, provided by the U.S. Geological Survey, American Wind Energy Association, and Lawrence Berkeley National Laboratory via https://eerscmap.usgs.gov/uswtdb. The suggested citation for the U.S. Wind Turbine Database is as follows: Hoen, B.D., Diffendorfer, J.E., Rand, J.T., Kramer, L.A., Garrity, C.P., and Hunt, H.E., 2018, United States Wind Turbine Database V9.0 (June 26, 2026): U.S. Geological Survey, American Clean Power Association, and Lawrence Berkeley National Laboratory data release, https://doi.org/10.5066/F7TX3DN0.",
+        "ownerId": "04da8a54ca124ec4921a45160b97cd8d",
+        "title": "U.S. Wind Turbine Database, Minnesota and National",
+        "type": "Feature Service",
+        "orgId": "9OIuDHbyhmH91RfZ",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1789652587000,
+        "avgRating": 0,
+        "id": "a334160bc9794ac791c6c14407348738",
+        "categories": [
+          "/Categories/Utilities and communication"
+        ],
+        "spatialReference": "26915",
+        "numRatings": 0,
+        "owner": "commons_etl_user",
+        "accessInformation": "",
+        "largeThumbnail": "",
+        "lastViewed": 1790931600000,
+        "thumbnail": "thumbnail/preview.png",
+        "languages": [],
+        "created": 1778614226000,
+        "documentation": null,
+        "banner": "",
+        "classification": null,
+        "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_uswtdb/FeatureServer",
+        "tags": [
+          "utilitiesCommunication",
+          "utilities",
+          "turbine",
+          "energy",
+          "renewable",
+          "wind turbine",
+          "wind farm",
+          "wind facility",
+          "wind",
+          "utility",
+          "utilities",
+          "United States",
+          "Minnesota"
+        ],
+        "numViews": 923,
+        "numComments": 0,
+        "size": 98,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": "",
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Lawrence Berkeley National Laboratory",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all/items/a334160bc9794ac791c6c14407348738"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://gis.data.mn.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    251
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 3,
+  "next_offset": 3,
+  "response_sha256": "544237c96b6617be71a9180d10c1abb20a9faa807c34569c5615c63ee2d9140c",
+  "search_complete": true
+}

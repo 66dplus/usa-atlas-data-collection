@@ -1,0 +1,676 @@
+{
+  "jurisdiction_code": "NE",
+  "query": "income tax",
+  "adapter": "hub",
+  "status": "candidates_need_catalog_scope_review",
+  "executed_at": "2026-10-04T02:36:05.874823+00:00",
+  "candidates": [
+    {
+      "id": "81c529b7ed97452ea9aafdf56a9ac1fe",
+      "title": "Sales Tax Boundaries",
+      "url": "https://gis.ne.gov/Agency/rest/services/SalesTax_WebLayers_REV/FeatureServer",
+      "publisher": "Builtin_User",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Sales tax boundary polygons that depict city, county, state, and special tax rates.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -104.114235843311,
+                43.0275416661267
+              ],
+              [
+                -95.213333468737,
+                43.0275416661267
+              ],
+              [
+                -95.213333468737,
+                39.9310924993789
+              ],
+              [
+                -104.114235843311,
+                39.9310924993789
+              ],
+              [
+                -104.114235843311,
+                43.0275416661267
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Department of Revenue tracks tax rate and boundary changes on a quarterly basis. Cities are required to submit this information to Revenue for it to be enacted. For rate changes they submit a map of their current city limits and for boundary changes they submit annexations. This information is provided to OCIO GIS team to maintain the attribute and geometry data and feed to their Sales Tax Rate Finder Application.</span></p></div></div></div>",
+        "licenseInfo": "<div style=\"text-align:Left;\"><div><div><p><span>The public information contained herein is furnished as a public service by the State of Nebraska Office of the CIO GIS Shared Services (\"The State\"). The State makes no warranties, either expressed or implied, concerning the accuracy, completeness, reliability, or suitability of the information for any other particular use. Furthermore, the State assumes no liability associated with the use or misuse of said information.</span></p></div></div></div>",
+        "title": "Sales Tax Boundaries",
+        "type": "Feature Service",
+        "orgId": "Sj9eBhzWwOMzQCfI",
+        "screenshots": [],
+        "contentStatus": "deprecated",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755459373000,
+        "avgRating": 0,
+        "id": "81c529b7ed97452ea9aafdf56a9ac1fe",
+        "categories": [
+          "/Categories/boundaries"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Builtin_User",
+        "accessInformation": "Department of Revenue",
+        "largeThumbnail": null,
+        "lastViewed": 1755352800000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1688181453000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ne.gov/Agency/rest/services/SalesTax_WebLayers_REV/FeatureServer",
+        "tags": [
+          "sales",
+          "tax",
+          "Nebraska",
+          "revenue",
+          "Parcels",
+          "REV"
+        ],
+        "numViews": 2374,
+        "numComments": 0,
+        "size": 76,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Office of the Chief Information Officer",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all/items/81c529b7ed97452ea9aafdf56a9ac1fe"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "cd16ed82de544e8a93c2541ba889cbef",
+      "title": "SalesTaxBoundaries",
+      "url": "https://gis.ne.gov/agency3/rest/services/SalesTaxWebLayerREV/FeatureServer/0",
+      "publisher": "Builtin_User",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Sales tax boundary polygons that depict city, county, state, and special tax rates.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -104.1807,
+                43.0703
+              ],
+              [
+                -95.0889,
+                43.0703
+              ],
+              [
+                -95.0889,
+                39.9038
+              ],
+              [
+                -104.1807,
+                39.9038
+              ],
+              [
+                -104.1807,
+                43.0703
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "Is a view of SalesTaxBoundaries_GIS updated through the execute procedure in SSMS and  used to publish to the portal. Department of Revenue tracks tax rate and boundary changes on a quarterly basis. Cities are required to submit this information to Revenue for it to be enacted. For rate changes they submit a map of their current city limits and for boundary changes they submit annexations. This information is provided to OCIO GIS team to maintain the attribute and geometry data and feed to their Sales Tax Rate Finder Application.",
+        "licenseInfo": "<div><section style='border-color:rgba(0, 0, 0, 0); display:block; padding:20px 16px; text-align:initial;'><div style='border:0px solid currentcolor; box-sizing:border-box; padding:0.75rem;'><div style='border:0px solid currentcolor; box-sizing:border-box;'><div style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); min-height:4rem; overflow:auto; padding-bottom:0.25rem; word-break:break-word;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5; text-align:left;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><p style='border:0px solid currentcolor; box-sizing:border-box; margin:0px 0px 1.5rem;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>The public information contained herein is furnished as a public service by the State of Nebraska Office of the CIO GIS Shared Services (\"The State\"). The State makes no warranties, either expressed or implied, concerning the accuracy, completeness, reliability, or suitability of the information for any other particular use. Furthermore, the State assumes no liability associated with the use or misuse of said information.</span></span></p></div></div></div></div></div></div></section></div>",
+        "title": "SalesTaxBoundaries",
+        "type": "Feature Service",
+        "orgId": "Sj9eBhzWwOMzQCfI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1753299742000,
+        "avgRating": 0,
+        "id": "cd16ed82de544e8a93c2541ba889cbef",
+        "categories": [
+          "/Categories/boundaries"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Builtin_User",
+        "accessInformation": "Department of Revenue",
+        "largeThumbnail": null,
+        "lastViewed": 1753297200000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1753299396000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ne.gov/agency3/rest/services/SalesTaxWebLayerREV/FeatureServer/0",
+        "tags": [
+          "sales",
+          "tax",
+          "Nebraska",
+          "revenue",
+          "CIO"
+        ],
+        "numViews": 4,
+        "numComments": 0,
+        "size": 76,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Nebraska",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all/items/cd16ed82de544e8a93c2541ba889cbef"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "6fbef49841464b6f85d685f6baa85de5",
+      "title": "Sales Tax Rate Finder",
+      "url": "https://gis.ne.gov/portal/apps/webappviewer/index.html?id=8d517191978849dabda17a5e3d57cacc",
+      "publisher": "Builtin_User",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Department of Revenue Sales Tax Rate Finder",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "JavaScript",
+          "Map",
+          "Mapping Site",
+          "Metadata",
+          "Online Map",
+          "Ready To Use",
+          "Web Map"
+        ],
+        "description": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>This application is used to determine the sales tax rate based on location. v1.0 released October 1, 2019 and is updated quarterly</span>",
+        "licenseInfo": "<span style='font-family: &quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size: 16px;'>All best available data has been used to create this application. Address locations may not plot in the correct location. If that is an issue- please notify the department of revenue</span>",
+        "title": "Sales Tax Rate Finder",
+        "type": "Web Mapping Application",
+        "orgId": "Sj9eBhzWwOMzQCfI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1750967964000,
+        "avgRating": 0,
+        "id": "6fbef49841464b6f85d685f6baa85de5",
+        "categories": [
+          "/Categories/economy",
+          "/Categories/society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Builtin_User",
+        "accessInformation": "State of Nebraska",
+        "largeThumbnail": null,
+        "lastViewed": 1750964400000,
+        "thumbnail": "thumbnail/thumbnail1581622151737.png",
+        "languages": [],
+        "created": 1581621994000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ne.gov/portal/apps/webappviewer/index.html?id=8d517191978849dabda17a5e3d57cacc",
+        "tags": [
+          "Nebraska",
+          "Revenue",
+          "REV",
+          "Parcels"
+        ],
+        "numViews": 82,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 90,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Nebraska Department of Revenue",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all/items/6fbef49841464b6f85d685f6baa85de5"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "98f38b7fad0c40b898c0379c8ba61666",
+      "title": "Good Life Districts",
+      "url": "https://gis.ne.gov/agency3/rest/services/GoodLifeDistrictsREV/FeatureServer/0",
+      "publisher": "Builtin_User",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Good Life Districts sales tax boundaries. Good Life Transformational Projects Act in Neb. Rev. Stat. §§ 77-4401 to 77-4407.",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -99.1095,
+                41.3216
+              ],
+              [
+                -95.9036,
+                41.3216
+              ],
+              [
+                -95.9036,
+                40.6018
+              ],
+              [
+                -99.1095,
+                40.6018
+              ],
+              [
+                -99.1095,
+                41.3216
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div><section style='border-color:rgba(0, 0, 0, 0); display:block; padding:20px 16px; text-align:initial;'><div style='border:0px solid currentcolor; box-sizing:border-box; padding:0.75rem;'><div style='border:0px solid currentcolor; box-sizing:border-box;'><div style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); min-height:4rem; overflow:auto; padding-bottom:0.25rem; word-break:break-word;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5; text-align:left;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><p style='border:0px solid currentcolor; box-sizing:border-box; margin:0px 0px 1.5rem;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>Good Life Districts (GLDs) are defined and determined by Department of Economic Development. According to DED, \"The purpose of the Act is to promote and develop the general and economic welfare of this state and its communities by providing support for unique Nebraska projects that will attract new industries and employment opportunities and further grow and strengthen Nebraska's retail, entertainment, and tourism industries.\" Although GLDs are determined by DED, they affect Sales Tax Rates and therefore this dataset is managed with the assistance of Department of Revenue to provide as part of Sales Tax Rate Finder Application.</span></span></p></div></div></div></div></div></div></section></div>",
+        "licenseInfo": "<div><section style='border-color:rgba(0, 0, 0, 0); display:block; padding:20px 16px; text-align:initial;'><div style='border:0px solid currentcolor; box-sizing:border-box; padding:0.75rem;'><div style='border:0px solid currentcolor; box-sizing:border-box;'><div style='border:0px solid currentcolor; box-sizing:border-box; color:rgb(74, 74, 74); min-height:4rem; overflow:auto; padding-bottom:0.25rem; word-break:break-word;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5; text-align:left;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><div style='border:0px solid currentcolor; box-sizing:border-box; font-family:inherit; line-height:1.5;'><p style='border:0px solid currentcolor; box-sizing:border-box; margin:0px 0px 1.5rem;'><span style='font-family:inherit;'><span style='border:0px solid currentcolor; box-sizing:border-box; line-height:1.5;'>The public information contained herein is furnished as a public service by the State of Nebraska Office of the CIO GIS Shared Services (\"The State\"). The State makes no warranties, either expressed or implied, concerning the accuracy, completeness, reliability, or suitability of the information for any other particular use. Furthermore, the State assumes no liability associated with the use or misuse of said information.</span></span></p></div></div></div></div></div></div></section></div>",
+        "title": "Good Life Districts",
+        "type": "Feature Service",
+        "orgId": "Sj9eBhzWwOMzQCfI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1755459453000,
+        "avgRating": 0,
+        "id": "98f38b7fad0c40b898c0379c8ba61666",
+        "categories": [
+          "/Categories/boundaries"
+        ],
+        "spatialReference": "102100",
+        "numRatings": 0,
+        "owner": "Builtin_User",
+        "accessInformation": null,
+        "largeThumbnail": null,
+        "lastViewed": 1755439200000,
+        "thumbnail": "thumbnail/ago_downloaded.png",
+        "languages": [],
+        "created": 1753299292000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ne.gov/agency3/rest/services/GoodLifeDistrictsREV/FeatureServer/0",
+        "tags": [
+          "Rev",
+          "Revenue",
+          "Sales",
+          "Tax",
+          "Nebraska",
+          "Good Life Districts",
+          "Good Life",
+          "sales tax",
+          "REV"
+        ],
+        "numViews": 118,
+        "numComments": 0,
+        "size": 75,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Nebraska",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all/items/98f38b7fad0c40b898c0379c8ba61666"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "70e28e1580024c29a25b46cda8f7315f",
+      "title": "Good Life Districts",
+      "url": "https://gis.ne.gov/Agency/rest/services/GoodLifeDistricts_REV/FeatureServer",
+      "publisher": "Builtin_User",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "Good Life Districts sales tax boundaries. Good Life Transformational Projects Act in Neb. Rev. Stat. §§ 77-4401 to 77-4407.\n",
+        "extent": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -104.114235843311,
+                43.0275416661267
+              ],
+              [
+                -95.213333468737,
+                43.0275416661267
+              ],
+              [
+                -95.213333468737,
+                39.9310924993789
+              ],
+              [
+                -104.114235843311,
+                39.9310924993789
+              ],
+              [
+                -104.114235843311,
+                43.0275416661267
+              ]
+            ]
+          ]
+        },
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "ArcGIS Server",
+          "Data",
+          "Feature Access",
+          "Feature Service",
+          "Metadata",
+          "Service",
+          "Singlelayer"
+        ],
+        "description": "<div style=\"text-align:Left;\"><div><div><p><span>Good Life Districts (GLDs) are defined and determined by Department of Economic Development. According to DED, \"The purpose of the Act is to promote and develop the general and economic welfare of this state and its communities by providing support for unique Nebraska projects that will attract new industries and employment opportunities and further grow and strengthen Nebraska's retail, entertainment, and tourism industries.\" Although GLDs are determined by DED, they affect Sales Tax Rates and therefore this dataset is managed with the assistance of Department of Revenue to provide as part of Sales Tax Rate Finder Application.</span></p></div></div></div>",
+        "licenseInfo": "<DIV STYLE=\"text-align:Left;\"><DIV><DIV><P><SPAN>The public information contained herein is furnished as a public service by the State of Nebraska Office of the CIO GIS Shared Services (\"The State\"). The State makes no warranties, either expressed or implied, concerning the accuracy, completeness, reliability, or suitability of the information for any other particular use. Furthermore, the State assumes no liability associated with the use or misuse of said information.</SPAN></P></DIV></DIV></DIV>",
+        "title": "Good Life Districts",
+        "type": "Feature Service",
+        "orgId": "Sj9eBhzWwOMzQCfI",
+        "screenshots": [],
+        "contentStatus": "deprecated",
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1751915595000,
+        "avgRating": 0,
+        "id": "70e28e1580024c29a25b46cda8f7315f",
+        "categories": [
+          "/Categories/boundaries"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Builtin_User",
+        "accessInformation": "Nebraska Department of Revenue, Office of the Chief Information Officer GIS Team",
+        "largeThumbnail": null,
+        "lastViewed": 1753286400000,
+        "thumbnail": "thumbnail/thumbnail1723824670068.png",
+        "languages": [],
+        "created": 1723823949000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ne.gov/Agency/rest/services/GoodLifeDistricts_REV/FeatureServer",
+        "tags": [
+          "Rev",
+          "Revenue",
+          "Sales",
+          "Tax",
+          "Nebraska",
+          "Good Life Districts",
+          "Good Life",
+          "sales tax",
+          "REV"
+        ],
+        "numViews": 4441,
+        "numComments": 0,
+        "size": 75,
+        "listed": false,
+        "scoreCompleteness": 98,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "Office of the Chief Information Officer",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all/items/70e28e1580024c29a25b46cda8f7315f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all"
+        }
+      ]
+    },
+    {
+      "id": "09c53fc2ec4848d0b5dc04e1fffc556f",
+      "title": "Assessor Lookup",
+      "url": "https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=2a9c9e1f159341c39096456b61a28864",
+      "publisher": "Builtin_User",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "properties": {
+        "snippet": "County Assessor map with search and download functionality for each county in Nebraska.",
+        "extent": null,
+        "commentsEnabled": true,
+        "groupDesignations": null,
+        "access": "public",
+        "apiToken2ExpirationDate": -1,
+        "typeKeywords": [
+          "Map",
+          "Mapping Site",
+          "Online Map",
+          "Web Map"
+        ],
+        "description": "<p><span style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>Page containing the list of assessors and mapping them.</span></p><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'>&nbsp;</div><div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='background-color:rgb(255,255,255); color:rgb(76,76,76); font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><span style='display:inline !important; float:none; font-style:normal; font-variant-caps:normal; font-variant-ligatures:normal; font-weight:400; letter-spacing:normal; text-align:start; text-decoration-color:initial; text-decoration-style:initial; text-indent:0px; text-transform:none; word-spacing:0px;'>In the app you can search and filter by county name, district or assessor name also is possible visualize the assessors table and download the data, also add own spatial data, Draw over the map, search by Parcel ID and search by Section. All the tools in the app are for smooth visual spatial analysis in tasks related to assessors.</span></span></div>",
+        "licenseInfo": "<div style='font-family:&quot;Avenir Next W01&quot;, &quot;Avenir Next W00&quot;, &quot;Avenir Next&quot;, Avenir, &quot;Helvetica Neue&quot;, sans-serif; font-size:16px;'><div style='margin-bottom:3rem;'><div><div style='overflow:auto; padding-bottom:0.375rem; max-width:100%; display:inherit;'>Public use.</div></div></div></div>",
+        "title": "Assessor Lookup",
+        "type": "Web Mapping Application",
+        "orgId": "Sj9eBhzWwOMzQCfI",
+        "screenshots": [],
+        "subInfo": 0,
+        "advancedSettings": null,
+        "appCategories": [],
+        "modified": 1782142877000,
+        "avgRating": 0,
+        "id": "09c53fc2ec4848d0b5dc04e1fffc556f",
+        "categories": [
+          "/Categories/location",
+          "/Categories/society"
+        ],
+        "spatialReference": null,
+        "numRatings": 0,
+        "owner": "Builtin_User",
+        "accessInformation": "Data from the department of revenue, site maintained by OCIO.",
+        "largeThumbnail": null,
+        "lastViewed": 1782140400000,
+        "thumbnail": "thumbnail/thumbnail1750966976063.png",
+        "languages": [],
+        "created": 1749666642000,
+        "documentation": null,
+        "banner": null,
+        "classification": null,
+        "url": "https://gis.ne.gov/portal/apps/experiencebuilder/experience/?id=2a9c9e1f159341c39096456b61a28864",
+        "tags": [
+          "Department of Revenue",
+          "Revenue",
+          "OCIO",
+          "Assessor",
+          "Lookup",
+          "CIO",
+          "DOR",
+          "County"
+        ],
+        "numViews": 167,
+        "numComments": 0,
+        "size": 0,
+        "listed": false,
+        "scoreCompleteness": 100,
+        "culture": "en-us",
+        "industries": [],
+        "apiToken1ExpirationDate": -1,
+        "name": null,
+        "guid": null,
+        "proxyFilter": null,
+        "properties": null,
+        "source": "State of Nebraska",
+        "license": "custom"
+      },
+      "links": [
+        {
+          "rel": "self",
+          "type": "application/geo+json",
+          "title": "This document as GeoJSON",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all/items/09c53fc2ec4848d0b5dc04e1fffc556f"
+        },
+        {
+          "rel": "collection",
+          "type": "application/json",
+          "title": "All",
+          "href": "https://www.nebraskamap.gov/api/search/v1/collections/all"
+        }
+      ]
+    }
+  ],
+  "page_receipts": [
+    144
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": false,
+  "catalog_scope_status": "needs_review_possible_global_index",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 6,
+  "next_offset": 6,
+  "response_sha256": "270d8009775ddae87403ab49fe56170d8f62db3dfef15ee60df02626c6ca6fd3",
+  "search_complete": true
+}

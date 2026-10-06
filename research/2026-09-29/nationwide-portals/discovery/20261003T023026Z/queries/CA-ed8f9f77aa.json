@@ -1,0 +1,63 @@
+{
+  "jurisdiction_code": "CA",
+  "query": "overdose",
+  "adapter": "ckan",
+  "status": "candidates_need_review",
+  "executed_at": "2026-10-03T02:30:55.405276+00:00",
+  "candidates": [
+    {
+      "id": "d3f916e5-66d5-4fe1-bf51-b99d0335b205",
+      "title": "Behavioral Health Public County Profile",
+      "url": "https://data.ca.gov/dataset/behavioral-health-public-county-profile",
+      "publisher": "California Department of Health Care Services",
+      "status": "needs_review",
+      "publisher_verified": false,
+      "native_geography": null,
+      "production_admission": false,
+      "resources": [
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c17f77c4-9333-4557-b404-063a6be9d682/resource/22d05142-ec81-4975-9149-bb8d3cd8be3f/download/bht-county-profile-overview_072026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c17f77c4-9333-4557-b404-063a6be9d682/resource/305e64c3-d1e7-4f7f-b451-02331c0c4abc/download/bht-county-profile-demographic_072026.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c17f77c4-9333-4557-b404-063a6be9d682/resource/3025720c-23b6-44d4-9fc7-71add7b71638/download/odp_integrated_plan_2026-09-02_14-15-39.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c17f77c4-9333-4557-b404-063a6be9d682/resource/39b4a109-39e0-4a39-9940-6ae0d3349444/download/homelessness_odp_v1.2.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c17f77c4-9333-4557-b404-063a6be9d682/resource/25a09694-9631-4a7f-a15a-9d6a59a9b1e8/download/bh-county-profile-m8ywqaxg.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c17f77c4-9333-4557-b404-063a6be9d682/resource/cd6336be-070d-4045-a2ed-6501f636cb80/download/odp_performance_2026-08-17_12-23-51.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.chhs.ca.gov/dataset/c17f77c4-9333-4557-b404-063a6be9d682/resource/4b05457d-d1ae-4bd7-b2e8-d8579d218ffc/download/bh_reporting.csv",
+          "format": "CSV"
+        }
+      ],
+      "description": "The Behavioral Health Public County Profile represents DHCS’s effort to consolidate key county behavioral health information into a consistent and accessible format, helping reduce fragmented data sources and improve transparency. This marks a significant step forward in modernizing and streamlining access to behavioral health data. The initial version of the Behavioral Health Public County Profile provides a high-level snapshot of key information, including –draft Integrated Plan status, county demographics, and homelessness and housing visualizations, as well as a quick reference guide within the display for the public to better understand the information being presented. Using standardized definitions and shared identifiers, the Behavioral Health Public County Profile data is comparable between counties and statewide and will be aligned in public reporting. The Behavioral Health Public County Profile visualizations will be continuously updated as new data sets and behavioral health reporting becomes available.  \r\n\r\nDHCS is releasing the Behavioral Health County Profile in phases based on data availability and reporting timelines. The initial version includes the following sections: \r\n\r\n* Overview\r\n* Demographics (general population and Medi-Cal behavioral health)\r\n* Integrated Plan (draft submission status) \r\n* Homeless/Housing\r\n* Performance\r\n* BH Reporting\r\n\r\nThe Behavioral Health County Profile makes county behavioral health data comparable statewide and provides aligne"
+    }
+  ],
+  "page_receipts": [
+    131
+  ],
+  "http_query_count": 1,
+  "native_geography_verified": false,
+  "catalog_scope_verified": true,
+  "catalog_scope_status": "official_domain_catalog_only_geography_unverified",
+  "candidate_geographic_scope_verified": false,
+  "search_mode": "server_catalog_query",
+  "total_catalog_matches": 1,
+  "next_offset": 1,
+  "response_sha256": "ab810b26eb79d781711cd39f41cdba5370c2aafabed88cd685c6dfadde1bfaee",
+  "search_complete": true
+}
