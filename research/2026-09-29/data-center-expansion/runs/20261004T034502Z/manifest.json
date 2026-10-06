@@ -1,0 +1,164 @@
+{
+  "started_at": "2026-10-04T03:45:02.208901+00:00",
+  "status": "collected_verified_source_snapshot",
+  "source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/Planning/Build_Out_Analysis/MapServer/9",
+  "collector_sha256": "945822278e42cac6c61a88e3fb83adfdf31feefdbeeb110ffa109319051757c5",
+  "unit": "data_center_building_record",
+  "source_publisher": "Prince William County Planning Office",
+  "publisher_evidence": "https://www.pwcva.gov/department/planning-office/build-out-analysis/",
+  "catalog_evidence": "https://data.virginia.gov/dataset/data-center-buildings",
+  "declared_geographic_scope": "Prince William County, Virginia",
+  "native_geography": "point",
+  "census_bg_join_performed": false,
+  "production_admission": false,
+  "projects_layer_included": false,
+  "privacy_projection": "Public-facility IDs, statuses, floor areas, dates and geometry only; names, addresses, creator users excluded.",
+  "source_geometry_type": "esriGeometryPoint",
+  "selected_fields": [
+    "OBJECTID",
+    "GlobalID",
+    "BuildingID",
+    "BuildingStatus",
+    "YearBuilt",
+    "GFA",
+    "ApprovedGFA",
+    "PermittedGFA",
+    "REATaxedGFA",
+    "BPGFA",
+    "OCCDate",
+    "PermitStatus",
+    "DCOOD",
+    "CreateDate",
+    "LastEditDate"
+  ],
+  "field_domains": {
+    "OBJECTID": null,
+    "GlobalID": null,
+    "BuildingID": null,
+    "BuildingStatus": {
+      "type": "codedValue",
+      "name": "DataCenterBuildingStatus",
+      "description": "Values for BuildingStatus field in DataCenters",
+      "codedValues": [
+        {
+          "name": "Completed",
+          "code": "Completed"
+        },
+        {
+          "name": "Pending",
+          "code": "Pending"
+        },
+        {
+          "name": "Planned",
+          "code": "Planned"
+        },
+        {
+          "name": "Under Construction",
+          "code": "Under Construction"
+        },
+        {
+          "name": "Approved Site Plan",
+          "code": "Approved Site Plan"
+        }
+      ],
+      "mergePolicy": "esriMPTDefaultValue",
+      "splitPolicy": "esriSPTDefaultValue"
+    },
+    "YearBuilt": null,
+    "PermitStatus": {
+      "type": "codedValue",
+      "name": "DataCenterPermitStatus",
+      "description": "Values for PermitStatus field in DataCenters",
+      "codedValues": [
+        {
+          "name": "Issued",
+          "code": "Issued"
+        },
+        {
+          "name": "Pending",
+          "code": "Pending"
+        },
+        {
+          "name": "Planned",
+          "code": "Planned"
+        },
+        {
+          "name": "Potential",
+          "code": "Potential"
+        },
+        {
+          "name": "Finaled",
+          "code": "Finaled"
+        }
+      ],
+      "mergePolicy": "esriMPTDefaultValue",
+      "splitPolicy": "esriSPTDefaultValue"
+    },
+    "GFA": null,
+    "DCOOD": {
+      "type": "codedValue",
+      "name": "YesNo",
+      "description": "YesNo",
+      "codedValues": [
+        {
+          "name": "Yes",
+          "code": "Yes"
+        },
+        {
+          "name": "No",
+          "code": "No"
+        }
+      ],
+      "mergePolicy": "esriMPTDefaultValue",
+      "splitPolicy": "esriSPTDuplicate"
+    },
+    "OCCDate": null,
+    "BPGFA": null,
+    "CreateDate": null,
+    "LastEditDate": null,
+    "ApprovedGFA": null,
+    "PermittedGFA": null,
+    "REATaxedGFA": null
+  },
+  "editing_info": null,
+  "source_copyright": "Prince William County Planning Office - Countywide Planning GIS/Data Analysis Team\nPrince William County Department of Development Services\nPrince William County Economic Development and Tourism\nPrince William County Department of Information Technology - Geospatial Technology Services (GTS) Team\nPrince William County Department of Real Estate Assessments",
+  "completed_at": "2026-10-04T03:45:07.370095+00:00",
+  "source_count_before": 248,
+  "source_count_after": 248,
+  "source_ids_before": 248,
+  "source_ids_after": 248,
+  "unique_object_ids": 248,
+  "unique_global_ids": 248,
+  "actual_building_records": 248,
+  "object_id_pages": 3,
+  "status_counts": {
+    "Completed": 57,
+    "Pending": 68,
+    "Planned": 92,
+    "Under Construction": 31
+  },
+  "native_point_records": 248,
+  "census_tract_or_bg_observations": 0,
+  "operating_facilities_count": null,
+  "status_semantics": "BuildingStatus preserved verbatim; Completed does not independently prove operational data-center facility count.",
+  "source_ids_sha256": "96a6130572697b47770f511be2548503f203472ea0949482f215d82cffbfbb81",
+  "artifacts": [
+    {
+      "path": "runs/20261004T034502Z/buildings.geojson",
+      "bytes": 184860,
+      "sha256": "792932e8650cec7ca49679386401398db83da3e3bfff332aa6681e99b275a68b"
+    },
+    {
+      "path": "runs/20261004T034502Z/buildings.normalized.json",
+      "bytes": 178011,
+      "sha256": "2369481fbfe2e6b1571717f5bdaa8df404f03128e55200e4af049401ac4fdf2e"
+    },
+    {
+      "path": "runs/20261004T034502Z/receipts.json",
+      "bytes": 11106,
+      "sha256": "faf8e94bc8e6901a6c32f0d074ddfc0dc181cac64029639693c169e5a0ef982f"
+    }
+  ],
+  "request_count": 8,
+  "license_review": "Public official source; review stated reuse terms before downstream publication."
+}

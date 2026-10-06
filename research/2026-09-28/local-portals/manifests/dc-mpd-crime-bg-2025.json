@@ -2,7 +2,7 @@
   "source_id": "dc-mpd-crime-bg-2025",
   "status": "source_collected",
   "complete": true,
-  "retrieved_at": "2026-09-30T22:49:22.855834+00:00",
+  "retrieved_at": "2026-10-05T22:57:23.547101+00:00",
   "endpoint": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/MapServer/7",
   "rows": 2840,
   "geo_type": "provider_block_group",
@@ -16,8 +16,8 @@
     "2026 is incomplete; compare same reporting periods only."
   ],
   "checks": {
-    "source_incidents": 24153,
-    "sum_grouped_incidents": 24153,
+    "source_incidents": 24154,
+    "sum_grouped_incidents": 24154,
     "source_offenses": 9,
     "missing_bg_incidents": 6,
     "consistency": "aggregate sum equals count before/after; source can retrospectively revise assignments"
@@ -25,9 +25,9 @@
   "review_status": "validated_for_aggregate_download",
   "production_admission": "needs_review",
   "normalized_path": "runtime/normalized/dc-mpd-crime-bg-2025.jsonl.gz",
-  "normalized_sha256": "3a3a7df9675b3b945423535d62c68f4c539b15a903521d2594ae8ecffca29c5c",
-  "normalized_file_sha256": "06f15b6381a0c01a49f539af2f95838c84d04d940386bd10688cd314f17aaff0",
-  "raw_requests_path": "runtime/raw/dc-mpd-crime-bg-2025/20260930T224912Z/requests.json",
+  "normalized_sha256": "240421f57231d139166dbb36490768cc10642ef78c23c97fcae8691a621941bf",
+  "normalized_file_sha256": "f806c90162a033c3ba2d5f265d20527e87bad2b8fbe42cd5cb2f2bda2b84cb3b",
+  "raw_requests_path": "runtime/raw/dc-mpd-crime-bg-2025/20261005T225714Z/requests.json",
   "request_count": 14,
   "raw_response_bytes": 256486
 }

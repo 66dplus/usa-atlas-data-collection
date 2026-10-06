@@ -6,13 +6,13 @@
     "topics": "05.01-05.06",
     "food_excluded": true
   },
-  "checked_at": "2026-10-01T10:50:01.240364+00:00",
+  "checked_at": "2026-10-05T22:57:48.263266+00:00",
   "status": "needs_review",
   "total_catalog_matches": 30,
-  "page_offset": 0,
-  "next_cursor": 20,
+  "page_offset": 20,
+  "next_cursor": 0,
   "max_search_results_per_cycle": 100,
-  "search_complete": false,
+  "search_complete": true,
   "candidates": [
     {
       "id": "06fc4c61bb534c99819fa83451ab5031",
@@ -193,8 +193,98 @@
       "data_url": "https://microstrategy.dc.gov/MicroStrategyLibrary/CustomApp?id=D01A4A3FA40B4F61B6D168EF7E825B46",
       "type": "Web Mapping Application",
       "status": "needs_review"
+    },
+    {
+      "id": "595cce60c3a14381bafa8620ad461cc0",
+      "title": "Overdoses by Health Planning Neighborhood",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=595cce60c3a14381bafa8620ad461cc0",
+      "data_url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Overdoses_by_Health_Planning_Neighborhood/FeatureServer",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "1abfa18f5397410a81922745e4234332",
+      "title": "Life Expectancy at Birth Time Series Mobile View",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=1abfa18f5397410a81922745e4234332",
+      "data_url": "https://microstrategy.dc.gov/MicroStrategyLibrary/CustomApp?id=220619716F5E46C0B219DD52677BCC1D",
+      "type": "Web Mapping Application",
+      "status": "needs_review"
+    },
+    {
+      "id": "56baed0c6fef4598880cc79b01d83a3a",
+      "title": "2024 to 2025 Gun Violence and All Overdoses Trends",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=56baed0c6fef4598880cc79b01d83a3a",
+      "data_url": "",
+      "type": "Web Map",
+      "status": "needs_review"
+    },
+    {
+      "id": "f8b633506dbe4f3f82ba32bea35841b0",
+      "title": "Gun Violence and Overdoses Hot Spots",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=f8b633506dbe4f3f82ba32bea35841b0",
+      "data_url": "",
+      "type": "Web Map",
+      "status": "needs_review"
+    },
+    {
+      "id": "8a42d27c2ee741dbbab78f43fce6222c",
+      "title": "2025 Fatal Opioid Overdoses Explorer",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=8a42d27c2ee741dbbab78f43fce6222c",
+      "data_url": "",
+      "type": "Dashboard",
+      "status": "needs_review"
+    },
+    {
+      "id": "6926bae47fd94739977a8a985d25b426",
+      "title": "Overdoses Hot Spots",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=6926bae47fd94739977a8a985d25b426",
+      "data_url": "",
+      "type": "Web Map",
+      "status": "needs_review"
+    },
+    {
+      "id": "70e6bf5a4dd94b2cabc1d01ad2d13e5a",
+      "title": "Overdose Prevention Vending Machine Data Survey Results",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=70e6bf5a4dd94b2cabc1d01ad2d13e5a",
+      "data_url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/survey123_e3aa54d75ca84ff8868d76bfdea3cdb5_results/FeatureServer",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "238054450063410c93791dfbbed878bc",
+      "title": "DC Census Tracts Fatal Overdoses Counts",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=238054450063410c93791dfbbed878bc",
+      "data_url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Fatal_OD_Rate_per_1000_People/FeatureServer",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "b12f1b47ec7e450d8c037e535c91c871",
+      "title": "6/29 to 7/1 Overdoses in Regions",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=b12f1b47ec7e450d8c037e535c91c871",
+      "data_url": null,
+      "type": "Web Map",
+      "status": "needs_review"
+    },
+    {
+      "id": "4de10e7023df4e5891a7418cbf24e0ca",
+      "title": "DC Census Tracts Non-Fatal Overdoses Counts",
+      "publisher": "vendor_abradley",
+      "url": "https://www.arcgis.com/home/item.html?id=4de10e7023df4e5891a7418cbf24e0ca",
+      "data_url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/DC_Census_Tracts_NonFatal_Overdoses_Rates/FeatureServer",
+      "type": "Feature Service",
+      "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "4e704da4a4b2c816c884a9fe3379e96bcf674a26952906e88d6f3099077ababd"
+  "response_sha256": "d6a5ce16d42f10f38628f2b6663097c88dde46f3164a88474b740f927e458df3"
 }

@@ -6,13 +6,13 @@
     "topics": "04.08",
     "food_excluded": true
   },
-  "checked_at": "2026-10-01T04:50:00.019456+00:00",
-  "status": "source_matched",
+  "checked_at": "2026-10-05T22:57:47.711133+00:00",
+  "status": "needs_review",
   "total_catalog_matches": 33,
-  "page_offset": 0,
-  "next_cursor": 20,
+  "page_offset": 20,
+  "next_cursor": 0,
   "max_search_results_per_cycle": 100,
-  "search_complete": false,
+  "search_complete": true,
   "candidates": [
     {
       "id": "dc3289eab3d2400ea49c154863312434",
@@ -96,20 +96,20 @@
       "status": "needs_review"
     },
     {
-      "id": "c92a2cee0111473985c389e7a0805ea5",
-      "title": "Crime Incidents in 2026",
-      "publisher": "DCGISopendata",
-      "url": "https://www.arcgis.com/home/item.html?id=c92a2cee0111473985c389e7a0805ea5",
-      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/41",
-      "type": "Feature Service",
-      "status": "needs_review"
-    },
-    {
       "id": "6eaf3e9713de44d3aa103622d51053b5",
       "title": "Crime Incidents in 2014",
       "publisher": "DCGISopendata",
       "url": "https://www.arcgis.com/home/item.html?id=6eaf3e9713de44d3aa103622d51053b5",
       "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/40",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "c92a2cee0111473985c389e7a0805ea5",
+      "title": "Crime Incidents in 2026",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=c92a2cee0111473985c389e7a0805ea5",
+      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/41",
       "type": "Feature Service",
       "status": "needs_review"
     },
@@ -193,8 +193,125 @@
       "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/FEEDS/MPD/FeatureServer/4",
       "type": "Feature Service",
       "status": "needs_review"
+    },
+    {
+      "id": "4064f9c7056041d797ba66494ac3b200",
+      "title": "Felony Crime Incidents in 2016",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=4064f9c7056041d797ba66494ac3b200",
+      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/32",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "4c11e48206c04888a46f11242ca87275",
+      "title": "Stop Incidents July 22 2019 to August 18 2019",
+      "publisher": "Timothy.Hutchison@dc.gov_DCGIS",
+      "url": "https://www.arcgis.com/home/item.html?id=4c11e48206c04888a46f11242ca87275",
+      "data_url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Stop_Incidents_July_22_2019_to_August_18_2019/FeatureServer",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "452087bce8c749998cee5598bc73bbf2",
+      "title": "Bias Crime",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=452087bce8c749998cee5598bc73bbf2",
+      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/7",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "1d0cbb1658d54027a54234f6b9bf52bf",
+      "title": "Stop Data 2019 to 2022",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=1d0cbb1658d54027a54234f6b9bf52bf",
+      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/45",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "5c359f8ebdf24d22a1f840d64c5cc540",
+      "title": "Stop Data",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=5c359f8ebdf24d22a1f840d64c5cc540",
+      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/41",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "8a344b4b2cf04e608439d09f41aa3870",
+      "title": "Homicides_by_Neighborhood",
+      "publisher": "jennifer.deltoro_HSEMA",
+      "url": "https://www.arcgis.com/home/item.html?id=8a344b4b2cf04e608439d09f41aa3870",
+      "data_url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Homicides_by_Neighborhood/FeatureServer",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "2dc879aa617e48de92905e1607f55d09",
+      "title": "Stop Incidents 2010 to 2017",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=2dc879aa617e48de92905e1607f55d09",
+      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/28",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "453bae757c7f4ab6823f96418e330d32",
+      "title": "Homicides_by_Neighborhood_4_27_21",
+      "publisher": "jennifer.deltoro_HSEMA",
+      "url": "https://www.arcgis.com/home/item.html?id=453bae757c7f4ab6823f96418e330d32",
+      "data_url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Homicides_by_Neighborhood_4_27_21/FeatureServer",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "1a18f60a139c4242ad66e6ee8201a2ef",
+      "title": "Stop Incidents Field Contact 2012 to 2017",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=1a18f60a139c4242ad66e6ee8201a2ef",
+      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/27",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "35545690a30846bd95d9a29b81e379e3",
+      "title": "District Gun Violence Dashboards",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=35545690a30846bd95d9a29b81e379e3",
+      "data_url": "https://www.buildingblocks.dc.gov/data",
+      "type": "Application",
+      "status": "needs_review"
+    },
+    {
+      "id": "d734d8efe68345af98b364b6089baf4a",
+      "title": "Heat Indices (2021) and crime (2023)",
+      "publisher": "earl.eutsler_UFA",
+      "url": "https://www.arcgis.com/home/item.html?id=d734d8efe68345af98b364b6089baf4a",
+      "data_url": "",
+      "type": "Web Map",
+      "status": "needs_review"
+    },
+    {
+      "id": "5d14e219c791457c92f76765a6e4be50",
+      "title": "Juvenile Arrests",
+      "publisher": "DCGISopendata",
+      "url": "https://www.arcgis.com/home/item.html?id=5d14e219c791457c92f76765a6e4be50",
+      "data_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Safety_WebMercator/MapServer/30",
+      "type": "Feature Service",
+      "status": "needs_review"
+    },
+    {
+      "id": "472da7ff74d6495aa7287741fd7d98af",
+      "title": "Crime Incidents Gallery Place Chinatown Area",
+      "publisher": "andree.entezari@dc.gov_DCGIS",
+      "url": "https://www.arcgis.com/home/item.html?id=472da7ff74d6495aa7287741fd7d98af",
+      "data_url": "https://services.arcgis.com/neT9SoYxizqTHZPH/arcgis/rest/services/Crime Incidents Gallery Place Chinatown Area/FeatureServer",
+      "type": "Feature Service",
+      "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "e8b60a20647679adf236121f771a615613110fbd64fd3a43b918bc91109dfc10"
+  "response_sha256": "e8e0c583c6867bcb3522aa3a2c7111c1a8262b2a7233932c1a89e3bf5c1f408f"
 }

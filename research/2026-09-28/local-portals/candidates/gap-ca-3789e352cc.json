@@ -11,11 +11,11 @@
     "source": "live-coverage gap intake",
     "food_excluded": true
   },
-  "checked_at": "2026-09-30T22:49:45.313491+00:00",
+  "checked_at": "2026-10-05T16:56:53.143454+00:00",
   "status": "needs_review",
   "total_catalog_matches": 219,
-  "page_offset": 20,
-  "next_cursor": 40,
+  "page_offset": 80,
+  "next_cursor": 0,
   "max_search_results_per_cycle": 100,
   "search_complete": false,
   "candidates": [
@@ -1858,8 +1858,1315 @@
         }
       ],
       "status": "needs_review"
+    },
+    {
+      "id": "030cb04c-38a1-4034-a371-54ec79c0f9f5",
+      "title": "Camping Reservations for 2017",
+      "url": "https://data.ca.gov/dataset/camping-reservations-for-2017",
+      "publisher": "California Department of Parks and Recreation",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/a6d77c75-9dd5-4206-9afc-c5a49348d511/resource/7d0a1860-b86b-4908-81d6-1a69cf01fad9/download/dpr_camping_reservations_2017.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "b73e2b13-d8b6-436b-b877-a5190146c69b",
+      "title": "California State Parks - Public Data Viewer",
+      "url": "https://data.ca.gov/dataset/california-state-parks-public-data-viewer",
+      "publisher": "California Department of Parks and Recreation",
+      "resources": [
+        {
+          "url": "https://gis.data.cnra.ca.gov/apps/csparks::california-state-parks-public-data-viewer",
+          "format": "HTML"
+        },
+        {
+          "url": "https://csparks.maps.arcgis.com/apps/webappviewer/index.html?id=f96a883ff4154455b23bdc119f4574a9",
+          "format": "ArcGIS GeoServices REST API"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "d71eb912-6567-4ebf-835e-6997f559f94c",
+      "title": "Twenty Fathom Groundfish Boundary Line - R7 - CDFW [ds3160]",
+      "url": "https://data.ca.gov/dataset/twenty-fathom-groundfish-boundary-line-r7-cdfw-ds31601",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::twenty-fathom-groundfish-boundary-line-r7-cdfw-ds3160",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3160_fnu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ea2b25b04e044e908e38d8b06e9df7ef/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ea2b25b04e044e908e38d8b06e9df7ef/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ea2b25b04e044e908e38d8b06e9df7ef/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/ea2b25b04e044e908e38d8b06e9df7ef/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/3100_3199/ds3160.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "7472a600-4f9a-4198-a27a-5a562650c00f",
+      "title": "Twenty Fathom Groundfish Boundary Points - R7 - CDFW [ds3161]",
+      "url": "https://data.ca.gov/dataset/twenty-fathom-groundfish-boundary-points-r7-cdfw-ds31611",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::twenty-fathom-groundfish-boundary-points-r7-cdfw-ds3161",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3161_fmu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/b44f084d45f94c218683d9c531b86027/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/b44f084d45f94c218683d9c531b86027/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/b44f084d45f94c218683d9c531b86027/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/b44f084d45f94c218683d9c531b86027/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/3100_3199/ds3161.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "4b7f96dc-090d-4209-9b40-c4612f77b0ba",
+      "title": "Vegetation - California State Parks of the Central Coast [ds3193]",
+      "url": "https://data.ca.gov/dataset/vegetation-california-state-parks-of-the-central-coast-ds3193",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::vegetation-california-state-parks-of-the-central-coast-ds3193",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3193_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/fef31602ebd94416bdf4b25a2e1bc65d/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/fef31602ebd94416bdf4b25a2e1bc65d/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/fef31602ebd94416bdf4b25a2e1bc65d/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/fef31602ebd94416bdf4b25a2e1bc65d/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/3100_3199/ds3193.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "36e453b7-2937-4a67-aa89-96f74427ebe2",
+      "title": "C-10A And C-10B, Tax Liability By Industry, C And S Corporations",
+      "url": "https://data.ca.gov/dataset/c-10a-and-c-10b-tax-liability-by-industry-c-and-s-corporations",
+      "publisher": "California Franchise Tax Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/36e453b7-2937-4a67-aa89-96f74427ebe2/resource/e1639735-a0db-4387-b3e3-94443031df04/download/2023_c-10a-and-c-10b-tax-liability-by-industry-c-and-s-corporations.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/36e453b7-2937-4a67-aa89-96f74427ebe2/resource/5cb6fcca-e9a2-4a92-883a-7555ef035fc9/download/c-10a_and_c-10b_tax_liability_by_industry_c_and_s_corporations_data_dictionary.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "a748d738-ef03-47f6-a994-f7f3ede47f73",
+      "title": "Pacific Bluefin Tuna Tracking - Sportfishing Report.com",
+      "url": "https://data.ca.gov/dataset/pacific-bluefin-tuna-tracking-sportfishing-report-com",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/1fa7c70b-d442-42e7-b9b4-a0271950aea9/resource/f7b2ca30-3c47-4aea-aa3a-d396b3453405/download/cdfw-dmp-metadata-worksheet_pacific-bluefin-tuna-sportfishingreport.com.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/1fa7c70b-d442-42e7-b9b4-a0271950aea9/resource/33ab3848-b6ac-44b9-92ba-8e623c1db437/download/sportfishing.com-pbf-tracking.xlsx",
+          "format": "XLSX"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "a0b42288-4bc4-49ff-a50f-ca8c078596a0",
+      "title": "California Department of Fish and Wildlife Adult Sturgeon Study, Sacramento-San Joaquin Watershed, 1954-2022",
+      "url": "https://data.ca.gov/dataset/california-department-of-fish-and-wildlife-adult-sturgeon-study-sacramento-san-joaqui-1954-2022",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/1479/2/2415693a0756b4c69e2460ea986e3093?key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/1479/2/c8bd39be800bf17863111146e8c38f17?key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/1479/2/6f4fef1f052e535cf02e48ecc2082e5a?key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "CSV (EXTERNAL DOWNLOAD)"
+        },
+        {
+          "url": "https://pasta.lternet.edu/package/data/eml/edi/1479/2/b12f76bfd363521995af4ab5bd179c7b?key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "DOCX"
+        },
+        {
+          "url": "https://portal.edirepository.org/nis/provenanceGenerator?packageid=edi.1479.2&key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "HTML"
+        },
+        {
+          "url": "https://portal.edirepository.org/nis/metadataviewer?packageid=edi.1479.2&key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "HTML"
+        },
+        {
+          "url": "https://portal.edirepository.org/nis/reportviewer?packageid=edi.1479.2&key=vqSpNwnbe91Bi8trB5RY25CoPD4",
+          "format": "HTML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "13b95a70-2f64-48ab-8498-4fae6f07a1b1",
+      "title": "Special Report 230: Geologic Gems of California State Parks",
+      "url": "https://data.ca.gov/dataset/special-report-230-geologic-gems-of-california-state-parks",
+      "publisher": "California Department of Conservation",
+      "resources": [
+        {
+          "url": "https://gis-cnra.hub.arcgis.com/apps/cadoc::special-report-230-geologic-gems-of-california-state-parks",
+          "format": "HTML"
+        },
+        {
+          "url": "https://maps.conservation.ca.gov/cgs/sr230/",
+          "format": "ArcGIS GeoServices REST API"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "9be77fc6-3c0e-4fb0-9b40-4e6224a2e1e2",
+      "title": "Cowcod Conservation Areas - R7 - CDFW [ds3165]",
+      "url": "https://data.ca.gov/dataset/cowcod-conservation-areas-r7-cdfw-ds31651",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::cowcod-conservation-areas-r7-cdfw-ds3165",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3165_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/d7be65fe73f044dda0fd4eee2906e810/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/d7be65fe73f044dda0fd4eee2906e810/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/d7be65fe73f044dda0fd4eee2906e810/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/d7be65fe73f044dda0fd4eee2906e810/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/3100_3199/ds3165.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0b9956a1-e338-4f94-8279-9bd516d2cede",
+      "title": "SSWP Cultural Resources",
+      "url": "https://data.ca.gov/dataset/sswp-cultural-resources",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/2927680b-4739-4913-9531-19c21c91e091/resource/3cdc2c9f-bd48-4f29-a861-128ebb1b92f6/download/study-12-cultural-resources.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "a46563bd-95a7-4ea9-a8b6-fd172d912aba",
+      "title": "DCP Tribal Resources",
+      "url": "https://data.ca.gov/dataset/dcp-tribal-resources",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/c432d121-e6e4-4c80-b3fc-0cd8f1120e0b/resource/aab0a16b-cacb-420b-93f7-0cc85e87b352/download/study-11-tribal-resources.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0dd8b9ce-b87b-459d-b331-f52432503dbb",
+      "title": "DCP Cultural Resources",
+      "url": "https://data.ca.gov/dataset/dcp-cultural-resources",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/29e70365-6392-45d0-999e-1f0e3cbb3ff4/resource/5b214d7f-2272-4b23-bb2a-874ec1dad5af/download/study-10-cultural-resources.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "85ac94a9-6988-4ed3-9df6-41f0f5bac81b",
+      "title": "DCP Water Quality and Temperature",
+      "url": "https://data.ca.gov/dataset/dcp-water-quality-and-temperature",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/7fc2cbfd-147f-4aa2-aabd-5395e314442c/resource/9df740ac-40cc-4228-aa52-9fda47938655/download/study-8-water-quality-and-temperature.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "15c12ba4-7c0e-4617-be02-b03e4c55e3a4",
+      "title": "SSWP Pyramid Lake Tributaries Fish Barriers",
+      "url": "https://data.ca.gov/dataset/sswp-pyramid-lake-tributaries-fish-barriers",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/26272108-0bda-4356-8d7f-93c508a69e33/resource/542d973e-b8de-4c1a-aca3-27aa1158dd74/download/study-22-pyramid-lake-tributaries-fish-barriers.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "cc865ea1-80fa-4963-8698-30c78f16ebc8",
+      "title": "SSWP Pyramid Reach BMIs",
+      "url": "https://data.ca.gov/dataset/sswp-pyramid-reach-bmis",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/1d135b40-8c0f-4168-a755-3829b3032f09/resource/a2874b81-053c-414d-a4b7-eb6e7606af7a/download/study-21-pyramid-reach-bmis.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/1d135b40-8c0f-4168-a755-3829b3032f09/resource/f41fa959-8c4d-43e7-b6c2-4b2ee3fa8ba3/download/study-21-pyramid-reach-bmis.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0bcfc44a-56a5-42de-8a13-9dc716ab62ba",
+      "title": "SSWP Special Status Raptors",
+      "url": "https://data.ca.gov/dataset/sswp-special-status-raptors",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/cf36cbb5-df7f-439d-a7c1-fc5017866f51/resource/9f2653f9-434d-4974-be4f-6c32164ec143/download/study-20-special-status-raptors.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "87f70e5f-18cf-475e-8fde-e69b76713c0f",
+      "title": "SSWP Whitewater Boating",
+      "url": "https://data.ca.gov/dataset/sswp-whitewater-boating",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ae1c32f8-f9c6-49dd-8b49-3248ba1e02c3/resource/7a354601-7ce1-4ed8-a7c6-7467f270f05a/download/study-19-whitewater-boating.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "09457343-28ca-4109-84ab-05e045b6f9f6",
+      "title": "SSWP Fish Entrainment Risk Assessment",
+      "url": "https://data.ca.gov/dataset/sswp-fish-entrainment-risk-assessment",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/febfbf1c-c2f4-4ecf-a5d6-b0ef3796a1e3/resource/0dba261f-a3ee-40e7-b146-726532aab501/download/study-17-fish-entrainment-risk-assessment.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "ff671702-9cc8-4f73-bde0-50777f0b7e76",
+      "title": "SSWP Scenic Integrity",
+      "url": "https://data.ca.gov/dataset/sswp-scenic-integrity",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/0f776224-df4d-4d22-8960-a24cb19402cc/resource/3c41dcea-9c9f-4d94-a511-ded29bfcbaa2/download/study-15-scenic-integrity.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "d6b0403f-7108-41ab-8681-a532c9b1492e",
+      "title": "SSWP Indicators of Hydrologic Alteration",
+      "url": "https://data.ca.gov/dataset/sswp-indicators-of-hydrologic-alteration",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/1ba82857-5451-408e-98b1-d58b9a8c1629/resource/712acd9a-c3e7-48f3-95c4-55be624e3087/download/study-14-indicators-of-hydrologic-alteration.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/1ba82857-5451-408e-98b1-d58b9a8c1629/resource/0db33b8f-a475-44af-ace0-c1fdc9918119/download/study-14-indicators-of-hydrologic-alteration.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "63de749a-454b-4f8f-9b9d-c24c5c66702d",
+      "title": "SSWP Tribal Resources",
+      "url": "https://data.ca.gov/dataset/sswp-tribal-resources",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/76c95774-abf9-4b71-bc04-687c82edb47e/resource/db5fee10-ae96-411c-9171-ed43183480ab/download/study-13-tribal-resources.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "d24d7b78-5c9c-401f-946f-0157c41d8e58",
+      "title": "SSWP ESA Listed Amphibians",
+      "url": "https://data.ca.gov/dataset/sswp-esa-listed-amphibians",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/97c4cbd2-807d-4057-b2e4-dc40b953a233/resource/8e002ea4-a33d-4d8f-8383-3c135bb4fe13/download/study-09-esa-listed-amphibians.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "5ded93df-1fda-48a3-bbf6-ace0abc9b7c5",
+      "title": "SSWP ESA Listed Plant Species",
+      "url": "https://data.ca.gov/dataset/sswp-esa-listed-plant-species",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/98610e18-bf9c-44cd-91e0-6d5d6e02bd16/resource/dfdb07b7-4676-4add-bf24-22545b3e8e39/download/study-08-esa-listed-plants.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "70283925-a969-404d-94de-8354eca6f328",
+      "title": "SSWP Pyramid Reach Fish Populations",
+      "url": "https://data.ca.gov/dataset/sswp-pyramid-reach-fish-populations",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/baa0ec16-458f-4c8a-a02c-7d07c5a7661a/resource/86ff303f-6600-4e49-bd69-bcd79c9c10c8/download/study-03-pyramid-reach-fish-populations.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "356d7a3b-b4ad-4e11-b62f-d32ce824b63e",
+      "title": "SSWP Quail Lake Fisheries",
+      "url": "https://data.ca.gov/dataset/sswp-quail-lake-fisheries",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/2f1d59fe-25e0-4c74-b87c-5c9d73734569/resource/2c27e8d6-b9af-44dc-bb73-a3d75b27dd2e/download/study-02-quail-lake-fisheries.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "e5eb9cdc-8d60-404a-8370-273d3630b8b4",
+      "title": "DCP ESA Listed Plant Species",
+      "url": "https://data.ca.gov/dataset/dcp-esa-listed-plant-species",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/4ad5ffc2-4f5a-44f0-a383-4a5f583cd0c8/resource/2c8f30f9-b4fb-4386-b213-9980d10b784e/download/study-4-esa-listed-plant-species.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "f73bbadb-0682-4e24-8ed6-25772edf9e96",
+      "title": "DCP Aquatic Invasive Species",
+      "url": "https://data.ca.gov/dataset/dcp-aquatic-invasive-species",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/9997c11d-5d9e-4c0e-8b17-c9f66f96924e/resource/d6bc17a2-28bb-425e-8e0f-81749fb8008f/download/study-1-aquatic-invasive-species.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "cba59dac-9cb0-463a-98ab-c93577e9c3b1",
+      "title": "SSWP Water Quality and Temperature",
+      "url": "https://data.ca.gov/dataset/sswp-water-quality-and-temperature",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/6fc777fe-4721-4dff-b65b-0aaca8b68cae/resource/d2c38865-7c18-4f28-999a-97cefbe2b3ac/download/study-16-water-quality-and-temperature.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "352a8f32-f8f9-48e6-8fa9-6c87e8f15870",
+      "title": "SSWP ESA Listed Bird Species",
+      "url": "https://data.ca.gov/dataset/sswp-esa-listed-bird-species",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/37f2908b-dc68-4076-9212-7811cbed9ea8/resource/f5e7b5b5-203c-4a10-91ee-bab654a5668f/download/study-10-esa-listed-bird-species.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/37f2908b-dc68-4076-9212-7811cbed9ea8/resource/7f839b44-c22a-4bfb-809c-d0982b0f905e/download/study-10-esa-listed-bird-species.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "df59c387-929a-4589-8351-e231bf038077",
+      "title": "SSWP Special Status Terrestrial Wildlife Species California Wildlife Habitat Relationships",
+      "url": "https://data.ca.gov/dataset/sswp-special-status-terrestrial-wildlife-species-california-wildlife-habitat-relationships",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/faa62207-d741-447f-8a6d-2329d12a104e/resource/24d6ef72-6e82-4e94-b8e5-4d2c44563c69/download/study-07-special-status-terrestrial-wildlife-species-cwhr.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "aa94458b-66ff-4437-bc33-f8f774eb500d",
+      "title": "SSWP Non-Native Invasive Plants",
+      "url": "https://data.ca.gov/dataset/sswp-non-native-invasive-plants",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/3d22928b-439c-4d26-9bda-7911349ad48e/resource/c4e519ee-78a3-4ff6-ae52-c09c65c059a4/download/study-06-non-native-invasive-plants.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "46f63c99-e9c0-4152-8321-bb761b614236",
+      "title": "SSWP Botanical Resources",
+      "url": "https://data.ca.gov/dataset/sswp-botanical-resources",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/e28b0f94-f80e-4853-b024-585c951e2e02/resource/51f43875-936a-422e-b816-077bac2bf2aa/download/study-05-botanical-resources.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "f3e8a85b-67db-44b3-a970-8122589008ac",
+      "title": "SSWP Aquatic Amphibians & Semi-Aquatic Snakes",
+      "url": "https://data.ca.gov/dataset/sswp-aquatic-amphibians-semi-aquatic-snakes",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/049fed5d-2c38-43ab-825f-4fc44d6f842d/resource/7d4ab8f5-43f9-4fcb-b2d9-7d30c43336d1/download/study-04-ss-aquatic-amphibians-semi-aquatic-snakes.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "4d5cfb9b-7a9e-4a82-a1f3-f9c222252587",
+      "title": "SSWP Aquatic Invasive Species",
+      "url": "https://data.ca.gov/dataset/sswp-aquatic-invasive-species",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/ca4f9e28-c79b-417f-a515-33266f579006/resource/6e1dab5d-a7e7-40bc-8360-49d10cf000e9/download/study-01-aquatic-invasive-species.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "742dc15d-1ffb-4e7f-bbba-2f5896b0063f",
+      "title": "DCP ESA Listed Terrestrial Wildlife Species California Wildlife Habitat Relationships",
+      "url": "https://data.ca.gov/dataset/dcp-esa-listed-terrestrial-wildlife-species-california-wildlife-habitat-relationships",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/d5d6c9ad-a882-4dd4-b0be-ffd4d92f70dd/resource/8a1145db-14fc-4a55-bb9b-4dce6c9d6fef/download/study-6-esa-listed-terrestrial-wildlife-species-california-wildlife-habitat-relationships.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "92e9b3b1-8821-49a4-b888-e00482c00fc1",
+      "title": "SSWP ESA Listed Terrestrial Wildlife Species California Wildlife Habitat Relationships",
+      "url": "https://data.ca.gov/dataset/sswp-esa-listed-terrestrial-wildlife-species-california-wildlife-habitat-relationships",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/33e9493c-d31e-4412-94bc-0e7e7ab2aadb/resource/f884ab54-db90-4669-801b-c8f71e3282ff/download/study-18-esa-listed-terrestrial-wildlife-species-cwhr.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/33e9493c-d31e-4412-94bc-0e7e7ab2aadb/resource/40743be9-bed2-4720-9b07-36f7bff8dd8c/download/study-18-esa-listed-terrestrial-wildlife-species-cwhr.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "94cb43da-6c91-48f8-9dca-7cbaf918c29f",
+      "title": "i07 SignificantResourceAreas Delta 1979",
+      "url": "https://data.ca.gov/dataset/i07-significantresourceareas-delta-1979",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://gis.data.cnra.ca.gov/datasets/76d898c12dc648f597e1859b5405c445_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://utility.arcgis.com/usrsvcs/servers/76d898c12dc648f597e1859b5405c445/rest/services/Environment/i07_SignificantResourceAreas_Delta_1979/MapServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.cnra.ca.gov/api/download/v1/items/76d898c12dc648f597e1859b5405c445/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.cnra.ca.gov/api/download/v1/items/76d898c12dc648f597e1859b5405c445/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.cnra.ca.gov/api/download/v1/items/76d898c12dc648f597e1859b5405c445/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.cnra.ca.gov/api/download/v1/items/76d898c12dc648f597e1859b5405c445/kml?layers=0",
+          "format": "KML"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "31f5dfe4-76b4-4ee0-b5a2-9432837cdc60",
+      "title": "Rockfish Conservation Area Waypoints - R7 - CDFW [ds3145]",
+      "url": "https://data.ca.gov/dataset/rockfish-conservation-area-waypoints-r7-cdfw-ds3145",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::rockfish-conservation-area-waypoints-r7-cdfw-ds3145",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3145_fmu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/dc79426ea44d40609be47730a4f8678a/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/dc79426ea44d40609be47730a4f8678a/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/dc79426ea44d40609be47730a4f8678a/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/dc79426ea44d40609be47730a4f8678a/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/3100_3199/ds3145.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.fisheries.noaa.gov/west-coast/sustainable-fisheries/west-coast-groundfish-closed-areas",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "8e164f15-9fe2-4508-a65e-f8e0c9adbad1",
+      "title": "North Central Coast State of the Region Report, Supplemental Reports All Habitats_2010-2015",
+      "url": "https://data.ca.gov/dataset/north-central-coast-state-of-the-region-report-supplemental-reports-all-habitats_2010-2015",
+      "publisher": "California Ocean Protection Council",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/e2d2549f-0be5-432d-9c9e-13f6fbfa2759/resource/953d0edd-7d41-4558-9bb6-3242eb3cec93/download/ncc-state-of-the-region-report-nov-2015.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/e2d2549f-0be5-432d-9c9e-13f6fbfa2759/resource/5fb9dfda-4632-4b61-a555-9088d9aee85a/download/eduandoutreach-draftfinal.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/e2d2549f-0be5-432d-9c9e-13f6fbfa2759/resource/bd87bca5-0ce6-48d1-851a-fe2a9402bb0a/download/enforcement-draftfinal.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/e2d2549f-0be5-432d-9c9e-13f6fbfa2759/resource/c804252b-b373-4de7-8516-148a6e6566af/download/rovfinal.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/e2d2549f-0be5-432d-9c9e-13f6fbfa2759/resource/e0424373-84c5-48c2-a81a-e81e642b4bb1/download/fisheries-draftfinal.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "9d0d5d44-3b81-4875-bd5a-c854751f278d",
+      "title": "Protected Areas Exclusion (Solar)",
+      "url": "https://data.ca.gov/dataset/protected-areas-exclusion-solar",
+      "publisher": "California Energy Commission",
+      "resources": [
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/datasets/CAEnergy::protected-areas-exclusion-solar-1",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ProtectedAreas_Solar/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/filegdb?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/featureCollection?layers=0",
+          "format": "TXT"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/excel?layers=0",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/geoPackage?layers=0",
+          "format": "GPKG"
+        },
+        {
+          "url": "https://cecgis-caenergy.opendata.arcgis.com/api/download/v1/items/a60743cfb11d4b418bc92645aea57bd1/sqlite?layers=0",
+          "format": "GDB"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "8981210b-1877-4d5e-b592-cef39fd578c8",
+      "title": "Wild and Scenic Rivers (State Designations Only) - California [ds950]",
+      "url": "https://data.ca.gov/dataset/wild-and-scenic-rivers-state-designations-only-california-ds950",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::wild-and-scenic-rivers-state-designations-only-california-ds950",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds950_fnu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/708e420c300b4f9793af993a2612dbd4/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/708e420c300b4f9793af993a2612dbd4/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/708e420c300b4f9793af993a2612dbd4/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/708e420c300b4f9793af993a2612dbd4/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/900_999/ds950.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/wild-and-scenic-rivers-california-state-designations-only-2020",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "ab672540-aecd-42f1-9b05-9aad326f97ec",
+      "title": "Surface Water - Freshwater Harmful Algal Blooms",
+      "url": "https://data.ca.gov/dataset/surface-water-freshwater-harmful-algal-blooms",
+      "publisher": "California State Water Resources Control Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/ab672540-aecd-42f1-9b05-9aad326f97ec/resource/9a54fa52-e16f-4943-b27d-2b4eca7c1bd6/download/habs-disclaimer-for-data-dictionary.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ab672540-aecd-42f1-9b05-9aad326f97ec/resource/516bd039-e09c-4e2f-aa65-eda947af729b/download/habs-master-data-dictionary.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ab672540-aecd-42f1-9b05-9aad326f97ec/resource/c6a36b91-ad38-4611-8750-87ee99e497dd/download/bloom-report_2026-10-02.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ab672540-aecd-42f1-9b05-9aad326f97ec/resource/67648948-034f-4882-bbc0-c07c7d38daf9/download/hab-cases_2026-10-02.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ab672540-aecd-42f1-9b05-9aad326f97ec/resource/4283c060-c22f-48f5-a75c-8bccf0c54a99/download/hab-responses_2026-10-02.csv",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data.ca.gov/dataset/ab672540-aecd-42f1-9b05-9aad326f97ec/resource/9d4e1df4-0cd6-4165-9e63-effcafd9dccc/download/hab-results_2026-10-02.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "1daeae13-0ec1-414e-b464-f99727f6ff27",
+      "title": "South Coast State of the Region Report, Snapshots and Supplemental Reports All Habitats 2011-2015",
+      "url": "https://data.ca.gov/dataset/south-coast-state-of-the-region-report-snapshots-and-supplemental-reports-all-habitat-2011-2015",
+      "publisher": "California Ocean Protection Council",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/a6920570-f2bc-4fbe-b372-ee866febae06/download/southcoaststateoftheregionfinal.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/a87e5562-f0ff-4997-a9d9-246ac05121db/download/cdfw_commercial-fisheries_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/a4c7135c-5ad1-4a60-ab11-20588aaf9b0f/download/cdfw_crfs-mapping_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/6bf05a32-2294-4291-b157-861b3a119b5d/download/cdfw_education-and-outreach_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/f0f27576-8b6b-43bf-9c20-48849d1e4aff/download/cdfw_enforcement_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/95fd0893-9435-4507-af1d-561ac3920637/download/cdfw_lobster-spotlight_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/d64cd998-a29b-4b2d-afca-5c3229e38dab/download/cdfw_recreational-fishery_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/d59b77cc-3ae6-42b3-b92c-44e2c2af1db1/download/cdfw_rov_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/d60d1022-c960-48f4-bca7-0933e8544516/download/cdfw_scp_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/5f658b3f-68be-4b44-9017-a1ee70986d77/download/cdfw_squid-spotlight_finaldraft.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/8d20d6f4-ac5e-4caa-9e7c-2d4d6ac1a8a2/download/south-coast-rocky-intertidal-snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/10eb7a03-ac2c-4e58-bcf3-debe9ccac58f/download/south-coast-kelp-shallow-rock-snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/3855e7d2-e5e2-4d1d-a2d8-de5669198b10/download/south-coast-sandy-beach-snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/6d436351-59c3-4548-8e8d-2bd029bc5ee5/download/south-coast-rov-snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/460a992d-29c2-46ef-af85-5997ffac0179/download/south-coast-spiny-lobster-snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/d7a93614-e976-4d9f-8ab4-033e4a41011c/download/south-coast-seabirds_snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/eac8dfc9-ac60-4721-a4f8-9e893957af63/download/south-coast_channel_islands_snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/b1f2799c-d376-42f2-9412-463635ba3a58/download/south-coast_citizen_science_snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/1cedda30-f907-4ccd-a95c-0ed2b234b5a8/download/south-coast-mpawatchsnapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/963e714d-6ea9-475d-ac8a-76986965f11a/download/south-coast_bight-snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/ef6a9cf8-25ca-4f33-9ef5-05b3668a83e2/download/south-coast_grunion_snapshot.pdf",
+          "format": "PDF"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/77a06a7a-0808-467f-b778-ae73767fcb0f/resource/2e16d503-2329-48e4-a571-f36d66b514ce/download/south-coast_gs_physical_conditions-snapshot.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "06c903fe-d972-49f6-bbf3-36ba5307cc9f",
+      "title": "Central Valley Water Board E. coli Monitoring Results",
+      "url": "https://data.ca.gov/dataset/central-valley-water-board-e-coli-monitoring-results",
+      "publisher": "California State Water Resources Control Board",
+      "resources": [
+        {
+          "url": "https://data.ca.gov/dataset/06c903fe-d972-49f6-bbf3-36ba5307cc9f/resource/fc450fb6-e997-4bcf-b824-1b3ed0f06045/download/loweramerican_ecoli_2026-09-24.csv",
+          "format": "CSV"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "0437c839-4a62-4b4b-b388-53591628d3bb",
+      "title": "Nerodia Eradication - Placer and Sacramento Counties - 2015-2023",
+      "url": "https://data.ca.gov/dataset/nerodia-eradication-placer-and-sacramento-counties-2015-2023",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/159e2339-a664-4049-a1eb-45288dba11cf/resource/add0c0a9-0b9b-463b-b427-e5001e703b82/download/nerodia-eradication-dmp-000487-cdfw-dmp-metadata-worksheet.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/159e2339-a664-4049-a1eb-45288dba11cf/resource/e350d15a-57e2-4fa6-af9b-6577f392752b/download/nerodia-eradication.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "5b97aba7-2207-479b-af6d-0c41e415d45e",
+      "title": "DCP Botanical Resources",
+      "url": "https://data.ca.gov/dataset/dcp-botanical-resources",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/7d6b4167-27a5-463b-911a-2aff345aec54/resource/cfdf0211-93bb-4d65-84a6-32dcdb2afe24/download/study-2-botanical-resources.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "bcc1b6dd-3d79-47bb-abd2-34b40773d4ba",
+      "title": "Vegetation - Sierra Nevada Compilation [ds3271]",
+      "url": "https://data.ca.gov/dataset/vegetation-sierra-nevada-compilation-ds3271",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::vegetation-sierra-nevada-compilation-ds3271",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds3271_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/3f144c86b35e4760bbb7114b131a1b09/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/3f144c86b35e4760bbb7114b131a1b09/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/3f144c86b35e4760bbb7114b131a1b09/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/3f144c86b35e4760bbb7114b131a1b09/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/3200_3299/ds3271.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "dc61e9d9-8353-4ff6-8782-bef032a20a85",
+      "title": "DCP NonNative Invasive Plants",
+      "url": "https://data.ca.gov/dataset/dcp-nonnative-invasive-plants",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/d0ce054f-273e-47e8-a5f5-bdc0cfaeb1ea/resource/f13cc860-3b1b-49b7-b75b-c073e915b9c7/download/study-3-non-native-invasive-plants.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "857b327c-2e41-417d-a61d-0a2a51f34b16",
+      "title": "General Fish Surveys - Lake Silverwood, San Bernardino County - 1999-2021",
+      "url": "https://data.ca.gov/dataset/general-fish-surveys-lake-silverwood-san-bernardino-county-1999-2021",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/4c760594-006a-41d6-bba7-e4551fcc5eec/resource/30feec6b-a701-4e27-a5cd-156b894a1c90/download/cdfw-dmp-metadata-worksheet-dmp-000451-general-fish-surveys-lake-silverwood.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/4c760594-006a-41d6-bba7-e4551fcc5eec/resource/90d830c3-216d-4d3b-affe-d6de8a495843/download/silverwood-gfs-1999-2021.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "c2f77d7f-049e-45c4-a70a-86d6c773637a",
+      "title": "DCP Special Status Terrestrial Wildlife Species California Wildlife Habitat Relationships",
+      "url": "https://data.ca.gov/dataset/dcp-special-status-terrestrial-wildlife-species-california-wildlife-habitat-relationships",
+      "publisher": "California Department of Water Resources",
+      "resources": [],
+      "status": "needs_review"
+    },
+    {
+      "id": "d46ac224-04df-4e0c-a4b5-75d27c05d22c",
+      "title": "General Fish Surveys - Lake Perris, Riverside County - 1989 - 2021",
+      "url": "https://data.ca.gov/dataset/general-fish-surveys-lake-perris-riverside-county-1989-2021",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/5bb7c0d4-78dc-44bd-adff-6e0dce68c73d/resource/b974ddf1-1ef9-4527-b648-53274087f3e5/download/cdfw-dmp-metadata-worksheet-dmp-000450-general-fish-surveys-lake-perris.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/5bb7c0d4-78dc-44bd-adff-6e0dce68c73d/resource/d5515f41-6c44-4158-b943-54b59a58efff/download/lake-perris-general-survey-1989-2021.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "07939115-f9e5-4fda-9dd6-958b5009a148",
+      "title": "General Fish Surveys - Lake Skinner, Riverside County - 2008-2021",
+      "url": "https://data.ca.gov/dataset/general-fish-surveys-lake-skinner-riverside-county-2008-2021",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/cbea82b1-f28d-4b51-80ce-981632c79c73/resource/ac24872a-c1d9-4f91-98a5-facb510cc245/download/cdfw-dmp-metadata-worksheet-dmp-000449-general-fish-surveys-lake-skinner.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/cbea82b1-f28d-4b51-80ce-981632c79c73/resource/ce583c79-1791-4ea3-a63e-9a038c1c867a/download/lake-skinner-survey-2008-2021.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "8dc313c6-756d-4541-889e-f52ab1b24158",
+      "title": "General Fish Surveys - Diamond Valley Lake, Riverside County - 2003-2021",
+      "url": "https://data.ca.gov/dataset/general-fish-surveys-diamond-valley-lake-riverside-county-2003-2021",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/84393c21-70dd-47f7-a537-2d5884b611a9/resource/de7918c0-a0df-41b1-9656-68d6ac503942/download/cdfw-dmp-metadata-worksheet-dmp-000448-general-fish-surveys-diamond-valley-lake.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/84393c21-70dd-47f7-a537-2d5884b611a9/resource/9ae01cc3-d29f-446f-a5f7-a8653a9f4948/download/dvl-survey-2003-2021.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "65834e92-1f24-4d21-a419-1cbe8b7172c0",
+      "title": "Catchable Trout Surveys - Lake Perris, Riverside County - 2008-2011",
+      "url": "https://data.ca.gov/dataset/catchable-trout-surveys-lake-perris-riverside-county-2008-2011",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/f1e48003-87be-44ec-ab2d-10ae144c08db/resource/bfc3d87b-218c-47d6-9552-5c3b2d9634a3/download/cdfw-dmp-metadata-worksheet-dmp-000444-catchable-trout-study-lake-perris-2008-2011.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/f1e48003-87be-44ec-ab2d-10ae144c08db/resource/0604ddd3-5ef9-4da2-a098-b44e00024ebb/download/perris-trout-08-11.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "a3637ec0-ab50-443a-a5f2-f3792d40d486",
+      "title": "Creel Surveys - Klamath River",
+      "url": "https://data.ca.gov/dataset/creel-surveys-klamath-river",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/cfb85cf1-ee46-4c4a-a7d0-87cb23503c9c/resource/05d2048a-aae6-4917-bef7-f4e6182488eb/download/cdfw-dmp000519-metadata-worksheet.xlsx",
+          "format": "XLSX"
+        },
+        {
+          "url": "https://data.cnra.ca.gov/dataset/cfb85cf1-ee46-4c4a-a7d0-87cb23503c9c/resource/6dddaa9a-8c71-45a8-880e-cdf9f005f096/download/dmp000519_data.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "abac3174-2622-4ef0-9ab5-86daf0844303",
+      "title": "Rail Lines BNSF, UPRR",
+      "url": "https://data.ca.gov/dataset/rail-lines-bnsf-uprr",
+      "publisher": "Caltrans",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/d2a0f4d2d9b646368b8aa1bf364449bb_0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHrailroad/Rail_Lines_BNSF_UPRR/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/d2a0f4d2d9b646368b8aa1bf364449bb/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/d2a0f4d2d9b646368b8aa1bf364449bb/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/d2a0f4d2d9b646368b8aa1bf364449bb/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/d2a0f4d2d9b646368b8aa1bf364449bb/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "https://gis.data.ca.gov/api/download/v1/items/d2a0f4d2d9b646368b8aa1bf364449bb/filegdb?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        },
+        {
+          "url": "https://filelib.wildlife.ca.gov/Public/BDB/GIS/BIOS/Public_Datasets/1300_1399/ds1337.zip",
+          "format": ""
+        },
+        {
+          "url": "https://gisdata-caltrans.opendata.arcgis.com/",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "6b3a9493-cdc1-4676-aac6-6b8c0449d3ba",
+      "title": "Vegetation - Anza-Borrego Desert State Park [ds165]",
+      "url": "https://data.ca.gov/dataset/vegetation-anza-borrego-desert-state-park-ds165",
+      "publisher": "California Department of Fish and Wildlife",
+      "resources": [
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/datasets/CDFW::vegetation-anza-borrego-desert-state-park-ds165-1",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services2.arcgis.com/Uq9r85Potqm3MfRV/arcgis/rest/services/biosds165_fpu/FeatureServer/0",
+          "format": "ArcGIS GeoServices REST API"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/0c34bb6fbed64973a3914e87d157ebda/csv?layers=0",
+          "format": "CSV"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/0c34bb6fbed64973a3914e87d157ebda/shapefile?layers=0",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/0c34bb6fbed64973a3914e87d157ebda/geojson?layers=0",
+          "format": "GeoJSON"
+        },
+        {
+          "url": "https://data-cdfw.opendata.arcgis.com/api/download/v1/items/0c34bb6fbed64973a3914e87d157ebda/kml?layers=0",
+          "format": "KML"
+        },
+        {
+          "url": "http://ftp.wildlife.ca.gov/BDB/GIS/BIOS/Public_Datasets/100_199/ds165.zip",
+          "format": "ZIP"
+        },
+        {
+          "url": "https://www.wildlife.ca.gov/Data/BIOS",
+          "format": ""
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "87846a32-b2c8-441f-a41d-8f57c087cfc3",
+      "title": "DCP ESA Listed Bird Species Riparian Habitat Evaluation",
+      "url": "https://data.ca.gov/dataset/dcp-esa-listed-bird-species-riparian-habitat-evaluation",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/b0ec5bfb-bf69-496c-9386-382ef4b83a9b/resource/47efe79e-374e-46bc-bd7b-661628c000d1/download/study-7-esa-listed-bird-species-riparian-habitat-evaluation.zip",
+          "format": "ZIP"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
+      "id": "f8d63c88-77b2-420c-94c1-25b8a7aac4c7",
+      "title": "2016 Clifton Court Forebay Predator Reduction Electrofishing Study",
+      "url": "https://data.ca.gov/dataset/2016-clifton-court-forebay-predator-reduction-electrofishing-study",
+      "publisher": "California Department of Water Resources",
+      "resources": [
+        {
+          "url": "https://data.cnra.ca.gov/dataset/e9c441c4-fb27-4095-87ba-1ecfba7e0098/resource/3f66810f-5bc2-4ae6-8bfc-e6fb507e700f/download/pres-2016-annual-report.pdf",
+          "format": "PDF"
+        }
+      ],
+      "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "ba109ffaa2653788d59a7b7ec060ba2a5e0e3e37ef1d3bac81d462c097da5003"
+  "response_sha256": "680f0ca00e75590429939ebd7e03b02cbad7c6478a65ceada33f1cff93e2c657"
 }

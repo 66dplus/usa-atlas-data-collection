@@ -10,13 +10,13 @@
     "source": "live-coverage gap intake",
     "food_excluded": true
   },
-  "checked_at": "2026-09-30T16:48:49.102331+00:00",
+  "checked_at": "2026-10-05T10:56:20.647793+00:00",
   "status": "needs_review",
   "total_catalog_matches": 22,
-  "page_offset": 20,
-  "next_cursor": 0,
+  "page_offset": 0,
+  "next_cursor": 20,
   "max_search_results_per_cycle": 100,
-  "search_complete": true,
+  "search_complete": false,
   "candidates": [
     {
       "id": "0077baf3-9365-4228-b6e0-b37b3c1220ac",
@@ -657,6 +657,23 @@
       "status": "needs_review"
     },
     {
+      "id": "f6e830ac-26b0-4828-839a-f932493bbd94",
+      "title": "CalEnviroScreen 5.0",
+      "url": "https://data.ca.gov/dataset/calenviroscreen-5-01",
+      "publisher": "California Office of Environmental Health Hazard Assessment",
+      "resources": [
+        {
+          "url": "https://gis.data.ca.gov/datasets/OEHHA::calenviroscreen-5-0",
+          "format": "HTML"
+        },
+        {
+          "url": "https://services1.arcgis.com/PCHfdHz4GlDNAhBb/arcgis/rest/services/calenviroscreen50results_F_070126_gdb/FeatureServer/2",
+          "format": "ArcGIS GeoServices REST API"
+        }
+      ],
+      "status": "needs_review"
+    },
+    {
       "id": "2685009f-267e-4abb-a5c6-466ff5b49bab",
       "title": "Hospital Utilization Trends",
       "url": "https://data.ca.gov/dataset/hospital-utilization-trends",
@@ -689,23 +706,6 @@
         {
           "url": "https://data.chhs.ca.gov/dataset/abfdba95-b1ba-4e39-a417-d006e2667a2c/resource/8a5953e7-0b52-4d9b-980e-608fc846aa68/download/hospital-utilization-trends-h6g_6e0d.zip",
           "format": "ZIP"
-        }
-      ],
-      "status": "needs_review"
-    },
-    {
-      "id": "f6e830ac-26b0-4828-839a-f932493bbd94",
-      "title": "CalEnviroScreen 5.0",
-      "url": "https://data.ca.gov/dataset/calenviroscreen-5-01",
-      "publisher": "California Office of Environmental Health Hazard Assessment",
-      "resources": [
-        {
-          "url": "https://gis.data.ca.gov/datasets/OEHHA::calenviroscreen-5-0",
-          "format": "HTML"
-        },
-        {
-          "url": "https://services1.arcgis.com/PCHfdHz4GlDNAhBb/arcgis/rest/services/calenviroscreen50results_F_070126_gdb/FeatureServer/2",
-          "format": "ArcGIS GeoServices REST API"
         }
       ],
       "status": "needs_review"
@@ -993,50 +993,8 @@
         }
       ],
       "status": "needs_review"
-    },
-    {
-      "id": "ab4e1b38-df76-4397-b3cf-002fd16937c3",
-      "title": "CalEnviroScreen 2.0",
-      "url": "https://data.ca.gov/dataset/calenviroscreen-2-0",
-      "publisher": "California Office of Environmental Health Hazard Assessment",
-      "resources": [
-        {
-          "url": "https://data.ca.gov/dataset/ab4e1b38-df76-4397-b3cf-002fd16937c3/resource/6d6a9a5c-9221-4fc5-9b00-35015ae65837/download/calenviroscreen-final-report.csv",
-          "format": "CSV"
-        },
-        {
-          "url": "https://data.ca.gov/dataset/ab4e1b38-df76-4397-b3cf-002fd16937c3/resource/cb5fe61f-a1af-4e53-83e2-fd3e19d0e707/download/cal-enviro-screen-data-dictionary.xlsx",
-          "format": "XLSX"
-        },
-        {
-          "url": "https://data.ca.gov/dataset/ab4e1b38-df76-4397-b3cf-002fd16937c3/resource/e5f71995-e879-4e19-a74b-33badbfb0830/download/cal-enviro-screen-additional-information.pdf",
-          "format": "PDF"
-        }
-      ],
-      "status": "needs_review"
-    },
-    {
-      "id": "0bd5f40b-c59b-4183-be22-d057eae8383c",
-      "title": "CalEnviroScreen 3.0 Results",
-      "url": "https://data.ca.gov/dataset/calenviroscreen-3-0-results",
-      "publisher": "California Office of Environmental Health Hazard Assessment",
-      "resources": [
-        {
-          "url": "https://data.ca.gov/dataset/0bd5f40b-c59b-4183-be22-d057eae8383c/resource/850cbbb8-f616-48c0-9240-971003c99413/download/calenviroscreen-3.0-report.pdf",
-          "format": "PDF"
-        },
-        {
-          "url": "https://data.ca.gov/dataset/0bd5f40b-c59b-4183-be22-d057eae8383c/resource/89b3f4e9-0bf8-4690-8c6f-715a717f3fae/download/calenviroscreen-3.0-results-june-2018-update.csv",
-          "format": "CSV"
-        },
-        {
-          "url": "https://data.ca.gov/dataset/0bd5f40b-c59b-4183-be22-d057eae8383c/resource/ed7da629-7ac7-4bd1-b6db-4b4efac45894/download/calenviroscreen-3.0-shapefile.zip",
-          "format": "SHP"
-        }
-      ],
-      "status": "needs_review"
     }
   ],
   "meaning": "not_available means zero matches for this query only; unknown schemas require review",
-  "response_sha256": "5dc84276116f9233107e633e8fe56946ce2ce677fba975f8bded77435aabd744"
+  "response_sha256": "e484832473308c62d4622a84f088e35ba0493979e937a9988c18d088f35a884c"
 }
