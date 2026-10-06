@@ -1,0 +1,1278 @@
+{
+  "as_of": "2026-10-05",
+  "bundle": "additional-surveillance",
+  "records": 534,
+  "numeric": 534,
+  "missing_or_suppressed": 0,
+  "metrics": 31,
+  "no_subcounty_values": true,
+  "geographic_coverage": {
+    "block_group": [],
+    "tract": [],
+    "county": [],
+    "sti": {
+      "country": [
+        "US"
+      ],
+      "state": [],
+      "note": "CDC 2024 provisional STI data ZIP provides national spreadsheets only; CDC deferred state/geographic publication pending NNDSS reconciliation."
+    },
+    "tb": {
+      "state_fips_observed": [
+        "01",
+        "02",
+        "04",
+        "05",
+        "06",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "53",
+        "54",
+        "55",
+        "56"
+      ],
+      "special_state_reporting_areas": [
+        "CDC_TB:New_York_State_excluding_NYC"
+      ],
+      "city_reporting_areas": [
+        "CDC_TB:New York City"
+      ],
+      "other_reporting_areas": [
+        "American Samoa",
+        "Federated States of Micronesia",
+        "Guam",
+        "Northern Mariana Islands",
+        "Puerto Rico",
+        "Republic of Palau",
+        "Republic of the Marshall Islands",
+        "U.S. Virgin Islands"
+      ],
+      "country": [
+        "US"
+      ],
+      "note": "52 U.S. reporting areas (50 states, DC, NYC; New York State excludes NYC) plus 8 territories/freely associated states; annual table gives no county-specific routine case rates."
+    }
+  },
+  "metric_coverage": [
+    {
+      "metric_id": "sti_chlamydia_men_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Chlamydia",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_chlamydia_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Chlamydia",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_chlamydia_total_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Chlamydia",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_chlamydia_women_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Chlamydia",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_gonorrhea_men_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Gonorrhea",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_gonorrhea_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Gonorrhea",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_gonorrhea_total_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Gonorrhea",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_gonorrhea_women_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Gonorrhea",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_primary_and_secondary_syphilis_men_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_primary_and_secondary_syphilis_total_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_primary_and_secondary_syphilis_women_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "sti_total_syphilis_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Total syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_congenital_cases_by_birth_year_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Congenital syphilis cases by infant year of birth",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_early_non_primary_non_secondary_men_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Early non-primary non-secondary",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_early_non_primary_non_secondary_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Early non-primary non-secondary",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_early_non_primary_non_secondary_women_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Early non-primary non-secondary",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_and_secondary_men_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_and_secondary_men_who_have_sex_with_men_msm_partner_category_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_and_secondary_men_who_have_sex_with_women_only_msw_partner_category_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_and_secondary_men_with_unknown_sex_of_sex_partners_msu_partner_category_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_and_secondary_missing_or_unknown_sex_partner_category_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_and_secondary_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_and_secondary_women_partner_category_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_and_secondary_women_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_primary_secondary_women_15_44_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_women_ages_15_44"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Primary and secondary syphilis rate among women ages 15–44",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_total_women_15_44_reported_rate",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_women_ages_15_44"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Total syphilis rate among women ages 15–44",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_unknown_duration_or_late_men_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Unknown duration or late",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_unknown_duration_or_late_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Unknown duration or late",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "syphilis_unknown_duration_or_late_women_reported_cases_count",
+      "periods": [
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 10,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "national": [
+          "US"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 0,
+      "country_numeric_rows": 0,
+      "finest_collected": "national",
+      "definition": "Unknown duration or late",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "tuberculosis_disease_reported_cases_count",
+      "periods": [
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 122,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "city_reporting_area": [
+          "CDC_TB:New York City"
+        ],
+        "country": [
+          "US"
+        ],
+        "other_cdc_reporting_area": [
+          "CDC_TB:american_samoa",
+          "CDC_TB:federated_states_of_micronesia",
+          "CDC_TB:guam",
+          "CDC_TB:northern_mariana_islands",
+          "CDC_TB:puerto_rico",
+          "CDC_TB:republic_of_palau",
+          "CDC_TB:republic_of_the_marshall_islands",
+          "CDC_TB:u_s_virgin_islands"
+        ],
+        "state": [
+          "01",
+          "02",
+          "04",
+          "05",
+          "06",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12",
+          "13",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34",
+          "35",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "44",
+          "45",
+          "46",
+          "47",
+          "48",
+          "49",
+          "50",
+          "51",
+          "53",
+          "54",
+          "55",
+          "56"
+        ],
+        "state_reporting_area": [
+          "CDC_TB:New_York_State_excluding_NYC"
+        ]
+      },
+      "units": [
+        "reported_cases"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/tb-surveillance-report-2024/data/reporting-areas.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 102,
+      "country_numeric_rows": 2,
+      "finest_collected": "city_reporting_area_and_state",
+      "definition": "Reported tuberculosis disease cases",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    },
+    {
+      "metric_id": "tuberculosis_disease_reported_incidence_rate",
+      "periods": [
+        "2023",
+        "2024"
+      ],
+      "numeric_observations": 122,
+      "missing_or_suppressed": 0,
+      "geographies": {
+        "city_reporting_area": [
+          "CDC_TB:New York City"
+        ],
+        "country": [
+          "US"
+        ],
+        "other_cdc_reporting_area": [
+          "CDC_TB:american_samoa",
+          "CDC_TB:federated_states_of_micronesia",
+          "CDC_TB:guam",
+          "CDC_TB:northern_mariana_islands",
+          "CDC_TB:puerto_rico",
+          "CDC_TB:republic_of_palau",
+          "CDC_TB:republic_of_the_marshall_islands",
+          "CDC_TB:u_s_virgin_islands"
+        ],
+        "state": [
+          "01",
+          "02",
+          "04",
+          "05",
+          "06",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12",
+          "13",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "28",
+          "29",
+          "30",
+          "31",
+          "32",
+          "33",
+          "34",
+          "35",
+          "37",
+          "38",
+          "39",
+          "40",
+          "41",
+          "42",
+          "44",
+          "45",
+          "46",
+          "47",
+          "48",
+          "49",
+          "50",
+          "51",
+          "53",
+          "54",
+          "55",
+          "56"
+        ],
+        "state_reporting_area": [
+          "CDC_TB:New_York_State_excluding_NYC"
+        ]
+      },
+      "units": [
+        "reported_cases_per_100000_population"
+      ],
+      "source_urls": [
+        "https://www.cdc.gov/tb-surveillance-report-2024/data/reporting-areas.html"
+      ],
+      "county_numeric_rows": 0,
+      "state_numeric_rows": 102,
+      "country_numeric_rows": 2,
+      "finest_collected": "city_reporting_area_and_state",
+      "definition": "Reported TB disease incidence rate",
+      "reason_missing": "No county observations in the selected source. CDC 2024 provisional STI measures are national-only; TB report table is by state/NYC and other CDC reporting area. Source blanks remain null and are not treated as zero."
+    }
+  ],
+  "source_limitations": [
+    "STI 2024 values are provisional as of 2025-08-14; 2024 state-level counts and rates were withheld while CDC migrates NNDSS to 1CDP.",
+    "National STI case totals include non-U.S. residents and exclude U.S. territories; congenital syphilis rates use 2023 live births, other rates use 2024 population denominators.",
+    "TB reporting-area table was updated through 2025-07-10. The 2020 RVCT revision was first fully used across jurisdictions in 2023; CDC notes possible minor data-quality/completeness fluctuations.",
+    "New York City is reported separately and excluded from the New York State reporting-area row. FIPS is not assigned to the city aggregate.",
+    "The source publishes annual state/NYC values, not county incidence rates. The separate recent-transmission county map is a specific genotyped-case-derived measure, not total county TB incidence."
+  ]
+}

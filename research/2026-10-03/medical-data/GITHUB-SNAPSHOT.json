@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-10-06T06:07:41.061212+00:00",
+  "compression": "gzip with zeroed mtime for deterministic snapshots",
+  "items": [
+    {
+      "source_local": "normalized/observations.csv",
+      "snapshot": "normalized/observations.csv.gz",
+      "bytes": 3272082,
+      "sha256": "7fd6f8fd40050f697eb521f78a4f7eb4d2d0978b48b66a93ae5ff5f08f3e7b0a",
+      "numeric_observations": 93807,
+      "rows_including_nulls": 133968
+    },
+    {
+      "source_local": "child-county/observations.csv",
+      "snapshot": "child-county/observations.csv.gz",
+      "bytes": 552487,
+      "sha256": "92220ec8baa32b883363d025be4aea052c075d9fe9e2381e823fa610e2cc702a",
+      "numeric_observations": 11966,
+      "rows_including_nulls": 18892
+    },
+    {
+      "snapshot": "additional-surveillance/observations.csv",
+      "bytes": 790353,
+      "sha256": "97356ec376b6f4cb8333d2528587bef36a503968eb9a1507b5d4b291f7a07caa"
+    },
+    {
+      "snapshot": "hiv-preliminary/observations.csv",
+      "bytes": 705129,
+      "sha256": "5b8510660ea58fec20077284cafb5077d1be532ea6904be05f8c5edc23a0dd69"
+    }
+  ],
+  "note": "The larger local uncompressed CSV and JSON copies and raw source dumps are excluded from Git; source URLs and hashes are recorded in source registers."
+}

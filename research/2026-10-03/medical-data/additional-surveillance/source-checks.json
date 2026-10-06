@@ -1,0 +1,61 @@
+{
+  "as_of": "2026-10-05",
+  "sources": [
+    {
+      "source_id": "cdc-sti-surveillance-2024-provisional.html",
+      "url": "https://www.cdc.gov/sti-statistics/annual/index.html",
+      "http_status": 200,
+      "status": "downloaded",
+      "bytes": 68895,
+      "sha256": "8ef1aa8955294f63adf6b03631042fb45d138447bbd83f2c7639d90877e91f3d",
+      "path": "raw/cdc-sti-surveillance-2024-provisional.html",
+      "retrieved_at": "2026-10-05T11:15:43.223554+00:00"
+    },
+    {
+      "source_id": "cdc-sti-surveillance-2024-provisional-data-files.zip",
+      "url": "https://www.cdc.gov/sti-statistics/media/files/2025/09/STI-Surveillance-Report-2024-Provisional_data-files.zip",
+      "http_status": 200,
+      "status": "downloaded",
+      "bytes": 101460,
+      "sha256": "b02c137cd63cd25a49a896a7cbf0fcf0ca614b58e4ec09b86969b3fc65f82439",
+      "path": "raw/cdc-sti-surveillance-2024-provisional-data-files.zip",
+      "retrieved_at": "2026-10-05T11:15:43.768036+00:00"
+    },
+    {
+      "source_id": "cdc-tb-reporting-areas-2023-2024.html",
+      "url": "https://www.cdc.gov/tb-surveillance-report-2024/data/reporting-areas.html",
+      "http_status": 200,
+      "status": "downloaded",
+      "bytes": 58495,
+      "sha256": "4ffcf132061d95573805aa521216e55568513b7d19fe5db772369b4010733896",
+      "path": "raw/cdc-tb-reporting-areas-2023-2024.html",
+      "retrieved_at": "2026-10-05T11:15:44.204268+00:00"
+    },
+    {
+      "source_id": "cdc-tb-technical-notes.html",
+      "url": "https://www.cdc.gov/tb-surveillance-report-2024/executive-commentary/technical-notes.html",
+      "http_status": 200,
+      "status": "downloaded",
+      "bytes": 83471,
+      "sha256": "ef0b7d0b7322db65da744a7db55bfdc7d996473b5ec0df9c92d0dfbbd95966b4",
+      "path": "raw/cdc-tb-technical-notes.html",
+      "retrieved_at": "2026-10-05T11:15:44.664928+00:00"
+    },
+    {
+      "source_id": "cdc-heptracker-overview.html",
+      "url": "https://www.cdc.gov/hepatitis/php/data-research/heptracker/index.html",
+      "http_status": 200,
+      "status": "downloaded",
+      "bytes": 70401,
+      "sha256": "36fb463af145bd1d6e37d05e2da236c7c08e9682a4d9da5d3222013067e761fb",
+      "path": "raw/cdc-heptracker-overview.html",
+      "retrieved_at": "2026-10-05T11:15:45.223740+00:00"
+    }
+  ],
+  "hepatitis_route_finding": "Official CDC page was downloaded. It embeds a public Power BI HepTracker viewer (DVH_HepTracker_Final_Jan26), reports NNDSS confirmed case surveillance, and marks 2024 case data provisional with a stated Jan 17 2026 update. No documented machine-readable direct export was verified in this session; do not infer additional rows from the viewer.",
+  "coverage_counts": {
+    "observations": 534,
+    "numeric": 534,
+    "metrics": 31
+  }
+}

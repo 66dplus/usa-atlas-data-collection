@@ -1,0 +1,2497 @@
+{
+  "schema_version": 1,
+  "built_at": "2026-10-05T10:55:05.110994+00:00",
+  "production_admitted": false,
+  "actions": [
+    {
+      "story_id": "acs-2024-ny-fl-gross-state-flows",
+      "from": {
+        "name": "New York",
+        "kind": "state",
+        "geoid": "36",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "New York State",
+        "kind": "state",
+        "state_code": "NY",
+        "geoid": "36"
+      },
+      "original_to": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить размеры населения штатов как контекст для валовых потоков ACS; показатель Atlas не измеряет миграцию, не заменяет направления потоков и не устанавливает мотив переезда.",
+      "original_reason_ru": "Сравнить размеры населения штатов как контекст для валовых потоков ACS; показатель Atlas не измеряет миграцию, не заменяет направления потоков и не устанавливает мотив переезда.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36&other=12&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "acs-2024-ca-tx-gross-state-flows",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить размеры населения штатов как контекст для валовых потоков ACS; показатель Atlas не измеряет миграцию, не заменяет направления потоков и не устанавливает мотив переезда.",
+      "original_reason_ru": "Сравнить размеры населения штатов как контекст для валовых потоков ACS; показатель Atlas не измеряет миграцию, не заменяет направления потоков и не устанавливает мотив переезда.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "ca-fl-last-resort-home-insurance-rates-2026",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "metric_id": "mortgage-selected-monthly-owner-costs",
+      "metric_name": "Mortgage / selected monthly owner costs",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть контекстное сравнение типичных расходов владельцев жилья; метрика Atlas не измеряет тарифы FAIR Plan или Citizens и не является оценкой страхового счёта.",
+      "original_reason_ru": "Открыть контекстное сравнение типичных расходов владельцев жилья; метрика Atlas не измеряет тарифы FAIR Plan или Citizens и не является оценкой страхового счёта.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=12&metric=mortgage-selected-monthly-owner-costs&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "citizens-2025-southeast-florida-county-policies",
+      "from": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "geoid": "12086",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "Broward County",
+        "kind": "county",
+        "geoid": "12011",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12086"
+      },
+      "original_to": {
+        "name": "Broward County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12011"
+      },
+      "metric_id": "median-home-value",
+      "metric_name": "Median home value",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить округа по существующей метрике стоимости жилья как контекст к числу полисов; стоимость жилья не измеряет число полисов, покрытие или риск.",
+      "original_reason_ru": "Сравнить округа по существующей метрике стоимости жилья как контекст к числу полисов; стоимость жилья не измеряет число полисов, покрытие или риск.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12086&other=12011&metric=median-home-value&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "citizens-2025-southeast-florida-county-policies",
+      "from": {
+        "name": "Palm Beach County",
+        "kind": "county",
+        "geoid": "12099",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "Monroe County",
+        "kind": "county",
+        "geoid": "12087",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Palm Beach County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12099"
+      },
+      "original_to": {
+        "name": "Monroe County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12087"
+      },
+      "metric_id": "median-home-value",
+      "metric_name": "Median home value",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить округа по существующей метрике стоимости жилья как контекст к числу полисов; стоимость жилья не измеряет число полисов, покрытие или риск.",
+      "original_reason_ru": "Сравнить округа по существующей метрике стоимости жилья как контекст к числу полисов; стоимость жилья не измеряет число полисов, покрытие или риск.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12099&other=12087&metric=median-home-value&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-palm-beach-ny-origins-2022-2023",
+      "from": {
+        "name": "Nassau County, New York",
+        "kind": "county",
+        "geoid": "36059",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "Palm Beach County, Florida",
+        "kind": "county",
+        "geoid": "12099",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Nassau County, New York",
+        "kind": "county",
+        "state_code": "NY",
+        "geoid": "36059"
+      },
+      "original_to": {
+        "name": "Palm Beach County, Florida",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12099"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сопоставить медианный доход домохозяйств в названном округе происхождения и округе назначения как отдельный местный контекст. Показатель не является AGI переехавших налогоплательщиков и не объясняет поток.",
+      "original_reason_ru": "Сопоставить медианный доход домохозяйств в названном округе происхождения и округе назначения как отдельный местный контекст. Показатель не является AGI переехавших налогоплательщиков и не объясняет поток.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36059&other=12099&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-palm-beach-ny-origins-2022-2023",
+      "from": {
+        "name": "New York County (Manhattan), New York",
+        "kind": "county",
+        "geoid": "36061",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "Palm Beach County, Florida",
+        "kind": "county",
+        "geoid": "12099",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "New York County (Manhattan), New York",
+        "kind": "county",
+        "state_code": "NY",
+        "geoid": "36061"
+      },
+      "original_to": {
+        "name": "Palm Beach County, Florida",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12099"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сопоставить медианный доход домохозяйств в Manhattan и Palm Beach County как отдельный местный контекст. Это не величина или мотив потока IRS.",
+      "original_reason_ru": "Сопоставить медианный доход домохозяйств в Manhattan и Palm Beach County как отдельный местный контекст. Это не величина или мотив потока IRS.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36061&other=12099&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-palm-beach-ny-origins-2022-2023",
+      "from": {
+        "name": "Suffolk County, New York",
+        "kind": "county",
+        "geoid": "36103",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "Palm Beach County, Florida",
+        "kind": "county",
+        "geoid": "12099",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Suffolk County, New York",
+        "kind": "county",
+        "state_code": "NY",
+        "geoid": "36103"
+      },
+      "original_to": {
+        "name": "Palm Beach County, Florida",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12099"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сопоставить медианный доход домохозяйств в Suffolk County и Palm Beach County как отдельный местный контекст. Это не величина или мотив потока IRS.",
+      "original_reason_ru": "Сопоставить медианный доход домохозяйств в Suffolk County и Palm Beach County как отдельный местный контекст. Это не величина или мотив потока IRS.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36103&other=12099&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "public-storage-glendale-frisco-2026",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "Glendale, California",
+        "kind": "city",
+        "state_code": "CA"
+      },
+      "original_to": {
+        "name": "Frisco, Texas",
+        "kind": "city",
+        "state_code": "TX"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить California и Texas по Median household income; сюжет относится к Glendale, California и Frisco, Texas.",
+      "original_reason_ru": "Сравнить штатный контекст медианного дохода для двух городов, сохраняя Glendale и Frisco как исходные места истории. Это не сравнение расходов компании и не доказательство причин переноса.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "texas-tceq-data-center-permit-pause-2026",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить штатные цены на электричество как фон энергетической политики. Atlas price series не измеряет data-center load, тарифный эффект распоряжения или residential bill savings.",
+      "original_reason_ru": "Сравнить штатные цены на электричество как фон энергетической политики. Atlas price series не измеряет data-center load, тарифный эффект распоряжения или residential bill savings.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=06&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "california-datacenter-load-forecast-and-pipeline-2026",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сопоставить штатные цены на электричество как отдельный энергетический фон рядом с прогнозом California. Этот показатель не измеряет нагрузку или установленную мощность дата-центров и не прогнозирует счета домохозяйств.",
+      "original_reason_ru": "Сопоставить штатные цены на электричество как отдельный энергетический фон рядом с прогнозом California. Этот показатель не измеряет нагрузку или установленную мощность дата-центров и не прогнозирует счета домохозяйств.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-midwest-domestic-balance-2020-2025",
+      "from": {
+        "name": "Missouri",
+        "kind": "state",
+        "geoid": "29",
+        "state_code": "MO"
+      },
+      "to": {
+        "name": "Iowa",
+        "kind": "state",
+        "geoid": "19",
+        "state_code": "IA"
+      },
+      "original_from": {
+        "name": "Missouri",
+        "kind": "state",
+        "state_code": "MO",
+        "geoid": "29"
+      },
+      "original_to": {
+        "name": "Iowa",
+        "kind": "state",
+        "state_code": "IA",
+        "geoid": "19"
+      },
+      "metric_id": "median-home-value",
+      "metric_name": "Median home value",
+      "link_kind": "contextual",
+      "reason_ru": "Сопоставить медианную стоимость жилья штатов, где PEP оценил противоположные направления чистой внутренней миграции. Это только контекст жилья, не мера потока и не объяснение изменения.",
+      "original_reason_ru": "Сопоставить медианную стоимость жилья штатов, где PEP оценил противоположные направления чистой внутренней миграции. Это только контекст жилья, не мера потока и не объяснение изменения.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=29&other=19&metric=median-home-value&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-midwest-domestic-balance-2020-2025",
+      "from": {
+        "name": "Missouri",
+        "kind": "state",
+        "geoid": "29",
+        "state_code": "MO"
+      },
+      "to": {
+        "name": "Kansas",
+        "kind": "state",
+        "geoid": "20",
+        "state_code": "KS"
+      },
+      "original_from": {
+        "name": "Missouri",
+        "kind": "state",
+        "state_code": "MO",
+        "geoid": "29"
+      },
+      "original_to": {
+        "name": "Kansas",
+        "kind": "state",
+        "state_code": "KS",
+        "geoid": "20"
+      },
+      "metric_id": "median-home-value",
+      "metric_name": "Median home value",
+      "link_kind": "contextual",
+      "reason_ru": "Сопоставить медианную стоимость жилья Missouri и Kansas отдельно от оценки чистой миграции PEP; показатель не измеряет мотивы переездов.",
+      "original_reason_ru": "Сопоставить медианную стоимость жилья Missouri и Kansas отдельно от оценки чистой миграции PEP; показатель не измеряет мотивы переездов.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=29&other=20&metric=median-home-value&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-midwest-domestic-balance-2020-2025",
+      "from": {
+        "name": "Missouri",
+        "kind": "state",
+        "geoid": "29",
+        "state_code": "MO"
+      },
+      "to": {
+        "name": "Nebraska",
+        "kind": "state",
+        "geoid": "31",
+        "state_code": "NE"
+      },
+      "original_from": {
+        "name": "Missouri",
+        "kind": "state",
+        "state_code": "MO",
+        "geoid": "29"
+      },
+      "original_to": {
+        "name": "Nebraska",
+        "kind": "state",
+        "state_code": "NE",
+        "geoid": "31"
+      },
+      "metric_id": "median-home-value",
+      "metric_name": "Median home value",
+      "link_kind": "contextual",
+      "reason_ru": "Сопоставить медианную стоимость жилья Missouri и Nebraska как местный контекст, не как объяснение чистой миграции.",
+      "original_reason_ru": "Сопоставить медианную стоимость жилья Missouri и Nebraska как местный контекст, не как объяснение чистой миграции.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=29&other=31&metric=median-home-value&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-midwest-domestic-balance-2020-2025",
+      "from": {
+        "name": "Oregon",
+        "kind": "state",
+        "geoid": "41",
+        "state_code": "OR"
+      },
+      "to": {
+        "name": "Missouri",
+        "kind": "state",
+        "geoid": "29",
+        "state_code": "MO"
+      },
+      "original_from": {
+        "name": "Portland, Oregon",
+        "kind": "city",
+        "state_code": "OR"
+      },
+      "original_to": {
+        "name": "Kansas City, Missouri",
+        "kind": "city",
+        "state_code": "MO"
+      },
+      "metric_id": "median-home-value",
+      "metric_name": "Median home value",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Oregon и Missouri по Median home value; сюжет относится к Portland, Oregon и Kansas City, Missouri.",
+      "original_reason_ru": "История интервью относится к Portland и Kansas City. Ссылка Atlas сравнит только родительские штаты Oregon и Missouri по медианной стоимости жилья; она не объясняет решение этой семьи.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=41&other=29&metric=median-home-value&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "meta-lebanon-indiana-data-center-groundbreaking-2026",
+      "from": {
+        "name": "Indiana",
+        "kind": "state",
+        "geoid": "18",
+        "state_code": "IN"
+      },
+      "to": {
+        "name": "Ohio",
+        "kind": "state",
+        "geoid": "39",
+        "state_code": "OH"
+      },
+      "original_from": {
+        "name": "Indiana",
+        "kind": "state",
+        "state_code": "IN",
+        "geoid": "18"
+      },
+      "original_to": {
+        "name": "Ohio",
+        "kind": "state",
+        "state_code": "OH",
+        "geoid": "39"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Соседние штаты с крупными объявленными инфраструктурными проектами. State-level retail electricity prices are background only; they do not measure Meta's project load, a local tariff, delivered jobs, or household-bill effects.",
+      "original_reason_ru": "Соседние штаты с крупными объявленными инфраструктурными проектами. State-level retail electricity prices are background only; they do not measure Meta's project load, a local tariff, delivered jobs, or household-bill effects.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=18&other=39&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "ports-pike-ohio-ai-campus-2026",
+      "from": {
+        "name": "Ohio",
+        "kind": "state",
+        "geoid": "39",
+        "state_code": "OH"
+      },
+      "to": {
+        "name": "Pennsylvania",
+        "kind": "state",
+        "geoid": "42",
+        "state_code": "PA"
+      },
+      "original_from": {
+        "name": "Ohio",
+        "kind": "state",
+        "state_code": "OH",
+        "geoid": "39"
+      },
+      "original_to": {
+        "name": "Pennsylvania",
+        "kind": "state",
+        "state_code": "PA",
+        "geoid": "42"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить широкий штатный контекст электрических цен вокруг разных инфраструктурных историй, сохраняя площадку PORTS в Pike County. EIA retail-price data do not measure project generation plans, wholesale capacity, or household effects.",
+      "original_reason_ru": "Сравнить широкий штатный контекст электрических цен вокруг разных инфраструктурных историй, сохраняя площадку PORTS в Pike County. EIA retail-price data do not measure project generation plans, wholesale capacity, or household effects.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=39&other=42&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "va-dominion-gs5-rate-class-2025",
+      "from": {
+        "name": "Virginia",
+        "kind": "state",
+        "geoid": "51",
+        "state_code": "VA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "Virginia",
+        "kind": "state",
+        "state_code": "VA",
+        "geoid": "51"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить штатные розничные цены электроэнергии как общий фон рядом с историями тарифного регулирования и роста нагрузки. Метрика не является Dominion base bill, тарифом GS-5 или причинной оценкой влияния дата-центров.",
+      "original_reason_ru": "Сравнить штатные розничные цены электроэнергии как общий фон рядом с историями тарифного регулирования и роста нагрузки. Метрика не является Dominion base bill, тарифом GS-5 или причинной оценкой влияния дата-центров.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=51&other=48&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "nextera-dominion-virginia-coheadquarters-jobs-proposal-2026",
+      "from": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "Virginia",
+        "kind": "state",
+        "geoid": "51",
+        "state_code": "VA"
+      },
+      "original_from": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "original_to": {
+        "name": "Virginia",
+        "kind": "state",
+        "state_code": "VA",
+        "geoid": "51"
+      },
+      "metric_id": "employment-growth",
+      "metric_name": "Employment growth",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить широкие штатные условия рынка труда около нынешнего Juno Beach HQ и предлагаемой башни в Richmond. Atlas employment-growth не измеряет 600 объявленных должностей, переезд компании или результат merger.",
+      "original_reason_ru": "Сравнить широкие штатные условия рынка труда около нынешнего Juno Beach HQ и предлагаемой башни в Richmond. Atlas employment-growth не измеряет 600 объявленных должностей, переезд компании или результат merger.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12&other=51&metric=employment-growth&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "energy-ca-tx-bills-2024",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить опубликованные цены на электричество; средний счёт также зависит от потребления.",
+      "original_reason_ru": "Сравнить опубликованные цены на электричество; средний счёт также зависит от потребления.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "energy-ny-fl-bills-2024",
+      "from": {
+        "name": "New York",
+        "kind": "state",
+        "geoid": "36",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "New York",
+        "kind": "state",
+        "state_code": "NY"
+      },
+      "original_to": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить опубликованные цены на электричество; средний счёт также зависит от потребления.",
+      "original_reason_ru": "Сравнить опубликованные цены на электричество; средний счёт также зависит от потребления.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36&other=12&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "energy-hi-nd-all-sector-prices-2025",
+      "from": {
+        "name": "Hawaii",
+        "kind": "state",
+        "geoid": "15",
+        "state_code": "HI"
+      },
+      "to": {
+        "name": "North Dakota",
+        "kind": "state",
+        "geoid": "38",
+        "state_code": "ND"
+      },
+      "original_from": {
+        "name": "Hawaii",
+        "kind": "state",
+        "state_code": "HI"
+      },
+      "original_to": {
+        "name": "North Dakota",
+        "kind": "state",
+        "state_code": "ND"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить опубликованные цены на электричество; средний счёт также зависит от потребления.",
+      "original_reason_ru": "Сравнить опубликованные цены на электричество; средний счёт также зависит от потребления.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=15&other=38&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "energy-ercot-pjm-forecast-2026",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Virginia",
+        "kind": "state",
+        "geoid": "51",
+        "state_code": "VA"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX"
+      },
+      "original_to": {
+        "name": "Virginia",
+        "kind": "state",
+        "state_code": "VA"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить опубликованные цены на электричество; средний счёт также зависит от потребления.",
+      "original_reason_ru": "Сравнить опубликованные цены на электричество; средний счёт также зависит от потребления.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=51&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-ca-fl",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=12&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-ca-tx",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-ca-nv",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Nevada",
+        "kind": "state",
+        "geoid": "32",
+        "state_code": "NV"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Nevada",
+        "kind": "state",
+        "state_code": "NV",
+        "geoid": "32"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=32&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-ca-az",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Arizona",
+        "kind": "state",
+        "geoid": "04",
+        "state_code": "AZ"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Arizona",
+        "kind": "state",
+        "state_code": "AZ",
+        "geoid": "04"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=04&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-ny-fl",
+      "from": {
+        "name": "New York",
+        "kind": "state",
+        "geoid": "36",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "New York",
+        "kind": "state",
+        "state_code": "NY",
+        "geoid": "36"
+      },
+      "original_to": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36&other=12&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-ny-nj",
+      "from": {
+        "name": "New York",
+        "kind": "state",
+        "geoid": "36",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "New Jersey",
+        "kind": "state",
+        "geoid": "34",
+        "state_code": "NJ"
+      },
+      "original_from": {
+        "name": "New York",
+        "kind": "state",
+        "state_code": "NY",
+        "geoid": "36"
+      },
+      "original_to": {
+        "name": "New Jersey",
+        "kind": "state",
+        "state_code": "NJ",
+        "geoid": "34"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36&other=34&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-fl-ga",
+      "from": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "Georgia",
+        "kind": "state",
+        "geoid": "13",
+        "state_code": "GA"
+      },
+      "original_from": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "original_to": {
+        "name": "Georgia",
+        "kind": "state",
+        "state_code": "GA",
+        "geoid": "13"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12&other=13&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-fl-nc",
+      "from": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "North Carolina",
+        "kind": "state",
+        "geoid": "37",
+        "state_code": "NC"
+      },
+      "original_from": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "original_to": {
+        "name": "North Carolina",
+        "kind": "state",
+        "state_code": "NC",
+        "geoid": "37"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12&other=37&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-wa-id",
+      "from": {
+        "name": "Washington",
+        "kind": "state",
+        "geoid": "53",
+        "state_code": "WA"
+      },
+      "to": {
+        "name": "Idaho",
+        "kind": "state",
+        "geoid": "16",
+        "state_code": "ID"
+      },
+      "original_from": {
+        "name": "Washington",
+        "kind": "state",
+        "state_code": "WA",
+        "geoid": "53"
+      },
+      "original_to": {
+        "name": "Idaho",
+        "kind": "state",
+        "state_code": "ID",
+        "geoid": "16"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=53&other=16&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Alaska",
+        "kind": "state",
+        "geoid": "02",
+        "state_code": "AK"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "Alaska",
+        "kind": "state",
+        "state_code": "AK",
+        "geoid": "02"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=02&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Arkansas",
+        "kind": "state",
+        "geoid": "05",
+        "state_code": "AR"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "Arkansas",
+        "kind": "state",
+        "state_code": "AR",
+        "geoid": "05"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=05&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=06&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Colorado",
+        "kind": "state",
+        "geoid": "08",
+        "state_code": "CO"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "Colorado",
+        "kind": "state",
+        "state_code": "CO",
+        "geoid": "08"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=08&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Illinois",
+        "kind": "state",
+        "geoid": "17",
+        "state_code": "IL"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "Illinois",
+        "kind": "state",
+        "state_code": "IL",
+        "geoid": "17"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=17&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Louisiana",
+        "kind": "state",
+        "geoid": "22",
+        "state_code": "LA"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "Louisiana",
+        "kind": "state",
+        "state_code": "LA",
+        "geoid": "22"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=22&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Mississippi",
+        "kind": "state",
+        "geoid": "28",
+        "state_code": "MS"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "Mississippi",
+        "kind": "state",
+        "state_code": "MS",
+        "geoid": "28"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=28&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "New Mexico",
+        "kind": "state",
+        "geoid": "35",
+        "state_code": "NM"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "New Mexico",
+        "kind": "state",
+        "state_code": "NM",
+        "geoid": "35"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=35&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Oklahoma",
+        "kind": "state",
+        "geoid": "40",
+        "state_code": "OK"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "Oklahoma",
+        "kind": "state",
+        "state_code": "OK",
+        "geoid": "40"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "original_reason_ru": "Сравнить численность населения исходных штатов как контекст для потоков ACS; метрика Atlas не измеряет поток и не объясняет, почему человек переехал.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=40&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "housing-route-ca-tx",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "median-home-value",
+      "metric_name": "Median home value",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=median-home-value&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "housing-route-ca-tx",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "median-rent",
+      "metric_name": "Median rent",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=median-rent&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "housing-route-fl-nc",
+      "from": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "North Carolina",
+        "kind": "state",
+        "geoid": "37",
+        "state_code": "NC"
+      },
+      "original_from": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "original_to": {
+        "name": "North Carolina",
+        "kind": "state",
+        "state_code": "NC",
+        "geoid": "37"
+      },
+      "metric_id": "median-home-value",
+      "metric_name": "Median home value",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12&other=37&metric=median-home-value&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "housing-route-fl-nc",
+      "from": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "North Carolina",
+        "kind": "state",
+        "geoid": "37",
+        "state_code": "NC"
+      },
+      "original_from": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "original_to": {
+        "name": "North Carolina",
+        "kind": "state",
+        "state_code": "NC",
+        "geoid": "37"
+      },
+      "metric_id": "median-rent",
+      "metric_name": "Median rent",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12&other=37&metric=median-rent&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-route-ca-tx",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "adjusted-gross-income-agi",
+      "metric_name": "Adjusted Gross Income (AGI)",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=adjusted-gross-income-agi&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-route-ny-fl",
+      "from": {
+        "name": "New York",
+        "kind": "state",
+        "geoid": "36",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "New York",
+        "kind": "state",
+        "state_code": "NY",
+        "geoid": "36"
+      },
+      "original_to": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "metric_id": "adjusted-gross-income-agi",
+      "metric_name": "Adjusted Gross Income (AGI)",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36&other=12&metric=adjusted-gross-income-agi&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-route-ma-nh",
+      "from": {
+        "name": "Massachusetts",
+        "kind": "state",
+        "geoid": "25",
+        "state_code": "MA"
+      },
+      "to": {
+        "name": "New Hampshire",
+        "kind": "state",
+        "geoid": "33",
+        "state_code": "NH"
+      },
+      "original_from": {
+        "name": "Massachusetts",
+        "kind": "state",
+        "state_code": "MA",
+        "geoid": "25"
+      },
+      "original_to": {
+        "name": "New Hampshire",
+        "kind": "state",
+        "state_code": "NH",
+        "geoid": "33"
+      },
+      "metric_id": "adjusted-gross-income-agi",
+      "metric_name": "Adjusted Gross Income (AGI)",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=25&other=33&metric=adjusted-gross-income-agi&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-route-manhattan-miami",
+      "from": {
+        "name": "New York County (Manhattan)",
+        "kind": "county",
+        "geoid": "36061",
+        "state_code": "NY"
+      },
+      "to": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "geoid": "12086",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "New York County (Manhattan)",
+        "kind": "county",
+        "state_code": "NY",
+        "geoid": "36061"
+      },
+      "original_to": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12086"
+      },
+      "metric_id": "adjusted-gross-income-agi",
+      "metric_name": "Adjusted Gross Income (AGI)",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=36061&other=12086&metric=adjusted-gross-income-agi&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-route-miami-broward",
+      "from": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "geoid": "12086",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "Broward County",
+        "kind": "county",
+        "geoid": "12011",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12086"
+      },
+      "original_to": {
+        "name": "Broward County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12011"
+      },
+      "metric_id": "adjusted-gross-income-agi",
+      "metric_name": "Adjusted Gross Income (AGI)",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12086&other=12011&metric=adjusted-gross-income-agi&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "irs-route-miami-palmbeach",
+      "from": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "geoid": "12086",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "Palm Beach County",
+        "kind": "county",
+        "geoid": "12099",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12086"
+      },
+      "original_to": {
+        "name": "Palm Beach County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12099"
+      },
+      "metric_id": "adjusted-gross-income-agi",
+      "metric_name": "Adjusted Gross Income (AGI)",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12086&other=12099&metric=adjusted-gross-income-agi&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-alabama-above-florida",
+      "from": {
+        "name": "Alabama",
+        "kind": "state",
+        "geoid": "01",
+        "state_code": "AL"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Alabama",
+        "kind": "state",
+        "state_code": "AL",
+        "geoid": "01"
+      },
+      "original_to": {
+        "name": "Florida",
+        "kind": "state",
+        "state_code": "FL",
+        "geoid": "12"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=01&other=12&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-carolinas-domestic-lead",
+      "from": {
+        "name": "North Carolina",
+        "kind": "state",
+        "geoid": "37",
+        "state_code": "NC"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "North Carolina",
+        "kind": "state",
+        "state_code": "NC",
+        "geoid": "37"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=37&other=48&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-carolinas-domestic-lead",
+      "from": {
+        "name": "North Carolina",
+        "kind": "state",
+        "geoid": "37",
+        "state_code": "NC"
+      },
+      "to": {
+        "name": "South Carolina",
+        "kind": "state",
+        "geoid": "45",
+        "state_code": "SC"
+      },
+      "original_from": {
+        "name": "North Carolina",
+        "kind": "state",
+        "state_code": "NC",
+        "geoid": "37"
+      },
+      "original_to": {
+        "name": "South Carolina",
+        "kind": "state",
+        "state_code": "SC",
+        "geoid": "45"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=37&other=45&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-miami-dade-offset",
+      "from": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "geoid": "12086",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "Broward County",
+        "kind": "county",
+        "geoid": "12011",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Miami-Dade County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12086"
+      },
+      "original_to": {
+        "name": "Broward County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12011"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12086&other=12011&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-florida-local-shift",
+      "from": {
+        "name": "Polk County",
+        "kind": "county",
+        "geoid": "12105",
+        "state_code": "FL"
+      },
+      "to": {
+        "name": "Hillsborough County",
+        "kind": "county",
+        "geoid": "12057",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Polk County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12105"
+      },
+      "original_to": {
+        "name": "Hillsborough County",
+        "kind": "county",
+        "state_code": "FL",
+        "geoid": "12057"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=12105&other=12057&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-harris-vs-losangeles",
+      "from": {
+        "name": "Harris County",
+        "kind": "county",
+        "geoid": "48201",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Los Angeles County",
+        "kind": "county",
+        "geoid": "06037",
+        "state_code": "CA"
+      },
+      "original_from": {
+        "name": "Harris County",
+        "kind": "county",
+        "state_code": "TX",
+        "geoid": "48201"
+      },
+      "original_to": {
+        "name": "Los Angeles County",
+        "kind": "county",
+        "state_code": "CA",
+        "geoid": "06037"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "original_reason_ru": "Открыть сравнение территорий, связанных этой историей.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48201&other=06037&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-southern-border-slowdown",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Arizona",
+        "kind": "state",
+        "geoid": "04",
+        "state_code": "AZ"
+      },
+      "original_from": {
+        "name": "Laredo, TX metropolitan statistical area",
+        "kind": "metro",
+        "state_code": "TX",
+        "geoid": "29700"
+      },
+      "original_to": {
+        "name": "Yuma, AZ metropolitan statistical area",
+        "kind": "metro",
+        "state_code": "AZ",
+        "geoid": "49740"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Texas и Arizona по Population; сюжет относится к Laredo, TX metropolitan statistical area и Yuma, AZ metropolitan statistical area.",
+      "original_reason_ru": "Сравнить население агломераций; city-level данные не подставлять.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=04&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "migration-southern-border-slowdown",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "original_from": {
+        "name": "Laredo, TX metropolitan statistical area",
+        "kind": "metro",
+        "state_code": "TX",
+        "geoid": "29700"
+      },
+      "original_to": {
+        "name": "El Centro, CA metropolitan statistical area",
+        "kind": "metro",
+        "state_code": "CA",
+        "geoid": "20940"
+      },
+      "metric_id": "population",
+      "metric_name": "Population",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Texas и California по Population; сюжет относится к Laredo, TX metropolitan statistical area и El Centro, CA metropolitan statistical area.",
+      "original_reason_ru": "Сравнить население агломераций; city-level данные не подставлять.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=06&metric=population&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "bezos-seattle-miami-2023",
+      "from": {
+        "name": "Washington",
+        "kind": "state",
+        "geoid": "53",
+        "state_code": "WA"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Seattle",
+        "kind": "city",
+        "state_code": "WA"
+      },
+      "original_to": {
+        "name": "Miami",
+        "kind": "city",
+        "state_code": "FL"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Washington и Florida по Median household income; сюжет относится к Seattle и Miami.",
+      "original_reason_ru": "Контекст для сравнения Вашингтона и Флориды по миграции и концентрации богатства; один переезд не измеряет поток населения.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=53&other=12&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "musk-california-texas-2020",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "California",
+        "kind": "state",
+        "state_code": "CA",
+        "geoid": "06"
+      },
+      "original_to": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "История личной миграции между штатами; сравнение доходов не доказывает причину переезда.",
+      "original_reason_ru": "История личной миграции между штатами; сравнение доходов не доказывает причину переезда.",
+      "geography_note_ru": "Сравнение использует указанный уровень географии.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "citadel-chicago-miami-2022",
+      "from": {
+        "name": "Illinois",
+        "kind": "state",
+        "geoid": "17",
+        "state_code": "IL"
+      },
+      "to": {
+        "name": "Florida",
+        "kind": "state",
+        "geoid": "12",
+        "state_code": "FL"
+      },
+      "original_from": {
+        "name": "Chicago",
+        "kind": "city",
+        "state_code": "IL"
+      },
+      "original_to": {
+        "name": "Miami",
+        "kind": "city",
+        "state_code": "FL"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Illinois и Florida по Median household income; сюжет относится к Chicago и Miami.",
+      "original_reason_ru": "Сравнение финансовых центров Чикаго и Майами; на уровне штатов — Иллинойс и Флорида.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=17&other=12&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "tesla-corporate-hq-2021",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "Palo Alto",
+        "kind": "city",
+        "state_code": "CA"
+      },
+      "original_to": {
+        "name": "Austin area / Gigafactory Texas",
+        "kind": "metro_context",
+        "state_code": "TX"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить California и Texas по Median household income; сюжет относится к Palo Alto и Austin area / Gigafactory Texas.",
+      "original_reason_ru": "Корпоративная география между Калифорнией и Техасом, с явным контекстом района Остина.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "tesla-engineering-palo-alto-2023",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "original_from": {
+        "name": "Texas",
+        "kind": "state",
+        "state_code": "TX",
+        "geoid": "48"
+      },
+      "original_to": {
+        "name": "Palo Alto",
+        "kind": "city",
+        "state_code": "CA"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Texas и California по Median household income; сюжет относится к Texas и Palo Alto.",
+      "original_reason_ru": "Иллюстрирует разные функции компании в разных штатах; не является маршрутом переезда из Техаса.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=06&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "chevron-san-ramon-houston-2024",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "San Ramon",
+        "kind": "city",
+        "state_code": "CA"
+      },
+      "original_to": {
+        "name": "Houston",
+        "kind": "city",
+        "state_code": "TX"
+      },
+      "metric_id": "electricity-price",
+      "metric_name": "Electricity price",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить California и Texas по Electricity price; сюжет относится к San Ramon и Houston.",
+      "original_reason_ru": "Переезд управленческого центра энергетической компании между CA и TX.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=electricity-price&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "caterpillar-deerfield-irving-2022",
+      "from": {
+        "name": "Illinois",
+        "kind": "state",
+        "geoid": "17",
+        "state_code": "IL"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "Deerfield",
+        "kind": "municipality",
+        "state_code": "IL"
+      },
+      "original_to": {
+        "name": "Irving",
+        "kind": "city",
+        "state_code": "TX"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Illinois и Texas по Median household income; сюжет относится к Deerfield и Irving.",
+      "original_reason_ru": "Сравнение управленческих центров производства IL и TX.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=17&other=48&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "boeing-chicago-arlington-2022",
+      "from": {
+        "name": "Illinois",
+        "kind": "state",
+        "geoid": "17",
+        "state_code": "IL"
+      },
+      "to": {
+        "name": "Virginia",
+        "kind": "state",
+        "geoid": "51",
+        "state_code": "VA"
+      },
+      "original_from": {
+        "name": "Chicago",
+        "kind": "city",
+        "state_code": "IL"
+      },
+      "original_to": {
+        "name": "Arlington County",
+        "kind": "county",
+        "state_code": "VA",
+        "geoid": "51013"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Illinois и Virginia по Median household income; сюжет относится к Chicago и Arlington County.",
+      "original_reason_ru": "Сравнение корпоративного присутствия Иллинойса и Вирджинии; географический уровень city → county явный.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=17&other=51&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "hpe-san-jose-spring-2022",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "San Jose",
+        "kind": "city",
+        "state_code": "CA"
+      },
+      "original_to": {
+        "name": "Spring",
+        "kind": "locality",
+        "state_code": "TX"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить California и Texas по Median household income; сюжет относится к San Jose и Spring.",
+      "original_reason_ru": "Переход корпоративного центра CA → TX с сохранением точного названия локальности.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "oracle-redwood-austin-2020",
+      "from": {
+        "name": "California",
+        "kind": "state",
+        "geoid": "06",
+        "state_code": "CA"
+      },
+      "to": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "original_from": {
+        "name": "Redwood City",
+        "kind": "city",
+        "state_code": "CA"
+      },
+      "original_to": {
+        "name": "Austin",
+        "kind": "city",
+        "state_code": "TX"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить California и Texas по Median household income; сюжет относится к Redwood City и Austin.",
+      "original_reason_ru": "История бизнес-географии CA → TX; не личный переезд основателя.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=06&other=48&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    },
+    {
+      "story_id": "oracle-nashville-plan-2024",
+      "from": {
+        "name": "Texas",
+        "kind": "state",
+        "geoid": "48",
+        "state_code": "TX"
+      },
+      "to": {
+        "name": "Tennessee",
+        "kind": "state",
+        "geoid": "47",
+        "state_code": "TN"
+      },
+      "original_from": {
+        "name": "Austin",
+        "kind": "city",
+        "state_code": "TX"
+      },
+      "original_to": {
+        "name": "Nashville",
+        "kind": "city",
+        "state_code": "TN"
+      },
+      "metric_id": "median-household-income",
+      "metric_name": "Median household income",
+      "link_kind": "contextual",
+      "reason_ru": "Сравнить Texas и Tennessee по Median household income; сюжет относится к Austin и Nashville.",
+      "original_reason_ru": "Будущий маршрут корпоративной штаб-квартиры TX → TN; пригоден для контекста медицинских кластеров.",
+      "geography_note_ru": "Сюжет относится к указанным местам; кнопка сравнивает их штаты.",
+      "period_note_ru": "Период статистики Atlas показывается отдельно от даты сюжета; число в сюжете не подставляется в показатель.",
+      "url": "/ux/?concept=compare&place=48&other=47&metric=median-household-income&view=2d",
+      "integration_status": "research_action_spec_not_published"
+    }
+  ]
+}

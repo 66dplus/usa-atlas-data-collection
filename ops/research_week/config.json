@@ -1,0 +1,28 @@
+{
+  "timezone": "Europe/Berlin",
+  "start_local": "2026-10-03T00:00:00+02:00",
+  "deadline_local": null,
+  "codex_binary": "/usr/local/bin/codex",
+  "sandbox": "workspace-write",
+  "session_timeout_seconds": 2700,
+  "smoke_timeout_seconds": 300,
+  "minimum_remaining_seconds": 60,
+  "max_attempts_per_topic_per_day": 2,
+  "topics": {
+    "wealth-datacenters": {
+      "output_dir": "research/2026-10-03/wealth-datacenters",
+      "prompt": "prompts/wealth-datacenters.txt",
+      "calendar": "*-*-* 10:00:00 Europe/Berlin"
+    },
+    "state-facts": {
+      "output_dir": "research/2026-10-03/state-facts",
+      "prompt": "prompts/state-facts.txt",
+      "calendar": "*-*-* 11:30:00 Europe/Berlin"
+    },
+    "medical-data": {
+      "output_dir": "research/2026-10-03/medical-data",
+      "prompt": "prompts/medical-data.txt",
+      "calendar": "*-*-* 13:00:00 Europe/Berlin"
+    }
+  }
+}

@@ -1,0 +1,994 @@
+{
+  "as_of": "2026-10-03",
+  "stories": [
+    {
+      "story_id": "migration-ca-fl",
+      "measurements": [
+        {
+          "from": "CA",
+          "to": "FL",
+          "estimate": 36194,
+          "moe90": 5759,
+          "xlsx_row": 499,
+          "direction": "forward"
+        },
+        {
+          "from": "FL",
+          "to": "CA",
+          "estimate": 15988,
+          "moe90": 3031,
+          "xlsx_row": 234,
+          "direction": "reverse"
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-ca-tx",
+      "measurements": [
+        {
+          "from": "CA",
+          "to": "TX",
+          "estimate": 77161,
+          "moe90": 9059,
+          "xlsx_row": 2335,
+          "direction": "forward"
+        },
+        {
+          "from": "TX",
+          "to": "CA",
+          "estimate": 45447,
+          "moe90": 6640,
+          "xlsx_row": 268,
+          "direction": "reverse"
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-ca-nv",
+      "measurements": [
+        {
+          "from": "CA",
+          "to": "NV",
+          "estimate": 53289,
+          "moe90": 6970,
+          "xlsx_row": 1525,
+          "direction": "forward"
+        },
+        {
+          "from": "NV",
+          "to": "CA",
+          "estimate": 21133,
+          "moe90": 4646,
+          "xlsx_row": 253,
+          "direction": "reverse"
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-ca-az",
+      "measurements": [
+        {
+          "from": "CA",
+          "to": "AZ",
+          "estimate": 52383,
+          "moe90": 6890,
+          "xlsx_row": 121,
+          "direction": "forward"
+        },
+        {
+          "from": "AZ",
+          "to": "CA",
+          "estimate": 28174,
+          "moe90": 4463,
+          "xlsx_row": 227,
+          "direction": "reverse"
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-ny-fl",
+      "measurements": [
+        {
+          "from": "NY",
+          "to": "FL",
+          "estimate": 50661,
+          "moe90": 6714,
+          "xlsx_row": 527,
+          "direction": "forward"
+        },
+        {
+          "from": "FL",
+          "to": "NY",
+          "estimate": 28080,
+          "moe90": 4963,
+          "xlsx_row": 1746,
+          "direction": "reverse"
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-ny-nj",
+      "measurements": [
+        {
+          "from": "NY",
+          "to": "NJ",
+          "estimate": 56799,
+          "moe90": 8244,
+          "xlsx_row": 1661,
+          "direction": "forward"
+        },
+        {
+          "from": "NJ",
+          "to": "NY",
+          "estimate": 36002,
+          "moe90": 5753,
+          "xlsx_row": 1767,
+          "direction": "reverse"
+        },
+        {
+          "from": "NY",
+          "to": "FL",
+          "estimate": 50661,
+          "moe90": 6714,
+          "xlsx_row": 527
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-fl-ga",
+      "measurements": [
+        {
+          "from": "FL",
+          "to": "GA",
+          "estimate": 52371,
+          "moe90": 8290,
+          "xlsx_row": 558,
+          "direction": "forward"
+        },
+        {
+          "from": "GA",
+          "to": "FL",
+          "estimate": 34388,
+          "moe90": 6124,
+          "xlsx_row": 505,
+          "direction": "reverse"
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-fl-nc",
+      "measurements": [
+        {
+          "from": "FL",
+          "to": "NC",
+          "estimate": 33591,
+          "moe90": 4724,
+          "xlsx_row": 1800,
+          "direction": "forward"
+        },
+        {
+          "from": "NC",
+          "to": "FL",
+          "estimate": 25865,
+          "moe90": 5677,
+          "xlsx_row": 528,
+          "direction": "reverse"
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-wa-id",
+      "measurements": [
+        {
+          "from": "WA",
+          "to": "ID",
+          "estimate": 17837,
+          "moe90": 3554,
+          "xlsx_row": 704,
+          "direction": "forward"
+        },
+        {
+          "from": "ID",
+          "to": "WA",
+          "estimate": 7927,
+          "moe90": 1960,
+          "xlsx_row": 2559,
+          "direction": "reverse"
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "migration-tx-source-states",
+      "measurements": [
+        {
+          "from": "TX",
+          "to": "AK",
+          "estimate": 2685,
+          "moe90": 1187,
+          "xlsx_row": 106
+        },
+        {
+          "from": "TX",
+          "to": "AR",
+          "estimate": 10842,
+          "moe90": 2476,
+          "xlsx_row": 214
+        },
+        {
+          "from": "TX",
+          "to": "CA",
+          "estimate": 45447,
+          "moe90": 6640,
+          "xlsx_row": 268
+        },
+        {
+          "from": "TX",
+          "to": "CO",
+          "estimate": 27574,
+          "moe90": 4594,
+          "xlsx_row": 322
+        },
+        {
+          "from": "TX",
+          "to": "IL",
+          "estimate": 18189,
+          "moe90": 3474,
+          "xlsx_row": 754
+        },
+        {
+          "from": "TX",
+          "to": "LA",
+          "estimate": 19850,
+          "moe90": 3560,
+          "xlsx_row": 1024
+        },
+        {
+          "from": "TX",
+          "to": "MS",
+          "estimate": 8574,
+          "moe90": 2693,
+          "xlsx_row": 1348
+        },
+        {
+          "from": "TX",
+          "to": "NM",
+          "estimate": 13543,
+          "moe90": 3249,
+          "xlsx_row": 1726
+        },
+        {
+          "from": "TX",
+          "to": "OK",
+          "estimate": 28074,
+          "moe90": 3746,
+          "xlsx_row": 1996
+        }
+      ],
+      "source_files": [
+        "raw/state-migration-2024.xlsx"
+      ]
+    },
+    {
+      "story_id": "housing-route-ca-tx",
+      "measurements": [
+        {
+          "state_code": "CA",
+          "B25077_001": {
+            "geo_type": "state",
+            "geo_id": "06",
+            "variable": "B25077_001",
+            "estimate": "734700",
+            "moe": "1307",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          },
+          "B25064_001": {
+            "geo_type": "state",
+            "geo_id": "06",
+            "variable": "B25064_001",
+            "estimate": "2036",
+            "moe": "5",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          },
+          "B19013_001": {
+            "geo_type": "state",
+            "geo_id": "06",
+            "variable": "B19013_001",
+            "estimate": "99122",
+            "moe": "310",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          }
+        },
+        {
+          "state_code": "TX",
+          "B25077_001": {
+            "geo_type": "state",
+            "geo_id": "48",
+            "variable": "B25077_001",
+            "estimate": "283800",
+            "moe": "738",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          },
+          "B25064_001": {
+            "geo_type": "state",
+            "geo_id": "48",
+            "variable": "B25064_001",
+            "estimate": "1403",
+            "moe": "4",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          },
+          "B19013_001": {
+            "geo_type": "state",
+            "geo_id": "48",
+            "variable": "B19013_001",
+            "estimate": "78476",
+            "moe": "263",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          }
+        }
+      ],
+      "source_files": [
+        "housing-context-evidence.json"
+      ]
+    },
+    {
+      "story_id": "housing-route-fl-nc",
+      "measurements": [
+        {
+          "state_code": "FL",
+          "B25077_001": {
+            "geo_type": "state",
+            "geo_id": "12",
+            "variable": "B25077_001",
+            "estimate": "359000",
+            "moe": "930",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          },
+          "B25064_001": {
+            "geo_type": "state",
+            "geo_id": "12",
+            "variable": "B25064_001",
+            "estimate": "1669",
+            "moe": "5",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          },
+          "B19013_001": {
+            "geo_type": "state",
+            "geo_id": "12",
+            "variable": "B19013_001",
+            "estimate": "74568",
+            "moe": "284",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          }
+        },
+        {
+          "state_code": "NC",
+          "B25077_001": {
+            "geo_type": "state",
+            "geo_id": "37",
+            "variable": "B25077_001",
+            "estimate": "288900",
+            "moe": "1086",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          },
+          "B25064_001": {
+            "geo_type": "state",
+            "geo_id": "37",
+            "variable": "B25064_001",
+            "estimate": "1228",
+            "moe": "5",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          },
+          "B19013_001": {
+            "geo_type": "state",
+            "geo_id": "37",
+            "variable": "B19013_001",
+            "estimate": "72388",
+            "moe": "324",
+            "estimate_status": "observed",
+            "moe_status": "observed",
+            "estimate_code": "",
+            "moe_code": "",
+            "estimate_annotation": "",
+            "moe_annotation": "",
+            "annotation_status": "not_collected"
+          }
+        }
+      ],
+      "source_files": [
+        "housing-context-evidence.json"
+      ]
+    },
+    {
+      "story_id": "irs-route-ca-tx",
+      "measurements": [
+        {
+          "direction": "forward",
+          "source_row": {
+            "y1_statefips": "06",
+            "y2_statefips": "48",
+            "y2_state": "TX",
+            "y2_state_name": "Texas",
+            "n1": "44417",
+            "n2": "82481",
+            "AGI": "4764727"
+          },
+          "agi_usd": 4764727000
+        },
+        {
+          "direction": "reverse",
+          "source_row": {
+            "y1_statefips": "48",
+            "y2_statefips": "06",
+            "y2_state": "CA",
+            "y2_state_name": "California",
+            "n1": "24970",
+            "n2": "41232",
+            "AGI": "2384297"
+          },
+          "agi_usd": 2384297000
+        }
+      ],
+      "source_files": [
+        "raw/irs-stateoutflow2223.csv",
+        "raw/irs-migration-guide2223.pdf"
+      ]
+    },
+    {
+      "story_id": "irs-route-ny-fl",
+      "measurements": [
+        {
+          "direction": "forward",
+          "source_row": {
+            "y1_statefips": "36",
+            "y2_statefips": "12",
+            "y2_state": "FL",
+            "y2_state_name": "Florida",
+            "n1": "43187",
+            "n2": "71476",
+            "AGI": "5753306"
+          },
+          "agi_usd": 5753306000
+        },
+        {
+          "direction": "reverse",
+          "source_row": {
+            "y1_statefips": "12",
+            "y2_statefips": "36",
+            "y2_state": "NY",
+            "y2_state_name": "New York",
+            "n1": "22011",
+            "n2": "32133",
+            "AGI": "1977363"
+          },
+          "agi_usd": 1977363000
+        }
+      ],
+      "source_files": [
+        "raw/irs-stateoutflow2223.csv",
+        "raw/irs-migration-guide2223.pdf"
+      ]
+    },
+    {
+      "story_id": "irs-route-ma-nh",
+      "measurements": [
+        {
+          "direction": "forward",
+          "source_row": {
+            "y1_statefips": "25",
+            "y2_statefips": "33",
+            "y2_state": "NH",
+            "y2_state_name": "New Hampshire",
+            "n1": "10603",
+            "n2": "16174",
+            "AGI": "1428201"
+          },
+          "agi_usd": 1428201000
+        },
+        {
+          "direction": "reverse",
+          "source_row": {
+            "y1_statefips": "33",
+            "y2_statefips": "25",
+            "y2_state": "MA",
+            "y2_state_name": "Massachusetts",
+            "n1": "6594",
+            "n2": "9174",
+            "AGI": "557595"
+          },
+          "agi_usd": 557595000
+        }
+      ],
+      "source_files": [
+        "raw/irs-stateoutflow2223.csv",
+        "raw/irs-migration-guide2223.pdf"
+      ]
+    },
+    {
+      "story_id": "irs-route-manhattan-miami",
+      "measurements": [
+        {
+          "direction": "forward",
+          "source_row": {
+            "y1_statefips": "36",
+            "y1_countyfips": "061",
+            "y2_statefips": "12",
+            "y2_countyfips": "086",
+            "y2_state": "FL",
+            "y2_countyname": "Miami-Dade County",
+            "n1": "1445",
+            "n2": "2031",
+            "agi": "516780"
+          },
+          "agi_usd": 516780000
+        },
+        {
+          "direction": "reverse",
+          "source_row": {
+            "y1_statefips": "12",
+            "y1_countyfips": "086",
+            "y2_statefips": "36",
+            "y2_countyfips": "061",
+            "y2_state": "NY",
+            "y2_countyname": "New York County",
+            "n1": "1149",
+            "n2": "1385",
+            "agi": "338261"
+          },
+          "agi_usd": 338261000
+        }
+      ],
+      "source_files": [
+        "raw/irs-countyoutflow2223.csv",
+        "raw/irs-migration-guide2223.pdf"
+      ]
+    },
+    {
+      "story_id": "irs-route-miami-broward",
+      "measurements": [
+        {
+          "direction": "forward",
+          "source_row": {
+            "y1_statefips": "12",
+            "y1_countyfips": "086",
+            "y2_statefips": "12",
+            "y2_countyfips": "011",
+            "y2_state": "FL",
+            "y2_countyname": "Broward County",
+            "n1": "17471",
+            "n2": "29098",
+            "agi": "1248139"
+          },
+          "agi_usd": 1248139000
+        },
+        {
+          "direction": "reverse",
+          "source_row": {
+            "y1_statefips": "12",
+            "y1_countyfips": "011",
+            "y2_statefips": "12",
+            "y2_countyfips": "086",
+            "y2_state": "FL",
+            "y2_countyname": "Miami-Dade County",
+            "n1": "10482",
+            "n2": "16821",
+            "agi": "661323"
+          },
+          "agi_usd": 661323000
+        }
+      ],
+      "source_files": [
+        "raw/irs-countyoutflow2223.csv",
+        "raw/irs-migration-guide2223.pdf"
+      ]
+    },
+    {
+      "story_id": "irs-route-miami-palmbeach",
+      "measurements": [
+        {
+          "direction": "forward",
+          "source_row": {
+            "y1_statefips": "12",
+            "y1_countyfips": "086",
+            "y2_statefips": "12",
+            "y2_countyfips": "099",
+            "y2_state": "FL",
+            "y2_countyname": "Palm Beach County",
+            "n1": "2734",
+            "n2": "4446",
+            "agi": "306287"
+          },
+          "agi_usd": 306287000
+        },
+        {
+          "direction": "reverse",
+          "source_row": {
+            "y1_statefips": "12",
+            "y1_countyfips": "099",
+            "y2_statefips": "12",
+            "y2_countyfips": "086",
+            "y2_state": "FL",
+            "y2_countyname": "Miami-Dade County",
+            "n1": "1755",
+            "n2": "2634",
+            "agi": "190241"
+          },
+          "agi_usd": 190241000
+        }
+      ],
+      "source_files": [
+        "raw/irs-countyoutflow2223.csv",
+        "raw/irs-migration-guide2223.pdf"
+      ]
+    },
+    {
+      "story_id": "migration-florida-postboom",
+      "measurements": [
+        {
+          "geography": {
+            "name": "Florida",
+            "kind": "state",
+            "state_code": "FL",
+            "geoid": "12"
+          },
+          "source_file": "popest-state2025.csv",
+          "columns": {
+            "DOMESTICMIG2022": 310892,
+            "DOMESTICMIG2023": 183646,
+            "DOMESTICMIG2024": 58411,
+            "DOMESTICMIG2025": 22517,
+            "INTERNATIONALMIG2025": 178674,
+            "NPOPCHG_2025": 196680
+          }
+        }
+      ],
+      "source_files": [
+        "raw/popest-state2025.csv"
+      ]
+    },
+    {
+      "story_id": "migration-alabama-above-florida",
+      "measurements": [
+        {
+          "geography": {
+            "name": "Alabama",
+            "kind": "state",
+            "state_code": "AL",
+            "geoid": "01"
+          },
+          "source_file": "popest-state2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": 23358,
+            "POPESTIMATE2025": 5193088
+          }
+        },
+        {
+          "geography": {
+            "name": "Florida",
+            "kind": "state",
+            "state_code": "FL",
+            "geoid": "12"
+          },
+          "source_file": "popest-state2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": 22517,
+            "POPESTIMATE2025": 23462518
+          }
+        }
+      ],
+      "source_files": [
+        "raw/popest-state2025.csv"
+      ]
+    },
+    {
+      "story_id": "migration-carolinas-domestic-lead",
+      "measurements": [
+        {
+          "geography": {
+            "name": "North Carolina",
+            "kind": "state",
+            "state_code": "NC",
+            "geoid": "37"
+          },
+          "source_file": "popest-state2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": 84064,
+            "POPESTIMATE2024": 11052061,
+            "POPESTIMATE2025": 11197968,
+            "NPOPCHG_2025": 145907
+          }
+        },
+        {
+          "geography": {
+            "name": "Texas",
+            "kind": "state",
+            "state_code": "TX",
+            "geoid": "48"
+          },
+          "source_file": "popest-state2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": 67299,
+            "POPESTIMATE2024": 31318578,
+            "POPESTIMATE2025": 31709821,
+            "NPOPCHG_2025": 391243
+          }
+        },
+        {
+          "geography": {
+            "name": "South Carolina",
+            "kind": "state",
+            "state_code": "SC",
+            "geoid": "45"
+          },
+          "source_file": "popest-state2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": 66622,
+            "POPESTIMATE2024": 5490316,
+            "POPESTIMATE2025": 5570274,
+            "NPOPCHG_2025": 79958
+          }
+        }
+      ],
+      "source_files": [
+        "raw/popest-state2025.csv"
+      ]
+    },
+    {
+      "story_id": "migration-miami-dade-offset",
+      "measurements": [
+        {
+          "geography": {
+            "name": "Miami-Dade County",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12086"
+          },
+          "source_file": "popest-county2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": -72254,
+            "INTERNATIONALMIG2025": 54204,
+            "NATURALCHG2025": 8749,
+            "NPOPCHG2025": -10115
+          }
+        },
+        {
+          "geography": {
+            "name": "Broward County",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12011"
+          },
+          "source_file": "popest-county2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": -29517,
+            "INTERNATIONALMIG2025": 24944,
+            "NATURALCHG2025": 4422,
+            "NPOPCHG2025": -372
+          }
+        }
+      ],
+      "source_files": [
+        "raw/popest-county2025.csv"
+      ]
+    },
+    {
+      "story_id": "migration-florida-local-shift",
+      "measurements": [
+        {
+          "geography": {
+            "name": "Polk County",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12105"
+          },
+          "source_file": "popest-county2025.csv",
+          "columns": {
+            "DOMESTICMIG2024": 19415,
+            "DOMESTICMIG2025": 18752,
+            "INTERNATIONALMIG2025": 3722,
+            "NPOPCHG2025": 23356
+          }
+        },
+        {
+          "geography": {
+            "name": "Hillsborough County",
+            "kind": "county",
+            "state_code": "FL",
+            "geoid": "12057"
+          },
+          "source_file": "popest-county2025.csv",
+          "columns": {
+            "DOMESTICMIG2024": -10825,
+            "DOMESTICMIG2025": -15620,
+            "INTERNATIONALMIG2025": 13621,
+            "NPOPCHG2025": 2917
+          }
+        }
+      ],
+      "source_files": [
+        "raw/popest-county2025.csv"
+      ]
+    },
+    {
+      "story_id": "migration-harris-vs-losangeles",
+      "measurements": [
+        {
+          "geography": {
+            "name": "Harris County",
+            "kind": "county",
+            "state_code": "TX",
+            "geoid": "48201"
+          },
+          "source_file": "popest-county2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": -43377,
+            "INTERNATIONALMIG2025": 57225,
+            "NATURALCHG2025": 34861,
+            "NPOPCHG2025": 48695
+          }
+        },
+        {
+          "geography": {
+            "name": "Los Angeles County",
+            "kind": "county",
+            "state_code": "CA",
+            "geoid": "06037"
+          },
+          "source_file": "popest-county2025.csv",
+          "columns": {
+            "DOMESTICMIG2025": -105471,
+            "INTERNATIONALMIG2025": 29325,
+            "NATURALCHG2025": 22581,
+            "NPOPCHG2025": -53934
+          }
+        }
+      ],
+      "source_files": [
+        "raw/popest-county2025.csv"
+      ]
+    },
+    {
+      "story_id": "migration-california-2024-growth",
+      "measurements": [
+        {
+          "geography": {
+            "name": "California",
+            "kind": "state",
+            "state_code": "CA",
+            "geoid": "06"
+          },
+          "source_file": "popest-state2025.csv",
+          "columns": {
+            "DOMESTICMIG2024": -241611,
+            "INTERNATIONALMIG2024": 312761,
+            "NPOPCHG_2024": 183107,
+            "DOMESTICMIG2025": -229077,
+            "INTERNATIONALMIG2025": 109278,
+            "NPOPCHG_2025": -9465
+          }
+        }
+      ],
+      "source_files": [
+        "raw/popest-state2025.csv"
+      ]
+    },
+    {
+      "story_id": "migration-southern-border-slowdown",
+      "measurements": [
+        {
+          "name": "Laredo, TX metropolitan statistical area",
+          "percent_growth_2024": 3.2,
+          "percent_growth_2025": 0.2
+        },
+        {
+          "name": "Yuma, AZ metropolitan statistical area",
+          "percent_growth_2024": 3.3,
+          "percent_growth_2025": 1.4
+        },
+        {
+          "name": "El Centro, CA metropolitan statistical area",
+          "percent_growth_2024": 1.2,
+          "percent_growth_2025": -0.7
+        }
+      ],
+      "source_files": []
+    }
+  ],
+  "definitions": {
+    "ACS": "2024 1-year, population age1+, gross flows; cells C/D and row provided",
+    "IRS": "Calendar filing years 2022/2023, AGI year2 ×1000; mailing-address change",
+    "PEP": "Vintage2025 annual July1 change; no cross-vintage comparison"
+  }
+}

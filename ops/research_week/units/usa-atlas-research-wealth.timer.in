@@ -1,0 +1,11 @@
+[Unit]
+Description=Ongoing daily wealth and data-center research, Berlin time
+
+[Timer]
+OnCalendar=*-*-* 10:00:00 Europe/Berlin
+AccuracySec=60
+Persistent=true
+Unit=usa-atlas-research@wealth-datacenters.service
+
+[Install]
+WantedBy=timers.target

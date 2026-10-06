@@ -1,0 +1,59 @@
+{
+  "as_of": "2026-10-05",
+  "release_date": "2026-09-24",
+  "sources": [
+    {
+      "source_id": "cdc-ehe-hiv-preliminary-through-2026-06.xlsx",
+      "url": "https://stacks.cdc.gov/view/cdc/260354/cdc_260354_DS1.xlsx",
+      "http_status": 200,
+      "status": "downloaded",
+      "bytes": 3186177,
+      "sha256": "036a29a8a8a87a990fc93de03b14319e5d2ba8789d1c959c6c381455a61e5a96",
+      "path": "raw/cdc-ehe-hiv-preliminary-through-2026-06.xlsx",
+      "retrieved_at": "2026-10-05T11:36:02.461971+00:00"
+    },
+    {
+      "source_id": "cdc-ehe-hiv-preliminary-through-2026-06.html",
+      "url": "https://stacks.cdc.gov/view/cdc/260354",
+      "http_status": 200,
+      "status": "downloaded",
+      "bytes": 87427,
+      "sha256": "6e2ab547ac949ddf8b97bdb5893d4045832af357818466e4e9cb26ddef7082a4",
+      "path": "raw/cdc-ehe-hiv-preliminary-through-2026-06.html",
+      "retrieved_at": "2026-10-05T11:36:02.961991+00:00"
+    },
+    {
+      "source_id": "cdc-ehe-methodology-2023.pdf",
+      "url": "https://stacks.cdc.gov/view/cdc/156512/cdc_156512_DS1.pdf",
+      "http_status": 200,
+      "status": "downloaded",
+      "bytes": 4988196,
+      "sha256": "b909868a9cf82327aa92e072370ad1c12eab8b4066991efecea4192b387e559f",
+      "path": "raw/cdc-ehe-methodology-2023.pdf",
+      "retrieved_at": "2026-10-05T11:36:04.707846+00:00"
+    }
+  ],
+  "table_validation": {
+    "sheet_names": [
+      "Technical Notes",
+      "Table 1a",
+      "Table 1b",
+      "Table 1c",
+      "Table 1d",
+      "Table 2a",
+      "Table 2b",
+      "Table 2c",
+      "Table 3"
+    ],
+    "diagnosis_table_1c_rows_parsed": 116,
+    "selected_local_table_1d_rows_parsed": 98,
+    "source_suppression_symbols_observed": 0,
+    "numeric_published_zeros_retained": 7
+  },
+  "coverage_counts": {
+    "observations": 320,
+    "numeric": 320,
+    "state_geographies": 51,
+    "selected_county_or_municipality_geographies": 49
+  }
+}

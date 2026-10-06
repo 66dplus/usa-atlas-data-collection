@@ -1,0 +1,76 @@
+{
+  "created_at": "2026-10-05T12:38:33.897605+00:00",
+  "production_admitted": false,
+  "core": {
+    "observations": 133968,
+    "numeric": 93807,
+    "missing_or_suppressed": 40161,
+    "inventory_metrics": 58,
+    "records": "normalized/observations.csv",
+    "coverage": "coverage.json"
+  },
+  "child_county": {
+    "county_observations": 18892,
+    "county_numeric": 11966,
+    "state_rows": "retained_in_raw_not_normalized",
+    "records": "child-county/observations.csv",
+    "coverage": "child-county/coverage-local.json",
+    "series": [
+      {
+        "age_group": "0-17",
+        "period": "2017-2020",
+        "county_numeric_rates": 1884,
+        "state_numeric_rates": 51
+      },
+      {
+        "age_group": "0-19",
+        "period": "2019-2022",
+        "county_numeric_rates": 2058,
+        "state_numeric_rates": 51
+      },
+      {
+        "age_group": "0-19",
+        "period": "2020-2023",
+        "county_numeric_rates": 2041,
+        "state_numeric_rates": 51
+      }
+    ]
+  },
+  "additional_surveillance": {
+    "observations": 534,
+    "numeric": 534,
+    "missing_or_suppressed": 0,
+    "inventory_metrics": 31,
+    "records": "additional-surveillance/observations.csv",
+    "coverage": "additional-surveillance/coverage.json",
+    "no_county_values": true,
+    "source_limitations": [
+      "STI 2024 values are provisional as of 2025-08-14; 2024 state-level counts and rates were withheld while CDC migrates NNDSS to 1CDP.",
+      "National STI case totals include non-U.S. residents and exclude U.S. territories; congenital syphilis rates use 2023 live births, other rates use 2024 population denominators.",
+      "TB reporting-area table was updated through 2025-07-10. The 2020 RVCT revision was first fully used across jurisdictions in 2023; CDC notes possible minor data-quality/completeness fluctuations.",
+      "New York City is reported separately and excluded from the New York State reporting-area row. FIPS is not assigned to the city aggregate.",
+      "The source publishes annual state/NYC values, not county incidence rates. The separate recent-transmission county map is a specific genotyped-case-derived measure, not total county TB incidence."
+    ]
+  },
+  "hiv_preliminary": {
+    "observations": 320,
+    "numeric": 320,
+    "missing_or_suppressed": 0,
+    "metric_id": "hiv_preliminary_diagnoses_count",
+    "records": "hiv-preliminary/observations.csv",
+    "coverage": "hiv-preliminary/coverage.json",
+    "source_limitations": [
+      "2025 and Jan-Jun 2026 counts are preliminary until the 12-month reporting delay; CDC advises not to assess trends or compare these counts with previous years before sufficient delay.",
+      "Diagnosis counts are persons aged 13 years and older diagnosed in the period by date of diagnosis, not estimated infections occurring in that period.",
+      "County observations cover only CDC EHE priority jurisdictions: the listed county/county-equivalent areas and San Juan Municipio. Remaining Census county-equivalents are not included, not zero.",
+      "Counts under 12 are published but CDC cautions they are statistically unstable; the collector retains them and flags source_small_count_caution.",
+      "No tract, block-group, or routine all-county observations are published in this release. Blank parent labels in Table 1d are headers, not missing county values.",
+      "This dataset does not replace CDC modeled estimated incidence, or the separate end-year count of people living with diagnosed HIV; no total estimated prevalence is in this workbook.",
+      "CDC notes national deduplication and statistical adjustment for missing transmission category, so national totals may not match jurisdiction-published totals and adjusted transmission categories may not sum exactly."
+    ]
+  },
+  "combined_inventory": "all-metric-inventory.csv",
+  "combined_unique_metric_ids": 94,
+  "numeric_observation_cells_across_bundles": 106627,
+  "note": "Observation cells across metrics/periods/geographies are not unique patients or a pooled disease total. Core, observed child-county, additional-surveillance, and preliminary-HIV bundle schemas and age/period/geography ranges remain explicit."
+}

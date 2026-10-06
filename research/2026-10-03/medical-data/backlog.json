@@ -1,0 +1,167 @@
+{
+  "tasks": [
+    {
+      "id": "hiv-retry-coverage",
+      "priority": 1,
+      "topic": "hiv",
+      "task": "Twelve100-ID retries completed; all3144currentcountyFIPS have response rows; four unreturned obsolete metadataIDs require no furtherfetch. Preserve source suppression; requested-versus-returned audit saved.",
+      "source_urls": [
+        "https://gis.cdc.gov/api/AtlasPlus/qtOutputData"
+      ],
+      "status": "completed_current3144_counties_returned",
+      "expected_geography": "county_and_state",
+      "remaining_blockers": "1166diagnosis and409diagnosed-prevalence currentcounty suppressions; no reconstruction"
+    },
+    {
+      "id": "hiv-release-documentation",
+      "priority": 1,
+      "topic": "hiv",
+      "task": "Pin the current NHSS reporting cutoff: 2024 diagnoses reported through December 2025; diagnosed prevalence remains preliminary when death reporting is incomplete. Keep diagnoses and modeled estimated incidence/total prevalence distinct. The current AtlasPlus table page lists the modeled table family but does not expose its data vintage.",
+      "source_urls": [
+        "https://gis.cdc.gov/grasp/nchhstpatlas/tables.html",
+        "https://www.cdc.gov/hiv-data/nhss/index.html"
+      ],
+      "status": "definitions_and_cutoffs_documented; 2025_and_Jan-Jun_2026_diagnoses_collected_separately; model_vintage_verification_pending",
+      "remaining_blockers": "CDC current model-release page still links the 2018-2022 report. AtlasPlus static page does not disclose a data vintage; inspect a documented live table/API response for a newer export. A 2023 diagnosed trend baseline is still queued; never infer incidence from diagnoses."
+    },
+    {
+      "id": "hiv-estimated-total-prevalence",
+      "priority": 1,
+      "topic": "hiv",
+      "task": "Normalize estimated total HIV prevalence (diagnosed plus undiagnosed) separately from observed diagnosed prevalence. Use CDC report Table 13 for state/territory rows and Table A2 only for its selected EHE Phase I counties; preserve 2022 age 13+ denominator, CI/RSE, model, and reporting limits.",
+      "source_urls": [
+        "https://stacks.cdc.gov/view/cdc/156513/cdc_156513_DS1.pdf",
+        "https://www.cdc.gov/hiv-data/nhss/index.html"
+      ],
+      "status": "2022_table13_states_territories_and_tableA2_selected_ehe_areas_collected_normalized",
+      "expected_geography": "state_and_selected_EHE_county",
+      "remaining_blockers": "Current CDC release page still links the 2018-2022 estimate report; verify whether the live AtlasPlus table exposes a newer downloadable vintage. Table A2 remains selected EHE coverage only, not all counties. Preserve CI/RSE, preliminary status, and the unreported denominator count."
+    },
+    {
+      "id": "cancer-mortality-state-types",
+      "priority": 1,
+      "topic": "cancer_mortality",
+      "task": "All-sites plus lung, female breast, colorectal, male prostate, and melanoma county/state mortality exports are present for pooled 2020-2024. Preserve average annual counts separately from rates and incidence 2019-2023.",
+      "source_urls": [
+        "https://statecancerprofiles.cancer.gov/deathrates/index.php"
+      ],
+      "status": "all_sites_and_requested_site_types_county_state_collected",
+      "remaining_blockers": "Small-count suppression and source geography vintage remain; CT legacy counties and retired/combined FIPS are flagged, not crosswalk-allocated."
+    },
+    {
+      "id": "infant-county-linked",
+      "priority": 1,
+      "topic": "infant_mortality",
+      "task": "CDC WONDER period-linked exports (death year) now include annual state, identified county, and state-specific Unidentified Counties rows for 2020-2024; preserve counts, births, rates, flags, and Dade source FIPS 12025 mapping.",
+      "source_urls": [
+        "https://wonder.cdc.gov/lbd-current-expanded.html",
+        "https://wonder.cdc.gov/wonder/help/lbd-expanded.html"
+      ],
+      "status": "annual_state_and_threshold_limited_county_2020_2024_collected_and_normalized",
+      "remaining_blockers": "2017+ county IDs only for counties meeting 250,000 population in 2010 Census; all smaller counties remain unidentified aggregates. Cell suppression 1-9 and unreliable rates <20 deaths remain null/flagged. No county CI in this tabulation."
+    },
+    {
+      "id": "child-age-bands-subnational",
+      "priority": 1,
+      "topic": "child_mortality",
+      "task": "CDC WONDER 2020-2024 all-cause death-year totals for ages 1-4 and 5-14 are pooled by state/county. State rates are directly published. County 5-14 rates are a separate derivation from direct count and published 5-9/10-14 denominators; county 1-4 rates are separately derived from direct counts and exact-FIPS Census PEP Vintage 2025 ages 1-4.",
+      "source_urls": [
+        "https://www.cdc.gov/nchs/fastats/child-health.htm",
+        "https://wonder.cdc.gov/ucd-icd10-expanded.html"
+      ],
+      "status": "pooled_2020_2024_state_county_counts_and_direct_state_plus_derived_county_rates_collected",
+      "remaining_blockers": "The 1-4 derived rate is numeric for 1,186 of 3,142 source county rows; 1,952 death counts are source-suppressed (<10), and four visible counts lack an exact denominator FIPS. 11 source FIPS differ from Census Gazetteer 2025, and 13 Census reference county-equivalents are absent from the WONDER source set. Counts under 20 deaths carry the source unreliable-rate flag; no CI is available. 1-4 rates use PEP Vintage 2025 and are not directly comparable with WONDER state rates. Continue official source/crosswalk review without geographic allocation."
+    },
+    {
+      "id": "child-under18-additional",
+      "priority": 2,
+      "topic": "child_mortality",
+      "task": "Review child-county support artifacts: archivedunder18 versusnewunder20, distinctperiod/geographyvintages; cannotreplace1-4/5-14. Mainintegratesdocumentationseparately",
+      "source_urls": [
+        "https://www.countyhealthrankings.org/health-data/health-factors-and-outcomes/health-outcomes/length-of-life/child-mortality"
+      ],
+      "status": "separate_child_county_helper_seed"
+    },
+    {
+      "id": "geography-crosswalk",
+      "priority": 1,
+      "topic": "geography",
+      "task": "Reconcile CTlegacy8 versus9planningregions; retired AK/SD and Bedford51917 aggregate; sourceFIPS preserved, no automatic allocation",
+      "source_urls": [
+        "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2025_Gazetteer/2025_Gaz_counties_national.zip"
+      ],
+      "status": "flags_collected_no_crosswalk_allocation"
+    },
+    {
+      "id": "hepatitis-latest-official",
+      "priority": 2,
+      "topic": "hepatitis",
+      "task": "CDC HepTracker now publishes viral hepatitis report content for 2024-present. This session verified the official viewer and provisional 2024 scope, but not a machine-readable numeric export. Existing AtlasPlus 2023 state records remain diagnosed acute/reportable cases; investigate chronic/perinatal releases separately.",
+      "source_urls": [
+        "https://www.cdc.gov/hepatitis/php/statistics-surveillance/"
+      ],
+      "status": "heptracker_2024_provisional_public_viewer_verified; numeric_export_not_obtained",
+      "remaining_blockers": "CDC landing page links an embedded Power BI viewer, not a documented direct data endpoint. 2024 case data marked provisional as of 2026-01-17 and expected final fall 2026; state/county geography, category-specific sheets, and export route need verification."
+    },
+    {
+      "id": "herpes-definition-only",
+      "priority": 3,
+      "topic": "herpes",
+      "task": "Review NHANES HSV1/HSV2 seroprevalence separately from cases; no uniform county/state nationallynotifiablecase table",
+      "source_urls": [
+        "https://ndc.services.cdc.gov/conditions/genital-herpes/",
+        "https://www.cdc.gov/nchs/nhanes/"
+      ],
+      "status": "no_uniform_subnational_cases"
+    },
+    {
+      "id": "collector-complete-stages",
+      "priority": 2,
+      "topic": "collectors",
+      "task": "Reusable stages cover NCI cancer incidence/deaths, CDC linked infant exports and state infant visualization, CDC WONDER child age bands, bounded Census PEP age-denominator downloads, AtlasPlus HIV/hepatitis, HIV retry partitions, bounded HIV estimate PDF, child-county CHR, and CDC STI/TB surveillance exports.",
+      "source_urls": [],
+      "status": "seed_collectors_plus_additional_surveillance_collector_available",
+      "remaining_blockers": "Recheck source versions and coverage; continue unresolved hepatitis numeric export, TB county routines, STI final 2024 state/county data, HIV model vintage, child-mortality source/geography coverage, and source-specific suppression review."
+    },
+    {
+      "id": "sti-2024-provisional-national",
+      "priority": 2,
+      "topic": "sti",
+      "task": "CDC 2024 provisional ZIP downloaded and normalized: national reported counts and rates for chlamydia, gonorrhea, and syphilis, including sex/stage/partner strata and congenital syphilis.",
+      "source_urls": [
+        "https://www.cdc.gov/sti-statistics/annual/index.html",
+        "https://www.cdc.gov/sti-statistics/media/files/2025/09/STI-Surveillance-Report-2024-Provisional_data-files.zip"
+      ],
+      "status": "national_2015_2024_spreadsheets_downloaded_normalized_2024_provisional",
+      "expected_geography": "national_only_US_including_DC_excluding_territories",
+      "remaining_blockers": "CDC withheld 2024 state-level counts/rates while NNDSS migrates to One CDC Data Platform. Recheck final 2024 release and only add documented subnational data; do not distribute national totals."
+    },
+    {
+      "id": "tb-reporting-areas-2024",
+      "priority": 2,
+      "topic": "tuberculosis",
+      "task": "CDC TB reporting-area table downloaded and normalized for 2023 and 2024 reported TB disease counts and published crude incidence rates. Retains 50 states, DC, separate NYC, NY state-excluding-NYC, U.S. national row, and eight external reporting areas.",
+      "source_urls": [
+        "https://www.cdc.gov/tb-surveillance-report-2024/data/reporting-areas.html",
+        "https://www.cdc.gov/tb-surveillance-report-2024/executive-commentary/technical-notes.html"
+      ],
+      "status": "reporting_area_2023_2024_counts_and_rates_collected",
+      "expected_geography": "state_and_special_reporting_areas",
+      "remaining_blockers": "The official annual summary has no routine county case/rate rows. Continue investigating documented county sources. CDC recent-transmission map is a distinct genotype-derived measure with 1,903 counties without eligible genotyped cases; it cannot stand in for total TB incidence."
+    },
+    {
+      "id": "tb-county-recent-transmission",
+      "priority": 3,
+      "topic": "tuberculosis",
+      "task": "Investigate CDC 2023-2024 recent-transmission county map export/shape data. Preserve source categories (>20, 11-20, 1-10, 0) and no-evaluable-genotyped-case status separately if downloadable.",
+      "source_urls": [
+        "https://www.cdc.gov/tb-surveillance-report-2024/data/map-recent-tb-transmission.html"
+      ],
+      "status": "official_county_map_definition_reviewed_numeric_export_not_collected",
+      "expected_geography": "county_or_county_equivalent_only_where_source_identifies",
+      "remaining_blockers": "CDC reports 15 areas >20, 22 areas 11-20, 370 areas 1-10, 810 with zero, and 1,903 with no genotyped cases assessable; county identities and exact values not present in opened page text."
+    }
+  ],
+  "scope": "research only; target50states+DC; unknown neverzero",
+  "updated_at": "2026-10-05T12:32:01Z"
+}

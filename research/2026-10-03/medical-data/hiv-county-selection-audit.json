@@ -1,0 +1,140 @@
+{
+  "created_at": "2026-10-05T12:38:05.869009+00:00",
+  "reference": "2025 Census Gazetteer",
+  "current_target_counties": 3144,
+  "atlas_selected_county_ids": 3159,
+  "indicators": [
+    {
+      "indicator_id": 203,
+      "metric_family": "hiv-diagnoses",
+      "period": "2024",
+      "requested_county_ids": 3159,
+      "returned_county_ids": 3155,
+      "unreturned_requested_ids": [
+        {
+          "id": 5147,
+          "name": "Prince of Wales - Outer Ketchikan, AK",
+          "source_geoid": "02201"
+        },
+        {
+          "id": 5150,
+          "name": "Skagway-Hoonah-Angoon, AK",
+          "source_geoid": "02232"
+        },
+        {
+          "id": 5155,
+          "name": "Wrangell-Petersburg Census Area, AK",
+          "source_geoid": "02280"
+        },
+        {
+          "id": 7979,
+          "name": "Bedford City, VA",
+          "source_geoid": "51515"
+        }
+      ],
+      "source_suppression_code_counts": {
+        "405": 1166,
+        "400": 1978,
+        "408": 11
+      },
+      "duplicate_conflicting_geography_ids": [],
+      "unexpected_returned_ids": [],
+      "returned_current_county_geoids": 3144,
+      "returned_source_geoid_not_in_reference": [
+        "02261",
+        "02270",
+        "09001",
+        "09003",
+        "09005",
+        "09007",
+        "09009",
+        "09011",
+        "09013",
+        "09015",
+        "46113"
+      ],
+      "current_counties_without_returned_source_row": [],
+      "source_files": [
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part1.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part2.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part3.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part4.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part5-retry-1.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part5-retry-2.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part5-retry-3.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part5-retry-4.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part6.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part7-retry-1.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part7-retry-2.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part7-retry-3.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part7-retry-4.json",
+        "raw/cdc-atlas-hiv-diagnoses-county-2024-part8.json"
+      ]
+    },
+    {
+      "indicator_id": 205,
+      "metric_family": "hiv-diagnosed-prevalence",
+      "period": "2024",
+      "requested_county_ids": 3159,
+      "returned_county_ids": 3155,
+      "unreturned_requested_ids": [
+        {
+          "id": 5147,
+          "name": "Prince of Wales - Outer Ketchikan, AK",
+          "source_geoid": "02201"
+        },
+        {
+          "id": 5150,
+          "name": "Skagway-Hoonah-Angoon, AK",
+          "source_geoid": "02232"
+        },
+        {
+          "id": 5155,
+          "name": "Wrangell-Petersburg Census Area, AK",
+          "source_geoid": "02280"
+        },
+        {
+          "id": 7979,
+          "name": "Bedford City, VA",
+          "source_geoid": "51515"
+        }
+      ],
+      "source_suppression_code_counts": {
+        "400": 2735,
+        "405": 410,
+        "408": 10
+      },
+      "duplicate_conflicting_geography_ids": [],
+      "unexpected_returned_ids": [],
+      "returned_current_county_geoids": 3144,
+      "returned_source_geoid_not_in_reference": [
+        "02261",
+        "02270",
+        "09001",
+        "09003",
+        "09005",
+        "09007",
+        "09009",
+        "09011",
+        "09013",
+        "09015",
+        "46113"
+      ],
+      "current_counties_without_returned_source_row": [],
+      "source_files": [
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part1.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part2.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part3.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part4.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part5-retry-1.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part5-retry-2.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part5-retry-3.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part5-retry-4.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part6.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part7.json",
+        "raw/cdc-atlas-hiv-diagnosed-prevalence-county-2024-part8.json"
+      ]
+    }
+  ],
+  "current_counties_absent_from_selected_atlas_metadata": []
+}

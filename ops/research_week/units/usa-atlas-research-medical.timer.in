@@ -1,0 +1,11 @@
+[Unit]
+Description=Ongoing daily medical-data research and collection, Berlin time
+
+[Timer]
+OnCalendar=*-*-* 13:00:00 Europe/Berlin
+AccuracySec=60
+Persistent=true
+Unit=usa-atlas-research@medical-data.service
+
+[Install]
+WantedBy=timers.target

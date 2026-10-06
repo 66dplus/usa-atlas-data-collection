@@ -1,0 +1,11 @@
+[Unit]
+Description=Run USA Atlas health recovery every 30 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitInactiveSec=30min
+AccuracySec=1min
+Unit=usa-atlas-continuous-monitor.service
+
+[Install]
+WantedBy=timers.target

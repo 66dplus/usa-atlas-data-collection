@@ -1,0 +1,321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:usa-atlas:research-story:v1",
+  "title": "USA Atlas research story; not production admission",
+  "type": "object",
+  "required": [
+    "id",
+    "headline_ru",
+    "summary_ru",
+    "themes",
+    "states",
+    "places",
+    "comparisons",
+    "period",
+    "verification_status",
+    "sources",
+    "caveats",
+    "refresh"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "headline_ru": {
+      "type": "string"
+    },
+    "summary_ru": {
+      "type": "string"
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "states": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "AL",
+          "AK",
+          "AZ",
+          "AR",
+          "CA",
+          "CO",
+          "CT",
+          "DE",
+          "DC",
+          "FL",
+          "GA",
+          "HI",
+          "ID",
+          "IL",
+          "IN",
+          "IA",
+          "KS",
+          "KY",
+          "LA",
+          "ME",
+          "MD",
+          "MA",
+          "MI",
+          "MN",
+          "MS",
+          "MO",
+          "MT",
+          "NE",
+          "NV",
+          "NH",
+          "NJ",
+          "NM",
+          "NY",
+          "NC",
+          "ND",
+          "OH",
+          "OK",
+          "OR",
+          "PA",
+          "RI",
+          "SC",
+          "SD",
+          "TN",
+          "TX",
+          "UT",
+          "VT",
+          "VA",
+          "WA",
+          "WV",
+          "WI",
+          "WY"
+        ]
+      }
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "kind",
+          "state_code"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "state",
+              "district",
+              "county",
+              "city",
+              "metro",
+              "grid_region",
+              "region",
+              "country"
+            ]
+          },
+          "state_code": {
+            "type": "string"
+          },
+          "geoid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "from",
+          "to",
+          "reason_ru"
+        ],
+        "properties": {
+          "from": {
+            "type": "object",
+            "required": [
+              "name",
+              "kind",
+              "state_code"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "state",
+                  "district",
+                  "county",
+                  "city",
+                  "metro",
+                  "grid_region",
+                  "region",
+                  "country"
+                ]
+              },
+              "state_code": {
+                "type": "string"
+              },
+              "geoid": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "to": {
+            "type": "object",
+            "required": [
+              "name",
+              "kind",
+              "state_code"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "state",
+                  "district",
+                  "county",
+                  "city",
+                  "metro",
+                  "grid_region",
+                  "region",
+                  "country"
+                ]
+              },
+              "state_code": {
+                "type": "string"
+              },
+              "geoid": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "metric_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reason_ru": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "period": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "verified",
+        "candidate",
+        "rejected"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "url",
+          "title",
+          "publisher",
+          "role",
+          "published_date",
+          "accessed_at",
+          "evidence_ru"
+        ],
+        "properties": {
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "media",
+              "primary"
+            ]
+          },
+          "published_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "accessed_at": {
+            "type": "string"
+          },
+          "evidence_ru": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": true
+      },
+      "minItems": 1
+    },
+    "caveats": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "refresh": {
+      "type": "object",
+      "required": [
+        "method",
+        "frequency",
+        "source_urls"
+      ],
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "frequency": {
+          "type": "string"
+        },
+        "source_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
