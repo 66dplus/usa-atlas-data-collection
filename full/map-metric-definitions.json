@@ -1,0 +1,2218 @@
+{
+  "checked_on": "2026-10-11",
+  "definitions": [
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.01",
+      "display_unit": "people",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B01003_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Population",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "population",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B01003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "count",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "years"
+      ],
+      "catalog_field_id": "01.02",
+      "display_unit": "years",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B01002_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Median age",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "median-age",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "years",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B01002.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "median",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.03",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B01001_001E": 1
+        },
+        "numerator": {
+          "B01001_026E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Female population share",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "female-population-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B01001.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.03",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B01001_001E": 1
+        },
+        "numerator": {
+          "B01001_002E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Male population share",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "male-population-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B01001.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.04",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B03002_001E": 1
+        },
+        "numerator": {
+          "B03002_012E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Hispanic or Latino population share",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Hispanic origin can be of any race; a full race/origin breakdown needs an explicitly selected category."
+      ],
+      "metric_id": "hispanic-origin-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B03002.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.05",
+      "display_unit": "people",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B05002_013E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Foreign-born population",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "foreign-born-count",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B05002.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "count",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.05",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B05002_001E": 1
+        },
+        "numerator": {
+          "B05002_013E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Foreign-born population share",
+      "label_assertions": {
+        "B05002_013E": "Foreign-born:"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "foreign-born-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B05002.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.06",
+      "display_unit": "people",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B05006_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Foreign-born population in birthplace table",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "This total is not a selected country or region; a country/region selector is still required."
+      ],
+      "metric_id": "foreign-born-birthplace-total",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B05006.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "count",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Foreign-born population excluding population born at sea",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.07",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B05001_001E": 1
+        },
+        "numerator": {
+          "B05001_002E": 1,
+          "B05001_003E": 1,
+          "B05001_004E": 1,
+          "B05001_005E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "U.S. citizen population share",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "us-citizen-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B05001.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population in the United States",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "01.08",
+      "display_unit": "people",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B05005_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Population born outside the United States",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Includes native and foreign-born persons born outside the United States. Select both entry period and nativity explicitly."
+      ],
+      "metric_id": "entry-period-population-total",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B05005.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "count",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Population born outside the United States",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "USD"
+      ],
+      "catalog_field_id": "02.01",
+      "display_unit": "2024 USD/year",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B19013_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Median household income",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "median-household-income",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "USD",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B19013.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "median",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Households",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "USD"
+      ],
+      "catalog_field_id": "02.02",
+      "display_unit": "2024 USD/year",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B19301_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Per-capita income",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "per-capita-income",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "USD",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B19301.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "mean",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Total population",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "USD"
+      ],
+      "catalog_field_id": "02.03",
+      "display_unit": "USD/month",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B25064_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Median gross rent",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "median-gross-rent",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "USD",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B25064.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "median",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Renter-occupied housing units paying cash rent",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "USD"
+      ],
+      "catalog_field_id": "02.04",
+      "display_unit": "USD",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B25077_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Median home value",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "median-home-value",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "USD",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B25077.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "median",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Owner-occupied housing units",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "USD"
+      ],
+      "catalog_field_id": "02.05",
+      "display_unit": "USD/month",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B25088_002E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Median selected monthly owner costs · with mortgage",
+      "label_assertions": {
+        "B25088_002E": "with a mortgage"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "median-owner-costs-with-mortgage",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "USD",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B25088.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "median",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Owner-occupied housing units",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "USD"
+      ],
+      "catalog_field_id": "02.05",
+      "display_unit": "USD/month",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "B25088_001E": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Median selected monthly owner costs · all owners",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "median-selected-monthly-owner-costs",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "USD",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B25088.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "median",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Owner-occupied housing units",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "housing_units"
+      ],
+      "catalog_field_id": "02.06",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B25070_002E": 1,
+          "B25070_003E": 1,
+          "B25070_004E": 1,
+          "B25070_005E": 1,
+          "B25070_006E": 1,
+          "B25070_007E": 1,
+          "B25070_008E": 1,
+          "B25070_009E": 1,
+          "B25070_010E": 1
+        },
+        "numerator": {
+          "B25070_007E": 1,
+          "B25070_008E": 1,
+          "B25070_009E": 1,
+          "B25070_010E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Gross rent at least 30% of household income",
+      "label_assertions": {
+        "B25070_007E": "30.0 to 34.9 percent",
+        "B25070_010E": "50.0 percent or more"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Denominator excludes not-computed income ratios. Sum of bins 002–010 equals total 001 minus not-computed 011; neither total nor bin 007 alone is rent burden.",
+        "MOEs for numerator and denominator sums are approximate RSS values, then the subset proportion formula is applied."
+      ],
+      "metric_id": "rent-burden-30-plus-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "housing_units",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B25070.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Renter-occupied housing units",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "housing_units"
+      ],
+      "catalog_field_id": "02.07",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B25003_002E": 1,
+          "B25003_003E": 1
+        },
+        "numerator": {
+          "B25003_002E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Owner-occupied share of occupied housing units",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Owner plus renter occupied units form the total occupied-unit denominator; vacant units are excluded."
+      ],
+      "metric_id": "owner-occupied-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "housing_units",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B25003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Occupied housing units",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "housing_units"
+      ],
+      "catalog_field_id": "02.07",
+      "display_unit": "ratio",
+      "formula": {
+        "denominator": {
+          "B25003_003E": 1
+        },
+        "numerator": {
+          "B25003_002E": 1
+        },
+        "operation": "ratio",
+        "scale": 1
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Owner-occupied units per renter-occupied unit",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "owner-renter-ratio",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "housing_units",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B25003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "ratio",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Occupied housing units",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "housing_units"
+      ],
+      "catalog_field_id": "02.07",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B25003_002E": 1,
+          "B25003_003E": 1
+        },
+        "numerator": {
+          "B25003_003E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Renter-occupied share of occupied housing units",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Owner plus renter occupied units form the total occupied-unit denominator; vacant units are excluded."
+      ],
+      "metric_id": "renter-occupied-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "housing_units",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B25003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Occupied housing units",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "02.08",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B17001_001E": 1
+        },
+        "numerator": {
+          "B17001_002E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Population below poverty level",
+      "label_assertions": {
+        "B17001_002E": "below poverty level:"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "poverty-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B17001.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Population for whom poverty status is determined",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "02.08",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B17021_001E": 1
+        },
+        "numerator": {
+          "B17021_002E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Population below poverty level · B17021",
+      "label_assertions": {},
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "B17021 is an explicit alternative table including BG. Never silently relabel B17021 as B17001; retain table identity."
+      ],
+      "metric_id": "poverty-share-b17021",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B17021.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Population for whom poverty status is determined",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "households"
+      ],
+      "catalog_field_id": "02.09",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B19001_001E": 1
+        },
+        "numerator": {
+          "B19001_017E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Households with income $200,000 or more",
+      "label_assertions": {
+        "B19001_017E": "$200,000 or more"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "households-income-200k-plus-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "households",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B19001.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Households",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "index_us_100"
+      ],
+      "catalog_field_id": "02.10",
+      "display_unit": "index · US = 100",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "02.10": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "All-items regional price parity",
+      "limitations": [
+        "Use SARPP LineCode 1; MARPP metro series and MAIRPD deflator are distinct. Index base is the US price level in the same year."
+      ],
+      "metric_id": "regional-price-parity",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state",
+        "nation"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "index_us_100",
+      "source": "bea_rpp",
+      "source_releases": [
+        "BEA-SARPP-2024",
+        "BEA-SARPP-2024-release-2026-02-19"
+      ],
+      "source_urls": [
+        "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "index",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Regional prices relative to the national price level",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "03.01",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B15003_001E": 1
+        },
+        "numerator": {
+          "B15003_022E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Bachelor’s degree as highest attainment · age 25+",
+      "label_assertions": {
+        "B15003_022E": "Bachelor's degree"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "metric_id": "bachelors-degree-exact-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B15003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Population 25 years and over",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "03.02",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B15003_001E": 1
+        },
+        "numerator": {
+          "B15003_023E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Master’s degree as highest attainment · age 25+",
+      "label_assertions": {
+        "B15003_023E": "Master's degree"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "metric_id": "masters-degree-exact-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B15003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Population 25 years and over",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "03.03",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B15003_001E": 1
+        },
+        "numerator": {
+          "B15003_025E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Doctorate as highest attainment · age 25+",
+      "label_assertions": {
+        "B15003_025E": "Doctorate degree"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "metric_id": "doctorate-exact-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B15003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Population 25 years and over",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "03.04",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B15003_001E": 1
+        },
+        "numerator": {
+          "B15003_017E": 1,
+          "B15003_018E": 1,
+          "B15003_019E": 1,
+          "B15003_020E": 1,
+          "B15003_021E": 1,
+          "B15003_022E": 1,
+          "B15003_023E": 1,
+          "B15003_024E": 1,
+          "B15003_025E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "High school diploma or higher · age 25+",
+      "label_assertions": {
+        "B15003_017E": "Regular high school diploma",
+        "B15003_018E": "GED"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Includes regular diploma, GED/alternative credential, and all higher attainment groups."
+      ],
+      "metric_id": "high-school-or-higher-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B15003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Population 25 years and over",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "persons"
+      ],
+      "catalog_field_id": "03.05",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B15003_001E": 1
+        },
+        "numerator": {
+          "B15003_002E": 1,
+          "B15003_003E": 1,
+          "B15003_004E": 1,
+          "B15003_005E": 1,
+          "B15003_006E": 1,
+          "B15003_007E": 1,
+          "B15003_008E": 1,
+          "B15003_009E": 1,
+          "B15003_010E": 1,
+          "B15003_011E": 1,
+          "B15003_012E": 1,
+          "B15003_013E": 1,
+          "B15003_014E": 1,
+          "B15003_015E": 1,
+          "B15003_016E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "No high school diploma · age 25+",
+      "label_assertions": {
+        "B15003_002E": "No schooling completed",
+        "B15003_016E": "12th grade, no diploma"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "no-high-school-diploma-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "persons",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B15003.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Population 25 years and over",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "persons"
+      ],
+      "catalog_field_id": "03.06",
+      "display_unit": "persons",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "03.06:labor_force": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Civilian labor force",
+      "limitations": [
+        "State LASST series are seasonally adjusted; county LAUCN series are unadjusted. Aggregate only compatible adjustment regimes."
+      ],
+      "metric_id": "labor_force_count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state",
+        "county"
+      ],
+      "period": null,
+      "period_type": "monthly",
+      "raw_component_unit": "persons",
+      "source": "bls_laus",
+      "source_releases": [
+        "BLS-LAUS-2024"
+      ],
+      "source_urls": [
+        "https://www.bls.gov/lau/lauseas.htm"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Civilian labor force age 16+",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "%"
+      ],
+      "catalog_field_id": "03.06",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "03.06:unemployment_rate": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Unemployment rate",
+      "limitations": [
+        "State LASST series are seasonally adjusted; county LAUCN series are unadjusted. Do not compare or pool adjustment regimes.",
+        "Published one-decimal rates can differ from ratios calculated from published counts. National state-count aggregates are calculated values, not official CPS national estimates."
+      ],
+      "metric_id": "unemployment-rate",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state",
+        "county"
+      ],
+      "period": null,
+      "period_type": "monthly",
+      "raw_component_unit": "%",
+      "source": "bls_laus",
+      "source_releases": [
+        "BLS-LAUS-2024"
+      ],
+      "source_urls": [
+        "https://www.bls.gov/lau/lauseas.htm",
+        "https://www.bls.gov/lau/data-overview.htm"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "share",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Civilian labor force age 16+",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "persons"
+      ],
+      "catalog_field_id": "03.06",
+      "display_unit": "persons",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "03.06:unemployment": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Unemployed people",
+      "limitations": [
+        "State LASST series are seasonally adjusted; county LAUCN series are unadjusted. Aggregate only compatible adjustment regimes."
+      ],
+      "metric_id": "unemployment_count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state",
+        "county"
+      ],
+      "period": null,
+      "period_type": "monthly",
+      "raw_component_unit": "persons",
+      "source": "bls_laus",
+      "source_releases": [
+        "BLS-LAUS-2024"
+      ],
+      "source_urls": [
+        "https://www.bls.gov/lau/lauseas.htm"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Civilian labor force age 16+",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "source_defined",
+        "workers"
+      ],
+      "catalog_field_id": "03.09",
+      "display_unit": "%",
+      "formula": {
+        "denominator": {
+          "B08301_001E": 1
+        },
+        "numerator": {
+          "B08301_021E": 1
+        },
+        "operation": "share",
+        "scale": 100
+      },
+      "geography_evidence": "research/2026-09-29/coverage-audit/coverage.json; table-specific source collection, not numeric coverage",
+      "label": "Worked from home · workers age 16+",
+      "label_assertions": {
+        "B08301_021E": "Worked from home"
+      },
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "metric_id": "worked-from-home-share",
+      "nation_calculation": "Use native nation components from the same ACS five-year release; apply this formula once.",
+      "native_geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "period": "2024",
+      "period_type": "five_year_period_estimate",
+      "raw_component_unit": "workers",
+      "reference_period": "2020–2024",
+      "source": "census_acs",
+      "source_releases": [
+        "2024-acs-acs5"
+      ],
+      "source_urls": [
+        "https://api.census.gov/data/2024/acs/acs5/groups/B08301.json",
+        "https://www.census.gov/programs-surveys/acs/guidance/estimates.html",
+        "https://www.census.gov/content/dam/Census/library/publications/2020/acs/acs_general_handbook_2020.pdf"
+      ],
+      "state_calculation": "Use native components for the state; apply this formula once.",
+      "statistic": "share",
+      "uncertainty": "Published ACS 90% MOEs; component sums and ratios use documented approximations. Missing/sentinel MOEs remain unknown.",
+      "universe": "Workers 16 years and over",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "count"
+      ],
+      "catalog_field_id": "04.01",
+      "display_unit": "events",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "04.01": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Murders",
+      "limitations": [
+        "Annual summed source monthly actuals are reported counts with participation limits, not necessarily complete incidence estimates.",
+        "A rate per 100,000 requires matched-year covered-population evidence and matching reporting scope. ACS 2020–2024 population is not silently used for 2023 crimes.",
+        "National totals require official national source or verified coverage; do not assume state sums equal official estimates."
+      ],
+      "metric_id": "murder-count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "count",
+      "source": "fbi_cde",
+      "source_releases": [
+        "FBI-CDE-2019-2023"
+      ],
+      "source_urls": [
+        "https://cde.ucr.cjis.gov/",
+        "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/tables/table-1"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Offenses reported by participating law enforcement agencies",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "count"
+      ],
+      "catalog_field_id": "04.02",
+      "display_unit": "events",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "04.02": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Violent crime",
+      "limitations": [
+        "Annual summed source monthly actuals are reported counts with participation limits, not necessarily complete incidence estimates.",
+        "A rate per 100,000 requires matched-year covered-population evidence and matching reporting scope. ACS 2020–2024 population is not silently used for 2023 crimes.",
+        "National totals require official national source or verified coverage; do not assume state sums equal official estimates."
+      ],
+      "metric_id": "violent-crime-count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "count",
+      "source": "fbi_cde",
+      "source_releases": [
+        "FBI-CDE-2019-2023"
+      ],
+      "source_urls": [
+        "https://cde.ucr.cjis.gov/",
+        "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/tables/table-1"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Offenses reported by participating law enforcement agencies",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "count"
+      ],
+      "catalog_field_id": "04.03",
+      "display_unit": "events",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "04.03": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Robbery",
+      "limitations": [
+        "Annual summed source monthly actuals are reported counts with participation limits, not necessarily complete incidence estimates.",
+        "A rate per 100,000 requires matched-year covered-population evidence and matching reporting scope. ACS 2020–2024 population is not silently used for 2023 crimes.",
+        "National totals require official national source or verified coverage; do not assume state sums equal official estimates."
+      ],
+      "metric_id": "robbery-count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "count",
+      "source": "fbi_cde",
+      "source_releases": [
+        "FBI-CDE-2019-2023"
+      ],
+      "source_urls": [
+        "https://cde.ucr.cjis.gov/",
+        "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/tables/table-1"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Offenses reported by participating law enforcement agencies",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "count"
+      ],
+      "catalog_field_id": "04.04",
+      "display_unit": "events",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "04.04": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Aggravated assault",
+      "limitations": [
+        "Annual summed source monthly actuals are reported counts with participation limits, not necessarily complete incidence estimates.",
+        "A rate per 100,000 requires matched-year covered-population evidence and matching reporting scope. ACS 2020–2024 population is not silently used for 2023 crimes.",
+        "National totals require official national source or verified coverage; do not assume state sums equal official estimates."
+      ],
+      "metric_id": "aggravated-assault-count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "count",
+      "source": "fbi_cde",
+      "source_releases": [
+        "FBI-CDE-2019-2023"
+      ],
+      "source_urls": [
+        "https://cde.ucr.cjis.gov/",
+        "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/tables/table-1"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Offenses reported by participating law enforcement agencies",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "count"
+      ],
+      "catalog_field_id": "04.05",
+      "display_unit": "events",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "04.05": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Burglary",
+      "limitations": [
+        "Annual summed source monthly actuals are reported counts with participation limits, not necessarily complete incidence estimates.",
+        "A rate per 100,000 requires matched-year covered-population evidence and matching reporting scope. ACS 2020–2024 population is not silently used for 2023 crimes.",
+        "National totals require official national source or verified coverage; do not assume state sums equal official estimates."
+      ],
+      "metric_id": "burglary-count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "count",
+      "source": "fbi_cde",
+      "source_releases": [
+        "FBI-CDE-2019-2023"
+      ],
+      "source_urls": [
+        "https://cde.ucr.cjis.gov/",
+        "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/tables/table-1"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Offenses reported by participating law enforcement agencies",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "count"
+      ],
+      "catalog_field_id": "04.06",
+      "display_unit": "events",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "04.06": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Motor vehicle theft",
+      "limitations": [
+        "Annual summed source monthly actuals are reported counts with participation limits, not necessarily complete incidence estimates.",
+        "A rate per 100,000 requires matched-year covered-population evidence and matching reporting scope. ACS 2020–2024 population is not silently used for 2023 crimes.",
+        "National totals require official national source or verified coverage; do not assume state sums equal official estimates."
+      ],
+      "metric_id": "motor-vehicle-theft-count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "count",
+      "source": "fbi_cde",
+      "source_releases": [
+        "FBI-CDE-2019-2023"
+      ],
+      "source_urls": [
+        "https://cde.ucr.cjis.gov/",
+        "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/tables/table-1"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Offenses reported by participating law enforcement agencies",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "count"
+      ],
+      "catalog_field_id": "04.07",
+      "display_unit": "events",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "04.07": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Rape",
+      "limitations": [
+        "Annual summed source monthly actuals are reported counts with participation limits, not necessarily complete incidence estimates.",
+        "A rate per 100,000 requires matched-year covered-population evidence and matching reporting scope. ACS 2020–2024 population is not silently used for 2023 crimes.",
+        "National totals require official national source or verified coverage; do not assume state sums equal official estimates."
+      ],
+      "metric_id": "rape-count",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "count",
+      "source": "fbi_cde",
+      "source_releases": [
+        "FBI-CDE-2019-2023"
+      ],
+      "source_urls": [
+        "https://cde.ucr.cjis.gov/",
+        "https://ucr.fbi.gov/crime-in-the-u.s/2019/crime-in-the-u.s.-2019/topic-pages/tables/table-1"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "count",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Offenses reported by participating law enforcement agencies",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "thousand_USD"
+      ],
+      "catalog_field_id": "07.01",
+      "display_unit": "USD",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "07.01:A00100:county_sum_agi_stubs_1_8": 1
+        },
+        "operation": "identity",
+        "scale": 1000
+      },
+      "label": "Adjusted gross income · county total",
+      "limitations": [
+        "Sum disjoint AGI stubs 1–8 once. County FIPS 000 is a state total and is never a county.",
+        "The selected county series has no state row. Validated derived state totals retain a separate identity and do not overwrite county observations.",
+        "Amount is in thousands of dollars. No per-return result without a separately validated return-count variable; N1 is not automatically N00100."
+      ],
+      "metric_id": "agi-county-total",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "county"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "provenance_kind": "derived",
+      "raw_component_unit": "thousand_USD",
+      "source": "irs_soi",
+      "source_releases": [
+        "IRS-SOI-COUNTY-2023"
+      ],
+      "source_urls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-county-data",
+        "https://www.irs.gov/pub/irs-soi/23incyallagi.csv"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "amount",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Individual income tax returns represented in IRS county tables",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "thousand_USD"
+      ],
+      "catalog_field_id": "07.01",
+      "display_unit": "thousand_USD",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "07.01:A00100:county_sum_agi_stubs_1_8": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Published county AGI · source thousands of USD",
+      "limitations": [
+        "Sum disjoint AGI stubs 1–8 once. County FIPS 000 is a state total and is never a county.",
+        "The selected county series has no state row. Validated derived state totals retain a separate identity and do not overwrite county observations.",
+        "Amount is in thousands of dollars. No per-return result without a separately validated return-count variable; N1 is not automatically N00100."
+      ],
+      "metric_id": "published_total_agi",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "county"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "provenance_kind": "derived",
+      "raw_component_unit": "thousand_USD",
+      "source": "irs_soi",
+      "source_releases": [
+        "IRS-SOI-COUNTY-2023"
+      ],
+      "source_urls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-county-data",
+        "https://www.irs.gov/pub/irs-soi/23incyallagi.csv"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "amount",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Individual income tax returns represented in IRS county tables",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "cents per kilowatt-hour"
+      ],
+      "catalog_field_id": "08.05",
+      "display_unit": "USD/kWh",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "08.05:sector_ALL": 1
+        },
+        "operation": "identity",
+        "scale": 0.01
+      },
+      "label": "Average electricity retail price · all sectors",
+      "limitations": [
+        "Source price is cents/kWh. Residential sector RES is a separate series; rates must not be averaged across states without sales weights."
+      ],
+      "metric_id": "electricity-price-all-sectors",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "state",
+        "nation"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "cents per kilowatt-hour",
+      "source": "eia",
+      "source_releases": [
+        "EIA-electricity-retail-sales-2024"
+      ],
+      "source_urls": [
+        "https://www.eia.gov/electricity/data.php",
+        "https://www.eia.gov/electricity/sales_revenue_price/"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "mean",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "Electricity retail sales · all sectors",
+      "version": 1
+    },
+    {
+      "accepted_input_units": [
+        "facilities_per_1000_persons",
+        "source_defined"
+      ],
+      "catalog_field_id": "09.04",
+      "display_unit": "facilities/1,000 people",
+      "formula": {
+        "denominator": {},
+        "numerator": {
+          "09.04": 1
+        },
+        "operation": "identity",
+        "scale": 1
+      },
+      "label": "Recreation and fitness facilities per 1,000 residents",
+      "limitations": [
+        "RECFACPTH20 is facilities per 1,000 population, not per 10,000 and not a percentage.",
+        "The provider publishes county density; a stored state value needs its own aggregation-method evidence. Do not sum county densities.",
+        "Observation year is 2020, distinct from the 2025 atlas release. Suppressed establishments and historical county-boundary changes can limit coverage."
+      ],
+      "metric_id": "fitness-facilities-density",
+      "nation_calculation": "Use a compatible official national observation if available; follow separate aggregate policy otherwise.",
+      "native_geographies": [
+        "county"
+      ],
+      "period": null,
+      "period_type": "annual",
+      "raw_component_unit": "facilities_per_1000_persons",
+      "source": "usda_fea",
+      "source_releases": [
+        "USDA-FEA-2025"
+      ],
+      "source_urls": [
+        "https://www.ers.usda.gov/data-products/food-environment-atlas/documentation/"
+      ],
+      "state_calculation": "Use the exact published or admitted state series when available.",
+      "statistic": "density",
+      "uncertainty": "No sampling interval supplied by this scalar series; missing uncertainty is not zero uncertainty.",
+      "universe": "NAICS 713940 recreation and fitness establishments per population",
+      "version": 1
+    }
+  ],
+  "format": "usa_atlas_map_metric_definitions_v1",
+  "purpose": "Opt-in checked consumer definitions; source observations and ingestion pins remain unchanged.",
+  "version": 1
+}

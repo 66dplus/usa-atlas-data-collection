@@ -45,3 +45,27 @@ Generated data:
 
 The contract intentionally leaves blocked, undefined and unlicensed fields visible.
 `BLOCKED` and `NOT_RUN` do not count as passing data.
+
+## Checked map consumer definitions
+
+`map_metrics.py` is an opt-in read-only calculation layer for map statistics.
+It preserves source observations and the existing ingestion contract, validates
+exact source variables and metadata, and returns separate derived values with
+raw components and uncertainty. `map-metric-definitions.json` contains versioned
+definitions and explicit display conversions; it does not change UI defaults.
+
+The [35-field registry and Oregon/US examples](../research/2026-10-11/map-metrics/README.md)
+bind the October runtime source hashes to bounded read-only PROD evidence. Build
+and check these frozen review artifacts from this repository's root:
+
+```bash
+python3 full/build_map_metric_definitions.py
+python3 research/2026-10-11/map-metrics/build_registry.py
+python3 -m unittest discover -s full -p test_map_metrics.py
+```
+
+Broad category choices and compatible crime-rate denominators remain explicit
+product/input gaps. Geographic presence is specific to each selected subseries;
+unknown presence is not a zero count. `comparison_record()` supplies the scalar
+contract for `database.map_quality.MetricObservation` after the caller explicitly
+binds geography vintage and seasonal adjustment.

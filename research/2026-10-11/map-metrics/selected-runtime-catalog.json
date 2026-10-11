@@ -1,0 +1,1035 @@
+{
+  "catalog_captured_at": "2026-10-11T14:06:21.637292+00:00",
+  "catalog_payload_sha256": "3ca13efed80ed2a921e400f714baef7a3b7b01441fb2a8c8738d16ae0b95f98c",
+  "catalog_source": "Current deployed read-only Atlas HTTP API; later medical38 additions excluded by frozen visibility mask.",
+  "format": "usa_atlas_fixed35_current_catalog_selection_v1",
+  "runtime_baseline": "20261011-collected35",
+  "selected_metrics": [
+    {
+      "availability": "loaded",
+      "catalogId": "01.01",
+      "category": "Demographics & migration",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "01.01:B01003_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "population",
+      "name": "Total Population · Estimate · Total",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "01.02",
+      "category": "Demographics & migration",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "01.02:B01001_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "age",
+      "name": "Sex by Age · Estimate · Total:",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "01.03",
+      "category": "Demographics & migration",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "01.03:B01001_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "sex",
+      "name": "Sex by Age · Estimate · Total:",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "01.04",
+      "category": "Demographics & migration",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "01.04:B03002_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "race-ethnicity",
+      "name": "Hispanic or Latino Origin by Race · Estimate · Total:",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "01.05",
+      "category": "Demographics & migration",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "01.05:B05002_001E",
+      "geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "foreign-born-population",
+      "name": "Place of Birth by Nativity and Citizenship Status · Estimate · Total:",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "01.06",
+      "category": "Demographics & migration",
+      "countySupported": true,
+      "coverage": "Varies; strong at larger geographies",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "01.06:B05006_001E",
+      "geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "country-region-of-birth",
+      "name": "Place of Birth for the Foreign-Born Population in the United States · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "01.07",
+      "category": "Demographics & migration",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "01.07:B05001_001E",
+      "geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "citizenship",
+      "name": "Nativity and Citizenship Status in the United States · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "01.08",
+      "category": "Demographics & migration",
+      "countySupported": true,
+      "coverage": "Varies by table/geography",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "01.08:B05005_001E",
+      "geographies": [
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "year-period-of-immigration",
+      "name": "Period of Entry by Nativity and Citizenship Status in the United States · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.01",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.01:B19013_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "median-household-income",
+      "name": "Median Household Income in the Past 12 Months (in 2024 Inflation-Adjusted Dollars) · Estimate · Median household income in the past 12 months (in 2024 inflation-adjusted dollars)",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.02",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.02:B19301_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "per-capita-income",
+      "name": "Per Capita Income in the Past 12 Months (in 2024 Inflation-Adjusted Dollars) · Estimate · Per capita income in the past 12 months (in 2024 inflation-adjusted dollars)",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.03",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.03:B25064_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "median-rent",
+      "name": "Median Gross Rent (Dollars) · Estimate · Median gross rent",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.04",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.04:B25077_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "median-home-value",
+      "name": "Median Value (Dollars) · Estimate · Median value (dollars)",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.05",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.05:B25088_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "mortgage-selected-monthly-owner-costs",
+      "name": "Median Selected Monthly Owner Costs (Dollars) by Mortgage Status · Estimate · Median selected monthly owner costs (dollars) -- · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.06",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.06:B25070_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "rent-as-of-income-rent-burden",
+      "name": "Gross Rent as a Percentage of Household Income in the Past 12 Months · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.07",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.07:B25003_002E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "owner-renter-ratio",
+      "name": "Tenure · Estimate · Total · Owner occupied",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.08",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.08:B17001_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "poverty",
+      "name": "Poverty Status in the Past 12 Months by Sex by Age · Estimate · Total:",
+      "note": "Official; core",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.09",
+      "category": "Income, housing & affordability",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.09:B19001_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "households-earning-200k",
+      "name": "Household Income in the Past 12 Months (in 2024 Inflation-Adjusted Dollars) · Estimate · Total:",
+      "note": "Official; derive share",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "02.10",
+      "category": "Income, housing & affordability",
+      "countySupported": false,
+      "coverage": "State / metro",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "02.10",
+      "geographies": [
+        "metro",
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "cost-of-living-regional-price-parities",
+      "name": "Cost of living / Regional Price Parities",
+      "note": "Official; annual",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Money & homes",
+      "source": "BEA RPP",
+      "sourceUrl": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area",
+      "sourceUrls": [
+        "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "03.01",
+      "category": "Education & work",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "03.01:B15003_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "bachelors-degree",
+      "name": "Educational Attainment for the Population 25 Years and Over · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "03.02",
+      "category": "Education & work",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "03.02:B15003_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "masters-degree",
+      "name": "Educational Attainment for the Population 25 Years and Over · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "03.03",
+      "category": "Education & work",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "03.03:B15003_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "doctorate",
+      "name": "Educational Attainment for the Population 25 Years and Over · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "03.04",
+      "category": "Education & work",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "03.04:B15003_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "high-school-attainment",
+      "name": "Educational Attainment for the Population 25 Years and Over · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "03.05",
+      "category": "Education & work",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "03.05:B15003_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "no-diploma",
+      "name": "Educational Attainment for the Population 25 Years and Over · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "03.06",
+      "category": "Education & work",
+      "countySupported": true,
+      "coverage": "State / metro / county / local areas",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "03.06:unemployment_rate",
+      "geographies": [
+        "block_group",
+        "county",
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "unemployment",
+      "name": "Unemployment rate",
+      "note": "Official; use LAUS for unemployment",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Work & education",
+      "source": "BLS OEWS / LAUS",
+      "sourceUrl": "https://www.bls.gov/oes/",
+      "sourceUrls": [
+        "https://www.bls.gov/oes/",
+        "https://www.bls.gov/lau/"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "03.09",
+      "category": "Education & work",
+      "countySupported": true,
+      "coverage": "State / county / place / tract",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "03.09:B08301_001E",
+      "geographies": [
+        "block_group",
+        "county",
+        "nation",
+        "place",
+        "state",
+        "tract"
+      ],
+      "hasObservations": true,
+      "id": "work-from-home-share",
+      "name": "Means of Transportation to Work · Estimate · Total:",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "04.01",
+      "category": "Crime & safety",
+      "countySupported": false,
+      "coverage": "State / agency; local coverage varies",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "04.01",
+      "geographies": [
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "murders",
+      "name": "Murders",
+      "note": "Official UCR",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "04.02",
+      "category": "Crime & safety",
+      "countySupported": false,
+      "coverage": "State / agency; local coverage varies",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "04.02",
+      "geographies": [
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "violent-crime",
+      "name": "Violent crime",
+      "note": "Official UCR",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "04.03",
+      "category": "Crime & safety",
+      "countySupported": false,
+      "coverage": "State / agency",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "04.03",
+      "geographies": [
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "robbery",
+      "name": "Robbery",
+      "note": "Official UCR",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "04.04",
+      "category": "Crime & safety",
+      "countySupported": false,
+      "coverage": "State / agency",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "04.04",
+      "geographies": [
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "aggravated-assault",
+      "name": "Aggravated assault",
+      "note": "Official UCR",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "04.05",
+      "category": "Crime & safety",
+      "countySupported": false,
+      "coverage": "State / agency",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "04.05",
+      "geographies": [
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "burglary",
+      "name": "Burglary",
+      "note": "Official UCR",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "04.06",
+      "category": "Crime & safety",
+      "countySupported": false,
+      "coverage": "State / agency",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "04.06",
+      "geographies": [
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "motor-vehicle-theft",
+      "name": "Motor vehicle theft",
+      "note": "Official UCR",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "04.07",
+      "category": "Crime & safety",
+      "countySupported": false,
+      "coverage": "State / agency",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "04.07",
+      "geographies": [
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "rape",
+      "name": "Rape",
+      "note": "Official UCR; definitions/coverage matter",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "07.01",
+      "category": "Taxes & wealth",
+      "countySupported": true,
+      "coverage": "ZIP / county / state / district",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "07.01:A00100:county_sum_agi_stubs_1_8",
+      "geographies": [
+        "county",
+        "zip"
+      ],
+      "hasObservations": true,
+      "id": "adjusted-gross-income-agi",
+      "name": "Adjusted Gross Income (AGI) · A00100:county sum agi stubs 1 8",
+      "note": "Official tax-return aggregates",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Taxes & wealth",
+      "source": "IRS SOI",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area",
+      "sourceUrls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area"
+      ],
+      "stateSupported": false,
+      "unitHint": "Currency"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "08.05",
+      "category": "Prices & consumer life",
+      "countySupported": false,
+      "coverage": "State / utility / sector",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "08.05:sector_ALL",
+      "geographies": [
+        "state"
+      ],
+      "hasObservations": true,
+      "id": "electricity-price",
+      "name": "Electricity price · All sectors",
+      "note": "Official",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Everyday prices",
+      "source": "EIA Electricity",
+      "sourceUrl": "https://www.eia.gov/electricity/data.php",
+      "sourceUrls": [
+        "https://www.eia.gov/electricity/data.php"
+      ],
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "availability": "loaded",
+      "catalogId": "09.04",
+      "category": "Food environment, recreation & air",
+      "countySupported": true,
+      "coverage": "County",
+      "coverageNote": "Available from PostgreSQL; select a place for its observation.",
+      "fieldId": "09.04",
+      "geographies": [
+        "county"
+      ],
+      "hasObservations": true,
+      "id": "fitness-recreation-centers-per-capita",
+      "name": "Recreation & fitness facilities per 1,000 residents",
+      "note": "Official assembled dataset",
+      "observations": null,
+      "plannedState": "run_now",
+      "shortCategory": "Food & environment",
+      "source": "USDA Food Environment Atlas",
+      "sourceUrl": "https://www.ers.usda.gov/data-products/food-environment-atlas",
+      "sourceUrls": [
+        "https://www.ers.usda.gov/data-products/food-environment-atlas"
+      ],
+      "stateSupported": false,
+      "unitHint": "Per capita"
+    }
+  ]
+}

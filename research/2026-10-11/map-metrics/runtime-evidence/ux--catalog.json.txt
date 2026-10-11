@@ -1,0 +1,1367 @@
+{
+  "source": "us_map_statistics_catalog.docx",
+  "metricTables": 9,
+  "metrics": [
+    {
+      "id": "population",
+      "name": "Population",
+      "category": "Demographics & migration",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "age",
+      "name": "Age",
+      "category": "Demographics & migration",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "sex",
+      "name": "Sex",
+      "category": "Demographics & migration",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "race-ethnicity",
+      "name": "Race / ethnicity",
+      "category": "Demographics & migration",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "foreign-born-population",
+      "name": "Foreign-born population",
+      "category": "Demographics & migration",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "country-region-of-birth",
+      "name": "Country / region of birth",
+      "category": "Demographics & migration",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "Varies; strong at larger geographies",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "citizenship",
+      "name": "Citizenship",
+      "category": "Demographics & migration",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "year-period-of-immigration",
+      "name": "Year / period of immigration",
+      "category": "Demographics & migration",
+      "shortCategory": "People",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "Varies by table/geography",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "median-household-income",
+      "name": "Median household income",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "id": "per-capita-income",
+      "name": "Per-capita income",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "id": "median-rent",
+      "name": "Median rent",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "id": "median-home-value",
+      "name": "Median home value",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "id": "mortgage-selected-monthly-owner-costs",
+      "name": "Mortgage / selected monthly owner costs",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "rent-as-of-income-rent-burden",
+      "name": "Rent as % of income / rent burden",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "id": "owner-renter-ratio",
+      "name": "Owner / renter ratio",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "poverty",
+      "name": "Poverty",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; core",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "households-earning-200k",
+      "name": "Households earning $200k+",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official; derive share",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "cost-of-living-regional-price-parities",
+      "name": "Cost of living / Regional Price Parities",
+      "category": "Income, housing & affordability",
+      "shortCategory": "Money & homes",
+      "source": "BEA RPP",
+      "sourceUrl": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area",
+      "sourceUrls": [
+        "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area"
+      ],
+      "coverage": "State / metro",
+      "note": "Official; annual",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "bachelors-degree",
+      "name": "Bachelor's degree",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "masters-degree",
+      "name": "Master's degree",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "doctorate",
+      "name": "Doctorate",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "id": "high-school-attainment",
+      "name": "High school attainment",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "no-diploma",
+      "name": "No diploma",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "unemployment",
+      "name": "Unemployment",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "BLS OEWS / LAUS",
+      "sourceUrl": "https://www.bls.gov/oes/",
+      "sourceUrls": [
+        "https://www.bls.gov/oes/",
+        "https://www.bls.gov/lau/"
+      ],
+      "coverage": "State / metro / county / local areas",
+      "note": "Official; use LAUS for unemployment",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "average-mean-salary",
+      "name": "Average / mean salary",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "BLS OEWS / LAUS",
+      "sourceUrl": "https://www.bls.gov/oes/",
+      "sourceUrls": [
+        "https://www.bls.gov/oes/",
+        "https://www.bls.gov/lau/"
+      ],
+      "coverage": "State / metro / nonmetro",
+      "note": "Official; OEWS",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "id": "employment-growth",
+      "name": "Employment growth",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "BLS OEWS / LAUS",
+      "sourceUrl": "https://www.bls.gov/oes/",
+      "sourceUrls": [
+        "https://www.bls.gov/oes/",
+        "https://www.bls.gov/lau/"
+      ],
+      "coverage": "State / metro / county depending series",
+      "note": "Official; choose exact employment series",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "work-from-home-share",
+      "name": "Work from home share",
+      "category": "Education & work",
+      "shortCategory": "Work & education",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "sourceUrls": [
+        "https://www.census.gov/data/developers/data-sets/acs-5year.html"
+      ],
+      "coverage": "State / county / place / tract",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "id": "murders",
+      "name": "Murders",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "coverage": "State / agency; local coverage varies",
+      "note": "Official UCR",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "violent-crime",
+      "name": "Violent crime",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "coverage": "State / agency; local coverage varies",
+      "note": "Official UCR",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "robbery",
+      "name": "Robbery",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "coverage": "State / agency",
+      "note": "Official UCR",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "aggravated-assault",
+      "name": "Aggravated assault",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "coverage": "State / agency",
+      "note": "Official UCR",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "burglary",
+      "name": "Burglary",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "coverage": "State / agency",
+      "note": "Official UCR",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "motor-vehicle-theft",
+      "name": "Motor vehicle theft",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "coverage": "State / agency",
+      "note": "Official UCR",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "rape",
+      "name": "Rape",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "coverage": "State / agency",
+      "note": "Official UCR; definitions/coverage matter",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "homicide",
+      "name": "Homicide",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE / CDC WONDER",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/",
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "Agency or county",
+      "note": "FBI for crime reports; CDC for mortality",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "crime-trends",
+      "name": "Crime trends",
+      "category": "Crime & safety",
+      "shortCategory": "Safety",
+      "source": "FBI CDE",
+      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "sourceUrls": [
+        "https://cde.ucr.cjis.gov/"
+      ],
+      "coverage": "State / agency / time series",
+      "note": "Official; keep coverage metadata",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "drug-overdose-deaths",
+      "name": "Drug overdose deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Official; counts + age-adjusted rate",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "opioid-deaths",
+      "name": "Opioid deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "ICD-10 based",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "fentanyl-synthetic-opioid-deaths",
+      "name": "Fentanyl / synthetic opioid deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Use multiple-cause codes where appropriate",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "cocaine-deaths",
+      "name": "Cocaine deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Use multiple-cause codes",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "methamphetamine-psychostimulant-deaths",
+      "name": "Methamphetamine / psychostimulant deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Use multiple-cause codes",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "heroin-deaths",
+      "name": "Heroin deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Use multiple-cause codes",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "alcohol-related-deaths",
+      "name": "Alcohol-related deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Define metric precisely",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "suicide",
+      "name": "Suicide",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Official mortality",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "homicide-mortality",
+      "name": "Homicide mortality",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Official mortality",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "heart-disease-deaths",
+      "name": "Heart disease deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Official mortality",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "cancer-deaths",
+      "name": "Cancer deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Official mortality",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "accidental-deaths",
+      "name": "Accidental deaths",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC WONDER",
+      "sourceUrl": "https://wonder.cdc.gov/",
+      "sourceUrls": [
+        "https://wonder.cdc.gov/"
+      ],
+      "coverage": "State / county",
+      "note": "Official mortality",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "life-expectancy-related-indicators",
+      "name": "Life-expectancy-related indicators",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC / NCHS datasets",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "County / state depending dataset",
+      "note": "May require separate life expectancy dataset",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "obesity-rate",
+      "name": "Obesity rate",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC PLACES",
+      "sourceUrl": "https://www.cdc.gov/places/",
+      "sourceUrls": [
+        "https://www.cdc.gov/places/"
+      ],
+      "coverage": "County / place / tract / ZCTA",
+      "note": "Model-based local estimate",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "id": "diabetes-rate",
+      "name": "Diabetes rate",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC PLACES",
+      "sourceUrl": "https://www.cdc.gov/places/",
+      "sourceUrls": [
+        "https://www.cdc.gov/places/"
+      ],
+      "coverage": "County / place / tract / ZCTA",
+      "note": "Model-based local estimate",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "id": "physical-inactivity-rate",
+      "name": "Physical inactivity rate",
+      "category": "Mortality, drugs & health",
+      "shortCategory": "Health",
+      "source": "CDC PLACES",
+      "sourceUrl": "https://www.cdc.gov/places/",
+      "sourceUrls": [
+        "https://www.cdc.gov/places/"
+      ],
+      "coverage": "County / place / tract / ZCTA",
+      "note": "Model-based local estimate",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Source-defined rate"
+    },
+    {
+      "id": "total-homeless",
+      "name": "Total homeless",
+      "category": "Homelessness",
+      "shortCategory": "Homelessness",
+      "source": "HUD AHAR/PIT",
+      "sourceUrl": "https://www.huduser.gov/portal/datasets/ahar.html",
+      "sourceUrls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "coverage": "State / Continuum of Care",
+      "note": "Point-in-Time estimate",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "sheltered-homeless",
+      "name": "Sheltered homeless",
+      "category": "Homelessness",
+      "shortCategory": "Homelessness",
+      "source": "HUD AHAR/PIT",
+      "sourceUrl": "https://www.huduser.gov/portal/datasets/ahar.html",
+      "sourceUrls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "coverage": "State / CoC",
+      "note": "Point-in-Time estimate",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "unsheltered-homeless",
+      "name": "Unsheltered homeless",
+      "category": "Homelessness",
+      "shortCategory": "Homelessness",
+      "source": "HUD AHAR/PIT",
+      "sourceUrl": "https://www.huduser.gov/portal/datasets/ahar.html",
+      "sourceUrls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "coverage": "State / CoC",
+      "note": "Point-in-Time estimate",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "homeless-veterans",
+      "name": "Homeless veterans",
+      "category": "Homelessness",
+      "shortCategory": "Homelessness",
+      "source": "HUD AHAR/PIT",
+      "sourceUrl": "https://www.huduser.gov/portal/datasets/ahar.html",
+      "sourceUrls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "coverage": "State / CoC",
+      "note": "Point-in-Time estimate",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "homeless-families",
+      "name": "Homeless families",
+      "category": "Homelessness",
+      "shortCategory": "Homelessness",
+      "source": "HUD AHAR/PIT",
+      "sourceUrl": "https://www.huduser.gov/portal/datasets/ahar.html",
+      "sourceUrls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "coverage": "State / CoC",
+      "note": "Use relevant household/subpopulation fields",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "chronically-homeless",
+      "name": "Chronically homeless",
+      "category": "Homelessness",
+      "shortCategory": "Homelessness",
+      "source": "HUD AHAR/PIT",
+      "sourceUrl": "https://www.huduser.gov/portal/datasets/ahar.html",
+      "sourceUrls": [
+        "https://www.huduser.gov/portal/datasets/ahar.html"
+      ],
+      "coverage": "State / CoC",
+      "note": "Point-in-Time estimate",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "adjusted-gross-income-agi",
+      "name": "Adjusted Gross Income (AGI)",
+      "category": "Taxes & wealth",
+      "shortCategory": "Taxes & wealth",
+      "source": "IRS SOI",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area",
+      "sourceUrls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area"
+      ],
+      "coverage": "ZIP / county / state / district",
+      "note": "Official tax-return aggregates",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Currency"
+    },
+    {
+      "id": "high-income-taxpayers-returns",
+      "name": "High-income taxpayers / returns",
+      "category": "Taxes & wealth",
+      "shortCategory": "Taxes & wealth",
+      "source": "IRS SOI",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area",
+      "sourceUrls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area"
+      ],
+      "coverage": "ZIP / county / state depending table",
+      "note": "Official; threshold varies by table",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "capital-gains",
+      "name": "Capital gains",
+      "category": "Taxes & wealth",
+      "shortCategory": "Taxes & wealth",
+      "source": "IRS SOI",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area",
+      "sourceUrls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area"
+      ],
+      "coverage": "ZIP / county / state depending release",
+      "note": "Official tax aggregates",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "dividends",
+      "name": "Dividends",
+      "category": "Taxes & wealth",
+      "shortCategory": "Taxes & wealth",
+      "source": "IRS SOI",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area",
+      "sourceUrls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area"
+      ],
+      "coverage": "ZIP / county / state",
+      "note": "Official tax aggregates",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "taxes-income-tax-metrics",
+      "name": "Taxes / income tax metrics",
+      "category": "Taxes & wealth",
+      "shortCategory": "Taxes & wealth",
+      "source": "IRS SOI",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area",
+      "sourceUrls": [
+        "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area"
+      ],
+      "coverage": "ZIP / county / state",
+      "note": "Define exact metric",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "millionaires",
+      "name": "Millionaires",
+      "category": "Taxes & wealth",
+      "shortCategory": "Taxes & wealth",
+      "source": "Millionaire estimate source TBD",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "Usually state; granular counts often commercial",
+      "note": "Use proxy or licensed dataset",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "billionaires",
+      "name": "Billionaires",
+      "category": "Taxes & wealth",
+      "shortCategory": "Taxes & wealth",
+      "source": "Forbes Billionaires",
+      "sourceUrl": "https://www.forbes.com/real-time-billionaires/",
+      "sourceUrls": [
+        "https://www.forbes.com/real-time-billionaires/"
+      ],
+      "coverage": "Person / residence, then aggregate",
+      "note": "Private source; terms/licensing review",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "price-of-a-dozen-eggs",
+      "name": "Price of a dozen eggs",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "Retail / menu dataset",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "Store / city / metro; custom aggregation",
+      "note": "Fun layer; not cleanly available countywide from one official source",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "cup-of-coffee-price",
+      "name": "Cup of coffee price",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "Retail / menu dataset",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "Store / city / metro",
+      "note": "Fun layer",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "big-mac-mcdonalds-meal-price",
+      "name": "Big Mac / McDonald's meal price",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "Retail / menu dataset",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "Restaurant / city / metro",
+      "note": "Fun layer; terms/licensing review",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "gasoline-price",
+      "name": "Gasoline price",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "Retail / fuel price dataset",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "State / metro / station depending source",
+      "note": "Can use public energy/fuel sources; choose granularity",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "electricity-price",
+      "name": "Electricity price",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "EIA Electricity",
+      "sourceUrl": "https://www.eia.gov/electricity/data.php",
+      "sourceUrls": [
+        "https://www.eia.gov/electricity/data.php"
+      ],
+      "coverage": "State / utility / sector",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "beer-price",
+      "name": "Beer price",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "Retail / menu dataset",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "Store / city / metro",
+      "note": "Fun layer; alcohol-data licensing/source review",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "average-consumer-debt",
+      "name": "Average consumer debt",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "Consumer debt source TBD",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "Usually state / metro / ZIP-derived research",
+      "note": "Define debt type and geography",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "student-loan-debt",
+      "name": "Student loan debt",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "Consumer debt source TBD",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "Usually state / metro / ZIP-derived research",
+      "note": "Define balance vs delinquency",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "average-health-insurance-cost",
+      "name": "Average health insurance cost",
+      "category": "Prices & consumer life",
+      "shortCategory": "Everyday prices",
+      "source": "Health insurance source TBD",
+      "sourceUrl": null,
+      "sourceUrls": [],
+      "coverage": "State / market / employer plan",
+      "note": "Define premium/cost metric",
+      "availability": "unavailable",
+      "countySupported": false,
+      "stateSupported": true,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "fast-food-restaurants-per-10k-residents",
+      "name": "Fast-food restaurants per 10k residents",
+      "category": "Food environment, recreation & air",
+      "shortCategory": "Food & environment",
+      "source": "USDA Food Environment Atlas",
+      "sourceUrl": "https://www.ers.usda.gov/data-products/food-environment-atlas",
+      "sourceUrls": [
+        "https://www.ers.usda.gov/data-products/food-environment-atlas"
+      ],
+      "coverage": "County",
+      "note": "Official assembled dataset",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Per 10,000 residents"
+    },
+    {
+      "id": "access-to-a-grocery-store",
+      "name": "Access to a grocery store",
+      "category": "Food environment, recreation & air",
+      "shortCategory": "Food & environment",
+      "source": "USDA Food Environment Atlas",
+      "sourceUrl": "https://www.ers.usda.gov/data-products/food-environment-atlas",
+      "sourceUrls": [
+        "https://www.ers.usda.gov/data-products/food-environment-atlas"
+      ],
+      "coverage": "County; Food Access Atlas can go finer",
+      "note": "Official",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "farmers-markets-per-capita",
+      "name": "Farmers' markets per capita",
+      "category": "Food environment, recreation & air",
+      "shortCategory": "Food & environment",
+      "source": "USDA Food Environment Atlas",
+      "sourceUrl": "https://www.ers.usda.gov/data-products/food-environment-atlas",
+      "sourceUrls": [
+        "https://www.ers.usda.gov/data-products/food-environment-atlas"
+      ],
+      "coverage": "County",
+      "note": "Official assembled dataset",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Per capita"
+    },
+    {
+      "id": "fitness-recreation-centers-per-capita",
+      "name": "Fitness / recreation centers per capita",
+      "category": "Food environment, recreation & air",
+      "shortCategory": "Food & environment",
+      "source": "USDA Food Environment Atlas",
+      "sourceUrl": "https://www.ers.usda.gov/data-products/food-environment-atlas",
+      "sourceUrls": [
+        "https://www.ers.usda.gov/data-products/food-environment-atlas"
+      ],
+      "coverage": "County",
+      "note": "Official assembled dataset",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Per capita"
+    },
+    {
+      "id": "parks-recreation-facilities",
+      "name": "Parks / recreation facilities",
+      "category": "Food environment, recreation & air",
+      "shortCategory": "Food & environment",
+      "source": "USDA Food Environment Atlas",
+      "sourceUrl": "https://www.ers.usda.gov/data-products/food-environment-atlas",
+      "sourceUrls": [
+        "https://www.ers.usda.gov/data-products/food-environment-atlas"
+      ],
+      "coverage": "County / source-dependent",
+      "note": "Check exact Atlas variable definition",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "pm2-5",
+      "name": "PM2.5",
+      "category": "Food environment, recreation & air",
+      "shortCategory": "Food & environment",
+      "source": "EPA AirData",
+      "sourceUrl": "https://www.epa.gov/outdoor-air-quality-data",
+      "sourceUrls": [
+        "https://www.epa.gov/outdoor-air-quality-data"
+      ],
+      "coverage": "County / monitor / city",
+      "note": "Official monitoring data",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    },
+    {
+      "id": "ozone",
+      "name": "Ozone",
+      "category": "Food environment, recreation & air",
+      "shortCategory": "Food & environment",
+      "source": "EPA AirData",
+      "sourceUrl": "https://www.epa.gov/outdoor-air-quality-data",
+      "sourceUrls": [
+        "https://www.epa.gov/outdoor-air-quality-data"
+      ],
+      "coverage": "County / monitor / city",
+      "note": "Official monitoring data",
+      "availability": "demo",
+      "countySupported": true,
+      "stateSupported": false,
+      "unitHint": "Source-defined"
+    }
+  ]
+}

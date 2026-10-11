@@ -1,0 +1,953 @@
+{
+  "examples": [
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:rent-burden-30-plus-share:v1",
+      "definition_version": 1,
+      "denominator": 594861.0,
+      "field_id": "derived:02.06:rent-burden-30-plus-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "02.06:B25070_002E",
+        "02.06:B25070_003E",
+        "02.06:B25070_004E",
+        "02.06:B25070_005E",
+        "02.06:B25070_006E",
+        "02.06:B25070_007E",
+        "02.06:B25070_008E",
+        "02.06:B25070_009E",
+        "02.06:B25070_010E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Denominator excludes not-computed income ratios. Sum of bins 002–010 equals total 001 minus not-computed 011; neither total nor bin 007 alone is rent burden.",
+        "MOEs for numerator and denominator sums are approximate RSS values, then the subset proportion formula is applied."
+      ],
+      "margin_of_error": 0.5318546645627402,
+      "metric_id": "rent-burden-30-plus-share",
+      "numerator": 312174.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B25070_002E": 18439,
+        "B25070_003E": 44656,
+        "B25070_004E": 71118,
+        "B25070_005E": 77901,
+        "B25070_006E": 70573,
+        "B25070_007E": 56061,
+        "B25070_008E": 39894,
+        "B25070_009E": 56933,
+        "B25070_010E": 159286
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25070.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Renter-occupied housing units",
+      "value": 52.478478165487395
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:rent-burden-30-plus-share:v1",
+      "definition_version": 1,
+      "denominator": 41908786.0,
+      "field_id": "derived:02.06:rent-burden-30-plus-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "02.06:B25070_002E",
+        "02.06:B25070_003E",
+        "02.06:B25070_004E",
+        "02.06:B25070_005E",
+        "02.06:B25070_006E",
+        "02.06:B25070_007E",
+        "02.06:B25070_008E",
+        "02.06:B25070_009E",
+        "02.06:B25070_010E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Denominator excludes not-computed income ratios. Sum of bins 002–010 equals total 001 minus not-computed 011; neither total nor bin 007 alone is rent burden.",
+        "MOEs for numerator and denominator sums are approximate RSS values, then the subset proportion formula is applied."
+      ],
+      "margin_of_error": 0.11786510212199793,
+      "metric_id": "rent-burden-30-plus-share",
+      "numerator": 21422415.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B25070_002E": 1697320,
+        "B25070_003E": 3591664,
+        "B25070_004E": 5102452,
+        "B25070_005E": 5274812,
+        "B25070_006E": 4820123,
+        "B25070_007E": 3872456,
+        "B25070_008E": 2838920,
+        "B25070_009E": 3858845,
+        "B25070_010E": 10852194
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25070.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Renter-occupied housing units",
+      "value": 51.11676343953271
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:owner-occupied-share:v1",
+      "definition_version": 1,
+      "denominator": 1718422.0,
+      "field_id": "derived:02.07:owner-occupied-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "02.07:B25003_002E",
+        "02.07:B25003_003E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Owner plus renter occupied units form the total occupied-unit denominator; vacant units are excluded."
+      ],
+      "margin_of_error": 0.2721015621817221,
+      "metric_id": "owner-occupied-share",
+      "numerator": 1087983.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B25003_002E": 1087983,
+        "B25003_003E": 630439
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Occupied housing units",
+      "value": 63.312911496710356
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:owner-occupied-share:v1",
+      "definition_version": 1,
+      "denominator": 129227496.0,
+      "field_id": "derived:02.07:owner-occupied-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "02.07:B25003_002E",
+        "02.07:B25003_003E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Owner plus renter occupied units form the total occupied-unit denominator; vacant units are excluded."
+      ],
+      "margin_of_error": 0.19956604846716888,
+      "metric_id": "owner-occupied-share",
+      "numerator": 84210142.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B25003_002E": 84210142,
+        "B25003_003E": 45017354
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Occupied housing units",
+      "value": 65.16426039857647
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:owner-renter-ratio:v1",
+      "definition_version": 1,
+      "denominator": 630439.0,
+      "field_id": "derived:02.07:owner-renter-ratio:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "02.07:B25003_002E",
+        "02.07:B25003_003E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "margin_of_error": 0.020758768718287114,
+      "metric_id": "owner-renter-ratio",
+      "numerator": 1087983.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B25003_002E": 1087983,
+        "B25003_003E": 630439
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25003.dat"
+      ],
+      "statistic": "ratio",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_ratio",
+      "unit": "ratio",
+      "universe": "Occupied housing units",
+      "value": 1.7257545932278935
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:owner-renter-ratio:v1",
+      "definition_version": 1,
+      "denominator": 45017354.0,
+      "field_id": "derived:02.07:owner-renter-ratio:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "02.07:B25003_002E",
+        "02.07:B25003_003E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "margin_of_error": 0.010629300069285778,
+      "metric_id": "owner-renter-ratio",
+      "numerator": 84210142.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B25003_002E": 84210142,
+        "B25003_003E": 45017354
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25003.dat"
+      ],
+      "statistic": "ratio",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_ratio",
+      "unit": "ratio",
+      "universe": "Occupied housing units",
+      "value": 1.870615096569203
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:renter-occupied-share:v1",
+      "definition_version": 1,
+      "denominator": 1718422.0,
+      "field_id": "derived:02.07:renter-occupied-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "02.07:B25003_002E",
+        "02.07:B25003_003E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Owner plus renter occupied units form the total occupied-unit denominator; vacant units are excluded."
+      ],
+      "margin_of_error": 0.2835448584367162,
+      "metric_id": "renter-occupied-share",
+      "numerator": 630439.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B25003_002E": 1087983,
+        "B25003_003E": 630439
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Occupied housing units",
+      "value": 36.687088503289644
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:renter-occupied-share:v1",
+      "definition_version": 1,
+      "denominator": 129227496.0,
+      "field_id": "derived:02.07:renter-occupied-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "02.07:B25003_002E",
+        "02.07:B25003_003E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Owner plus renter occupied units form the total occupied-unit denominator; vacant units are excluded."
+      ],
+      "margin_of_error": 0.0651325098184739,
+      "metric_id": "renter-occupied-share",
+      "numerator": 45017354.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B25003_002E": 84210142,
+        "B25003_003E": 45017354
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b25003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Occupied housing units",
+      "value": 34.83573960142352
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:poverty-share:v1",
+      "definition_version": 1,
+      "denominator": 4173206.0,
+      "field_id": "derived:02.08:poverty-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "02.08:B17001_001E",
+        "02.08:B17001_002E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "margin_of_error": 0.20543031180923627,
+      "metric_id": "poverty-share",
+      "numerator": 498380.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B17001_001E": 4173206,
+        "B17001_002E": 498380
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b17001.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population for whom poverty status is determined",
+      "value": 11.94237715559692
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:poverty-share:v1",
+      "definition_version": 1,
+      "denominator": 327079188.0,
+      "field_id": "derived:02.08:poverty-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "02.08:B17001_001E",
+        "02.08:B17001_002E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "margin_of_error": 0.08433879826728063,
+      "metric_id": "poverty-share",
+      "numerator": 40735661.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B17001_001E": 327079188,
+        "B17001_002E": 40735661
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b17001.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population for whom poverty status is determined",
+      "value": 12.454372670143721
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:households-income-200k-plus-share:v1",
+      "definition_version": 1,
+      "denominator": 1718422.0,
+      "field_id": "derived:02.09:households-income-200k-plus-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "02.09:B19001_001E",
+        "02.09:B19001_017E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "margin_of_error": 0.23051031763917182,
+      "metric_id": "households-income-200k-plus-share",
+      "numerator": 218500.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B19001_001E": 1718422,
+        "B19001_017E": 218500
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b19001.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Households",
+      "value": 12.715153786438954
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:households-income-200k-plus-share:v1",
+      "definition_version": 1,
+      "denominator": 129227496.0,
+      "field_id": "derived:02.09:households-income-200k-plus-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "02.09:B19001_001E",
+        "02.09:B19001_017E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "margin_of_error": 0.05995121300378471,
+      "metric_id": "households-income-200k-plus-share",
+      "numerator": 17266233.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B19001_001E": 129227496,
+        "B19001_017E": 17266233
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b19001.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Households",
+      "value": 13.361113953643425
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:bachelors-degree-exact-share:v1",
+      "definition_version": 1,
+      "denominator": 3044782.0,
+      "field_id": "derived:03.01:bachelors-degree-exact-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "03.01:B15003_001E",
+        "03.01:B15003_022E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "margin_of_error": 0.20049494753903618,
+      "metric_id": "bachelors-degree-exact-share",
+      "numerator": 690053.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 3044782,
+        "B15003_022E": 690053
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 22.663461620569223
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:bachelors-degree-exact-share:v1",
+      "definition_version": 1,
+      "denominator": 230807303.0,
+      "field_id": "derived:03.01:bachelors-degree-exact-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "03.01:B15003_001E",
+        "03.01:B15003_022E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "margin_of_error": 0.08290141000247107,
+      "metric_id": "bachelors-degree-exact-share",
+      "numerator": 49868171.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 230807303,
+        "B15003_022E": 49868171
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 21.6059762199119
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:masters-degree-exact-share:v1",
+      "definition_version": 1,
+      "denominator": 3044782.0,
+      "field_id": "derived:03.02:masters-degree-exact-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "03.02:B15003_001E",
+        "03.02:B15003_023E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "margin_of_error": 0.16915736485334631,
+      "metric_id": "masters-degree-exact-share",
+      "numerator": 299124.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 3044782,
+        "B15003_023E": 299124
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 9.824151614138549
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:masters-degree-exact-share:v1",
+      "definition_version": 1,
+      "denominator": 230807303.0,
+      "field_id": "derived:03.02:masters-degree-exact-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "03.02:B15003_001E",
+        "03.02:B15003_023E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "margin_of_error": 0.06541293465891207,
+      "metric_id": "masters-degree-exact-share",
+      "numerator": 23264421.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 230807303,
+        "B15003_023E": 23264421
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 10.079586173233002
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:doctorate-exact-share:v1",
+      "definition_version": 1,
+      "denominator": 3044782.0,
+      "field_id": "derived:03.03:doctorate-exact-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "03.03:B15003_001E",
+        "03.03:B15003_025E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "margin_of_error": 0.059706904712524295,
+      "metric_id": "doctorate-exact-share",
+      "numerator": 57364.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 3044782,
+        "B15003_025E": 57364
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 1.8840100867648324
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:doctorate-exact-share:v1",
+      "definition_version": 1,
+      "denominator": 230807303.0,
+      "field_id": "derived:03.03:doctorate-exact-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "03.03:B15003_001E",
+        "03.03:B15003_025E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Highest-attainment category; professional-school degrees are a separate bin. This is not a bachelor’s-or-higher cumulative percentage."
+      ],
+      "margin_of_error": 0.01529831306986835,
+      "metric_id": "doctorate-exact-share",
+      "numerator": 3875973.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 230807303,
+        "B15003_025E": 3875973
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 1.67931124779011
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:high-school-or-higher-share:v1",
+      "definition_version": 1,
+      "denominator": 3044782.0,
+      "field_id": "derived:03.04:high-school-or-higher-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "03.04:B15003_001E",
+        "03.04:B15003_017E",
+        "03.04:B15003_018E",
+        "03.04:B15003_019E",
+        "03.04:B15003_020E",
+        "03.04:B15003_021E",
+        "03.04:B15003_022E",
+        "03.04:B15003_023E",
+        "03.04:B15003_024E",
+        "03.04:B15003_025E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Includes regular diploma, GED/alternative credential, and all higher attainment groups."
+      ],
+      "margin_of_error": 0.42942586717884207,
+      "metric_id": "high-school-or-higher-share",
+      "numerator": 2796561.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 3044782,
+        "B15003_017E": 545615,
+        "B15003_018E": 137062,
+        "B15003_019E": 243373,
+        "B15003_020E": 472308,
+        "B15003_021E": 277517,
+        "B15003_022E": 690053,
+        "B15003_023E": 299124,
+        "B15003_024E": 74145,
+        "B15003_025E": 57364
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 91.84765937265787
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:high-school-or-higher-share:v1",
+      "definition_version": 1,
+      "denominator": 230807303.0,
+      "field_id": "derived:03.04:high-school-or-higher-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "03.04:B15003_001E",
+        "03.04:B15003_017E",
+        "03.04:B15003_018E",
+        "03.04:B15003_019E",
+        "03.04:B15003_020E",
+        "03.04:B15003_021E",
+        "03.04:B15003_022E",
+        "03.04:B15003_023E",
+        "03.04:B15003_024E",
+        "03.04:B15003_025E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled.",
+        "Includes regular diploma, GED/alternative credential, and all higher attainment groups."
+      ],
+      "margin_of_error": 0.16870702597957624,
+      "metric_id": "high-school-or-higher-share",
+      "numerator": 206814893.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 230807303,
+        "B15003_017E": 51011337,
+        "B15003_018E": 9083379,
+        "B15003_019E": 14727607,
+        "B15003_020E": 29306441,
+        "B15003_021E": 20322913,
+        "B15003_022E": 49868171,
+        "B15003_023E": 23264421,
+        "B15003_024E": 5354651,
+        "B15003_025E": 3875973
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 89.60500396298119
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:no-high-school-diploma-share:v1",
+      "definition_version": 1,
+      "denominator": 3044782.0,
+      "field_id": "derived:03.05:no-high-school-diploma-share:v1",
+      "geo_id": "41",
+      "geo_type": "state",
+      "input_field_ids": [
+        "03.05:B15003_001E",
+        "03.05:B15003_002E",
+        "03.05:B15003_003E",
+        "03.05:B15003_004E",
+        "03.05:B15003_005E",
+        "03.05:B15003_006E",
+        "03.05:B15003_007E",
+        "03.05:B15003_008E",
+        "03.05:B15003_009E",
+        "03.05:B15003_010E",
+        "03.05:B15003_011E",
+        "03.05:B15003_012E",
+        "03.05:B15003_013E",
+        "03.05:B15003_014E",
+        "03.05:B15003_015E",
+        "03.05:B15003_016E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "margin_of_error": 0.16510053335272423,
+      "metric_id": "no-high-school-diploma-share",
+      "numerator": 248221.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 3044782,
+        "B15003_002E": 43805,
+        "B15003_003E": 916,
+        "B15003_004E": 857,
+        "B15003_005E": 1486,
+        "B15003_006E": 2248,
+        "B15003_007E": 4396,
+        "B15003_008E": 2397,
+        "B15003_009E": 4311,
+        "B15003_010E": 20090,
+        "B15003_011E": 4714,
+        "B15003_012E": 15329,
+        "B15003_013E": 25400,
+        "B15003_014E": 31478,
+        "B15003_015E": 35858,
+        "B15003_016E": 54936
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 8.152340627342122
+    },
+    {
+      "confidence_level": 0.9,
+      "definition_id": "map:no-high-school-diploma-share:v1",
+      "definition_version": 1,
+      "denominator": 230807303.0,
+      "field_id": "derived:03.05:no-high-school-diploma-share:v1",
+      "geo_id": "US",
+      "geo_type": "nation",
+      "input_field_ids": [
+        "03.05:B15003_001E",
+        "03.05:B15003_002E",
+        "03.05:B15003_003E",
+        "03.05:B15003_004E",
+        "03.05:B15003_005E",
+        "03.05:B15003_006E",
+        "03.05:B15003_007E",
+        "03.05:B15003_008E",
+        "03.05:B15003_009E",
+        "03.05:B15003_010E",
+        "03.05:B15003_011E",
+        "03.05:B15003_012E",
+        "03.05:B15003_013E",
+        "03.05:B15003_014E",
+        "03.05:B15003_015E",
+        "03.05:B15003_016E"
+      ],
+      "limitations": [
+        "ACS 2024 means the 2020–2024 five-year period, not a 2024 annual observation.",
+        "Do not average county medians or percentages; no geography is downscaled."
+      ],
+      "margin_of_error": 0.035734967166342294,
+      "metric_id": "no-high-school-diploma-share",
+      "numerator": 23992410.0,
+      "period": "2024",
+      "provenance_kind": "derived",
+      "raw_components": {
+        "B15003_001E": 230807303,
+        "B15003_002E": 4534710,
+        "B15003_003E": 65861,
+        "B15003_004E": 64338,
+        "B15003_005E": 106237,
+        "B15003_006E": 220340,
+        "B15003_007E": 448049,
+        "B15003_008E": 329550,
+        "B15003_009E": 525420,
+        "B15003_010E": 1927693,
+        "B15003_011E": 635880,
+        "B15003_012E": 1945115,
+        "B15003_013E": 2527126,
+        "B15003_014E": 2847741,
+        "B15003_015E": 3319849,
+        "B15003_016E": 4494501
+      },
+      "source": "census_acs",
+      "source_release": "2024-acs-acs5",
+      "source_urls": [
+        "https://www2.census.gov/programs-surveys/acs/summary_file/2024/table-based-SF/data/5YRData/acsdt5y2024-b15003.dat"
+      ],
+      "statistic": "share",
+      "status": "observed",
+      "uncertainty_method": "approximate_90pct_subset_proportion",
+      "unit": "%",
+      "universe": "Population 25 years and over",
+      "value": 10.39499603701881
+    }
+  ],
+  "format": "usa_atlas_checked_map_formula_examples_v1",
+  "input_read_at": "2026-10-11T14:13:05.550402+00:00",
+  "input_sha256": "f7085d26b297f77b770b377b19e2888e26fb4b509cd63ce8a3bff0d0d05aab59"
+}
