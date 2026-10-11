@@ -7,7 +7,10 @@ import tempfile
 import unittest
 from unittest import mock
 
-import map_metrics as metrics
+try:
+    from . import map_metrics as metrics
+except ImportError:
+    import map_metrics as metrics
 
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "research/2026-10-11/map-metrics"
