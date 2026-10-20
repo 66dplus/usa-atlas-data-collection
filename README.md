@@ -1,5 +1,7 @@
 # USA Atlas data collection
 
+[![CI](https://github.com/66dplus/usa-atlas-data-collection/actions/workflows/ci.yml/badge.svg)](https://github.com/66dplus/usa-atlas-data-collection/actions/workflows/ci.yml)
+
 Reproducible collectors, source contracts, tests, a fail-closed database loader,
 checkpointed resumable runs, and systemd-based operations for the USA Atlas data
 pipeline. It is the data side of a two-repository system and is intentionally

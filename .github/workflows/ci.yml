@@ -1,0 +1,30 @@
+name: CI
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collector checks
+        working-directory: full
+        run: |
+          python3 collect.py validate
+          python3 -m unittest test_collect.py test_server_runner.py
+      - name: Pilot checks
+        working-directory: pilot
+        run: python3 -m unittest test_run_pilot.py
+      - name: PostgreSQL binaries on PATH
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends postgresql-16
+          echo "/usr/lib/postgresql/16/bin" >> "$GITHUB_PATH"
+      - name: Database integration checks
+        working-directory: database
+        run: python3 -W error::ResourceWarning -m unittest test_database.py
