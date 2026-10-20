@@ -1,8 +1,8 @@
 # PostgreSQL storage
 
 Current production measurements, all 81 catalog indicators, geography depth,
-and the October storage work are in the
-[2 October coverage and storage report](../research/2026-10-02/README.md).
+and the October storage work are recorded in the operator's dated research
+archive, which is kept outside this repository.
 The online index operation is recorded in the
 [lookup-index migration note](LOOKUP-INDEX-MIGRATION.md).
 
@@ -51,8 +51,8 @@ count; current ownership and actual updates are tracked in `snapshot_batch`.
 Production migration completed on **2026-09-29 at 15:17 UTC** with all 49,206,438
 rows preserved, 101 exact ranges and zero mismatches. Facts, indexes and
 dictionaries used 17.79 GB instead of 63.94 GB at that checkpoint. The subsequent
-v3 extension preserves that compact representation; backups are retained. See the
-[completed maintenance record](../research/2026-09-29/CLEANUP-NEXT.md).
+v3 extension preserves that compact representation; backups are retained. The
+completed maintenance record is kept with the operator's dated research archive.
 
 New databases use `observation_data` as the physical facts table. Repeated URLs
 and methodology notes live in `source_resource` and `methodology`; foreign keys
@@ -62,8 +62,8 @@ unchanged staging tables and `finish_ingest`, which now deduplicates metadata.
 
 `schema.sql` initializes an empty database. **Do not apply it to an existing v1
 database.** The production migration requires a backup, exact preservation checks,
-an atomic cutover, and the matching schema fingerprint in the loader. See the
-[live operations report](../research/2026-09-28/LIVE-OPERATIONS.md) for execution
+an atomic cutover, and the matching schema fingerprint in the loader. The live
+operations report in the operator's dated research archive covers execution
 status. Audit disk space on `observation_data` and its dictionaries after cutover;
 the compatibility view itself stores no observations.
 

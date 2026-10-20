@@ -1,8 +1,0 @@
-{
-  "disposable_pg16_only": true,
-  "production_mutations": false,
-  "lock_on_compatibility_view": "accepted",
-  "finish_ingest_and_dedup": "pass",
-  "output": "BEGIN\nLOCK TABLE\nINSERT 0 81\nINSERT 0 1\nINSERT 0 2\n2\n{\"observations\" : 2, \"resources\" : 1, \"methodologies\" : 1, \"reconstructed_values\" : 35, \"provenance\" : 2, \"staged\" : 0}\nROLLBACK\n",
-  "rolled_back": true
-}

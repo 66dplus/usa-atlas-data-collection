@@ -1,48 +1,50 @@
-# Автоматическая загрузка собранных данных
+# Automatic loading of collected data
 
-Новый pipeline связывает уже существующие сборщики с проверенными адаптерами и
-транзакционной загрузкой в ту же БД USA Atlas. Он использует готовые локальные
-артефакты и не запускает второй экземпляр действующих сборщиков.
+The new pipeline ties the existing collectors to verified adapters and
+transactional loading into the same USA Atlas database. It reuses ready local
+artifacts and does not start a second instance of the live collectors.
 
-**Состояние внедрения:** 1 октября 2026 в 08:50 UTC миграция v3 выполнена,
-timer включён, первый цикл запущен и зарегистрирован в watchdog. В 08:51 UTC
-первый пакет на 250 000 записей зафиксирован в БД. Очередь из 43 наборов
-обрабатывается автоматически. [Текущий отчёт](../research/2026-10-01/PROGRESS.md).
+**Deployment status:** on 1 October 2026 at 08:50 UTC the v3 migration completed,
+the timer is enabled, the first cycle started and registered with the watchdog.
+At 08:51 UTC the first batch of 250,000 records committed to the database. The
+queue of 43 datasets is processed automatically. See the live progress record
+kept in the workspace research archive.
 
-Подготовка от 2026-09-29: первые ограниченные batch 22 национальных наборов и 21
-полный региональный snapshot содержат 5 394 180 observations, 105 819 quality
-records и 156 140 generic records. Это 80 834 722 байта подготовленных payload;
-На 29 сентября национальные наборы целиком ещё не были подготовлены и записи
-в БД не выполнялись; этот исторический снимок предшествует запуску 1 октября.
-Все manifest-пути, хеши и ограничения приведены в
-[`auto-pipeline-preparation.json`](../research/2026-09-29/auto-pipeline-preparation.json).
-Код прошёл статический просмотр; выполнены реальная подготовка, миграция и
-первые рабочие загрузки. Тестовые наборы не запускались.
+The preparation record of 2026-09-29: the first bounded batch of 22 national
+datasets and 21 full regional snapshots contained 5,394,180 observations,
+105,819 quality records and 156,140 generic records — 80,834,722 bytes of
+prepared payload. As of 29 September the national datasets were not yet fully
+prepared and no database writes had happened; that historical snapshot precedes
+the 1 October launch. All manifest paths, hashes and limits are in
+`auto-pipeline-preparation.json` in the workspace research archive. The code
+passed static review; real preparation, migration and the first production
+loads were performed. The test suites were not run.
 
-## Поток данных
+## Data flow
 
-1. Зарегистрированный адаптер обнаруживает завершённые снимки известных
-   источников. Публикация кандидата требует привязки к source manifest и SHA-256
-   исходных файлов. Пайплайн дополнительно проверяет эти хеши.
-2. Адаптер готовит отдельный batch. Начальное ограничение — 250 000 входных строк;
-   национальный адаптер дополнительно ограничивает число числовых и quality-ячеек.
-3. `database/auto_ingest.py` проверяет manifest, артефакты, контракты и текущие
-   schema pins, затем принимает batch в транзакции. Повтор уже принятого batch
-   возвращает `already_pass`.
-4. Только подтверждённый receipt с тем же хешем manifest позволяет продвинуть
-   курсор. При остановке после commit следующий запуск повторно проверяет тот же
-   batch; новые строки из-за повтора не дублируются.
+1. A registered adapter discovers completed snapshots of known sources.
+   Publishing a candidate requires a link to the source manifest plus SHA-256
+   digests of the source files. The pipeline re-verifies those hashes.
+2. The adapter prepares a separate batch. The initial limit is 250,000 input
+   rows; the national adapter additionally bounds the number of numeric and
+   quality cells.
+3. `database/auto_ingest.py` checks the manifest, artifacts, contracts and
+   current schema pins, then admits the batch in one transaction. Re-admitting
+   an already accepted batch returns `already_pass`.
+4. Only a confirmed receipt with the same manifest hash lets the cursor
+   advance. If a run stops after a commit, the next run re-checks the same
+   batch; repeated rows are not duplicated.
 
-Адаптеры регистрируются один раз в `ops/auto-pipeline.json`, с проверенным кодом и
-закреплёнными хешами. Последующие завершённые снимки этих источников принимаются
-автоматически. Неизвестные результаты поиска каталогов остаются кандидатами,
-пока для них не создан и зарегистрирован адаптер с проверенными единицами,
-географией и схемой. Изменение данных не считается разрешением выполнять код,
-полученный из источника.
+Adapters are registered once in `ops/auto-pipeline.json`, with reviewed code and
+pinned hashes. Subsequent completed snapshots of those sources are admitted
+automatically. Unknown catalog discovery results remain candidates until an
+adapter with verified units, geography and schema is built and registered for
+them. New data is never treated as permission to execute code received from a
+source.
 
-## Команды
+## Commands
 
-Из корня data-repository:
+From the data repository root:
 
 ```bash
 python3 ops/install_auto_pipeline.py --plan
@@ -51,81 +53,84 @@ python3 ops/auto_pipeline.py --once --prepare-only
 python3 ops/auto_pipeline.py --status
 ```
 
-`--plan` только показывает предложенную конфигурацию. `--stage` закрепляет код
-нового, ещё не установленного pipeline внутри workspace. Этот режим запрещён,
-если его units уже установлены или конфигурация включена для БД.
+`--plan` only shows the proposed configuration. `--stage` files the not-yet-
+installed pipeline code inside the workspace. This mode is refused when its
+units are already installed or its configuration is enabled for the database.
 
-`--prepare-only` создаёт первый ограниченный batch каждого текущего снимка,
-сохраняет `prepared` и **не вызывает загрузчик БД**. Курсор принятых данных не
-продвигается. Его результаты используются последующей штатной загрузкой.
-`--once` без дополнительных флагов выполняет только чтение и планирование;
-отключённая конфигурация возвращает `disabled`.
+`--prepare-only` builds the first bounded batch of each current snapshot, stores
+`prepared` and **does not call the database loader**. The admitted-data cursor
+does not advance. Its outputs are consumed by the later regular load. `--once`
+without extra flags performs read-only discovery and scheduling; a disabled
+configuration returns `disabled`.
 
-После завершения согласованного кода мигратора, адаптеров и загрузчика и при
-наличии фактического доступа к systemd/Docker:
+Once the migrator, adapters and loader code are agreed and actual
+systemd/Docker access exists:
 
 ```bash
 python3 ops/install_auto_pipeline.py --apply --register-watchdog
 ```
 
-Установщик:
+The installer:
 
-- проверяет доступ к systemd, контейнеру `usa-atlas-postgres` и каталогу units;
-- отказывается обновлять pipeline, если его служба ещё работает;
-- сохраняет предыдущие конфигурации и unit-файлы;
-- вызывает отдельный транзакционный `database/migrate_pipeline.py` и требует
-  receipt `pass` или `already_pass`; `prepared` не означает установленную схему.
-  Загрузчик не выполняет скрытую миграцию;
-- закрепляет окончательные хеши адаптеров, загрузчика и файлов схемы;
-- устанавливает и включает `usa-atlas-auto-pipeline.timer`, запускает первый цикл;
-- с явно переданным `--register-watchdog` регистрирует новый процесс в уже
-  установленном наблюдателе. Без флага старый watchdog не изменяется.
+- checks systemd access, the `usa-atlas-postgres` container and the units
+  directory;
+- refuses to update the pipeline while its service is still running;
+- preserves previous configurations and unit files;
+- invokes the separate transactional `database/migrate_pipeline.py` and
+  requires a `pass` or `already_pass` receipt; `prepared` does not mean an
+  installed schema. The loader performs no hidden migration;
+- pins the final hashes of adapters, the loader and schema files;
+- installs and enables `usa-atlas-auto-pipeline.timer` and starts the first
+  cycle;
+- with an explicitly passed `--register-watchdog`, registers the new process
+  with the already installed watchdog. Without the flag the old watchdog is
+  untouched.
 
-При ошибке развёртывания восстанавливаются конфигурации и units. Уже применённая
-добавочная схема БД автоматически не удаляется: её состояние и отдельный receipt
-сохраняются для безопасного продолжения.
+On a deployment failure the configurations and units are restored. An already
+applied incremental database schema is not removed automatically: its state and
+a separate receipt are kept for a safe resume.
 
-## Расписание и ограничения
+## Schedule and limits
 
-| Параметр | Значение |
+| Parameter | Value |
 | --- | --- |
-| Timer | Каждые 15 минут UTC, `Persistent=true`, также проверка через 120 секунд после загрузки |
-| Один цикл | Не больше 45 минут и 100 попыток batch |
-| Планировщик batch | По одному batch на источник за круг, чтобы большие таблицы не задерживали малые |
-| Свободное место runner | Минимум 12 GiB перед подготовкой и перед загрузкой |
-| Таймаут подготовки / загрузки | По 900 секунд, дополнительно ограничены оставшимся временем цикла |
-| Перезапуск самой службы | `Restart=on-failure`, пауза 300 секунд, максимум три запуска за 15 минут, включая штатные старты |
-| Повтор временной ошибки dataset | Увеличивающаяся пауза от 60 до 3600 секунд с jitter; максимум шесть попыток в окне 24 часа |
-| Блокировки maintenance/load | Ожидание следующего цикла; loader повторно проверяет блокировки авторитетно |
+| Timer | Every 15 minutes UTC, `Persistent=true`, plus a check 120 seconds after boot |
+| One cycle | At most 45 minutes and 100 batch attempts |
+| Batch scheduler | One batch per source per round, so large tables never starve small ones |
+| Runner free space | At least 12 GiB before preparation and before loading |
+| Preparation / load timeout | 900 seconds each, further bounded by the remaining cycle time |
+| Service restart | `Restart=on-failure`, 300-second pause, at most three starts in 15 minutes, counting normal starts |
+| Temporary dataset-failure retry | Growing pause from 60 to 3600 seconds with jitter; at most six attempts in a 24-hour window |
+| Maintenance/load locks | Wait for the next cycle; the loader re-checks locks authoritatively |
 
-Загрузчик дополнительно требует `16 GiB + max(512 MiB, 4 × uncompressed batch)`
-свободного места на обоих файловых томах: репозитория и PostgreSQL (`/srv`).
-Порог 12 GiB относится только к предварительной проверке runner.
+The loader additionally requires `16 GiB + max(512 MiB, 4 × uncompressed batch)`
+of free space on both file volumes: the repository and PostgreSQL (`/srv`). The
+12 GiB threshold applies only to the runner pre-check.
 
-Pipeline использует настоящий `flock`; у него нет истекающей «аренды» и
-принудительного снятия чужого lock. Проверка maintenance-lock выполняется перед
-подготовкой и admission, но lock не удерживается pipeline, поскольку его берёт
-сам загрузчик. Подготовка с `--prepare-only` не зависит от состояния БД.
+The pipeline uses a real `flock`; it has no expiring "lease" and never forces
+someone else's lock open. The maintenance-lock check runs before preparation and
+admission, but the lock is not held by the pipeline — the loader takes it
+itself. Preparation with `--prepare-only` is independent of database state.
 
-При таймауте завершается только дочерняя группа процессов, созданная этим runner:
-сначала TERM, затем при необходимости KILL и ожидание завершения. Глобальный
-`pkill`, остановка миграции и перезапуск БД не применяются.
+On timeout only the child process group created by this runner is terminated:
+first TERM, then, when needed, KILL, then waiting for completion. No global
+`pkill`, no migration shutdown, no database restart.
 
-Пустые и некорректные значения, исходные suppression-коды и интервалы качества
-разбирает зарегистрированный адаптер. Поле «запись здания дата-центра» не
-становится числом работающих дата-центров; point-геометрия не становится Census
-block group без соответствующего проверенного преобразования.
+Empty and malformed values, original suppression codes and quality intervals are
+parsed by the registered adapter. A "data-center building record" field never
+becomes a count of operating data centers; point geometry never becomes a Census
+block group without a corresponding verified transformation.
 
-## Ошибки и наблюдение
+## Failures and observation
 
-- Временная ошибка получает `retry_wait`, deadline и сохранённый курсор.
-- Maintenance получает `deferred_maintenance`, без потери подготовленного batch.
-- Несовпадение хешей, схемы, курсора или неизвестная ошибка содержимого переводит
-  конкретный снимок в `quarantine`; другие источники продолжаются.
-- Новая версия проверенного адаптера или новый завершённый снимок создаёт новую
-  идентичность задания. Не требуется отдельное подтверждение каждого запуска.
-- Исправление схемы источника выполняется в коде адаптера с обновлением
-  закреплённых хешей; сами скрейперы код не переписывают.
+- A temporary error gets `retry_wait`, a deadline and the stored cursor.
+- Maintenance gets `deferred_maintenance` without losing the prepared batch.
+- A hash, schema or cursor mismatch, or an unknown content error, moves the
+  affected snapshot to `quarantine`; other sources continue.
+- A new version of a verified adapter or a new completed snapshot creates a new
+  job identity. No per-run re-approval is required.
+- A source schema fix is made in the adapter code with updated pinned hashes;
+  the scrapers themselves never rewrite code.
 
 ```bash
 python3 ops/auto_pipeline.py --status
@@ -133,46 +138,47 @@ systemctl status usa-atlas-auto-pipeline.timer
 journalctl -u usa-atlas-auto-pipeline.service -n 60 --no-pager
 ```
 
-Рабочие файлы находятся в игнорируемом Git каталоге
-`full/runtime/auto-pipeline/`:
+Working files live in the Git-ignored directory `full/runtime/auto-pipeline/`:
 
-- `state.json` — курсоры, попытки, результаты источников и checksum cache;
-- `pipeline.lock` — единственный активный экземпляр runner;
-- `batches/<candidate hash>/<cursor hash>/` — неизменяемые candidates,
-  подготовленные manifests, payloads, журналы и receipts БД;
-- `events.jsonl` — события admission/quarantine с ротацией после 4 MiB;
-- `installations/<UTC timestamp>/` — сохранённые конфигурации и результаты
-  миграции/установки.
+- `state.json` — cursors, attempts, per-source results and the checksum cache;
+- `pipeline.lock` — the single active runner instance;
+- `batches/<candidate hash>/<cursor hash>/` — immutable candidates, prepared
+  manifests, payloads, logs and database receipts;
+- `events.jsonl` — admission/quarantine events, rotated after 4 MiB;
+- `installations/<UTC timestamp>/` — saved configurations and
+  migration/installation results.
 
-`accepted_rows_total` — сумма строк в принятых batch-операциях, включая обновления
-существующих записей. Это не число уникальных наблюдений в БД. `prepared` означает
-готовый файл для admission и не означает загруженные данные.
+`accepted_rows_total` is the number of rows in accepted batch operations,
+including updates to existing records. It is not the number of distinct
+observations in the database. `prepared` means a file ready for admission, not
+loaded data.
 
-## Ограничение роста подготовленных файлов
+## Bounding the growth of prepared files
 
-После успешного admission payload-файлы хранятся семь дней. Затем pipeline
-удаляет не больше 25 принятых batch за цикл, проверив pass-receipt, хеш manifest
-и хеш каждого удаляемого файла. Удаляться могут только сгенерированные
-`observations`, `quality`, `records` внутри собственного batch-каталога.
-Исходные выгрузки, manifests и receipts сохраняются. Незавершённый текущий batch
-и payload без подтверждения БД не удаляются.
+After successful admission, payload files are kept for seven days. Then the
+pipeline removes at most 25 accepted batches per cycle, having verified the
+pass-receipt, the manifest hash and the hash of every removed file. Only
+generated `observations`, `quality` and `records` files inside their own batch
+directory can be removed. Source downloads, manifests and receipts are kept. An
+incomplete current batch and a payload without database confirmation are never
+removed.
 
-Если после восстановления старого checkpoint требуется повтор уже очищенного
-batch, его payload заново строится из проверенных исходников; прежние metadata
-и receipt остаются для сравнения. После 30 дней завершённые записи ledger,
-которые больше не относятся к текущим снимкам, переносятся в сжатый месячный
-архив. Эти дублирующие архивы ledger хранятся 24 месяца; отдельные manifests и
-receipts admission остаются. Ошибка проверки перед удалением сохраняется как
-`retention.errors` и делает состояние pipeline требующим внимания.
-Незавершённый marker очистки также требует внимания и не запускает дальнейшее
-удаление этого batch автоматически.
+If, after restoring an old checkpoint, an already cleaned batch must repeat, its
+payload is rebuilt from the verified sources; the previous metadata and receipt
+remain for comparison. After 30 days, completed ledger entries that no longer
+belong to current snapshots move to a compressed monthly archive. These
+duplicate ledger archives are kept 24 months; individual admission manifests and
+receipts stay separate. A pre-deletion check failure is recorded as
+`retention.errors` and marks the pipeline state as needing attention. An
+unfinished cleanup marker also needs attention and does not trigger further
+deletion of that batch automatically.
 
-Для плановой остановки отключить именно новый timer и службу:
+For a planned stop, stop exactly this timer and service:
 
 ```bash
 systemctl stop usa-atlas-auto-pipeline.timer usa-atlas-auto-pipeline.service
 ```
 
-После изменения `enabled` в конфигурации обновить соответствующий pin у watchdog
-в рамках разрешённого развёртывания. Существующие коллекторы и их расписания
-продолжают работать независимо от pipeline.
+After changing `enabled` in the configuration, update the matching watchdog pin
+as part of approved deployment. The existing collectors and their schedules keep
+running independently of the pipeline.

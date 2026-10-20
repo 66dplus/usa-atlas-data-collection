@@ -1,14 +1,14 @@
-# Постоянное наблюдение за скрейперами
+# Continuous scraper monitoring
 
-Установлен 28 сентября 2026. `usa-atlas-scraper-watchdog.timer` включён в systemd:
-проверка через 60 секунд после загрузки сервера и каждые 120 секунд после
-предыдущей проверки (точность таймера 10 секунд). Работа продолжается после
-закрытия чата. Это программный watchdog с заданными правилами восстановления;
-новые схемы источников и неоднозначные ошибки требуют разбора.
+Installed on 28 September 2026. `usa-atlas-scraper-watchdog.timer` is enabled in
+systemd: it checks 60 seconds after server boot and every 120 seconds after the
+previous check (timer precision 10 seconds). Operation continues after chat
+sessions are closed. This is a software watchdog with defined recovery rules;
+new source schemas and ambiguous errors call for investigation.
 
-## Управление и состояние
+## Control and status
 
-Из корня data-repository:
+From the data repository root:
 
 ```bash
 python3 ops/scraper_watchdog.py --status
@@ -17,128 +17,129 @@ systemctl status usa-atlas-scraper-watchdog.timer
 journalctl -u usa-atlas-scraper-watchdog.service -n 40 --no-pager
 ```
 
-`--status` читает последний отчёт. `--check` проверяет текущее состояние без
-изменений; `--check --apply` сохраняет результат и разрешает восстановление.
-Обычные проверки выполняет таймер, вручную запускать их постоянно не требуется.
-`collection_status.py` помечает отчёт старше пяти минут как устаревший.
+`--status` reads the latest report. `--check` inspects current state without
+changes; `--check --apply` stores the result and allows recovery. The timer runs
+the regular checks; running them manually all the time is unnecessary.
+`collection_status.py` marks a report older than five minutes as stale.
 
-Первый установленный запуск в 19:07 UTC: `overall_state=healthy`,
-`needs_attention=[]`, автоматические перезапуски не потребовались.
+The first installed run at 19:07 UTC: `overall_state=healthy`,
+`needs_attention=[]`, no automatic restarts needed.
 
-## Что контролируется
+## What is monitored
 
-| Процесс | Действие наблюдателя |
+| Process | Watchdog action |
 | --- | --- |
-| ACS, CDC, ACS alternatives, federal bulk | Проверяет завершённость и файлы. Возобновляет остановленные незавершённые задания после временной ошибки или неожиданного выхода |
-| Local portals | Проверяет systemd, PID, идентичность процесса, heartbeat и прогресс. Восстанавливает остановленную службу; при подтверждённом зависании штатно перезапускает её |
-| Regional refresh | Проверяет службу, включённый таймер, хеши кода и units, завершение трёх наборов и давность снимка; восстановлением управляет systemd |
-| Nationwide discovery | Проверяет службу, включённый таймер, хеши кода и units, завершение обхода 52 каталогов, давность цикла и ошибки источников; восстановлением управляет systemd |
-| PWC buildings | Проверяет еженедельный таймер, хеши, успешный снимок, существование и размеры артефактов; порог давности — восемь дней |
-| Очистка БД | Читает checkpoint и проверяет процесс; при проблеме записывает `needs_attention` |
+| ACS, CDC, ACS alternatives, federal bulk | Checks completion and files. Resumes stopped unfinished jobs after a temporary error or unexpected exit |
+| Local portals | Checks systemd, PID, process identity, heartbeat and progress. Recovers a stopped service; on a confirmed stall restarts it in an orderly way |
+| Regional refresh | Checks the service, enabled timer, code and unit hashes, completion of the three sets and snapshot freshness; recovery is handled by systemd |
+| Nationwide discovery | Checks the service, enabled timer, code and unit hashes, completion of the 52-catalog sweep, cycle freshness and source errors; recovery is handled by systemd |
+| PWC buildings | Checks the weekly timer, hashes, a successful snapshot, artifact existence and sizes; the freshness threshold is eight days |
+| Database cleanup | Reads the checkpoint and checks the process; records `needs_attention` on a problem |
 
-Локальный сборщик публикует heartbeat из основного потока каждые 15 секунд
-ожидания. При сборе отмечает реальные запросы и прогресс. Штатное ожидание
-шесть часов получает статус `idle`. Пропавший heartbeat или остановившийся
-прогресс в течение 30 минут даёт основание для восстановления; опоздание
-следующего цикла более чем на 15 минут также обнаруживается.
+The local collector publishes a heartbeat from its main thread every 15 seconds
+of waiting. While collecting, it marks real requests and progress. An orderly
+six-hour wait gets status `idle`. A missing heartbeat or stalled progress within
+30 minutes justifies recovery; a next cycle more than 15 minutes late is also
+detected.
 
-Долго работающий активный ACS/public worker без прогресса больше часа
-получает `needs_attention`; его принудительное завершение не автоматизировано.
-Для длительных фаз миграции БД порог checkpoint — шесть часов. Миграция никогда
-автоматически не запускается повторно и не завершается наблюдателем.
+A long-running active ACS/public worker without progress for over an hour gets
+`needs_attention`; its forced termination is not automated. For long database
+migration phases the checkpoint threshold is six hours. Migration is never
+restarted automatically and is never terminated by the watchdog.
 
-## Новые периодические задания: 29 сентября
+## New periodic jobs: 29 September
 
-Установлены и включены три дополнительных таймера. Первый запуск региональной
-службы и nationwide произошёл **29 сентября 2026 в 14:01:33 UTC**. PWC использует
-уже собранный снимок 14:11 UTC; повторного скачивания при установке его таймера
-не выполнялось.
+Three additional timers were installed and enabled. The regional service and
+nationwide first ran on **29 September 2026 at 14:01:33 UTC**. PWC reuses the
+already collected 14:11 UTC snapshot; installing its timer did not re-download
+it.
 
-| Служба и одноимённый `.timer` | Расписание | Ограничения |
+| Service and identically named `.timer` | Schedule | Limits |
 | --- | --- | --- |
-| `usa-atlas-regional-refresh.service` | Ежедневно в **03:15 UTC**; `Persistent=true` позволяет выполнить пропущенный запуск после включения сервера | Три запуска в час, пауза 300 секунд, предел службы 1800 секунд; wrapper ограничивает дочерний процесс 1500 секундами |
-| `usa-atlas-nationwide-discovery.service` | Через **6 часов после завершения** предыдущего запуска; первая проверка через 120 секунд после загрузки сервера | Три запуска в час, пауза 900 секунд, предел службы 3900 секунд; wrapper ограничивает дочерний процесс 3600 секундами |
-| `usa-atlas-pwc-refresh.service` | По воскресеньям в **03:45 UTC**, `Persistent=true` | Три запуска в час, пауза 300 секунд, предел службы 1800 секунд; отдельный снимок на каждый запуск и глобальный `flock` |
+| `usa-atlas-regional-refresh.service` | Daily at **03:15 UTC**; `Persistent=true` runs a missed start after the server is powered on | Three starts per hour, 300-second pause, service limit 1800 seconds; the wrapper bounds the child process to 1500 seconds |
+| `usa-atlas-nationwide-discovery.service` | **6 hours after** the previous run completes; first check 120 seconds after server boot | Three starts per hour, 900-second pause, service limit 3900 seconds; the wrapper bounds the child process to 3600 seconds |
+| `usa-atlas-pwc-refresh.service` | Sundays at **03:45 UTC**, `Persistent=true` | Three starts per hour, 300-second pause, service limit 1800 seconds; a separate snapshot per run and a global `flock` |
 
-Региональный wrapper хранит отдельный снимок на каждую дату UTC. Повторный запуск
-в тот же день продолжает этот снимок. Первый запуск через systemd подтвердил
-завершение всех трёх наборов: водохранилища Техаса, разрешения на скважины Колорадо
-и электромобили Вашингтона. Данные остаются отдельными исследовательскими файлами.
+The regional wrapper keeps a separate snapshot per UTC date. A rerun on the same
+day continues that snapshot. The first systemd-run start confirmed completion of
+all three sets: Texas reservoirs, Colorado well permits, and Washington electric
+vehicles. The data stays as separate research files.
 
-Nationwide выбирает пять поисковых тем из очереди, обходя **50 штатов, DC и PR**.
-Текущая очередь содержит 33 группы для 55 пробелов покрытия; дополнительная
-bootstrap-тема `water` даёт 34 темы в ротации. Один запрос повторяется не чаще
-чем раз в 24 часа. Сохраняются позиция очереди и завершённые темы; после ошибки
-незавершённая позиция сохраняется. Первый цикл: `data center`, `electricity`,
+Nationwide picks five search topics from a queue and sweeps **50 states, DC and
+PR**. The queue holds 33 groups covering 55 coverage gaps; the extra bootstrap
+topic `water` makes 34 topics in rotation. One query repeats no more often than
+once per 24 hours. Queue position and completed topics are saved; on error the
+unfinished position is preserved. First cycle: `data center`, `electricity`,
 `water`, `overdose`, `crime`.
 
-Первый обход завершился в 14:02:42 UTC и выявил ошибку параметра ArcGIS Hub:
-API требует `startindex >= 1`. После исправления и обновления закреплённых хешей
-выполнен отдельный полный повтор тех же пяти тем через
-`usa-atlas-nationwide-discovery-repair.service`. Оба исторических запуска
-сохранены. Повтор завершился **14:06:03 UTC**:
+The first sweep finished at 14:02:42 UTC and found an ArcGIS Hub parameter bug:
+the API requires `startindex >= 1`. After the fix and an update of the pinned
+hashes, one full rerun of the same five topics went through
+`usa-atlas-nationwide-discovery-repair.service`. Both historical runs are kept.
+The rerun completed at **14:06:03 UTC**:
 
-- 52 юрисдикции, 260 результатов заданий, 170 фактических страниц поисковых API;
-- 900 вхождений кандидатов; это не число уникальных или допущенных наборов;
-- ошибок выполнения запросов стало **0** вместо 85;
-- три нераспознанных адаптера блокировали 15 заданий и требовали разбора;
-- 26 неуспешных HTTP-попыток сохранены как свидетельства, включая попытки до
-  успешного выбора альтернативного адаптера.
+- 52 jurisdictions, 260 job results, 170 actual search-API pages;
+- 900 candidate entries; this is not the number of distinct or admitted datasets;
+- query execution errors down to **0** from 85;
+- three unrecognized adapters blocked 15 jobs and need review;
+- 26 failed HTTP attempts saved as evidence, including attempts before a
+  successful alternative adapter was selected.
 
-Затем для Indiana, Nebraska и Ohio проверены и заменены основные официальные
-каталоги; прежние адреса сохранены как исторические альтернативы. Повтор
-14:11 UTC устранил нераспознанные адаптеры, но обнаружил единичный разрыв сети
-для Oregon/electricity. После добавления ограниченного повтора сетевых запросов
-финальный полный обход завершился **14:14:59 UTC**:
+Then the primary official catalogs for Indiana, Nebraska and Ohio were verified
+and replaced; the former addresses remain as historical alternatives. The 14:11
+UTC rerun removed the unrecognized adapters but found a single network gap for
+Oregon/electricity. After adding a bounded retry for network requests, the final
+full sweep completed at **14:14:59 UTC**:
 
-- 52 юрисдикции, 260 результатов заданий, **180 страниц поисковых API**;
-- **953 вхождения кандидатов**;
-- **0** ошибок запросов, нераспознанных адаптеров и заблокированных заданий;
-- 17 неуспешных HTTP-попыток сохранены, включая восстановленные запросы и
-  попытки выбора адаптера. Они не означают 17 незавершённых заданий.
+- 52 jurisdictions, 260 job results, **180 search-API pages**;
+- **953 candidate entries**;
+- **0** query errors, unrecognized adapters or blocked jobs;
+- 17 failed HTTP attempts saved, including recovered requests and adapter
+  selection attempts. They do not mean 17 incomplete jobs.
 
-Позиция ротации сохранена: следующий запрос `accidental deaths`, cursor 5.
-Регулярная служба и таймер возобновлены; следующий запуск 29 сентября в
-**20:16:36 UTC**, следующий региональный — 30 сентября в **03:15 UTC**.
-PWC впервые запустится по расписанию **4 октября в 03:45 UTC**.
-На 14:16:36 UTC watchdog контролирует девять заданий, `overall_state=healthy`,
+The rotation position is preserved: the next query is `accidental deaths`,
+cursor 5. The regular service and timer are resumed; the next nationwide start
+is 29 September at **20:16:36 UTC**, the next regional start — 30 September at
+**03:15 UTC**. PWC will first run on schedule on **4 October at 03:45 UTC**.
+As of 14:16:36 UTC the watchdog monitors nine jobs, `overall_state=healthy`,
 `needs_attention=[]`.
 
-Плановые проверки и повторные старты во время внедрения исчерпали лимит трёх
-стартов nationwide, хотя сама служба не падала. После проверки журнала оператор
-один раз выполнил `reset-failed` только для неё и восстановил отсчёт шести часов.
-Причина и действие записаны в `full/runtime/watchdog/events.jsonl`. Автоматический
-watchdog по-прежнему не сбрасывает лимиты systemd.
+Planned checks and reruns during installation exhausted the three-start limit of
+nationwide, although the service itself did not fail. After reviewing the log,
+the operator ran `reset-failed` once for that unit only and restored the
+six-hour countdown. The reason and the action are recorded in
+`full/runtime/watchdog/events.jsonl`. The automatic watchdog still never resets
+systemd limits.
 
-PWC хранит **248 записей зданий дата-центров** округа Prince William, Virginia:
-57 `Completed`, 31 `Under Construction`, 68 `Pending`, 92 `Planned`.
-Это точки и статусы зданий; число работающих объектов и привязка к Census
-block groups из них автоматически не выводятся. Набор остаётся исследовательским,
-без записи в production.
+PWC keeps **248 data-center building records** of Prince William County,
+Virginia: 57 `Completed`, 31 `Under Construction`, 68 `Pending`, 92 `Planned`.
+These are building points and statuses; the count of operating facilities and a
+mapping to Census block groups are not derived from them automatically. The
+dataset stays research-only, without writing to production.
 
-Таймер nationwide отсчитывается от завершения: фиксированные календарные
-00/06/12/18 UTC конфликтовали бы с шестичасовым ограничением самого wrapper.
-После перезагрузки сохранённое ограничение частоты также действует: ранняя
-проверка может ничего не запускать, затем следующий вызов будет через шесть
-часов. Watchdog отмечает завершённый цикл старше восьми часов как требующий
-внимания, поэтому такой длительный перерыв после перезагрузки будет виден.
+The nationwide timer counts from completion: fixed calendar 00/06/12/18 UTC
+slots would conflict with the wrapper's own six-hour bound. After a reboot the
+saved rate bound still applies: an early check may run nothing, then the next
+call comes six hours later. The watchdog marks a completed cycle older than
+eight hours as needing attention, so such a reboot gap stays visible.
 
-Во всех трёх заданиях `ExecCondition` вызывает `--preflight`: запуск разрешён только
-при включённом задании, совпадении закреплённых SHA-256 кода и unit-файлов и
-свободном месте не меньше 12 GiB. Сборщики имеют собственные `flock`; systemd
-также не запускает второй экземпляр той же oneshot-службы. По истечении лимита
-systemd завершает только процессы соответствующей службы. Watchdog не дублирует
-перезапуски этих трёх заданий и не завершает их самостоятельно.
+In all three jobs `ExecCondition` calls `--preflight`: a start is allowed only
+when the job is enabled, the pinned SHA-256 of code and unit files match, and
+free space is at least 12 GiB. Collectors hold their own `flock`; systemd also
+never starts a second instance of the same oneshot service. After the systemd
+start-limit is exhausted, systemd terminates only that service's processes. The
+watchdog does not duplicate restarts of these three jobs and never terminates
+them on its own.
 
-Nationwide собирает метаданные каталогов и кандидатов. Он пока читает только
-первую ограниченную страницу каждой темы; сведения о следующей странице
-сохраняются, но постраничное продолжение ещё не реализовано. Кандидаты требуют
-проверки издателя, географии, схемы и лицензии перед сбором наблюдений. Ошибки
-выполнения запросов, нераспознанные адаптеры и заблокированные запросы видны в watchdog как
-`completed_discovery_has_source_errors_review_required`, даже если процесс
-завершился успешно. Счётчик HTTP-попыток до успешного fallback показывается
-отдельно и сам по себе не создаёт тревогу. Это не считается готовым покрытием
-страны данными.
+Nationwide collects catalog metadata and candidates. It currently reads only the
+first bounded page of each topic; next-page information is saved but pagination
+is not implemented yet. Candidates require publisher, geography, schema and
+license review before observation collection uses them. Query execution errors,
+unrecognized adapters and blocked queries are visible in the watchdog as
+`completed_discovery_has_source_errors_review_required`, even when the process
+exits successfully. The counter of HTTP attempts before a successful fallback is
+shown separately and does not raise an alert by itself. This is not considered
+country-wide data coverage.
 
 ```bash
 systemctl list-timers 'usa-atlas*' --no-pager
@@ -148,67 +149,69 @@ journalctl -u usa-atlas-pwc-refresh.service -n 40 --no-pager
 python3 ops/scraper_watchdog.py --check
 ```
 
-Текущие checkpoints:
+Current checkpoints:
 
-- `research/2026-09-29/regional-expansion/latest.json` и указанный в нём summary.
+- `research/2026-09-29/regional-expansion/latest.json` and the summary it names.
 - `research/2026-09-29/nationwide-portals/runtime/schedule-state.json`.
-- `research/2026-09-29/nationwide-portals/discovery-latest.json` — последний
-  полностью завершённый цикл; во время первого запуска файла ещё может не быть.
-- `research/2026-09-29/data-center-expansion/latest.json` — последний PWC-снимок
-  со списком артефактов, исходными статусами зданий и контрольными суммами.
+- `research/2026-09-29/nationwide-portals/discovery-latest.json` — the last
+  fully completed cycle; during the first run the file may not exist yet.
+- `research/2026-09-29/data-center-expansion/latest.json` — the latest PWC
+  snapshot with its artifact list, source building statuses and checksums.
 
-## Условия восстановления
+## Recovery conditions
 
-- Завершённые задания повторно не запускаются.
-- Не больше трёх попыток watchdog на процесс за час, с увеличением паузы.
-- Для local portals также установлен лимит systemd: три запуска в час,
-  `Restart=on-failure`, пауза 120 секунд. `start-limit-hit` требует разбора.
-- Перед восстановлением проверяются SHA-256 кода и unit, принадлежность PID,
-  kernel start time, boot ID и существующие блокировки.
-- При свободном диске меньше 12 GiB автоматический перезапуск запрещён.
-- Изменение кода, ошибки схемы, повреждение артефактов и неизвестные причины
-  отказа требуют разбора. Они не обходятся повторным скачиванием.
+- Completed jobs are never started again.
+- At most three watchdog attempts per process per hour, with a growing pause.
+- Local portals also carry a systemd limit: three starts per hour,
+  `Restart=on-failure`, 120-second pause. `start-limit-hit` needs investigation.
+- Before recovery it checks the SHA-256 of code and unit, PID ownership, kernel
+  start time, boot ID and existing locks.
+- With less than 12 GiB free disk, automatic restart is forbidden.
+- Code changes, schema errors, artifact corruption and unknown failure causes
+  call for investigation. They are never worked around by re-downloading.
 
-Проверка завершённых файлов в двухминутном цикле ограничена существованием и
-размером. Контрольные суммы проверяют сами сборщики при продолжении загрузки.
-Падения или ошибка формата checkpoint сохраняются как `needs_attention`.
-Ошибки видны в отчёте и журнале; внешние уведомления не настроены.
+In the two-minute loop, file checks are limited to existence and size. Checksums
+are verified by the collectors themselves as downloads continue. Crashes and a
+checkpoint format failure are stored as `needs_attention`. Errors are visible in
+the report and the journal; no external notifications are configured.
 
-## Журналы и конфигурация
+## Journals and configuration
 
-- `ops/scraper-watchdog.json`: процессы, пороги, команды продолжения и хеши.
-- `full/runtime/watchdog/state.json`: последний отчёт и история попыток за час.
-- `full/runtime/watchdog/events.jsonl`: изменения состояний и действия; ротация
-  после 2 MiB, сохраняется один предыдущий файл.
-- `full/runtime/watchdog/*.recovery.log`: вывод возобновлённых batch-процессов.
-- `research/2026-09-28/local-portals/runtime/heartbeat.json`: состояние daemon.
+- `ops/scraper-watchdog.json`: processes, thresholds, resume commands, hashes.
+- `full/runtime/watchdog/state.json`: latest report and the hour of attempts.
+- `full/runtime/watchdog/events.jsonl`: state changes and actions; rotated after
+  2 MiB, one previous file kept.
+- `full/runtime/watchdog/*.recovery.log`: output of resumed batch processes.
+- `research/2026-09-28/local-portals/runtime/heartbeat.json`: daemon state.
 
-Runtime исключён из Git. Для обновления кода сначала отключить соответствующее
-задание, подготовить изменение и обновить его хеш в конфигурации, затем включить.
-Наблюдатель не принимает новый код автоматически.
+Runtime is excluded from Git. To update code: disable the affected job, prepare
+the change and update its hash in the configuration, then enable it again. The
+watchdog never accepts new code automatically.
 
-## Плановая остановка
+## Planned stop
 
-Перед намеренной остановкой скрейпера поставить `enabled: false` у его задания
-в `ops/scraper-watchdog.json`; затем остановить сам процесс. Для обслуживания
-всего набора также можно остановить таймер:
+Before intentionally stopping a scraper, set `enabled: false` for its job in
+`ops/scraper-watchdog.json`; then stop the process itself. To service the whole
+set, the timer can also be stopped:
 
 ```bash
 systemctl stop usa-atlas-scraper-watchdog.timer
 ```
 
-Остановка таймера не отключает собственный `Restart=on-failure` локальной службы.
-`systemctl stop usa-atlas-local-portals.service` — штатная остановка этой службы.
-Для нового периодического задания после `enabled: false` остановить также
-его таймер и службу, например:
+Stopping the timer does not disable the local service's own `Restart=on-failure`.
+`systemctl stop usa-atlas-local-portals.service` is the orderly stop for that
+service. For a new periodic job, after `enabled: false` also stop its timer and
+service, for example:
 
 ```bash
 systemctl stop usa-atlas-nationwide-discovery.timer usa-atlas-nationwide-discovery.service
 ```
 
-Остановка только общего watchdog не выключает regional/nationwide/PWC timers.
-После обслуживания вернуть `enabled: true` и запустить таймер. Удалять историю
-попыток или сбрасывать systemd limit без выяснения причины сбоя не следует.
+Stopping only the general watchdog does not turn off the regional/nationwide/PWC
+timers. After maintenance, set `enabled: true` back and start the timer. Do not
+delete attempt history or reset systemd limits without first identifying the
+failure cause.
 
-Unit-файлы сохранены рядом с этим документом; установленные копии находятся в
-`/etc/systemd/system/`. Рабочие пути в units относятся к текущему серверу.
+Unit files are stored next to this document; installed copies live in
+`/etc/systemd/system/`. Working paths inside the units refer to the current
+server.
