@@ -1,6 +1,84 @@
 # USA Atlas data collection
 
-## Automatic database admission — running since 1 October 2026
+Reproducible collectors, source contracts, tests, a fail-closed database loader,
+checkpointed resumable runs, and systemd-based operations for the USA Atlas data
+pipeline. It is the data side of a two-repository system and is intentionally
+separate from the UI prototype. Released under the [MIT license](LICENSE).
+
+This repository owns source acquisition, normalization, provenance, stable
+field/geography semantics, the PostgreSQL schema and admission. It does not own
+map rendering or product interaction.
+
+Related reading:
+
+- [DATA-COLLECTION-PLAN.md](DATA-COLLECTION-PLAN.md) — the original collection
+  plan: source families, constraints, and the staged path from probes to bulk
+  collection.
+- [SCALING-PLAN.md](SCALING-PLAN.md) — the rate-limit and throughput analysis
+  behind the permission-first collection design (no proxies, one limiter per
+  provider).
+- [GEOGRAPHY-DEPTH-ROADMAP.md](GEOGRAPHY-DEPTH-ROADMAP.md) — the planned
+  expansion from state/county through city, tract, and block group.
+- [SERVER-RUNBOOK.md](SERVER-RUNBOOK.md) — server bootstrap, monitoring,
+  restart, and result-retrieval flow.
+- [database/README.md](database/README.md) — schema, loading, and verification
+  guide.
+
+## Repository boundary
+
+This is the data side of a two-repository system. The separate UI repository is
+[`66dplus/usa-atlas-design-lab`](https://github.com/66dplus/usa-atlas-design-lab).
+
+The integration boundary is the admitted `usa_atlas` PostgreSQL schema plus the
+versioned field and geography contract. UI access is read-only. Collector code and
+provider credentials are never dependencies of the UI runtime. Changes to field IDs,
+`geo_type`, geography identifiers, normalized record shape or database objects must
+declare compatibility/migration requirements and be verified by the UI adapter against
+the exact data revision. Pure collector changes may ship independently when this
+published contract remains unchanged.
+
+## View admitted data in the UI
+
+The collector and the separate [USA Atlas UI](https://github.com/66dplus/usa-atlas-design-lab)
+connect through the same PostgreSQL database, <code>usa_atlas</code>. The UI does not import this
+repository, read provider credentials, or consume local collection files. It calls a
+small adapter that runs <code>psql</code> in read-only transactions against the canonical
+<code>usa_atlas.catalog_field</code>, <code>usa_atlas.observation</code> and <code>usa_atlas.ingest_run</code> objects.
+
+For a local end-to-end workflow:
+
+1. Follow the [database loading guide](database/README.md) for the prepared collector
+   artifacts and verify the admitted data with <code>python3 database/load.py verify --all</code>.
+2. In a separate UI checkout, follow its [quick start and database setup](https://github.com/66dplus/usa-atlas-design-lab).
+   Configure that UI process to connect to the same <code>usa_atlas</code> database with a
+   dedicated read-only PostgreSQL role and a password file outside both repositories.
+3. Open <code>/ux/</code>. The UI loads the database catalog and fetches each selected series
+   on demand. Reload the page after a new admission to fetch the updated catalog.
+
+The original transfer checkpoint has eight completed providers and an interrupted
+`census_acs` run. The committed `full/raw/full/census_acs/` payloads let another
+machine resume Census without repeating verified requests. Bulk normalized output,
+non-Census raw downloads, process state, database files, and credentials are not
+versioned. The small completed `fbi_cde.jsonl` and `eia.jsonl` artifacts are retained
+only as hash-bound integration fixtures used by the database tests.
+
+## Data boundary
+
+The collector retains provider geography rather than pretending that every metric
+is city-level. Depending on the source, normalized rows may be state, county, metro,
+ZIP, or EPA monitor records. Counties are not city neighbourhoods, and the current
+UI's state/city hierarchy does not make deeper provider geographies equivalent to
+city districts. The current map consumes state and county observations whose
+identifiers map exactly to its Census 2017 geometry. Other collected geography
+types and generic source records remain available in the database but are not
+displayed as county estimates. Keep field IDs, geography types and IDs, units,
+periods, releases and provenance compatible when changing the contract; coordinate
+a consumer change in the UI repository before publishing an incompatible schema or
+catalog revision.
+
+## Operations status and history
+
+### Automatic database admission — running since 1 October 2026
 
 The [scheduled admission pipeline](ops/AUTO-PIPELINE.md) connects completed
 downloads to bounded, resumable PostgreSQL imports. Its installed systemd timer
@@ -13,7 +91,7 @@ registered with the watchdog. The first 250,000-record batch committed at
 08:51 UTC, including numeric updates and quality flags. The remaining backlog
 continues automatically. See the [deployment and live progress record](research/2026-10-01/PROGRESS.md).
 
-## Actual coverage and cleanup status — 29 September 2026
+### Actual coverage and cleanup status — 29 September 2026
 
 The [actual production inventory](research/2026-09-29/production-coverage.json)
 confirmed 31 populated fields out of 81 (28 of 74 non-food fields). At that
@@ -38,9 +116,11 @@ and provenance dictionaries shrank from 63.94 GB to 17.79 GB, saving 46.14 GB
 was about 143.13 GB; new collection and admission change those sizes.
 Both backups are retained. The compatibility view and matching production loader
 are deployed. See the [completed maintenance record](research/2026-09-29/CLEANUP-NEXT.md)
-and [result evidence](research/2026-09-28/storage/postgres-cleanup-result.json).
+and [result evidence](research/2026-09-28/storage/postgres-cleanup-result.json). The
+online compact lookup-index switch that followed is recorded in
+[database/LOOKUP-INDEX-MIGRATION.md](database/LOOKUP-INDEX-MIGRATION.md).
 
-## Research and collection — 28 September 2026
+### Research and collection — 28 September 2026
 
 The [live operations report](research/2026-09-28/LIVE-OPERATIONS.md) covers the
 production database maintenance history, completed 21-table ACS + CDC collection,
@@ -54,33 +134,6 @@ audit, recovery of partial Census observations, deeper collection tooling,
 new-topic aggregates, and US search-demand research. It distinguishes recovered
 and collected artifacts from planned or blocked work. Food-related fields are
 excluded from this expansion. Research artifacts are not production admissions.
-
-## Repository boundary
-
-This is the data side of a two-repository system. The separate UI repository is
-[`66dplus/usa-atlas-design-lab`](https://github.com/66dplus/usa-atlas-design-lab), checked
-out locally at `usa-atlas-design-lab/` in the USA-MAPS workspace. This repository owns
-source acquisition, normalization, provenance, stable field/geography semantics,
-PostgreSQL schema and admission. It does not own map rendering or product interaction.
-
-The integration boundary is the admitted `usa_atlas` PostgreSQL schema plus the
-versioned field and geography contract. UI access is read-only. Collector code and
-provider credentials are never dependencies of the UI runtime. Changes to field IDs,
-`geo_type`, geography identifiers, normalized record shape or database objects must
-declare compatibility/migration requirements and be verified by the UI adapter against
-the exact data revision. Pure collector changes may ship independently when this
-published contract remains unchanged.
-
-This repository contains the reproducible collectors, source contracts, tests,
-database loader, and the verified partial Census cache for the USA Atlas data
-pipeline. It is intentionally separate from the UI prototype.
-
-The original transfer checkpoint has eight completed providers and an interrupted
-`census_acs` run. The committed `full/raw/full/census_acs/` payloads let another
-machine resume Census without repeating verified requests. Bulk normalized output,
-non-Census raw downloads, process state, database files, and credentials are not
-versioned. The small completed `fbi_cde.jsonl` and `eia.jsonl` artifacts are retained
-only as hash-bound integration fixtures used by the database tests.
 
 ## Local checks
 
@@ -99,16 +152,17 @@ cd ../database
 python3 -W error::ResourceWarning -m unittest -v test_database.py
 ```
 
+The database integration tests run against a temporary PostgreSQL cluster created
+inside the test. They require `initdb`, `pg_ctl`, `createdb`, and `psql` from a
+PostgreSQL server installation on `PATH`; no running database is needed. The
+pinned catalog matches the deployed compact-index shape described in
+[LOOKUP-INDEX-MIGRATION.md](database/LOOKUP-INDEX-MIGRATION.md).
+
 Credentials belong in `~/.config/usa-atlas/credentials.env` with mode `600`. Never
-copy that file into this repository. See [SERVER-RUNBOOK.md](SERVER-RUNBOOK.md) for
-the server bootstrap, monitoring, restart, and result-retrieval flow. The planned
-expansion from state/county through city, tract, and block group is recorded in
-[GEOGRAPHY-DEPTH-ROADMAP.md](GEOGRAPHY-DEPTH-ROADMAP.md).
+copy that file into this repository.
 
-## Data boundary
+## License
 
-The collector retains provider geography rather than pretending that every metric
-is city-level. Depending on the source, normalized rows may be state, county, metro,
-ZIP, or EPA monitor records. Counties are not city neighbourhoods, and the current
-UI's state/city hierarchy does not make deeper provider geographies equivalent to
-city districts.
+Released under the [MIT license](LICENSE). Copyright © 2026 Dmitrii Rybkin.
+Collected source data keeps each provider's own terms; every research artifact
+records its origin, and provider permissions are never substituted by automation.

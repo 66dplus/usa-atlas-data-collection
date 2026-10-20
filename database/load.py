@@ -716,11 +716,29 @@ def assert_complete_state(admissions: list[Admission]) -> dict[str, object]:
     return metrics
 
 
+def apply_compact_lookup_index() -> None:
+    """Bring a freshly bootstrapped target to the deployed lookup-index shape.
+
+    The online production switch observed in LOOKUP-INDEX-MIGRATION.md replaced
+    the bootstrap lookup index with the compact form; a new installation reaches
+    the pinned catalog only after the same storage migration.
+    """
+    psql(["--command", """
+CREATE INDEX observation_lookup_compact_idx
+  ON usa_atlas.observation_data
+  (catalog_field_id, geo_type, geo_id, period DESC);
+DROP INDEX usa_atlas.observation_lookup_idx;
+ALTER INDEX usa_atlas.observation_lookup_compact_idx
+  RENAME TO observation_lookup_idx;
+"""])
+
+
 def ensure_target_database(admissions: list[Admission]) -> str:
     current_role, target_owner = target_identity()
     if not target_owner:
         createdb(current_role)
         apply_schema()
+        apply_compact_lookup_index()
         if schema_catalog_sha256() != EXPECTED_SCHEMA_CATALOG_SHA256:
             raise AdmissionError("new_target_physical_schema_mismatch")
         return "created"
@@ -728,6 +746,7 @@ def ensure_target_database(admissions: list[Admission]) -> str:
         raise AdmissionError(f"target_owner_mismatch:{target_owner}:{current_role}")
     if target_is_empty():
         apply_schema()
+        apply_compact_lookup_index()
         if schema_catalog_sha256() != EXPECTED_SCHEMA_CATALOG_SHA256:
             raise AdmissionError("initialized_target_physical_schema_mismatch")
         return "initialized"

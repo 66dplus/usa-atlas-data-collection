@@ -45,6 +45,8 @@ def postgres_cluster():
         }
         try:
             with mock.patch.dict(os.environ, environment):
+                load.psql(["--command", "CREATE ROLE usa_atlas_reader"],
+                          dbname=load.MAINTENANCE_DATABASE)
                 yield
         finally:
             subprocess.run(["pg_ctl", "-D", str(data), "-m", "fast", "-w", "stop"],
@@ -290,7 +292,8 @@ class PostgreSQLIntegrationTests(unittest.TestCase):
             ), baseline)
 
             load.psql(["--command", "DROP TABLE public.unexpected_user_object"])
-            load.psql(["--command", "ALTER TABLE usa_atlas.observation ENABLE ROW LEVEL SECURITY"])
+            load.psql(["--command",
+                       "ALTER TABLE usa_atlas.observation_data ENABLE ROW LEVEL SECURITY"])
             with self.assertRaisesRegex(load.AdmissionError, "target_physical_schema_mismatch"):
                 load.load_database(["fbi_cde"], ROOT)
 
