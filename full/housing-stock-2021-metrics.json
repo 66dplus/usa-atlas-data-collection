@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "dataset_id": "housing-stock-2021",
+  "parent_field_id": "02.07",
+  "source": "census_acs",
+  "source_release": "2021-acs-acs5",
+  "period": "2017-2021",
+  "displayPeriod": "2017–2021",
+  "unit": "% of all housing units",
+  "geography": [
+    "nation",
+    "state",
+    "county"
+  ],
+  "expectedCounts": {
+    "nation": 1,
+    "state": 51,
+    "county": 3142
+  },
+  "minDenominator": 1,
+  "minDenominatorNote": "No minimum beyond a positive all-housing-units denominator; small counties can have wide ACS margins of error.",
+  "indicators": [
+    {
+      "id": "02.07:owner_occupied_share_all_units",
+      "catalogFieldId": "02.07",
+      "label": "Owner-occupied homes",
+      "description": "Share of all housing units that are owner-occupied.",
+      "unit": "% of all housing units",
+      "period": "2017-2021",
+      "displayPeriod": "2017–2021",
+      "sourceRelease": "2021-acs-acs5",
+      "formula": "B25003_002E / B25001_001E * 100",
+      "method": "Owner-occupied housing units divided by all housing units, times 100. Chugach Census Area (02063) and Copper River Census Area (02066) are combined into the 2017 Valdez-Cordova Census Area (02261) boundary; the union differs from the 2017 boundary by 0.004% of area (a coastal/glacier sliver). Counts are summed; the share is computed from the summed numerator and denominator.",
+      "numerator": "B25003_002E",
+      "numeratorMoe": "B25003_002M",
+      "denominator": "B25001_001E",
+      "denominatorMoe": "B25001_001M",
+      "sourceFields": [
+        "B25003_002E",
+        "B25003_002M",
+        "B25001_001E",
+        "B25001_001M"
+      ],
+      "geography": [
+        "nation",
+        "state",
+        "county"
+      ],
+      "decimals": 1,
+      "minDenominator": 1,
+      "status": "default"
+    },
+    {
+      "id": "02.07:renter_occupied_share_all_units",
+      "catalogFieldId": "02.07",
+      "label": "Renter-occupied homes",
+      "description": "Share of all housing units that are renter-occupied.",
+      "unit": "% of all housing units",
+      "period": "2017-2021",
+      "displayPeriod": "2017–2021",
+      "sourceRelease": "2021-acs-acs5",
+      "formula": "B25003_003E / B25001_001E * 100",
+      "method": "Renter-occupied housing units divided by all housing units, times 100. Chugach Census Area (02063) and Copper River Census Area (02066) are combined into the 2017 Valdez-Cordova Census Area (02261) boundary; the union differs from the 2017 boundary by 0.004% of area (a coastal/glacier sliver). Counts are summed; the share is computed from the summed numerator and denominator.",
+      "numerator": "B25003_003E",
+      "numeratorMoe": "B25003_003M",
+      "denominator": "B25001_001E",
+      "denominatorMoe": "B25001_001M",
+      "sourceFields": [
+        "B25003_003E",
+        "B25003_003M",
+        "B25001_001E",
+        "B25001_001M"
+      ],
+      "geography": [
+        "nation",
+        "state",
+        "county"
+      ],
+      "decimals": 1,
+      "minDenominator": 1,
+      "status": "default"
+    },
+    {
+      "id": "02.07:vacant_share_all_units",
+      "catalogFieldId": "02.07",
+      "label": "Vacant homes",
+      "description": "Share of all housing units that are vacant, including seasonal and occasional-use units.",
+      "unit": "% of all housing units",
+      "period": "2017-2021",
+      "displayPeriod": "2017–2021",
+      "sourceRelease": "2021-acs-acs5",
+      "formula": "B25002_003E / B25001_001E * 100",
+      "method": "Vacant housing units divided by all housing units, times 100. Chugach Census Area (02063) and Copper River Census Area (02066) are combined into the 2017 Valdez-Cordova Census Area (02261) boundary; the union differs from the 2017 boundary by 0.004% of area (a coastal/glacier sliver). Counts are summed; the share is computed from the summed numerator and denominator.",
+      "numerator": "B25002_003E",
+      "numeratorMoe": "B25002_003M",
+      "denominator": "B25001_001E",
+      "denominatorMoe": "B25001_001M",
+      "sourceFields": [
+        "B25002_003E",
+        "B25002_003M",
+        "B25001_001E",
+        "B25001_001M"
+      ],
+      "geography": [
+        "nation",
+        "state",
+        "county"
+      ],
+      "decimals": 1,
+      "minDenominator": 1,
+      "status": "default"
+    }
+  ],
+  "legacy": {
+    "id": "02.07:owner_occupied_share_occupied_units",
+    "label": "Homeownership rate (occupied households)",
+    "formula": "B25003_002E / B25003_001E * 100",
+    "status": "legacy_data_library_only",
+    "note": "The former occupied-household rate is not part of this three-indicator set."
+  },
+  "caveats": [
+    "The denominator is all housing units, occupied plus vacant, including seasonal and occasional-use units.",
+    "Vacant includes seasonal, recreational, and occasional-use units, so a high vacant share is not by itself a measure of available housing.",
+    "Shares are computed from unrounded counts; values displayed to one decimal may not sum exactly to 100.0.",
+    "Later ACS releases no longer publish the eight 2017 Connecticut counties used by the 2017 boundary set."
+  ]
+}

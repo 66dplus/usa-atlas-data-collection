@@ -32,6 +32,14 @@ CENSUS_GROUP_LAST_VARIABLE = {
     "B25070": 11,
 }
 
+HOUSING_STOCK_VARIABLES = [
+    "B25001_001E", "B25001_001M",
+    "B25002_001E", "B25002_001M", "B25002_002E", "B25002_002M",
+    "B25002_003E", "B25002_003M",
+    "B25003_001E", "B25003_001M", "B25003_002E", "B25003_002M",
+    "B25003_003E", "B25003_003M",
+]
+
 
 def census_group_variables(group: str) -> list[str]:
     """Materialize the frozen 2024 ACS E/M IDs used by the executable ledger."""
@@ -80,7 +88,10 @@ MAPPINGS = {
     "02.04": census("B25077", ["B25077_001E", "B25077_001M"], "identity estimate and MOE"),
     "02.05": census("B25088", ["B25088_001E", "B25088_001M"], "identity estimate and MOE"),
     "02.06": census("B25070", census_group_variables("B25070"), "emit distribution; derive 30%+ share excluding not-computed"),
-    "02.07": census("B25003", ["B25003_002E", "B25003_002M", "B25003_003E", "B25003_003M"], "owner count divided by renter count"),
+    "02.07": census(
+        "B25001+B25002+B25003", HOUSING_STOCK_VARIABLES,
+        "owner-, renter-, and vacant-unit counts over all housing units; derived shares use B25001_001E",
+    ),
     "02.08": census("B17001", ["B17001_001E", "B17001_001M", "B17001_002E", "B17001_002M"], "below-poverty count divided by status-determined total"),
     "02.09": census("B19001", ["B19001_001E", "B19001_001M", "B19001_017E", "B19001_017M"], "$200k+ households divided by total households"),
     "03.01": census("B15003", ["B15003_001E", "B15003_001M", "B15003_022E", "B15003_022M"], "bachelor count and share age 25+"),

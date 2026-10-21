@@ -34,6 +34,26 @@ the same ordered raw jobs produces the same normalized artifact hash.
 The committed field contract contains concrete ACS E/M variable IDs. The builder uses
 frozen 2024 group bounds to regenerate that expansion without contacting Census.
 
+The 2024 `housing-stock-metrics.json` defines the three all-housing-units tenure shares
+derived from the `02.07` variables: owner-occupied, renter-occupied, and vacant or
+seasonal.
+
+The approved 2017-2021 artifact uses a separate period-specific contract so the 2024
+`02.07` rows remain unchanged:
+
+```bash
+python3 research/data-collection/full/collect_housing_stock_2021.py \
+  --boundary-manifest usa-atlas-design-lab/ux/boundaries/manifest.json
+```
+
+It writes `normalized/housing_stock_2021.jsonl.gz` and
+`normalized/housing_stock_2021.manifest.json`. The contract is
+`housing-stock-2021-contract.json`; UI definitions are in
+`housing-stock-2021-metrics.json`. The artifact has 3,142 counties, 51 states and one
+US record. Chugach (`02063`) and Copper River (`02066`) are summed into the 2017
+Valdez-Cordova (`02261`) boundary, with MOEs combined by root-sum-square. The artifact
+is deterministic across reruns; the manifest records the retrieval timestamp.
+
 Generated data:
 
 - `raw/calibration/` and `state/calibration-report.json`: bounded nine-source probes;

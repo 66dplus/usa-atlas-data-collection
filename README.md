@@ -31,6 +31,12 @@ Related reading:
 This is the data side of a two-repository system. The separate UI repository is
 [`66dplus/usa-atlas-design-lab`](https://github.com/66dplus/usa-atlas-design-lab).
 
+The published atlas is **https://usa-xray.online**. That site is built and shipped
+from the UI repository, not from this one: this repository owns the pipeline that
+feeds the `usa_atlas` database, and the public runtime reads the admitted
+observations from that database through the UI's read-only adapter. No collector
+code, credentials or unpublished series reach the public site.
+
 The integration boundary is the admitted `usa_atlas` PostgreSQL schema plus the
 versioned field and geography contract. UI access is read-only. Collector code and
 provider credentials are never dependencies of the UI runtime. Changes to field IDs,

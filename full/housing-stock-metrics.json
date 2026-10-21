@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "parent_field_id": "02.07",
+  "source_release": "2024-acs-acs5",
+  "period": "2020-2024",
+  "source_tables": {
+    "B25001": {
+      "concept": "Housing Units",
+      "universe": "Housing units",
+      "variables": {
+        "B25001_001E": "Total housing units",
+        "B25001_001M": "Margin of error for total housing units"
+      }
+    },
+    "B25002": {
+      "concept": "Occupancy Status",
+      "universe": "Housing units",
+      "variables": {
+        "B25002_001E": "Total housing units",
+        "B25002_001M": "Margin of error for total housing units",
+        "B25002_002E": "Occupied housing units",
+        "B25002_002M": "Margin of error for occupied housing units",
+        "B25002_003E": "Vacant housing units",
+        "B25002_003M": "Margin of error for vacant housing units"
+      }
+    },
+    "B25003": {
+      "concept": "Tenure",
+      "universe": "Occupied housing units",
+      "variables": {
+        "B25003_001E": "Total occupied housing units",
+        "B25003_001M": "Margin of error for total occupied housing units",
+        "B25003_002E": "Owner-occupied housing units",
+        "B25003_002M": "Margin of error for owner-occupied housing units",
+        "B25003_003E": "Renter-occupied housing units",
+        "B25003_003M": "Margin of error for renter-occupied housing units"
+      }
+    }
+  },
+  "denominator": {
+    "variable": "B25001_001E",
+    "definition": "All housing units, occupied plus vacant, including seasonal and occasional-use units."
+  },
+  "geography": {
+    "release_county_equivalents_50_states_dc": 3144,
+    "release_county_equivalents_including_puerto_rico": 3222,
+    "boundary_vintage": "2017",
+    "boundary_county_equivalents_50_states_dc": 3142,
+    "exact_fips_join_count": 3133,
+    "release_only_fips": {
+      "09": ["09110", "09120", "09130", "09140", "09150", "09160", "09170", "09180", "09190"],
+      "02": ["02063", "02066"]
+    },
+    "boundary_only_fips": {
+      "09": ["09001", "09003", "09005", "09007", "09009", "09011", "09013", "09015"],
+      "02": ["02261"]
+    },
+    "note": "The 2024 ACS release uses Connecticut planning regions and split Alaska census areas. These FIPS do not join exactly to the 2017 county boundaries; no name match or crosswalk is applied."
+  },
+  "metrics": [
+    {
+      "id": "02.07:owner_occupied_share_all_units",
+      "name": "Owner-occupied share",
+      "description": "Share of all housing units that are owner-occupied.",
+      "numerator": "B25003_002E",
+      "numerator_moe": "B25003_002M",
+      "denominator": "B25001_001E",
+      "denominator_moe": "B25001_001M",
+      "formula": "B25003_002E / B25001_001E * 100",
+      "unit": "percent",
+      "decimals": 1
+    },
+    {
+      "id": "02.07:renter_occupied_share_all_units",
+      "name": "Renter-occupied share",
+      "description": "Share of all housing units that are renter-occupied.",
+      "numerator": "B25003_003E",
+      "numerator_moe": "B25003_003M",
+      "denominator": "B25001_001E",
+      "denominator_moe": "B25001_001M",
+      "formula": "B25003_003E / B25001_001E * 100",
+      "unit": "percent",
+      "decimals": 1
+    },
+    {
+      "id": "02.07:vacant_share_all_units",
+      "name": "Vacant or seasonal share",
+      "description": "Share of all housing units that are vacant, including seasonal and occasional-use units.",
+      "numerator": "B25002_003E",
+      "numerator_moe": "B25002_003M",
+      "denominator": "B25001_001E",
+      "denominator_moe": "B25001_001M",
+      "formula": "B25002_003E / B25001_001E * 100",
+      "unit": "percent",
+      "decimals": 1
+    }
+  ],
+  "legacy_definitions": [
+    {
+      "id": "02.07:owner_occupied_share_occupied_units",
+      "name": "Homeownership rate (occupied households)",
+      "description": "Former metric retained for the Data library; not the new default.",
+      "numerator": "B25003_002E",
+      "denominator": "B25003_001E",
+      "formula": "B25003_002E / B25003_001E * 100",
+      "unit": "percent",
+      "status": "legacy",
+      "note": "Denominator excludes vacant and seasonal units, so it is not comparable to the all-housing-units shares."
+    }
+  ],
+  "checks": {
+    "occupied_plus_vacant_equals_total": "B25002_002E + B25002_003E = B25002_001E",
+    "owner_plus_renter_equals_occupied": "B25003_002E + B25003_003E = B25003_001E",
+    "tenure_total_equals_occupied": "B25003_001E = B25002_002E",
+    "housing_totals_agree": "B25001_001E = B25002_001E",
+    "shares_sum_to": 100.0
+  },
+  "caveats": [
+    "The denominator is all housing units, not occupied units. This is the definition change from the former occupied-household homeownership rate.",
+    "Vacant includes seasonal, recreational, and occasional-use units, so a high vacant share is not by itself a measure of available housing.",
+    "ACS values are 5-year estimates for 2020-2024 with sampling error. Derived-share margins of error require the ACS ratio/proportion approximation and must not be computed by dividing published MOEs.",
+    "Shares are computed from unrounded counts; values displayed to one decimal may not sum exactly to 100.0."
+  ]
+}

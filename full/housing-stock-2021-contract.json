@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "contract_id": "housing-stock-2021",
+  "status": "approved",
+  "parent_catalog_field_id": "02.07",
+  "source": "census_acs",
+  "source_release": "2021-acs-acs5",
+  "acs_year": "2021",
+  "period": "2017-2021",
+  "display_period": "2017–2021",
+  "source_selector": "https://api.census.gov/data/2021/acs/acs5",
+  "source_tables": {
+    "B25001": {
+      "concept": "HOUSING UNITS",
+      "universe": "Housing units",
+      "variables": {
+        "B25001_001E": "Total housing units",
+        "B25001_001M": "Margin of error for total housing units"
+      }
+    },
+    "B25002": {
+      "concept": "OCCUPANCY STATUS",
+      "universe": "Housing units",
+      "variables": {
+        "B25002_001E": "Total housing units",
+        "B25002_001M": "Margin of error for total housing units",
+        "B25002_002E": "Occupied housing units",
+        "B25002_002M": "Margin of error for occupied housing units",
+        "B25002_003E": "Vacant housing units",
+        "B25002_003M": "Margin of error for vacant housing units"
+      }
+    },
+    "B25003": {
+      "concept": "TENURE",
+      "universe": "Occupied housing units",
+      "variables": {
+        "B25003_001E": "Total occupied housing units",
+        "B25003_001M": "Margin of error for total occupied housing units",
+        "B25003_002E": "Owner-occupied housing units",
+        "B25003_002M": "Margin of error for owner-occupied housing units",
+        "B25003_003E": "Renter-occupied housing units",
+        "B25003_003M": "Margin of error for renter-occupied housing units"
+      }
+    }
+  },
+  "source_variables": [
+    "B25001_001E",
+    "B25001_001M",
+    "B25002_001E",
+    "B25002_001M",
+    "B25002_002E",
+    "B25002_002M",
+    "B25002_003E",
+    "B25002_003M",
+    "B25003_001E",
+    "B25003_001M",
+    "B25003_002E",
+    "B25003_002M",
+    "B25003_003E",
+    "B25003_003M"
+  ],
+  "target_geographies": [
+    "nation",
+    "state",
+    "county"
+  ],
+  "excluded_state_fips": [
+    "72"
+  ],
+  "expected_counts": {
+    "nation": 1,
+    "state": 51,
+    "county": 3142
+  },
+  "alaska_aggregation": {
+    "target_geo_id": "02261",
+    "target_name": "Valdez-Cordova Census Area, Alaska",
+    "source_geo_ids": [
+      "02063",
+      "02066"
+    ],
+    "source_names": [
+      "Chugach Census Area, Alaska",
+      "Copper River Census Area, Alaska"
+    ],
+    "estimate_method": "sum",
+    "moe_method": "root_sum_square",
+    "share_method": "summed_numerator_over_summed_denominator",
+    "geometry_check": {
+      "layer": "Census cartographic boundary 500K",
+      "target_vintage": "2017",
+      "source_vintage": "2021",
+      "symmetric_difference_sq_km": 3.575,
+      "symmetric_difference_pct": 0.0039,
+      "approved_tolerance_pct": 0.004,
+      "approved": true,
+      "residual": "Coastal/glacier sliver near 59.93N, 143.94W.",
+      "owner_decision": "Approved 2026-10-21; 2019 ACS is not used."
+    }
+  },
+  "artifact": {
+    "path": "normalized/housing_stock_2021.jsonl.gz",
+    "manifest_path": "normalized/housing_stock_2021.manifest.json",
+    "record_grain": "one record per geography",
+    "record_count": 3194
+  },
+  "metrics_path": "housing-stock-2021-metrics.json"
+}

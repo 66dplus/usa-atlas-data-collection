@@ -98,7 +98,7 @@ condition; they must not be replaced with a look-alike metric.
 | 02.04 | Median home value | Census ACS | run_now | Owner-occupied median value, nominal USD, estimate + MOE |
 | 02.05 | Mortgage / selected monthly owner costs | Census ACS | run_now | Selected monthly owner costs with mortgage; estimate + MOE |
 | 02.06 | Rent as % of income / rent burden | Census ACS | run_now | Gross-rent-as-income distribution and 30%+ derived share |
-| 02.07 | Owner / renter ratio | Census ACS | run_now | Occupied owner and renter counts plus derived ratio |
+| 02.07 | Owner / renter ratio | Census ACS | run_now | Owner-, renter-, and vacant-unit counts over all housing units; derived shares use all housing units |
 | 02.08 | Poverty | Census ACS | run_now | Below-poverty count and share for population with status determined |
 | 02.09 | Households earning $200k+ | Census ACS | run_now | Count and derived share of households in $200k+ income bins |
 | 02.10 | Cost of living / Regional Price Parities | BEA RPP | run_now | All-items RPP, U.S.=100, state and metro release rows |
@@ -197,7 +197,7 @@ source-specific years are retained. These v1 mappings are frozen:
 | 02.04 | Census 2024 ACS 5-year `/groups/B25077` | API | `B25077_001E/M` | state, county, place, tract |
 | 02.05 | Census 2024 ACS 5-year `/groups/B25088` | API | `B25088_001E/M` | state, county, place, tract |
 | 02.06 | Census 2024 ACS 5-year `/groups/B25070` | API | all rent/income bins E/M; 30%+ numerator is published bins at or above 30%, denominator excludes not-computed | state, county, place, tract |
-| 02.07 | Census 2024 ACS 5-year `/groups/B25003` | API | owner `002E/M`, renter `003E/M`, ratio `002E / 003E` | state, county, place, tract |
+| 02.07 | Census 2024 ACS 5-year `/groups/B25001+B25002+B25003` | API | housing total, occupied/vacant, and owner/renter counts with E/M values; shares use `B25001_001E` | state, county, place, tract |
 | 02.08 | Census 2024 ACS 5-year `/groups/B17001` | API | below-poverty `002E/M`, total `001E/M`, derived share | state, county, place, tract |
 | 02.09 | Census 2024 ACS 5-year `/groups/B19001` | API | `$200k+` `017E/M`, total `001E/M`, derived share | state, county, place, tract |
 | 02.10 | BEA `SARPP.zip`, state and MSA CSVs, line code 1 | bulk ZIP | all-items RPP rows; preserve GeoFIPS/year | state, metro |

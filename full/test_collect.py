@@ -20,6 +20,65 @@ class ContractTests(unittest.TestCase):
             "license_required": 3,
         })
 
+    def test_housing_stock_mapping_uses_all_units_denominator(self):
+        contract = collect.load_json(collect.CONTRACT_PATH)
+        row = next(item for item in contract if item["field_id"] == "02.07")
+        self.assertEqual(row["source_selector"],
+                         "https://api.census.gov/data/2024/acs/acs5/groups/B25001+B25002+B25003.json")
+        self.assertEqual(set(row["source_variables"]), {
+            "B25001_001E", "B25001_001M",
+            "B25002_001E", "B25002_001M", "B25002_002E", "B25002_002M",
+            "B25002_003E", "B25002_003M",
+            "B25003_001E", "B25003_001M", "B25003_002E", "B25003_002M",
+            "B25003_003E", "B25003_003M",
+        })
+        self.assertIn("B25001_001E", row["derivation"])
+
+    def test_housing_stock_variables_are_in_collector_variable_map(self):
+        mapping, artifacts = collect._census_variable_map(mock.Mock())
+        expected = {
+            "B25001_001E", "B25001_001M",
+            "B25002_001E", "B25002_001M", "B25002_002E", "B25002_002M",
+            "B25002_003E", "B25002_003M",
+            "B25003_001E", "B25003_001M", "B25003_002E", "B25003_002M",
+            "B25003_003E", "B25003_003M",
+        }
+        for variable in expected:
+            self.assertIn("02.07", mapping[variable])
+        self.assertEqual(artifacts, [])
+
+    def test_housing_stock_metrics_match_contract(self):
+        contract = collect.load_json(collect.CONTRACT_PATH)
+        row = next(item for item in contract if item["field_id"] == "02.07")
+        metrics = collect.load_json(collect.HERE / "housing-stock-metrics.json")
+        self.assertEqual(metrics["parent_field_id"], "02.07")
+        self.assertEqual(metrics["denominator"]["variable"], "B25001_001E")
+        variables = set(row["source_variables"])
+        self.assertEqual(len(metrics["metrics"]), 3)
+        for metric in metrics["metrics"]:
+            self.assertTrue(metric["formula"].startswith(f"{metric['numerator']} / {metric['denominator']} * 100"))
+            self.assertIn(metric["numerator"], variables)
+            self.assertIn(metric["numerator_moe"], variables)
+            self.assertIn(metric["denominator"], variables)
+            self.assertIn(metric["denominator_moe"], variables)
+            self.assertEqual(metric["unit"], "percent")
+        self.assertEqual({metric["id"] for metric in metrics["metrics"]}, {
+            "02.07:owner_occupied_share_all_units",
+            "02.07:renter_occupied_share_all_units",
+            "02.07:vacant_share_all_units",
+        })
+        self.assertEqual(len(metrics["legacy_definitions"]), 1)
+        legacy = metrics["legacy_definitions"][0]
+        self.assertEqual(legacy["denominator"], "B25003_001E")
+        self.assertNotIn(legacy["id"], {metric["id"] for metric in metrics["metrics"]})
+        geography = metrics["geography"]
+        release_only = sum(len(values) for values in geography["release_only_fips"].values())
+        boundary_only = sum(len(values) for values in geography["boundary_only_fips"].values())
+        self.assertEqual(geography["release_county_equivalents_50_states_dc"] - release_only,
+                         geography["exact_fips_join_count"])
+        self.assertEqual(geography["boundary_county_equivalents_50_states_dc"] - boundary_only,
+                         geography["exact_fips_join_count"])
+
     def test_all_run_now_rows_are_executable_and_rate_limited(self):
         contract = collect.load_json(collect.CONTRACT_PATH)
         config = collect.load_json(collect.CONFIG_PATH)["profiles"]
