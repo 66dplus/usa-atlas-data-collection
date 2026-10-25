@@ -1,4 +1,5 @@
 import json
+import hashlib
 import math
 import tempfile
 import unittest
@@ -122,22 +123,26 @@ class BoundaryTests(unittest.TestCase):
     def test_boundary_ids_must_match_artifact(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            (root / "06.json").write_text(json.dumps({
+            ca = root / "06.json"
+            ca.write_text(json.dumps({
                 "features": [{"id": "06001"}, {"id": "06075"}],
             }))
-            (root / "02.json").write_text(json.dumps({
+            alaska = root / "02.json"
+            alaska.write_text(json.dumps({
                 "features": [{"id": "02261"}],
             }))
             manifest = root / "manifest.json"
             manifest.write_text(json.dumps({
-                "states": [{"id": "02"}, {"id": "06"}],
+                "artifact_version": "test-v1",
+                "states": [{"id": "02", "sha256": hashlib.sha256(alaska.read_bytes()).hexdigest()},
+                           {"id": "06", "sha256": hashlib.sha256(ca.read_bytes()).hexdigest()}],
             }))
             records = [
                 {"geo_type": "county", "geo_id": "06001"},
                 {"geo_type": "county", "geo_id": "06075"},
                 {"geo_type": "county", "geo_id": "02261"},
             ]
-            result = housing.validate_boundaries(records, manifest)
+            result = housing.validate_boundaries(records, manifest, hashlib.sha256(manifest.read_bytes()).hexdigest())
             self.assertTrue(result["pass"])
             self.assertEqual(result["boundary_counties"], 3)
 

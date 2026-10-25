@@ -43,8 +43,16 @@ The approved 2017-2021 artifact uses a separate period-specific contract so the 
 
 ```bash
 python3 research/data-collection/full/collect_housing_stock_2021.py \
-  --boundary-manifest usa-atlas-design-lab/ux/boundaries/manifest.json
+  --boundary-manifest /path/to/operator-boundaries/manifest.json \
+  --boundary-manifest-sha256 <manifest-sha256>
 ```
+
+When boundary validation is requested, supply an operator-managed, versioned
+geometry bundle. Its manifest must contain `artifact_version`, each state's
+`id` and geometry-file `sha256`; verify the manifest hash with the required
+CLI argument. The collector does not fetch geometry or depend on a neighboring
+UI checkout. Omitting the optional boundary arguments preserves the existing
+collection and validation flow.
 
 It writes `normalized/housing_stock_2021.jsonl.gz` and
 `normalized/housing_stock_2021.manifest.json`. The contract is

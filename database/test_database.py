@@ -212,91 +212,93 @@ class PostgreSQLIntegrationTests(unittest.TestCase):
         with postgres_cluster():
             with (ROOT / "normalized" / "fbi_cde.jsonl").open(encoding="utf-8") as handle:
                 first_record = json.loads(next(handle))
-            with mock.patch.dict(os.environ, {"PGDATABASE": "poisoned_ambient_database"}):
-                first = load.load_database(["fbi_cde"], ROOT)
-            self.assertEqual(first.sources, (("fbi_cde", "loaded"),))
-            expected_rows = int(load.load_json(ROOT / "state" / "run-manifest.json")["sources"]["fbi_cde"]["normalized_rows"])
-            self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.catalog_field")), 81)
-            self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.observation")), expected_rows)
-            self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.ingest_run WHERE status='pass'")), 1)
-
-            key_sql = (
-                "SELECT json_build_object(" 
-                "'geo_id',geo_id,'geo_type',geo_type,'year',period,'field_id',field_id," 
-                "'catalog_field_id',catalog_field_id,'value',value,'unit',unit,'source',source," 
-                "'source_release',source_release,'source_url',source_url," 
-                "'methodology_note',methodology_note,'retrieved_at',retrieved_at) "
-                "FROM usa_atlas.observation ORDER BY geo_id,period,field_id,source_release LIMIT 1"
-            )
-            observed = json.loads(scalar(key_sql))
-            with (ROOT / "normalized" / "fbi_cde.jsonl").open(encoding="utf-8") as handle:
-                expected = min(
-                    (json.loads(line) for line in handle),
-                    key=lambda row: (row["geo_id"], row["year"], row["field_id"], row["source_release"]),
-                )
-            self.assertEqual({k: v for k, v in observed.items() if k != "retrieved_at"},
-                             {k: v for k, v in expected.items() if k != "retrieved_at"})
-            self.assertEqual(load.parse_timestamp(observed["retrieved_at"]),
-                             load.parse_timestamp(expected["retrieved_at"]))
-
-            second = load.load_database(["fbi_cde"], ROOT)
-            self.assertEqual(second.sources, (("fbi_cde", "skipped"),))
-            self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.observation")), expected_rows)
-            self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")), 1)
-            verified = load.verify_database(["fbi_cde"], ROOT)
-            self.assertEqual(verified["status"], "pass")
-            self.assertTrue(verified["checks"]["idempotent"])
-
-            baseline = (
-                int(scalar("SELECT count(*) FROM usa_atlas.observation")),
-                int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
-            )
-            invalid_cases = [
-                {"status": "fail"},
-                {"missing": True},
-                {"expected_hash": "0" * 64},
-                {"contract_hash": "0" * 64},
-                {"record": {**first_record, "source": "eia"}},
-                {"record": {**first_record, "catalog_field_id": "99.99", "field_id": "99.99:test"}},
-                {"record": {**first_record, "catalog_field_id": "08.05", "field_id": "08.05:test"}},
-                {"drop_contract_field": "catalog_label"},
-            ]
-            for case in invalid_cases:
-                with self.subTest(case=sorted(case)):
-                    record = case.pop("record", first_record)
-                    with tempfile.TemporaryDirectory() as directory:
-                        full = fixture_collection(Path(directory), record, **case)
-                        with self.assertRaises(load.AdmissionError):
-                            load.load_database(["fbi_cde"], full)
-                    observed_counts = (
-                        int(scalar("SELECT count(*) FROM usa_atlas.observation")),
-                        int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
-                    )
-                    self.assertEqual(observed_counts, baseline)
-
             with tempfile.TemporaryDirectory() as directory:
-                duplicate_full = duplicate_fixture(Path(directory), [first_record, first_record])
-                with self.assertRaisesRegex(load.AdmissionError, "target_complete_state_mismatch"):
-                    load.load_database(["fbi_cde"], duplicate_full)
-            self.assertEqual((
-                int(scalar("SELECT count(*) FROM usa_atlas.observation")),
-                int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
-            ), baseline)
+                fixture_root = fixture_collection(Path(directory), first_record)
+                self._assert_real_source_round_trip(fixture_root)
 
-            load.psql(["--command", "CREATE TABLE public.unexpected_user_object (id integer)"])
-            with self.assertRaisesRegex(load.AdmissionError, "target_physical_schema_mismatch"):
-                load.load_database(["fbi_cde"], ROOT)
-            self.assertEqual((
-                int(scalar("SELECT count(*) FROM usa_atlas.observation")),
-                int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
-            ), baseline)
+    def _assert_real_source_round_trip(self, fixture_root):
+        with (fixture_root / "normalized" / "fixture.jsonl").open(encoding="utf-8") as handle:
+            first_record = json.loads(next(handle))
+        with mock.patch.dict(os.environ, {"PGDATABASE": "poisoned_ambient_database"}):
+            first = load.load_database(["fbi_cde"], fixture_root)
+        self.assertEqual(first.sources, (("fbi_cde", "loaded"),))
+        expected_rows = int(load.load_json(fixture_root / "state" / "run-manifest.json")["sources"]["fbi_cde"]["normalized_rows"])
+        self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.catalog_field")), 81)
+        self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.observation")), expected_rows)
+        self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.ingest_run WHERE status='pass'")), 1)
 
-            load.psql(["--command", "DROP TABLE public.unexpected_user_object"])
-            load.psql(["--command",
-                       "ALTER TABLE usa_atlas.observation_data ENABLE ROW LEVEL SECURITY"])
-            with self.assertRaisesRegex(load.AdmissionError, "target_physical_schema_mismatch"):
-                load.load_database(["fbi_cde"], ROOT)
+        key_sql = (
+            "SELECT json_build_object("
+            "'geo_id',geo_id,'geo_type',geo_type,'year',period,'field_id',field_id,"
+            "'catalog_field_id',catalog_field_id,'value',value,'unit',unit,'source',source,"
+            "'source_release',source_release,'source_url',source_url,"
+            "'methodology_note',methodology_note,'retrieved_at',retrieved_at) "
+            "FROM usa_atlas.observation ORDER BY geo_id,period,field_id,source_release LIMIT 1"
+        )
+        observed = json.loads(scalar(key_sql))
+        expected = first_record
+        self.assertEqual({k: v for k, v in observed.items() if k != "retrieved_at"},
+                         {k: v for k, v in expected.items() if k != "retrieved_at"})
+        self.assertEqual(load.parse_timestamp(observed["retrieved_at"]),
+                         load.parse_timestamp(expected["retrieved_at"]))
 
+        second = load.load_database(["fbi_cde"], fixture_root)
+        self.assertEqual(second.sources, (("fbi_cde", "skipped"),))
+        self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.observation")), expected_rows)
+        self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")), 1)
+        verified = load.verify_database(["fbi_cde"], fixture_root)
+        self.assertEqual(verified["status"], "pass")
+        self.assertTrue(verified["checks"]["idempotent"])
+
+        baseline = (
+            int(scalar("SELECT count(*) FROM usa_atlas.observation")),
+            int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
+        )
+        invalid_cases = [
+            {"status": "fail"},
+            {"missing": True},
+            {"expected_hash": "0" * 64},
+            {"contract_hash": "0" * 64},
+            {"record": {**first_record, "source": "eia"}},
+            {"record": {**first_record, "catalog_field_id": "99.99", "field_id": "99.99:test"}},
+            {"record": {**first_record, "catalog_field_id": "08.05", "field_id": "08.05:test"}},
+            {"drop_contract_field": "catalog_label"},
+        ]
+        for case in invalid_cases:
+            with self.subTest(case=sorted(case)):
+                record = case.pop("record", first_record)
+                with tempfile.TemporaryDirectory() as directory:
+                    full = fixture_collection(Path(directory), record, **case)
+                    with self.assertRaises(load.AdmissionError):
+                        load.load_database(["fbi_cde"], full)
+                observed_counts = (
+                    int(scalar("SELECT count(*) FROM usa_atlas.observation")),
+                    int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
+                )
+                self.assertEqual(observed_counts, baseline)
+
+        with tempfile.TemporaryDirectory() as directory:
+            duplicate_full = duplicate_fixture(Path(directory), [first_record, first_record])
+            with self.assertRaisesRegex(load.AdmissionError, "target_complete_state_mismatch"):
+                load.load_database(["fbi_cde"], duplicate_full)
+        self.assertEqual((
+            int(scalar("SELECT count(*) FROM usa_atlas.observation")),
+            int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
+        ), baseline)
+
+        load.psql(["--command", "CREATE TABLE public.unexpected_user_object (id integer)"])
+        with self.assertRaisesRegex(load.AdmissionError, "target_physical_schema_mismatch"):
+            load.load_database(["fbi_cde"], fixture_root)
+        self.assertEqual((
+            int(scalar("SELECT count(*) FROM usa_atlas.observation")),
+            int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
+        ), baseline)
+
+        load.psql(["--command", "DROP TABLE public.unexpected_user_object"])
+        load.psql(["--command",
+                   "ALTER TABLE usa_atlas.observation_data ENABLE ROW LEVEL SECURITY"])
+        with self.assertRaisesRegex(load.AdmissionError, "target_physical_schema_mismatch"):
+            load.load_database(["fbi_cde"], fixture_root)
     def test_cross_admission_duplicate_is_rejected_before_database_creation(self):
         with postgres_cluster():
             with (ROOT / "normalized" / "fbi_cde.jsonl").open(encoding="utf-8") as handle:
@@ -324,18 +326,48 @@ class PostgreSQLIntegrationTests(unittest.TestCase):
 
     def test_partial_target_and_owner_mismatch_fail_before_writes(self):
         with postgres_cluster():
-            load.load_database(["fbi_cde"], ROOT)
-            baseline = int(scalar("SELECT count(*) FROM usa_atlas.observation"))
-            with self.assertRaisesRegex(load.AdmissionError, "target_complete_state_mismatch"):
-                load.load_database(["fbi_cde", "eia"], ROOT)
-            self.assertEqual(int(scalar("SELECT count(*) FROM usa_atlas.observation")), baseline)
+            with (ROOT / "normalized" / "fbi_cde.jsonl").open(encoding="utf-8") as handle:
+                record = json.loads(next(handle))
+            with tempfile.TemporaryDirectory() as directory:
+                fixture_root = fixture_collection(Path(directory), record)
+                with (ROOT / "normalized" / "eia.jsonl").open(encoding="utf-8") as handle:
+                    eia_line = handle.readline()
+                eia_artifact = fixture_root / "normalized" / "eia.jsonl"
+                eia_artifact.write_text(eia_line, encoding="utf-8")
+                manifest_path = fixture_root / "state" / "run-manifest.json"
+                manifest = load.load_json(manifest_path)
+                manifest["sources"]["eia"] = {
+                    "status": "pass", "normalized_rows": 1,
+                    "normalized_artifact": {
+                        "path": "normalized/eia.jsonl",
+                        "sha256": load.sha256_file(eia_artifact), "rows": 1,
+                    },
+                }
+                manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+                self.assertEqual([item.source for item in load.preflight_sources(
+                    ["fbi_cde", "eia"], fixture_root)], ["fbi_cde", "eia"])
+                load.load_database(["fbi_cde"], fixture_root)
+                baseline = (
+                    int(scalar("SELECT count(*) FROM usa_atlas.observation")),
+                    int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
+                    int(scalar("SELECT count(*) FROM usa_atlas.observation_stage")),
+                    int(scalar("SELECT count(*) FROM usa_atlas.catalog_field_stage")),
+                )
+                with self.assertRaisesRegex(load.AdmissionError, "target_complete_state_mismatch"):
+                    load.load_database(["fbi_cde", "eia"], fixture_root)
+                self.assertEqual((
+                    int(scalar("SELECT count(*) FROM usa_atlas.observation")),
+                    int(scalar("SELECT count(*) FROM usa_atlas.ingest_run")),
+                    int(scalar("SELECT count(*) FROM usa_atlas.observation_stage")),
+                    int(scalar("SELECT count(*) FROM usa_atlas.catalog_field_stage")),
+                ), baseline)
 
-            load.psql(["--command", "CREATE ROLE usa_atlas_other LOGIN"] ,
-                      dbname=load.MAINTENANCE_DATABASE)
-            load.psql(["--command", "ALTER DATABASE usa_atlas OWNER TO usa_atlas_other"],
-                      dbname=load.MAINTENANCE_DATABASE)
-            with self.assertRaisesRegex(load.AdmissionError, "target_owner_mismatch"):
-                load.load_database(["fbi_cde"], ROOT)
+                load.psql(["--command", "CREATE ROLE usa_atlas_other LOGIN"],
+                          dbname=load.MAINTENANCE_DATABASE)
+                load.psql(["--command", "ALTER DATABASE usa_atlas OWNER TO usa_atlas_other"],
+                          dbname=load.MAINTENANCE_DATABASE)
+                with self.assertRaisesRegex(load.AdmissionError, "target_owner_mismatch"):
+                    load.load_database(["fbi_cde"], fixture_root)
 
     def test_deep_census_geographies_are_admitted_without_collapsing(self):
         with postgres_cluster():
