@@ -4,10 +4,12 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import gzip
 import json
 import math
 import os
+import re
 import statistics
 import sys
 import urllib.parse
@@ -333,12 +335,23 @@ def validate_records(records: list[dict], contract: dict, indicators: list[dict]
     return checks
 
 
-def validate_boundaries(records: list[dict], manifest_path: Path) -> dict:
+def validate_boundaries(records: list[dict], manifest_path: Path, expected_sha256: str) -> dict:
+    actual_sha256 = hashlib.sha256(manifest_path.read_bytes()).hexdigest()
+    if not re.fullmatch(r"[0-9a-f]{64}", expected_sha256) or actual_sha256 != expected_sha256:
+        raise collect.CollectionError("boundary_manifest_sha256_mismatch")
     manifest = collect.load_json(manifest_path)
+    if not isinstance(manifest.get("artifact_version"), str) or not manifest["artifact_version"].strip():
+        raise collect.CollectionError("boundary_artifact_version_missing")
     root = manifest_path.parent
     boundary_ids = set()
     for state in manifest["states"]:
-        collection = collect.load_json(root / f"{state['id']}.json")
+        collection_path = root / f"{state['id']}.json"
+        expected_geometry_sha = state.get("sha256")
+        if (not isinstance(expected_geometry_sha, str)
+                or not re.fullmatch(r"[0-9a-f]{64}", expected_geometry_sha)
+                or hashlib.sha256(collection_path.read_bytes()).hexdigest() != expected_geometry_sha):
+            raise collect.CollectionError("boundary_geometry_sha256_mismatch:" + str(state.get("id")))
+        collection = collect.load_json(collection_path)
         boundary_ids.update(feature["id"] for feature in collection["features"])
     artifact_ids = {
         record["geo_id"] for record in records if record["geo_type"] == "county"
@@ -473,6 +486,7 @@ def main() -> int:
     parser.add_argument("--contract", type=Path, default=CONTRACT_PATH)
     parser.add_argument("--metrics", type=Path, default=METRICS_PATH)
     parser.add_argument("--boundary-manifest", type=Path, default=None)
+    parser.add_argument("--boundary-manifest-sha256", default=None)
     args = parser.parse_args()
     collect.safety.load_credentials()
     key = os.getenv("CENSUS_API_KEY")
@@ -507,10 +521,10 @@ def main() -> int:
     checks = validate_records(records, contract, metrics["indicators"])
     checks["response_rows"] = response_rows
     checks["release_counties_before_aggregation"] = source_counties
-    boundary_validation = (
-        validate_boundaries(records, args.boundary_manifest)
-        if args.boundary_manifest is not None else None
-    )
+    if args.boundary_manifest is not None and args.boundary_manifest_sha256 is None:
+        raise collect.CollectionError("boundary_manifest_sha256_required")
+    boundary_validation = (validate_boundaries(records, args.boundary_manifest, args.boundary_manifest_sha256)
+                           if args.boundary_manifest is not None else None)
     records.sort(key=lambda record: ({"nation": 0, "state": 1, "county": 2}[record["geo_type"]], record["geo_id"]))
     encoded = b"".join(
         (json.dumps(record, separators=(",", ":"), ensure_ascii=False) + "\n").encode()

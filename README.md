@@ -38,12 +38,29 @@ observations from that database through the UI's read-only adapter. No collector
 code, credentials or unpublished series reach the public site.
 
 The integration boundary is the admitted `usa_atlas` PostgreSQL schema plus the
-versioned field and geography contract. UI access is read-only. Collector code and
+versioned field and geography contract exported under
+[`database/reader/v1`](database/reader/v1/contract.json). That immutable bundle
+contains only the app-facing catalog, observation and ingest-run reader schema,
+plus small disposable fixtures. UI access is read-only. Collector code and
 provider credentials are never dependencies of the UI runtime. Changes to field IDs,
 `geo_type`, geography identifiers, normalized record shape or database objects must
 declare compatibility/migration requirements and be verified by the UI adapter against
 the exact data revision. Pure collector changes may ship independently when this
 published contract remains unchanged.
+
+The minimum reader contract is the 81-row `catalog_field`, the 13-column
+`observation` view, and `ingest_run` admission by `status = 'pass'`, joined through
+`ingest_id`. The observation key is `(geo_id, period, field_id, source_release)`;
+period and source release remain explicit text labels, and provenance stays
+available on each observation. The pipeline stores a 12-column observation input
+in `observation_data`; the public 13-column read view adds normalized source URL
+and methodology text. These contracts are distinct.
+
+The reader shape matches the source schema's admission snapshot dated
+2026-09-22. This says nothing about deployed identity: local `data/main` also
+differs in loader and field-contract content, and no local branch history proves
+what is currently deployed. The bundle's `deployed_binding` therefore remains
+`unverified`.
 
 ## View admitted data in the UI
 
@@ -83,6 +100,11 @@ displayed as county estimates. Keep field IDs, geography types and IDs, units,
 periods, releases and provenance compatible when changing the contract; coordinate
 a consumer change in the UI repository before publishing an incompatible schema or
 catalog revision.
+
+The reader artifact version, producer commit, schema fingerprint and artifact
+hashes are distinct from collector code versions and admitted observation/source
+release versions. `deployed_binding` is intentionally unverified; this repository
+does not infer production identity from local Git history.
 
 ## Operations status and history
 

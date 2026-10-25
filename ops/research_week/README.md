@@ -18,16 +18,14 @@ queues and source register.
 ## Health monitoring and recovery
 
 `usa-atlas-continuous-monitor.timer` runs every 30 minutes. It keeps the three
-research timers enabled, retries a failed daily research run within the runner's
-two-attempt limit, and checks the isolated mobile prototype containers, local
-HTTP page and current public tunnel URL. It can start stopped prototype
-containers, restart the local app after a failed local probe, and restart a
-repeatedly unreachable tunnel with a two-hour cooldown. If a Quick Tunnel URL
-changes, the monitor updates `mobile-lab/preview.json` and
-`research/2026-10-03/research-week.json`.
+research timers enabled and retries a failed daily research run within the
+runner's two-attempt limit. It has no UI container, HTTP tunnel or preview-file
+responsibilities. That retired prototype maintenance path is intentionally out
+of this standalone data repository.
 
 The existing `usa-atlas-scraper-watchdog.timer` independently checks collection
-workers every two minutes and applies its existing bounded recovery policy.
+workers every two minutes and applies its existing bounded recovery policy; the
+admission pipeline and catalog refresh timers remain unchanged.
 The 15-minute admission pipeline and scheduled catalog refreshes remain owned
 by their existing systemd timers.
 

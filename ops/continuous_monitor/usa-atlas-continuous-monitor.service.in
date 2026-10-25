@@ -1,7 +1,7 @@
 [Unit]
-Description=USA Atlas 30-minute research and mobile prototype health monitor
-After=network-online.target docker.service
-Wants=network-online.target docker.service
+Description=USA Atlas 30-minute research timer health monitor
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=oneshot
@@ -16,7 +16,7 @@ ProtectSystem=strict
 ProtectHome=read-only
 StateDirectory=usa-atlas-continuous-monitor
 StateDirectoryMode=0700
-ReadWritePaths=/run/docker.sock @REPO@/ops/research_week/runtime @REPO@/research/2026-10-03/research-week.json @MOBILE_LAB@
+ReadWritePaths=@REPO@/ops/research_week/runtime
 PrivateTmp=yes
 NoNewPrivileges=yes
 StandardOutput=journal
