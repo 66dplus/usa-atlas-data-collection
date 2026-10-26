@@ -817,7 +817,7 @@ def _xlsx_rows(path: Path) -> list[list[str]]:
                 text = "".join(node.text or "" for node in cell.iter(f"{main_ns}t"))
             else:
                 text = value.text if value is not None and value.text is not None else ""
-            values[index] = text.strip()
+            values[index] = text
         if values:
             rows.append([values.get(i, "") for i in range(max(values) + 1)])
     return rows
@@ -831,8 +831,8 @@ def parse_fbi_annual(path: Path) -> tuple[list[dict[str, str]], str]:
         rows = _xlsx_rows(path)
         if not rows:
             raise ValueError("fbi_annual_workbook_empty")
-        headers = rows[0]
-        records = [dict(zip(headers, row)) for row in rows[1:] if any(row)]
+        headers = [value.strip() for value in rows[0]]
+        records = [dict(zip(headers, row)) for row in rows[1:] if any(value.strip() for value in row)]
     else:
         with path.open("r", newline="", encoding="utf-8-sig") as stream:
             records = list(csv.DictReader(stream))
@@ -843,9 +843,33 @@ def parse_fbi_annual(path: Path) -> tuple[list[dict[str, str]], str]:
     seen = set()
     expected = {abbr for abbr, _, _ in FBI_STATES}
     year_rows = [row for row in records if row.get("year", "").strip() == "2025"]
+    footnote_text: dict[str, str] = {}
+    for row in year_rows:
+        caveat = (row.get("caveats", "") or "").strip()
+        match = re.match(r"^(\d+)\s+(.+)$", caveat)
+        if match:
+            marker, text = match.groups()
+            if marker in footnote_text and footnote_text[marker] != text:
+                raise ValueError("fbi_annual_conflicting_footnote_text")
+            footnote_text[marker] = text
     for row in year_rows:
         abbr = row.get("state_abbr", "").strip()
-        name = row.get("state_name", "").strip()
+        source_name = row.get("state_name", "") or ""
+        name = source_name.strip()
+        marker_match = re.match(r"^(.*?)(\d+)$", name)
+        marker = marker_match.group(2) if marker_match else ""
+        if marker_match:
+            name = marker_match.group(1).strip()
+        caveat = (row.get("caveats", "") or "").strip()
+        caveat_match = re.match(r"^(\d+)\s+(.+)$", caveat)
+        marker_text = footnote_text.get(marker, "") if marker else ""
+        if marker and not marker_text:
+            raise ValueError("fbi_annual_unresolved_footnote_marker")
+        if caveat_match and marker and caveat_match.group(1) != marker:
+            raise ValueError("fbi_annual_footnote_marker_mismatch")
+        if caveat_match and not marker:
+            marker = caveat_match.group(1)
+            marker_text = caveat_match.group(2)
         geo = abbr or "US"
         if geo in seen:
             raise ValueError("fbi_annual_duplicate_2025_geography")
@@ -854,7 +878,9 @@ def parse_fbi_annual(path: Path) -> tuple[list[dict[str, str]], str]:
         if not pop:
             raise ValueError("fbi_annual_missing_population")
         normalized.append({**{column: (row.get(column, "") or "").strip() for column in FBI_ANNUAL_COLUMNS},
-                           "state_abbr": abbr, "state_name": name, "population": str(pop)})
+                           "state_abbr": abbr, "state_name": name, "source_state_name": source_name,
+                           "source_footnote_marker": marker, "caveats": marker_text,
+                           "population": str(pop)})
     if len(normalized) != 52 or seen != expected | {"US"} or not any(not r["state_abbr"] and r["state_name"] == "United States Total" for r in normalized):
         raise ValueError("fbi_annual_2025_geography_coverage_invalid")
     for row in normalized:
@@ -956,7 +982,9 @@ def prepare_fbi_baseline_and_annual(raw_path: Path | None = None, download: bool
                            "source_field": source_column, "source_adjustment": "official FBI SRS annual state estimate; rate computed from same-row FBI population",
                            "source_release": "FBI SRS Estimated Crimes 1979-2025 (August 2026)",
                            "source_url": FBI_ANNUAL_SAFE_URL, "retrieved_at": raw_record["retrievedAt"],
-                           "source_sha256": raw_hash, "caveats": source_row.get("caveats", "")})
+                           "source_sha256": raw_hash, "source_state_name": source_row["source_state_name"],
+                           "source_footnote_marker": source_row["source_footnote_marker"],
+                           "caveats": source_row.get("caveats", "")})
     annual_out = RUNTIME / "prepared/fbi-annual-estimates-2025.csv"
     write_csv(annual_out, annual)
     missing_rows = [{"field_id": row["field_id"], "state_abbr": row["state_abbr"], "period": "2025",
@@ -1987,6 +2015,7 @@ def prepare_published_before_after() -> dict[str, Any]:
 
 
 def write_inventory(results: dict[str, Any]) -> None:
+    from full.data_refresh_20261026.consolidate_inventory import row_count, validate_output_bindings, _walk_result_outputs
     INVENTORY.parent.mkdir(parents=True, exist_ok=True)
     artifacts = artifact_summary()
     for name in ("eiaKeyedApi", "blsUnemployment", "fbiCrime"):
@@ -2023,13 +2052,27 @@ def write_inventory(results: dict[str, Any]) -> None:
         "admissionStatus": "not_admitted; no database access or writes performed",
         "sourceArtifacts": list(unique_artifacts.values()),
         "preparedArtifacts": [{"path": str(path), "bytes": path.stat().st_size,
-                               "sha256": sha256_file(path), "artifactType": "locally_prepared_or_imported"}
+                               "sha256": sha256_file(path), "rowCount": row_count(path),
+                               "artifactType": "locally_prepared_or_imported"}
                               for path in sorted((RUNTIME / "prepared").glob("*")) if path.is_file()],
         "definitionMatrix": results.get("definitionMatrixPath"),
         "results": results,
         "ready": False,
         "readinessReason": "This is collection preparation. Any partial source, unresolved coverage, or pending denominator remains not ready for admission.",
     }
+    artifact_by_path = {item["path"]: item for item in packet["preparedArtifacts"]}
+    bindings = []
+    for address, output_path, _parent, declared_hash in _walk_result_outputs(results):
+        path = Path(output_path).resolve()
+        artifact = artifact_by_path.get(str(path))
+        if not artifact:
+            raise ValueError("inventory_result_output_not_in_runtime_prepared_manifest")
+        if declared_hash and declared_hash != artifact["sha256"]:
+            raise ValueError("inventory_result_output_hash_mismatch")
+        bindings.append({"resultField": address, "path": str(path), "sha256": artifact["sha256"],
+                         "rowCount": artifact["rowCount"]})
+    packet["resultOutputBindings"] = bindings
+    validate_output_bindings(packet)
     atomic_json(INVENTORY, packet)
 
 
