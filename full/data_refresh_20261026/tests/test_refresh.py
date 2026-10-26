@@ -455,6 +455,12 @@ class RefreshTests(unittest.TestCase):
         self.assertIn("partial", refresh.BLS_COMPLETED_SOURCE_GAP_STATUSES)
         self.assertNotIn("complete", refresh.BLS_COMPLETED_SOURCE_GAP_STATUSES)
 
+    def test_consolidated_inventory_uses_declared_reader_contract_version(self):
+        self.assertEqual(consolidate_inventory.reader_contract_version(
+            {"readerContractVersion": "1.0.0", "results": {"readerContractVersion": "2.0.0"}}), "2.0.0")
+        self.assertEqual(consolidate_inventory.reader_contract_version(
+            {"readerContractVersion": "1.0.0", "results": {}}), "1.0.0")
+
     def test_url_encoded_injected_secret_is_rejected_from_source_bytes(self):
         key = "SYNTHETIC/ENCODED KEY"
         with mock.patch.dict(os.environ, {"EIA_API_KEY": key}):
