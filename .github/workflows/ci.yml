@@ -17,6 +17,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends postgresql-16
           echo "/usr/lib/postgresql/16/bin" >> "$GITHUB_PATH"
+      - name: Python database test dependency
+        run: python3 -m pip install -r database/requirements-ci.txt
       - name: Collector checks
         working-directory: full
         run: |
@@ -26,6 +28,15 @@ jobs:
         run: |
           python3 database/reader/export_reader.py --check
           USA_ATLAS_REQUIRE_READER_POSTGRES=1 python3 -m unittest database.tests.test_reader_contract
+      - name: Reader v2 and source identity checks
+        run: |
+          python3 -m unittest discover -s database/reader/v2/tests -p 'test_*.py'
+          python3 -m unittest discover -s full/politics_20261026/tests -p 'test_*.py'
+          python3 -m unittest database.reader.v2.tests.test_ci_postgres
+      - name: Data refresh worker checks
+        run: |
+          test -f full/data_refresh_20261026/tests/test_refresh.py
+          PYTHONPATH=full python3 -m unittest data_refresh_20261026.tests.test_refresh
       - name: Housing stock checks
         working-directory: full
         run: python3 -m unittest test_housing_stock_2021.py
