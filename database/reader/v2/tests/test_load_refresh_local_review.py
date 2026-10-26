@@ -21,7 +21,7 @@ class RefreshLoaderManifestTests(unittest.TestCase):
         self.manifest_path = self.root / "refresh-manifest.json"
         self.manifest = {
             "candidate_status":"local_review_not_admitted",
-            "contract_version":"2.0.0-candidate",
+            "contract_version":"2.0.0",
             "collector_version":"data-refresh-preparation-2026.10.26.1",
             "inputs":{"prepared":{"path":str(self.prepared),"sha256":sha256(self.prepared)}},
             "verified_raw_sources":{"source":{"path":str(self.raw),"sha256":sha256(self.raw)}},
@@ -86,6 +86,12 @@ class RefreshLoaderManifestTests(unittest.TestCase):
                 load_refresh_local_review.verify_native_pep_source(manifest, output)
         finally:
             load_refresh_local_review.NATIVE_PEP_SHA256 = previous
+
+    def test_catalog_release_keys_follow_each_actual_source_release(self):
+        self.output.write_text("".join(json.dumps({"catalog_field_id":"11.01","source_release":release})+"\n"
+            for release in ("2025 NPCR/SEER submission released June 2026; diagnosis year 2023","USCS 2026 submission; 2023 incidence")),encoding="utf-8")
+        mapped=load_refresh_local_review.source_releases_by_field(self.output)
+        self.assertEqual(mapped["11.01"],{"2025 NPCR/SEER submission released June 2026; diagnosis year 2023","USCS 2026 submission; 2023 incidence"})
 
 
 if __name__ == "__main__":

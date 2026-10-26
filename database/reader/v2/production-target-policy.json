@@ -1,0 +1,31 @@
+{
+  "format": "usa_atlas_reader_v2_target_policy",
+  "targets": {
+    "reader_v2_worker_integration_20261026": {
+      "class": "disposable_test",
+      "database": "reader_v2_worker_integration_20261026",
+      "reader_role": "atlas_reader",
+      "host_prefix": "/tmp/usa-maps-data-flow-20261026/pgsocket"
+    },
+    "reader_v2_worker_integration_final_20261026": {
+      "class": "disposable_test",
+      "database": "reader_v2_worker_integration_final_20261026",
+      "reader_role": "atlas_reader",
+      "host_prefix": "/tmp/usa-maps-data-flow-20261026/pgsocket"
+    },
+    "reader_v2_stage_test": {
+      "class": "disposable_test",
+      "database_prefix": "reader_v2_stage_test_",
+      "reader_role": "atlas_reader",
+      "host_prefix": "/tmp/usa-maps-data-flow-20261026/pgsocket"
+    },
+    "production_primary": {
+      "class": "production",
+      "database": "usa_atlas",
+      "reader_role": "usa_atlas_reader",
+      "host_source": "explicit_operator_runtime_config"
+    }
+  },
+  "default_action": "dry_run",
+  "apply_requires": "explicit --apply and bundle-bound review receipt"
+}

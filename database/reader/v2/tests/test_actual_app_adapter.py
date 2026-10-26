@@ -183,7 +183,7 @@ def run(args):
 
     catalog = atlas_data.reader_v2_catalog()
     required = {"01.04":"acs-2024-5year", "12.01":"dataverse-VOQCHQ-v20",
-                "12.02":"dataverse-PEJ5QU-v8", "12.03":"prepared-mirror-IG0UN2-v15"}
+                "12.02":"dataverse-PEJ5QU-v8", "12.03":"dataverse-IG0UN2-v15"}
     for metric in catalog["metrics"]:
         if metric["catalogFieldId"] in required and metric["sourceRelease"] != required[metric["catalogFieldId"]]:
             raise AssertionError("catalog source release mismatch")

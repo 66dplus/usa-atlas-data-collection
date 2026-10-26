@@ -161,7 +161,7 @@ def normalize(observed_path, missingness_path, results_path, output_dir,
     manifest = {
         "candidate_status": "local_review_not_admitted", "source_release": SOURCE_RELEASE,
         "source_version": SOURCE_VERSION, "collector_version": result_manifest["executedSourceSha256"],
-        "contract_version": "2.0.0-candidate", "source_code": "bls_laus",
+        "contract_version": "2.0.0", "source_code": "bls_laus",
         "seasonal_adjustment": "NSA", "source_url": SOURCE_URL,
         "source_status": "collection_complete_with_source_gaps",
         "input_hashes": {"observed_csv": expected_observed_sha256,

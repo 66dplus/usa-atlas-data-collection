@@ -4,13 +4,17 @@ import csv
 import hashlib
 import json
 import pathlib
+import sys
 import uuid
 from decimal import Decimal
 
 import psycopg2
 from psycopg2.extras import execute_values
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[3]))
 from database.reader.v2.load_local_review import GUARD_ROOT, ROOT, guard, sha256
+from database.reader.v2 import prepare_refresh
+from database.reader.v2.catalog import save_v2_catalog_field
 
 CATALOG = {
     "01.01": {"label":"Census PEP population", "release":"Census PEP Vintage 2025", "dataset_id":"pep_population", "source_code":"census_pep"},
@@ -19,6 +23,13 @@ CATALOG = {
     "11.01": {"label":"Cancer incidence 2023 (multiple retained USCS source releases)", "release":"uscs-diagnosis-2023-multiple-source-releases-local-review", "dataset_id":"cancer", "source_code":"cdc_uscs"},
     "11.02": {"label":"Provisional HIV diagnoses 2024", "release":"AtlasPlus observed 2026-10-11; 2024 diagnoses provisional, reported through December 2025 with 12-month reporting delay", "dataset_id":"hiv", "source_code":"cdc_atlasplus"},
     "11.03": {"label":"Under-18 deaths 2024", "release":"NCHS NVSS Mortality 2018-2024, CDC WONDER release 2026", "dataset_id":"child_deaths_under18", "source_code":"cdc_wonder"},
+    "04.01": {"label":"FBI homicide rate, annual 2025", "release":"FBI SRS Estimated Crimes 1979-2025 (August 2026)", "dataset_id":"fbi_crime_rate", "source_code":"fbi_cde", "source_field":"homicide"},
+    "04.02": {"label":"FBI violent crime rate, annual 2025", "release":"FBI SRS Estimated Crimes 1979-2025 (August 2026)", "dataset_id":"fbi_crime_rate", "source_code":"fbi_cde", "source_field":"violent_crime"},
+    "04.03": {"label":"FBI robbery rate, annual 2025", "release":"FBI SRS Estimated Crimes 1979-2025 (August 2026)", "dataset_id":"fbi_crime_rate", "source_code":"fbi_cde", "source_field":"robbery"},
+    "04.04": {"label":"FBI aggravated assault rate, annual 2025", "release":"FBI SRS Estimated Crimes 1979-2025 (August 2026)", "dataset_id":"fbi_crime_rate", "source_code":"fbi_cde", "source_field":"aggravated_assault"},
+    "04.05": {"label":"FBI burglary rate, annual 2025", "release":"FBI SRS Estimated Crimes 1979-2025 (August 2026)", "dataset_id":"fbi_crime_rate", "source_code":"fbi_cde", "source_field":"burglary"},
+    "04.06": {"label":"FBI motor vehicle theft rate, annual 2025", "release":"FBI SRS Estimated Crimes 1979-2025 (August 2026)", "dataset_id":"fbi_crime_rate", "source_code":"fbi_cde", "source_field":"motor_vehicle_theft"},
+    "04.07": {"label":"FBI rape rate, revised definition, annual 2025", "release":"FBI SRS Estimated Crimes 1979-2025 (August 2026)", "dataset_id":"fbi_crime_rate", "source_code":"fbi_cde", "source_field":"rape_revised"},
 }
 NATIVE_PEP_SOURCE_ID = "census-pep-national-single-age-v2025"
 NATIVE_PEP_SHA256 = "6436d4f6972d415caf14cb20776807bc031fc9f1bfc9d6ff26055d592a2b0230"
@@ -71,13 +82,73 @@ def verify_native_pep_source(manifest, data_path):
         raise ValueError("national cancer crude-rate formula does not match native 2023 PEP")
 
 
+def verify_fbi_source(manifest, data_path):
+    source = manifest.get("verified_raw_sources", {}).get("fbi_annual_2025_raw", {})
+    if not source:
+        with pathlib.Path(data_path).open(encoding="utf-8") as stream:
+            if any(json.loads(line).get("source") == "fbi_cde" for line in stream):
+                raise ValueError("FBI observations are present without verified source provenance")
+        return
+    raw = pathlib.Path(source.get("path", ""))
+    expected_hash = prepare_refresh.FBI_RAW_SHA256
+    if source.get("sha256") != expected_hash or not raw.is_file() or sha256(raw) != expected_hash:
+        raise ValueError("FBI raw annual source identity/checksum is not verified")
+    prepared=manifest.get("inputs",{}).get("fbi_annual_2025",{})
+    prepared_path=pathlib.Path(prepared.get("path",""))
+    if (prepared.get("sha256")!=prepare_refresh.FBI_PREPARED_SHA256 or
+            not prepared_path.is_file() or sha256(prepared_path)!=prepare_refresh.FBI_PREPARED_SHA256 or
+            manifest.get("quality_controls",{}).get("fbi_annual_2025",{}).get("prepared_sha256")!=prepare_refresh.FBI_PREPARED_SHA256):
+        raise ValueError("FBI prepared annual source is not the pinned footnote-complete artifact")
+    rows = []
+    with pathlib.Path(data_path).open(encoding="utf-8") as stream:
+        for line in stream:
+            row = json.loads(line)
+            if row.get("source") == "fbi_cde" and row.get("period_year") == 2025:
+                rows.append(row)
+    expected_fields = set(prepare_refresh.FBI_FIELDS)
+    if len(rows) != 364 or {row.get("field_id") for row in rows} != expected_fields:
+        raise ValueError("prepared FBI annual observations are incomplete")
+    expected_geos = {("nation", "US")} | {
+        ("state", fips) for fips in ("01","02","04","05","06","08","09","10","11","12","13","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","44","45","46","47","48","49","50","51","53","54","55","56")}
+    seen = set()
+    for row in rows:
+        key = (row["field_id"], row["geo_type"], row["geo_id"])
+        if key in seen or row["catalog_field_id"] != row["field_id"][:5] or row["dataset_id"] != "fbi_crime_rate":
+            raise ValueError("FBI observation grain/catalog mapping is invalid")
+        seen.add(key)
+        if (row["period_kind"] != "annual" or row["period_year"] != 2025 or row["period_month"] is not None or
+                row["unit"] != "per 100,000" or row["quality_status"] != "observed" or
+                row["source_value_status"] != "observed" or row["source_sha256"] != expected_hash or
+                row["source_release"] != prepare_refresh.FBI_RELEASE or row.get("retrieved_at") != prepare_refresh.FBI_RETRIEVED_AT):
+            raise ValueError("FBI observation lost source, year, unit, or quality identity")
+        note=row.get("methodology_note","")
+        if row["geo_id"]=="12" and ("Florida3" not in note or "limited data" not in note.lower()):
+            raise ValueError("FBI prepared observation lost Florida source footnote or limited-data caveat")
+        if row["geo_id"]=="38" and ("North Dakota3" not in note or "limited data" not in note.lower()):
+            raise ValueError("FBI prepared observation lost North Dakota source footnote or limited-data caveat")
+        if row["geo_id"]=="11" and ("marker=4" not in note or "caveat" not in note.lower()):
+            raise ValueError("FBI prepared observation lost DC source footnote or caveat")
+        expected_value = Decimal(row["raw_estimate"]) / Decimal(row["raw_denominator"]) * Decimal(100000)
+        if abs(Decimal(row["value"]) - expected_value) > Decimal("0.00000000000000000001"):
+            raise ValueError("FBI stored rate does not match source count and same-row population")
+    for field in expected_fields:
+        geos = {(row["geo_type"], row["geo_id"]) for row in rows if row["field_id"] == field}
+        if geos != expected_geos:
+            raise ValueError("FBI field geography coverage is incomplete")
+    ca = {row["field_id"]: row for row in rows if row["geo_id"] == "06"}
+    if (int(ca["04.01:derived"]["raw_estimate"]) != 1370 or
+            int(ca["04.07:derived"]["raw_estimate"]) != 13130 or
+            int(ca["04.07:derived"]["raw_denominator"]) != 39355309):
+        raise ValueError("FBI California count/population controls failed")
+
+
 def checked_manifest(filename):
     path = pathlib.Path(filename).resolve()
     if GUARD_ROOT not in path.parents:
         raise ValueError("refresh manifest must be under approved /tmp task directory")
     manifest = json.loads(path.read_text())
     if (manifest.get("candidate_status") != "local_review_not_admitted" or
-            manifest.get("contract_version") != "2.0.0-candidate" or
+            manifest.get("contract_version") != "2.0.0" or
             manifest.get("collector_version") != "data-refresh-preparation-2026.10.26.1"):
         raise ValueError("refresh manifest is not the reviewed candidate contract")
     for item in manifest.get("inputs", {}).values():
@@ -95,10 +166,22 @@ def checked_manifest(filename):
     return manifest, path, data_path
 
 
+def source_releases_by_field(data_path):
+    releases={}
+    with pathlib.Path(data_path).open(encoding="utf-8") as stream:
+        for line in stream:
+            row=json.loads(line)
+            if row.get("catalog_field_id") in CATALOG:
+                releases.setdefault(row["catalog_field_id"],set()).add(row["source_release"])
+    return releases
+
+
 def load(guard_config, manifest_path):
     config = guard(guard_config)
     manifest, manifest_path, data_path = checked_manifest(manifest_path)
     verify_native_pep_source(manifest, data_path)
+    verify_fbi_source(manifest, data_path)
+    releases_by_field=source_releases_by_field(data_path)
     db = psycopg2.connect(host=config["host"], port=config["port"], user=config["user"],
                           dbname=config["dbname"], connect_timeout=3)
     ingest_id = uuid.uuid4()
@@ -123,6 +206,12 @@ def load(guard_config, manifest_path):
                                  "formula":"A00100 thousand USD * 1000 / same-geography 2023 PEP total population"})
                 elif field == "08.05":
                     body.update({"fieldId":"08.05:sector_ALL", "year":2025, "sector":"ALL", "unit":"cents/kWh"})
+                elif field.startswith("04."):
+                    body.update({"fieldId":field + ":derived", "year":2025, "periodKind":"annual",
+                                 "sourceField":metadata["source_field"], "unit":"per 100,000",
+                                 "formula":"official FBI count / same-row FBI 2025 population * 100000",
+                                 "rawSourceSha256":prepare_refresh.FBI_RAW_SHA256,
+                                 "retrievedAt":prepare_refresh.FBI_RETRIEVED_AT})
                 else:
                     body.update({"periodKind":"annual", "year":2023 if field == "11.01" else 2024,
                                  "sourceAdjustment":"crude; numerator / same-year appropriate PEP population * 100000"})
@@ -131,15 +220,11 @@ def load(guard_config, manifest_path):
                             "2025 NPCR/SEER submission released June 2026; diagnosis year 2023",
                             "USCS 2026 submission; 2023 incidence",
                         ]
-                body_sha = hashlib.sha256(json.dumps(body, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
-                cur.execute("""INSERT INTO usa_atlas.catalog_field
-                    (catalog_field_id,catalog_label,planned_state,rate_limit_profile,source_release,contract,contract_sha256)
-                    VALUES (%s,%s,'candidate','local_review',%s,%s::jsonb,%s)
-                    ON CONFLICT (catalog_field_id) DO UPDATE SET catalog_label=EXCLUDED.catalog_label,
-                    planned_state=EXCLUDED.planned_state,rate_limit_profile=EXCLUDED.rate_limit_profile,
-                    source_release=EXCLUDED.source_release,contract=EXCLUDED.contract,
-                    contract_sha256=EXCLUDED.contract_sha256""",
-                    (field, metadata["label"], metadata["release"], json.dumps(body), body_sha))
+                releases=sorted(releases_by_field.get(field,{metadata["release"]}))
+                for source_release in releases:
+                    field_metadata={**metadata,"release":source_release}
+                    field_body={**body,"sourceRelease":source_release}
+                    save_v2_catalog_field(cur, field, field_metadata, field_body, contract_json["contract_version"])
 
             data_sha = sha256(data_path)
             count = manifest["output"]["rows"]

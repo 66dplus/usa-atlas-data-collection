@@ -1,12 +1,12 @@
 # Reader v2 consumer protocol draft
 
-Status: candidate / nonreleased. The example describes a proposed interface for review. It is not an application rollout contract.
+Status: candidate / nonreleased. Version 2.0.0 is an additive draft for parent review; it has no release tag.
 
 ## Read boundary
 
-The application uses a database role with `SELECT` access only. Every returned observation, contest, candidate, and geography row must join through `usa_atlas.ingest_run` with `status = 'pass'`. A candidate contract or raw file does not make data admitted. This v2 artifact does not authorize database writes, loading, deployment, or changes to the released v1 contract.
+The standard release contract identity is `format=usa_atlas_reader_contract`, `contract_id=usa_atlas.application_reader`, `version=2.0.0`. It preserves the standard gate `usa_atlas.ingest_run.status = 'pass'` and adds mandatory v2 filter `usa_atlas.reader_batch.candidate_status = 'admitted'`. Production readers apply both filters to every v2 observation, contest, candidate, party result, availability row, and boundary. Candidate `local_review` access is a separate loopback-only preview mode. The database role has `SELECT` access only.
 
-The current local application adapter has an explicit candidate v2 path behind `ATLAS_READER_V2_DATABASE`; it reads these relations through a read-only connection in preview. It remains candidate/nonreleased. Ordinary consumption still requires `ingest_run.status='pass'` and `reader_batch.candidate_status='admitted'`. V2 uses explicit period selectors. AIAN broad share extends existing field `01.04`; new election fields are `12.01` President, `12.02` Senate, and `12.03` House. IDs `11.01`–`11.03` are already assigned to other metrics and are not used here.
+Version-specific source metadata lives in `usa_atlas.reader_v2_catalog_field`, keyed by `(catalog_field_id, source_release)`. Readers resolve v2 dataset/source contracts through that relation; released v1 `catalog_field` metadata is insert-only and never overwritten. V2 uses explicit period selectors. AIAN broad share extends field `01.04`; FBI 2025 annual estimates use fields `04.01`–`04.07`; elections use `12.01` President, `12.02` Senate, and `12.03` House. IDs `11.01`–`11.03` remain assigned to cancer/HIV/child deaths.
 
 ## Scalar observations and periods
 
@@ -24,10 +24,15 @@ WHERE o.field_id = :field_id
   AND o.period_start_year = :period_start_year
   AND o.period_end_year = :period_end_year
   AND o.source_release = :source_release
-  AND i.status = 'pass';
+  AND i.status = 'pass'
+  AND EXISTS (SELECT 1 FROM usa_atlas.reader_batch rb WHERE rb.ingest_id=o.ingest_id AND rb.candidate_status='admitted');
 ```
 
 The selector and cache key include both inclusive window endpoints for every period: field, kind, label year, month (nullable), start year, end year, source release, and geography. For a multi-year window, bind both endpoints; period_year alone does not identify a window. A no-row result is not a zero. A returned `quality_status` of `missing`, `suppressed`, `invalid`, or `nonmapping_geography` is not a usable map value. A real numeric zero is `observed` with `value = 0`. BLS LAUS uses catalog field `03.06`, dataset `unemployment`, field `03.06:unemployment_rate`, source release `laus-nsa-2025`, and catalog contract `sourceCode=bls_laus` plus `seasonalAdjustment=NSA`. Its source-version field remains `laus-nsa-2025-v2`. The prepared 2025 input contains state and county series only; it does not synthesize a national rate. It preserves all four source components: `03` unemployment rate, `04` unemployed, `05` employed, and `06` labor force. M10 source gaps and Kalawao series-not-returned remain explicit `missing` rows.
+
+## FBI annual 2025
+
+The 2025 FBI SRS annual values use dataset `fbi_crime_rate`, catalog/field pairs `04.01:derived` through `04.07:derived`, annual period 2025, null month, and unit `per 100,000`. Rates divide the official offense count by the population on the same FBI row. Field `04.07` uses `rape_revised`. Native US, all 50 states, and DC are represented. The raw OOXML workbook hash, prepared CSV hash, source URL, and retrieval timestamp are bound by the source inventory. Preserve Florida/North Dakota limited-data markers and the DC special-agency caveat. Do not sum monthly values or use ACS denominators.
 
 ## AIAN broad share
 
@@ -54,6 +59,7 @@ SELECT c.geo_id,c.geography_type,c.boundary_vintage,c.congress_session,
                   AND c.reported_total_votes > 0
                   AND (SELECT count(*) FROM usa_atlas.election_candidate e
                        JOIN usa_atlas.ingest_run ei ON ei.ingest_id=e.ingest_id AND ei.status='pass'
+                       JOIN usa_atlas.reader_batch eb ON eb.ingest_id=e.ingest_id AND eb.candidate_status='admitted'
                        WHERE e.contest_id=c.contest_id AND e.result_mode='TOTAL')=c.source_row_count
             THEN coalesce(p.party_votes,0) ELSE NULL END AS party_votes,
        CASE WHEN c.quality_status='observed'
@@ -61,15 +67,18 @@ SELECT c.geo_id,c.geography_type,c.boundary_vintage,c.congress_session,
                   AND c.reported_total_votes > 0
                   AND (SELECT count(*) FROM usa_atlas.election_candidate e
                        JOIN usa_atlas.ingest_run ei ON ei.ingest_id=e.ingest_id AND ei.status='pass'
+                       JOIN usa_atlas.reader_batch eb ON eb.ingest_id=e.ingest_id AND eb.candidate_status='admitted'
                        WHERE e.contest_id=c.contest_id AND e.result_mode='TOTAL')=c.source_row_count
             THEN coalesce(p.party_votes,0)::numeric / c.reported_total_votes
             ELSE NULL END AS selected_party_share_of_all_votes
 FROM usa_atlas.election_contest c
 JOIN usa_atlas.ingest_run ci ON ci.ingest_id=c.ingest_id AND ci.status='pass'
+JOIN usa_atlas.reader_batch cb ON cb.ingest_id=c.ingest_id AND cb.candidate_status='admitted'
 LEFT JOIN LATERAL (
   SELECT sum(e.candidate_votes) AS party_votes
   FROM usa_atlas.election_candidate e
   JOIN usa_atlas.ingest_run ei ON ei.ingest_id=e.ingest_id AND ei.status='pass'
+  JOIN usa_atlas.reader_batch eb ON eb.ingest_id=e.ingest_id AND eb.candidate_status='admitted'
   WHERE e.contest_id=c.contest_id AND e.result_mode='TOTAL'
     AND e.candidate_kind='candidate' AND e.quality_status='observed'
     AND e.party_normalized=:party

@@ -6,9 +6,23 @@ import json
 import pathlib
 from decimal import Decimal, InvalidOperation
 
-CONTRACT_VERSION = "2.0.0-candidate"
+CONTRACT_VERSION = "2.0.0"
 COLLECTOR_VERSION = "data-refresh-preparation-2026.10.26.1"
 ANNUAL_KIND = "annual"
+FBI_RAW_SHA256 = "e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486"
+FBI_PREPARED_SHA256 = "1551672802e7059bd728165aa334dfc2d051c49d4692f4754af50cc48dce71e0"
+FBI_RETRIEVED_AT = "2026-10-26T12:13:22.509127+00:00"
+FBI_SOURCE_URL = "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv"
+FBI_RELEASE = "FBI SRS Estimated Crimes 1979-2025 (August 2026)"
+FBI_FIELDS = {
+    "04.01:derived": ("homicide", "Homicide"),
+    "04.02:derived": ("violent_crime", "Violent crime"),
+    "04.03:derived": ("robbery", "Robbery"),
+    "04.04:derived": ("aggravated_assault", "Aggravated assault"),
+    "04.05:derived": ("burglary", "Burglary"),
+    "04.06:derived": ("motor_vehicle_theft", "Motor vehicle theft"),
+    "04.07:derived": ("rape_revised", "Rape (revised definition)"),
+}
 SOURCE_META = {
     "eia": ("eia-epa-2-10", "EIA Electric Power Annual 2025"),
     "irs": ("irs-soi-county-2023", "IRS SOI County 2023"),
@@ -123,7 +137,66 @@ def native_national_age_population(path, expected_sha256, year, population_kind,
     return value
 
 
-def main_prepare(prepared_dir, results_path, trusted_results_sha256, output_dir):
+def prepare_fbi_annual(csv_path, trusted_csv_sha256, raw_path, trusted_raw_sha256):
+    """Validate the data worker's prepared FBI rows against pinned source identity and controls."""
+    csv_path, raw_path = pathlib.Path(csv_path).resolve(), pathlib.Path(raw_path).resolve()
+    if trusted_raw_sha256 != FBI_RAW_SHA256 or not raw_path.is_file() or sha256(raw_path) != FBI_RAW_SHA256:
+        raise ValueError("FBI official raw artifact identity/checksum is not verified")
+    if trusted_csv_sha256 != FBI_PREPARED_SHA256 or not csv_path.is_file() or sha256(csv_path) != FBI_PREPARED_SHA256:
+        raise ValueError("FBI prepared CSV hash differs from explicit trusted input hash")
+    rows = read_csv(csv_path)
+    expected_fields = set(FBI_FIELDS)
+    if len(rows) != 364 or {row.get("field_id") for row in rows} != expected_fields:
+        raise ValueError("FBI input must contain exactly seven fields across 52 geographies")
+    expected_fips = {"01","02","04","05","06","08","09","10","11","12","13","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","44","45","46","47","48","49","50","51","53","54","55","56"}
+    source_geographies = {}
+    for row in rows:
+        field_id = row["field_id"]
+        source_field, _ = FBI_FIELDS[field_id]
+        if (row["period"] != "2025" or row["period_type"] != "annual" or row["unit"] != "per 100,000" or
+                row["source_field"] != source_field or row["source_sha256"] != FBI_RAW_SHA256 or
+                row["source_url"] != FBI_SOURCE_URL or row["retrieved_at"] != FBI_RETRIEVED_AT or
+                row["source_release"] != FBI_RELEASE):
+            raise ValueError("FBI prepared row does not match the pinned source/field/year contract")
+        geo = (row["geo_type"], row["geo_id"])
+        prior = source_geographies.setdefault(field_id, set())
+        if geo in prior:
+            raise ValueError("duplicate FBI field/geography observation")
+        prior.add(geo)
+        if row["geo_type"] == "nation":
+            if row["geo_id"] != "US" or row["state_abbr"] != "US" or row["state_name"] != "United States Total":
+                raise ValueError("FBI national observation is not the native United States row")
+            if row["denominator_population"] != "341784857":
+                raise ValueError("FBI native US denominator differs from the 2025 source record")
+        elif row["geo_type"] == "state":
+            if row["geo_id"] not in expected_fips:
+                raise ValueError("FBI state geography is outside the 50 states plus DC")
+        else:
+            raise ValueError("FBI 2025 annual output contains unexpected geography type")
+        numerator = number(row["numerator_count"], "FBI numerator")
+        denominator = number(row["denominator_population"], "FBI same-record population")
+        value = number(row["value"], "FBI per-capita rate")
+        if numerator < 0 or denominator <= 0 or abs(value - numerator / denominator * Decimal(100000)) > Decimal("0.00000000000000000001"):
+            raise ValueError("FBI rate formula or same-record population is invalid")
+        if row["geo_id"] == "06" and source_field == "homicide" and (numerator != 1370 or denominator != 39355309):
+            raise ValueError("California FBI homicide source controls do not match the verified artifact")
+        if row["geo_id"] == "06" and source_field == "rape_revised" and numerator != 13130:
+            raise ValueError("California FBI revised rape control does not match the verified artifact")
+        if row["geo_id"] == "11" and (row.get("source_footnote_marker") != "4" or not row["caveats"].strip()):
+            raise ValueError("FBI DC source footnote and caveat were lost")
+        if row["geo_id"] == "12" and (row.get("source_footnote_marker") != "3" or not row.get("source_state_name", "").strip().endswith("Florida3") or "limited data" not in row["caveats"].lower()):
+            raise ValueError("FBI Florida source footnote and limited-data caveat were lost")
+        if row["geo_id"] == "38" and (row.get("source_footnote_marker") != "3" or not row.get("source_state_name", "").strip().endswith("North Dakota3") or "limited data" not in row["caveats"].lower()):
+            raise ValueError("FBI North Dakota/Florida source caveat 3 was lost")
+    expected_geos = {("nation", "US")} | {("state", fips) for fips in expected_fips}
+    if any(geos != expected_geos for geos in source_geographies.values()):
+        raise ValueError("FBI geography coverage is not exactly native US plus 50 states and DC")
+    return rows
+
+
+def main_prepare(prepared_dir, results_path, trusted_results_sha256, output_dir,
+                 fbi_annual_csv=None, trusted_fbi_csv_sha256=None, fbi_raw_source=None,
+                 trusted_fbi_raw_sha256=None):
     prepared_dir = pathlib.Path(prepared_dir).resolve()
     results_path = pathlib.Path(results_path).resolve()
     output_dir = pathlib.Path(output_dir).resolve()
@@ -159,6 +232,21 @@ def main_prepare(prepared_dir, results_path, trusted_results_sha256, output_dir)
         raise ValueError("one or more required prepared refresh inputs are absent")
     inputs = {key: {"path": str(path), "sha256": sha256(path), "rows": len(read_csv(path))}
               for key, path in paths.items()}
+    fbi_rows = []
+    fbi_raw_metadata = None
+    if any((fbi_annual_csv, trusted_fbi_csv_sha256, fbi_raw_source, trusted_fbi_raw_sha256)):
+        if not all((fbi_annual_csv, trusted_fbi_csv_sha256, fbi_raw_source, trusted_fbi_raw_sha256)):
+            raise ValueError("FBI integration requires prepared CSV, its trusted hash, raw source, and raw hash")
+        fbi_rows = prepare_fbi_annual(fbi_annual_csv, trusted_fbi_csv_sha256,
+                                      fbi_raw_source, trusted_fbi_raw_sha256)
+        inputs["fbi_annual_2025"] = {"path": str(pathlib.Path(fbi_annual_csv).resolve()),
+                                     "sha256": sha256(fbi_annual_csv), "rows": len(fbi_rows)}
+        fbi_raw_metadata = {"sourceId":"fbi-srs-estimated-crimes-1979-2025",
+                            "path":str(pathlib.Path(fbi_raw_source).resolve()),
+                            "sha256":FBI_RAW_SHA256,"url":FBI_SOURCE_URL,
+                            "bytes":pathlib.Path(fbi_raw_source).stat().st_size,
+                            "format":"OOXML spreadsheet bytes despite .csv catalog label",
+                            "retrievedAt":FBI_RETRIEVED_AT,"status":"verified_official_download"}
 
     pep_rows = read_csv(paths["pep"])
     pep_index = {(geo_type(r), r["geo_id"], int(r["year"]), r["population_kind"]): r for r in pep_rows}
@@ -335,6 +423,20 @@ def main_prepare(prepared_dir, results_path, trusted_results_sha256, output_dir)
                  "Prepared source contains state observations only; no national numerator is present. No state sum was substituted.",
                  source_period=str(year), retrieved_at=source_item.get("retrievedAt"))
 
+    for row in fbi_rows:
+        source_field, label = FBI_FIELDS[row["field_id"]]
+        geo = {"geo_type": row["geo_type"], "geo_id": row["geo_id"]}
+        caveats = row["caveats"].strip()
+        emit("fbi_crime_rate", row["field_id"], row["field_id"][:5], geo, 2025,
+             number(row["value"], "FBI rate"), "per 100,000", "observed", "observed",
+             "fbi_cde", FBI_RELEASE, FBI_SOURCE_URL, FBI_RAW_SHA256,
+             "Official FBI SRS annual estimate; " + label + " count / same-row FBI 2025 population * 100,000; source_field=" + source_field +
+             "; raw source period annual; source_state_abbr=" + row["state_abbr"] +
+             "; source_state_label=" + (row.get("source_state_name") or row["state_name"]) + "; source_footnote_marker=" + row.get("source_footnote_marker", "") + "; caveats=" + (caveats or "none reported"),
+             raw_estimate=row["numerator_count"], raw_denominator=row["denominator_population"],
+             denominator_value=row["denominator_population"], source_period="2025",
+             retrieved_at=FBI_RETRIEVED_AT)
+
     output_dir.mkdir(parents=True, exist_ok=True)
     output = output_dir / "refresh_observations.jsonl"
     seen = set()
@@ -348,15 +450,21 @@ def main_prepare(prepared_dir, results_path, trusted_results_sha256, output_dir)
             stream.write(json.dumps(observation, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n")
     source_releases = sorted({row["source_release"] for row in observations})
     manifest = {
-        "candidate_status":"local_review_not_admitted", "contract_version":CONTRACT_VERSION,
+        "candidate_status":"local_review_not_admitted", "production_eligible":False,
+        "contract_version":CONTRACT_VERSION,
         "collector_version":COLLECTOR_VERSION, "source_release_versions":source_releases,
         "input_results_sha256":trusted_results_sha256, "inputs":inputs,
-        "verified_raw_sources":{key:{"sourceId":item["sourceId"],"path":item["path"],"sha256":item["sha256"],"url":item.get("url"),"retrievedAt":item.get("retrievedAt"),"license":item.get("license"),"status":item.get("status")} for key,item in verified_sources.items()},
+        "verified_raw_sources":{**{key:{"sourceId":item["sourceId"],"path":item["path"],"sha256":item["sha256"],"url":item.get("url"),"retrievedAt":item.get("retrievedAt"),"license":item.get("license"),"status":item.get("status")} for key,item in verified_sources.items()}, **({"fbi_annual_2025_raw":fbi_raw_metadata} if fbi_raw_metadata else {})},
         "output":{"path":str(output),"sha256":sha256(output),"rows":len(observations)},
         "quality_controls":{"same_event_and_denominator_year":True,"denominator_kind_checked":True,
             "national_cancer_rate":"observed only when same-year prepared denominator matches pinned Census native SEX=0 AGE=999 row",
             "national_irs_per_resident":"observed only when 2023 prepared denominator matches pinned Census native SEX=0 AGE=999 row",
             "national_hiv_and_child":"missing; prepared source rows are state only; no sums substituted",
+            "fbi_annual_2025":{"sourceId":"fbi-srs-estimated-crimes-1979-2025","raw_sha256":FBI_RAW_SHA256,
+                "prepared_sha256":inputs.get("fbi_annual_2025",{}).get("sha256"),"rows":len(fbi_rows),
+                "fields":{field:52 for field in sorted(FBI_FIELDS)},"geographies":"native US plus 50 states and DC",
+                "rate_formula":"official count / same-row FBI population * 100000",
+                "revised_rape_field":"rape_revised","caveats_preserved":["Florida/North Dakota limited 2025 data","DC special-agency coverage"]},
             "PEP_national_total":"prepared value independently checked against pinned native Census SEX=0 AGE=999 row",
             "native_national_pep":{"sourceId":"census-pep-national-single-age-v2025","sha256":NATIVE_PEP_SHA256,"selector":{"SEX":"0","AGE":"999"},"POPESTIMATE2023":336755052,"POPESTIMATE2024":340003797}},
         "candidate_status_note":"local review preparation only; not admitted or released"
@@ -372,8 +480,14 @@ def main():
     parser.add_argument("--results-manifest", required=True, type=pathlib.Path)
     parser.add_argument("--trusted-results-sha256", required=True)
     parser.add_argument("--output-dir", required=True, type=pathlib.Path)
+    parser.add_argument("--fbi-annual-csv", type=pathlib.Path)
+    parser.add_argument("--trusted-fbi-csv-sha256")
+    parser.add_argument("--fbi-raw-source", type=pathlib.Path)
+    parser.add_argument("--trusted-fbi-raw-sha256")
     args = parser.parse_args()
-    main_prepare(args.prepared_dir, args.results_manifest, args.trusted_results_sha256, args.output_dir)
+    main_prepare(args.prepared_dir, args.results_manifest, args.trusted_results_sha256, args.output_dir,
+                 args.fbi_annual_csv, args.trusted_fbi_csv_sha256, args.fbi_raw_source,
+                 args.trusted_fbi_raw_sha256)
 
 
 if __name__ == "__main__":
