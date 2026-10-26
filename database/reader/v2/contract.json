@@ -1,0 +1,64 @@
+{
+  "contract_version": "2.0.0-candidate",
+  "status": "candidate_not_released",
+  "read_only": true,
+  "admission_filter": "usa_atlas.ingest_run.status = 'pass'",
+  "field_ids": {
+    "aian_broad_share": "01.04",
+    "president": "12.01",
+    "senate": "12.02",
+    "house": "12.03"
+  },
+  "periods": {
+    "monthly": "period_month 1..12",
+    "annual": "period_month NULL; M13 is annual provenance",
+    "multi_year": "inclusive start/end years; month NULL"
+  },
+  "geographies": {
+    "house": "congressional_district with geo_id, boundary_vintage, congress_session, state_fips, district_code, is_at_large",
+    "senate": "state",
+    "president": "county"
+  },
+  "election_identity": [
+    "office",
+    "election_year",
+    "geography_type",
+    "geo_id",
+    "boundary_vintage nullable",
+    "congress_session nullable",
+    "stage",
+    "is_special",
+    "is_runoff",
+    "result_mode",
+    "source_release"
+  ],
+  "quality_statuses": [
+    "observed",
+    "no_election",
+    "missing",
+    "suppressed",
+    "invalid",
+    "nonmapping_geography"
+  ],
+  "candidate_rows": [
+    "candidatevotes raw and parsed",
+    "totalvotes raw preserved per source row",
+    "contest reported_total_votes stored once",
+    "party_original",
+    "party_normalized",
+    "source_version",
+    "mode",
+    "stage",
+    "special",
+    "runoff",
+    "writein",
+    "fusion_ticket"
+  ],
+  "share": "selected normalized party candidatevotes / contest totalvotes for TOTAL mode only; zero only for validated complete contest with absent party; ambiguous/incomplete is NULL",
+  "artifact_sha256": {
+    "schema.sql": "c4f43a696f79d495c2ab9a36190cc70e3db01cd69db8c7df9c6e747ff5364f76",
+    "fixtures/reader-fixture.sql": "093d1b5d3cef1bf3dec20d6948d86b682210fceb96a20c69df6aa41e000d4c7b",
+    "fixtures/reader-query.sql": "c135949da15ca5712d4ea203d98550dd6dee89203527dd0690f53ea92eafebfd",
+    "tests/invariants.sql": "139bdf78b84da3b59d73aad12f52a14f4a1c672eaa36aef78df6b80bc1d3375d"
+  }
+}
