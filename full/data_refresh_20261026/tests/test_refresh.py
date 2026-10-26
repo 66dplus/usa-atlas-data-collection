@@ -13,6 +13,7 @@ from unittest import mock
 from urllib.error import URLError
 
 from full.data_refresh_20261026 import refresh
+from full.data_refresh_20261026 import consolidate_inventory
 
 
 class FakeResponse:
@@ -36,11 +37,53 @@ class FakeResponse:
 
 
 class RefreshTests(unittest.TestCase):
+    def _inventory_fixture(self, root: Path, artifact_name: str = "good.csv", result_name: str = "good.csv",
+                           mutate_after_hash: bool = False) -> dict:
+        prepared = root / "prepared"
+        prepared.mkdir(parents=True, exist_ok=True)
+        artifact_path = prepared / artifact_name
+        artifact_path.write_text("field,value\nX,1\n")
+        digest = hashlib.sha256(artifact_path.read_bytes()).hexdigest()
+        result_path = prepared / result_name
+        if result_name != artifact_name:
+            result_path.write_text("field,value\nX,2\n")
+        if mutate_after_hash:
+            artifact_path.write_text("field,value\nX,9\n")
+        result_hash = hashlib.sha256(result_path.read_bytes()).hexdigest()
+        return {"runtimePath": str(root), "preparedArtifacts": [{"path": str(artifact_path), "sha256": digest,
+                                                                    "bytes": len(("field,value\nX,1\n").encode())}],
+                "results": {"cancer2023": {"output": str(result_path), "outputSha256": result_hash}},
+                "resultOutputBindings": [{"resultField": "results.cancer2023.output", "path": str(result_path),
+                                          "sha256": result_hash}]}
+
+    def test_inventory_rejects_mixed_stale_cancer_artifact_and_result_path(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            inventory = self._inventory_fixture(root, "cancer-2023-rates.csv", "correct-cancer.csv")
+            with self.assertRaisesRegex(ValueError, "result_output_missing_prepared_artifact"):
+                consolidate_inventory.validate_output_bindings(inventory, validate_medical=False)
+
+    def test_inventory_rejects_different_result_output_path_even_if_content_is_valid(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            inventory = self._inventory_fixture(root, "actual.csv", "alternate.csv")
+            with self.assertRaisesRegex(ValueError, "result_output_missing_prepared_artifact"):
+                consolidate_inventory.validate_output_bindings(inventory, validate_medical=False)
+
+    def test_inventory_rejects_prepared_hash_mismatch(self):
+        with tempfile.TemporaryDirectory() as temp:
+            inventory = self._inventory_fixture(Path(temp), mutate_after_hash=True)
+            with self.assertRaisesRegex(ValueError, "prepared_artifact_hash_or_size_mismatch"):
+                consolidate_inventory.validate_output_bindings(inventory, validate_medical=False)
+
     def _fbi_fixture(self, path: Path) -> None:
         strings = list(refresh.FBI_ANNUAL_COLUMNS)
         data = []
         for abbr, name, _fips in refresh.FBI_STATES:
-            data.append(["2025", abbr, name, "100000", "70", "2", "", "3", "4", "5", "20", "6", "10", "4", ""])
+            source_name = name + ("3" if abbr in {"FL", "ND"} else "4" if abbr == "DC" else "")
+            caveats = ("3 Limited data for 2025 were available for Florida and North Dakota." if abbr == "ND"
+                       else "4 Includes reported offenses from special agencies." if abbr == "DC" else "")
+            data.append(["2025", abbr, source_name, "100000", "70", "2", "", "3", "4", "5", "20", "6", "10", "4", caveats])
         data.append(["2025", "", "United States Total", "1000000", "700", "20", "", "30", "40", "50", "200", "60", "100", "40", ""])
         strings.extend(value for row in data for value in row)
         lookup = {}
@@ -73,6 +116,17 @@ class RefreshTests(unittest.TestCase):
         self.assertEqual(native["population"], "1000000")
         self.assertEqual(native["rape_revised"], "30")
         self.assertEqual(native["rape_legacy"], "")
+        florida = next(row for row in rows if row["state_abbr"] == "FL")
+        dakota = next(row for row in rows if row["state_abbr"] == "ND")
+        district = next(row for row in rows if row["state_abbr"] == "DC")
+        expected = "Limited data for 2025 were available for Florida and North Dakota."
+        self.assertEqual(florida["state_name"], "Florida")
+        self.assertEqual(florida["source_state_name"].strip(), "Florida3")
+        self.assertEqual(florida["source_footnote_marker"], "3")
+        self.assertEqual(florida["caveats"], expected)
+        self.assertEqual(dakota["caveats"], expected)
+        self.assertEqual(district["source_footnote_marker"], "4")
+        self.assertTrue(district["caveats"].startswith("Includes reported offenses"))
 
     def test_fbi_annual_missing_geography_fails_closed(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -98,6 +152,8 @@ class RefreshTests(unittest.TestCase):
             self.assertEqual(Decimal(row["value"]), Decimal("3"))
             self.assertEqual(row["numerator_count"], "3")
             self.assertEqual(row["denominator_population"], "100000")
+            self.assertEqual(next(x for x in prepared if x["state_abbr"] == "FL" and x["field_id"] == "04.07:derived")["caveats"],
+                             "Limited data for 2025 were available for Florida and North Dakota.")
             self.assertEqual(result["nativeUSRows"], 7)
 
     def test_fbi_download_import_does_not_persist_signed_locator(self):

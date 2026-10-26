@@ -1,7 +1,7 @@
 {
   "checkedOn": "2026-10-26",
   "checkedUsing": "Official publisher pages and public endpoints; retrieval/access status is recorded separately from suitability.",
-  "collectorVersion": "2026.10.26.2",
+  "collectorVersion": "2026.10.26.3",
   "readerContractVersion": "1.0.0",
   "sourceReleaseVersion": "Each publisher's release is recorded independently; this is not a reader contract version.",
   "reviews": [
@@ -25,7 +25,7 @@
       "status": "Official annual SRS estimated-crimes workbook retrieved 2026-10-26 and hash-verified; 2,440 annual rows cover 1979-2025, including 52 native 2025 geography rows. Seven 2025 state/national offense counts and same-row FBI population denominators are prepared locally.",
       "limitations": [
         "The original payload is OOXML XLSX despite the .csv filename and text/csv content type; parser dispatches by bytes.",
-        "The 2025 annual estimates have state/offense caveats, including Florida and North Dakota source limitations; preserve caveats with each row.",
+        "Footnote 3 marks limited 2025 data for both Florida and North Dakota; footnote 4 describes DC agency coverage. Markers and source text are preserved on every offense row.",
         "Annual rates use the FBI source population and are not recalculated against Census 2024 population.",
         "Rape uses the revised rape definition; legacy rape is retained in the raw source but not used for field 04.07.",
         "Monthly CDE reported values are separate and do not establish annual completeness."

@@ -1,5 +1,5 @@
 {
-  "collectorVersion": "2026.10.26.2",
+  "collectorVersion": "2026.10.26.3",
   "readerContractVersion": "1.0.0",
   "sources": [
     {
@@ -39,7 +39,7 @@
       "access": "Public download via FBI CDE catalog locator; signed locator is used only in memory and is never retained.",
       "license": "FBI UCR public-use data; retain source citation and retrieval metadata.",
       "scope": "Annual SRS estimates, 1979-2025; 2025 includes 51 state/DC rows and a native United States row. Seven prepared field numerators and same-row source population are preserved.",
-      "limitations": "The catalog filename and HTTP content-type say CSV, but the verified payload is OOXML XLSX. Parse by content signature. 2025 participation and estimation caveats vary; preserve source caveats. Rape uses rape_revised. Monthly CDE reported values are not substituted."
+      "limitations": "The catalog filename and HTTP content-type say CSV, but the verified payload is OOXML XLSX. Parse by content signature. Footnote 3 marks limited 2025 data for both Florida and North Dakota; footnote 4 gives the DC agency coverage note. Preserve markers and text on all affected offense rows. Rape uses rape_revised. Monthly CDE reported values are not substituted."
     },
     {
       "id": "eia-epa-2-10",

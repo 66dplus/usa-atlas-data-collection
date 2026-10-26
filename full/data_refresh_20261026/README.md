@@ -1,6 +1,6 @@
 # Local data refresh preparation, 2026-10-26
 
-This package prepares the 42 published selections from the supplied scope. It does not write to a database, admit observations, or modify existing collectors or reader contracts. Collector version `2026.10.26.2`, reader contract version `1.0.0`, and each publisher's source release are independent identifiers.
+This package prepares the 42 published selections from the supplied scope. It does not write to a database, admit observations, or modify existing collectors or reader contracts. Collector version `2026.10.26.3`, reader contract version `1.0.0`, and each publisher's source release are independent identifiers.
 
 ## Run
 
@@ -31,7 +31,7 @@ The worker never calls `load_credentials()` and never reads a credential file. I
 - Census PEP Vintage 2025: annual 2023/2024 all-age population and county/state/national under-18 population from single ages 0–17. These are July 1 estimates; child-age counts use the both-sex rows only. Matching-year 2023 population is required for IRS per-resident income.
 - IRS SOI 2023: all eight `agi_stub` rows are summed for county A00100; state and national totals sum counties only. Source thousand-USD values are multiplied by 1,000. Missing population does not yield a per-resident value.
 - EIA Electric Power Annual 2025: sector ALL, states, annual prices. If `EIA_API_KEY` is injected the package uses the EIA API; otherwise it parses the official annual table. ALL-sector average retail prices are not residential-only tariffs.
-- FBI annual 2025: the official SRS estimated-crimes workbook was retrieved from the CDE public catalog locator, preserved as raw bytes, and hash-verified (226,863 bytes; SHA-256 `e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486`). Although its catalog filename and HTTP content-type say CSV, the bytes are OOXML XLSX and the parser detects the ZIP signature. The seven annual estimates use their official counts and same-row FBI population to calculate per-100,000 rates. The native US row is retained. Field 04.07 uses revised rape; legacy rape is not substituted. The ND row's limited-data note for Florida and North Dakota, plus DC's agency note travel with the observations. Monthly reported counts are not summed or substituted.
+- FBI annual 2025: the official SRS estimated-crimes workbook was retrieved from the CDE public catalog locator, preserved as raw bytes, and hash-verified (226,863 bytes; SHA-256 `e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486`). Although its catalog filename and HTTP content-type say CSV, the bytes are OOXML XLSX and the parser detects the ZIP signature. The seven annual estimates use their official counts and same-row FBI population to calculate per-100,000 rates. The native US row is retained. Field 04.07 uses revised rape; legacy rape is not substituted. Source footnote markers and their text are retained: note 3 applies to both Florida and North Dakota, and note 4 applies to DC. Monthly reported counts are not summed or substituted.
 - Retained USCS 2023, CDC AtlasPlus HIV 2024, and WONDER under-18 deaths 2024 observations are copied as exact prepared-source receipts, then recalculated with matching PEP denominators: 2024 total, age 13+, and under-18 as appropriate. HIV remains provisional. Child-death counts of 9 or fewer remain suppressed. The retained source snapshot hashes, raw publisher/replay response bytes, retrieval receipts, and citations are preserved. The AtlasPlus replay is the actual input for provisional 2024 HIV counts; the separately retained CDC workbook contains tables through 2023. These are prior evidence receipts, not a new fresh collection.
 - ACS (2020-2024), PLACES (2023 BRFSS, December 2025 release), and BEA RPP (2024, February 19, 2026 release) are freshness-reviewed as unchanged, suitable current published releases. Their published snapshots are review evidence only, not new raw admissions. IRS, USCS, HIV, CDC WONDER, and USDA fitness are also reviewed. Fitness release metadata remains explicitly unverified; existing retained medical source counts are reused where fresh official downloads returned access errors.
 
@@ -48,3 +48,7 @@ Generated large and derived files remain in ignored/local runtime directories. T
 ```sh
 python3 -m unittest -v full.data_refresh_20261026.tests.test_refresh
 ```
+
+## Immutable final inventory consolidation
+
+`consolidate_inventory.py` creates a new versioned runtime from the correct integration inputs. It copies content-addressed source receipts, copies only the correctly bound prepared outputs, writes row counts and SHA-256 values, and validates every results output binding before publishing the inventory. It rejects duplicate prepared names, missing files, hash mismatches, mixed cancer inputs, and event/denominator year mismatches. It never rewrites an existing final runtime.
