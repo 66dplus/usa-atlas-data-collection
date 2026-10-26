@@ -1,6 +1,6 @@
 # Local data refresh preparation, 2026-10-26
 
-This package prepares the 42 published selections from the supplied scope. It does not write to a database, admit observations, or modify existing collectors or reader contracts. Collector version `2026.10.26.4`, reader contract version `1.0.0`, and each publisher's source release are independent identifiers.
+This package prepares the 42 published selections from the supplied scope. It does not write to a database, admit observations, or modify existing collectors or reader contracts. Collector version `2026.10.26.4`, reader contract version `2.0.0`, and each publisher's source release are independent identifiers.
 
 ## Run
 
