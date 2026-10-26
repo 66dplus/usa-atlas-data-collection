@@ -450,6 +450,11 @@ class RefreshTests(unittest.TestCase):
                 with self.assertRaisesRegex(ValueError, "bls_parent_run_summary_mismatch"):
                     refresh.import_completed_bls(prepared, result_path)
 
+    def test_parent_bls_import_accepts_truthful_completed_source_gap_status(self):
+        self.assertIn("collection_complete_with_source_gaps", refresh.BLS_COMPLETED_SOURCE_GAP_STATUSES)
+        self.assertIn("partial", refresh.BLS_COMPLETED_SOURCE_GAP_STATUSES)
+        self.assertNotIn("complete", refresh.BLS_COMPLETED_SOURCE_GAP_STATUSES)
+
     def test_url_encoded_injected_secret_is_rejected_from_source_bytes(self):
         key = "SYNTHETIC/ENCODED KEY"
         with mock.patch.dict(os.environ, {"EIA_API_KEY": key}):

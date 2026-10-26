@@ -135,6 +135,7 @@ MEDICAL_SOURCE_RECEIPTS = {
 BLS_PARENT_FILENAMES = ("bls-laus-2025.csv", "bls-laus-2025-missingness.jsonl", "bls-laus-2025-coverage.csv")
 BLS_PARENT_EXPECTED = {"batchCount": 256, "completedBatchCount": 256, "pendingSeriesCount": 0,
                        "observedRows": 153312, "missingnessRows": 12828, "seriesCount": 12780}
+BLS_COMPLETED_SOURCE_GAP_STATUSES = {"partial", "collection_complete_with_source_gaps"}
 
 
 def utc_now() -> str:
@@ -1273,7 +1274,8 @@ def import_completed_bls(source_dir: Path, results_path: Path) -> dict[str, Any]
     result = wrapper.get("result", {})
     if any(result.get(key) != value for key, value in BLS_PARENT_EXPECTED.items()):
         raise ValueError("bls_parent_run_summary_mismatch")
-    if result.get("credentialMode") != "registered" or result.get("status") != "partial":
+    if (result.get("credentialMode") != "registered"
+            or result.get("status") not in BLS_COMPLETED_SOURCE_GAP_STATUSES):
         raise ValueError("bls_parent_run_not_expected_completed_source_gap_status")
     artifacts = result.get("rawArtifacts", [])
     if len(artifacts) != BLS_PARENT_EXPECTED["batchCount"]:
