@@ -28,6 +28,7 @@ import urllib.parse
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+from . import COLLECTOR_VERSION
 
 ROOT = Path(__file__).resolve().parents[2]
 PACKAGE = Path(__file__).resolve().parent
@@ -135,6 +136,7 @@ MEDICAL_SOURCE_RECEIPTS = {
 BLS_PARENT_FILENAMES = ("bls-laus-2025.csv", "bls-laus-2025-missingness.jsonl", "bls-laus-2025-coverage.csv")
 BLS_PARENT_EXPECTED = {"batchCount": 256, "completedBatchCount": 256, "pendingSeriesCount": 0,
                        "observedRows": 153312, "missingnessRows": 12828, "seriesCount": 12780}
+BLS_COMPLETED_SOURCE_GAP_STATUSES = {"partial", "collection_complete_with_source_gaps"}
 
 
 def utc_now() -> str:
@@ -1273,7 +1275,8 @@ def import_completed_bls(source_dir: Path, results_path: Path) -> dict[str, Any]
     result = wrapper.get("result", {})
     if any(result.get(key) != value for key, value in BLS_PARENT_EXPECTED.items()):
         raise ValueError("bls_parent_run_summary_mismatch")
-    if result.get("credentialMode") != "registered" or result.get("status") != "partial":
+    if (result.get("credentialMode") != "registered"
+            or result.get("status") not in BLS_COMPLETED_SOURCE_GAP_STATUSES):
         raise ValueError("bls_parent_run_not_expected_completed_source_gap_status")
     artifacts = result.get("rawArtifacts", [])
     if len(artifacts) != BLS_PARENT_EXPECTED["batchCount"]:
@@ -2043,8 +2046,8 @@ def write_inventory(results: dict[str, Any]) -> None:
         unique_artifacts[identity] = artifact
     packet = {
         "format": "usa_maps_local_data_refresh_inventory_v1",
-        "collectorVersion": "2026.10.26.2",
-        "readerContractVersion": "1.0.0",
+        "collectorVersion": COLLECTOR_VERSION,
+        "readerContractVersion": results.get("readerContractVersion", "2.0.0"),
         "sourceReleaseVersions": "Publisher releases are separate; see source_catalog.json and freshness_review.json.",
         "generatedAt": utc_now(),
         "worktree": str(ROOT),
