@@ -1,8 +1,8 @@
 {
   "format": "usa_maps_reader_v2_local_review_input_mapping",
-  "contract_version": "2.0.0-candidate",
+  "contract_version": "2.0.0",
   "status": "candidate_not_admitted",
-  "admission_filter": "ingest_run.status='pass' AND reader_batch.candidate_status='admitted'",
+  "admission_filter": "usa_atlas.ingest_run.status = 'pass'",
   "collector_version": "data-refresh-preparation-2026.10.26.1",
   "source_release_is_per_observation": true,
   "inputs": [
@@ -110,9 +110,48 @@
       "source_adjustment": "crude; not age-adjusted",
       "suppression": "Preserve counts suppressed by source; never coerce to zero.",
       "national_status": "missing; source file contains state rows only."
+    },
+    {
+      "catalog_field_id": "04.01–04.07",
+      "dataset_id": "fbi_crime_rate",
+      "field_ids": [
+        "04.01:derived",
+        "04.02:derived",
+        "04.03:derived",
+        "04.04:derived",
+        "04.05:derived",
+        "04.06:derived",
+        "04.07:derived"
+      ],
+      "source_release": "FBI SRS Estimated Crimes 1979-2025 (August 2026)",
+      "period": "2025 annual; null month",
+      "geographies": "native US plus 50 states and DC",
+      "unit": "per 100,000",
+      "formula": "official offense count / population on same FBI 2025 row * 100000",
+      "source_field_map": {
+        "04.01:derived": "homicide",
+        "04.02:derived": "violent_crime",
+        "04.03:derived": "robbery",
+        "04.04:derived": "aggravated_assault",
+        "04.05:derived": "burglary",
+        "04.06:derived": "motor_vehicle_theft",
+        "04.07:derived": "rape_revised"
+      },
+      "raw_sha256": "e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486",
+      "prepared_sha256": "1551672802e7059bd728165aa334dfc2d051c49d4692f4754af50cc48dce71e0",
+      "retrieved_at": "2026-10-26T12:13:22.509127+00:00",
+      "quality": "Observed source values; preserve source caveats including Florida/North Dakota limited-data marker and DC agency coverage. Missing source values remain null.",
+      "source_footnotes": {
+        "FL": "source_state_name marker 3; limited 2025 data",
+        "ND": "source_state_name marker 3; limited 2025 data",
+        "DC": "source_state_name marker 4; special agency coverage"
+      }
     }
   ],
   "medical_invariant": "Reject any event-year/denominator-year mismatch, population-kind mismatch, geography mismatch, PEP denominator mismatch, or source-rate arithmetic mismatch.",
   "generated_manifest": "/tmp-only runtime path supplied by caller; manifest pins prepared file hashes and source receipts",
-  "candidate_only": true
+  "candidate_only": true,
+  "additional_reader_filter": "usa_atlas.reader_batch.candidate_status = 'admitted'",
+  "local_review_filter": "usa_atlas.reader_batch.candidate_status = 'local_review'; loopback only",
+  "versioned_catalog_relation": "usa_atlas.reader_v2_catalog_field keyed by (catalog_field_id,source_release); v1 catalog metadata is insert-only and never overwritten"
 }

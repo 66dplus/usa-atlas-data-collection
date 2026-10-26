@@ -12,11 +12,39 @@ CREATE TABLE IF NOT EXISTS usa_atlas.reader_batch (
     created_at timestamptz NOT NULL DEFAULT now()
 );
 
+-- Versioned metadata keeps source releases/contracts separate from the immutable v1 catalog.
+CREATE TABLE IF NOT EXISTS usa_atlas.reader_v2_catalog_field (
+    catalog_field_id text NOT NULL,
+    source_release text NOT NULL,
+    dataset_id text NOT NULL,
+    catalog_label text NOT NULL,
+    source_code text NOT NULL,
+    contract_version text NOT NULL,
+    contract jsonb NOT NULL,
+    contract_sha256 character(64) NOT NULL,
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    created_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (catalog_field_id,source_release)
+);
+
+CREATE TABLE IF NOT EXISTS usa_atlas.reader_v2_admission_event (
+    event_id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    ingest_id uuid NOT NULL REFERENCES usa_atlas.reader_batch(ingest_id),
+    action text NOT NULL CHECK (action IN ('admitted','revoked')),
+    admission_bundle_sha256 character(64) NOT NULL,
+    contract_sha256 character(64) NOT NULL,
+    actor text NOT NULL,
+    reason text NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS reader_v2_admission_event_batch_idx
+    ON usa_atlas.reader_v2_admission_event (ingest_id,created_at DESC);
+
 CREATE TABLE IF NOT EXISTS usa_atlas.reader_observation (
     observation_id text PRIMARY KEY,
     dataset_id text NOT NULL,
     field_id text NOT NULL,
-    catalog_field_id text NOT NULL REFERENCES usa_atlas.catalog_field(catalog_field_id),
+    catalog_field_id text NOT NULL,
     geo_id text NOT NULL,
     geo_type text NOT NULL CHECK (geo_type IN ('nation','state','county','congressional_district')),
     state_fips character(2),
@@ -49,6 +77,7 @@ CREATE TABLE IF NOT EXISTS usa_atlas.reader_observation (
     candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
     retrieved_at timestamptz NOT NULL,
     ingest_id uuid NOT NULL REFERENCES usa_atlas.ingest_run(ingest_id),
+    FOREIGN KEY (catalog_field_id,source_release) REFERENCES usa_atlas.reader_v2_catalog_field(catalog_field_id,source_release),
     UNIQUE NULLS NOT DISTINCT (dataset_id,field_id,geo_type,geo_id,period_kind,period_year,period_month,period_start_year,period_end_year,source_release),
     CHECK (period_start_year <= period_end_year),
     CHECK ((period_kind='monthly' AND period_month BETWEEN 1 AND 12 AND period_start_year=period_year AND period_end_year=period_year)
@@ -87,7 +116,7 @@ CREATE TABLE IF NOT EXISTS usa_atlas.election_contest (
     contest_id text PRIMARY KEY,
     dataset_id text NOT NULL,
     field_id text NOT NULL,
-    catalog_field_id text NOT NULL REFERENCES usa_atlas.catalog_field(catalog_field_id),
+    catalog_field_id text NOT NULL,
     office text NOT NULL CHECK (office IN ('president','senate','house')),
     election_year smallint NOT NULL,
     election_date date,
@@ -119,6 +148,7 @@ CREATE TABLE IF NOT EXISTS usa_atlas.election_contest (
     methodology_note text NOT NULL,
     candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
     ingest_id uuid NOT NULL REFERENCES usa_atlas.ingest_run(ingest_id),
+    FOREIGN KEY (catalog_field_id,source_release) REFERENCES usa_atlas.reader_v2_catalog_field(catalog_field_id,source_release),
     UNIQUE NULLS NOT DISTINCT (office,election_year,stage,is_special,is_runoff,geography_type,geo_id,boundary_vintage,congress_session,result_mode,source_release,source_version),
     CHECK ((office='house' AND geography_type='congressional_district') OR (office='senate' AND geography_type='state') OR (office='president' AND geography_type='county')),
     CHECK (quality_status <> 'no_election' OR reported_total_votes IS NULL),

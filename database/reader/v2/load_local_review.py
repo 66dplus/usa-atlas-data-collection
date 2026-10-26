@@ -13,14 +13,15 @@ from psycopg2.extras import execute_values
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT))
 from full.politics_20261026.prepare import BOUNDARY_SOURCE_URL
+from database.reader.v2.catalog import save_v2_catalog_field
 
 GUARD_ROOT = pathlib.Path("/tmp/usa-maps-data-flow-20261026").resolve()
 SOCKET = str((GUARD_ROOT / "pgsocket").resolve())
 SOURCE_METADATA = {
     "01.04": {"label":"AIAN broad share", "release":"acs-2024-5year", "dataset_id":"aian_broad_share", "source_code":"census_acs"},
-    "12.01": {"label":"President election results", "release":"dataverse-VOQCHQ-v20", "dataset_id":"election_president_2024", "source_code":"medsl"},
-    "12.02": {"label":"Senate election results", "release":"dataverse-PEJ5QU-v8", "dataset_id":"election_senate_2024", "source_code":"medsl"},
-    "12.03": {"label":"House election results", "release":"prepared-mirror-IG0UN2-v15", "dataset_id":"election_house_2024", "source_code":"medsl"},
+    "12.01": {"label":"President election results", "release":"dataverse-VOQCHQ-v20", "dataset_id":"president_election", "source_code":"medsl"},
+    "12.02": {"label":"Senate election results", "release":"dataverse-PEJ5QU-v8", "dataset_id":"senate_election", "source_code":"medsl"},
+    "12.03": {"label":"House election results", "release":"dataverse-IG0UN2-v15", "dataset_id":"house_election", "source_code":"medsl"},
     "03.06": {"label":"Unemployment rate and LAUS components", "release":"laus-nsa-2025", "dataset_id":"unemployment", "source_code":"bls_laus"},
 }
 
@@ -139,16 +140,8 @@ def load(args):
                              "shareDenominator":"one contest reported totalvotes", "partySelectors":["DEMOCRAT","REPUBLICAN"]})
             elif field=="03.06":
                 body.update({"seasonalAdjustment":"NSA", "seriesFamily":"BLS LAUS", "annualPeriod":"M13 is annual with null month", "monthlyPeriods":"M01-M12"})
-            body_sha=hashlib.sha256(json.dumps(body,sort_keys=True,separators=(",",":")).encode()).hexdigest()
             catalog_contract_bodies[field]=body
-            cur.execute("""INSERT INTO usa_atlas.catalog_field
-                (catalog_field_id,catalog_label,planned_state,rate_limit_profile,source_release,contract,contract_sha256)
-                VALUES (%s,%s,'candidate','local_review',%s,%s::jsonb,%s)
-                ON CONFLICT (catalog_field_id) DO UPDATE SET catalog_label=EXCLUDED.catalog_label,
-                  planned_state=EXCLUDED.planned_state,rate_limit_profile=EXCLUDED.rate_limit_profile,
-                  source_release=EXCLUDED.source_release,contract=EXCLUDED.contract,
-                  contract_sha256=EXCLUDED.contract_sha256""",
-                (field,metadata["label"],metadata["release"],json.dumps(body),body_sha))
+            save_v2_catalog_field(cur, field, metadata, body, catalog_contract["contract_version"])
         if args.catalog_only:
             cur.execute("UPDATE usa_atlas.reader_observation SET source_version='laus-nsa-2025-v2' WHERE catalog_field_id='03.06' AND source_release='laus-nsa-2025' AND source_version=''")
             connection.commit()

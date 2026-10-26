@@ -1,13 +1,12 @@
-INSERT INTO usa_atlas.catalog_field
-    (catalog_field_id,catalog_label,planned_state,rate_limit_profile,source_release,contract,contract_sha256)
+INSERT INTO usa_atlas.reader_v2_catalog_field
+    (catalog_field_id,source_release,dataset_id,catalog_label,source_code,contract_version,contract,contract_sha256,candidate_status)
 VALUES
-('03.06','Fixture: unemployment','run_now','bls_laus','bls-2025-fixture',
- '{"periodKinds":["monthly","annual"],"unit":"percent"}'::jsonb,repeat('b',64)),
-('01.04','AIAN broad share extension','candidate','acs_acs5','2024-acs-acs5',
- '{"numerator":"B02010_001E","denominator":"B01003_001E"}'::jsonb,repeat('c',64)),
-('12.01','President election results','candidate','medsl','medsl-fixture-v1','{"office":"president"}'::jsonb,repeat('d',64)),
-('12.02','Senate election results','candidate','medsl','medsl-fixture-v1','{"office":"senate"}'::jsonb,repeat('e',64)),
-('12.03','House election results','candidate','medsl','medsl-fixture-v1','{"office":"house"}'::jsonb,repeat('f',64));
+('03.06','bls-2025-fixture','unemployment','Fixture: unemployment','bls_laus','2.0.0','{"periodKinds":["monthly","annual"],"unit":"percent"}'::jsonb,repeat('b',64),'local_review'),
+('01.04','2024-acs-acs5','aian_broad_share','AIAN broad share extension','acs_acs5','2.0.0','{"numerator":"B02010_001E","denominator":"B01003_001E"}'::jsonb,repeat('c',64),'local_review'),
+('12.01','medsl-fixture-v1','president_election','President election results','medsl','2.0.0','{"office":"president"}'::jsonb,repeat('d',64),'local_review'),
+('12.02','medsl-fixture-v1','senate_election','Senate election results','medsl','2.0.0','{"office":"senate"}'::jsonb,repeat('e',64),'local_review'),
+('12.03','medsl-fixture-v1','house_election','House election results','medsl','2.0.0','{"office":"house"}'::jsonb,repeat('f',64),'local_review'),
+('12.03','unadmitted-fixture','house_election','House election results','medsl','2.0.0','{"office":"house"}'::jsonb,repeat('0',64),'local_review');
 
 INSERT INTO usa_atlas.ingest_run
     (ingest_id,source,artifact_path,artifact_sha256,contract_sha256,row_count,started_at,completed_at,status,error_code)

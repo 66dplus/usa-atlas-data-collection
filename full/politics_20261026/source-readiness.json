@@ -29,7 +29,14 @@
       "mirror_sha256": "bd0690fbcd753e45edb40810c99d1b8afbb0de928aa54bff1b227c615d69c163",
       "mirror_md5": "50718aa65ac2652a2f08f45998433c66",
       "metadata_md5": "a9566ac393913a1af343284e837c17bb",
-      "evidence": "Checksums differ. Direct download requires guestbook; no submission made. Mirror byte identity is unverified."
+      "evidence": "Executable reconstruction from the pinned single-string-column mirror matches released v15 official original size, MD5, SHA-256 and one-column UNF. No guestbook submission.",
+      "original_bytes": 4156562,
+      "original_md5": "a9566ac393913a1af343284e837c17bb",
+      "original_sha256": "76eec42483ee9f0fc5cf6e377442c783d1ae6eefa929729fd6561a69bab47f2a",
+      "unf": "UNF:6:cIJWG41N8qe3Kyf7oKuPdw==",
+      "official_metadata_sha256": "7f1e58721c198bfd7c1a4254b6704ba42aab6764e034ca456e1f7d536ce25c0b",
+      "reconstructed_from_mirror": true,
+      "source_release": "dataverse-IG0UN2-v15"
     },
     "aian": {
       "source": "2024 ACS 5-year Detailed Tables",
@@ -75,12 +82,13 @@
     "house": {
       "source_rows": 33805,
       "validated_total_contests": 10226,
-      "quarantined_total_contests": 657
+      "quarantined_total_contests": 657,
+      "production_eligible_source_rows": 33805
     }
   },
   "readiness_notes": {
     "president": "Public Dataverse version 20 metadata original checksum MD5 and byte count match prepared raw source.",
     "senate": "Official public direct-download SHA-256 and byte count match prepared raw source; metadata MD5 refers to a distinct processed serialization.",
-    "house": "Prepared-mirror source is locally reviewable; official Dataverse metadata checksum differs and byte identity is unresolved. production_eligible=false. No guestbook submission."
+    "house": "Official original bytes reconstructed from the pinned source mirror; official metadata MD5+size, reconstructed SHA-256, and one-column UNF pass. Executable proof is required by preparation and admission."
   }
 }

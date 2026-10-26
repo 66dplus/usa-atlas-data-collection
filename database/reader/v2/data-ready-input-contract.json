@@ -1,5 +1,5 @@
 {
-  "contract_version": "2.0.0-candidate",
+  "contract_version": "2.0.0",
   "collector_version": "politics-preparation-2.1.0",
   "additional_source_collectors": {
     "bls_laus_2025": "separate keyed collector; preparation accepts explicit input paths and verifies collection, CSV, missingness, and raw batch hashes"
@@ -63,17 +63,17 @@
       "catalog_field_id": "01.04"
     },
     "president": {
-      "dataset_id": "election_president_2024",
+      "dataset_id": "president_election",
       "field_id": "12.01",
       "catalog_field_id": "12.01"
     },
     "senate": {
-      "dataset_id": "election_senate_2024",
+      "dataset_id": "senate_election",
       "field_id": "12.02",
       "catalog_field_id": "12.02"
     },
     "house": {
-      "dataset_id": "election_house_2024",
+      "dataset_id": "house_election",
       "field_id": "12.03",
       "catalog_field_id": "12.03"
     },
@@ -137,11 +137,11 @@
   "source_release_examples": {
     "president": "dataverse-VOQCHQ-v20",
     "senate": "dataverse-PEJ5QU-v8",
-    "house": "prepared-mirror-IG0UN2-v15"
+    "house": "dataverse-IG0UN2-v15"
   },
   "version_separation": {
     "collector_version": "politics-preparation-2.1.0",
-    "reader_contract_version": "2.0.0-candidate",
+    "reader_contract_version": "2.0.0",
     "observation_source_release": "separate per-source values above"
   },
   "bls_period_mapping": {
