@@ -30,13 +30,18 @@ jobs:
           USA_ATLAS_REQUIRE_READER_POSTGRES=1 python3 -m unittest database.tests.test_reader_contract
       - name: Reader v2 and source identity checks
         run: |
+          install -d -m 700 /tmp/usa-maps-data-flow-20261026
+          chmod 700 /tmp/usa-maps-data-flow-20261026
           python3 -m unittest discover -s database/reader/v2/tests -p 'test_*.py'
-          python3 -m unittest discover -s full/politics_20261026/tests -p 'test_*.py'
-          python3 -m unittest database.reader.v2.tests.test_ci_postgres
+      - name: Politics and BLS preparation checks
+        working-directory: full/politics_20261026
+        run: python3 -m unittest test_prepare.py test_prepare_bls.py
+      - name: House source identity checks
+        run: python3 -m unittest discover -s full/politics_20261026/tests -p 'test_*.py'
       - name: Data refresh worker checks
         run: |
           test -f full/data_refresh_20261026/tests/test_refresh.py
-          PYTHONPATH=full python3 -m unittest data_refresh_20261026.tests.test_refresh
+          python3 -m unittest full.data_refresh_20261026.tests.test_refresh
       - name: Housing stock checks
         working-directory: full
         run: python3 -m unittest test_housing_stock_2021.py
