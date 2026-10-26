@@ -51,7 +51,7 @@ class RefreshTests(unittest.TestCase):
             artifact_path.write_text("field,value\nX,9\n")
         result_hash = hashlib.sha256(result_path.read_bytes()).hexdigest()
         return {"runtimePath": str(root), "preparedArtifacts": [{"path": str(artifact_path), "sha256": digest,
-                                                                    "bytes": len(("field,value\nX,1\n").encode())}],
+                                                                    "bytes": len(("field,value\nX,1\n").encode()), "rowCount": 1}],
                 "results": {"cancer2023": {"output": str(result_path), "outputSha256": result_hash}},
                 "resultOutputBindings": [{"resultField": "results.cancer2023.output", "path": str(result_path),
                                           "sha256": result_hash}]}
@@ -75,6 +75,18 @@ class RefreshTests(unittest.TestCase):
             inventory = self._inventory_fixture(Path(temp), mutate_after_hash=True)
             with self.assertRaisesRegex(ValueError, "prepared_artifact_hash_or_size_mismatch"):
                 consolidate_inventory.validate_output_bindings(inventory, validate_medical=False)
+
+    def test_json_definition_matrix_row_count_includes_additional_rows(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "definition_matrix.json"
+            path.write_text(json.dumps({"rows": [{}, {}], "additionalRows": [{}]}))
+            self.assertEqual(consolidate_inventory.row_count(path), 3)
+
+    def test_json_definition_matrix_row_count_includes_additional_rows(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "definition_matrix.json"
+            path.write_text(json.dumps({"rows": [{}, {}], "additionalRows": [{}]}))
+            self.assertEqual(consolidate_inventory.row_count(path), 3)
 
     def _fbi_fixture(self, path: Path) -> None:
         strings = list(refresh.FBI_ANNUAL_COLUMNS)

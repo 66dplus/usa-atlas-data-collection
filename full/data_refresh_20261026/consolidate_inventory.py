@@ -33,6 +33,13 @@ def row_count(path: Path) -> int | None:
     if path.suffix.lower() == ".jsonl":
         with path.open("rb") as stream:
             return sum(1 for line in stream if line.strip())
+    if path.suffix.lower() == ".json":
+        value = json.loads(path.read_text(encoding="utf-8"))
+        if isinstance(value, dict) and isinstance(value.get("rows"), list):
+            return len(value["rows"]) + len(value.get("additionalRows", []))
+        if isinstance(value, list):
+            return len(value)
+        return 1
     return None
 
 
@@ -93,7 +100,7 @@ def validate_output_bindings(inventory: dict[str, Any], validate_medical: bool =
         if not path.is_relative_to(prepared_root) or not path.is_file():
             raise ValueError("prepared_artifact_outside_runtime_or_missing")
         digest = sha256_file(path)
-        if digest != item.get("sha256") or path.stat().st_size != item.get("bytes"):
+        if digest != item.get("sha256") or path.stat().st_size != item.get("bytes") or row_count(path) != item.get("rowCount"):
             raise ValueError("prepared_artifact_hash_or_size_mismatch")
         by_path[str(path)] = item
     bindings = inventory.get("resultOutputBindings", [])
