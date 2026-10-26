@@ -41,7 +41,7 @@ jobs:
       - name: Data refresh worker checks
         run: |
           test -f full/data_refresh_20261026/tests/test_refresh.py
-          python3 -m unittest full.data_refresh_20261026.tests.test_refresh
+          python3 -m unittest discover -s full/data_refresh_20261026/tests -p 'test_*.py'
       - name: Housing stock checks
         working-directory: full
         run: python3 -m unittest test_housing_stock_2021.py
