@@ -174,6 +174,12 @@ def reader_contract_version(inventory: dict[str, Any]) -> str | None:
     return results.get("readerContractVersion") or inventory.get("readerContractVersion")
 
 
+def collector_version(inventory: dict[str, Any]) -> str | None:
+    """Use the producer package version recorded by the preparation results."""
+    results = inventory.get("results", {})
+    return results.get("collectorVersion") or inventory.get("collectorVersion")
+
+
 def _rewrite_paths(node: Any, prepared_map: dict[str, str], raw_map: dict[str, str], evidence_map: dict[str, str]) -> Any:
     if isinstance(node, dict):
         out = {}
@@ -348,7 +354,7 @@ def consolidate(source_inventory: Path, correct_prepared: Path, fbi_prepared: Pa
     for record in source_records:
         record = _rewrite_paths(record, prepared_map, raw_map, evidence_map)
         final_source_records.append(record)
-    output = {**source, "collectorVersion": "2026.10.26.3",
+    output = {**source, "collectorVersion": collector_version(source),
               "readerContractVersion": reader_contract_version(source), "workerCommit": commit,
               "runtimePath": str(final_runtime.resolve()), "results": rewritten,
               "definitionMatrix": rewritten.get("definitionMatrixPath"),

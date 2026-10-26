@@ -461,6 +461,14 @@ class RefreshTests(unittest.TestCase):
         self.assertEqual(consolidate_inventory.reader_contract_version(
             {"readerContractVersion": "1.0.0", "results": {}}), "1.0.0")
 
+    def test_consolidated_inventory_keeps_collector_version_separate(self):
+        inventory = {"collectorVersion": "legacy", "readerContractVersion": "2.0.0",
+                     "results": {"collectorVersion": "2026.10.26.4",
+                                 "readerContractVersion": "2.0.0",
+                                 "sourceReleaseVersions": "publisher-specific"}}
+        self.assertEqual(consolidate_inventory.collector_version(inventory), "2026.10.26.4")
+        self.assertEqual(consolidate_inventory.reader_contract_version(inventory), "2.0.0")
+
     def test_url_encoded_injected_secret_is_rejected_from_source_bytes(self):
         key = "SYNTHETIC/ENCODED KEY"
         with mock.patch.dict(os.environ, {"EIA_API_KEY": key}):

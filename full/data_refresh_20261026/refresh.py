@@ -28,6 +28,7 @@ import urllib.parse
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+from . import COLLECTOR_VERSION
 
 ROOT = Path(__file__).resolve().parents[2]
 PACKAGE = Path(__file__).resolve().parent
@@ -2045,8 +2046,8 @@ def write_inventory(results: dict[str, Any]) -> None:
         unique_artifacts[identity] = artifact
     packet = {
         "format": "usa_maps_local_data_refresh_inventory_v1",
-        "collectorVersion": "2026.10.26.2",
-        "readerContractVersion": "1.0.0",
+        "collectorVersion": COLLECTOR_VERSION,
+        "readerContractVersion": results.get("readerContractVersion", "2.0.0"),
         "sourceReleaseVersions": "Publisher releases are separate; see source_catalog.json and freshness_review.json.",
         "generatedAt": utc_now(),
         "worktree": str(ROOT),
