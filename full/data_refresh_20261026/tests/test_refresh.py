@@ -80,6 +80,12 @@ class RefreshTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "year_mismatch"):
             refresh.income_per_resident(Decimal("1250"), 500, "2023", "2024")
 
+    def test_all_health_rates_reject_event_denominator_year_mismatch(self):
+        for event_year, denominator_year in (("2023", "2024"), ("2024", "2023")):
+            with self.subTest(event_year=event_year, denominator_year=denominator_year):
+                with self.assertRaisesRegex(ValueError, "health_event_denominator_year_mismatch"):
+                    refresh.require_matching_year(event_year, denominator_year)
+
     def test_pep_year_mapping_and_missing_integer_values(self):
         self.assertEqual(refresh.pep_year_for_source("2023"), "4")
         self.assertEqual(refresh.pep_year_for_source("2024"), "5")
@@ -135,6 +141,7 @@ class RefreshTests(unittest.TestCase):
                 writer.writeheader()
                 writer.writerows([
                     {"geo_type": "state", "geo_id": "01", "year": "2023", "population_kind": "total", "value": 100},
+                    {"geo_type": "nation", "geo_id": "US", "year": "2023", "population_kind": "total", "value": 200},
                     {"geo_type": "state", "geo_id": "01", "year": "2024", "population_kind": "total", "value": 100},
                     {"geo_type": "state", "geo_id": "01", "year": "2024", "population_kind": "age_13_plus", "value": 90},
                     {"geo_type": "state", "geo_id": "01", "year": "2024", "population_kind": "under_18", "value": 10},
@@ -148,14 +155,40 @@ class RefreshTests(unittest.TestCase):
                                             "field_id": metric, "value": value, "source_release": "fixture",
                                             "source_url": "https://example.gov", "retrieved_at": "2026-10-01"}) + "\n")
                 receipts[key] = path
-            with mock.patch.object(refresh, "RUNTIME", runtime), mock.patch.object(refresh, "MEDICAL_RECEIPTS", receipts):
+            publisher = runtime / "uscs-publisher-fixture.json"
+            publisher.write_text(json.dumps([{"LandingPageMapData_Inci": [{
+                "YearID": 1, "GeoLocationID": 1, "CancerSiteID": 1, "DataTypeID": 1,
+                "RaceID": 1, "SexID": 1, "count": 3,
+            }]}]))
+            publisher_sources = {
+                "cancer2023": (publisher, "https://example.gov/uscs", None, "public domain"),
+                "hiv2024": (runtime / "missing-hiv.json", "https://example.gov/hiv", None, "public domain"),
+                "childDeaths2024": (runtime / "missing-wonder.html", "https://example.gov/wonder", None, "public use"),
+            }
+            publisher_receipt = runtime / "uscs-receipt.json"
+            publisher_receipt.write_text(json.dumps({"sha256": refresh.sha256_file(publisher),
+                                                     "retrieved_utc": "2026-10-01T00:00:00Z"}))
+            receipt_paths = {"cancer2023": publisher_receipt, "hiv2024": runtime / "none1.json",
+                             "childDeaths2024": runtime / "none2.json"}
+            with mock.patch.object(refresh, "RUNTIME", runtime), mock.patch.object(refresh, "MEDICAL_RECEIPTS", receipts), \
+                 mock.patch.object(refresh, "MEDICAL_PUBLISHER_RAW", publisher_sources), \
+                 mock.patch.object(refresh, "MEDICAL_SOURCE_RECEIPTS", receipt_paths):
                 result = refresh.prepare_existing_medical_rates()
-                cancer = list(refresh.read_csv(runtime / "prepared/cancer-2023-rates.csv"))[0]
+                cancer_rows = list(refresh.read_csv(runtime / "prepared/cancer-2023-rates.csv"))
+                medical_missingness = runtime / "prepared/cancer-2023-rates-missingness.jsonl"
+                medical_missingness_hash = refresh.sha256_file(medical_missingness)
+                cancer = cancer_rows[0]
                 hiv = list(refresh.read_csv(runtime / "prepared/hiv-2024-rates.csv"))[0]
                 child = list(refresh.read_csv(runtime / "prepared/child-deaths-under18-2024-rates.csv"))
         self.assertEqual(cancer["denominator_kind"], "total")
         self.assertEqual(cancer["denominator_year"], "2023")
         self.assertEqual(Decimal(cancer["value"]), Decimal(2000))
+        national = next(row for row in cancer_rows if row["geo_id"] == "US")
+        self.assertEqual(national["numerator"], "3")
+        self.assertEqual(national["denominator_year"], "2023")
+        self.assertEqual(national["source_retrieved_at"], "2026-10-01T00:00:00Z")
+        self.assertEqual(national["source_snapshot_date"], "2026-10-01")
+        self.assertEqual(result["cancer2023"]["missingnessSha256"], medical_missingness_hash)
         self.assertEqual(hiv["denominator_kind"], "age_13_plus")
         self.assertEqual(Decimal(hiv["value"]), Decimal(100000) / Decimal(30))
         self.assertEqual(child, [])
@@ -257,7 +290,18 @@ class RefreshTests(unittest.TestCase):
                 result = refresh.collect_bls(1)
             self.assertEqual(request.call_count, 1)
             self.assertEqual(result["queriesThisRun"], 1)
+            self.assertEqual(result["status"], "collection_complete_with_source_gaps")
             self.assertNotEqual(refresh.sha256_file(raw), refresh.sha256_bytes(b"corrupted raw"))
+
+    def test_parent_bls_import_rejects_incomplete_run_summary(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base = Path(temp)
+            prepared, result_path = base / "prepared", base / "result.json"
+            prepared.mkdir()
+            result_path.write_text(json.dumps({"result": {"batchCount": 255}}))
+            with mock.patch.object(refresh, "RUNTIME", base / "runtime"):
+                with self.assertRaisesRegex(ValueError, "bls_parent_run_summary_mismatch"):
+                    refresh.import_completed_bls(prepared, result_path)
 
     def test_url_encoded_injected_secret_is_rejected_from_source_bytes(self):
         key = "SYNTHETIC/ENCODED KEY"
@@ -303,6 +347,8 @@ class RefreshTests(unittest.TestCase):
         matrix = json.loads((refresh.PACKAGE / "definition_matrix.json").read_text())
         self.assertEqual(matrix["scopeCount"], 42)
         self.assertEqual(len(matrix["rows"]), 42)
+        self.assertEqual(len(matrix.get("additionalRows", [])), 1)
+        self.assertEqual(matrix["additionalRows"][0]["fieldId"], "07.01:derived:per-resident")
         required = {"definition", "numerator", "denominator", "unit", "geography",
                     "observationPeriod", "observationType", "releaseDate", "retrievalDate",
                     "latestSuitableRelease", "limitations", "status"}
@@ -319,22 +365,59 @@ class RefreshTests(unittest.TestCase):
         self.assertTrue(all(row["status"] == "monthly_source_series_complete_annual_values_not_synthesized"
                             for row in crime))
 
-    def test_fbi_annual_comparison_leaves_new_year_missing_without_official_table(self):
+    def test_eia_rank_comparison_uses_hash_verified_frozen_public_snapshot(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
-            baseline = root / "full/normalized/fbi_cde.jsonl"
-            baseline.parent.mkdir(parents=True)
-            baseline.write_text(json.dumps({"geo_id": "AL", "geo_type": "state", "year": "2023",
-                                            "field_id": "04.01", "value": 5,
-                                            "methodology_note": "Annual sum of monthly actuals"}) + "\n")
-            with mock.patch.object(refresh, "ROOT", root), mock.patch.object(refresh, "RUNTIME", root / "runtime"):
+            snapshot = root / "08.05.json"
+            snapshot.write_text(json.dumps({"fieldId": "08.05:sector_ALL", "period": "2024",
+                                            "observations": [{"id": "01", "geoType": "state", "sourceGeoId": "01", "value": 10.0}]}))
+            digest = refresh.sha256_file(snapshot)
+            inventory = root / "inventory.json"
+            inventory.write_text(json.dumps({"manifestUnchanged": True, "observations": [
+                {"fieldId": "08.05:sector_ALL", "period": "2024", "path": str(snapshot), "sha256": digest}
+            ] + [{} for _ in range(41)]}))
+            runtime = root / "runtime"
+            current = runtime / "prepared/eia-electricity-price-2025-all-sectors.csv"
+            current.parent.mkdir(parents=True)
+            with current.open("w", newline="") as stream:
+                writer = csv.DictWriter(stream, fieldnames=["state", "value"])
+                writer.writeheader(); writer.writerow({"state": "AL", "value": "12"})
+            with mock.patch.object(refresh, "RUNTIME", runtime), mock.patch.object(
+                    refresh, "PUBLISHED_BEFORE_INVENTORY", inventory):
+                result = refresh.prepare_eia_before_after()
+            rows = list(refresh.read_csv(runtime / "prepared/eia-2024-2025-before-after-ranks.csv"))
+        al = next(row for row in rows if row["state"] == "AL")
+        self.assertEqual(al["before_value_cents_per_kwh"], "10.0")
+        self.assertEqual(al["after_value_cents_per_kwh"], "12")
+        self.assertEqual(result["baselineSourceSha256"], digest)
+
+    def test_fbi_annual_comparison_uses_hash_verified_published_baseline(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            snapshot = root / "04.01.json"
+            snapshot.write_text(json.dumps({"fieldId": "04.01:derived", "period": "2023",
+                                            "observations": [{"id": "01", "geoType": "state", "sourceGeoId": "01", "value": 5}]}))
+            digest = refresh.sha256_file(snapshot)
+            inventory = root / "inventory.json"
+            inventory.write_text(json.dumps({"observations": [{"fieldId": "04.01:derived", "period": "2023",
+                                                                  "path": str(snapshot), "sha256": digest}]}))
+            with mock.patch.object(refresh, "RUNTIME", root / "runtime"), mock.patch.object(
+                    refresh, "PUBLISHED_BEFORE_INVENTORY", inventory):
                 result = refresh.prepare_fbi_baseline_and_pending_annual()
-                rows = list(refresh.read_csv(root / "runtime/prepared/fbi-2023-baseline-2025-annual-pending.csv"))
+            rows = list(refresh.read_csv(root / "runtime/prepared/fbi-2023-baseline-2025-annual-pending.csv"))
         al = next(row for row in rows if row["field_id"] == "04.01" and row["state"] == "AL")
         self.assertEqual(al["before_value"], "5")
         self.assertEqual(al["after_annual_value"], "")
         self.assertEqual(al["after_status"], "official_state_annual_estimate_table_not_captured")
         self.assertEqual(result["annual2025Rows"], 0)
+
+    def test_loader_mapping_uses_canonical_bls_field_ids_without_collision(self):
+        mapping = json.loads((refresh.PACKAGE / "loader_input_mapping.json").read_text())
+        ids = [row["fieldId"] for row in mapping["rows"]]
+        self.assertEqual(ids[:4], ["03.06:unemployment_rate", "03.06:unemployed",
+                                   "03.06:employed", "03.06:labor_force"])
+        self.assertEqual(len(ids), len(set(ids)))
+        self.assertFalse(any(value in {"02.01", "02.02", "02.03", "02.04"} for value in ids))
 
 
 if __name__ == "__main__":

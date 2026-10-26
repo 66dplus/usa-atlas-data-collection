@@ -32,6 +32,16 @@
       "limitations": "Monthly reported actual counts and rates only. The 2025 official CIUS release includes annual estimates, but state-by-offense annual values have not been captured in this package. Agency participation and estimation coverage differ by geography; absent or suppressed values remain missing."
     },
     {
+      "id": "fbi-cde-srs-estimates-2025",
+      "publisher": "Federal Bureau of Investigation, Crime Data Explorer",
+      "url": "https://cde.ucr.cjis.gov/LATEST/webapp/assets/JSON/downloads/downloads.json",
+      "kind": "official_download_catalog_metadata",
+      "access": "Public, no key; metadata confirms the official 2025 SRS estimate product.",
+      "license": "FBI UCR public statistics; preserve source citation and retrieval time.",
+      "scope": "Official catalog entry additional-datasets/srs/estimated_crimes_1979_2025.csv, year range 1979-2025, last modified August 2026.",
+      "limitations": "Catalog metadata verifies additional-datasets/srs/estimated_crimes_1979_2025.csv; the bounded direct static CSV path returned HTTP 404. This metadata is not the dataset payload. Local 2025 state-by-offense annual values remain unresolved; monthly CDE observations are not summed or treated as annual estimates."
+    },
+    {
       "id": "eia-epa-2-10",
       "publisher": "U.S. Energy Information Administration",
       "url": "https://www.eia.gov/electricity/annual/table.php?t=epa_02_10.html",
@@ -94,8 +104,18 @@
       "kind": "xlsx",
       "access": "Public, no key.",
       "license": "CDC states that release material is public domain; attribution is appreciated.",
-      "scope": "2024 state and national HIV surveillance tables.",
-      "limitations": "The release labels 2024 data provisional with a 12-month reporting delay; small cells below 12 require caution."
+      "scope": "Official CDC HIV 2024 surveillance tables are used for release definitions; the prepared 2024 provisional state diagnosis counts come from the retained CDC AtlasPlus fresh replay JSON, not from this workbook.",
+      "limitations": "The CDC workbook includes national/state tables through 2023; the 2024 provisional state counts are from AtlasPlus fresh replay, which returned 51 state/DC rows and no native US row. Preserve provisional status and do not sum states to make a national value."
+    },
+    {
+      "id": "cdc-atlasplus-hiv-2024",
+      "publisher": "Centers for Disease Control and Prevention, AtlasPlus / National HIV Surveillance System",
+      "url": "https://gis.cdc.gov/api/AtlasPlus/qtOutputData",
+      "kind": "public_json_api_response",
+      "access": "Retained CDC public response from a documented replay; no credential or live refresh used by this worker.",
+      "license": "CDC public domain; attribution retained.",
+      "scope": "Provisional 2024 HIV diagnosis counts among persons aged 13 years and older; retained response has 51 state/DC rows.",
+      "limitations": "The retained response and replay metadata contain no native US row. Do not sum states for a national observation. Exact source response SHA-256 and request/replay time are recorded in runtime inventory."
     },
     {
       "id": "acs-release-schedule",

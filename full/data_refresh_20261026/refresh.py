@@ -33,9 +33,11 @@ sys.path.insert(0, str(ROOT / "pilot"))
 import run_pilot as safety  # noqa: E402
 RUNTIME = ROOT / "full/runtime/data_refresh_20261026"
 INVENTORY = Path("/tmp/usa-maps-data-flow-20261026/data-results.json")
+PUBLISHED_BEFORE_INVENTORY = Path("/tmp/usa-maps-data-flow-20261026/published-before/inventory.json")
 SOURCES = json.loads((PACKAGE / "source_catalog.json").read_text(encoding="utf-8"))["sources"]
 USER_AGENT = "usa-maps-local-data-refresh/2026.10.26 (public data preparation)"
 BLS_URL = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+FBI_DOWNLOAD_CATALOG_URL = "https://cde.ucr.cjis.gov/LATEST/webapp/assets/JSON/downloads/downloads.json"
 BLS_DAILY_LIMIT = 500
 BLS_DAILY_BUDGET = 20
 BLS_PLAN_VERSION = "laus-nsa-2025-v2"
@@ -98,12 +100,29 @@ DOWNLOADS = {
     "eia_table_2025": "https://www.eia.gov/electricity/annual/table.php?t=epa_02_10.html",
     "hiv_tables_2024": "https://www.cdc.gov/hiv-data/media/files/2026/04/hiv_surveillance_data_release_tables_2024.xlsx",
     "bls_bulk_2025_forward": "https://download.bls.gov/pub/time.series/la/la.data.0.CurrentU25-29",
+    "fbi_cde_download_catalog": FBI_DOWNLOAD_CATALOG_URL,
 }
 MEDICAL_RECEIPTS = {
     "cancer2023": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.01/observations.jsonl",
     "hiv2024": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.02/observations.jsonl",
     "childDeaths2024": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.03/observations.jsonl",
 }
+MEDICAL_PUBLISHER_RAW = {
+    "cancer2023": (ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.01/inputs/uscs-landing-incidence-raw.json",
+                   "https://gis.cdc.gov/cancerapi/DataVizApi/GetJSON/LandingPageMapData_Inci", None, "CDC public domain"),
+    "hiv2024": (ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.02/inputs/11.02-atlasplus-2024-replay-response-20261011T0156Z.json",
+                "https://gis.cdc.gov/api/AtlasPlus/qtOutputData", None, "CDC public domain"),
+    "childDeaths2024": (ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.03/inputs/11.03-cdc-wonder-D473F417-2024-state-age0-17-response-20261007T0456Z.html",
+                        "https://wonder.cdc.gov/controller/saved/D158/D473F417", None, "CDC public-use data"),
+}
+MEDICAL_SOURCE_RECEIPTS = {
+    "cancer2023": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.01/inputs/uscs-landing-incidence-receipt.json",
+    "hiv2024": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.02/inputs/11.02-atlasplus-2024-fresh-replay-20261011T0156Z.json",
+    "childDeaths2024": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.03/inputs/wonder-request-trace.json",
+}
+BLS_PARENT_FILENAMES = ("bls-laus-2025.csv", "bls-laus-2025-missingness.jsonl", "bls-laus-2025-coverage.csv")
+BLS_PARENT_EXPECTED = {"batchCount": 256, "completedBatchCount": 256, "pendingSeriesCount": 0,
+                       "observedRows": 153312, "missingnessRows": 12828, "seriesCount": 12780}
 
 
 def utc_now() -> str:
@@ -248,6 +267,7 @@ def download_fixed_sources() -> dict[str, Any]:
         ("eia-epa-2-10", "eia_table_2025", "eia/epa-02-10.html"),
         ("cdc-hiv-2024-tables", "hiv_tables_2024", "cdc/hiv_surveillance_data_release_tables_2024.xlsx"),
         ("bls-laus-bulk", "bls_bulk_2025_forward", "bls/la.data.0.CurrentU25-29"),
+        ("fbi-cde-srs-estimates-2025", "fbi_cde_download_catalog", "fbi/cde-download-catalog.json"),
     ]
     for source_id, key, relative in fixed:
         source = metadata[source_id]
@@ -704,17 +724,31 @@ def prepare_eia() -> dict[str, Any]:
 
 
 def prepare_eia_before_after() -> dict[str, Any]:
-    """Compare retained published ALL-sector 2024 values with prepared annual 2025 values."""
-    baseline_path = ROOT / "full/normalized/eia.jsonl"
+    """Compare hash-verified published ALL-sector 2024 observations with 2025 preparation."""
+    inventory_path = PUBLISHED_BEFORE_INVENTORY
     current_path = RUNTIME / "prepared/eia-electricity-price-2025-all-sectors.csv"
-    if not baseline_path.exists() or not current_path.exists():
+    if not inventory_path.exists() or not current_path.exists():
         return {"status": "baseline_or_current_missing"}
+    inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    if inventory.get("manifestUnchanged") is not True or len(inventory.get("observations", [])) < 42:
+        return {"status": "published_baseline_not_verified"}
+    item = next((x for x in inventory.get("observations", []) if x.get("fieldId") == "08.05:sector_ALL"), None)
+    if not item or item.get("period") != "2024" or not Path(item["path"]).exists():
+        return {"status": "published_baseline_missing"}
+    baseline_path = Path(item["path"])
+    payload = baseline_path.read_bytes()
+    if sha256_bytes(payload) != item.get("sha256"):
+        raise ValueError("eia_published_baseline_hash_mismatch")
+    snapshot = json.loads(payload)
+    if snapshot.get("fieldId") != "08.05:sector_ALL" or snapshot.get("period") != "2024":
+        raise ValueError("eia_published_baseline_identity_mismatch")
+    state_by_fips = {fips: abbr for abbr, _name, fips in FBI_STATES}
     before = {}
-    for line in baseline_path.read_text(encoding="utf-8").splitlines():
-        row = json.loads(line)
-        if (row.get("year") == "2024" and row.get("field_id") == "08.05:sector_ALL"
-                and row.get("geo_type") == "state" and row.get("geo_id") in STATE_NAMES):
-            before[row["geo_id"]] = Decimal(str(row["value"]))
+    for row in snapshot.get("observations", []):
+        source_geo = str(row.get("sourceGeoId") or row.get("id"))
+        abbr = source_geo if source_geo in STATE_NAMES else state_by_fips.get(str(row.get("id")))
+        if row.get("geoType") == "state" and abbr and row.get("value") is not None:
+            before[abbr] = Decimal(str(row["value"]))
     current = {}
     for row in read_csv(current_path):
         abbr = row.get("state", "")
@@ -737,23 +771,37 @@ def prepare_eia_before_after() -> dict[str, Any]:
     path = RUNTIME / "prepared/eia-2024-2025-before-after-ranks.csv"
     write_csv(path, rows)
     return {"status": "complete" if len(before) == 51 and len(current) == 51 else "partial",
-            "baselineSource": str(baseline_path), "baselineRows": len(before), "preparedRows": len(current),
-            "output": str(path)}
+            "baselineSource": str(baseline_path), "baselineSourceSha256": item["sha256"],
+            "baselineRows": len(before), "preparedRows": len(current), "output": str(path)}
 
 
 def prepare_fbi_baseline_and_pending_annual() -> dict[str, Any]:
     """Expose prior published 2023 rankings while keeping uncaptured 2025 annual values null."""
-    baseline_path = ROOT / "full/normalized/fbi_cde.jsonl"
-    if not baseline_path.exists():
-        return {"status": "baseline_missing"}
-    states_by_abbr = {abbr: (name, fips) for abbr, name, fips in FBI_STATES}
+    inventory_path = PUBLISHED_BEFORE_INVENTORY
+    if not inventory_path.exists():
+        return {"status": "published_baseline_missing"}
+    inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    states_by_fips = {fips: (abbr, name) for abbr, name, fips in FBI_STATES}
     values: dict[str, dict[str, Decimal]] = {}
-    for line in baseline_path.read_text(encoding="utf-8").splitlines():
-        row = json.loads(line)
-        field = str(row.get("field_id", "")).split(":", 1)[0]
-        state = row.get("geo_id")
-        if row.get("year") == "2023" and row.get("geo_type") == "state" and state in states_by_abbr and field in FBI_OFFENSES:
-            values.setdefault(field, {})[state] = Decimal(str(row["value"]))
+    baseline_files = []
+    for field in FBI_OFFENSES:
+        field_id = f"{field}:derived"
+        item = next((x for x in inventory.get("observations", []) if x.get("fieldId") == field_id), None)
+        if not item or not Path(item["path"]).exists():
+            continue
+        if item.get("period") != "2023":
+            continue
+        payload = Path(item["path"]).read_bytes()
+        if sha256_bytes(payload) != item.get("sha256"):
+            raise ValueError("fbi_published_baseline_hash_mismatch")
+        snapshot = json.loads(payload)
+        if snapshot.get("fieldId") != field_id or snapshot.get("period") != "2023":
+            raise ValueError("fbi_published_baseline_identity_mismatch")
+        baseline_files.append({"fieldId": field_id, "path": item["path"], "sha256": item["sha256"]})
+        for observation in snapshot.get("observations", []):
+            state = observation.get("sourceGeoId") or observation.get("id")
+            if observation.get("geoType") == "state" and state in states_by_fips:
+                values.setdefault(field, {})[states_by_fips[state][0]] = Decimal(str(observation["value"]))
     rows = []
     for field, (slug, label) in FBI_OFFENSES.items():
         current = values.get(field, {})
@@ -765,15 +813,41 @@ def prepare_fbi_baseline_and_pending_annual() -> dict[str, Any]:
                          "before_rank_high_to_low": ranks.get(abbr), "after_year": "2025",
                          "after_annual_value": None, "after_annual_rank": None,
                          "after_status": "official_state_annual_estimate_table_not_captured",
-                         "baselineMethod": "retained published normalized value; annual sum of monthly actuals per its source methodology note",
+                         "baselineMethod": "frozen 2023 published API rate for comparison only; source methodology says count / 2024 ACS population * 100000",
                          "status": "baseline_available_annual_after_unresolved" if abbr in current else "baseline_missing_annual_after_unresolved"})
     out = RUNTIME / "prepared/fbi-2023-baseline-2025-annual-pending.csv"
     write_csv(out, rows)
-    return {"status": "annual_2025_pending", "baselineSource": str(baseline_path),
+    catalog_path = RUNTIME / "raw/fbi/cde-download-catalog.json"
+    catalog_product = None
+    if catalog_path.exists():
+        try:
+            catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+            catalog_product = next((row for row in catalog if row.get("id") == "srs"), None)
+        except (OSError, json.JSONDecodeError, TypeError):
+            catalog_product = None
+    verified_product = (catalog_product is not None and catalog_product.get("awsFile") ==
+                        "additional-datasets/srs/estimated_crimes_1979_2025.csv"
+                        and catalog_product.get("year_range") == "1979-2025")
+    attempt_path = RUNTIME / "raw/fbi/annual-download-attempt.json"
+    download_attempt = None
+    if attempt_path.exists():
+        attempt_bytes = attempt_path.read_bytes()
+        download_attempt = json.loads(attempt_bytes)
+        download_attempt["recordPath"] = str(attempt_path)
+        download_attempt["recordSha256"] = sha256_bytes(attempt_bytes)
+    return {"status": "annual_2025_pending", "baselineSource": str(inventory_path), "baselineSnapshots": baseline_files,
+            "downloadAttempt": download_attempt,
             "baselineObservations": sum(len(v) for v in values.values()),
             "baselineStateOffenseSeries": len(values), "annual2025Rows": 0,
             "output": str(out),
-            "reason": "Annual 2025 CIUS estimates are released, but a state-by-seven-offense estimate table was not verified/captured; monthly CDE data are not substituted."}
+            "officialProductCatalog": ({"product": "FBI CDE SRS Estimated Crimes", "file": catalog_product.get("awsFile"),
+                                        "yearRange": catalog_product.get("year_range"),
+                                        "lastModified": catalog_product.get("last_modified"),
+                                        "catalogSha256": sha256_file(catalog_path), "catalogPath": str(catalog_path),
+                                        "verified": True} if verified_product else {"verified": False}),
+            "reason": ("Official CDE downloads catalog verifies the SRS annual estimate product (1979-2025; August 2026), "
+                       "but the actual payload could not be retrieved through the public download path in this run. "
+                       "Keep all 2025 annual state values null; monthly CDE reported data are not substituted.")}
 
 
 def income_per_resident(source_thousand_usd: Decimal, annual_population: int | None,
@@ -921,10 +995,33 @@ def prepare_existing_medical_rates() -> dict[str, Any]:
                      "childDeaths2024": "child-deaths-under18-2024"}[name]
         raw_path = RUNTIME / f"raw/retained-prepared/{safe_name}.jsonl"
         atomic_write(raw_path, payload)
+        publisher_source, publisher_url, publisher_retrieval_date, publisher_license = MEDICAL_PUBLISHER_RAW[name]
+        publisher_receipt = None
+        publisher_retrieval_date = None
+        if publisher_source.exists():
+            publisher_bytes = publisher_source.read_bytes()
+            publisher_hash = sha256_bytes(publisher_bytes)
+            receipt_path = MEDICAL_SOURCE_RECEIPTS[name]
+            receipt_meta = json.loads(receipt_path.read_text(encoding="utf-8")) if receipt_path.exists() else {}
+            expected_source_hash = (receipt_meta.get("sha256") or receipt_meta.get("response_sha256")
+                                    or receipt_meta.get("result_sha256"))
+            if expected_source_hash and expected_source_hash != publisher_hash:
+                raise ValueError("medical_publisher_raw_receipt_hash_mismatch")
+            publisher_retrieval_date = (receipt_meta.get("retrieved_utc") or receipt_meta.get("attempted_at_utc")
+                                        or receipt_meta.get("retrieved_at"))
+            publisher_target = RUNTIME / "raw/retained-publisher" / (safe_name + publisher_source.suffix)
+            atomic_write(publisher_target, publisher_bytes)
+            publisher_receipt = {"sourceId": "retained-publisher-" + safe_name, "path": str(publisher_target),
+                                 "originalLocalPath": str(publisher_source), "url": publisher_url,
+                                 "sha256": publisher_hash, "bytes": len(publisher_bytes),
+                                 "retrievedAt": publisher_retrieval_date, "retrievalReceiptPath": str(receipt_path),
+                                 "retrievalReceiptSha256": sha256_file(receipt_path) if receipt_path.exists() else None,
+                                 "license": publisher_license, "status": "copied_verified_original_publisher_receipt"}
         source_rows = [json.loads(line) for line in payload.decode("utf-8").splitlines() if line.strip()]
         rows, missing = [], []
         for source in source_rows:
             field_id, kind, observation_year, denominator_year = metric[name]
+            require_matching_year(observation_year, denominator_year)
             if source.get("year") != observation_year or source.get("geo_type") != "state":
                 continue
             count = safe_int(str(source.get("value")))
@@ -944,8 +1041,37 @@ def prepare_existing_medical_rates() -> dict[str, Any]:
                          "source_release": source.get("source_release"), "source_url": source.get("source_url"),
                          "source_retrieved_at": source.get("retrieved_at"),
                          "source_input_sha256": sha256_bytes(payload), "status": "prepared_local"})
+        # Only add national values present as actual publisher rows. Never sum states.
+        if name == "cancer2023":
+            if publisher_source.exists():
+                raw_bytes = publisher_source.read_bytes()
+                raw_data = json.loads(raw_bytes.decode("utf-8"))
+                if isinstance(raw_data, str):
+                    raw_data = json.loads(raw_data)
+                publisher_rows = raw_data[0].get("LandingPageMapData_Inci", []) if raw_data else []
+                us_rows = [entry for entry in publisher_rows if entry.get("YearID") == 1
+                           and entry.get("GeoLocationID") == 1 and entry.get("CancerSiteID") == 1
+                           and entry.get("DataTypeID") == 1 and entry.get("RaceID") == 1
+                           and entry.get("SexID") == 1]
+                if len(us_rows) == 1:
+                    count = safe_int(str(us_rows[0].get("count")))
+                    population = denominators.get(("nation", "US", "2023", "total"))
+                    if count is not None and population:
+                        rows.append({"geo_id": "US", "geo_type": "national", "year": "2023",
+                                     "field_id": "11.01", "value": str(Decimal(count) / Decimal(population) * Decimal(100000)),
+                                     "unit": "per 100,000", "numerator": count, "denominator": population,
+                                     "denominator_kind": "total", "denominator_year": "2023",
+                                     "source_adjustment": "crude; publisher US count divided by matching PEP population",
+                                     "source_period_type": "annual", "source_period": "2023",
+                                     "source_release": "USCS 2026 submission; 2023 incidence",
+                                     "source_url": "https://gis.cdc.gov/Cancer/USCS/",
+                                     "source_retrieved_at": publisher_retrieval_date,
+                                     "source_snapshot_date": (publisher_retrieval_date[:10] if publisher_retrieval_date else None),
+                                     "source_input_sha256": sha256_bytes(raw_bytes), "status": "prepared_local_publisher_national_count"})
         out = RUNTIME / f"prepared/{safe_name}-rates.csv"
+        missingness_out = RUNTIME / f"prepared/{safe_name}-rates-missingness.jsonl"
         write_csv(out, rows)
+        write_jsonl(missingness_out, missing)
         receipt = {"sourceId": "retained-prepared-" + safe_name, "path": str(raw_path),
                    "sha256": sha256_bytes(payload), "bytes": len(payload),
                    "retrievedAt": max((row.get("retrieved_at", "") for row in source_rows), default="") or None,
@@ -953,10 +1079,110 @@ def prepare_existing_medical_rates() -> dict[str, Any]:
                    "originalLocalPath": str(source_path),
                    "license": "Prepared official-source-derived evidence; row-level source citations are retained."}
         atomic_json(raw_path.with_suffix(".meta.json"), receipt)
-        results[name] = {"status": "complete" if len(rows) + len(missing) == 51 else "partial",
+        results[name] = {"status": "complete" if len(rows) + len(missing) >= 51 else "partial",
                          "observedRows": len(rows), "missingnessRows": len(missing), "sourceReceipt": receipt,
-                         "output": str(out), "missingness": missing}
+                         "output": str(out), "outputSha256": sha256_file(out),
+                         "missingnessOutput": str(missingness_out), "missingnessSha256": sha256_file(missingness_out),
+                         "missingness": missing, "publisherRawReceipt": publisher_receipt}
     return results
+
+
+def require_matching_year(event_year: str, denominator_year: str) -> None:
+    if str(event_year) != str(denominator_year):
+        raise ValueError("health_event_denominator_year_mismatch")
+
+
+def import_completed_bls(source_dir: Path, results_path: Path) -> dict[str, Any]:
+    """Import and verify the parent's completed BLS run without making requests."""
+    wrapper = json.loads(results_path.read_text(encoding="utf-8"))
+    result = wrapper.get("result", {})
+    if any(result.get(key) != value for key, value in BLS_PARENT_EXPECTED.items()):
+        raise ValueError("bls_parent_run_summary_mismatch")
+    if result.get("credentialMode") != "registered" or result.get("status") != "partial":
+        raise ValueError("bls_parent_run_not_expected_completed_source_gap_status")
+    artifacts = result.get("rawArtifacts", [])
+    if len(artifacts) != BLS_PARENT_EXPECTED["batchCount"]:
+        raise ValueError("bls_parent_raw_artifact_count_mismatch")
+    seen = set()
+    provenance_by_series: dict[str, dict[str, Any]] = {}
+    for artifact in artifacts:
+        path = Path(artifact["path"])
+        meta_path = path.with_suffix(".meta.json")
+        if artifact.get("status") not in {"downloaded", "reused_verified"}:
+            raise ValueError("bls_parent_batch_not_successful")
+        raw = path.read_bytes()
+        meta = json.loads(meta_path.read_text(encoding="utf-8"))
+        digest = sha256_bytes(raw)
+        for key in ("sha256", "requestFingerprint", "queueHash", "planVersion"):
+            if artifact.get(key) != meta.get(key):
+                raise ValueError("bls_parent_batch_metadata_mismatch")
+        if (digest != artifact.get("sha256") or meta.get("sha256") != digest
+                or not meta.get("requestFingerprint") or not meta.get("queueHash")
+                or meta.get("planVersion") != BLS_PLAN_VERSION):
+            raise ValueError("bls_parent_batch_hash_or_plan_mismatch")
+        seen.add(meta["requestFingerprint"])
+        payload = json.loads(raw.decode("utf-8"))
+        for series in payload.get("Results", {}).get("series", []):
+            sid = series.get("seriesID")
+            if sid:
+                provenance_by_series[sid] = {"raw_sha256": digest, "retrieved_at": meta.get("retrievedAt"),
+                                             "raw_artifact_path": str(path), "request_fingerprint": meta["requestFingerprint"],
+                                             "queue_hash": meta["queueHash"], "plan_version": meta["planVersion"]}
+    if len(seen) != BLS_PARENT_EXPECTED["batchCount"]:
+        raise ValueError("bls_parent_batch_fingerprint_duplicate")
+    receipts = []
+    for filename in BLS_PARENT_FILENAMES:
+        source = source_dir / filename
+        content = source.read_bytes()
+        expected_hash = {"bls-laus-2025.csv": "69d1129d1293086a782ea249b20fc2fe50768656f4755e483f787dc3334fad7c",
+                         "bls-laus-2025-missingness.jsonl": "85407a19d28a6e02680c2d748c3f45b952368a27249a6c18b69a224c89cad97f",
+                         "bls-laus-2025-coverage.csv": "d815de463916dd11685e5869b726961b69ed240325b614cca1de18bb912f56ef"}[filename]
+        if sha256_bytes(content) != expected_hash:
+            raise ValueError("bls_parent_prepared_hash_mismatch")
+        target = RUNTIME / "prepared" / filename
+        atomic_write(target, content)
+        receipts.append({"path": str(target), "sha256": expected_hash, "bytes": len(content),
+                         "sourcePath": str(source), "status": "copied_verified_prepared_artifact"})
+    source_rows = list(read_csv(RUNTIME / "prepared/bls-laus-2025.csv"))
+    enriched_rows = []
+    for row in source_rows:
+        provenance = provenance_by_series.get(row["series_id"])
+        if not provenance:
+            raise ValueError("bls_prepared_series_missing_raw_provenance")
+        enriched_rows.append({**row, **provenance, "source_release": "BLS LAUS 2025 NSA; API v2; retrieved 2026-10-26",
+                              "source_url": BLS_URL, "source_adjustment": "not seasonally adjusted (NSA)"})
+    missing_path = source_dir / "bls-laus-2025-missingness.jsonl"
+    missing = [json.loads(line) for line in missing_path.read_text(encoding="utf-8").splitlines() if line]
+    loader_path = RUNTIME / "prepared/bls-laus-2025-loader.csv"
+    write_csv(loader_path, enriched_rows)
+    receipts.append({"path": str(loader_path), "sha256": sha256_file(loader_path), "bytes": loader_path.stat().st_size,
+                     "status": "derived_loader_input_with_batch_provenance"})
+    missing_enriched = []
+    for row in missing:
+        provenance = provenance_by_series.get(row["series_id"])
+        if not provenance:
+            raise ValueError("bls_missingness_series_missing_raw_provenance")
+        missing_enriched.append({**row, **provenance, "source_release": "BLS LAUS 2025 NSA; API v2; retrieved 2026-10-26",
+                                 "source_url": BLS_URL, "source_adjustment": "not seasonally adjusted (NSA)"})
+    missing_loader_path = RUNTIME / "prepared/bls-laus-2025-loader-missingness.jsonl"
+    write_jsonl(missing_loader_path, missing_enriched)
+    m10 = sum(item.get("bls_period_code") == "M10" and item.get("status") == "source_missing"
+              for item in missing)
+    coverage = list(read_csv(RUNTIME / "prepared/bls-laus-2025-coverage.csv"))
+    annual_count = sum(row.get("annualM13Present", "").lower() == "true" for row in coverage)
+    if m10 != 12776 or annual_count != 12776 or len(coverage) != 12780:
+        raise ValueError("bls_parent_prepared_semantic_counts_mismatch")
+    return {**{key: result[key] for key in BLS_PARENT_EXPECTED},
+            "status": "collection_complete_with_source_gaps", "credentialMode": "registered",
+            "sourceCodeSha256": wrapper.get("executedSourceSha256"), "rawArtifacts": artifacts,
+            "preparedArtifacts": receipts, "missingOctoberSeries": m10,
+            "loaderInput": str(loader_path), "loaderInputSha256": sha256_file(loader_path),
+            "loaderMissingnessInput": str(missing_loader_path),
+            "loaderMissingnessSha256": sha256_file(missing_loader_path),
+            "officialAnnualM13Series": annual_count,
+            "sourceGaps": ["M10 absent for 12,776 series", "52 series have no returned periods"],
+            "sourceResultPath": str(results_path),
+            "note": "All 256 planned requests completed; publisher data are incomplete for stated gaps. Missing values are not filled."}
 
 
 def bls_series_id(geo_type: str, geo_id: str, measure: str) -> str:
@@ -1267,7 +1493,8 @@ def collect_bls(max_queries: int) -> dict[str, Any]:
     states_returned = {row["geo_id"] for row in raw_values if row["geo_type"] == "state"}
     counties_returned = {row["geo_id"] for row in raw_values if row["geo_type"] == "county"}
     return {
-        "status": "partial" if stopped or len(done) < len(batches) or raw_missing else "complete",
+        "status": ("partial" if stopped or len(done) < len(batches) else
+                   "collection_complete_with_source_gaps" if raw_missing else "complete"),
         "seriesCount": len(queue), "batchCount": len(batches), "completedBatchCount": len(done),
         "queriesThisRun": requests_this_run, "dailyNoKeyLimit": BLS_DAILY_LIMIT,
         "dailyBudget": None if registered else BLS_DAILY_BUDGET,
@@ -1455,9 +1682,16 @@ def write_runtime_matrix(results: dict[str, Any]) -> str:
             artifacts.extend(item for item in result.get("rawArtifacts", []) if isinstance(item, dict))
             if result.get("sourceId"):
                 artifacts.append(result)
+    fbi_attempt = results.get("fbiAnnualComparison", {}).get("downloadAttempt")
+    if isinstance(fbi_attempt, dict):
+        artifacts.append({**fbi_attempt, "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+                          "path": fbi_attempt.get("recordPath"), "sha256": fbi_attempt.get("recordSha256"),
+                          "retrievedAt": fbi_attempt.get("attemptedAt"), "artifactType": "bounded_download_attempt"})
     for result in results.get("existingMedicalRates", {}).values():
         if isinstance(result, dict) and isinstance(result.get("sourceReceipt"), dict):
             artifacts.append(result["sourceReceipt"])
+        if isinstance(result, dict) and isinstance(result.get("publisherRawReceipt"), dict):
+            artifacts.append(result["publisherRawReceipt"])
     page_aliases = {
         "acs-release-schedule": "freshness-page-acs_release_schedule",
         "bls-laus-public-api-v2": "freshness-page-bls_laus_tables",
@@ -1514,7 +1748,12 @@ def write_runtime_matrix(results: dict[str, Any]) -> str:
             fbi_status = results["fbiCrime"].get("status")
             status = ("monthly_source_series_complete_annual_values_not_synthesized"
                       if fbi_status == "complete" else f"local_preparation_{fbi_status}")
+        if (row.get("sourceId") == "bls-laus-public-api-v2"
+                and results.get("blsUnemployment", {}).get("status") == "collection_complete_with_source_gaps"):
+            status = "collection_complete_with_source_gaps"
         if status == "monthly_source_series_complete_annual_values_not_synthesized":
+            row["status"] = status
+        elif status == "collection_complete_with_source_gaps":
             row["status"] = status
         elif status in {"complete", "partial", "downloaded_unparsed", "blocked_input", "blocked_population_input"}:
             row["status"] = f"local_preparation_{status}"
@@ -1522,9 +1761,78 @@ def write_runtime_matrix(results: dict[str, Any]) -> str:
             artifact = next((item for item in candidates if item.get("sourceId") == "cdc-hiv-2024-tables"), None)
             if artifact and artifact.get("status") in {"downloaded", "reused_verified"}:
                 row["status"] = "source_file_downloaded_extraction_pending"
+        elif row.get("status") == "freshness_reviewed_collection_pending":
+            row["status"] = "freshness_reviewed_latest_suitable_release_retained"
     path = RUNTIME / "prepared/definition_matrix.json"
     atomic_json(path, matrix)
     return str(path)
+
+
+def prepare_published_before_after() -> dict[str, Any]:
+    """Compare frozen published API observations to locally prepared outputs by geography."""
+    inventory_path = PUBLISHED_BEFORE_INVENTORY
+    if not inventory_path.exists():
+        return {"status": "published_before_inventory_missing"}
+    inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    if inventory.get("manifestUnchanged") is not True or len(inventory.get("observations", [])) < 42:
+        return {"status": "published_before_inventory_not_verified"}
+    inputs = {
+        "02.10": ("02.10", "bea-rpp-state-2024.csv", "value", "2024", "2024"),
+        "11.01:derived": ("11.01", "cancer-2023-rates.csv", "value", "2023", "2023"),
+        "11.02:derived": ("11.02", "hiv-2024-rates.csv", "value", "2024", "2024"),
+        "11.03:derived": ("11.03", "child-deaths-under18-2024-rates.csv", "value", "2024", "2024"),
+        "07.01:derived:per-resident": ("07.01:derived:per-resident", "irs-agi-per-resident-2023.csv", "value", "2023", "2023"),
+        "07.01:derived:total": ("07.01:derived:total", "irs-agi-2023-usd.csv", "value_usd", "2023", "2023"),
+        "08.05:sector_ALL": ("08.05:sector_ALL", "eia-electricity-price-2025-all-sectors.csv", "value", "2025", "2024"),
+    }
+    reports = []
+    for field_id, (file_stub, current_file, value_column, year, before_year) in inputs.items():
+        before_path = next((Path(item["path"]) for item in inventory["observations"]
+                            if json.loads(Path(item["path"]).read_text(encoding="utf-8")).get("fieldId") == field_id), None)
+        current_path = RUNTIME / "prepared" / current_file
+        if before_path is None:
+            reports.append({"fieldId": field_id, "status": "baseline_or_prepared_file_missing"})
+            continue
+        before_entry = next(item for item in inventory["observations"] if Path(item["path"]) == before_path)
+        if sha256_file(before_path) != before_entry.get("sha256"):
+            raise ValueError("published_before_snapshot_hash_mismatch")
+        before_data = json.loads(before_path.read_text(encoding="utf-8"))
+        if before_data.get("fieldId") != field_id or str(before_data.get("period")) != before_year:
+            raise ValueError("published_before_snapshot_identity_mismatch")
+        before = {str(row.get("sourceGeoId") or row.get("id")): Decimal(str(row["value"]))
+                  for row in before_data.get("observations", []) if row.get("value") is not None}
+        retained_same_release = (field_id == "02.10" and not current_path.exists()
+                                 and before_data.get("sourceRelease") == "BEA-SARPP-2024-release-2026-02-19")
+        if not current_path.exists() and not retained_same_release:
+            reports.append({"fieldId": field_id, "status": "baseline_or_prepared_file_missing"})
+            continue
+        after = (before.copy() if retained_same_release else
+                 {(row.get("state") if field_id.startswith("08.05") else row.get("geo_id")): Decimal(row[value_column])
+                  for row in read_csv(current_path)
+                  if (row.get("state") if field_id.startswith("08.05") else row.get("geo_id"))
+                  and row.get(value_column) not in {None, ""}})
+        old_ranks = {geo: rank for rank, (geo, _v) in enumerate(sorted(before.items(), key=lambda p: (-p[1], p[0])), 1)}
+        new_ranks = {geo: rank for rank, (geo, _v) in enumerate(sorted(after.items(), key=lambda p: (-p[1], p[0])), 1)}
+        rows = []
+        for geo in sorted(set(before) | set(after)):
+            rows.append({"field_id": field_id, "geo_id": geo, "before_value": str(before[geo]) if geo in before else None,
+                         "before_rank": old_ranks.get(geo), "after_value": str(after[geo]) if geo in after else None,
+                         "after_rank": new_ranks.get(geo),
+                         "change": str(after[geo] - before[geo]) if geo in before and geo in after else None,
+                         "status": "both_values_available" if geo in before and geo in after else "value_missing_on_one_side"})
+        out = RUNTIME / "prepared" / ("before-after-" + file_stub.replace(":", "-") + ".csv")
+        write_csv(out, rows)
+        missing_geographies = sorted(set(before) - set(after))
+        report_status = ("freshness_verified_same_release" if retained_same_release else
+                         "complete" if rows and not missing_geographies else "partial_with_source_missing_geographies")
+        reports.append({"fieldId": field_id, "status": report_status,
+                        "beforeRows": len(before), "afterRows": len(after), "comparisonRows": len(rows),
+                        "missingAfterGeographies": missing_geographies,
+                        "comparisonMode": "retained_snapshot_same_release" if retained_same_release else "source_before_vs_prepared_after",
+                        "output": str(out), "beforeSnapshotSha256": sha256_file(before_path)})
+    return {"status": "reviewed_with_declared_geography_gaps" if reports else "partial",
+            "manifestRelease": inventory.get("release"), "manifestSourceCommit": inventory.get("sourceCommit"),
+            "comparisonEvidenceOnly": True, "fields": reports}
 
 
 def write_inventory(results: dict[str, Any]) -> None:
@@ -1537,9 +1845,19 @@ def write_inventory(results: dict[str, Any]) -> None:
         if result.get("sourceId"):
             artifacts.append(result)
         artifacts.extend(item for item in result.get("rawArtifacts", []) if isinstance(item, dict))
+    for source_group in (results.get("fixedSources", {}), results.get("freshnessPageSnapshots", {})):
+        if isinstance(source_group, dict):
+            artifacts.extend(item for item in source_group.values() if isinstance(item, dict))
+    fbi_attempt = results.get("fbiAnnualComparison", {}).get("downloadAttempt")
+    if isinstance(fbi_attempt, dict):
+        artifacts.append({**fbi_attempt, "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+                          "path": fbi_attempt.get("recordPath"), "sha256": fbi_attempt.get("recordSha256"),
+                          "retrievedAt": fbi_attempt.get("attemptedAt"), "artifactType": "bounded_download_attempt"})
     for result in results.get("existingMedicalRates", {}).values():
         if isinstance(result, dict) and isinstance(result.get("sourceReceipt"), dict):
             artifacts.append(result["sourceReceipt"])
+        if isinstance(result, dict) and isinstance(result.get("publisherRawReceipt"), dict):
+            artifacts.append(result["publisherRawReceipt"])
     unique_artifacts = {}
     for artifact in artifacts:
         identity = (artifact.get("sourceId"), artifact.get("path"), artifact.get("url"),
@@ -1555,6 +1873,9 @@ def write_inventory(results: dict[str, Any]) -> None:
         "runtimePath": str(RUNTIME),
         "admissionStatus": "not_admitted; no database access or writes performed",
         "sourceArtifacts": list(unique_artifacts.values()),
+        "preparedArtifacts": [{"path": str(path), "bytes": path.stat().st_size,
+                               "sha256": sha256_file(path), "artifactType": "locally_prepared_or_imported"}
+                              for path in sorted((RUNTIME / "prepared").glob("*")) if path.is_file()],
         "definitionMatrix": results.get("definitionMatrixPath"),
         "results": results,
         "ready": False,
@@ -1564,7 +1885,8 @@ def write_inventory(results: dict[str, Any]) -> None:
 
 
 def run(max_bls_queries: int, max_fbi_items: int, include_page_snapshots: bool = True,
-        runtime_dir: str | Path | None = None, inventory_path: str | Path | None = None) -> dict[str, Any]:
+        runtime_dir: str | Path | None = None, inventory_path: str | Path | None = None,
+        bls_prepared_dir: Path | None = None, bls_results_path: Path | None = None) -> dict[str, Any]:
     global RUNTIME, INVENTORY
     if runtime_dir is not None:
         RUNTIME = Path(runtime_dir).expanduser().resolve()
@@ -1582,9 +1904,13 @@ def run(max_bls_queries: int, max_fbi_items: int, include_page_snapshots: bool =
     results["eiaBeforeAfter"] = prepare_eia_before_after()
     results["irsIncome"] = prepare_irs_income(results["population"])
     results["existingMedicalRates"] = prepare_existing_medical_rates()
-    results["blsUnemployment"] = collect_bls(max_bls_queries)
+    if bool(bls_prepared_dir) != bool(bls_results_path):
+        raise ValueError("both_bls_import_paths_required")
+    results["blsUnemployment"] = (import_completed_bls(bls_prepared_dir, bls_results_path)
+                                  if bls_prepared_dir and bls_results_path else collect_bls(max_bls_queries))
     results["fbiCrime"] = collect_fbi(max_fbi_items)
     results["fbiAnnualComparison"] = prepare_fbi_baseline_and_pending_annual()
+    results["publishedBeforeAfter"] = prepare_published_before_after()
     results["definitionMatrixPath"] = write_runtime_matrix(results)
     results["productionReady"] = False
     results["productionReadiness"] = "No admission or database access is part of this worker task. Review source completeness and unresolved blockers before any later admission work."
@@ -1604,6 +1930,10 @@ def main() -> int:
                         help="Ignored local runtime directory for raw and prepared artifacts.")
     parser.add_argument("--inventory", type=Path, default=INVENTORY,
                         help="Output JSON inventory path.")
+    parser.add_argument("--bls-prepared-dir", type=Path,
+                        help="Import verified parent BLS prepared files; requires --bls-results and performs no BLS requests.")
+    parser.add_argument("--bls-results", type=Path,
+                        help="Parent BLS run result JSON matching --bls-prepared-dir.")
     args = parser.parse_args()
     if args.max_bls_queries < 0 or args.max_bls_queries > 1000:
         parser.error("--max-bls-queries must be between 0 and 1000")
@@ -1611,7 +1941,7 @@ def main() -> int:
         parser.error("--max-fbi-items must be between 0 and 357")
     try:
         result = run(args.max_bls_queries, args.max_fbi_items, not args.skip_page_snapshots,
-                     args.runtime_dir, args.inventory)
+                     args.runtime_dir, args.inventory, args.bls_prepared_dir, args.bls_results)
         print(json.dumps({"status": "complete" if all(result[key].get("status") == "complete"
                                                        for key in ("population", "eia", "irsIncome",
                                                                    "blsUnemployment", "fbiCrime")) else "partial",

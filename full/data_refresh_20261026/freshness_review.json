@@ -10,10 +10,9 @@
       "latestSuitableRelease": "LAUS 2025 NSA monthly and annual-average series",
       "releaseDate": "2026-05-19",
       "observationPeriod": "2025 monthly M01-M12 plus official annual M13 when returned",
-      "status": "Keyed v2 collection is pending secure environment injection. Prior public sampling confirmed 2025 M10 is explicitly missing and that M13 availability varies by series; the collector records both as source status and never derives M13.",
+      "status": "Parent secure v2 collection completed 256/256 batches (153,312 observations); 12,776 official M13 series returned. 12,776 series report October missing and 52 series have no returned periods. Collection complete with source gaps; do not label source complete.",
       "limitations": [
         "Registered BLS API v2 uses the injected BLS_API_KEY; the worker does not read credential files.",
-        "If run without the key, the collector caps itself at 20 requests/day and records pending work.",
         "M13 is a distinct annual average observation when published; absent M13 is not derived from monthly values.",
         "October 2025 is unavailable due to the 2025 lapse in appropriations; keep it missing, not zero."
       ]
@@ -23,11 +22,12 @@
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "observationPeriod": "Calendar year 2025",
-      "status": "2025 CIUS annual release verified August 14, 2026; local monthly CDE data are complete, but the state-by-offense annual estimate table is not captured. Annual readiness remains unresolved.",
+      "status": "The official CDE catalog lists estimated_crimes_1979_2025.csv (1979-2025; last modified August 2026). A bounded no-key request to the catalog-derived static CSV path returned HTTP 404. Annual 2025 state-by-offense values remain unavailable; the frozen 2023 baseline is retained and 2025 remains null.",
       "limitations": [
         "The FBI reports 2025 program data from 17,075 agencies covering 96.2% of inhabitants; participation and estimation coverage vary by state/offense.",
         "Monthly CDE series are not annual CIUS estimates; do not sum rates or admit monthly completeness as annual values.",
-        "FBI annual rates use the source estimate/reporting population and are not recalculated against Census 2024 population."
+        "FBI annual rates use the source estimate/reporting population and are not recalculated against Census 2024 population.",
+        "The catalog metadata is verified (SHA-256 c499ea67d425ef88d6c0304a6d2bb5805accc4f06e76295c650431a121c4d5ae); the direct static payload attempt returned HTTP 404. No annual values are synthesized from monthly reports."
       ]
     },
     {
@@ -67,7 +67,7 @@
       "latestSuitableRelease": "PLACES December 2025 release",
       "releaseDate": "2025-12",
       "observationPeriod": "The obesity, diabetes, and physical inactivity estimates are based on 2023 BRFSS",
-      "status": "December 2025 release and 2023 BRFSS period reviewed; no PLACES data extraction is included in this package.",
+      "status": "December 2025 PLACES release using 2023 BRFSS reviewed as the latest suitable product; no refreshed PLACES payload was captured in this package.",
       "limitations": [
         "For 2023-BRFSS measures, county estimates for Kentucky and Pennsylvania are unavailable.",
         "The release uses ACS 2019-2023 geography/covariate data and Census 2023 county population estimates; the PLACES period is annual/model-based, not an ACS five-year period."
@@ -78,9 +78,10 @@
       "latestSuitableRelease": "Regional Price Parities 2024",
       "releaseDate": "2026-02-19",
       "observationPeriod": "Annual 2024 state and metro estimates",
-      "status": "current suitable release; next release is scheduled for 2026-12-10",
+      "status": "The latest suitable source remains the February 19, 2026 release for 2024 RPP; all 52 retained published observations match that source version. This source remains freshness-reviewed and retained-current; no new payload was needed or claimed.",
       "limitations": [
-        "RPP is a state/metro price-level index with U.S.=100; it does not provide county values."
+        "RPP is a state/metro price-level index with U.S.=100; it does not provide county values.",
+        "The published-before snapshot is comparison evidence only; it is not the original BEA source payload. No county values are available."
       ]
     },
     {
@@ -100,7 +101,7 @@
       "latestSuitableRelease": "2026 U.S. Cancer Statistics submission; 2023 incidence is the latest incidence year",
       "releaseDate": "2026-06-01",
       "observationPeriod": "New cancer cases diagnosed through 2023; cancer deaths through 2024",
-      "status": "2023 incidence is latest; retained published state/DC count observations copied by hash and crude 2023-count/2024-PEP rate review prepared. Original publisher download was blocked in this shell environment.",
+      "status": "2023 incidence is latest; retained state/DC counts and publisher national count are preserved with SHA-256. Crude rates use matching 2023 PEP total population; publisher US count is used for the national row.",
       "limitations": [
         "Keep crude rates distinct from age-adjusted rates.",
         "Retained normalized USCS observations document numeric displayed rows under the source suppression selector; do not infer unavailable rows. The current fresh publisher download returned HTTP 403."
@@ -111,11 +112,11 @@
       "latestSuitableRelease": "CDC HIV Diagnoses, Deaths, and Prevalence 2024",
       "releaseDate": "2026-05-18",
       "observationPeriod": "2024; diagnosis tables report age 13 and older",
-      "status": "2024 is latest; retained 51-state provisional age-13+ diagnosis counts reused and rates recalculated with 2024 PEP age-13+ denominators. Fresh publisher XLSX request returned HTTP 403.",
+      "status": "2024 provisional age-13+ diagnosis counts use the retained CDC AtlasPlus replay response captured 2026-10-11T01:56:11.421302Z (51 state/DC rows, no native US row). The new CDC workbook URL returned HTTP 403; its 2024 release tables contain data through 2023.",
       "limitations": [
         "Numbers under 12 and rates based on them require caution.",
         "The retained count is provisional 2024 diagnoses age 13+ reported through December 2025 with a 12-month reporting delay.",
-        "Use the PEP age-13+ denominator; the fresh publisher table endpoint returned HTTP 403."
+        "The retained CDC AtlasPlus replay response SHA-256 1d4dbad5de57de8b1fe51dc6f94521f2d1fc6f63fd5e4ed4fa15228b071b9f31 contains 51 state/DC rows and no native national row. The CDC workbook is a 2024 release with tables through 2023. No state aggregation is used for a US value."
       ]
     },
     {
