@@ -21,6 +21,8 @@ from pathlib import Path
 import re
 import sys
 import time
+import zipfile
+import xml.etree.ElementTree as ET
 from typing import Any, Iterable
 import urllib.parse
 from urllib.error import HTTPError, URLError
@@ -38,6 +40,16 @@ SOURCES = json.loads((PACKAGE / "source_catalog.json").read_text(encoding="utf-8
 USER_AGENT = "usa-maps-local-data-refresh/2026.10.26 (public data preparation)"
 BLS_URL = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
 FBI_DOWNLOAD_CATALOG_URL = "https://cde.ucr.cjis.gov/LATEST/webapp/assets/JSON/downloads/downloads.json"
+FBI_SIGNED_LOCATOR_URL = "https://cde.ucr.cjis.gov/LATEST/s3/signedurl?key=additional-datasets%2Fsrs%2Festimated_crimes_1979_2025.csv"
+FBI_ANNUAL_SAFE_URL = "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv"
+FBI_ANNUAL_RAW_SHA256 = "e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486"
+FBI_ANNUAL_RETRIEVED_AT = "2026-10-26T12:13:22.509127+00:00"
+FBI_ANNUAL_COLUMNS = ("year", "state_abbr", "state_name", "population", "violent_crime", "homicide",
+                      "rape_legacy", "rape_revised", "robbery", "aggravated_assault", "property_crime",
+                      "burglary", "larceny", "motor_vehicle_theft", "caveats")
+FBI_FIELD_COLUMNS = {"04.01": "homicide", "04.02": "violent_crime", "04.03": "robbery",
+                     "04.04": "aggravated_assault", "04.05": "burglary", "04.06": "motor_vehicle_theft",
+                     "04.07": "rape_revised"}
 BLS_DAILY_LIMIT = 500
 BLS_DAILY_BUDGET = 20
 BLS_PLAN_VERSION = "laus-nsa-2025-v2"
@@ -775,12 +787,136 @@ def prepare_eia_before_after() -> dict[str, Any]:
             "baselineRows": len(before), "preparedRows": len(current), "output": str(path)}
 
 
-def prepare_fbi_baseline_and_pending_annual() -> dict[str, Any]:
-    """Expose prior published 2023 rankings while keeping uncaptured 2025 annual values null."""
+def _xlsx_rows(path: Path) -> list[list[str]]:
+    """Read the first sheet of an OOXML workbook using only the standard library."""
+    main_ns = "{http://schemas.openxmlformats.org/spreadsheetml/2006/main}"
+    with zipfile.ZipFile(path) as archive:
+        shared = []
+        if "xl/sharedStrings.xml" in archive.namelist():
+            root = ET.fromstring(archive.read("xl/sharedStrings.xml"))
+            for item in root.findall(f"{main_ns}si"):
+                shared.append("".join(node.text or "" for node in item.iter(f"{main_ns}t")))
+        sheet = ET.fromstring(archive.read("xl/worksheets/sheet1.xml"))
+    rows = []
+    for row in sheet.findall(f".//{main_ns}row"):
+        values: dict[int, str] = {}
+        for cell in row.findall(f"{main_ns}c"):
+            ref = cell.get("r", "")
+            letters = re.match(r"([A-Z]+)", ref)
+            if not letters:
+                continue
+            index = 0
+            for char in letters.group(1):
+                index = index * 26 + ord(char) - 64
+            index -= 1
+            kind = cell.get("t")
+            value = cell.find(f"{main_ns}v")
+            if kind == "s" and value is not None:
+                text = shared[int(value.text or "0")]
+            elif kind == "inlineStr":
+                text = "".join(node.text or "" for node in cell.iter(f"{main_ns}t"))
+            else:
+                text = value.text if value is not None and value.text is not None else ""
+            values[index] = text.strip()
+        if values:
+            rows.append([values.get(i, "") for i in range(max(values) + 1)])
+    return rows
+
+
+def parse_fbi_annual(path: Path) -> tuple[list[dict[str, str]], str]:
+    raw_hash = sha256_file(path)
+    with path.open("rb") as stream:
+        prefix = stream.read(4)
+    if prefix.startswith(b"PK"):
+        rows = _xlsx_rows(path)
+        if not rows:
+            raise ValueError("fbi_annual_workbook_empty")
+        headers = rows[0]
+        records = [dict(zip(headers, row)) for row in rows[1:] if any(row)]
+    else:
+        with path.open("r", newline="", encoding="utf-8-sig") as stream:
+            records = list(csv.DictReader(stream))
+        headers = list(records[0]) if records else []
+    if tuple(headers) != FBI_ANNUAL_COLUMNS:
+        raise ValueError("fbi_annual_unexpected_columns")
+    normalized = []
+    seen = set()
+    expected = {abbr for abbr, _, _ in FBI_STATES}
+    year_rows = [row for row in records if row.get("year", "").strip() == "2025"]
+    for row in year_rows:
+        abbr = row.get("state_abbr", "").strip()
+        name = row.get("state_name", "").strip()
+        geo = abbr or "US"
+        if geo in seen:
+            raise ValueError("fbi_annual_duplicate_2025_geography")
+        seen.add(geo)
+        pop = safe_int(row.get("population", ""))
+        if not pop:
+            raise ValueError("fbi_annual_missing_population")
+        normalized.append({**{column: (row.get(column, "") or "").strip() for column in FBI_ANNUAL_COLUMNS},
+                           "state_abbr": abbr, "state_name": name, "population": str(pop)})
+    if len(normalized) != 52 or seen != expected | {"US"} or not any(not r["state_abbr"] and r["state_name"] == "United States Total" for r in normalized):
+        raise ValueError("fbi_annual_2025_geography_coverage_invalid")
+    for row in normalized:
+        for column in FBI_FIELD_COLUMNS.values():
+            if row.get(column, "") and safe_int(row[column]) is None:
+                raise ValueError("fbi_annual_invalid_count")
+    return normalized, raw_hash
+
+
+def acquire_fbi_annual_raw(download: bool = False, supplied_path: Path | None = None) -> dict[str, Any]:
+    """Reuse/import verified raw bytes, or download through the public locator without retaining it."""
+    target = RUNTIME / "raw/fbi/estimated_crimes_1979_2025.bin"
+    retrieved_at = FBI_ANNUAL_RETRIEVED_AT
+    if supplied_path is not None:
+        payload = supplied_path.read_bytes()
+        digest = sha256_bytes(payload)
+        if digest != FBI_ANNUAL_RAW_SHA256:
+            raise ValueError("fbi_annual_raw_hash_mismatch")
+        atomic_write(target, payload)
+    elif target.exists() and sha256_file(target) == FBI_ANNUAL_RAW_SHA256:
+        pass
+    elif download:
+        # Never include the locator response or its signed URL in logs, metadata, or exceptions.
+        try:
+            locator_payload, status, _headers = request_bytes(FBI_SIGNED_LOCATOR_URL, timeout=45)
+            if status != 200:
+                raise ValueError("locator_status")
+            locator = json.loads(locator_payload)
+            signed = locator.get("awsFile") if isinstance(locator, dict) else None
+            parsed = urllib.parse.urlsplit(signed or "")
+            if parsed.scheme != "https" or parsed.netloc != "cde-prd-data.s3.us-gov-east-1.amazonaws.com" or parsed.path != "/additional-datasets/srs/estimated_crimes_1979_2025.csv":
+                raise ValueError("locator_target_invalid")
+            request = Request(signed, headers={"User-Agent": USER_AGENT})
+            with urlopen(request, timeout=120) as response:
+                payload = response.read(2_000_001)
+                if len(payload) > 2_000_000:
+                    raise ValueError("fbi_annual_payload_over_limit")
+                retrieved_at = utc_now()
+            if sha256_bytes(payload) != FBI_ANNUAL_RAW_SHA256:
+                raise ValueError("fbi_annual_raw_hash_mismatch")
+            atomic_write(target, payload)
+        except Exception as exc:
+            # Prevent urllib exceptions from exposing signed query strings.
+            raise ValueError("fbi_annual_public_download_failed:" + type(exc).__name__) from None
+    else:
+        return {"status": "source_missing", "sourceId": "fbi-srs-estimated-crimes-1979-2025"}
+    digest = sha256_file(target)
+    record = {"status": "downloaded" if download else "imported_verified", "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+              "path": str(target), "sha256": digest, "bytes": target.stat().st_size,
+              "sourceUrl": FBI_ANNUAL_SAFE_URL, "retrievedAt": retrieved_at,
+              "license": "FBI public-use data; source terms and attribution retained.",
+              "formatObserved": "OOXML XLSX ZIP; catalog filename and HTTP content type say CSV"}
+    meta = load_source_meta()
+    meta["artifacts"][record["sourceId"]] = record
+    atomic_json(source_meta_path(), meta)
+    return record
+
+
+def prepare_fbi_baseline_and_annual(raw_path: Path | None = None, download: bool = False) -> dict[str, Any]:
+    """Prepare official 2025 annual counts/rates and contextual 2023 published rankings."""
     inventory_path = PUBLISHED_BEFORE_INVENTORY
-    if not inventory_path.exists():
-        return {"status": "published_baseline_missing"}
-    inventory = json.loads(inventory_path.read_text(encoding="utf-8"))
+    inventory = json.loads(inventory_path.read_text(encoding="utf-8")) if inventory_path.exists() else {"observations": []}
     states_by_fips = {fips: (abbr, name) for abbr, name, fips in FBI_STATES}
     values: dict[str, dict[str, Decimal]] = {}
     baseline_files = []
@@ -802,6 +938,37 @@ def prepare_fbi_baseline_and_pending_annual() -> dict[str, Any]:
             state = observation.get("sourceGeoId") or observation.get("id")
             if observation.get("geoType") == "state" and state in states_by_fips:
                 values.setdefault(field, {})[states_by_fips[state][0]] = Decimal(str(observation["value"]))
+    raw_record = acquire_fbi_annual_raw(download, raw_path)
+    if raw_record.get("status") == "source_missing":
+        raise ValueError("fbi_annual_verified_input_required")
+    official_rows, raw_hash = parse_fbi_annual(Path(raw_record["path"]))
+    annual = []
+    for source_row in official_rows:
+        abbr = source_row["state_abbr"]
+        fips = STATE_NAMES.get(abbr, (None, "US"))[1]
+        for field_id, source_column in FBI_FIELD_COLUMNS.items():
+            count = safe_int(source_row.get(source_column, ""))
+            rate = Decimal(count) * Decimal(100000) / Decimal(source_row["population"]) if count is not None else None
+            annual.append({"field_id": field_id + ":derived", "geo_type": "nation" if not abbr else "state",
+                           "geo_id": fips, "state_abbr": abbr or "US", "state_name": source_row["state_name"],
+                           "period": "2025", "period_type": "annual", "value": str(rate) if rate is not None else None,
+                           "unit": "per 100,000", "numerator_count": count, "denominator_population": int(source_row["population"]),
+                           "source_field": source_column, "source_adjustment": "official FBI SRS annual state estimate; rate computed from same-row FBI population",
+                           "source_release": "FBI SRS Estimated Crimes 1979-2025 (August 2026)",
+                           "source_url": FBI_ANNUAL_SAFE_URL, "retrieved_at": raw_record["retrievedAt"],
+                           "source_sha256": raw_hash, "caveats": source_row.get("caveats", "")})
+    annual_out = RUNTIME / "prepared/fbi-annual-estimates-2025.csv"
+    write_csv(annual_out, annual)
+    missing_rows = [{"field_id": row["field_id"], "state_abbr": row["state_abbr"], "period": "2025",
+                     "source_field": row["source_field"], "status": "source_missing", "value": None,
+                     "source_sha256": raw_hash} for row in annual if row["numerator_count"] is None]
+    missing_out = RUNTIME / "prepared/fbi-annual-estimates-2025-missingness.jsonl"
+    atomic_write(missing_out, b"".join((json.dumps(row, sort_keys=True) + "\n").encode() for row in missing_rows))
+    annual_ranks: dict[str, dict[str, int]] = {}
+    for field_id in FBI_OFFENSES:
+        eligible = [row for row in annual if row["field_id"] == field_id + ":derived" and row["geo_type"] == "state" and row["value"] is not None]
+        annual_ranks[field_id] = {row["state_abbr"]: rank for rank, row in enumerate(
+            sorted(eligible, key=lambda row: (-Decimal(row["value"]), row["state_abbr"])), 1)}
     rows = []
     for field, (slug, label) in FBI_OFFENSES.items():
         current = values.get(field, {})
@@ -811,43 +978,23 @@ def prepare_fbi_baseline_and_pending_annual() -> dict[str, Any]:
             rows.append({"field_id": field, "offense": slug, "geo_id": fips, "state": abbr,
                          "state_name": name, "before_year": "2023", "before_value": str(current[abbr]) if abbr in current else None,
                          "before_rank_high_to_low": ranks.get(abbr), "after_year": "2025",
-                         "after_annual_value": None, "after_annual_rank": None,
-                         "after_status": "official_state_annual_estimate_table_not_captured",
+                         "after_annual_value": next((x["value"] for x in annual if x["field_id"] == field + ":derived" and x["state_abbr"] == abbr), None),
+                         "after_annual_count": next((x["numerator_count"] for x in annual if x["field_id"] == field + ":derived" and x["state_abbr"] == abbr), None),
+                         "after_annual_population": next((x["denominator_population"] for x in annual if x["field_id"] == field + ":derived" and x["state_abbr"] == abbr), None),
+                         "after_annual_rank": annual_ranks[field].get(abbr),
+                         "after_status": "official_2025_srs_annual_estimate_prepared",
                          "baselineMethod": "frozen 2023 published API rate for comparison only; source methodology says count / 2024 ACS population * 100000",
-                         "status": "baseline_available_annual_after_unresolved" if abbr in current else "baseline_missing_annual_after_unresolved"})
-    out = RUNTIME / "prepared/fbi-2023-baseline-2025-annual-pending.csv"
+                         "comparisonCaveat": "2023 value is frozen published API evidence using count / 2024 ACS population; 2025 value uses FBI annual estimated count / FBI annual population. Cross-product ranks are context, not a direct trend series.",
+                         "status": "cross_product_rank_context_only" if abbr in current else "baseline_missing_annual_after_prepared"})
+    out = RUNTIME / "prepared/fbi-2023-baseline-2025-annual-ranks.csv"
     write_csv(out, rows)
-    catalog_path = RUNTIME / "raw/fbi/cde-download-catalog.json"
-    catalog_product = None
-    if catalog_path.exists():
-        try:
-            catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
-            catalog_product = next((row for row in catalog if row.get("id") == "srs"), None)
-        except (OSError, json.JSONDecodeError, TypeError):
-            catalog_product = None
-    verified_product = (catalog_product is not None and catalog_product.get("awsFile") ==
-                        "additional-datasets/srs/estimated_crimes_1979_2025.csv"
-                        and catalog_product.get("year_range") == "1979-2025")
-    attempt_path = RUNTIME / "raw/fbi/annual-download-attempt.json"
-    download_attempt = None
-    if attempt_path.exists():
-        attempt_bytes = attempt_path.read_bytes()
-        download_attempt = json.loads(attempt_bytes)
-        download_attempt["recordPath"] = str(attempt_path)
-        download_attempt["recordSha256"] = sha256_bytes(attempt_bytes)
-    return {"status": "annual_2025_pending", "baselineSource": str(inventory_path), "baselineSnapshots": baseline_files,
-            "downloadAttempt": download_attempt,
+    return {"status": "complete" if len(annual) == 364 else "partial", "baselineSource": str(inventory_path), "baselineSnapshots": baseline_files,
             "baselineObservations": sum(len(v) for v in values.values()),
-            "baselineStateOffenseSeries": len(values), "annual2025Rows": 0,
-            "output": str(out),
-            "officialProductCatalog": ({"product": "FBI CDE SRS Estimated Crimes", "file": catalog_product.get("awsFile"),
-                                        "yearRange": catalog_product.get("year_range"),
-                                        "lastModified": catalog_product.get("last_modified"),
-                                        "catalogSha256": sha256_file(catalog_path), "catalogPath": str(catalog_path),
-                                        "verified": True} if verified_product else {"verified": False}),
-            "reason": ("Official CDE downloads catalog verifies the SRS annual estimate product (1979-2025; August 2026), "
-                       "but the actual payload could not be retrieved through the public download path in this run. "
-                       "Keep all 2025 annual state values null; monthly CDE reported data are not substituted.")}
+            "baselineStateOffenseSeries": len(values), "annual2025Rows": len(annual), "nativeUSRows": sum(x["geo_type"] == "nation" for x in annual),
+            "annualSource": raw_record, "annualOutput": str(annual_out), "annualMissingness": str(missing_out),
+            "missingnessRows": len(missing_rows), "comparisonOutput": str(out),
+            "rapeDefinition": "rape_revised source column; FBI revised definition; legacy rape is not substituted",
+            "caveats": {row["state_abbr"]: row["caveats"] for row in official_rows if row["caveats"]}}
 
 
 def income_per_resident(source_thousand_usd: Decimal, annual_population: int | None,
@@ -1682,11 +1829,9 @@ def write_runtime_matrix(results: dict[str, Any]) -> str:
             artifacts.extend(item for item in result.get("rawArtifacts", []) if isinstance(item, dict))
             if result.get("sourceId"):
                 artifacts.append(result)
-    fbi_attempt = results.get("fbiAnnualComparison", {}).get("downloadAttempt")
-    if isinstance(fbi_attempt, dict):
-        artifacts.append({**fbi_attempt, "sourceId": "fbi-srs-estimated-crimes-1979-2025",
-                          "path": fbi_attempt.get("recordPath"), "sha256": fbi_attempt.get("recordSha256"),
-                          "retrievedAt": fbi_attempt.get("attemptedAt"), "artifactType": "bounded_download_attempt"})
+    fbi_annual_source = results.get("fbiAnnualComparison", {}).get("annualSource")
+    if isinstance(fbi_annual_source, dict):
+        artifacts.append(fbi_annual_source)
     for result in results.get("existingMedicalRates", {}).values():
         if isinstance(result, dict) and isinstance(result.get("sourceReceipt"), dict):
             artifacts.append(result["sourceReceipt"])
@@ -1724,6 +1869,8 @@ def write_runtime_matrix(results: dict[str, Any]) -> str:
         prepared_status[selection] = results.get("existingMedicalRates", {}).get(key, {}).get("status")
     for row in matrix["rows"]:
         candidates = list(by_source.get(row.get("sourceId"), []))
+        if row.get("sourceId") == "fbi-cde-state":
+            candidates.extend(by_source.get("fbi-srs-estimated-crimes-1979-2025", []))
         for fallback in source_fallbacks.get(row.get("sourceId"), []):
             candidates.extend(by_source.get(fallback, []))
         alias = page_aliases.get(row.get("sourceId"))
@@ -1744,14 +1891,18 @@ def write_runtime_matrix(results: dict[str, Any]) -> str:
                                 "retrievalDate": latest_support["retrievedAt"][:10]})
         row["supportingRetrievals"] = support
         status = prepared_status.get(row["selectionId"])
-        if row.get("sourceId") == "fbi-cde-state" and "fbiCrime" in results:
-            fbi_status = results["fbiCrime"].get("status")
-            status = ("monthly_source_series_complete_annual_values_not_synthesized"
-                      if fbi_status == "complete" else f"local_preparation_{fbi_status}")
+        if row.get("sourceId") in {"fbi-cde-state", "fbi-srs-estimated-crimes-1979-2025"} and "fbiCrime" in results:
+            fbi_status = results.get("fbiAnnualComparison", {}).get("status")
+            status = ("annual_source_prepared_local_review_only" if fbi_status == "complete"
+                      else "monthly_source_kept_separate_annual_source_unavailable")
         if (row.get("sourceId") == "bls-laus-public-api-v2"
                 and results.get("blsUnemployment", {}).get("status") == "collection_complete_with_source_gaps"):
             status = "collection_complete_with_source_gaps"
-        if status == "monthly_source_series_complete_annual_values_not_synthesized":
+        if status == "annual_source_prepared_local_review_only":
+            row["status"] = status
+        elif status == "monthly_source_kept_separate_annual_source_unavailable":
+            row["status"] = status
+        elif status == "monthly_source_series_complete_annual_values_not_synthesized":
             row["status"] = status
         elif status == "collection_complete_with_source_gaps":
             row["status"] = status
@@ -1848,11 +1999,9 @@ def write_inventory(results: dict[str, Any]) -> None:
     for source_group in (results.get("fixedSources", {}), results.get("freshnessPageSnapshots", {})):
         if isinstance(source_group, dict):
             artifacts.extend(item for item in source_group.values() if isinstance(item, dict))
-    fbi_attempt = results.get("fbiAnnualComparison", {}).get("downloadAttempt")
-    if isinstance(fbi_attempt, dict):
-        artifacts.append({**fbi_attempt, "sourceId": "fbi-srs-estimated-crimes-1979-2025",
-                          "path": fbi_attempt.get("recordPath"), "sha256": fbi_attempt.get("recordSha256"),
-                          "retrievedAt": fbi_attempt.get("attemptedAt"), "artifactType": "bounded_download_attempt"})
+    fbi_annual_source = results.get("fbiAnnualComparison", {}).get("annualSource")
+    if isinstance(fbi_annual_source, dict):
+        artifacts.append(fbi_annual_source)
     for result in results.get("existingMedicalRates", {}).values():
         if isinstance(result, dict) and isinstance(result.get("sourceReceipt"), dict):
             artifacts.append(result["sourceReceipt"])
@@ -1865,7 +2014,7 @@ def write_inventory(results: dict[str, Any]) -> None:
         unique_artifacts[identity] = artifact
     packet = {
         "format": "usa_maps_local_data_refresh_inventory_v1",
-        "collectorVersion": "2026.10.26.1",
+        "collectorVersion": "2026.10.26.2",
         "readerContractVersion": "1.0.0",
         "sourceReleaseVersions": "Publisher releases are separate; see source_catalog.json and freshness_review.json.",
         "generatedAt": utc_now(),
@@ -1886,7 +2035,8 @@ def write_inventory(results: dict[str, Any]) -> None:
 
 def run(max_bls_queries: int, max_fbi_items: int, include_page_snapshots: bool = True,
         runtime_dir: str | Path | None = None, inventory_path: str | Path | None = None,
-        bls_prepared_dir: Path | None = None, bls_results_path: Path | None = None) -> dict[str, Any]:
+        bls_prepared_dir: Path | None = None, bls_results_path: Path | None = None,
+        fbi_annual_raw: Path | None = None, download_fbi_annual: bool = False) -> dict[str, Any]:
     global RUNTIME, INVENTORY
     if runtime_dir is not None:
         RUNTIME = Path(runtime_dir).expanduser().resolve()
@@ -1909,7 +2059,7 @@ def run(max_bls_queries: int, max_fbi_items: int, include_page_snapshots: bool =
     results["blsUnemployment"] = (import_completed_bls(bls_prepared_dir, bls_results_path)
                                   if bls_prepared_dir and bls_results_path else collect_bls(max_bls_queries))
     results["fbiCrime"] = collect_fbi(max_fbi_items)
-    results["fbiAnnualComparison"] = prepare_fbi_baseline_and_pending_annual()
+    results["fbiAnnualComparison"] = prepare_fbi_baseline_and_annual(fbi_annual_raw, download_fbi_annual)
     results["publishedBeforeAfter"] = prepare_published_before_after()
     results["definitionMatrixPath"] = write_runtime_matrix(results)
     results["productionReady"] = False
@@ -1934,6 +2084,10 @@ def main() -> int:
                         help="Import verified parent BLS prepared files; requires --bls-results and performs no BLS requests.")
     parser.add_argument("--bls-results", type=Path,
                         help="Parent BLS run result JSON matching --bls-prepared-dir.")
+    parser.add_argument("--fbi-annual-raw", type=Path,
+                        help="Import the verified official FBI annual workbook bytes; hash checked, no network request.")
+    parser.add_argument("--download-fbi-annual", action="store_true",
+                        help="Use the public FBI CDE signed locator in memory and download the official annual workbook; locator is never retained.")
     args = parser.parse_args()
     if args.max_bls_queries < 0 or args.max_bls_queries > 1000:
         parser.error("--max-bls-queries must be between 0 and 1000")
@@ -1941,7 +2095,8 @@ def main() -> int:
         parser.error("--max-fbi-items must be between 0 and 357")
     try:
         result = run(args.max_bls_queries, args.max_fbi_items, not args.skip_page_snapshots,
-                     args.runtime_dir, args.inventory, args.bls_prepared_dir, args.bls_results)
+                     args.runtime_dir, args.inventory, args.bls_prepared_dir, args.bls_results,
+                     args.fbi_annual_raw, args.download_fbi_annual)
         print(json.dumps({"status": "complete" if all(result[key].get("status") == "complete"
                                                        for key in ("population", "eia", "irsIncome",
                                                                    "blsUnemployment", "fbiCrime")) else "partial",

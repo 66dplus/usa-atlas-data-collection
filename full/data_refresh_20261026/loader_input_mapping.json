@@ -1,7 +1,7 @@
 {
   "format": "usa_maps_prepared_loader_mapping_v1",
   "targetReaderContract": "v2",
-  "collectorVersion": "2026.10.26.1",
+  "collectorVersion": "2026.10.26.2",
   "admissionStatus": "not_admitted",
   "rows": [
     {
@@ -150,136 +150,164 @@
     },
     {
       "fieldId": "04.01:derived",
-      "source": "prepared/fbi-2023-baseline-2025-annual-pending.csv",
-      "filter": "field_id=04.01; annual 2025 value intentionally null until official estimates payload is verified",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.01:derived; period=2025; state and native US rows only",
       "geo": "geo_id",
-      "period": "after_year; annual",
-      "value": "after_annual_value",
+      "period": "period; annual",
+      "value": "value",
       "unit": "per 100,000",
-      "sourceAdjustment": "FBI official annual SRS estimate; source adjustment semantics pending payload review",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
       "numeratorDenominator": {
-        "numerator": null,
-        "denominator": null
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
       },
       "provenance": [
-        "beforeSnapshotSha256",
-        "officialProductCatalog.catalogSha256"
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
       ],
-      "readiness": "blocked; do not load null pending comparison rows"
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
     },
     {
       "fieldId": "04.02:derived",
-      "source": "prepared/fbi-2023-baseline-2025-annual-pending.csv",
-      "filter": "field_id=04.02; annual 2025 value intentionally null until official estimates payload is verified",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.02:derived; period=2025; state and native US rows only",
       "geo": "geo_id",
-      "period": "after_year; annual",
-      "value": "after_annual_value",
+      "period": "period; annual",
+      "value": "value",
       "unit": "per 100,000",
-      "sourceAdjustment": "FBI official annual SRS estimate; source adjustment semantics pending payload review",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
       "numeratorDenominator": {
-        "numerator": null,
-        "denominator": null
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
       },
       "provenance": [
-        "beforeSnapshotSha256",
-        "officialProductCatalog.catalogSha256"
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
       ],
-      "readiness": "blocked; do not load null pending comparison rows"
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
     },
     {
       "fieldId": "04.03:derived",
-      "source": "prepared/fbi-2023-baseline-2025-annual-pending.csv",
-      "filter": "field_id=04.03; annual 2025 value intentionally null until official estimates payload is verified",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.03:derived; period=2025; state and native US rows only",
       "geo": "geo_id",
-      "period": "after_year; annual",
-      "value": "after_annual_value",
+      "period": "period; annual",
+      "value": "value",
       "unit": "per 100,000",
-      "sourceAdjustment": "FBI official annual SRS estimate; source adjustment semantics pending payload review",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
       "numeratorDenominator": {
-        "numerator": null,
-        "denominator": null
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
       },
       "provenance": [
-        "beforeSnapshotSha256",
-        "officialProductCatalog.catalogSha256"
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
       ],
-      "readiness": "blocked; do not load null pending comparison rows"
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
     },
     {
       "fieldId": "04.04:derived",
-      "source": "prepared/fbi-2023-baseline-2025-annual-pending.csv",
-      "filter": "field_id=04.04; annual 2025 value intentionally null until official estimates payload is verified",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.04:derived; period=2025; state and native US rows only",
       "geo": "geo_id",
-      "period": "after_year; annual",
-      "value": "after_annual_value",
+      "period": "period; annual",
+      "value": "value",
       "unit": "per 100,000",
-      "sourceAdjustment": "FBI official annual SRS estimate; source adjustment semantics pending payload review",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
       "numeratorDenominator": {
-        "numerator": null,
-        "denominator": null
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
       },
       "provenance": [
-        "beforeSnapshotSha256",
-        "officialProductCatalog.catalogSha256"
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
       ],
-      "readiness": "blocked; do not load null pending comparison rows"
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
     },
     {
       "fieldId": "04.05:derived",
-      "source": "prepared/fbi-2023-baseline-2025-annual-pending.csv",
-      "filter": "field_id=04.05; annual 2025 value intentionally null until official estimates payload is verified",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.05:derived; period=2025; state and native US rows only",
       "geo": "geo_id",
-      "period": "after_year; annual",
-      "value": "after_annual_value",
+      "period": "period; annual",
+      "value": "value",
       "unit": "per 100,000",
-      "sourceAdjustment": "FBI official annual SRS estimate; source adjustment semantics pending payload review",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
       "numeratorDenominator": {
-        "numerator": null,
-        "denominator": null
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
       },
       "provenance": [
-        "beforeSnapshotSha256",
-        "officialProductCatalog.catalogSha256"
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
       ],
-      "readiness": "blocked; do not load null pending comparison rows"
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
     },
     {
       "fieldId": "04.06:derived",
-      "source": "prepared/fbi-2023-baseline-2025-annual-pending.csv",
-      "filter": "field_id=04.06; annual 2025 value intentionally null until official estimates payload is verified",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.06:derived; period=2025; state and native US rows only",
       "geo": "geo_id",
-      "period": "after_year; annual",
-      "value": "after_annual_value",
+      "period": "period; annual",
+      "value": "value",
       "unit": "per 100,000",
-      "sourceAdjustment": "FBI official annual SRS estimate; source adjustment semantics pending payload review",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
       "numeratorDenominator": {
-        "numerator": null,
-        "denominator": null
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
       },
       "provenance": [
-        "beforeSnapshotSha256",
-        "officialProductCatalog.catalogSha256"
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
       ],
-      "readiness": "blocked; do not load null pending comparison rows"
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
     },
     {
       "fieldId": "04.07:derived",
-      "source": "prepared/fbi-2023-baseline-2025-annual-pending.csv",
-      "filter": "field_id=04.07; annual 2025 value intentionally null until official estimates payload is verified",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.07:derived; period=2025; state and native US rows only",
       "geo": "geo_id",
-      "period": "after_year; annual",
-      "value": "after_annual_value",
+      "period": "period; annual",
+      "value": "value",
       "unit": "per 100,000",
-      "sourceAdjustment": "FBI official annual SRS estimate; source adjustment semantics pending payload review",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
       "numeratorDenominator": {
-        "numerator": null,
-        "denominator": null
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
       },
       "provenance": [
-        "beforeSnapshotSha256",
-        "officialProductCatalog.catalogSha256"
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
       ],
-      "readiness": "blocked; do not load null pending comparison rows"
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
     },
     {
       "fieldId": "08.05:sector_ALL",

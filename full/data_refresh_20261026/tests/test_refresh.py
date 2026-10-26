@@ -7,6 +7,8 @@ from decimal import Decimal
 from pathlib import Path
 import tempfile
 import unittest
+import zipfile
+import hashlib
 from unittest import mock
 from urllib.error import URLError
 
@@ -34,6 +36,83 @@ class FakeResponse:
 
 
 class RefreshTests(unittest.TestCase):
+    def _fbi_fixture(self, path: Path) -> None:
+        strings = list(refresh.FBI_ANNUAL_COLUMNS)
+        data = []
+        for abbr, name, _fips in refresh.FBI_STATES:
+            data.append(["2025", abbr, name, "100000", "70", "2", "", "3", "4", "5", "20", "6", "10", "4", ""])
+        data.append(["2025", "", "United States Total", "1000000", "700", "20", "", "30", "40", "50", "200", "60", "100", "40", ""])
+        strings.extend(value for row in data for value in row)
+        lookup = {}
+        for index, value in enumerate(strings): lookup.setdefault(value, len(lookup))
+        ns = "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+        def col(n):
+            out = ""
+            while n:
+                n, rem = divmod(n - 1, 26); out = chr(65 + rem) + out
+            return out
+        shared = "".join(f'<si><t>{value}</t></si>' for value in lookup)
+        xml_rows = []
+        for ri, row in enumerate([list(refresh.FBI_ANNUAL_COLUMNS), *data], 1):
+            cells = "".join(f'<c r="{col(ci)}{ri}" t="s"><v>{lookup[value]}</v></c>' for ci, value in enumerate(row, 1))
+            xml_rows.append(f'<row r="{ri}">{cells}</row>')
+        with zipfile.ZipFile(path, "w") as archive:
+            archive.writestr("xl/sharedStrings.xml", f'<sst xmlns="{ns}">{shared}</sst>')
+            archive.writestr("xl/worksheets/sheet1.xml", f'<worksheet xmlns="{ns}"><sheetData>{"".join(xml_rows)}</sheetData></worksheet>')
+
+    def test_fbi_annual_xlsx_csv_extension_coverage_and_revised_rape(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "estimated_crimes.csv"
+            self._fbi_fixture(path)
+            expected_hash = hashlib.sha256(path.read_bytes()).hexdigest()
+            rows, digest = refresh.parse_fbi_annual(path)
+        self.assertEqual(len(rows), 52)
+        self.assertEqual(digest, expected_hash)
+        native = next(row for row in rows if not row["state_abbr"])
+        self.assertEqual(native["state_name"], "United States Total")
+        self.assertEqual(native["population"], "1000000")
+        self.assertEqual(native["rape_revised"], "30")
+        self.assertEqual(native["rape_legacy"], "")
+
+    def test_fbi_annual_missing_geography_fails_closed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            path = Path(temp) / "bad.csv"
+            with path.open("w", newline="") as stream:
+                writer = csv.DictWriter(stream, fieldnames=refresh.FBI_ANNUAL_COLUMNS)
+                writer.writeheader()
+                writer.writerow({"year": "2025", "state_abbr": "AL", "state_name": "Alabama", "population": "1"})
+            with self.assertRaisesRegex(ValueError, "geography_coverage"):
+                refresh.parse_fbi_annual(path)
+
+    def test_fbi_verified_import_prepares_native_us_and_same_row_rate(self):
+        with tempfile.TemporaryDirectory() as temp:
+            runtime = Path(temp) / "runtime"
+            raw = Path(temp) / "fbi.csv"
+            self._fbi_fixture(raw)
+            fixture_hash = hashlib.sha256(raw.read_bytes()).hexdigest()
+            with mock.patch.object(refresh, "RUNTIME", runtime), mock.patch.object(refresh, "FBI_ANNUAL_RAW_SHA256", fixture_hash), mock.patch.object(refresh, "PUBLISHED_BEFORE_INVENTORY", Path(temp) / "no-before.json"):
+                result = refresh.prepare_fbi_baseline_and_annual(raw)
+                prepared = list(refresh.read_csv(Path(result["annualOutput"])))
+            row = next(x for x in prepared if x["state_abbr"] == "AL" and x["field_id"] == "04.07:derived")
+            self.assertEqual(row["source_field"], "rape_revised")
+            self.assertEqual(Decimal(row["value"]), Decimal("3"))
+            self.assertEqual(row["numerator_count"], "3")
+            self.assertEqual(row["denominator_population"], "100000")
+            self.assertEqual(result["nativeUSRows"], 7)
+
+    def test_fbi_download_import_does_not_persist_signed_locator(self):
+        payload = b"verified fixture bytes"
+        digest = hashlib.sha256(payload).hexdigest()
+        locator = b'{"awsFile":"https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv?X-Amz-Signature=DO_NOT_STORE"}'
+        response = FakeResponse(payload, headers={"Content-Length": str(len(payload))})
+        with tempfile.TemporaryDirectory() as temp:
+            with mock.patch.object(refresh, "RUNTIME", Path(temp)), mock.patch.object(refresh, "FBI_ANNUAL_RAW_SHA256", digest), \
+                 mock.patch.object(refresh, "request_bytes", return_value=(locator, 200, {})), mock.patch.object(refresh, "urlopen", return_value=response):
+                record = refresh.acquire_fbi_annual_raw(download=True)
+                metadata = refresh.source_meta_path().read_text()
+            self.assertEqual(Path(record["path"]).read_bytes(), payload)
+            self.assertNotIn("X-Amz-Signature", metadata)
+            self.assertNotIn("DO_NOT_STORE", metadata)
     def test_nsa_series_ids_and_period_types(self):
         self.assertEqual(refresh.bls_series_id("state", "06", "03"), "LAUST060000000000003")
         self.assertEqual(refresh.bls_series_id("county", "06037", "04"), "LAUCN060370000000004")
@@ -356,13 +435,13 @@ class RefreshTests(unittest.TestCase):
             self.assertTrue(required.issubset(row))
             self.assertNotEqual(row["status"], "not_reviewed_in_focused_refresh")
 
-    def test_runtime_matrix_does_not_claim_annual_fbi_values_from_monthly_data(self):
+    def test_runtime_matrix_keeps_monthly_fbi_separate_when_annual_input_missing(self):
         with tempfile.TemporaryDirectory() as temp, mock.patch.object(refresh, "RUNTIME", Path(temp)):
             path = Path(refresh.write_runtime_matrix({"fbiCrime": {"status": "complete"}}))
             rows = json.loads(path.read_text())["rows"]
-        crime = [row for row in rows if row["sourceId"] == "fbi-cde-state"]
+        crime = [row for row in rows if row["fieldId"].startswith("04.")]
         self.assertEqual(len(crime), 7)
-        self.assertTrue(all(row["status"] == "monthly_source_series_complete_annual_values_not_synthesized"
+        self.assertTrue(all(row["status"] == "monthly_source_kept_separate_annual_source_unavailable"
                             for row in crime))
 
     def test_eia_rank_comparison_uses_hash_verified_frozen_public_snapshot(self):
@@ -391,7 +470,7 @@ class RefreshTests(unittest.TestCase):
         self.assertEqual(al["after_value_cents_per_kwh"], "12")
         self.assertEqual(result["baselineSourceSha256"], digest)
 
-    def test_fbi_annual_comparison_uses_hash_verified_published_baseline(self):
+    def test_fbi_annual_comparison_uses_verified_baseline_and_official_annual(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
             snapshot = root / "04.01.json"
@@ -401,15 +480,18 @@ class RefreshTests(unittest.TestCase):
             inventory = root / "inventory.json"
             inventory.write_text(json.dumps({"observations": [{"fieldId": "04.01:derived", "period": "2023",
                                                                   "path": str(snapshot), "sha256": digest}]}))
-            with mock.patch.object(refresh, "RUNTIME", root / "runtime"), mock.patch.object(
+            raw = root / "fbi.csv"
+            self._fbi_fixture(raw)
+            raw_hash = hashlib.sha256(raw.read_bytes()).hexdigest()
+            with mock.patch.object(refresh, "RUNTIME", root / "runtime"), mock.patch.object(refresh, "FBI_ANNUAL_RAW_SHA256", raw_hash), mock.patch.object(
                     refresh, "PUBLISHED_BEFORE_INVENTORY", inventory):
-                result = refresh.prepare_fbi_baseline_and_pending_annual()
-            rows = list(refresh.read_csv(root / "runtime/prepared/fbi-2023-baseline-2025-annual-pending.csv"))
+                result = refresh.prepare_fbi_baseline_and_annual(raw)
+            rows = list(refresh.read_csv(root / "runtime/prepared/fbi-2023-baseline-2025-annual-ranks.csv"))
         al = next(row for row in rows if row["field_id"] == "04.01" and row["state"] == "AL")
         self.assertEqual(al["before_value"], "5")
-        self.assertEqual(al["after_annual_value"], "")
-        self.assertEqual(al["after_status"], "official_state_annual_estimate_table_not_captured")
-        self.assertEqual(result["annual2025Rows"], 0)
+        self.assertEqual(al["after_annual_value"], "2")
+        self.assertEqual(al["after_status"], "official_2025_srs_annual_estimate_prepared")
+        self.assertEqual(result["annual2025Rows"], 364)
 
     def test_loader_mapping_uses_canonical_bls_field_ids_without_collision(self):
         mapping = json.loads((refresh.PACKAGE / "loader_input_mapping.json").read_text())

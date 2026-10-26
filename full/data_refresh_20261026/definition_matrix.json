@@ -1229,294 +1229,337 @@
       "catalogId": "04.01",
       "fieldId": "04.01:derived",
       "label": "Murders",
-      "definition": "State count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
-      "formula": "FBI CDE source rates (monthly) and actual counts (monthly) are retained separately; no annual rate is synthesized.",
+      "definition": "Official FBI 2025 annual homicide estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
       "numerator": [
         {
-          "field": "FBI CDE actuals for selected offense",
-          "period": "2025 monthly"
+          "field": "homicide",
+          "unit": "incidents",
+          "period": "calendar 2025"
         }
       ],
       "denominator": [
         {
-          "field": "FBI CDE source rate denominator / population basis",
-          "period": "2025 as reported by FBI"
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
         }
       ],
       "unit": "per 100,000",
       "geography": [
-        "state"
+        "state",
+        "US"
       ],
-      "observationPeriod": "2025 calendar year; FBI official monthly raw series retained",
-      "observationType": "annual release, monthly source observations",
-      "source": "FBI CDE + Census ACS",
-      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "reviewedOn": "2026-10-26",
-      "retrievalDate": null,
+      "retrievalDate": "2026-10-26",
       "limitations": [
-        "FBI reports 2025 data from more than 17,000 agencies covering 96.2% of the population.",
-        "Local agency participation and estimation coverage vary by state and offense.",
-        "Retain source actuals and source rates as reported; do not substitute ACS population or aggregate rates from partial months."
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
       ],
-      "status": "freshness_reviewed_latest_suitable_release_retained",
-      "sourceId": "fbi-cde-state",
-      "supportingSources": [],
-      "retrievalKind": null,
-      "supportingRetrievals": []
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
     },
     {
       "selectionId": "violent-crime",
       "catalogId": "04.02",
       "fieldId": "04.02:derived",
       "label": "Violent crime",
-      "definition": "State count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
-      "formula": "FBI CDE source rates (monthly) and actual counts (monthly) are retained separately; no annual rate is synthesized.",
+      "definition": "Official FBI 2025 annual violent_crime estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
       "numerator": [
         {
-          "field": "FBI CDE actuals for selected offense",
-          "period": "2025 monthly"
+          "field": "violent_crime",
+          "unit": "incidents",
+          "period": "calendar 2025"
         }
       ],
       "denominator": [
         {
-          "field": "FBI CDE source rate denominator / population basis",
-          "period": "2025 as reported by FBI"
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
         }
       ],
       "unit": "per 100,000",
       "geography": [
-        "state"
+        "state",
+        "US"
       ],
-      "observationPeriod": "2025 calendar year; FBI official monthly raw series retained",
-      "observationType": "annual release, monthly source observations",
-      "source": "FBI CDE + Census ACS",
-      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "reviewedOn": "2026-10-26",
-      "retrievalDate": null,
+      "retrievalDate": "2026-10-26",
       "limitations": [
-        "FBI reports 2025 data from more than 17,000 agencies covering 96.2% of the population.",
-        "Local agency participation and estimation coverage vary by state and offense.",
-        "Retain source actuals and source rates as reported; do not substitute ACS population or aggregate rates from partial months."
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
       ],
-      "status": "freshness_reviewed_latest_suitable_release_retained",
-      "sourceId": "fbi-cde-state",
-      "supportingSources": [],
-      "retrievalKind": null,
-      "supportingRetrievals": []
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
     },
     {
       "selectionId": "robbery",
       "catalogId": "04.03",
       "fieldId": "04.03:derived",
       "label": "Robbery",
-      "definition": "State count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
-      "formula": "FBI CDE source rates (monthly) and actual counts (monthly) are retained separately; no annual rate is synthesized.",
+      "definition": "Official FBI 2025 annual robbery estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
       "numerator": [
         {
-          "field": "FBI CDE actuals for selected offense",
-          "period": "2025 monthly"
+          "field": "robbery",
+          "unit": "incidents",
+          "period": "calendar 2025"
         }
       ],
       "denominator": [
         {
-          "field": "FBI CDE source rate denominator / population basis",
-          "period": "2025 as reported by FBI"
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
         }
       ],
       "unit": "per 100,000",
       "geography": [
-        "state"
+        "state",
+        "US"
       ],
-      "observationPeriod": "2025 calendar year; FBI official monthly raw series retained",
-      "observationType": "annual release, monthly source observations",
-      "source": "FBI CDE + Census ACS",
-      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "reviewedOn": "2026-10-26",
-      "retrievalDate": null,
+      "retrievalDate": "2026-10-26",
       "limitations": [
-        "FBI reports 2025 data from more than 17,000 agencies covering 96.2% of the population.",
-        "Local agency participation and estimation coverage vary by state and offense.",
-        "Retain source actuals and source rates as reported; do not substitute ACS population or aggregate rates from partial months."
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
       ],
-      "status": "freshness_reviewed_latest_suitable_release_retained",
-      "sourceId": "fbi-cde-state",
-      "supportingSources": [],
-      "retrievalKind": null,
-      "supportingRetrievals": []
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
     },
     {
       "selectionId": "aggravated-assault",
       "catalogId": "04.04",
       "fieldId": "04.04:derived",
       "label": "Aggravated assault",
-      "definition": "State count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
-      "formula": "FBI CDE source rates (monthly) and actual counts (monthly) are retained separately; no annual rate is synthesized.",
+      "definition": "Official FBI 2025 annual aggravated_assault estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
       "numerator": [
         {
-          "field": "FBI CDE actuals for selected offense",
-          "period": "2025 monthly"
+          "field": "aggravated_assault",
+          "unit": "incidents",
+          "period": "calendar 2025"
         }
       ],
       "denominator": [
         {
-          "field": "FBI CDE source rate denominator / population basis",
-          "period": "2025 as reported by FBI"
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
         }
       ],
       "unit": "per 100,000",
       "geography": [
-        "state"
+        "state",
+        "US"
       ],
-      "observationPeriod": "2025 calendar year; FBI official monthly raw series retained",
-      "observationType": "annual release, monthly source observations",
-      "source": "FBI CDE + Census ACS",
-      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "reviewedOn": "2026-10-26",
-      "retrievalDate": null,
+      "retrievalDate": "2026-10-26",
       "limitations": [
-        "FBI reports 2025 data from more than 17,000 agencies covering 96.2% of the population.",
-        "Local agency participation and estimation coverage vary by state and offense.",
-        "Retain source actuals and source rates as reported; do not substitute ACS population or aggregate rates from partial months."
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
       ],
-      "status": "freshness_reviewed_latest_suitable_release_retained",
-      "sourceId": "fbi-cde-state",
-      "supportingSources": [],
-      "retrievalKind": null,
-      "supportingRetrievals": []
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
     },
     {
       "selectionId": "burglary",
       "catalogId": "04.05",
       "fieldId": "04.05:derived",
       "label": "Burglary",
-      "definition": "State count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
-      "formula": "FBI CDE source rates (monthly) and actual counts (monthly) are retained separately; no annual rate is synthesized.",
+      "definition": "Official FBI 2025 annual burglary estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
       "numerator": [
         {
-          "field": "FBI CDE actuals for selected offense",
-          "period": "2025 monthly"
+          "field": "burglary",
+          "unit": "incidents",
+          "period": "calendar 2025"
         }
       ],
       "denominator": [
         {
-          "field": "FBI CDE source rate denominator / population basis",
-          "period": "2025 as reported by FBI"
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
         }
       ],
       "unit": "per 100,000",
       "geography": [
-        "state"
+        "state",
+        "US"
       ],
-      "observationPeriod": "2025 calendar year; FBI official monthly raw series retained",
-      "observationType": "annual release, monthly source observations",
-      "source": "FBI CDE + Census ACS",
-      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "reviewedOn": "2026-10-26",
-      "retrievalDate": null,
+      "retrievalDate": "2026-10-26",
       "limitations": [
-        "FBI reports 2025 data from more than 17,000 agencies covering 96.2% of the population.",
-        "Local agency participation and estimation coverage vary by state and offense.",
-        "Retain source actuals and source rates as reported; do not substitute ACS population or aggregate rates from partial months."
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
       ],
-      "status": "freshness_reviewed_latest_suitable_release_retained",
-      "sourceId": "fbi-cde-state",
-      "supportingSources": [],
-      "retrievalKind": null,
-      "supportingRetrievals": []
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
     },
     {
       "selectionId": "motor-vehicle-theft",
       "catalogId": "04.06",
       "fieldId": "04.06:derived",
       "label": "Motor vehicle theft",
-      "definition": "State count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
-      "formula": "FBI CDE source rates (monthly) and actual counts (monthly) are retained separately; no annual rate is synthesized.",
+      "definition": "Official FBI 2025 annual motor_vehicle_theft estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
       "numerator": [
         {
-          "field": "FBI CDE actuals for selected offense",
-          "period": "2025 monthly"
+          "field": "motor_vehicle_theft",
+          "unit": "incidents",
+          "period": "calendar 2025"
         }
       ],
       "denominator": [
         {
-          "field": "FBI CDE source rate denominator / population basis",
-          "period": "2025 as reported by FBI"
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
         }
       ],
       "unit": "per 100,000",
       "geography": [
-        "state"
+        "state",
+        "US"
       ],
-      "observationPeriod": "2025 calendar year; FBI official monthly raw series retained",
-      "observationType": "annual release, monthly source observations",
-      "source": "FBI CDE + Census ACS",
-      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "reviewedOn": "2026-10-26",
-      "retrievalDate": null,
+      "retrievalDate": "2026-10-26",
       "limitations": [
-        "FBI reports 2025 data from more than 17,000 agencies covering 96.2% of the population.",
-        "Local agency participation and estimation coverage vary by state and offense.",
-        "Retain source actuals and source rates as reported; do not substitute ACS population or aggregate rates from partial months."
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
       ],
-      "status": "freshness_reviewed_latest_suitable_release_retained",
-      "sourceId": "fbi-cde-state",
-      "supportingSources": [],
-      "retrievalKind": null,
-      "supportingRetrievals": []
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
     },
     {
       "selectionId": "rape",
       "catalogId": "04.07",
       "fieldId": "04.07:derived",
       "label": "Rape",
-      "definition": "State count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
-      "formula": "FBI CDE source rates (monthly) and actual counts (monthly) are retained separately; no annual rate is synthesized.",
+      "definition": "Official FBI 2025 annual rape_revised estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
       "numerator": [
         {
-          "field": "FBI CDE actuals for selected offense",
-          "period": "2025 monthly"
+          "field": "rape_revised",
+          "unit": "incidents",
+          "period": "calendar 2025"
         }
       ],
       "denominator": [
         {
-          "field": "FBI CDE source rate denominator / population basis",
-          "period": "2025 as reported by FBI"
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
         }
       ],
       "unit": "per 100,000",
       "geography": [
-        "state"
+        "state",
+        "US"
       ],
-      "observationPeriod": "2025 calendar year; FBI official monthly raw series retained",
-      "observationType": "annual release, monthly source observations",
-      "source": "FBI CDE + Census ACS",
-      "sourceUrl": "https://cde.ucr.cjis.gov/",
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "reviewedOn": "2026-10-26",
-      "retrievalDate": null,
+      "retrievalDate": "2026-10-26",
       "limitations": [
-        "FBI reports 2025 data from more than 17,000 agencies covering 96.2% of the population.",
-        "Local agency participation and estimation coverage vary by state and offense.",
-        "Retain source actuals and source rates as reported; do not substitute ACS population or aggregate rates from partial months."
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP.",
+        "Rape uses the revised definition field; legacy rape is not substituted."
       ],
-      "status": "freshness_reviewed_latest_suitable_release_retained",
-      "sourceId": "fbi-cde-state",
-      "supportingSources": [],
-      "retrievalKind": null,
-      "supportingRetrievals": []
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
     },
     {
       "selectionId": "obesity-rate",
@@ -1910,5 +1953,6 @@
       "preparedInput": "prepared/irs-agi-per-resident-2023.csv",
       "comparisonEvidence": "published-before/07.01_derived_per-resident.json; comparison snapshot is not original producer admission"
     }
-  ]
+  ],
+  "collectorVersion": "2026.10.26.2"
 }

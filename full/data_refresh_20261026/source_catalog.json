@@ -1,5 +1,5 @@
 {
-  "collectorVersion": "2026.10.26.1",
+  "collectorVersion": "2026.10.26.2",
   "readerContractVersion": "1.0.0",
   "sources": [
     {
@@ -29,17 +29,17 @@
       "access": "Public, no key; one bounded state/offense request at a time.",
       "license": "Official FBI public statistics; retain the endpoint, raw response, and retrieval time.",
       "scope": "2025 monthly totals and rates for homicide, violent crime, robbery, aggravated assault, burglary, motor vehicle theft, and rape across 50 states and DC.",
-      "limitations": "Monthly reported actual counts and rates only. The 2025 official CIUS release includes annual estimates, but state-by-offense annual values have not been captured in this package. Agency participation and estimation coverage differ by geography; absent or suppressed values remain missing."
+      "limitations": "Monthly reported actual counts and rates only; these are kept separate from annual SRS estimates. Agency participation varies by geography; absent or suppressed values remain missing."
     },
     {
-      "id": "fbi-cde-srs-estimates-2025",
+      "id": "fbi-srs-estimated-crimes-1979-2025",
       "publisher": "Federal Bureau of Investigation, Crime Data Explorer",
-      "url": "https://cde.ucr.cjis.gov/LATEST/webapp/assets/JSON/downloads/downloads.json",
-      "kind": "official_download_catalog_metadata",
-      "access": "Public, no key; metadata confirms the official 2025 SRS estimate product.",
-      "license": "FBI UCR public statistics; preserve source citation and retrieval time.",
-      "scope": "Official catalog entry additional-datasets/srs/estimated_crimes_1979_2025.csv, year range 1979-2025, last modified August 2026.",
-      "limitations": "Catalog metadata verifies additional-datasets/srs/estimated_crimes_1979_2025.csv; the bounded direct static CSV path returned HTTP 404. This metadata is not the dataset payload. Local 2025 state-by-offense annual values remain unresolved; monthly CDE observations are not summed or treated as annual estimates."
+      "url": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "kind": "official_public_dataset_payload",
+      "access": "Public download via FBI CDE catalog locator; signed locator is used only in memory and is never retained.",
+      "license": "FBI UCR public-use data; retain source citation and retrieval metadata.",
+      "scope": "Annual SRS estimates, 1979-2025; 2025 includes 51 state/DC rows and a native United States row. Seven prepared field numerators and same-row source population are preserved.",
+      "limitations": "The catalog filename and HTTP content-type say CSV, but the verified payload is OOXML XLSX. Parse by content signature. 2025 participation and estimation caveats vary; preserve source caveats. Rape uses rape_revised. Monthly CDE reported values are not substituted."
     },
     {
       "id": "eia-epa-2-10",

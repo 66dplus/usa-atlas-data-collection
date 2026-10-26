@@ -1,7 +1,7 @@
 {
   "checkedOn": "2026-10-26",
   "checkedUsing": "Official publisher pages and public endpoints; retrieval/access status is recorded separately from suitability.",
-  "collectorVersion": "2026.10.26.1",
+  "collectorVersion": "2026.10.26.2",
   "readerContractVersion": "1.0.0",
   "sourceReleaseVersion": "Each publisher's release is recorded independently; this is not a reader contract version.",
   "reviews": [
@@ -22,13 +22,17 @@
       "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
       "releaseDate": "2026-08-14",
       "observationPeriod": "Calendar year 2025",
-      "status": "The official CDE catalog lists estimated_crimes_1979_2025.csv (1979-2025; last modified August 2026). A bounded no-key request to the catalog-derived static CSV path returned HTTP 404. Annual 2025 state-by-offense values remain unavailable; the frozen 2023 baseline is retained and 2025 remains null.",
+      "status": "Official annual SRS estimated-crimes workbook retrieved 2026-10-26 and hash-verified; 2,440 annual rows cover 1979-2025, including 52 native 2025 geography rows. Seven 2025 state/national offense counts and same-row FBI population denominators are prepared locally.",
       "limitations": [
-        "The FBI reports 2025 program data from 17,075 agencies covering 96.2% of inhabitants; participation and estimation coverage vary by state/offense.",
-        "Monthly CDE series are not annual CIUS estimates; do not sum rates or admit monthly completeness as annual values.",
-        "FBI annual rates use the source estimate/reporting population and are not recalculated against Census 2024 population.",
-        "The catalog metadata is verified (SHA-256 c499ea67d425ef88d6c0304a6d2bb5805accc4f06e76295c650431a121c4d5ae); the direct static payload attempt returned HTTP 404. No annual values are synthesized from monthly reports."
-      ]
+        "The original payload is OOXML XLSX despite the .csv filename and text/csv content type; parser dispatches by bytes.",
+        "The 2025 annual estimates have state/offense caveats, including Florida and North Dakota source limitations; preserve caveats with each row.",
+        "Annual rates use the FBI source population and are not recalculated against Census 2024 population.",
+        "Rape uses the revised rape definition; legacy rape is retained in the raw source but not used for field 04.07.",
+        "Monthly CDE reported values are separate and do not establish annual completeness."
+      ],
+      "rawSha256": "e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
     },
     {
       "sourceId": "eia-2025-release",
