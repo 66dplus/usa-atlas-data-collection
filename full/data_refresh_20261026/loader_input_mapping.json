@@ -1,0 +1,217 @@
+{
+  "format": "usa_maps_prepared_loader_mapping_v1",
+  "targetReaderContract": "v2",
+  "collectorVersion": "2026.10.26.1",
+  "admissionStatus": "not_admitted",
+  "rows": [
+    {
+      "fieldId": "02.01",
+      "source": "prepared/bls-laus-2025.csv",
+      "filter": "measure_code=03; preserve monthly and annual rows separately",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "value",
+      "unit": "%",
+      "sourceAdjustment": "not seasonally adjusted (NSA); BLS LAUS",
+      "numeratorDenominator": {
+        "numerator": "unemployed persons",
+        "denominator": "civilian labor force",
+        "sourceRate": "BLS published rate; do not recompute from rounded components"
+      },
+      "provenance": [
+        "series_id",
+        "bls_period_code",
+        "source_release",
+        "raw_sha256",
+        "retrieved_at"
+      ]
+    },
+    {
+      "fieldId": "02.02",
+      "source": "prepared/bls-laus-2025.csv",
+      "filter": "measure_code=04; period_type=monthly or annual exactly as source returned",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "value",
+      "unit": "persons",
+      "sourceAdjustment": "not seasonally adjusted (NSA)",
+      "numeratorDenominator": {
+        "numerator": "unemployed persons",
+        "denominator": null
+      },
+      "provenance": [
+        "series_id",
+        "bls_period_code",
+        "source_release",
+        "raw_sha256",
+        "retrieved_at"
+      ]
+    },
+    {
+      "fieldId": "02.03",
+      "source": "prepared/bls-laus-2025.csv",
+      "filter": "measure_code=05; period_type=monthly or annual exactly as source returned",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "value",
+      "unit": "persons",
+      "sourceAdjustment": "not seasonally adjusted (NSA)",
+      "numeratorDenominator": {
+        "numerator": "employed persons",
+        "denominator": null
+      },
+      "provenance": [
+        "series_id",
+        "bls_period_code",
+        "source_release",
+        "raw_sha256",
+        "retrieved_at"
+      ]
+    },
+    {
+      "fieldId": "02.04",
+      "source": "prepared/bls-laus-2025.csv",
+      "filter": "measure_code=06; period_type=monthly or annual exactly as source returned",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "value",
+      "unit": "persons",
+      "sourceAdjustment": "not seasonally adjusted (NSA)",
+      "numeratorDenominator": {
+        "numerator": "civilian labor force",
+        "denominator": null
+      },
+      "provenance": [
+        "series_id",
+        "bls_period_code",
+        "source_release",
+        "raw_sha256",
+        "retrieved_at"
+      ]
+    },
+    {
+      "fieldId": "04.01-04.07",
+      "source": "prepared/fbi-cde-2025-state-monthly.csv",
+      "filter": "source_field actuals or rates kept as distinct row variants; monthly only; no 2025 annual observation yet",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "source_value",
+      "unit": "offenses or per_100000, according to source_field",
+      "sourceAdjustment": "FBI CDE reported monthly actuals/rates; not annual estimated CIUS Table 5",
+      "numeratorDenominator": {
+        "numerator": "source actuals for count rows",
+        "denominator": "FBI-published rate denominator for rate rows"
+      },
+      "provenance": [
+        "field_id",
+        "source_field",
+        "source_release",
+        "source_url",
+        "raw_sha256",
+        "retrieved_at"
+      ],
+      "readiness": "annual state estimates not captured; monthly completeness does not confer annual readiness"
+    },
+    {
+      "fieldId": "08.05",
+      "source": "prepared/eia-electricity-price-2025-all-sectors.csv",
+      "filter": "year=2025; sector=ALL; retain source-missing as null",
+      "geo": "geo_type,geo_id",
+      "period": "year; annual",
+      "value": "value",
+      "unit": "cents/kWh",
+      "sourceAdjustment": "EIA All Sectors average retail price",
+      "numeratorDenominator": {
+        "numerator": null,
+        "denominator": null
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "raw_sha256",
+        "retrieved_at"
+      ]
+    },
+    {
+      "fieldId": "07.01",
+      "source": "prepared/irs-agi-per-resident-2023.csv",
+      "filter": "matching tax year and July 1 population year 2023",
+      "geo": "geo_type,geo_id",
+      "period": "2023; annual",
+      "value": "value",
+      "unit": "USD/person",
+      "sourceAdjustment": "county A00100 bands 1-8 summed; thousand USD converted to USD",
+      "numeratorDenominator": {
+        "numerator": "IRS A00100 * 1000 USD",
+        "denominator": "Census PEP total population 2023"
+      },
+      "provenance": [
+        "source_release",
+        "formula",
+        "raw_sha256",
+        "retrieved_at"
+      ]
+    },
+    {
+      "fieldId": "11.01",
+      "source": "prepared/cancer-2023-rates.csv",
+      "filter": "annual 2023 state/DC incidence count; retain source suppression semantics",
+      "geo": "geo_type,geo_id",
+      "period": "2023; annual",
+      "value": "value",
+      "unit": "per 100000",
+      "sourceAdjustment": "crude; not age-adjusted",
+      "numeratorDenominator": {
+        "numerator": "USCS all-sites cases 2023",
+        "denominator": "Census PEP total population 2023"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "source_retrieved_at",
+        "source_input_sha256"
+      ]
+    },
+    {
+      "fieldId": "11.02",
+      "source": "prepared/hiv-2024-rates.csv",
+      "filter": "annual 2024 age 13+ diagnosis count; preserve provisional status",
+      "geo": "geo_type,geo_id",
+      "period": "2024; annual",
+      "value": "value",
+      "unit": "per 100000",
+      "sourceAdjustment": "crude; not age-adjusted",
+      "numeratorDenominator": {
+        "numerator": "CDC provisional diagnoses age 13+",
+        "denominator": "Census PEP age 13+ population 2024"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "source_retrieved_at",
+        "source_input_sha256"
+      ]
+    },
+    {
+      "fieldId": "11.03",
+      "source": "prepared/child-deaths-under18-2024-rates.csv",
+      "filter": "annual 2024 under-18 deaths; counts <=9 remain unavailable",
+      "geo": "geo_type,geo_id",
+      "period": "2024; annual",
+      "value": "value",
+      "unit": "per 100000",
+      "sourceAdjustment": "crude; not age-adjusted",
+      "numeratorDenominator": {
+        "numerator": "CDC WONDER resident deaths age under 18",
+        "denominator": "Census PEP under-18 population 2024"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "source_retrieved_at",
+        "source_input_sha256"
+      ]
+    }
+  ],
+  "missingnessRule": "Do not coerce null, source_missing, source_suppressed, absent M13, absent month, or absent geography to zero."
+}

@@ -1,0 +1,1630 @@
+#!/usr/bin/env python3
+"""Download and prepare scoped public data locally; never writes to a database.
+
+The source bytes and generated tables are kept below ignored full/runtime. The
+inventory is written to /tmp/usa-maps-data-flow-20261026/data-results.json.
+It reads no credential files. When the parent injects approved provider keys
+into the environment, BLS v2 and EIA calls use those values without logging or
+persisting them in URLs, metadata, errors, or echoed response bodies.
+"""
+from __future__ import annotations
+
+import argparse
+import csv
+from datetime import datetime, timezone
+from decimal import Decimal, InvalidOperation
+import hashlib
+from html.parser import HTMLParser
+import json
+import os
+from pathlib import Path
+import re
+import sys
+import time
+from typing import Any, Iterable
+import urllib.parse
+from urllib.error import HTTPError, URLError
+from urllib.request import Request, urlopen
+
+
+ROOT = Path(__file__).resolve().parents[2]
+PACKAGE = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT / "pilot"))
+import run_pilot as safety  # noqa: E402
+RUNTIME = ROOT / "full/runtime/data_refresh_20261026"
+INVENTORY = Path("/tmp/usa-maps-data-flow-20261026/data-results.json")
+SOURCES = json.loads((PACKAGE / "source_catalog.json").read_text(encoding="utf-8"))["sources"]
+USER_AGENT = "usa-maps-local-data-refresh/2026.10.26 (public data preparation)"
+BLS_URL = "https://api.bls.gov/publicAPI/v2/timeseries/data/"
+BLS_DAILY_LIMIT = 500
+BLS_DAILY_BUDGET = 20
+BLS_PLAN_VERSION = "laus-nsa-2025-v2"
+FBI_STATES = [
+    ("AL", "Alabama", "01"), ("AK", "Alaska", "02"), ("AZ", "Arizona", "04"),
+    ("AR", "Arkansas", "05"), ("CA", "California", "06"), ("CO", "Colorado", "08"),
+    ("CT", "Connecticut", "09"), ("DE", "Delaware", "10"), ("DC", "District of Columbia", "11"),
+    ("FL", "Florida", "12"), ("GA", "Georgia", "13"), ("HI", "Hawaii", "15"),
+    ("ID", "Idaho", "16"), ("IL", "Illinois", "17"), ("IN", "Indiana", "18"),
+    ("IA", "Iowa", "19"), ("KS", "Kansas", "20"), ("KY", "Kentucky", "21"),
+    ("LA", "Louisiana", "22"), ("ME", "Maine", "23"), ("MD", "Maryland", "24"),
+    ("MA", "Massachusetts", "25"), ("MI", "Michigan", "26"), ("MN", "Minnesota", "27"),
+    ("MS", "Mississippi", "28"), ("MO", "Missouri", "29"), ("MT", "Montana", "30"),
+    ("NE", "Nebraska", "31"), ("NV", "Nevada", "32"), ("NH", "New Hampshire", "33"),
+    ("NJ", "New Jersey", "34"), ("NM", "New Mexico", "35"), ("NY", "New York", "36"),
+    ("NC", "North Carolina", "37"), ("ND", "North Dakota", "38"), ("OH", "Ohio", "39"),
+    ("OK", "Oklahoma", "40"), ("OR", "Oregon", "41"), ("PA", "Pennsylvania", "42"),
+    ("RI", "Rhode Island", "44"), ("SC", "South Carolina", "45"), ("SD", "South Dakota", "46"),
+    ("TN", "Tennessee", "47"), ("TX", "Texas", "48"), ("UT", "Utah", "49"),
+    ("VT", "Vermont", "50"), ("VA", "Virginia", "51"), ("WA", "Washington", "53"),
+    ("WV", "West Virginia", "54"), ("WI", "Wisconsin", "55"), ("WY", "Wyoming", "56"),
+]
+STATE_NAMES = {abbr: (name, fips) for abbr, name, fips in FBI_STATES}
+STATE_FIPS = {fips for _, _, fips in FBI_STATES}
+BLS_MEASURES = {
+    "03": ("unemployment_rate", "%"),
+    "04": ("unemployed", "persons"),
+    "05": ("employed", "persons"),
+    "06": ("labor_force", "persons"),
+}
+FBI_OFFENSES = {
+    "04.01": ("homicide", "Murders"),
+    "04.02": ("violent-crime", "Violent crime"),
+    "04.03": ("robbery", "Robbery"),
+    "04.04": ("aggravated-assault", "Aggravated assault"),
+    "04.05": ("burglary", "Burglary"),
+    "04.06": ("motor-vehicle-theft", "Motor vehicle theft"),
+    "04.07": ("rape", "Rape"),
+}
+FRESHNESS_PAGES = {
+    "bls_laus_tables": "https://www.bls.gov/lau/tables.htm",
+    "bls_laus_api_faq": "https://www.bls.gov/developers/api_faqs.htm",
+    "bls_laus_annual_notice": "https://www.bls.gov/lau/launews1.htm",
+    "acs_schedule": "https://www.census.gov/programs-surveys/acs/news/data-releases/2025/release-schedule.html",
+    "places_release": "https://www.cdc.gov/places/current-release-notes/",
+    "bea_rpp": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area",
+    "irs_county_2023": "https://www.irs.gov/statistics/soi-tax-stats-county-data-2023",
+    "uscs_technical_notes": "https://www.cdc.gov/united-states-cancer-statistics/technical-notes/",
+    "hiv_release": "https://www.cdc.gov/hiv-data/nhss/hiv-diagnoses-deaths-prevalence.html",
+    "wonder_mortality": "https://wonder.cdc.gov/wonder/help/mcd-expanded.html",
+    "fbi_2025_release": "https://www.fbi.gov/news/press-releases/fbi-releases-2025-reported-crimes-in-the-nation-statistics",
+    "eia_annual": "https://www.eia.gov/electricity/annual/",
+    "census_pep_v2025": "https://www.census.gov/programs-surveys/popest/data/data-sets.2024.html",
+}
+DOWNLOADS = {
+    "pep_county_totals": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/totals/co-est2025-alldata.csv",
+    "pep_county_age": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/asrh/cc-est2025-syasex.csv",
+    "pep_national_age": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/national/asrh/nc-est2025-agesex-res.csv",
+    "irs_county_2023": "https://www.irs.gov/pub/irs-soi/23incyallagi.csv",
+    "eia_table_2025": "https://www.eia.gov/electricity/annual/table.php?t=epa_02_10.html",
+    "hiv_tables_2024": "https://www.cdc.gov/hiv-data/media/files/2026/04/hiv_surveillance_data_release_tables_2024.xlsx",
+    "bls_bulk_2025_forward": "https://download.bls.gov/pub/time.series/la/la.data.0.CurrentU25-29",
+}
+MEDICAL_RECEIPTS = {
+    "cancer2023": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.01/observations.jsonl",
+    "hiv2024": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.02/observations.jsonl",
+    "childDeaths2024": ROOT.parents[1] / "evidence/medical-import-20261011/final/wave-output/prepared/11.03/observations.jsonl",
+}
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def sha256_bytes(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def sha256_file(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def atomic_write(path: Path, content: bytes) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_name(path.name + ".tmp")
+    temp.write_bytes(content)
+    temp.replace(path)
+
+
+def atomic_json(path: Path, value: Any) -> None:
+    atomic_write(path, (json.dumps(value, indent=2, ensure_ascii=False, sort_keys=True) + "\n").encode())
+
+
+def request_bytes(url: str, data: bytes | None = None, headers: dict[str, str] | None = None,
+                  timeout: int = 90) -> tuple[bytes, int, dict[str, str]]:
+    request_headers = {"User-Agent": USER_AGENT}
+    if headers:
+        request_headers.update(headers)
+    request = Request(url, data=data, headers=request_headers)
+    with urlopen(request, timeout=timeout) as response:
+        return response.read(), int(response.status), dict(response.headers.items())
+
+
+def public_url(url: str) -> str:
+    return safety.canonical_url(url)
+
+
+def source_bytes_safe(payload: bytes) -> bool:
+    """Reject provider output if it echoes any injected environment credential."""
+    text = payload.decode("utf-8", errors="ignore")
+    if "[REDACTED]" in safety.redact_text(text):
+        return False
+    for name in safety.CREDENTIAL_NAMES:
+        secret = os.getenv(name, "")
+        if not secret:
+            continue
+        variants = {secret, urllib.parse.quote(secret, safe=""), urllib.parse.quote_plus(secret),
+                    urllib.parse.quote(secret, safe="/"), urllib.parse.quote_plus(secret, safe="")}
+        if any(variant and variant in text for variant in variants):
+            return False
+    return True
+
+
+def source_meta_path() -> Path:
+    return RUNTIME / "state/source-artifacts.json"
+
+
+def load_source_meta() -> dict[str, Any]:
+    path = source_meta_path()
+    if path.exists():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if isinstance(data, dict) and isinstance(data.get("artifacts"), dict):
+                return data
+        except (OSError, json.JSONDecodeError):
+            pass
+    return {"format": "data_refresh_source_inventory_v1", "artifacts": {}}
+
+
+def download_file(source_id: str, url: str, relative_path: str,
+                  license_note: str = "Official public source; source citation retained.") -> dict[str, Any]:
+    meta = load_source_meta()
+    path = RUNTIME / "raw" / relative_path
+    record = meta["artifacts"].get(source_id)
+    if path.exists() and record and record.get("sha256") == sha256_file(path):
+        return {**record, "status": "reused_verified"}
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_name(path.name + ".part")
+    start = temp.stat().st_size if temp.exists() else 0
+    headers = {"Range": f"bytes={start}-"} if start else {}
+    retrieved_at = utc_now()
+    try:
+        request = Request(url, headers={"User-Agent": USER_AGENT, **headers})
+        with urlopen(request, timeout=180) as response:
+            status = int(response.status)
+            if status == 206 and start:
+                mode = "ab"
+            else:
+                mode = "wb"
+                start = 0
+            with temp.open(mode) as out:
+                while True:
+                    block = response.read(1024 * 1024)
+                    if not block:
+                        break
+                    out.write(block)
+            expected = response.headers.get("Content-Length")
+            total = temp.stat().st_size
+            if expected and status == 200 and total != int(expected):
+                raise OSError("content_length_mismatch")
+            if expected and status == 206:
+                content_range = response.headers.get("Content-Range", "")
+                match = re.search(r"/(\d+)$", content_range)
+                if match and total != int(match.group(1)):
+                    raise OSError("partial_download_incomplete")
+        if not source_bytes_safe(temp.read_bytes()):
+            temp.unlink(missing_ok=True)
+            raise ValueError("response_contains_injected_secret")
+        temp.replace(path)
+        value = {
+            "sourceId": source_id, "url": public_url(url), "path": str(path), "sha256": sha256_file(path),
+            "bytes": path.stat().st_size, "retrievedAt": retrieved_at,
+            "httpStatus": status, "contentType": response.headers.get("Content-Type"),
+            "license": license_note, "status": "downloaded",
+        }
+    except HTTPError as error:
+        value = {"sourceId": source_id, "url": public_url(url), "path": str(path), "attemptedAt": retrieved_at,
+                 "httpStatus": error.code, "status": "blocked_http", "reason": f"http_{error.code}",
+                 "license": license_note}
+    except (URLError, TimeoutError, OSError, ValueError) as error:
+        value = {"sourceId": source_id, "url": public_url(url), "path": str(path), "attemptedAt": retrieved_at,
+                 "status": "unavailable", "reason": type(error).__name__, "license": license_note}
+    meta["artifacts"][source_id] = value
+    atomic_json(source_meta_path(), meta)
+    return value
+
+
+def download_fixed_sources() -> dict[str, Any]:
+    metadata = {source["id"]: source for source in SOURCES}
+    results: dict[str, Any] = {}
+    fixed = [
+        ("census-pep-county-totals-v2025", "pep_county_totals", "census/pep-v2025/co-est2025-alldata.csv"),
+        ("census-pep-county-single-age-v2025", "pep_county_age", "census/pep-v2025/cc-est2025-syasex.csv"),
+        ("census-pep-national-single-age-v2025", "pep_national_age", "census/pep-v2025/nc-est2025-agesex-res.csv"),
+        ("irs-soi-county-2023", "irs_county_2023", "irs/23incyallagi.csv"),
+        ("eia-epa-2-10", "eia_table_2025", "eia/epa-02-10.html"),
+        ("cdc-hiv-2024-tables", "hiv_tables_2024", "cdc/hiv_surveillance_data_release_tables_2024.xlsx"),
+        ("bls-laus-bulk", "bls_bulk_2025_forward", "bls/la.data.0.CurrentU25-29"),
+    ]
+    for source_id, key, relative in fixed:
+        source = metadata[source_id]
+        results[key] = download_file(source_id, DOWNLOADS[key], relative, source.get("license", ""))
+        print(f"source {key}: {results[key]['status']}", flush=True)
+    return results
+
+
+def download_freshness_pages() -> dict[str, Any]:
+    output = {}
+    for name, url in FRESHNESS_PAGES.items():
+        output[name] = download_file("freshness-page-" + name, url, f"pages/{name}.html",
+                                     "Official publisher page snapshot; use the listed page citation.")
+        print(f"page {name}: {output[name]['status']}", flush=True)
+    return output
+
+
+def safe_int(value: str | None) -> int | None:
+    if value is None:
+        return None
+    cleaned = value.strip().replace(",", "")
+    if not cleaned or cleaned in {"-", "—", "NA", "N/A", "(X)"}:
+        return None
+    try:
+        return int(cleaned)
+    except ValueError:
+        number = Decimal(cleaned)
+        if number != number.to_integral_value():
+            raise ValueError("non_integer_population")
+        return int(number)
+
+
+def read_csv(path: Path) -> Iterable[dict[str, str]]:
+    with path.open("rb") as raw:
+        has_utf8_bom = raw.read(3) == b"\xef\xbb\xbf"
+    # Census county files include legacy Windows-1252 place names in otherwise
+    # ordinary CSV. Preserve the original bytes; decode only for preparation.
+    encoding = "utf-8-sig" if has_utf8_bom else "cp1252"
+    with path.open("r", encoding=encoding, newline="") as stream:
+        yield from csv.DictReader(stream)
+
+
+def pep_year_for_source(year: str) -> str:
+    # PEP's county single-age file uses YEAR=1 for 2020 through YEAR=6 for 2025.
+    if year not in {"2023", "2024"}:
+        raise ValueError("unsupported_pep_year")
+    return str(int(year) - 2019)
+
+
+def prepare_population() -> dict[str, Any]:
+    totals_file = RUNTIME / "raw/census/pep-v2025/co-est2025-alldata.csv"
+    age_file = RUNTIME / "raw/census/pep-v2025/cc-est2025-syasex.csv"
+    national_age_file = RUNTIME / "raw/census/pep-v2025/nc-est2025-agesex-res.csv"
+    needed = [totals_file, age_file, national_age_file]
+    if not all(path.exists() for path in needed):
+        return {"status": "blocked_inputs", "missing": [str(p) for p in needed if not p.exists()]}
+
+    population: dict[tuple[str, str, str], dict[str, Any]] = {}
+    county_totals: dict[tuple[str, str], int] = {}
+    state_totals: dict[tuple[str, str], int] = {}
+    national_totals: dict[str, int] = {}
+    for row in read_csv(totals_file):
+        state = row.get("STATE", "").zfill(2)
+        county = row.get("COUNTY", "").zfill(3)
+        sumlev = row.get("SUMLEV", "")
+        if state not in STATE_FIPS and state != "00":
+            continue
+        for year in ("2023", "2024"):
+            value = safe_int(row.get("POPESTIMATE" + year))
+            if value is None:
+                continue
+            if state == "00" or sumlev == "010":
+                national_totals[year] = value
+            elif county == "000" or sumlev == "040":
+                state_totals[(state, year)] = value
+            elif sumlev == "050" or county != "000":
+                county_totals[(state + county, year)] = value
+
+    under18_counties: dict[tuple[str, str], int] = {}
+    under13_counties: dict[tuple[str, str], int] = {}
+    age_coverage: dict[tuple[str, str], set[int]] = {}
+    under13_coverage: dict[tuple[str, str], set[int]] = {}
+    for row in read_csv(age_file):
+        state = row.get("STATE", "").zfill(2)
+        county = row.get("COUNTY", "").zfill(3)
+        if state not in STATE_FIPS:
+            continue
+        age = safe_int(row.get("AGE"))
+        if age is None or not 0 <= age <= 17:
+            continue
+        fips = state + county
+        for year in ("2023", "2024"):
+            if row.get("YEAR") != pep_year_for_source(year):
+                continue
+            value = safe_int(row.get("TOT_POP"))
+            if value is None:
+                continue
+            key = (fips, year)
+            under18_counties[key] = under18_counties.get(key, 0) + value
+            age_coverage.setdefault(key, set()).add(age)
+            if age <= 12:
+                under13_counties[key] = under13_counties.get(key, 0) + value
+                under13_coverage.setdefault(key, set()).add(age)
+
+    # The national age file has both-sex rows (SEX=0) and single-age values.
+    national_under18: dict[str, int] = {}
+    national_under13: dict[str, int] = {}
+    national_age_coverage: dict[str, set[int]] = {}
+    national_under13_coverage: dict[str, set[int]] = {}
+    for row in read_csv(national_age_file):
+        if row.get("SEX") != "0":
+            continue
+        age = safe_int(row.get("AGE"))
+        if age is None or not 0 <= age <= 17:
+            continue
+        for year in ("2023", "2024"):
+            value = safe_int(row.get("POPESTIMATE" + year))
+            if value is None:
+                continue
+            national_under18[year] = national_under18.get(year, 0) + value
+            national_age_coverage.setdefault(year, set()).add(age)
+            if age <= 12:
+                national_under13[year] = national_under13.get(year, 0) + value
+                national_under13_coverage.setdefault(year, set()).add(age)
+
+    expected_counties = {geo for geo, _ in county_totals}
+    output_rows: list[dict[str, Any]] = []
+    missing_counties: list[dict[str, Any]] = []
+    age13_counties: dict[tuple[str, str], int] = {}
+    for year in ("2023", "2024"):
+        for fips in sorted(expected_counties):
+            value = county_totals.get((fips, year))
+            if value is None:
+                missing_counties.append({"geo_id": fips, "year": year, "kind": "total_population"})
+                continue
+            output_rows.append({"geo_id": fips, "geo_type": "county", "year": year,
+                                "population_kind": "total", "value": value,
+                                "unit": "persons", "source_release": "Census PEP Vintage 2025",
+                                "aggregation": "source_county_estimate"})
+            age_key = (fips, year)
+            if age_coverage.get(age_key) == set(range(18)):
+                output_rows.append({"geo_id": fips, "geo_type": "county", "year": year,
+                                    "population_kind": "under_18", "value": under18_counties[age_key],
+                                    "unit": "persons", "source_release": "Census PEP Vintage 2025",
+                                    "aggregation": "sum of single ages 0 through 17"})
+            else:
+                missing_counties.append({"geo_id": fips, "year": year, "kind": "under_18_population",
+                                         "missingAges": sorted(set(range(18)) - age_coverage.get(age_key, set()))})
+            if under13_coverage.get(age_key) == set(range(13)):
+                age13 = value - under13_counties[age_key]
+                if age13 >= 0:
+                    age13_counties[age_key] = age13
+                    output_rows.append({"geo_id": fips, "geo_type": "county", "year": year,
+                                        "population_kind": "age_13_plus", "value": age13,
+                                        "unit": "persons", "source_release": "Census PEP Vintage 2025",
+                                        "aggregation": "total population minus both-sex single ages 0 through 12"})
+                else:
+                    missing_counties.append({"geo_id": fips, "year": year, "kind": "age_13_plus_population",
+                                             "reason": "subtraction_negative"})
+            else:
+                missing_counties.append({"geo_id": fips, "year": year, "kind": "age_13_plus_population",
+                                         "missingAges": sorted(set(range(13)) - under13_coverage.get(age_key, set()))})
+
+        for state, _name, _abbr in FBI_STATES:
+            fips = STATE_NAMES[state][1]
+            value = state_totals.get((fips, year))
+            if value is None:
+                member_values = [v for (geo, y), v in county_totals.items()
+                                 if y == year and geo.startswith(fips)]
+                if member_values:
+                    value = sum(member_values)
+                    method = "sum of county PEP total estimates; state total source row absent"
+                else:
+                    method = "missing source value"
+            else:
+                method = "source state estimate"
+            if value is not None:
+                output_rows.append({"geo_id": fips, "geo_type": "state", "year": year,
+                                    "population_kind": "total", "value": value, "unit": "persons",
+                                    "source_release": "Census PEP Vintage 2025", "aggregation": method})
+            child_values = [v for (geo, y), v in under18_counties.items()
+                            if y == year and geo.startswith(fips)]
+            expected_state_counties = [geo for geo in expected_counties if geo.startswith(fips)]
+            if len(child_values) == len(expected_state_counties) and expected_state_counties:
+                output_rows.append({"geo_id": fips, "geo_type": "state", "year": year,
+                                    "population_kind": "under_18", "value": sum(child_values),
+                                    "unit": "persons", "source_release": "Census PEP Vintage 2025",
+                                    "aggregation": "sum of county single ages 0 through 17"})
+            else:
+                missing_counties.append({"geo_id": fips, "year": year, "kind": "state_under_18_population",
+                                         "expectedCounties": len(expected_state_counties),
+                                         "foundCounties": len(child_values)})
+            age13_values = [v for (geo, y), v in age13_counties.items() if y == year and geo.startswith(fips)]
+            if len(age13_values) == len(expected_state_counties) and expected_state_counties:
+                output_rows.append({"geo_id": fips, "geo_type": "state", "year": year,
+                                    "population_kind": "age_13_plus", "value": sum(age13_values),
+                                    "unit": "persons", "source_release": "Census PEP Vintage 2025",
+                                    "aggregation": "sum of county age 13+ estimates"})
+            else:
+                missing_counties.append({"geo_id": fips, "year": year, "kind": "state_age_13_plus_population",
+                                         "expectedCounties": len(expected_state_counties),
+                                         "foundCounties": len(age13_values)})
+
+        total_us = national_totals.get(year)
+        if total_us is None:
+            state_values = [state_totals.get((STATE_NAMES[abbr][1], year)) for abbr, _, _ in FBI_STATES]
+            if all(value is not None for value in state_values):
+                total_us = sum(value for value in state_values if value is not None)
+                total_method = "sum of 50 state and DC PEP estimates; national row absent"
+            else:
+                total_method = "missing source value"
+        else:
+            total_method = "source U.S. estimate"
+        if total_us is not None:
+            output_rows.append({"geo_id": "US", "geo_type": "nation", "year": year,
+                                "population_kind": "total", "value": total_us, "unit": "persons",
+                                "source_release": "Census PEP Vintage 2025", "aggregation": total_method})
+        if national_age_coverage.get(year) == set(range(18)):
+            output_rows.append({"geo_id": "US", "geo_type": "nation", "year": year,
+                                "population_kind": "under_18", "value": national_under18[year],
+                                "unit": "persons", "source_release": "Census PEP Vintage 2025",
+                                "aggregation": "sum of national single ages 0 through 17"})
+        else:
+            missing_counties.append({"geo_id": "US", "year": year, "kind": "national_under_18_population",
+                                     "missingAges": sorted(set(range(18)) - national_age_coverage.get(year, set()))})
+        if national_under13_coverage.get(year) == set(range(13)) and total_us is not None:
+            age13 = total_us - national_under13[year]
+            if age13 >= 0:
+                output_rows.append({"geo_id": "US", "geo_type": "nation", "year": year,
+                                    "population_kind": "age_13_plus", "value": age13,
+                                    "unit": "persons", "source_release": "Census PEP Vintage 2025",
+                                    "aggregation": "total population minus national both-sex single ages 0 through 12"})
+            else:
+                missing_counties.append({"geo_id": "US", "year": year, "kind": "national_age_13_plus_population",
+                                         "reason": "subtraction_negative"})
+        else:
+            missing_counties.append({"geo_id": "US", "year": year, "kind": "national_age_13_plus_population",
+                                     "missingAges": sorted(set(range(13)) - national_under13_coverage.get(year, set()))})
+
+    output_rows.sort(key=lambda row: (row["year"], row["population_kind"], row["geo_type"], row["geo_id"]))
+    write_csv(RUNTIME / "prepared/population-2023-2024.csv", output_rows)
+    write_jsonl(RUNTIME / "prepared/population-missingness.jsonl", missing_counties)
+    return {
+        "status": "complete" if not missing_counties else "partial",
+        "countyGeographies": len(expected_counties),
+        "preparedRows": len(output_rows),
+        "missingnessRows": len(missing_counties),
+        "missingnessPath": str(RUNTIME / "prepared/population-missingness.jsonl"),
+        "output": str(RUNTIME / "prepared/population-2023-2024.csv"),
+        "nationalUnder18Crosscheck": national_under18,
+    }
+
+
+def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_name(path.name + ".tmp")
+    if not rows:
+        atomic_write(path, b"")
+        return
+    columns = list(dict.fromkeys(key for row in rows for key in row))
+    with temp.open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=columns, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+    temp.replace(path)
+
+
+def write_jsonl(path: Path, rows: Iterable[dict[str, Any]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temp = path.with_name(path.name + ".tmp")
+    count = 0
+    with temp.open("w", encoding="utf-8") as stream:
+        for row in rows:
+            stream.write(json.dumps(row, ensure_ascii=False, sort_keys=True) + "\n")
+            count += 1
+    temp.replace(path)
+
+
+class EiaTableParser(HTMLParser):
+    """Collect table rows without a third-party HTML or spreadsheet library."""
+
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.in_table = False
+        self.in_row = False
+        self.in_cell = False
+        self.current_cell: list[str] = []
+        self.current_row: list[str] = []
+        self.rows: list[list[str]] = []
+        self.all_rows: list[list[str]] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag == "table":
+            self.in_table = True
+            self.rows = []
+        elif self.in_table and tag == "tr":
+            self.in_row = True
+            self.current_row = []
+        elif self.in_table and self.in_row and tag in {"td", "th"}:
+            self.in_cell = True
+            self.current_cell = []
+
+    def handle_data(self, data: str) -> None:
+        if self.in_cell:
+            self.current_cell.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if self.in_cell and tag in {"td", "th"}:
+            self.current_row.append(" ".join(" ".join(self.current_cell).split()))
+            self.in_cell = False
+        elif self.in_row and tag == "tr":
+            if self.current_row:
+                self.rows.append(self.current_row)
+            self.in_row = False
+        elif tag == "table" and self.in_table:
+            self.all_rows.extend(self.rows)
+            self.in_table = False
+
+
+def eia_number(value: str) -> Decimal | None:
+    value = value.strip().replace(",", "")
+    if not value or value in {"--", "—", "-", "N/A"}:
+        return None
+    return Decimal(value)
+
+
+def fetch_eia_api() -> dict[str, Any]:
+    """Fetch annual ALL-sector retail prices using only an injected EIA API key."""
+    key = os.getenv("EIA_API_KEY")
+    if not key:
+        return {"status": "not_requested_no_environment_key"}
+    params = [
+        ("api_key", key), ("frequency", "annual"), ("data[0]", "price"),
+        ("facets[sectorid][]", "ALL"), ("start", "2025"), ("end", "2025"),
+        ("offset", "0"), ("length", "5000"),
+    ]
+    url = "https://api.eia.gov/v2/electricity/retail-sales/data/?" + urllib.parse.urlencode(params)
+    path = RUNTIME / "raw/eia/electricity-retail-sales-2025-all.json"
+    meta_path = path.with_suffix(".meta.json")
+    retrieved_at = utc_now()
+    try:
+        payload, status, headers = request_bytes(url, timeout=90)
+        if not source_bytes_safe(payload):
+            return {"status": "blocked_secret_echo", "url": public_url(url), "attemptedAt": retrieved_at}
+        atomic_write(path, payload)
+        artifact = {"sourceId": "eia-retail-sales-api", "url": public_url(url), "path": str(path),
+                    "sha256": sha256_bytes(payload), "bytes": len(payload), "retrievedAt": retrieved_at,
+                    "httpStatus": status, "contentType": headers.get("Content-Type"),
+                    "license": "Official EIA public statistics; source URL retained.",
+                    "status": "downloaded", "credentialMode": "registered"}
+        atomic_json(meta_path, artifact)
+        try:
+            data = json.loads(payload.decode("utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            return {**artifact, "status": "downloaded_unparsed", "reason": "json_decode"}
+        rows = data.get("response", {}).get("data")
+        if not isinstance(rows, list):
+            return {**artifact, "status": "downloaded_unparsed", "reason": "response_shape"}
+        return {**artifact, "rowCount": len(rows)}
+    except HTTPError as error:
+        return {"sourceId": "eia-retail-sales-api", "url": public_url(url), "attemptedAt": retrieved_at,
+                "httpStatus": error.code, "status": "blocked_http", "reason": f"http_{error.code}"}
+    except (URLError, TimeoutError, OSError, ValueError, json.JSONDecodeError) as error:
+        return {"sourceId": "eia-retail-sales-api", "url": public_url(url), "attemptedAt": retrieved_at,
+                "status": "unavailable", "reason": type(error).__name__}
+
+
+def parse_eia_api(payload: bytes) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    response = json.loads(payload.decode("utf-8")).get("response", {})
+    source_rows = response.get("data", [])
+    rows = []
+    fips_by_abbr = {abbr: (name, fips) for abbr, name, fips in FBI_STATES}
+    for item in source_rows:
+        state = str(item.get("stateid", "")).upper()
+        if state not in fips_by_abbr or str(item.get("period")) != "2025":
+            continue
+        if str(item.get("sectorid", "ALL")).upper() not in {"ALL", "ALL_SECTORS"}:
+            continue
+        name, fips = fips_by_abbr[state]
+        price = item.get("price")
+        value = eia_number(str(price)) if price is not None else None
+        rows.append({"geo_id": fips, "geo_type": "state", "state": state, "state_name": name,
+                     "year": "2025", "value": str(value) if value is not None else None,
+                     "unit": str(item.get("price-units", "cents/kWh")), "sector": "ALL",
+                     "source_release": "EIA Electric Power Annual 2025",
+                     "source_url": "https://api.eia.gov/v2/electricity/retail-sales/data/",
+                     "status": "observed" if value is not None else "source_missing"})
+    by_geo = {row["geo_id"]: row for row in rows}
+    if len(by_geo) != 51:
+        raise ValueError(f"eia_state_coverage_{len(by_geo)}_of_51")
+    ordered = [by_geo[fips] for _, _, fips in FBI_STATES]
+    return ordered, {"stateRows": len(ordered),
+                     "missingValueStates": [row["geo_id"] for row in ordered if row["value"] is None]}
+
+
+def parse_eia_html(html: str) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    parser = EiaTableParser()
+    parser.feed(html)
+    rows = []
+    state_to_fips = {name.casefold(): (abbr, fips) for abbr, name, fips in FBI_STATES}
+    state_to_fips["district of columbia"] = ("DC", "11")
+    for cells in parser.all_rows:
+        if len(cells) < 3:
+            continue
+        state = " ".join(cells[0].split()).casefold()
+        if state not in state_to_fips:
+            continue
+        candidates = [eia_number(cell) for cell in cells[1:]]
+        numeric = [candidate for candidate in candidates]
+        if len(numeric) < 2:
+            continue
+        # Table 2.10 orders sector columns in pairs; the final pair is All Sectors.
+        all_2025, all_2024 = numeric[-2], numeric[-1]
+        abbr, fips = state_to_fips[state]
+        rows.append({"geo_id": fips, "geo_type": "state", "state": abbr,
+                     "state_name": FBI_STATES[[x[0] for x in FBI_STATES].index(abbr)][1],
+                     "year": "2025", "value": str(all_2025) if all_2025 is not None else None,
+                     "unit": "cents/kWh", "sector": "ALL", "source_release": "EIA Electric Power Annual 2025",
+                     "source_url": DOWNLOADS["eia_table_2025"],
+                     "status": "observed" if all_2025 is not None else "source_missing"})
+    by_geo = {row["geo_id"]: row for row in rows}
+    missing_states = sorted(set(fips for _, _, fips in FBI_STATES) - set(by_geo))
+    if len(by_geo) != 51:
+        raise ValueError(f"eia_state_coverage_{len(by_geo)}_of_51")
+    return [by_geo[fips] for fips in sorted(by_geo)], {
+        "stateRows": len(by_geo), "missingValueStates": [r["geo_id"] for r in rows if r["value"] is None],
+        "statesWithoutRows": missing_states,
+    }
+
+
+def prepare_eia() -> dict[str, Any]:
+    api_path = RUNTIME / "raw/eia/electricity-retail-sales-2025-all.json"
+    if api_path.exists():
+        try:
+            rows, summary = parse_eia_api(api_path.read_bytes())
+            out = RUNTIME / "prepared/eia-electricity-price-2025-all-sectors.csv"
+            write_csv(out, rows)
+            return {"status": "complete" if not summary["missingValueStates"] else "partial",
+                    "sourceMode": "registered_api", "output": str(out), "rows": len(rows), **summary}
+        except (OSError, ValueError, InvalidOperation) as error:
+            return {"status": "downloaded_unparsed", "sourceMode": "registered_api",
+                    "reason": type(error).__name__}
+    path = RUNTIME / "raw/eia/epa-02-10.html"
+    if not path.exists():
+        return {"status": "blocked_input", "input": str(path)}
+    try:
+        rows, summary = parse_eia_html(path.read_text(encoding="utf-8", errors="replace"))
+        out = RUNTIME / "prepared/eia-electricity-price-2025-all-sectors.csv"
+        write_csv(out, rows)
+        return {"status": "partial" if summary["missingValueStates"] else "complete",
+                "output": str(out), "rows": len(rows), **summary}
+    except (OSError, ValueError, InvalidOperation) as error:
+        return {"status": "downloaded_unparsed", "reason": str(error)}
+
+
+def prepare_eia_before_after() -> dict[str, Any]:
+    """Compare retained published ALL-sector 2024 values with prepared annual 2025 values."""
+    baseline_path = ROOT / "full/normalized/eia.jsonl"
+    current_path = RUNTIME / "prepared/eia-electricity-price-2025-all-sectors.csv"
+    if not baseline_path.exists() or not current_path.exists():
+        return {"status": "baseline_or_current_missing"}
+    before = {}
+    for line in baseline_path.read_text(encoding="utf-8").splitlines():
+        row = json.loads(line)
+        if (row.get("year") == "2024" and row.get("field_id") == "08.05:sector_ALL"
+                and row.get("geo_type") == "state" and row.get("geo_id") in STATE_NAMES):
+            before[row["geo_id"]] = Decimal(str(row["value"]))
+    current = {}
+    for row in read_csv(current_path):
+        abbr = row.get("state", "")
+        if abbr and row.get("value") not in {None, ""}:
+            current[abbr] = Decimal(row["value"])
+    rank_before = {state: rank for rank, (state, _value) in enumerate(
+        sorted(before.items(), key=lambda item: (-item[1], item[0])), 1)}
+    rank_after = {state: rank for rank, (state, _value) in enumerate(
+        sorted(current.items(), key=lambda item: (-item[1], item[0])), 1)}
+    rows = []
+    for abbr, name, fips in FBI_STATES:
+        old, new = before.get(abbr), current.get(abbr)
+        rows.append({"geo_id": fips, "state": abbr, "state_name": name, "sector": "ALL",
+                     "before_year": "2024", "before_value_cents_per_kwh": str(old) if old is not None else None,
+                     "before_rank_high_to_low": rank_before.get(abbr), "after_year": "2025",
+                     "after_value_cents_per_kwh": str(new) if new is not None else None,
+                     "after_rank_high_to_low": rank_after.get(abbr),
+                     "change_cents_per_kwh": str(new - old) if old is not None and new is not None else None,
+                     "status": "comparable_annual_all_sector" if old is not None and new is not None else "missing_source_value"})
+    path = RUNTIME / "prepared/eia-2024-2025-before-after-ranks.csv"
+    write_csv(path, rows)
+    return {"status": "complete" if len(before) == 51 and len(current) == 51 else "partial",
+            "baselineSource": str(baseline_path), "baselineRows": len(before), "preparedRows": len(current),
+            "output": str(path)}
+
+
+def prepare_fbi_baseline_and_pending_annual() -> dict[str, Any]:
+    """Expose prior published 2023 rankings while keeping uncaptured 2025 annual values null."""
+    baseline_path = ROOT / "full/normalized/fbi_cde.jsonl"
+    if not baseline_path.exists():
+        return {"status": "baseline_missing"}
+    states_by_abbr = {abbr: (name, fips) for abbr, name, fips in FBI_STATES}
+    values: dict[str, dict[str, Decimal]] = {}
+    for line in baseline_path.read_text(encoding="utf-8").splitlines():
+        row = json.loads(line)
+        field = str(row.get("field_id", "")).split(":", 1)[0]
+        state = row.get("geo_id")
+        if row.get("year") == "2023" and row.get("geo_type") == "state" and state in states_by_abbr and field in FBI_OFFENSES:
+            values.setdefault(field, {})[state] = Decimal(str(row["value"]))
+    rows = []
+    for field, (slug, label) in FBI_OFFENSES.items():
+        current = values.get(field, {})
+        ranks = {state: rank for rank, (state, _value) in enumerate(
+            sorted(current.items(), key=lambda item: (-item[1], item[0])), 1)}
+        for abbr, name, fips in FBI_STATES:
+            rows.append({"field_id": field, "offense": slug, "geo_id": fips, "state": abbr,
+                         "state_name": name, "before_year": "2023", "before_value": str(current[abbr]) if abbr in current else None,
+                         "before_rank_high_to_low": ranks.get(abbr), "after_year": "2025",
+                         "after_annual_value": None, "after_annual_rank": None,
+                         "after_status": "official_state_annual_estimate_table_not_captured",
+                         "baselineMethod": "retained published normalized value; annual sum of monthly actuals per its source methodology note",
+                         "status": "baseline_available_annual_after_unresolved" if abbr in current else "baseline_missing_annual_after_unresolved"})
+    out = RUNTIME / "prepared/fbi-2023-baseline-2025-annual-pending.csv"
+    write_csv(out, rows)
+    return {"status": "annual_2025_pending", "baselineSource": str(baseline_path),
+            "baselineObservations": sum(len(v) for v in values.values()),
+            "baselineStateOffenseSeries": len(values), "annual2025Rows": 0,
+            "output": str(out),
+            "reason": "Annual 2025 CIUS estimates are released, but a state-by-seven-offense estimate table was not verified/captured; monthly CDE data are not substituted."}
+
+
+def income_per_resident(source_thousand_usd: Decimal, annual_population: int | None,
+                        income_year: str, population_year: str) -> Decimal | None:
+    if income_year != population_year:
+        raise ValueError("income_population_year_mismatch")
+    if annual_population is None or annual_population <= 0:
+        return None
+    return source_thousand_usd * Decimal(1000) / Decimal(annual_population)
+
+
+def prepare_irs_income(population_result: dict[str, Any]) -> dict[str, Any]:
+    path = RUNTIME / "raw/irs/23incyallagi.csv"
+    pop_path = RUNTIME / "prepared/population-2023-2024.csv"
+    if not path.exists() or not pop_path.exists():
+        return {"status": "blocked_input", "missing": [str(p) for p in (path, pop_path) if not p.exists()]}
+    try:
+        population: dict[tuple[str, str, str], int] = {}
+        for row in read_csv(pop_path):
+            if row["year"] == "2023" and row["population_kind"] == "total" and row.get("value") not in {None, ""}:
+                population[(row["geo_type"], row["geo_id"])] = int(row["value"])
+        columns = {"STATEFIPS", "COUNTYFIPS", "agi_stub", "A00100"}
+        sums: dict[str, Decimal] = {}
+        state_names: dict[str, str] = {}
+        row_count = 0
+        county_bands: dict[str, set[str]] = {}
+        with path.open("r", encoding="utf-8-sig", newline="") as stream:
+            reader = csv.DictReader(stream)
+            if not columns.issubset(reader.fieldnames or ()):
+                raise ValueError("irs_required_columns_missing")
+            for row in reader:
+                state = row["STATEFIPS"].strip().zfill(2)
+                county = row["COUNTYFIPS"].strip().zfill(3)
+                stub = row["agi_stub"].strip()
+                if state not in STATE_FIPS or county == "000":
+                    continue
+                if stub not in {str(i) for i in range(1, 9)}:
+                    continue
+                value = Decimal(row["A00100"])
+                if not value.is_finite():
+                    raise ValueError("irs_nonfinite_a00100")
+                fips = state + county
+                sums[fips] = sums.get(fips, Decimal(0)) + value
+                county_bands.setdefault(fips, set()).add(stub)
+                row_count += 1
+        if len(sums) != 3143:
+            raise ValueError(f"irs_county_coverage_{len(sums)}_of_3143")
+        incomplete_bands = [fips for fips, bands in county_bands.items()
+                            if bands != {str(i) for i in range(1, 9)}]
+        if incomplete_bands:
+            raise ValueError(f"irs_incomplete_agi_bands_{len(incomplete_bands)}_counties")
+        income_rows: list[dict[str, Any]] = []
+        resident_rows: list[dict[str, Any]] = []
+        missing_population: list[dict[str, Any]] = []
+        # IRS A00100 source values are thousand USD; keep the exact source sum and conversion.
+        state_income: dict[str, Decimal] = {}
+        for fips, thousand_usd in sorted(sums.items()):
+            state_income[fips[:2]] = state_income.get(fips[:2], Decimal(0)) + thousand_usd
+            usd = thousand_usd * 1000
+            income_rows.append({"geo_id": fips, "geo_type": "county", "year": "2023",
+                                "field": "A00100", "source_value_thousand_usd": str(thousand_usd),
+                                "value_usd": str(usd), "unit": "USD", "source_release": "IRS SOI County 2023",
+                                "conversion": "source thousand_USD * 1000"})
+            denominator = population.get(("county", fips))
+            if denominator is None:
+                missing_population.append({"geo_id": fips, "geo_type": "county", "year": "2023",
+                                           "reason": "matching_year_population_not_available"})
+            elif denominator > 0:
+                resident_value = income_per_resident(thousand_usd, denominator, "2023", "2023")
+                resident_rows.append({"geo_id": fips, "geo_type": "county", "year": "2023",
+                                      "income_usd": str(usd), "population": denominator,
+                                      "value": str(resident_value), "unit": "USD/person",
+                                      "source_release": "IRS SOI County 2023; Census PEP Vintage 2025",
+                                      "formula": "(A00100 thousand USD * 1000) / 2023 annual population"})
+            else:
+                missing_population.append({"geo_id": fips, "geo_type": "county", "year": "2023",
+                                           "reason": "nonpositive_population"})
+        for state in sorted(state_income):
+            name = next((state_name for _, state_name, fips in FBI_STATES if fips == state), state)
+            state_fips = state
+            usd = state_income[state] * 1000
+            income_rows.append({"geo_id": state_fips, "geo_type": "state", "year": "2023",
+                                "field": "A00100", "source_value_thousand_usd": str(state_income[state]),
+                                "value_usd": str(usd), "unit": "USD", "source_release": "IRS SOI County 2023",
+                                "aggregation": "sum county A00100 bands 1-8; source state total excluded"})
+            denominator = population.get(("state", state_fips))
+            if denominator is None:
+                missing_population.append({"geo_id": state_fips, "geo_type": "state", "year": "2023",
+                                           "reason": "matching_year_population_not_available"})
+            elif denominator > 0:
+                resident_value = income_per_resident(state_income[state], denominator, "2023", "2023")
+                resident_rows.append({"geo_id": state_fips, "geo_type": "state", "year": "2023",
+                                      "income_usd": str(usd), "population": denominator,
+                                      "value": str(resident_value), "unit": "USD/person",
+                                      "source_release": "IRS SOI County 2023; Census PEP Vintage 2025",
+                                      "formula": "(sum county A00100 thousand USD * 1000) / 2023 annual population"})
+        national_thousand = sum(state_income.values(), Decimal(0))
+        national_usd = national_thousand * 1000
+        income_rows.append({"geo_id": "US", "geo_type": "nation", "year": "2023", "field": "A00100",
+                            "source_value_thousand_usd": str(national_thousand), "value_usd": str(national_usd),
+                            "unit": "USD", "source_release": "IRS SOI County 2023",
+                            "aggregation": "sum county A00100 bands 1-8; state rows excluded"})
+        national_population = population.get(("nation", "US"))
+        if national_population and national_population > 0:
+            resident_value = income_per_resident(national_thousand, national_population, "2023", "2023")
+            resident_rows.append({"geo_id": "US", "geo_type": "nation", "year": "2023",
+                                  "income_usd": str(national_usd), "population": national_population,
+                                  "value": str(resident_value),
+                                  "unit": "USD/person", "source_release": "IRS SOI County 2023; Census PEP Vintage 2025",
+                                  "formula": "(sum county A00100 thousand USD * 1000) / 2023 annual population"})
+        else:
+            missing_population.append({"geo_id": "US", "geo_type": "nation", "year": "2023",
+                                       "reason": "matching_year_population_not_available"})
+        income_out = RUNTIME / "prepared/irs-agi-2023-usd.csv"
+        per_person_out = RUNTIME / "prepared/irs-agi-per-resident-2023.csv"
+        write_csv(income_out, income_rows)
+        write_csv(per_person_out, resident_rows)
+        write_jsonl(RUNTIME / "prepared/irs-agi-missing-denominators.jsonl", missing_population)
+        return {"status": "complete" if not missing_population else "partial",
+                "inputRowsUsed": row_count, "countyRows": len(sums), "stateRows": len(state_income),
+                "preparedIncomeRows": len(income_rows), "preparedPerResidentRows": len(resident_rows),
+                "missingDenominators": len(missing_population), "incomeOutput": str(income_out),
+                "perResidentOutput": str(per_person_out)}
+    except (OSError, ValueError, InvalidOperation, KeyError) as error:
+        return {"status": "downloaded_unparsed", "reason": str(error)}
+
+
+def prepare_existing_medical_rates() -> dict[str, Any]:
+    """Recalculate reviewed 2024 rates from retained prepared counts and matching PEP denominators."""
+    population_path = RUNTIME / "prepared/population-2023-2024.csv"
+    if not population_path.exists():
+        return {"status": "blocked_population_input"}
+    metric = {"cancer2023": ("11.01", "total", "2023", "2023"),
+              "hiv2024": ("11.02", "age_13_plus", "2024", "2024"),
+              "childDeaths2024": ("11.03", "under_18", "2024", "2024")}
+    denominators = {(row["geo_type"], row["geo_id"], row["year"], row["population_kind"]): int(row["value"])
+                    for row in read_csv(population_path)}
+    results = {}
+    for name, source_path in MEDICAL_RECEIPTS.items():
+        if not source_path.exists():
+            results[name] = {"status": "retained_prepared_source_missing", "sourcePath": str(source_path)}
+            continue
+        payload = source_path.read_bytes()
+        safe_name = {"cancer2023": "cancer-2023", "hiv2024": "hiv-2024",
+                     "childDeaths2024": "child-deaths-under18-2024"}[name]
+        raw_path = RUNTIME / f"raw/retained-prepared/{safe_name}.jsonl"
+        atomic_write(raw_path, payload)
+        source_rows = [json.loads(line) for line in payload.decode("utf-8").splitlines() if line.strip()]
+        rows, missing = [], []
+        for source in source_rows:
+            field_id, kind, observation_year, denominator_year = metric[name]
+            if source.get("year") != observation_year or source.get("geo_type") != "state":
+                continue
+            count = safe_int(str(source.get("value")))
+            population = denominators.get(("state", source["geo_id"], denominator_year, kind))
+            suppressed = name == "childDeaths2024" and count is not None and count <= 9
+            if count is None or population is None or population <= 0 or suppressed:
+                missing.append({"geo_id": source.get("geo_id"), "year": observation_year, "status":
+                                "source_suppressed" if suppressed else "missing_count_or_matching_denominator"})
+                continue
+            rows.append({"geo_id": source["geo_id"], "geo_type": "state", "year": observation_year,
+                         "field_id": field_id,
+                         "value": str(Decimal(count) / Decimal(population) * Decimal(100000)),
+                         "unit": "per 100,000", "numerator": count, "denominator": population,
+                         "denominator_kind": kind, "denominator_year": denominator_year,
+                         "source_adjustment": "crude; count divided by matching PEP population",
+                         "source_period_type": "annual", "source_period": observation_year,
+                         "source_release": source.get("source_release"), "source_url": source.get("source_url"),
+                         "source_retrieved_at": source.get("retrieved_at"),
+                         "source_input_sha256": sha256_bytes(payload), "status": "prepared_local"})
+        out = RUNTIME / f"prepared/{safe_name}-rates.csv"
+        write_csv(out, rows)
+        receipt = {"sourceId": "retained-prepared-" + safe_name, "path": str(raw_path),
+                   "sha256": sha256_bytes(payload), "bytes": len(payload),
+                   "retrievedAt": max((row.get("retrieved_at", "") for row in source_rows), default="") or None,
+                   "status": "copied_verified_prepared_receipt", "sourceArtifactType": "prior_normalized_observations",
+                   "originalLocalPath": str(source_path),
+                   "license": "Prepared official-source-derived evidence; row-level source citations are retained."}
+        atomic_json(raw_path.with_suffix(".meta.json"), receipt)
+        results[name] = {"status": "complete" if len(rows) + len(missing) == 51 else "partial",
+                         "observedRows": len(rows), "missingnessRows": len(missing), "sourceReceipt": receipt,
+                         "output": str(out), "missingness": missing}
+    return results
+
+
+def bls_series_id(geo_type: str, geo_id: str, measure: str) -> str:
+    if geo_type == "state":
+        if len(geo_id) != 2 or geo_id not in STATE_FIPS:
+            raise ValueError("invalid_state_fips")
+        return f"LAUST{geo_id}{'0' * 11}{measure}"
+    if geo_type == "county":
+        if len(geo_id) != 5 or geo_id[:2] not in STATE_FIPS:
+            raise ValueError("invalid_county_fips")
+        return f"LAUCN{geo_id}{'0' * 8}{measure}"
+    raise ValueError("unsupported_bls_geography")
+
+
+def period_info(year: str, code: str) -> tuple[str, str]:
+    if code == "M13":
+        return year, "annual"
+    match = re.fullmatch(r"M(0[1-9]|1[0-2])", code)
+    if not match:
+        raise ValueError("invalid_bls_period")
+    return f"{year}-{match.group(1)}", "monthly"
+
+
+def parse_bls_payload(payload: bytes, series_meta: dict[str, dict[str, str]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    data = json.loads(payload.decode("utf-8"))
+    if data.get("status") != "REQUEST_SUCCEEDED":
+        raise ValueError("bls_request_not_succeeded")
+    result = data.get("Results", {})
+    series_rows = result.get("series", []) if isinstance(result, dict) else []
+    values: list[dict[str, Any]] = []
+    missing: list[dict[str, Any]] = []
+    returned: set[str] = set()
+    for series in series_rows:
+        sid = series.get("seriesID", "")
+        meta = series_meta.get(sid)
+        if not meta:
+            continue
+        returned.add(sid)
+        returned_periods: set[str] = set()
+        for row in series.get("data", []):
+            if row.get("year") != "2025":
+                continue
+            code = row.get("period", "")
+            period, period_type = period_info(row["year"], code)
+            returned_periods.add(code)
+            footnotes = [f.get("text", "") for f in row.get("footnotes", []) if f and f.get("text")]
+            source_value = row.get("value")
+            raw_value = "" if source_value is None else str(source_value)
+            if raw_value.strip() in {"", "-", "—", "NA", "N/A"}:
+                missing.append({**meta, "series_id": sid, "period": period, "period_type": period_type,
+                                "bls_period_code": code, "value": None, "raw_value": raw_value,
+                                "status": "source_missing", "footnote": " | ".join(footnotes)})
+                continue
+            numeric = Decimal(raw_value)
+            values.append({**meta, "series_id": sid, "period": period, "period_type": period_type,
+                           "bls_period_code": code, "value": str(numeric), "raw_value": raw_value,
+                           "unit": BLS_MEASURES[meta["measure_code"]][1], "status": "observed",
+                           "footnote": " | ".join(footnotes)})
+        for code in [*(f"M{month:02d}" for month in range(1, 13)), "M13"]:
+            if code in returned_periods:
+                continue
+            period, period_type = period_info("2025", code)
+            missing.append({**meta, "series_id": sid, "period": period, "period_type": period_type,
+                            "bls_period_code": code, "value": None, "raw_value": None,
+                            "status": "period_not_returned", "footnote": ""})
+    for sid, meta in series_meta.items():
+        if sid not in returned:
+            missing.append({**meta, "series_id": sid, "period": "2025", "period_type": "series",
+                            "bls_period_code": None, "value": None, "raw_value": None,
+                            "status": "series_not_returned", "footnote": ""})
+    return values, missing
+
+
+def bls_ledger_path() -> Path:
+    return RUNTIME / "state/bls-request-ledger.json"
+
+
+def load_bls_ledger() -> dict[str, Any]:
+    path = bls_ledger_path()
+    if path.exists():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            if data.get("format") == "bls_request_ledger_v2":
+                return data
+        except (OSError, json.JSONDecodeError):
+            pass
+    return {"format": "bls_request_ledger_v2", "days": {}}
+
+
+def bls_batch_fingerprint(series: list[dict[str, str]], batch_number: int, batch_size: int) -> tuple[str, str]:
+    ordered_ids = [item["series_id"] for item in series]
+    queue_hash = sha256_bytes(json.dumps(ordered_ids, separators=(",", ":")).encode())
+    request = {"planVersion": BLS_PLAN_VERSION, "queueHash": queue_hash, "batchNumber": batch_number,
+               "batchSize": batch_size, "seriesIds": ordered_ids, "startyear": "2025", "endyear": "2025",
+               "annualaverage": True, "adjustment": "NSA", "method": "BLS_v2_seriesid_batch"}
+    return queue_hash, sha256_bytes(json.dumps(request, sort_keys=True, separators=(",", ":")).encode())
+
+
+def fetch_bls_batch(batch_number: int, series: list[dict[str, str]],
+                    budget: int, batch_size: int = 24, queue_hash: str | None = None) -> tuple[list[dict[str, Any]], list[dict[str, Any]], dict[str, Any]]:
+    actual_queue_hash, fingerprint = bls_batch_fingerprint(series, batch_number, batch_size)
+    queue_hash = queue_hash or actual_queue_hash
+    raw_path = RUNTIME / f"raw/bls/plans/{queue_hash}/{fingerprint}.json"
+    meta_path = raw_path.with_suffix(".meta.json")
+    selected = {item["series_id"]: {k: v for k, v in item.items() if k != "series_id"} for item in series}
+    retrieved_at = utc_now()
+    if raw_path.exists() and meta_path.exists():
+        try:
+            raw = raw_path.read_bytes()
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            if (meta.get("sha256") == sha256_bytes(raw) and meta.get("requestFingerprint") == fingerprint
+                    and meta.get("queueHash") == queue_hash and meta.get("planVersion") == BLS_PLAN_VERSION):
+                values, missing = parse_bls_payload(raw, selected)
+                return values, missing, {**meta, "status": "reused_verified", "path": str(raw_path)}
+        except (OSError, json.JSONDecodeError, TypeError):
+            pass
+    request_body = {"seriesid": [item["series_id"] for item in series],
+                    "startyear": "2025", "endyear": "2025", "annualaverage": True}
+    api_key = os.getenv("BLS_API_KEY")
+    if api_key:
+        request_body["registrationkey"] = api_key
+    body = json.dumps(request_body).encode()
+    try:
+        payload, status, headers = request_bytes(BLS_URL, body,
+                                                 {"Content-Type": "application/json"}, timeout=45)
+        if not source_bytes_safe(payload):
+            raise ValueError("provider_response_redacted_for_secret_safety")
+        data = json.loads(payload.decode("utf-8"))
+        if data.get("status") != "REQUEST_SUCCEEDED":
+            raise ValueError("provider_status_rejected")
+        raw_path.parent.mkdir(parents=True, exist_ok=True)
+        atomic_write(raw_path, payload)
+        artifact = {"sourceId": "bls-laus-public-api-v2", "url": public_url(BLS_URL),
+                    "path": str(raw_path), "sha256": sha256_bytes(payload), "bytes": len(payload),
+                    "retrievedAt": retrieved_at, "httpStatus": status,
+                    "contentType": headers.get("Content-Type"), "status": "downloaded",
+                    "license": "BLS API terms apply; attribution and retrieval timestamp retained.",
+                    "seriesCount": len(series), "credentialMode": "registered" if api_key else "public_no_key",
+                    "queueHash": queue_hash, "requestFingerprint": fingerprint, "planVersion": BLS_PLAN_VERSION}
+        atomic_json(meta_path, artifact)
+        values, missing = parse_bls_payload(payload, selected)
+        return values, missing, artifact
+    except HTTPError as error:
+        reason = "daily_limit_reached" if error.code == 429 else f"http_{error.code}"
+        return [], [{"series_id": item["series_id"], "geo_id": item["geo_id"],
+                     "geo_type": item["geo_type"], "measure_code": item["measure_code"],
+                     "period": "2025", "period_type": "series", "value": None,
+                     "status": reason, "footnote": ""} for item in series], {
+                         "sourceId": "bls-laus-public-api-v2", "url": public_url(BLS_URL),
+                         "attemptedAt": retrieved_at, "httpStatus": error.code,
+                         "status": "blocked_http", "reason": reason,
+                     }
+    except (URLError, TimeoutError, OSError, ValueError, json.JSONDecodeError) as error:
+        return [], [{"series_id": item["series_id"], "geo_id": item["geo_id"],
+                     "geo_type": item["geo_type"], "measure_code": item["measure_code"],
+                     "period": "2025", "period_type": "series", "value": None,
+                     "status": "request_failed", "footnote": ""} for item in series], {
+                         "sourceId": "bls-laus-public-api-v2", "url": public_url(BLS_URL),
+                         "attemptedAt": retrieved_at, "status": "unavailable",
+                         "reason": type(error).__name__,
+                     }
+
+
+def load_population_for_bls() -> tuple[list[dict[str, Any]], dict[str, int]]:
+    pop_path = RUNTIME / "prepared/population-2023-2024.csv"
+    if not pop_path.exists():
+        return [], {}
+    geos = []
+    pop2024: dict[str, int] = {}
+    for row in read_csv(pop_path):
+        if row.get("year") != "2024" or row.get("population_kind") != "total":
+            continue
+        if row.get("geo_type") == "state":
+            geos.append({"geo_type": "state", "geo_id": row["geo_id"], "name": row["geo_id"]})
+        elif row.get("geo_type") == "county":
+            geos.append({"geo_type": "county", "geo_id": row["geo_id"], "name": row["geo_id"]})
+            pop2024[row["geo_id"]] = int(row["value"])
+    # Ensure exactly the 50 states and DC even if the source file omits summary rows.
+    have_states = {row["geo_id"] for row in geos if row["geo_type"] == "state"}
+    for _abbr, _name, fips in FBI_STATES:
+        if fips not in have_states:
+            geos.append({"geo_type": "state", "geo_id": fips, "name": _name})
+    counties = {row["geo_id"]: row for row in geos if row["geo_type"] == "county"}
+    geos = [row for row in geos if row["geo_type"] == "state"] + list(counties.values())
+    return geos, pop2024
+
+
+def make_bls_queue(geos: list[dict[str, Any]], pop2024: dict[str, int]) -> list[dict[str, str]]:
+    states = sorted((geo for geo in geos if geo["geo_type"] == "state"), key=lambda geo: geo["geo_id"])
+    counties = [geo for geo in geos if geo["geo_type"] == "county"]
+    # Include at least one county from every state before taking remaining counties by population.
+    largest_by_state: list[dict[str, Any]] = []
+    for fips in sorted(STATE_FIPS):
+        candidates = [geo for geo in counties if geo["geo_id"].startswith(fips)]
+        if candidates:
+            largest_by_state.append(max(candidates, key=lambda geo: pop2024.get(geo["geo_id"], 0)))
+    first_ids = {geo["geo_id"] for geo in largest_by_state}
+    remaining = sorted((geo for geo in counties if geo["geo_id"] not in first_ids),
+                       key=lambda geo: (-pop2024.get(geo["geo_id"], 0), geo["geo_id"]))
+    ordered = states + largest_by_state + remaining
+    result = []
+    for geo in ordered:
+        for measure in BLS_MEASURES:
+            result.append({"series_id": bls_series_id(geo["geo_type"], geo["geo_id"], measure),
+                           "geo_id": geo["geo_id"], "geo_type": geo["geo_type"],
+                           "measure_code": measure, "measure": BLS_MEASURES[measure][0]})
+    return result
+
+
+def collect_bls(max_queries: int) -> dict[str, Any]:
+    geos, pop2024 = load_population_for_bls()
+    if not geos:
+        return {"status": "blocked_population_input"}
+    queue = make_bls_queue(geos, pop2024)
+    # Registered BLS v2 accepts up to 50 series per request; no-key mode stays below 25.
+    batch_size = 50 if os.getenv("BLS_API_KEY") else 24
+    batches = [queue[i:i + batch_size] for i in range(0, len(queue), batch_size)]
+    ledger = load_bls_ledger()
+    day = datetime.now(timezone.utc).date().isoformat()
+    day_record = ledger["days"].setdefault(day, {"registeredQueriesUsed": 0, "unregisteredQueriesUsed": 0})
+    registered = bool(os.getenv("BLS_API_KEY"))
+    mode = "registered" if registered else "unregistered"
+    budget_left = min(max_queries, max(0, BLS_DAILY_LIMIT - int(day_record.get("registeredQueriesUsed", 0)))) if registered else min(
+        max_queries, max(0, BLS_DAILY_BUDGET - int(day_record.get("unregisteredQueriesUsed", 0))))
+    ordered_queue_hash = sha256_bytes(json.dumps([item["series_id"] for item in queue], separators=(",", ":")).encode())
+    plan_id = sha256_bytes(f"{BLS_PLAN_VERSION}:{ordered_queue_hash}:{batch_size}".encode())[:20]
+    checkpoint_path = RUNTIME / f"state/bls-checkpoint-{plan_id}.json"
+    checkpoint = {}
+    if checkpoint_path.exists():
+        try:
+            checkpoint = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            checkpoint = {}
+    done = set(checkpoint.get("completedBatchNumbers", [])) if (
+        checkpoint.get("queueHash") == ordered_queue_hash and checkpoint.get("planVersion") == BLS_PLAN_VERSION
+        and checkpoint.get("batchSize") == batch_size) else set()
+    raw_values: list[dict[str, Any]] = []
+    raw_missing: list[dict[str, Any]] = []
+    artifacts: list[dict[str, Any]] = []
+    requests_this_run = 0
+    stopped = False
+    for number, batch in enumerate(batches):
+        if number in done:
+            # Load only the completed batch needed for deterministic regenerated outputs.
+            _qhash, fingerprint = bls_batch_fingerprint(batch, number, batch_size)
+            raw_path = RUNTIME / f"raw/bls/plans/{ordered_queue_hash}/{fingerprint}.json"
+            meta_path = raw_path.with_suffix(".meta.json")
+            if raw_path.exists() and meta_path.exists():
+                expected = {item["series_id"]: {k: v for k, v in item.items() if k != "series_id"} for item in batch}
+                try:
+                    payload = raw_path.read_bytes()
+                    meta = json.loads(meta_path.read_text(encoding="utf-8"))
+                    if (meta.get("sha256") == sha256_bytes(payload) and meta.get("requestFingerprint") == fingerprint
+                            and meta.get("queueHash") == ordered_queue_hash and meta.get("planVersion") == BLS_PLAN_VERSION):
+                        values, missing = parse_bls_payload(payload, expected)
+                        raw_values.extend(values)
+                        raw_missing.extend(missing)
+                        artifacts.append({**meta, "status": "reused_verified", "path": str(raw_path)})
+                        continue
+                except (OSError, json.JSONDecodeError, TypeError, ValueError):
+                    pass
+            done.remove(number)
+        if requests_this_run >= budget_left:
+            stopped = True
+            break
+        values, missing, artifact = fetch_bls_batch(number, batch, budget_left, batch_size, ordered_queue_hash)
+        requests_this_run += 1
+        counter = "registeredQueriesUsed" if registered else "unregisteredQueriesUsed"
+        day_record[counter] = int(day_record.get(counter, 0)) + 1
+        atomic_json(bls_ledger_path(), ledger)
+        if artifact.get("status") in {"downloaded", "reused_verified"}:
+            done.add(number)
+            atomic_json(checkpoint_path, {"format": "bls_checkpoint_v2", "completedBatchNumbers": sorted(done),
+                                         "totalBatches": len(batches), "queueHash": ordered_queue_hash,
+                                         "planVersion": BLS_PLAN_VERSION, "batchSize": batch_size, "updatedAt": utc_now()})
+        else:
+            stopped = True
+        raw_values.extend(values)
+        raw_missing.extend(missing)
+        artifacts.append(artifact)
+        print(f"BLS batch {number + 1}/{len(batches)}: {artifact['status']} ({len(batch)} series)", flush=True)
+        if artifact.get("reason") == "daily_limit_reached":
+            break
+    write_csv(RUNTIME / "prepared/bls-laus-2025.csv", raw_values)
+    write_jsonl(RUNTIME / "prepared/bls-laus-2025-missingness.jsonl", raw_missing)
+    monthly_coverage: dict[str, set[str]] = {}
+    annual_coverage: set[str] = set()
+    for row in raw_values:
+        if row["period_type"] == "monthly":
+            monthly_coverage.setdefault(row["series_id"], set()).add(row["bls_period_code"])
+        elif row["bls_period_code"] == "M13":
+            annual_coverage.add(row["series_id"])
+    coverage_rows = []
+    requested_ids = {row["series_id"] for row in raw_values + raw_missing}
+    for item in queue:
+        sid = item["series_id"]
+        if sid not in requested_ids:
+            continue
+        periods = monthly_coverage.get(sid, set())
+        expected = {f"M{month:02d}" for month in range(1, 13)}
+        coverage_rows.append({"geo_type": item["geo_type"], "geo_id": item["geo_id"],
+                              "measure_code": item["measure_code"], "series_id": sid,
+                              "monthlyPeriodsPresent": len(periods),
+                              "missingPeriods": ",".join(sorted(expected - periods)),
+                              "annualM13Present": sid in annual_coverage,
+                              "status": "complete" if len(periods) == 12 else "partial_or_source_missing"})
+    write_csv(RUNTIME / "prepared/bls-laus-2025-coverage.csv", coverage_rows)
+    states_returned = {row["geo_id"] for row in raw_values if row["geo_type"] == "state"}
+    counties_returned = {row["geo_id"] for row in raw_values if row["geo_type"] == "county"}
+    return {
+        "status": "partial" if stopped or len(done) < len(batches) or raw_missing else "complete",
+        "seriesCount": len(queue), "batchCount": len(batches), "completedBatchCount": len(done),
+        "queriesThisRun": requests_this_run, "dailyNoKeyLimit": BLS_DAILY_LIMIT,
+        "dailyBudget": None if registered else BLS_DAILY_BUDGET,
+        "registeredQueriesRecorded": day_record.get("registeredQueriesUsed", 0),
+        "unregisteredQueriesRecorded": day_record.get("unregisteredQueriesUsed", 0),
+        "credentialMode": "registered" if registered else "public_no_key",
+        "statesWithReturnedObservations": len(states_returned), "countiesWithReturnedObservations": len(counties_returned),
+        "observedRows": len(raw_values), "missingnessRows": len(raw_missing),
+        "pendingSeriesCount": max(0, len(queue) - sum(len(batches[n]) for n in done)),
+        "rawArtifacts": artifacts,
+        "outputs": [str(RUNTIME / "prepared/bls-laus-2025.csv"),
+                    str(RUNTIME / "prepared/bls-laus-2025-missingness.jsonl"),
+                    str(RUNTIME / "prepared/bls-laus-2025-coverage.csv")],
+        "note": "M13 is retained as annual. M01-M12 are not averaged to create M13. Missing periods remain missing.",
+    }
+
+
+def fbi_raw_path(state: str, offense: str) -> Path:
+    return RUNTIME / f"raw/fbi/2025/{state}-{offense}.json"
+
+
+def fbi_response_rows(payload: bytes, state: str, offense_id: str, offense_slug: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    data = json.loads(payload.decode("utf-8"))
+    offenses = data.get("offenses", {})
+    if not isinstance(offenses, dict):
+        raise ValueError("fbi_offenses_object_missing")
+    state_name = STATE_NAMES[state][0]
+    found: list[dict[str, Any]] = []
+    missing: list[dict[str, Any]] = []
+    for family, unit in (("actuals", "offenses"), ("rates", "per_100000")):
+        records = offenses.get(family, {})
+        if not isinstance(records, dict):
+            continue
+        matching = [(label, periods) for label, periods in records.items()
+                    if label.casefold() == (state_name + " offenses").casefold()]
+        if not matching:
+            missing.append({"geo_id": state, "geo_type": "state", "field_id": offense_id,
+                            "year": "2025", "unit": unit, "status": "source_series_missing",
+                            "source_field": family})
+            continue
+        for _label, periods in matching:
+            if not isinstance(periods, dict):
+                continue
+            for period in (f"{month:02d}-2025" for month in range(1, 13)):
+                value = periods.get(period)
+                if value in (None, "", "-", "--"):
+                    missing.append({"geo_id": state, "geo_type": "state", "field_id": offense_id,
+                                    "year": "2025", "period": "2025-" + period[:2], "unit": unit,
+                                    "status": "source_missing", "source_field": family})
+                else:
+                    found.append({"geo_id": state, "geo_type": "state", "field_id": offense_id,
+                                  "offense": offense_slug, "year": "2025", "period": "2025-" + period[:2],
+                                  "period_type": "monthly", "source_value": str(value), "unit": unit,
+                                  "source_field": family, "source_release": "FBI CDE 2025",
+                                  "status": "observed"})
+    return found, missing
+
+
+def collect_fbi(max_items: int, delay_seconds: float = 0.12) -> dict[str, Any]:
+    checkpoint_path = RUNTIME / "state/fbi-checkpoint.json"
+    checkpoint = {}
+    if checkpoint_path.exists():
+        try:
+            checkpoint = json.loads(checkpoint_path.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            checkpoint = {}
+    done = set(checkpoint.get("completed", []))
+    jobs = [(state, offense_id, slug) for state, _, _ in FBI_STATES
+            for offense_id, (slug, _label) in FBI_OFFENSES.items()]
+    new_jobs = 0
+    attempts = 0
+    artifacts = []
+    values: list[dict[str, Any]] = []
+    missing: list[dict[str, Any]] = []
+    for state, offense_id, slug in jobs:
+        job_id = f"{state}/{slug}"
+        path = fbi_raw_path(state, slug)
+        if job_id in done and path.exists():
+            payload = path.read_bytes()
+            values_part, missing_part = fbi_response_rows(payload, state, offense_id, slug)
+            values.extend(values_part)
+            missing.extend(missing_part)
+            meta_path = path.with_suffix(".meta.json")
+            prior_meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
+            prior_meta.setdefault("license", "FBI public crime statistics; source citation retained.")
+            if meta_path.exists():
+                atomic_json(meta_path, prior_meta)
+            artifacts.append({**prior_meta, "path": str(path), "sha256": sha256_file(path),
+                              "bytes": path.stat().st_size, "sourceId": "fbi-cde-state",
+                              "status": "reused_verified"})
+            continue
+        if attempts >= max_items:
+            continue
+        attempts += 1
+        url = (f"https://cde.ucr.cjis.gov/LATEST/summarized/state/{state}/{slug}"
+               f"?from=01-2025&to=12-2025&type=totals")
+        meta_path = path.with_suffix(".meta.json")
+        retrieved_at = utc_now()
+        try:
+            payload, status, headers = request_bytes(url, timeout=45)
+            data = json.loads(payload.decode("utf-8"))
+            if not isinstance(data.get("offenses"), dict):
+                raise ValueError("fbi_response_shape_invalid")
+            path.parent.mkdir(parents=True, exist_ok=True)
+            atomic_write(path, payload)
+            artifact = {"sourceId": "fbi-cde-state", "url": url, "path": str(path),
+                        "sha256": sha256_bytes(payload), "bytes": len(payload), "retrievedAt": retrieved_at,
+                        "httpStatus": status, "contentType": headers.get("Content-Type"), "status": "downloaded",
+                        "license": "FBI public crime statistics; source citation retained."}
+            atomic_json(meta_path, artifact)
+            artifacts.append(artifact)
+            part_values, part_missing = fbi_response_rows(payload, state, offense_id, slug)
+            values.extend(part_values)
+            missing.extend(part_missing)
+            new_jobs += 1
+            done.add(job_id)
+            atomic_json(checkpoint_path, {"format": "fbi_checkpoint_v1", "completed": sorted(done),
+                                         "totalJobs": len(jobs), "updatedAt": utc_now()})
+            if new_jobs % 25 == 0:
+                print(f"FBI jobs {len(done)}/{len(jobs)}", flush=True)
+            time.sleep(delay_seconds)
+        except HTTPError as error:
+            artifacts.append({"sourceId": "fbi-cde-state", "url": url, "attemptedAt": retrieved_at,
+                              "httpStatus": error.code, "status": "blocked_http", "reason": f"http_{error.code}"})
+        except (URLError, TimeoutError, OSError, ValueError, json.JSONDecodeError) as error:
+            artifacts.append({"sourceId": "fbi-cde-state", "url": url, "attemptedAt": retrieved_at,
+                              "status": "unavailable", "reason": type(error).__name__})
+    # Rebuild all completed jobs, not only newly requested jobs, so resume is stable.
+    values = []
+    missing = []
+    artifact_by_path = {item.get("path"): item for item in artifacts}
+    for state, offense_id, slug in jobs:
+        path = fbi_raw_path(state, slug)
+        if not path.exists():
+            continue
+        payload = path.read_bytes()
+        meta_path = path.with_suffix(".meta.json")
+        meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
+        if meta.get("sha256") != sha256_bytes(payload):
+            missing.append({"geo_id": state, "geo_type": "state", "field_id": offense_id,
+                            "year": "2025", "status": "raw_hash_mismatch"})
+            continue
+        part_values, part_missing = fbi_response_rows(payload, state, offense_id, slug)
+        values.extend(part_values)
+        missing.extend(part_missing)
+    write_csv(RUNTIME / "prepared/fbi-cde-2025-state-monthly.csv", values)
+    write_jsonl(RUNTIME / "prepared/fbi-cde-2025-state-missingness.jsonl", missing)
+    complete_series = {(row["geo_id"], row["field_id"], row["source_field"]) for row in values}
+    return {
+        "status": "complete" if len(done) == len(jobs) and not missing else "partial",
+        "expectedJobs": len(jobs), "completedJobs": len(done), "newJobsThisRun": new_jobs,
+        "attemptedJobsThisRun": attempts, "observedMonthlyRows": len(values), "missingnessRows": len(missing),
+        "stateOffenseSeriesObserved": len(complete_series), "pendingJobs": len(jobs) - len(done),
+        "rawArtifacts": artifacts,
+        "outputs": [str(RUNTIME / "prepared/fbi-cde-2025-state-monthly.csv"),
+                    str(RUNTIME / "prepared/fbi-cde-2025-state-missingness.jsonl")],
+        "note": "Raw FBI source series are monthly. Annual totals/rates are not synthesized unless all 12 source months are observed and an explicit preparation rule is reviewed.",
+    }
+
+
+def artifact_summary() -> list[dict[str, Any]]:
+    meta = load_source_meta()
+    result = []
+    for key, row in sorted(meta.get("artifacts", {}).items()):
+        if row.get("status") == "downloaded" and row.get("path") and Path(row["path"]).exists():
+            current_hash = sha256_file(Path(row["path"]))
+            result.append({**row, "hashVerifiedAtInventory": current_hash == row.get("sha256")})
+        else:
+            result.append(row)
+    return result
+
+
+def write_runtime_matrix(results: dict[str, Any]) -> str:
+    matrix = json.loads((PACKAGE / "definition_matrix.json").read_text(encoding="utf-8"))
+    artifacts = artifact_summary()
+    for source in results.get("fixedSources", {}).values():
+        if isinstance(source, dict):
+            artifacts.append(source)
+    for source in results.get("freshnessPageSnapshots", {}).values():
+        if isinstance(source, dict):
+            artifacts.append(source)
+    for name in ("eiaKeyedApi", "blsUnemployment", "fbiCrime"):
+        result = results.get(name, {})
+        if isinstance(result, dict):
+            artifacts.extend(item for item in result.get("rawArtifacts", []) if isinstance(item, dict))
+            if result.get("sourceId"):
+                artifacts.append(result)
+    for result in results.get("existingMedicalRates", {}).values():
+        if isinstance(result, dict) and isinstance(result.get("sourceReceipt"), dict):
+            artifacts.append(result["sourceReceipt"])
+    page_aliases = {
+        "acs-release-schedule": "freshness-page-acs_release_schedule",
+        "bls-laus-public-api-v2": "freshness-page-bls_laus_tables",
+        "eia-retail-sales-api": "freshness-page-eia_annual",
+        "places-current-release": "freshness-page-places_release",
+        "bea-rpp-release": "freshness-page-bea_rpp",
+        "irs-soi-county-2023": "irs-soi-county-2023",
+        "uscs-release": "freshness-page-uscs_technical_notes",
+        "hiv-release-page": "freshness-page-hiv_release",
+        "wonder-mortality-release": "freshness-page-wonder_mortality",
+        "fbi-2025-release": "freshness-page-fbi_2025_release",
+        "eia-2025-release": "freshness-page-eia_annual",
+        "census-pep-v2025-release": "freshness-page-census_pep_v2025",
+        "fitness-recreation-centers-per-capita": "",
+    }
+    source_fallbacks = {"eia-retail-sales-api": ["eia-epa-2-10"],
+                        "hiv-release-page": ["cdc-hiv-2024-tables"]}
+    by_source: dict[str, list[dict[str, Any]]] = {}
+    for artifact in artifacts:
+        if artifact.get("sourceId"):
+            by_source.setdefault(artifact["sourceId"], []).append(artifact)
+    prepared_status = {
+        "unemployment": results.get("blsUnemployment", {}).get("status"),
+        "adjusted-gross-income-agi": results.get("irsIncome", {}).get("status"),
+        "electricity-price": results.get("eia", {}).get("status"),
+    }
+    for selection, key in (("all-cancer-new-cases", "cancer2023"),
+                           ("new-hiv-diagnoses", "hiv2024"),
+                           ("deaths-under-18", "childDeaths2024")):
+        prepared_status[selection] = results.get("existingMedicalRates", {}).get(key, {}).get("status")
+    for row in matrix["rows"]:
+        candidates = list(by_source.get(row.get("sourceId"), []))
+        for fallback in source_fallbacks.get(row.get("sourceId"), []):
+            candidates.extend(by_source.get(fallback, []))
+        alias = page_aliases.get(row.get("sourceId"))
+        if alias:
+            candidates.extend(by_source.get(alias, []))
+        candidates = [item for item in candidates if item.get("retrievedAt")]
+        if candidates:
+            latest = max(candidates, key=lambda item: item["retrievedAt"])
+            row["retrievedAt"] = latest["retrievedAt"]
+            row["retrievalDate"] = latest["retrievedAt"][:10]
+            row["retrievalKind"] = "official_page_snapshot" if str(latest.get("sourceId", "")).startswith("freshness-page-") else "data_artifact"
+        support = []
+        for support_id in row.get("supportingSources", []):
+            support_candidates = [item for item in by_source.get(support_id, []) if item.get("retrievedAt")]
+            if support_candidates:
+                latest_support = max(support_candidates, key=lambda item: item["retrievedAt"])
+                support.append({"sourceId": support_id, "retrievedAt": latest_support["retrievedAt"],
+                                "retrievalDate": latest_support["retrievedAt"][:10]})
+        row["supportingRetrievals"] = support
+        status = prepared_status.get(row["selectionId"])
+        if row.get("sourceId") == "fbi-cde-state" and "fbiCrime" in results:
+            fbi_status = results["fbiCrime"].get("status")
+            status = ("monthly_source_series_complete_annual_values_not_synthesized"
+                      if fbi_status == "complete" else f"local_preparation_{fbi_status}")
+        if status == "monthly_source_series_complete_annual_values_not_synthesized":
+            row["status"] = status
+        elif status in {"complete", "partial", "downloaded_unparsed", "blocked_input", "blocked_population_input"}:
+            row["status"] = f"local_preparation_{status}"
+        elif row["selectionId"] == "new-hiv-diagnoses":
+            artifact = next((item for item in candidates if item.get("sourceId") == "cdc-hiv-2024-tables"), None)
+            if artifact and artifact.get("status") in {"downloaded", "reused_verified"}:
+                row["status"] = "source_file_downloaded_extraction_pending"
+    path = RUNTIME / "prepared/definition_matrix.json"
+    atomic_json(path, matrix)
+    return str(path)
+
+
+def write_inventory(results: dict[str, Any]) -> None:
+    INVENTORY.parent.mkdir(parents=True, exist_ok=True)
+    artifacts = artifact_summary()
+    for name in ("eiaKeyedApi", "blsUnemployment", "fbiCrime"):
+        result = results.get(name, {})
+        if not isinstance(result, dict):
+            continue
+        if result.get("sourceId"):
+            artifacts.append(result)
+        artifacts.extend(item for item in result.get("rawArtifacts", []) if isinstance(item, dict))
+    for result in results.get("existingMedicalRates", {}).values():
+        if isinstance(result, dict) and isinstance(result.get("sourceReceipt"), dict):
+            artifacts.append(result["sourceReceipt"])
+    unique_artifacts = {}
+    for artifact in artifacts:
+        identity = (artifact.get("sourceId"), artifact.get("path"), artifact.get("url"),
+                    artifact.get("retrievedAt") or artifact.get("attemptedAt"))
+        unique_artifacts[identity] = artifact
+    packet = {
+        "format": "usa_maps_local_data_refresh_inventory_v1",
+        "collectorVersion": "2026.10.26.1",
+        "readerContractVersion": "1.0.0",
+        "sourceReleaseVersions": "Publisher releases are separate; see source_catalog.json and freshness_review.json.",
+        "generatedAt": utc_now(),
+        "worktree": str(ROOT),
+        "runtimePath": str(RUNTIME),
+        "admissionStatus": "not_admitted; no database access or writes performed",
+        "sourceArtifacts": list(unique_artifacts.values()),
+        "definitionMatrix": results.get("definitionMatrixPath"),
+        "results": results,
+        "ready": False,
+        "readinessReason": "This is collection preparation. Any partial source, unresolved coverage, or pending denominator remains not ready for admission.",
+    }
+    atomic_json(INVENTORY, packet)
+
+
+def run(max_bls_queries: int, max_fbi_items: int, include_page_snapshots: bool = True,
+        runtime_dir: str | Path | None = None, inventory_path: str | Path | None = None) -> dict[str, Any]:
+    global RUNTIME, INVENTORY
+    if runtime_dir is not None:
+        RUNTIME = Path(runtime_dir).expanduser().resolve()
+    if inventory_path is not None:
+        INVENTORY = Path(inventory_path).expanduser().resolve()
+    RUNTIME.mkdir(parents=True, exist_ok=True)
+    results: dict[str, Any] = {"preflight": json.loads((Path("/tmp/usa-maps-data-flow-20261026/preflight.json")).read_text())
+                               if Path("/tmp/usa-maps-data-flow-20261026/preflight.json").exists() else None}
+    results["fixedSources"] = download_fixed_sources()
+    results["eiaKeyedApi"] = fetch_eia_api()
+    if include_page_snapshots:
+        results["freshnessPageSnapshots"] = download_freshness_pages()
+    results["population"] = prepare_population()
+    results["eia"] = prepare_eia()
+    results["eiaBeforeAfter"] = prepare_eia_before_after()
+    results["irsIncome"] = prepare_irs_income(results["population"])
+    results["existingMedicalRates"] = prepare_existing_medical_rates()
+    results["blsUnemployment"] = collect_bls(max_bls_queries)
+    results["fbiCrime"] = collect_fbi(max_fbi_items)
+    results["fbiAnnualComparison"] = prepare_fbi_baseline_and_pending_annual()
+    results["definitionMatrixPath"] = write_runtime_matrix(results)
+    results["productionReady"] = False
+    results["productionReadiness"] = "No admission or database access is part of this worker task. Review source completeness and unresolved blockers before any later admission work."
+    write_inventory(results)
+    return results
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--max-bls-queries", type=int, default=500,
+                        help="Maximum new BLS API requests this run; keyed v2 requests use the injected BLS_API_KEY, no-key mode is capped at 20/day.")
+    parser.add_argument("--max-fbi-items", type=int, default=357,
+                        help="Maximum state/offense FBI CDE responses to collect in this run (0-357).")
+    parser.add_argument("--skip-page-snapshots", action="store_true",
+                        help="Skip small official freshness page downloads.")
+    parser.add_argument("--runtime-dir", type=Path, default=RUNTIME,
+                        help="Ignored local runtime directory for raw and prepared artifacts.")
+    parser.add_argument("--inventory", type=Path, default=INVENTORY,
+                        help="Output JSON inventory path.")
+    args = parser.parse_args()
+    if args.max_bls_queries < 0 or args.max_bls_queries > 1000:
+        parser.error("--max-bls-queries must be between 0 and 1000")
+    if args.max_fbi_items < 0 or args.max_fbi_items > 357:
+        parser.error("--max-fbi-items must be between 0 and 357")
+    try:
+        result = run(args.max_bls_queries, args.max_fbi_items, not args.skip_page_snapshots,
+                     args.runtime_dir, args.inventory)
+        print(json.dumps({"status": "complete" if all(result[key].get("status") == "complete"
+                                                       for key in ("population", "eia", "irsIncome",
+                                                                   "blsUnemployment", "fbiCrime")) else "partial",
+                          "inventory": str(args.inventory.expanduser().resolve()),
+                          "sources": {key: value.get("status") if isinstance(value, dict) else None
+                                      for key, value in result.items() if isinstance(value, dict)}},
+                         ensure_ascii=False, sort_keys=True))
+        return 0
+    except (OSError, ValueError, KeyError, TypeError, InvalidOperation) as error:
+        print(json.dumps({"status": "partial", "error": type(error).__name__},
+                         ensure_ascii=False), file=sys.stderr)
+        return 2
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
