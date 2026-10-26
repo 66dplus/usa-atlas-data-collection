@@ -1,0 +1,73 @@
+{
+  "contract_version": "2.0.0-candidate",
+  "collector_version": "politics-preparation-2.1.0",
+  "admission_status": "candidate_not_admitted",
+  "jsonl_outputs": {
+    "reader_observations.jsonl": {
+      "relation": "usa_atlas.reader_observation",
+      "grain": "dataset_id,field_id,geo_type,geo_id,period_kind,period_year,period_month,period_start_year,period_end_year,source_release",
+      "period_selector": "bind both period_start_year and period_end_year"
+    },
+    "election_contests.jsonl": {
+      "relation": "usa_atlas.election_contest",
+      "grain": "office,election_year,geography_type,geo_id,boundary_vintage,congress_session,stage,is_special,is_runoff,result_mode,source_release,source_version"
+    },
+    "election_candidates.jsonl": {
+      "relation": "usa_atlas.election_candidate",
+      "grain": "contest_id,source_row_id",
+      "values": "source_value_status represents source parsing; aggregation_quarantine_reasons are independent"
+    },
+    "election_party_results.jsonl": {
+      "relation": "usa_atlas.election_party_result",
+      "grain": "contest_id,party_normalized",
+      "share": "selected-party candidatevotes / one consistent contest totalvotes for validated TOTAL contests; absent party is zero only when validated"
+    },
+    "election_availability.jsonl": {
+      "relation": "usa_atlas.election_availability",
+      "statuses": [
+        "observed",
+        "no_election",
+        "missing"
+      ]
+    },
+    "boundary_features.jsonl": {
+      "relation": "usa_atlas.geography_boundary",
+      "boundary_vintage": 2024,
+      "congress_session": "119",
+      "geometry": "GeoJSON geometry retained; feature IDs/hash from pinned Census source"
+    }
+  },
+  "field_ids": {
+    "aian": {
+      "dataset_id": "aian_broad_share",
+      "field_id": "01.04:aian_share",
+      "catalog_field_id": "01.04"
+    },
+    "president": {
+      "dataset_id": "president_election",
+      "field_id": "12.01",
+      "catalog_field_id": "12.01"
+    },
+    "senate": {
+      "dataset_id": "senate_election",
+      "field_id": "12.02",
+      "catalog_field_id": "12.02"
+    },
+    "house": {
+      "dataset_id": "house_election",
+      "field_id": "12.03",
+      "catalog_field_id": "12.03"
+    }
+  },
+  "source_release_examples": {
+    "president": "dataverse-VOQCHQ-v20",
+    "senate": "dataverse-PEJ5QU-v8",
+    "house": "prepared-mirror-IG0UN2-v15"
+  },
+  "version_separation": {
+    "collector_version": "politics-preparation-2.1.0",
+    "reader_contract_version": "2.0.0-candidate",
+    "observation_source_release": "separate per-source values above"
+  },
+  "only_admitted_rows_are_application_consumable": "join usa_atlas.ingest_run.status='pass' and usa_atlas.reader_batch.candidate_status='admitted'; local loader batches are candidate_status='local_review'"
+}

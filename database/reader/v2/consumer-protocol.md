@@ -10,7 +10,7 @@ The current application adapter reads `catalog_field`, `observation`, and `inges
 
 ## Scalar observations and periods
 
-Use an exact period identity. `monthly` requires `period_month` 1–12. `annual` has a null month. `multi_year` records retain inclusive start and end years, which is how the 2020–2024 ACS five-year estimate is represented. Source period codes remain provenance. BLS `M13` maps to `period_kind = 'annual'`, `period_year = 2025`, and `period_month = NULL`; it is never a calendar month.
+Use the complete period identity. `monthly` requires `period_month` 1–12. `annual` has a null month. `multi_year` records retain inclusive start and end years, which is how the 2020–2024 ACS five-year estimate is represented; selectors and cache keys must bind both endpoints. Source period codes remain provenance. BLS `M13` maps to `period_kind = 'annual'`, `period_year = 2025`, and `period_month = NULL`; it is never a calendar month.
 
 ```sql
 SELECT geo_id,geo_type,value,unit,quality_status,source_release,source_url,
@@ -21,11 +21,13 @@ WHERE o.field_id = :field_id
   AND o.period_kind = :period_kind
   AND o.period_year = :period_year
   AND o.period_month IS NOT DISTINCT FROM :period_month
+  AND o.period_start_year = :period_start_year
+  AND o.period_end_year = :period_end_year
   AND o.source_release = :source_release
   AND i.status = 'pass';
 ```
 
-The selector is part of the request identity and cache key. A no-row result is not a zero. A returned `quality_status` of `missing`, `suppressed`, `invalid`, or `nonmapping_geography` is not a usable map value. A real numeric zero is `observed` with `value = 0`.
+The selector and cache key include both inclusive window endpoints for every period: field, kind, label year, month (nullable), start year, end year, source release, and geography. For a multi-year window, bind both endpoints; period_year alone does not identify a window. A no-row result is not a zero. A returned `quality_status` of `missing`, `suppressed`, `invalid`, or `nonmapping_geography` is not a usable map value. A real numeric zero is `observed` with `value = 0`.
 
 ## AIAN broad share
 
@@ -35,7 +37,7 @@ The candidate metric on existing field `01.04` is B02010_001E divided by B01003_
 
 `contest_id` isolates office, election year, geography, stage, special/runoff flags, source release, and result mode. Preserve candidate-level rows, source candidatevotes/totalvotes text, original and normalized party, row source version, write-in/fusion flags, and all mode rows. `reported_total_votes` is stored once per contest; a candidate row's repeated source `totalvotes` is provenance, never an addend.
 
-For the map, select only `result_mode = 'TOTAL'`. Do not combine it with `EARLY VOTING`, `ABSENTEE`, `ELECTION DAY`, or any other subtotal. Aggregate candidatevotes by normalized party only when `party_aggregation_status = 'validated'`; ambiguous/repeated candidate or fusion cases are quarantined with null shares. The denominator is the contest's reported totalvotes (all votes), not only the two leading parties. Candidate share is not turnout or a share of residents.
+For the map, select only `result_mode = 'TOTAL'`. Do not combine it with `EARLY VOTING`, `ABSENTEE`, `ELECTION DAY`, or any other subtotal. Aggregate candidatevotes by normalized party only when `party_aggregation_status = 'validated'`; ambiguous or repeated candidate cases are quarantined with null shares; a fusion flag alone is not a quarantine when source candidate-party rows remain unambiguous. The denominator is the contest's reported totalvotes (all votes), not only the two leading parties. Candidate share is not turnout or a share of residents.
 
 Election fields are `12.01` President, `12.02` Senate, and `12.03` House. President uses county geography, Senate state geography, and House congressional-district geography. For a 2024 House general contest, include the 2024 boundary vintage and 119th Congress session in the identity. At-large state districts use Census `CD119FP = '00'`; the nonvoting delegate identifier `98` is not an at-large district. Historical House records without matched year-appropriate boundaries retain their source district identifier with a null boundary vintage and must not join to 2024 district geometry.
 

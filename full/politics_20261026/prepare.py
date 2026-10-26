@@ -1,146 +1,388 @@
-"""Deterministic candidate preparation from existing local research inputs."""
-import csv, hashlib, json, os, pathlib, sys, shutil, subprocess
-ROOT=pathlib.Path('/Users/dmitrijrybkin/Documents/USA-MAPS/research/data-collection/research/2026-10-25/politics-native')
-OUT=pathlib.Path('/tmp/usa-maps-data-flow-20261026/reader-results')
-_BOUNDARY_FILE=pathlib.Path('/tmp/usa-maps-data-flow-20261026/boundary/cd119.geojson')
-_AT_LARGE_STATES=set()
-if _BOUNDARY_FILE.exists():
- _AT_LARGE_STATES={f['properties']['STATEFP'] for f in json.loads(_BOUNDARY_FILE.read_text())['features'] if f['properties'].get('CD119FP')=='00'}
-SOURCES={
- 'president':('raw/president_county_2000_2024.csv','9299583148f5f8264baf50b5d929c260699c46d915909b13ea3c3850918946f8','12.01'),
- 'senate':('raw/senate_state_1976_2024.csv','d4492e286046f73b111cf5706ee02be4c305897898317818afd06c0ac8a464e0','12.02'),
- 'house':('raw/house_district_1976_2024.csv','bd0690fbcd753e45edb40810c99d1b8afbb0de928aa54bff1b227c615d69c163','12.03')}
-def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
-def padded(value,width):
- try: return str(int(float(str(value)))) .zfill(width)
- except (TypeError,ValueError): return str(value or '').strip().zfill(width)
-def geo(r,office):
- if office=='president':
-  gid=padded(r.get('county_fips'),5); return ('county',gid,gid[:2],None,None,False)
- if office=='senate':
-  sid=padded(r.get('state_fips'),2); return ('state',sid,sid,None,None,False)
- sid=padded(r.get('state_fips'),2); district=padded(r.get('district'),2); year=int(r.get('year') or 0)
- is_special=str(r.get('special','False')).lower()=='true'; stage=(r.get('stage') or 'GEN').upper()
- vintage,session=(2024,'119') if year==2024 and stage=='GEN' and not is_special else (None,None)
- if vintage and sid in _AT_LARGE_STATES: district='00'
- return ('congressional_district',sid+district,sid,district,vintage, district=='00')
-def norm_party(s):
- s=(s or '').strip().upper()
- if s in {'DEMOCRAT','DEMOCRATIC'}: return 'DEMOCRAT'
- if s in {'REPUBLICAN','GOP'}: return 'REPUBLICAN'
- if s in {'LIBERTARIAN','GREEN','INDEPENDENT','OTHER'}: return s
- return s or None
-def run():
- OUT.mkdir(parents=True,exist_ok=True); inventory={'status':'candidate_not_admitted','fields':{'AIAN':'01.04','president':'12.01','senate':'12.02','house':'12.03'},'sources':{},'outputs':{}}
- for office,(rel,expected,field) in SOURCES.items():
-  p=ROOT/rel
-  if sha(p)!=expected: raise ValueError(f'source SHA256 mismatch: {office}')
-  delimiter='\t' if office=='senate' else ','
-  with p.open(newline='',encoding='utf-8-sig') as f:
-   if office=='house':
-    header=next(csv.reader([next(f)],delimiter=delimiter)); rows=[]
-    for line in f:
-     text=line.rstrip('\r\n')
-     if text.startswith('"') and text.endswith('"'): text=text[1:-1]
-     values=next(csv.reader([text],delimiter=delimiter))
-     rows.append(dict(zip(header,values)))
-   else: rows=list(csv.DictReader(f,delimiter=delimiter))
-  # Fail closed on same-contest candidate repeats and fusion tickets; totals are checked as a set, never summed.
-  def ckey(r):
-   return (r.get('year'),r.get('state_fips') or r.get('state_po'),r.get('county_fips') or r.get('district') or r.get('state_po'),(r.get('stage') or 'GEN').upper(),str(r.get('special','False')).lower(),str(r.get('runoff','False')).lower(),(r.get('mode') or 'TOTAL').upper(),r.get('version'))
-  groups={}
-  for r in rows: groups.setdefault(ckey(r),[]).append(r)
-  diagnostics=[]; quarantined={}
-  for key,items in groups.items():
-   candidates={}
-   totals=set()
-   for r in items:
-    cand=(r.get('candidate') or '').strip().upper(); party=norm_party(r.get('party') or r.get('party_detailed') or r.get('party_simplified'))
-    if cand and cand not in {'TOTAL VOTES CAST','UNDERVOTES','OVERVOTES'}: candidates.setdefault((cand,party),[]).append(r)
-    totals.add((r.get('totalvotes') or '').strip())
-   reasons=[]
-   if any(str(r.get('fusion_ticket','False')).lower()=='true' for r in items): reasons.append('fusion_ticket_requires_review')
-   if any(len(v)>1 for v in candidates.values()): reasons.append('repeated_candidate_row')
-   if len(totals)>1: reasons.append('inconsistent_repeated_totalvotes')
-   diagnostics.append({'contest_source_key':list(key),'result_mode':key[6],'row_count':len(items),'reported_total_votes_raw':next(iter(totals)) if len(totals)==1 else None,'party_aggregation_status':'quarantined' if reasons else 'not_evaluated','quarantine_reasons':reasons})
-   for r in items: quarantined[id(r)]=reasons
-  status_path=OUT/f'{office}_contest_review.jsonl'
-  status_path.write_text(''.join(json.dumps(d,sort_keys=True)+'\n' for d in diagnostics))
-  # Retain each original source row and make only conservative normalized fields.
-  out=OUT/f'{office}_candidates.jsonl'; count=0
-  with out.open('w',encoding='utf-8',newline='\n') as w:
-   for n,r in enumerate(rows,1):
-    party=r.get('party') or r.get('party_detailed') or r.get('party_simplified')
-    candidate=(r.get('candidate') or '').strip()
-    try: votes=int(float((r.get('candidatevotes') or '').strip()))
-    except Exception: votes=None
-    try: total=int(float((r.get('totalvotes') or '').strip()))
-    except Exception: total=None
-    gt,gid,state_fips,district_code,bv,atlarge=geo(r,office)
-    row={'field_id':field,'office':office,'source_row_id':str(n),'geography_type':gt,'geo_id':gid,'state_fips':state_fips,'district_code':district_code,'boundary_vintage':bv,'congress_session':'119' if bv else None,'is_at_large':atlarge,'source_district_code':r.get('district'),'candidate_label':candidate,'candidate_kind':'candidate' if candidate and candidate.upper() not in {'TOTAL VOTES CAST','UNDERVOTES','OVERVOTES'} else 'source_aggregate','party_original':party,'party_normalized':norm_party(party),'candidatevotes_raw':r.get('candidatevotes'),'totalvotes_raw':r.get('totalvotes'),'candidate_votes':votes,'source_total_votes':total,'stage':r.get('stage') or 'GEN','is_special':str(r.get('special','False')).lower()=='true','is_runoff':str(r.get('runoff','False')).lower()=='true','result_mode':(r.get('mode') or 'TOTAL').upper(),'source_version':r.get('version'),'source_row':r,'quality_status':'invalid' if quarantined[id(r)] else 'observed','quarantine_reason':';'.join(quarantined[id(r)]) or None}
-    w.write(json.dumps(row,ensure_ascii=False,sort_keys=True)+'\n'); count+=1
-  inventory['sources'][office]={'path':str(p),'sha256':expected,'bytes':p.stat().st_size,'rows':len(rows)}
-  inventory['outputs'][office]={'path':str(out),'sha256':sha(out),'rows':count}
-  inventory['outputs'][office+'_contest_review']={'path':str(status_path),'sha256':sha(status_path),'contests':len(diagnostics),'quarantined':sum(d['party_aggregation_status']=='quarantined' for d in diagnostics)}
- # Explicit Senate 2024 schedule coverage; Class I states use the official Senate schedule.
- class_i={"AZ","CA","CT","DE","FL","HI","IN","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NJ","NM","NY","ND","OH","PA","RI","TN","TX","UT","VT","VA","WA","WV","WI","WY"}
- senate_src=ROOT/'raw/senate_state_1976_2024.csv'
- with senate_src.open(newline='',encoding='utf-8-sig') as f: sr=list(csv.DictReader(f,delimiter='\t'))
- seen={}
- for r in sr:
-  if str(r.get('year'))=='2024':
-   po=r.get('state_po'); key=(po,str(r.get('stage','GEN')).upper(),str(r.get('special','False')).lower()=='true',str(r.get('runoff','False')).lower()=='true')
-   seen.setdefault(key,[]).append(r)
- # State FIPS set contains the 50 states; no DC/territory Senate rows are synthesized.
- fips={"AL":1,"AK":2,"AZ":4,"AR":5,"CA":6,"CO":8,"CT":9,"DE":10,"FL":12,"GA":13,"HI":15,"ID":16,"IL":17,"IN":18,"IA":19,"KS":20,"KY":21,"LA":22,"ME":23,"MD":24,"MA":25,"MI":26,"MN":27,"MS":28,"MO":29,"MT":30,"NE":31,"NV":32,"NH":33,"NJ":34,"NM":35,"NY":36,"NC":37,"ND":38,"OH":39,"OK":40,"OR":41,"PA":42,"RI":44,"SC":45,"SD":46,"TN":47,"TX":48,"UT":49,"VT":50,"VA":51,"WA":53,"WV":54,"WI":55,"WY":56}
- availability=[]
- for po,sid in sorted(fips.items(),key=lambda x:x[1]):
-  if po in class_i:
-   keys=[k for k in seen if k[0]==po]
-   if not keys: availability.append({'field_id':'12.02','office':'senate','year':2024,'geo_type':'state','geo_id':f'{sid:02}','stage':'general','is_special':False,'is_runoff':False,'quality_status':'missing','source_release':'MEDSL prepared source','reason':'Official Class I schedule expects a contest but no 2024 candidate rows were found.'})
-   for k in keys: availability.append({'field_id':'12.02','office':'senate','year':2024,'geo_type':'state','geo_id':f'{sid:02}','stage':k[1],'is_special':k[2],'is_runoff':k[3],'quality_status':'observed','source_release':'MEDSL prepared source','reason':'Candidate source rows present; contest quality is assessed separately.'})
-  else: availability.append({'field_id':'12.02','office':'senate','year':2024,'geo_type':'state','geo_id':f'{sid:02}','stage':'general','is_special':False,'is_runoff':False,'quality_status':'no_election','source_release':'official Senate Class I schedule + MEDSL source','reason':'No regular Class I race and no 2024 special contest identified for this state.'})
- av=OUT/'senate_2024_availability.jsonl';av.write_text(''.join(json.dumps(r,sort_keys=True)+'\n' for r in availability))
- inventory['outputs']['senate_2024_availability']={'path':str(av),'sha256':sha(av),'rows':len(availability),'no_election':sum(r['quality_status']=='no_election' for r in availability),'missing':sum(r['quality_status']=='missing' for r in availability)}
- # ACS broad AIAN numerator and total population denominator from same ACS 2024 5-year table.
- for geography in ("state","county"):
-  p=ROOT/f"raw/acs_2024_5yr_aian_{geography}.csv"
-  expected={"state":"e86128465aa3ad35629c18062d381cb72132505cecaa5268443058f4ba363301","county":"ffbff1bf70d6cdd8af1e399f43e890a80349a53e9b3541bd1dd5b06e7e6c76a1"}[geography]
-  if sha(p)!=expected: raise ValueError(f"ACS source SHA256 mismatch: {geography}")
-  out=OUT/f"aian_{geography}.jsonl"
-  with p.open(newline="",encoding="utf-8-sig") as f: rows=list(csv.DictReader(f))
-  source_only={"02063","02066","09110","09120","09130","09140","09150","09160","09170","09180","09190"}
-  with out.open("w",encoding="utf-8",newline="\n") as w:
-   for r in rows:
-    geoid=(r["state"]+r["county"]) if geography=="county" else r["state"]
-    raw_n,raw_d=r.get("B02010_001E"),r.get("B01003_001E")
+"""Prepare reader-v2 review files from pinned local research inputs; never admit or write a database."""
+import argparse
+import csv
+import hashlib
+import json
+import pathlib
+import shutil
+import subprocess
+from collections import Counter, defaultdict
+from decimal import Decimal, InvalidOperation
+
+POLITICS_FILES = {
+    "president": ("normalized/president_county_2000_2024.csv", ",", "d862f565ad7ac09b234f1481db91c3aa46948192bffe6b85df5d0b8b9e01400e", 94151, "12.01", "dataverse-VOQCHQ-v20", "raw/president_county_2000_2024.csv", "9299583148f5f8264baf50b5d929c260699c46d915909b13ea3c3850918946f8"),
+    "senate": ("normalized/senate_state_1976_2024.csv", ",", "1807fb552728edd5e1a425bb6a3d4d3e602c1edfb51fe05e16e75a08463313dc", 3945, "12.02", "dataverse-PEJ5QU-v8", "raw/senate_state_1976_2024.csv", "d4492e286046f73b111cf5706ee02be4c305897898317818afd06c0ac8a464e0"),
+    # Parse the canonical prepared CSV, not malformed raw mirror quoting; retain both hashes.
+    "house": ("normalized/house_district_1976_2024.csv", ",", "cc311bfc9a09ca94859c5e6f92b7cd0f2f16cdee9534ee9eed9f549a1e4c5940", 33805, "12.03", "prepared-mirror-IG0UN2-v15", "raw/house_district_1976_2024.csv", "bd0690fbcd753e45edb40810c99d1b8afbb0de928aa54bff1b227c615d69c163"),
+}
+ACS_FILES = {
+    "us": ("raw/acs_2024_5yr_aian_us.csv", "2ddcd3a7d26bb15901fd4c8d0c391c5a56357332cad0c15510f3ae0fd914b243", 1),
+    "state": ("raw/acs_2024_5yr_aian_state.csv", "e86128465aa3ad35629c18062d381cb72132505cecaa5268443058f4ba363301", 52),
+    "county": ("raw/acs_2024_5yr_aian_county.csv", "ffbff1bf70d6cdd8af1e399f43e890a80349a53e9b3541bd1dd5b06e7e6c76a1", 3222),
+}
+BOUNDARY_ZIP_SHA256 = "2b4238aed7e865df75d0c9cfcd8dffa1b79007b24519ecc4b213e683078b031a"
+BOUNDARY_SOURCE_URL = "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_cd119_500k.zip"
+FIELD_IDS = {"aian": "01.04", "president": "12.01", "senate": "12.02", "house": "12.03"}
+COLLECTOR_VERSION = "politics-preparation-2.1.0"
+CONTRACT_VERSION = "2.0.0-candidate"
+SOURCE_URL = {
+    "president": "https://doi.org/10.7910/DVN/VOQCHQ",
+    "senate": "https://doi.org/10.7910/DVN/PEJ5QU",
+    "house": "https://doi.org/10.7910/DVN/IG0UN2",
+}
+AGGREGATE_LABELS = {"TOTAL VOTES CAST", "UNDERVOTES", "UNDER VOTES", "OVERVOTES", "OVER VOTES"}
+
+
+def sha256(path):
+    digest = hashlib.sha256()
+    with pathlib.Path(path).open("rb") as stream:
+        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def strict_int(value):
+    if value is None or not str(value).strip():
+        return None
     try:
-     n,d=int(raw_n),int(raw_d); good=n>=0 and d>0
-    except (ValueError,TypeError): n=d=None;good=False
-    if raw_n in {"-999999999","-888888888","-666666666"} or raw_d in {"-999999999","-888888888","-666666666"}: status="suppressed"; value=None
-    elif raw_n is None or raw_d is None: status="missing";value=None
-    elif not good: status="invalid";value=None
-    else: status="observed";value=round(n/d*100,8)
-    mapping="nonmapping_geography" if geography=="county" and geoid in source_only else "mapped"
-    row={"field_id":"01.04","geography_type":geography,"geo_id":geoid,"period_kind":"multi_year","period_start_year":2020,"period_end_year":2024,"period_year":2024,"period_month":None,"raw_estimate":raw_n,"raw_estimate_moe":r.get("B02010_001M"),"raw_denominator":raw_d,"raw_denominator_moe":r.get("B01003_001M"),"value":value,"unit":"percent","quality_status":mapping if mapping!="mapped" and status=="observed" else status,"source_value_status":status,"geography_mapping_status":mapping,"source_sha256":sha(p),"overlap_note":"AIAN alone or in combination, all Hispanic origins; race responses overlap; shares do not sum to 100%. No derived ratio MOE."}
-    w.write(json.dumps(row,sort_keys=True)+'\n')
-  inventory['sources'][f"aian_{geography}"]={"path":str(p),"sha256":sha(p),"bytes":p.stat().st_size,"rows":len(rows)}
-  inventory['outputs'][f"aian_{geography}"]={"path":str(out),"sha256":sha(out),"rows":len(rows)}
- # Import the already-downloaded official shape file through GDAL; no network access.
- geo_path=_BOUNDARY_FILE
- zip_path=pathlib.Path('/tmp/usa-maps-data-flow-20261026/cb_2024_us_cd119_500k.zip')
- if not geo_path.exists() and zip_path.exists():
-  if not shutil.which('ogr2ogr'): raise RuntimeError('ogr2ogr is required to build candidate CD119 GeoJSON')
-  geo_path.parent.mkdir(parents=True,exist_ok=True)
-  subprocess.run(['ogr2ogr','-f','GeoJSON',str(geo_path),'/vsizip/'+str(zip_path),'-t_srs','EPSG:4326'],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE,text=True)
- if geo_path.exists():
-  data=json.loads(geo_path.read_text()); ids=[]
-  for feature in data['features']:
-   prop=feature['properties']; geom=json.dumps(feature.get('geometry'),sort_keys=True,separators=(',',':')).encode()
-   ids.append({'geoid':prop.get('GEOID'),'state_fips':prop.get('STATEFP'),'district_code':prop.get('CD119FP'),'congress_session':str(prop.get('CDSESSN')),'boundary_vintage':2024,'is_at_large':prop.get('CD119FP')=='00','geometry_sha256':hashlib.sha256(geom).hexdigest()})
-  ids.sort(key=lambda x:x['geoid'] or '')
-  ip=OUT/'cd119_geometry_manifest.json';ip.write_text(json.dumps({'source_zip':'/tmp/usa-maps-data-flow-20261026/cb_2024_us_cd119_500k.zip','source_zip_sha256':'2b4238aed7e865df75d0c9cfcd8dffa1b79007b24519ecc4b213e683078b031a','source_url':'https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_cd119_500k.zip','features':ids,'feature_count':len(ids),'notice':'2024 119th Congress geometry only; do not join historic contests. No ZZ geometry synthesized.'},indent=2)+'\n')
-  inventory['outputs']['cd119_geometry_manifest']={'path':str(ip),'sha256':sha(ip),'features':len(ids)}
-  inventory['outputs']['cd119_geojson']={'path':str(geo_path),'sha256':sha(geo_path),'bytes':geo_path.stat().st_size,'features':len(ids)}
- ip=OUT/'reader-results.json';ip.write_text(json.dumps(inventory,indent=2)+'\n')
-if __name__=='__main__': run()
+        number = Decimal(str(value).strip())
+    except InvalidOperation:
+        return None
+    return int(number) if number.is_finite() and number == number.to_integral_value() else None
+
+
+def flag(value):
+    return str(value or "false").strip().lower() in {"true", "1", "yes"}
+
+
+def write_jsonl(path, rows):
+    with pathlib.Path(path).open("w", encoding="utf-8", newline="\n") as stream:
+        for row in rows:
+            stream.write(json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n")
+
+
+def read_csv_rows(path, delimiter=","):
+    """Parse a genuine CSV stream; source fields containing commas stay in their column."""
+    with pathlib.Path(path).open(newline="", encoding="utf-8-sig") as stream:
+        reader = csv.DictReader(stream, delimiter=delimiter, strict=True)
+        if not reader.fieldnames or any(not name for name in reader.fieldnames):
+            raise ValueError("CSV header is missing or malformed")
+        rows = list(reader)
+    if any(None in row or any(value is None for value in row.values()) for row in rows):
+        raise ValueError("CSV row width does not match its header")
+    return rows, list(reader.fieldnames)
+
+
+def norm_party(original, candidate_kind):
+    if candidate_kind == "source_aggregate":
+        return None
+    raw = (original or "").strip().upper()
+    if raw in {"DEMOCRAT", "DEMOCRATIC", "DEMOCRATIC-FARMER-LABOR", "DFL", "DEMOCRATIC PARTY"}:
+        return "DEMOCRAT"
+    if raw in {"REPUBLICAN", "GOP", "REPUBLICAN PARTY"}:
+        return "REPUBLICAN"
+    if raw in {"", "NA", "N/A"} and candidate_kind == "ballot_or_other":
+        return "OTHER"
+    if raw in {"", "NA", "N/A"}:
+        return None
+    return raw
+
+
+def candidate_kind(row):
+    name = " ".join((row.get("candidate") or "").strip().upper().replace("_", " ").split())
+    if name in AGGREGATE_LABELS:
+        return "source_aggregate"
+    if flag(row.get("writein")) or name in {"WRITEIN", "WRITE IN", "SCATTER", "NONE OF THESE, CANDIDATES", "OTHER"}:
+        return "ballot_or_other"
+    return "candidate" if name else "unclassified"
+
+
+def load_boundary(args, outdir):
+    if args.boundary_zip:
+        source = pathlib.Path(args.boundary_zip)
+        source_hash = sha256(source)
+        if source_hash != BOUNDARY_ZIP_SHA256:
+            raise ValueError("boundary ZIP failed pinned Census source hash")
+        target = outdir / "boundary" / "cd119.geojson"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        ogr = shutil.which("ogr2ogr")
+        if not ogr:
+            raise ValueError("ogr2ogr is required to convert pinned CD119 boundary input")
+        subprocess.run([ogr, "-f", "GeoJSON", str(target), "/vsizip/" + str(source), "-t_srs", "EPSG:4326"], check=True, capture_output=True, text=True)
+        geo_path = target
+        provenance = {"source_zip_sha256": source_hash, "source_url": BOUNDARY_SOURCE_URL}
+    else:
+        source = pathlib.Path(args.boundary_geojson)
+        if sha256(source) != args.boundary_geojson_sha256:
+            raise ValueError("boundary GeoJSON failed exact trusted SHA-256")
+        geo_path = outdir / "boundary" / "cd119.geojson"
+        geo_path.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copyfile(source, geo_path)
+        provenance = {"trusted_geojson_sha256": args.boundary_geojson_sha256, "source_url": BOUNDARY_SOURCE_URL}
+    data = json.loads(geo_path.read_text(encoding="utf-8"))
+    if data.get("type") != "FeatureCollection" or len(data.get("features", [])) != 441:
+        raise ValueError("CD119 geometry must have the verified 441-feature FeatureCollection shape")
+    by_id = {}
+    for feature in data["features"]:
+        props = feature.get("properties", {})
+        geoid, state, district = (str(props.get(k, "")) for k in ("GEOID", "STATEFP", "CD119FP"))
+        if not feature.get("geometry") or len(geoid) != 4 or geoid != state + district or geoid in by_id:
+            raise ValueError("invalid or duplicate CD119 identity")
+        if str(props.get("CDSESSN")) != "119":
+            raise ValueError("unexpected CD119 Congress session")
+        geom_sha = hashlib.sha256(json.dumps(feature["geometry"], sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        by_id[geoid] = {"feature": feature, "state_fips": state, "district_code": district, "is_at_large": district == "00", "is_nonvoting": district == "98", "geometry_sha256": geom_sha}
+    if "1198" not in by_id or "1100" in by_id or not any(row["is_at_large"] for row in by_id.values()):
+        raise ValueError("CD119 source IDs lack expected DC delegate or state at-large features")
+    feature_path = outdir / "boundary_features.jsonl"
+    write_jsonl(feature_path, [{"geo_id": geoid, "boundary_vintage": 2024, "congress_session": "119", **by_id[geoid]} for geoid in sorted(by_id)])
+    manifest = {"boundary_vintage": 2024, "congress_session": "119", "source": provenance, "geojson_sha256": sha256(geo_path), "feature_count": len(by_id), "features": [{"geo_id": geoid, "state_fips": row["state_fips"], "district_code": row["district_code"], "is_at_large": row["is_at_large"], "is_nonvoting": row["is_nonvoting"], "geometry_sha256": row["geometry_sha256"]} for geoid, row in sorted(by_id.items())]}
+    (outdir / "cd119_geometry_manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    return by_id, {"path": str(geo_path), "sha256": sha256(geo_path), "features": len(by_id), "features_jsonl_path": str(feature_path), "features_jsonl_sha256": sha256(feature_path), "source": provenance}
+
+
+def house_geo(row, boundary_ids):
+    state = str(int(row["state_fips"])).zfill(2)
+    district_number = strict_int(row.get("district"))
+    if district_number is None:
+        raise ValueError("House district ID is not numeric")
+    raw_code = str(district_number).zfill(2)
+    # MEDSL encodes a single-seat state and DC as district 0; Census identifies DC as 1198.
+    geoid = "1198" if state == "11" and raw_code == "00" else state + raw_code
+    exact = boundary_ids.get(geoid)
+    if exact is None:
+        return {"geography_type": "congressional_district", "geo_id": geoid, "state_fips": state, "district_code": geoid[-2:], "boundary_vintage": None, "congress_session": None, "is_at_large": False, "seat_type": "unresolved", "geography_mapping_status": "vintage_unresolved"}
+    return {"geography_type": "congressional_district", "geo_id": geoid, "state_fips": state, "district_code": exact["district_code"], "boundary_vintage": 2024, "congress_session": "119", "is_at_large": exact["is_at_large"], "seat_type": "nonvoting_delegate" if exact["is_nonvoting"] else "voting_district", "geography_mapping_status": "mapped"}
+
+
+def election_geo(row, office, boundary_ids):
+    if office == "president":
+        geoid = str(row["county_fips"]).zfill(5)
+        return {"geography_type": "county", "geo_id": geoid, "state_fips": geoid[:2], "district_code": None, "boundary_vintage": None, "congress_session": None, "is_at_large": False, "seat_type": None, "geography_mapping_status": "mapped"}
+    if office == "senate":
+        state = str(int(row["state_fips"])).zfill(2)
+        return {"geography_type": "state", "geo_id": state, "state_fips": state, "district_code": None, "boundary_vintage": None, "congress_session": None, "is_at_large": False, "seat_type": None, "geography_mapping_status": "mapped"}
+    if strict_int(row.get("year")) == 2024 and str(row.get("stage", "GEN")).upper() == "GEN" and not flag(row.get("special")):
+        geography = house_geo(row, boundary_ids)
+        if geography["geography_mapping_status"] != "mapped":
+            raise ValueError("2024 general House district does not match a pinned CD119 geometry ID")
+        return geography
+    geo = house_geo(row, {})
+    geo.update({"boundary_vintage": None, "congress_session": None, "is_at_large": False, "seat_type": "unresolved", "geography_mapping_status": "vintage_unresolved"})
+    return geo
+
+
+def make_contest_key(row, office, boundary_ids, release):
+    geo = election_geo(row, office, boundary_ids)
+    year = strict_int(row.get("year"))
+    stage = (row.get("stage") or "GENERAL").strip().upper() if office != "president" else "GENERAL"
+    return (office, year, geo["geography_type"], geo["geo_id"], geo["boundary_vintage"], geo["congress_session"], stage, flag(row.get("special")), flag(row.get("runoff")), (row.get("mode") or "").strip().upper(), release, str(row.get("version") or ""))
+
+
+def adjudicate_contest(rows):
+    """Validate source values independently from party aggregation; return reviewable party totals."""
+    reasons = []
+    totals = [row["source_total_votes"] for row in rows]
+    distinct_totals = set(totals)
+    denominator = next(iter(distinct_totals)) if len(distinct_totals) == 1 else None
+    if denominator is None:
+        reasons.append("inconsistent_or_invalid_totalvotes")
+    elif denominator <= 0:
+        reasons.append("nonpositive_contest_denominator")
+    if any(row["source_value_status"] != "observed" for row in rows):
+        reasons.append("invalid_candidatevotes_or_totalvotes")
+    candidates = [row for row in rows if row["candidate_kind"] != "source_aggregate"]
+    counts = Counter((row["candidate_label"].strip().upper(), row["party_normalized"]) for row in candidates)
+    by_candidate = defaultdict(list)
+    for row in candidates:
+        by_candidate[row["candidate_label"].strip().upper()].append(row)
+    for label, matched in by_candidate.items():
+        parties = {row["party_normalized"] for row in matched}
+        if len(parties) > 1 and not all(row["fusion_ticket"] or row["candidate_kind"] == "ballot_or_other" for row in matched):
+            reasons.append("ambiguous_cross_party_candidate")
+    for key, count in counts.items():
+        dupes = [row for row in candidates if (row["candidate_label"].strip().upper(), row["party_normalized"]) == key]
+        if count > 1 and not all(row["candidate_kind"] == "ballot_or_other" for row in dupes):
+            reasons.append("repeated_candidate_party_row")
+    party_totals = defaultdict(int)
+    for row in candidates:
+        if row["party_normalized"] is None:
+            reasons.append("unclassified_party")
+        elif row["candidate_votes"] is not None:
+            party_totals[row["party_normalized"]] += row["candidate_votes"]
+    if denominator is not None and sum(party_totals.values()) > denominator:
+        reasons.append("candidate_votes_exceed_contest_total")
+    return {"status": "quarantined" if reasons else "validated", "reasons": sorted(set(reasons)), "denominator": denominator, "party_totals": dict(party_totals)}
+
+
+def selected_party_value(adjudication, party):
+    if adjudication["status"] != "validated" or not adjudication["denominator"]:
+        return None, None
+    votes = adjudication["party_totals"].get(party, 0)
+    return votes, votes / adjudication["denominator"]
+
+
+def prepare_elections(input_dir, outdir, boundary_ids):
+    candidates_out, contests_out, shares_out = [], [], []
+    source_inventory, counts = {}, {}
+    for office, (relative, delimiter, expected_hash, expected_rows, field_id, release, raw_relative, raw_hash) in POLITICS_FILES.items():
+        source_path = input_dir / relative
+        if sha256(source_path) != expected_hash:
+            raise ValueError("{} prepared data hash mismatch".format(office))
+        rows, headers = read_csv_rows(source_path, delimiter)
+        if len(rows) != expected_rows:
+            raise ValueError("{} row count mismatch: {}".format(office, len(rows)))
+        raw_path = input_dir / raw_relative
+        if sha256(raw_path) != raw_hash:
+            raise ValueError("{} original source hash mismatch".format(office))
+        source_provenance_status = {"president": "official_metadata_checksum_and_size_match", "senate": "official_direct_download_size_and_sha256_match_metadata_md5_processed_file_difference", "house": "mirror_unverified_local_review_only"}[office]
+        eligible = office != "house"
+        source_inventory[office] = {"path": str(source_path), "prepared_sha256": expected_hash, "raw_source_path": str(raw_path), "raw_source_sha256": raw_hash, "row_count": len(rows), "columns": headers, "source_release": release, "source_status": source_provenance_status, "production_eligible": eligible}
+        groups = defaultdict(list)
+        for rownum, source_row in enumerate(rows, 1):
+            geo = election_geo(source_row, office, boundary_ids)
+            kind = candidate_kind(source_row)
+            party_original = (source_row.get("party_detailed") or source_row.get("party_simplified")) if office == "senate" else source_row.get("party")
+            normalized = norm_party(party_original, kind)
+            candidate = (source_row.get("candidate") or "").strip()
+            candidate_votes = strict_int(source_row.get("candidatevotes"))
+            total_votes = strict_int(source_row.get("totalvotes"))
+            value_status = "observed" if candidate_votes is not None and total_votes is not None and candidate_votes >= 0 and total_votes >= 0 else "invalid"
+            key = make_contest_key(source_row, office, boundary_ids, release)
+            candidate_row = {"source_row_id": str(rownum), "field_id": field_id, "dataset_id": office + "_election", "office": office, "election_year": strict_int(source_row.get("year")), **geo, "candidate_label": candidate, "candidate_kind": kind, "party_original": party_original, "party_normalized": normalized, "candidatevotes_raw": source_row.get("candidatevotes"), "totalvotes_raw": source_row.get("totalvotes"), "candidate_votes": candidate_votes, "source_total_votes": total_votes, "source_version": str(source_row.get("version") or ""), "result_mode": key[9], "stage": key[6], "is_special": key[7], "is_runoff": key[8], "write_in": flag(source_row.get("writein")), "fusion_ticket": flag(source_row.get("fusion_ticket")), "source_value_status": value_status, "quality_status": value_status, "source_status": source_provenance_status, "source_release": release, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "prepared_input_sha256": expected_hash, "candidate_status": "local_review", "source_record": source_row}
+            groups[key].append(candidate_row)
+        office_contests = []
+        for key, group in groups.items():
+            if key[9] != "TOTAL":
+                result = {"status": "excluded_subtotal", "reasons": ["subtotal_not_added_to_TOTAL"], "denominator": None, "party_totals": {}}
+            else:
+                result = adjudicate_contest(group)
+            geo = {name: group[0][name] for name in ("geography_type", "geo_id", "state_fips", "district_code", "boundary_vintage", "congress_session", "is_at_large", "seat_type", "geography_mapping_status")}
+            contest_id = hashlib.sha256(json.dumps(key, separators=(",", ":")).encode()).hexdigest()[:32]
+            summary = {"contest_id": contest_id, "field_id": field_id, "catalog_field_id": field_id, "dataset_id": office + "_election", **geo, "office": office, "election_year": key[1], "stage": key[6], "is_special": key[7], "is_runoff": key[8], "result_mode": key[9], "source_release": release, "source_version": key[11], "reported_total_votes": result["denominator"], "reported_total_votes_raw_values": sorted({row["totalvotes_raw"] for row in group if row["totalvotes_raw"] is not None}), "party_aggregation_status": result["status"], "quarantine_reasons": result["reasons"], "quality_status": "observed" if result["denominator"] is not None else "missing", "source_status": source_provenance_status, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "prepared_input_sha256": expected_hash, "production_eligible": eligible, "candidate_status": "local_review", "row_count": len(group), "methodology_note": "Selected-party candidatevotes divided by contest totalvotes. Repeated candidate totalvotes are retained as provenance and never summed. TOTAL mode only; mode subtotals are not added."}
+            office_contests.append(summary)
+            for row in group:
+                row["contest_id"] = contest_id
+                row["aggregation_quarantine_reasons"] = result["reasons"]
+                candidates_out.append(row)
+            if key[9] == "TOTAL":
+                party_totals = result["party_totals"]
+                if result["status"] == "validated":
+                    party_totals.setdefault("DEMOCRAT", 0)
+                    party_totals.setdefault("REPUBLICAN", 0)
+                all_parties = set(party_totals) | {"DEMOCRAT", "REPUBLICAN"}
+                for party in sorted(all_parties):
+                    votes, share = selected_party_value(result, party)
+                    shares_out.append({"contest_id": contest_id, "field_id": field_id, "dataset_id": office + "_election", "office": office, "election_year": key[1], "geography_type": key[2], "geo_id": key[3], "boundary_vintage": key[4], "congress_session": key[5], "stage": key[6], "is_special": key[7], "is_runoff": key[8], "result_mode": "TOTAL", "party_normalized": party, "party_votes": votes, "reported_total_votes": result["denominator"], "share_all_votes": share, "quality_status": "observed" if result["status"] == "validated" else "missing", "party_aggregation_status": result["status"], "source_release": release, "source_status": source_provenance_status, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "production_eligible": eligible, "candidate_status": "local_review"})
+        contests_out.extend(office_contests)
+        total_contests = [c for c in office_contests if c["result_mode"] == "TOTAL"]
+        counts[office] = {"source_rows": len(rows), "contest_mode_groups": len(office_contests), "validated_total_contests": sum(c["party_aggregation_status"] == "validated" for c in total_contests), "quarantined_total_contests": sum(c["party_aggregation_status"] == "quarantined" for c in total_contests)}
+    # Official 2024 Senate Class I schedule: emit explicit no-election versus missing state records.
+    class_i = {"AZ", "CA", "CT", "DE", "FL", "HI", "IN", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "ND", "OH", "PA", "RI", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"}
+    state_fips = {"AL":1,"AK":2,"AZ":4,"AR":5,"CA":6,"CO":8,"CT":9,"DE":10,"FL":12,"GA":13,"HI":15,"ID":16,"IL":17,"IN":18,"IA":19,"KS":20,"KY":21,"LA":22,"ME":23,"MD":24,"MA":25,"MI":26,"MN":27,"MS":28,"MO":29,"MT":30,"NE":31,"NV":32,"NH":33,"NJ":34,"NM":35,"NY":36,"NC":37,"ND":38,"OH":39,"OK":40,"OR":41,"PA":42,"RI":44,"SC":45,"SD":46,"TN":47,"TX":48,"UT":49,"VT":50,"VA":51,"WA":53,"WV":54,"WI":55,"WY":56}
+    senate_source, _, _, _, _, senate_release, _, _ = POLITICS_FILES["senate"]
+    senate_rows, _ = read_csv_rows(input_dir / senate_source)
+    observed = defaultdict(list)
+    for source_row in senate_rows:
+        if strict_int(source_row.get("year")) != 2024:
+            continue
+        key = make_contest_key(source_row, "senate", boundary_ids, senate_release)
+        observed[key[3]].append(key)
+    availability = []
+    for postal, fips in sorted(state_fips.items(), key=lambda pair: pair[1]):
+        geoid = str(fips).zfill(2)
+        if postal not in class_i:
+            availability.append({"field_id": "12.02", "dataset_id": "senate_election", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": "GENERAL", "is_special": False, "is_runoff": False, "quality_status": "no_election", "source_release": senate_release, "reason": "No 2024 regular Class I race and no 2024 special contest on the official Senate schedule.", "candidate_status": "local_review"})
+        elif not observed.get(geoid):
+            availability.append({"field_id": "12.02", "dataset_id": "senate_election", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": "GENERAL", "is_special": False, "is_runoff": False, "quality_status": "missing", "source_release": senate_release, "reason": "Official schedule has a Class I race but prepared source has no 2024 candidate rows.", "candidate_status": "local_review"})
+        else:
+            for key in sorted(set(observed[geoid])):
+                availability.append({"field_id": "12.02", "dataset_id": "senate_election", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": key[6], "is_special": key[7], "is_runoff": key[8], "quality_status": "observed", "source_release": senate_release, "reason": "2024 candidate source rows present; aggregation validity is recorded on the separate contest row.", "candidate_status": "local_review"})
+    availability_path = outdir / "election_availability.jsonl"
+    write_jsonl(availability_path, availability)
+    outputs = {}
+    for filename, rows in (("election_candidates.jsonl", candidates_out), ("election_contests.jsonl", contests_out), ("election_party_results.jsonl", shares_out), ("election_availability.jsonl", availability)):
+        path = outdir / filename
+        write_jsonl(path, rows)
+        outputs[filename] = {"path": str(path), "sha256": sha256(path), "rows": len(rows)}
+    return source_inventory, counts, outputs
+
+
+def parse_acs(row, level, contract):
+    geo_type, geo_id = {"us": ("nation", "US"), "state": ("state", str(row.get("state", "")).zfill(2)), "county": ("county", str(row.get("state", "")).zfill(2) + str(row.get("county", "")).zfill(3))}[level]
+    raw_n, raw_nm = row.get("B02010_001E"), row.get("B02010_001M")
+    raw_d, raw_dm = row.get("B01003_001E"), row.get("B01003_001M")
+    n, denominator = strict_int(raw_n), strict_int(raw_d)
+    special = {"-999999999", "-888888888", "-666666666"}
+    if raw_n in special or raw_d in special:
+        value_status, value = "suppressed", None
+    elif n is None or denominator is None or n < 0 or denominator <= 0:
+        value_status, value = "invalid", None
+    else:
+        value_status, value = "observed", round(n / denominator * 100, 8)
+    mapping = "nonmapping_geography" if geo_type == "county" and geo_id in set(contract["nonmapping_source_geoids"]) else "mapped"
+    quality = mapping if value_status == "observed" and mapping != "mapped" else value_status
+    return {"observation_id": "aian-{}-{}-2020-2024".format(geo_type, geo_id), "dataset_id": "aian_broad_share", "field_id": "01.04:aian_share", "catalog_field_id": "01.04", "geo_id": geo_id, "geo_type": geo_type, "state_fips": geo_id[:2] if geo_type != "nation" else None, "district_code": None, "boundary_vintage": None, "congress_session": None, "is_at_large": False, "period_kind": "multi_year", "period_year": 2024, "period_month": None, "period_start_year": 2020, "period_end_year": 2024, "source_period_code": "2020-2024", "value": value, "unit": "percent", "quality_status": quality, "source_value_status": value_status, "geography_mapping_status": mapping, "raw_estimate": raw_n, "raw_estimate_moe": raw_nm, "raw_denominator": raw_d, "raw_denominator_moe": raw_dm, "denominator_value": denominator, "source": "U.S. Census Bureau ACS 2024 5-year", "source_release": "acs-2024-5year", "source_url": "https://api.census.gov/data/2024/acs/acs5", "source_sha256": None, "methodology_note": "B02010_001E / B01003_001E * 100 from the same ACS 2024 5-year product. Broad AIAN race includes all Hispanic origins and overlapping race responses. No derived share MOE.", "candidate_status": "local_review", "retrieved_at": "2026-10-25T11:36:37.121506+00:00"}
+
+
+def prepare_aian(input_dir, outdir, contract):
+    sources, outputs, all_rows = {}, {}, []
+    for level, (relative, expected, expected_rows) in ACS_FILES.items():
+        source = input_dir / relative
+        if sha256(source) != expected:
+            raise ValueError("ACS {} hash mismatch".format(level))
+        rows, _ = read_csv_rows(source)
+        if len(rows) != expected_rows:
+            raise ValueError("ACS {} row count mismatch".format(level))
+        normalized = []
+        for source_row in rows:
+            row = parse_acs(source_row, level, contract)
+            row["source_sha256"] = expected
+            normalized.append(row)
+        output = outdir / "aian_{}.jsonl".format(level)
+        write_jsonl(output, normalized)
+        sources[level] = {"path": str(source), "sha256": expected, "rows": len(rows)}
+        outputs[level] = {"path": str(output), "sha256": sha256(output), "rows": len(normalized)}
+        all_rows.extend(normalized)
+    combined = outdir / "reader_observations.jsonl"
+    write_jsonl(combined, all_rows)
+    outputs["reader_observations"] = {"path": str(combined), "sha256": sha256(combined), "rows": len(all_rows)}
+    return sources, outputs
+
+
+def validate_county_contract(path):
+    contract = json.loads(path.read_text(encoding="utf-8"))
+    if contract.get("matching_rule") != "exact five-digit GEOID only; no allocation or predecessor geography substitutions":
+        raise ValueError("unrecognized county geography contract")
+    if len(contract.get("nonmapping_source_geoids", [])) != 11 or len(set(contract["nonmapping_source_geoids"])) != 11:
+        raise ValueError("county geography contract must list 11 unique nonmapping source IDs")
+    return contract
+
+
+def main(argv=None):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input-dir", required=True, type=pathlib.Path, help="Prepared politics-native input root")
+    parser.add_argument("--output-dir", required=True, type=pathlib.Path, help="New/empty output directory; existing generated data is preserved")
+    parser.add_argument("--county-geography-contract", required=True, type=pathlib.Path)
+    boundary = parser.add_mutually_exclusive_group(required=True)
+    boundary.add_argument("--boundary-zip", type=pathlib.Path)
+    boundary.add_argument("--boundary-geojson", type=pathlib.Path)
+    parser.add_argument("--boundary-geojson-sha256", help="Exact trusted SHA-256 required with --boundary-geojson")
+    args = parser.parse_args(argv)
+    if args.boundary_geojson and not args.boundary_geojson_sha256:
+        parser.error("--boundary-geojson-sha256 is required with --boundary-geojson")
+    outdir = args.output_dir.resolve()
+    if outdir.exists() and any(outdir.iterdir()):
+        parser.error("output directory must be new or empty")
+    outdir.mkdir(parents=True, exist_ok=True)
+    contract = validate_county_contract(args.county_geography_contract)
+    boundary_ids, boundary_inventory = load_boundary(args, outdir)
+    election_sources, election_counts, election_outputs = prepare_elections(args.input_dir, outdir, boundary_ids)
+    aian_sources, aian_outputs = prepare_aian(args.input_dir, outdir, contract)
+    inventory = {"candidate_status": "local_review_not_admitted", "collector_version": COLLECTOR_VERSION, "reader_contract_version": CONTRACT_VERSION, "field_ids": FIELD_IDS, "observation_releases": {key: value[5] for key, value in POLITICS_FILES.items()}, "source_status": {"president": "public metadata checksum/size match", "senate": "public direct-download size and SHA-256 verified; public metadata MD5 describes a distinct processed serialization", "house": "mirror original byte identity unverified; local review only; not production eligible"}, "sources": {"elections": election_sources, "aian": aian_sources}, "counts": election_counts, "outputs": {**election_outputs, **{"aian_{}".format(k): v for k, v in aian_outputs.items()}}, "boundary": boundary_inventory, "county_geography_contract_sha256": sha256(args.county_geography_contract), "controls": {"AIAN_US_7990799": "prepared source control only, not independent verification", "zero_policy": "party zero only for validated complete TOTAL contest; missing/no-election/quarantine remain NULL", "denominator_policy": "totalvotes repeated by source row is retained, checked for consistency, and stored once per contest"}}
+    inventory_path = outdir / "reader-results.json"
+    inventory_path.write_text(json.dumps(inventory, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"output_dir": str(outdir), "inventory": str(inventory_path), "inventory_sha256": sha256(inventory_path), "counts": election_counts}, indent=2))
+
+if __name__ == "__main__":
+    main()

@@ -2,7 +2,7 @@
   "contract_version": "2.0.0-candidate",
   "status": "candidate_not_released",
   "read_only": true,
-  "admission_filter": "usa_atlas.ingest_run.status = 'pass'",
+  "admission_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
   "field_ids": {
     "aian_broad_share": "01.04",
     "president": "12.01",
@@ -56,9 +56,42 @@
   ],
   "share": "selected normalized party candidatevotes / contest totalvotes for TOTAL mode only; zero only for validated complete contest with absent party; ambiguous/incomplete is NULL",
   "artifact_sha256": {
-    "schema.sql": "c4f43a696f79d495c2ab9a36190cc70e3db01cd69db8c7df9c6e747ff5364f76",
-    "fixtures/reader-fixture.sql": "093d1b5d3cef1bf3dec20d6948d86b682210fceb96a20c69df6aa41e000d4c7b",
-    "fixtures/reader-query.sql": "c135949da15ca5712d4ea203d98550dd6dee89203527dd0690f53ea92eafebfd",
-    "tests/invariants.sql": "139bdf78b84da3b59d73aad12f52a14f4a1c672eaa36aef78df6b80bc1d3375d"
+    "schema.sql": "d7ee15199b3e1e44984e4a02dc21e4c30aead058982a8d994721ce65f7de6357",
+    "fixtures/reader-fixture.sql": "61ec59cef03909ae25fe0a02e122aa8ab117581b91156d119eccc16e95aec327",
+    "fixtures/reader-query.sql": "5ba9e249acfbee6762635a593b18bb63390b67c4dba150687685583f8e8351c6",
+    "tests/invariants.sql": "940d9cea67ac345557816b22e2e319e2b139fb5febd5bd27b670ddfa59aacf4e",
+    "tests/run_disposable_integration.py": "b5edff5a6b40b3481a4f5059d067ec2f023b880fc3906614e9c1960b81ef4d2a",
+    "tests/test_local_loader.py": "e36042dc1b5a0133a3cb4206deac581a3cc67220f8ad6a5845ea05a727012aa0",
+    "tests/README.md": "f8449386304fec3e1cb58e54c3d0f4fa193f533164f3e169b836cc130af8af1f",
+    "data-ready-input-contract.json": "d00bc279ffe17bc9e572e6b934e8b10b540c587c4bbf09b48c637855b99202f9",
+    "consumer-protocol.md": "568c152a53e092f58bf743fd6e97d29aa57623144e1c041537426158456d7c2f",
+    "load_local_review.py": "20064eab8d593bd6e9680b6e14a0622b093792505667e9ac2c147d0193ea4645",
+    "full/politics_20261026/prepare.py": "542f6c1003ba9fa7aa10e08e70659e46c4150157c67be921af6063eb171deff0",
+    "full/politics_20261026/test_prepare.py": "4586b86f54c0db4ecf0a597c1c98e9b367bdebf9e9bc1097356569d1fd3cad44",
+    "full/politics_20261026/validate_real.py": "216afa8f70d02d56add2e1dc121a3c1ae461965bd455251840859c750ad07d76",
+    "full/politics_20261026/source-readiness.json": "e3d81ea6a92f7087cdda59af5e4ec98470a0b8874090a240fcb33ba4afd7764d",
+    "full/politics_20261026/README.md": "98a258480e64b7736b5aaecddbffe1d79f73b3de3bcb48da4ba2efd701bd6a90"
+  },
+  "fields": {
+    "aian_broad_share": {
+      "dataset_id": "aian_broad_share",
+      "field_id": "01.04:aian_share",
+      "catalog_field_id": "01.04"
+    },
+    "president": {
+      "dataset_id": "president_election",
+      "field_id": "12.01",
+      "catalog_field_id": "12.01"
+    },
+    "senate": {
+      "dataset_id": "senate_election",
+      "field_id": "12.02",
+      "catalog_field_id": "12.02"
+    },
+    "house": {
+      "dataset_id": "house_election",
+      "field_id": "12.03",
+      "catalog_field_id": "12.03"
+    }
   }
 }

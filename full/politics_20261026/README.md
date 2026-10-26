@@ -1,19 +1,38 @@
-# Politics and AIAN preparation (candidate)
+# Politics and AIAN preparation (reader v2 candidate)
 
-This package prepares local candidate artifacts from the read-only `politics-native` research materials. It never admits data. Run `python3 full/politics_20261026/prepare.py`; outputs and geometry are written under `/tmp/usa-maps-data-flow-20261026/reader-results` only. Inputs are validated against pinned SHA-256 hashes and are never copied into the repository.
+Status: `2.0.0-candidate`, local review only, not admitted or released. The preparation emits deterministic JSONL from already prepared local research files; it does not collect, admit, deploy, or access a live database.
 
-The three MEDSL histories remain complete: President 2000–2024 (94,151 source rows), House 1976–2024 (33,805), and Senate 1976–2024 (3,945). Source candidatevotes and per-row totalvotes text are preserved. `reported_total_votes` must be selected once at contest grain. TOTAL mode is used for party shares; subtotals must not be added to it. Ambiguous fusion/repeated candidate rows and unclassified aggregates require quarantine before a contest can be marked validated. Source `version`, stage, special, runoff, mode, original party, and normalized party are preserved.
+## Reproduce locally
 
-Field mapping: existing `01.04` is extended for AIAN broad share using B02010_001E / B01003_001E from the same 2024 ACS 5-year table. New election fields are `12.01` President, `12.02` Senate, `12.03` House. The broad AIAN measure includes AIAN alone or in combination, all Hispanic origins; overlapping race responses mean shares do not sum to 100%. Raw E/M fields and special codes remain. The U.S. 7,990,799 input is only a prepared-file control, not independent source validation.
+```sh
+python3 full/politics_20261026/prepare.py \
+  --input-dir /path/to/politics-native \
+  --output-dir /path/to/new-empty-output \
+  --county-geography-contract full/politics_20261026/county-geography-contract.json \
+  --boundary-zip /path/to/cb_2024_us_cd119_500k.zip
+```
 
-AIAN county matching is exact FIPS only. Parent precheck found 3,133 matched source county IDs, 11 source-only IDs (Alaska Chugach/Copper River and nine Connecticut planning regions), and nine map-only IDs. Source-only values remain explicit nonmapping records; no county geometry substitution or reallocation is performed. ACS source geography does not match the Census 2017 map in those cases.
+The boundary ZIP must match the pinned Census SHA-256 in `prepare.py`. Alternatively supply `--boundary-geojson PATH --boundary-geojson-sha256 HASH` with an exact trusted hash. Missing, malformed, or mismatched geometry fails closed. Output must be a new or empty directory. Inputs and output paths are explicit; the repository has no machine-specific data path defaults. `validate_real.py` is a separate optional check that compares all 33,805 House output source records to the prepared CSV, verifies the DC identity/share, and checks the US AIAN input control.
 
-The congressional geometry comes from the Census 2024 Cartographic Boundary File for the 119th Congress, `cb_2024_us_cd119_500k.zip` (SHA-256 `2b4238aed7e865df75d0c9cfcd8dffa1b79007b24519ecc4b213e683078b031a`). Local GeoJSON and per-feature geometry hashes are inventoried outside the repository. At-large features use district code `00`; code `98` is a nonvoting delegate. No `ZZ` unassigned geometry is synthesized. These boundaries are only suitable for matching 2024 contests, not historical elections.
+## Prepared election contract
 
-## Readiness and provenance
+All prepared history is retained: President 2000–2024 (94,151 rows), House 1976–2024 (33,805), Senate 1976–2024 (3,945). `csv.DictReader` parses each normalized prepared file and the validator checks exact source-record equivalence for every House row. The original raw-source SHA remains in the inventory. Candidate `candidatevotes` and per-row `totalvotes` text, original party, normalized party, source version, stage, special/runoff flags, mode, write-in/fusion flags and the complete prepared row are retained. The selected-party vocabulary emits `DEMOCRAT` and `REPUBLICAN` for the current app selector.
 
-- President mirror: SHA-256 `9299583148f5f8264baf50b5d929c260699c46d915909b13ea3c3850918946f8`, 10,222,208 bytes; parent verified its MD5 `bd6661282936006b4ef4f5ee71418f3e` and byte count against public Dataverse metadata for VOQCHQ. Metadata version/license are recorded in the local readiness manifest.
-- Senate public download: bytes/SHA-256 match prepared mirror (`d4492e286046f73b111cf5706ee02be4c305897898317818afd06c0ac8a464e0`); Dataverse metadata MD5 differs, so metadata-vs-download checksum inconsistency remains documented.
-- House mirror checksum differs from official Dataverse metadata (mirror MD5 `50718aa65ac2652a2f08f45998433c66`, metadata MD5 `a9566ac393913a1af343284e837c17bb`). Direct official download requires guestbook submission; no submission was made. Byte identity remains unresolved, so production source readiness is blocked.
-- Census API without key returned a missing-key response. Prepared source hashes are retained; no credentials were read or used.
-- No production DB admission, no reader release, no v2 tag, and no application edits are part of this candidate.
+Contest adjudication uses only `TOTAL`. It stores one consistent positive denominator at contest grain, never sums repeated `totalvotes`, never adds mode subtotals, sums candidate votes by normalized party, and divides by all contest votes. A fusion flag alone is not a quarantine: distinct source candidate rows remain adjudicable when candidate/party identities are clear. Duplicate ordinary candidate/party rows, cross-party ambiguity, invalid values, inconsistent denominators, unknown parties, and candidate totals exceeding the reported total quarantine the aggregation. Raw source-value validity remains separately recorded. An absent party becomes an observed zero only for a validated complete contest; otherwise share and votes remain null. `election_availability` distinguishes explicit Senate no-election from missing scheduled source observations.
+
+Field IDs coordinate with the current application catalog: AIAN extends `01.04` (`aian_broad_share` / `01.04:aian_share`); President is `12.01`, Senate `12.02`, House `12.03`. Existing `11.01`–`11.03` have other meanings and are not reused.
+
+2024 general House records map to exact Census 119th Congress feature IDs. An at-large district is `00`; DC is Census `1198` (nonvoting delegate), never fabricated `1100`. No county geometry substitutes for House districts. Historical House observations have no 2024 boundary join. The 2024 Census CD119 boundary has 441 features and is pinned to SHA-256 `2b4238aed7e865df75d0c9cfcd8dffa1b79007b24519ecc4b213e683078b031a`.
+
+## AIAN definition and geography
+
+AIAN broad share is B02010_001E / B01003_001E × 100 from the same 2024 ACS 5-year product, at nation, state, and county levels. The metric includes AIAN alone or in combination and all Hispanic origins; race responses overlap, so shares are not expected to sum to 100%. Raw estimate and MOE fields are retained, with no derived share MOE. The prepared US estimate `7,990,799` is only a source-file control. Exact county FIPS matching preserves 3,133 matched source IDs and 11 source-only IDs as nonmapping; no value is redistributed to another county. The Census 2017 county map has nine map-only IDs. Source and map geography differences remain explicit.
+
+## Provenance and limits
+
+- President mirror bytes and MD5 match the public Dataverse VOQCHQ version 20 metadata; no guestbook submission was made.
+- Senate prepared bytes and SHA-256 match the official public download. The metadata MD5 describes a distinct processed serialization; that distinction is recorded rather than used to block the byte-verified download.
+- House mirror byte identity against the official Dataverse version 15 remains unverified. Local rows are inspectable, but `production_eligible=false` and no production readiness is claimed.
+- AIAN raw US/state/county inputs retain their SHA-256 values in the source inventory.
+
+Collector preparation version, reader contract version, and each source observation release are separate. The local loader is a guarded disposable-review utility only; it labels its batch `local_review`. Its successful local load is not production admission. Application queries must filter through `ingest_run.status='pass'` and `reader_batch.candidate_status='admitted'` after a separately reviewed release.

@@ -1,69 +1,105 @@
-import json, pathlib, unittest
-from prepare import OUT, ROOT, sha
+import csv
+import hashlib
+import json
+import pathlib
+import tempfile
+import unittest
 
-class PreparedContractTests(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        import prepare
-        prepare.run()
-    def test_history_retained_and_field_ids_do_not_collide(self):
-        expected={'president':(94151,'12.01'),'senate':(3945,'12.02'),'house':(33805,'12.03')}
-        for office,(n,fid) in expected.items():
-            rows=[json.loads(x) for x in (OUT/f'{office}_candidates.jsonl').read_text().splitlines()]
-            self.assertEqual(len(rows),n)
-            self.assertTrue(all(r['field_id']==fid for r in rows))
-    def test_repeated_totalvotes_are_per_row_provenance(self):
-        rows=[json.loads(x) for x in (OUT/'president_candidates.jsonl').read_text().splitlines()[:20]]
-        same=[r for r in rows if r['source_total_votes'] is not None]
-        self.assertGreater(len(same),1)
-        self.assertTrue(all(r['totalvotes_raw'] is not None for r in same))
-        # Preparation creates source rows only; it never creates an aggregate total.
-        self.assertTrue(all('reported_total_votes' not in r for r in same))
-    def test_source_modes_and_totalvotes_remain_separate(self):
-        rows=[json.loads(x) for x in (OUT/'president_candidates.jsonl').read_text().splitlines()]
-        contests={}
-        for r in rows:
-            key=(r['geo_id'],r['source_row'].get('year'),r['stage'],r['is_special'],r['is_runoff'],r['source_version'])
-            contests.setdefault(key,set()).add(r['result_mode'])
-        self.assertTrue(any(len(modes)>1 for modes in contests.values()))
-        raw_totals={}
-        for row in rows:
-            src=row['source_row']; key=(src.get('year'),src.get('state_fips') or src.get('state_po'),src.get('county_fips') or src.get('district') or src.get('state_po'),(src.get('stage') or 'GEN').upper(),str(src.get('special','False')).lower(),str(src.get('runoff','False')).lower(),(src.get('mode') or 'TOTAL').upper(),src.get('version'))
-            raw_totals.setdefault(tuple(key),set()).add((row['totalvotes_raw'] or '').strip())
-        reviews=[json.loads(x) for x in (OUT/'president_contest_review.jsonl').read_text().splitlines()]
-        for review in reviews:
-            values=raw_totals[tuple(review['contest_source_key'])]
-            self.assertEqual(review['reported_total_votes_raw'],next(iter(values)) if len(values)==1 else None)
-    def test_aian_period_and_quality_are_explicit(self):
-        rows=[json.loads(x) for x in (OUT/'aian_county.jsonl').read_text().splitlines()]
-        self.assertEqual(len(rows),3222)
-        self.assertTrue(all(r['field_id']=='01.04' and r['period_kind']=='multi_year' and r['period_month'] is None for r in rows))
-        self.assertTrue(any(r['quality_status']=='nonmapping_geography' for r in rows))
-        self.assertEqual(sum(r['quality_status']=='nonmapping_geography' for r in rows),11)
-        self.assertTrue(all(r['raw_estimate_moe'] is not None and r['raw_denominator_moe'] is not None for r in rows))
-    def test_contest_review_quarantines_ambiguous_rows(self):
-        for office in ('president','house','senate'):
-            records=[json.loads(x) for x in (OUT/f'{office}_contest_review.jsonl').read_text().splitlines()]
-            self.assertTrue(records)
-            self.assertTrue(all(r['result_mode'] for r in records))
-        for office in ('president','senate'):
-            records=[json.loads(x) for x in (OUT/f'{office}_contest_review.jsonl').read_text().splitlines()]
-            self.assertTrue(any(r['party_aggregation_status']=='quarantined' for r in records))
-    def test_senate_no_election_is_not_missing_or_zero(self):
-        rows=[json.loads(x) for x in (OUT/'senate_2024_availability.jsonl').read_text().splitlines()]
-        self.assertEqual(sum(r['quality_status']=='no_election' for r in rows),17)
-        self.assertEqual(sum(r['quality_status']=='missing' for r in rows),0)
-        self.assertTrue(all(r['geo_type']=='state' and r['field_id']=='12.02' for r in rows))
-    def test_2024_house_at_large_id_uses_census_00(self):
-        rows=[json.loads(x) for x in (OUT/'house_candidates.jsonl').read_text().splitlines()]
-        ak=next(r for r in rows if r['source_row'].get('year')=='2024' and r['state_fips']=='02')
-        self.assertEqual((ak['geo_id'],ak['district_code'],ak['boundary_vintage'],ak['congress_session']),('0200','00',2024,'119'))
-        self.assertTrue(ak['is_at_large'])
-    def test_geometry_vintage_and_at_large_codes(self):
-        data=json.loads((OUT/'cd119_geometry_manifest.json').read_text())
-        self.assertEqual(data['feature_count'],441)
-        self.assertTrue(all(f['boundary_vintage']==2024 and f['congress_session']=='119' for f in data['features']))
-        self.assertTrue(any(f['district_code']=='00' and f['is_at_large'] for f in data['features']))
-        self.assertFalse(any(f['district_code']=='98' and f['is_at_large'] for f in data['features']))
+from prepare import (
+    adjudicate_contest,
+    election_geo,
+    house_geo,
+    load_boundary,
+    parse_acs,
+    read_csv_rows,
+    selected_party_value,
+    validate_county_contract,
+    write_jsonl,
+)
 
-if __name__=='__main__': unittest.main()
+
+class PreparationUnitTests(unittest.TestCase):
+    def test_csv_dictreader_preserves_quoted_comma_and_exact_fields(self):
+        with tempfile.TemporaryDirectory() as td:
+            path = pathlib.Path(td) / "rows.csv"
+            path.write_text('year,candidate,party,mode,candidatevotes,totalvotes\n2024,"JOBS, EQUALITY",OTHER,TOTAL,40,100\n', encoding="utf-8")
+            rows, fields = read_csv_rows(path)
+            self.assertEqual(fields, ["year", "candidate", "party", "mode", "candidatevotes", "totalvotes"])
+            self.assertEqual(rows[0], {"year":"2024", "candidate":"JOBS, EQUALITY", "party":"OTHER", "mode":"TOTAL", "candidatevotes":"40", "totalvotes":"100"})
+
+    def test_valid_fusion_rows_are_party_adjudicated_and_denominator_is_not_summed(self):
+        rows = [
+            {"candidate_label":"A Candidate", "party_normalized":"DEMOCRAT", "candidate_kind":"candidate", "candidate_votes":60, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":True},
+            {"candidate_label":"A Candidate", "party_normalized":"WORKING FAMILIES", "candidate_kind":"candidate", "candidate_votes":10, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":True},
+            {"candidate_label":"B Candidate", "party_normalized":"REPUBLICAN", "candidate_kind":"candidate", "candidate_votes":30, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False},
+        ]
+        result = adjudicate_contest(rows)
+        self.assertEqual(result["status"], "validated")
+        self.assertEqual(result["denominator"], 100)
+        self.assertEqual(result["party_totals"]["DEMOCRAT"], 60)
+        self.assertEqual(result["party_totals"]["WORKING FAMILIES"], 10)
+        self.assertEqual(selected_party_value(result, "GREEN"), (0, 0.0))
+        self.assertEqual(selected_party_value(result, "DEMOCRAT"), (60, 0.6))
+
+    def test_quarantine_does_not_relabel_valid_source_values(self):
+        rows = [
+            {"candidate_label":"Same", "party_normalized":"DEMOCRAT", "candidate_kind":"candidate", "candidate_votes":20, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False},
+            {"candidate_label":"Same", "party_normalized":"DEMOCRAT", "candidate_kind":"candidate", "candidate_votes":20, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False},
+        ]
+        result = adjudicate_contest(rows)
+        self.assertEqual(result["status"], "quarantined")
+        self.assertIn("repeated_candidate_party_row", result["reasons"])
+        self.assertTrue(all(row["source_value_status"] == "observed" for row in rows))
+        self.assertEqual(selected_party_value(result, "DEMOCRAT"), (None, None))
+
+    def test_house_ids_are_exact_boundary_ids_for_at_large_and_dc_delegate(self):
+        boundaries = {
+            "0200":{"state_fips":"02", "district_code":"00", "is_at_large":True, "is_nonvoting":False},
+            "1198":{"state_fips":"11", "district_code":"98", "is_at_large":False, "is_nonvoting":True},
+        }
+        ak = house_geo({"state_fips":"2", "district":"0"}, boundaries)
+        dc = house_geo({"state_fips":"11", "district":"0"}, boundaries)
+        self.assertEqual((ak["geo_id"], ak["is_at_large"], ak["seat_type"]), ("0200", True, "voting_district"))
+        self.assertEqual((dc["geo_id"], dc["is_at_large"], dc["seat_type"]), ("1198", False, "nonvoting_delegate"))
+        self.assertNotIn("1100", boundaries)
+
+    def test_2024_house_contest_requires_exact_pinned_geometry_identity(self):
+        with self.assertRaisesRegex(ValueError, "does not match a pinned CD119"):
+            election_geo({"year":"2024", "stage":"GEN", "special":"false", "state_fips":"6", "district":"99"}, "house", {})
+
+    def test_aian_us_estimate_and_moe_are_retained(self):
+        row = {"B02010_001E":"7990799", "B02010_001M":"48461", "B01003_001E":"334922499", "B01003_001M":"-555555555"}
+        contract = {"nonmapping_source_geoids":[]}
+        result = parse_acs(row, "us", contract)
+        self.assertEqual(result["geo_type"], "nation")
+        self.assertEqual(result["geo_id"], "US")
+        self.assertEqual(result["value"], round(7990799/334922499*100, 8))
+        self.assertEqual(result["raw_estimate_moe"], "48461")
+        self.assertEqual(result["raw_denominator_moe"], "-555555555")
+
+    def test_multiyear_identity_uses_both_window_endpoints(self):
+        root = pathlib.Path(__file__).parents[2]
+        sql = (root / "database/reader/v2/fixtures/reader-query.sql").read_text()
+        protocol = (root / "database/reader/v2/consumer-protocol.md").read_text()
+        self.assertIn("period_start_year = $5", sql)
+        self.assertIn("period_end_year = $6", sql)
+        self.assertIn("period_start_year = :period_start_year", protocol)
+        self.assertIn("period_end_year = :period_end_year", protocol)
+
+    def test_county_contract_requires_exact_precheck_ids(self):
+        with tempfile.TemporaryDirectory() as td:
+            path = pathlib.Path(td)/"contract.json"
+            contract = {"matching_rule":"exact five-digit GEOID only; no allocation or predecessor geography substitutions", "nonmapping_source_geoids":["02063","02066","09110","09120","09130","09140","09150","09160","09170","09180","09190"]}
+            path.write_text(json.dumps(contract))
+            self.assertEqual(len(validate_county_contract(path)["nonmapping_source_geoids"]),11)
+
+    def test_wrong_boundary_hash_fails_before_use(self):
+        with tempfile.TemporaryDirectory() as td:
+            path=pathlib.Path(td)/"boundary.geojson"
+            path.write_text('{"type":"FeatureCollection","features":[]}')
+            args=type("Args",(),{"boundary_zip":None,"boundary_geojson":path,"boundary_geojson_sha256":"0"*64})()
+            with self.assertRaisesRegex(ValueError,"trusted SHA-256"):
+                load_boundary(args,pathlib.Path(td)/"out")
+
+if __name__ == "__main__":
+    unittest.main()
