@@ -1,6 +1,9 @@
 {
   "contract_version": "2.0.0-candidate",
   "collector_version": "politics-preparation-2.1.0",
+  "additional_source_collectors": {
+    "bls_laus_2025": "separate keyed collector; preparation accepts explicit input paths and verifies collection, CSV, missingness, and raw batch hashes"
+  },
   "admission_status": "candidate_not_admitted",
   "jsonl_outputs": {
     "reader_observations.jsonl": {
@@ -10,12 +13,13 @@
     },
     "election_contests.jsonl": {
       "relation": "usa_atlas.election_contest",
-      "grain": "office,election_year,geography_type,geo_id,boundary_vintage,congress_session,stage,is_special,is_runoff,result_mode,source_release,source_version"
+      "grain": "office,election_year,geography_type,geo_id,boundary_vintage,congress_session,stage,is_special,is_runoff,result_mode,source_release,source_version",
+      "unspecified_mode": "UNSPECIFIED is quarantined and preserves raw blank mode until publisher semantics are verified"
     },
     "election_candidates.jsonl": {
       "relation": "usa_atlas.election_candidate",
       "grain": "contest_id,source_row_id",
-      "values": "source_value_status represents source parsing; aggregation_quarantine_reasons are independent"
+      "values": "source_value_status represents source parsing; aggregation_quarantine_reasons are independent; source_mode_raw preserves the original mode field, including blank cells"
     },
     "election_party_results.jsonl": {
       "relation": "usa_atlas.election_party_result",
@@ -38,25 +42,96 @@
     }
   },
   "field_ids": {
+    "unemployment": {
+      "dataset_id": "unemployment",
+      "field_id": "03.06:unemployment_rate",
+      "catalog_field_id": "03.06",
+      "source_release": "laus-nsa-2025",
+      "source_code": "bls_laus",
+      "seasonal_adjustment": "NSA",
+      "source_version": "laus-nsa-2025-v2",
+      "components": {
+        "03": "03.06:unemployment_rate",
+        "04": "03.06:unemployed",
+        "05": "03.06:employed",
+        "06": "03.06:labor_force"
+      }
+    },
     "aian": {
       "dataset_id": "aian_broad_share",
       "field_id": "01.04:aian_share",
       "catalog_field_id": "01.04"
     },
     "president": {
-      "dataset_id": "president_election",
+      "dataset_id": "election_president_2024",
       "field_id": "12.01",
       "catalog_field_id": "12.01"
     },
     "senate": {
-      "dataset_id": "senate_election",
+      "dataset_id": "election_senate_2024",
       "field_id": "12.02",
       "catalog_field_id": "12.02"
     },
     "house": {
-      "dataset_id": "house_election",
+      "dataset_id": "election_house_2024",
       "field_id": "12.03",
       "catalog_field_id": "12.03"
+    },
+    "pep_population": {
+      "dataset_id": "pep_population",
+      "catalog_field_id": "01.01",
+      "field_ids": [
+        "01.01:pep_population_total",
+        "01.01:pep_population_age_13_plus",
+        "01.01:pep_population_under_18"
+      ],
+      "years": [
+        2023,
+        2024
+      ],
+      "geographies": [
+        "nation",
+        "state",
+        "county"
+      ]
+    },
+    "irs_agi": {
+      "dataset_id": "irs_agi",
+      "catalog_field_id": "07.01",
+      "field_ids": [
+        "07.01:agi_total",
+        "07.01:derived:per-resident"
+      ],
+      "year": 2023,
+      "per_resident_formula": "A00100 thousand USD * 1000 / matching same-geography 2023 PEP total population"
+    },
+    "electricity_price": {
+      "dataset_id": "electricity_price",
+      "catalog_field_id": "08.05",
+      "field_id": "08.05:sector_ALL",
+      "year": 2025,
+      "sector": "ALL"
+    },
+    "cancer": {
+      "dataset_id": "cancer",
+      "catalog_field_id": "11.01",
+      "field_id": "11.01",
+      "event_year": 2023,
+      "national_rate": "uses verified native national 2023 PEP total denominator"
+    },
+    "hiv": {
+      "dataset_id": "hiv",
+      "catalog_field_id": "11.02",
+      "field_id": "11.02",
+      "event_year": 2024,
+      "national_rate": "missing; source numerator is state-only"
+    },
+    "child_deaths_under18": {
+      "dataset_id": "child_deaths_under18",
+      "catalog_field_id": "11.03",
+      "field_id": "11.03",
+      "event_year": 2024,
+      "national_rate": "missing; source numerator is state-only"
     }
   },
   "source_release_examples": {
@@ -69,5 +144,30 @@
     "reader_contract_version": "2.0.0-candidate",
     "observation_source_release": "separate per-source values above"
   },
-  "only_admitted_rows_are_application_consumable": "join usa_atlas.ingest_run.status='pass' and usa_atlas.reader_batch.candidate_status='admitted'; local loader batches are candidate_status='local_review'"
+  "bls_period_mapping": {
+    "monthly": "BLS M01-M12 map to period_kind=monthly and period_month 1..12; source_period_code is YYYY-Mnn",
+    "annual": "BLS M13 maps to period_kind=annual and period_month NULL; source_period_code is YYYY-M13",
+    "source_gap_policy": "M10 and series-not-returned records remain explicit missing observations; never substitute zero",
+    "nation_rate": "not emitted because the input contains no national LAUS series"
+  },
+  "only_admitted_rows_are_application_consumable": "join usa_atlas.ingest_run.status='pass' and usa_atlas.reader_batch.candidate_status='admitted'; local loader batches are candidate_status='local_review'",
+  "native_national_pep": {
+    "source_id": "census-pep-national-single-age-v2025",
+    "source_sha256": "6436d4f6972d415caf14cb20776807bc031fc9f1bfc9d6ff26055d592a2b0230",
+    "selector": {
+      "SEX": "0",
+      "AGE": "999"
+    },
+    "population_estimate_2023": 336755052,
+    "population_estimate_2024": 340003797,
+    "age_groups": "age_13_plus and under_18 independently recalculated from native national single-age rows and matched exactly to prepared values",
+    "national_IRS_and_cancer": "2023 national per-resident income and cancer crude rate use verified native total PEP denominator; national cancer numerator=1941540"
+  },
+  "refresh_loader": {
+    "module": "database.reader.v2.load_refresh_local_review",
+    "input_prep": "database.reader.v2.prepare_refresh",
+    "requires_explicit_guard_config": true,
+    "local_batch_status": "local_review",
+    "validates_prepared_and_raw_source_hashes": true
+  }
 }

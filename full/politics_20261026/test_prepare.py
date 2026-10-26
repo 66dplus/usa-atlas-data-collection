@@ -7,9 +7,11 @@ import unittest
 
 from prepare import (
     adjudicate_contest,
+    adjudicate_mode,
     election_geo,
     house_geo,
     load_boundary,
+    make_contest_key,
     parse_acs,
     read_csv_rows,
     selected_party_value,
@@ -33,7 +35,7 @@ class PreparationUnitTests(unittest.TestCase):
             {"candidate_label":"A Candidate", "party_normalized":"WORKING FAMILIES", "candidate_kind":"candidate", "candidate_votes":10, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":True},
             {"candidate_label":"B Candidate", "party_normalized":"REPUBLICAN", "candidate_kind":"candidate", "candidate_votes":30, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False},
         ]
-        result = adjudicate_contest(rows)
+        result = adjudicate_contest(rows, expected_source_rows=len(rows), source_complete=True)
         self.assertEqual(result["status"], "validated")
         self.assertEqual(result["denominator"], 100)
         self.assertEqual(result["party_totals"]["DEMOCRAT"], 60)
@@ -46,10 +48,39 @@ class PreparationUnitTests(unittest.TestCase):
             {"candidate_label":"Same", "party_normalized":"DEMOCRAT", "candidate_kind":"candidate", "candidate_votes":20, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False},
             {"candidate_label":"Same", "party_normalized":"DEMOCRAT", "candidate_kind":"candidate", "candidate_votes":20, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False},
         ]
-        result = adjudicate_contest(rows)
+        result = adjudicate_contest(rows, expected_source_rows=len(rows), source_complete=True)
         self.assertEqual(result["status"], "quarantined")
         self.assertIn("repeated_candidate_party_row", result["reasons"])
         self.assertTrue(all(row["source_value_status"] == "observed" for row in rows))
+        self.assertEqual(selected_party_value(result, "DEMOCRAT"), (None, None))
+
+    def test_truncated_candidate_partition_cannot_claim_absent_party_zero(self):
+        rows = [
+            {"candidate_label":"A", "party_normalized":"DEMOCRAT", "candidate_kind":"candidate", "candidate_votes":60, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False},
+            {"candidate_label":"B", "party_normalized":"REPUBLICAN", "candidate_kind":"candidate", "candidate_votes":30, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False},
+        ]
+        result = adjudicate_contest(rows, expected_source_rows=3, source_complete=True)
+        self.assertEqual(result["status"], "quarantined")
+        self.assertIn("candidate_partition_incomplete", result["reasons"])
+        self.assertEqual(selected_party_value(result, "GREEN"), (None, None))
+
+    def test_unknown_source_completeness_cannot_claim_absent_party_zero(self):
+        rows = [{"candidate_label":"A", "party_normalized":"DEMOCRAT", "candidate_kind":"candidate", "candidate_votes":100, "source_total_votes":100, "source_value_status":"observed", "fusion_ticket":False}]
+        result = adjudicate_contest(rows, expected_source_rows=1, source_complete=False)
+        self.assertEqual(result["status"], "quarantined")
+        self.assertEqual(selected_party_value(result, "REPUBLICAN"), (None, None))
+
+    def test_blank_election_mode_stays_distinct_and_unadjudicated(self):
+        row = {"year":"2024", "county_fips":"06037", "mode":"", "stage":"GEN", "special":"false", "version":"v1"}
+        key = make_contest_key(row, "president", {}, "test-release")
+        self.assertEqual(key[6], "general")
+        self.assertEqual(key[9], "UNSPECIFIED")
+        # Numeric candidate fields can still be valid while aggregation remains quarantined.
+        candidate = {"candidate_label":"A", "party_normalized":"DEMOCRAT", "candidate_kind":"candidate",
+                     "candidate_votes":60, "source_total_votes":100, "source_value_status":"observed"}
+        result = adjudicate_mode([candidate], key[9], expected_source_rows=1, source_complete=True)
+        self.assertEqual(result["reasons"], ["source_mode_unspecified"])
+        self.assertEqual(candidate["source_value_status"], "observed")
         self.assertEqual(selected_party_value(result, "DEMOCRAT"), (None, None))
 
     def test_house_ids_are_exact_boundary_ids_for_at_large_and_dc_delegate(self):

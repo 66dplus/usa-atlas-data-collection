@@ -42,6 +42,7 @@ CREATE TABLE IF NOT EXISTS usa_atlas.reader_observation (
     denominator_value numeric,
     source text NOT NULL,
     source_release text NOT NULL,
+    source_version text NOT NULL DEFAULT '',
     source_url text NOT NULL,
     source_sha256 character(64) NOT NULL,
     methodology_note text NOT NULL,
@@ -91,6 +92,8 @@ CREATE TABLE IF NOT EXISTS usa_atlas.election_contest (
     election_year smallint NOT NULL,
     election_date date,
     stage text NOT NULL,
+    source_stage_values text[] NOT NULL DEFAULT ARRAY[]::text[],
+    source_mode_values text[] NOT NULL DEFAULT ARRAY[]::text[],
     is_special boolean NOT NULL,
     is_runoff boolean NOT NULL,
     geography_type text NOT NULL CHECK (geography_type IN ('county','state','congressional_district')),
@@ -100,7 +103,9 @@ CREATE TABLE IF NOT EXISTS usa_atlas.election_contest (
     boundary_vintage smallint,
     congress_session text,
     result_mode text NOT NULL,
+    source_mode_raw text,
     reported_total_votes bigint,
+    source_row_count integer NOT NULL DEFAULT 1 CHECK (source_row_count > 0),
     source_release text NOT NULL,
     source_url text NOT NULL,
     source_sha256 character(64) NOT NULL,
@@ -189,3 +194,21 @@ CREATE TABLE IF NOT EXISTS usa_atlas.election_availability (
 CREATE INDEX IF NOT EXISTS reader_observation_period_v2_idx ON usa_atlas.reader_observation (field_id,period_kind,period_year,period_start_year,period_end_year,source_release,geo_type,geo_id);
 CREATE INDEX IF NOT EXISTS election_contest_selector_v2_idx ON usa_atlas.election_contest (office,election_year,geography_type,geo_id,stage,is_special,is_runoff,result_mode,source_release);
 CREATE INDEX IF NOT EXISTS election_candidate_party_v2_idx ON usa_atlas.election_candidate (contest_id,result_mode,party_normalized,quality_status);
+
+-- Keep reruns additive when an earlier candidate-v2 schema was already applied.
+ALTER TABLE usa_atlas.election_contest
+    ADD COLUMN IF NOT EXISTS source_stage_values text[] NOT NULL DEFAULT ARRAY[]::text[];
+ALTER TABLE usa_atlas.election_contest
+    ADD COLUMN IF NOT EXISTS source_mode_values text[] NOT NULL DEFAULT ARRAY[]::text[];
+ALTER TABLE usa_atlas.election_contest
+    ADD COLUMN IF NOT EXISTS source_row_count integer NOT NULL DEFAULT 1 CHECK (source_row_count > 0);
+ALTER TABLE usa_atlas.election_candidate
+    ADD COLUMN IF NOT EXISTS source_mode_raw text;
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname='reader_v2_unspecified_mode_quarantined') THEN
+        ALTER TABLE usa_atlas.election_contest ADD CONSTRAINT reader_v2_unspecified_mode_quarantined
+            CHECK (result_mode <> 'UNSPECIFIED' OR (party_aggregation_status='quarantined' AND '' = ANY(source_mode_values)));
+    END IF;
+END $$;
+ALTER TABLE usa_atlas.reader_observation
+    ADD COLUMN IF NOT EXISTS source_version text NOT NULL DEFAULT '';

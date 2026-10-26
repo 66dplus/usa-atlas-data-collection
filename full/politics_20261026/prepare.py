@@ -175,11 +175,13 @@ def election_geo(row, office, boundary_ids):
 def make_contest_key(row, office, boundary_ids, release):
     geo = election_geo(row, office, boundary_ids)
     year = strict_int(row.get("year"))
-    stage = (row.get("stage") or "GENERAL").strip().upper() if office != "president" else "GENERAL"
-    return (office, year, geo["geography_type"], geo["geo_id"], geo["boundary_vintage"], geo["congress_session"], stage, flag(row.get("special")), flag(row.get("runoff")), (row.get("mode") or "").strip().upper(), release, str(row.get("version") or ""))
+    raw_stage = (row.get("stage") or "GENERAL").strip().upper() if office != "president" else "GENERAL"
+    stage = "general" if raw_stage in {"GEN", "GENERAL"} else raw_stage.lower()
+    raw_mode = (row.get("mode") or "").strip().upper()
+    return (office, year, geo["geography_type"], geo["geo_id"], geo["boundary_vintage"], geo["congress_session"], stage, flag(row.get("special")), flag(row.get("runoff")), raw_mode or "UNSPECIFIED", release, str(row.get("version") or ""))
 
 
-def adjudicate_contest(rows):
+def adjudicate_contest(rows, expected_source_rows=None, source_complete=False):
     """Validate source values independently from party aggregation; return reviewable party totals."""
     reasons = []
     totals = [row["source_total_votes"] for row in rows]
@@ -191,6 +193,8 @@ def adjudicate_contest(rows):
         reasons.append("nonpositive_contest_denominator")
     if any(row["source_value_status"] != "observed" for row in rows):
         reasons.append("invalid_candidatevotes_or_totalvotes")
+    if not source_complete or expected_source_rows is None or len(rows) != expected_source_rows:
+        reasons.append("candidate_partition_incomplete")
     candidates = [row for row in rows if row["candidate_kind"] != "source_aggregate"]
     counts = Counter((row["candidate_label"].strip().upper(), row["party_normalized"]) for row in candidates)
     by_candidate = defaultdict(list)
@@ -215,6 +219,14 @@ def adjudicate_contest(rows):
     return {"status": "quarantined" if reasons else "validated", "reasons": sorted(set(reasons)), "denominator": denominator, "party_totals": dict(party_totals)}
 
 
+def adjudicate_mode(rows, mode, expected_source_rows=None, source_complete=False):
+    if mode == "UNSPECIFIED":
+        return {"status":"quarantined", "reasons":["source_mode_unspecified"], "denominator":None, "party_totals":{}}
+    if mode != "TOTAL":
+        return {"status":"excluded_subtotal", "reasons":["subtotal_not_added_to_TOTAL"], "denominator":None, "party_totals":{}}
+    return adjudicate_contest(rows, expected_source_rows=expected_source_rows, source_complete=source_complete)
+
+
 def selected_party_value(adjudication, party):
     if adjudication["status"] != "validated" or not adjudication["denominator"]:
         return None, None
@@ -224,7 +236,7 @@ def selected_party_value(adjudication, party):
 
 def prepare_elections(input_dir, outdir, boundary_ids):
     candidates_out, contests_out, shares_out = [], [], []
-    source_inventory, counts = {}, {}
+    source_inventory, counts, source_coverage_rows = {}, {}, {}
     for office, (relative, delimiter, expected_hash, expected_rows, field_id, release, raw_relative, raw_hash) in POLITICS_FILES.items():
         source_path = input_dir / relative
         if sha256(source_path) != expected_hash:
@@ -239,8 +251,12 @@ def prepare_elections(input_dir, outdir, boundary_ids):
         eligible = office != "house"
         source_inventory[office] = {"path": str(source_path), "prepared_sha256": expected_hash, "raw_source_path": str(raw_path), "raw_source_sha256": raw_hash, "row_count": len(rows), "columns": headers, "source_release": release, "source_status": source_provenance_status, "production_eligible": eligible}
         groups = defaultdict(list)
+        source_coverage_rows[office] = []
         for rownum, source_row in enumerate(rows, 1):
             geo = election_geo(source_row, office, boundary_ids)
+            if strict_int(source_row.get("year")) == 2024:
+                source_coverage_rows[office].append({"geo_id":geo["geo_id"],"mapping":geo["geography_mapping_status"],
+                    "mode":(source_row.get("mode") or "").strip().upper() or "<BLANK>"})
             kind = candidate_kind(source_row)
             party_original = (source_row.get("party_detailed") or source_row.get("party_simplified")) if office == "senate" else source_row.get("party")
             normalized = norm_party(party_original, kind)
@@ -249,17 +265,16 @@ def prepare_elections(input_dir, outdir, boundary_ids):
             total_votes = strict_int(source_row.get("totalvotes"))
             value_status = "observed" if candidate_votes is not None and total_votes is not None and candidate_votes >= 0 and total_votes >= 0 else "invalid"
             key = make_contest_key(source_row, office, boundary_ids, release)
-            candidate_row = {"source_row_id": str(rownum), "field_id": field_id, "dataset_id": office + "_election", "office": office, "election_year": strict_int(source_row.get("year")), **geo, "candidate_label": candidate, "candidate_kind": kind, "party_original": party_original, "party_normalized": normalized, "candidatevotes_raw": source_row.get("candidatevotes"), "totalvotes_raw": source_row.get("totalvotes"), "candidate_votes": candidate_votes, "source_total_votes": total_votes, "source_version": str(source_row.get("version") or ""), "result_mode": key[9], "stage": key[6], "is_special": key[7], "is_runoff": key[8], "write_in": flag(source_row.get("writein")), "fusion_ticket": flag(source_row.get("fusion_ticket")), "source_value_status": value_status, "quality_status": value_status, "source_status": source_provenance_status, "source_release": release, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "prepared_input_sha256": expected_hash, "candidate_status": "local_review", "source_record": source_row}
+            canonical_dataset = {"president":"election_president_2024", "senate":"election_senate_2024", "house":"election_house_2024"}[office]
+            candidate_row = {"source_row_id": str(rownum), "field_id": field_id, "dataset_id": canonical_dataset, "office": office, "election_year": strict_int(source_row.get("year")), **geo, "candidate_label": candidate, "candidate_kind": kind, "party_original": party_original, "party_normalized": normalized, "candidatevotes_raw": source_row.get("candidatevotes"), "totalvotes_raw": source_row.get("totalvotes"), "candidate_votes": candidate_votes, "source_total_votes": total_votes, "source_version": str(source_row.get("version") or ""), "stage": key[6], "source_stage": (source_row.get("stage") or "GENERAL").strip(), "is_special": key[7], "is_runoff": key[8], "result_mode": key[9], "source_mode_raw": source_row.get("mode"), "write_in": flag(source_row.get("writein")), "fusion_ticket": flag(source_row.get("fusion_ticket")), "source_value_status": value_status, "quality_status": value_status, "source_status": source_provenance_status, "source_release": release, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "prepared_input_sha256": expected_hash, "candidate_status": "local_review", "source_record": source_row}
             groups[key].append(candidate_row)
         office_contests = []
         for key, group in groups.items():
-            if key[9] != "TOTAL":
-                result = {"status": "excluded_subtotal", "reasons": ["subtotal_not_added_to_TOTAL"], "denominator": None, "party_totals": {}}
-            else:
-                result = adjudicate_contest(group)
+            result = adjudicate_mode(group, key[9], expected_source_rows=len(group), source_complete=True)
             geo = {name: group[0][name] for name in ("geography_type", "geo_id", "state_fips", "district_code", "boundary_vintage", "congress_session", "is_at_large", "seat_type", "geography_mapping_status")}
             contest_id = hashlib.sha256(json.dumps(key, separators=(",", ":")).encode()).hexdigest()[:32]
-            summary = {"contest_id": contest_id, "field_id": field_id, "catalog_field_id": field_id, "dataset_id": office + "_election", **geo, "office": office, "election_year": key[1], "stage": key[6], "is_special": key[7], "is_runoff": key[8], "result_mode": key[9], "source_release": release, "source_version": key[11], "reported_total_votes": result["denominator"], "reported_total_votes_raw_values": sorted({row["totalvotes_raw"] for row in group if row["totalvotes_raw"] is not None}), "party_aggregation_status": result["status"], "quarantine_reasons": result["reasons"], "quality_status": "observed" if result["denominator"] is not None else "missing", "source_status": source_provenance_status, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "prepared_input_sha256": expected_hash, "production_eligible": eligible, "candidate_status": "local_review", "row_count": len(group), "methodology_note": "Selected-party candidatevotes divided by contest totalvotes. Repeated candidate totalvotes are retained as provenance and never summed. TOTAL mode only; mode subtotals are not added."}
+            canonical_dataset = {"president":"election_president_2024", "senate":"election_senate_2024", "house":"election_house_2024"}[office]
+            summary = {"contest_id": contest_id, "field_id": field_id, "catalog_field_id": field_id, "dataset_id": canonical_dataset, **geo, "office": office, "election_year": key[1], "stage": key[6], "source_stage_values": sorted({(row.get("source_stage") or "GENERAL") for row in group}), "source_mode_values": sorted({row.get("source_mode_raw") or "" for row in group}), "is_special": key[7], "is_runoff": key[8], "result_mode": key[9], "source_release": release, "source_version": key[11], "reported_total_votes": result["denominator"], "reported_total_votes_raw_values": sorted({row["totalvotes_raw"] for row in group if row["totalvotes_raw"] is not None}), "party_aggregation_status": result["status"], "quarantine_reasons": result["reasons"], "quality_status": "observed" if result["denominator"] is not None else "missing", "source_status": source_provenance_status, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "prepared_input_sha256": expected_hash, "production_eligible": eligible, "candidate_status": "local_review", "row_count": len(group), "methodology_note": "Selected-party candidatevotes divided by contest totalvotes. Completeness is grounded in the pinned full prepared-file hash and all source rows assigned once to this contest; repeated candidate totalvotes are provenance, never added. TOTAL mode only; known aggregate rows such as undervotes remain source rows and are excluded from candidate party totals. Unspecified source modes remain quarantined pending publisher semantics."}
             office_contests.append(summary)
             for row in group:
                 row["contest_id"] = contest_id
@@ -273,10 +288,10 @@ def prepare_elections(input_dir, outdir, boundary_ids):
                 all_parties = set(party_totals) | {"DEMOCRAT", "REPUBLICAN"}
                 for party in sorted(all_parties):
                     votes, share = selected_party_value(result, party)
-                    shares_out.append({"contest_id": contest_id, "field_id": field_id, "dataset_id": office + "_election", "office": office, "election_year": key[1], "geography_type": key[2], "geo_id": key[3], "boundary_vintage": key[4], "congress_session": key[5], "stage": key[6], "is_special": key[7], "is_runoff": key[8], "result_mode": "TOTAL", "party_normalized": party, "party_votes": votes, "reported_total_votes": result["denominator"], "share_all_votes": share, "quality_status": "observed" if result["status"] == "validated" else "missing", "party_aggregation_status": result["status"], "source_release": release, "source_status": source_provenance_status, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "production_eligible": eligible, "candidate_status": "local_review"})
+                    shares_out.append({"contest_id": contest_id, "field_id": field_id, "dataset_id": canonical_dataset, "office": office, "election_year": key[1], "geography_type": key[2], "geo_id": key[3], "boundary_vintage": key[4], "congress_session": key[5], "stage": key[6], "is_special": key[7], "is_runoff": key[8], "result_mode": "TOTAL", "party_normalized": party, "party_votes": votes, "reported_total_votes": result["denominator"], "share_all_votes": share, "quality_status": "observed" if result["status"] == "validated" else "missing", "party_aggregation_status": result["status"], "source_release": release, "source_status": source_provenance_status, "source_sha256": raw_hash, "source_url": SOURCE_URL[office], "production_eligible": eligible, "candidate_status": "local_review"})
         contests_out.extend(office_contests)
         total_contests = [c for c in office_contests if c["result_mode"] == "TOTAL"]
-        counts[office] = {"source_rows": len(rows), "contest_mode_groups": len(office_contests), "validated_total_contests": sum(c["party_aggregation_status"] == "validated" for c in total_contests), "quarantined_total_contests": sum(c["party_aggregation_status"] == "quarantined" for c in total_contests)}
+        counts[office] = {"source_rows": len(rows), "contest_mode_groups": len(office_contests), "validated_total_contests": sum(c["party_aggregation_status"] == "validated" for c in total_contests), "quarantined_total_contests": sum(c["party_aggregation_status"] == "quarantined" for c in total_contests), "unspecified_mode_contests": sum(c["result_mode"] == "UNSPECIFIED" for c in office_contests)}
     # Official 2024 Senate Class I schedule: emit explicit no-election versus missing state records.
     class_i = {"AZ", "CA", "CT", "DE", "FL", "HI", "IN", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NJ", "NM", "NY", "ND", "OH", "PA", "RI", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"}
     state_fips = {"AL":1,"AK":2,"AZ":4,"AR":5,"CA":6,"CO":8,"CT":9,"DE":10,"FL":12,"GA":13,"HI":15,"ID":16,"IL":17,"IN":18,"IA":19,"KS":20,"KY":21,"LA":22,"ME":23,"MD":24,"MA":25,"MI":26,"MN":27,"MS":28,"MO":29,"MT":30,"NE":31,"NV":32,"NH":33,"NJ":34,"NM":35,"NY":36,"NC":37,"ND":38,"OH":39,"OK":40,"OR":41,"PA":42,"RI":44,"SC":45,"SD":46,"TN":47,"TX":48,"UT":49,"VT":50,"VA":51,"WA":53,"WV":54,"WI":55,"WY":56}
@@ -292,20 +307,54 @@ def prepare_elections(input_dir, outdir, boundary_ids):
     for postal, fips in sorted(state_fips.items(), key=lambda pair: pair[1]):
         geoid = str(fips).zfill(2)
         if postal not in class_i:
-            availability.append({"field_id": "12.02", "dataset_id": "senate_election", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": "GENERAL", "is_special": False, "is_runoff": False, "quality_status": "no_election", "source_release": senate_release, "reason": "No 2024 regular Class I race and no 2024 special contest on the official Senate schedule.", "candidate_status": "local_review"})
+            availability.append({"field_id": "12.02", "dataset_id": "election_senate_2024", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": "general", "is_special": False, "is_runoff": False, "quality_status": "no_election", "source_release": senate_release, "reason": "No 2024 regular Class I race and no 2024 special contest on the official Senate schedule.", "candidate_status": "local_review"})
         elif not observed.get(geoid):
-            availability.append({"field_id": "12.02", "dataset_id": "senate_election", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": "GENERAL", "is_special": False, "is_runoff": False, "quality_status": "missing", "source_release": senate_release, "reason": "Official schedule has a Class I race but prepared source has no 2024 candidate rows.", "candidate_status": "local_review"})
+            availability.append({"field_id": "12.02", "dataset_id": "election_senate_2024", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": "general", "is_special": False, "is_runoff": False, "quality_status": "missing", "source_release": senate_release, "reason": "Official schedule has a Class I race but prepared source has no 2024 candidate rows.", "candidate_status": "local_review"})
         else:
             for key in sorted(set(observed[geoid])):
-                availability.append({"field_id": "12.02", "dataset_id": "senate_election", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": key[6], "is_special": key[7], "is_runoff": key[8], "quality_status": "observed", "source_release": senate_release, "reason": "2024 candidate source rows present; aggregation validity is recorded on the separate contest row.", "candidate_status": "local_review"})
+                availability.append({"field_id": "12.02", "dataset_id": "election_senate_2024", "office": "senate", "election_year": 2024, "geography_type": "state", "geo_id": geoid, "boundary_vintage": None, "congress_session": None, "stage": key[6], "is_special": key[7], "is_runoff": key[8], "quality_status": "observed", "source_release": senate_release, "reason": "2024 candidate source rows present; aggregation validity is recorded on the separate contest row.", "candidate_status": "local_review"})
     availability_path = outdir / "election_availability.jsonl"
     write_jsonl(availability_path, availability)
+    coverage = {}
+    for office, rows in source_coverage_rows.items():
+        contests_2024 = [r for r in contests_out if r["office"] == office and r["election_year"] == 2024]
+        office_availability = [r for r in availability if r["office"] == office and r["election_year"] == 2024]
+        mode_rows, mode_geos = Counter(), defaultdict(set)
+        mapping_geos = set()
+        for row in rows:
+            mode_rows[row["mode"]] += 1
+            mode_geos[row["mode"]].add(row["geo_id"])
+            if row["mapping"] != "mapped":
+                mapping_geos.add(row["geo_id"])
+        total_contests = [r for r in contests_2024 if r["result_mode"] == "TOTAL"]
+        all_source_geos = {r["geo_id"] for r in rows}
+        total_source_geos = mode_geos.get("TOTAL",set())
+        nonblank_mode_geos = set.union(*(g for mode,g in mode_geos.items() if mode != "<BLANK>")) if any(mode != "<BLANK>" for mode in mode_geos) else set()
+        other_modes_geos = set.union(*(g for mode,g in mode_geos.items() if mode not in ("TOTAL","<BLANK>"))) if any(mode not in ("TOTAL","<BLANK>") for mode in mode_geos) else set()
+        other_than_vote_center = set.union(*(g for mode,g in mode_geos.items() if mode not in ("TOTAL","<BLANK>","VOTE CENTER"))) if any(mode not in ("TOTAL","<BLANK>","VOTE CENTER") for mode in mode_geos) else set()
+        coverage[office] = {
+            "source_rows":len(rows), "source_geographies":len({r["geo_id"] for r in rows}),
+            "source_mode_row_counts":dict(sorted(mode_rows.items())),
+            "explicit_total_geographies":len(mode_geos.get("TOTAL",set())),
+            "validated_total_contests":sum(r["party_aggregation_status"] == "validated" for r in total_contests),
+            "quarantined_total_contests":sum(r["party_aggregation_status"] == "quarantined" for r in total_contests),
+            "geographies_with_unspecified_mode":len(mode_geos.get("<BLANK>",set())),
+            "blank_only_geographies":len(mode_geos.get("<BLANK>",set()) - nonblank_mode_geos),
+            "vote_center_only_geographies":len(mode_geos.get("VOTE CENTER",set()) - (total_source_geos | mode_geos.get("<BLANK>",set()) | other_than_vote_center)),
+            "unspecified_mode_contests":sum(r["result_mode"] == "UNSPECIFIED" for r in contests_2024),
+            "geographies_without_explicit_total":len(all_source_geos - total_source_geos),
+            "geographies_without_total_but_with_other_mode":len(other_modes_geos - total_source_geos),
+            "geographies_with_other_source_modes":len(other_modes_geos),
+            "nonmapping_source_geographies":len(mapping_geos),
+            "availability_by_quality":dict(Counter(r["quality_status"] for r in office_availability)),
+            "unspecified_mode_disposition":"quarantined; raw blank mode preserved; publisher semantics have not been verified; no party share or zero inferred",
+        }
     outputs = {}
     for filename, rows in (("election_candidates.jsonl", candidates_out), ("election_contests.jsonl", contests_out), ("election_party_results.jsonl", shares_out), ("election_availability.jsonl", availability)):
         path = outdir / filename
         write_jsonl(path, rows)
         outputs[filename] = {"path": str(path), "sha256": sha256(path), "rows": len(rows)}
-    return source_inventory, counts, outputs
+    return source_inventory, counts, coverage, outputs
 
 
 def parse_acs(row, level, contract):
@@ -377,9 +426,9 @@ def main(argv=None):
     outdir.mkdir(parents=True, exist_ok=True)
     contract = validate_county_contract(args.county_geography_contract)
     boundary_ids, boundary_inventory = load_boundary(args, outdir)
-    election_sources, election_counts, election_outputs = prepare_elections(args.input_dir, outdir, boundary_ids)
+    election_sources, election_counts, election_coverage, election_outputs = prepare_elections(args.input_dir, outdir, boundary_ids)
     aian_sources, aian_outputs = prepare_aian(args.input_dir, outdir, contract)
-    inventory = {"candidate_status": "local_review_not_admitted", "collector_version": COLLECTOR_VERSION, "reader_contract_version": CONTRACT_VERSION, "field_ids": FIELD_IDS, "observation_releases": {key: value[5] for key, value in POLITICS_FILES.items()}, "source_status": {"president": "public metadata checksum/size match", "senate": "public direct-download size and SHA-256 verified; public metadata MD5 describes a distinct processed serialization", "house": "mirror original byte identity unverified; local review only; not production eligible"}, "sources": {"elections": election_sources, "aian": aian_sources}, "counts": election_counts, "outputs": {**election_outputs, **{"aian_{}".format(k): v for k, v in aian_outputs.items()}}, "boundary": boundary_inventory, "county_geography_contract_sha256": sha256(args.county_geography_contract), "controls": {"AIAN_US_7990799": "prepared source control only, not independent verification", "zero_policy": "party zero only for validated complete TOTAL contest; missing/no-election/quarantine remain NULL", "denominator_policy": "totalvotes repeated by source row is retained, checked for consistency, and stored once per contest"}}
+    inventory = {"candidate_status": "local_review_not_admitted", "collector_version": COLLECTOR_VERSION, "reader_contract_version": CONTRACT_VERSION, "field_ids": FIELD_IDS, "observation_releases": {key: value[5] for key, value in POLITICS_FILES.items()}, "source_status": {"president": "public metadata checksum/size match", "senate": "public direct-download size and SHA-256 verified; public metadata MD5 describes a distinct processed serialization", "house": "mirror original byte identity unverified; local review only; not production eligible"}, "sources": {"elections": election_sources, "aian": aian_sources}, "counts": election_counts, "coverage_2024": election_coverage, "outputs": {**election_outputs, **{"aian_{}".format(k): v for k, v in aian_outputs.items()}}, "boundary": boundary_inventory, "county_geography_contract_sha256": sha256(args.county_geography_contract), "controls": {"AIAN_US_7990799": "prepared source control only, not independent verification", "zero_policy": "party zero only for validated complete TOTAL contest; missing/no-election/quarantine remain NULL", "denominator_policy": "totalvotes repeated by source row is retained, checked for consistency, and stored once per contest", "unspecified_election_mode": "preserved as raw source mode and quarantined unless publisher semantics are independently verified"}}
     inventory_path = outdir / "reader-results.json"
     inventory_path.write_text(json.dumps(inventory, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"output_dir": str(outdir), "inventory": str(inventory_path), "inventory_sha256": sha256(inventory_path), "counts": election_counts}, indent=2))

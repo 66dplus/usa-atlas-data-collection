@@ -5,6 +5,13 @@
   "admission_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
   "field_ids": {
     "aian_broad_share": "01.04",
+    "unemployment": "03.06",
+    "pep_population": "01.01",
+    "irs_agi": "07.01",
+    "electricity_price": "08.05",
+    "cancer": "11.01",
+    "hiv": "11.02",
+    "child_deaths_under18": "11.03",
     "president": "12.01",
     "senate": "12.02",
     "house": "12.03"
@@ -48,50 +55,153 @@
     "party_normalized",
     "source_version",
     "mode",
+    "source_mode_raw",
     "stage",
     "special",
     "runoff",
     "writein",
-    "fusion_ticket"
+    "fusion_ticket",
+    "canonical contest stage plus raw source stage values"
   ],
-  "share": "selected normalized party candidatevotes / contest totalvotes for TOTAL mode only; zero only for validated complete contest with absent party; ambiguous/incomplete is NULL",
+  "share": "selected normalized party candidatevotes / contest totalvotes for TOTAL mode only; zero only when an exact-hash complete source-file partition is validated; ambiguous/incomplete/UNSPECIFIED-mode is NULL",
+  "source_mode": "raw mode cells preserved per candidate and contest; blank mode maps to UNSPECIFIED and is quarantined pending verified publisher semantics",
+  "unemployment": {
+    "dataset_id": "unemployment",
+    "field_id": "03.06:unemployment_rate",
+    "catalog_field_id": "03.06",
+    "source_release": "laus-nsa-2025",
+    "source_code": "bls_laus",
+    "seasonal_adjustment": "NSA",
+    "source_version": "laus-nsa-2025-v2",
+    "periods": {
+      "monthly": "2025 M01-M12, with source period YYYY-Mnn and month 1..12",
+      "annual": "2025 M13 as annual with null month; source period 2025-M13"
+    },
+    "components": {
+      "03": "unemployment_rate",
+      "04": "unemployed",
+      "05": "employed",
+      "06": "labor_force"
+    },
+    "source_gaps": "M10 and Kalawao series-not-returned rows stay explicit missing; no national rate synthesized"
+  },
+  "native_national_pep": {
+    "source_id": "census-pep-national-single-age-v2025",
+    "sha256": "6436d4f6972d415caf14cb20776807bc031fc9f1bfc9d6ff26055d592a2b0230",
+    "total_selector": {
+      "SEX": "0",
+      "AGE": "999"
+    },
+    "population_estimate_2023": 336755052,
+    "population_estimate_2024": 340003797,
+    "national_age_groups": "recomputed from native national single-age rows and compared exactly to prepared values"
+  },
+  "source_releases": {
+    "aian_broad_share": "acs-2024-5year",
+    "pep_population": "Census PEP Vintage 2025; native US source pinned by census-pep-national-single-age-v2025 SHA-256 6436d4f6972d415caf14cb20776807bc031fc9f1bfc9d6ff26055d592a2b0230",
+    "irs_agi": "irs-soi-2023-pep-vintage-2025",
+    "electricity_price": "EIA Electric Power Annual 2025",
+    "cancer": "per-row retained USCS source release, diagnosis year 2023",
+    "hiv": "AtlasPlus 2024 provisional",
+    "child_deaths_under18": "NCHS NVSS Mortality 2018-2024, CDC WONDER release 2026",
+    "president": "dataverse-VOQCHQ-v20",
+    "senate": "dataverse-PEJ5QU-v8",
+    "house": "prepared-mirror-IG0UN2-v15"
+  },
   "artifact_sha256": {
-    "schema.sql": "d7ee15199b3e1e44984e4a02dc21e4c30aead058982a8d994721ce65f7de6357",
+    "consumer-protocol.md": "e19b81b2f20feb13a8a1c0d4911aec3c009597df3684bf641ec5f22668aeb241",
+    "data-ready-input-contract.json": "207d3557fc0c86104cb1a7ac91509330aa0dcb139f2f8c26234d16ad348d5147",
     "fixtures/reader-fixture.sql": "61ec59cef03909ae25fe0a02e122aa8ab117581b91156d119eccc16e95aec327",
     "fixtures/reader-query.sql": "5ba9e249acfbee6762635a593b18bb63390b67c4dba150687685583f8e8351c6",
-    "tests/invariants.sql": "940d9cea67ac345557816b22e2e319e2b139fb5febd5bd27b670ddfa59aacf4e",
-    "tests/run_disposable_integration.py": "b5edff5a6b40b3481a4f5059d067ec2f023b880fc3906614e9c1960b81ef4d2a",
-    "tests/test_local_loader.py": "e36042dc1b5a0133a3cb4206deac581a3cc67220f8ad6a5845ea05a727012aa0",
-    "tests/README.md": "f8449386304fec3e1cb58e54c3d0f4fa193f533164f3e169b836cc130af8af1f",
-    "data-ready-input-contract.json": "d00bc279ffe17bc9e572e6b934e8b10b540c587c4bbf09b48c637855b99202f9",
-    "consumer-protocol.md": "568c152a53e092f58bf743fd6e97d29aa57623144e1c041537426158456d7c2f",
-    "load_local_review.py": "20064eab8d593bd6e9680b6e14a0622b093792505667e9ac2c147d0193ea4645",
-    "full/politics_20261026/prepare.py": "542f6c1003ba9fa7aa10e08e70659e46c4150157c67be921af6063eb171deff0",
-    "full/politics_20261026/test_prepare.py": "4586b86f54c0db4ecf0a597c1c98e9b367bdebf9e9bc1097356569d1fd3cad44",
-    "full/politics_20261026/validate_real.py": "216afa8f70d02d56add2e1dc121a3c1ae461965bd455251840859c750ad07d76",
+    "full/politics_20261026/README.md": "c465d26dd19f3df91d1f84ab334c793b63ae514b4e604f8065be4783e3e9fdaf",
+    "full/politics_20261026/prepare.py": "e29c89952e7a7b28afee96e154468b2f52f68cd73f9c3b9d6de7d45499062af5",
+    "full/politics_20261026/prepare_bls.py": "bde49eda4dcaaef1b10fa6201546e34081fad8bf8c55f9935592034aaf7ef4ee",
     "full/politics_20261026/source-readiness.json": "e3d81ea6a92f7087cdda59af5e4ec98470a0b8874090a240fcb33ba4afd7764d",
-    "full/politics_20261026/README.md": "98a258480e64b7736b5aaecddbffe1d79f73b3de3bcb48da4ba2efd701bd6a90"
+    "full/politics_20261026/test_prepare.py": "1c95bf74f33f16ba5c9f900b2dfa4534fd474a12f3347e020cdd6ccc51c39702",
+    "full/politics_20261026/test_prepare_bls.py": "76f5ef57c497f70c49802a697996a9c7dc6db0dc9dd092340e24f1a35eaf5c6c",
+    "full/politics_20261026/validate_real.py": "216afa8f70d02d56add2e1dc121a3c1ae461965bd455251840859c750ad07d76",
+    "load_local_review.py": "34d0bcebacc3a12e6ea631225b8884677478ff5101c3d5447466d8c39f7fb31b",
+    "load_refresh_local_review.py": "18ea7484c392eccf6cee93db5578ae5c36fb4ec50552b0c58471ddd62622c273",
+    "loader_input_mapping.json": "0cdf5a294e7df11c77768e392bdd7f93bedc02c4e845bf8c53833c1209b21e74",
+    "prepare_refresh.py": "7882c3da077f4da09b4b7ea4da8bd3c0d8c4dd4583a6a1e7c4406a9d9ea052ba",
+    "schema.sql": "727a14277a63e7498f23d82ba5a2d5c83e8d967b3113d13ca5400c53c770b3c7",
+    "tests/invariants.sql": "262909726ddca947ac178c838ea28140ab52b0b518ad60c9b9154815e51f8c36",
+    "tests/run_disposable_integration.py": "3bc525f631114d95031023c987c356a25749880f3254b8d575a824ea8a71654d",
+    "tests/test_actual_app_adapter.py": "b0084ee7b53a6c712a2b418f2dbb9a4be1f3f20a48d194d6eba2a80e23e7bafd",
+    "tests/test_load_refresh_local_review.py": "1994038186835eea4b53adcf731d9849956b9c5c6aac11a636580a0a4d1e079d",
+    "tests/test_local_loader.py": "e36042dc1b5a0133a3cb4206deac581a3cc67220f8ad6a5845ea05a727012aa0",
+    "tests/test_prepare_refresh.py": "c92f7fe26316c6cf9602f929e248c433198629926259c8279055db2c96df30d9"
   },
   "fields": {
+    "unemployment": {
+      "dataset_id": "unemployment",
+      "field_id": "03.06:unemployment_rate",
+      "catalog_field_id": "03.06",
+      "source_release": "laus-nsa-2025",
+      "seasonalAdjustment": "NSA"
+    },
     "aian_broad_share": {
       "dataset_id": "aian_broad_share",
       "field_id": "01.04:aian_share",
       "catalog_field_id": "01.04"
     },
     "president": {
-      "dataset_id": "president_election",
+      "dataset_id": "election_president_2024",
       "field_id": "12.01",
       "catalog_field_id": "12.01"
     },
     "senate": {
-      "dataset_id": "senate_election",
+      "dataset_id": "election_senate_2024",
       "field_id": "12.02",
       "catalog_field_id": "12.02"
     },
     "house": {
-      "dataset_id": "house_election",
+      "dataset_id": "election_house_2024",
       "field_id": "12.03",
       "catalog_field_id": "12.03"
+    },
+    "pep_population": {
+      "dataset_id": "pep_population",
+      "field_ids": [
+        "01.01:pep_population_total",
+        "01.01:pep_population_age_13_plus",
+        "01.01:pep_population_under_18"
+      ],
+      "catalog_field_id": "01.01"
+    },
+    "irs_agi": {
+      "dataset_id": "irs_agi",
+      "field_ids": [
+        "07.01:agi_total",
+        "07.01:derived:per-resident"
+      ],
+      "catalog_field_id": "07.01",
+      "denominator_year": 2023
+    },
+    "electricity_price": {
+      "dataset_id": "electricity_price",
+      "field_id": "08.05:sector_ALL",
+      "catalog_field_id": "08.05",
+      "year": 2025,
+      "sector": "ALL"
+    },
+    "cancer": {
+      "dataset_id": "cancer",
+      "field_id": "11.01",
+      "catalog_field_id": "11.01",
+      "event_year": 2023
+    },
+    "hiv": {
+      "dataset_id": "hiv",
+      "field_id": "11.02",
+      "catalog_field_id": "11.02",
+      "event_year": 2024
+    },
+    "child_deaths_under18": {
+      "dataset_id": "child_deaths_under18",
+      "field_id": "11.03",
+      "catalog_field_id": "11.03",
+      "event_year": 2024
     }
   }
 }

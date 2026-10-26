@@ -5,8 +5,16 @@ DO $$ BEGIN
     RAISE EXCEPTION 'duplicate annual grain unexpectedly accepted';
   EXCEPTION WHEN unique_violation THEN NULL; END;
   BEGIN
-    INSERT INTO usa_atlas.election_contest SELECT
-      'duplicate-senate',dataset_id,field_id,catalog_field_id,office,election_year,election_date,stage,is_special,is_runoff,geography_type,geo_id,state_fips,district_code,boundary_vintage,congress_session,result_mode,reported_total_votes,source_release,source_url,source_sha256,source_version,source_status,production_eligible,quality_status,geography_mapping_status,party_aggregation_status,quarantine_reasons,methodology_note,candidate_status,ingest_id
+    INSERT INTO usa_atlas.election_contest
+      (contest_id,dataset_id,field_id,catalog_field_id,office,election_year,stage,source_mode_values,is_special,is_runoff,geography_type,geo_id,result_mode,source_release,source_url,source_sha256,source_version,source_status,production_eligible,quality_status,geography_mapping_status,party_aggregation_status,methodology_note,candidate_status,ingest_id)
+    SELECT 'bad-unspecified-mode',dataset_id,field_id,catalog_field_id,office,election_year,stage,ARRAY[]::text[],is_special,is_runoff,geography_type,geo_id,'UNSPECIFIED',source_release,source_url,source_sha256,source_version,source_status,production_eligible,'missing',geography_mapping_status,'quarantined',methodology_note,candidate_status,ingest_id
+    FROM usa_atlas.election_contest WHERE contest_id='fixture-senate-2024-ks-no-election';
+    RAISE EXCEPTION 'UNSPECIFIED election mode without raw blank provenance unexpectedly accepted';
+  EXCEPTION WHEN check_violation THEN NULL; END;
+  BEGIN
+    INSERT INTO usa_atlas.election_contest
+      (contest_id,dataset_id,field_id,catalog_field_id,office,election_year,election_date,stage,is_special,is_runoff,geography_type,geo_id,state_fips,district_code,boundary_vintage,congress_session,result_mode,reported_total_votes,source_release,source_url,source_sha256,source_version,source_status,production_eligible,quality_status,geography_mapping_status,party_aggregation_status,quarantine_reasons,methodology_note,candidate_status,ingest_id)
+    SELECT 'duplicate-senate',dataset_id,field_id,catalog_field_id,office,election_year,election_date,stage,is_special,is_runoff,geography_type,geo_id,state_fips,district_code,boundary_vintage,congress_session,result_mode,reported_total_votes,source_release,source_url,source_sha256,source_version,source_status,production_eligible,quality_status,geography_mapping_status,party_aggregation_status,quarantine_reasons,methodology_note,candidate_status,ingest_id
     FROM usa_atlas.election_contest WHERE contest_id='fixture-senate-2024-ks-no-election';
     RAISE EXCEPTION 'duplicate NULL-dimension contest unexpectedly accepted';
   EXCEPTION WHEN unique_violation THEN NULL; END;

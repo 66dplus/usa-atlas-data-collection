@@ -10,6 +10,8 @@ import psycopg2
 
 ROOT = pathlib.Path(__file__).resolve().parents[4]
 GUARD_ROOT = pathlib.Path("/tmp/usa-maps-data-flow-20261026").resolve()
+OBSERVATION_COLUMNS = "observation_id,dataset_id,field_id,catalog_field_id,geo_id,geo_type,state_fips,district_code,boundary_vintage,congress_session,is_at_large,period_kind,period_year,period_month,period_start_year,period_end_year,source_period_code,value,unit,quality_status,source_value_status,geography_mapping_status,raw_estimate,raw_estimate_moe,raw_denominator,raw_denominator_moe,denominator_value,source,source_release,source_version,source_url,source_sha256,methodology_note,candidate_status,retrieved_at,ingest_id"
+OBSERVATION_INSERT = "INSERT INTO usa_atlas.reader_observation (" + OBSERVATION_COLUMNS + ") VALUES (" + ",".join(["%s"] * 36) + ")"
 
 
 def run_fixture_database(admin):
@@ -69,15 +71,19 @@ def main():
                 assert cur.fetchone() == (0, 0)
                 cur.execute("SELECT count(*) FROM usa_atlas.election_availability WHERE office='senate' AND election_year=2024 AND quality_status='no_election'")
                 assert cur.fetchone()[0] == 17
+                cur.execute("SELECT count(*) FROM usa_atlas.election_contest WHERE office='president' AND election_year=2024 AND result_mode='UNSPECIFIED' AND party_aggregation_status='quarantined' AND '' = ANY(source_mode_values)")
+                assert cur.fetchone()[0] == 621
+                cur.execute("SELECT count(*) FROM usa_atlas.election_candidate e JOIN usa_atlas.election_contest c USING (contest_id) WHERE c.office='president' AND c.election_year=2024 AND c.result_mode='UNSPECIFIED' AND e.source_mode_raw='' AND e.quality_status='observed'")
+                assert cur.fetchone()[0] > 0
                 cur.execute("SELECT count(*) FROM usa_atlas.reader_batch b JOIN usa_atlas.ingest_run i USING (ingest_id) WHERE b.candidate_status='local_review' AND i.status='pass'")
                 assert cur.fetchone()[0] == 1
                 cur.execute("SELECT count(*) FROM usa_atlas.reader_batch b JOIN usa_atlas.ingest_run i USING (ingest_id) WHERE b.candidate_status='admitted' AND i.status='pass'")
                 assert cur.fetchone()[0] == 0
                 cur.execute("SELECT count(*) FROM usa_atlas.observation")
                 assert cur.fetchone()[0] == 0  # v1 relation survived; v2 load does not rewrite it.
-                cur.execute("SELECT observation_id,dataset_id,field_id,catalog_field_id,geo_id,geo_type,state_fips,district_code,boundary_vintage,congress_session,is_at_large,period_kind,period_year,period_month,period_start_year,period_end_year,source_period_code,value,unit,quality_status,source_value_status,geography_mapping_status,raw_estimate,raw_estimate_moe,raw_denominator,raw_denominator_moe,denominator_value,source,source_release,source_url,source_sha256,methodology_note,candidate_status,retrieved_at,ingest_id FROM usa_atlas.reader_observation LIMIT 1")
+                cur.execute("SELECT " + OBSERVATION_COLUMNS + " FROM usa_atlas.reader_observation LIMIT 1")
                 row = cur.fetchone()
-                cur.execute("INSERT INTO usa_atlas.reader_observation VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", row)
+                cur.execute(OBSERVATION_INSERT, row)
                 raise AssertionError("duplicate observation grain unexpectedly accepted")
         except psycopg2.errors.UniqueViolation:
             check.rollback()
@@ -93,7 +99,7 @@ def main():
                     else:
                         bad[column] = value
                     try:
-                        cur.execute("INSERT INTO usa_atlas.reader_observation VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", bad)
+                        cur.execute(OBSERVATION_INSERT, bad)
                         raise AssertionError(message + " unexpectedly accepted")
                     except psycopg2.errors.CheckViolation:
                         check.rollback()
@@ -106,7 +112,7 @@ def main():
         finally:
             check.close()
         fixtures_passed = run_fixture_database(admin)
-        print(json.dumps({"status": "PASS", "database": dbname, "candidate_status": "local_review", "load": loaded, "checks": {"aian_county_state_nation": 3275, "house_2024_dc_delegate_validated": True, "house_dc_democrat_share": float(dc), "validated_absent_party_returns_zero": True, "senate_no_election_rows": 17, "local_review_pass_run_not_admitted": True, "duplicate_observation_grain_rejected": True, "M13_month_null_and_invalid_13_rejected": True, "observed_value_and_source_status_invariants": True, "office_geography_mismatch_rejected": True, "v1_to_additive_v2_fixture_migration": fixtures_passed, "fixture_zero_missing_no_election_and_constraint_invariants": fixtures_passed}}, indent=2))
+        print(json.dumps({"status": "PASS", "database": dbname, "candidate_status": "local_review", "load": loaded, "checks": {"aian_county_state_nation": 3275, "house_2024_dc_delegate_validated": True, "house_dc_democrat_share": float(dc), "validated_absent_party_returns_zero": True, "senate_no_election_rows": 17, "unspecified_president_modes_quarantined_with_raw_blank": 621, "source_value_validity_preserved_under_aggregation_quarantine": True, "local_review_pass_run_not_admitted": True, "duplicate_observation_grain_rejected": True, "M13_month_null_and_invalid_13_rejected": True, "observed_value_and_source_status_invariants": True, "office_geography_mismatch_rejected": True, "v1_to_additive_v2_fixture_migration": fixtures_passed, "fixture_zero_missing_no_election_and_constraint_invariants": fixtures_passed}}, indent=2))
     finally:
         if guard_path.exists():
             guard_path.unlink()
