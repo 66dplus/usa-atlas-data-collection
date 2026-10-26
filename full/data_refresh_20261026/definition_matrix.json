@@ -1,0 +1,1958 @@
+{
+  "format": "usa_maps_data_refresh_definition_matrix_v1",
+  "reviewedOn": "2026-10-26",
+  "scopeCount": 42,
+  "scopeSource": "published-42-scope.json (provided external audit input)",
+  "sourceDefinitionSource": "bound-source/ux/metric-definitions.json (provided external audit input)",
+  "rows": [
+    {
+      "selectionId": "population",
+      "catalogId": "01.01",
+      "fieldId": "01.01:B01003_001E",
+      "label": "Population",
+      "definition": "The ACS estimate counts residents at this place during the 2020–2024 survey period. It is a population count, not a population density or growth rate.",
+      "formula": "B01003_001E",
+      "numerator": [
+        {
+          "field": "01.01:B01003_001E",
+          "period": "2024"
+        }
+      ],
+      "denominator": [],
+      "unit": "people",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "age",
+      "catalogId": "01.02",
+      "fieldId": "01.02:B01002_001E",
+      "label": "Median age",
+      "definition": "The ACS estimates the age at the midpoint of the population at this place during 2020–2024. Half the population is younger than this age and half is older.",
+      "formula": "B01002_001E",
+      "numerator": [
+        {
+          "field": "01.02:B01002_001E",
+          "period": "2024"
+        }
+      ],
+      "denominator": [],
+      "unit": "years",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "sex",
+      "catalogId": "01.03",
+      "fieldId": "01.03:derived",
+      "label": "Men per 100 women",
+      "definition": "Men divided by women, multiplied by 100. Values below 100 mean fewer men than women.",
+      "formula": "B01001_002E / B01001_026E * 100",
+      "numerator": [
+        {
+          "field": "01.03:B01001_002E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "01.03:B01001_026E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "men per 100 women",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "race-ethnicity",
+      "catalogId": "01.04",
+      "fieldId": "01.04:derived:hispanic",
+      "label": "Hispanic or Latino share",
+      "definition": "Hispanic or Latino residents divided by all residents, multiplied by 100. This is the share of the total population that is Hispanic or Latino; Hispanic origin can be of any race.",
+      "formula": "B03002_012E / B03002_001E * 100",
+      "numerator": [
+        {
+          "field": "01.04:B03002_012E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "01.04:B03002_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "race-ethnicity--asian",
+      "catalogId": "01.04",
+      "fieldId": "01.04:derived:asian",
+      "label": "Asian non-Hispanic share",
+      "definition": "People who are Asian alone and not Hispanic or Latino divided by all residents, multiplied by 100. This is the share of the total population in that category.",
+      "formula": "B03002_006E / B03002_001E * 100",
+      "numerator": [
+        {
+          "field": "01.04:derived:asian",
+          "period": "2024"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "01.04:B03002_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": null,
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "race-ethnicity--black",
+      "catalogId": "01.04",
+      "fieldId": "01.04:derived:black",
+      "label": "Black non-Hispanic share",
+      "definition": "People who are Black or African American alone and not Hispanic or Latino divided by all residents, multiplied by 100. This is the share of the total population in that category.",
+      "formula": "B03002_004E / B03002_001E * 100",
+      "numerator": [
+        {
+          "field": "01.04:derived:black",
+          "period": "2024"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "01.04:B03002_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": null,
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "race-ethnicity--white-non-hispanic",
+      "catalogId": "01.04",
+      "fieldId": "01.04:derived:white",
+      "label": "White non-Hispanic share",
+      "definition": "People who are White alone and not Hispanic or Latino divided by all residents, multiplied by 100. This is the share of the total population in that category.",
+      "formula": "B03002_003E / B03002_001E * 100",
+      "numerator": [
+        {
+          "field": "01.04:derived:white",
+          "period": "2024"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "01.04:B03002_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": null,
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "foreign-born-population",
+      "catalogId": "01.05",
+      "fieldId": "01.05:derived",
+      "label": "Foreign-born share",
+      "definition": "Residents born outside the United States divided by all residents, multiplied by 100. This is the share of the population that is foreign-born.",
+      "formula": "B05002_013E / B05002_001E * 100",
+      "numerator": [
+        {
+          "field": "01.05:B05002_013E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "01.05:B05002_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "citizenship",
+      "catalogId": "01.07",
+      "fieldId": "01.07:derived",
+      "label": "Share of residents who are not U.S. citizens",
+      "definition": "Non-citizen residents divided by total residents, multiplied by 100.",
+      "formula": "B05001_006E / B05001_001E * 100",
+      "numerator": [
+        {
+          "field": "01.07:B05001_006E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "01.07:B05001_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "median-household-income",
+      "catalogId": "02.01",
+      "fieldId": "02.01:B19013_001E",
+      "label": "Median household income",
+      "definition": "The ACS estimates the midpoint of household incomes at this place over 2020–2024: half of households had a higher income and half had a lower income. This is a household measure, not income per person.",
+      "formula": "B19013_001E",
+      "numerator": [
+        {
+          "field": "02.01:B19013_001E",
+          "period": "2024"
+        }
+      ],
+      "denominator": [],
+      "unit": "USD/year",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "per-capita-income",
+      "catalogId": "02.02",
+      "fieldId": "02.02:B19301_001E",
+      "label": "Average income per person",
+      "definition": "Total income in the past 12 months divided by the total population. This is the average dollar income per person, not a household income figure.",
+      "formula": "B19301_001E",
+      "numerator": [
+        {
+          "field": "02.02:B19301_001E",
+          "period": "2024"
+        }
+      ],
+      "denominator": [],
+      "unit": "USD/year",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "median-rent",
+      "catalogId": "02.03",
+      "fieldId": "02.03:B25064_001E",
+      "label": "Median monthly rent",
+      "definition": "The ACS estimates the midpoint of monthly gross rents for renter-occupied homes paying cash rent. Half of these rents are higher and half are lower.",
+      "formula": "B25064_001E",
+      "numerator": [
+        {
+          "field": "02.03:B25064_001E",
+          "period": "2024"
+        }
+      ],
+      "denominator": [],
+      "unit": "USD/month",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "median-home-value",
+      "catalogId": "02.04",
+      "fieldId": "02.04:B25077_001E",
+      "label": "Median home value",
+      "definition": "The ACS estimates the midpoint of reported home values for owner-occupied homes. Half of the estimated values are higher and half are lower.",
+      "formula": "B25077_001E",
+      "numerator": [
+        {
+          "field": "02.04:B25077_001E",
+          "period": "2024"
+        }
+      ],
+      "denominator": [],
+      "unit": "USD",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "mortgage-selected-monthly-owner-costs",
+      "catalogId": "02.05",
+      "fieldId": "02.05:B25088_001E",
+      "label": "Median monthly owner costs",
+      "definition": "The ACS estimates selected monthly costs for owner-occupied homes, including housing expenses such as mortgage payments, taxes, insurance, utilities, and fuels. This is a housing-cost measure, not a home price.",
+      "formula": "B25088_001E",
+      "numerator": [
+        {
+          "field": "02.05:B25088_001E",
+          "period": "2024"
+        }
+      ],
+      "denominator": [],
+      "unit": "USD/month",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "rent-as-of-income-rent-burden",
+      "catalogId": "02.06",
+      "fieldId": "02.06:derived",
+      "label": "Share of renters spending 30%+ of income on rent",
+      "definition": "Renters spending 30 percent or more of household income on rent divided by renter households with a computable ratio, multiplied by 100.",
+      "formula": "(B25070_007E+B25070_008E+B25070_009E+B25070_010E) / (B25070_001E-B25070_011E) * 100",
+      "numerator": [
+        {
+          "field": "02.06:B25070_007E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "02.06:B25070_008E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "02.06:B25070_009E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "02.06:B25070_010E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "02.06:B25070_001E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "02.06:B25070_011E",
+          "period": "2024",
+          "multiplier": -1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "owner-renter-ratio",
+      "catalogId": "02.07",
+      "fieldId": "02.07:derived",
+      "label": "Homeownership rate",
+      "definition": "Owner-occupied households divided by owner- and renter-occupied households, multiplied by 100.",
+      "formula": "B25003_002E / (B25003_002E+B25003_003E) * 100",
+      "numerator": [
+        {
+          "field": "02.07:B25003_002E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "02.07:B25003_002E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "02.07:B25003_003E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "poverty",
+      "catalogId": "02.08",
+      "fieldId": "02.08:derived",
+      "label": "Poverty rate",
+      "definition": "People whose income is below the Census poverty threshold divided by the population for whom poverty status is determined, multiplied by 100. It is the share of that population below the threshold; it is not a measure of how far below it their incomes are.",
+      "formula": "B17001_002E / B17001_001E * 100",
+      "numerator": [
+        {
+          "field": "02.08:B17001_002E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "02.08:B17001_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "households-earning-200k",
+      "catalogId": "02.09",
+      "fieldId": "02.09:derived",
+      "label": "Share of households earning $200,000+",
+      "definition": "Households with income of $200,000 or more divided by all households, multiplied by 100.",
+      "formula": "B19001_017E / B19001_001E * 100",
+      "numerator": [
+        {
+          "field": "02.09:B19001_017E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "02.09:B19001_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "cost-of-living-regional-price-parities",
+      "catalogId": "02.10",
+      "fieldId": "02.10",
+      "label": "Cost of living index",
+      "definition": "BEA Regional Price Parities. The US value is 100; values above 100 indicate a higher price level. State observations only; no county value is inferred.",
+      "formula": "02.10",
+      "numerator": [
+        {
+          "field": "02.10",
+          "period": "2024"
+        }
+      ],
+      "denominator": [],
+      "unit": "index (US=100)",
+      "geography": [
+        "state"
+      ],
+      "observationPeriod": "2024 annual",
+      "observationType": "annual",
+      "source": "BEA RPP",
+      "sourceUrl": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area",
+      "latestSuitableRelease": "Regional Price Parities 2024",
+      "releaseDate": "2026-02-19",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "RPP is a state/metro price-level index with U.S.=100; it does not provide county values."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "bea-rpp-release",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "bachelors-degree",
+      "catalogId": "03.01",
+      "fieldId": "03.01:derived",
+      "label": "Bachelor's degree rate",
+      "definition": "Adults 25+ with a bachelor's degree divided by adults 25+, multiplied by 100.",
+      "formula": "B15003_022E / B15003_001E * 100",
+      "numerator": [
+        {
+          "field": "03.01:B15003_022E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "03.01:B15003_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "masters-degree",
+      "catalogId": "03.02",
+      "fieldId": "03.02:derived",
+      "label": "Master's degree rate",
+      "definition": "Adults 25+ with a master's degree divided by adults 25+, multiplied by 100.",
+      "formula": "B15003_023E / B15003_001E * 100",
+      "numerator": [
+        {
+          "field": "03.02:B15003_023E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "03.02:B15003_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "doctorate",
+      "catalogId": "03.03",
+      "fieldId": "03.03:derived",
+      "label": "Doctorate rate",
+      "definition": "Adults 25+ with a doctorate divided by adults 25+, multiplied by 100.",
+      "formula": "B15003_025E / B15003_001E * 100",
+      "numerator": [
+        {
+          "field": "03.03:B15003_025E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "03.03:B15003_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "high-school-attainment",
+      "catalogId": "03.04",
+      "fieldId": "03.04:derived",
+      "label": "High school attainment rate",
+      "definition": "Adults 25+ with a high school diploma or higher divided by adults 25+, multiplied by 100.",
+      "formula": "SUM(B15003_017E..B15003_025E) / B15003_001E * 100",
+      "numerator": [
+        {
+          "field": "03.04:B15003_017E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.04:B15003_018E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.04:B15003_019E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.04:B15003_020E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.04:B15003_021E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.04:B15003_022E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.04:B15003_023E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.04:B15003_024E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.04:B15003_025E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "03.04:B15003_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "no-diploma",
+      "catalogId": "03.05",
+      "fieldId": "03.05:derived",
+      "label": "No diploma rate",
+      "definition": "Adults 25+ without a high school diploma divided by adults 25+, multiplied by 100.",
+      "formula": "SUM(B15003_002E..B15003_016E) / B15003_001E * 100",
+      "numerator": [
+        {
+          "field": "03.05:B15003_002E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_003E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_004E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_005E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_006E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_007E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_008E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_009E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_010E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_011E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_012E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_013E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_014E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_015E",
+          "period": "2024",
+          "multiplier": 1
+        },
+        {
+          "field": "03.05:B15003_016E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "03.05:B15003_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "unemployment",
+      "catalogId": "03.06",
+      "fieldId": "03.06:unemployment_rate",
+      "label": "Unemployment rate",
+      "definition": "Official NSA BLS LAUS unemployment rate with published unemployed, employed, and labor-force count components.",
+      "formula": "Official BLS measure 03; retain measures 04 (unemployed), 05 (employed), and 06 (labor force).",
+      "numerator": [
+        {
+          "field": "BLS LAUST/LAUCN measure 04: unemployed persons",
+          "period": "2025 monthly"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "BLS LAUST/LAUCN measure 06: labor force persons",
+          "period": "2025 monthly"
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2025-M01 through 2025-M12 plus official annual M13 where published",
+      "observationType": "monthly NSA; M13 is a separate annual observation",
+      "source": "BLS LAUS",
+      "sourceUrl": "https://www.bls.gov/lau/",
+      "latestSuitableRelease": null,
+      "releaseDate": null,
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "Use NSA LAUST state and LAUCN county series; seasonally adjusted LASST state series are not interchangeable.",
+        "Preserve unemployed, employed, and labor-force component counts. Missing October 2025 stays missing, not zero.",
+        "M13 is annual and is never computed from monthly observations."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "bls-laus-public-api-v2",
+      "supportingSources": [
+        "census-pep-county-totals-v2025"
+      ],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "work-from-home-share",
+      "catalogId": "03.09",
+      "fieldId": "03.09:derived",
+      "label": "Share of workers working from home",
+      "definition": "Workers age 16 and older who worked from home divided by all workers age 16 and older, multiplied by 100. It is the share of workers whose commute mode was working from home.",
+      "formula": "B08301_021E / B08301_001E * 100",
+      "numerator": [
+        {
+          "field": "03.09:B08301_021E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "03.09:B08301_001E",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "unit": "%",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "2020–2024",
+      "observationType": "ACS 5-year survey period",
+      "source": "Census ACS",
+      "sourceUrl": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "acs-release-schedule",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "murders",
+      "catalogId": "04.01",
+      "fieldId": "04.01:derived",
+      "label": "Murders",
+      "definition": "Official FBI 2025 annual homicide estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
+      "numerator": [
+        {
+          "field": "homicide",
+          "unit": "incidents",
+          "period": "calendar 2025"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state",
+        "US"
+      ],
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
+      "releaseDate": "2026-08-14",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
+      ],
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
+    },
+    {
+      "selectionId": "violent-crime",
+      "catalogId": "04.02",
+      "fieldId": "04.02:derived",
+      "label": "Violent crime",
+      "definition": "Official FBI 2025 annual violent_crime estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
+      "numerator": [
+        {
+          "field": "violent_crime",
+          "unit": "incidents",
+          "period": "calendar 2025"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state",
+        "US"
+      ],
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
+      "releaseDate": "2026-08-14",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
+      ],
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
+    },
+    {
+      "selectionId": "robbery",
+      "catalogId": "04.03",
+      "fieldId": "04.03:derived",
+      "label": "Robbery",
+      "definition": "Official FBI 2025 annual robbery estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
+      "numerator": [
+        {
+          "field": "robbery",
+          "unit": "incidents",
+          "period": "calendar 2025"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state",
+        "US"
+      ],
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
+      "releaseDate": "2026-08-14",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
+      ],
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
+    },
+    {
+      "selectionId": "aggravated-assault",
+      "catalogId": "04.04",
+      "fieldId": "04.04:derived",
+      "label": "Aggravated assault",
+      "definition": "Official FBI 2025 annual aggravated_assault estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
+      "numerator": [
+        {
+          "field": "aggravated_assault",
+          "unit": "incidents",
+          "period": "calendar 2025"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state",
+        "US"
+      ],
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
+      "releaseDate": "2026-08-14",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
+      ],
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
+    },
+    {
+      "selectionId": "burglary",
+      "catalogId": "04.05",
+      "fieldId": "04.05:derived",
+      "label": "Burglary",
+      "definition": "Official FBI 2025 annual burglary estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
+      "numerator": [
+        {
+          "field": "burglary",
+          "unit": "incidents",
+          "period": "calendar 2025"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state",
+        "US"
+      ],
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
+      "releaseDate": "2026-08-14",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
+      ],
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
+    },
+    {
+      "selectionId": "motor-vehicle-theft",
+      "catalogId": "04.06",
+      "fieldId": "04.06:derived",
+      "label": "Motor vehicle theft",
+      "definition": "Official FBI 2025 annual motor_vehicle_theft estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
+      "numerator": [
+        {
+          "field": "motor_vehicle_theft",
+          "unit": "incidents",
+          "period": "calendar 2025"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state",
+        "US"
+      ],
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
+      "releaseDate": "2026-08-14",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP."
+      ],
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
+    },
+    {
+      "selectionId": "rape",
+      "catalogId": "04.07",
+      "fieldId": "04.07:derived",
+      "label": "Rape",
+      "definition": "Official FBI 2025 annual rape_revised estimate divided by the FBI population on the same state/national source row, multiplied by 100,000.",
+      "formula": "annual rate = official FBI SRS annual count / same-row FBI population * 100000; source count and denominator retained",
+      "numerator": [
+        {
+          "field": "rape_revised",
+          "unit": "incidents",
+          "period": "calendar 2025"
+        }
+      ],
+      "denominator": [
+        {
+          "field": "FBI annual source population",
+          "unit": "persons",
+          "period": "calendar 2025"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state",
+        "US"
+      ],
+      "observationPeriod": "Annual calendar year 2025",
+      "observationType": "annual estimated count plus derived rate",
+      "source": "FBI SRS Estimated Crimes 1979-2025",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
+      "releaseDate": "2026-08-14",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "The publisher reports participation/estimation coverage caveats by geography; retain caveats.",
+        "This 2025 annual estimate is distinct from FBI CDE reported monthly observations.",
+        "2025 population is the FBI source population, not ACS or PEP.",
+        "Rape uses the revised definition field; legacy rape is not substituted."
+      ],
+      "status": "annual_source_prepared_local_review_only",
+      "sourceId": "fbi-srs-estimated-crimes-1979-2025",
+      "supportingSources": [
+        "fbi-cde-state"
+      ],
+      "retrievalKind": "data_artifact",
+      "supportingRetrievals": [],
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
+    },
+    {
+      "selectionId": "obesity-rate",
+      "catalogId": "05.14",
+      "fieldId": "05.14",
+      "label": "Obesity rate",
+      "definition": "CDC PLACES county estimate for 2023. County observations only; state and national values are not inferred.",
+      "formula": "05.14",
+      "numerator": [
+        {
+          "field": "05.14",
+          "period": "2023"
+        }
+      ],
+      "denominator": [],
+      "unit": "%",
+      "geography": [
+        "county"
+      ],
+      "observationPeriod": "2023 BRFSS estimates, PLACES December 2025 release",
+      "observationType": "annual model-based estimate",
+      "source": "CDC PLACES",
+      "sourceUrl": "https://www.cdc.gov/places/",
+      "latestSuitableRelease": "PLACES December 2025 release",
+      "releaseDate": "2025-12",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "For 2023-BRFSS measures, county estimates for Kentucky and Pennsylvania are unavailable.",
+        "The release uses ACS 2019-2023 geography/covariate data and Census 2023 county population estimates; the PLACES period is annual/model-based, not an ACS five-year period."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "places-current-release",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "diabetes-rate",
+      "catalogId": "05.15",
+      "fieldId": "05.15",
+      "label": "Diabetes rate",
+      "definition": "CDC PLACES county estimate for 2023. County observations only; state and national values are not inferred.",
+      "formula": "05.15",
+      "numerator": [
+        {
+          "field": "05.15",
+          "period": "2023"
+        }
+      ],
+      "denominator": [],
+      "unit": "%",
+      "geography": [
+        "county"
+      ],
+      "observationPeriod": "2023 BRFSS estimates, PLACES December 2025 release",
+      "observationType": "annual model-based estimate",
+      "source": "CDC PLACES",
+      "sourceUrl": "https://www.cdc.gov/places/",
+      "latestSuitableRelease": "PLACES December 2025 release",
+      "releaseDate": "2025-12",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "For 2023-BRFSS measures, county estimates for Kentucky and Pennsylvania are unavailable.",
+        "The release uses ACS 2019-2023 geography/covariate data and Census 2023 county population estimates; the PLACES period is annual/model-based, not an ACS five-year period."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "places-current-release",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "physical-inactivity-rate",
+      "catalogId": "05.16",
+      "fieldId": "05.16",
+      "label": "Physical inactivity rate",
+      "definition": "CDC PLACES county estimate for 2023. County observations only; state and national values are not inferred.",
+      "formula": "05.16",
+      "numerator": [
+        {
+          "field": "05.16",
+          "period": "2023"
+        }
+      ],
+      "denominator": [],
+      "unit": "%",
+      "geography": [
+        "county"
+      ],
+      "observationPeriod": "2023 BRFSS estimates, PLACES December 2025 release",
+      "observationType": "annual model-based estimate",
+      "source": "CDC PLACES",
+      "sourceUrl": "https://www.cdc.gov/places/",
+      "latestSuitableRelease": "PLACES December 2025 release",
+      "releaseDate": "2025-12",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "For 2023-BRFSS measures, county estimates for Kentucky and Pennsylvania are unavailable.",
+        "The release uses ACS 2019-2023 geography/covariate data and Census 2023 county population estimates; the PLACES period is annual/model-based, not an ACS five-year period."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "places-current-release",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "adjusted-gross-income-agi",
+      "catalogId": "07.01",
+      "fieldId": "07.01:derived:total",
+      "label": "Income before deductions",
+      "definition": "Income before deductions from IRS Statistics of Income, multiplied by 1,000. State values are sums of their counties; the US value is the sum of county values. No tax or adjusted-gross-income label is shown.",
+      "formula": "A00100 × 1000",
+      "numerator": [
+        {
+          "field": "07.01:A00100:county_sum_agi_stubs_1_8",
+          "period": "2023",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [],
+      "unit": "USD",
+      "geography": [
+        "county",
+        "state"
+      ],
+      "observationPeriod": "tax year 2023",
+      "observationType": "annual tax-year",
+      "source": "IRS SOI + Census PEP",
+      "sourceUrl": "https://www.irs.gov/statistics/soi-tax-stats-data-by-geographic-area",
+      "latestSuitableRelease": "IRS SOI county tax-year 2023",
+      "releaseDate": "2026-08-21",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "A00100 is in thousands of dollars; multiply by 1,000 for USD.",
+        "Exclude county FIPS 000 state totals when summing county records.",
+        "A00100 source values are thousand USD; multiply by 1,000."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "irs-soi-county-2023",
+      "supportingSources": [
+        "census-pep-county-totals-v2025"
+      ],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "electricity-price",
+      "catalogId": "08.05",
+      "fieldId": "08.05:sector_ALL",
+      "label": "Average electricity price",
+      "definition": "EIA state average electricity price for all sectors. State observations only; no county value is inferred.",
+      "formula": "EIA annual source price, ALL sectors",
+      "numerator": [
+        {
+          "field": "EIA retail-sales price, sector ALL",
+          "period": "2025"
+        }
+      ],
+      "denominator": [],
+      "unit": "cents/kWh",
+      "geography": [
+        "state"
+      ],
+      "observationPeriod": "2025 calendar year",
+      "observationType": "annual",
+      "source": "EIA Electricity",
+      "sourceUrl": "https://www.eia.gov/electricity/data.php",
+      "latestSuitableRelease": "Electric Power Annual with data for 2025",
+      "releaseDate": "2026-10-21",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "Average retail price is cents per kWh, not an exclusively residential tariff or a monthly charge.",
+        "ALL sectors annual average is not a residential-only tariff."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "eia-retail-sales-api",
+      "supportingSources": [],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "fitness-recreation-centers-per-capita",
+      "catalogId": "09.04",
+      "fieldId": "09.04:cbp_fitness_per1000_published",
+      "label": "Recreation and fitness facilities per 1,000 residents",
+      "definition": "USDA Food Environment Atlas published 2023 rate. County observations only; no state or national value is inferred.",
+      "formula": "09.04:cbp_fitness_per1000_published",
+      "numerator": [
+        {
+          "field": "09.04:cbp_fitness_per1000_published",
+          "period": "2023"
+        }
+      ],
+      "denominator": [],
+      "unit": "per 1,000",
+      "geography": [
+        "county"
+      ],
+      "observationPeriod": "2023",
+      "observationType": "annual",
+      "source": "USDA Food Environment Atlas",
+      "sourceUrl": "https://www.ers.usda.gov/data-products/food-environment-atlas/",
+      "latestSuitableRelease": "2023 USDA Food Environment Atlas field retained in published source metadata; newer field-year not verified in this audit",
+      "releaseDate": null,
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "Retained published field-year is 2023; a newer suitable USDA Atlas field-year was not confirmed from primary release metadata during this focused review."
+      ],
+      "status": "freshness_reviewed_release_date_unverified",
+      "sourceId": "fitness-recreation-centers-per-capita",
+      "supportingSources": [
+        "existing published metric definition and source metadata"
+      ],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "all-cancer-new-cases",
+      "catalogId": "11.01",
+      "fieldId": "11.01:derived",
+      "label": "New cancer cases per 100,000 residents",
+      "definition": "State cancer case count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
+      "formula": "2023 incident cancer cases, all sites / 2023 annual PEP population * 100000 (crude; not age-adjusted)",
+      "numerator": [
+        {
+          "field": "11.01",
+          "period": "2023",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "Census PEP Vintage 2025 total population",
+          "period": "2023"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state"
+      ],
+      "observationPeriod": "diagnoses through 2023",
+      "observationType": "annual incidence",
+      "source": "CDC USCS + Census ACS",
+      "sourceUrl": "https://gis.cdc.gov/Cancer/USCS/",
+      "latestSuitableRelease": "CDC USCS 2025 NPCR/SEER submission, diagnosis year 2023",
+      "releaseDate": "2026-06",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-06",
+      "limitations": [
+        "Retained state/DC observations are numeric rows only as displayed under the USCS suppression selector; do not infer hidden or suppressed values. Numerator diagnosis year 2023 and denominator is matching-year 2023 PEP population."
+      ],
+      "status": "retained_official_counts_rates_prepared_for_comparison",
+      "sourceId": "uscs-release",
+      "supportingSources": [
+        "retained prepared observation snapshot 2026-10-06",
+        "Census PEP Vintage 2025"
+      ],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "new-hiv-diagnoses",
+      "catalogId": "11.02",
+      "fieldId": "11.02:derived",
+      "label": "New HIV diagnoses per 100,000 residents",
+      "definition": "State HIV diagnosis count divided by 2024 state population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
+      "formula": "2024 provisional diagnoses age 13+ / 2024 annual PEP age 13+ population * 100000 (crude; not age-adjusted)",
+      "numerator": [
+        {
+          "field": "11.02",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "Census PEP Vintage 2025 age 13+ population",
+          "period": "2024"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state"
+      ],
+      "observationPeriod": "2024 diagnosis counts, age 13+",
+      "observationType": "annual surveillance; provisional",
+      "source": "CDC AtlasPlus/NHSS; Census PEP Vintage 2025 denominator",
+      "sourceUrl": "https://gis.cdc.gov/api/AtlasPlus/qtOutputData",
+      "latestSuitableRelease": "CDC 2024 HIV surveillance release; 2024 diagnoses provisional",
+      "releaseDate": "2026-05-18",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-11",
+      "limitations": [
+        "Retained local prepared observations are provisional 2024 diagnoses among age 13+ reported through Dec 2025; 12-month reporting delay. Use age-13+ same-year PEP population for a crude rate."
+      ],
+      "status": "retained_official_counts_rates_prepared_for_comparison",
+      "sourceId": "hiv-release-page",
+      "supportingSources": [
+        "retained prepared observation snapshot 2026-10-11",
+        "Census PEP Vintage 2025 age-specific denominators"
+      ],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    },
+    {
+      "selectionId": "deaths-under-18",
+      "catalogId": "11.03",
+      "fieldId": "11.03:derived",
+      "label": "Deaths among children under 18 per 100,000 children",
+      "definition": "State death count for people younger than 18 divided by the ACS under-18 population, multiplied by 100,000. The US value uses the national count and population. No county value is inferred.",
+      "formula": "2024 observed under-18 resident deaths / 2024 annual PEP under-18 population * 100000 (crude; suppression retained)",
+      "numerator": [
+        {
+          "field": "11.03",
+          "period": "2024",
+          "multiplier": 1
+        }
+      ],
+      "denominator": [
+        {
+          "field": "Census PEP Vintage 2025 under-18 population",
+          "period": "2024"
+        }
+      ],
+      "unit": "per 100,000",
+      "geography": [
+        "state"
+      ],
+      "observationPeriod": "deaths occurring in 2024; July 1, 2024 PEP under-18 denominator",
+      "observationType": "annual mortality count/rate",
+      "source": "CDC WONDER/NVSS; Census PEP Vintage 2025 denominator",
+      "sourceUrl": "https://wonder.cdc.gov/controller/saved/D158/D473F417",
+      "latestSuitableRelease": "CDC WONDER Multiple Cause of Death final file 2024",
+      "releaseDate": "2026-02-18",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": null,
+      "limitations": [
+        "2025 and later are provisional; do not replace the 2024 final metric automatically.",
+        "Use age 0-17 deaths over July 1, 2024 population age 0-17.",
+        "Suppressed cells remain missing; no zeros are fabricated.",
+        "Use Census PEP single ages 0 through 17 for the denominator; suppressed mortality counts remain missing."
+      ],
+      "status": "freshness_reviewed_latest_suitable_release_retained",
+      "sourceId": "wonder-mortality-release",
+      "supportingSources": [
+        "census-pep-county-single-age-v2025",
+        "census-pep-national-single-age-v2025"
+      ],
+      "retrievalKind": null,
+      "supportingRetrievals": []
+    }
+  ],
+  "additionalRows": [
+    {
+      "selectionId": "adjusted-gross-income-per-resident",
+      "catalogId": "07.01",
+      "fieldId": "07.01:derived:per-resident",
+      "label": "Adjusted gross income per resident (audit addition)",
+      "definition": "IRS SOI tax-year 2023 county A00100 adjusted gross income divided by matching-year Census PEP Vintage 2025 July 1 population; source thousand USD is converted to USD.",
+      "formula": "sum A00100 * 1000 / Census PEP 2023 total population",
+      "numerator": "IRS A00100 * 1000 USD",
+      "denominator": "Census PEP Vintage 2025 total population, year 2023",
+      "unit": "USD/person",
+      "geography": [
+        "county",
+        "state",
+        "nation"
+      ],
+      "observationPeriod": "2023",
+      "observationType": "annual tax and population estimate",
+      "source": "IRS SOI + Census PEP",
+      "sourceUrl": "https://www.irs.gov/pub/irs-soi/23incyallagi.csv",
+      "latestSuitableRelease": "IRS SOI 2023 and Census PEP Vintage 2025",
+      "releaseDate": "2026-08-21",
+      "reviewedOn": "2026-10-26",
+      "retrievalDate": "2026-10-26",
+      "limitations": [
+        "This is a separate audit addition, not one of the published 42 selections.",
+        "Sum county A00100 rows across AGI stubs 1-8; source unit is thousand USD, converted by 1000.",
+        "Use matched-year 2023 July 1 population; no ACS share denominator substitution."
+      ],
+      "status": "local_preparation_complete",
+      "sourceId": "irs-soi-county-2023",
+      "preparedInput": "prepared/irs-agi-per-resident-2023.csv",
+      "comparisonEvidence": "published-before/07.01_derived_per-resident.json; comparison snapshot is not original producer admission"
+    }
+  ],
+  "collectorVersion": "2026.10.26.2"
+}

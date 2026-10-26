@@ -1,0 +1,500 @@
+{
+  "format": "usa_maps_prepared_loader_mapping_v1",
+  "targetReaderContract": "v2",
+  "collectorVersion": "2026.10.26.2",
+  "admissionStatus": "not_admitted",
+  "rows": [
+    {
+      "fieldId": "03.06:unemployment_rate",
+      "source": "prepared/bls-laus-2025-loader.csv",
+      "filter": "measure_code=03; preserve monthly and annual rows separately",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "value",
+      "unit": "%",
+      "sourceAdjustment": "not seasonally adjusted (NSA); BLS LAUS",
+      "numeratorDenominator": {
+        "numerator": "unemployed persons",
+        "denominator": "civilian labor force",
+        "sourceRate": "published BLS rate; do not recompute from rounded components"
+      },
+      "provenance": [
+        "series_id",
+        "bls_period_code",
+        "raw_sha256",
+        "retrieved_at",
+        "raw_artifact_path",
+        "request_fingerprint",
+        "queue_hash",
+        "plan_version",
+        "source_release",
+        "source_url",
+        "source_adjustment"
+      ],
+      "periodTypeColumn": "period_type (M13 is annual)",
+      "missingnessInput": "prepared/bls-laus-2025-loader-missingness.jsonl; source_missing and absent remain null",
+      "readiness": "collection_complete_with_source_gaps"
+    },
+    {
+      "fieldId": "03.06:unemployed",
+      "source": "prepared/bls-laus-2025-loader.csv",
+      "filter": "measure_code=04; preserve monthly and annual rows separately",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "value",
+      "unit": "persons",
+      "sourceAdjustment": "not seasonally adjusted (NSA); BLS LAUS",
+      "numeratorDenominator": {
+        "numerator": "unemployed persons",
+        "denominator": null,
+        "sourceRate": null
+      },
+      "provenance": [
+        "series_id",
+        "bls_period_code",
+        "raw_sha256",
+        "retrieved_at",
+        "raw_artifact_path",
+        "request_fingerprint",
+        "queue_hash",
+        "plan_version",
+        "source_release",
+        "source_url",
+        "source_adjustment"
+      ],
+      "periodTypeColumn": "period_type (M13 is annual)",
+      "missingnessInput": "prepared/bls-laus-2025-loader-missingness.jsonl; source_missing and absent remain null",
+      "readiness": "collection_complete_with_source_gaps"
+    },
+    {
+      "fieldId": "03.06:employed",
+      "source": "prepared/bls-laus-2025-loader.csv",
+      "filter": "measure_code=05; preserve monthly and annual rows separately",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "value",
+      "unit": "persons",
+      "sourceAdjustment": "not seasonally adjusted (NSA); BLS LAUS",
+      "numeratorDenominator": {
+        "numerator": "employed persons",
+        "denominator": null,
+        "sourceRate": null
+      },
+      "provenance": [
+        "series_id",
+        "bls_period_code",
+        "raw_sha256",
+        "retrieved_at",
+        "raw_artifact_path",
+        "request_fingerprint",
+        "queue_hash",
+        "plan_version",
+        "source_release",
+        "source_url",
+        "source_adjustment"
+      ],
+      "periodTypeColumn": "period_type (M13 is annual)",
+      "missingnessInput": "prepared/bls-laus-2025-loader-missingness.jsonl; source_missing and absent remain null",
+      "readiness": "collection_complete_with_source_gaps"
+    },
+    {
+      "fieldId": "03.06:labor_force",
+      "source": "prepared/bls-laus-2025-loader.csv",
+      "filter": "measure_code=06; preserve monthly and annual rows separately",
+      "geo": "geo_type,geo_id",
+      "period": "period,period_type",
+      "value": "value",
+      "unit": "persons",
+      "sourceAdjustment": "not seasonally adjusted (NSA); BLS LAUS",
+      "numeratorDenominator": {
+        "numerator": "civilian labor force",
+        "denominator": null,
+        "sourceRate": null
+      },
+      "provenance": [
+        "series_id",
+        "bls_period_code",
+        "raw_sha256",
+        "retrieved_at",
+        "raw_artifact_path",
+        "request_fingerprint",
+        "queue_hash",
+        "plan_version",
+        "source_release",
+        "source_url",
+        "source_adjustment"
+      ],
+      "periodTypeColumn": "period_type (M13 is annual)",
+      "missingnessInput": "prepared/bls-laus-2025-loader-missingness.jsonl; source_missing and absent remain null",
+      "readiness": "collection_complete_with_source_gaps"
+    },
+    {
+      "fieldId": "02.10",
+      "source": "published-before/02.10.json",
+      "filter": "retained-current BEA 2024 release; 52 states/DC/national observations",
+      "geo": "observation geoType,sourceGeoId",
+      "period": "period; annual",
+      "value": "value",
+      "unit": "index (US=100)",
+      "sourceAdjustment": "BEA all-items RPP",
+      "numeratorDenominator": {
+        "numerator": null,
+        "denominator": null
+      },
+      "provenance": [
+        "sourceRelease",
+        "retrievedAt",
+        "snapshotSha256"
+      ],
+      "readiness": "freshness_reviewed_retained_current; comparison evidence only, not a new producer input"
+    },
+    {
+      "fieldId": "04.01:derived",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.01:derived; period=2025; state and native US rows only",
+      "geo": "geo_id",
+      "period": "period; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
+      "numeratorDenominator": {
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
+      ],
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
+    },
+    {
+      "fieldId": "04.02:derived",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.02:derived; period=2025; state and native US rows only",
+      "geo": "geo_id",
+      "period": "period; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
+      "numeratorDenominator": {
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
+      ],
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
+    },
+    {
+      "fieldId": "04.03:derived",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.03:derived; period=2025; state and native US rows only",
+      "geo": "geo_id",
+      "period": "period; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
+      "numeratorDenominator": {
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
+      ],
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
+    },
+    {
+      "fieldId": "04.04:derived",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.04:derived; period=2025; state and native US rows only",
+      "geo": "geo_id",
+      "period": "period; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
+      "numeratorDenominator": {
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
+      ],
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
+    },
+    {
+      "fieldId": "04.05:derived",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.05:derived; period=2025; state and native US rows only",
+      "geo": "geo_id",
+      "period": "period; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
+      "numeratorDenominator": {
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
+      ],
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
+    },
+    {
+      "fieldId": "04.06:derived",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.06:derived; period=2025; state and native US rows only",
+      "geo": "geo_id",
+      "period": "period; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
+      "numeratorDenominator": {
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
+      ],
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
+    },
+    {
+      "fieldId": "04.07:derived",
+      "source": "prepared/fbi-annual-estimates-2025.csv",
+      "filter": "field_id=04.07:derived; period=2025; state and native US rows only",
+      "geo": "geo_id",
+      "period": "period; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "Official FBI SRS annual state estimate; rate is exact count / same-row FBI population * 100000; 04.07 uses rape_revised, not rape_legacy.",
+      "numeratorDenominator": {
+        "numerator": "numerator_count",
+        "denominator": "denominator_population"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "retrieved_at",
+        "source_sha256",
+        "source_field",
+        "caveats"
+      ],
+      "readiness": "prepared_local_review_only; annual estimates do not imply admission"
+    },
+    {
+      "fieldId": "08.05:sector_ALL",
+      "source": "prepared/eia-electricity-price-2025-all-sectors.csv",
+      "filter": "year=2025; sector=ALL",
+      "geo": "geo_type,geo_id",
+      "period": "year; annual",
+      "value": "value",
+      "unit": "cents/kWh",
+      "sourceAdjustment": "EIA All Sectors average retail price",
+      "numeratorDenominator": {
+        "numerator": null,
+        "denominator": null
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "raw_sha256",
+        "retrieved_at"
+      ],
+      "readiness": "prepared_local"
+    },
+    {
+      "fieldId": "07.01:derived:per-resident",
+      "source": "prepared/irs-agi-per-resident-2023.csv",
+      "filter": "tax_year=2023; population year=2023",
+      "geo": "geo_type,geo_id",
+      "period": "year; annual",
+      "value": "value",
+      "unit": "USD/person",
+      "sourceAdjustment": "sum county A00100 bands 1-8 (thousand USD * 1000) / matching 2023 PEP population",
+      "numeratorDenominator": {
+        "numerator": "income_usd",
+        "denominator": "population",
+        "denominatorYear": "2023"
+      },
+      "provenance": [
+        "source_release",
+        "formula",
+        "raw_sha256",
+        "retrieved_at"
+      ],
+      "readiness": "prepared_local"
+    },
+    {
+      "fieldId": "07.01:derived:total",
+      "source": "prepared/irs-agi-2023-usd.csv",
+      "filter": "tax_year=2023; source A00100",
+      "geo": "geo_type,geo_id",
+      "period": "year; annual",
+      "value": "value_usd",
+      "unit": "USD",
+      "sourceAdjustment": "source A00100 thousand USD * 1000; eight AGI stubs aggregated only as applicable",
+      "numeratorDenominator": {
+        "numerator": "A00100 source_value_thousand_usd",
+        "denominator": null
+      },
+      "provenance": [
+        "source_release",
+        "conversion",
+        "raw_sha256",
+        "retrieved_at"
+      ],
+      "readiness": "prepared_local"
+    },
+    {
+      "fieldId": "11.01:derived",
+      "source": "prepared/cancer-2023-rates.csv",
+      "filter": "year=2023",
+      "geo": "geo_type,geo_id",
+      "period": "year; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "crude rate; not age-adjusted",
+      "numeratorDenominator": {
+        "numerator": "numerator",
+        "denominator": "denominator",
+        "denominatorYear": "event year",
+        "denominatorKind": "source-specific; see denominator_kind column"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "source_retrieved_at",
+        "source_input_sha256",
+        "source_adjustment",
+        "numerator",
+        "denominator",
+        "denominator_kind",
+        "denominator_year"
+      ],
+      "readiness": "prepared_local; national rows require actual publisher national count and are omitted otherwise",
+      "missingnessInput": "prepared/cancer-2023-rates-missingness.jsonl",
+      "missingnessRule": "Suppressed and unavailable values remain null; no national value is synthesized from state rows."
+    },
+    {
+      "fieldId": "11.02:derived",
+      "source": "prepared/hiv-2024-rates.csv",
+      "filter": "year=2024; provisional age 13+",
+      "geo": "geo_type,geo_id",
+      "period": "year; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "crude rate; not age-adjusted",
+      "numeratorDenominator": {
+        "numerator": "numerator",
+        "denominator": "denominator",
+        "denominatorYear": "event year",
+        "denominatorKind": "source-specific; see denominator_kind column"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "source_retrieved_at",
+        "source_input_sha256",
+        "source_adjustment",
+        "numerator",
+        "denominator",
+        "denominator_kind",
+        "denominator_year"
+      ],
+      "readiness": "prepared_local; national rows require actual publisher national count and are omitted otherwise",
+      "missingnessInput": "prepared/hiv-2024-rates-missingness.jsonl",
+      "missingnessRule": "Suppressed and unavailable values remain null; no national value is synthesized from state rows."
+    },
+    {
+      "fieldId": "11.03:derived",
+      "source": "prepared/child-deaths-under18-2024-rates.csv",
+      "filter": "year=2024; suppressed counts <=9 stay null",
+      "geo": "geo_type,geo_id",
+      "period": "year; annual",
+      "value": "value",
+      "unit": "per 100,000",
+      "sourceAdjustment": "crude rate; not age-adjusted",
+      "numeratorDenominator": {
+        "numerator": "numerator",
+        "denominator": "denominator",
+        "denominatorYear": "event year",
+        "denominatorKind": "source-specific; see denominator_kind column"
+      },
+      "provenance": [
+        "source_release",
+        "source_url",
+        "source_retrieved_at",
+        "source_input_sha256",
+        "source_adjustment",
+        "numerator",
+        "denominator",
+        "denominator_kind",
+        "denominator_year"
+      ],
+      "readiness": "prepared_local; national rows require actual publisher national count and are omitted otherwise",
+      "missingnessInput": "prepared/child-deaths-under18-2024-rates-missingness.jsonl",
+      "missingnessRule": "Suppressed and unavailable values remain null; no national value is synthesized from state rows."
+    }
+  ],
+  "missingnessRule": "Never coerce null, source_missing, source_suppressed, absent M13, absent month, or absent geography to zero.",
+  "supportingInputs": [
+    {
+      "source": "prepared/population-2023-2024.csv",
+      "purpose": "Census PEP v2025 annual total, age-13+, and under-18 denominators; raw publisher bytes are separately inventoried.",
+      "columns": {
+        "geo_type": "geo_type",
+        "geo_id": "geo_id",
+        "year": "year",
+        "unit": "persons",
+        "populationKind": "population_kind",
+        "value": "value"
+      },
+      "populationKinds": [
+        {
+          "kind": "total",
+          "consumerFieldId": "01.01:pep_population_total"
+        },
+        {
+          "kind": "age_13_plus",
+          "consumerFieldId": "01.01:pep_population_age_13_plus"
+        },
+        {
+          "kind": "under_18",
+          "consumerFieldId": "01.01:pep_population_under_18"
+        }
+      ],
+      "consumerFieldIdNote": "These are the app worker consumer-side IDs documented in its handoff; parent/reader contract confirmation remains required before any load.",
+      "sourceRelease": "Census PEP Vintage 2025",
+      "sourceUnit": "persons",
+      "annualPeriod": "2023 and 2024"
+    }
+  ]
+}

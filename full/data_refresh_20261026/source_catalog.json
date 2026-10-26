@@ -1,0 +1,212 @@
+{
+  "collectorVersion": "2026.10.26.2",
+  "readerContractVersion": "1.0.0",
+  "sources": [
+    {
+      "id": "bls-laus-public-api-v2",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+      "kind": "public_api",
+      "access": "Public v2 endpoint; registered requests consume BLS_API_KEY from the injected process environment. This worker does not read credential files.",
+      "license": "BLS API terms apply. Preserve source values and cite the retrieval date; BLS disclaims responsibility for later analysis.",
+      "scope": "NSA state and county LAUS series 03-06, observation year 2025; monthly M01-M12 and published M13 when returned.",
+      "limits": "Registered v2 requests use injected BLS_API_KEY and batches of at most 50 series; without a key the job caps itself at 20 requests per day and preserves pending work."
+    },
+    {
+      "id": "bls-laus-bulk",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://download.bls.gov/pub/time.series/la/la.data.0.CurrentU25-29",
+      "kind": "bulk_text",
+      "access": "Public, no key; attempted from this environment. The endpoint returned HTTP 403, so the response was not interpreted as data.",
+      "license": "BLS API and site terms apply; preserve retrieval date and attribution.",
+      "scope": "Official NSA LAUS observations for 2025 forward; bulk alternative to the daily-limited API."
+    },
+    {
+      "id": "fbi-cde-state",
+      "publisher": "Federal Bureau of Investigation, Crime Data Explorer",
+      "url": "https://cde.ucr.cjis.gov/LATEST/summarized/state/{state}/{offense}?from=01-2025&to=12-2025&type=totals",
+      "kind": "public_json_api",
+      "access": "Public, no key; one bounded state/offense request at a time.",
+      "license": "Official FBI public statistics; retain the endpoint, raw response, and retrieval time.",
+      "scope": "2025 monthly totals and rates for homicide, violent crime, robbery, aggravated assault, burglary, motor vehicle theft, and rape across 50 states and DC.",
+      "limitations": "Monthly reported actual counts and rates only; these are kept separate from annual SRS estimates. Agency participation varies by geography; absent or suppressed values remain missing."
+    },
+    {
+      "id": "fbi-srs-estimated-crimes-1979-2025",
+      "publisher": "Federal Bureau of Investigation, Crime Data Explorer",
+      "url": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "kind": "official_public_dataset_payload",
+      "access": "Public download via FBI CDE catalog locator; signed locator is used only in memory and is never retained.",
+      "license": "FBI UCR public-use data; retain source citation and retrieval metadata.",
+      "scope": "Annual SRS estimates, 1979-2025; 2025 includes 51 state/DC rows and a native United States row. Seven prepared field numerators and same-row source population are preserved.",
+      "limitations": "The catalog filename and HTTP content-type say CSV, but the verified payload is OOXML XLSX. Parse by content signature. 2025 participation and estimation caveats vary; preserve source caveats. Rape uses rape_revised. Monthly CDE reported values are not substituted."
+    },
+    {
+      "id": "eia-epa-2-10",
+      "publisher": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/electricity/annual/table.php?t=epa_02_10.html",
+      "kind": "official_html_table",
+      "access": "Public page, no key.",
+      "license": "Official public source; page-specific reuse terms were not separately reviewed.",
+      "scope": "Electric Power Annual Table 2.10, 2025 price for All Sectors, state rows, cents per kWh.",
+      "limitations": "Average retail price includes delivered-electricity revenues divided by sales; it is not a residential tariff."
+    },
+    {
+      "id": "eia-retail-sales-api",
+      "publisher": "U.S. Energy Information Administration",
+      "url": "https://api.eia.gov/v2/electricity/retail-sales/data/",
+      "kind": "public_api",
+      "access": "Uses EIA_API_KEY injected into the process environment by the established parent loader; this worker never loads credential files.",
+      "license": "Official EIA public statistics; preserve retrieved source bytes and citation.",
+      "scope": "Annual 2025 retail price, sector ALL, state geographies, cents per kWh.",
+      "limitations": "The keyed api_key query parameter is redacted from metadata/errors. The collector refuses to persist a response that echoes an injected credential."
+    },
+    {
+      "id": "census-pep-county-totals-v2025",
+      "publisher": "U.S. Census Bureau Population Estimates Program",
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/totals/co-est2025-alldata.csv",
+      "kind": "bulk_csv",
+      "access": "Public, no key.",
+      "license": "Official public estimates; page-specific reuse terms were not separately reviewed.",
+      "scope": "Vintage 2025 July 1 county and state population estimates for 2023 and 2024; 2025 totals are available in the same source vintage but are not substituted for 2025 FBI annual calculations."
+    },
+    {
+      "id": "census-pep-county-single-age-v2025",
+      "publisher": "U.S. Census Bureau Population Estimates Program",
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/counties/asrh/cc-est2025-syasex.csv",
+      "kind": "bulk_csv",
+      "access": "Public, no key.",
+      "license": "Official public estimates; page-specific reuse terms were not separately reviewed.",
+      "scope": "Vintage 2025 county single-year-age estimates; ages 0-17 provide 2024 child-death denominators; ages 0-12 are subtracted from total for age-13+ denominators."
+    },
+    {
+      "id": "census-pep-national-single-age-v2025",
+      "publisher": "U.S. Census Bureau Population Estimates Program",
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2025/national/asrh/nc-est2025-agesex-res.csv",
+      "kind": "bulk_csv",
+      "access": "Public, no key.",
+      "license": "Official public estimates; page-specific reuse terms were not separately reviewed.",
+      "scope": "Vintage 2025 national single-year-age estimates; ages 0-17 provide a national cross-check for child-death denominators."
+    },
+    {
+      "id": "irs-soi-county-2023",
+      "publisher": "Internal Revenue Service, Statistics of Income",
+      "url": "https://www.irs.gov/pub/irs-soi/23incyallagi.csv",
+      "kind": "bulk_csv",
+      "access": "Public, no key.",
+      "license": "Official public aggregate tax statistics; page-specific reuse terms were not separately reviewed.",
+      "scope": "Tax year 2023 county data, including A00100 adjusted gross income in thousand USD, all AGI-size bands. State-total FIPS 000 rows are not county records."
+    },
+    {
+      "id": "cdc-hiv-2024-tables",
+      "publisher": "Centers for Disease Control and Prevention, National HIV Surveillance System",
+      "url": "https://www.cdc.gov/hiv-data/media/files/2026/04/hiv_surveillance_data_release_tables_2024.xlsx",
+      "kind": "xlsx",
+      "access": "Public, no key.",
+      "license": "CDC states that release material is public domain; attribution is appreciated.",
+      "scope": "Official CDC HIV 2024 surveillance tables are used for release definitions; the prepared 2024 provisional state diagnosis counts come from the retained CDC AtlasPlus fresh replay JSON, not from this workbook.",
+      "limitations": "The CDC workbook includes national/state tables through 2023; the 2024 provisional state counts are from AtlasPlus fresh replay, which returned 51 state/DC rows and no native US row. Preserve provisional status and do not sum states to make a national value."
+    },
+    {
+      "id": "cdc-atlasplus-hiv-2024",
+      "publisher": "Centers for Disease Control and Prevention, AtlasPlus / National HIV Surveillance System",
+      "url": "https://gis.cdc.gov/api/AtlasPlus/qtOutputData",
+      "kind": "public_json_api_response",
+      "access": "Retained CDC public response from a documented replay; no credential or live refresh used by this worker.",
+      "license": "CDC public domain; attribution retained.",
+      "scope": "Provisional 2024 HIV diagnosis counts among persons aged 13 years and older; retained response has 51 state/DC rows.",
+      "limitations": "The retained response and replay metadata contain no native US row. Do not sum states for a national observation. Exact source response SHA-256 and request/replay time are recorded in runtime inventory."
+    },
+    {
+      "id": "acs-release-schedule",
+      "publisher": "U.S. Census Bureau, American Community Survey",
+      "url": "https://www.census.gov/programs-surveys/acs/news/data-releases/2025/release-schedule.html",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "Official release schedule; page-specific reuse terms were not separately reviewed.",
+      "scope": "Freshness check for the 2020-2024 ACS 5-year source used by the published ACS selections."
+    },
+    {
+      "id": "places-current-release",
+      "publisher": "Centers for Disease Control and Prevention, PLACES",
+      "url": "https://www.cdc.gov/places/current-release-notes/",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "CDC public data; page-specific reuse terms were not separately reviewed.",
+      "scope": "Freshness check for obesity, diabetes, and physical inactivity estimates."
+    },
+    {
+      "id": "bea-rpp-release",
+      "publisher": "Bureau of Economic Analysis",
+      "url": "https://www.bea.gov/data/prices-inflation/regional-price-parities-state-and-metro-area",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "Official public statistics; page-specific reuse terms were not separately reviewed.",
+      "scope": "Freshness check for state Regional Price Parities."
+    },
+    {
+      "id": "irs-county-release-page",
+      "publisher": "Internal Revenue Service, Statistics of Income",
+      "url": "https://www.irs.gov/statistics/soi-tax-stats-county-data-2023",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "Official public aggregate tax statistics; page-specific reuse terms were not separately reviewed.",
+      "scope": "Freshness and unit review for county AGI."
+    },
+    {
+      "id": "uscs-release",
+      "publisher": "Centers for Disease Control and Prevention, U.S. Cancer Statistics",
+      "url": "https://www.cdc.gov/united-states-cancer-statistics/technical-notes/",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "CDC public statistics; page-specific reuse terms were not separately reviewed.",
+      "scope": "Freshness and rate-definition review for new cancer incidence."
+    },
+    {
+      "id": "hiv-release-page",
+      "publisher": "Centers for Disease Control and Prevention, National HIV Surveillance System",
+      "url": "https://www.cdc.gov/hiv-data/nhss/hiv-diagnoses-deaths-prevalence.html",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "CDC states that release material is public domain; attribution is appreciated.",
+      "scope": "Freshness, age scope, rate units, and provisional-status review."
+    },
+    {
+      "id": "wonder-mortality-release",
+      "publisher": "Centers for Disease Control and Prevention, National Center for Health Statistics",
+      "url": "https://wonder.cdc.gov/wonder/help/mcd-expanded.html",
+      "kind": "freshness_page",
+      "access": "Public documentation; this pipeline does not authenticate or submit database queries.",
+      "license": "Official public mortality documentation; page-specific reuse terms were not separately reviewed.",
+      "scope": "Freshness and final/provisional status review for 2024 child deaths.",
+      "limitations": "Small counts may be suppressed; no suppression is converted to zero."
+    },
+    {
+      "id": "fbi-2025-release",
+      "publisher": "Federal Bureau of Investigation, Uniform Crime Reporting Program",
+      "url": "https://www.fbi.gov/news/press-releases/fbi-releases-2025-reported-crimes-in-the-nation-statistics",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "Official public crime statistics; source-specific reuse terms were not separately reviewed.",
+      "scope": "Latest complete official release and nationwide reporting-coverage check."
+    },
+    {
+      "id": "eia-2025-release",
+      "publisher": "U.S. Energy Information Administration",
+      "url": "https://www.eia.gov/electricity/annual/",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "Official public statistics; page-specific reuse terms were not separately reviewed.",
+      "scope": "Latest Electric Power Annual vintage check."
+    },
+    {
+      "id": "census-pep-v2025-release",
+      "publisher": "U.S. Census Bureau Population Estimates Program",
+      "url": "https://www.census.gov/programs-surveys/popest/data/data-sets.2024.html",
+      "kind": "freshness_page",
+      "access": "Public, no key.",
+      "license": "Official public estimates; page-specific reuse terms were not separately reviewed.",
+      "scope": "Vintage and revision check for matched-year population denominators."
+    }
+  ]
+}
