@@ -1,0 +1,244 @@
+-- Additive candidate v2 relations. Apply after the immutable v1 schema.
+-- Never creates/replaces the schema, catalog_field, ingest_run, or observation.
+-- PostgreSQL 15+ is required for NULLS NOT DISTINCT identities.
+
+CREATE TABLE IF NOT EXISTS usa_atlas.reader_batch (
+    ingest_id uuid PRIMARY KEY REFERENCES usa_atlas.ingest_run(ingest_id),
+    contract_version text NOT NULL,
+    collector_version text NOT NULL,
+    observation_release text NOT NULL,
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    input_manifest_sha256 character(64) NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now()
+);
+
+-- Versioned metadata keeps source releases/contracts separate from the immutable v1 catalog.
+CREATE TABLE IF NOT EXISTS usa_atlas.reader_v2_catalog_field (
+    catalog_field_id text NOT NULL,
+    source_release text NOT NULL,
+    dataset_id text NOT NULL,
+    catalog_label text NOT NULL,
+    source_code text NOT NULL,
+    contract_version text NOT NULL,
+    contract jsonb NOT NULL,
+    contract_sha256 character(64) NOT NULL,
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    created_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (catalog_field_id,source_release)
+);
+
+CREATE TABLE IF NOT EXISTS usa_atlas.reader_v2_admission_event (
+    event_id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    ingest_id uuid NOT NULL REFERENCES usa_atlas.reader_batch(ingest_id),
+    action text NOT NULL CHECK (action IN ('admitted','revoked')),
+    admission_bundle_sha256 character(64) NOT NULL,
+    contract_sha256 character(64) NOT NULL,
+    actor text NOT NULL,
+    reason text NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS reader_v2_admission_event_batch_idx
+    ON usa_atlas.reader_v2_admission_event (ingest_id,created_at DESC);
+
+CREATE TABLE IF NOT EXISTS usa_atlas.reader_observation (
+    observation_id text PRIMARY KEY,
+    dataset_id text NOT NULL,
+    field_id text NOT NULL,
+    catalog_field_id text NOT NULL,
+    geo_id text NOT NULL,
+    geo_type text NOT NULL CHECK (geo_type IN ('nation','state','county','congressional_district')),
+    state_fips character(2),
+    district_code character(2),
+    boundary_vintage smallint,
+    congress_session text,
+    is_at_large boolean NOT NULL DEFAULT false,
+    period_kind text NOT NULL CHECK (period_kind IN ('monthly','annual','multi_year')),
+    period_year smallint NOT NULL,
+    period_month smallint CHECK (period_month BETWEEN 1 AND 12),
+    period_start_year smallint NOT NULL,
+    period_end_year smallint NOT NULL,
+    source_period_code text,
+    value numeric,
+    unit text NOT NULL,
+    quality_status text NOT NULL CHECK (quality_status IN ('observed','no_election','missing','suppressed','invalid','nonmapping_geography')),
+    source_value_status text NOT NULL CHECK (source_value_status IN ('observed','missing','suppressed','invalid')),
+    geography_mapping_status text NOT NULL CHECK (geography_mapping_status IN ('mapped','nonmapping_geography','vintage_unresolved')),
+    raw_estimate text,
+    raw_estimate_moe text,
+    raw_denominator text,
+    raw_denominator_moe text,
+    denominator_value numeric,
+    source text NOT NULL,
+    source_release text NOT NULL,
+    source_version text NOT NULL DEFAULT '',
+    source_url text NOT NULL,
+    source_sha256 character(64) NOT NULL,
+    methodology_note text NOT NULL,
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    retrieved_at timestamptz NOT NULL,
+    ingest_id uuid NOT NULL REFERENCES usa_atlas.ingest_run(ingest_id),
+    FOREIGN KEY (catalog_field_id,source_release) REFERENCES usa_atlas.reader_v2_catalog_field(catalog_field_id,source_release),
+    UNIQUE NULLS NOT DISTINCT (dataset_id,field_id,geo_type,geo_id,period_kind,period_year,period_month,period_start_year,period_end_year,source_release),
+    CHECK (period_start_year <= period_end_year),
+    CHECK ((period_kind='monthly' AND period_month BETWEEN 1 AND 12 AND period_start_year=period_year AND period_end_year=period_year)
+        OR (period_kind='annual' AND period_month IS NULL AND period_start_year=period_year AND period_end_year=period_year)
+        OR (period_kind='multi_year' AND period_month IS NULL AND period_start_year < period_end_year)),
+    CHECK (quality_status <> 'observed' OR (source_value_status='observed' AND value IS NOT NULL)),
+    CHECK (quality_status NOT IN ('missing','suppressed','invalid','no_election') OR value IS NULL),
+    CHECK (geo_type <> 'congressional_district' OR (state_fips IS NOT NULL AND district_code IS NOT NULL AND boundary_vintage IS NOT NULL AND congress_session IS NOT NULL)),
+    CHECK (quality_status <> 'no_election' OR source_value_status <> 'observed')
+);
+
+CREATE TABLE IF NOT EXISTS usa_atlas.geography_boundary (
+    geo_id text NOT NULL,
+    geo_type text NOT NULL CHECK (geo_type='congressional_district'),
+    state_fips character(2) NOT NULL,
+    district_code character(2) NOT NULL,
+    congress_session text NOT NULL,
+    boundary_vintage smallint NOT NULL,
+    is_at_large boolean NOT NULL,
+    seat_type text NOT NULL CHECK (seat_type IN ('voting_district','nonvoting_delegate','unassigned_area')),
+    label text NOT NULL,
+    geometry_json jsonb NOT NULL,
+    geometry_source_url text NOT NULL,
+    geometry_source_sha256 character(64) NOT NULL,
+    geometry_record_sha256 character(64) NOT NULL,
+    source_release text NOT NULL,
+    source_status text NOT NULL CHECK (source_status='candidate_not_admitted'),
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    ingest_id uuid NOT NULL REFERENCES usa_atlas.ingest_run(ingest_id),
+    PRIMARY KEY (geo_id,boundary_vintage,congress_session),
+    CHECK (geo_id=state_fips || district_code),
+    CHECK (is_at_large=(district_code='00'))
+);
+
+CREATE TABLE IF NOT EXISTS usa_atlas.election_contest (
+    contest_id text PRIMARY KEY,
+    dataset_id text NOT NULL,
+    field_id text NOT NULL,
+    catalog_field_id text NOT NULL,
+    office text NOT NULL CHECK (office IN ('president','senate','house')),
+    election_year smallint NOT NULL,
+    election_date date,
+    stage text NOT NULL,
+    source_stage_values text[] NOT NULL DEFAULT ARRAY[]::text[],
+    source_mode_values text[] NOT NULL DEFAULT ARRAY[]::text[],
+    is_special boolean NOT NULL,
+    is_runoff boolean NOT NULL,
+    geography_type text NOT NULL CHECK (geography_type IN ('county','state','congressional_district')),
+    geo_id text NOT NULL,
+    state_fips character(2),
+    district_code character(2),
+    boundary_vintage smallint,
+    congress_session text,
+    result_mode text NOT NULL,
+    source_mode_raw text,
+    reported_total_votes bigint,
+    source_row_count integer NOT NULL DEFAULT 1 CHECK (source_row_count > 0),
+    source_release text NOT NULL,
+    source_url text NOT NULL,
+    source_sha256 character(64) NOT NULL,
+    source_version text NOT NULL,
+    source_status text NOT NULL,
+    production_eligible boolean NOT NULL,
+    quality_status text NOT NULL CHECK (quality_status IN ('observed','no_election','missing','suppressed','invalid','nonmapping_geography')),
+    geography_mapping_status text NOT NULL CHECK (geography_mapping_status IN ('mapped','nonmapping_geography','vintage_unresolved')),
+    party_aggregation_status text NOT NULL CHECK (party_aggregation_status IN ('validated','quarantined','excluded_subtotal','not_evaluated')),
+    quarantine_reasons text[] NOT NULL DEFAULT ARRAY[]::text[],
+    methodology_note text NOT NULL,
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    ingest_id uuid NOT NULL REFERENCES usa_atlas.ingest_run(ingest_id),
+    FOREIGN KEY (catalog_field_id,source_release) REFERENCES usa_atlas.reader_v2_catalog_field(catalog_field_id,source_release),
+    UNIQUE NULLS NOT DISTINCT (office,election_year,stage,is_special,is_runoff,geography_type,geo_id,boundary_vintage,congress_session,result_mode,source_release,source_version),
+    CHECK ((office='house' AND geography_type='congressional_district') OR (office='senate' AND geography_type='state') OR (office='president' AND geography_type='county')),
+    CHECK (quality_status <> 'no_election' OR reported_total_votes IS NULL),
+    CHECK (quality_status <> 'observed' OR reported_total_votes IS NOT NULL),
+    CHECK (party_aggregation_status <> 'validated' OR (result_mode='TOTAL' AND quality_status='observed' AND reported_total_votes > 0))
+);
+
+CREATE TABLE IF NOT EXISTS usa_atlas.election_candidate (
+    contest_id text NOT NULL REFERENCES usa_atlas.election_contest(contest_id),
+    source_row_id text NOT NULL,
+    candidate_id text,
+    candidate_label text NOT NULL,
+    candidate_kind text NOT NULL CHECK (candidate_kind IN ('candidate','ballot_or_other','source_aggregate','unclassified')),
+    party_original text,
+    party_normalized text,
+    candidatevotes_raw text NOT NULL,
+    totalvotes_raw text NOT NULL,
+    candidate_votes bigint,
+    source_total_votes bigint,
+    result_mode text NOT NULL,
+    write_in boolean,
+    fusion_ticket boolean,
+    source_version text NOT NULL,
+    source_url text NOT NULL,
+    source_sha256 character(64) NOT NULL,
+    source_status text NOT NULL,
+    quality_status text NOT NULL CHECK (quality_status IN ('observed','missing','suppressed','invalid')),
+    aggregation_quarantine_reasons text[] NOT NULL DEFAULT ARRAY[]::text[],
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    ingest_id uuid NOT NULL REFERENCES usa_atlas.ingest_run(ingest_id),
+    PRIMARY KEY (contest_id,source_row_id),
+    CHECK (quality_status <> 'observed' OR candidate_votes IS NOT NULL)
+);
+
+CREATE TABLE IF NOT EXISTS usa_atlas.election_party_result (
+    contest_id text NOT NULL REFERENCES usa_atlas.election_contest(contest_id),
+    party_normalized text NOT NULL,
+    party_votes bigint,
+    reported_total_votes bigint,
+    share_all_votes numeric,
+    quality_status text NOT NULL CHECK (quality_status IN ('observed','missing','suppressed','invalid')),
+    party_aggregation_status text NOT NULL CHECK (party_aggregation_status IN ('validated','quarantined')),
+    source_release text NOT NULL,
+    source_status text NOT NULL,
+    production_eligible boolean NOT NULL,
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    ingest_id uuid NOT NULL REFERENCES usa_atlas.ingest_run(ingest_id),
+    PRIMARY KEY (contest_id,party_normalized),
+    CHECK (quality_status <> 'observed' OR (party_aggregation_status='validated' AND party_votes IS NOT NULL AND reported_total_votes > 0 AND share_all_votes IS NOT NULL))
+);
+
+CREATE TABLE IF NOT EXISTS usa_atlas.election_availability (
+    availability_id bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    field_id text NOT NULL,
+    dataset_id text NOT NULL,
+    office text NOT NULL CHECK (office IN ('president','senate','house')),
+    election_year smallint NOT NULL,
+    geography_type text NOT NULL CHECK (geography_type IN ('county','state','congressional_district')),
+    geo_id text NOT NULL,
+    boundary_vintage smallint,
+    congress_session text,
+    stage text NOT NULL,
+    is_special boolean NOT NULL,
+    is_runoff boolean NOT NULL,
+    quality_status text NOT NULL CHECK (quality_status IN ('observed','no_election','missing','suppressed','invalid','nonmapping_geography')),
+    source_release text NOT NULL,
+    reason text NOT NULL,
+    candidate_status text NOT NULL CHECK (candidate_status IN ('candidate_not_admitted','local_review','admitted')),
+    ingest_id uuid NOT NULL REFERENCES usa_atlas.ingest_run(ingest_id),
+    UNIQUE NULLS NOT DISTINCT (office,election_year,geography_type,geo_id,boundary_vintage,congress_session,stage,is_special,is_runoff,source_release)
+);
+
+CREATE INDEX IF NOT EXISTS reader_observation_period_v2_idx ON usa_atlas.reader_observation (field_id,period_kind,period_year,period_start_year,period_end_year,source_release,geo_type,geo_id);
+CREATE INDEX IF NOT EXISTS election_contest_selector_v2_idx ON usa_atlas.election_contest (office,election_year,geography_type,geo_id,stage,is_special,is_runoff,result_mode,source_release);
+CREATE INDEX IF NOT EXISTS election_candidate_party_v2_idx ON usa_atlas.election_candidate (contest_id,result_mode,party_normalized,quality_status);
+
+-- Keep reruns additive when an earlier candidate-v2 schema was already applied.
+ALTER TABLE usa_atlas.election_contest
+    ADD COLUMN IF NOT EXISTS source_stage_values text[] NOT NULL DEFAULT ARRAY[]::text[];
+ALTER TABLE usa_atlas.election_contest
+    ADD COLUMN IF NOT EXISTS source_mode_values text[] NOT NULL DEFAULT ARRAY[]::text[];
+ALTER TABLE usa_atlas.election_contest
+    ADD COLUMN IF NOT EXISTS source_row_count integer NOT NULL DEFAULT 1 CHECK (source_row_count > 0);
+ALTER TABLE usa_atlas.election_candidate
+    ADD COLUMN IF NOT EXISTS source_mode_raw text;
+DO $$ BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pg_constraint WHERE conname='reader_v2_unspecified_mode_quarantined') THEN
+        ALTER TABLE usa_atlas.election_contest ADD CONSTRAINT reader_v2_unspecified_mode_quarantined
+            CHECK (result_mode <> 'UNSPECIFIED' OR (party_aggregation_status='quarantined' AND '' = ANY(source_mode_values)));
+    END IF;
+END $$;
+ALTER TABLE usa_atlas.reader_observation
+    ADD COLUMN IF NOT EXISTS source_version text NOT NULL DEFAULT '';

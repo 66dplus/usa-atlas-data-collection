@@ -1,0 +1,12 @@
+{
+  "contract_version": "aian-county-geography-2024-to-2017-v1",
+  "source_product": "2024 ACS 5-year Detailed Tables",
+  "map_product": "2017 Census cartographic county boundaries",
+  "matching_rule": "exact five-digit GEOID only; no allocation or predecessor geography substitutions",
+  "nonmapping_source_geoids": ["02063", "02066", "09110", "09120", "09130", "09140", "09150", "09160", "09170", "09180", "09190"],
+  "map_only_geoids": ["02261", "09001", "09003", "09005", "09007", "09009", "09011", "09013", "09015"],
+  "precheck_evidence": "/tmp/usa-maps-data-flow-20261026/aian-geography-precheck.json",
+  "exact_matches": 3133,
+  "source_geographies_excluding_pr": 3144,
+  "map_geographies_50_states_and_dc": 3142
+}

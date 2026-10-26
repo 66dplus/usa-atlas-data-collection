@@ -1,0 +1,149 @@
+{
+  "checkedOn": "2026-10-26",
+  "checkedUsing": "Official publisher pages and public endpoints; retrieval/access status is recorded separately from suitability.",
+  "collectorVersion": "2026.10.26.4",
+  "readerContractVersion": "1.0.0",
+  "sourceReleaseVersion": "Each publisher's release is recorded independently; this is not a reader contract version.",
+  "reviews": [
+    {
+      "sourceId": "bls-laus-public-api-v2",
+      "latestSuitableRelease": "LAUS 2025 NSA monthly and annual-average series",
+      "releaseDate": "2026-05-19",
+      "observationPeriod": "2025 monthly M01-M12 plus official annual M13 when returned",
+      "status": "Parent secure v2 collection completed 256/256 batches (153,312 observations); 12,776 official M13 series returned. 12,776 series report October missing and 52 series have no returned periods. Collection complete with source gaps; do not label source complete.",
+      "limitations": [
+        "Registered BLS API v2 uses the injected BLS_API_KEY; the worker does not read credential files.",
+        "M13 is a distinct annual average observation when published; absent M13 is not derived from monthly values.",
+        "October 2025 is unavailable due to the 2025 lapse in appropriations; keep it missing, not zero."
+      ]
+    },
+    {
+      "sourceId": "fbi-2025-release",
+      "latestSuitableRelease": "Reported Crimes in the Nation, 2025",
+      "releaseDate": "2026-08-14",
+      "observationPeriod": "Calendar year 2025",
+      "status": "Official annual SRS estimated-crimes workbook retrieved 2026-10-26 and hash-verified; 2,440 annual rows cover 1979-2025, including 52 native 2025 geography rows. Seven 2025 state/national offense counts and same-row FBI population denominators are prepared locally.",
+      "limitations": [
+        "The original payload is OOXML XLSX despite the .csv filename and text/csv content type; parser dispatches by bytes.",
+        "Footnote 3 marks limited 2025 data for both Florida and North Dakota; footnote 4 describes DC agency coverage. Markers and source text are preserved on every offense row.",
+        "Annual rates use the FBI source population and are not recalculated against Census 2024 population.",
+        "Rape uses the revised rape definition; legacy rape is retained in the raw source but not used for field 04.07.",
+        "Monthly CDE reported values are separate and do not establish annual completeness."
+      ],
+      "rawSha256": "e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486",
+      "sourceUrl": "https://cde-prd-data.s3.us-gov-east-1.amazonaws.com/additional-datasets/srs/estimated_crimes_1979_2025.csv",
+      "retrievedAt": "2026-10-26T12:13:22.509127+00:00"
+    },
+    {
+      "sourceId": "eia-2025-release",
+      "latestSuitableRelease": "Electric Power Annual with data for 2025",
+      "releaseDate": "2026-10-21",
+      "observationPeriod": "Annual 2025; All Sectors; state geography",
+      "status": "2025 Electric Power Annual release confirmed and ALL-sector values prepared for 51 states; baseline 2024 ALL-sector comparison/ranks generated.",
+      "limitations": [
+        "Average retail price is cents per kWh, not an exclusively residential tariff or a monthly charge."
+      ]
+    },
+    {
+      "sourceId": "census-pep-v2025-release",
+      "latestSuitableRelease": "Vintage 2025 county and national population estimates",
+      "releaseDate": "2026-06-25",
+      "observationPeriod": "July 1 annual population estimates, including revised 2023 and 2024 values",
+      "status": "Vintage 2025 source downloads verified; 2023/2024 total, under-18, and age-13+ denominators prepared for 3,144 county geographies and state/nation.",
+      "limitations": [
+        "A newer vintage revises the full time series; do not mix vintages in one denominator series.",
+        "Under-18 totals are the sum of Census single ages 0 through 17, not the 0-19 age group."
+      ]
+    },
+    {
+      "sourceId": "acs-release-schedule",
+      "latestSuitableRelease": "2020-2024 ACS 5-year estimates",
+      "releaseDate": "2026-01-29",
+      "observationPeriod": "Five-year survey period 2020-2024",
+      "status": "Latest county-wide ACS release reviewed; this package preserves the existing 2020-2024 share denominators and does not refresh ACS data.",
+      "limitations": [
+        "The 2025 ACS 1-year schedule is October 29, 2026, after this review date, and covers areas of 65,000+; the 2025 ACS 5-year date is TBD.",
+        "Keep ACS shares based on same-release ACS numerators and denominators; annual PEP denominators are not substitutes for ACS share denominators."
+      ]
+    },
+    {
+      "sourceId": "places-current-release",
+      "latestSuitableRelease": "PLACES December 2025 release",
+      "releaseDate": "2025-12",
+      "observationPeriod": "The obesity, diabetes, and physical inactivity estimates are based on 2023 BRFSS",
+      "status": "December 2025 PLACES release using 2023 BRFSS reviewed as the latest suitable product; no refreshed PLACES payload was captured in this package.",
+      "limitations": [
+        "For 2023-BRFSS measures, county estimates for Kentucky and Pennsylvania are unavailable.",
+        "The release uses ACS 2019-2023 geography/covariate data and Census 2023 county population estimates; the PLACES period is annual/model-based, not an ACS five-year period."
+      ]
+    },
+    {
+      "sourceId": "bea-rpp-release",
+      "latestSuitableRelease": "Regional Price Parities 2024",
+      "releaseDate": "2026-02-19",
+      "observationPeriod": "Annual 2024 state and metro estimates",
+      "status": "The latest suitable source remains the February 19, 2026 release for 2024 RPP; all 52 retained published observations match that source version. This source remains freshness-reviewed and retained-current; no new payload was needed or claimed.",
+      "limitations": [
+        "RPP is a state/metro price-level index with U.S.=100; it does not provide county values.",
+        "The published-before snapshot is comparison evidence only; it is not the original BEA source payload. No county values are available."
+      ]
+    },
+    {
+      "sourceId": "irs-soi-county-2023",
+      "latestSuitableRelease": "IRS SOI county tax-year 2023",
+      "releaseDate": "2026-08-21",
+      "observationPeriod": "Tax year 2023",
+      "status": "Tax year 2023 county release verified; 3,143 counties and eight A00100 AGI bands per county parsed; thousand-USD conversion and matched-year 2023 population rates prepared.",
+      "limitations": [
+        "A00100 is in thousands of dollars; multiply by 1,000 for USD.",
+        "Exclude county FIPS 000 state totals when summing county records.",
+        "Per-resident income uses matching-year July 1 population estimates, not tax returns or ACS per-capita income."
+      ]
+    },
+    {
+      "sourceId": "uscs-release",
+      "latestSuitableRelease": "2026 U.S. Cancer Statistics submission; 2023 incidence is the latest incidence year",
+      "releaseDate": "2026-06-01",
+      "observationPeriod": "New cancer cases diagnosed through 2023; cancer deaths through 2024",
+      "status": "2023 incidence is latest; retained state/DC counts and publisher national count are preserved with SHA-256. Crude rates use matching 2023 PEP total population; publisher US count is used for the national row.",
+      "limitations": [
+        "Keep crude rates distinct from age-adjusted rates.",
+        "Retained normalized USCS observations document numeric displayed rows under the source suppression selector; do not infer unavailable rows. The current fresh publisher download returned HTTP 403."
+      ]
+    },
+    {
+      "sourceId": "hiv-release-page",
+      "latestSuitableRelease": "CDC HIV Diagnoses, Deaths, and Prevalence 2024",
+      "releaseDate": "2026-05-18",
+      "observationPeriod": "2024; diagnosis tables report age 13 and older",
+      "status": "2024 provisional age-13+ diagnosis counts use the retained CDC AtlasPlus replay response captured 2026-10-11T01:56:11.421302Z (51 state/DC rows, no native US row). The new CDC workbook URL returned HTTP 403; its 2024 release tables contain data through 2023.",
+      "limitations": [
+        "Numbers under 12 and rates based on them require caution.",
+        "The retained count is provisional 2024 diagnoses age 13+ reported through December 2025 with a 12-month reporting delay.",
+        "The retained CDC AtlasPlus replay response SHA-256 1d4dbad5de57de8b1fe51dc6f94521f2d1fc6f63fd5e4ed4fa15228b071b9f31 contains 51 state/DC rows and no native national row. The CDC workbook is a 2024 release with tables through 2023. No state aggregation is used for a US value."
+      ]
+    },
+    {
+      "sourceId": "wonder-mortality-release",
+      "latestSuitableRelease": "CDC WONDER Multiple Cause of Death final file 2024",
+      "releaseDate": "2026-02-18",
+      "observationPeriod": "Deaths occurring in 2024",
+      "status": "2024 final release confirmed; retained 51-state under-18 count observations reused and crude rates prepared with 2024 PEP under-18 denominators; suppressed counts of 9 or fewer remain unavailable.",
+      "limitations": [
+        "2025 and later are provisional; do not replace the 2024 final metric automatically.",
+        "Use age 0-17 deaths over July 1, 2024 population age 0-17.",
+        "Suppressed cells remain missing; no zeros are fabricated."
+      ]
+    },
+    {
+      "sourceId": "fitness-recreation-centers-per-capita",
+      "latestSuitableRelease": "2023 field year retained in published source metadata; current newer release not verified",
+      "releaseDate": null,
+      "observationPeriod": "Existing published source field only",
+      "status": "Published field-year freshness reviewed; newer USDA Atlas field-year could not be confirmed from primary release metadata.",
+      "limitations": [
+        "The published selection uses the 2023 field; a newer suitable USDA Food Environment Atlas release was not independently verified."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "format": "usa_maps_reader_v2_local_review_input_mapping",
+  "contract_version": "2.0.0",
+  "status": "candidate_not_admitted",
+  "admission_filter": "usa_atlas.ingest_run.status = 'pass'",
+  "collector_version": "data-refresh-preparation-2026.10.26.1",
+  "source_release_is_per_observation": true,
+  "inputs": [
+    {
+      "catalog_field_id": "03.06",
+      "dataset_id": "unemployment",
+      "field_id": "03.06:unemployment_rate",
+      "source_release": "laus-nsa-2025",
+      "source_version": "laus-nsa-2025-v2",
+      "source_code": "bls_laus",
+      "seasonal_adjustment": "NSA",
+      "source_measures": {
+        "03": "rate",
+        "04": "unemployed",
+        "05": "employed",
+        "06": "labor_force"
+      },
+      "source_url": "https://api.bls.gov/publicAPI/v2/timeseries/data/",
+      "period_mapping": {
+        "M01-M12": "monthly, month 1..12, source_period_code YYYY-Mnn",
+        "M13": "annual, null month, source_period_code YYYY-M13"
+      },
+      "missingness": "Keep source gaps explicit missing; no national LAUS row is synthesized.",
+      "raw_hashes": "Source response SHA-256 is retained per series/observation; manifest retains all 256 response hashes."
+    },
+    {
+      "catalog_field_id": "01.01",
+      "dataset_id": "pep_population",
+      "field_ids": [
+        "01.01:pep_population_total",
+        "01.01:pep_population_age_13_plus",
+        "01.01:pep_population_under_18"
+      ],
+      "source_release": "Census PEP Vintage 2025",
+      "periods": [
+        2023,
+        2024
+      ],
+      "unit": "persons",
+      "geographies": [
+        "nation",
+        "state",
+        "county"
+      ],
+      "national_total_rule": "The prepared national total is accepted only after exact comparison to the pinned native Census SEX=0, AGE=999 row in nc-est2025-agesex-res.csv; source ID census-pep-national-single-age-v2025; SHA-256 6436d4f6972d415caf14cb20776807bc031fc9f1bfc9d6ff26055d592a2b0230. National age_13_plus and under_18 values are independently recomputed from the native national single-age rows and compared exactly.",
+      "source_artifacts": {
+        "county_totals": "census-pep-county-totals-v2025",
+        "county_single_age": "census-pep-county-single-age-v2025",
+        "native_national_single_age": "census-pep-national-single-age-v2025"
+      }
+    },
+    {
+      "catalog_field_id": "08.05",
+      "dataset_id": "electricity_price",
+      "field_id": "08.05:sector_ALL",
+      "source_release": "EIA Electric Power Annual 2025",
+      "filter": "year=2025 and sector=ALL",
+      "period_kind": "annual",
+      "unit": "cents/kWh",
+      "source_adjustment": "EIA source annual average retail price; state records only."
+    },
+    {
+      "catalog_field_id": "07.01",
+      "dataset_id": "irs_agi",
+      "field_ids": [
+        "07.01:agi_total",
+        "07.01:derived:per-resident"
+      ],
+      "source_release": "irs-soi-2023-pep-vintage-2025",
+      "period": 2023,
+      "formula": "A00100 thousand USD * 1000 / matching same-geography 2023 PEP total population",
+      "units": {
+        "07.01:agi_total": "USD",
+        "07.01:derived:per-resident": "USD/person"
+      },
+      "national_per_resident": "Observed only after the 2023 national PEP denominator matches the pinned native Census SEX=0, AGE=999 row; A00100 thousand USD converted to USD before dividing."
+    },
+    {
+      "catalog_field_id": "11.01",
+      "dataset_id": "cancer",
+      "field_id": "11.01",
+      "event_year": 2023,
+      "source_release": "per-row source release retained; state and publisher-national rows cite distinct USCS source releases",
+      "denominator": "Census PEP total 2023; same geography/year only",
+      "source_adjustment": "crude; not age-adjusted",
+      "national_rate": "Observed only after the 2023 total PEP denominator matches the pinned native Census SEX=0, AGE=999 row; prepared native USCS numerator is retained as 1,941,540."
+    },
+    {
+      "catalog_field_id": "11.02",
+      "dataset_id": "hiv",
+      "field_id": "11.02",
+      "event_year": 2024,
+      "source_release": "AtlasPlus observed 2026-10-11; 2024 diagnoses provisional, reported through December 2025 with 12-month reporting delay",
+      "denominator": "Census PEP age 13+ 2024; same geography/year only",
+      "source_adjustment": "crude; not age-adjusted",
+      "national_status": "missing; source file contains state rows only."
+    },
+    {
+      "catalog_field_id": "11.03",
+      "dataset_id": "child_deaths_under18",
+      "field_id": "11.03",
+      "event_year": 2024,
+      "source_release": "NCHS NVSS Mortality 2018-2024, CDC WONDER release 2026",
+      "denominator": "Census PEP under-18 2024; same geography/year only",
+      "source_adjustment": "crude; not age-adjusted",
+      "suppression": "Preserve counts suppressed by source; never coerce to zero.",
+      "national_status": "missing; source file contains state rows only."
+    },
+    {
+      "catalog_field_id": "04.01–04.07",
+      "dataset_id": "fbi_crime_rate",
+      "field_ids": [
+        "04.01:derived",
+        "04.02:derived",
+        "04.03:derived",
+        "04.04:derived",
+        "04.05:derived",
+        "04.06:derived",
+        "04.07:derived"
+      ],
+      "source_release": "FBI SRS Estimated Crimes 1979-2025 (August 2026)",
+      "period": "2025 annual; null month",
+      "geographies": "native US plus 50 states and DC",
+      "unit": "per 100,000",
+      "formula": "official offense count / population on same FBI 2025 row * 100000",
+      "source_field_map": {
+        "04.01:derived": "homicide",
+        "04.02:derived": "violent_crime",
+        "04.03:derived": "robbery",
+        "04.04:derived": "aggravated_assault",
+        "04.05:derived": "burglary",
+        "04.06:derived": "motor_vehicle_theft",
+        "04.07:derived": "rape_revised"
+      },
+      "raw_sha256": "e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486",
+      "prepared_sha256": "1551672802e7059bd728165aa334dfc2d051c49d4692f4754af50cc48dce71e0",
+      "retrieved_at": "2026-10-26T12:13:22.509127+00:00",
+      "quality": "Observed source values; preserve source caveats including Florida/North Dakota limited-data marker and DC agency coverage. Missing source values remain null.",
+      "source_footnotes": {
+        "FL": "source_state_name marker 3; limited 2025 data",
+        "ND": "source_state_name marker 3; limited 2025 data",
+        "DC": "source_state_name marker 4; special agency coverage"
+      }
+    }
+  ],
+  "medical_invariant": "Reject any event-year/denominator-year mismatch, population-kind mismatch, geography mismatch, PEP denominator mismatch, or source-rate arithmetic mismatch.",
+  "generated_manifest": "/tmp-only runtime path supplied by caller; manifest pins prepared file hashes and source receipts",
+  "candidate_only": true,
+  "additional_reader_filter": "usa_atlas.reader_batch.candidate_status = 'admitted'",
+  "local_review_filter": "usa_atlas.reader_batch.candidate_status = 'local_review'; loopback only",
+  "versioned_catalog_relation": "usa_atlas.reader_v2_catalog_field keyed by (catalog_field_id,source_release); v1 catalog metadata is insert-only and never overwritten"
+}

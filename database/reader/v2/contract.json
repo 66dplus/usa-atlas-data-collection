@@ -1,0 +1,561 @@
+{
+  "additional_reader_filter": "usa_atlas.reader_batch.candidate_status = 'admitted'",
+  "admission_filter": "usa_atlas.ingest_run.status = 'pass'",
+  "artifact_sha256": {
+    "database/reader/v2/ADMISSION.md": "6220606569c906ba49509db2adcb9ad36ad192b7ecfc8dd65ba7ad1b6eb0abe8",
+    "database/reader/v2/admission.py": "4e9b19cd5202498c23caf275f17415be68d197bc5232c2cb1958c22e5ad24d2a",
+    "database/reader/v2/catalog.py": "0ab39cbd13562974cd0da5f24fca2961ecceabb5349cabe14a93f8f7c74e1b60",
+    "database/reader/v2/consumer-protocol.md": "a42d56733b7a26b1750b8eb3fe2d5eaf896779e2da4abb230088e3dacec5cc7a",
+    "database/reader/v2/data-ready-input-contract.json": "af55c757dca7da94143c2c99247fab5b02f0dc8015abd80a01f639a407fdab53",
+    "database/reader/v2/fixtures/reader-fixture.sql": "a30722c8497967e3db52fd16517587e17f1466b4d72945654a04767a4014db3a",
+    "database/reader/v2/fixtures/reader-query.sql": "5ba9e249acfbee6762635a593b18bb63390b67c4dba150687685583f8e8351c6",
+    "database/reader/v2/load_local_review.py": "14a0fdd127c7362b4464a2c3a59d0d4385a8d9c6e2d35c478ef39bf2e9dec28c",
+    "database/reader/v2/load_refresh_local_review.py": "a286b21ee1a14a41478f5df189235ff195c9f8cf6480d1f74454e68806ec874b",
+    "database/reader/v2/loader_input_mapping.json": "33d922311bb1360471dbc1196fe2151d7b1729f5485ea9d0e0f11aecbcbb9d48",
+    "database/reader/v2/prepare_refresh.py": "50cfcc35cc2d8f4d4d085cb320d76772a983e554b1b21f6ed6e1357d77b1be8a",
+    "database/reader/v2/production-target-policy.json": "5bef19a95f23066ff9cca491c0096384da6a1ae7fd0f96505a21c670989953b3",
+    "database/reader/v2/schema.sql": "75abdf88348b15ac8d584c47201bd8257b93477be90f11f92a3e0b00e8ce2d91",
+    "database/reader/v2/tests/invariants.sql": "262909726ddca947ac178c838ea28140ab52b0b518ad60c9b9154815e51f8c36",
+    "database/reader/v2/tests/run_disposable_integration.py": "84ffc8496e94b27fd8ded493695b830165e23c475b565bbfd7a3de6047844d00",
+    "database/reader/v2/tests/test_actual_app_adapter.py": "9c203f6e8546e67f642b1a5d270d7e7599dc1313ee2f16824d34f44a636ce8fb",
+    "database/reader/v2/tests/test_admission_policy.py": "1c240ddfb702a4206977dbaf63c10f79d9209bfb4fff7a8d766e73bff011d28a",
+    "database/reader/v2/tests/test_load_refresh_local_review.py": "51f552b3ae666c985ef03e610640fb9fa9c6205a8d728c7b978406a1e486499d",
+    "database/reader/v2/tests/test_local_loader.py": "e36042dc1b5a0133a3cb4206deac581a3cc67220f8ad6a5845ea05a727012aa0",
+    "database/reader/v2/tests/test_prepare_fbi_annual.py": "f4524b5d4b976a52a33657567946c3fff5db3e669d013947f2f6cc1b9d011c06",
+    "database/reader/v2/tests/test_prepare_refresh.py": "c92f7fe26316c6cf9602f929e248c433198629926259c8279055db2c96df30d9",
+    "full/politics_20261026/README.md": "a01ac4e20ef54cf570d011eaf0d72086753d1b4284d66b9b35041acea74cdd05",
+    "full/politics_20261026/house_identity.py": "9239a84acf44d9fc14f0f347c0e9de7e462870a0d817557030b7f08fd71366da",
+    "full/politics_20261026/prepare.py": "3213b205fdfd48bd862e875c6958bb6e5c5d031c3449aeb456551b36ea8421fc",
+    "full/politics_20261026/prepare_bls.py": "ceecc3501249eb0670f9a9a367d21cee9dba68e9146ec1a41f784091b88409a5",
+    "full/politics_20261026/source-readiness.json": "8939a8d5bab5e8b636f9acb7ead79b9cc784de74afeb6ceb7f98e8b236f0857e",
+    "full/politics_20261026/test_prepare.py": "1c95bf74f33f16ba5c9f900b2dfa4534fd474a12f3347e020cdd6ccc51c39702",
+    "full/politics_20261026/test_prepare_bls.py": "76f5ef57c497f70c49802a697996a9c7dc6db0dc9dd092340e24f1a35eaf5c6c",
+    "full/politics_20261026/tests/test_house_identity.py": "839dafa7ab2e6461be2ed2270aff1be4be79d25957059b627c7e6bb52bed8caa",
+    "full/politics_20261026/validate_real.py": "216afa8f70d02d56add2e1dc121a3c1ae461965bd455251840859c750ad07d76"
+  },
+  "candidate_access": {
+    "production_requires_additional_reader_filter": true,
+    "requires": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'local_review'",
+    "status": "local_review",
+    "transport": "loopback-only"
+  },
+  "candidate_rows": [
+    "candidatevotes raw and parsed",
+    "totalvotes raw preserved per source row",
+    "contest reported_total_votes stored once",
+    "party_original",
+    "party_normalized",
+    "source_version",
+    "mode",
+    "source_mode_raw",
+    "stage",
+    "special",
+    "runoff",
+    "writein",
+    "fusion_ticket",
+    "canonical contest stage plus raw source stage values"
+  ],
+  "contract_id": "usa_atlas.application_reader",
+  "contract_version": "2.0.0",
+  "election_identity": [
+    "office",
+    "election_year",
+    "geography_type",
+    "geo_id",
+    "boundary_vintage nullable",
+    "congress_session nullable",
+    "stage",
+    "is_special",
+    "is_runoff",
+    "result_mode",
+    "source_release"
+  ],
+  "fbi_annual_2025": {
+    "catalog_fields": [
+      "04.01",
+      "04.02",
+      "04.03",
+      "04.04",
+      "04.05",
+      "04.06",
+      "04.07"
+    ],
+    "dataset_id": "fbi_crime_rate",
+    "field_ids": [
+      "04.01:derived",
+      "04.02:derived",
+      "04.03:derived",
+      "04.04:derived",
+      "04.05:derived",
+      "04.06:derived",
+      "04.07:derived"
+    ],
+    "native_us": true,
+    "period": "2025 annual; null month",
+    "prepared_sha256": "1551672802e7059bd728165aa334dfc2d051c49d4692f4754af50cc48dce71e0",
+    "rape_field": "rape_revised",
+    "source_sha256": "e7bf3de96b21d00fc10e9d60fee4d8257cba0a095ce5c5fc992047d46fb76486",
+    "unit": "per 100,000"
+  },
+  "field_ids": {
+    "aian_broad_share": "01.04",
+    "cancer": "11.01",
+    "child_deaths_under18": "11.03",
+    "electricity_price": "08.05",
+    "hiv": "11.02",
+    "house": "12.03",
+    "irs_agi": "07.01",
+    "pep_population": "01.01",
+    "president": "12.01",
+    "senate": "12.02",
+    "unemployment": "03.06"
+  },
+  "fields": {
+    "aian_broad_share": {
+      "catalog_field_id": "01.04",
+      "dataset_id": "aian_broad_share",
+      "field_id": "01.04:aian_share"
+    },
+    "cancer": {
+      "catalog_field_id": "11.01",
+      "dataset_id": "cancer",
+      "event_year": 2023,
+      "field_id": "11.01"
+    },
+    "child_deaths_under18": {
+      "catalog_field_id": "11.03",
+      "dataset_id": "child_deaths_under18",
+      "event_year": 2024,
+      "field_id": "11.03"
+    },
+    "electricity_price": {
+      "catalog_field_id": "08.05",
+      "dataset_id": "electricity_price",
+      "field_id": "08.05:sector_ALL",
+      "sector": "ALL",
+      "year": 2025
+    },
+    "hiv": {
+      "catalog_field_id": "11.02",
+      "dataset_id": "hiv",
+      "event_year": 2024,
+      "field_id": "11.02"
+    },
+    "house": {
+      "catalog_field_id": "12.03",
+      "dataset_id": "house_election",
+      "field_id": "12.03"
+    },
+    "irs_agi": {
+      "catalog_field_id": "07.01",
+      "dataset_id": "irs_agi",
+      "denominator_year": 2023,
+      "field_ids": [
+        "07.01:agi_total",
+        "07.01:derived:per-resident"
+      ]
+    },
+    "pep_population": {
+      "catalog_field_id": "01.01",
+      "dataset_id": "pep_population",
+      "field_ids": [
+        "01.01:pep_population_total",
+        "01.01:pep_population_age_13_plus",
+        "01.01:pep_population_under_18"
+      ]
+    },
+    "president": {
+      "catalog_field_id": "12.01",
+      "dataset_id": "president_election",
+      "field_id": "12.01"
+    },
+    "senate": {
+      "catalog_field_id": "12.02",
+      "dataset_id": "senate_election",
+      "field_id": "12.02"
+    },
+    "unemployment": {
+      "catalog_field_id": "03.06",
+      "dataset_id": "unemployment",
+      "field_id": "03.06:unemployment_rate",
+      "seasonalAdjustment": "NSA",
+      "source_release": "laus-nsa-2025"
+    }
+  },
+  "format": "usa_atlas_reader_contract",
+  "geographies": {
+    "house": "congressional_district with geo_id, boundary_vintage, congress_session, state_fips, district_code, is_at_large",
+    "president": "county",
+    "senate": "state"
+  },
+  "native_national_pep": {
+    "national_age_groups": "recomputed from native national single-age rows and compared exactly to prepared values",
+    "population_estimate_2023": 336755052,
+    "population_estimate_2024": 340003797,
+    "sha256": "6436d4f6972d415caf14cb20776807bc031fc9f1bfc9d6ff26055d592a2b0230",
+    "source_id": "census-pep-national-single-age-v2025",
+    "total_selector": {
+      "AGE": "999",
+      "SEX": "0"
+    }
+  },
+  "object_metadata": {
+    "catalog_field": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass'",
+      "version": "v1-retained"
+    },
+    "election_availability": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    },
+    "election_candidate": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    },
+    "election_contest": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    },
+    "election_party_result": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    },
+    "geography_boundary": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    },
+    "ingest_run": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass'",
+      "version": "v1-retained"
+    },
+    "observation": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass'",
+      "version": "v1-retained"
+    },
+    "reader_batch": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    },
+    "reader_observation": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    },
+    "reader_v2_admission_event": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    },
+    "reader_v2_catalog_field": {
+      "access": "SELECT",
+      "reader_filter": "usa_atlas.ingest_run.status = 'pass' AND usa_atlas.reader_batch.candidate_status = 'admitted'",
+      "version": "v2-additive"
+    }
+  },
+  "objects": {
+    "catalog_field": {
+      "catalog_field_id": "text",
+      "catalog_label": "text",
+      "contract": "jsonb",
+      "contract_sha256": "character(64)",
+      "planned_state": "text",
+      "rate_limit_profile": "text",
+      "source_release": "text"
+    },
+    "election_availability": {
+      "availability_id": "bigint",
+      "boundary_vintage": "smallint",
+      "candidate_status": "text",
+      "congress_session": "text",
+      "dataset_id": "text",
+      "election_year": "smallint",
+      "field_id": "text",
+      "geo_id": "text",
+      "geography_type": "text",
+      "ingest_id": "uuid",
+      "is_runoff": "boolean",
+      "is_special": "boolean",
+      "office": "text",
+      "quality_status": "text",
+      "reason": "text",
+      "source_release": "text",
+      "stage": "text"
+    },
+    "election_candidate": {
+      "aggregation_quarantine_reasons": "text[]",
+      "candidate_id": "text",
+      "candidate_kind": "text",
+      "candidate_label": "text",
+      "candidate_status": "text",
+      "candidate_votes": "bigint",
+      "candidatevotes_raw": "text",
+      "contest_id": "text",
+      "fusion_ticket": "boolean",
+      "ingest_id": "uuid",
+      "party_normalized": "text",
+      "party_original": "text",
+      "quality_status": "text",
+      "result_mode": "text",
+      "source_mode_raw": "text",
+      "source_row_id": "text",
+      "source_sha256": "character(64)",
+      "source_status": "text",
+      "source_total_votes": "bigint",
+      "source_url": "text",
+      "source_version": "text",
+      "totalvotes_raw": "text",
+      "write_in": "boolean"
+    },
+    "election_contest": {
+      "boundary_vintage": "smallint",
+      "candidate_status": "text",
+      "catalog_field_id": "text",
+      "congress_session": "text",
+      "contest_id": "text",
+      "dataset_id": "text",
+      "district_code": "character(2)",
+      "election_date": "date",
+      "election_year": "smallint",
+      "field_id": "text",
+      "geo_id": "text",
+      "geography_mapping_status": "text",
+      "geography_type": "text",
+      "ingest_id": "uuid",
+      "is_runoff": "boolean",
+      "is_special": "boolean",
+      "methodology_note": "text",
+      "office": "text",
+      "party_aggregation_status": "text",
+      "production_eligible": "boolean",
+      "quality_status": "text",
+      "quarantine_reasons": "text[]",
+      "reported_total_votes": "bigint",
+      "result_mode": "text",
+      "source_mode_values": "text[]",
+      "source_release": "text",
+      "source_row_count": "integer",
+      "source_sha256": "character(64)",
+      "source_stage_values": "text[]",
+      "source_status": "text",
+      "source_url": "text",
+      "source_version": "text",
+      "stage": "text",
+      "state_fips": "character(2)"
+    },
+    "election_party_result": {
+      "candidate_status": "text",
+      "contest_id": "text",
+      "ingest_id": "uuid",
+      "party_aggregation_status": "text",
+      "party_normalized": "text",
+      "party_votes": "bigint",
+      "production_eligible": "boolean",
+      "quality_status": "text",
+      "reported_total_votes": "bigint",
+      "share_all_votes": "numeric",
+      "source_release": "text",
+      "source_status": "text"
+    },
+    "geography_boundary": {
+      "boundary_vintage": "smallint",
+      "candidate_status": "text",
+      "congress_session": "text",
+      "district_code": "character(2)",
+      "geo_id": "text",
+      "geo_type": "text",
+      "geometry_json": "jsonb",
+      "geometry_record_sha256": "character(64)",
+      "geometry_source_sha256": "character(64)",
+      "geometry_source_url": "text",
+      "ingest_id": "uuid",
+      "is_at_large": "boolean",
+      "label": "text",
+      "seat_type": "text",
+      "source_release": "text",
+      "source_status": "text",
+      "state_fips": "character(2)"
+    },
+    "ingest_run": {
+      "artifact_path": "text",
+      "artifact_sha256": "character(64)",
+      "completed_at": "timestamp with time zone",
+      "contract_sha256": "character(64)",
+      "error_code": "text",
+      "ingest_id": "uuid",
+      "row_count": "bigint",
+      "source": "text",
+      "started_at": "timestamp with time zone",
+      "status": "text"
+    },
+    "observation": {
+      "catalog_field_id": "text",
+      "field_id": "text",
+      "geo_id": "text",
+      "geo_type": "text",
+      "ingest_id": "uuid",
+      "methodology_note": "text",
+      "period": "text",
+      "retrieved_at": "timestamp with time zone",
+      "source": "text",
+      "source_release": "text",
+      "source_url": "text",
+      "unit": "text",
+      "value": "double precision"
+    },
+    "reader_batch": {
+      "candidate_status": "text",
+      "collector_version": "text",
+      "contract_version": "text",
+      "created_at": "timestamp with time zone",
+      "ingest_id": "uuid",
+      "input_manifest_sha256": "character(64)",
+      "observation_release": "text"
+    },
+    "reader_observation": {
+      "boundary_vintage": "smallint",
+      "candidate_status": "text",
+      "catalog_field_id": "text",
+      "congress_session": "text",
+      "dataset_id": "text",
+      "denominator_value": "numeric",
+      "district_code": "character(2)",
+      "field_id": "text",
+      "geo_id": "text",
+      "geo_type": "text",
+      "geography_mapping_status": "text",
+      "ingest_id": "uuid",
+      "is_at_large": "boolean",
+      "methodology_note": "text",
+      "observation_id": "text",
+      "period_end_year": "smallint",
+      "period_kind": "text",
+      "period_month": "smallint",
+      "period_start_year": "smallint",
+      "period_year": "smallint",
+      "quality_status": "text",
+      "raw_denominator": "text",
+      "raw_denominator_moe": "text",
+      "raw_estimate": "text",
+      "raw_estimate_moe": "text",
+      "retrieved_at": "timestamp with time zone",
+      "source": "text",
+      "source_period_code": "text",
+      "source_release": "text",
+      "source_sha256": "character(64)",
+      "source_url": "text",
+      "source_value_status": "text",
+      "source_version": "text",
+      "state_fips": "character(2)",
+      "unit": "text",
+      "value": "numeric"
+    },
+    "reader_v2_admission_event": {
+      "action": "text",
+      "actor": "text",
+      "admission_bundle_sha256": "character(64)",
+      "contract_sha256": "character(64)",
+      "created_at": "timestamp with time zone",
+      "event_id": "bigint",
+      "ingest_id": "uuid",
+      "reason": "text"
+    },
+    "reader_v2_catalog_field": {
+      "candidate_status": "text",
+      "catalog_field_id": "text",
+      "catalog_label": "text",
+      "contract": "jsonb",
+      "contract_sha256": "character(64)",
+      "contract_version": "text",
+      "created_at": "timestamp with time zone",
+      "dataset_id": "text",
+      "source_code": "text",
+      "source_release": "text"
+    }
+  },
+  "periods": {
+    "annual": "period_month NULL; M13 is annual provenance",
+    "monthly": "period_month 1..12",
+    "multi_year": "inclusive start/end years; month NULL"
+  },
+  "quality_statuses": [
+    "observed",
+    "no_election",
+    "missing",
+    "suppressed",
+    "invalid",
+    "nonmapping_geography"
+  ],
+  "read_only": true,
+  "schema_fingerprint": "2a319fe39b1045bddb48bcdf688a20032875f4f0ea823784c07a0611f9428fa1",
+  "schema_fingerprint_basis": "SHA-256 of canonical JSON mapping short relation names to every declared column and PostgreSQL type.",
+  "share": "selected normalized party candidatevotes / contest totalvotes for TOTAL mode only; zero only when an exact-hash complete source-file partition is validated; ambiguous/incomplete/UNSPECIFIED-mode is NULL",
+  "source_identity_verification": {
+    "house": {
+      "datafile_id": 13592823,
+      "doi": "10.7910/DVN/IG0UN2",
+      "metadata_sha256": "7f1e58721c198bfd7c1a4254b6704ba42aab6764e034ca456e1f7d536ce25c0b",
+      "mirror_sha256": "bd0690fbcd753e45edb40810c99d1b8afbb0de928aa54bff1b227c615d69c163",
+      "original_bytes": 4156562,
+      "original_md5": "a9566ac393913a1af343284e837c17bb",
+      "original_sha256": "76eec42483ee9f0fc5cf6e377442c783d1ae6eefa929729fd6561a69bab47f2a",
+      "publisher_one_column_unf": "UNF:6:cIJWG41N8qe3Kyf7oKuPdw==",
+      "reconstruction": "preserve header; strip one outer quote pair from each following raw row; unescape backslash-quote; LF join with final LF",
+      "record_count": 33805,
+      "verifier": "full/politics_20261026/house_identity.py",
+      "version": 15
+    }
+  },
+  "source_mode": "raw mode cells preserved per candidate and contest; blank mode maps to UNSPECIFIED and is quarantined pending verified publisher semantics",
+  "source_releases": {
+    "aian_broad_share": "acs-2024-5year",
+    "cancer": "per-row retained USCS source release, diagnosis year 2023",
+    "child_deaths_under18": "NCHS NVSS Mortality 2018-2024, CDC WONDER release 2026",
+    "electricity_price": "EIA Electric Power Annual 2025",
+    "fbi_crime_rate": "FBI SRS Estimated Crimes 1979-2025 (August 2026)",
+    "hiv": "AtlasPlus 2024 provisional",
+    "house": "dataverse-IG0UN2-v15",
+    "irs_agi": "irs-soi-2023-pep-vintage-2025",
+    "pep_population": "Census PEP Vintage 2025; native US source pinned by census-pep-national-single-age-v2025 SHA-256 6436d4f6972d415caf14cb20776807bc031fc9f1bfc9d6ff26055d592a2b0230",
+    "president": "dataverse-VOQCHQ-v20",
+    "senate": "dataverse-PEJ5QU-v8"
+  },
+  "status": "candidate_not_released",
+  "unemployment": {
+    "catalog_field_id": "03.06",
+    "components": {
+      "03": "unemployment_rate",
+      "04": "unemployed",
+      "05": "employed",
+      "06": "labor_force"
+    },
+    "dataset_id": "unemployment",
+    "field_id": "03.06:unemployment_rate",
+    "periods": {
+      "annual": "2025 M13 as annual with null month; source period 2025-M13",
+      "monthly": "2025 M01-M12, with source period YYYY-Mnn and month 1..12"
+    },
+    "seasonal_adjustment": "NSA",
+    "source_code": "bls_laus",
+    "source_gaps": "M10 and Kalawao series-not-returned rows stay explicit missing; no national rate synthesized",
+    "source_release": "laus-nsa-2025",
+    "source_version": "laus-nsa-2025-v2"
+  },
+  "version": "2.0.0",
+  "versioned_catalog": {
+    "key": [
+      "catalog_field_id",
+      "source_release"
+    ],
+    "relation": "usa_atlas.reader_v2_catalog_field",
+    "v1_catalog_policy": "No v2 field or source-release rows are written to the immutable v1 catalog; v2 keys exist only in reader_v2_catalog_field."
+  }
+}
